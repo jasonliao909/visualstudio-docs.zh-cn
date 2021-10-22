@@ -7,12 +7,12 @@ ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
 ms.date: 03/17/2021
 ms.topic: how-to
 description: 了解如何激活 Visual Studio 订阅中包含的技术支持权益。
-ms.openlocfilehash: e2163f4e8ae347240d43e63f753ea64e39f477ae
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 3ca7a83796b07938a392363adede83d47ec6d7a3
+ms.sourcegitcommit: 6c847aedf0f943e253a4c2f0e4b516b953168bc7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128429478"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "130151959"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>激活并使用 Visual Studio 订阅中的技术支持权益
 Visual Studio 订阅中的技术支持权益用于解决仍处于[支持生命周期](https://support.microsoft.com/lifecycle/search)的主流支持阶段产品的“非生产环境”中的中断修复问题。 Visual Studio Enterprise 标准版和年度云订阅接收四个事件，但 Visual Studio Professional 标准版和年度云订阅接收两个事件，从权益激活开始最多一年。 权益激活必须在订阅为最新状态时进行。
@@ -42,6 +42,9 @@ Visual Studio 订阅中的技术支持权益用于解决仍处于[支持生命�
 > - Microsoft Outlook
 
 ## <a name="how-to-activate-the-benefit"></a>如何激活权益
+> [!NOTE]
+> 以下步骤仅适用于以英语激活权益。  对于其他语言，请访问 <https://visualstudio.microsoft.com/subscriptions/support>，滚动到底部，单击“帐户、订阅和计费支持”，然后从下拉列表中选择你所在的国家/地区。
+
 1. 请转到 <https://my.visualstudio.com/Benefits>，向下滚动到“支持”部分，在“技术支持”磁贴上单击“聊天激活”。
     > [!div class="mx-imgBorder"]
     > ![技术支持权益磁贴](_img/vs-tech-support/vs-tech-support-tile.png "单击“技术支持”磁贴上的“聊天进行激活”。")
@@ -58,9 +61,6 @@ Visual Studio 订阅中的技术支持权益用于解决仍处于[支持生命�
    > ![技术支持权益查找订阅 ID](_img/vs-tech-support/vs-tech-support-subID-cropped.png "在“订阅”选项卡上找到订阅 ID。")
 
 4. 完成此过程后，你将收到一封电子邮件，其中包含在创建支持事件时将使用的“合同 ID”和“访问 ID” 。  它还将提供使用新的访问 ID 和合同 ID 提交支持事件的说明。 
-
-   > [!NOTE]
-   > 若要激活非英语的支持帐户，请从[此列表](https://support.microsoft.com/help/14084/activate-support-contract)选择你所在的国家/地区。
 
 ## <a name="how-to-submit-an-incident-using-your-benefit"></a>如何使用权益提交事件
 设置了“合同 ID”和“访问 ID”后，可以使用它提交技术支持事件 。 

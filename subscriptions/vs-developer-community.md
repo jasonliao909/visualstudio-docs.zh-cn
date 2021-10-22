@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 44a790d1-f37e-4be0-9023-af1b3fdfcd35
-ms.date: 03/17/2021
+ms.date: 10/18/2021
 ms.topic: conceptual
 description: 了解有关所选 Visual Studio 订阅中包含的开发者社区支持权益。
-ms.openlocfilehash: e689fa93f37d2c784b03a7118d84af157e9c1e80
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 57dab07086eed8ad42ef118b4e0db86842929c8f
+ms.sourcegitcommit: 6c847aedf0f943e253a4c2f0e4b516b953168bc7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128432644"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "130152084"
 ---
 # <a name="developer-community-support-forum-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的开发者社区支持论坛
 在开发者社区论坛中发布问题、查找答案并分享知识。
@@ -21,6 +21,7 @@ ms.locfileid: "128432644"
 连接到开发者社区非常简单。
 1. 从 <https://my.visualstudio.com/benefits> 登录到 Visual Studio 订阅门户
 0. 在“支持”部分中找到“开发者社区”，然后单击“获取帮助”。
+（也可以将浏览器直接指向 <https://developercommunity.visualstudio.com/>。）
 
    > [!div class="mx-imgBorder"]
    > ![“开发者社区”磁贴](_img/vs-developer-community/vs-developer-community-tile.png "单击“获取帮助”，可连接到开发者社区")

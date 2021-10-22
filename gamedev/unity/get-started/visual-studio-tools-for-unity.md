@@ -1,7 +1,6 @@
 ---
 title: Visual Studio Tools for Unity | Microsoft Docs
 description: 阅读有关 Visual Studio Tools for Unity 的概述，这是一个免费的 Visual Studio 扩展，可帮助你使用 Unity 开发跨平台游戏和应用。
-ms.custom: ''
 ms.date: 10/25/2019
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
@@ -12,12 +11,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: ee4e9e0dc9df4eb5decb3fc9c2afb0411e9cb75c
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: fb0d3499c0988e309845108b18973658d1515074
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93405374"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129967582"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity
 ![Visual Studio Tools for Unity](../media/hero.png)
