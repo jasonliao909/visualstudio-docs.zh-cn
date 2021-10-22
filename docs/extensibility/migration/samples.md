@@ -1,6 +1,6 @@
 ---
 title: 用于更新 Visual Studio 扩展的 ImageOptimizer 示例
-description: 通过示例了解如何更新 Visual Studio 扩展以与 Visual Studio 2022 预览版结合使用。
+description: 通过示例了解如何更新 Visual Studio 扩展以与 VVisual Studio 2022 RC 结合使用。
 ms.date: 06/08/2021
 ms.topic: sample
 author: leslierichardson95
@@ -11,12 +11,12 @@ monikerRange: vs-2022
 ms.workload:
 - vssdk
 feedback_system: GitHub
-ms.openlocfilehash: c309b6c27750d727abfccbaa9061e823aebc16ca
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 328b90f5cc333a86aa5a0b858827633bbd9e36d3
+ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122086464"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "130011310"
 ---
 # <a name="imageoptimizer---update-a-visual-studio-extension-step-by-step"></a>ImageOptimizer - 按步骤更新 Visual Studio 扩展
 

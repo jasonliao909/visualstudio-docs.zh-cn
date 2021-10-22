@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 5dc7f57e-883a-4cc1-a914-06245a8cb1ff
-ms.date: 02/19/2021
+ms.date: 10/14/2021
 ms.topic: how-to
 description: 了解如何设置 Azure 即用即付帐户。
-ms.openlocfilehash: a9b94313a82c075ede602233da00313b851b47a0
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 0eae5898e5ae09d887183021ee3ce03f79c59c07
+ms.sourcegitcommit: 6c847aedf0f943e253a4c2f0e4b516b953168bc7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128428183"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "130152127"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Azure 开发测试即用即付订阅
 与团队在云中协作。  创建多个开发和测试即用即付订阅，这样可与其他订阅者进行协作，并将团队与环境隔离。  可享受针对开发/测试的专享优惠小时费率，还可获得 Azure 上订阅软件的云使用权限。
@@ -28,7 +28,7 @@ ms.locfileid: "128428183"
 
 4. 为验证身份，请输入电话号码，然后选择“发送短信”或“呼叫我”。  输入收到的代码。  单击“验证代码”  。
 
-5. 接下来，请提供帐户的账单信息，然后单击“下一步”  。  （你购买的所有 Azure 服务都将以此信用卡付费。）
+5. 接下来，请提供帐户的账单信息，然后单击“下一步”。  （你购买的所有 Azure 服务都将以此信用卡付费。）
 
 6. 在“协议”部分，单击复选框接受订阅协议、套餐详情和隐私声明，然后单击“购买”  。
 
