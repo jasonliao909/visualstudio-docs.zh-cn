@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 11836eda644bfda367a456751c59e93a8d49af58
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 0a6ffca93edafcc9eff2778f7ba9c5d5be173483
+ms.sourcegitcommit: 0257750be796cc46e01cebd8976f637743d29417
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128426343"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "130290715"
 ---
 # <a name="what-are-solutions-and-projects-in-visual-studio"></a>Visual Studio 中的解决方案和项目有哪些？
 
@@ -114,5 +114,4 @@ Visual Studio 采用两种文件类型（.sln 和 .suo）来存储解决方案�
 - [管理项目和解决方案属性](managing-project-and-solution-properties.md)
 - [Visual Studio 中筛选的解决方案](filtered-solutions.md)
 - [移植、迁移和升级项目](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
-- [用于排除 Visual Studio IDE 错误的资源](./reference/resources-for-troubleshooting-integrated-development-environment-errors.md)
 - [项目和解决方案 (Visual Studio for Mac)](/visualstudio/mac/projects-and-solutions)

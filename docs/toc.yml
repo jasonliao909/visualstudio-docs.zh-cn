@@ -1450,16 +1450,9 @@
     - name: 支持生命周期和维护服务
       href: /visualstudio/productinfo/vs-servicing-vs/
     - name: 客户体验改善
-      items:
-        - name: 关于程序
-          displayName: Customer Experience Improvement Program
-          href: ide/visual-studio-experience-improvement-program.md
-        - name: 系统生成的日志
-          href: ide/diagnostic-data-collection.md
+      href: ide/visual-studio-experience-improvement-program.md
     - name: Visual Studio 中的连接体验
       href: ide/reference/connected-experiences.md
-    - name: 排查 IDE 错误
-      href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
 - name: 发送反馈
   items:
     - name: 功能建议

@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 9535d77469277f7b9133a8ee68950164c308193d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: dfd4c4677b122a93319363d60bf9cc848b40e3af
+ms.sourcegitcommit: efe1d737fd660cc9183177914c18b0fd4e39ba8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122143256"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "130212242"
 ---
 # <a name="incremental-builds"></a>增量生成
 
@@ -84,3 +84,4 @@ MSBuild 通过比较目标的 `Inputs` 和 `Outputs` 属性来确定是否执行
 ## <a name="see-also"></a>请参阅
 
 - [目标](../msbuild/msbuild-targets.md)
+- [如何：增量生成](../msbuild/how-to-build-incrementally.md)
