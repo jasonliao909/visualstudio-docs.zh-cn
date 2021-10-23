@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f649e6c58960dc1e6d32701e54b8f3b84217e025
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 6f91e85f0a7274692168e726983fa9ae09ba9333
+ms.sourcegitcommit: 0257750be796cc46e01cebd8976f637743d29417
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129967868"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "130290780"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>使用命令行参数安装 Visual Studio
 
@@ -88,7 +88,7 @@ ms.locfileid: "129967868"
 ::: moniker range=">=vs-2022"
 
 >[!TIP]
->如果以前下载过引导程序文件，并且想要验证其版本，则操作方法如下。 在 Windows 中，打开文件资源管理器，右键单击引导程序文件，依次选择“属性”、“详细信息”选项卡，然后查看“产品版本”号    。 若要将该编号与 Visual Studio 的版本匹配，请参阅 [Visual Studio 2022 版本](/visualstudio/releases/2022/release-notes-history)页。
+>如果以前下载过引导程序文件，并且想要验证其版本，则操作方法如下。 在 Windows 中，打开文件资源管理器，右键单击引导程序文件，依次选择“属性”、“详细信息”选项卡，然后查看“产品版本”号    。 若要将该编号与 Visual Studio 的版本匹配，请参阅 [Visual Studio 2022 版本](/visualstudio/releases/2022/release-notes)页。
 
 ::: moniker-end
 

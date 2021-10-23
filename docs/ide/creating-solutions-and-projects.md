@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: fba43be5a5b48e39df48d7d0316dfe650e0be2f8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 5d40a2d76b13517ba2fba7de807e141fe9846574
+ms.sourcegitcommit: 0257750be796cc46e01cebd8976f637743d29417
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122109443"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "130290676"
 ---
 # <a name="create-work-with-and-delete-visual-studio-projects-and-solutions"></a>创建、使用并删除 Visual Studio 项目和解决方案
 
@@ -158,4 +158,3 @@ ms.locfileid: "122109443"
 - [Visual Studio 中筛选的解决方案](filtered-solutions.md)
 - [GitHub 上的 Microsoft 开放源代码存储库](https://github.com/Microsoft)
 - [开发者代码示例](https://code.msdn.microsoft.com/)
-- [用于排除 Visual Studio IDE 错误的资源](./reference/resources-for-troubleshooting-integrated-development-environment-errors.md)
