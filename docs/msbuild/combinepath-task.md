@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 2461186e9ebe79cbdc1a5677f5fbf85baad11b6a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: d9466fef40d7b77ff2cd5e58f1fac11ea2207d08
+ms.sourcegitcommit: efe1d737fd660cc9183177914c18b0fd4e39ba8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122077655"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "130211969"
 ---
 # <a name="combinepath-task"></a>CombinePath 任务
 
@@ -44,13 +44,14 @@ ms.locfileid: "122077655"
 
  除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。
 
- 下面的示例演示如何使用 `CombinePath` 创建输出文件夹结构，通过结合连接到 `$(ReleaseDirectory)` 的根路径 `$(PublishRoot)` 和子文件夹列表 `$(LangDirectories)` 来构造属性 `$(OutputDirectory)`。
+ 下面的示例演示如何使用 `CombinePath` 创建输出文件夹结构，通过结合连接到 `$(ReleaseDirectory)` 的根路径 `$(PublishRoot)` 和子文件夹列表 `@(LangDirectories)` 来构造属性 `$(OutputDirectory)`。
 
  ```xml
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <PublishRoot>C:\Site1\Release</PublishRoot>
+    <PublishRoot>C:\Site1\</PublishRoot>
+    <ReleaseDirectory>Release\</ReleaseDirectory>
   </PropertyGroup>
 
   <ItemGroup>
@@ -58,7 +59,7 @@ ms.locfileid: "122077655"
   </ItemGroup>
 
   <Target Name="CreateOutputDirectories" AfterTargets="Build">
-    <CombinePath BasePath="$(PublishRoot)" Paths="@(LangDirectories)" >
+    <CombinePath BasePath="$(PublishRoot)$(ReleaseDirectory)" Paths="@(LangDirectories)" >
       <Output TaskParameter="CombinedPaths" ItemName="OutputDirectories"/>
     </CombinePath>
     <MakeDir Directories="@(OutputDirectories)" />
