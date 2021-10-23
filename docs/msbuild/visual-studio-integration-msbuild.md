@@ -3,7 +3,7 @@ title: Visual Studio 集成 (MSBuild)
 titleSuffix: ''
 description: 了解 Visual Studio 如何以 MSBuild 格式托管项目，即使它们是由不同的工具编写的，并且有自定义的生成过程。
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 10/20/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, reference resolution
@@ -22,12 +22,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c2ea012fecdc5d97c69da09969d0c29b4b93503
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: e060bdeb6c648ba1cd3e753eb431588ab5550a05
+ms.sourcegitcommit: efe1d737fd660cc9183177914c18b0fd4e39ba8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129970498"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "130208313"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 集成 (MSBuild)
 
@@ -202,8 +202,6 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="performance-shortcuts"></a>性能快捷方式
 
  如果使用 Visual Studio IDE 开始调试（通过选择 F5 或选择菜单栏中的“调试”   > “启动调试”  ）或生成项目（例如，通过选择“生成”   > “生成解决方案”  ），则生成过程将使用快速更新检查来提高性能。 在有些情况下，当自定义的生成创建轮流生成的文件时，快速更新检查无法正确标识更改的文件。 通过设置环境变量 `DISABLEFASTUPTODATECHECK=1`，需要更彻底更新检查的项目可以关闭快速检查。 或者，项目可在项目或项目导入的文件中将此变量设置为 MSBuild 属性。
-
- 对于 Visual Studio 中的常规生成，将不适用快速更新检查，项目的生成就像在命令提示符处调用生成一样。
 
 ## <a name="see-also"></a>请参阅
 

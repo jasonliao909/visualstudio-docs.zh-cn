@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.workload:
 - azure
 next_page: app.md
-ms.openlocfilehash: a3ab7377f17db208347f830162d536fbe3934b9e
-ms.sourcegitcommit: f930bc28bdb0ba01d6f7cb48f229afecfa0c90cd
+ms.openlocfilehash: c4b1bd4a05c7c8a95a457c18be248cb40a0f94a2
+ms.sourcegitcommit: efe1d737fd660cc9183177914c18b0fd4e39ba8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "122334475"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "130211449"
 ---
 # <a name="tutorial-get-started-with-docker"></a>教程：Docker 入门
 
@@ -26,7 +26,7 @@ ms.locfileid: "122334475"
 
 ## <a name="prerequisites"></a>必备条件
 
-- [Visual Studio Code](https://code.microsoft.com/download)
+- [Visual Studio Code](https://code.visualstudio.com/download)
 - Docker Desktop（[Windows](https://docs.docker.com/docker-for-windows/install/) 或 [Mac](https://docs.docker.com/docker-for-mac/install/) 版）。
 
 ## <a name="start-the-tutorial"></a>开始教程

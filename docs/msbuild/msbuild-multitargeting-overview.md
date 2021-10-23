@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: a71c3c774e512d012b1f1bbd99a8e00aa1304cda
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: c137904db1e8b4caaeb71ee4a787122648554e0f
+ms.sourcegitcommit: efe1d737fd660cc9183177914c18b0fd4e39ba8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122136841"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "130208339"
 ---
 # <a name="msbuild-multitargeting-overview"></a>MSBuild 多定向概述
 
@@ -51,7 +51,7 @@ ms.locfileid: "122136841"
 
 ## <a name="configure-targets-and-tasks"></a>配置目标和任务
 
- 通过 MSBuild 可配置要在进程外运行的 MSBuild 目标和任务，这样即可面向与当前运行所在的上下文有很大不同的上下文。  例如，当开发计算机在具有 .NET Framework 4.5 的 64 位平台上运行时，可面向 32 位 NET Framework 2.0 应用程序。 有关详细信息，请参阅[配置目标和任务](../msbuild/configuring-targets-and-tasks.md)。
+ 通过 MSBuild 可配置要在进程外运行的 MSBuild 目标和任务，这样即可面向与当前运行所在的上下文有很大不同的上下文。  例如，当开发计算机在具有 .NET Framework 4.5 的 64 位平台上运行时，可面向 32 位 NET Framework 2.0 应用程序。 有关详细信息，请参阅[配置目标和任务](../msbuild/configure-tasks.md)。
 
 ## <a name="troubleshooting"></a>疑难解答
 
