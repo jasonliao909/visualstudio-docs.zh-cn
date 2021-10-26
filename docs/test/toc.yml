@@ -54,13 +54,15 @@
       href: run-a-unit-test-as-a-64-bit-process.md
     - name: 使用 .runsettings 文件配置单元测试
       href: configure-unit-tests-by-using-a-dot-runsettings-file.md
+    - name: 使用热重载的测试执行
+      href: test-execution-with-hot-reload.md
     - name: 编写托管代码的单元测试
       items:
         - name: 演练：创建并运行托管代码的单元测试
           href: walkthrough-creating-and-running-unit-tests-for-managed-code.md
         - name: 演练：测试驱动开发
           href: quick-start-test-driven-development-with-test-explorer.md
-        - name: 在单元测试中使用 MSTest API
+        - name: 在单元测试中使用 MSTest 框架
           href: using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md
         - name: 使用 assert 类
           href: using-the-assert-classes.md

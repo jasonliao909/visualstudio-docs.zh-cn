@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d1dec974c9271c12ab0780233a31361c4e7d359
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 6460df49b8d4588d7dd2204ea85846ebfecf0c86
+ms.sourcegitcommit: efe1d737fd660cc9183177914c18b0fd4e39ba8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122077174"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "130212204"
 ---
 # <a name="msbuild-properties"></a>MSBuild 属性
 
@@ -88,6 +88,9 @@ $(registry:Hive\MyKey\MySubKey)
   </VisualStudioWebBrowserHomePage>
 <PropertyGroup>
 ```
+
+> [!WARNING]
+> 在 .NET SDK 版本的 MSBuild (`dotnet build`) 中，不支持注册表属性。
 
 ## <a name="global-properties"></a>全局属性
 

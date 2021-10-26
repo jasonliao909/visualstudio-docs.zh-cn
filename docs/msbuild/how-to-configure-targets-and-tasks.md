@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e4da8eb39af573201ce4a7c88ec85d5775e48bf
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 724e187d00c977feada2412e9e3445f2c6db1ea6
+ms.sourcegitcommit: efe1d737fd660cc9183177914c18b0fd4e39ba8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122069233"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "130212208"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>如何：配置目标和任务
 
@@ -42,7 +42,7 @@ ms.locfileid: "122069233"
     AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v3.5.dll" />
 ```
 
-还可以使用 `MSBuildRuntime` 和 `MSBuildArchitecture` 参数来设置单个任务的目标上下文。
+还可以使用 `MSBuildRuntime` 和 `MSBuildArchitecture` 参数来设置单个任务调用的目标上下文。
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -116,5 +116,5 @@ ms.locfileid: "122069233"
 
 ## <a name="see-also"></a>请参阅
 
-- [配置目标和任务](../msbuild/configuring-targets-and-tasks.md)
+- [配置目标和任务](../msbuild/configure-tasks.md)
 - [UsingTask 元素](../msbuild/usingtask-element-msbuild.md)

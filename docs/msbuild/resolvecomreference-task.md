@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 17e2db139df6ffd09efb43edb2cdb4e358231a1c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: d621646ff5408cfa03d070f11fab697f0d983ed5
+ms.sourcegitcommit: efe1d737fd660cc9183177914c18b0fd4e39ba8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122108390"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "130211930"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference 任务
 
@@ -67,7 +67,7 @@ ms.locfileid: "122108390"
 |`VersionMinor`|所需的项元数据。<br /><br /> 类型库的次版本。 如果未指定此项元数据，则任务失败。|
 |`EmbedInteropTypes`|可选的 `Boolean` 元数据。<br /><br />  如果为 `true`，则将此引用中的互操作类型直接嵌入到程序集中，而不是生成互操作 DLL。|
 |`LocaleIdentifier`|可选项元数据。<br /><br /> 类型库的区域设置标识符（或 LCID）。 被指定为 32 位值，可标识用户、区域或应用程序首选的人类语言。 如果未指定此项元数据，任务将使用默认区域设置标识符“0”。|
-|`WrapperTool`|可选项元数据。<br /><br /> 指定用于生成此类型库的程序集包装器的包装工具。 如果未指定此项元数据，任务将使用默认包装工具“tlbimp”。 可供类型库使用且区分大小写的选项有：<br /><br /> -   `Primary`：如果希望使用已为 COM 组件生成的主互操作程序集，请使用此包装工具。 使用此包装工具时，请勿指定包装器输出目录，否则任务会失败。<br />-   `TLBImp`：如果希望为 COM 组件生成互操作程序集，请使用此包装工具。<br />-   `AXImp`：如果希望为 ActiveX 控件生成互操作程序集，请使用此包装工具。|
+|`WrapperTool`|可选项元数据。<br /><br /> 指定用于生成此类型库的程序集包装器的包装工具。 如果未指定此项元数据，任务将使用默认包装工具“tlbimp”。 可供类型库使用且区分大小写的选项有：<br /><br /> -   `Primary`：如果希望使用已为 COM 组件生成的主互操作程序集，请使用此包装工具。 使用此包装工具时，请勿指定包装器输出目录，否则任务会失败。<br />-   `TLBImp`：如果希望为 COM 组件生成互操作程序集，请使用此包装工具。<br /> -   `PrimaryOrTLBImp`：如果不确定 `Primary` 或 `TLBImp` 是否合适，则使用此包装器工具。 首先应用 `Primary` 逻辑，然后应用 `TLBImp`。<br />-   `AXImp`：如果希望为 ActiveX 控件生成互操作程序集，请使用此包装工具。|
 
 ## <a name="typelibfiles-item-metadata"></a>TypeLibFiles 项元数据
 

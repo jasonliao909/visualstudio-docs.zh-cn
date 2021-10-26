@@ -3,15 +3,15 @@ title: 将 Visual Studio 订阅分配给多个用户 | Microsoft Docs
 author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
-ms.date: 03/19/2021
+ms.date: 10/21/2021
 ms.topic: conceptual
 description: 了解管理员如何一次分配多个订阅。
-ms.openlocfilehash: 813c2caecb5e54ba0ed0a4f4196be84105aa3722
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: df25e417910a2916c864e9b00b92dd61a567e08c
+ms.sourcegitcommit: efe1d737fd660cc9183177914c18b0fd4e39ba8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "127833014"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "130211790"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>将订阅分配给多个用户
 你可以在订阅管理门户中一次添加一个多个用户，也可以采用大用户组形式添加。  要添加各个用户，请参阅[添加单个用户](assign-license.md)。
@@ -81,7 +81,7 @@ ms.locfileid: "127833014"
 > [!IMPORTANT]
 >
 > 以下限制适用于使用 Azure AD 组添加订阅者的情况：
-> - 在最初将组添加到管理门户时，管理员必须是 AAD 租户的成员。  添加组后，对组成员身份进行更改不需要管理员参与。 
+> - 在最初将组添加到管理门户时，管理员必须是 Azure AD 租户的成员。  添加组后，对组成员身份进行更改不需要管理员参与。 
 > - 组必须至少包含一个成员。  不支持空组。
 > - 所有用户都必须处于组的顶层。  不支持嵌套组。
 > - 仅支持受信任协议。 （只有能够“过度分配”订阅的协议才是受信任的。）
@@ -102,7 +102,7 @@ ms.locfileid: "127833014"
    > [!div class="mx-imgBorder"]
    > ![使用 Azure AD 选择批量添加](_img/assign-license-bulk/bulk-add-aad.png "选择“使用 Azure AD 功能批量添加”以从 Azure Active Directory 组拉取订阅者。")
 
-4. 开始输入要添加到表单域的 Azure AD 组的名称。 这将搜索组织内可用的 Azure AD 组。 
+4. 右侧将显示一个浮出控件窗口。  开始输入要添加到表单域的 Azure AD 组的名称。 这将搜索组织内可用的 Azure AD 组。 
 
 5. 选择组后，该字段将自动填充组名。 在添加用户之前，可以选择查看该组中的用户。 接下来，可以选择组的订阅级别、下载权限和通信首选项。 可以根据需要在引用字段中添加详细信息。 
 

@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: ab12aef7ad75a3f5dd877015f2a0d5afb8451a4c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 43dc7f5841e493eae7628da6014cc3100a869894
+ms.sourcegitcommit: efe1d737fd660cc9183177914c18b0fd4e39ba8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122143100"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "130212177"
 ---
 # <a name="msbuild-special-characters"></a>MSBuild 特殊字符
 
@@ -38,6 +38,8 @@ MSBuild 保留一些专供在特定上下文中使用的字符。 如果要在�
 |$|%24|引用属性|
 |@|%40|引用项列表|
 |'|%27|条件和其他表达式|
+|(|%28|多次使用|
+|)|%29|多次使用|
 |;|%3B|列表分隔符|
 |?|%3F|用于 `Include` 和 `Exclude` 特性中的文件名的通配符|
 |*|%2A|用于 `Include` 和 `Exclude` 特性中的文件名的通配符|

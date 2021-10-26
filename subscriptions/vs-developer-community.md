@@ -7,12 +7,12 @@ ms.assetid: 44a790d1-f37e-4be0-9023-af1b3fdfcd35
 ms.date: 10/18/2021
 ms.topic: conceptual
 description: 了解有关所选 Visual Studio 订阅中包含的开发者社区支持权益。
-ms.openlocfilehash: 57dab07086eed8ad42ef118b4e0db86842929c8f
-ms.sourcegitcommit: 6c847aedf0f943e253a4c2f0e4b516b953168bc7
+ms.openlocfilehash: 0da591530222d73a5b28f2eed60f779713b2488a
+ms.sourcegitcommit: efe1d737fd660cc9183177914c18b0fd4e39ba8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "130152084"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "130211696"
 ---
 # <a name="developer-community-support-forum-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的开发者社区支持论坛
 在开发者社区论坛中发布问题、查找答案并分享知识。
@@ -38,24 +38,7 @@ ms.locfileid: "130152084"
 
 
 ## <a name="eligibility"></a>资格
-Azure 社区权益的可用性取决于订阅级别，如下所示：
-
-|                                          订阅级别                                           |     信道      |    好处    | 是否续订？ |
-|-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
-|                           Visual Studio Enterprise（标准）、NFR<sup>1</sup>                            | VL、Azure、零售 |   可用    |    是     |
-|                           包含 GitHub Enterprise 的 Visual Studio Enterprise 订阅                           | VL、Azure、零售 |   可用    |    是     |
-|                          Visual Studio Professional（标准）                          | VL、Azure、零售 |   可用    |    是     |
-|                          包含 GitHub Enterprise 的 Visual Studio Professional 订阅                          | VL、Azure、零售 |   可用    |    是     |
-|                              Visual Studio Test Professional（标准）                               |    VL、零售     |   可用    |    是     |
-|                                       MSDN 平台（标准）                                       |    VL、零售     |   可用    |    是     |
-| Visual Studio Enterprise（月度云）、Visual Studio Professional（月度云）|        全部        | 不可用 |     否     |
-
-<sup>1</sup>  *包括：  不得转售 (NFR)、Microsoft FTE、最有价值专家 (MVP)、区域总监 (RD)、Visual Studio 行业合作伙伴 (VSIP)、BizSpark、Imagine、Microsoft 认证培训师 (MCT)。不包括：NFR Basic*
-
-> [!NOTE]
-> Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 建议新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)，查看各 Visual Studio 购买选项。
-
-无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。
+开发者社区可免费使用。  不需要订阅。 
 
 ## <a name="support-resources"></a>支持资源
 - 需要有关 Visual Studio 订阅的销售、订阅、帐户和计费方面的帮助？  请联系 [Visual Studio 订阅支持](https://my.visualstudio.com/gethelp)。

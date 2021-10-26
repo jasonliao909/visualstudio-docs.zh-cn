@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 1299810fa015f9e54d418209e13d366ff47bfb33
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: be24337741ef3efede47b76fd1bb3a618ce358c1
+ms.sourcegitcommit: efe1d737fd660cc9183177914c18b0fd4e39ba8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122048383"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "130211488"
 ---
 # <a name="use-visual-studio-search"></a>使用 Visual Studio 搜索
 
@@ -66,6 +66,14 @@ Visual Studio 搜索还会在解决方案项中搜索文件名、代码、方法
 你还可以进行“驼峰大小写”搜索。 在以下屏幕截图中，针对 FSS 的搜索过程找到了 FolderSizeScanner 文件、类和方法  ：
 
 :::image type="content" source="media/visual-studio-search-camel.png" alt-text="使用 Visual Studio 搜索进行驼峰搜索":::
+
+## <a name="keyboard-shortcuts"></a>键盘快捷方式
+
+搜索结果包括“全部”、“代码”、“Visual Studio”的选项卡。 通过对不同类型的搜索使用以下键盘快捷方式，可以节省时间：
+
+- Ctrl + Q、Ctrl + T（文件、类型和成员）
+- Ctrl + Q、Ctrl  + M（Visual Studio 菜单、选项、组件和模板）
+- Ctrl + Q、Ctrl + E（转到“全部”选项卡）
 
 ## <a name="see-also"></a>请参阅
 

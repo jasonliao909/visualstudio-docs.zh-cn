@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: cd651db796bcf4e6d626a6cc348a25f5a7f80794
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 3b26c84a0db97299ad7a5c0602551ba930722d00
+ms.sourcegitcommit: efe1d737fd660cc9183177914c18b0fd4e39ba8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122143451"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "130212229"
 ---
 # <a name="replace-in-files"></a>在文件中替换
 
@@ -31,9 +31,19 @@ ms.locfileid: "122143451"
 > [!NOTE]
 > 显示的对话框和菜单命令可能与“帮助”中的描述不同，具体取决于现用的设置或版本。 若要更改设置，例如“常规”或“Visual C++”设置，请选择“工具” > “导入和导出设置”，再选择“重置所有设置”。
 
-可以使用以下任一方法在“查找和替换”窗口中显示“在文件中替换”。
+可以使用以下任一方法在“查找和替换”窗口中显示“在文件中替换”，或使用 Ctrl + Shift + H。
 
 ## <a name="to-display-replace-in-files"></a>显示“在文件中替换”
+
+::: moniker range=">=vs-2019"
+
+1. 按 Ctrl + Q，然后在屏幕顶部的搜索框中输入“替换”。
+
+1. 在结果列表中选择“在文件中替换”。
+
+或
+
+::: moniker-end
 
 1. 在“编辑”菜单上展开“查找和替换”。
 
@@ -43,16 +53,37 @@ ms.locfileid: "122143451"
 
    如果已经打开“查找和替换”窗口，则在工具栏上选择“在文件中替换”。
 
+:::moniker range="vs-2017"
+
 ## <a name="find-what"></a>查找内容
+
+:::moniker-end
+
+:::moniker range=">=vs-2019"
+
+## <a name="find-textbox"></a>查找文本框
+
+::: moniker-end
 
 若要搜索一个新的文本字符串或表达式，请在框中进行指定。 若要搜索最近搜索的 20 条字符串中的任意一条，请打开下拉列表并选择字符串。 若要在搜索字符串中使用一个或多个正则表达式，请选择相邻的“表达式生成器”按钮。 有关详细信息，请参阅[在 Visual Studio 中使用正则表达式](../ide/using-regular-expressions-in-visual-studio.md)。
 
 > [!NOTE]
 > 只有在“查找选项”下选择了“使用正则表达式”后，“表达式生成器”按钮才会启用。
 
+::: moniker range="vs-2017"
+
 ## <a name="replace-with"></a>替换为
 
 若要将“查找内容”框中的字符串实例替换为其他字符串，请在“替换为”框中输入替换字符串。 若要删除“查找内容”框中的字符串实例，则保留该字段为空。 打开列表，显示最近搜索的 20 个字符串。 若要在替换字符串中使用一个或多个正则表达式，请选择相邻的“表达式生成器”按钮。 有关详细信息，请参阅[在 Visual Studio 中使用正则表达式](../ide/using-regular-expressions-in-visual-studio.md)。
+
+::: moniker-end
+::: moniker range=">=vs-2019"
+
+## <a name="replace-textbox"></a>替换文本框
+
+若要将“查找”文本框中的字符串实例替换为其他字符串，请在“替换”文本框中输入替换字符串。 若要删除“查找”文本框中的字符串实例，则保留此字段为空。 打开列表，显示最近搜索的 20 个字符串。 若要在替换字符串中使用一个或多个正则表达式，请选择相邻的“表达式生成器”按钮。 有关详细信息，请参阅[在 Visual Studio 中使用正则表达式](../ide/using-regular-expressions-in-visual-studio.md)。
+
+::: moniker-end
 
 ## <a name="look-in"></a>查找范围
 
@@ -67,15 +98,20 @@ ms.locfileid: "122143451"
 
 **匹配大小写**
 
-选中时，“查找结果”窗口将仅显示内容和大小写均匹配的“查找内容”字符串实例。 例如，选中“区分大小写”后搜索“MyObject”会返回“MyObject”，而不会返回“myobject”或“MYOBJECT”。
+选中时，“查找结果”窗口将仅显示内容和大小写均匹配的搜索字符串实例。 例如，选中“区分大小写”后搜索“MyObject”会返回“MyObject”，而不会返回“myobject”或“MYOBJECT”。
 
 **全字匹配**
 
-选中时，“查找结果”窗口将仅显示全字匹配的“查找内容”字符串实例。 例如，搜索“MyObject”会返回“MyObject”，而不会返回“CMyObject”或“MyObjectC”。
+选中时，“查找结果”窗口将仅显示全字匹配的搜索字符串实例。 例如，搜索“MyObject”会返回“MyObject”，而不会返回“CMyObject”或“MyObjectC”。
 
 **使用正则表达式**
 
+:::moniker range="vs-2017"
 选中此复选框后，可以使用特殊表示法在“查找内容”或“替换为”文本框中定义文本模式。 有关这些表示法的列表，请参阅[在 Visual Studio 中使用正则表达式](../ide/using-regular-expressions-in-visual-studio.md)。
+:::moniker-end
+:::moniker range=">=vs-2019"
+选中此复选框后，可以使用特殊表示法在“查找”或“替换”文本框中定义文本模式。 有关这些表示法的列表，请参阅[在 Visual Studio 中使用正则表达式](../ide/using-regular-expressions-in-visual-studio.md)。
+:::moniker-end
 
 **查找以下文件类型**
 
@@ -103,6 +139,11 @@ ms.locfileid: "122143451"
 
 > [!CAUTION]
 > 只能对保持打开状态以供编辑的文件使用 **“撤消”** 选项。 如果未选择此选项，则尚未打开以供编辑的文件继续处于关闭状态，并且在这些文件中 **“撤消”** 选项不可用。
+
+::: moniker range=">=vs-2022"
+> [!NOTE]
+> 从 Visual Studio 2022 开始，搜索性能得到了优化，在显示最终结果之前，会显示部分结果，如来自预索引文件的结果。 不过，在执行替换操作时，这种性能优势不适用，因为替换操作只有在返回完整搜索结果后才会开始。
+::: moniker-end
 
 ## <a name="see-also"></a>另请参阅
 
