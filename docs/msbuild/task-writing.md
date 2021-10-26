@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: cb9d35c236210b9fa7eb1ceacfc5aa205b49ee70
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: da50fb9934439d309235a5230cf2e60fba08ad1d
+ms.sourcegitcommit: efe1d737fd660cc9183177914c18b0fd4e39ba8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122142723"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "130211436"
 ---
 # <a name="task-writing"></a>任务写入
 
@@ -36,7 +36,7 @@ ms.locfileid: "122142723"
 
 - 从 Microsoft.Build.Utilities.dll 程序集中定义的帮助程序类 <xref:Microsoft.Build.Utilities.Task> 中派生类。 任务实现 ITask，并提供了一些 ITask 成员的默认实现。 此外，日志记录更为简单。
 
-在这两种情况下，都必须向类添加一个名为 `Execute` 的方法，也就是在任务运行时调用的方法。 该方法不带任何参数并返回一个 `Boolean` 值：如果任务成功，则返回 `true`；如果失败，则返回 `false`。 以下示例显示一个不执行任何操作并返回 `true` 的任务。
+在这两种情况下，都必须向类添加一个名为 `Execute` 的方法，也就是在任务运行时调用的方法。 该方法不带任何参数并返回一个 `Boolean` 值：如果任务成功，则返回 `true`；如果失败，则返回 `false`。 以下示例展示了一个不执行任何操作并成功完成（返回 `true`）的任务。
 
 ```csharp
 using System;
@@ -98,12 +98,14 @@ namespace MyTasks
 
 ## <a name="register-tasks"></a>注册任务
 
- 如果项目将要运行任务，MSBuild 必须知道如何找到包含任务类的程序集。 任务是使用 [UsingTask 元素 (MSBuild)](../msbuild/usingtask-element-msbuild.md) 注册的。
+ 如果项目将要运行任务，MSBuild 必须知道如何找到并运行包含任务类的程序集。 任务是使用 [UsingTask 元素 (MSBuild)](../msbuild/usingtask-element-msbuild.md) 注册的。
 
- MSBuild 文件 Microsoft.Common.Task 是一个包含 `UsingTask` 元素列表的项目文件，这些元素注册随 MSBuild 一起提供的所有任务。 生成每个项目时会自动包括该文件。 如果在 Microsoft.Common.Tasks 中注册的任务也在当前项目文件中进行了注册，则当前项目文件具有优先权；也就是说，可以使用自己的同名任务重写默认任务。
+如果任务具有特定于运行时的依赖项，则必须通过[在其 UsingTask 中指示 `Architecture` 和/或 `Runtime`](../msbuild/configure-tasks.md) 来通知 MSBuild 应在特定环境中运行任务。
+
+MSBuild 文件 Microsoft.Common.tasks 是一个包含 `UsingTask` 元素列表的项目文件，这些元素注册[随 MSBuild 一起提供的所有任务](../msbuild/msbuild-task-reference.md)。 生成任何项目时会自动包括该文件。 如果在 Microsoft.Common.tasks 中注册的任务也在当前项目文件中进行了注册，则当前项目文件具有优先权；也就是说，可以使用自己的同名任务重写默认任务。
 
 > [!TIP]
-> 通过查看 Microsoft.Common.Tasks 的内容，可以看到随 MSBuild 一起提供的任务列表。
+> 通过查看 Microsoft.Common.tasks 的内容，可以看到随 MSBuild 的特定版本一起提供的任务列表。
 
 ## <a name="raise-events-from-a-task"></a>从任务引发事件
 

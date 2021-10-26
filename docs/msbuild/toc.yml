@@ -136,10 +136,10 @@
               href: msbuild-target-framework-and-target-platform.md
             - name: 在设计时解析程序集
               href: resolving-assemblies-at-design-time.md
-            - name: 目标和任务配置
+            - name: 任务配置
               items:
                 - name: 概述
-                  href: configuring-targets-and-tasks.md
+                  href: configure-tasks.md
                 - name: 配置目标和任务
                   href: how-to-configure-targets-and-tasks.md
             - name: .NET Framework 目标错误疑难解答
@@ -542,6 +542,10 @@
               href: errors/msb3884.md
             - name: MSB3971
               href: errors/msb3971.md
+            - name: MSB4018
+              href: errors/msb4018.md
+            - name: MSB4062
+              href: errors/msb4062.md
             - name: MSB4086
               href: errors/msb4086.md
             - name: MSB4094

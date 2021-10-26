@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fdd31e296050585044186e31158f893a45b095b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: d97ac42b6df32fb045ca846295d1dfeea9ef166a
+ms.sourcegitcommit: 0257750be796cc46e01cebd8976f637743d29417
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122040055"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "130290689"
 ---
 # <a name="walkthrough-use-msbuild"></a>演练：使用 MSBuild
 
@@ -39,14 +39,23 @@ MSBuild 是 Microsoft 和 Visual Studio 的生成平台。 本演练介绍 MSBui
 如果具有 Visual Studio，表示已经安装了 MSBuild。 若要在没有 Visual Studio 的系统上安装 MSBuild 15，请转到 [Visual Studio 早期版本下载](https://visualstudio.microsoft.com/vs/older-downloads/)，展开“Visual Studio 2017”并选择“下载”按钮 。 如果有 Visual Studio 订阅，请登录并找到下载 Visual Studio 2017 生成工具最新版本的链接。 如果没有 Visual Studio 订阅，仍然可以安装生成工具的最新版本。 在此页上，使用版本选择器切换到 2019 版本的页面，然后按照安装说明进行操作。
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 如果具有 Visual Studio，表示已经安装了 MSBuild。 在 Visual Studio 2019 及更高版本中，它安装在 Visual Studio 安装文件夹下。 对于 Windows 10 上的典型默认安装，MSBuild.exe 位于 MSBuild\Current\Bin 中的安装文件夹下。
-
-若要在没有 Visual Studio 的系统上安装 MSBuild，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/)并向下滚动到“所有下载”，然后展开“Visual Studio 2019 工具” 。 安装 Visual Studio 2019 生成工具（包含 MSBuild），或安装 [.NET Core SDK](/dotnet/core/sdk#acquiring-the-net-core-sdk)。
 
 在安装程序中，确保选择要为工作负载使用的 MSBuild 工具，然后选择“安装”。
 
 ![安装 MSBuild](media/walkthrough-using-msbuild/installation-msbuild-tools.png)
+
+若要在没有 Visual Studio 的系统上安装 MSBuild，请转到 [Visual Studio 2019 生成工具](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019)，或安装 [.NET SDK](/dotnet/core/sdk#acquiring-the-net-sdk)。
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+如果具有 Visual Studio，表示已经安装了 MSBuild。 在 Visual Studio 2022 中，它安装在 Visual Studio 安装文件夹下。 对于 Windows 10 上的典型默认安装，MSBuild.exe 位于 MSBuild\Current\Bin 中的安装文件夹下。
+
+在 Visual Studio 安装程序中，导航到“各个组件”，并找到“MSBuild”。 当你选择安装任何其他工作负荷时，会自动选择它。
+
+若要在没有 Visual Studio 的系统上安装 MSBuild，请转到 [Visual Studio 2022 RC 生成工具](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022-rc)。 另一种安装 MSBuild 的方式是安装 [.NET SDK](/dotnet/core/sdk#acquiring-the-net-sdk)。
 
 ::: moniker-end
 

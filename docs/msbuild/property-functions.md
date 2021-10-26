@@ -2,7 +2,7 @@
 title: 属性函数 | Microsoft Docs
 description: 了解如何使用属性函数，它们是对在 MSBuild 属性定义中出现的 .NET Framework 方法的调用。
 ms.custom: SEO-VS-2020
-ms.date: 02/21/2017
+ms.date: 10/20/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, property functions
@@ -13,16 +13,16 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: d45b3b46558abf4d16d651d97af1bc722e908a7f
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 0ccca084f783e9f436ba3f701501c7c3fbf36b2b
+ms.sourcegitcommit: efe1d737fd660cc9183177914c18b0fd4e39ba8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128429696"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "130208326"
 ---
 # <a name="property-functions"></a>属性函数
 
-属性函数是对在 MSBuild 属性定义中出现的 .NET Framework 方法的调用。 与任务不同，属性函数可在目标外部使用，并在任何目标运行之前进行计算。
+属性函数是对在 MSBuild 属性定义中出现的 .NET Framework 方法的调用。 与任务不同，属性函数可在目标外部使用。 每当扩展属性或项时，就会计算属性函数。对于任何目标外部的属性和项，是在任何目标运行之前进行，对于目标内部的属性组和项组，是在计算目标时进行。
 
 可以在生成脚本中读取系统时间、比较字符串、匹配正则表达式及执行其他操作，而无需使用 MSBuild 任务。 MSBuild 将尝试将字符串转换为数字、将数字转换为字符串，并根据需要进行其他转换。
 
@@ -284,6 +284,9 @@ $([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio
 $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(SampleValue)`))             // parens in name and value
 ```
 
+> [!WARNING]
+> 在 .NET SDK 版本的 MSBuild (`dotnet build`) 中，不支持此函数。
+
 ## <a name="msbuild-getregistryvaluefromview"></a>MSBuild GetRegistryValueFromView
 
 MSBuild `GetRegistryValueFromView` 属性函数在给定了注册表项、值以及一个或多个经过排序的注册表视图的情况下，获取系统注册表数据。 该属性函数将按顺序在每个注册表视图中搜索注册表项和值，直至找到它们。
@@ -313,6 +316,9 @@ $([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Mic
 ```
 
 首先在 64 位注册表视图中查找，然后在 32 位注册表视图中查找，以获取 ReferenceAssemblies 项的 SLRuntimeInstallPath 数据。
+
+> [!WARNING]
+> 在 .NET SDK 版本的 MSBuild (`dotnet build`) 中，不支持此函数。
 
 ## <a name="msbuild-makerelative"></a>MSBuild MakeRelative
 

@@ -21,18 +21,24 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bc709578539ff299647bae583f8370a3ba1b8d8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 65d579f7a6445d1b4879821f8797a00222f04329
+ms.sourcegitcommit: efe1d737fd660cc9183177914c18b0fd4e39ba8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122101825"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "130211726"
 ---
 # <a name="find-in-files"></a>在文件中查找
 
 “在文件中查找”可用于搜索指定的一组文件。 Visual Studio 找到的匹配项在 IDE 中的“查找结果”窗口中列出。 结果的显示方式取决于在你“查找和替换”对话框的“在文件中查找”选项卡上选择的选项。 
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=vs-2022"
+
+:::image type="content" source="media/vs-2022/find-files.png" alt-text="Visual Studio 2022 中“查找和替换”对话框的屏幕截图，其中打开了“在文件中查找”选项卡。":::
+
+::: moniker-end
+
+::: moniker range="vs-2019"
 
 :::image type="content" source="media/find-files-vs2019.png" alt-text="Visual Studio 2019 中“查找和替换”对话框的屏幕截图，其中打开了“在文件中查找”选项卡。":::
 
@@ -51,6 +57,15 @@ ms.locfileid: "122101825"
 
 使用以下步骤打开“查找和替换”对话框，或按 Ctrl +Shift+F。
 
+:::moniker range="<=vs-2019"
+
+1. 按 Ctrl + Q，然后在屏幕顶部的搜索框中输入“查找”。
+
+1. 在结果列表中选择“在文件中查找”。
+
+或
+:::moniker-end
+
 1. 在菜单栏中，选择“编辑” > “查找和替换” 。
 
 1. 从弹出菜单中选择“在文件中查找”。
@@ -62,13 +77,55 @@ ms.locfileid: "122101825"
 
 ::: moniker range="vs-2017"
 
-## <a name="find-what"></a>查找内容：
+## <a name="find-what"></a>查找内容
 
 若要搜索一个新的文本字符串或表达式，请在“查找内容”框中进行指定。
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=vs-2022"
+
+## <a name="search-box"></a>搜索框
+
+若要搜索一个新的文本字符串或表达式，请在“搜索”框中进行指定。 若要搜索最近搜索的 20 条字符串中的任意一条，请打开下拉列表并选择字符串。
+
+可以选择或清除以下一个或多个选项：
+
+- 匹配大小写 - 使用此选项确保搜索区分大小写。
+- 全字匹配 - 使用此选项确保搜索仅返回整个字词匹配项。
+- 使用正则表达式 - 使用此选项，可以在“搜索”框中（或“替换”文本框中）使用特殊表示法来定义要匹配的文本模式。 有关这些表示法的列表，请参阅[在 Visual Studio 中使用正则表达式](../ide/using-regular-expressions-in-visual-studio.md)。
+
+    > [!Important]
+    > 仅当选中“使用正则表达式”复选框后，“表达式生成器”按钮才会显示在“搜索”框旁边。 
+    >
+    > :::image type="content" source="media/vs-2022/find-files-expression-builder.png" alt-text="“在文件中查找”对话框的屏幕截图，其中包含“表达式生成器”按钮和“使用正则表达式”复选框，其周围带有边框。":::
+
+## <a name="look-in"></a>查找范围
+
+从“查找范围”下拉列表中选择的选项确定“在文件中查找”是搜索整个工作区、整个解决方案、当前项目、当前目录、所有打开的文档还是当前文档。 
+
+还可使用相邻的“浏览(...)”按钮找到要搜索的位置。 更好的是，如果你已经指定了目录，此按钮将追加新目录，而不是替换它。 例如，如果你的“查找方式”值为“.\Code”，可以单击“浏览(...)”按钮并导航到名为“共享代码”的文件夹。 “浏览(...)”框现在将显示“.\Code;.\Shared Code”，在执行 Find 命令时，它将搜索这两个文件夹。
+
+若要优化搜索，可以选择或清除以下选项：
+
+- 包含外部项 - 使用此选项可包含外部项，比如你可能会引用但不属于解决方案的一部分的“windows.h”等文件。
+- 包含杂项文件 - 使用此选项可包含杂项文件，比如你已打开但不属于解决方案的一部分的一些文件。
+
+## <a name="file-types"></a>文件类型
+
+“文件类型”选项指示要在“查找范围”目录中搜索的文件类型。  选择列表中的任意项以输入预配置的搜索字符串，该字符串将查找那些特定类型的文件。
+
+:::image type="content" source="media/vs-2022/find-file-types.png" alt-text="“在文件中查找”对话框“文件类型”部分的屏幕截图。":::
+
+你可以搜索多个文件类型，用分号 (`;`) 进行分隔。 还可以在任意路径或文件类型前面加上感叹号 (`!`) 来排除文件夹和文件。
+
+### <a name="append-results"></a>附加结果
+
+使用此选项将当前搜索的结果追加到上次的搜索结果中。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
 
 ## <a name="search-box"></a>搜索框
 
@@ -119,7 +176,7 @@ ms.locfileid: "122101825"
 > [!NOTE]
 > 只有在“查找选项”下选择了“使用正则表达式”后，才会启用“表达式生成器”按钮  。
 
-## <a name="look-in"></a>查找范围:
+## <a name="look-in"></a>查找范围
 
 从“查找范围”下拉列表中选择的选项将确定“在文件中查找”是仅在当前活动文件中搜索，还是在特定文件夹内存储的所有文件中搜索。
 
@@ -190,13 +247,40 @@ ms.locfileid: "122101825"
 
 ::: moniker-end
 
-## <a name="multiple-searches"></a>多个搜索
+## <a name="search-results"></a>搜索结果
+
+:::moniker range=">=vs-2022"
+
+对所有结果执行搜索时，结果会在可用时显示。
+
+> [!NOTE]
+> 当代码上下文加载后（例如打开新项目、更改分支或更改文件列表），Visual Studio开始生成索引。 如果你在 Visual Studio 对源文件进行索引期间进行了搜索，可能会看到一条警告，指出结果不完整。
+
+:::moniker-end
+
+### <a name="keep-results"></a>保留结果
 
 你可以在执行其他搜索时保留一个搜索的结果。 这样，可以轻松地比较结果并看到它们并列显示。
 
+:::moniker range=">=vs-2022"
+
+:::image type="content" source="media/vs-2022/find-files-search-results.png" alt-text="“搜索结果”窗口的屏幕截图，其中显示了三个搜索结果的选项卡。":::
+
+:::moniker-end
+
+:::moniker range="<=vs-2019"
+
 :::image type="content" source="media/find-files-search-results.png" alt-text="“搜索结果”窗口的屏幕截图，其中显示了三个搜索结果的选项卡。":::
 
+:::moniker-end
+
 若要保留多个搜索结果，请在每次搜索后选择“保留结果”按钮。 然后，当你搜索其他内容时，结果将显示在新选项卡中。可以保留最多五个搜索的结果。 如果已显示了五个搜索结果，下一个搜索将重用最早的搜索结果选项卡。
+
+:::moniker range=">=vs-2022"
+
+在 Visual Studio 2022 及更高版本中，可以将 Visual Studio 设置为始终保留结果。 转到“工具” > “选项” > “常规” > “查找和替换”，然后选中“默认保留搜索结果”复选框。
+
+:::moniker-end
 
 ## <a name="see-also"></a>另请参阅
 

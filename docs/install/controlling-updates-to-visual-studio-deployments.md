@@ -1,7 +1,7 @@
 ---
 title: 控制对部署的更新
 description: 了解从网络安装时，如何更改 Visual Studio 查找更新的位置。
-ms.date: 04/06/2021
+ms.date: 10/22/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2a4e123e83ab8e6adbc23998a0c927e1f9e98bc0
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: cfade1d9f357eda4a741726e65ca02f2b8f6ccc3
+ms.sourcegitcommit: 0257750be796cc46e01cebd8976f637743d29417
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129969497"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "130290611"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>控制对基于网络的 Visual Studio 部署的更新
 
@@ -111,6 +111,28 @@ ms.locfileid: "129969497"
 vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 0
 ```
 
+可以使用下面的命令重新启用通知：
+
+```shell
+vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 1
+```
+
+若要返回到默认行为，还可以通过以下命令删除该值：
+
+```shell
+vsregedit.exe remove "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override
+```
+
+运行命令以更改 Visual Studio 设置后，启动 Visual Studio。 在关闭并重新启动 Visual Studio 之前，Visual Studio 的任何已运行的实例都不会更改行为。 另一种方法是，可以重新启动计算机，以确保设置生效。
+
+可以使用以下命令确认该设置：
+
+```shell
+vsregedit.exe read "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword
+```
+
+如果值不存在（默认情况下存在此条件），前面的命令将指示它无法读取该值。 如果设置了该值，前面的命令将反映出 Visual Studio 配置中的值（它将指示 0 或 1，或者设置的任何值，只应为 0 或 1）。
+
 ::: moniker-end
 
 ::: moniker range="vs-2019"
@@ -121,6 +143,28 @@ vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterpris
 vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 0
 ```
 
+可以使用下面的命令重新启用通知：
+
+```shell
+vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 1
+```
+
+若要返回到默认行为，还可以通过以下命令删除该值：
+
+```shell
+vsregedit.exe remove "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override
+```
+
+运行命令以更改 Visual Studio 设置后，启动 Visual Studio。 在关闭并重新启动 Visual Studio 之前，Visual Studio 的任何已运行的实例都不会更改行为。 另一种方法是，可以重新启动计算机，以确保设置生效。
+
+可以使用以下命令确认该设置：
+
+```shell
+vsregedit.exe read "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword
+```
+
+如果值不存在（默认情况下存在此条件），前面的命令将指示它无法读取该值。 如果设置了该值，前面的命令将反映出 Visual Studio 配置中的值（它将指示 0 或 1，或者设置的任何值，只应为 0 或 1）。
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2022"
@@ -130,6 +174,28 @@ vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterpris
 ```shell
 vsregedit.exe set "C:\Program Files\Microsoft Visual Studio\2022\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 0
 ```
+
+可以使用下面的命令重新启用通知：
+
+```shell
+vsregedit.exe set "C:\Program Files\Microsoft Visual Studio\2022\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 1
+```
+
+若要返回到默认行为，还可以通过以下命令删除该值：
+
+```shell
+vsregedit.exe remove "c:\Program Files\Microsoft Visual Studio\2022\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override
+```
+
+运行命令以更改 Visual Studio 设置后，启动 Visual Studio。 在关闭并重新启动 Visual Studio 之前，Visual Studio 的任何已运行的实例都不会更改行为。 另一种方法是，可以重新启动计算机，以确保设置生效。
+
+可以使用以下命令确认该设置：
+
+```shell
+vsregedit.exe read "c:\Program Files\Microsoft Visual Studio\2022\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword
+```
+
+如果值不存在（默认情况下存在此条件），前面的命令将指示它无法读取该值。 如果设置了该值，前面的命令将反映出 Visual Studio 配置中的值（它将指示 0 或 1，或者设置的任何值，只应为 0 或 1）。
 
 ::: moniker-end
 

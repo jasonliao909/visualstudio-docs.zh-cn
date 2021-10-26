@@ -1,7 +1,7 @@
 ---
 title: 移植、迁移和升级项目
 description: Visual Studio 的当前版本和早期版本中创建的项目的支持的参考。
-ms.date: 06/17/2021
+ms.date: 10/22/2021
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 0d5ffe5fd40237d545a79b8224bf3a70592d38ea
-ms.sourcegitcommit: d63ba1eff845d41ca095efb14b499ea96c4b6eba
+ms.openlocfilehash: ea45ab61696887a98046525486798fd525349dc6
+ms.sourcegitcommit: 0257750be796cc46e01cebd8976f637743d29417
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "129560836"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "130290767"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Visual Studio 的项目迁移和升级参考
 
@@ -35,6 +35,9 @@ Visual Studio 的每个版本通常都支持大部分以前的项目、文件和
 对某些项目类型的支持也会随着时间的推移而更改。 较新版本的 Visual Studio 可能不再支持某些项目，或者需要更新项目，使其不再向后兼容。 有关迁移问题的当前状态，请参阅 [Visual Studio 开发人员社区站点](https://aka.ms/feedback/suggest?space=8)。
 
 本文仅详细介绍 Visual Studio 2017 可迁移的项目类型。 本文不包括 Visual Studio 2017 中不再支持且因此无法迁移的项目类型。 本文也不包括没有迁移问题的受支持项目类型；此列表位于[平台目标以及兼容性](/visualstudio/productinfo/vs2017-compatibility-vs)中。
+
+> [!TIP]
+> 若要查找我们最新版本的具体信息，请参阅 [Visual Studio 2022](port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2022&preserve-view=true) 版本的页面。
 
 > [!IMPORTANT]
 > 某些项目类型需要通过 Visual Studio 安装程序安装相应的工作负荷。 如果尚未安装工作负荷，Visual Studio 将报告未知的或不兼容的项目类型。 在这种情况下，请检查安装选项，然后重试。 同样，有关 Visual Studio 2017 中项目支持的详细信息，请参阅[平台目标以及兼容性](/visualstudio/productinfo/vs2017-compatibility-vs)。
@@ -114,6 +117,9 @@ Visual Studio 的每个版本通常都支持大部分以前的项目、文件和
 ::: moniker range="vs-2019"
 
 Visual Studio 的每个新版本都支持大部分项目、文件和其他资产类型。 只要不依赖于新功能，就可以[像往常一样](../ide/solutions-and-projects-in-visual-studio.md)使用它们。
+
+> [!TIP]
+> 若要查找我们下一个版本的具体信息，请参阅 [Visual Studio 2022](port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2022&preserve-view=true) 版本的页面。
 
 我们尝试保留与早期版本的向后兼容性，如 Visual Studio 2017、Visual Studio 2015、Visual Studio 2013 和 Visual Studio 2012。 但是，对某些项目类型的支持会随着时间的推移而更改。 较新版本的 Visual Studio 可能根本不支持某些项目，或者可能需要更新项目，使其不再向后兼容。
 
@@ -212,10 +218,10 @@ Visual Studio 的每个新版本都支持大部分项目、文件和其他资产
 我们尝试保留与早期版本的后向兼容性，如 Visual Studio 2019、Visual Studio 2017、Visual Studio 2015、Visual Studio 2013 和 Visual Studio 2012。 但是，对某些项目类型的支持会随着时间的推移而更改。 较新版本的 Visual Studio 可能根本不支持某些项目，或者可能需要更新项目，使其不再向后兼容。
 
 > [!NOTE]
-> 有关迁移问题的当前状态，请参阅 [Visual Studio 开发人员社区](https://aka.ms/feedback/suggest?space=8)。 若要详细了解哪些功能特定于对应的 Visual Studio 版本，请参阅[发行说明](/visualstudio/releases/2019/release-notes/)。
+> 有关迁移问题的当前状态，请参阅 [Visual Studio 开发人员社区](https://aka.ms/feedback/suggest?space=8)。 若要详细了解哪些功能特定于对应的 Visual Studio 版本，请参阅[发行说明](/visualstudio/releases/2022/release-notes-preview)。
 
 > [!IMPORTANT]
-> 某些项目类型需要特定工作负载。 如果尚未安装工作负荷，Visual Studio 将报告未知的或不兼容的项目类型。 在这种情况下，请检查 [Visual Studio 安装程序中的安装选项](../install/modify-visual-studio.md)，然后重试。 有关 Visual Studio 2019 中项目支持的详细信息，请参阅[平台目标和兼容性](/visualstudio/releases/2019/compatibility)页。
+> 某些项目类型需要特定工作负载。 如果尚未安装工作负荷，Visual Studio 将报告未知的或不兼容的项目类型。 在这种情况下，请检查 [Visual Studio 安装程序中的安装选项](../install/modify-visual-studio.md)，然后重试。 有关 Visual Studio 2022 中项目支持的详细信息，请参阅[平台目标和兼容性](/visualstudio/releases/2022/compatibility)页。
 
 ## <a name="project-types"></a>项目类型
 

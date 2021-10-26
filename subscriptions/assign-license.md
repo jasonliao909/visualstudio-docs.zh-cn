@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
-ms.date: 03/21/2021
+ms.date: 10/21/2021
 ms.topic: conceptual
 description: 了解管理员如何将许可证分配给订阅者
-ms.openlocfilehash: 91bb0a4c288915b14d0bd9354ef325d0c0b259be
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: ab7d6574e0e0783943a6d7a7db72615a70878891
+ms.sourcegitcommit: efe1d737fd660cc9183177914c18b0fd4e39ba8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128427593"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "130212025"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>在 Visual Studio 订阅管理门户中分配许可证
 作为 Visual Studio 订阅管理员，你可以使用管理门户为个人用户和用户组分配订阅。
@@ -35,19 +35,21 @@ ms.locfileid: "128427593"
 2. 要为单个 Visual Studio 订阅者分配许可证，请在表的顶部选择“添加”，然后选择“单个订阅者”。
    > [!div class="mx-imgBorder"]
    > ![添加单个订阅者](_img/assign-license-add/add-subscriber-individual.png "选择“添加”，然后选择要分配单个订阅的单个订阅者。")
-3. 在表单域中输入新订阅者的信息。 如果你的组织使用 Azure Active Directory，则“姓名”字段可充当搜索功能，用于查找当前目录中的用户，以便从搜索结果中选择正确的用户。 当你选择该用户后，系统会自动填充登录电子邮件和通知电子邮件。  如果在组织中找不到该订阅者，通知电子邮件将不会自动填充，但你可以手动添加其他电子邮件地址，并向其发送与订阅相关的电子邮件。  如果电子邮件服务阻止传入电子邮件发送到登录电子邮件地址，请务必指定其他通知电子邮件地址，以便订阅者和管理员接收来自 Microsoft 的与订阅相关的重要电子邮件。
+3. 右侧将显示一个浮出控件面板。  在表单域中输入新订阅者的信息。 
+- 如果你的组织使用的是 Azure Active Directory，则在“搜索 Azure Active Directory”框中键入订阅者的名称后，将返回与你的条件匹配的任何 Azure AD 组成员的名称。  当你选择该用户后，系统会自动填充登录电子邮件和通知电子邮件。  
+- 如果在组织中找不到订阅者，可以在“名称”字段中输入订阅者的名称。  
+- 输入你希望订阅者用于登录的电子邮件地址。  你也可以单击“添加用于接收通信的不同通知电子邮件”链接，并指定不同的通知电子邮件地址，以便订阅者和管理员接收来自 Microsoft 的订阅相关的重要电子邮件。
    > [!div class="mx-imgBorder"]
    > ![订阅者详细信息](_img/assign-license-add/subscriber-details.png "输入订阅者名称和其他详细信息，或从租户成员中进行选择。")
 
     > [!NOTE]
     > 为了在你输入订阅者姓名时显示 Azure Active Directory 租户的成员，管理员必须是该租户的成员。 
-
-
-    如果希望此订阅者在登录 [Visual Studio 订阅门户](https://my.visualstudio.com?wt.mc_id=o~msft~docs)时可以访问软件下载，请务必将“下载设置”部分中的下载切换保持启用状态。 如果选择禁用下载，则用户将无法访问软件下载。  还将禁用对产品密钥的访问权限。  订阅者仍可访问订阅中包含的所有其他权益。
+- 选择要为此用户分配的订阅级别。  （列表仅包含作为协议一部分购买的订阅级别。）  
+- 如果希望此订阅者在登录 [Visual Studio 订阅门户](https://my.visualstudio.com?wt.mc_id=o~msft~docs)时可以访问软件下载，请务必将“下载设置”部分中的下载切换保持启用状态。 如果选择禁用下载，用户将无法访问软件下载内容或产品密钥。  订阅者仍可访问订阅中包含的所有其他权益。
    > [!div class="mx-imgBorder"]
    > ![下载的访问权限](media/access-to-downloads.png "选择“允许”，为订阅者提供对软件下载的访问权限。")
 
-    如果要向订阅添加自己的引用说明，则可以在“添加引用”部分执行操作。
+- 如果要向订阅添加自己的引用说明，则可以在“添加引用”部分执行操作。
    > [!div class="mx-imgBorder"]
    > ![向每个订阅添加自己的引用说明](media/add-subscriber-reference-notes.png "使用“引用”字段记录有关此订阅的任何注释。")
 

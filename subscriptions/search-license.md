@@ -4,37 +4,33 @@ author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 9c0b9a4f-b9a3-491c-a68f-6e4bac7f7b3d
-ms.date: 03/21/2021
+ms.date: 10/21/2021
 ms.topic: how-to
 description: 了解管理员如何在管理门户中查找各个订阅者或组。
-ms.openlocfilehash: 96a78c0487711b8e67a75ea04c00096bf741c6a9
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 888090c218b4f57173414552c03b2d391fe0aa57
+ms.sourcegitcommit: efe1d737fd660cc9183177914c18b0fd4e39ba8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128427482"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "130211986"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>在 Visual Studio 订阅中搜索和筛选订阅者
-通过 Visual Studio 订阅管理门户，可以基于各种条件查找订阅者的特定子集。 可以按名称、电子邮件地址、订阅级别以及其他信息对订阅者列表进行筛选。
+通过 Visual Studio 订阅管理门户，可以基于各种条件查找订阅者的特定子集。 可以按名称、电子邮件地址或引用对订阅者列表进行筛选。
 
 ## <a name="to-filter-the-subscriber-list"></a>筛选订阅者列表
-1. 要搜索特定的订阅者组，请选择“筛选”选项卡  。
+1. 若要搜索特定的订阅者组，请单击“按名称、电子邮件或引用筛选”框，它位于“管理订阅者”页菜单正下方。
    > [!div class="mx-imgBorder"]
-   > ![选择“筛选”搜索订阅者列表](_img/search-filter/filter-list.png "单击“筛选器”，输入条件以限制显示的订阅。")
+   > ![选择“筛选”搜索订阅者列表](_img/search-filter/filter-list.png "单击“筛选器”框，输入条件以限制显示的订阅。")
 
-2. 输入希望用作搜索基准的条件，然后再次选择“筛选”  。
+2. 输入搜索条件。  你会注意到，在你键入时，列表会动态更新。  
+示例：如果要查找使用 Outlook 电子邮件地址的所有订阅者，可以键入“@outlook”，列表将仅显示那些具有 Outlook.com 地址的订阅者。  
+
+> [!TIP]
+> 搜索包括作为 Azure Active Directory 组成员的订阅者，因此，除非你向下钻取到组，否则即使这些订阅者不显示在订阅者列表中，它们也会在搜索结果中单独列出。  
+
+3. 要清除筛选器并还原未筛选的列表，请单击筛选器框最右侧的“X”。 
    > [!div class="mx-imgBorder"]
-   > ![使用可用字段来筛选订阅者数据](media/filter-subscribers.png "在各种字段中输入值，以限制搜索结果。例如，可以搜索“@contoso”以返回包含 @contoso com 电子邮件地址的所有订阅者的列表。")
-
-   随后，便会列出与所选条件相匹配的订阅者。  你可以单击筛选结果的标题以更改每个字段的排序顺序。  
-   > [!NOTE]
-   > “姓名”字段按姓进行排序  。
-
-   请注意，“筛选器”图标突出显示，表示已应用筛选器  。  还会显示“清除筛选器”  选项。 在此示例中，我们筛选了订阅者列表，以查找具有 @outlook.com 电子邮件地址的订阅者。 
-
-3. 要清除筛选器并还原未筛选的列表，请单击右上角的“清除筛选器”选项卡  。 
-   > [!div class="mx-imgBorder"]
-   > ![清除订阅者列表中的筛选器](_img/search-filter/clear-filter.png "单击“清除筛选器”以删除筛选器，然后继续查看所有已分配的订阅。")
+   > ![清除订阅者列表中的筛选器](_img/search-filter/clear-filter.png "单击筛选器框右侧较大的“X”以清除条件，然后继续查看所有已分配的订阅。")
 
 ## <a name="see-also"></a>另请参阅
 - [Visual Studio 文档](/visualstudio/)

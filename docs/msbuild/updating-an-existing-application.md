@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 53fa2e2631bff2eb3fd9438a97f190b9766a1407
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 2b804bccce4bea0345cac86d269e8fbcb14eb777
+ms.sourcegitcommit: efe1d737fd660cc9183177914c18b0fd4e39ba8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122142567"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "130211943"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>将现有的应用程序更新到 MSBuild 15
 
@@ -25,7 +25,7 @@ ms.locfileid: "122142567"
 
 ## <a name="use-msbuild-from-visual-studio"></a>从 Visual Studio 使用 MSBuild
 
-为确保以编程方式从应用程序生成的项目与 Visual Studio 或 MSBuild.exe 中生成的项目相匹配，请从 Visual Studio 加载 MSBuild 程序集，并使用 Visual Studio 中提供的 SDK。 Microsoft.Build.Locator NuGet 包简化了这一过程。
+为确保以编程方式从应用程序生成的项目与 Visual Studio 或 MSBuild.exe 中生成的项目相匹配，请从 Visual Studio 加载 MSBuild 程序集，并使用 Visual Studio 中提供的 SDK。 Microsoft.Build.Locator NuGet 包简化了这一过程。 MSBuild 需要对某些程序集（Microsoft.Build 程序集）进行绑定重定向，但如果你引用 Microsoft.Build.Locator 包，就可以确保应用程序自动使用所需的绑定重定向到版本 15.1.0.0。 此版本的绑定重定向支持 MSBuild 15.x、16.x 和 17.x。
 
 ## <a name="use-microsoftbuildlocator"></a>使用 Microsoft.Build.Locator
 

@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b2804f86b26b8e274804c3f504b1f19cb6f83d2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 49fd97e1d8e91cd6049bbe43f7fee9fb092e8f39
+ms.sourcegitcommit: efe1d737fd660cc9183177914c18b0fd4e39ba8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122055082"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "130211956"
 ---
 # <a name="common-msbuild-project-items"></a>常用的 MSBuild 项目项
 
@@ -54,8 +54,9 @@ ms.locfileid: "122055082"
 |GUID|必选字符串。 组件的 GUID，形式为 {12345678-1234-1234-1234-1234567891234}。|
 |VersionMajor|必选字符串。 组件版本号的主要部分。 例如，如果完整版本号是“5.46”，则显示“5”。|
 |VersionMinor|必选字符串。 组件版本号的次要部分。 例如，如果完整版本号是“5.46”，则显示“46”。|
+|EmbedInteropTypes|可选的布尔值。 如果为 true，则将此引用中的互操作类型直接嵌入到程序集中，而不是生成互操作 DLL。|
 |LCID|可选的字符串。 组件的 LocaleID。|
-|WrapperTool|可选的字符串。 对组件使用的包装工具的名称，例如“tlbimp”。|
+|WrapperTool|可选的字符串。 对组件使用的包装器的名称。 值为：<br /><br />1.  primary<br />2.  tlbimp<br />3.  primaryortlbimp<br />4.  aximp|
 |Isolated|可选的布尔值。 指定组件是否为免注册组件。|
 
 ## <a name="comfilereference"></a>COMFileReference
@@ -64,7 +65,7 @@ ms.locfileid: "122055082"
 
 |项元数据名称|描述|
 |---------------|-----------------|
-|WrapperTool|可选的字符串。 对组件使用的包装工具的名称，例如“tlbimp”。|
+|WrapperTool|可选的字符串。 对组件使用的包装器的名称。 值为：<br /><br />1.  primary<br />2.  tlbimp<br />3.  primaryortlbimp<br />4.  aximp|
 
 ## <a name="nativereference"></a>NativeReference
 
