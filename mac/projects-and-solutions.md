@@ -4,14 +4,14 @@ description: 本文档概述了 Visual Studio for Mac 中的项目和解决方�
 ms.topic: overview
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 11/09/2020
+ms.date: 03/09/2021
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
-ms.openlocfilehash: c52b8513937505b40d17f7cd9fc05d9cf6a47941
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.openlocfilehash: 33f6c5b6b8a536355da1b9416c3b316996f4b245
+ms.sourcegitcommit: 4efdab6a579b31927c42531bb3f7fdd92890e4ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963914"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "130350711"
 ---
 # <a name="projects-and-solutions-in-visual-studio-for-mac"></a>Visual Studio for Mac 中的项目和解决方案
 

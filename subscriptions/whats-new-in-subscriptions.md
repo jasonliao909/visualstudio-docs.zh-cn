@@ -7,14 +7,14 @@ author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 2dc938b5-37e9-4dfc-8676-5d0a91d366ab
-ms.openlocfilehash: d9b901f4cec5e567a9f29fc4c7294cb3a66ad238
-ms.sourcegitcommit: 6c847aedf0f943e253a4c2f0e4b516b953168bc7
+ms.openlocfilehash: 632134e2aa19eb6ff85adb56d4cbad09dceb6d0a
+ms.sourcegitcommit: 4efdab6a579b31927c42531bb3f7fdd92890e4ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "130152166"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "130350659"
 ---
-# <a name="what39s-new-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的新增功能
+# <a name="whats-new-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的新增功能
 我们会经常更新订阅权益包以使其更加有用。 我们还将对订阅者门户和订阅管理门户进行改进，竭尽所能为你提供最佳体验。  我们还会生成新内容来解答用户问题和反映所作的更改。  继续阅读，了解按季度排序的最新功能和更新。
 
 ## <a name="2021-q3-july---september"></a>2021 年第 3 季度（7 月 - 9 月）

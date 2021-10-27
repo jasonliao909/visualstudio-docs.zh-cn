@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 07eb420ecab7680ea76789e313b4996ff5b4bcda
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 5444b12bd9a5ab2f17fb8aa8f873527c6f869e5e
+ms.sourcegitcommit: 4efdab6a579b31927c42531bb3f7fdd92890e4ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129971447"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "130350763"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>为 Python Web 应用配置 IIS
 
@@ -116,7 +116,7 @@ FastCGI 是在请求级别工作的接口。 IIS 接收传入的连接，并将�
 
         ```xml
         <!-- Flask apps only: change the project name to match your app -->
-        <add key="WSGI_HANDLER" value="flask_iis_example.app"/>
+        <add key="WSGI_HANDLER" value="FlaskAzurePublishExample.app"/>
         ```
 
     - **Django**：对于 Django 项目，需要对“web.config”进行两项更改。 首先，将 `WSGI_HANDLER` 值更改为 `django.core.wsgi.get_wsgi_application()`（该对象位于 wsgi.py 文件中）：

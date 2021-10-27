@@ -6,7 +6,7 @@ metadata:
   description: 使用 Visual Studio 创建 C# 应用。
   ms.custom: vs-acquisition
   ms.topic: landing-page
-  ms.date: 06/19/2021
+  ms.date: 10/25/2021
   author: ghogen
   ms.author: ghogen
   manager: jmartens
@@ -14,12 +14,12 @@ metadata:
   ms.technology: vs-acquisition
   dev_langs:
   - CSharp
-  ms.openlocfilehash: 342397ce1074d988dbe4347d78828906bdae3d01b69a6dd325a507b81f0a8928
-  ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+  ms.openlocfilehash: 622f09d75b34bb15a40f40f680b6f606f70b53c8
+  ms.sourcegitcommit: 4efdab6a579b31927c42531bb3f7fdd92890e4ac
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/12/2021
-  ms.locfileid: "121400408"
+  ms.lasthandoff: 10/26/2021
+  ms.locfileid: "130351478"
 landingContent:
 - title: 入门
   linkLists:

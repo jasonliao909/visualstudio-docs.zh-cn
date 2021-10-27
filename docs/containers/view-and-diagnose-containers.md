@@ -6,13 +6,13 @@ ms.author: ghogen
 ms.topic: how-to
 ms.date: 01/20/2020
 ms.technology: vs-container-tools
-monikerRange: vs-2019
-ms.openlocfilehash: d6e4ce1e92afea971d02242c03595020d27c23e3
-ms.sourcegitcommit: 8f8804b885c3a68f20bf0e9fe3729f2764145815
+monikerRange: '>=vs-2019'
+ms.openlocfilehash: f33f0e86fff98d670d964766fcbedfca319b1780
+ms.sourcegitcommit: 4efdab6a579b31927c42531bb3f7fdd92890e4ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "123096788"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "130350789"
 ---
 # <a name="use-the-containers-window"></a>使用“容器”窗口
 

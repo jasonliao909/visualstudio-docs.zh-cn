@@ -22,26 +22,26 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: e060bdeb6c648ba1cd3e753eb431588ab5550a05
-ms.sourcegitcommit: efe1d737fd660cc9183177914c18b0fd4e39ba8b
+ms.openlocfilehash: f38f26bba5311f8077f537edc318f4885cf895ce
+ms.sourcegitcommit: 4efdab6a579b31927c42531bb3f7fdd92890e4ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "130208313"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "130350945"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 集成 (MSBuild)
 
 Visual Studio 托管 MSBuild 以加载和生成托管项目。 由于 MSBuild 负责处理项目，因此，可以在 Visual Studio 中成功使用几乎任何 MSBuild 格式的项目（即使项目是用另一种工具编写的并具有自定义的生成过程）。
 
- 自定义希望在 Visual Studio 中加载和生成的项目和 .targets 文件时，应当考虑 Visual Studio 的 MSBuild 托管的特定方面，本文对此进行了描述  。 这些内容将帮助你确保 Visual Studio 中诸如 IntelliSense 和调试这样的功能对你的自定义项目有效。
+自定义希望在 Visual Studio 中加载和生成的项目和 .targets 文件时，应当考虑 Visual Studio 的 MSBuild 托管的特定方面，本文对此进行了描述  。 这些内容将帮助你确保 Visual Studio 中诸如 IntelliSense 和调试这样的功能对你的自定义项目有效。
 
- 有关 C++ 项目的信息，请参阅 [Project Files](/cpp/build/reference/project-files)。
+有关 C++ 项目的信息，请参阅 [Project Files](/cpp/build/reference/project-files)。
 
 ## <a name="project-file-name-extensions"></a>项目文件扩展名
 
- MSBuild.exe  可识别与 .\*proj  模式匹配的任何项目文件扩展名。 但是，Visual Studio 只识别其中一部分项目文件扩展名，这些扩展名决定了将会加载项目的特定于语言的项目系统。 Visual Studio 没有基于非特定语言 MSBuild 的项目系统。
+MSBuild.exe  可识别与 .\*proj  模式匹配的任何项目文件扩展名。 但是，Visual Studio 只识别其中一部分项目文件扩展名，这些扩展名决定了将会加载项目的特定于语言的项目系统。 Visual Studio 没有基于非特定语言 MSBuild 的项目系统。
 
- 例如，C# 项目系统可加载 .csproj 文件，但是 Visual Studio 不能加载 .xxproj 文件   。 任意语言的源文件对应的项目文件都必须使用与 Visual Basic 或 C# 项目文件相同的扩展名，才能加载到 Visual Studio 中。
+例如，C# 项目系统可加载 .csproj 文件，但是 Visual Studio 不能加载 .xxproj 文件   。 任意语言的源文件对应的项目文件都必须使用与 Visual Basic 或 C# 项目文件相同的扩展名，才能加载到 Visual Studio 中。
 
 ## <a name="well-known-target-names"></a>已知的目标名称
 
