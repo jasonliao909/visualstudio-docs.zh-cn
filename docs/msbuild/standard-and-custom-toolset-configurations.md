@@ -15,11 +15,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 5a4bb47a8519839ab33344764a5bbdcfb03e5f4f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122084800"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640563"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>标准和自定义工具集配置
 

@@ -14,11 +14,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 9d34aa066d84deeaf4ac16f683822d539b0d1357
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122117067"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736116"
 ---
 # <a name="split-or-merge-if-statements"></a>Split 或 merge if 语句
 

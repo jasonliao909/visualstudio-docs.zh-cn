@@ -30,11 +30,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 67e6b88c34520f805bffb7af5d12465d4f2ee427
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122084436"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640806"
 ---
 # <a name="cvwritemessage-function"></a>CvWriteMessage 函数
 向并发可视化工具跟踪文件写入一条消息。

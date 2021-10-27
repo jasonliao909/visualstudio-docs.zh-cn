@@ -15,11 +15,11 @@ manager: jmartens
 ms.workload:
 - multiple
 ms.openlocfilehash: 78d5f4f00a81fccf573e69797b9d528ee61ffdc5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932054"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641124"
 ---
 # <a name="prerequisites-dialog-box"></a>“系统必备”对话框
 

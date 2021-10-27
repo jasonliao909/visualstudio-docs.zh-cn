@@ -12,11 +12,11 @@ ms.technology: vs-xml-tools
 ms.workload:
 - multiple
 ms.openlocfilehash: 636d681080239dc80a210d590407e77c062bdc20
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122130229"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735639"
 ---
 # <a name="edit-xslt-style-sheets"></a>编辑 XSLT 样式表
 

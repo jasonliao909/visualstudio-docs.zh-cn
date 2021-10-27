@@ -18,11 +18,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: 0d46f4254ae34adc32d3b92be96923373ba6ca45
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122139928"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640970"
 ---
 # <a name="load-test-results-summary-overview"></a>负载测试结果摘要概述
 

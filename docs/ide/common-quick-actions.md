@@ -13,11 +13,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 6fcf1ab1fdb5565cd4ba76c6eaa5c6b5a8fd74d6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122124095"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640882"
 ---
 # <a name="common-quick-actions"></a>常见快速操作
 

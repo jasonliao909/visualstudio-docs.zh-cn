@@ -15,11 +15,11 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: a3ca50cb39354ca39c0b87df67cff1793e97a925
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122033767"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735480"
 ---
 # <a name="functions-view---net-memory-instrumentation-data"></a>“函数”视图 - .NET 内存检测数据
 使用检测方法收集的 .NET 内存分配分析数据的“函数”视图会列出分析运行期间分配内存的函数。 函数行报告分配的大小和数量，以及函数的计时数据。

@@ -12,11 +12,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d5dea7b93bded032f51650b895f16ad44948443c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122027404"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735854"
 ---
 # <a name="querycounters"></a>QueryCounters
 “QueryCounters”选项列出计算机上可用的 CPU（硬件）性能计数器。

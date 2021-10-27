@@ -22,11 +22,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 72c96c25f2103b2ded6bc4892a47cc618618d032
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122084500"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640538"
 ---
 # <a name="cvwritealert-function"></a>CvWriteAlert 函数
 向并发可视化工具跟踪文件写入一个警报。

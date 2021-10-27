@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: c02246b6e036046fb8d49f356c31d59f2403b8b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: efdba8141f54d03b2a3d488fff3f77b4d07efa4f1a0d83b76a3130c012e035ea
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89323604"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121238484"
 ---
 Windows 8.x 应用商店

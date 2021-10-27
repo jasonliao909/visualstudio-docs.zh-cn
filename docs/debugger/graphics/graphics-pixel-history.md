@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: ed00f0616cc18ce9f2bc73ebbae0927e0c79e990
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122058562"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735600"
 ---
 # <a name="graphics-pixel-history"></a>图形像素历史记录
 Visual Studio 中的“图形像素历史记录”窗口可以帮助你了解，在游戏或应用的某个帧期间，Direct3D 事件如何对某一特定像素产生影响。

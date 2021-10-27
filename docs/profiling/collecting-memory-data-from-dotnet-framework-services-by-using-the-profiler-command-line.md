@@ -13,11 +13,11 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: cf908900107aff4db86fc264caac32bd775d9f22
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122136347"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735872"
 ---
 # <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>使用探查器命令行从 .NET Framework 服务收集内存数据
 本部分介绍在命令行中使用采样方法来收集 .NET Framework 服务的内存分配和对象生存期数据的步骤和选项。

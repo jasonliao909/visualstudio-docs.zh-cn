@@ -14,11 +14,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: d1dfb73749774e5ae9409b7f00a78bd59008d271
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122085866"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641184"
 ---
 # <a name="invert-if-statement"></a>反转 if 语句
 

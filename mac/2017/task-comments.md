@@ -6,11 +6,11 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 562DCB46-D8FA-4DC4-AAEA-F274448C4CD2
 ms.openlocfilehash: 4f7f3d1567972c3841af6deb37677a7e01cdb825
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123961764"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735628"
 ---
 # <a name="task-comments"></a>任务注释
 

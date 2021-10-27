@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: da9b45ce5406ed0a686a4837b9a605145c810ca0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122100330"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735429"
 ---
 # <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>使用关系图视图图例分析负载测试
 

@@ -12,11 +12,11 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 4c0d8b02f867797317ff762e7a23bec042f93318
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801496"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735510"
 ---
 # <a name="analyze-memory-usage-by-using-the-net-object-allocation-tool"></a>使用 .NET 对象分配工具分析内存使用情况
 

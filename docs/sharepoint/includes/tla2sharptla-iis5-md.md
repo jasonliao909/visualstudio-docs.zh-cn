@@ -1,9 +1,9 @@
 ---
-ms.openlocfilehash: 3470a986f1b6d9f3f1715d5a174d8439d63284d9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
-ms.translationtype: MT
+ms.openlocfilehash: 03ef44c1c3ee677b7844dcacd9905a921bb60ce0c6f16d94d153912fdf4d8d9c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89325407"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121228462"
 ---
  IIS 

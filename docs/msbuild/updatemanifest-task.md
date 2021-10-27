@@ -20,11 +20,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 8cde4f2fcc9b226aeda9066da083a1a37979dfe9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122142593"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640542"
 ---
 # <a name="updatemanifest-task"></a>UpdateManifest 任务
 

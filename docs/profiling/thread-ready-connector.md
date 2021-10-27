@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 4c245ed7e7a77de16b1ae89d37511e4b6031b738
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122141202"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735670"
 ---
 # <a name="thread-ready-connector"></a>线程就绪连接器
 单击阻止段以查看调用堆栈及其解除阻止的堆栈时，还可能会显示线程就绪连接器。 如果解除阻止的事件在当前进程中的另一个线程上发生，则线程就绪连接器可直观地标识允许阻止的线程继续执行的线程和执行段。

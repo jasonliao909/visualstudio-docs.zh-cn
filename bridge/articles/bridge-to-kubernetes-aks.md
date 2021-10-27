@@ -9,11 +9,11 @@ title: 在 Azure AKS 中使用 Bridge to Kubernetes 在本地运行和调试 Kub
 ms.date: 11/12/2020
 description: 了解如何使用 Bridge to Kubernetes 将开发计算机连接到 AKS Kubernetes 群集
 ms.openlocfilehash: ac2edf574426c7bef73ec68df38665500049de89
-ms.sourcegitcommit: f930bc28bdb0ba01d6f7cb48f229afecfa0c90cd
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "122334597"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126652397"
 ---
 # <a name="use-bridge-to-kubernetes-with-aks"></a>在 AKS 中使用 Bridge to Kubernetes
 

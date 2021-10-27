@@ -16,11 +16,11 @@ ms.workload:
 helpviewer_keywords:
 - add missing usings
 ms.openlocfilehash: b3eaa7d035c95ba3ff2eeccf37968cb858ddcf02
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122123861"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735736"
 ---
 # <a name="add-missing-usings-in-visual-studio"></a>在 Visual Studio 中添加缺少的 usings
 

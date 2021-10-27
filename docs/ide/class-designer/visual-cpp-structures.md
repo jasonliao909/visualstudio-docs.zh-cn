@@ -14,11 +14,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - cplusplus
 ms.openlocfilehash: a3d05c4aac4b4d2962d27f4d5586d5fb289ac9aa
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122078383"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735547"
 ---
 # <a name="c-structures-in-class-designer"></a>类设计器中的 C++ 结构
 

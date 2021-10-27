@@ -13,11 +13,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: b1d49ac97d783457634a82705033ac7a2d043d84
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122039275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735712"
 ---
 # <a name="counter"></a>计数器
 “计数器”选项从处理器（硬件）性能计数器收集数据。

@@ -16,11 +16,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: bc765f09966a9dbd5aed7ab31b4c2829e6c490dc
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122062103"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640844"
 ---
 # <a name="services-page-project-designer"></a>“项目设计器”->“服务”页
 

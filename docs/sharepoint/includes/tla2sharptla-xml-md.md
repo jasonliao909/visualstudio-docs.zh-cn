@@ -1,9 +1,9 @@
 ---
-ms.openlocfilehash: c0aa9ef764d832b80428d756a731a94251b0e3a1
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 40658e9af8fd92229ae162dc98547cb75eb96999edd7dc214582ac6c23ef6585
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970172"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121244298"
 ---
 XML

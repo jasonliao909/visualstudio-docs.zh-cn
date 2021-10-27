@@ -20,11 +20,11 @@ ms.author: corob
 ms.workload:
 - multiple
 ms.openlocfilehash: b200fde9e5bc07f654ae2bf11cd8a752efbfe123
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436694"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735916"
 ---
 # <a name="fxc-task"></a>FXC 任务
 
@@ -32,14 +32,14 @@ ms.locfileid: "92436694"
 
 ## <a name="parameters"></a>参数
 
-下表介绍了 FXC 任务的参数  。
+下表介绍了 FXC 任务的参数。
 
 |参数|描述|
 |---------------|-----------------|
 |**AdditionalIncludeDirectories**|可选的 string[] 参数。<br/><br/>指定一个或多个要添加到包含路径中的目录；存在多个目录时，请用分号分隔。<br/><br/>请使用 `/I[path]`。|
 |**AdditionalOptions**|可选的 string  参数。|
 |**AllResourcesBound**|可选的 bool  参数。<br/><br/>编译器假定着色器可引用的所有资源已绑定，并且在着色器执行期间处于良好状态。 适用于着色器模型 5.1 及更高版本。<br/><br/>请使用 `/all_resources_bound`。|
-|**AssemblerOutput**|可选的 string  参数。<br/><br/>指定汇编语言输出文件的内容。<br/><br/>请使用 `/Fc, /Fx`。<br/><br/>**NoListing** <br/>**AssemblyCode** ，使用 `Fc`。<br/>**AssemblyCodeAndHex** ，使用 `Fx`。|
+|**AssemblerOutput**|可选的 string  参数。<br/><br/>指定汇编语言输出文件的内容。<br/><br/>请使用 `/Fc, /Fx`。<br/><br/>**NoListing** <br/>**AssemblyCode**，使用 `Fc`。<br/>**AssemblyCodeAndHex**，使用 `Fx`。|
 |**AssemblerOutputFile**|可选的 string  参数。<br/><br/>指定程序集代码清单文件的文件名。|
 |**CompileD2DCustomEffect**|可选的 bool  参数。<br/><br/>编译包含像素着色器的 Direct2D 自定义效果。 请勿用于顶点或计算自定义效果。|
 |**ConsumeExportFile**|可选的 string  参数。|
@@ -54,7 +54,7 @@ ms.locfileid: "92436694"
 |**PreprocessorDefinitions**|可选的 string[] 参数。<br/><br/>为源文件定义预处理符号。|
 |**SetRootSignature**|可选的 string  参数。<br/><br/>将根签名附加到着色器字节码。 适用于着色器模型 5.0 及更高版本。<br/><br/>请使用 `/setrootsignature`。|
 |**ShaderModel**|可选的 string  参数。<br/><br/>指定着色器模型。 部分着色器类型只能与最新的着色器模型搭配使用。<br/><br/>请使用 `/T [type]_[model]`。|
-|**ShaderType**|可选的 string  参数。<br/><br/>指定着色器的类型。<br/><br/>请使用 `/T [type]_[model]`。<br/><br/>**Effect** ，使用 `fx`。<br/>**Vertex** ，使用 `vs`。<br/>**Pixel** ，使用 `ps`。<br/>**Geometry** ，使用 `gs`。<br/>**Hull** ，使用 `hs`。<br/>**Domain** ，使用 `ds`。<br/>**Compute** ，使用 `cs`。<br/>**Library** ，使用 `lib`。<br/>**RootSignature** ，生成根签名对象。|
+|**ShaderType**|可选的 string  参数。<br/><br/>指定着色器的类型。<br/><br/>请使用 `/T [type]_[model]`。<br/><br/>**Effect**，使用 `fx`。<br/>**Vertex**，使用 `vs`。<br/>**Pixel**，使用 `ps`。<br/>**Geometry**，使用 `gs`。<br/>**Hull**，使用 `hs`。<br/>**Domain**，使用 `ds`。<br/>**Compute**，使用 `cs`。<br/>**Library**，使用 `lib`。<br/>**RootSignature**，生成根签名对象。|
 |**Source**|必需的 ITaskItem 参数。|
 |**SuppressStartupBanner**|可选的 bool  参数。<br/><br/>取消显示启动版权标志和信息消息。<br/><br/>请使用 `/nologo`。|
 |**TrackerLogDirectory**|可选的 string  参数。|

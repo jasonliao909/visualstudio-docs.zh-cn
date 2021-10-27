@@ -20,11 +20,11 @@ ms.author: corob
 ms.workload:
 - multiple
 ms.openlocfilehash: 63b278f322e66e6622064288d322709c51df336d
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796818"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736079"
 ---
 # <a name="clangcompile-task"></a>ClangCompile 任务
 

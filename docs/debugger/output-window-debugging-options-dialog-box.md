@@ -21,11 +21,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 1bc89e41e6a54d5d03c8583403a0318fa6d05c76
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122112485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735776"
 ---
 # <a name="output-window-debugging-options-dialog-box"></a>“选项”对话框 ->“调试”->“输出”窗口
 可以指定在“输出”窗口中显示哪些类型的调试信息。 若要显示这些选项，请打开“工具”菜单，单击“选项”，展开“调试”节点，再单击“输出窗口”   。

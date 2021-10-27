@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: ad9874e00565fd2c6c0b7279a88a7d23fa1f623f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122074067"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735576"
 ---
 # <a name="windows-tab-message-options-dialog-box"></a>“消息选项”对话框 ->“窗口”选项卡
 使用“窗口”选项卡设置[消息视图](../debugger/messages-view.md)中列出的消息范围。 若要显示[“消息选项”对话框](../debugger/message-options-dialog-box.md)，请从 Spy 菜单中选择“日志消息” 。

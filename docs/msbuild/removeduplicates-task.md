@@ -22,11 +22,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 53abd38178770ddff46216dbba2cd1548e204fec
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122068743"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640598"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates 任务
 
@@ -36,7 +36,7 @@ ms.locfileid: "122068743"
 
  下表描述了 `RemoveDuplicates` 任务的参数。
 
-|参数|描述|
+|参数|说明|
 |---------------|-----------------|
 |`Filtered`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 包含删除了所有重复项的项集合。 输入项的顺序被保留，保留每个复制项的第一个实例。|
 |`Inputs`|可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 要从中删除重复项的项集合。|

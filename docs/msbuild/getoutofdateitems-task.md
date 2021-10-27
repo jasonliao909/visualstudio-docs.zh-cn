@@ -20,11 +20,11 @@ ms.author: corob
 ms.workload:
 - multiple
 ms.openlocfilehash: 6cc80d4e1aa3580e0185460d19f78e9737b73220
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436822"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735897"
 ---
 # <a name="getoutofdateitems-task"></a>GetOutOfDateItems 任务
 
@@ -32,14 +32,14 @@ ms.locfileid: "92436822"
 
 ## <a name="parameters"></a>参数
 
-下表介绍了 GetOutOfDateItems 任务的参数  。
+下表介绍了 GetOutOfDateItems 任务的参数。
 
 |参数|说明|
 |---------------|-----------------|
 |**CheckForInterdependencies**|可选的 bool  参数。|
 |**CommandMetadataName**|可选的 string  参数。|
 |**DependenciesMetadataName**|可选的 string  参数。|
-|**HasInterdependencies**|可选的 bool  输出参数。|
+|**HasInterdependencies**|可选的 bool 输出参数。|
 |**OutOfDateSources**|可选的 **ITaskItem[]** 输出参数。|
 |**OutputsMetadataName**|必需的 **String** 参数。|
 |**Sources**|可选的 **ITaskItem[]** 参数。|

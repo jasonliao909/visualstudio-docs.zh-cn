@@ -15,11 +15,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 4492836ed06ea65a829d659ba81f261f0f99fe69
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122078357"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640692"
 ---
 # <a name="findcommand-box"></a>“查找/命令”框
 

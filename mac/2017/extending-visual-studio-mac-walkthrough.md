@@ -7,12 +7,12 @@ ms.author: dominicn
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: 7D00512B-9688-4D8D-87A7-F04F207E3D02
-ms.openlocfilehash: 9274f86e8ade5b49b5db0c7f4773cf6fd57ea353
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 60f929d3012ecf67a263040177ca55a8f349413a7567dabd84c6c308f2242177
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876189"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121242400"
 ---
 # <a name="extending-visual-studio-for-mac-walkthrough"></a>扩展 Visual Studio for Mac 演练
 

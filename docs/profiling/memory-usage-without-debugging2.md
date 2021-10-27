@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 61f0e4a2613a8ccf66c0f5205d730a38264d8e3c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122107376"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640767"
 ---
 # <a name="analyze-memory-usage-without-debugging-in-the-performance-profiler"></a>在进行调试的情况下分析性能探查器中的内存使用情况
 

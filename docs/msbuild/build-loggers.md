@@ -16,11 +16,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: a2ae63b8d658eff88a8da22123ca6aba40cf676a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122085216"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736086"
 ---
 # <a name="build-loggers"></a>生成记录器
 
@@ -87,7 +87,7 @@ MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll -verbosity:Detailed
 
 :::code language="csharp" source="../snippets/csharp/VS_Snippets_Misc/msbuild_BasicLogger/CS/msbuild_BasicLogger.cs" id="Snippet1":::
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)

@@ -16,11 +16,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: a1d8e84b935f2e4db7b4a3cf7699c5ac1bb16740
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122142190"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735517"
 ---
 # <a name="da0038-high-rate-of-lock-contentions"></a>DA0038：锁争用率高
 

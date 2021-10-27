@@ -14,11 +14,11 @@ dev_langs:
 - VB
 - CSharp
 ms.openlocfilehash: 0155aae4ef2feb022bf0f8e9d56502e68244852d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122032987"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640973"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>用 Microsoft Fakes 隔离测试代码
 

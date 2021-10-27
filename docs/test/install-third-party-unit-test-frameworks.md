@@ -11,11 +11,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: f6cee707882c9cf4b8c16749922e844eee1c596a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122148449"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735837"
 ---
 # <a name="install-unit-test-frameworks"></a>安装单元测试框架
 

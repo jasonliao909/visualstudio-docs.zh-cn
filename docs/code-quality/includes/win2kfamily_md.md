@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: d8476fae5dd1eac014e41ccec6aaa53b631e32d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 083f73314eb4cf33af5926cca1e9d1b1012377940f843999e0cde0c5340ca0c2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89323709"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121240385"
 ---
 Windows 2000

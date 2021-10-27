@@ -15,11 +15,11 @@ ms.workload:
 - aspnet
 - azure
 ms.openlocfilehash: 288c13dbf249bfe953f46886cc55dee6e1408515
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122090948"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640752"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>使用 Snapshot Debugger 调试实时 ASP.NET Azure 应用
 

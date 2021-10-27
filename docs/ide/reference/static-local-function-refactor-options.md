@@ -15,11 +15,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: df6ccc1827ca67cd761d615191869bc52fecc082
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122062064"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736109"
 ---
 # <a name="static-local-function-refactorings-and-quick-actions"></a>静态本地重构和快速操作
 

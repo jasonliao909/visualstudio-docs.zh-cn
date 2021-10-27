@@ -20,11 +20,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f5c456a90ed949063386593734fa21a7b497e361
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122131711"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735505"
 ---
 # <a name="net-memory-allocations-view"></a>.NET 内存分配视图
 “分配”视图列出在分析运行期间创建的类型。 每个类型都是一个调用树的根节点，该调用树显示导致分配该类型的函数执行路径。

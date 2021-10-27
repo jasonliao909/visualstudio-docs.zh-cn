@@ -23,11 +23,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: d217f85d57e4e44e824f708343764a89f3ba2efe
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122101942"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735551"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>在类设计器中重构类和类型
 

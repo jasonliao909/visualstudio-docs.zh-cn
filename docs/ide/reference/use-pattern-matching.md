@@ -12,11 +12,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: fb989c2ba3567e161f3576a6a654f0f27f9b55a3
-ms.sourcegitcommit: 42aec4a2ea6dec67dbe4c93bcf0fa1116a4b93d9
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122980912"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735723"
 ---
 # <a name="use-pattern-matching"></a>使用模式匹配
 

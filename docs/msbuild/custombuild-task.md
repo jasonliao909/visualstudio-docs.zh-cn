@@ -20,11 +20,11 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 640c1e6ae286b45f8700709829140093452a9491
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736042"
 ---
 # <a name="custombuild-task"></a>CustomBuild 任务
 
@@ -32,7 +32,7 @@ ms.locfileid: "92796545"
 
 ## <a name="parameters"></a>参数
 
-下表描述了 CustomBuild 任务  的参数。
+下表描述了 CustomBuild 任务的参数。
 
 |参数|说明|
 |---------------|-----------------|

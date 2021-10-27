@@ -17,11 +17,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9cf6b69960980507bebd036ac49332dfa42aed9a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122076433"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735690"
 ---
 # <a name="marks-view"></a>“标记”视图
 “标记”视图显示插入到应用程序的采样和 ETW 事件。

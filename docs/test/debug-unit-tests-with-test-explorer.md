@@ -10,11 +10,11 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 ms.openlocfilehash: 52817c2a3f0ad48c44b9eb1033a9e5b78d833e9d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122083864"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735457"
 ---
 # <a name="debug-and-analyze-unit-tests-with-test-explorer"></a>使用测试资源管理器调试和分析单元测试
 

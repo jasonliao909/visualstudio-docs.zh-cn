@@ -18,11 +18,11 @@ ms.workload:
 - uwp
 monikerRange: vs-2017
 ms.openlocfilehash: 475b6dad983bf196a094399da38a644f55170384
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122077018"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640541"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>分析 UWP 应用中的能量使用
 

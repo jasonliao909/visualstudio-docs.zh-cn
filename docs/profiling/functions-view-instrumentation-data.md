@@ -15,11 +15,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 574673dce3a1d11b0741625d56ccdca37360fd52
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122033754"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735476"
 ---
 # <a name="functions-view---instrumentation-data"></a>“函数”视图 - 检测数据
 函数报表视图按函数名称列出分析数据。

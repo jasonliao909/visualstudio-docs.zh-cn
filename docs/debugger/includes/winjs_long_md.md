@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: a16fb8b0da7a74a9cb0d48cf6f7f338b3586db4b
-ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
+ms.openlocfilehash: eb65a8ad1f0759bec04e186aaf891430e8335438e9bc42e3386a026bcc503ee5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92325371"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121280193"
 ---
 Windows JavaScript 库 (WinJS)

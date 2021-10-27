@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 604074774c01a3b170f33bf263fd9e75ed0042a0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122090882"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640723"
 ---
 # <a name="find-window-dialog-box"></a>“查找窗口”对话框
 使用此对话框以选择一个窗口并显示其属性或消息。 若要显示此对话框，从 **Spy** 菜单中选择 **查找窗口**。

@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 3b28a48a2fb1d1a37c869db92e9df34983bf62a4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122141917"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735487"
 ---
 # <a name="export-button-concurrency-visualizer"></a>“导出”按钮（并发可视化工具）
 通过“导出”按钮，可以将调用堆栈作为 .csv 文件导出，以用于自己的记录或与其他工具（如 Microsoft Excel）一起使用。

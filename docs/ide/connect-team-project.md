@@ -9,11 +9,11 @@ author: TerryGLee
 ms.manager: jmartens
 monikerRange: <=vs-2019
 ms.openlocfilehash: fd95da37fc0f6dcf5d7c735bc1e8b1afe050b9f8
-ms.sourcegitcommit: aef3e3f99e022675d339b7fe381cb37202be5be2
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "122785736"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641208"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>连接到团队资源管理器中的项目
 

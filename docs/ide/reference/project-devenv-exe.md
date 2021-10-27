@@ -20,11 +20,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 5be70c47759831c452e513ab2a4d4432840c1022
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122123822"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641122"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 

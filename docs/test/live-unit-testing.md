@@ -11,11 +11,11 @@ ms.author: mikejo
 ms.workload:
 - dotnet
 ms.openlocfilehash: b9b78771c36dce26744ba74af63922cf1efa48e2
-ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "108798617"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640974"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>如何配置和使用 Live Unit Testing
 

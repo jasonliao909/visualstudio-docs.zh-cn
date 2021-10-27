@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: eafe06a5654c14d60a78e20fb43f8b09172ddd29
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
-ms.translationtype: MT
+ms.openlocfilehash: 884e2970421c5760b41fa708746ec90b269a3b4c958db46683295069bbb23a40
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89324140"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121346488"
 ---
 O/R 设计器

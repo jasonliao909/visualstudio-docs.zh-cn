@@ -19,11 +19,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: b7e74880ec1dd038dd5bd50416bc97652cf1818c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122041209"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641158"
 ---
 # <a name="open-project-command"></a>打开项目命令
 

@@ -12,11 +12,11 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 6aef8e72f416923aa647a8b3a412ee701ece18dd
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801408"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735496"
 ---
 # <a name="events-viewer"></a>事件查看器
 

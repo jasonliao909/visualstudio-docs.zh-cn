@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 9e9d976983b534081926795ff1754fe7047f2f42
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122142060"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735511"
 ---
 # <a name="diagnostic-namespace"></a>diagnostic 命名空间
 `diagnostics` 命名空间提供用于发出并行可视化工具标记的功能。

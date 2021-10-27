@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: 0c3231bcd9f9ce5da8ee85323bca058c82829662
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122140123"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735846"
 ---
 # <a name="configure-load-test-run-settings"></a>配置负载测试运行设置
 

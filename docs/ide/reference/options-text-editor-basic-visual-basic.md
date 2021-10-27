@@ -22,11 +22,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: abe1a46305ad656dca843fbb217f34eacca86410
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122151257"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640863"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>“选项”>“文本编辑器”>“基本(Visual Basic)”>“高级”
 在“选项”  （“工具”  菜单）对话框中“文本编辑器”  文件夹的“基本”  文件夹内，“VB 专用”  属性页包含以下属性：

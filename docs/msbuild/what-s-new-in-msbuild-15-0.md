@@ -13,11 +13,11 @@ ms.workload:
 - multiple
 monikerRange: '>=vs-2017'
 ms.openlocfilehash: bcf84506f44e6aab30e0d5ce10e19f05a4a87c09
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122132023"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735713"
 ---
 # <a name="whats-new-in-msbuild-15"></a>MSBuild 15 中的新增功能
 

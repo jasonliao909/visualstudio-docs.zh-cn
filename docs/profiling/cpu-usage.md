@@ -12,11 +12,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 2e8db1683fa44ffa75ba6e0ac6aa1a5101c812c8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122039301"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735701"
 ---
 # <a name="analyze-cpu-usage-without-debugging-in-the-performance-profiler"></a>在不进行调试的情况下分析性能探查器中的 CPU 使用情况
 

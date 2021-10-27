@@ -17,11 +17,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b10eb89a5ad833c2f2bac09af68ac500dacfe58
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122137088"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735879"
 ---
 # <a name="how-to-clean-a-build"></a>如何：清理生成
 

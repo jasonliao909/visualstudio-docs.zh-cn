@@ -17,11 +17,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 7984cc74cf2116c72b9c9a35aa2cf0f272ec6cd3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122151478"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641179"
 ---
 # <a name="list-call-stack-command"></a>“列出调用堆栈”命令
 显示当前的调用堆栈。

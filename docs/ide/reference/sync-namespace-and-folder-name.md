@@ -13,11 +13,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: ad9ef98bff7100f5e0750790e17f32ea35de97d7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122143503"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736107"
 ---
 # <a name="sync-namespace-and-folder-name"></a>同步命名空间和文件夹名称
 

@@ -13,11 +13,11 @@ manager: jmartens
 ms.technology: vs-ide-general
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: 52c06a218c14fa09a6c879fa90805ddc48b22d8d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122049007"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640694"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Visual Studio 中筛选的解决方案
 

@@ -11,11 +11,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 216046727e40d9e086ffe69e312ce22ccc6b6357
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122054036"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735427"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>对编码的 UI 测试使用不同的 Web 浏览器
 

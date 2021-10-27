@@ -24,11 +24,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: f979a8f9e704dc689b2c176b2ce1356040e5c027
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122085270"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736087"
 ---
 # <a name="bscmake-task"></a>BscMake 任务
 
@@ -50,6 +50,6 @@ ms.locfileid: "122085270"
 |**SuppressStartupBanner**|可选 **Boolean** 参数。<br /><br /> 如果为 `true`，则在任务开始时阻止显示版权和版本号消息。<br /><br /> 有关详细信息，请参阅 [BSCMAKE 选项](/cpp/build/reference/bscmake-options)中的 /NOLOGO 选项。|
 |**TrackerLogDirectory**|可选 **String** 参数。<br /><br /> 指定跟踪器日志目录。|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [任务参考](../msbuild/msbuild-task-reference.md)

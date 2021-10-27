@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: b36a76b8d404606b97672a78d8fb467fc998bbf4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122107402"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640774"
 ---
 # <a name="marker_seriesis_enabled-method"></a>marker_series::is_enabled 方法
 确定是否有任何会话启用了该提供程序。

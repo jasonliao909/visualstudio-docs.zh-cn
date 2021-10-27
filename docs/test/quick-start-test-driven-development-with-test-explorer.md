@@ -11,11 +11,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: de154900bee2c78453f559c8c90020147e8c528c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122106648"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735442"
 ---
 # <a name="walkthrough-test-driven-development-using-test-explorer"></a>演练：通过测试资源管理器进行测试驱动开发
 

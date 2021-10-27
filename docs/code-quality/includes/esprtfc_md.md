@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 2af5dced969bf12096c3e19de683270768c89de6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
-ms.translationtype: MT
+ms.openlocfilehash: 96dc081fd38c5772110b3717ff689a736fa45d0292e2f475c99cb8da97e3e489
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89323835"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121348456"
 ---
 Team Explorer

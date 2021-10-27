@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: c753e44e1382a5a526d24bb0230a13171564208b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122120759"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640913"
 ---
 # <a name="styles-tab-window-properties-dialog-box"></a>“窗口属性”对话框 ->“样式”选项卡
 使用“样式”选项卡可显示应用于所选窗口的样式。 若要显示[窗口属性对话框](../debugger/window-properties-dialog-box.md)，将焦点移动到 [Windows 视图](../debugger/windows-view.md)窗口。 在树中选择任意窗口节点，然后从“视图”菜单选择“属性” 。

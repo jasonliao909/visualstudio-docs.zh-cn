@@ -2,7 +2,7 @@
 title: 使用实时调试器进行调试 | Microsoft Docs
 description: 在 Visual Studio 中使用实时调试器进行调试。 实时调试可以在应用发生错误或崩溃时自动启动 Visual Studio。
 ms.custom: SEO-VS-2020
-ms.date: 09/24/2018
+ms.date: 08/24/2021
 ms.topic: how-to
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f07adcdf073500dda859c30e77fc4e21879f139e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 8be534863936f44ce5a43e08d317c8cdb6e96c38
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122031058"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640733"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>在 Visual Studio 中使用实时调试器进行调试
 

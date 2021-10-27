@@ -20,11 +20,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: da48ecf879478be22c3a8e2db9bb6a3700390869
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122093679"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641074"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>MSBuild 常见的项元数据
 

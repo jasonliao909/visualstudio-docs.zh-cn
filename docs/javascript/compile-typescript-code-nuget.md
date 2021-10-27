@@ -12,11 +12,11 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 1bf1deb271d7a20527f53260813e35e0de9daa19
-ms.sourcegitcommit: 409a750a944a72c5931f6094deb4dc9a2635a984
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "123262070"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640651"
 ---
 # <a name="compile-typescript-code-aspnet-core"></a>编译 TypeScript 代码 (ASP.NET Core)
 

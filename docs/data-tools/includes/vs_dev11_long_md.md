@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 1af7ecd39f8f86f1f8c897aca8a519998e78ceec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ddc64e4211eca9b9c4b76962736196c0e2865c411eab30b4449aea19ffd92eeb
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89325371"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121325115"
 ---
 Visual Studio 2012

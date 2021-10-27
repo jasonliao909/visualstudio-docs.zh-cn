@@ -20,11 +20,11 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: cb4670bb84b151332951608f7b20ef5ea44e59a3
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436784"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735896"
 ---
 # <a name="getoutputfilename-task"></a>GetOutputFileName 任务
 
@@ -32,7 +32,7 @@ ms.locfileid: "92436784"
 
 ## <a name="parameters"></a>参数
 
-下表显示 GetOutputFileName  任务的参数。
+下表显示 GetOutputFileName 任务的参数。
 
 |参数|说明|
 |---------------|-----------------|

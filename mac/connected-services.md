@@ -7,11 +7,11 @@ ms.author: sayedha
 ms.date: 11/06/2018
 ms.topic: how-to
 ms.openlocfilehash: f16702a31bd77f30c8fc909755ae85b0824743e7
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963880"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735821"
 ---
 # <a name="connected-services-walkthrough"></a>“连接的服务”演练
 

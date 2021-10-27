@@ -2,7 +2,7 @@
 title: 禁用实时调试器 | Microsoft Docs
 description: 应用中发生错误时，可能会打开“实时调试器”对话框。 了解发生此情况时可采取的措施以及预防方法。
 ms.custom: SEO-VS-2020
-ms.date: 05/23/2018
+ms.date: 08/24/2021
 ms.topic: troubleshooting
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: b9d0c820877d30d0228c996538e320508dad2661
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: c7bb25028094ec2fc51187e5ffc6d08cda4321de
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122080775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735778"
 ---
 # <a name="disable-the-just-in-time-debugger"></a>禁用实时调试器
 

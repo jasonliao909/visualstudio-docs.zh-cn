@@ -13,11 +13,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 499398f40387ee8c5497ca32e7d3f0f56e44d788
-ms.sourcegitcommit: aef3e3f99e022675d339b7fe381cb37202be5be2
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "122785681"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735738"
 ---
 # <a name="generate-private-field-and-property-from-constructor"></a>从构造函数生成私有字段和属性
 

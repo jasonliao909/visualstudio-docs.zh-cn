@@ -8,11 +8,11 @@ ms.assetid: CC1B72D6-12FF-4CCC-A9D4-00F2DC14589F
 ms.custom: video
 ms.topic: how-to
 ms.openlocfilehash: eb3ceed624e3bbba67564bb8f7c359841c0e496d
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963896"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735621"
 ---
 # <a name="creating-and-editing-build-configurations"></a>创建和编辑生成配置
 

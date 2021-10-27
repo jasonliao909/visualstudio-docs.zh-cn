@@ -14,11 +14,11 @@ manager: jmartens
 ms.workload:
 - multiple
 ms.openlocfilehash: d0728154e21893ac45fc0e17cc3d0407551dbb3a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641102"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>在 Visual Studio 中指定自定义生成事件
 

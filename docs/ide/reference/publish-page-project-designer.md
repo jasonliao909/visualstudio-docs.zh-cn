@@ -16,11 +16,11 @@ manager: jmartens
 ms.workload:
 - multiple
 ms.openlocfilehash: 32bbd09b087639c362fbb5d6a137241c1aab85af
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958318"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640675"
 ---
 # <a name="publish-page-project-designer"></a>“项目设计器”->“发布”页
 

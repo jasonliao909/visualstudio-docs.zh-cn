@@ -15,11 +15,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: b3939debb9ee62a1bb5e621a9e1a99f1b6e99752
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122140071"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735844"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>使用编码的 UI 测试编辑器编辑编码的 UI 测试
 

@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 9c01ad2ee834d39a957ae2180b5d094fdc113964
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122035970"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735765"
 ---
 # <a name="view-menu-commands"></a>“视图”菜单命令
 “视图”菜单提供用于控制 Spy++ 用户界面的命令。

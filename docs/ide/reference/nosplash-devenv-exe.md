@@ -15,11 +15,11 @@ manager: jmartens
 ms.workload:
 - multiple
 ms.openlocfilehash: c88d75c0658c861c4631daeeb736ed7cfdb0a487
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967223"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641162"
 ---
 # <a name="nosplash-devenvexe"></a>/NoSplash (devenv.exe)
 

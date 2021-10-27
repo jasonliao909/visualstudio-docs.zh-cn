@@ -1,9 +1,9 @@
 ---
-ms.openlocfilehash: 7dc44c44b7a030798f3e511dc741ab9400f590ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
-ms.translationtype: MT
+ms.openlocfilehash: c5cf1e3edc8160a23d3ccf963515450d16bbc1faab7f572b315daf3b2b85782e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89326003"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121367420"
 ---
 Windows Vista

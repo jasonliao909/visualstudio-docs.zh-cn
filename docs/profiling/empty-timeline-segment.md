@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 367d82905e46eeacd9bb20c9e8a7444ce804ffe2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122150399"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735500"
 ---
 # <a name="empty-timeline-segment"></a>空时间线分段
 在并发可视化工具中，时间线部分为空（具有白色背景）的原因取决于通道的种类。

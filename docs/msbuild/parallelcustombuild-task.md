@@ -20,11 +20,11 @@ ms.author: corob
 ms.workload:
 - multiple
 ms.openlocfilehash: f4491d0a5e9c9d3a2554bd32211fd1fa8f7be2d2
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048891"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641063"
 ---
 # <a name="parallelcustombuild-task"></a>ParallelCustomBuild 任务
 

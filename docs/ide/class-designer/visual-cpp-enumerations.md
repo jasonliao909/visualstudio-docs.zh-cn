@@ -14,11 +14,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - cplusplus
 ms.openlocfilehash: b4ab0dc47f9113e17b36617b432df1ffe5f0153e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122109495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735549"
 ---
 # <a name="c-enumerations-in-class-designer"></a>类设计器中的 C++ 枚举
 

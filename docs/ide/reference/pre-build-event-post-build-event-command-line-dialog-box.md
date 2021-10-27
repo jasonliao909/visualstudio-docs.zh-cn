@@ -37,11 +37,11 @@ manager: jmartens
 ms.workload:
 - multiple
 ms.openlocfilehash: 20f8afa9dc9946644b935c34b98616d96a5fa875
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918310"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641126"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>生成前事件/生成后事件命令行对话框
 

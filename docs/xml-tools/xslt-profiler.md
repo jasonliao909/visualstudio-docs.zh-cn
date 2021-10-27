@@ -13,11 +13,11 @@ ms.workload:
 - multiple
 monikerRange: vs-2017
 ms.openlocfilehash: 4e4c15f9185a967f2c200a00ad2312343600c73e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122147487"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735822"
 ---
 # <a name="the-xslt-profiler"></a>XSLT 探查器
 

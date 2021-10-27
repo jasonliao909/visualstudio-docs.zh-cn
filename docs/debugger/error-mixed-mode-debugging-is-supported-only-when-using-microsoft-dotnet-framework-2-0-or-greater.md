@@ -17,11 +17,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
 ms.openlocfilehash: 0ac5e8d61264696c463084dc39bcdff01240b4c5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122161358"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735813"
 ---
 # <a name="error-mixed-mode-debugging-is-supported-only-when-using-microsoft-net-framework-20-or-greater"></a>错误：仅当使用 Microsoft .NET Framework 2.0 或更高版本时，才支持混合模式调试
 若要调试混合的本机代码和托管代码，必须安装有 .NET Framework 版本 2.0、3.0、3.5 或 4.0。 早期版本的 .NET Framework 不支持混合模式调试。

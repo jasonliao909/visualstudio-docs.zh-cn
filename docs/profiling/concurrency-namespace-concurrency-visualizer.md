@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 3305b42dd2acc2684c5bb1a9d6c538d3f254c573
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122039613"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641047"
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>Concurrency 命名空间（并发可视化工具）
 `Concurrency` 命名空间提供可让你访问 C++ 的并发运行和并发编程框架的类和函数。 有关详细信息，请参阅[并发运行时](/cpp/parallel/concrt/concurrency-runtime)。

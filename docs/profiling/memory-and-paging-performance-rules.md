@@ -12,11 +12,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 7e8606ea4d44d374a6d0c8b59905038b352aceaa
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122054621"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641046"
 ---
 # <a name="memory-and-paging-performance-rules"></a>内存和分页性能规则
 内存和分页类别中的性能规则确定在分析运行期间能影响应用程序性能和响应能力的分页活动。

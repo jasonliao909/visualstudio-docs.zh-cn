@@ -14,11 +14,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: ff28077f118af283ba2eac58e84c92dbadac1065
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122068594"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640995"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>在负载测试方案中配置测试迭代
 

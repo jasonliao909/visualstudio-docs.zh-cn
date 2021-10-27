@@ -7,11 +7,11 @@ ms.date: 11/09/2020
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
 ms.openlocfilehash: dc865ec593f53149d9c004f252015def32325d18
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963922"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735817"
 ---
 # <a name="working-with-git"></a>使用 Git
 

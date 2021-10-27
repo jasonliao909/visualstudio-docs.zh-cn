@@ -17,11 +17,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: f41021b3b0d8c4dd0d0d688573bdc2e5c37da8f6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122143802"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641177"
 ---
 # <a name="list-disassembly-command"></a>“列出反汇编”命令
 开始调试进程，并允许指定如何处理错误。

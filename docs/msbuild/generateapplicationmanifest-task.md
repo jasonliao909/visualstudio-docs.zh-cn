@@ -23,11 +23,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: a6d84d274fc67fa01c49db315f8a550e23c6bec8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122085086"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735918"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest 任务
 
@@ -37,7 +37,7 @@ ms.locfileid: "122085086"
 
 下表描述了 `GenerateApplicationManifest` 任务的参数。
 
-| 参数 | 描述 |
+| 参数 | 说明 |
 |---------------------------------| - |
 | `AssemblyName` | 可选 `String` 参数。<br /><br /> 指定生成的清单的程序集标识的 `Name` 字段。 如果未指定此参数，则从 `EntryPoint` 或 `InputManifest` 参数中推断名称。 如果无法创建任何名称，该任务将引发错误。 |
 | `AssemblyVersion` | 可选 `String` 参数。<br /><br /> 指定生成的清单的程序集标识的 `Version` 字段。 如果未指定此参数，请使用默认值“1.0.0.0”。 |
