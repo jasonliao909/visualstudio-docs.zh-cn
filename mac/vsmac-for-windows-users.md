@@ -3,14 +3,14 @@ title: 面向 Windows 用户的 Visual Studio for Mac
 description: 面向熟悉在 Windows 操作系统上使用 Visual Studio 的开发人员的 Visual Studio for Mac 简介。
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 11/09/2020
+ms.date: 11/09/2021
 ms.assetid: 61CB6883-08CE-470F-8599-6F7570DB756E
-ms.openlocfilehash: 880811c675aac34a18a65c6eccb8ee10f3347d4c
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.openlocfilehash: c6a98e8314bfdb9c838db3dc36afbec004755d2b
+ms.sourcegitcommit: 4efdab6a579b31927c42531bb3f7fdd92890e4ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963962"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "130350984"
 ---
 # <a name="visual-studio-for-mac-for-windows-users"></a>面向 Windows 用户的 Visual Studio for Mac
 
