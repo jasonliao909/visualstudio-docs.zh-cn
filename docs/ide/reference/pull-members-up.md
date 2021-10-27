@@ -14,11 +14,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 9abfe9498d1b6bda0c9423566172395d0aca5096
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122056233"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640672"
 ---
 # <a name="pull-members-up"></a>拉取成员
 

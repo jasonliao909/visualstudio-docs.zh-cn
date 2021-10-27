@@ -27,11 +27,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d01ffd478c2ddaf95b46cf3d0ceb2a29fbb1aca
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122109261"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641191"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>在 Visual Studio 中自定义窗口布局
 

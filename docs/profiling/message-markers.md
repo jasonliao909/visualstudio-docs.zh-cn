@@ -13,11 +13,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 13d8d1b91423f91b8d25ed89d96908a74879e261
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122027560"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640763"
 ---
 # <a name="message-markers"></a>消息标记
 消息标记代表日志输出。 消息是特定线程在特定时间发出的字符串。 可以将消息导出到文本文件，以便与其他工具一起使用。 可以将鼠标指针放在并发可视化工具中的某一消息上，以便查看消息字符串。 可以在[标记报告](../profiling/markers-report.md)中查看所有消息标记。  下图显示消息标记。

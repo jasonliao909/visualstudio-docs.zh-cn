@@ -7,13 +7,13 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: CE860D79-E29E-4B93-B094-BE74B35FC1C2
 ms.openlocfilehash: 6073e0bf2a601bf5183798a1df4fd835d0b93427
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123961768"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735624"
 ---
-# <a name="troubleshooting"></a>疑难解答
+# <a name="troubleshooting"></a>故障排除
 
 ## <a name="viewing-logs-in-visual-studio-for-mac"></a>查看 Visual Studio for Mac 中的日志
 

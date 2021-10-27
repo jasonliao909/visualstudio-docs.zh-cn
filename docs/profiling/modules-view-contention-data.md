@@ -14,11 +14,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 556e7becfd87cd9ffd9a47737cee1330d93413b9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122076407"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640762"
 ---
 # <a name="modules-view---contention-data"></a>“模块”视图 - 争用数据
 争用数据的“模块”视图显示按分析数据中采样的模块分组的并发数据。 每个模块都是一个层次结构树的根。 模块节点下列出其中发生争用事件的模块的函数。

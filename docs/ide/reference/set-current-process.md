@@ -15,11 +15,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: d118ac31d86fcf2935b6c7864ee7cdf2a8d5ad2a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122062090"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640842"
 ---
 # <a name="set-current-process"></a>设置当前进程
 将指定的进程设置为调试器中的活动进程。

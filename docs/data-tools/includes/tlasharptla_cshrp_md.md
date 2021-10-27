@@ -15,7 +15,7 @@ translation.priority.ht:
 - zh-tw
 ms.openlocfilehash: 98614e6c2f41eae23ff27cf2d5b1a67ef0cd0ed66fda0b13f922a67243f4f3eb
 ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/12/2021
 ms.locfileid: "122161941"

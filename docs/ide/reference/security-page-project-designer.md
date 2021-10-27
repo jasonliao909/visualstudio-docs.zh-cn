@@ -17,11 +17,11 @@ manager: jmartens
 ms.workload:
 - multiple
 ms.openlocfilehash: 426179eb20fcb71ac02039c3b2be20dab6f685b3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957850"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640845"
 ---
 # <a name="security-page-project-designer"></a>”项目设计器“ ->“安全”页
 

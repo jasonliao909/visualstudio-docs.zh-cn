@@ -21,11 +21,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 5d25f20394217b8910a4036841a4e53dd60b12a2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122137141"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735915"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest 任务
 

@@ -12,11 +12,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 815623537a8ac9f038f5405f7c8d11c1d55de8ab
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122121006"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735597"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>Half/Quarter 纹理维度变量
 减小非呈现器目标的纹理上的纹理尺寸。

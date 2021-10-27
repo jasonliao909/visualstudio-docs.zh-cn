@@ -17,11 +17,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f5f4dfccfdc8814992ecdac095408efabdd3f2d8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122076667"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640800"
 ---
 # <a name="da0004-high-processor-usage"></a>DA0004：处理器使用情况很高
 

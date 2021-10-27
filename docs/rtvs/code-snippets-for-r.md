@@ -11,11 +11,11 @@ ms.technology: vs-rtvs
 ms.workload:
 - data-science
 ms.openlocfilehash: 53da9805458647803b9590818748f604d32c6bd1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122100512"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640507"
 ---
 # <a name="code-snippets-for-r"></a>R 的代码片段
 

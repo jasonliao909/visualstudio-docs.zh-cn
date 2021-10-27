@@ -15,11 +15,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 381cffa54c1dc0446b3e0e2cbc9fa897643e5058
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122060799"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735860"
 ---
 # <a name="profiling-and-windows-vista-security"></a>分析和 Windows Vista 安全性
 

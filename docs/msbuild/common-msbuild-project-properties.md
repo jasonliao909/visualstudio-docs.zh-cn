@@ -22,11 +22,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 55d2ecda1619f187f1a1fdd0854eb1e3dd1d7fb8
-ms.sourcegitcommit: 92cfc4b09f2f1847fb3af72521e304af9a3c35b6
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "122765471"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736065"
 ---
 # <a name="common-msbuild-project-properties"></a>常用的 MSBuild 项目属性
 

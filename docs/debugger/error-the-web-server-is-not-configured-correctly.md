@@ -19,11 +19,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 288210ac250be0dd92ec409a4b1d45075c0baf2e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122134059"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735781"
 ---
 # <a name="error-the-web-server-is-not-configured-correctly"></a>错误：Web 服务器配置不正确
 

@@ -19,11 +19,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: dcd5bbeb94db4e75f11333149c075c6b204eed57
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122085060"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735900"
 ---
 # <a name="getfilehash-task"></a>GetFileHash 任务
 

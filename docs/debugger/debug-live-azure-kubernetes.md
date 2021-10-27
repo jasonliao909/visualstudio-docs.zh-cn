@@ -14,11 +14,11 @@ ms.workload:
 - aspnet
 - azure
 ms.openlocfilehash: c1c8a593d147b8ba38393aabd89b293e0fbd5d26
-ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "108798461"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640746"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>使用 Snapshot Debugger 调试实时 ASP.NET Azure Kubernetes 服务
 

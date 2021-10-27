@@ -22,11 +22,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: ad3b206dbbbc65b2a3a08bc4bee7e8a4e4e85773
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122108962"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736027"
 ---
 # <a name="error-task"></a>Error 任务
 
@@ -36,7 +36,7 @@ ms.locfileid: "122108962"
 
 下表描述了 `Error` 任务的参数。
 
-| 参数 | 描述 |
+| 参数 | 说明 |
 |---------------| - |
 | `Code` | 可选 `String` 参数。<br /><br /> 与错误关联的错误代码。 |
 | `File` | 可选 `String` 参数。<br /><br /> 包含错误的文件的名称。 如果未提供任何文件名称，将使用包含 Error 任务的文件。 |

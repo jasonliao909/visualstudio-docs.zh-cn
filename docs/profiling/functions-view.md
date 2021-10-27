@@ -20,11 +20,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 36d764112e02dde7686f5cca2be4b67d5360bda0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122131529"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735471"
 ---
 # <a name="functions-view"></a>“函数”视图
 “函数”视图列出分析过程中调用的函数。

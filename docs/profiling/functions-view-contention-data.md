@@ -15,11 +15,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 1f1397f25707f4354a0413df97517ee4efe419d2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122131555"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735481"
 ---
 # <a name="functions-view---contention-data"></a>“函数”视图 - 争用数据
 争用数据的“函数”报告视图列出了分析运行期间阻止执行的函数。

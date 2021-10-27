@@ -18,11 +18,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 4bb2e5bf40c038456853a06b9b43a9ee03d8e051
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122084514"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640810"
 ---
 # <a name="cvisenabled-function"></a>CvIsEnabled 函数
 确定是否有任何会话启用了指定的 ETW 提供程序。

@@ -11,11 +11,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 8c73edda39e77b0744eec6abb494ee93ba592f5e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122092223"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735836"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>在单元测试中使用 MSTest 框架
 

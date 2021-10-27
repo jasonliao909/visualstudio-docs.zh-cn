@@ -15,11 +15,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: e23ffa2cef27dc2607e238aa8674e91ff71efbd1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122078422"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640702"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>在 Visual Studio 中开发代码而无需创建项目或解决方案
 

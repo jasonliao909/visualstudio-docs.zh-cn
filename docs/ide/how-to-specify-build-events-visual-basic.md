@@ -18,11 +18,11 @@ manager: jmartens
 ms.workload:
 - multiple
 ms.openlocfilehash: 426b387603fbe7bca29f2ad4f507f2e517cac9bd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869253"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641189"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>如何：指定生成事件 (Visual Basic)
 

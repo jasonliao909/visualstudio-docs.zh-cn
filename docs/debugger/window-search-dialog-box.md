@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: c15385d232594c491288bef7cd0125aa4656b519
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122090026"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735577"
 ---
 # <a name="window-search-dialog-box"></a>“窗口搜索”对话框
 使用此对话框可在[窗口视图](../debugger/windows-view.md)中查找并选择特定窗口的节点。 若要显示此对话框，请将焦点移动到窗口视图窗口。 然后从“搜索”菜单中选择“查找窗口”。

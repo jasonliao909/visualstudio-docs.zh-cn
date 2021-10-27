@@ -1,10 +1,10 @@
 ---
 ms.topic: include
-ms.openlocfilehash: fa36478a9374cfbf5350d010b509d617063e61f7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
-ms.translationtype: MT
+ms.openlocfilehash: c27d2f5d2535ee0eb9b3d6561a3be1e274cdcbcc757b81c86cf11ab13ad97e61
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89323822"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121231595"
 ---
 域特定语言工具

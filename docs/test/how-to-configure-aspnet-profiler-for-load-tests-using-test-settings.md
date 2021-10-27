@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: 7aac266eff662a4270ba9595e03f571524e50b6f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122083760"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640992"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>如何：在 Visual Studio 中使用测试设置为负载测试配置 ASP.NET 探查器
 

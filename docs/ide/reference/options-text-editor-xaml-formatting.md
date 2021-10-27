@@ -33,11 +33,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - uwp
 ms.openlocfilehash: 47311af7eee476ac4beea2c73bfa5ab00ed19ea6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122069384"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641144"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>选项，文本编辑器，XAML，格式
 

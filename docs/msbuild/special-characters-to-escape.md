@@ -20,11 +20,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: d51afda7866fbf38642b47a99b970a6407ac4d19
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122100577"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640565"
 ---
 # <a name="special-characters-to-escape"></a>要转义的特殊字符
 

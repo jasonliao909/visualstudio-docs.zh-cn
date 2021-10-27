@@ -17,11 +17,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d7b024434b93607d1f104b37a1f168565b05f4f9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122150009"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735469"
 ---
 # <a name="how-to-specify-the-binary-to-start"></a>如何：指定要启动的二进制文件
 

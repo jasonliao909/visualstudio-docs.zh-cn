@@ -17,11 +17,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ce6ea2adca59be61c225be4388204c3302c4b7d9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122039249"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735705"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU 和 Windows 计数器
 

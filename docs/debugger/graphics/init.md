@@ -12,11 +12,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: d7aab5c2ddb35f1158aa83a4a365e5a0594ce457
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122133817"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735594"
 ---
 # <a name="init"></a>Init
 准备图形诊断的应用内组件来主动捕获图形信息并将其记录到图形日志文件。

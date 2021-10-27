@@ -24,11 +24,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 9179b67d5a7418cfc16900b28f51e3b0984135aa
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122043890"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735777"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>“选项”对话框 ->“调试”->“实时”
 若要访问“实时”页，请转到“工具”菜单，然后单击“选项”  。 在“选项”对话框中，展开“调试”节点并选择“实时”  。 使用该页，你可以为托管代码、本机代码和脚本启用实时调试。 有关详细信息，请参阅[实时调试](../debugger/just-in-time-debugging-in-visual-studio.md)。

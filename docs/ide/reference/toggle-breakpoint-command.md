@@ -18,11 +18,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 0404840f5aa1859c058391c7398f7c2d1fcd86fd
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122123796"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641119"
 ---
 # <a name="toggle-breakpoint-command"></a>“切换断点”命令
 在文件中的当前位置，根据其当前状态打开或关闭断点。

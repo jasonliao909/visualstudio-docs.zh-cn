@@ -17,11 +17,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d003a953c411723ae8b7d52055923db21b85ba6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122123809"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640840"
 ---
 # <a name="set-current-stack-frame-command"></a>“设置当前堆栈帧”命令
 允许设置特定堆栈帧。

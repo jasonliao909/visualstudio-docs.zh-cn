@@ -20,11 +20,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 7e6dae429c3083188fa9d7fbc37a48dda5a98b18
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122112589"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735779"
 ---
 # <a name="jit-optimization-and-debugging"></a>JIT 优化和调试
 如果尝试调试代码，则在该代码未优化时更易调试。 优化代码时，编译器和运行时会对发出的 CPU 代码进行更改，使其运行速度更快，但与原始源代码的映射不太直接。 如果映射不太直接，则调试器通常无法告诉你局部变量的值，代码步进和断点也可能无法按预期要求工作。

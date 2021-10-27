@@ -22,11 +22,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: fa25fe5b06aa461b0628fff90a3a383228c9a5ca
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122055154"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736102"
 ---
 # <a name="al-assembly-linker-task"></a>AL（程序集链接器）任务
 

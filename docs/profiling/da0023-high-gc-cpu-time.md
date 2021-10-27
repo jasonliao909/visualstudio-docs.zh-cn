@@ -16,11 +16,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 859c0cb12e76b5e6a12235a51e01efdc8449e207
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122131763"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640785"
 ---
 # <a name="da0023-high-gc-cpu-time"></a>DA0023：垃圾回收占用的 CPU 时间很多
 

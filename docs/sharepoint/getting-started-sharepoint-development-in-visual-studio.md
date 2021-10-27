@@ -19,11 +19,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: 5576a9871e4ca1a8476b89298d84431e69042915
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122060162"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126652387"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>入门（Visual Studio 中的 SharePoint 开发）
 

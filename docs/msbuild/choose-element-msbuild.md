@@ -23,11 +23,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 8248ad385d3c1af5dde264a9c04c58acbf4f32b7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122077720"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736082"
 ---
 # <a name="choose-element-msbuild"></a>Choose 元素 (MSBuild)
 

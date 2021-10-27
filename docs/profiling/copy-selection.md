@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: df4af35a1258d106b68d3105726b827e199a7db2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122039444"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735520"
 ---
 # <a name="copy-selection"></a>复制选择
 若要从“报告”选项卡复制整个调用堆栈，请单击“复制”。 然后，可以在任何支持该操作的程序中粘贴该调用堆栈。

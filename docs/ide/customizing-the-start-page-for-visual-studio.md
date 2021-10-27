@@ -17,11 +17,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 0814d4f7c9be48ef881d80d835a28c93921317e8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122109391"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640704"
 ---
 # <a name="customize-startup"></a>自定义启动
 

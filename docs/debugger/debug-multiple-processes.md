@@ -23,11 +23,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 742c121b7d45f8772f8ae4d53be5282f24d4313f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122031045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640743"
 ---
 # <a name="debug-multiple-processes-c-visual-basic-c"></a>调试多个进程（C#、Visual Basic、C++）
 

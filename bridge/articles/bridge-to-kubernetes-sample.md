@@ -9,11 +9,11 @@ title: 了解如何借助 TODO 示例应用使用 Bridge to Kubernetes 在本地
 ms.date: 10/20/2020
 description: 借助 TODO 示例应用，了解如何使用 Bridge to Kubernetes 在 Visual Studio Code 中本地开发、调试和测试 Kubernetes 应用程序
 ms.openlocfilehash: 483819e102d0eca1048763ff5d28a3143accb98e
-ms.sourcegitcommit: f930bc28bdb0ba01d6f7cb48f229afecfa0c90cd
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "122334591"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126652396"
 ---
 # <a name="use-bridge-to-kubernetes-with-a-sample"></a>通过示例来使用 Bridge to Kubernetes
 

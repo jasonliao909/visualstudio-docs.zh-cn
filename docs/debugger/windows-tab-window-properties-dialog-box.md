@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: ff9e7acf648e57dbb3d50a7841e06594fad35733
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122112238"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735575"
 ---
 # <a name="windows-tab-window-properties-dialog-box"></a>“窗口属性”对话框 ->“窗口”选项卡
 使用“窗口”选项卡显示所选窗口相关的窗口的信息。 若要显示[窗口属性对话框](../debugger/window-properties-dialog-box.md)，将焦点移动到 [Windows 视图](../debugger/windows-view.md)窗口。 在树中选择任意窗口节点，然后从“视图”菜单选择“属性” 。

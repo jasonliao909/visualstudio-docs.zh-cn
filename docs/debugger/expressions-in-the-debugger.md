@@ -23,11 +23,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 7db52fff8d2e952c0f0d591845d0c644e8212e3f
-ms.sourcegitcommit: aef3e3f99e022675d339b7fe381cb37202be5be2
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "122785944"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640725"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio 调试器中的表达式
 Visual Studio 调试器包括表达式计算器，当您在 **“快速监视”** 对话框、 **“监视”** 窗口或 **“即时”** 窗口中输入表达式时，这些计算器可以对其进行计算。 这些表达式计算器还可以在 **“断点”** 窗口和调试器中的许多其他位置使用。

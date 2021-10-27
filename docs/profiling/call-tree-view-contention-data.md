@@ -15,11 +15,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 28cd7b22e64afbfb4c7c4100bd44c28e6dec6bb6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122084774"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640540"
 ---
 # <a name="call-tree-view---contention-data"></a>“调用树”视图 - 争用数据
 “调用关系树”视图显示在分析应用程序中遍历的函数执行路径。 树的根是应用程序或组件的入口点。 每个函数节点都列出它所调用的所有函数、函数被阻止的次数，以及函数由于与其他线程或进程争用资源而被阻止的时间量。

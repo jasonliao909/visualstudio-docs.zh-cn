@@ -21,11 +21,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 7dbf4105320531a21f478ef8947129e0fa754c28
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122112213"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640899"
 ---
 # <a name="visualizer-api-reference"></a>可视化工具 API 参考
 

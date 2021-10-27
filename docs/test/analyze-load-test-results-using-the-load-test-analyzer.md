@@ -14,11 +14,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: 3c32efc335441b57ff23fe55b5619297e50bf700
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122083968"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641009"
 ---
 # <a name="analyze-load-test-results-using-the-load-test-analyzer"></a>使用负载测试分析器分析负载测试结果
 

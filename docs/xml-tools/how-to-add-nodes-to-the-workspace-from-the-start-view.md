@@ -12,11 +12,11 @@ ms.technology: vs-xml-tools
 ms.workload:
 - multiple
 ms.openlocfilehash: 0f3a67d873da498dc453decd316e74f9331ba391
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122098783"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735637"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>如何：将起始视图中的节点添加到工作区
 

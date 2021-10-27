@@ -13,11 +13,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 262c4276395f2de71d8720dcd9a26839ef4cac51
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122117080"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736117"
 ---
 # <a name="sort-usings"></a>对 using 排序
 

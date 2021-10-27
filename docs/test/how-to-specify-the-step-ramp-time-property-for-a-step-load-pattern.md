@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: 3cce2cecbebd6e215f5eb249fa7e999b404ccbc5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122092444"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735646"
 ---
 # <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>如何：为分级负载模式指定单步负载增加时间属性
 

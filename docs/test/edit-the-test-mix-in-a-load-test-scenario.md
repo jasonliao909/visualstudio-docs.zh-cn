@@ -15,11 +15,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: 8990b05e0216e9f600aeb1236d7ce847341e9e0a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122135801"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735845"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>编辑测试组合以指定在负载测试方案中包括的 Web 性能、单元和编码的 UI 测试
 

@@ -11,11 +11,11 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 7a09cc073b2886ab0d374bccaf8b85f3bb729dd7
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97905060"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735506"
 ---
 # <a name="visualize-dotnet-counters-from-the-visual-studio-profiler"></a>从 Visual Studio 探查器中将 dotnet 计数器可视化
 

@@ -16,11 +16,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 4aca0369b3720acaf43f39635ae0110d30f53524
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122108754"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735884"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>如何：使用 MSBuild.exe 在解决方案中生成特定目标
 

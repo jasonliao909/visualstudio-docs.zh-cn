@@ -12,11 +12,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 70ac7cbc1081e2c7a9a04c96393a5ac6af51cede
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122133830"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735595"
 ---
 # <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>如何：更改图形诊断播放计算机
 你可以使用本地计算机、远程计算机或设备播放图形信息。

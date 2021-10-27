@@ -12,11 +12,11 @@ ms.author: tglee
 manager: jmartens
 ms.technology: vs-ide-general
 ms.openlocfilehash: 8874a6ee31dd00662544e710d28f5d0e53491425
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122048838"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641139"
 ---
 # <a name="options-text-editor-xml-miscellaneous"></a>选项, 文本编辑器, XML, 杂项
 

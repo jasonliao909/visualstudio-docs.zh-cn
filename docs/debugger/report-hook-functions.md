@@ -27,11 +27,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 6274c9131ecfd8d49bf0a741a1ced69590b96c9d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122161123"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640924"
 ---
 # <a name="report-hook-functions"></a>报表挂钩函数
 每次 [_CrtDbgReport](/cpp/c-runtime-library/reference/crtsetreporthook) 生成调试报告时都会调用报告挂钩函数（使用 [_CrtSetReportHook](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) 安装）。 可以使用报告挂钩函数以及其他项筛选报告以集中于特定类型的分配。 报告挂钩函数应具有如下原型：

@@ -19,11 +19,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: a62e0714da65552eedc6ca989a5035cdcf655b8d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122096825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640903"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>使用保存的 IntelliTrace 数据（C#、Visual Basic、C++）
 

@@ -15,11 +15,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 8bcb1307714b33e87a886cef18dd97e3d6000e0c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122108416"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641069"
 ---
 # <a name="override-toolsversion-settings"></a>重写 ToolsVersion 设置
 

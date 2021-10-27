@@ -15,11 +15,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 0fb9846958700e89ea4bc7cf12815ccf6335e39c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122107142"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735676"
 ---
 # <a name="performance-session-properties"></a>性能会话属性
 

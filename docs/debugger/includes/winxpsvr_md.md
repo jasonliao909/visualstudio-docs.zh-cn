@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: c9843a3e16531ded145365b96012ad0a6d3fbd56
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3e853f8cb02198d881845557077a9c6d68fe7fa19031cadff9be0ef519a42b33
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89324575"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121453560"
 ---
 Windows Server 2003

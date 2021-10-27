@@ -27,11 +27,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 6cb6232fc642030a1e276a06b865e3112380b387
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122133804"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640894"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>使用“线程”窗口在 Visual Studio 调试器中查看线程（C#、Visual Basic、C++）
 在“线程”窗口中，可以检查并处理正在调试的应用程序中的线程。 有关如何使用“线程”窗口的分步指南，请参阅[演练：使用“线程”窗口进行调试](../debugger/how-to-use-the-threads-window.md)。

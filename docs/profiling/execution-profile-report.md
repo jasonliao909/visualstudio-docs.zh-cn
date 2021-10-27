@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: d62eac1bb37e297f9247241e4aac073e2406fdcc
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122061059"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735491"
 ---
 # <a name="execution-profile-report"></a>执行分析报告
 执行分析报告是传统的采样分析。 线程在逻辑内核上运行期间内，将大约每毫秒进行一次采样，并且并发可视化工具可通过调用累积的堆栈集构建典型的调用关系树。 此表中的数据可能受到当前时间范围、隐藏线程和可能应用的筛选器的影响：
@@ -31,7 +31,7 @@ ms.locfileid: "122061059"
 
   下表显示报告中的列。
 
-|列|描述|
+|列|说明|
 |------------|-----------------|
 |名称|调用堆栈每个级别的函数的名称。|
 |非独占样本数|为汇总到此调用堆栈树级别的所有堆栈收集的样本总数。 非独占数是此函数的独占样本数和所有子节点的非独占计数器的总和。|

@@ -17,11 +17,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 302dd26541c49c4cd8f84da437c298dca40421ba
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122117093"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640839"
 ---
 # <a name="set-current-thread-command"></a>“设置当前线程”命令
 将指定的线程设置为当前线程。

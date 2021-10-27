@@ -14,11 +14,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: c42c6a98ab9b453131af383b5b39a1c12ed9e895
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122038313"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735835"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>演练：创建并运行包含单元测试的负载测试
 

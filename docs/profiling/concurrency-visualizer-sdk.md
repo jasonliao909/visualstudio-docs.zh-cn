@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: c3d1cc162cc48cef6ee6e9fc1269ea262f5ff0a4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122039574"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735530"
 ---
 # <a name="concurrency-visualizer-sdk"></a>并发可视化工具 SDK
 可通过使用并发可视化工具 SDK 检测源代码，以在并发可视化工具中显示附加信息。 可以在代码中将其他数据与阶段和事件关联。 这些其他的可视化被称为标记。  有关介绍性演练，请参阅 [Introducing the Concurrency Visualizer SDK](/archive/blogs/visualizeparallel/introducing-the-concurrency-visualizer-sdk)（并发可视化工具 SDK 简介）。

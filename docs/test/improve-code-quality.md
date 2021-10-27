@@ -14,11 +14,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 987c9928fecb3ad752656c065bd369b9844da864
-ms.sourcegitcommit: e6aeefef5b659a56e6e433d155bfd269c46bceb0
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122603588"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735448"
 ---
 # <a name="first-look-at-testing-tools-in-visual-studio"></a>首先介绍 Visual Studio 中的测试工具
 

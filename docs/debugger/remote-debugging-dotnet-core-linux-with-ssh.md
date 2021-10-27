@@ -13,11 +13,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 71f9c74e37eafcd8bdaa9e0f9da361a6684c7d4b
-ms.sourcegitcommit: aef3e3f99e022675d339b7fe381cb37202be5be2
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "122785970"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640932"
 ---
 # <a name="debug-net-core-on-linux-using-ssh-by-attaching-to-a-process"></a>在 Linux 上使用 SSH 通过附加到进程调试 .NET Core
 

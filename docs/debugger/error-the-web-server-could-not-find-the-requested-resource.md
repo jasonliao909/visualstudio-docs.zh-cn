@@ -17,11 +17,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: e0e179cc3d16769d955ff4d3e26a44fedfa99c42
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122097198"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735793"
 ---
 # <a name="error-the-web-server-could-not-find-the-requested-resource"></a>错误：Web 服务器找不到所请求的资源
 为了安全起见，IIS 已返回泛型错误。

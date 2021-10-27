@@ -16,11 +16,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 7d75523b50cddf5270480747345fbcf021ea655e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122136945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640637"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>如何：将文件排除在生成过程外
 

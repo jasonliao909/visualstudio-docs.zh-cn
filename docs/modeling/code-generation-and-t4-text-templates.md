@@ -19,11 +19,11 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: e862500f8e8518cc4f2b47402544431ef6706c25
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122061436"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126652393"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>代码生成和 T4 文本模板
 

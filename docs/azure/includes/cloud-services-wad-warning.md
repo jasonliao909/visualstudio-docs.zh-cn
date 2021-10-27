@@ -1,13 +1,13 @@
 ---
-ms.openlocfilehash: 0170c6ed655ce54e2dbadf57341dff56616186ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
-ms.translationtype: MT
+ms.openlocfilehash: 4025dcdec361dc685f44253030fa08a7e5d9272da97b0d62388fa2d3bd37e72b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89323828"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121295075"
 ---
 > [!WARNING]
-> 为现有角色启用诊断时，将禁用部署包时已设置的所有扩展。 其中包括：
+> 为现有角色启用诊断时，将禁用部署包时已设置的所有扩展。 其中包括:
 >
 > * Microsoft 监视代理诊断
 > * Microsoft Azure 安全监视

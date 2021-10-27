@@ -20,11 +20,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 27aaa8d043ffce98e5d3a03a57226478d49a634f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122141540"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641042"
 ---
 # <a name="process-view"></a>“进程”视图
 “进程”视图显示在分析运行期间执行的进程和线程的分析数据。

@@ -13,11 +13,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: b9cc3cb9a0792121f03d16be1f52ba3c1cf9fe39
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122133921"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735596"
 ---
 # <a name="hlsl-shader-debugger"></a>HLSL 着色器调试器
 Visual Studio 图形分析器中的 HLSL 调试器可帮助了解 HLSL 着色器代码在应用的实际条件下如何运行。

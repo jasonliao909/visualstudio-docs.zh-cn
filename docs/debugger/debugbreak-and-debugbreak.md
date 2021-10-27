@@ -23,11 +23,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 707c660b658a4f1c34ab0faf345ff64c5063dc8f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122052149"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640729"
 ---
 # <a name="debugbreak-and-__debugbreak"></a>DebugBreak 和 __debugbreak
 可以在代码中的任意点调用 [DebugBreak](/windows/win32/api/debugapi/nf-debugapi-debugbreak) Win32 函数或 [__debugbreak](/cpp/intrinsics/debugbreak) 内部函数。 `DebugBreak` 和 `__debugbreak` 具有与在该位置设置断点相同的效果。

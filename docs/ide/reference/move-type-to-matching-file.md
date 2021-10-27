@@ -13,11 +13,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: aab621ab68d90b44e1132ddbafeb69db57af209b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122117327"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641167"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>“将类型移到匹配的文件”重构
 
@@ -33,7 +33,7 @@ ms.locfileid: "122117327"
 
 原因：将多个类型置于相同的文件会使查找这些类型变得困难。 通过将类型移动到具有相同名称的文件，代码变得更具可读性且更易于导航。
 
-## <a name="how-to"></a>操作方法
+## <a name="how-to"></a>操作说明
 
 1. 将光标置于定义类型的类型名称中。 例如：
 

@@ -17,11 +17,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a5141560aefaf31337ffc82eee1bfa0f413d43c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122058642"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735803"
 ---
 # <a name="error-remote-computer-could-not-initiate-dcom-communications"></a>错误：远程计算机无法启动 DCOM 通信
 当远程计算机尝试与本地计算机通信时，发生 DCOM 错误。 本地计算机是

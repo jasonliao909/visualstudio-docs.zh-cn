@@ -10,7 +10,7 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.openlocfilehash: 79fd599b58a951f67c4fb095528e8be00bcd2a17
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126602128"

@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: ab057ad8cad8c03045c8c1af323a5ba7c2537023
-ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
+ms.openlocfilehash: ffe6d669ae10603b1113bcb9ee87be63b076ddcf
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "123398647"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641106"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>步骤 1：创建项目并向窗体添加标签
 
@@ -59,7 +59,7 @@ ms.locfileid: "123398647"
    >
    > ![“创建新项目”窗口内“找不到所需内容”消息中的“安装更多工具和功能”链接](../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
-   > 接下来，在 Visual Studio 安装程序中，选择“.NET 桌面开发”  工作负载。
+   > 接下来，在 Visual Studio 安装程序中，选择“.NET 桌面开发”工作负载。
    >
    > ![Visual Studio 安装程序中的 .NET Core 开发工作负载](../ide/media/install-dot-net-desktop-env.png)
    >

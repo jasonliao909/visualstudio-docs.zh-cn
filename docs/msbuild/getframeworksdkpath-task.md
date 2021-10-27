@@ -22,11 +22,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: c785e7d7e12a77650f607fc58798f6b80b73f0f0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122093809"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735898"
 ---
 # <a name="getframeworksdkpath-task"></a>GetFrameworkSdkPath 任务
 

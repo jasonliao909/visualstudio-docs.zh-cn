@@ -1,9 +1,9 @@
 ---
-ms.openlocfilehash: 140b1ec9104bedd4bc823fdb3ab0ac6cc5d2f683
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
-ms.translationtype: MT
+ms.openlocfilehash: 6a2d15bb8d66d6f2cd15ebe4be1d765977397132acd3db1eb17dee61b783f7a5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315819"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121367483"
 ---
  GUID 

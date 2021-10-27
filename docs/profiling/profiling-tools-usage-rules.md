@@ -12,11 +12,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 858a49a02e335f169bda60182d5388971cc6f29b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122054543"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735856"
 ---
 # <a name="profiling-tools-usage-rules"></a>分析工具使用规则
 分析工具使用类别中的性能规则提供有关最有效地使用探查器收集数据的指南。

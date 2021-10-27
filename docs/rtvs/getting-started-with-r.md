@@ -11,11 +11,11 @@ ms.technology: vs-rtvs
 ms.workload:
 - data-science
 ms.openlocfilehash: 26a7c3ed6db4ceda5128bee93c607e45a0db3ef0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122068678"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640759"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Visual Studio 中的 R 工具入门
 

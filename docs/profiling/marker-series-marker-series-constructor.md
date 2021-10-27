@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 16e766bc5c22cc6c9efb257c22326a4addf4bf0f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122076459"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640772"
 ---
 # <a name="marker_seriesmarker_series-constructor"></a>marker_series::marker_series 构造函数
 初始化 `marker_series` 类的新实例。

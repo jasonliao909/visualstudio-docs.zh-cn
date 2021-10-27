@@ -18,11 +18,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: ba469d7f4d9460b6c53ae37432d65a941e0d8fcb
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122078448"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735559"
 ---
 # <a name="how-to-view-inheritance-between-types-in-class-designer"></a>如何：在类设计器中查看类型之间的继承
 

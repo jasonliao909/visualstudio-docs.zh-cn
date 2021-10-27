@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: f02c554c9df8a71fd6ae8b7a045d1ae4e3cc0917
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122150048"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640776"
 ---
 # <a name="marker_series-class"></a>marker_series 类
 表示由单个提供程序生成的一系列事件通道。

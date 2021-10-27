@@ -20,11 +20,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - aspnet
 ms.openlocfilehash: fd2bf1a08eeaf1467ae948c78f84d7bfbab67d12
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122043942"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735593"
 ---
 # <a name="find-the-name-of-the-aspnet-process"></a>查找 ASP.NET 进程的名称
 

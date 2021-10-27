@@ -14,11 +14,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 64c7266ec8cfa8ca14053feafacc6dcafa74fc0c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122076355"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641041"
 ---
 # <a name="process-view---contention-data"></a>“进程”视图 - 争用数据
 “进程”视图显示在分析运行期间执行的进程和线程的争用数据。

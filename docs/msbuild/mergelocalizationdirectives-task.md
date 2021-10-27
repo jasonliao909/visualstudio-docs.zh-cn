@@ -22,11 +22,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 13d052402196126c53f327fd1cc2033f99da548b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122069024"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641083"
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives 任务
 

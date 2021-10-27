@@ -10,11 +10,11 @@ ms.workload:
 - cplusplus
 author: corob-msft
 ms.openlocfilehash: 6e8df96c6345d84531ef04eae56f7f60dcc3eefe
-ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "112042868"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735838"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>在 Visual Studio 中编写 C/C++ DLL 单元测试
 

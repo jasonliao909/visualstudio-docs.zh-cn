@@ -15,11 +15,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 4ae6d510c68a1e3ea8e9f2c0f66b9b5bac3071c2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122131217"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735862"
 ---
 # <a name="profiler-sampling-method-data-views"></a>探查器采样方法数据视图
 本节包含有关使用采样方法生成的探查器数据文件的视图和报告的参考信息。

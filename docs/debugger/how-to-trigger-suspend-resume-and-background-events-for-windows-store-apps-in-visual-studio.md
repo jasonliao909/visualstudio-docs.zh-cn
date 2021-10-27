@@ -18,11 +18,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - uwp
 ms.openlocfilehash: 01ae0d08e0211c48c8ff96052d7a12fe5f9aeb56
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122112771"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735579"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>在 Visual Studio 中调试 UWP 应用时如何触发挂起、继续和后台事件
 

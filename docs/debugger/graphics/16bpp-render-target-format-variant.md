@@ -12,11 +12,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: a1713dba828af71b1a6a23cc7de0f46fd28bab70
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122154312"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640721"
 ---
 # <a name="16-bpp-render-target-format-variant"></a>16 bpp 呈现器目标格式变体
 将所有呈现器目标和后台缓冲区的像素格式设置为 DXGI_FORMAT_B5G6R5_UNORM。

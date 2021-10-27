@@ -14,11 +14,11 @@ ms.workload:
 - aspnet
 - azure
 ms.openlocfilehash: f8aabb109de02a1beec326407472a841fe16425a
-ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "108798448"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640745"
 ---
 # <a name="record-and-replay-live-aspnet-apps-on-azure-virtual-machines-using-the-snapshot-debugger"></a>使用 Snapshot Debugger 在 Azure 虚拟机上记录和重播实时 ASP.NET 应用
 

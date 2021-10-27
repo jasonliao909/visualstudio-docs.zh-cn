@@ -21,11 +21,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: acaf60f9fdabc5f85f7811e2b38ed7b8903c2e10
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122128073"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735587"
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>如何：测试和调试可视化工具
 编写完可视化工具后，需要对其进行调试和测试。

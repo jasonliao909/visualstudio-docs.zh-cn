@@ -14,11 +14,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d8c1f089f96457c25bad703de40311000eaa65fb
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122149671"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735691"
 ---
 # <a name="markprofile"></a>MarkProfile
 `MarkProfile` 方法可在 .vsp 文件中插入配置文件标记。 包含 `MarkProfile` 函数的线程的分析必须处于开启状态，才能插入标记。

@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: bc8e44d2673980a06d47ee576b3259043e695c02
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
-ms.translationtype: MT
+ms.openlocfilehash: fdbc2db0fbd7edf34a61e89ee27200e80f9a68a090adf8882bbc8d9424e23398
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89324535"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121240674"
 ---
 WCF 数据服务

@@ -13,11 +13,11 @@ ms.author: ghogen
 manager: jmartens
 ms.technology: msbuild
 ms.openlocfilehash: 1e63d6e35714947010243d06c2b0e8ba7e4237c5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122108741"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640629"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>如何：忽略任务中的错误
 

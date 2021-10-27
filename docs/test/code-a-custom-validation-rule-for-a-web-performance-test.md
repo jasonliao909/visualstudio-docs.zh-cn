@@ -19,11 +19,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: 5eb34377ab17bec9a1e8bb51e213eb24b7415e48
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122026897"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640996"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>为 Web 性能测试编码自定义验证规则
 

@@ -16,11 +16,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 624b8e3b1c0f20b8be177b89954ea1c3dbc7bb6c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122033741"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735475"
 ---
 # <a name="functions-view---sampling-data"></a>“函数”视图 - 采样数据
 采样分析方法的“函数”报表视图列出分析运行期间采样的函数。
@@ -28,7 +28,7 @@ ms.locfileid: "122033741"
 > [!NOTE]
 > Windows 8 和 Windows Server 2012 中增强的安全功能需要以 Visual Studio 探查器在这些平台上收集数据的方式进行重大更改。 UWP 应用也需要新的收集技术。 请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。
 
-|列|描述|
+|列|说明|
 |------------|-----------------|
 |**进程 ID**|分析运行的进程 ID (PID)。|
 |**进程名**|进程的名称。|

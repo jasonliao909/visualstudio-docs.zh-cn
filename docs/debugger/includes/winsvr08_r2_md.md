@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 876a91e296cc2faf27c65a3fab771dcf9e12d284
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2926b300dd81ed95fada178bd4453ae194f750c502aee8194ab7498eb0ea53d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89324991"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121379450"
 ---
 Windows Server 2008 R2

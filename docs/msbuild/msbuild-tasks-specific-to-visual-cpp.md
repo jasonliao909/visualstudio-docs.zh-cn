@@ -19,11 +19,11 @@ ms.technology: msbuild
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 2a630842092f18d81257877742f872d3a01fe862
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122077135"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735876"
 ---
 # <a name="msbuild-tasks-specific-to-c"></a>特定于 C++ 的 MSBuild 任务
 

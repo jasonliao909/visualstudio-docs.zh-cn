@@ -16,11 +16,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 26d5c3f4095dec633b853e6cb6cd141975b9cc11
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122069188"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640622"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>如何：指定首先生成的目标
 
@@ -77,7 +77,7 @@ ms.locfileid: "122069188"
 
      `msbuild <file name>.proj -t:Clean;Compile`
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [MSBuild](../msbuild/msbuild.md)
 - [目标](../msbuild/msbuild-targets.md)

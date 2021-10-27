@@ -12,11 +12,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 8d674a46ec68810df8575f963bccf9b2ed70f574
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122040939"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641108"
 ---
 # <a name="sign-in-to-visual-studio-on-windows"></a>在 Windows 上登录到 Visual Studio 
 

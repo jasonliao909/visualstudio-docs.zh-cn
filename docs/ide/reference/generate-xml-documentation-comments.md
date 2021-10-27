@@ -11,11 +11,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 ms.openlocfilehash: a0319b511ddc55e0a6aa0297c924fbfbe14c6c34
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122085879"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735737"
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>如何：为文档生成项插入 XML 注释
 

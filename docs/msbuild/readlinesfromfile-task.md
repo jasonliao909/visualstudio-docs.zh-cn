@@ -22,11 +22,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 1634aa8a669fa03f217fedf04b5dd8620b95829c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122068769"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735715"
 ---
 # <a name="readlinesfromfile-task"></a>ReadLinesFromFile 任务
 

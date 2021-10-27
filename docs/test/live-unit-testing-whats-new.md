@@ -14,11 +14,11 @@ ms.workload:
 - dotnet
 monikerRange: vs-2017
 ms.openlocfilehash: ae1caef04c1ccd1c51c38ddef5dc8c783bdbfaa9
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328829"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640971"
 ---
 # <a name="whats-new-in-live-unit-testing-for-visual-studio-2017"></a>Visual Studio 2017 的 Live Unit Testing 的新增功能
 

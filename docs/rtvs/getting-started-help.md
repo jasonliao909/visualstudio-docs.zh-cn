@@ -11,11 +11,11 @@ ms.technology: vs-rtvs
 ms.workload:
 - data-science
 ms.openlocfilehash: b51caf0e98aeaf98e48e1018cbc9a093f8e084f4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122076069"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641017"
 ---
 # <a name="help-in-r-tools-for-visual-studio"></a>针对 Visual Studio 的 R 工具中的帮助
 

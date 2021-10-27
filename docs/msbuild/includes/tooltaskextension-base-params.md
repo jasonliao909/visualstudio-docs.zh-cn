@@ -3,12 +3,12 @@ author: ghogen
 ms.author: ghogen
 ms.topic: include
 ms.date: 4/23/2020
-ms.openlocfilehash: d7d4027c53f599b4a17d267d5ebf72eee1ed296b
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: 455ae24a0efc98cbc081a2c99a36564dd25f8c8e166e94568aa64b1d4310e317
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98535298"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121231244"
 ---
 ### <a name="tooltaskextension-parameters"></a>ToolTaskExtension 参数
 
@@ -16,7 +16,7 @@ ms.locfileid: "98535298"
 
 下表介绍基类的参数：
 
-| 参数 | 描述 |
+| 参数 | 说明 |
 | - | - |
 | <xref:Microsoft.Build.Utilities.ToolTask.EchoOff%2A> | 可选 `bool` 参数。<br /><br /> 设置为 `true` 时，此任务会将 /Q  传递到 cmd.exe  命令行，以便命令行不会复制到 stdout。 |
 | <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A> | 可选的 `String` 数组参数。<br /><br /> 环境变量定义的数组，用分号分隔。 每个定义都应指定用等号分隔的环境变量名称和值。 这些变量会传递到生成的可执行文件以及（有选择地重写）常规环境块。 例如，`Variable1=Value1;Variable2=Value2`。 |

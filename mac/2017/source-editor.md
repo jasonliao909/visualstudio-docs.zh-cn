@@ -6,11 +6,11 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
 ms.openlocfilehash: 187805767e9f67851975dccf8513c708c4233ccc
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123961727"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735632"
 ---
 # <a name="source-editor"></a>源编辑器
 

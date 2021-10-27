@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 5450783c5279c28af49aec901176452d14ff11fd
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122146480"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735573"
 ---
 # <a name="windows-view"></a>窗口视图
 首次打开 Spy++ 时，窗口视图将显示系统中所有窗口和控件的树。 显示窗口句柄和类名称。 当前桌面窗口位于树的顶部。 所有其他窗口均为桌面的子级，并且根据标准窗口层次结构列出。 同级窗口显示在其父项下缩进的可扩展列表中。

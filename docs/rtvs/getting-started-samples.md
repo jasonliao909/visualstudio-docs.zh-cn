@@ -11,11 +11,11 @@ ms.technology: vs-rtvs
 ms.workload:
 - data-science
 ms.openlocfilehash: b52d548f250df47c120d656f763f75e56d3ee742
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122156365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641012"
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>针对 Visual Studio 的 R 工具示例项目
 

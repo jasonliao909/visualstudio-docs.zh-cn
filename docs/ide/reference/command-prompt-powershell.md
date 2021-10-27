@@ -15,11 +15,11 @@ helpviewer_keywords:
 ms.assetid: 94fcf524-9045-4993-bfb2-e2d8bad44219
 no-loc: cmdlet
 ms.openlocfilehash: fef783475304bb1faa1788bde591a22ed610d528
-ms.sourcegitcommit: e7629e132a4d2fad6bb5869e4d68d9dbeeae9631
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113649161"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641188"
 ---
 # <a name="visual-studio-developer-command-prompt-and-developer-powershell"></a>Visual Studio 开发人员命令提示和开发人员 PowerShell
 

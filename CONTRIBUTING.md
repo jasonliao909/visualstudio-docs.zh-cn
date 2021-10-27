@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 1a53d6fed4b2900aa730f4a5c2e04d528b42d1b9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b636aec6a181e7b1c6394aeb7c3d59b1704db1e3002363ed61944c540b56867a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62419838"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121241090"
 ---
 # <a name="contribute-to-visual-studio-documentation"></a>参与编辑 Visual Studio 文档
 

@@ -12,11 +12,11 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 144f83b1be0c3a21aa5cb244f8498f61e3ef380a
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150088"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735766"
 ---
 # <a name="log-info-to-the-output-window-using-tracepoints-in-visual-studio"></a>在 Visual Studio 中使用跟踪点将信息记录到“输出”窗口中
 

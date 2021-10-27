@@ -11,11 +11,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: b422efc8e3f8e6ec9c39b02089e22c5eab6ed3cc
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122083929"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735458"
 ---
 # <a name="customize-code-coverage-analysis"></a>自定义代码覆盖率分析
 

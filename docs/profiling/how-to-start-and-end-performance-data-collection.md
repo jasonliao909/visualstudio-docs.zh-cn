@@ -19,11 +19,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 8edf8c549c231acc72a97da0c0fbea45bac1cce8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122150022"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735466"
 ---
 # <a name="how-to-start-and-end-performance-data-collection"></a>如何：启动和结束性能数据收集
 启动分析之前，必须将要分析的目标二进制文件添加到性能会话中。 若要添加目标，请在“性能资源管理器”中右键单击“目标”，然后单击“添加目标二进制文件”  。 在“添加目标二进制文件”对话框中，选择文件名，然后单击“打开” 。 将添加一个新的二进制文件。

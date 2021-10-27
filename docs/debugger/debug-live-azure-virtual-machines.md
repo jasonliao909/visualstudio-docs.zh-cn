@@ -14,11 +14,11 @@ ms.workload:
 - aspnet
 - azure
 ms.openlocfilehash: bdab6b3f559628506dd301d6ced449f1e69152a6
-ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "108798487"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126640744"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>使用 Snapshot Debugger 在 Azure 虚拟机和 Azure 虚拟机规模集上调试实时 ASP.NET 应用
 

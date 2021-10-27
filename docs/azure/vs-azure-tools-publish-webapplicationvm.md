@@ -10,7 +10,7 @@ ms.date: 11/11/2016
 ms.author: ghogen
 ms.openlocfilehash: 9443fbf7abe1098d56c41bf25dadca7ff60ced79
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126602125"

@@ -22,11 +22,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 35b4153eab1bbe2d320019c46d4b8e854f2ca6a3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122142853"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641068"
 ---
 # <a name="target-element-msbuild"></a>Target 元素 (MSBuild)
 

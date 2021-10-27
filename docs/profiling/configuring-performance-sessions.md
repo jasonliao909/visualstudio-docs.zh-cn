@@ -18,11 +18,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 25144a4fe7e4664eb5b1172cf14e5103ef291881
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122039548"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735526"
 ---
 # <a name="configure-performance-sessions"></a>配置性能会话
 通过使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具，可以收集大量各种应用程序类型的性能数据。 本节演示如何使用性能会话的“性能向导”属性和目标二进制文件配置分析工具以收集你感兴趣的数据。 分析工具配置属性还可用来控制分析运行中收集的数据量。 有关详细信息，请参阅[控制数据收集](../profiling/controlling-data-collection.md)。

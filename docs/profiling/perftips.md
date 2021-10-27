@@ -11,11 +11,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a31872097d34a6ad7c8ce052c635c9b48770b5c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122141592"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641044"
 ---
 # <a name="perftips"></a>性能提示
 
