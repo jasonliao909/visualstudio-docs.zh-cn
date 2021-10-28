@@ -20,11 +20,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 22889b6024dc4201b7bd4618c6fe95ae9ed11f5f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122051919"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641476"
 ---
 # <a name="how-to-step-into-wcf-services"></a>如何：单步执行 WCF 服务
 在 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 中，可以单步执行 WCF 服务。 如果 WCF 服务与客户端位于同一 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 解决方案中，则可以命中 WCF 服务内部的断点。

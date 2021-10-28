@@ -12,11 +12,11 @@ manager: jmartens
 ms.workload:
 - multiple
 ms.openlocfilehash: cabaf226742d867e9d5eccbaf391b723cfbed5d1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737103"
 ---
 # <a name="how-to-build-multiple-configurations-in-a-single-build-request"></a>如何：在单个生成请求中生成多个配置
 

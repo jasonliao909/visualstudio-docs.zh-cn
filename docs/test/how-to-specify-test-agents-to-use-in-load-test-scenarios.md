@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: a0a32ade4170bcc2763a019bdf1532af01221393
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122075809"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736957"
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>如何：指定要在负载测试方案中使用的测试代理
 

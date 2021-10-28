@@ -28,11 +28,11 @@ manager: jmartens
 ms.workload:
 - multiple
 ms.openlocfilehash: 5a4120a6038949f172b96bec599f2329b69abcac
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903971"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642183"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 

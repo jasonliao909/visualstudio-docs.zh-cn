@@ -9,11 +9,11 @@ ms.workload:
 - cplusplus
 author: corob-msft
 ms.openlocfilehash: 877c9163d05f458ce45a46d6b3e6d14e354df591
-ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "112042882"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641494"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>在 Visual Studio 中编写 C/C++ 单元测试
 

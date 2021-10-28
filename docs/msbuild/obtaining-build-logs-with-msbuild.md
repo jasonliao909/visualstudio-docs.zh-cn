@@ -15,11 +15,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: c1bd4574167d84cd5a36cc6f5fbf1c935d9d51fc
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122068801"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736679"
 ---
 # <a name="obtain-build-logs-with-msbuild"></a>用 MSBuild 获取生成日志
 

@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: b9c27a1cb76ab17e53331508381d0b6db0447993
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122047330"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736575"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>演练：使用虚拟用户活动图隔离问题
 

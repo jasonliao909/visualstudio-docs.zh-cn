@@ -17,11 +17,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: d8fce93b1bd55930b518d21921557b4ac58e8576
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122074333"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737134"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>错误：网站工作进程已被 IIS 终止
 调试器已停止对网站执行代码。 这导致 Internet Information Services (IIS) 认为辅助进程已停止响应。 因此，IIS 终止了辅助进程。

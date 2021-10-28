@@ -16,11 +16,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: e4e6ac24c6b362b0fd811baae1488b8b06840597
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122142515"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642066"
 ---
 # <a name="use-memory-efficiently-when-you-build-large-projects"></a>在生成大型项目时有效使用内存
 

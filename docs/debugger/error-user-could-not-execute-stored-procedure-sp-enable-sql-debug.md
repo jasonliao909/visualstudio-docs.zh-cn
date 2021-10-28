@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: df25fb20fcf824c09b46a13eb704015d196a2930
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122097163"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737136"
 ---
 # <a name="error-user-could-not-execute-stored-procedure-sp_enable_sql_debug"></a>错误：用户无法执行存储过程 sp_enable_sql_debug
 

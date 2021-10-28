@@ -11,11 +11,11 @@ ms.technology: vs-rtvs
 ms.workload:
 - data-science
 ms.openlocfilehash: 03065c6cc2b7c9bf65bde4c4d55250b28fe9213c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122060513"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642250"
 ---
 # <a name="set-up-remote-workspaces"></a>设置远程工作区
 

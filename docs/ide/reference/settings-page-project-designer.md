@@ -16,11 +16,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 5d65fcf4097069c48061f45d26293178cab2f379
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122150984"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641774"
 ---
 # <a name="settings-page-project-designer"></a>“设置”页面，项目设计器
 

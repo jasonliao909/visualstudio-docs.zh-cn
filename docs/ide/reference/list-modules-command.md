@@ -18,11 +18,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 75375db0abfd49e62d209c7ba7fd8139862d3553
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122132075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641790"
 ---
 # <a name="list-modules-command"></a>“列出模块”命令
 列出当前进程的模块。

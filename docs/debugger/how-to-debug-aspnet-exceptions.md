@@ -21,11 +21,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - aspnet
 ms.openlocfilehash: d8e1ffd49153ba51b8b636ba30d756a3975680b3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122161253"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736328"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>如何：调试 ASP.NET 异常
 调试异常是开发可靠的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 应用程序的重要一步。 有关如何调试异常的常规信息，请参阅[使用调试器管理异常](../debugger/managing-exceptions-with-the-debugger.md)。

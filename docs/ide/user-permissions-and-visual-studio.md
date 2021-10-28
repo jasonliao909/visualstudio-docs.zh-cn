@@ -15,11 +15,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 1c0f1aa61371a3caecad6dbc30874db6299a2283
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122061553"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641759"
 ---
 # <a name="user-permissions-and-visual-studio"></a>用户权限与 Visual Studio
 

@@ -11,11 +11,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: 7c9a85e89e878076302796145c7669e8d5cdd83e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122106661"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736163"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>用于运行负载测试的测试代理和测试控制器的概述
 

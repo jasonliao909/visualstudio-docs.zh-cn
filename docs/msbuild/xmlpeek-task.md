@@ -20,11 +20,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 8bf7e5548223733574b49322dfca21a51d758de5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122136581"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642447"
 ---
 # <a name="xmlpeek-task"></a>XmlPeek 任务
 

@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.openlocfilehash: 79c7c13ea80e32e80d32c04052269cb814072aeb
-ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114232903"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642084"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017 中的 JavaScript
 

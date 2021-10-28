@@ -12,11 +12,11 @@ ms.technology: vs-xml-tools
 ms.workload:
 - multiple
 ms.openlocfilehash: 835c60a7f3e03fa90cbc3c22e1dd40618264f5c9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122091911"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641403"
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>如何：创建和编辑 XSD 架构文件
 

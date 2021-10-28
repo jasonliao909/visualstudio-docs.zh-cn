@@ -14,11 +14,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 3387a210515be1a6db82d9c5e15f87ca4128a1f5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122150893"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642492"
 ---
 # <a name="set-bookmarks-in-code"></a>在代码中设置书签
 

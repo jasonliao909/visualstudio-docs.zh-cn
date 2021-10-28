@@ -26,11 +26,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: eada0362b399489bea9bae93863c44e8172abf3c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122129852"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641281"
 ---
 # <a name="allocation-hook-functions"></a>分配挂钩函数
 每次分配、重新分配或释放内存时，都会调用通过 [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook) 安装的分配挂钩函数。 这种挂钩可用于多种不同用途。 可用它测试应用程序处理内存不足情况的方式，例如检查分配模式，或记录分配信息以供将来分析。

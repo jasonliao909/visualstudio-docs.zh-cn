@@ -16,11 +16,11 @@ manager: jmartens
 ms.workload:
 - multiple
 ms.openlocfilehash: 3ece930da2bb133a19e443da4d37654367a1c862
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868980"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641835"
 ---
 # <a name="advanced-security-settings-dialog-box"></a>“高级安全设置”对话框
 

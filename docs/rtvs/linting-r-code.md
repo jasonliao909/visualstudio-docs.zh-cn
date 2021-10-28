@@ -13,11 +13,11 @@ ms.technology: vs-rtvs
 ms.workload:
 - data-science
 ms.openlocfilehash: 7a278c5ad35b31bd5c0606d64a9fb16d03534229
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122075913"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736836"
 ---
 # <a name="lint-r-code-in-visual-studio"></a>在 Visual Studio 中 Lint R 代码
 

@@ -15,11 +15,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: e4e439e945e60a2824b4a3c694dd048be248c757
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122151803"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642168"
 ---
 # <a name="view-call-hierarchy"></a>查看调用层次结构
 

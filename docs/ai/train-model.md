@@ -13,11 +13,11 @@ ms.topic: how-to
 ms.workload:
 - azure
 ms.openlocfilehash: e1efd5101ae606588b40a09a0c6ed5e24c171eb8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122037546"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641333"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>在 Azure Batch AI 中训练 AI 模型
 

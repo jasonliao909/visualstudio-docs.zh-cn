@@ -14,11 +14,11 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 ms.openlocfilehash: 9af275fe53925c2814c1c43a72ec4512d1e2c1b2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122032831"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641413"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe 命令行选项
 

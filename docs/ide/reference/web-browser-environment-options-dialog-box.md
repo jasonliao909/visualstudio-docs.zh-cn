@@ -25,11 +25,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 5e6c44f1a341d6a07691540060e50c2b0c867ae9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122116833"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642504"
 ---
 # <a name="options-dialog-box-environment--web-browser"></a>“选项”对话框：环境 \> Web 浏览器
 

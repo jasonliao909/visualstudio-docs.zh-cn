@@ -13,11 +13,11 @@ manager: jmartens
 ms.workload:
 - multiple
 ms.openlocfilehash: fd8d7e6bd81e32858f990c70bbcdf0bf00049867
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943830"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642510"
 ---
 # <a name="options-text-editor-html-web-forms-formatting"></a>“选项”>“文本编辑器”>“HTML (Web 窗体)”>“格式化”
 

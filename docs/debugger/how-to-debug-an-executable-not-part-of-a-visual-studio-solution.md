@@ -23,11 +23,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 7d93a34e0599495672437f086790bee1f02ccabe
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122120967"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736329"
 ---
 # <a name="debug-an-app-that-isnt-part-of-a-visual-studio-solution-c-c-visual-basic-f"></a>调试不属于 Visual Studio 解决方案的应用（C++、C#、Visual Basic、F#）
 

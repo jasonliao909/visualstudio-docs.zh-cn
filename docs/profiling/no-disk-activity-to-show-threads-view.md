@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: cd31eb81028ddbed67b4056c3bfb698e3d6c015e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122027513"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644384"
 ---
 # <a name="no-disk-activity-to-show-threads-view"></a>没有要显示的磁盘活动（线程视图）
 无法显示磁盘 I/O 通道中当前时间范围的磁盘活动。 如果缩小或滚动，可能会显示磁盘活动。 此外，请确保没有磁盘通道处于隐藏状态。

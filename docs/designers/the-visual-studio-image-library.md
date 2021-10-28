@@ -20,11 +20,11 @@ ms.technology: vs-ide-designers
 ms.workload:
 - multiple
 ms.openlocfilehash: 7142b77d3823bdc7d95a792d3c90e53e95e38b6d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122073586"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644454"
 ---
 # <a name="the-visual-studio-image-library"></a>Visual Studio 图像库
 

@@ -13,11 +13,11 @@ monikerRange: vs-2017
 ms.workload:
 - aspnet
 ms.openlocfilehash: 879b77bdc782c17f3969797890c1e0ce24d0d470
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122033533"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642348"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>如何：使用探查器命令行检测动态编译的 ASP.NET web 应用程序，并收集内存数据
 本主题介绍如何使用检测分析方法和 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具为动态编译的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序收集详细的 .NET 内存分配和对象生存期数据。

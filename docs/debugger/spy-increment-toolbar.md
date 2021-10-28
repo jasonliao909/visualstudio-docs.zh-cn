@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 97c03fe68b810cbd7e907b4020b8487ae5c547f2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122030602"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641622"
 ---
 # <a name="spy-toolbar"></a>Spy++ 工具栏
 工具栏出现在 Spy++ 菜单栏下方。 若要显示或隐藏工具栏，请在“视图”菜单上单击“工具栏”。

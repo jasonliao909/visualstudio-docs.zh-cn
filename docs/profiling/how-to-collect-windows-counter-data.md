@@ -19,11 +19,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: bf19e1ac15867069aeec19151cd00258564a3865
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122033507"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642377"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>如何：收集 Windows 计数器数据
 

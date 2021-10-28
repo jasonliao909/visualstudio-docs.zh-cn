@@ -18,11 +18,11 @@ manager: caslan
 ms.workload:
 - multiple
 ms.openlocfilehash: d881248652d644e9a82725b0d083d095ff72f885
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102147037"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737168"
 ---
 # <a name="debugger-services-running-out-of-memory"></a>调试器服务内存不足
 调试服务耗尽内存，导致调试会话终止。

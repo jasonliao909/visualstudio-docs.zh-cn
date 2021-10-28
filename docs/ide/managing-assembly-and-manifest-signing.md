@@ -17,11 +17,11 @@ manager: jmartens
 ms.workload:
 - multiple
 ms.openlocfilehash: 709a5a64164ed6c80c29a8e554d2b07050e18339
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886517"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736895"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>管理程序集和清单签名
 

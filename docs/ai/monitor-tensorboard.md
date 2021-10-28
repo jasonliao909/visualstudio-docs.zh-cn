@@ -12,11 +12,11 @@ ms.topic: how-to
 ms.workload:
 - multiple
 ms.openlocfilehash: d5d4fb9799a94e6c583c8f49ccf69f284834a448
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122037624"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641337"
 ---
 # <a name="monitor-with-tensorboard"></a>使用 TensorBoard 监视
 

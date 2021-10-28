@@ -8,11 +8,11 @@ ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
 ms.topic: how-to
 ms.openlocfilehash: c7269b4272fb8ed2c73dbe9f57e94da071dc623e
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963903"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737203"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>创建并编辑自定义 EditorConfig 文件
 

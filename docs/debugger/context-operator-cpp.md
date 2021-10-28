@@ -26,11 +26,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 6b59c4dfca1f56bdd08a2dc810524a698a869dc9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122031388"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641244"
 ---
 # <a name="context-operator-in-the-visual-studio-debugger-c"></a>Visual Studio 调试器中的上下文运算符 (C++)
 可使用 C++ 中的上下文运算符来限定断点位置、变量名称或表达式。 上下文运算符可用于指定来自外部范围的但被本地名称隐藏的名称。

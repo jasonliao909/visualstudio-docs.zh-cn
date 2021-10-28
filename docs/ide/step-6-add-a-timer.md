@@ -15,11 +15,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 5a38a368297662a5204fd52948f9736c39e1311a
-ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "123398356"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642483"
 ---
 # <a name="step-6-add-a-timer"></a>步骤 6：添加计时器
 接下来，要向匹配游戏中添加 <xref:System.Windows.Forms.Timer> 控件。 计时器等待指定的毫秒数后，触发一个称为“Tick”  的事件。 这对于启动操作或定时重复操作很有用。 在本例中，你将使用一个计时器，让玩家开始选择两个图标，而如果图标不匹配，则在短暂时间后再次隐藏这两个图标。

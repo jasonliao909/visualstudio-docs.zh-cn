@@ -13,11 +13,11 @@ monikerRange: vs-2017
 ms.workload:
 - aspnet
 ms.openlocfilehash: 97bb80ed996ce523d01d9228293f419ba011d8e4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122033624"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642394"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>如何：将探查器附加到 ASP.NET Web 应用程序，以使用命令行收集并发数据
 

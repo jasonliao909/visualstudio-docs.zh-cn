@@ -11,11 +11,11 @@ ms.topic: conceptual
 ms.workload:
 - azure
 ms.openlocfilehash: 0367ca6b2ab6219ab50030df0b80a6aed213854f
-ms.sourcegitcommit: f930bc28bdb0ba01d6f7cb48f229afecfa0c90cd
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "122334420"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641368"
 ---
 # <a name="share-your-app"></a>共享应用
 

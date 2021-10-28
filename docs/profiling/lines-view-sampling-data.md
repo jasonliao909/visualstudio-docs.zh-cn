@@ -14,11 +14,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: bc344c640a2b075b3795fb694ab076555a8b4083
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122038638"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736860"
 ---
 # <a name="lines-view---sampling-data"></a>“行”视图 - 采样数据
 采样数据的“行”视图列出分析运行期间收集样本时所执行语句的性能数据。

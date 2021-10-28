@@ -12,11 +12,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 8fe9a05bd1c819ae2b17f6898341efcea7e47b49
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122154169"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736367"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>演练：因设备状态而缺少对象
 本演练演示了如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 图形诊断工具调查由于设备状态配置错误而缺失的对象。

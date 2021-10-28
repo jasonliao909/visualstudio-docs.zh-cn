@@ -21,11 +21,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 73933801ca158a4e348eba26f379383ecd793a22
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122074119"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736337"
 ---
 # <a name="how-to-debug-a-self-hosted-wcf-service"></a>如何：调试自托管 WCF 服务
 “自承载服务”是指不在 IIS、WCF 服务主机或 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 开发服务器内部运行的 WCF 服务。 调试自承载 WCF 的最简单方法是配置 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，以便当你在“调试”菜单中选择“启动调试”时同时启动客户端和服务器。

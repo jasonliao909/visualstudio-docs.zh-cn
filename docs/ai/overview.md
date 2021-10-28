@@ -12,11 +12,11 @@ ms.topic: overview
 ms.workload:
 - multiple
 ms.openlocfilehash: 42d22d608426641394423d1ec0478605d4d4e68d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122037533"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641336"
 ---
 # <a name="overview-of-visual-studio-tools-for-ai"></a>Visual Studio Tools for AI 概述
 

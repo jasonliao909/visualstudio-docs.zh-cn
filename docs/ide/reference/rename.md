@@ -16,11 +16,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: f71587d86bc1b4fc722abeee31a0e8e7ce8ae7cc
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122123835"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642154"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>“重命名代码符号”重构
 

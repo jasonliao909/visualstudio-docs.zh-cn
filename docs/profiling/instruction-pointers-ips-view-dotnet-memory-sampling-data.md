@@ -14,11 +14,11 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 2a6909ca4364922532d3c3c6dd3d326c55d70e00
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122060929"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736182"
 ---
 # <a name="instruction-pointers-ips-view---net-memory-sampling-data"></a>“指令指针”(IP) 视图：.NET 内存采样数据
 用采样方法收集的 .NET 内存分配分析数据有一个 IP 视图，其中列出在分析运行期间分配了内存的程序集指令。 该视图的列还列出分配的大小和数量。

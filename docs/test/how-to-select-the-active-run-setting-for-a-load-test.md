@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: 0f85602761444283f13a32ef3709a1e417c46d9a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122047408"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736817"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>如何：为负载测试选择活动运行设置
 

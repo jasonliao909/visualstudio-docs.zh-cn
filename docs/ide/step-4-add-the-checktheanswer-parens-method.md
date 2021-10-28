@@ -15,11 +15,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: e5f8d7a0c4856a9ff65d99512cf686ad80113d9b
-ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "123398621"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737060"
 ---
 # <a name="step-4-add-the-checktheanswer-method"></a>步骤 4：添加 CheckTheAnswer() 方法
 

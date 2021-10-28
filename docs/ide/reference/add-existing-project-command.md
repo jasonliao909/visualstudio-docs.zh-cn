@@ -17,11 +17,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 3dc0b512169f1060d0fe69b7d8d9cb6840e44f2b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122094312"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642169"
 ---
 # <a name="add-existing-project-command"></a>“添加现有项目”命令
 将现有项目添加到当前解决方案中。

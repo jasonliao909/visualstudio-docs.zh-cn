@@ -13,11 +13,11 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: bee906058e9ab8072723d02a170dee21a4eb0c6f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122038859"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642352"
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>如何：使用探查器命令行检测 .NET Framework 服务，并收集内存数据
 

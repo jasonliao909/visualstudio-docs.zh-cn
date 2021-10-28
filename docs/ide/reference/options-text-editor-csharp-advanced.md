@@ -14,11 +14,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 ms.openlocfilehash: 193b7cc73b87bee1a5332bd1b46a38276f0fb4b0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122100967"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644241"
 ---
 # <a name="options-text-editor-c-advanced"></a>选项，文本编辑器，C#，高级
 

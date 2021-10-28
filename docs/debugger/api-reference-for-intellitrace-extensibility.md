@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 9c342f830842fd1cb49baf15e17b9052bded1c0c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122052468"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641278"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>IntelliTrace 扩展性的 API 参考
 

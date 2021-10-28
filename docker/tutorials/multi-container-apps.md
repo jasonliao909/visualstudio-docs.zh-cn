@@ -11,11 +11,11 @@ ms.topic: conceptual
 ms.workload:
 - azure
 ms.openlocfilehash: 961368da3d5dac745cdfb3506b4c6d2acd685446
-ms.sourcegitcommit: f930bc28bdb0ba01d6f7cb48f229afecfa0c90cd
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "122334448"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641370"
 ---
 # <a name="multi-container-apps"></a>多容器应用
 

@@ -18,11 +18,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 42de6efe72db8ae8cc1583114a288dd037c4b0c4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122150464"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642389"
 ---
 # <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>如何：收集 Windows 事件跟踪 (ETW) 数据
 

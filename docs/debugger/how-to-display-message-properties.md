@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 30619052d25cb1b3838075bf43a5d169e5e5d3dc
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122128565"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641658"
 ---
 # <a name="how-to-display-message-properties"></a>如何：显示消息属性
 若要详细了解[消息视图](../debugger/messages-view.md)中列出的消息，请使用[“消息属性”对话框](../debugger/message-properties-dialog-box.md)。

@@ -15,11 +15,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f3558ef81017fe382c5729003be8f1dd80978135
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122136398"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736658"
 ---
 # <a name="callercallee-view---net-memory-instrumentation-data"></a>“调用方/被调用方”视图 - .NET 内存检测数据
 通过使用检测方法收集 .NET 内存分析数据的“调用方/被调用方”视图，此视图显示所选函数的分配和计时数据及该所选函数的父函数和子函数。 “调用方/被调用方”视图包含三个网格。

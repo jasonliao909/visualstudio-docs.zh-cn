@@ -12,11 +12,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d72f8062f607da08775d369dc7a154a8016e45c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122141306"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642284"
 ---
 # <a name="status"></a>状态
 VSPerfCmd.exe Status 选项显示有关探查器状态以及当前正在分析的任何进程的信息 。

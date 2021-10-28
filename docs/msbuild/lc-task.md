@@ -22,11 +22,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 215fe806f8cf2843589c53d89100cf5055319959
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122069040"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736980"
 ---
 # <a name="lc-task"></a>LC 任务
 

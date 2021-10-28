@@ -7,11 +7,11 @@ ms.author: dominicn
 ms.date: 05/03/2021
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
 ms.openlocfilehash: a24c57907afedb4f02068a071d2c9f81eb8962bb
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736763"
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中编译和生成
 

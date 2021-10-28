@@ -24,11 +24,11 @@ ms.workload:
 - multiple
 monikerRange: vs-2017
 ms.openlocfilehash: 7a743d43459e124d2377339a57756d8c0410a344
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122112264"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736212"
 ---
 # <a name="whats-new-for-the-debugger-in-visual-studio-2017"></a>Visual Studio 2017 中调试器的新变化
 

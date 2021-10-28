@@ -14,11 +14,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: c5d8579b68eeceed3843a8dd6a6fe71e9f9015c2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122141228"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642272"
 ---
 # <a name="summary-view---instrumentation-data"></a>“摘要”视图 - 检测数据
 “摘要”视图显示有关分析运行中性能开销最大的函数的信息。 有关详细信息（包括通知链接和报告列表的说明），请参阅[“摘要”视图](../profiling/summary-view.md)。

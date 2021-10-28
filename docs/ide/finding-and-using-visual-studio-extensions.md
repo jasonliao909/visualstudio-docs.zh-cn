@@ -18,11 +18,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 891db6e62d33220494d6c19fe08e17f52dd810cb
-ms.sourcegitcommit: 0c6cecf1b973a33003d924abeb382f23e62c134d
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "123230323"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737121"
 ---
 # <a name="manage-extensions-for-visual-studio"></a>管理 Visual Studio 的扩展
 

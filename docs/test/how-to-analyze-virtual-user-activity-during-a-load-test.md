@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: f58b696b706c6d4b2313f5c6dd82c3b801edbbc7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122026728"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736832"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>如何：使用虚拟用户活动图分析虚拟用户在负载测试期间的操作
 

@@ -9,11 +9,11 @@ ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
 ms.openlocfilehash: be799764c3d6913cd2a13c6d631fc3450f8875a0
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123961739"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736779"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>安装 Visual Studio 2017 for Mac
 

@@ -14,11 +14,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 66ea34ff9cf8ba60775d12da001d49b58747d1c6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122117197"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642164"
 ---
 # <a name="remove-unreachable-code-refactoring"></a>“删除无法访问的代码”重构
 

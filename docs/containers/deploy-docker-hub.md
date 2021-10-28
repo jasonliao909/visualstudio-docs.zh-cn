@@ -10,11 +10,11 @@ ms.date: 07/23/2019
 ms.author: ghogen
 monikerRange: '>=vs-2019'
 ms.openlocfilehash: 2fe4c9a1ac39ed090eae657c02ea8417002a2473
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122059328"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641313"
 ---
 # <a name="deploy-to-docker-hub"></a>部署到 Docker Hub
 

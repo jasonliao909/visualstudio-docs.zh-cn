@@ -8,11 +8,11 @@ ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
 ms.topic: how-to
 ms.openlocfilehash: 274e8defe25fa78c30aee72834e486b302a9af4e
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123961767"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736775"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>在项目中包括 NuGet 包
 

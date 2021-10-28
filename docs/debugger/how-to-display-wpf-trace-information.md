@@ -20,11 +20,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b697645cbff18ebb7053f1b9facca221de767d0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122128476"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641648"
 ---
 # <a name="how-to-display-wpf-trace-information"></a>如何：显示 WPF 跟踪信息
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 可接收来自 WPF 应用程序的调试跟踪信息，并将该信息显示在“输出”窗口中。 若要显示调试跟踪信息，必须启用 WPF 跟踪。

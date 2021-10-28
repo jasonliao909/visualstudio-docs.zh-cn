@@ -18,11 +18,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 7b87387ed7708b6737f2cab59b2fdce68c551ec5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122102059"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641882"
 ---
 # <a name="how-to-create-a-nullable-type-in-class-designer"></a>如何：在类设计器中创建可以为 null 的类型
 

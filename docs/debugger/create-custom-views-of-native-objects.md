@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 484d29f0c1976181007afee4d3da2f2e2e659d23
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122121781"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641235"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>使用 Natvis 框架在调试器中创建 C++ 对象的自定义视图
 

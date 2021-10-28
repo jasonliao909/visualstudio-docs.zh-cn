@@ -14,11 +14,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: bc6c525b0846270158f4d795be92535cfa4a6e8f
-ms.sourcegitcommit: f930bc28bdb0ba01d6f7cb48f229afecfa0c90cd
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "122334604"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736316"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>将类型同步到文件名或反向操作
 

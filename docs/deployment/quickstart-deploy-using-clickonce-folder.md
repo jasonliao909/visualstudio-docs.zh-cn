@@ -14,11 +14,11 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
 ms.openlocfilehash: 1a093cbf609e2226967b0879e23f13631db91a79
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122035769"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126745877"
 ---
 # <a name="deploy-a-net-windows-desktop-application-using-clickonce"></a>使用 ClickOnce 部署 .NET Windows 桌面应用程序
 

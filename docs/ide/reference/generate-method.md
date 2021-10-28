@@ -11,11 +11,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 ms.openlocfilehash: 21d77611c621eca9a20f467a012395d5d509aa9f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122123900"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736702"
 ---
 # <a name="generate-a-method-in-visual-studio"></a>在 Visual Studio 中生成方法
 
@@ -46,7 +46,7 @@ ms.locfileid: "122123900"
 2. 接下来，执行以下操作之一：
 
    - **键盘**
-      - 按“Ctrl”  + **。** 触发“快速操作和重构”菜单。
+      - 按“Ctrl”+ **。** 触发“快速操作和重构”菜单。
    - **鼠标**
       - 右键单击并选择“快速操作和重构”菜单。
       - 将鼠标悬停在红色波形曲线上，然后单击出现的 ![错误灯泡](media/error-bulb.png) 图标。

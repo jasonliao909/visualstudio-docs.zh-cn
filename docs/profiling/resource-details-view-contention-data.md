@@ -16,11 +16,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3e07b658d28cfbc91e8c9ea3d3613f201be1146e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122054517"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736853"
 ---
 # <a name="resource-details-view---contention-data"></a>“资源详细信息”视图 - 争用数据
 “资源详细信息”视图显示针对所选资源的争用所导致的阻塞事件的时间线关系图。 如果由于另一个线程已锁定对资源的访问，因此线程被迫挂起执行，则会发生阻塞事件。

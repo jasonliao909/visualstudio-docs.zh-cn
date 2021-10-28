@@ -11,11 +11,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d697a96a0b91554342ba57a6265b4a087c8458a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122157392"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736850"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>运行带/不带调试器的分析工具
 

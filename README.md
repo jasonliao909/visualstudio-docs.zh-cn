@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 67368f8bc8e6762dedf448829aca364e06b83fd3
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 0ac7e0580b5b6c91f057c336ef7e0b67fb84a72701976820729b0d11747c3106
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973763"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121295519"
 ---
 # <a name="visual-studio-documentation"></a>Visual Studio 文档
 

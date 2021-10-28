@@ -14,11 +14,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 1b37a56776d70127f52c17224ba3366e79439e3c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122157366"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736621"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>使用性能数据文件保存符号信息
 

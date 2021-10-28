@@ -14,11 +14,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: a9c97b0c5bf8224b31dcab1974b697c35150afed
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122130177"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736799"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>如何：结合使用 XML 架构设计器和 XML 文本
 

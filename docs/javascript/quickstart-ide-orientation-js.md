@@ -12,11 +12,11 @@ ms.technology: vs-javascript
 ms.workload:
 - multiple
 ms.openlocfilehash: 724c6bb1a106fad6d6ceac0cae6f6e7968175447
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122085840"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126652454"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>初步了解 Visual Studio IDE
 

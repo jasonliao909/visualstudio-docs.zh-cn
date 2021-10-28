@@ -30,11 +30,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 6f248d29640f6d8e3cb629d083f6589ec1e173f3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122030888"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737132"
 ---
 # <a name="find-memory-leaks-with-the-crt-library"></a>使用 CRT 库查找内存泄漏
 

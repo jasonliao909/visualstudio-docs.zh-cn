@@ -15,11 +15,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: bd506fe8c47050e936854c51f6e3c225210bcdff
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122100395"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736580"
 ---
 # <a name="unit-test-tools-and-tasks"></a>单元测试工具和任务
 

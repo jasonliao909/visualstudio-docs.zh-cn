@@ -13,11 +13,11 @@ ms.devlang: python
 ms.workload:
 - multiple
 ms.openlocfilehash: 0a73a22397f05660cd0b5e2c90633f6528297848
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122037572"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641334"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>在云中训练 TensorFlow 模型
 

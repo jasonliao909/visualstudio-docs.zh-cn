@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: d563c8ecfcdd52020e8adb1dfc04856d027fddc8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122148527"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737253"
 ---
 # <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>如何：为负载测试运行设置指定计时详细信息存储属性
 

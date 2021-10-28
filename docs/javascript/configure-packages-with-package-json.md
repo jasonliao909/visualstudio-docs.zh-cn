@@ -13,11 +13,11 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 9aaade6fc17b2ec0ce36decd66cff25ee2dc9e6e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122061527"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737007"
 ---
 # <a name="packagejson-configuration"></a>package.json 配置
 
@@ -50,7 +50,7 @@ npm 包版本控制系统具有严格的规则。 版本格式符合以下规则
 
 使用之前的表示法，npm 将始终获得指定的确切版本 16.4.2。
 
-可以使用特殊的表示法来限制修补程序更新的更新（Bug 修复）。 在此示例中：
+可以使用特殊的表示法来限制修补程序更新的更新（Bug 修复）。 在本示例中：
 
   ```json
   "dependencies": {

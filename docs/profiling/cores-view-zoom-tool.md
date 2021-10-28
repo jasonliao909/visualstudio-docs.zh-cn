@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 3ce212675216552c53accf3a64ea4f203c428d3d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122039327"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737271"
 ---
 # <a name="cores-view-zoom-tool"></a>内核视图缩放工具
 缩放控件是一个滑块，允许在时间线上进行放大和缩小操作，便于你关注特定的感兴趣的区域。 此控件以当前视图的中心为缩放点，因此放大前请先调整视图。

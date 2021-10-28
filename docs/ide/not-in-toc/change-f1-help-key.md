@@ -10,11 +10,11 @@ ms.technology: vs-ide-general
 author: mikejo5000
 ms.author: mikejo
 ms.openlocfilehash: 817c281bfbed2e21d390bfcfc7fae1ff1023b0fa
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122137348"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736711"
 ---
 # <a name="change-the-f1-help-key-in-visual-studio"></a>在 Visual Studio 中更改 F1 帮助键
 

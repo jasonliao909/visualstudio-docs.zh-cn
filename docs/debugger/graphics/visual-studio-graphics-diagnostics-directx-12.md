@@ -9,11 +9,11 @@ manager: mluparu
 ms.workload:
 - multiple
 ms.openlocfilehash: 9dbc52a0233abe467da4d41af0134663bc7cd9df
-ms.sourcegitcommit: a1cb4e2025045c2ad79167645c4c0f33b94b1152
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91671413"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642000"
 ---
 # <a name="directx-12-support-in-visual-studio"></a>Visual Studio 中的 DirectX 12 支持
 

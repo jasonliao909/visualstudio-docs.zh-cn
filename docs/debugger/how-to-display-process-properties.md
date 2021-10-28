@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 77ce348b88e74b415b2655051199aabe242a24cb
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122128552"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736922"
 ---
 # <a name="how-to-display-process-properties"></a>如何：显示进程属性
 若要详细了解[“进程”视图](../debugger/processes-view.md)中列出的进程，请使用[“进程属性”对话框](../debugger/process-properties-dialog-box.md)。

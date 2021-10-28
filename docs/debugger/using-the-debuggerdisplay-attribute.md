@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: b1103345c189e81089b7dce85c7eadbfe26454e8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122112303"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641615"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>使用 DebuggerDisplay 特性（C#、Visual Basic、F#、C++/CLI）指示调试器要显示的内容
 

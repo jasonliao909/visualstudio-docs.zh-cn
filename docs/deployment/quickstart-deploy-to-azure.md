@@ -14,11 +14,11 @@ ms.technology: vs-ide-deployment
 ms.workload:
 - azure
 ms.openlocfilehash: 53c14db342e48ceccc7651220ac86c8bcacedcf3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122146272"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126745931"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>使用 Visual Studio 将 Web 应用发布到 Azure 应用服务
 

@@ -15,11 +15,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 3be562e6af78101a86dca5e2567e4b0eb85033cc
-ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "123397806"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642155"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>步骤 5：为 NumericUpDown 控件添加 Enter 事件处理程序
 

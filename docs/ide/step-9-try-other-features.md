@@ -12,11 +12,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 6f542c2fe86b642a1d8cf53d9fe1bff4af611c9e
-ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "123397663"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642133"
 ---
 # <a name="step-9-try-other-features"></a>步骤 9：尝试其他功能
 若要了解详细信息，请尝试更改图标和颜色、添加游戏计时器和声音。 若要使游戏更具挑战性，请尝试将图板变大并调整计时器。

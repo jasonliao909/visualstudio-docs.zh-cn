@@ -22,11 +22,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: a1434a264f53d3473c341d2b3b8b625a054f8ffe
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122039990"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737393"
 ---
 # <a name="when-element-msbuild"></a>When 元素 (MSBuild)
 

@@ -7,11 +7,11 @@ ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: 61432695-5B12-4257-B250-48D37EED106D
 ms.openlocfilehash: d2ce3b3cdbf1a4cf1f19956a7327d73c0bb34b62
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963930"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736393"
 ---
 # <a name="javascript-and-typescript-support"></a>JavaScript 和 TypeScript 支持
 

@@ -17,11 +17,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: f72c3a249420ba13bced82fe6c48a45e4579db26
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122097267"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644297"
 ---
 # <a name="dump-file-summary-extensibility-api"></a>转储文件摘要扩展性 API
 在本部分中使用扩展性 API，你可以扩展 .Exe 项目系统和 **转储摘要** 页，以适用于你自己的自定义调试引擎。

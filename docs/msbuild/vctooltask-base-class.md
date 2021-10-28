@@ -14,11 +14,11 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: b2e45d7c672ebc2177c2bb197399133e7b077a5c
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046732"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642055"
 ---
 # <a name="vctooltask-base-class"></a>VCToolTask 基类
 

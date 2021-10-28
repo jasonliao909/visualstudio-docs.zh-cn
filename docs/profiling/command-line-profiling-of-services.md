@@ -16,11 +16,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 0fd7f5c6e44f356b44b7416629a62ac552379654
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122136334"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641736"
 ---
 # <a name="command-line-profiling-of-services"></a>通过命令行分析服务
 本部分介绍从命令行使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具收集 Windows 服务的性能数据的步骤和选项。

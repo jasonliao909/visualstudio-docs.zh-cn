@@ -21,11 +21,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 8968bac298983eef2101d170a52de897b131ee71
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122051893"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641475"
 ---
 # <a name="how-to-stop-code-changes"></a>如何：停止代码更改
 当“编辑并继续”处于应用代码更改的过程中时，您可以停止该操作。

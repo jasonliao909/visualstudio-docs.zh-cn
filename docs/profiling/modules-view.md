@@ -18,11 +18,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: e03c12722f6a35dae70b5cbe789524adf78b18a7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122107321"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736284"
 ---
 # <a name="modules-view"></a>“模块”视图
 “模块”视图列出分析数据的模块。 每个模块是一个层次结构树的根节点。 模块的分析函数在模块节点下列出。 如果分析数据是使用采样方法收集的，则行信息在函数节点下列出，指令指针数据在行节点下列出。

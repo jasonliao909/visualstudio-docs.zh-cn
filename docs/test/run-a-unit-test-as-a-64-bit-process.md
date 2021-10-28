@@ -14,11 +14,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 64c125736abd67b37cf84e2b67b6b54a863032b3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122100382"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737247"
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>将单元测试作为 64 位进程运行
 

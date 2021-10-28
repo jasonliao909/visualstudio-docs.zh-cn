@@ -16,11 +16,11 @@ ms.workload:
 - uwp
 author: mikejo5000
 ms.openlocfilehash: 5db95d6125a923a8990af6cf9586f95de19c409d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122032792"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736577"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>演练：创建并运行 UWP 应用的单元测试
 

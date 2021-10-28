@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - uwp
 ms.openlocfilehash: 60ec12f554c900aac74f63f463f4ea2c8276b66a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122105192"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641948"
 ---
 # <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>在 Visual Studio 中使用预提取的内容调试 UWP 应用
 

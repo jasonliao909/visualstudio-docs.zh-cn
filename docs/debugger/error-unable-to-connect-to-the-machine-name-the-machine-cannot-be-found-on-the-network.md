@@ -19,11 +19,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 246cd6c88961206491f9f4a079331d60d9a18b52
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122097215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737143"
 ---
 # <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>错误：无法连接到计算机 &lt;name&gt;。 网络上找不到该计算机。
 如果满足下列某项条件，则会发生此行为：

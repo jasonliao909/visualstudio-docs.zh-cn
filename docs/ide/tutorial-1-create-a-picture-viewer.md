@@ -12,11 +12,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: e19a66adaf2123879e07f784bfbc6b953956001d
-ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "123397689"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642122"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>教程 1：创建图片查看器
 

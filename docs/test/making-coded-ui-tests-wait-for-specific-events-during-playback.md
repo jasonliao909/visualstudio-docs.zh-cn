@@ -11,11 +11,11 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 ms.openlocfilehash: 170af3a8677a271501727ae0f53e047a732830f2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122054218"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737250"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>播放期间让编码 UI 测试等待特定事件
 

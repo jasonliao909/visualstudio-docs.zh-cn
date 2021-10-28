@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 1e499466eebb4ef856839d1e71880011c6490aba
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122076472"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736172"
 ---
 # <a name="marker_importance-enumeration"></a>marker_importance 枚举
 表示并发可视化工具标记的重要性级别。

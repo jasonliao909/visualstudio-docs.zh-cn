@@ -13,11 +13,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 687e813b449f469386d1c2fce9a7b79ae7467497
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122150230"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642370"
 ---
 # <a name="how-to-create-a-profiling-tools-etw-report"></a>如何：创建分析工具 ETW 报告
 Windows 事件跟踪 (ETW) 报告列出 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的性能会话中所记录的 ETW 事件。 ETW 数据收集在二进制 (.etl) 文件中。 有关此报告的详细信息，请参阅 [Windows 事件跟踪 (ETW) 报告](../profiling/event-tracing-for-windows-etw-report.md)。

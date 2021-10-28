@@ -13,11 +13,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 ms.openlocfilehash: 711aec7e37c4595be9ee149ebe0392b9789a0b79
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122143672"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644235"
 ---
 # <a name="options-text-editor-f-codelens"></a>“选项”>“文本编辑器”>“F#”>“CodeLens”
 

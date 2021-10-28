@@ -17,11 +17,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: 46ae610ef08dfad19bbc36252054255d1be506d0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122084033"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126652623"
 ---
 # <a name="sharepoint-development-samples-and-walkthroughs"></a>SharePoint 开发示例和演练
   本部分包含示例应用程序、示例代码和分步演练，它们反映了用于生成 SharePoint 解决方案的语法、结构和技术。

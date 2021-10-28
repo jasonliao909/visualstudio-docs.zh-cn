@@ -16,11 +16,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 59cdbe8bd3be23c2f356cb171449806cea5def87
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122107896"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642430"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 `CommentMarkAtProfile` 方法在 .vsp 文件中插入时间戳值、数值标记和注释字符串。 时间戳值可用于同步外部事件。 为了插入标记和注释，对包含 CommentMarkAtProfile 函数的线程进行的分析必须为 ON（启用状态）。

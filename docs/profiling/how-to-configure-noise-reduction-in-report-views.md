@@ -19,11 +19,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 015ea700cca87912013b5b12c3d9e2ead78a0c54
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122038846"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642374"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>如何：在报表视图中配置降噪
 通过限制“调用关系树”视图和“分配”视图中显示的数据量，可针对降噪配置性能报表。 通过使用降噪，性能问题能够更加醒目。 分析性能报告时，这非常有用。

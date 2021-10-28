@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: c0e7b0e8bd4b7295bb3fca586b3931115f88652d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122033195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736818"
 ---
 # <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>如何：从命令行选择要使用的负载测试运行设置
 

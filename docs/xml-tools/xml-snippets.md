@@ -12,11 +12,11 @@ ms.technology: vs-xml-tools
 ms.workload:
 - multiple
 ms.openlocfilehash: 3077cd59a9ab9e051a1e11e9bb1d19117cc0feb7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122031843"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737214"
 ---
 # <a name="xml-snippets"></a>XML 代码片断
 

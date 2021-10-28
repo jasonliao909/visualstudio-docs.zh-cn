@@ -12,11 +12,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: cff4d2b8312c6b4c086fb321019aca2cd8db0d8b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122147022"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736364"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>演练：因顶点着色而缺少对象
 本演练演示了如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 图形诊断工具调查因顶点着色器阶段出现的错误而缺少的对象。

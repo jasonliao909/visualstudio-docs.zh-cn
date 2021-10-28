@@ -6,11 +6,11 @@ ms.author: sayedha
 ms.date: 09/18/2019
 ms.assetid: a556f9d7-86a8-408e-aa54-392584845889
 ms.openlocfilehash: df702b5d49e5204e65675c1c57d222e490a33824
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963928"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736389"
 ---
 # <a name="launchsettingsjson"></a>launchSettings.json
 

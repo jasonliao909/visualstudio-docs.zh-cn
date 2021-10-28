@@ -19,11 +19,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
 ms.openlocfilehash: 0c0c96fa5158d46d0a8ceafa027c393acb7c94c8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122128034"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641960"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>如何：使用“编辑并继续”(C#)
 使用“编辑并继续”，可以在调试时以中断模式对代码进行更改并应用，而无需停止并重新启动调试会话。

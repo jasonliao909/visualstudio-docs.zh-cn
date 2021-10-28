@@ -7,11 +7,11 @@ ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
 ms.topic: overview
 ms.openlocfilehash: a02733e03b70c4c971efb50770f4c96c25002e55
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123961728"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126652468"
 ---
 # <a name="visual-studio-for-mac-tools-for-unity"></a>Visual Studio for Mac Tools for Unity
 

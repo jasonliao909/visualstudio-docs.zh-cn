@@ -14,11 +14,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 5606c09063dc72181a1011b503c745ed87c0bc47
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122109638"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641902"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>有关使用代码片段的最佳做法
 

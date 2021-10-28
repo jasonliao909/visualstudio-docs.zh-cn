@@ -16,11 +16,11 @@ ms.technology: vs-rtvs
 ms.workload:
 - data-science
 ms.openlocfilehash: 76c6994546e380b9a599c9cdcbbc8a9392333007
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122060695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642267"
 ---
 # <a name="r-tools-for-visual-studio-options"></a>针对 Visual Studio 的 R 工具选项
 

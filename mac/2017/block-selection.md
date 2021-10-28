@@ -6,11 +6,11 @@ ms.author: dominicn
 ms.date: 11/06/2018
 ms.assetid: E8E0831E-E076-44B1-A82A-A325382916A6
 ms.openlocfilehash: 8369950b4bf6ac834cc736cffa3bc2a402a9c0d5
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123961647"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736793"
 ---
 # <a name="block-selection"></a>块选择
 
@@ -20,6 +20,6 @@ ms.locfileid: "123961647"
 
 ![块选择和添加文本](media/source-editor-image16.png)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Visual Studio 的多个插入点选择 (Windows)](/visualstudio/ide/finding-and-replacing-text#multi-caret-selection)

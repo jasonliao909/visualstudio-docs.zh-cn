@@ -17,11 +17,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ee2333e73e6fbc22e25f12da49c7e6586885215d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122140552"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736171"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 

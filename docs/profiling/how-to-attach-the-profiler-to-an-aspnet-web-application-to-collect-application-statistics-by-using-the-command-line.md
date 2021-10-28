@@ -13,11 +13,11 @@ monikerRange: vs-2017
 ms.workload:
 - aspnet
 ms.openlocfilehash: 76272c69b636da2bb104a28049f2dd31c88f9527
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122033689"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642399"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>如何：将探查器附加到 ASP.NET Web 应用程序，以使用命令行收集应用程序统计信息
 本文介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具将探查器附加 ASP.NET Web 应用程序，以及如何使用采样方法收集性能统计信息。

@@ -18,11 +18,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: accc9ab98ede9c691b8f81d75f80fdeb07546159
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122140630"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644341"
 ---
 # <a name="vsinstr-warnings"></a>VSInstr 警告
 下表列出了由 VSInstr.exe 工具发出的警告。 可使用 NOWARN 选项及警告编号来禁止显示警告。

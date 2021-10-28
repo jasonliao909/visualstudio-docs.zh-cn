@@ -12,11 +12,11 @@ ms.technology: vs-xml-tools
 ms.workload:
 - multiple
 ms.openlocfilehash: 1461653dff8e757ec462a3d47eb76ba7ed4f0ed5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122135073"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736805"
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-by-using-the-graph-view"></a>操作说明：使用图形视图获取架构集概览
 

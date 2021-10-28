@@ -10,11 +10,11 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 49d555b2e509237e34375e1b85a35c57a6db4f3b
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96478882"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642093"
 ---
 # <a name="visual-c-intellisense-features"></a>Visual C++ IntelliSense 功能
 

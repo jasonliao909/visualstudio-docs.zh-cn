@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 3616f1a009699d2a08d2c7494a6aaf71a7f7a101
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122153987"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736721"
 ---
 # <a name="messages-menu-commands"></a>“消息”菜单命令
 “消息”菜单提供用于控制消息视图的命令。

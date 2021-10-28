@@ -16,11 +16,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 7c7eb5e36b511448e891c2ae38a960815d9875cb
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122142099"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641524"
 ---
 # <a name="da0505-average-private-bytes-allocated-for-the-process-being-profiled"></a>DA0505：为所分析的进程分配的平均专用字节数
 

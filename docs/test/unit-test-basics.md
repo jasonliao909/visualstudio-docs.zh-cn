@@ -12,11 +12,11 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 ms.openlocfilehash: da403ab2aec782d65bf5699963848ce918afdf0e
-ms.sourcegitcommit: e6aeefef5b659a56e6e433d155bfd269c46bceb0
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122603614"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736582"
 ---
 # <a name="unit-test-basics"></a>单元测试基础知识
 

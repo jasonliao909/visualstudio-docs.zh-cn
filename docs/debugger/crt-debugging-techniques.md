@@ -23,11 +23,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 4874b2fc3c60d6365579cbbca808b566cf6f8189
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122121699"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641227"
 ---
 # <a name="crt-debugging-techniques"></a>CRT 调试方法
 如果调试使用 C 运行时库的程序，这些调试方法可能会有用。

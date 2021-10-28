@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 1b7d884739382fd836bd229d8edde5e7ad4ab92a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122074093"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736224"
 ---
 # <a name="how-to-change-fonts"></a>如何：更改字体
 可更改 Spy++ 窗口的字体、字体样式和字体大小。

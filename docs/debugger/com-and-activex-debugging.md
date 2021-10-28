@@ -25,11 +25,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: b44c0e7e7f9d128a204819ec964f45c264d4d715
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122081784"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641253"
 ---
 # <a name="com-and-activex-debugging"></a>调试 COM 和 ActiveX
 本节提供有关调试 COM 应用程序和 ActiveX 控件的提示。

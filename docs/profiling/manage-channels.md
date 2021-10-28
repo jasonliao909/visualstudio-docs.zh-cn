@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 225d261cad0e4e8c206c00e124478a83e2710845
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122131282"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736177"
 ---
 # <a name="manage-channels"></a>管理通道
 在并发可视化工具的“线程视图”中，可以整理进程的各个通道，以便查看特定模式。 您可以将通道排序、上下移动，以及隐藏或显示这些通道。

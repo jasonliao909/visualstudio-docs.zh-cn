@@ -20,11 +20,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 5707d85f02fdba038565943983a113ab10b6f2a0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122146896"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641962"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>如何：在本机代码中设置线程名称
 在 Visual Studio 的任何版本中都可以使用线程命名功能。 调试正在运行的进程时，线程命名对于在“线程”窗口中标识感兴趣的线程来说非常有用。 通过故障转储检查执行事后调试以及使用各种工具分析性能捕获时，具有高度可识别的线程名称也可能会有所帮助。

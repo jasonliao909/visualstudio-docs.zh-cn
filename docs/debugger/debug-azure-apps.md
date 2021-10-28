@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - azure
 ms.openlocfilehash: d28bf31d5a7f7fe6a2bd095a0f96c76cccc35152
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122031341"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641221"
 ---
 # <a name="debug-azure-services-in-visual-studio"></a>使用 Visual Studio 调试 Azure 服务
 

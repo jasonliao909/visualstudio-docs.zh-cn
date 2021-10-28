@@ -13,11 +13,11 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: f9723c2b6101678c8a95c451783b31e0e162b744
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122067848"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641353"
 ---
 # <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools for AI
 

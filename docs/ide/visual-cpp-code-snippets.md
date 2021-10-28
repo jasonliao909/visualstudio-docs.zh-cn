@@ -12,11 +12,11 @@ dev_langs:
 ms.workload:
 - cplusplus
 ms.openlocfilehash: e5cde2be817c49344e02ff06030022f99790a7a2
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96478804"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642099"
 ---
 # <a name="visual-c-code-snippets"></a>Visual C++ 代码片段
 

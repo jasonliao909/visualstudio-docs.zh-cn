@@ -17,11 +17,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 3b97ff04abdbed42b9adb1a5fd2b41d4feca9931
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122124212"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641885"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>如何：在类设计器中在成员表示法与关联表示法之间转换
 

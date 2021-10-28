@@ -15,11 +15,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 163f0edd1042340f7d1abdbc73dc6099af946394
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122061033"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642387"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>如何：收集行级别采样数据
 行级采样是探查器确定占用大量处理器时间的函数在代码中的位置，如具有高独占样本的函数，处理器需要耗费大量时间。

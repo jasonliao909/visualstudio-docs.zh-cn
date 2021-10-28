@@ -15,11 +15,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 3857601bc577d2da0fa90d95409ecb1b05218435
-ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "123398006"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642144"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>步骤 8：添加验证玩家是否获胜的方法
 你已创建了一个有趣的游戏，但需要添加其他项来完成制作。 该游戏应当在玩家获胜时结束，因此您需要添加 `CheckForWinner()` 方法以验证玩家是否获胜。

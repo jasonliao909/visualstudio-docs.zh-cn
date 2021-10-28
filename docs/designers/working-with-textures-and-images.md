@@ -12,11 +12,11 @@ ms.technology: vs-ide-designers
 ms.workload:
 - multiple
 ms.openlocfilehash: 37a5d3b0766013b127aa939943f7811202d935db
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122035340"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641933"
 ---
 # <a name="work-with-textures-and-images"></a>使用纹理和图像
 

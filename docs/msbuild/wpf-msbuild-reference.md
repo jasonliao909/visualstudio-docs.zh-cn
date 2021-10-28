@@ -20,11 +20,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 2bb0cd5b231b2a626bbba687b42d11f8724d9225
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122039964"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642046"
 ---
 # <a name="wpf-msbuild-reference"></a>WPF MSBuild 参考
 

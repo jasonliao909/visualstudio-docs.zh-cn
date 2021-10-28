@@ -10,11 +10,11 @@ ms.workload:
 - cplusplus
 author: corob-msft
 ms.openlocfilehash: cfdc580b94760cb0c5160918210ba6c3dd8fa2f6
-ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "112042920"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641495"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>如何：编写 C/C++ DLL 单元测试
 

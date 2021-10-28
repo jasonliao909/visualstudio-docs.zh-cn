@@ -15,11 +15,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: 63524dac80bd40febc33cb779c0046a3226f717b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122139941"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736270"
 ---
 # <a name="how-to-export-load-test-results-from-a-repository"></a>如何：从存储库导出负载测试结果
 

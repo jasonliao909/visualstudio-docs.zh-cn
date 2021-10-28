@@ -8,11 +8,11 @@ ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
 ms.topic: how-to
 ms.openlocfilehash: 26575367d7aff2b92c64dc5d07068b4900b24e7f
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963934"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737201"
 ---
 # <a name="create-razor-web-apps"></a>创建 Razor Web 应用
 

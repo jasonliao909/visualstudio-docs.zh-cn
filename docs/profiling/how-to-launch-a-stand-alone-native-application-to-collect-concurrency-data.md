@@ -13,11 +13,11 @@ monikerRange: vs-2017
 ms.workload:
 - cplusplus
 ms.openlocfilehash: cd633c38efd241f1721f35ef0153826604a18661
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122141872"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642332"
 ---
 # <a name="how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>如何：使用探查器启动独立本机应用程序，并通过命令行收集并发数据
 本主题介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具启动本机独立（客户端）应用程序以及收集进程和线程并发数据。

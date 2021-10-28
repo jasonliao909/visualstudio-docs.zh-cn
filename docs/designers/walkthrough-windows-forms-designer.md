@@ -11,11 +11,11 @@ ms.author: tglee
 manager: jmartens
 ms.technology: vs-ide-designers
 ms.openlocfilehash: 6e43c010e84f31b39167baa60cef6cceb7b21c25
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122035405"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126652494"
 ---
 # <a name="tutorial-get-started-with-windows-forms-designer"></a>教程：Windows 窗体设计器入门
 

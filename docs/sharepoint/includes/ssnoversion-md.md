@@ -1,9 +1,9 @@
 ---
-ms.openlocfilehash: 725d4af7c0a6c33765e24e91b6d9cef2b17c21cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c8d61c28ed91dffc0e511145863ebfefa0b08273ba54dca78d9bdf9b2e726b52
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89324739"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121352836"
 ---
 SQL Server

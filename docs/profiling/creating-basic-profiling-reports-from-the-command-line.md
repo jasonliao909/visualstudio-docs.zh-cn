@@ -13,11 +13,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 37a06c119bc0f28ffd1a5efe46842f25155c237c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122039132"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642429"
 ---
 # <a name="create-basic-profiling-reports-from-the-command-line"></a>从命令行创建基本分析报告
 本文介绍从 .vsp 或 .vsps 分析数据文件生成逗号分隔值 (.csv) 报告的基本 VSPerfReport 命令    。 有关所有报告选项的介绍，请参阅 [VSPerfReport](../profiling/vsperfreport.md)。

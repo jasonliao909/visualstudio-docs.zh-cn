@@ -17,11 +17,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - uwp
 ms.openlocfilehash: e48422f3e73802a56a24db3febf8128dad78efe3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122112511"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641643"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>在 Visual Studio 中调试远程计算机上的 UWP 应用
 

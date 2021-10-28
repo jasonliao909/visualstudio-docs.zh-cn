@@ -29,11 +29,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: baed5da414077ee5d81482f092e697ddb608e420
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122121721"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641241"
 ---
 # <a name="continuing-execution-after-an-exception"></a>在出现异常之后继续执行
 当调试器因异常而中断执行时，默认情况下，你将看到 **异常帮助器**。 如果你已在 **选项** 对话框中禁用了 **异常帮助器**，将看到 **异常助手**（C# 或 Visual Basic）或 **异常** 对话框 (C++)。

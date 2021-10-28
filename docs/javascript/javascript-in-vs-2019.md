@@ -15,11 +15,11 @@ ms.author: mikejo
 manager: jmartens
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: 267bd8567b60a66bcf9d78c3aef8f02bbc942e0d
-ms.sourcegitcommit: e12d6cdaeb37564f05361965db2ec8ad0d4f21ad
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "108025873"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642083"
 ---
 # <a name="javascript-and-typescript-in-visual-studio-2019"></a>Visual Studio 2019 中的 JavaScript 和 TypeScript
 

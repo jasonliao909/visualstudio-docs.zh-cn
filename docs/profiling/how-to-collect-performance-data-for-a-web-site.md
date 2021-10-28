@@ -22,11 +22,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 88a705ad675c5d546e884460b1b105bba18c77ac
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122131451"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642388"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>如何：收集网站性能数据
 

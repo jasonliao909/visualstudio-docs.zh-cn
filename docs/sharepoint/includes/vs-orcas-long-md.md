@@ -1,9 +1,9 @@
 ---
-ms.openlocfilehash: e53b9558ea5c5b88238c7f2490685990069da4ab
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 9962cced878fc7a27eb48425614dce7c0b471ddea36022d549c3ba8aaa1dae2c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970562"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121332061"
 ---
 Visual Studio 2008

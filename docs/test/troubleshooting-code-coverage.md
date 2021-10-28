@@ -11,11 +11,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: ea2976e01f8f02b0d6ea858afceb43ecad7ef1c7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122054114"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736584"
 ---
 # <a name="troubleshoot-code-coverage"></a>代码覆盖率疑难解答
 

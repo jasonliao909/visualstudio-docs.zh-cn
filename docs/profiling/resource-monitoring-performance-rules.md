@@ -12,11 +12,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d9a683aa6b3beaeea11c696ab1dbac66f9c94685
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122157340"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736852"
 ---
 # <a name="resource-monitoring-performance-rules"></a>资源监控性能规则
 资源监控类别中的性能消息提供有关应用程序性能的其他数据。 可以使用此数据分析性能问题。 这些规则是消息性的，针对每次分析运行报告。

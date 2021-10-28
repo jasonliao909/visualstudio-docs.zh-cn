@@ -13,11 +13,11 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 ms.openlocfilehash: 35eb729b08e969ded00bb2f6eb428ccdfece1032
-ms.sourcegitcommit: e6aeefef5b659a56e6e433d155bfd269c46bceb0
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122603575"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736833"
 ---
 # <a name="create-unit-test-method-stubs-from-code"></a>从代码创建单元测试方法存根
 

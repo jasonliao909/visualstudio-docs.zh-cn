@@ -33,11 +33,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 793b4262e457301f79f625156194573d63664e9a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122056480"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641899"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>在类设计器中创建和配置类型成员
 

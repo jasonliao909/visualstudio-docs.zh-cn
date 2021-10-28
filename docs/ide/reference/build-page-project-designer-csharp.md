@@ -17,11 +17,11 @@ manager: jmartens
 ms.workload:
 - dotnet
 ms.openlocfilehash: 91b254f4c075693e23d8f650356cd97e86a4c746
-ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "108798552"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736317"
 ---
 # <a name="build-page-project-designer-c"></a>“项目设计器”->“生成”页 (C#)
 

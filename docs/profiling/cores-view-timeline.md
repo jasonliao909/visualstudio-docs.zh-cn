@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 93d689122f61f68da64e09687edce9c0a89a28eb
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122039379"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644385"
 ---
 # <a name="cores-view-timeline"></a>内核视图时间线
 时间线中的每一行表示已配置的系统上的一个逻辑处理器内核。 对于每一行，水平轴显示在给定时刻逻辑内核上运行的线程。 将鼠标悬停在时间线上感兴趣的颜色上可返回用于标识线程的工具提示。 为了帮助进行线程标识，窗口底部的图例显示每个颜色所代表的线程。 通过单击并拖动，或通过按住 Ctrl 并移动鼠标滚轮，使用缩放工具进行放大和缩小。 在内核视图与线程视图之间切换时，可保持缩放一致性。

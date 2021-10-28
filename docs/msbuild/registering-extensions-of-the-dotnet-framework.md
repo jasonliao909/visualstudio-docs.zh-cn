@@ -16,11 +16,11 @@ ms.technology: msbuild
 ms.workload:
 - dotnet
 ms.openlocfilehash: 0af48178d270bcce0a83b81aa54fface2b0b1e3b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122084826"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737272"
 ---
 # <a name="register-extensions-of-the-net-framework"></a>注册 .NET Framework 的扩展
 

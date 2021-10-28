@@ -8,11 +8,11 @@ ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
 ms.topic: how-to
 ms.openlocfilehash: 518dd80d230e3d2518ae69520781818826363ecc
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963970"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644493"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>卸载 Visual Studio for Mac
 

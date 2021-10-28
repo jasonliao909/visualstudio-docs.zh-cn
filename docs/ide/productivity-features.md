@@ -11,11 +11,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: ab3f07f0b9ec86ad1ec854ba5960099a084fb234
-ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "123398437"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641593"
 ---
 # <a name="productivity-guide-for-visual-studio"></a>Visual Studio 实用指南
 

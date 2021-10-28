@@ -12,11 +12,11 @@ ms.technology: vs-ide-designers
 ms.workload:
 - multiple
 ms.openlocfilehash: 7f21aa94786fb9914bd72dfccfa9a59b8469d09f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122073638"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737300"
 ---
 # <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>如何：导出包含自左乘的 Alpha 的纹理
 

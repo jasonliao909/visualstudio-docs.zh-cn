@@ -6,11 +6,11 @@ ms.author: johmil
 ms.date: 07/17/2017
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
 ms.openlocfilehash: d4df59273db1fab8492b36e87e48e0e770072f17
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123961719"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736567"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>使用 Visual Studio for Mac Tools for Unity
 

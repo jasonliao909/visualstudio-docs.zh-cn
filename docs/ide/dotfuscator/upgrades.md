@@ -26,11 +26,11 @@ ms.author: tglee
 manager: jmartens
 ms.technology: vs-ide-general
 ms.openlocfilehash: ef784a6c0d0816fdbf2ff93c5d4de09c2e4a40a5
-ms.sourcegitcommit: f930bc28bdb0ba01d6f7cb48f229afecfa0c90cd
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "122334682"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642194"
 ---
 # <a name="upgrade-dotfuscator-community"></a>升级 Dotfuscator Community
 

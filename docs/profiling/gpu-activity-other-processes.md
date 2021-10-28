@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 88bae242a814b283fd6dc91170c3a81c0cd126f7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122033715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736864"
 ---
 # <a name="gpu-activity-other-processes"></a>GPU 活动(其他进程)
 并发可视化工具的“线程”视图中的“GPU 活动(其他进程)”段表示 GPU 代表系统上的其他进程处理请求的时间。 这些请求以直接内存访问 (DMA) 数据包的形式发送到 GPU。  段的长度代表 GPU 处理数据包的持续时间。

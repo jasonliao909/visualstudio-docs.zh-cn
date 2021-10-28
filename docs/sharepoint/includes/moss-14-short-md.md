@@ -1,9 +1,9 @@
 ---
-ms.openlocfilehash: 5d77c249f79bed6a3a61e09ce9d91d5c1805fd2a
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: e1a1c1a02e68d9e2eeb12cc65701b8b366ee1b85205760842b7eea8fecfbdf19
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112255162"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121332035"
 ---
  SharePoint Server

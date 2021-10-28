@@ -15,11 +15,11 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 9b2473a38961a6ff94a25d08867541b4dd2a8baf
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122093328"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737384"
 ---
 # <a name="call-tree-view---net-memory-sampling-data"></a>“调用树”视图 - .NET 内存采样数据
 “调用关系树”视图显示在分析应用程序中遍历的函数执行路径。 树的根是应用程序或组件的入口点。 每个函数节点都会列出它调用的所有函数以及有关这些函数调用的 .NET 内存分配数据。
@@ -34,7 +34,7 @@ ms.locfileid: "122093328"
 
  设置根节点后，将从视图中排除所选节点的子树之外的所有其他条目。 可将根节点重置为刚才查看的节点，在“调用树”视图窗口中右键单击并选择“重置根”。
 
-|列|描述|
+|列|说明|
 |------------|-----------------|
 |**进程 ID**|分析运行的进程 ID (PID)。|
 |**进程名**|进程的名称。|

@@ -20,11 +20,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 76a32b8fb6f6c61c27f673b150ec75541ce244f0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122154013"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644285"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>如何：使用 WPF 树可视化工具
 可以使用 WPF 树可视化工具浏览 WPF 对象的可视化树，并查看该树中所含对象的 WPF 依赖项属性。 有关可视化树的详细信息，请参阅 [WPF 中的树](/dotnet/framework/wpf/advanced/trees-in-wpf)。 有关依赖项属性的详细信息，请参阅[依赖项属性概述](/dotnet/framework/wpf/advanced/dependency-properties-overview)。

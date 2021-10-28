@@ -12,11 +12,11 @@ ms.technology: vs-xml-tools
 ms.workload:
 - multiple
 ms.openlocfilehash: 955c656355f1c88de064754a97cb24324abdf392
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122098744"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641397"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>如何：从 XML 架构生成 XML 代码段
 

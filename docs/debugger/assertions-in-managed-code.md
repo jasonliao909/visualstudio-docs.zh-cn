@@ -26,11 +26,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
 ms.openlocfilehash: 937c6474aab6ea1171eccf6914e4e850a8e4bb3b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122129865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641271"
 ---
 # <a name="assertions-in-managed-code"></a>托管代码中的断言
 断言（或 `Assert` 语句）测试一个你指定为 `Assert` 语句的自变量的条件。 如果该条件的计算结果为 true，则不会执行任何操作。 如果条件的计算结果为 false，则断言失败。 如果正使用调试版本运行，程序将进入中断模式。

@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: c7abfac75a1df3ca2acd38013a552266bce4b6d5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122039834"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642433"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>“高级设置”对话框（并发可视化工具）
 通过使用并发可视化工具中的“高级设置”对话框，可以控制如何收集跟踪。  对话框中有符号、仅我的代码、缓冲、筛选、CLR 事件、标记、提供程序和文件的选项卡。

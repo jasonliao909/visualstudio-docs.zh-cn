@@ -13,11 +13,11 @@ monikerRange: vs-2017
 ms.workload:
 - cplusplus
 ms.openlocfilehash: d000addcf2e0e0ee324dd587b0dfb4096ed0b624
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122076629"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642346"
 ---
 # <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>如何：使用探查器命令行检测本机独立组件，并收集计时数据
 本主题介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具检测 C++、.exe 或 .dll 文件等本机组件并收集详细的计时数据 。

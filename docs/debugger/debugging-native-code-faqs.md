@@ -24,11 +24,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
 ms.openlocfilehash: d195a89936254706f3a9b3bd065a1916cce23cf6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122097436"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737371"
 ---
 # <a name="debugging-native-code-faqs"></a>调试本机代码常见问题
 下面的主题包含一些常见问题的答案：

@@ -15,11 +15,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - uwp
 ms.openlocfilehash: 298ccbb112d373255feadfad136255bf367df350
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122094290"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641824"
 ---
 # <a name="application-property-page-uwp-projects"></a>应用程序属性页（UWP 项目）
 

@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 8ea0f810354b56aaf4ddeb38b19fb1ba061e113e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122096903"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641945"
 ---
 # <a name="tree-menu-commands"></a>“树”菜单命令
 “树”菜单提供用于展开或折叠视图的命令。

@@ -13,11 +13,11 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 068bb1cca204e2202f5ed231c07e81062beab44f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122033442"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642330"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>如何：使用探查器启动独立 .NET Framework 应用程序，以使用命令行收集内存数据
 本主题介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具启动 .NET Framework 独立（客户端）应用程序以及收集内存数据。

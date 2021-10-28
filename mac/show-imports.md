@@ -7,11 +7,11 @@ ms.date: 03/29/2019
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
 ms.openlocfilehash: 964fbbf2f46e2495184b01c47cba888a93f24ea8
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963931"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644515"
 ---
 # <a name="show-import-items"></a>显示导入项
 

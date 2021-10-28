@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: de2c3d83ddcb8d558754864bd1ccd75921a20c7b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122123003"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737265"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>如何：在 Visual Studio 中使用测试设置配置网络仿真
 

@@ -8,11 +8,11 @@ ms.technology: vs-ide-install
 ms.assetid: 8825BBAD-65C0-480F-9868-A01E64F28250
 ms.topic: troubleshooting
 ms.openlocfilehash: c631bae40d06a000e2e90c26ae5a9862c1e09aaa
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123961779"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736569"
 ---
 # <a name="troubleshooting-updater-has-errors-retrieving-information"></a>疑难解答：更新程序在检索信息时发生错误
 

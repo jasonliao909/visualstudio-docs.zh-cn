@@ -13,11 +13,11 @@ ms.technology: vs-ide-deployment
 ms.workload:
 - azure
 ms.openlocfilehash: 62ff5d26fe426055be88d8a3c28edbd06118f599
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122080398"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126652510"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>使用 Visual Studio 将 ASP.NET Core 应用发布到 Linux 上的应用服务
 

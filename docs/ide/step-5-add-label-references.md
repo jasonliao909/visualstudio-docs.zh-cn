@@ -15,11 +15,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: a08e20be3f84236dc0b250ad85504def1adb7fa0
-ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "123398019"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642149"
 ---
 # <a name="step-5-add-label-references"></a>步骤 5：添加标签引用
 该程序需要跟踪玩家选择了哪些 Label 控件。 现在，该程序将显示玩家选择的所有标签。 但是，我们要更改这一行为。 在选择第一个标签后，该程序应显示该标签的图标。 在选择第二个标签后，该程序应短暂显示两个图标，然后再隐藏这两个图标。 程序现将通过引用变量跟踪第一次和第二次分别选择的 Label 控件。

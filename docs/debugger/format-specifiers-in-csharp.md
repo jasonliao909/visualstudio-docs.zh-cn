@@ -29,11 +29,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
 ms.openlocfilehash: c9f02973e40cea5fd821c94bd7931cf742f8a271
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122154338"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642029"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Visual Studio 调试器中的 C# 中的格式说明符
 你可以使用格式说明符更改在“监视”窗口中显示值所用的格式。 还可在“即时”窗口、“命令”窗口、[跟踪点](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)和源窗口中使用格式说明符。 如果将鼠标悬停在这些窗口中的表达式上，结果将采用指定格式显示出现在[数据提示](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)中。

@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 965a1e015a4a5889cb1624ebfb25dbfb213a4f86
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122096877"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641623"
 ---
 # <a name="spy-help"></a>Spy++ 帮助
 Spy++ 实用工具文档包括两组有关使用 Spy++ 和 Spy++ 视图的常规主题。 接下来是 Spy++ 参考，其中提供了有关每个可用菜单命令和对话框的更多详细信息。

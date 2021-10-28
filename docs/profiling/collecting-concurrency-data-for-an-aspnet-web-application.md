@@ -16,11 +16,11 @@ monikerRange: vs-2017
 ms.workload:
 - aspnet
 ms.openlocfilehash: f11ff21ad7e33008f85262ed489ea7e82ea59100
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122142398"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641550"
 ---
 # <a name="collect-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>使用探查器命令行收集 ASP.NET Web 应用程序的并发数据
 可通过 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的并发方法收集资源争用数据。

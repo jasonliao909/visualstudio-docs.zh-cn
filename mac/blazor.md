@@ -11,11 +11,11 @@ no-loc:
 - Blazor WebAssembly
 ms.topic: how-to
 ms.openlocfilehash: 30e9a62e8bf0364a76cbd43995cbb77c1a5bd0c4
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963876"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644528"
 ---
 # <a name="create-blazor-web-apps"></a>创建 Blazor Web 应用
 

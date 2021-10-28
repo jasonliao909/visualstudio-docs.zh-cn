@@ -12,11 +12,11 @@ ms.technology: vs-xml-tools
 ms.workload:
 - multiple
 ms.openlocfilehash: 382bd0cc8d2792889be8294dac46749da956fcea
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122025129"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737237"
 ---
 # <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>如何：从图形视图和内容模型视图打印关系图
 

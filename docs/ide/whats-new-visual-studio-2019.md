@@ -16,11 +16,11 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: aaa3ad227fcd42295db0835cad637862df850df9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122078097"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736303"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 中的新增功能
 

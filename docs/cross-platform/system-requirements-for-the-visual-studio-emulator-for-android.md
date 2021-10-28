@@ -14,11 +14,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 8568670e43f21227db7e3ef88d41b2c7c0fc63c3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859458"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641293"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>适用于 Android 的 Visual Studio 仿真程序的系统要求
 

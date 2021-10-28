@@ -20,11 +20,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
 ms.openlocfilehash: a5f56710ea026cdd1962ea5fc43f914549bec300
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122097509"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737182"
 ---
 # <a name="debug-managed-code-c-visual-basic-f-ccli"></a>调试托管代码（C#、Visual Basic、F#、C++/CLI）
 

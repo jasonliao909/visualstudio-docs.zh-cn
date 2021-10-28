@@ -14,11 +14,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: b65fe48b0b912c3b26c4b16cb4d1269abad88f57
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122075874"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737268"
 ---
 # <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>如何：使用负载测试编辑器向计数器集中添加计数器
 

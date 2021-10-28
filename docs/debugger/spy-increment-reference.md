@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 829c4eb8b9114baa2d553863d543b217908cb839
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122090299"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641621"
 ---
 # <a name="spy-reference"></a>Spy++ 参考
 有关每个 Spy++ 菜单和对话框的说明，请参阅下面列出的各节：

@@ -15,11 +15,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: d88014eb9b6141ccc06919aa6d869b364588feee
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122054153"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736586"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>负载测试中测试控制器和测试代理的故障排除策略
 

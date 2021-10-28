@@ -15,11 +15,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: e959a1ef4e813510a7a5963c144022748a4b85c9
-ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "123398237"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642148"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>步骤 6：添加减法问题
 在本教程的第 6 部分中，你将添加一道减法题并了解如何执行以下任务：

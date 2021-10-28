@@ -14,11 +14,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 19960b5bb8f429e974fdd0571efa64e4ddd07f5a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122150906"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736313"
 ---
 # <a name="options-dialog-box-environment--tabs-and-windows"></a>“选项”对话框：环境 \> 选项卡和窗口
 

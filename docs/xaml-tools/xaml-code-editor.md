@@ -12,11 +12,11 @@ ms.author: tglee
 manager: jmartens
 ms.technology: vs-xaml-tools
 ms.openlocfilehash: b99a75dd6c03183b49154a6c3ea4d68edc7130b2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122130346"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126652473"
 ---
 # <a name="xaml-code-editor"></a>XAML 代码编辑器
 

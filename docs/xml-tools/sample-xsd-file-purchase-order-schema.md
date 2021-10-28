@@ -12,11 +12,11 @@ ms.technology: vs-xml-tools
 ms.workload:
 - multiple
 ms.openlocfilehash: 145f3b71535baae809097df9ffa4f9293bd1d307
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122098705"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736792"
 ---
 # <a name="sample-xsd-file-purchase-order-schema"></a>示例 XSD 文件：订单架构
 

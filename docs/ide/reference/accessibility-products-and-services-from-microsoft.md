@@ -21,11 +21,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: d5b56f7c5e84eab0a95b9178c0a582da95adcfcf
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122144140"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737079"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Microsoft 提供的辅助功能产品和服务
 

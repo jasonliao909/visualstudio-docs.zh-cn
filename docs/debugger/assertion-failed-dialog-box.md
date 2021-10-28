@@ -24,11 +24,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 58e1e631cef943f28705aa40604303cae8f6a426
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122031427"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641272"
 ---
 # <a name="assertion-failed-dialog-box"></a>“断言失败”对话框
 断言语句指定了一个你预期程序中的某个特定点为 true 的条件。 如果该条件不为 true，则断言失败，程序的执行中断并出现此对话框。

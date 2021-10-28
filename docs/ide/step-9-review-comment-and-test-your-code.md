@@ -15,11 +15,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 70db7188d16d3a878ecec50f734946cdb93d8f3c
-ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "123397346"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642482"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>步骤 9：检查代码、为代码添加注释和测试代码
 

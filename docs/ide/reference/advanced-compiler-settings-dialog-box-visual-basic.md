@@ -16,11 +16,11 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 0335ee8ef1c385da13c2043ffcfa94c264a5934a
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92137033"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641837"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>“高级编译器设置”对话框 (Visual Basic)
 

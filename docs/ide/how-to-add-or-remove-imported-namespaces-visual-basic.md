@@ -18,11 +18,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 02af241606b8b8cc4646048b507f3672bf20e4ea
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122101786"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737108"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>如何：添加或移除导入的命名空间 (Visual Basic)
 

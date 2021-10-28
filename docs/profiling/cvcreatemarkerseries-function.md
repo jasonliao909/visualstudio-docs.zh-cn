@@ -18,11 +18,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ace7287bfbb12d078e8dcbc846042f8394215f1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122076758"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736872"
 ---
 # <a name="cvcreatemarkerseries-function"></a>CvCreateMarkerSeries 函数
 为给定提供程序创建标记系列。

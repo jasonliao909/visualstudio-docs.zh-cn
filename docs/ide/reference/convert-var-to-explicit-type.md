@@ -13,11 +13,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: de79490c0dd343cf1bd0e9b120def07aa548799a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122048877"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736893"
 ---
 # <a name="refactoring-to-replace-var-with-an-explicit-type"></a>重构以将 var 替换为显式类型
 

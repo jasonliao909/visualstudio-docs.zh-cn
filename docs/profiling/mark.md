@@ -12,11 +12,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3e37a739d5e6c799cbeaca0ddb5802be3a0a535b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122107441"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736175"
 ---
 # <a name="mark"></a>标记
 VSPerfCmd.exe 的“标记”选项可以在分析数据文件中插入指定的信息 。 标记可能列在单独的 VSPerfReport 报表中或探查器 UI 的“标记报表”视图中。 标记可用于指定报表和视图筛选器中的起止点。

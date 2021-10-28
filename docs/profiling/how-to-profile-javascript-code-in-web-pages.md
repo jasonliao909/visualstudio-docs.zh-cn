@@ -15,11 +15,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f6ff70d45f47a8f7c34be58cfa33491f28e34bdb
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122060968"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642314"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>如何：分析网页中的 JavaScript 代码
 

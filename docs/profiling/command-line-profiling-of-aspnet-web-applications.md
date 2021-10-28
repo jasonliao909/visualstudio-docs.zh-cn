@@ -16,11 +16,11 @@ monikerRange: vs-2017
 ms.workload:
 - aspnet
 ms.openlocfilehash: 9d551922a3088c7febe07f47d35af04511774a09
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122107950"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641737"
 ---
 # <a name="command-line-profiling-of-aspnet-web-applications"></a>通过命令行分析 ASP.NET Web 应用程序
 本部分介绍从命令行使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具收集 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序的性能数据的过程和选项。

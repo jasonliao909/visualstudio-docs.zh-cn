@@ -12,11 +12,11 @@ manager: jmartens
 ms.workload:
 - multiple
 ms.openlocfilehash: 3316bf26f660b04c4f003b02523be3f9c408e73f
-ms.sourcegitcommit: 42aec4a2ea6dec67dbe4c93bcf0fa1116a4b93d9
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122980925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737085"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>如何：查看、保存和配置生成日志文件
 

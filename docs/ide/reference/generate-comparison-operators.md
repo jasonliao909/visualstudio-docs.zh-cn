@@ -11,11 +11,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 ms.openlocfilehash: b0a2c2e532258594834d73c091314451f8b2cd3f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122117353"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644403"
 ---
 # <a name="generate-comparison-operators-for-types-that-implement-icomparable"></a>为实现 IComparable 的类型生成比较运算符
 

@@ -14,11 +14,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 018e3fd27753a33a763d716f17648e51b92dc52e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122101214"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737417"
 ---
 # <a name="inline-a-temporary-variable-refactoring"></a>“内联临时变量”重构
 
@@ -49,7 +49,7 @@ ms.locfileid: "122101214"
 2. 接下来，执行以下操作之一：
 
    - **键盘**
-      - 按“Ctrl”  + **。** 触发“快速操作和重构”菜单。
+      - 按“Ctrl”+ **。** 触发“快速操作和重构”菜单。
    - **鼠标**
       - 右键单击代码，然后选择“快速操作和重构”菜单。
 

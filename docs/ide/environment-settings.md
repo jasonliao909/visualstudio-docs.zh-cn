@@ -11,11 +11,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: c4e91ce87d2bf3738fa4454b6f1410981fd7fc8e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122086165"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642189"
 ---
 # <a name="environment-settings-for-visual-studio"></a>Visual Studio 的环境设置
 

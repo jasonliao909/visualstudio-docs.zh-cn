@@ -20,11 +20,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
 ms.openlocfilehash: abbb4141b4133ac2526d7922ec0e82f74d8286d6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122058235"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644467"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>支持的代码更改（C# 和 Visual Basic）
 “编辑并继续”处理方法体内的大多数类型的代码更改。 但是，方法体外的大多数更改以及方法体内的小部分更改在调试期间不能应用。 若要应用这些不受支持的更改，您必须停止调试，重新开始新版本的代码。

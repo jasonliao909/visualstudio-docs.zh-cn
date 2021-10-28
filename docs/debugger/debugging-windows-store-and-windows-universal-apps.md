@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - uwp
 ms.openlocfilehash: 1adfcab578511c95595f24045e649e37a62765b2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122112836"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737362"
 ---
 # <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>在 Visual Studio 中调试通用 Windows 应用 (UWP)
 

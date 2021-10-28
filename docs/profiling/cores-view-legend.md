@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 21d753fdcd1076a79cb2fcde8698430cb5de31e5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122039405"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644391"
 ---
 # <a name="cores-view-legend"></a>“核心”视图图例
 “核心”视图图例按颜色和名称标识每个线程。 它包括一些列，分别显示跨核心上下文切换数、上下文切换总数以及跨越核心的上下文切换所占的百分比。 图例中的行按跨核心上下文切换数以降序排序。

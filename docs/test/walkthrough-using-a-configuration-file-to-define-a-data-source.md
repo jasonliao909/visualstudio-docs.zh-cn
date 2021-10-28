@@ -15,11 +15,11 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 ms.openlocfilehash: 82a711e21d75486fb7217d1f831831fd3476b06b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122106583"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736261"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>演练：使用配置文件定义数据源
 

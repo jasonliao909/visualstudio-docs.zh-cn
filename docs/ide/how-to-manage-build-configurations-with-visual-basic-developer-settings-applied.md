@@ -18,11 +18,11 @@ manager: jmartens
 ms.workload:
 - multiple
 ms.openlocfilehash: 5912603331ff6681cd6cc98cbb1afd88246ea695
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962868"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644259"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>如何：在应用 Visual Basic 开发人员设置后管理生成配置
 

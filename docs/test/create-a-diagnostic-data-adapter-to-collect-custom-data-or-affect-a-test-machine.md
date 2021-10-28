@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: 80fdb3453ec3f33ac00ea678f89b2b6d542e3895
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122148644"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641507"
 ---
 # <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>创建诊断数据适配器以收集自定义数据或影响测试计算机
 

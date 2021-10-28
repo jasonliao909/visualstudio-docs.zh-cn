@@ -14,11 +14,11 @@ manager: jmartens
 ms.workload:
 - multiple
 ms.openlocfilehash: 3ae0e5f2516dd1f78aea880289f549ca3a44f3bb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881953"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737057"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>演练：创建多计算机生成环境
 

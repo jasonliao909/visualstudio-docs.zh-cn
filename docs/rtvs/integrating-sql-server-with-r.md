@@ -11,11 +11,11 @@ ms.technology: vs-rtvs
 ms.workload:
 - data-science
 ms.openlocfilehash: b940ac63a47425a1a1cb3887c3785700f572192b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122075965"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642266"
 ---
 # <a name="work-with-sql-server-and-r"></a>使用 SQL Server 和 R
 

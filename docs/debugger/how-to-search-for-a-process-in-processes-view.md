@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 9f5ff80257a3f3708d2de517e38fbc6abf6a77f9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122128164"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644294"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>如何：在进程视图中搜索进程
 可以通过使用进程 ID 或模块字符串作为搜索条件，在进程视图中搜索特定进程。 还可以指定搜索的初始方向。 对话框中的字段将显示进程树中所选进程的属性。

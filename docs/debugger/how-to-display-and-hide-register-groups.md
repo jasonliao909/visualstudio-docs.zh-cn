@@ -23,11 +23,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 38d6d843c3e019c0a1e325a6eeb79ac61ff00ced
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122112807"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736729"
 ---
 # <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>如何：显示和隐藏寄存器组（C#、C++、Visual Basic、F#）
 

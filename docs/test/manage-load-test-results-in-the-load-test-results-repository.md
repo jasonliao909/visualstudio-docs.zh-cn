@@ -15,11 +15,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: 407e265424863d7018fc6b3e12fc23bddd0a9812
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122139902"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736262"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>管理“负载测试结果存储库”中的负载测试结果
 

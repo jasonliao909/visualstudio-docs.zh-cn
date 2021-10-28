@@ -12,11 +12,11 @@ ms.technology: vs-ide-designers
 ms.workload:
 - multiple
 ms.openlocfilehash: bd312e8934d14a986606020558adc57339250706
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122112056"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737312"
 ---
 # <a name="how-to-create-a-basic-texture"></a>如何：创建基本纹理
 

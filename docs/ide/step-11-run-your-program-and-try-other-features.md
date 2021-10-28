@@ -12,11 +12,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 7b6784c96c8915c0d80149023a786e8c4bc20680
-ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "123398394"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642486"
 ---
 # <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>步骤 11：运行图片查看器应用并尝试其他功能
 

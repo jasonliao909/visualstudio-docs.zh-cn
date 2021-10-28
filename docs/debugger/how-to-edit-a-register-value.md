@@ -19,11 +19,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 71532f7b1c1aad8959ce3a10e7b955d55c3e51d9
-ms.sourcegitcommit: 4cf966e03cdce4c520f6d4bde0b2711c099e0edd
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2021
-ms.locfileid: "122188696"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641647"
 ---
 # <a name="how-to-edit-a-register-value-c"></a>如何：编辑寄存器值 (C++)
 

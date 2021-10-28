@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: f3c04112ff216ecbf2fc683206a30d9be6b44971
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122084592"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736653"
 ---
 # <a name="channels-threads-view"></a>通道（线程视图）
 并发可视化工具显示四类通道：线程通道、磁盘通道、标记通道和 GPU 通道。

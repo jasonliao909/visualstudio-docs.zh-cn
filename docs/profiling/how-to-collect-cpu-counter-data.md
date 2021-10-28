@@ -17,11 +17,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 4f0d455c9a31e34ae05689cac705478a4201fa42
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122038872"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642392"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>如何：收集 CPU 计数器数据
 

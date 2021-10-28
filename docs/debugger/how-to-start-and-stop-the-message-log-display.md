@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: ebaae16da706724f2d0813073ea57039fd7c4095
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122051906"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641478"
 ---
 # <a name="how-to-start-and-stop-the-message-log-display"></a>如何：开始和停止消息日志显示
 当[消息视图](../debugger/messages-view.md)窗口处于活动状态时，Spy++“消息”菜单上会显示“启动日志记录”或“停止日志记录”选项，相应的“启动日志记录”或“停止日志记录”工具栏按钮变为活动状态。

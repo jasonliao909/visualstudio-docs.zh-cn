@@ -18,11 +18,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: e312844fa2f5c25492deb4de20b327da42089f81
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122101331"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737425"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>如何以独占方式使用键盘
 

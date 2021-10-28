@@ -21,11 +21,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 0ae8733c30a299123e1f0d21a43be943a24a5277
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122097583"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737188"
 ---
 # <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>关于 Visual Studio 中的“寄存器”窗口 (C#、C++、Visual Basic、F#)
 

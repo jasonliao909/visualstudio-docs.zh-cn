@@ -11,11 +11,11 @@ manager: jmartens
 ms.workload:
 - multiple
 ms.openlocfilehash: f7fe40f78b8a8447c1ae784e33a25e905e368118
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873822"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641574"
 ---
 # <a name="walkthrough-build-an-application"></a>演练：生成应用程序
 

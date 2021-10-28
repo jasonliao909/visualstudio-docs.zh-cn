@@ -13,11 +13,11 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 ms.openlocfilehash: 709e429a1b131a3c9124c2e182d6b9407da9b23f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122156079"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737251"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>安装测试代理和测试控制器
 

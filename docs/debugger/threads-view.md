@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 2ab9f6b91c7c57ff185981bc3a3ac4b3fc6abdd9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122030498"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736910"
 ---
 # <a name="threads-view"></a>线程视图
 线程视图是与系统上的窗口关联的所有线程的简单列表。 会显示每个线程的线程 ID 和模块名称。 不包括进程，但是可以轻松查找拥有所选线程的进程。

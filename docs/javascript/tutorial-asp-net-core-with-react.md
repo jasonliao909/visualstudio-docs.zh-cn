@@ -14,11 +14,11 @@ ms.workload:
 - nodejs
 monikerRange: '>= vs-2022'
 ms.openlocfilehash: 4d6fefdda40e550a62616a82734a84037c0c10b0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122077915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644399"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-react-in-visual-studio"></a>教程：在 Visual Studio 中使用 React 创建 ASP.NET Core 应用
 

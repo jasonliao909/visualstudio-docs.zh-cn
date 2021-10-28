@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 2235c2e8cf918589ab5ad844bbe758462144af32
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
-ms.translationtype: MT
+ms.openlocfilehash: 22654fcfae47e8b83a6db838e8f69574a504e5187e0f8ed07a863d8c8e951ba6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89324808"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121428727"
 ---
 Team Foundation Server

@@ -8,11 +8,11 @@ ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
 ms.topic: tutorial
 ms.openlocfilehash: 144580b0ebe0eb3615c5cf55c1bee03ff2a614fa
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123961652"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736250"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>教程：Azure Functions 入门
 

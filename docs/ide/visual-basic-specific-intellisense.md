@@ -16,11 +16,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 44b6e8eb5b44089f0aa87c579ea98f6be947bdb9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122150802"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642102"
 ---
 # <a name="intellisense-for-visual-basic-code-files"></a>Visual Basic 代码文件的 IntelliSense
 

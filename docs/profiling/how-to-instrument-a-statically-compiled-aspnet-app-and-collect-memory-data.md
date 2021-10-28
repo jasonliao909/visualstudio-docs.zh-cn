@@ -13,11 +13,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 12f132503164c6b9e3e2da9ce5eeaed8a83ac36b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122033494"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642335"
 ---
 # <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>如何：使用探查器命令行检测静态编译的 ASP.NET Web 应用程序，并收集内存数据
 本文介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的命令行工具检测预编译的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 组件或网站，以及如何收集 .NET 内存分配、对象生存期和详细的计时数据。

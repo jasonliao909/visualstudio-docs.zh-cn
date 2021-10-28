@@ -11,11 +11,11 @@ ms.workload:
 - dotnet
 monikerRange: vs-2017
 ms.openlocfilehash: 18fbd6ea01af196ccf9428a495229972c982a617
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122034456"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737119"
 ---
 # <a name="target-older-versions-of-net-f"></a>面向 .NET 的较旧版本 (F#)
 

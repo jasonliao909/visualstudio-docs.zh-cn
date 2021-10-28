@@ -21,11 +21,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
 ms.openlocfilehash: 4adb885ecf43e91c732ac2bf377027be4db58a88
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122074372"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642036"
 ---
 # <a name="edit-and-continue-visual-c"></a>编辑并继续 (Visual C#)
  使用 C# 的“编辑并继续”，可以一边进行调试一边在中断模式下更改代码。 不必停止并重新启动调试会话即可应用更改。 在运行模式下，源编辑器是只读的。

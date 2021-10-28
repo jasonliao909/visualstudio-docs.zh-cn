@@ -14,11 +14,11 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 1f1fcb71e16daa3cb483f281d2af4130fc676acb
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122107324"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736289"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>“模块”视图 - .NET 内存采样数据
 使用采样方法收集的 .NET 内存分配数据的“模块”视图按分析运行期间执行的模块对内存数据进行分组。 每个模块都是一个层次结构树的根。 模块的各函数在模块节点下列出。

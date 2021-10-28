@@ -12,11 +12,11 @@ ms.technology: vs-xml-tools
 ms.workload:
 - multiple
 ms.openlocfilehash: 103be5fd5b18778eacb47d7bff10cd3c7107748e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122114493"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737235"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>如何：选择要使用的 XML 架构
 

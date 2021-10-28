@@ -16,11 +16,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 352cb8768a14d75df76e95009a5968ff8ab21d2d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122109235"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737109"
 ---
 # <a name="find-code-using-go-to-commands"></a>使用“转到”命令查找代码
 

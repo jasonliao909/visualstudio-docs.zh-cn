@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: ba9eccbfba9bd965969f426714eab51289c7e1fb
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122139954"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736942"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>如何：使用 Web 性能测试 API
 

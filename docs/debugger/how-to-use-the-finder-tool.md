@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: dcb143c5a4afd1a88598127cd21e446fbfe5a414
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122065470"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641955"
 ---
 # <a name="how-to-use-the-finder-tool"></a>如何：使用查找程序工具
 可以使用“查找窗口”对话框中的查找程序工具显示窗口属性或消息。 查找程序工具还可以查找禁用的子窗口，并在禁用的子窗口重叠时识别要突出显示的窗口。

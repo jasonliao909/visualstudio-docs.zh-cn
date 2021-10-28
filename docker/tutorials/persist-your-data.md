@@ -6,15 +6,16 @@ author: nebuk89
 ms.author: ghogen
 manager: jmartens
 ms.technology: vs-docker
+ms.custom: contperf-fy22q1
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 149d67bc0e4004c6207add49a84b81b5c5e80620
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 36c7a2dbada3dd1f23b45019dc0690f3ba1ab5f1
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122053418"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641369"
 ---
 # <a name="persist-your-data"></a> 保留数据
 

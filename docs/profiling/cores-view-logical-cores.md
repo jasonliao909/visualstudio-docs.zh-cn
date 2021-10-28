@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: dce9842df236afcbc3b060a42248fd8d9eb7c59c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122039366"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644387"
 ---
 # <a name="cores-view-logical-cores"></a>内核视图的逻辑内核数
 每个通道名称代表分析的系统上存在的一个逻辑内核。 该命名方法会从 0 开始计数至逻辑内核的总数。 例如，四核系统从逻辑内核 0 计数到逻辑内核 3。

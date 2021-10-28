@@ -20,11 +20,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: d6eac0c6ae6cd539f2a5dfc3b65d05482b2e282d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122101565"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644257"
 ---
 # <a name="command-window"></a>“命令”窗口
 “命令”窗口用于直接在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 集成开发环境 (IDE) 中执行命令或别名。 可以执行菜单命令和不在任何菜单上出现的命令。 若要显示“命令”窗口，请在“视图”菜单中选择“其他窗口”，然后选择“命令窗口”。

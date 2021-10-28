@@ -14,11 +14,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - uwp
 ms.openlocfilehash: 01832b96a9505a9883896cc60027e2029d6b3b45
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122048630"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642503"
 ---
 # <a name="xaml-designer-options-page"></a>XAML 设计器选项页
 

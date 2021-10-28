@@ -23,11 +23,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 182acb852c70e723a96a014b8c9a04a6c8cef920
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122033572"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642390"
 ---
 # <a name="how-to-choose-sampling-events"></a>如何：选择采样事件
 默认情况下，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具按指定为由所分析的进程使用的处理器周期数的间隔收集性能数据。 间隔中的默认周期数为 10,000,000，这在 1 GH 计算机上大约 0.01 秒。 可以更改间隔中的周期数，也可以更改采样事件。 以下示例事件可用：

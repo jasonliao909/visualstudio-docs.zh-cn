@@ -19,11 +19,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f56d93ff5ff58122d8a1db88d22183f3dd85b978
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122150113"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642309"
 ---
 # <a name="how-to-set-the-current-session"></a>如何：设置当前会话
 

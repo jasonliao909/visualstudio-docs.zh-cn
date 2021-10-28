@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: 6bf9001d07a56d521283bcd5e9c6b7774437df48
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122140006"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736159"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>编辑测试组合模型以指定运行测试的虚拟用户的概率
 

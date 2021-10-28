@@ -12,11 +12,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: c9c461bdae97e1fd26491e72bad1791ce529e2ed
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122052065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642006"
 ---
 # <a name="begincapture"></a>BeginCapture
 开始一个捕获间隔，该间隔将以 `EndCapture` 结束。

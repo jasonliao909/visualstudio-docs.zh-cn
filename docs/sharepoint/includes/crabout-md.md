@@ -1,9 +1,9 @@
 ---
-ms.openlocfilehash: aaa271b2b10b7a803ec3dca62e1ac14e12f7f3ac
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 2ce28fb5855eabe9fb32090dcc160c8f6fe8e3e496672e61458d77eb4e3a83bb
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970594"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121332100"
 ---
 详细信息

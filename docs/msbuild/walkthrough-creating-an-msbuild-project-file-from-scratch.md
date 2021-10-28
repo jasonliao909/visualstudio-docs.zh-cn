@@ -14,11 +14,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 6824260c3bffad8e6d3000d8eb5d3e4405dafc1f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122093705"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642048"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>演练：从头开始创建 MSBuild 项目文件
 

@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 17d366f666ca9a430332d616424b4fcc03db9eca
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122030745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736321"
 ---
 # <a name="message-search-dialog-box"></a>“消息搜索”对话框
 使用此对话框可以在[消息视图](../debugger/messages-view.md)中查找并选择特定消息的节点。 若要显示此对话框，请将焦点移至消息视图窗口。 然后在“搜索”菜单中选择“查找消息” 。

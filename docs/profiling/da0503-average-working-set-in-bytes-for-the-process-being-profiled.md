@@ -16,11 +16,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: dbfee079945441f41069d34d1bc3cd36e4b9896a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122142138"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641525"
 ---
 # <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503：所分析进程的平均工作集（字节）
 

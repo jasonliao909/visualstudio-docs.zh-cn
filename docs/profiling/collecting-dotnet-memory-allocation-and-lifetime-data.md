@@ -15,11 +15,11 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 2335db6165d5dd973c454723bda9eeee97475ba8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122039782"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641538"
 ---
 # <a name="collect-net-framework-memory-allocation-and-lifetime-data"></a>收集 .NET Framework 内存分配和生存期数据
 

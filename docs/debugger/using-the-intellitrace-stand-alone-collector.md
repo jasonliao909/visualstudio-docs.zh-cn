@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: f91f9692ab0cd6c9b8cc4cbaf9cdc44cd4d12ad5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122146584"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644463"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>使用 IntelliTrace 独立收集器（C#、Visual Basic）
 

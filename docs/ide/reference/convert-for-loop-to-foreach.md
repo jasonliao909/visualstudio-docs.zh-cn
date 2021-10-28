@@ -14,11 +14,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: b6648ffa903a0a8f3e808801f1c8627a164de251
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122041303"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641802"
 ---
 # <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>重构，以便在 for 循环和 foreach 语句之间进行转换
 

@@ -19,11 +19,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 9c5dea7c359de1c6bb07b9d8f6a60625e87029e8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122143061"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736291"
 ---
 # <a name="msbuild-task-reference"></a>MSBuild 任务参考
 

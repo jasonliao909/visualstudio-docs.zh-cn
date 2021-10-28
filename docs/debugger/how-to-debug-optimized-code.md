@@ -25,11 +25,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 3d58233f606c3060a1a78f8cfd0a1c3b4c0334de
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122128594"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736732"
 ---
 # <a name="how-to-debug-optimized-code"></a>如何：调试优化的代码
 

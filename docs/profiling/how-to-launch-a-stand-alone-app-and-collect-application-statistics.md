@@ -13,11 +13,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d8626bd4742e14f14b32fe47e3e61412020f5dd
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122107610"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642333"
 ---
 # <a name="how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line"></a>如何：使用探查器启动独立应用程序，并通过命令行收集应用程序统计信息
 本主题介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具启动独立（客户端）应用程序，以及如何使用采样方法收集性能统计信息。

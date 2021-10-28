@@ -16,11 +16,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 2d05d89dfb47c2ccd383acce542c7a1ebc45200b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122027482"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642293"
 ---
 # <a name="performance-report-views"></a>性能报告视图
 本节提供有关 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具报告和视图的参考信息。 分析数据文件的视图显示在 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 集成开发环境 (IDE) 中。 报告由 [VSPerfReport](../profiling/vsperfreport.md) 命令行工具生成。

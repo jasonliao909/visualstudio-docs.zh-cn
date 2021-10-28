@@ -10,11 +10,11 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 34be73203f5c1d01e4674e7892e0f89d4aae4816
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96478791"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642094"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>配置用于 IntelliSense 的 C++ 项目
 

@@ -19,11 +19,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 567440c7395982fb3894c783790eee12c9056abc
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122112329"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642230"
 ---
 # <a name="source-server-security-alert"></a>源服务器安全警报
 使用源服务器时，只能使用来自已知和受信任位置的符号文件。

@@ -12,11 +12,11 @@ ms.technology: vs-xml-tools
 ms.workload:
 - multiple
 ms.openlocfilehash: 60ce74d0d9463870ea021470fb3a46909fe6416f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122114467"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736253"
 ---
 # <a name="sample-xsd-file-simple-schema"></a>示例 XSD 文件：简单架构
 

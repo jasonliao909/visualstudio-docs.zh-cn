@@ -20,11 +20,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 0b89b5407d8f45d6f08a41f97337d754e4405136
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122069008"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736975"
 ---
 # <a name="move-task"></a>Move 任务
 

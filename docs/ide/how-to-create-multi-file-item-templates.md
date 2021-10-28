@@ -13,11 +13,11 @@ ms.author: tglee
 manager: jmartens
 ms.technology: vs-ide-general
 ms.openlocfilehash: c98b811f3bc2daf2048cd70b14a1060088fa1c32
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122109170"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641864"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>如何：创建多文件项模板
 

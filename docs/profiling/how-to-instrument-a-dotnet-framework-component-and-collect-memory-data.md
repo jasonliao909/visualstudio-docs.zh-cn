@@ -13,11 +13,11 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 3bcec968015913b53943e854859504196533b90a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122131412"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642353"
 ---
 # <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-memory-data-with-the-profiler-by-using-the-command-line"></a>如何：使用探查器命令行检测独立 .NET Framework 组件，并收集内存数据
 本文介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具检测独立应用程序的 .NET Framework 组件（如 .exe 或 .dll 文件）以及如何使用探查器收集内存信息。

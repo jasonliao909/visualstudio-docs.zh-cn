@@ -15,11 +15,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: e2aaa5db4253d4964c564c369c66712ba0e86d21
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122141618"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736285"
 ---
 # <a name="modules-view---sampling-data"></a>“模块”视图 - 采样数据
 采样数据的“模块”视图显示按分析数据中采样的模块分组的性能数据。 每个模块都是一个层次结构树的根。 模块的采样函数在模块节点下列出。

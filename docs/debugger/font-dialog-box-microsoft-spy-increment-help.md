@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: bd1fbaddd06cc4c9f242f02db9e92f3d981bf8e9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122030823"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737130"
 ---
 # <a name="font-dialog-box-microsoft-spy-help"></a>“字体”对话框（Microsoft Spy++ 帮助）
 使用此对话框配置 [Spy++ 视图](../debugger/spy-increment-views.md)窗口中使用的字符字体。 若要显示此对话框，请展开“视图”菜单并选择“字体”。

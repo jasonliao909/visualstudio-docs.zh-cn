@@ -7,11 +7,11 @@ ms.date: 09/19/2019
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
 ms.topic: how-to
 ms.openlocfilehash: de6be4b509eff8a013f7367614e0016f810b3657
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963891"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644520"
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>生成和清理项目和解决方案
 

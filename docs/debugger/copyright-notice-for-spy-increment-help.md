@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 3076794883e38ec11313794585a3790921508ee8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122129670"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641240"
 ---
 # <a name="copyright-notice-for-spy-help"></a>Spy++ 帮助的版权声明
 本文档包含的信息如有更改，恕不另行通知。 除非另有说明，否则本文示例中使用的公司、名称和数据均属虚构。 未经 Microsoft Corporation 明确的书面许可，不得出于任何目的、以任何形式或任何方式（电子或机械）复制或传播本文档的任何部分。

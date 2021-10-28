@@ -23,11 +23,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 798b87e358af7217b9d1b376f256b860e8215e57
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122154104"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641480"
 ---
 # <a name="how-to-specify-debugger-settings"></a>如何：指定调试器设置
 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中可为调试器行为指定各种设置，包括如何显示变量，是否显示某些警告，如何设置断点以及中断如何影响正在运行的程序。 在“选项”对话框中可以指定调试器设置。

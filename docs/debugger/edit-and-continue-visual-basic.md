@@ -23,11 +23,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: a0d4206dba5991ccebd2747370c5143430cfd73e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122030982"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642039"
 ---
 # <a name="edit-and-continue-visual-basic"></a>编辑并继续 (Visual Basic)
 “编辑并继续”是 [!INCLUDE [vbprvb](../code-quality/includes/vbprvb_md.md)] 调试中的一项功能，可让你在中断模式下在代码运行时更改代码。 在应用代码编辑后，可以继续执行新编辑过的代码并观察效果。

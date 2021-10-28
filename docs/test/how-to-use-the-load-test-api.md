@@ -14,11 +14,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: 4e11e100d6a97ee8c60834e4feefb667926eb599
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122092431"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736943"
 ---
 # <a name="how-to-use-the-load-test-api"></a>如何：使用负载测试 API
 

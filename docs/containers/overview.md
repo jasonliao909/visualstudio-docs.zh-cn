@@ -7,11 +7,11 @@ ms.topic: overview
 ms.date: 08/24/2021
 ms.technology: vs-container-tools
 ms.openlocfilehash: 24a10d43e14beed22f2817b8a6c5a237a34416ad
-ms.sourcegitcommit: 8f8804b885c3a68f20bf0e9fe3729f2764145815
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "123096963"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641304"
 ---
 # <a name="visual-studio-container-tools-for-docker"></a>Visual Studio Container Tools for Docker
 

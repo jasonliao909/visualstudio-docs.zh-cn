@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 858620450452080dbbdf6c9aa5da8ed7c44c13e2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122065405"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641640"
 ---
 # <a name="messages-view"></a>消息视图
 每个窗口都有一个关联的消息流。 消息视图窗口显示此消息流。 窗口句柄、消息代码和消息会进行显示。 也可以为线程或进程创建消息视图。 这使你可以查看发送到特定进程或线程所拥有的所有窗口的消息，这对于捕获窗口初始化消息特别有用。

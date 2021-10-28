@@ -20,11 +20,11 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 ms.openlocfilehash: ff601ac5c2ff72cf1f309c42671c0a0802e3e796
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122107623"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641516"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>分析中通用 Windows 应用中的 HTML UI 响应能力
 本主题介绍如何使用 UI 响应能力探查器（一种可用于 Windows 通用应用的性能工具）隔离应用中的性能问题。

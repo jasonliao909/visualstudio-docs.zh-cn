@@ -15,11 +15,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: 743dbd7c5732c674d18fcbb586dd375a47bd74bd
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122123068"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736599"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>如何：在负载测试结果中的关系图上添加和删除计数器
 

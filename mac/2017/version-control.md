@@ -7,11 +7,11 @@ ms.date: 05/06/2018
 ms.assetid: 49917483-28AA-4598-A847-71F1F2E0DCB5
 ms.topic: overview
 ms.openlocfilehash: 33fdfe3ef6d292dded34a3b468ed9d60d0f6c318
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123961736"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736414"
 ---
 # <a name="version-control"></a>版本控制
 
