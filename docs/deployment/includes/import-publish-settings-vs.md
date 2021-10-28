@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 94c2c733b631ef5e727c79a6e093bb224aec38c4
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 6313b05761bdc65404b749e06eee4b162df865a4d04e8b94f42882a2ce8159e5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249860"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121390887"
 ---
 
 1. 如果计算机上的 Visual Studio 中打开有 ASP.NET 项目，则在该计算机的解决方案资源管理器中右键单击该项目，然后选择“发布”。

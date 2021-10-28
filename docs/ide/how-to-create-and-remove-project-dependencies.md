@@ -21,11 +21,11 @@ manager: jmartens
 ms.workload:
 - multiple
 ms.openlocfilehash: d5fb5205dbaa3711fa8baa699d488d097cac1f78
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878703"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641871"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>如何：创建和删除项目依赖项
 

@@ -33,11 +33,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: a726f73a866fc6b275877f3a457d3b2f6ed08dc0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122097072"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642236"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>在调试时创建调用堆栈的可视图（C#、Visual Basic、C++ 和 JavaScript）
 

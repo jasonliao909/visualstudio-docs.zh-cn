@@ -24,11 +24,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.openlocfilehash: ff3611dd44cf36723a1f622bf22c0eead761c7c8
-ms.sourcegitcommit: f930bc28bdb0ba01d6f7cb48f229afecfa0c90cd
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "122334951"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641877"
 ---
 # <a name="register-dotfuscator-community"></a>注册 Dotfuscator Community
 

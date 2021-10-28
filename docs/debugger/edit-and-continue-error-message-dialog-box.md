@@ -22,11 +22,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 28fee1e361afbd40e8ebd134dfd702beb9c2b270
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122147009"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641483"
 ---
 # <a name="edit-and-continue-error-message"></a>“编辑并继续”错误消息
 

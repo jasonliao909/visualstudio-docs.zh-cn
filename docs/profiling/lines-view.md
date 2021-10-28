@@ -18,11 +18,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 645bd910ec6213f9aef006f7e95e1f3fe7833250
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122141800"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736179"
 ---
 # <a name="lines-view"></a>“行”视图
 “行”视图仅适用于使用采样方法收集的探查器数据， 不适用于使用检测方法收集的数据。

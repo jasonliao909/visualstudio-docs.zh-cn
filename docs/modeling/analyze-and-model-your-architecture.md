@@ -21,11 +21,11 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: d191318172700a12552341c5bd3c7a2c03e63734
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122157600"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126745879"
 ---
 # <a name="analyze-and-model-your-architecture"></a>对体系结构进行分析和建模
 

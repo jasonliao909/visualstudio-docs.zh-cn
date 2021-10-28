@@ -13,11 +13,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 23991ee72e6ce108048a644371f33a13e529eaff
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122032973"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736813"
 ---
 # <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>使用 Azure Test Plans 代替实验室管理工具版进行自动测试
 

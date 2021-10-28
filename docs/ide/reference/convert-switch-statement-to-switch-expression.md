@@ -13,11 +13,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: b7d01862774fd36bc5c9347df3fce6bd02c56263
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122094147"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641791"
 ---
 # <a name="convert-switch-statement-to-switch-expression"></a>将 Switch 语句转换为 Switch 表达式
 

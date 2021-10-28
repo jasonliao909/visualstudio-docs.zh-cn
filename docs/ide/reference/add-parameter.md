@@ -11,11 +11,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 ms.openlocfilehash: c48e062ec4187fad479f5013fb8786c7eb018cc2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122123965"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641840"
 ---
 # <a name="add-a-parameter-to-a-method-using-a-quick-action"></a>使用快速操作向方法添加参数
 

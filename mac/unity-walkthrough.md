@@ -7,12 +7,12 @@ ms.date: 11/09/2020
 ms.technology: vs-ide-general
 ms.assetid: D07FA43B-9D18-4DFA-8343-CD538FAD84DB
 ms.topic: how-to
-ms.openlocfilehash: cae68b54623564028ea85dd1aa319fad5ceaec48
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: 02cfb49a223d927dd8228bb961f2036fe59c050fe5492c4ee2e0e5538e86e931
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493577"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121382687"
 ---
 # <a name="getting-started-building-games-with-unity-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中开始使用 Unity 生成游戏
 

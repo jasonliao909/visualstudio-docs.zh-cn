@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: c670cbb34da33d4745a4480cce28934ceebd6e79
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122112316"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641618"
 ---
 # <a name="spy-views"></a>Spy++ 视图
 Spy++ 显示计算机上可用的窗口、消息、进程和线程的树状视图。

@@ -13,11 +13,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 5a42998a30856765dcd7c3eaea32a67bcb13f59e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122141514"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736620"
 ---
 # <a name="set-general-performance-session-options"></a>设置常规的性能会话选项
 

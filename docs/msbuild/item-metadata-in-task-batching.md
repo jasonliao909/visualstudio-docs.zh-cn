@@ -17,11 +17,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: b3afd2b860d56fd78d01cf9509c7e3c75fc9c4e5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122136880"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736987"
 ---
 # <a name="item-metadata-in-task-batching"></a>任务批处理中的项元数据
 

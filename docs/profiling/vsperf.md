@@ -12,11 +12,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: b95493e94da7a64603ae8330b742b35b8ffeb276
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122140604"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644339"
 ---
 # <a name="vsperf"></a>VSPerf
 使用 **VsPerf** 命令行工具可以：

@@ -22,11 +22,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - cplusplus
 ms.openlocfilehash: f1bfa6a64d8c48b92118d7a21fe9e10fce2e84c3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122041381"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642212"
 ---
 # <a name="work-with-c-code-in-class-designer"></a>在类设计器中使用 C++ 代码
 

@@ -15,11 +15,11 @@ ms.workload:
 - nodejs
 monikerRange: '>= vs-2022'
 ms.openlocfilehash: 1b40a03c63665be09ecea5c28fb8e82dcc69c7a7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122077746"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641564"
 ---
 # <a name="create-an-angular-app"></a>创建 Angular 应用
 

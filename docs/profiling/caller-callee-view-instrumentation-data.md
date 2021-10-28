@@ -15,11 +15,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 08de14aa1c7616cbafcca8841a2c5d0400b97965
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122076914"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736659"
 ---
 # <a name="callercallee-view---instrumentation-data"></a>“调用方/被调用方”视图 - 检测数据
 “调用方/被调用方”视图显示调用树中所选函数及其父函数和子函数的分析信息。 “调用方/被调用方”视图包含三个网格。

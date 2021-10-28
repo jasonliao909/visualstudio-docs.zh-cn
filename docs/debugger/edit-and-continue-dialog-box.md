@@ -21,11 +21,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 05a76497cca821221db1c9f14a8a000228d22b68
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122105362"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641484"
 ---
 # <a name="edit-and-continue-dialog-box"></a>“编辑并继续”对话框
 （仅限本机）当你在调试过程中编辑了代码并且 **编辑并继续** 识别出可以应用代码更改时，会显示该对话框。 有关详细信息，请参阅[编辑并继续](../debugger/edit-and-continue.md)。

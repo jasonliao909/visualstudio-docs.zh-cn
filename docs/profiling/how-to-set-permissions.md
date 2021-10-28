@@ -17,11 +17,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 56dee60e63ce2f6d3d298c3c70e57f59910a16ab
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122150217"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642308"
 ---
 # <a name="how-to-set-permissions"></a>如何：设置权限
 

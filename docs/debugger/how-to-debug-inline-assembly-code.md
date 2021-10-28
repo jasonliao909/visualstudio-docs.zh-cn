@@ -23,11 +23,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: d58d0daf43767df5d9113e1e3addd01c0736a4a0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122146951"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736924"
 ---
 # <a name="how-to-debug-inline-assembly-code"></a>如何：调试内联程序集代码
 

@@ -11,11 +11,11 @@ no-loc:
 - Blazor WebAssembly
 ms.topic: how-to
 ms.openlocfilehash: a2f45069967df412f9245f8044c53ef425a00fdf
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963868"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644533"
 ---
 # <a name="getting-started-with-aspnet-core"></a>ASP.NET Core 入门
 

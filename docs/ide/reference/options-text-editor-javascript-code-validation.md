@@ -13,11 +13,11 @@ manager: jmartens
 ms.workload:
 - multiple
 ms.openlocfilehash: 0dc6fbde896a2f043040c93710ca48bc95193127
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932548"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642506"
 ---
 # <a name="options-dialog-box-text-editor--javascripttypescript--code-validation"></a>“选项”对话框：“文本编辑器”\>“JavaScript/TypeScript”\>“代码验证”
 

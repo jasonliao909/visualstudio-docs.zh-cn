@@ -12,11 +12,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 5db5b43efbaf50b6a35425ff110afa5534be96e7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122058605"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737129"
 ---
 # <a name="graphics-diagnostics-examples"></a>图形诊断示例
 以下示例显示如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 图形诊断调试基于 DirectX 的应用中的呈现问题。

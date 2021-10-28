@@ -11,11 +11,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 ms.openlocfilehash: 02227e6f57761aa08ed0110442e58d31b1d06fd8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122034391"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641845"
 ---
 # <a name="add-explicit-cast"></a>添加显式强制转换
 

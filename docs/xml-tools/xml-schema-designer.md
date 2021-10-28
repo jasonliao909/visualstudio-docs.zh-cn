@@ -12,11 +12,11 @@ ms.technology: vs-xml-tools
 ms.workload:
 - multiple
 ms.openlocfilehash: ec18cce8cb99eccf4ae38bd3f49f14d8fce67b39
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122135021"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644559"
 ---
 # <a name="xml-schema-designer-overview"></a>XML 架构设计器概述
 

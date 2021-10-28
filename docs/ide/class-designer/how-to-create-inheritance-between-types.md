@@ -17,11 +17,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 3af93de5ad31e17786a75ac6183d18d66b3aa1a1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122157795"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641881"
 ---
 # <a name="how-to-create-inheritance-between-types-in-class-designer"></a>如何：在类设计器中创建类型之间的继承
 

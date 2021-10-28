@@ -22,11 +22,11 @@ manager: jmartens
 ms.workload:
 - multiple
 ms.openlocfilehash: 636fbabbede90d9a1c686a2252aef712b4789c18
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878716"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641872"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>如何：创建和编辑配置
 

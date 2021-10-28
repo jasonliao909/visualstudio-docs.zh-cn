@@ -21,11 +21,11 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 16226cd66c2cf46d1dc46f1cb3f90dc3bad9658c
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616273"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736885"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>“选项”对话框 ->“项目和解决方案”->“VC++ 项目设置”
 

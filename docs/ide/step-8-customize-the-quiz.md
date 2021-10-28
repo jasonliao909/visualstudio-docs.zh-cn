@@ -15,11 +15,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 55868a7b5d2bcd39f9e82ee41711d50bcdebba76
-ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "123398385"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642137"
 ---
 # <a name="step-8-customize-the-quiz"></a>步骤 8：自定义测验
 

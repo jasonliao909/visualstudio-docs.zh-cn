@@ -13,11 +13,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: a43a0ace2052c805f5e7eb4fcf935865f969ab74
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122056220"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642165"
 ---
 # <a name="regex-completion-through-intellisense-menu"></a>通过 IntelliSense 菜单完成正则表达式
 

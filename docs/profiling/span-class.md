@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 635904a3e506db18d0a161eeb7fdf1474e0b7d23
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122157301"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642292"
 ---
 # <a name="span-class"></a>span 类
 定义应用程序的一个阶段。

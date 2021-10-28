@@ -24,11 +24,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.openlocfilehash: c1a6375a26325ca6f297b78a3024117e6e39132f
-ms.sourcegitcommit: f930bc28bdb0ba01d6f7cb48f229afecfa0c90cd
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "122334949"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642192"
 ---
 # <a name="upgrade-from-dotfuscator-community-5"></a>从 Dotfuscator Community 5 进行升级
 

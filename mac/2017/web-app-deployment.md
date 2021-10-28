@@ -7,11 +7,11 @@ ms.date: 01/25/2019
 ms.assetid: d746292d-0570-424a-bf43-e16ab85bbf0d
 ms.topic: overview
 ms.openlocfilehash: bed9991677377e665bd49193ee9b7c0ed3877da2
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123961771"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736408"
 ---
 # <a name="aspnet-core-web-app-deployment"></a>ASP.NET Core Web 应用部署
 

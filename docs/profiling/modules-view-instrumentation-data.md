@@ -14,11 +14,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9b2139b9483253507f926d9ac0ef37bba155f666
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122107334"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736288"
 ---
 # <a name="modules-view---instrumentation-data"></a>“模块”视图 - 检测数据
 “模块”视图显示按分析数据中的模块分组的性能数据。 模块的各函数在模块节点下列出。

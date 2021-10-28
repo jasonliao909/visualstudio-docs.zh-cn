@@ -6,11 +6,11 @@ ms.author: dominicn
 ms.date: 11/06/2018
 ms.assetid: 4C1B7952-CD45-4132-AD6B-01CF993D83F8
 ms.openlocfilehash: 6aa4868f5e9c5fbaa4fb58258c70ce672edf2e30
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123961707"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736149"
 ---
 # <a name="editor-themes"></a>编辑器主题
 

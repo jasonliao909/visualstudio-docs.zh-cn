@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: 02e737137488cd41ff8c48e9124736a97dcdf79d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122122964"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736263"
 ---
 # <a name="how-to-delete-load-test-results-from-a-repository"></a>如何：从存储库删除负载测试结果
 

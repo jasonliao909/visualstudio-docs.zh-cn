@@ -21,11 +21,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 1f4bae68781cec00a61cb67f08450cc978418099
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122065720"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642038"
 ---
 # <a name="edit-and-continue-c"></a>编辑并继续 (C++)
 可以在 C++ 项目中使用“编辑并继续”。 请参阅[支持的代码更改 (C++)](../debugger/supported-code-changes-cpp.md)，了解有关 Edit and Continue 的限制的信息。

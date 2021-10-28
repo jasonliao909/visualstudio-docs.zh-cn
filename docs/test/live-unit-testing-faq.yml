@@ -12,11 +12,11 @@ metadata:
   ms.workload:
   - dotnet
   ms.openlocfilehash: 210885daff9f670910299e6cbefc174ca37a8847
-  ms.sourcegitcommit: 42aec4a2ea6dec67dbe4c93bcf0fa1116a4b93d9
+  ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/26/2021
-  ms.locfileid: "122980886"
+  ms.lasthandoff: 09/13/2021
+  ms.locfileid: "126737248"
 title: Live Unit Testing 常见问题解答
 summary: ''
 sections:

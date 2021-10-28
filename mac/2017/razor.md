@@ -7,11 +7,11 @@ ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
 ms.openlocfilehash: 47913ee02aa1708f1c8baa4037b2ecfbcfc1b2e4
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123961735"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644317"
 ---
 # <a name="razor-support"></a>Razor 支持
 
@@ -26,6 +26,6 @@ Visual Studio for Mac 支持 Razor 编辑，包括 .cshtml 文件中的 IntelliS
 - [借助 Visual Studio for Mac 在 macOS 上的 ASP.NET Core 中开始使用 Razor 页面](/aspnet/core/tutorials/razor-pages-mac/razor-pages-start?view=aspnetcore-2.1&preserve-view=true)
 - [ASP.NET Core MVC 和 Visual Studio for Mac 入门](/aspnet/core/tutorials/first-mvc-app-mac/start-mvc?view=aspnetcore-2.1&preserve-view=true)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Visual Studio 中的 C# 和 ASP.NET Core 入门 (Windows)](/visualstudio/ide/tutorial-csharp-aspnet-core)

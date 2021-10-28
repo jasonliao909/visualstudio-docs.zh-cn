@@ -21,11 +21,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 444b9c2860e3e79a5fea5b673b68881a1fec4294
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122090104"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736211"
 ---
 # <a name="when-breakpoint-is-hit-dialog-box"></a>“命中断点时”对话框
 借助此对话框，你可以自定义命中断点时执行的操作。

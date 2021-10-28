@@ -12,11 +12,11 @@ ms.technology: vs-xml-tools
 ms.workload:
 - multiple
 ms.openlocfilehash: a9e1b5d1ebd573f74762d86717118138adea23d7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122130190"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641401"
 ---
 # <a name="how-to-examine-the-content-model-of-nodes-by-using-the-content-model-view"></a>操作说明：使用内容模型视图检查节点的内容模型
 

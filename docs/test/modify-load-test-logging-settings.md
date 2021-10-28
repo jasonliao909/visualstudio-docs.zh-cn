@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: 6a5ecba31faca0594ec1705054222b17f366263c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122032909"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736592"
 ---
 # <a name="modify-load-test-logging-settings"></a>修改负载测试日志记录设置
 

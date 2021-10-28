@@ -8,11 +8,11 @@ ms.technology: vs-ide-general
 ms.assetid: 5DA76197-7859-421f-AC45-401F22F5D794
 ms.topic: troubleshooting
 ms.openlocfilehash: 862ae404571da44d9ca28db2c94d2ebeb39ce79f
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963924"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736746"
 ---
 # <a name="troubleshooting-how-do-i-release-a-new-version-of-my-existing-extension"></a>疑难解答：如何发布现有扩展的新版本？
 

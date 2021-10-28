@@ -21,11 +21,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: e9ae9a66be53ebf6c0c59c3b724442cbd09503f0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122060890"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641514"
 ---
 # <a name="instruction-pointers-ips-view"></a>“指令指针”(IP) 视图
 使用“指令指针”视图，可以查看在采样分析期间执行的特定指令。

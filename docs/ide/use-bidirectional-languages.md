@@ -16,11 +16,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: ca94c650c88cb477e99812d87e2ff42146916bcf
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122116820"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642111"
 ---
 # <a name="support-for-bidirectional-languages-in-visual-studio"></a>对 Visual Studio 中双向语言的支持
 

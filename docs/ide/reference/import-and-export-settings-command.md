@@ -16,11 +16,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 3074371bbf76d3f393e89655d85e2ed1a08ec58e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122101266"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737419"
 ---
 # <a name="import-and-export-settings-command-vssettings-file"></a>导入和导出设置命令（.vssettings 文件）
 

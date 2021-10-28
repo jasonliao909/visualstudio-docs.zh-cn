@@ -13,11 +13,11 @@ manager: crdun
 ms.workload:
 - multiple
 ms.openlocfilehash: f2ce02467a43fc71a0e6e352a9a31a9ccfe810bf
-ms.sourcegitcommit: d0061f62c8543ff0db500972d9402a7f00e017c6
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114201762"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641296"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio 中的跨平台移动开发
 

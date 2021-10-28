@@ -16,11 +16,11 @@ manager: jmartens
 ms.workload:
 - dotnet
 ms.openlocfilehash: 8569231ee1b9f19752bf58691b41ec74789bb761
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868993"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641838"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>“高级生成设置”对话框 (C#)
 

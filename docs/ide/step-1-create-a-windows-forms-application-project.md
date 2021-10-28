@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 441b91ce3fe78b0e79be55db8d312b0b90740d97
-ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
+ms.openlocfilehash: d3f3bacb4c0a08e6a9bd2948fcc9a70637706111
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "123398107"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642489"
 ---
 # <a name="step-1-create-a-windows-forms-app-project"></a>步骤 1：创建 Windows 窗体应用项目
 
@@ -58,7 +58,7 @@ ms.locfileid: "123398107"
    >
    > ![“创建新项目”窗口内“找不到所需内容”消息中的“安装更多工具和功能”链接](../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
-   > 接下来，在 Visual Studio 安装程序中，选择“.NET 桌面开发”  工作负载。
+   > 接下来，在 Visual Studio 安装程序中，选择“.NET 桌面开发”工作负载。
    >
    > ![Visual Studio 安装程序中的 .NET Core 开发工作负载](../ide/media/install-dot-net-desktop-env.png)
    >

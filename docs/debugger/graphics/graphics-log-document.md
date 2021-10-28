@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: f713687e1b4b045fc6d48d9c6a237a11a8f3091e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122058545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737351"
 ---
 # <a name="graphics-log-document"></a>图形日志文档
 图形日志文档是对你的应用在图形诊断会话下运行时发生的图形事件的记录。 在记录后，你可以在 Visual Studio 图形分析器中检查日志，以诊断呈现和性能问题。
@@ -64,7 +64,7 @@ ms.locfileid: "122058545"
 
  **显示信息**：列出有关在捕获会话期间使用的显示适配器的信息。
 
-|Property|描述|
+|Property|说明|
 |--------------|-----------------|
 |**说明**|显示适配器描述字符串。|
 |**显示内存**|安装在图形适配器上的内存量。|

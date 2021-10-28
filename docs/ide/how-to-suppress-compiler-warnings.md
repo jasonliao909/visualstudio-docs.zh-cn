@@ -11,11 +11,11 @@ manager: jmartens
 ms.workload:
 - multiple
 ms.openlocfilehash: ab79521cfd4cc122fa398f88b56ca37e2f2673a1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869175"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736205"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>如何：取消编译器警告
 

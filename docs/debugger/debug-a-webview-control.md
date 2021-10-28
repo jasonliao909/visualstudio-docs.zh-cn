@@ -18,11 +18,11 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 ms.openlocfilehash: 3198685acc8ad33a545bf55628c99e78d104d251
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122059146"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641222"
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>调试 UWP 应用中的 WebView 控件
 

@@ -9,11 +9,11 @@ ms.workload:
 - cplusplus
 author: corob-msft
 ms.openlocfilehash: a76c6ac83956cd1e6514ff958278d0b4cbcf0d2f
-ms.sourcegitcommit: cc8547eb211c43b67b8123d1211b80b5642e3b18
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100563440"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736944"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>在 Visual Studio 中使用适用于 C++ 的 Microsoft Unit Testing 框架
 

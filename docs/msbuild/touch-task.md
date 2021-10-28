@@ -22,11 +22,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 5d67ea85f396baa45e1a8da2f2cf6898d02b4e01
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122108182"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642465"
 ---
 # <a name="touch-task"></a>Touch 任务
 

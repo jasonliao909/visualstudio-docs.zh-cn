@@ -20,11 +20,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
 ms.openlocfilehash: c621d35554095eb676a478ed78887fe41c4fed31
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122090286"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644464"
 ---
 # <a name="tips-for-debugging-threads-in-native-code"></a>调试本机代码中的线程时的提示
 下面是在调试本机代码中的线程时可以使用的一些提示：

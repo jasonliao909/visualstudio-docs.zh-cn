@@ -11,11 +11,11 @@ ms.workload:
 - cplusplus
 author: corob-msft
 ms.openlocfilehash: 845b20a18ccc422419084b8de0c9af725e105637
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122033169"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736948"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio-2017-and-later"></a>如何在 Visual Studio 2017 及更高版本中使用适用于 C++ 的 CTest
 

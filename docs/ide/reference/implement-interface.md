@@ -11,11 +11,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 ms.openlocfilehash: ef769394bafd1727ac16f4dbaadf6e6ca27c7e77
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122101318"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737421"
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>在 Visual Studio 中实现接口
 
@@ -46,7 +46,7 @@ ms.locfileid: "122101318"
 2. 接下来，执行以下操作之一：
 
    - **键盘**
-      - 按“Ctrl”  + **。** 触发“快速操作和重构”菜单。
+      - 按“Ctrl”+ **。** 触发“快速操作和重构”菜单。
    - **鼠标**
       - 右键单击并选择“快速操作和重构”菜单。
       - 将鼠标悬停在红色波形曲线上，然后单击出现的 ![错误灯泡](media/error-bulb.png) 图标。

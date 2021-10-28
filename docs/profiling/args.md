@@ -13,11 +13,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: b91d00896b72f95b3340e8741867b58d4c2494b4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122142411"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736674"
 ---
 # <a name="args"></a>Args
 VSPerfCmd.exe **参数** 选项指定传递给 **Launch** 子命令的目标应用程序的参数列表。

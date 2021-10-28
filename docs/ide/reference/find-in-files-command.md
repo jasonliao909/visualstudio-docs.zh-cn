@@ -17,11 +17,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 3ccc2bb3a6d324d64fb2332326ae083fc84a3db6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122151673"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644409"
 ---
 # <a name="find-in-files-command"></a>“在文件中查找”命令
 若要搜索文件，请使用“查找和替换”窗口的“在文件中查找”选项卡上的可用选项子集。

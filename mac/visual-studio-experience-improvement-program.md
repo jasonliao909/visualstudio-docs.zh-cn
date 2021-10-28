@@ -6,11 +6,11 @@ ms.author: johmil
 ms.date: 11/05/2020
 ms.assetid: 6F2ECF5A-E195-4890-8399-12A88C7D62FD
 ms.openlocfilehash: 5cf5670b18aa6840eb3b36e6148cba4834aa709e
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963965"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644485"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio 客户体验改善计划
 
@@ -32,7 +32,7 @@ VSCEIP 默认开启。 可以按照下面的说明将其关闭，或重新打开
 
 [!INCLUDE [GDPR-related guidance](../docs/misc/includes/gdpr-hybrid-note.md)]
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 * [客户体验改善计划（Windows 上的 Visual Studio）](/visualstudio/ide/visual-studio-experience-improvement-program)
 * [由 Visual Studio 收集的系统生成的日志 (Windows)](/visualstudio/ide/diagnostic-data-collection)

@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 9de2b48d77b9b457e8da66a14172e2650428d049
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122043929"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736339"
 ---
 # <a name="how-to-control-messages-view"></a>如何：控制消息视图
 通过 Spy++，可在很大程度上控制[消息视图](../debugger/messages-view.md)窗口的内容。 可随时[开始和停止](../debugger/how-to-start-and-stop-the-message-log-display.md)显示消息，并且可指定以下内容：

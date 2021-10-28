@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 3caa4401e706aa72e99a82fcb244538f51d5d7b4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122039314"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736188"
 ---
 # <a name="cores-view"></a>内核视图
 核心视图显示线程执行如何映射到逻辑处理器核心（选择“分析” > “并发可视化工具”来启动并发可视化工具）。 如果要编写服务器应用程序，则此视图可以帮助您通过使用线程关联或线程池管理来优化缓存性能。 如果在使用线程关联之后实际上加剧了跨核迁移问题，则此视图还可帮助您以直观方式检查相关情况。 内核视图包括关系图和图例两个部分。

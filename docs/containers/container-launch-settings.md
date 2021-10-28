@@ -7,11 +7,11 @@ ms.date: 08/15/2019
 ms.technology: vs-container-tools
 ms.topic: reference
 ms.openlocfilehash: d05d4a42a6e2433cc9dfc5190a9e380dda49dab0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122122054"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641324"
 ---
 # <a name="container-tools-launch-settings"></a>容器工具启动设置
 

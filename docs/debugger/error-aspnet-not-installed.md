@@ -22,11 +22,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - aspnet
 ms.openlocfilehash: f368d08ec7af90cf51a68fbf8244f82fa178451c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122121185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737169"
 ---
 # <a name="error-aspnet-not-installed"></a>错误：未安装 ASP.NET
 当您尝试调试的计算机上未正确安装 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 时，会发生此错误。 此错误可能意味着从未安装 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]，或者先安装了 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]，然后又安装了 IIS。

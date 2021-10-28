@@ -6,11 +6,11 @@ ms.author: dominicn
 ms.date: 01/21/2020
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
 ms.openlocfilehash: 23c0266ad64f26438a11cdddb0bc9ee416507d0d
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963904"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736146"
 ---
 # <a name="enable-subscription"></a>启用订阅
 

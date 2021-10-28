@@ -7,11 +7,11 @@ ms.author: sayedha
 ms.date: 01/25/2019
 ms.assetid: d746292d-0570-424a-bf43-e16ab85bbf0d
 ms.openlocfilehash: 98169016921df5397fafb5a77c214357c18a0ae8
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963950"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644483"
 ---
 # <a name="aspnet-core-web-app-deployment"></a>ASP.NET Core Web 应用部署
 

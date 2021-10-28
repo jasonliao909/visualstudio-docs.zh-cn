@@ -14,11 +14,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: fcd80eb5501a86bd046a5917e2fc5ed9366f573f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122141826"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642329"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>如何：将检测限定为特定 DLL
 

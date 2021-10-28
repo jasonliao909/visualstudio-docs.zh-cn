@@ -8,11 +8,11 @@ ms.date: 10/18/2019
 ms.assetid: 047f5e36-f38e-4bf6-a1c5-3fde32978b7d
 ms.topic: tutorial
 ms.openlocfilehash: d2813f70a497df9057f312f561504639b4e1afcd
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963946"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644495"
 ---
 # <a name="tutorial-extending-an-existing-aspnet-core-web-application"></a>教程：扩展现有的 ASP.NET Core Web 应用程序
 

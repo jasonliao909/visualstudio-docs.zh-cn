@@ -18,11 +18,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 98771014f903b88ad57ec8713fd2867094c483b2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122033790"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736187"
 ---
 # <a name="function-details-view"></a>函数详细信息视图
 “函数详细信息视图”窗口显示以下信息：

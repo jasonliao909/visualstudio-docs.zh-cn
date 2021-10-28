@@ -11,11 +11,11 @@ ms.technology: vs-rtvs
 ms.workload:
 - data-science
 ms.openlocfilehash: be6f619fc23db19b2342402a8b14fb190cbdc801
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122060474"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642249"
 ---
 # <a name="variable-explorer"></a>变量资源管理器
 

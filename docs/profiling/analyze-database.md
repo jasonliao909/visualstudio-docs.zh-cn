@@ -12,11 +12,11 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 758fad160bad89b5e8a4305bf4757302b05732e1
-ms.sourcegitcommit: 42aec4a2ea6dec67dbe4c93bcf0fa1116a4b93d9
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122981081"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642432"
 ---
 # <a name="analyze-database-performance-using-the-database-tool"></a>使用数据库工具分析数据库性能
 

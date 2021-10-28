@@ -12,11 +12,11 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 9bba159da05ad3e1c893c3fc241c44cd1c6de8d1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122053971"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642245"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>使用填充码隔离应用以进行单元测试
 

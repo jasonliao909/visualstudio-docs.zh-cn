@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: 61e84588dee91b8bf17d74780f76539d478b3c1b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122068756"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736604"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>将数据源添加到 Web 性能测试
 

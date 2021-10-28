@@ -14,11 +14,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 824253d243a6eaa1b4172be92574a7e0c481c310
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122141488"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736622"
 ---
 # <a name="save-and-export-performance-tools-data"></a>保存和导出性能工具数据
 本文介绍如何保存和导出性能数据文件。

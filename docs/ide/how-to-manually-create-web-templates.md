@@ -14,11 +14,11 @@ ms.author: tglee
 manager: jmartens
 ms.technology: vs-ide-general
 ms.openlocfilehash: 05a3bbe59c290ade7871d63a7a89d900638c5afe
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122101695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736901"
 ---
 # <a name="how-to-manually-create-web-templates"></a>如何：手动创建 Web 模板
 

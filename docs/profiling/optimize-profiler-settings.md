@@ -11,11 +11,11 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 482ee640f4b84348e00f2f3da42a4dbe13f73460
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722836"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644375"
 ---
 # <a name="optimizing-profiler-settings"></a>优化探查器设置
 

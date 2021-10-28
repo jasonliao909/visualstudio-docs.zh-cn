@@ -6,11 +6,11 @@ ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: 81EE4460-26EB-4BB0-9297-932E1F88E4B8
 ms.openlocfilehash: 20363d5497ea5897cb2685ca838da44b8c21d3df
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963901"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736749"
 ---
 # <a name="editor-behavior"></a>编辑器行为
 
@@ -29,6 +29,6 @@ ms.locfileid: "123963901"
 
 也可以为 XML、CSS、HTML 和 JSON 设置格式规则。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [代码样式首选项（Windows 上的 Visual Studio）](/visualstudio/ide/code-styles-and-quick-actions)

@@ -11,11 +11,11 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 5a4c4658282f15b6b34562e51be94d9f2be195a8
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721172"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644359"
 ---
 # <a name="using-multiple-profiler-tools-simultaneously"></a>同时使用多个探查器工具
 

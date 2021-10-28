@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: ebd596585bb442b739f73854040c5e1b881562b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2750da6a8456e02b6d8874fd6ed642c612c7ebcefbe6f24e2f6019a7ccb74ec4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89327146"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121271038"
 ---
 Visual Basic

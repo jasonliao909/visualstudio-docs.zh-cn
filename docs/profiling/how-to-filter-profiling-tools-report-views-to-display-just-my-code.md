@@ -12,11 +12,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 628ccc00b4d81630cee22980d244a09b916115b2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122107675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642367"
 ---
 # <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>如何：筛选分析工具报告视图以显示“仅我的代码”
 

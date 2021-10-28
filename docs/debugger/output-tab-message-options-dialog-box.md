@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 41a6e5aef6654b06b21481328a6fdd50f672095b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122030615"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644469"
 ---
 # <a name="output-tab-message-options-dialog-box"></a>“消息选项”对话框 ->“输出”选项卡
 使用“输出”选项卡指定每个消息中的哪些数据要在[消息视图](../debugger/messages-view.md)中列出。 若要显示[“消息选项”对话框](../debugger/message-options-dialog-box.md)，请从 Spy 菜单中选择“日志消息” 。

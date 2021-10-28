@@ -18,11 +18,11 @@ ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
 ms.openlocfilehash: 3496eb5a0e8f699a994037ccc853a76e4f93e4ee
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102225186"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736714"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>对 MSBuild 问题进行故障排除并为其创建日志
 

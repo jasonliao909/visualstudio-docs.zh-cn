@@ -12,11 +12,11 @@ ms.technology: vs-ide-designers
 ms.workload:
 - multiple
 ms.openlocfilehash: ae0365760045dd6e8e36bcb01920116d92707c21
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122112017"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641934"
 ---
 # <a name="work-with-shaders"></a>使用着色器
 

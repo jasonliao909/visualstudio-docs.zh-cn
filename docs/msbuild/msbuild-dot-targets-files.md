@@ -20,11 +20,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: b30aaf73a49c1ef75f0778e619cbfb4a4b69846d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122093615"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736682"
 ---
 # <a name="msbuild-targets-files"></a>MSBuild .targets 文件
 

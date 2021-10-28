@@ -17,11 +17,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 3ea8ffeb61cd83377e18d2e59a45ed1aa5d57d0e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122144114"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641462"
 ---
 # <a name="code-snippet-picker"></a>代码段选择器
 

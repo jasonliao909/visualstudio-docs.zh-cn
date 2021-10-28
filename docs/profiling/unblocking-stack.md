@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: d53efdff98cbeeb1f6296e9400c68a751a454981
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122140942"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736615"
 ---
 # <a name="unblock-stack"></a>取消阻塞堆栈
 如果当前选定的线程元素表示一个受阻片段，且该片段在被当前进程中的另一个线程取消阻塞后再开始执行，则此选项卡上将显示执行取消阻塞操作的线程的调用堆栈。

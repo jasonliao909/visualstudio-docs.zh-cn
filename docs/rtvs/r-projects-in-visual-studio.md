@@ -11,11 +11,11 @@ ms.technology: vs-rtvs
 ms.workload:
 - data-science
 ms.openlocfilehash: 4fd62b1641a9da10484d31e5f2eb212a09cbce12
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122060643"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642256"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>在 Visual Studio 中创建 R 项目
 

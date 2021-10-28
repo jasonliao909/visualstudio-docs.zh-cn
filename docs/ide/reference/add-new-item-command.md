@@ -15,11 +15,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 410bbf265250c27c7b159d940011c3070ce2587c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122034365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641842"
 ---
 # <a name="add-new-item-command"></a>“添加新项”命令
 将新的解决方案项，如.htm、.css、.txt 或框架集添加到当前解决方案中并打开它。

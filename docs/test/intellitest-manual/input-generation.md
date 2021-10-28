@@ -13,11 +13,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 16d0c045d9f0085a462e3d7f7f55f8af6326cde6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122033039"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736814"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>使用动态符号执行的输入生成
 

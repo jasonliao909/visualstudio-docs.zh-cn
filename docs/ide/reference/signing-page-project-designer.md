@@ -23,11 +23,11 @@ manager: jmartens
 ms.workload:
 - multiple
 ms.openlocfilehash: f52d02407316fbc8f9a7b5e3db1c02a3566cda87
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957577"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641770"
 ---
 # <a name="signing-page-project-designer"></a>“项目设计器”->“签名”页
 

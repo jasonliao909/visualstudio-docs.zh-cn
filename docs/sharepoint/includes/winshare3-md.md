@@ -1,9 +1,9 @@
 ---
-ms.openlocfilehash: d8eb23f6a6d6eb4fdf84a25d56e088c184f77290
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 316a5485bfc208b3ed07085f87e1f8d191cf08df22fa1a12595e5e83090aff97
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970540"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121332074"
 ---
  Windows SharePoint Services 3.0 

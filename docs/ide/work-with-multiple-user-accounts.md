@@ -11,11 +11,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 44391718babe74dc2c7b2398189909aadec624d9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122061654"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737286"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Work with multiple user accounts
 

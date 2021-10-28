@@ -14,11 +14,11 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
 ms.openlocfilehash: 86a8bf2e9ed02c6ef53898413c88e4de7de02e93
-ms.sourcegitcommit: aef3e3f99e022675d339b7fe381cb37202be5be2
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "122785931"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641270"
 ---
 # <a name="attach-to-a-process-running-on-a-docker-container"></a>附加到在 Docker 容器上运行的进程 
 

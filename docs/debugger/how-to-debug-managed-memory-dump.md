@@ -19,11 +19,11 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
 ms.openlocfilehash: 083095ad534aa6b9131ba103178313cb1cdc4b7c
-ms.sourcegitcommit: 925db7adb9cb554b081c7e727d09680d4863feed
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "107953051"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641990"
 ---
 # <a name="how-to-debug-a-managed-memory-dump-with-net-diagnostic-analyzers"></a>如何使用 .NET 诊断分析器来调试托管内存转储
 

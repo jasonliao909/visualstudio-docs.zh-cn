@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: 829272d73792e1b9c6d6e61b653ab85c78ca0508
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122054158"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641414"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>在负载测试方案中指定虚拟网络类型
 

@@ -7,11 +7,11 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.topic: overview
 ms.openlocfilehash: 2b291d5cdef8ab28d4e6dc71d16c006e75c2ce92
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123961649"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736795"
 ---
 # <a name="azure"></a>Azure
 

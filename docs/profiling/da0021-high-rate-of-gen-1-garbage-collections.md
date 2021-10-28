@@ -16,11 +16,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 1ed53e6999c07f712268be9163f8baa1225e2341
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122093250"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641704"
 ---
 # <a name="da0021-high-rate-of-gen-1-garbage-collections"></a>DA0021：第 1 代垃圾回收率高
 

@@ -14,11 +14,11 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 091789ea55ce323072a64c7564431af7f7a6f89c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122059941"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641496"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>使用存根隔离应用程序的各个部分以进行单元测试
 

@@ -21,11 +21,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: c179ca35cd10f944a3a4c966b02267a53550de61
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122136867"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736696"
 ---
 # <a name="msbuild-command-line-reference"></a>MSBuild 命令行参考
 

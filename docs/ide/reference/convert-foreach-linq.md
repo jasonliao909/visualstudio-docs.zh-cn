@@ -12,11 +12,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 564c18a439da1f12c5be36b53839f57ad07fb440
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122117457"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641801"
 ---
 # <a name="convert-a-foreach-loop-to-linq"></a>将 foreach 循环转换为 LINQ
 

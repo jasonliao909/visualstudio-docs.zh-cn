@@ -7,11 +7,11 @@ ms.date: 12/03/2020
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
 ms.topic: how-to
 ms.openlocfilehash: bacd533bf5c28c6f431fe7088fad36b6bbd3d04b
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963929"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736238"
 ---
 # <a name="set-up-a-git-repository"></a>设置 Git 存储库
 

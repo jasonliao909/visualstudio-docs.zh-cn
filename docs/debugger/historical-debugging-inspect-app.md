@@ -12,11 +12,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 2958f799b8b7b3540fc8c1c08089b5b8340eabe8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122074158"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736359"
 ---
 # <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>在 Visual Studio 中使用 IntelliTrace 历史调试检查应用程序 (C#，Visual Basic、 c + +)
 

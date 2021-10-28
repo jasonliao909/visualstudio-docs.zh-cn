@@ -18,11 +18,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 045406f9bc24ce81e14c2f5082a7a444f6dc21b4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122097176"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737148"
 ---
 # <a name="error-unable-to-access-the-sql-server-debugging-interface"></a>错误：无法访问 SQL Server 调试接口
 尝试在未启用 SQL 调试的计算机上进行 SQL 调试时，会出现此消息。

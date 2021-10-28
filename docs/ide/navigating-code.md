@@ -21,11 +21,11 @@ manager: tglee
 ms.workload:
 - multiple
 ms.openlocfilehash: 77b0f8782f9ffaf37701f13b30be6e068ce05f8d
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871517"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736712"
 ---
 # <a name="navigate-code"></a>导航代码
 

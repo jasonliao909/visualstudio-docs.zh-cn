@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: b7030c8bc6f8df01579640f02fc22dce07f46d5f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122090533"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736912"
 ---
 # <a name="processes-view"></a>进程视图
 进程视图显示系统上所有活动进程的树。 进程 ID 和模块名称会进行显示。 如果要检查特定系统进程（通常对应于正在执行的程序），请使用进程视图。 进程由模块名称标识，或者指定为“系统进程”。

@@ -21,11 +21,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: db0efa149538d91c5123f6a973d5e8a455ff2e62
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122094368"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642193"
 ---
 # <a name="encodings-and-line-endings"></a>编码和行尾
 

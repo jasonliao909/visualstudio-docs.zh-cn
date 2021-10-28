@@ -14,11 +14,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 5180ca730b8caba06e31cc3a17443988578b1877
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122068915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736680"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild 内联任务
 

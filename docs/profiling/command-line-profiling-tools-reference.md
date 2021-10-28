@@ -13,11 +13,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 5ac619fe8e7dc5f4cd12e25708c8827a3835ad2a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122084566"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736633"
 ---
 # <a name="command-line-profiling-tools-reference"></a>命令行分析工具参考
 程序员通过命令行性能工具可在命令提示符处分析应用程序。 通过以下命令行分析工具可在命令提示符处分析代码。

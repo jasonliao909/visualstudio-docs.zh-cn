@@ -12,11 +12,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 3da3236b9d8cef954c4457b5710956751679b059
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122085021"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736681"
 ---
 # <a name="msbuild-glossary"></a>MSBuild 词汇表
 

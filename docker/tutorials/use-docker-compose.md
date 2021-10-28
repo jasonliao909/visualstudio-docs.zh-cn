@@ -6,15 +6,16 @@ author: nebuk89
 ms.author: ghogen
 manager: jmartens
 ms.technology: vs-docker
+ms.custom: contperf-fy22q1
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 8e846388320da492ddccd7b2628112a32f0c4145
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 1609081f364a2a20f983f8d8acd55181a71de42f
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122053431"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641362"
 ---
 # <a name="use-docker-compose"></a>使用 Docker Compose
 

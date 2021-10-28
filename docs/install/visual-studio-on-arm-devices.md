@@ -11,11 +11,11 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 1e45422b8b1f3dd98ec8c47c4788d935263f7f50
-ms.sourcegitcommit: 2430a38f23ac17b65dd8d3baa806e90433aba24f
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "115094883"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737027"
 ---
 # <a name="visual-studio-on-arm-powered-devices"></a>ARM 支持的设备上的 Visual Studio
 

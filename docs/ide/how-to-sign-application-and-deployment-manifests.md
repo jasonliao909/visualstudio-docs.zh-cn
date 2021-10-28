@@ -21,11 +21,11 @@ manager: jmartens
 ms.workload:
 - multiple
 ms.openlocfilehash: 5568961cc8b527ecd724ab9a1d26ab4a641696b6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869279"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644440"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>如何：对应用程序和部署清单进行签名
 

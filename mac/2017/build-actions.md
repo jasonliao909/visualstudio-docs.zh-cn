@@ -6,11 +6,11 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
 ms.openlocfilehash: d55ab6aea15dbad7f1cbd718136fba261dfa1c69
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123961671"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736791"
 ---
 # <a name="build-actions"></a>生成操作
 
@@ -29,6 +29,6 @@ C# 项目的一些常见生成操作为：
 
 此外，还有针对特定项目的生成操作。 Xamarin.iOS 项目具有 BundleResource 生成操作，用于将文件添加为应用程序包的一部分。 有关 Xamarin.Android 特定生成操作的信息，请参阅[生成过程](/xamarin/android/deploy-test/building-apps/build-process#Build_Actions)指南。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [生成操作（Windows 上的 Visual Studio）](/visualstudio/ide/build-actions)

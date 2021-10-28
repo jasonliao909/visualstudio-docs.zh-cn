@@ -17,11 +17,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 361e5f1e04cbf7e95356ae203624c0f368083eae
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122094238"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641800"
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>将 Get 方法转换为属性或反向转换
 

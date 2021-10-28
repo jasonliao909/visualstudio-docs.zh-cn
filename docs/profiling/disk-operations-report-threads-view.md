@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: ff9790ab1178ecae056c4af0fcea673e8e94ead7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122142021"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641522"
 ---
 # <a name="disk-operations-report-threads-view"></a>磁盘操作报告（线程视图）
 磁盘操作报告显示磁盘通道中的磁盘 I/O 操作。

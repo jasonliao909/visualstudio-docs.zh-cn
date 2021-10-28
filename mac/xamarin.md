@@ -7,11 +7,11 @@ ms.date: 06/18/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
 ms.topic: overview
 ms.openlocfilehash: 41b26eb75454299aed86a3cdb3905d6c66efb098
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963909"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126652465"
 ---
 # <a name="xamarin-mobile-app-development"></a>Xamarin 移动应用开发
 

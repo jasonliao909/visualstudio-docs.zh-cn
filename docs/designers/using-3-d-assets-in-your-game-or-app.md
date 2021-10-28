@@ -19,11 +19,11 @@ ms.technology: vs-ide-designers
 ms.workload:
 - multiple
 ms.openlocfilehash: f25e5462557fe1b33949d396877fa57ec2d6dd35
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122112030"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644453"
 ---
 # <a name="how-to-use-3d-assets-in-your-game-or-app"></a>如何：在游戏或应用中使用三维资产
 

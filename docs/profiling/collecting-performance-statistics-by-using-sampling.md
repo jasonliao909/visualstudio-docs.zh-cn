@@ -15,11 +15,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f016fb7498ec30bab30e58af4d3023be3986ab4f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122076810"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736639"
 ---
 # <a name="collect-performance-statistics-by-using-sampling"></a>通过采样收集性能统计信息
 

@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: 9d27790915c545b7e3cd83538f8e0b41041244bd
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122047369"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736811"
 ---
 # <a name="load-test-scenario-properties"></a>负载测试方案属性
 

@@ -18,11 +18,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 7bf6d9526e61327b1ff582a74c1624f1bfd7b8c5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122151426"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641788"
 ---
 # <a name="list-registers-command"></a>“列出寄存器”命令
 显示选中寄存器的值并允许修改要显示的寄存器列表。

@@ -11,11 +11,11 @@ ms.technology: vs-rtvs
 ms.workload:
 - data-science
 ms.openlocfilehash: 89bd6ca22fab59837cbf949b6b90ffee628ee55b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122060539"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642252"
 ---
 # <a name="create-r-markdown-documents"></a>创建 R Markdown 文档
 

@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: 10bab04db18962c592cac96eb707b0303874d5b3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122135632"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737262"
 ---
 # <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>如何：为 Web 性能测试结果查看器创建加载项
 

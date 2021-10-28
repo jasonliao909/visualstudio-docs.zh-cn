@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 383a48256c7bb56c14892e10d92e3963ec533fd0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122141501"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642288"
 ---
 # <a name="spanspan-destructor"></a>span::~span 析构函数
 

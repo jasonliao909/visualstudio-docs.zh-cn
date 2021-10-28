@@ -12,11 +12,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 5a53f31b0cdd30585b6f1c5e662787d1d8195187
-ms.sourcegitcommit: aef3e3f99e022675d339b7fe381cb37202be5be2
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "122785957"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641841"
 ---
 # <a name="add-null-checks-for-all-parameters"></a>为所有参数添加 null 检查 
 

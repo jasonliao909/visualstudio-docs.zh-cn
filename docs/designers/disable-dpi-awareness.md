@@ -8,11 +8,11 @@ manager: jmartens
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.openlocfilehash: d56a3650f2dd8df2b314bd80b27b321a68a92a2e
-ms.sourcegitcommit: 0c6cecf1b973a33003d924abeb382f23e62c134d
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "123230373"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737329"
 ---
 # <a name="disable-dpi-awareness-in-visual-studio"></a>在 Visual Studio 中禁用 DPI 感知
 

@@ -19,11 +19,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: fc44968f42f95dcc3a7fa1ce5e80e07a0988496a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122062402"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641601"
 ---
 # <a name="outlining"></a>大纲显示
 

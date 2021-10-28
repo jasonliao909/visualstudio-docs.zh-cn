@@ -2,7 +2,7 @@
 title: 如何：更改生成输出目录
 description: 了解如何在预配置的基础上指定项目生成的输出的位置（用于调试、发布或两者）。
 ms.custom: SEO-VS-2020
-ms.date: 05/15/2019
+ms.date: 09/10/2021
 ms.technology: vs-ide-compile
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 792175d7d2c168f75d20bce86675a1fcd8c47899
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b401296cf82cc0ec6d3aba01eb8cb360217703de
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875531"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737098"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>如何：更改生成输出目录
 
@@ -44,10 +44,16 @@ ms.locfileid: "99875531"
 
    键入要生成输出的路径（绝对或相对于根项目目录），或选择“浏览”，浏览到该文件夹。
 
+   ::: moniker range="<=vs-2019"
    ![Visual Studio C# 项目的输出路径属性](media/output-path.png)
-   
+   ::: moniker-end
+   ::: moniker range=">=vs-2022"
+   ![Visual Studio C# 项目的输出路径属性](media/vs-2022/output-path.png)
+   ::: moniker-end
+
    > [!NOTE]
    > 某些项目会默认在生成路径中包括框架和运行时。 若要更改这一点，请在解决方案资源管理器中右键单击项目节点，选择“编辑项目文件”并添加以下内容：
+
    > ```xml
    > <PropertyGroup>
    >   <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
@@ -58,7 +64,12 @@ ms.locfileid: "99875531"
 > [!TIP]
 > 如果系统未将输出生成到指定位置，请在 Visual Studio 的菜单栏上选择该位置，确保构建相应的配置（例如“调试”或“发布”）。
 >
+> ::: moniker range="<=vs-2019"
 > ![在 Visual Studio 2019 中生成配置选取器](media/build-configuration-chooser.png)
+> ::: moniker-end
+> ::: moniker range=">=vs-2022"
+> ![在 Visual Studio 2019 中生成配置选取器](media/vs-2022/build-configuration-chooser.png)
+> ::: moniker-end
 
 ## <a name="see-also"></a>另请参阅
 

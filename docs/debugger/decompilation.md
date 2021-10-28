@@ -17,11 +17,11 @@ ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: 024d202122452c21594ed04dbf9c96256e73ca6f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122112849"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737354"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>在调试时从 .NET 程序集生成源代码
 

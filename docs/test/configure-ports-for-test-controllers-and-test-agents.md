@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: c12affe5d2979aefbc8776264fade321e4950818
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122140058"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644331"
 ---
 # <a name="configure-ports-for-test-controllers-and-test-agents"></a>为测试控制器和测试代理配置端口
 

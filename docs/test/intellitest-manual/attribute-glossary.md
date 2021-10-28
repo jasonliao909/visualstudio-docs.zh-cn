@@ -13,11 +13,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: c15c9be9f8f4f2f8933a289908c27725eb14298e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122092418"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644327"
 ---
 # <a name="attribute-glossary"></a>属性术语表
 

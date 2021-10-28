@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 5786ac9ad94de46c9dfebffc862730f8fb63c646
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122096864"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642229"
 ---
 # <a name="spy-menu-commands"></a>“监视”菜单命令
 “监视”菜单提供了用于使用 Spy++ 窗口和视图的命令。

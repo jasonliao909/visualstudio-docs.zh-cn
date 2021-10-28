@@ -13,11 +13,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: fd7c9b667e2c355267a22212684141a40bca9f7c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122148423"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644325"
 ---
 # <a name="test-generation"></a>测试生成
 

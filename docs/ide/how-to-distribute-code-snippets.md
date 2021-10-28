@@ -16,11 +16,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: ab7146c9240358ded884f0170d53b9e342b4ebcc
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122086113"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641861"
 ---
 # <a name="how-to-distribute-code-snippets"></a>如何：分发代码片段
 

@@ -14,11 +14,11 @@ manager: jmartens
 ms.workload:
 - multiple
 ms.openlocfilehash: f51ae283f94703b7d7572ae51308da660784e80e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930234"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644443"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>如何：设置多个启动项目
 

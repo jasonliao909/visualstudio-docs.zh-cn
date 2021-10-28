@@ -18,11 +18,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: d7bcea924cd571e24003bcb66373862fdd0c7ef1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122139980"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736597"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>操作说明：创建数据驱动的单元测试
 

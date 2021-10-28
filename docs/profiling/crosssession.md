@@ -13,11 +13,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 4dffc4946f0476bb9b93f39392d310ced5c8e824
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122039054"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641731"
 ---
 # <a name="crosssession"></a>CrossSession
 通过 VSPerfCmd.exe“CrossSession”选项，探查器可从任何控制台会话收集数据 。 “CrossSession”选项必须与“Start”选项一起使用。

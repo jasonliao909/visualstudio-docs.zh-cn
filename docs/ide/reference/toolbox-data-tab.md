@@ -16,11 +16,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: c9016f6cd77f750b2b1a03ef799652f1c3afbb1a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122117054"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641760"
 ---
 # <a name="toolbox-data-tab"></a>工具箱，“数据”选项卡
 

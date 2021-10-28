@@ -17,11 +17,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 871163bb5ee4e29eebd037b1c499addc06fc8d96
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122161413"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737161"
 ---
 # <a name="error-ensure-that-dns-is-correctly-configured-on-the-target-computer"></a>错误：确保目标计算机上正确配置了 DNS
 当尝试执行远程调试时，您可能会收到如下错误信息：

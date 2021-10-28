@@ -7,11 +7,11 @@ ms.author: dominicn
 ms.date: 07/03/2020
 ms.topic: tutorial
 ms.openlocfilehash: f2c5154e2f35c57b46817c36ea669c6a9d0f5797
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963899"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736751"
 ---
 # <a name="create-a-multi-container-app-with-docker-compose"></a>使用 Docker Compose 创建多容器应用
 

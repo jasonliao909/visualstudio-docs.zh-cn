@@ -13,11 +13,11 @@ monikerRange: vs-2017
 ms.workload:
 - cplusplus
 ms.openlocfilehash: d3849137067d58d5fc641cbd26bcadc765fae747
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122033520"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642342"
 ---
 # <a name="how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>如何：使用探查器命令行检测本机服务，并收集详细计时数据
 本文介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具检测本机 (C/C++) 服务并收集详细的计时数据。

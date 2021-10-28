@@ -12,11 +12,11 @@ ms.topic: how-to
 ms.workload:
 - multiple
 ms.openlocfilehash: 6377acf831db6ce7f14a2a3e7605f01777f49496
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122045484"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641346"
 ---
 # <a name="view-recent-job-performance-and-details"></a>查看最近的作业性能和详细信息
 

@@ -12,11 +12,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 7f9713abdc08a5d99695a0e8d06e05abb783d790
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122142372"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736648"
 ---
 # <a name="collect-additional-performance-data"></a>收集其他性能数据
 

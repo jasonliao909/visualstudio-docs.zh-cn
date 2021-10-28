@@ -17,11 +17,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 30baf6cb3ed9a66d6c9d5696909f215e5721fcbd
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122151387"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641781"
 ---
 # <a name="log-command-window-output-command"></a>“日志命令窗口输出”命令
 

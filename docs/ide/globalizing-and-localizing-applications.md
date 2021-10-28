@@ -19,11 +19,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 4411ab1280bc8c39fcbf49a5ee80f1722a84d1d5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122086152"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737118"
 ---
 # <a name="develop-globalized-and-localized-apps"></a>开发全球化和本地化应用
 

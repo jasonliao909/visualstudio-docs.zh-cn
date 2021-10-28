@@ -18,11 +18,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 6bfe174e5f68d86247c5007882eebec855057069
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122036719"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641216"
 ---
 # <a name="debug-html-and-css-sample-code"></a>调试 HTML 和 CSS 示例代码
 

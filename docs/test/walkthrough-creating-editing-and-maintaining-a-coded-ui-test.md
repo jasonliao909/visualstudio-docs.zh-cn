@@ -11,11 +11,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: b11c5643b6f36335b843469ff099b07804d727ac
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122053984"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736576"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>演练：创建、编辑和维护编码的 UI 测试
 

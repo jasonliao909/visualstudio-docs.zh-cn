@@ -6,11 +6,11 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
 ms.openlocfilehash: 0149c43f628e3a65f9fd85565919886bde609b07
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123961651"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644555"
 ---
 # <a name="creating-new-projects-and-solutions"></a>创建新项目和解决方案
 

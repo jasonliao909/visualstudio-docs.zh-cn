@@ -8,11 +8,11 @@ ms.technology: vs-ide-install
 ms.assetid: BC836802-CC65-41F7-BAEC-A42AED0371A9
 hide_comments: false
 ms.openlocfilehash: 09f4af94eb1a12780268ab47f1a06c4710f0382f
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123961776"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736572"
 ---
 # <a name="update-visual-studio-2017-for-mac-version-7-to-visual-studio-2019-for-mac-version-80"></a>将 Visual Studio 2017 for Mac（版本 7）更新到 Visual Studio 2019 for Mac（版本 8.0）
 

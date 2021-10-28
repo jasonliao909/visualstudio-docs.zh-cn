@@ -13,11 +13,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 0f00d555f1a06718c5127f98d05b2c17158b433f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122094121"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737426"
 ---
 # <a name="datetime-and-timespan-completion-by-using-the-intellisense-menu"></a>使用 IntelliSense 菜单完成 DateTime 和 TimeSpan
 

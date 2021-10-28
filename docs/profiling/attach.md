@@ -13,11 +13,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 2764b98e41b5f6261947c18b9cb0bede6bff0511
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122136386"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737386"
 ---
 # <a name="attach"></a>附加
 VSPerfCmd.exe“Attach”选项开始对进程 ID (PID) 指定的运行过程进行样本分析 。

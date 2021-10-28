@@ -13,11 +13,11 @@ ms.devlang: python
 ms.workload:
 - multiple
 ms.openlocfilehash: d1e27999af1c467f0231c28a6f1ea53fb4c466a6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122037559"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641335"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>在本地训练 TensorFlow 模型
 

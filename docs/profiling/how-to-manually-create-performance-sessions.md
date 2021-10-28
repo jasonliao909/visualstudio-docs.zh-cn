@@ -19,11 +19,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d117494a021c34e35438b053eafedc1e7466861d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122076630"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642326"
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>如何：手动创建性能会话
 可以手动创建性能会话。 不需要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中打开项目，就可以执行该操作。 有关详细信息，请参阅[配置性能会话](../profiling/configuring-performance-sessions.md)。

@@ -14,11 +14,11 @@ ms.author: tglee
 manager: jmartens
 ms.technology: vs-ide-general
 ms.openlocfilehash: 140a3f8a17379a6a3887f51d2359d6515ed43cac
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122109131"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737088"
 ---
 # <a name="how-to-update-existing-templates"></a>如何：更新现有模板
 

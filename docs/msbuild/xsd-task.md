@@ -24,11 +24,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 9af55b62782a8d10b2e193b29bb9d8fade5b9aad
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122039886"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642445"
 ---
 # <a name="xsd-task"></a>XSD 任务
 

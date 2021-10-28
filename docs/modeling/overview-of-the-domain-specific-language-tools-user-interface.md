@@ -15,11 +15,11 @@ ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
 ms.openlocfilehash: 7e5eadf964f8809c10a4a7b6654397b7ebb9b4f1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122047733"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126652427"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>域特定语言工具用户界面的概述
 首次在 Visual Studio 中打开特定于域的语言工具（DSL 工具）解决方案时，用户界面如下图所示。

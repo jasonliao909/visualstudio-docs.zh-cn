@@ -12,11 +12,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 57c02081d31aa90e4b3c4c2415d515cf94d80aea
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122150282"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642310"
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>如何：设置性能数据文件名选项
 

@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: fd18acc2f5ca22cfa70c9a28042f460cb0e7f8bc
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122148540"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736822"
 ---
 # <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>如何：使用负载测试编辑器管理计数器集
 

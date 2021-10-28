@@ -17,11 +17,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: 8da574fb42e9a34bef81bd6690861141cfeec941
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122027209"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126652435"
 ---
 # <a name="build-and-debug-sharepoint-solutions"></a>生成和调试 SharePoint 解决方案
   通常情况下，生成和调试 SharePoint 解决方案与在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中生成和调试其他类型的项目相同。 本部分的主题介绍存在的差异。

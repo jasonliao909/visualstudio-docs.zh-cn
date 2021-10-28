@@ -20,11 +20,11 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d76aa3762b254ee35ada1e4e81fe857f509a4e5
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048967"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644390"
 ---
 # <a name="multitooltask-task"></a>MultiToolTask 任务
 

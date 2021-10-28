@@ -16,11 +16,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 3c60840fcbf0953c308bec174c49058e7f94163e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122062337"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644431"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>“封装字段”重构
 

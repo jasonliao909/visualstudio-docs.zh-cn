@@ -7,11 +7,11 @@ ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: DB8DC9FE-FF21-4061-8A96-3F9FC08A4F8F
 ms.openlocfilehash: ccfcf04816727800501dada64e73d6ce35876674
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963864"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644492"
 ---
 # <a name="update-visual-studio-for-mac"></a>更新 Visual Studio for Mac
 
@@ -52,7 +52,7 @@ Visual Studio for Mac 提供两种获取最新版本的通道：
 
 根据需要安装的组件，可能需要接受额外的许可证或输入计算机管理员用户名和密码。
 
-## <a name="troubleshooting"></a>疑难解答
+## <a name="troubleshooting"></a>故障排除
 
 如果更新程序出现问题，请尝试执行[更新程序故障排除](updater-troubleshooting.md)指南中的以下步骤。
 

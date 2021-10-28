@@ -14,11 +14,11 @@ ms.workload:
 - nodejs
 monikerRange: '>= vs-2022'
 ms.openlocfilehash: 27e1009482d9fcecffd1831c482d252737cc5347
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122048149"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126652453"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-angular-in-visual-studio"></a>教程：在 Visual Studio 中使用 Angular 创建 ASP.NET Core 应用
 

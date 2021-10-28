@@ -11,11 +11,11 @@ ms.technology: vs-rtvs
 ms.workload:
 - data-science
 ms.openlocfilehash: ce6ab82bc2ea42a4b56ed6eb515343c9a9524101
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122060591"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642253"
 ---
 # <a name="control-where-r-code-runs-with-workspaces"></a>控制 R 代码在工作区中的运行位置
 

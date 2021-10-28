@@ -12,11 +12,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 57c7cbe1ee119489171417515e557b46ee2755ed
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122107415"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736181"
 ---
 # <a name="launch"></a>启动
 “Launch”选项使用采样方法启动探查器，还会启动指定的应用程序。

@@ -16,11 +16,11 @@ manager: jmartens
 ms.workload:
 - multiple
 ms.openlocfilehash: 2e2abb9a768621477465b753554c111126a5af98
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967613"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737101"
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>如何：生成到公共输出目录
 

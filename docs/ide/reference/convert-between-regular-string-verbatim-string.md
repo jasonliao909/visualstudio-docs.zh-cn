@@ -13,11 +13,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: ad19096bf01fa53463ec28939ef4ea7f5cdafb5d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122151686"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641807"
 ---
 # <a name="convert-between-regular-string-and-verbatim-string-literals-refactoring"></a>在正则字符串文本和逐字字符串文本重构之间转换
 

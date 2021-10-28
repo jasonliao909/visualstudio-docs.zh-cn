@@ -10,11 +10,11 @@ ms.topic: how-to
 ms.date: 02/21/2021
 ms.author: ghogen
 ms.openlocfilehash: 6dd3a1bf0dd7b40f101f95e74c18dee071b4cfc6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122162027"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641315"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>使用 Visual Studio 将 ASP.NET Core 容器部署到 Azure 应用服务
 
@@ -22,7 +22,7 @@ ms.locfileid: "122162027"
 
 如果没有 Azure 订阅，请在开始之前创建一个[免费帐户](https://azure.microsoft.com/free/dotnet/?utm_source=acr-publish-doc&utm_medium=docs&utm_campaign=docs)。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 完成本教程：
 

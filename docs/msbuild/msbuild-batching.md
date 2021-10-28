@@ -15,11 +15,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: b9b018871c95cf87fbac226ed768b51bdc69398d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122068954"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736697"
 ---
 # <a name="msbuild-batching"></a>MSBuild 批处理
 

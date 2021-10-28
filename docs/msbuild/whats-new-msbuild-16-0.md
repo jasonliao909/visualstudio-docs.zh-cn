@@ -12,11 +12,11 @@ ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
 ms.openlocfilehash: 8c0d085acc2d392c6db156be2bc16743774b60d9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122093648"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737397"
 ---
 # <a name="whats-new-in-msbuild-160"></a>MSBuild 16.0 中的新增功能
 

@@ -14,11 +14,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: f67e518e5f9701ae011733d796252431ce6c9eda
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122083825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641424"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>编辑负载模式以便为虚拟用户活动建模
 

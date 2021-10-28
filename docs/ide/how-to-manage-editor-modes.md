@@ -28,11 +28,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 88d615cc82de737fda485a5a179ac14e0a92f607
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122086074"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736903"
 ---
 # <a name="how-to-manage-editor-modes"></a>如何：管理编辑器模式
 

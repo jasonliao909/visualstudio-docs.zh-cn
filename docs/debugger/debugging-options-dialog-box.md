@@ -25,11 +25,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: d06b4caa49f67203fad3eab081d3d2de3e8f9e32
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122097423"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737365"
 ---
 # <a name="debugging-options-dialog-box"></a>“选项”对话框 ->“调试”
 “工具”菜单上的“选项”对话框中的“调试”文件夹提供以下页，可以使用它们来指定调试器工具选项  。

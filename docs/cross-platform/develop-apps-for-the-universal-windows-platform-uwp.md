@@ -12,11 +12,11 @@ manager: jmartens
 ms.workload:
 - uwp
 ms.openlocfilehash: e54fdd71d848d1edad93fe38598d71c9dbbede7f
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308111"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641294"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>开发面向通用 Windows 平台 (UWP) 的应用
 

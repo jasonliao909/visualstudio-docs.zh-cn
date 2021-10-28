@@ -29,11 +29,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 8b0f7f475b8226630133fa6c4617c7c3c4fe8060
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122143165"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736978"
 ---
 # <a name="lib-task"></a>LIB 任务
 

@@ -20,11 +20,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 48bbd10fa01d048e19d80095658045a2e64e411c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122113060"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641660"
 ---
 # <a name="debugging-f"></a>调试 F\#
 调试 F# 与调试任何托管语言类似，但有以下几种例外情况：

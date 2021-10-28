@@ -11,11 +11,11 @@ ms.author: midumont
 manager: jmartens
 ms.technology: vs-ide-general
 ms.openlocfilehash: 6dee0f9dc003e91cdb8d2ba24fc0804d5df5ae54
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122109508"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642207"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>使用 EditorConfig 创建可移植的自定义编辑器设置
 

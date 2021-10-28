@@ -13,11 +13,11 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: b7c5f57b81899ead03b96fd7d26dbcaf63ffeda6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122136373"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641540"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>使用探查器命令行收集 .NET Framework 内存数据
 

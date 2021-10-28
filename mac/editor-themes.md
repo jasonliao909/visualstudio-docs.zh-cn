@@ -7,11 +7,11 @@ ms.date: 11/06/2018
 ms.assetid: 4C1B7952-CD45-4132-AD6B-01CF993D83F8
 ms.topic: how-to
 ms.openlocfilehash: 490ec4f5763ba7ba5be6bf9099dcd608a3712fa1
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963905"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736747"
 ---
 # <a name="editor-themes"></a>编辑器主题
 

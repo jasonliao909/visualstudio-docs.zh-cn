@@ -12,11 +12,11 @@ manager: jmartens
 ms.workload:
 - multiple
 ms.openlocfilehash: aaa36e7089be12cb0775b3300a134eb77b2eb618
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878664"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641860"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>如何：从生成中排除项目
 

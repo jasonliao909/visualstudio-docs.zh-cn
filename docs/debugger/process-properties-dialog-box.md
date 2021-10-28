@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 02cb03635aed15f39362e54a9c704a67a30decec
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122153818"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642233"
 ---
 # <a name="process-properties-dialog-box"></a>“进程属性”对话框
 使用此对话框可详细了解特定进程。 若要显示此对话框，请将焦点移至[进程视图](../debugger/processes-view.md)窗口。 在树中选择任意进程节点，然后从“视图”菜单选择“属性” 。

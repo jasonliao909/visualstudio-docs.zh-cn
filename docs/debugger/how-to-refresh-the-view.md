@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 0ce476104f745b430fee72129577b02438d62dd0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122112758"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641971"
 ---
 # <a name="how-to-refresh-the-view"></a>如何：刷新视图
 Spy++ 会拍摄系统表的“快照”，并基于此信息刷新视图。 定期刷新系统视图非常重要。 如果打开了 Spy++ 视图，但没有刷新该视图，则不会看到随后创建的进程、线程和窗口。 此外，可能会看到已不再存在的项。 “刷新”命令可用于除消息视图之外的所有视图。

@@ -7,11 +7,11 @@ ms.date: 11/09/2020
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
 ms.topic: overview
 ms.openlocfilehash: 8a75368e746a02ae0789d9f0a90bf2f8907e0d04
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963912"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126652466"
 ---
 # <a name="managing-references-in-a-project"></a>管理项目中的引用
 

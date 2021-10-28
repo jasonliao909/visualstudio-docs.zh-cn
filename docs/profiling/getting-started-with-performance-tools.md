@@ -16,11 +16,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9c0aabc9292d4c904d36b00820935aadd1545057
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122131516"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736183"
 ---
 # <a name="getting-started-with-performance-tools"></a>性能工具入门
 

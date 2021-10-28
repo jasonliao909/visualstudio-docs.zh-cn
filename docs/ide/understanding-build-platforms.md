@@ -20,11 +20,11 @@ manager: jmartens
 ms.workload:
 - multiple
 ms.openlocfilehash: 7cfe141f186f192d17dc64ea3fae58a469e1d063
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971357"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642112"
 ---
 # <a name="understand-build-platforms"></a>了解生成平台
 

@@ -11,11 +11,11 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 935b593a0f7989e9cfbe07a4543793cb40eccd70
-ms.sourcegitcommit: 2430a38f23ac17b65dd8d3baa806e90433aba24f
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "115094535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641747"
 ---
 # <a name="package-payload-changes"></a>包有效负载更改
 

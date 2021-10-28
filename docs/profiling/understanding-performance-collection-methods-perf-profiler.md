@@ -14,11 +14,11 @@ monikerRange: '>= vs-2017'
 ms.workload:
 - multiple
 ms.openlocfilehash: 8ca31215b5b9d27725f6feaa5ba65f91ebc119ad
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122156950"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736610"
 ---
 # <a name="understand-profiler-performance-collection-methods"></a>了解探查器性能收集方法
 

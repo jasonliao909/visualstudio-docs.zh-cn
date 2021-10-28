@@ -16,11 +16,11 @@ ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
 ms.openlocfilehash: a0b477f4dcb5d7c2148b40f648c41b9fea5a1578
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122059367"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126652411"
 ---
 # <a name="overview-of-source-code-analysis"></a>源代码分析概述
 

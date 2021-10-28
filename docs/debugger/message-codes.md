@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: ce6fe678785719ed52e9be59e28d7eedd98ebef6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122146831"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644278"
 ---
 # <a name="message-codes"></a>消息代码
 [消息视图](../debugger/messages-view.md)中显示的每行消息均包含“P”、“S”、“s”或“R”代码。 这些代码具有以下含义：

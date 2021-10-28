@@ -12,11 +12,11 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 86575cd71c41ac8ac874e9b62f8273ee46e02c57
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205484"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126642431"
 ---
 # <a name="analyze-performance-of-net-asynchronous-code"></a>分析 .NET 异步代码的性能
 

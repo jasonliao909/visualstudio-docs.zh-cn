@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: 158f18a65c83f52dbe2fa846249da2300fad1508
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122106622"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126641497"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>负载测试对测试控制器和测试代理的要求
 

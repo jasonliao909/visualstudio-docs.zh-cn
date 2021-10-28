@@ -6,11 +6,11 @@ ms.author: dominicn
 ms.date: 11/09/2020
 ms.assetid: 75247EB8-323A-4AFD-A451-6703A03D5D1F
 ms.openlocfilehash: 0c3277df3be22658acf85a4f0607ed9ad0308b5c
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963913"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736387"
 ---
 # <a name="managing-project-and-solution-properties"></a>管理项目和解决方案属性
 

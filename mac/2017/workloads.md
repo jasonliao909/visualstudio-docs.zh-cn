@@ -7,11 +7,11 @@ ms.date: 12/05/2018
 ms.assetid: DDC39599-8C5D-4CB9-8DA5-229E085384CA
 ms.topic: overview
 ms.openlocfilehash: fa298e97c2db05ee3be526e5e1b3cc7a7affed99
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123961723"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736769"
 ---
 # <a name="visual-studio-for-mac-workloads"></a>Visual Studio for Mac 工作负载
 
