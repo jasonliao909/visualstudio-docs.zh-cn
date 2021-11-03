@@ -3,8 +3,8 @@ title: 适用于开发人员的命令行 shell 和提示
 description: 从“工具”>“命令行”菜单开始。 通过使用 Visual Studio 开发人员命令提示、开发人员 PowerShell 和终端，可以更轻松地使用 .NET 和 C++ 工具。
 author: TerryGLee
 ms.author: tglee
-ms.date: 06/11/2021
-ms.topic: reference
+ms.date: 10/26/2021
+ms.topic: conceptual
 ms.custom: contperf-fy21q4
 helpviewer_keywords:
 - Visual Studio command prompt
@@ -14,12 +14,13 @@ helpviewer_keywords:
 - Visual Studio terminal
 ms.assetid: 94fcf524-9045-4993-bfb2-e2d8bad44219
 no-loc: cmdlet
-ms.openlocfilehash: fef783475304bb1faa1788bde591a22ed610d528
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+monikerRange: vs-2019
+ms.openlocfilehash: f25786e33a13cc526480a76a53215562146c4116
+ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641188"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "131126501"
 ---
 # <a name="visual-studio-developer-command-prompt-and-developer-powershell"></a>Visual Studio 开发人员命令提示和开发人员 PowerShell
 
@@ -37,7 +38,7 @@ Visual Studio 2019 包含两个开发人员命令行 shell：
 
 从 Visual Studio 作为一个单独的应用程序打开其中一个开发人员 shell，或者在终端窗口中打开其中一个开发人员 shell 时，它会打开转到当前解决方案的目录（如果已加载解决方案）。 通过此行为，你可以便捷地针对解决方案或其项目运行命令。
 
-这两个 shell 都具有特定的环境变量集，使你可以更轻松地使用命令行开发人员工具。 打开其中一个 shell 后，可以输入针对不同实用程序的命令，而无需知道它们的位置。 
+这两个 shell 都具有特定的环境变量集，使你可以更轻松地使用命令行开发人员工具。 打开其中一个 shell 后，可以输入针对不同实用程序的命令，而无需知道它们的位置。
 
 |常用命令|说明|
 |--|--|
@@ -51,7 +52,6 @@ Visual Studio 2019 包含两个开发人员命令行 shell：
 |[`LIB`](/cpp/build/reference/lib-reference)| C/C++ 生成工具|
 |[`DUMPBIN`](/cpp/build/reference/dumpbin-reference)| C/C++ 生成工具|
 
-
 ## <a name="start-in-visual-studio"></a>在 Visual Studio 中启动
 
 按照以下步骤从 Visual Studio 内部打开“开发人员命令提示”或“开发人员 PowerShell”：
@@ -64,7 +64,7 @@ Visual Studio 2019 包含两个开发人员命令行 shell：
 
 ## <a name="start-from-windows-menu"></a>从 Windows 菜单中启动
 
-启动 shell 的另一种方法是从“开始”菜单启动。 你可能会有多个命令提示符，具体取决于你安装的 Visual Studio 的版本及其他任何 SDK 和工作负载。 
+启动 shell 的另一种方法是从“开始”菜单启动。 你可能会有多个命令提示符，具体取决于你安装的 Visual Studio 的版本及其他任何 SDK 和工作负载。
 
 ### <a name="windows-10"></a>Windows 10
 
@@ -96,7 +96,7 @@ Visual Studio 2019 包含两个开发人员命令行 shell：
 
 如果安装了其他 SDK，例如 [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) 或[之前的版本](https://developer.microsoft.com/windows/downloads/sdk-archive)，则可能看到其他命令提示符。 查看单个工具的文档，以确定应使用哪个版本的命令提示。
 
-## <a name="start-from-file-browser"></a>从文件浏览器启动 
+## <a name="start-from-file-browser"></a>从文件浏览器启动
 
 已安装的 shell 的快捷方式通常放在 Visual Studio 的“开始菜单”文件夹中，例如 %ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2019\Visual Studio Tools。 但是如果搜索命令提示未产生预期的效果，你可以尝试在计算机中手动查找文件。
 

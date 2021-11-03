@@ -7,12 +7,12 @@ ms.assetid: 00c1f300-d04e-4695-815e-775ffbf0f931
 ms.date: 03/17/2021
 ms.topic: how-to
 description: 了解如何激活 Visual Studio 订阅中包含的 Parasoft Virtualize/SOA Test Professional 订阅。
-ms.openlocfilehash: 122aff032ced21c6235df3727e77b70200fc3563
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 706d3c13cdfcc36c031d768321d4cc074015fa6a
+ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128432047"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "131127476"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Parasoft Virtualize/SOAtest Professional 桌面
 
@@ -101,4 +101,4 @@ ms.locfileid: "128432047"
 - [Microsoft 365 文档](/microsoft-365/)
 
 ## <a name="next-steps"></a>后续步骤
-通过激活 [Azure 开发测试个人额度](vs-azure.md)来充分利用你自己的开发沙盒。
+通过激活 [Azure 开发测试个人额度](/azure/devtest/offer/quickstart-individual-credit)来充分利用你自己的开发沙盒。

@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 752e65412cc7ee7b3179f47ecd27caaf4e088822
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 7cf9f13ac7a45cd739c5248c68cfe0d7041a84c7
+ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126652477"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "131127437"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>从现有的 SharePoint 网站导入项
   利用“导入 SharePoint 解决方案包”项目模板，你可以在新的 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 解决方案中重用现有 SharePoint 网站中的元素，例如，内容类型和字段。 虽然无需修改即可运行大多数导入的解决方案，但需要考虑一些限制和问题，尤其是在导入任何项后对这些项进行修改的情况下。
@@ -101,7 +101,7 @@ ms.locfileid: "126652477"
 ## <a name="import-fields-and-property-bags"></a>导入字段和属性包
  在导入具有多个字段的解决方案时，所有单独的字段定义将合并到一个 Elements.xml 文件中，此文件位于“解决方案资源管理器”中一个名为“字段”的节点下 。 同样，所有属性包项将合并到一个 Elements.xml 文件中，此文件位于一个名为“PropertyBags”的节点下。
 
- SharePoint 中的字段是指定数据类型（如文本、布尔值或查阅）的列。 有关详细信息，请参阅 [生成块：列和字段类型](/previous-versions/office/developer/sharepoint-2010/ee535893(v=office.14))。 利用属性包，可以向 SharePoint 中的对象（从场到 SharePoint 网站上的列表的所有内容）添加属性。 属性包将作为属性名和属性值的哈希表实现。 有关详细信息，请参阅 [管理 SharePoint 配置](/previous-versions/msp-n-p/ff647766(v=pandp.10)) 或 [SharePoint 属性包设置](https://archive.codeplex.com/?p=pbs)。
+ SharePoint 中的字段是指定数据类型（如文本、布尔值或查阅）的列。 有关详细信息，请参阅 [生成块：列和字段类型](/previous-versions/office/developer/sharepoint-2010/ee535893(v=office.14))。 利用属性包，可以向 SharePoint 中的对象（从场到 SharePoint 网站上的列表的所有内容）添加属性。 属性包将作为属性名和属性值的哈希表实现。 有关详细信息，请参阅 [管理 SharePoint 配置](/previous-versions/msp-n-p/ff647766(v=pandp.10)) 或 [SharePoint 属性包设置](https://www.codeproject.com/articles/43601/sharepoint-property-bag)。
 
 ## <a name="delete-items-in-the-project"></a>删除项目中的项
  SharePoint 解决方案中的大多数项都具有一个或多个依赖项。 例如，列表实例依赖于内容类型，而内容类型依赖于字段。 导入 SharePoint 解决方案后，如果你删除此解决方案中的某个项而不删除其依赖项，则在你尝试部署解决方案之前， [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 不会告知你任何引用问题。 例如，如果导入的解决方案具有的列表实例依赖某个内容类型，而你删除了该内容类型，则在部署时可能会出现错误。 如果 SharePoint 服务器中不存在此依赖项，则会发生错误。 同样，如果删除的项也具有关联的属性包，则从 PropertyBags Elements.xml 文件中删除这些属性包项。 因此，如果从导入的解决方案中删除任何项，并且存在部署错误，则应检查是否还需要删除任何依赖项。

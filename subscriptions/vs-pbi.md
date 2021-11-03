@@ -7,12 +7,12 @@ ms.assetid: 383fc910-3f4c-474a-a3f8-0f13525f05e9
 ms.date: 08/26/2021
 ms.topic: how-to
 description: 了解有关所选 Visual Studio 订阅中随附的 Power BI Pro 订阅。
-ms.openlocfilehash: 92a276deaebd7f0d008caca6dc1fad24b4e9542e
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: b741c44304c8b204321927265bfe9122ff71775b
+ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "127831688"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "131127294"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Power BI Pro
 
@@ -121,4 +121,4 @@ ms.locfileid: "127831688"
 
 ## <a name="next-steps"></a>后续步骤
 - 要激活 Power BI Pro 权益，请访问 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
-- 通过激活 [Azure 开发测试个人额度](vs-azure.md)来充分利用你自己的开发沙盒。
+- 通过激活 [Azure 开发测试个人额度](/azure/devtest/offer/quickstart-individual-credit)来充分利用你自己的开发沙盒。

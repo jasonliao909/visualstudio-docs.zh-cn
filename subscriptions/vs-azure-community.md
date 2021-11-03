@@ -7,12 +7,12 @@ ms.assetid: c15f7e18-b280-4902-a60d-2c2598653207
 ms.date: 10/14/2021
 ms.topic: conceptual
 description: 了解有关所选 Visual Studio 订阅中包含的 Azure 社区支持权益。
-ms.openlocfilehash: db288ec998376a0dfc432dc7893c17eaec203c35
-ms.sourcegitcommit: efe1d737fd660cc9183177914c18b0fd4e39ba8b
+ms.openlocfilehash: 6204bae1727238853fbc8c3363b1621658469ded
+ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "130211644"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "131127086"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Azure 社区支持论坛
 在选定的支持论坛中通过 Azure 社区直接从 Azure 团队获得帮助。  Azure 社区权益提供访问专注于 Azure 相关主题的一系列论坛的权限。
@@ -81,4 +81,4 @@ Azure 社区可免费使用。  不需要订阅。
 - [Microsoft 365 文档](/microsoft-365/)
 
 ## <a name="next-steps"></a>后续步骤
-你知道吗？许多 Visual Studio 订阅都附带 Azure 开发测试个人额度。  了解如何[激活](vs-azure.md)你的权益。
+你知道吗？许多 Visual Studio 订阅都附带 Azure 开发测试个人额度。  了解如何[激活](/azure/devtest/offer/)你的权益。

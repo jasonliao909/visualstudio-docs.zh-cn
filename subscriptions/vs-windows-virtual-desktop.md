@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 10/18/2021
 ms.topic: conceptual
 description: 了解如何通过 Visual Studio 订阅利用 Microsoft Windows 虚拟桌面
-ms.openlocfilehash: f413efe09ad3466fe3341602a7637faba6d2aa33
-ms.sourcegitcommit: 6c847aedf0f943e253a4c2f0e4b516b953168bc7
+ms.openlocfilehash: 9202de0d906621a70dd1171facfc6dcb1cda87d0
+ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "130152174"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "131127047"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>在订阅中访问 Windows 虚拟桌面 
 Visual Studio 订阅者现在可以将其 Azure 开发/测试个人额度用于 Microsoft Windows 虚拟桌面服务。  
@@ -29,9 +29,9 @@ Windows 虚拟桌面是在云中运行的综合性桌面和应用虚拟化服务
 
 ## <a name="use-windows-virtual-desktop-with-azure"></a>将 Windows 虚拟桌面与 Azure 配合使用 
 Visual Studio 订阅者现在可通过多种方法使用 Azure 订阅为 Windows 虚拟桌面服务付费：
-- [Azure 开发测试个人额度](vs-azure.md)。  在订阅中获得 Azure 开发测试个人额度的订阅者可以使用这些额度为 Windows 虚拟桌面服务付费。  每月额度量取决于订阅级别。
-- [Azure 开发测试即用即付订阅](vs-azure-payg.md)。  可以创建 Azure 订阅并附加付款方式，以便以无缝方式为 Windows 虚拟桌面使用情况付费。 
-- [Azure 企业协议开发测试套餐](azure-ea-devtest.md)。  通过此套餐，具有企业协议的订阅者可以按折扣定价通过 Azure 为 Windows 虚拟桌面付费。 
+- [Azure 开发测试个人额度](/azure/devtest/offer/quickstart-individual-credit)。  在订阅中获得 Azure 开发测试个人额度的订阅者可以使用这些额度为 Windows 虚拟桌面服务付费。  每月额度量取决于订阅级别。
+- [Azure 开发测试即用即付订阅](https://azure.microsoft.com/offers/ms-azr-0023p/)。  可以创建 Azure 订阅并附加付款方式，以便以无缝方式为 Windows 虚拟桌面使用情况付费。 
+- [Azure 企业协议开发测试套餐](/azure/devtest/offer/quickstart-create-enterprise-devtest-subscriptions)。  通过此套餐，具有企业协议的订阅者可以按折扣定价通过 Azure 为 Windows 虚拟桌面付费。 
 
 ## <a name="requirements"></a>要求
 Windows 虚拟桌面需要 Azure Active Directory (Azure AD)，VM 将加入到其中。  用户必须是此 Azure AD 的成员。  可通过两个选项实现 Azure AD：
