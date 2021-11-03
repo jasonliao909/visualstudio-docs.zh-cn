@@ -2,7 +2,7 @@
 title: 显示代码行号
 description: 了解如何在代码中显示或隐藏行号。
 ms.custom: SEO-VS-2020
-ms.date: 08/28/2020
+ms.date: 08/05/2021
 ms.topic: how-to
 helpviewer_keywords:
 - line numbers, displaying
@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: dd91c105f43eabeef48d7e29c2a0f67b4b3a9513
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: da6b06f17b5d053e953c23b6e9924685380fa350
+ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126737287"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "131126826"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>操作说明：在编辑器中显示行号
 

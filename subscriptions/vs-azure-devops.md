@@ -7,12 +7,12 @@ ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
 ms.date: 10/14/2021
 ms.topic: conceptual
 description: 了解如何以 Visual Studio 订阅者身份使用 Azure DevOps。
-ms.openlocfilehash: 3fc8acfc04f1c43c87516fa07dd13fa5500e5ce0
-ms.sourcegitcommit: 6c847aedf0f943e253a4c2f0e4b516b953168bc7
+ms.openlocfilehash: 3051c6aa50b7b34189363f843b28c14b9b3881f4
+ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "130152139"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "131126397"
 ---
 # <a name="azure-devops-for-visual-studio-subscribers"></a>适用于 Visual Studio 订阅者的 Azure DevOps
 有效 Visual Studio 订阅者可使用订阅随附的一系列 Azure DevOps 功能。 可以在所属的每个 Azure DevOps 组织中使用这些相同的功能，无论你是创建了组织，还是被其他人添加到组织中。
@@ -69,4 +69,4 @@ ms.locfileid: "130152139"
 - [Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 - [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 
-了解如何激活 [Azure 开发测试个人额度](vs-azure.md)。
+了解如何激活 [Azure 开发测试个人额度](/azure/devtest/offer/quickstart-individual-credit)。

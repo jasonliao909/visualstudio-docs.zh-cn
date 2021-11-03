@@ -7,12 +7,12 @@ ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
 ms.date: 03/17/2021
 ms.topic: how-to
 description: 了解有关所选的 Visual Studio 订阅中随附的 Pluralsight 培训订阅。
-ms.openlocfilehash: 2b4f1e75a02b766387e30471c5b6caec59d63793
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 5873394cf0a13cf6a29b0ff57f347142985f3aa9
+ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128426334"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "131126241"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Pluralsight 培训权益
 
@@ -122,4 +122,4 @@ ms.locfileid: "128426334"
 ## <a name="next-steps"></a>后续步骤
 创建帐户后，就可以开始培训了。  请访问 [https://www.pluralsight.com](https://www.pluralsight.com) 并点击页面右上角的“登录”以开始新课程，或返回正在进行的课程  。
 
-通过激活 [Azure 开发测试个人额度](vs-azure.md)来充分利用你自己的开发沙盒。
+通过激活 [Azure 开发测试个人额度](/azure/devtest/offer/quickstart-individual-credit)来充分利用你自己的开发沙盒。
