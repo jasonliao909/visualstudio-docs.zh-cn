@@ -7,11 +7,11 @@ ms.date: 05/06/2018
 ms.assetid: 61EAAB8F-3C32-4574-924F-CFC616604089
 ms.topic: overview
 ms.openlocfilehash: 987a337941ba2a180045e64c5ba26dfd54284bec
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963933"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126736388"
 ---
 # <a name="managing-app-resources"></a>管理应用资源
 
@@ -38,6 +38,6 @@ Xamarin.Forms 代码在多个平台上运行 - 其中每个平台都具有其自
 
 * [使用图像](https://developer.xamarin.com/guides/mac/application_fundamentals/working-with-images/)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [管理应用程序资源（Windows 上的 Visual Studio）](/visualstudio/ide/managing-application-resources-dotnet)

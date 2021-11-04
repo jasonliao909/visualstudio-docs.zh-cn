@@ -59,9 +59,9 @@ ms.locfileid: "126736627"
 
 - 评估进程如何确定在此工作阶段期间要执行的线程的合适数量。 如果进程直接计算活动的并行线程数，请考虑修改算法以更好地在系统上占用可用的逻辑内核数。 如果使用并发运行时、任务并行库或 PLINQ，这些库将执行计算线程数的工作。
 
-## <a name="inefficient-io&quot;></a>I/O 效率低
+## <a name="inefficient-io"></a>I/O 效率低
 
-![I&#47;O 效率低](../profiling/media/inefficient_io.png &quot;Inefficient_IO")
+![I&#47;O 效率低](../profiling/media/inefficient_io.png "Inefficient_IO")
 
 过度使用或误用 I/O 是导致应用程序效率低下的常见原因。 请参考上图。 可见时间线分析显示 I/O 使用了 44% 的可见线程时间。 时间线显示大量 I/O，这指示 I/O 频繁地阻塞被分析应用程序。 若要深入了解 I/O 类型和程序被阻塞的位置，请放大存在问题的区域，检查可见时间线分析，然后单击特定 I/O 块以查看当前的调用堆栈。
 

@@ -13,7 +13,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126644500"
 ---
-# <a name="troubleshooting"></a>故障排除
+# <a name="troubleshooting"></a>疑难解答
 
 ## <a name="viewing-logs-in-visual-studio-for-mac"></a>查看 Visual Studio for Mac 中的日志
 
@@ -47,6 +47,6 @@ ms.locfileid: "126644500"
 
 请注意某些部分只有在异常属于内部异常时可见。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [用于排除 IDE 错误的资源（Windows 上的 Visual Studio）](/visualstudio/ide/reference/resources-for-troubleshooting-integrated-development-environment-errors)

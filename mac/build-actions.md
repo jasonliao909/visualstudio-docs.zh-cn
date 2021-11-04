@@ -45,6 +45,6 @@ Xamarin.iOS 项目具有 BundleResource 生成操作，用于将文件添加为�
 
 还可在解决方案资源管理器中选择多个文件，这样便可同时设置多个文件的生成操作。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [生成操作（Windows 上的 Visual Studio）](/visualstudio/ide/build-actions)

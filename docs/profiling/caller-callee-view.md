@@ -40,7 +40,7 @@ ms.locfileid: "126736655"
 
  可通过单击列名对数据进行排序。 可将其他列添加到“调用方/被调用方”视图。 有关详细信息，请参阅[如何：自定义报告视图列](../profiling/how-to-customize-report-view-columns.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [“调用方/被调用方”视图 - 采样数据](../profiling/caller-callee-view-sampling-data.md)
 - [“调用方/被调用方”视图 - 检测数据](../profiling/caller-callee-view-instrumentation-data.md)
 - [“调用方/被调用方”视图 - .NET 内存检测数据](../profiling/caller-callee-view-net-memory-instrumentation-data.md)

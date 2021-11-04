@@ -29,6 +29,6 @@ ms.locfileid: "126644550"
 
 也可以为 XML、CSS、HTML 和 JSON 设置格式规则。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [代码样式首选项（Windows 上的 Visual Studio）](/visualstudio/ide/code-styles-and-quick-actions)

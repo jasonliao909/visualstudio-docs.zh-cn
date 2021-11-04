@@ -305,7 +305,7 @@ ms.locfileid: "126736250"
 
 1. 返回到 Visual Studio for Mac  ，并结束调试会话。
 
-## <a name="exercise-5-working-with-azure-storage-tables&quot;></a>练习 5：使用 Azure 存储表
+## <a name="exercise-5-working-with-azure-storage-tables"></a>练习 5：使用 Azure 存储表
 
 通常，你生成的服务可能比我们目前为止已生成的服务更复杂，并且需要占用大量的时间和/或基础结构来执行。 在这种情况下，你可能会发现在 Azure Functions 提供支持的资源可用时，它在接受已排队等待处理的请求方面很有效。 在其他情况下，需集中存储数据。 通过 Azure 存储表，可以快速做到这一点。
 
@@ -323,7 +323,7 @@ ms.locfileid: "126736250"
 1. 在 Add  类中，添加以下代码以引入另一个函数。 注意，到目前为止，它是唯一的，因为它不涉及 HTTP 响应。 最后一行返回了新的 TableRow  ，其中填有可使其之后易于检索的一些关键信息（PartitionKey  和 RowKey  ），还返回了其参数和总和。 该方法内的代码还使用 TraceWriter  ，以便更轻松地了解函数何时运行。
 
     ```csharp
-    [FunctionName(&quot;Process")]
+    [FunctionName("Process")]
     [return: Table("Results")]
     public static TableRow Process(
         [HttpTrigger(AuthorizationLevel.Function, "get",

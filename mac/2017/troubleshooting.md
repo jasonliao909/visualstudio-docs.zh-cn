@@ -13,7 +13,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126735624"
 ---
-# <a name="troubleshooting"></a>故障排除
+# <a name="troubleshooting"></a>疑难解答
 
 ## <a name="viewing-logs-in-visual-studio-for-mac"></a>查看 Visual Studio for Mac 中的日志
 

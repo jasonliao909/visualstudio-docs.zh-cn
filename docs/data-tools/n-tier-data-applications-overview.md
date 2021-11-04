@@ -82,7 +82,7 @@ Visual Studio 包含多个功能，可帮助开发人员创建 n 层应用程序
 
 [使用 LINQ to SQL 的 n 层和远程应用程序](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [演练：创建 n 层数据应用程序](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [分层更新](../data-tools/hierarchical-update.md)
