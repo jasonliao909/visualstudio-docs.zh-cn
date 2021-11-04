@@ -5,11 +5,11 @@ author: cobey
 ms.author: cobey
 ms.date: 08/19/2019
 ms.openlocfilehash: a21bebda057a772017fa1481e18f9801d1fbcbdf
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963926"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126735819"
 ---
 # <a name="multi-caret-editing"></a>多个插入点编辑
 
