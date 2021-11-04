@@ -6,11 +6,11 @@ ms.author: jomatthi
 ms.date: 05/14/2020
 ms.assetid: EFD53CE9-8174-4FE4-8863-2984D22FD921
 ms.openlocfilehash: f91c2b1c3f06f8f1fbe54e32fde70b9fe88c5f5d
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963921"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126737202"
 ---
 # <a name="integrated-terminal"></a>集成终端
 在 Visual Studio for Mac 中，可以打开一个集成终端窗口，该终端最初从解决方案的根目录启动。 终端适用于不同类型的情况，包括运行前端任务（例如：npm、ng 或 vue）、管理容器、运行高级 git 命令、执行实体框架命令、查看 dotnet CLI 输出、添加 NuGet 包等。 
