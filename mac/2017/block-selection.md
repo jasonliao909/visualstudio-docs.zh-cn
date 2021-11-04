@@ -20,6 +20,6 @@ ms.locfileid: "126736793"
 
 ![块选择和添加文本](media/source-editor-image16.png)
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [Visual Studio 的多个插入点选择 (Windows)](/visualstudio/ide/finding-and-replacing-text#multi-caret-selection)

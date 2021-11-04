@@ -6,11 +6,11 @@ ms.author: dominicn
 ms.date: 12/16/2019
 ms.assetid: 4bcb8acf-db50-4bd8-a48e-86248f00c90b
 ms.openlocfilehash: 307196dc7e33d268c45a9bb126c002ad426c5558
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583913"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644510"
 ---
 # <a name="debugging-into-nuget-packages-with-source-link"></a>通过源链接调试 NuGet 包
 
@@ -21,16 +21,16 @@ ms.locfileid: "91583913"
 
 ## <a name="enable-source-link"></a>启用源链接
 
-若要在 Visual Studio for Mac 中启用源链接，请浏览到“Visual Studio”>“首选项...”>“项目”>“调试器”  ，并确保选中“单步执行外部代码”  复选框。
+若要在 Visual Studio for Mac 中启用源链接，请浏览到“Visual Studio”>“首选项...”>“项目”>“调试器”，并确保选中“单步执行外部代码”复选框。
 
 ![显示“单步执行外部代码”复选框的首选项对话框屏幕截图](media/source-link1.png)
 
-可以更改“下载外部代码”  中的设置，以满足你的偏好：
+可以更改“下载外部代码”中的设置，以满足你的偏好：
 * 询问：Visual Studio for Mac 将提示你下载外部代码
 * 始终：Visual Studio for Mac 将自动下载外部代码
 * 从不：Visual Studio for Mac 不会下载相关外部代码
 
-默认情况下，选择的是“询问”  。 如果找到 NuGet 包的外部代码，则会收到以下提示：
+默认情况下，选择的是“询问”。 如果找到 NuGet 包的外部代码，则会收到以下提示：
 
 ![找到 NuGet 包的外部代码时显示的提示屏幕截图](media/source-link2.png)
 

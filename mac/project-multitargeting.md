@@ -75,7 +75,7 @@ public class MyClass
 
 ![IntelliSense 中显示警告消息，API 将不适用于指定的目标框架。 示例文本：命名空间 System.Buffers、SharedUtils (netstandard2.0) - 不可用。 你可以使用导航栏切换上下文。](media/project-multitargeting-intellisense-warnings.png)
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [框架定位概述 (Windows)](/visualstudio/ide/visual-studio-multi-targeting-overview)
 - [SDK 样式项目中的目标框架](/dotnet/standard/frameworks#how-to-specify-target-frameworks)

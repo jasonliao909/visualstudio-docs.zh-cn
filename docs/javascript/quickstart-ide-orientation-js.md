@@ -159,7 +159,7 @@ Visual Studio 顶部的菜单栏将命令分组成不同的类别。 例如，�
 > [!div class="nextstepaction"]
 > [了解项目和解决方案](../get-started/tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [Visual Studio IDE 概述](../get-started/visual-studio-ide.md)
 - [Visual Studio 2017 的更多功能](../ide/advanced-feature-overview.md)

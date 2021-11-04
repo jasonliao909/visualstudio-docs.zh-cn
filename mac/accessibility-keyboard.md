@@ -7,11 +7,11 @@ ms.date: 09/23/2019
 ms.assetid: EF574E49-0465-4973-BE67-286DA20B8836
 ms.topic: how-to
 ms.openlocfilehash: f5fe827566d9949f5dca2a1a3e1dcfb1bf191c6e
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963847"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644535"
 ---
 # <a name="keyboard-navigation-in-visual-studio-for-mac"></a>Visual Studio for Mac 中的键盘导航
 

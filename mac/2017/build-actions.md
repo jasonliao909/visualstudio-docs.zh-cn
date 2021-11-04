@@ -29,6 +29,6 @@ C# 项目的一些常见生成操作为：
 
 此外，还有针对特定项目的生成操作。 Xamarin.iOS 项目具有 BundleResource 生成操作，用于将文件添加为应用程序包的一部分。 有关 Xamarin.Android 特定生成操作的信息，请参阅[生成过程](/xamarin/android/deploy-test/building-apps/build-process#Build_Actions)指南。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [生成操作（Windows 上的 Visual Studio）](/visualstudio/ide/build-actions)
