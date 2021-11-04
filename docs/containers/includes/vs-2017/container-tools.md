@@ -6,14 +6,14 @@ ms.author: ghogen
 ms.date: 02/01/2019
 ms.technology: vs-container-tools
 ms.topic: include
-ms.openlocfilehash: d403572e60d29c3af5197cc3bb647fa47bf8c0aa
-ms.sourcegitcommit: 8f8804b885c3a68f20bf0e9fe3729f2764145815
+ms.openlocfilehash: d1101f1b0906e994d609159fc643000daf4ef1bf
+ms.sourcegitcommit: 4efdab6a579b31927c42531bb3f7fdd92890e4ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "123122457"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "130354587"
 ---
-使用 Visual Studio，可以轻松地生成、调试和运行容器化的 ASP.NET Core 应用程序并将其发布到 Azure 容器注册表、Docker Hub、Azure 应用服务或你自己的容器注册表。 在本文中，我们将发布到容器注册表。
+使用 Visual Studio，可以轻松地生成、调试和运行容器化的 ASP.NET Core 应用程序并将其发布到 Azure 容器注册表、Docker Hub、Azure 应用服务或你自己的容器注册表。 在本文中，我们将发布到 Azure 容器注册表。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -34,7 +34,7 @@ ms.locfileid: "123122457"
 1. 选择“Web 应用程序”。
 1. 勾选“启用 Docker 支持”复选框  。
 
-   ![“启用 Docker 支持”复选框](../../media/container-tools/enable-docker-support.PNG)
+   ![“启用 Docker 支持”复选框的屏幕截图。](../../media/container-tools/enable-docker-support.PNG)
 
    屏幕截图显示 .NET Core；如果使用的是 .NET Framework，则略有不同。
 
@@ -115,7 +115,7 @@ baf9a678c88d        hellodockertools:dev   "C:\\remote_debugge..."   21 seconds 
     | **[SKU](/azure/container-registry/container-registry-skus)** | 标准 | 容器注册表的服务层  |
     | **注册表位置** | 靠近你的位置 | 在你附近或将使用容器注册表的其他服务附近的[区域](https://azure.microsoft.com/regions/)中，选择位置。 |
 
-    ![Visual Studio 的创建 Azure 容器注册表对话框][0]
+    ![Visual Studio 的创建 Azure 容器注册表对话框的屏幕截图。][0]
 
 1. 单击“创建” 
 
@@ -123,4 +123,4 @@ baf9a678c88d        hellodockertools:dev   "C:\\remote_debugge..."   21 seconds 
 
 现在可以将容器从注册表中拖放到任何能够运行 Docker 映像的主机上，例如[Azure 容器实例](/azure/container-instances/container-instances-tutorial-deploy-app)。
 
-[0]:../../media/hosting-web-apps-in-docker/vs-acr-provisioning-dialog.png
+[0]:../../media/hosting-web-apps-in-docker/vs-azure-container-registry-provisioning-dialog.png
