@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: e0ae068ad1137ff83b77839fe09b2baa6cccbefe
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: a69e474f3710accf73e308dcf2cb83de89321a5e
+ms.sourcegitcommit: 4efdab6a579b31927c42531bb3f7fdd92890e4ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122108715"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "130351491"
 ---
 # <a name="item-element-msbuild"></a>Item 元素 (MSBuild)
 
@@ -79,6 +79,8 @@ ms.locfileid: "122108715"
 |`Exclude`|可选特性。<br /><br /> 项列表中要排除的文件或通配符。|
 |`Condition`|可选特性。<br /><br /> 要评估的条件。 有关详细信息，请参阅[条件](../msbuild/msbuild-conditions.md)。|
 |`Remove`|可选特性。<br /><br /> 要从项列表中删除的文件或通配符。<br /><br />|
+|`MatchOnMetadata`|可选特性。<br /><br /> 修改引用其他项的 `Remove` 属性以匹配指定的元数据名称，而不是匹配引用项的值。 <br /><br /> 此属性只有在与仅包含对其他项（例如 `Remove="@(Compile);@(Content)"`）的引用的 `Remove` 属性一起指定时才有效。 有关更多详细信息，请参阅[项目](../msbuild/msbuild-items.md)。
+|`MatchOnMetadataOptions`|可选特性。<br /><br /> 指定 `MatchOnMetadata` 使用的字符串匹配策略。 可能的值为 `CaseSensitive`、`CaseInsensitive` 或 `PathLike`。 默认值为 `CaseInsensitive`。 |  
 |`KeepDuplicates`|可选特性。<br /><br /> 指定如果项是现有项的完全相同的副本时是否应将该项添加到目标组中。 如果源项和目标项的 `Include` 值相同但元数据不同，那么即使将 `KeepDuplicates` 设为`false` 仍会添加项。 有关详细信息，请参阅[项](../msbuild/msbuild-items.md)。<br /><br /> 仅当为位于 `ItemGroup` 内的 `Target` 中的项指定该属性时，该属性才有效。|
 |`KeepMetadata`|可选特性。<br /><br /> 要添加到目标项的源项的元数据。 只有在以分号分隔的列表中指定了名称的元数据会从源项传输到目标项。 有关详细信息，请参阅[项](../msbuild/msbuild-items.md)。<br /><br /> 仅当为位于 `ItemGroup` 内的 `Target` 中的项指定该属性时，该属性才有效。|
 |`RemoveMetadata`|可选特性。<br /><br /> 不传输到目标项的源项的元数据。 所有元数据都会从源项传输到目标项，名称被列在以分号分隔的名称列表中的元数据除外。 有关详细信息，请参阅[项](../msbuild/msbuild-items.md)。<br /><br /> 仅当为位于 `ItemGroup` 内的 `Target` 中的项指定该属性时，该属性才有效。|

@@ -1,6 +1,6 @@
 ---
 title: 使用 IntelliTest 为你的代码生成单元测试
-description: IntelliTest 浏览你的 .NET 代码，以生成测试数据和单元测试套件。 了解如何运行 IntelliTest 来查看哪些测试会失败并修复这些测试。
+description: IntelliTest 浏览你的 .NET 代码，以生成测试数据和单元测试套件。 了解如何运行 IntelliTest 来生成包含所有逻辑分支的智能模糊测试，查看哪些测试失败并修复它们。
 ms.custom: SEO-VS-2020
 ms.date: 10/05/2015
 ms.topic: conceptual
@@ -12,16 +12,16 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: dba46c3b111f82bdb6e03eca5442b2f497e8ad3e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 317cd50c9c6854ea683e7b40d55821ac2a197054
+ms.sourcegitcommit: 4efdab6a579b31927c42531bb3f7fdd92890e4ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122083799"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "130351504"
 ---
-# <a name="how-to-generate-unit-tests-by-using-intellitest"></a>操作说明：通过使用 IntelliTest 来生成单元测试
+# <a name="generate-unit-tests-for-fuzz-testing-by-using-intellitest"></a>使用 IntelliTest 生成用于模糊测试的单元测试
 
-IntelliTest 浏览你的 .NET 代码，以生成测试数据和单元测试套件。 对于代码中的每个语句，将生成执行该语句的测试输入。 为代码中的每个条件分支执行案例分析。 例如，分析 `if` 语句、断言和可能引发异常的所有操作。 此分析用于为你的每个方法生成参数化单元测试的测试数据，从而创建具有较高代码覆盖率的单元测试。
+IntelliTest 浏览你的 .NET 代码，以生成测试数据和单元测试套件。 对于代码中的每个语句，将生成执行该语句的测试输入。 为代码中的每个条件分支执行案例分析。 例如，分析 `if` 语句、断言和可能引发异常的所有操作。 此分析用于为你的每个方法生成参数化单元测试的测试数据，从而创建具有较高代码覆盖率的单元测试。 将其视为智能模糊测试，用于修整输入和测试用例，以执行所有逻辑分支并检查是否有异常。
 
 当你运行 IntelliTest 时，你可轻松看到哪些测试会失败，并可添加任何必要的代码来修复它们。 你可选择要保存到测试项目中的已生成测试，以提供回归套件。 当你更改代码时，重新运行 IntelliTest，以使生成的测试与你的代码更改同步。
 

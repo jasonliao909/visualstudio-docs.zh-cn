@@ -4,54 +4,46 @@
   items:
     - name: 初探部署
       href: deploying-applications-services-and-components.md
-    - name: 部署到文件夹、IIS 或 Azure
-      href: deploying-applications-services-and-components-resources.md
+    - name: 发布概述
+      href: publish-overview.md
 - name: 快速入门
   items:
-    - name: 部署到 Azure App Service
-      href: quickstart-deploy-to-azure.md
-    - name: 部署到适用于 Linux 的应用服务
-      href: quickstart-deploy-to-linux.md
-    - name: 部署到网站
-      href: quickstart-deploy-to-a-web-site.md
-    - name: 部署到文件夹
-      href: quickstart-deploy-to-local-folder.md
+    - name: 部署 ASP.NET Web 应用
+      href: quickstart-deploy-aspnet-web-app.md
 - name: 教程
   items:
     - name: .NET
       items:
-        - name: 使用 ClickOnce 部署 .NET Windows 应用程序
-          href: quickstart-deploy-using-clickonce-folder.md
-        - name: 使用 ClickOnce 部署 .NET Framework 桌面应用
-          href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
-        - name: 创建安装程序包（Windows 桌面）
-          href: deploying-applications-services-and-components.md#create-an-installer-package-windows-desktop
-        - name: 为 Microsoft Store 打包桌面应用 >>
-          href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
-        - name: 从命令行生成 ClickOnce 应用程序
-          href: building-clickonce-applications-from-the-command-line.md
-    - name: ASP.NET
-      items:
-        - name: 将 ASP.NET Core 应用发布到 Azure >>
-          href: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs
-        - name: 导入发布设置并部署到 IIS
-          href: tutorial-import-publish-settings-iis.md
-        - name: 导入发布设置并部署到 Azure
-          href: tutorial-import-publish-settings-azure.md
-        - name: 使用 Git 将 ASP.NET Core 持续部署到 Azure >>
-          href: /azure/app-service/deploy-continuous-deployment
+        - name: ASP.NET
+          items:
+            - name: 将 ASP.NET Core 应用发布到 Azure >>
+              href: /azure/app-service/quickstart-dotnetcore?tabs=netcore31&pivots=development-environment-vs#publish-your-web-app
+            - name: 从 IIS 获取发布设置
+              href: tutorial-import-publish-settings-iis.md
+            - name: 从 Azure 获取发布设置
+              href: tutorial-import-publish-settings-azure.md
+            - name: 使用 Git 将 ASP.NET Core 持续部署到 Azure >>
+              href: /azure/app-service/deploy-continuous-deployment
+        - name: 桌面
+          items:
+            - name: 使用 ClickOnce 部署 .NET Windows 应用程序
+              href: quickstart-deploy-using-clickonce-folder.md
+            - name: 使用 ClickOnce 部署 .NET Framework 桌面应用
+              href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
+            - name: 创建安装程序包（Windows 桌面）
+              href: deploying-applications-services-and-components.md#create-an-installer-package-windows-desktop
+            - name: 为 Microsoft Store 打包桌面应用 >>
+              href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
+            - name: 从命令行生成 ClickOnce 应用程序
+              href: building-clickonce-applications-from-the-command-line.md
     - name: C++
       items:
         - name: 创建安装程序包 >>
           href: deploying-applications-services-and-components.md#create-an-installer-package-windows-desktop
         - name: 为 Microsoft Store 打包桌面应用 >>
-          href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
+          href: /windows/msix/package/packaging-uwp-apps
         - name: 使用 ClickOnce 部署 C++/CLR 应用 >>
           href: /cpp/windows/clickonce-deployment-for-visual-cpp-applications
-    - name: UWP
-      items:
-        - name: 使用 Visual Studio 打包 UWP 应用 >>
-          href: /windows/uwp/packaging/packaging-uwp-apps
     - name: Node.js
       items:
         - name: 发布到 Linux 应用服务 >>
@@ -266,6 +258,8 @@
               href: schedules-element-bootstrapper.md
 - name: 参考
   items:
+    - name: 部署到文件夹、IIS 或 Azure
+      href: deploying-applications-services-and-components-resources.md
     - name: ClickOnce 参考
       items:
         - name: ClickOnce 参考概述
