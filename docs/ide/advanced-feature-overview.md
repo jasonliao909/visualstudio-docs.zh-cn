@@ -2,7 +2,7 @@
 title: 高级功能
 description: 了解高级功能，这些功能可能更适合有经验的开发人员或已熟悉 Visual Studio 的开发人员。
 ms.custom: vs-acquisition
-ms.date: 10/01/2021
+ms.date: 11/04/2021
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 136c66296e1980f3faae31dc0d5fc4c16fbaff57
-ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
+ms.openlocfilehash: 7e8284fdb084ea681afd1adc10e718c5096ce323
+ms.sourcegitcommit: aff49629012f4d5fa07c75ea0ca5bf53d28aa173
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "129431479"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "131662693"
 ---
 # <a name="features-of-visual-studio"></a>Visual Studio 的功能
 
@@ -44,10 +44,15 @@ ms.locfileid: "129431479"
 Visual Studio 具有可用于轻松地创建已启用 Microsoft Azure 云的应用程序的工具套件。 可以从 Visual Studio 集成开发环境 (IDE) 直接配置、生成、调试、打包和部署 Azure 应用和服务。 若要获取 Azure 工具和项目模板，安装 Visual Studio 时请选择“Azure 开发”  工作负载。
 
 ::: moniker range="<=vs-2019"
+
 ![Visual Studio 安装程序中的 Azure 开发工作负载的屏幕截图。](../data-tools/media/azure-development-workload.png)
+
 ::: moniker-end
+
 ::: moniker range=">=vs-2022"
+
 :::image type="content" source="media/vs-2022/azure-development-workload.png" alt-text="Visual Studio 安装程序中选择的 Azure 开发工作负载的屏幕截图。" border="false":::
+
 ::: moniker-end
 
 ::: moniker range="vs-2017"
