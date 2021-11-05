@@ -6,11 +6,11 @@ ms.author: sayedha
 ms.date: 01/08/2020
 ms.assetid: 8B8CEBE8-00DA-4AD1-8193-77F58B57F244
 ms.openlocfilehash: a04d15fc2fc768c2d6896396df5dc0f134d1720b
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644313"
 ---
 # <a name="net-core-support"></a>.NET Core 支持
 
