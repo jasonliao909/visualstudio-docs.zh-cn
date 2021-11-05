@@ -1,17 +1,17 @@
 ---
-ms.date: 09/14/2021
+ms.date: 11/04/2021
 ms.technology: vs-ide-general
 ms.custom: vs-get-started
 author: anandmeg
 ms.author: meghaanand
 manager: jmartens
 ms.topic: include
-ms.openlocfilehash: d98812bdba2807038d23f43d07ea48f6d3d43bc0
-ms.sourcegitcommit: da19ed1e48259b219c61c4cb9e98b006004a5766
+ms.openlocfilehash: 54effd262078cb9758d9464eb7438075b865e348
+ms.sourcegitcommit: aff49629012f4d5fa07c75ea0ca5bf53d28aa173
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "128047757"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "131663733"
 ---
 集成开发环境 (IDE) 是一个功能丰富的程序，支持软件开发的许多方面。 Visual Studio IDE 是一种创新启动板，可用于编辑、调试并生成代码，然后发布应用。 除了大多数 IDE 提供的标准编辑器和调试器之外，Visual Studio 还包括编译器、代码完成工具、图形设计器和许多其他功能，以加强软件开发过程。
 
@@ -67,7 +67,6 @@ Visual Studio 有三个版本：社区版、专业版和企业版。 请参阅[�
    ::: moniker range=">=vs-2022"
    ![屏幕截图显示了 Visual Studio 中的波形曲线。](../media/vs-2022/squiggles-error.png)
    ::: moniker-end
-  
 
 ::: moniker range="vs-2019"
 - 代码清理
@@ -209,7 +208,7 @@ Visual Studio 有三个版本：社区版、专业版和企业版。 请参阅[�
 
 首先，请[下载 Visual Studio](https://visualstudio.microsoft.com/downloads) 并将其安装到你的系统上。 在模块化安装程序中，可以选择和安装工作负载。工作负载是你希望使用的编程语言或平台所需的一些功能。 若要使用以下步骤[创建程序](#create-a-program)，请确保在安装过程中选择“.NET 桌面开发”工作负载。
 
-![Visual Studio 安装程序中选择的 .NET 桌面开发工作负载的屏幕截图。](../media/vs-2022/dot-net-development-workload.png)
+:::image type="content" source="../../ide/media/vs-2022/dot-net-development-workload.png" alt-text="Visual Studio 安装程序中选择的 .NET 桌面开发工作负载的屏幕截图。":::
 
 ::: moniker-end
 
@@ -509,13 +508,13 @@ Visual Studio 有三个版本：社区版、专业版和企业版。 请参阅[�
    ![调试控制台窗口的屏幕截图，其中显示输入姓名的提示、所输入的姓名以及输出“Hello Georgette! Day of year: 244”。](../media/vs-2022/overview-console-final.png)
    ::: moniker-end
 
-## <a name="debug-code&quot;></a>调试代码
+## <a name="debug-code"></a>调试代码
 
 编写代码时，应运行并测试该代码是否存在 bug。 可通过 Visual Studio 的调试系统逐句执行代码，一次执行一条语句，逐步检查变量。 可以设置在特定行停止代码执行的断点，并观察变量值在代码运行时的变化方式。
 
 通过设置断点，可查看程序运行时 `username` 变量的值。
 
-1. 通过单击代码行旁边最左边距（或装订线），在代码行上设置一个断点，该断点表示 `Console.WriteLine($&quot;\nHello {username}!");`。 也可以选择代码行，然后按 F9。
+1. 通过单击代码行旁边最左边距（或装订线），在代码行上设置一个断点，该断点表示 `Console.WriteLine($"\nHello {username}!");`。 也可以选择代码行，然后按 F9。
 
    装订线中会出现一个红色圆圈，并突出显示该行。
 
