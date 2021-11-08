@@ -7,12 +7,12 @@ ms.assetid: badd1d4a-90a6-46de-a037-945a91e6019b
 ms.date: 10/18/2021
 ms.topic: how-to
 description: 了解有关 Visual Studio 订阅中包含的 Visual Studio App Center 权益。
-ms.openlocfilehash: 604ee2a5d6f6ea6e93de18dca402c6ff4a60679a
-ms.sourcegitcommit: 6c847aedf0f943e253a4c2f0e4b516b953168bc7
+ms.openlocfilehash: 56e7b49b58a131f2c565e75560dd83c49eb5b3a1
+ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "130152181"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "131127684"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Visual Studio App Center
 App Center 是针对应用的任务控制。
@@ -83,4 +83,4 @@ Visual Studio App Center 入门十分简单。
 请务必激活这些重要权益以充分利用 Visual Studio 订阅：
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
-- [Azure 开发测试个人额度](vs-azure.md)
+- [Azure 开发测试套餐/额度](/azure/devtest/offer/)

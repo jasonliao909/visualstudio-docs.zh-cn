@@ -2,7 +2,7 @@
 title: Visual Studio 2022 中的新增功能
 titleSuffix: ''
 description: 了解 Visual Studio 2022 预览版中的新增功能。
-ms.date: 10/29/2021
+ms.date: 11/04/2021
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -14,12 +14,12 @@ ms.prod: visual-studio-dev17
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 16c932a37547e8c166768f3da94a97cbec1395cf
-ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
+ms.openlocfilehash: bd86bebeb4256a5bce645aa88123ad6444fcea57
+ms.sourcegitcommit: aff49629012f4d5fa07c75ea0ca5bf53d28aa173
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "131127073"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "131662610"
 ---
 # <a name="whats-new-in-visual-studio-2022"></a>Visual Studio 2022 中的新增功能
 
@@ -78,7 +78,9 @@ Windows 上的 Visual Studio 2022 现在是 64 位应用程序。 这意味着�
 
 ### <a name="look--feel"></a>外观和感觉
 
-从新的图标到细微的颜色对比度调整和新的 Cascadia Code 字体，我们致力于使每个人都能更轻松地使用 Visual Studio 2022。 有关所有详细信息，请参阅[我们已升级 Visual Studio 2022 中的 UI](https://devblogs.microsoft.com/visualstudio/weve-upgraded-the-ui-in-visual-studio-2022/) 博客文章。
+从新的图标到细微的颜色对比度调整和新的 [Cascadia Code](https://github.com/microsoft/cascadia-code#welcome) 字体，我们致力于使每个人都能更轻松地使用 Visual Studio 2022。 有关所有详细信息，请参阅[我们已升级 Visual Studio 2022 中的 UI](https://devblogs.microsoft.com/visualstudio/weve-upgraded-the-ui-in-visual-studio-2022/) 博客文章。
+
+:::image type="content" source="media/vs-2022/icon-refresh.png" alt-text="屏幕快照显示了 Visual Studio 中之前的图标和刷新后的图标之间的对比。":::
 
 ### <a name="personalization"></a>个性化设置
 
@@ -98,6 +100,7 @@ Windows 上的 Visual Studio 2022 现在是 64 位应用程序。 这意味着�
 
 ## <a name="see-also"></a>请参阅
 
+* [Visual Studio 2022 正式上市](https://devblogs.microsoft.com/visualstudio/join-us-november-8th-for-the-launch-of-visual-studio-2022/)
 * [Visual Studio 2022 RC（候选发布版本）](https://devblogs.microsoft.com/visualstudio/join-us-november-8th-for-the-launch-of-visual-studio-2022/)
 * [Visual Studio 2022 预览版 4](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-preview-4-is-now-available/)
 * [Visual Studio 2022 预览版 3](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-preview-3-now-available/)
