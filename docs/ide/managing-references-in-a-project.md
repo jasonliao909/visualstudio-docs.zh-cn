@@ -2,7 +2,7 @@
 title: 管理项目中的引用
 description: 了解如何管理项目对外部组件和已连接服务的引用。
 ms.custom: SEO-VS-2020
-ms.date: 11/23/2020
+ms.date: 10/26/2021
 ms.topic: conceptual
 f1_keywords:
 - vs.ProjectPropertiesReferencePaths
@@ -24,12 +24,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c1e65c332383a6a5b736201a3373204f42aff07
-ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
+ms.openlocfilehash: 9dbb6917e5cad6e6ac020dbbd663855f187c9af3
+ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "129430810"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "131126436"
 ---
 # <a name="manage-references-in-a-project"></a>管理项目中的引用
 
@@ -57,13 +57,13 @@ ms.locfileid: "129430810"
 
 ### <a name="project-references"></a>项目引用
 
-通用 Windows 平台 (UWP) 项目可以创建对解决方案中其他 UWP 项目的引用，也可以创建对 Windows 8.1 项目或二进制文件的引用，前提是这些项目不使用 Windows 10 中已弃用的 API。 有关详细信息，请参阅 [从 Windows Runtime 8 移动到 UWP](/windows/uwp/porting/w8x-to-uwp-root)。
+通用 Windows 平台 (UWP) 项目可以创建对解决方案中其他 UWP 项目的引用，也可以创建对 Windows 8.1 项目或二进制文件的引用，前提是这些项目不使用 Windows 10 及更高版本中已弃用的 API。 有关详细信息，请参阅 [从 Windows Runtime 8 移动到 UWP](/windows/uwp/porting/w8x-to-uwp-root)。
 
-如果选择将 Windows 8.1 项目重定向到 Windows 10，请参阅[移植、迁移和升级 Visual Studio 项目](../porting/port-migrate-and-upgrade-visual-studio-projects.md)。
+如果选择将 Windows 8.1 项目重定向到 Windows 10 及更高版本，请参阅[移植、迁移和升级 Visual Studio 项目](../porting/port-migrate-and-upgrade-visual-studio-projects.md)。
 
 ### <a name="extension-sdk-references"></a>扩展 SDK 引用
 
-Visual Basic、C#、C++ 和 JavaScript 通用 Windows 平台 (UWP) 应用可以引用面向 Windows 8.1 的扩展 SDK，前提是这些扩展 SDK 不使用 Windows 10 中已弃用的 API。 请查看扩展 SDK 供应商站点，确定它是否可由 UWP 应用引用。
+Visual Basic、C#、C++ 和 JavaScript 通用 Windows 平台 (UWP) 应用可以引用面向 Windows 8.1 的扩展 SDK，前提是这些扩展 SDK 不使用 Windows 10 及更高版本中已弃用的 API。 请查看扩展 SDK 供应商站点，确定它是否可由 UWP 应用引用。
 
 如果确定你的应用所引用的扩展 SDK 不受支持，则需执行以下步骤：
 
@@ -75,7 +75,7 @@ Visual Basic、C#、C++ 和 JavaScript 通用 Windows 平台 (UWP) 应用可以�
     > 查看“引用管理器”是一种了解某扩展 SDK 是否在其他扩展 SDK 上具有依赖关系的方法。 重启 Visual Studio，创建新的 C# UWP 应用项目，然后右键单击该项目并选择“添加引用”。 依次转到“Windows”选项卡、“扩展”子选项卡，选择该扩展 SDK。 查看“引用管理器”中的右窗格。 如果具有依赖关系，则将在该位置列出依赖关系。
 
     > [!IMPORTANT]
-    > 如果项目面向 Windows 10，并且上一步中安装的扩展 SDK 在 Microsoft Visual C 运行时包上具有依赖关系，则与 Windows 10 兼容的 Microsoft Visual C++ 运行时包的版本为 v14.0，并与 Visual Studio 一起安装。
+    > 如果项目专门面向 Windows 10，并且上一步中安装的扩展 SDK 在 Microsoft Visual C 运行时包上具有依赖关系，则与 Windows 10 兼容的 Microsoft Visual C++ 运行时包的版本为 v14.0，并与 Visual Studio 一起安装。
 
 1. 如果上一步中安装的扩展 SDK 在其他扩展 SDK 上具有依赖关系，请转到拥有依赖关系的供应商站点，并安装与项目所面向的平台版本相兼容的版本的依赖项。
 
