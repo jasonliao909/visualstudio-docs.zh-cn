@@ -1,6 +1,6 @@
 ---
-title: Visual Studio 2022 预览版中删除的 api
-description: 了解 Visual Studio 2022 预览版中删除的 VS SDK api，适用于扩展创作者更新其扩展以使用 Visual Studio 2022 preview。
+title: Visual Studio 2022 中移除了 api
+description: 了解 Visual Studio 2022 中删除的 VS SDK api，使扩展创作者更新其扩展，使其与 Visual Studio 2022 一起工作。
 ms.date: 06/08/2021
 ms.topic: reference
 author: leslierichardson95
@@ -11,12 +11,12 @@ monikerRange: vs-2022
 ms.workload:
 - vssdk
 feedback_system: GitHub
-ms.openlocfilehash: 4501fdb465452eff1623e39c50e8c97f3bb5ca5b
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: b6dcbc54406b18a06c690a2cfb2b54fbfd4db858
+ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126665309"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "132001499"
 ---
 # <a name="visual-studio-2022-sdk-removed-apis"></a>Visual Studio 2022 SDK 已删除 api
 
@@ -78,7 +78,7 @@ ms.locfileid: "126665309"
 
 ### <a name="recommended-updates"></a>建议的更新
 
-或的 `IVsTextScanner` 用户 `IVsFullTextScanner` 应该改用 `IVsTextLines` ([文档](/dotnet/apimicrosoft.visualstudio.textmanager.interop.ivstextlines.getlinetext)) 。
+或的 `IVsTextScanner` 用户 `IVsFullTextScanner` 应该改用 `IVsTextLines` ([文档](/dotnet/api/microsoft.visualstudio.textmanager.interop.ivstextlines.getlinetext)。
 
 ## <a name="asynchronous-solution-load-and-lightweight-solution-load"></a>异步解决方案加载和轻型解决方案加载
 

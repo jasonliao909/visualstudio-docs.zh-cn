@@ -8,12 +8,12 @@ ms.author: ghogen
 ms.date: 10/25/2021
 ms.technology: vs-container-tools
 ms.topic: quickstart
-ms.openlocfilehash: 0476cbe027b43e1c9f3be7f26a1b039de3a01319
-ms.sourcegitcommit: 141efad8a6a303737bdc563a4f48964411f342eb
+ms.openlocfilehash: 884024196a4b6d43ebc4d2c0a1d6e3c70259d649
+ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "131249681"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "132001307"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>快速入门：将 Docker 与 Visual Studio 中的 React 单页面应用结合使用
 
@@ -38,7 +38,7 @@ ms.locfileid: "131249681"
 ::: moniker-end
 ::: moniker range=">=vs-2022"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-* 安装了“Web 开发”、“Azure 工具”工作负载和/或“.NET Core 跨平台开发”工作负载的 [Visual Studio 2022](https://visualstudio.microsoft.com/vs/preview/)
+* 安装了“Web 开发”、“Azure 工具”工作负载和/或“.NET Core 跨平台开发”工作负载的 [Visual Studio 2022](https://visualstudio.microsoft.com/downloads)
 * 若要发布到 Azure 容器注册表，需要 Azure 订阅。 [注册免费试用版](https://azure.microsoft.com/offers/ms-azr-0044p/)。
 * [Node.js](https://nodejs.org/en/download/)
 * 对于 Windows 容器、Windows 10 版本 1809 或更高版本，使用本文中引用的 Docker 映像。

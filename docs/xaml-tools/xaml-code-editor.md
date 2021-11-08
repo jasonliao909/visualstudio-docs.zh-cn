@@ -5,18 +5,18 @@ ms.date: 06/16/2020
 ms.topic: overview
 f1_keywords:
 - VS.XamlEditor
-monikerRange: vs-2019
+monikerRange: '>=vs-2019'
 ms.custom: contperf-fy21q4
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.technology: vs-xaml-tools
-ms.openlocfilehash: b99a75dd6c03183b49154a6c3ea4d68edc7130b2
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 92b95174862d7d0a601c4083347ef44d2203ec8e
+ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126652473"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "132001333"
 ---
 # <a name="xaml-code-editor"></a>XAML 代码编辑器
 
@@ -308,5 +308,3 @@ XAML 代码中出现的灯泡图标是[快速操作](../ide/quick-actions.md)的
 - [Visual Studio 代码编辑器功能](../ide/writing-code-in-the-code-and-text-editor.md)
 - [UWP 应用中的 XAML](/windows/uwp/xaml-platform/xaml-overview/)
 - [Xamarin.Forms 应用中的 XAML](/xamarin/xamarin-forms/xaml/)
-- [Xamarin 移动应用开发 (Mac)](/visualstudio/mac/xamarin/)
-- [Visual Studio 2019 for Mac - IDE 导览 (Mac)](/visualstudio/mac/ide-tour/)

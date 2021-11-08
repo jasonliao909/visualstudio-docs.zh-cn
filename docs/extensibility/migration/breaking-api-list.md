@@ -1,6 +1,6 @@
 ---
-title: Visual Studio 2022 RC 中的重大 API 更改
-description: 了解在将扩展迁移到 Visual Studio 2022 RC 时导致现有 VS 扩展无法编译的 API 更改。
+title: Visual Studio 2022 中的重大 API 更改
+description: 了解将扩展迁移到 Visual Studio 2022 时导致现有 VS 扩展无法编译的 API 更改。
 ms.date: 06/08/2021
 ms.topic: reference
 author: leslierichardson95
@@ -11,12 +11,12 @@ monikerRange: vs-2022
 ms.workload:
 - vssdk
 feedback_system: GitHub
-ms.openlocfilehash: 4e7d206ce21a173b9bce8a1e91f898165b6801f7
-ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
+ms.openlocfilehash: 0c40a41517b9e9a87c695915016e19dbdcfe746a
+ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "131126541"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "132001512"
 ---
 # <a name="breaking-api-changes-in-visual-studio-2022"></a>Visual Studio 2022 中的重大 API 更改
 
@@ -139,14 +139,14 @@ VisualStudio. IAsyncServiceProvider。 | VisualStudio. COMAsyncServiceProvider. 
 
 作为我们努力在文件中查找的一项工作，我们在 VS 2022 中为 EnvDTE 接口的以下 Api 提供了不推荐使用的支持。
 
--   [EditPoint. FindPattern (String，Int32，EditPoint，TextRanges) ](https://docs.microsoft.com/dotnet/api/envdte.editpoint.findpattern?view=visualstudiosdk-2019)
--   [EditPoint. ReplacePattern (TextPoint，String，String，Int32，TextRanges) ](https://docs.microsoft.com/dotnet/api/envdte.editpoint.replacepattern?view=visualstudiosdk-2019)
--   [EditPoint. ReplaceText (Object，String，Int32) ](https://docs.microsoft.com/dotnet/api/envdte.editpoint.replacetext?view=visualstudiosdk-2019)
--   [TextSelection. FindText (String，Int32) ](https://docs.microsoft.com/dotnet/api/envdte.textselection.findtext?view=visualstudiosdk-2019#EnvDTE_TextSelection_FindText_System_String_System_Int32_)
--   [TextSelection. FindPattern (String，Int32，TextRanges) ](https://docs.microsoft.com/dotnet/api/envdte.textselection.findpattern?view=visualstudiosdk-2019)
--   [TextSelection. ReplaceText (String，String，Int32) ](https://docs.microsoft.com/dotnet/api/envdte.textselection.replacetext?view=visualstudiosdk-2019)
--   [TextSelection. ReplacePattern (String，String，Int32，TextRanges) ](https://docs.microsoft.com/dotnet/api/envdte.textselection.replacepattern?view=visualstudiosdk-2019)
--   [TextDocument. ReplacePattern (String，String，Int32，TextRanges) ](https://docs.microsoft.com/dotnet/api/envdte.textdocument.replacepattern?view=visualstudiosdk-2019)
--   [TextDocument. ReplaceText (String，String，Int32) ](https://docs.microsoft.com/dotnet/api/envdte.textdocument.replacetext?view=visualstudiosdk-2019)
+-   [EditPoint. FindPattern (String，Int32，EditPoint，TextRanges) ](/dotnet/api/envdte.editpoint.findpattern?view=visualstudiosdk-2019&preserve-view=true)
+-   [EditPoint. ReplacePattern (TextPoint，String，String，Int32，TextRanges) ](/dotnet/api/envdte.editpoint.replacepattern?view=visualstudiosdk-2019&preserve-view=true)
+-   [EditPoint. ReplaceText (Object，String，Int32) ](/dotnet/api/envdte.editpoint.replacetext?view=visualstudiosdk-2019&preserve-view=true)
+-   [TextSelection. FindText (String，Int32) ](/dotnet/api/envdte.textselection.findtext?view=visualstudiosdk-2019&preserve-view=true#EnvDTE_TextSelection_FindText_System_String_System_Int32_)
+-   [TextSelection. FindPattern (String，Int32，TextRanges) ](/dotnet/api/envdte.textselection.findpattern?view=visualstudiosdk-2019&preserve-view=true)
+-   [TextSelection. ReplaceText (String，String，Int32) ](/dotnet/api/envdte.textselection.replacetext?view=visualstudiosdk-2019&preserve-view=true)
+-   [TextSelection. ReplacePattern (String，String，Int32，TextRanges) ](/dotnet/api/envdte.textselection.replacepattern?view=visualstudiosdk-2019&preserve-view=true)
+-   [TextDocument. ReplacePattern (String，String，Int32，TextRanges) ](/dotnet/api/envdte.textdocument.replacepattern?view=visualstudiosdk-2019&preserve-view=true)
+-   [TextDocument. ReplaceText (String，String，Int32) ](/dotnet/api/envdte.textdocument.replacetext?view=visualstudiosdk-2019&preserve-view=true)
 
-在 VS 2022 和更高版本中，这些 Api 将不再工作。 本指南旨在 [ () VisualStudio 中使用 IFinder 接口 ](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.text.operations.ifinder?view=visualstudiosdk-2019) ，而不是在其上查找和替换方法。 可以通过 [IFindService 方法](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.text.operations.ifindservice.createfinderfactory?view=visualstudiosdk-2019)获取对实现 IFinder 接口的对象的访问权限。 可在此处找到将第三方扩展迁移到 Visual Studio 从较旧的 api 迁移到新式 IFinder api 的示例：将[Maid 扩展从 EnvDTE 查找并替换为新式 IFinder api](https://github.com/codecadwallader/codemaid/pull/847/commits/12e226a2ad6e9a4ccec4c3fda1a19db63eef6efd)
+在 VS 2022 和更高版本中，这些 Api 将不再工作。 本指南旨在 [ () VisualStudio 中使用 IFinder 接口 ](/dotnet/api/microsoft.visualstudio.text.operations.ifinder?view=visualstudiosdk-2019&preserve-view=true) ，而不是在其上查找和替换方法。 可以通过 [IFindService 方法](/dotnet/api/microsoft.visualstudio.text.operations.ifindservice.createfinderfactory?view=visualstudiosdk-2019&preserve-view=true)获取对实现 IFinder 接口的对象的访问权限。 可在此处找到将第三方扩展迁移到 Visual Studio 从较旧的 api 迁移到新式 IFinder api 的示例：将[Maid 扩展从 EnvDTE 查找并替换为新式 IFinder api](https://github.com/codecadwallader/codemaid/pull/847/commits/12e226a2ad6e9a4ccec4c3fda1a19db63eef6efd)

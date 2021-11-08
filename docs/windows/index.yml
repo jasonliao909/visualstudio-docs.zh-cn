@@ -8,7 +8,7 @@ metadata:
   description: 了解如何使用 Visual Studio 并以喜欢的语言来开发适用于任何平台或设备的应用程序、服务和工具。
   ms.topic: hub-page
   ms.custom: contperf-fy21q1
-  ms.date: 07/16/2021
+  ms.date: 11/08/2021
   ms.author: jmartens
   author: j-martens
   monikerRange: '>=vs-2017'
@@ -23,9 +23,9 @@ highlightedContent:
     - title: 欢迎使用 Visual Studio IDE
       itemType: overview
       url: ../get-started/visual-studio-ide.md
-    - title: Visual Studio 2022 RC
+    - title: Visual Studio 2022
       itemType: whats-new
-      url: /visualstudio/releases/2022/release-notes-preview
+      url: ../ide/whats-new-visual-studio-2022.md
     - title: 提高你的 Visual Studio 技能
       itemType: learn
       url: /learn/browse/?products=vs
