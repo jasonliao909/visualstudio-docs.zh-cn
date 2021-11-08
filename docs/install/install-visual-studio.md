@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 260eac52276ba460ad909a2f8dff06964938f01d
-ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
+ms.openlocfilehash: 7db6278bd563295ef2e82cd014fa47ceb2062a55
+ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "130011115"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "132001460"
 ---
 # <a name="install-visual-studio"></a>安装 Visual Studio
 
@@ -43,7 +43,7 @@ ms.locfileid: "130011115"
 
 ::: moniker range=">=vs-2022"
 
-欢迎使用 Visual Studio 2022 RC！ 在此版本中，可轻松选择并仅安装所需功能。
+欢迎使用 Visual Studio 2022！ 在此版本中，可轻松选择并仅安装所需功能。
 
 ::: moniker-end
 
@@ -152,7 +152,7 @@ ms.locfileid: "130011115"
 为此，请选择下面的按钮，选择所需的 Visual Studio 版本，然后保存到“Downloads”文件夹。
 
  > [!div class="button"]
- > [下载 Visual Studio](https://visualstudio.microsoft.com/vs/preview/#download-preview)
+ > [下载 Visual Studio](https://visualstudio.microsoft.com/downloads)
 
 ::: moniker-end
 
@@ -214,11 +214,11 @@ ms.locfileid: "130011115"
 
 ::: moniker-end
 
-::: moniker range=">=vs-2022&quot;
+::: moniker range=">=vs-2022"
 
 1. 在 Visual Studio 安装程序中选择所需的工作负载。
 
-   ![显示 Visual Studio 安装程序“工作负载”选项卡的屏幕截图。](../install/media/vs-2022/vs-installer-workloads.png &quot;安装 Visual Studio 工作负载")
+   ![显示 Visual Studio 安装程序“工作负载”选项卡的屏幕截图。](../install/media/vs-2022/vs-installer-workloads.png "安装 Visual Studio 工作负载")
 
      查看工作负载摘要，确定哪些工作负载支持所需的功能。 例如，选择“ASP.NET 和 Web 开发”工作负载以使用 Web Live Preview 编辑 ASP.NET 网页，或者使用 Blazor 生成响应式 Web 应用，或者从“桌面和移动”工作负载中选择，以使用 C# 或面向 C++20 的 C++ 项目开发跨平台应用 。
 

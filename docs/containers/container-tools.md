@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 10/27/2021
 ms.technology: vs-container-tools
 ms.topic: quickstart
-ms.openlocfilehash: 99696d6c0a3b5603ce173a6e2c7a3171aac76a4b
-ms.sourcegitcommit: aff49629012f4d5fa07c75ea0ca5bf53d28aa173
+ms.openlocfilehash: d38bb81b1f46c4f97b02507a13431cf02b8391e2
+ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "131662595"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "132001320"
 ---
 # <a name="quickstart-docker-in-visual-studio"></a>快速入门：Visual Studio 中的 Docker
 
@@ -33,7 +33,7 @@ ms.locfileid: "131662595"
 ## <a name="prerequisites"></a>先决条件
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-* 安装了“Web 开发”、“Azure 工具”工作负载和/或“.NET Core 跨平台开发”工作负载的 [Visual Studio 2022 RC](https://visualstudio.microsoft.com/downloads)  
+* 安装了“Web 开发”、“Azure 工具”工作负载和/或“.NET Core 跨平台开发”工作负载的 [Visual Studio 2022](https://visualstudio.microsoft.com/downloads)
 * 用于使用 .NET Core 进行开发的 [.NET Core 开发工具](https://dotnet.microsoft.com/download/dotnet-core/)
 * 若要发布到 Azure 容器注册表，需要 Azure 订阅。 [注册免费试用版](https://azure.microsoft.com/free/dotnet/)。
 

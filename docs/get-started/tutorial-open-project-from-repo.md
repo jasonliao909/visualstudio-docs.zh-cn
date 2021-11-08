@@ -2,7 +2,7 @@
 title: 教程：在 Visual Studio 中打开存储库中的项目
 description: 了解如何使用 Visual Studio 打开 Git 或 Azure DevOps 存储库中的项目。
 ms.custom: vs-acquisition, get-started
-ms.date: 09/30/2021
+ms.date: 11/05/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: bb17ea748e0948584818993acf383f555872907a
-ms.sourcegitcommit: 65a1b6aae8387735f05a83b45e1a6865e9805e1f
+ms.openlocfilehash: fc69410334c4c9bdf8c3538f9aa9f34a1d2f1e1a
+ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "129349358"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "132001395"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>教程：打开存储库中的项目
 在本教程中，你将使用 Visual Studio 首次连接到存储库，然后打开其中的一个项目。
@@ -54,6 +54,8 @@ ms.locfileid: "129349358"
 
     > [!TIP]
     > 有关登录 Visual Studio 的详细信息，请参阅[登录 Visual Studio](../ide/signing-in-to-visual-studio.md?view=vs-2022&preserve-view=true) 页。 有关如何使用 GitHub 帐户进行登录的具体信息，请参阅[在 Visual Studio 中使用 GitHub 帐户](../ide/work-with-github-accounts.md?view=vs-2022&preserve-view=true)页。 如果你收到信任通知，想要了解有关它的详细信息，请参阅[配置文件和文件夹的信任设置](../ide/reference/trust-settings.md?view=vs-2022&preserve-view=true)页。
+
+### <a name="view-files-in-solution-explorer"></a>解决方案资源管理器中的的视图文件
 
 1. 接下来，Visual Studio 会通过使用[解决方案资源管理器](../ide/use-solution-explorer.md?view=vs-2022&preserve-view=true)中的“文件夹视图”，从存储库加载解决方案。 
 
