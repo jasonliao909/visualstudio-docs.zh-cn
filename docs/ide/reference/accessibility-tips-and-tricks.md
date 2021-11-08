@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 的辅助功能提示和技巧
 description: 了解有关提示和技巧的详细信息，通过这些信息，每位用户（包括残疾人士）都可更加轻松地使用 Visual Studio 集成开发环境 (IDE)。
-ms.date: 08/06/2019
+ms.date: 11/03/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 899d44ff13ae9c94309757363a96b814e5e3e531
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: eb727816073571cc165677b0c9f84634867f04c6
+ms.sourcegitcommit: 1a6efe8a081841fdab9de18d3869375867dd5dcc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126737077"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "131571862"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Visual Studio 的辅助功能提示和技巧
 
@@ -37,6 +37,13 @@ Visual Studio 具有内置辅助功能，这些辅助功能与屏幕阅读器以
 对某些人来说，某些颜色更难看见。 如果在编码时想要更高的对比度，但不想使用典型的“高对比度”主题，我们现在提供了“蓝（额外对比度）”主题。
 
   ![比较蓝色主题和蓝色额外对比主题](media/blue-extra-contrast-theme.png "显示“蓝色”主题和“蓝色额外对比度”主题的比较的屏幕截图")
+
+::: moniker range="vs-2022"
+
+> [!TIP]
+> 请参阅[我们在 Visual Studio 2022 中升级了 UI](https://devblogs.microsoft.com/visualstudio/weve-upgraded-the-ui-in-visual-studio-2022/) 博客文章，详细了解我们对颜色对比度作出的细微调整和添加的新 Cascadia Code 字体，以便每个人都能更轻松地使用 Visual Studio。
+
+::: moniker-end
 
 ## <a name="use-annotations-to-reveal-useful-information-about-your-code"></a>使用注释显示关于代码的实用信息
 

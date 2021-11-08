@@ -7,14 +7,14 @@ manager: jmartens
 ms.technology: vs-container-tools
 ms.devlang: dotnet
 ms.topic: how-to
-ms.date: 02/21/2021
+ms.date: 10/28/2021
 ms.author: ghogen
-ms.openlocfilehash: 6dd3a1bf0dd7b40f101f95e74c18dee071b4cfc6
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 68902c071b2b76de4fcb36a6f1c2461d838bc1e9
+ms.sourcegitcommit: aff49629012f4d5fa07c75ea0ca5bf53d28aa173
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641315"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "131662761"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>使用 Visual Studio 将 ASP.NET Core 容器部署到 Azure 应用服务
 
@@ -29,9 +29,13 @@ ms.locfileid: "126641315"
 ::: moniker range="vs-2017"
 - 安装带有“ASP.NET 和 Web 开发”工作负载的最新版本 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 ::: moniker-end
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 - [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) 与“ASP.NET 和 Web 开发”工作负载。
 ::: moniker-end
+::: moniker range=">=vs-2022"
+- 带有“ASP.NET 和 Web 开发”工作负载的 [Visual Studio 2022 RC](https://visualstudio.microsoft.com/downloads)。
+::: moniker-end
+
 - 安装 [Docker Desktop](https://docs.docker.com/docker-for-windows/install/)
 
 ## <a name="create-an-aspnet-core-web-app"></a>创建 ASP.NET Core Web 应用
@@ -65,63 +69,107 @@ ms.locfileid: "126641315"
 1. 在发布目标对话框中，选择“应用服务 Linux”或“应用服务” 。 这是将托管 Web 服务器的操作系统。
 1. 可以只发布到应用服务，也可以发布到应用服务和 Azure 容器注册表 (ACR)。 若要将容器发布到 Azure 容器注册表 (ACR)，请选择“为容器创建新的应用服务”，并单击“发布” 。
 
-   ![“发布”对话框的屏幕截图](media/deploy-app-service/publish-app-service-linux-1.png)
+   ![“发布”对话框的屏幕截图。](media/deploy-app-service/publish-app-service-linux-1.png)
 
    若要在不使用 Azure 容器注册表的情况下仅发布到 Azure 应用服务，请选择“新建”，然后单击“发布” 。
 
 1. 检查是否已使用与 Azure 订阅相关联的帐户登录，并选择唯一名称、订阅、资源组、托管计划和容器注册表（如果适用），或接受默认值。
 
-   ![“发布”设置的屏幕截图](media/deploy-app-service/publish-app-service-linux-2.png)
+   ![“发布”设置的屏幕截图。](media/deploy-app-service/publish-app-service-linux-2.png)
 
 1. 选择“创建”。 容器将部署到 Azure 中你所选的资源组和容器注册表中。 此过程需要花费一些时间。 完成后，“发布”选项卡显示有关已发布内容的信息，包括网站 URL。
 
-   ![“发布”选项卡的屏幕截图](media/deploy-app-service/publish-succeeded.PNG)
+   ![“发布”选项卡的屏幕截图。](media/deploy-app-service/publish-succeeded.PNG)
 
 1. 单击“站点”链接，验证应用在 Azure 中是否按预期方式工作。
 
-   ![Web 应用程序的屏幕截图](media/deploy-app-service/web-application-running.png)
+   ![Web 应用程序的屏幕截图。](media/deploy-app-service/web-application-running.png)
 
 1. 发布配置文件会保存你所选的所有详细信息，如资源组和容器注册表。
 
 1. 若要使用相同的发布配置文件再次部署，请使用“发布”按钮、“Web 发布活动”窗口中的“发布”按钮，或在解决方案资源管理器中右键单击该项目，并在上下文菜单上选择“发布”项    。
 :::moniker-end
-:::moniker range=">=vs-2019"
+
+:::moniker range="vs-2019"
+
 1. 在解决方案资源管理器中右键单击项目，并选择“发布” 。
 1. 在“发布”对话框中，选择“Azure”目标。
 
-   ![“发布”向导的屏幕截图](media/deploy-app-service/publish-choices.png)
+   ![“发布”向导的屏幕截图。](media/deploy-app-service/publish-choices.png)
 
 1. 在“特定目标”选项卡上，根据容器类型选择适当的部署目标，如“应用服务(Windows)”或“应用服务(Linux)”。
 
-   ![“发布”向导的“特定目标”选项卡的屏幕截图](media/deploy-app-service/publish-app-service-windows.png)
+   ![“发布”向导的“特定目标”选项卡的屏幕截图。](media/deploy-app-service/publish-app-service-windows.png)
 
 1. 如果没有通过要使用的订阅登录正确的 Azure 帐户，请使用“发布”窗口左上角的按钮进行登录。
 
 1. 可以使用现有的应用服务，也可以通过单击“新建 Azure 应用服务”链接来新建应用服务。 通过展开资源组来在树视图中查找现有应用服务，或将“视图”设置更改为“资源类型”来按类型排序。
 
-   ![显示如何选择应用服务的屏幕截图](media/deploy-app-service/publish-app-service-windows2.png)
+   ![显示如何选择应用服务的屏幕截图。](media/deploy-app-service/publish-app-service-windows2.png)
 
 1. 如果新建应用服务，则会在 Azure 中生成资源组和应用服务。 如果需要，可以更改名称，只要它们是唯一的。
 
-   ![显示如何创建应用服务的屏幕截图](media/deploy-app-service/publish-app-service-windows3.png)
+   ![显示如何创建应用服务的屏幕截图。](media/deploy-app-service/publish-app-service-windows3.png)
 
 1. 可以接受默认的托管计划，也可以在 Azure 门户中立即或稍后更改托管计划。 在受支持的区域之一，默认值为 `S1`（小）。 若要创建托管计划，请选择“托管计划”下拉列表旁边的“新建”。 此时，“托管计划”窗口显示。
 
-   ![显示“托管计划”选项的屏幕截图](media/deploy-app-service/hosting-plan.png)
+   ![显示“托管计划”选项的屏幕截图。](media/deploy-app-service/hosting-plan.png)
 
    若要详细了解这些选项，可以查看 [Azure 应用服务计划概述](/azure/app-service/overview-hosting-plans)。
 
 1. 选择或创建完这些资源后，立即选择“完成”。 此时，容器部署到 Azure 中你所选的资源组和应用服务内。 此过程需要花费一些时间。 完成后，“发布”选项卡显示有关已发布内容的信息，包括网站 URL。
 
-   ![“发布”选项卡的屏幕截图](media/deploy-app-service/publish-succeeded-windows.png)
+   :::image type="content" source="media/deploy-app-service/publish-succeeded-windows.png" alt-text="“发布”选项卡的屏幕截图。" lightbox="media/deploy-app-service/publish-succeeded-windows.png":::
 
 1. 单击“站点”链接，验证应用在 Azure 中是否按预期方式工作。
 
-   ![Web 应用程序的屏幕截图](media/deploy-app-service/web-application-running2.png)
+   ![Web 应用程序的屏幕截图。](media/deploy-app-service/web-application-running2.png)
 
 1. 发布配置文件会保存你所选的全部详细信息，如资源组和应用服务。
 
 1. 若要使用相同的发布配置文件再次部署，请使用“发布”按钮、“Web 发布活动”窗口中的“发布”按钮，或在解决方案资源管理器中右键单击该项目，并在上下文菜单上选择“发布”项    。
+
+:::moniker-end
+
+:::moniker range=">=vs-2022"
+
+1. 在解决方案资源管理器中右键单击项目，并选择“发布” 。
+1. 在“发布”对话框中，选择“Azure”目标。
+
+   ![“发布”向导的屏幕截图。](media/deploy-app-service/vs-2022/publish-choices.png)
+
+1. 在“特定目标”选项卡上，根据容器类型选择适当的部署目标，如“应用服务(Windows)”或“应用服务(Linux)”。
+
+   ![“发布”向导的“特定目标”选项卡的屏幕截图。](media/deploy-app-service/vs-2022/publish-app-service-linux.png)
+   
+1. 如果没有通过要使用的订阅登录正确的 Azure 帐户，请使用“发布”窗口左上角的按钮进行登录。
+
+1. 可以使用现有的应用服务，也可以通过单击“新建 Azure 应用服务”链接来新建应用服务。 通过展开资源组来在树视图中查找现有应用服务，或将“视图”设置更改为“资源类型”来按类型排序。
+
+   ![显示如何选择应用服务的屏幕截图。](media/deploy-app-service/vs-2022/publish-app-service-linux-2.png)
+
+1. 如果新建应用服务，则会在 Azure 中生成资源组和应用服务。 如果需要，可以更改名称，只要它们是唯一的。
+
+   ![显示如何创建应用服务的屏幕截图。](media/deploy-app-service/vs-2022/publish-app-service-linux-3.png)
+
+1. 可以接受默认的托管计划，也可以在 Azure 门户中立即或稍后更改托管计划。 在受支持的区域之一，默认值为 `S1`（小）。 若要创建托管计划，请选择“托管计划”下拉列表旁边的“新建”。 此时，“托管计划”窗口显示。
+
+   ![显示“托管计划”选项的屏幕截图。](media/deploy-app-service/vs-2022/hosting-plan.png)
+
+   若要详细了解这些选项，可以查看 [Azure 应用服务计划概述](/azure/app-service/overview-hosting-plans)。
+
+1. 选择或创建完这些资源后，立即选择“完成”。 此时，容器部署到 Azure 中你所选的资源组和应用服务内。 此过程需要花费一些时间。 完成后，“发布”选项卡显示有关已发布内容的信息，包括网站 URL。
+
+   :::image type="content" source="media/deploy-app-service/vs-2022/publish-succeeded-linux.png" alt-text="“发布”选项卡的屏幕截图。" lightbox="media/deploy-app-service/vs-2022/publish-succeeded-linux.png":::
+
+1. 单击“站点”链接，验证应用在 Azure 中是否按预期方式工作。
+
+   ![Web 应用程序的屏幕截图。](media/deploy-app-service/web-application-running2.png)
+
+1. 发布配置文件会保存你所选的全部详细信息，如资源组和应用服务。
+
+1. 若要使用相同的发布配置文件再次部署，请使用“发布”按钮、“Web 发布活动”窗口中的“发布”按钮，或在解决方案资源管理器中右键单击该项目，并在上下文菜单上选择“发布”项    。
+
 :::moniker-end
 
 ## <a name="view-container-settings"></a>查看容器设置
@@ -130,7 +178,7 @@ ms.locfileid: "126641315"
 
 可以打开“容器设置”菜单来查看已部署应用服务的设置（如果使用的是 Visual Studio 2019 版本 16.4 或更高版本）。
 
-![Azure 门户中的容器设置菜单的屏幕截图](media/deploy-app-service/container-settings-menu.png)
+![Azure 门户中的容器设置菜单的屏幕截图。](media/deploy-app-service/container-settings-menu.png)
 
 可以从此处查看容器信息、查看或下载日志记录或设置持续部署。 请参阅 [Azure 应用服务持续部署 CI/CD](/azure/app-service/containers/app-service-linux-ci-cd)。
 

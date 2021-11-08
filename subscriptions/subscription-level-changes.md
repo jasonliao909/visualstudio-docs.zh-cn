@@ -7,12 +7,12 @@ ms.assetid: bb2fa359-8170-4db0-a0c5-d49fc692b0aa
 ms.date: 10/13/2021
 ms.topic: conceptual
 description: 了解升级或下载 Visual Studio 订阅级别的影响。
-ms.openlocfilehash: 6d49b868c28210fcf69b73a8b392f1e7f4dba8ae
-ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
+ms.openlocfilehash: fbb67ab6a79870695ad00809e900ca1e07c043c0
+ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "130010998"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "131127307"
 ---
 # <a name="what-happens-when-you-change-visual-studio-subscription-levels"></a>更改 Visual Studio 订阅级别后会出现什么情况？
 在 Visual Studio 订阅中，软件、工具、服务以及可供你使用的其他权益取决于你的订阅级别。  通常，你的订阅级别越高，它提供的权益就越可靠。  
@@ -39,7 +39,7 @@ ms.locfileid: "130010998"
 如果你的 Visual Studio 订阅发生更改，则可能会遇到三种情况。  除了潜在的升级或降级，公司的订阅管理员还可以为你分配一个你目前拥有的同一级别的订阅，但具有不同的订阅 ID。  在所有这三种情况下，对 Azure 订阅的影响都是相同的，只有个人额度的数量可能会改变。 
 
 更改你的 Visual Studio 订阅会断开与你的 Azure 订阅的链接，该链接可接收额度，并在你激活新订阅中的权益时创建新的 Azure 订阅。  出现这种情况时，旧的 Azure 订阅将被迫最终停用。  若要避免此问题，请选择下列解决方法之一：
-- 将订阅转换为即用即付。  有关详细信息，请访问我们的 [Azure 开发测试即用即付订阅](vs-azure-payg.md)一文。  你需要将付款方式（例如信用卡）附加到此订阅。 
+- 将订阅转换为即用即付。  有关详细信息，请参阅 https://azure.microsoft.com/offers/ms-azr-0023p/ 。  你需要将付款方式（例如信用卡）附加到此订阅。 
 - 使用新的 Visual Studio 订阅中的权益创建新的 Azure 订阅，并将旧的 Azure 订阅中的任何现有 Azure 资产传输到新订阅。 
   > [!IMPORTANT]
   > 重要的是，将 Azure 资产移至新的 Azure 订阅，或将现有的 Azure 订阅更改为即用即付，以避免丢失现有的 Azure 资产。 

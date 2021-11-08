@@ -13,12 +13,12 @@ dev_langs:
 ms.workload:
 - nodejs
 monikerRange: '>= vs-2022'
-ms.openlocfilehash: 1a6c2fed5fdcbb10c186bc8f2d20b6e68e0a2c29
-ms.sourcegitcommit: 65a1b6aae8387735f05a83b45e1a6865e9805e1f
+ms.openlocfilehash: 64db27eb96d3ea3536377a68ab322e6df2e09d1d
+ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "129339609"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "131126475"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-vue-in-visual-studio"></a>教程：在 Visual Studio 中使用 Vue 创建 ASP.NET Core 应用
 
@@ -116,7 +116,11 @@ ms.locfileid: "129339609"
 
 ## <a name="start-the-project"></a>启动项目
 
-按 F5 或选择窗口顶部的“开始”按钮。  将显示两个命令提示符：
+启动项目之前，请确保端口号匹配。 转到 ASP.NET Core 项目中的 launchSettings.json 文件（在 Properties 文件夹中） 。 从 `applicationUrl` 属性获取端口号。 （它应该类似于 `https://localhost:7049`。）
+
+然后，转到 Vue 项目的 vue.config.js 文件。 更新目标属性，以匹配 launchSettings.json 中的 `applicationUrl` 属性。
+
+若要启动项目，请按 F5 或选择窗口顶部的“开始”按钮 。 将显示两个命令提示符：
 
 - 正在运行的 ASP.NET Core API 项目
 - 运行 vue-cli-service serve 命令的 Vue CLI

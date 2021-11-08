@@ -1,5 +1,5 @@
 ---
-title: 将 ASP.NET Docker 容器部署到 ACR 注册表
+title: 将 ASP.NET Docker 容器部署到 Azure 容器注册表
 description: 了解如何使用 Visual Studio 容器工具将 ASP.NET 或 ASP.NET Core Web 应用部署到容器注册表
 author: ghogen
 manager: jmartens
@@ -7,14 +7,14 @@ ms.assetid: e5e81c5e-dd18-4d5a-a24d-a932036e78b9
 ms.devlang: dotnet
 ms.topic: how-to
 ms.technology: vs-container-tools
-ms.date: 03/15/2021
+ms.date: 10/27/2021
 ms.author: ghogen
-ms.openlocfilehash: eb1b22273a3fe946d7760bccae9583c4b1d6726c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: aec9686abfe015016adc59c8c2d21ef1f229c912
+ms.sourcegitcommit: aff49629012f4d5fa07c75ea0ca5bf53d28aa173
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122091235"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "131661935"
 ---
 # <a name="deploy-an-aspnet-container-to-a-container-registry-using-visual-studio"></a>使用 Visual Studio 将 ASP.NET 容器部署到容器注册表
 
@@ -25,17 +25,22 @@ Docker 是轻型容器引擎，在某些方面类似于虚拟机，可以将其�
 
 如果没有 Azure 订阅，请在开始之前创建一个[免费帐户](https://azure.microsoft.com/free/dotnet/?utm_source=acr-publish-doc&utm_medium=docs&utm_campaign=docs)。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 完成本教程：
 
 ::: moniker range="vs-2017"
 * 安装带有“ASP.NET 和 Web 开发”工作负载的最新版本 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
+* 安装 [Docker Desktop for Windows](https://docs.docker.com/desktop/windows/install/)
 ::: moniker-end
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 * 安装带有“ASP.NET 和 Web 开发”工作负载的最新版本 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
+* 安装 [Docker Desktop for Windows](https://docs.docker.com/desktop/windows/install/)
 ::: moniker-end
-* 安装[适用于 Windows 的 Docker](https://docs.docker.com/docker-for-windows/install/)
+::: moniker range=">=vs-2022"
+* 安装带有“ASP.NET 和 Web 开发”工作负载的最新版 [Visual Studio 2022 RC](https://visualstudio.microsoft.com/downloads)
+* 安装 [Docker Desktop for Windows](https://docs.docker.com/desktop/windows/install/)
+:::moniker-end
 
 ## <a name="create-an-aspnet-core-web-app"></a>创建 ASP.NET Core Web 应用
 
@@ -44,8 +49,11 @@ Docker 是轻型容器引擎，在某些方面类似于虚拟机，可以将其�
 ::: moniker range="vs-2017"
 [!INCLUDE [create-aspnet5-app](../azure/includes/create-aspnet5-app.md)]
 ::: moniker-end
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 [!INCLUDE [create-aspnet5-app](../azure/includes/vs-2019/create-aspnet5-app-2019.md)]
+::: moniker-end
+:::moniker range=">=vs-2022"
+[!INCLUDE [create-aspnet5-app](../azure/includes/vs-2022/create-aspnet5-app-2022.md)]
 ::: moniker-end
 
 ::: moniker range="vs-2017"
@@ -65,21 +73,21 @@ Docker 是轻型容器引擎，在某些方面类似于虚拟机，可以将其�
     | **[SKU](/azure/container-registry/container-registry-skus)** | 标准 | 容器注册表的服务层  |
     | **注册表位置** | 靠近你的位置 | 在你附近或将使用容器注册表的其他服务附近的[区域](https://azure.microsoft.com/regions/)中，选择位置。 |
 
-    ![Visual Studio 的创建 Azure 容器注册表对话框](media/hosting-web-apps-in-docker/vs-acr-provisioning-dialog.png)
+    ![显示 Visual Studio 的创建 Azure 容器注册表对话框的屏幕截图。](media/hosting-web-apps-in-docker/vs-azure-container-registry-provisioning-dialog.png)
 
 5. 单击“创建” 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 ## <a name="publish-your-container-to-azure-container-registry"></a>将容器发布到 Azure 容器注册表
 1. 在解决方案资源管理器中右键单击项目，并选择“发布” 。
 2. 在“发布”对话框中，选择“Docker 容器注册表” 。
 
-   ![“‘发布’对话框 - 选择‘Docker 容器注册表’”的屏幕截图](media/container-tools/vs-2019/docker-container-registry.png)
+   ![“‘发布’对话框 - 选择‘Docker 容器注册表’”的屏幕截图。](media/container-tools/vs-2019/docker-container-registry.png)
 
 3. 选择“新建 Azure 容器注册表”。
  
-   ![“‘发布’对话框 - 选择‘新建 Azure 容器注册表’”的屏幕截图](media/container-tools/vs-2019/select-existing-or-create-new-azure-container-registry.png)
+   ![“‘发布’对话框 - 选择‘新建 Azure 容器注册表’”的屏幕截图。](media/container-tools/vs-2019/select-existing-or-create-new-azure-container-registry.png)
 
 4. 在“Azure 容器注册表”屏幕中填写所需的值。
 
@@ -91,12 +99,41 @@ Docker 是轻型容器引擎，在某些方面类似于虚拟机，可以将其�
     | **[SKU](/azure/container-registry/container-registry-skus)** | 标准 | 容器注册表的服务层  |
     | **注册表位置** | 靠近你的位置 | 在你附近或将使用容器注册表的其他服务附近的[区域](https://azure.microsoft.com/regions/)中，选择位置。 |
 
-    ![Visual Studio 的创建 Azure 容器注册表对话框](media/hosting-web-apps-in-docker/vs-acr-provisioning-dialog-2019.png)
+    ![Visual Studio 的创建 Azure 容器注册表对话框的屏幕截图。](media/hosting-web-apps-in-docker/vs-azure-container-registry-provisioning-dialog-2019.png)
 
 5. 单击 **“创建”** 。
 
 6. 选择“完成”以完成该过程。
 ::: moniker-end
+
+::: moniker range=">=vs-2022"
+## <a name="publish-your-container-to-azure-container-registry"></a>将容器发布到 Azure 容器注册表
+1. 在解决方案资源管理器中右键单击项目，并选择“发布” 。
+2. 在“发布”对话框中，选择“Docker 容器注册表” 。
+
+   ![“‘发布’对话框 - 选择‘Docker 容器注册表’”的屏幕截图。](media/container-tools/vs-2022/docker-container-registry.png)
+
+3. 选择“新建 Azure 容器注册表”。
+ 
+   ![“‘发布’对话框 - 选择‘新建 Azure 容器注册表’”的屏幕截图。](media/container-tools/vs-2022/select-existing-or-create-new-azure-container-registry.png)
+
+4. 在“Azure 容器注册表”屏幕中填写所需的值。
+
+    | 设置      | 建议的值  | 描述                                |
+    | ------------ |  ------- | -------------------------------------------------- |
+    | **DNS 前缀** | 全局唯一名称 | 用于唯一标识容器注册表的名称。 |
+    | **订阅** | 选择订阅 | 要使用的 Azure 订阅。 |
+    | **[资源组](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  要在其中创建容器注册表的资源组的名称。 选择“新建”  创建新的资源组。|
+    | **[SKU](/azure/container-registry/container-registry-skus)** | 标准 | 容器注册表的服务层  |
+    | **注册表位置** | 靠近你的位置 | 在你附近或将使用容器注册表的其他服务附近的[区域](https://azure.microsoft.com/regions/)中，选择位置。 |
+
+    ![Visual Studio 的创建 Azure 容器注册表对话框的屏幕截图。](media/container-tools/vs-2022/vs-azure-container-registry-provisioning-dialog.png)
+
+5. 单击 **“创建”** 。
+
+6. 选择“完成”以完成该过程。
+::: moniker-end
+
 
 现在可以将容器从注册表中拖放到任何能够运行 Docker 映像的主机上，例如[Azure 容器实例](/azure/container-instances/container-instances-tutorial-deploy-app)。
 

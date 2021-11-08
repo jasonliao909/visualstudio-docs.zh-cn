@@ -7,12 +7,12 @@ ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
 ms.date: 10/18/2021
 ms.topic: how-to
 description: 了解有关 Visual Studio 订阅中包含的 Windows 开发者帐户。
-ms.openlocfilehash: 2bdd688e0f3b62291d03e4fc6360a39d461fe5de
-ms.sourcegitcommit: 6c847aedf0f943e253a4c2f0e4b516b953168bc7
+ms.openlocfilehash: e813d20b0e8010191d24c5531989b622fb446922
+ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "130151851"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "131127255"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Windows 开发者帐户
 通过所选 Visual Studio 订阅包含的 Windows 开发者帐户，可以将免费和付费的 Windows 应用提交到 Windows 应用商店。
@@ -78,4 +78,4 @@ ms.locfileid: "130151851"
 请务必激活这些重要权益以充分利用 Visual Studio 订阅：
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
-- [Azure 开发测试个人额度](vs-azure.md)
+- [Azure 开发测试套餐/额度](/azure/devtest/offer/)

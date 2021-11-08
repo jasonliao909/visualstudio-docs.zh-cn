@@ -1,7 +1,7 @@
 ---
 title: 以管理员身份运行
 description: 了解如何以管理员身份运行 Visual Studio。
-ms.date: 03/09/2021
+ms.date: 10/26/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, user permissions
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c0f1aa61371a3caecad6dbc30874db6299a2283
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: c86457ae3855fbd3a5006d0509278f525afbef6e
+ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641759"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "131127905"
 ---
 # <a name="user-permissions-and-visual-studio"></a>用户权限与 Visual Studio
 
@@ -65,9 +65,9 @@ ms.locfileid: "126641759"
 
 ::: moniker range=">=vs-2019"
 
-1. 打开“开始”菜单，并滚动到 Visual Studio 2019。
+1. 打开“开始”菜单，并滚动到 Visual Studio。
 
-1. 从右键单击或 Visual Studio 2019 的上下文菜单中，依次选择“更多”“以管理员身份运行” > 。
+1. 从 Visual Studio 2019 或 Visual Studio 2022 的右键单击或上下文菜单中，选择“更多”>“以管理员身份运行”   。
 
    Visual Studio 启动时，标题栏的产品名后显示“(管理员)”。
 

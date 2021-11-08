@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d67ea85f396baa45e1a8da2f2cf6898d02b4e01
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 5fbc6924cf53d72dbbd92679008039c7df6bd1f4
+ms.sourcegitcommit: 141efad8a6a303737bdc563a4f48964411f342eb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126642465"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "131249668"
 ---
 # <a name="touch-task"></a>Touch 任务
 
@@ -41,7 +41,7 @@ ms.locfileid: "126642465"
 |`AlwaysCreate`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，将创建任何尚未存在的文件。|
 |`Files`|必选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定要改动的文件集合。|
 |`ForceTouch`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则即使在文件为只读时也强制改动文件。|
-|`Time`|可选 `String` 参数。<br /><br /> 指定当前时间以外的时间。 格式必须为 <xref:System.DateTime.Parse%2A> 方法可接受的格式。|
+|`Time`|可选 `String` 参数。<br /><br /> 指定时间。 默认为当前时间 (`Now`)。 格式必须可通过使用 `DateTimeFormatInfo.InvariantInfo` 的 <xref:System.DateTime.Parse%2A> 方法解析。|
 |`TouchedFiles`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 包含成功改动的项的集合。|
 
 ## <a name="remarks"></a>备注

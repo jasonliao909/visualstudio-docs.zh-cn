@@ -1,7 +1,7 @@
 ---
 title: 设置 Visual Studio 深色主题并更改文本颜色
 description: 了解如何在代码编辑器中将默认 Visual Studio 颜色主题更改为深色模式，以及如何更改字体颜色。
-ms.date: 08/19/2021
+ms.date: 11/04/2021
 ms.topic: how-to
 ms.custom: contperf-fy21q1
 author: TerryGLee
@@ -10,19 +10,19 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: abe73264f3bd2a2327d5b4caabda45cc1744055f
-ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
+ms.openlocfilehash: 42f5282df5e31473fe7dd00e5a9ad57ceee243f3
+ms.sourcegitcommit: aff49629012f4d5fa07c75ea0ca5bf53d28aa173
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "130011401"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "131662810"
 ---
 # <a name="how-to-personalize-the-visual-studio-ide-and-the-editor"></a>如何：个性化设置 Visual Studio IDE 和编辑器
 
-本操作指南文章介绍了如何将 Visual Studio 颜色主题从默认的蓝色主题自定义为深色主题。 然后，介绍如何在代码编辑器中为两种不同类型的文本自定义颜色。
+本操作指南文章介绍了如何将 Visual Studio 颜色主题从蓝色主题自定义为深色主题。 然后，介绍如何在代码编辑器中为两种不同类型的文本自定义颜色。
 
 > [!NOTE]
-> 在 [Visual Studio 2022 RC](/visualstudio/releases/2022/release-notes-preview) 中，我们改进了颜色主题功能，来与 Windows 设置契合。 若要了解详细信息，请参阅[适用于 Visual Studio 的灵活主题设置功能](https://devblogs.microsoft.com/visualstudio/flexible-theming-visual-studio/)博客文章。
+> 在 [Visual Studio 2022](/visualstudio/releases/2022/release-notes-preview) 中，我们改进了颜色主题功能，来与 Windows 设置契合。 若要了解详细信息，请参阅[适用于 Visual Studio 的灵活主题设置功能](https://devblogs.microsoft.com/visualstudio/flexible-theming-visual-studio/)博客文章。
 
 ::: moniker range="vs-2017"
 
@@ -52,7 +52,7 @@ Visual Studio 用户界面的默认颜色主题命名为“蓝色”  。 让我
 
    ::: moniker-end
 
-   ::: moniker range="vs-2019"
+   ::: moniker range=">=vs-2019"
 
    ![深色主题中的 Visual Studio 2019](media/vs-2019/dark-theme.png)
 
@@ -69,6 +69,13 @@ Visual Studio 用户界面的默认颜色主题命名为“蓝色”  。 让我
 
 > [!TIP]
 > 可以通过从 [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-madsk.ColorThemeDesigner) 中安装“Visual Studio 颜色主题设计器”  来创建自己的主题。
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+> [!TIP]
+> 想要更多的主题供选择？ 在 [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=VS&category=Tools&vsVersion=&subCategory=Themes&sortBy=Installs) 上查看各种自定义主题。 若要查看基于 VS Code 的新的 Visual Studio 2022 自定义主题的示例，请参阅[新的 Visual Studio 主题集合简介](https://devblogs.microsoft.com/visualstudio/custom-themes/)博客文章。
 
 ::: moniker-end
 

@@ -1,8 +1,8 @@
 ---
 title: 适用于 UWP 应用的应用程序属性页
-description: 了解如何使用“应用程序”页来指定通用 Windows 平台 (UWP) 项目的程序集和包信息，以及 Windows 10 目标版本。
+description: 了解如何使用“应用程序”页面来指定通用 Windows 平台 (UWP) 项目的程序集和包信息，以及面向 Windows 10 及更高版本。
 ms.custom: SEO-VS-2020
-ms.date: 01/23/2018
+ms.date: 10/26/2021
 ms.topic: reference
 f1_keywords:
 - AppPackage.Properties.Application
@@ -14,16 +14,16 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - uwp
-ms.openlocfilehash: 298ccbb112d373255feadfad136255bf367df350
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: bb77479468c10e55eb15986caf6c402a80fdeff4
+ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641824"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "131127606"
 ---
 # <a name="application-property-page-uwp-projects"></a>应用程序属性页（UWP 项目）
 
-使用“应用程序”属性页来指定通用 Windows 平台 (UWP) 项目的程序集和包信息，以及 Windows 10 目标版本。
+使用“应用程序”属性页面来指定通用 Windows 平台 (UWP) 项目的程序集和包信息，以及面向 Windows 10 及更高版本。
 
 ![应用程序属性页](media/application-page-uwp.png)
 
@@ -45,9 +45,25 @@ ms.locfileid: "126641824"
 
 ## <a name="targeting-section"></a>“设定目标”部分
 
-可通过本部分中的下拉列表，为应用设置目标版本和最低版本的 Windows 10。 建议将目标设定为 Windows 10 的最新版本，如果你正在开发企业应用，那么也可支持较旧的最低版本。 有关要选择的 Windows 10 版本的详细信息，请参阅[选择 UWP 版本](/windows/uwp/updates-and-versions/choose-a-uwp-version)。
+可通过本部分中的下拉列表，为应用设置目标版本和最低版本的 Windows 10。 建议将目标设定为 Windows 10 的最新版本，如果你正在开发企业应用，那么也可支持较旧的最低版本。 有关要选择的 Windows 10 及更高版本的详细信息，请参阅[选择 UWP 版本](/windows/uwp/updates-and-versions/choose-a-uwp-version)。
 
-有关 Visual Studio 中的平台目标信息，请参阅[平台目标](/visualstudio/productinfo/vs2017-compatibility-vs#platform-targeting)。
+::: moniker range="vs-2017"
+
+有关 Visual Studio 中的平台目标信息，请参阅[平台目标](/visualstudio/releases/2017/vs2017-compatibility-vs#platform-targeting)。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+有关 Visual Studio 中的平台目标信息，请参阅[平台目标](/visualstudio/releases/2019/compatibility#platform-targeting)。
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+有关 Visual Studio 中的平台目标信息，请参阅[平台目标](/visualstudio/releases/2022/compatibility#platform-targeting)。
+
+::: moniker-end
 
 ## <a name="see-also"></a>另请参阅
 

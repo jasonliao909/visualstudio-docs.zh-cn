@@ -1,8 +1,7 @@
 ---
 title: 更改编辑器字体和颜色
 description: 了解如何在“代码编辑器”中更改默认字体、调整字体大小以及更改不同文本“显示项”的前景色和背景色。
-ms.custom: SEO-VS-2020
-ms.date: 06/01/2020
+ms.date: 10/31/2021
 ms.topic: how-to
 helpviewer_keywords:
 - editors, fonts
@@ -17,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: edd93e4326fe44f1447e589dbfd303e97b775cb8
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 6663b44ce89e3a47ae55f97f740bc8c2092f1c2d
+ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126737288"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "131127658"
 ---
 # <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>如何：在 Visual Studio 中更改编辑器中的字体和颜色
 
@@ -39,11 +38,32 @@ ms.locfileid: "126737288"
 
 ## <a name="change-the-default-font-face-size-and-colors"></a>更改默认字体、字体大小和颜色
 
+::: moniker range=">=vs-2022"
+
 1. 从“工具”菜单中选择“选项” 。 在“环境”下，选择 **字体和颜色**。
 
 1. 在“显示以下对象的设置”中，选择“文本编辑器”。
 
-   ![用于更改编辑器中字体和颜色的“选项”对话框的屏幕截图](../../ide/media/fonts-colors-text-editor.png "用于更改编辑器中字体和颜色的“选项”对话框的屏幕截图")
+   ![用于更改编辑器中字体和颜色的“选项”对话框的屏幕截图](../../ide/media/vs-2022/fonts-colors-text-editor.png "用于更改编辑器中字体和颜色的“选项”对话框的屏幕截图")
+
+1. 修改“字体”和“大小”选项可更改所有编辑器中所用文本元素的字体和大小。
+
+1. 在“显示项”中选择合适的项，然后修改“项前景”和“项背景”选项。
+
+    > [!TIP]
+    > 单击“使用默认值”，以重置默认设置。
+
+1. 选择“确定”。
+
+::: moniker-end
+
+::: moniker range="<=vs-2019"
+
+1. 从“工具”菜单中选择“选项” 。 在“环境”下，选择 **字体和颜色**。
+
+1. 在“显示以下对象的设置”中，选择“文本编辑器”。
+
+   ![用于更改编辑器中字体和颜色的“选项”对话框的屏幕截图](../../ide/media/fonts-colors-text-editor.png "用于更改编辑器中字体和颜色的“选项”对话框的屏幕截图。")
 
 1. 修改“字体”和“大小”选项可更改所有编辑器中所用文本元素的字体和大小。
 
@@ -53,6 +73,8 @@ ms.locfileid: "126737288"
     > 单击“使用默认值”，以重置默认设置。
 
 1. 单击 **“确定”** 。
+
+::: moniker-end
 
 ## <a name="next-steps"></a>后续步骤
 

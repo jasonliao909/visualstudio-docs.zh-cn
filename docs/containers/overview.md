@@ -4,14 +4,14 @@ description: 了解 Visual Studio 中可用于 Docker 的工具
 author: ghogen
 ms.author: ghogen
 ms.topic: overview
-ms.date: 08/24/2021
+ms.date: 10/27/2021
 ms.technology: vs-container-tools
-ms.openlocfilehash: 24a10d43e14beed22f2817b8a6c5a237a34416ad
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 4b9e4925334c80e8ba1b62a8dafe5eb84e756d9b
+ms.sourcegitcommit: aff49629012f4d5fa07c75ea0ca5bf53d28aa173
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641304"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "131662142"
 ---
 # <a name="visual-studio-container-tools-for-docker"></a>Visual Studio Container Tools for Docker
 
@@ -38,7 +38,7 @@ Visual Studio 中的 Docker 支持因版本而异，以响应客户需求。 可
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -62,15 +62,41 @@ Visual Studio 中的 Docker 支持因版本而异，以响应客户需求。 可
 
 ::: moniker-end
 
+::: moniker range=">=vs-2022"
+
+## <a name="prerequisites"></a>先决条件
+
+* [Docker Desktop](https://www.docker.com/get-docker)
+* 安装了“Web 开发”、“Azure 工具”工作负载和/或“.NET 桌面开发”工作负载的 [Visual Studio 2022 RC](https://visualstudio.microsoft.com/downloads)  
+* 若要发布到 Azure 容器注册表，需要 Azure 订阅。 [注册免费试用版](https://azure.microsoft.com/offers/ms-azr-0044p/)。
+
+## <a name="docker-support-in-visual-studio"></a>Visual Studio 中的 Docker 支持
+
+Docker 支持适用于 ASP.NET 项目、ASP.NET Core 项目，以及 .NET Core 和 .NET Framework 控制台项目。
+
+Visual Studio 中的 Docker 支持因版本而异，以响应客户需求。 可以向项目添加两个级别的 Docker 支持，并且受支持的选项因项目类型和 Visual Studio 版本而异。 借助某些受支持的项目类型，如果只想将容器用于单个项目，而不使用业务流程，则可以通过添加 Docker 支持来完成。  下一级别是容器业务流程支持，该支持可为所选的特定业务流程协调程序添加相应的支持文件。
+
+借助 Visual Studio 2022，可将 Docker Compose 或 Service Fabric 用作容器业务流程服务。
+
+> [!NOTE]
+> 如果你使用完整的 .NET Framework 控制台项目模板，则在创建项目后，支持的选项是“添加容器业务流程协调程序支持”，它包括使用 Service Fabric 或 Docker Compose 的选项。 对于没有业务流程的单个项目，无法在项目创建时添加支持，也无法添加 Docker 支持。
+
+在 Visual Studio 2022 中，提供了“容器”窗口，你可用它来查看正在运行的容器，浏览可用的映像，查看环境变量、日志和端口映射，检查文件系统，附加调试器，或者在容器环境中打开终端窗口。 请参阅[使用“容器”窗口](view-and-diagnose-containers.md)。
+
+::: moniker-end
+
 ### <a name="adding-docker-support"></a>添加 Docker 支持
 
 可以通过在创建新项目时选择“启用 Docker 支持”来在项目创建期间启用 Docker 支持，如以下屏幕截图所示：
 
 ::: moniker range="vs-2017"
-![在 Visual Studio 中为新的 ASP.NET Core Web 应用启用 Docker 支持](./media/overview/enable-docker-support-visual-studio.png)
+![屏幕截图显示如何在 Visual Studio 中为新的 ASP.NET Core Web 应用启用 Docker 支持。](./media/overview/enable-docker-support-visual-studio.png)
 ::: moniker-end
-::: moniker range=">=vs-2019"
-![在 Visual Studio 中为新的 ASP.NET Core Web 应用启用 Docker 支持](./media/overview/vs-2019/enable-docker-support-visual-studio.png)
+::: moniker range="vs-2019"
+![屏幕截图显示如何在 Visual Studio 中为新的 ASP.NET Core Web 应用启用 Docker 支持。](./media/overview/vs-2019/enable-docker-support-visual-studio.png)
+::: moniker-end
+::: moniker range=">=vs-2022"
+![屏幕截图显示如何在 Visual Studio 中为新的 ASP.NET Core Web 应用启用 Docker 支持。](./media/overview/vs-2022/enable-docker-support-visual-studio.png)
 ::: moniker-end
 
 > [!NOTE]
@@ -78,15 +104,22 @@ Visual Studio 中的 Docker 支持因版本而异，以响应客户需求。 可
 
 可以通过在“解决方案资源管理器”中选择“添加” > “Docker 支持”来向现有项目添加 Docker 支持。 Add > Docker Support 和 Add > Container Orchestrator Support 命令位于“解决方案资源管理器”中 ASP.NET Core 项目的项目节点的右键单击菜单（或上下文菜单）上，如以下屏幕截图所示：
 
-![Visual Studio 中的“添加 Docker 支持”菜单选项](./media/overview/add-docker-support-menu.png)
+:::moniker range="<=vs-2019"
+![屏幕截图显示如何在 Visual Studio 中添加“Docker 支持”菜单选项。](./media/overview/add-docker-support-menu.png)
+:::moniker-end
+:::moniker range=">=vs-2022"
+![屏幕截图显示如何在 Visual Studio 中添加“Docker 支持”菜单选项。](./media/overview/vs-2022/add-docker-support.png)
+:::moniker-end
 
 当添加或启用 Docker 支持时，Visual Studio 会向项目添加以下各项：
 
-- Dockerfile 文件
-- .dockerignore 文件
-- 对 Microsoft.VisualStudio.Azure.Containers.Tools.Targets 的 NuGet 包引用
+* Dockerfile 文件
+* .dockerignore 文件
+* 对 Microsoft.VisualStudio.Azure.Containers.Tools.Targets 的 NuGet 包引用
 
-添加的 Dockerfile 将类似于以下代码。 在此示例中，项目命名为 `WebApplication-Docker`。
+添加的 Dockerfile 将类似于以下代码。 在此示例中，项目命名为 `WebApplication-Docker`，并且你选择了 Linux 容器：
+
+:::moniker range="<=vs-2019"
 
 ```Dockerfile
 #See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
@@ -113,11 +146,40 @@ COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "WebApplication-Docker.dll"]
 ```
 
+:::moniker-end
+:::moniker range=">=vs-2022"
+
+```dockerfile
+#See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
+
+FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
+WORKDIR /app
+EXPOSE 80
+EXPOSE 443
+
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+WORKDIR /src
+COPY ["WebApplication-Docker/WebApplication-Docker.csproj", "WebApplication-Docker/"]
+RUN dotnet restore "WebApplication-Docker/WebApplication-Docker.csproj"
+COPY . .
+WORKDIR "/src/WebApplication-Docker"
+RUN dotnet build "WebApplication-Docker.csproj" -c Release -o /app/build
+
+FROM build AS publish
+RUN dotnet publish "WebApplication-Docker.csproj" -c Release -o /app/publish
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "WebApplication-Docker.dll"]
+```
+
+:::moniker-end
 ::: moniker range="vs-2017"
 > [!NOTE]
 > 当按以下屏幕截图所示在项目创建期间为 ASP.NET 项目（.NET Framework，而不是 .NET Core 项目）启用 Docker 支持时，还会添加容器业务流程支持。
 
-![为 ASP.NET 项目启用 Docker Compose 支持](media/overview/enable-docker-compose-support.png)
+![屏幕截图显示为 ASP.NET 项目启用 Docker Compose 支持。](media/overview/enable-docker-compose-support.png)
 ::: moniker-end
 
 ## <a name="use-the-containers-window"></a>使用“容器”窗口
@@ -128,7 +190,12 @@ ENTRYPOINT ["dotnet", "WebApplication-Docker.dll"]
 
 选择一个容器，然后使用选项卡查看可用的信息。 若要查看，请运行启用了 Docker 的应用，打开“文件”选项卡，然后展开“应用”文件夹以查看容器上已部署的应用 。
 
-![“容器”窗口的屏幕截图](media/overview/vs-2019/container-tools-window-2.png)
+:::moniker range="<=vs-2019"
+![“容器”窗口的屏幕截图。](media/overview/vs-2019/container-tools-window-2.png)
+:::moniker-end
+:::moniker range=">=vs-2022"
+![“容器”窗口的屏幕截图。](media/overview/vs-2022/containers-files.png)
+:::moniker-end
 
 有关详细信息，请参阅[使用“容器”窗口](view-and-diagnose-containers.md)。
 
@@ -140,7 +207,12 @@ ENTRYPOINT ["dotnet", "WebApplication-Docker.dll"]
 
 向项目添加容器业务流程支持后，会看到添加到项目的 Dockerfile（如果尚无）以及添加到“解决方案资源管理器”中的某个解决方案的 docker-compose 文件夹，如下所示：
 
-![Visual Studio 解决方案资源管理器中的 Docker 文件](media/overview/docker-support-solution-explorer.png)
+:::moniker range="<=vs-2019"
+![Visual Studio 解决方案资源管理器中的 Docker 文件的屏幕截图。](media/overview/docker-support-solution-explorer.png)
+:::moniker-end
+:::moniker range=">=vs-2022"
+![Visual Studio 解决方案资源管理器中的 Docker 文件的屏幕截图。](media/overview/vs-2022/docker-compose-solution-explorer.png)
+:::moniker-end
 
 如果 docker-compose.yml 已存在，Visual Studio 只需向其添加配置代码所需的行。
 
@@ -156,7 +228,7 @@ ENTRYPOINT ["dotnet", "WebApplication-Docker.dll"]
 安装了 Azure 开发工作负载的 Visual Studio 2017 版本 15.9 及更高版本支持使用 Windows 容器和 Service Fabric 业务流程来开发容器化微服务。
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-Visual Studio 2019 支持使用 Windows 容器和 Service Fabric 业务流程来开发容器化微服务。
+Visual Studio 2019 及更高版本支持使用 Windows 容器和 Service Fabric 业务流程来开发容器化微服务。
 ::: moniker-end
 
 有关详细教程，请参阅[教程：将 Windows 容器中的 .NET 应用程序部署到 Azure Service Fabric](/azure/service-fabric/service-fabric-host-app-in-a-container)。
@@ -168,8 +240,6 @@ Visual Studio 2019 支持使用 Windows 容器和 Service Fabric 业务流程来
 Visual Studio 与 Azure Pipelines 轻松集成，以便自动完成服务代码和配置更改的持续集成和交付。 若要开始使用，请参阅[创建第一个管道](/azure/devops/pipelines/create-first-pipeline?view=azure-devops&tabs=tfs-2018-2&preserve-view=true)。
 
 有关 Service Fabric 的信息，请参阅[教程：使用 Azure DevOps Projects 将 ASP.NET Core 应用部署到 Azure Service Fabric](/azure/devops-project/azure-devops-project-service-fabric)。
-
-有关 Kubernetes 的信息，请参阅[将 Docker 容器应用部署到 Azure Kubernetes 服务](/azure/devops/pipelines/apps/cd/deploy-aks?view=azure-devops&preserve-view=true)。
 
 ## <a name="next-steps"></a>后续步骤
 

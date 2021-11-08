@@ -7,12 +7,12 @@ ms.assetid: 86f2856c-8adf-4085-9962-f4136679e5ed
 ms.date: 10/14/2021
 ms.topic: conceptual
 description: 如何为 Visual Studio 订阅添加用于登录 Azure DevOps 和 Azure 的备用标识
-ms.openlocfilehash: 0b23ec3e6b65beb801660cf47ee88bb0dec7a28d
-ms.sourcegitcommit: a8e6a8c6ca36dc76cdc44d1db934eae43470b5fa
+ms.openlocfilehash: 84ab48b377f55ea772253beb75aed6abee19927e
+ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "130030240"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "131127099"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Visual Studio 订阅者标识
 激活 Visual Studio 订阅时，我们会将用户激活期间使用的标识（或登录名）与 Visual Studio 订阅关联起来。 这样，我们便能在 [Visual Studio 订阅者门户](https://my.visualstudio.com?wt.mc_id=o~msft~docs)、Azure DevOps 和 Azure 中识别你。
@@ -69,6 +69,6 @@ ms.locfileid: "130030240"
 
 ## <a name="next-steps"></a>后续步骤 
 有关如何使用 Azure、Azure DevOps 或 Visual Studio IDE 的详细信息，请查看以下资源：
-- [Azure](vs-azure.md)
+- [Azure 开发测试套餐/额度](/azure/devtest/offer/)
 - [Azure DevOps](vs-azure-devops.md)
 - [Visual Studio](vs-ide-benefit.md)

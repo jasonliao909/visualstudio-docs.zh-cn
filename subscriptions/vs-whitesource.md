@@ -7,12 +7,12 @@ ms.assetid: 5e5d3f1a-533d-42eb-960e-01bb6bc7ca16
 ms.date: 10/18/2021
 ms.topic: how-to
 description: 了解如何激活 Visual Studio 订阅中包含的 WhiteSource Bolt 订阅。
-ms.openlocfilehash: b634346d4d16f3a53324d616914e6ec0201bb629
-ms.sourcegitcommit: 6c847aedf0f943e253a4c2f0e4b516b953168bc7
+ms.openlocfilehash: 03ba82311d0f12d5cfdbaa16a786018e59d2820e
+ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "130151910"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "131127671"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 WhiteSource Bolt
 查找和修复开源漏洞，在内部版本中生成所有开源组件的综合清单和许可报告。 Visual Studio Enterprise 订阅接收六个月的无限制扫描。
@@ -68,4 +68,4 @@ ms.locfileid: "130151910"
 请务必激活这些重要权益以充分利用 Visual Studio 订阅：
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
-- [Azure 开发测试个人额度](vs-azure.md)
+- [Azure 开发测试套餐/额度](/azure/devtest/offer/)

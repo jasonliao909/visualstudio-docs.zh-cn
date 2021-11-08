@@ -6,26 +6,32 @@ manager: jmartens
 ms.technology: vs-container-tools
 ms.devlang: dotnet
 ms.topic: how-to
-ms.date: 05/10/2021
+ms.date: 10/08/2021
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: d91e58a554847fa5a713b120d2896c2e8120b2a8
-ms.sourcegitcommit: ff81d69902e869b227d9ceb6e95023d1c63425b1
+ms.openlocfilehash: a7d3b70e2c8ce4f761e1ec6dff25a0cd3a989e9a
+ms.sourcegitcommit: aff49629012f4d5fa07c75ea0ca5bf53d28aa173
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "129595139"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "131662636"
 ---
 # <a name="launch-a-subset-of-compose-services"></a>启动 Compose 服务的子集
 
 如果应用程序包含多个服务并且使用的是 Docker Compose，可以通过在 Docker Compose 启动设置中创建或编辑现有启动配置文件来配置要运行和调试的服务。 启动配置文件允许仅动态运行对当前场景重要的服务。 可以创建启动配置文件并从中进行选择，以自定义调试体验并设置特定的启动操作，例如 `Browser Launch URL`。 你还可以选择单独选择每个服务或选择 Docker Compose 配置文件，这还将查看 Compose 文件以确定要运行的服务组。
 
 有关 Docker Compose 配置文件的信息，请参阅[使用 Compose 配置文件](https://docs.docker.com/compose/profiles/)。
- 
+
 ## <a name="prerequisites"></a>先决条件
 
+:::moniker range="vs-2019"
 - [Visual Studio 2019 版本 16.10](https://visualstudio.microsoft.com/vs/) 或更高版本
 - [使用 Docker Compose 进行容器编排](tutorial-multicontainer.md)的 .NET 解决方案
+:::moniker-end
+:::moniker range=">=vs-2022"
+- [Visual Studio 2022 RC](https://visualstudio.microsoft.com/downloads) 或 [Visual Studio 2019 版本 16.10](https://visualstudio.microsoft.com/vs/)（或更高版本）
+- [使用 Docker Compose 进行容器编排](tutorial-multicontainer.md)的 .NET 解决方案
+:::moniker-end
 
 ## <a name="manage-launch-settings"></a>管理启动设置
 
@@ -67,13 +73,23 @@ services:
 可以通过几个选项打开“Docker Compose 启动设置”对话框：
 - 在 Visual Studio 中，选择“调试” > “管理 Docker Compose 启动设置” ：
 
+    :::moniker range="<=vs-2019"
     ![调试“管理 Compose 设置”菜单项的屏幕截图](media/launch-settings/debug-dropdown-manage-compose.png)
+    :::moniker-end
+    :::moniker range=">=vs-2022"
+    ![调试“管理 Compose 设置”菜单项的屏幕截图](media/tutorial-multicontainer/vs-2022/debug-dropdown-manage-compose.png)
+    :::moniker-end
 
 - 右键单击 Visual Studio `docker-compose` 项目并选择“管理 Docker Compose 启动设置”
 
+    :::moniker range="<=vs-2019"
     ![上下文菜单项的屏幕截图](media/launch-settings/launch-settings-context-menu.png)
+    :::moniker-end
+    :::moniker range=">=vs-2022"
+    ![上下文菜单项的屏幕截图](media/launch-settings/vs-2022/launch-settings-context-menu.png)
+    :::moniker-end
 
-- 使用“快速启动”(Ctrl+Q) 并搜索“Docker Compose”找到上述命令  。
+- 使用“快速启动”(Ctrl+Q) 并搜索“Docker Compose”找到相同命令。
 
 在下面的示例中，`web1` Compose 配置文件处于选中状态，这将对“服务”列表进行筛选，使该配置文件中仅包含五个服务中的三个服务：
 

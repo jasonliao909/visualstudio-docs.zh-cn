@@ -1,7 +1,7 @@
 ---
 title: 通过导入发布设置发布到 Azure
-description: 创建并导入发布配置文件，以便将应用程序从 Visual Studio 部署到 Azure 应用服务
-ms.date: 08/27/2021
+description: 创建并导入发布设置，以便将应用程序从 Visual Studio 部署到 Azure 应用服务
+ms.date: 10/22/2021
 ms.topic: tutorial
 helpviewer_keywords:
 - deployment, publish settings
@@ -11,30 +11,21 @@ manager: jmartens
 ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d2807480741ff40df82156eea563843bec07712
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 7ec58b2523aa0a8d46be16a3ba42625b578b6488
+ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126652440"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "131127996"
 ---
-# <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>通过在 Visual Studio 中导入发布设置将应用程序发布到 Azure 应用服务
+# <a name="get-publish-settings-from-azure-and-import-into-visual-studio"></a>从 Azure 获取发布设置，并将其导入 Visual Studio
 
-可使用“发布”工具导入发布设置，然后部署应用。 在本文中，我们使用 Azure 应用服务的发布设置，但你可以使用类似的步骤从 [IIS](../deployment/tutorial-import-publish-settings-iis.md) 导入发布设置。 在某些情况下，对于每个 Visual Studio 安装，使用发布设置配置文件比为服务手动配置部署要快。
+可使用“发布”工具导入发布设置，然后部署应用。 本文使用 Azure 应用服务的发布设置。
 
-这些步骤适用于 Visual Studio 中的 ASP.NET、ASP.NET Core 和 .NET Core 应用。 也可以为 [Python](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) 应用导入发布设置。
-
-在本教程中，你将：
-
-> [!div class="checklist"]
-> * 从 Azure 应用服务生成发布设置文件
-> * 将发布设置文件导入 Visual Studio
-> * 将应用部署到 Azure 应用服务
-
-发布设置文件 (\*.publishsettings) 与在 Visual Studio 中创建的发布配置文件 (\*.pubxml) 不同 。 发布设置文件由 Azure 应用服务创建，然后可将其导入 Visual Studio。
+这些步骤适用于 ASP.NET 和 ASP.NET Core Web 应用。 也可以为 [Python](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) 应用导入发布设置。
 
 > [!NOTE]
-> 若只需要将 Visual Studio 发布配置文件（\*.pubxml 文件）从一个 Visual Studio 安装复制到另一个，则对于托管项目类型可以在 \\<projectname\>\Properties\PublishProfiles 文件夹中查找发布配置文件 \<profilename\>.pubxml  。 对于网站则在 \App_Data 文件夹下进行查找。 发布配置文件是 MSBuild XML 文件。
+> 发布设置文件 (\*.publishsettings) 与在 Visual Studio 中创建的发布配置文件 (\*.pubxml) 不同 。 发布设置文件由 Azure 应用服务创建，然后可将其导入 Visual Studio。
 
 ## <a name="prerequisites"></a>先决条件
 
