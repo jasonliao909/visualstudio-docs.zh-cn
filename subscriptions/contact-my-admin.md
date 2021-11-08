@@ -7,12 +7,12 @@ ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
 ms.date: 10/11/2021
 ms.topic: how-to
 description: 了解如何在有疑问或遇到问题时联系你的订阅管理员来寻求帮助。
-ms.openlocfilehash: 854806959cb7ff3f622cb2fc20be3eddd76970ad
-ms.sourcegitcommit: 7b2b00da38905c4560f823090c3140be77803711
+ms.openlocfilehash: 2edb686c555cb8c93a069d9705656905f6b51ada
+ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2021
-ms.locfileid: "129813050"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "131126449"
 ---
 # <a name="get-assistance-from-your-subscriptions-admin"></a>从你的订阅管理员处获取帮助
 如果 Visual Studio 订阅是由你的工作单位或学校提供给你的，那么它很可能是由订阅管理员或“管理员”分配给你的。  管理员可以分配或删除订阅，更改登录电子邮件地址，确定你是否能够下载软件以及执行与订阅相关的其他功能。
@@ -44,7 +44,7 @@ ms.locfileid: "129813050"
 ## <a name="next-steps"></a>后续步骤
 如果尚未这样做，建议激活这些权益，充分利用 Visual Studio 订阅：
 - [Visual Studio IDE](vs-ide-benefit.md)
-- [Azure](vs-azure.md)
+- [Azure 开发测试套餐/额度](/azure/devtest/offer/)
 - [Azure DevOps](vs-azure-devops.md)
 
 可在 https://my.visualstudio.com/benefits 中找到这些权益甚至更多信息。

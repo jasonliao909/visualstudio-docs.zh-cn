@@ -7,12 +7,12 @@ ms.assetid: d1257931-392a-4a65-bf26-177737505122
 ms.date: 03/21/2021
 ms.topic: how-to
 description: 了解和安装 Microsoft 365 应用企业版
-ms.openlocfilehash: 0ec77f2a5a03e41d9a44bc8cfa7676e289291d2f
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: acab68b72e02f72b7b8c6673126133801f4794a0
+ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128432736"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "131126930"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Microsoft 365 应用企业版
 Microsoft 365 应用企业版（旧称 Office 365 Pro Plus）在选定的 Visual Studio 订阅中提供。 
@@ -87,4 +87,4 @@ Microsoft 365 应用企业版（旧称 Office 365 Pro Plus）在选定的 Visual
 请务必激活这些重要权益以充分利用 Visual Studio 订阅：
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
-- [Azure 开发测试个人额度](vs-azure.md) 如果你打算开发 Office 应用，建议激活 [Office 开发人员订阅](./vs-m365.md)
+- [Azure 开发测试套餐/额度](/azure/devtest/offer/) 如果计划开发 Office 应用程序，建议激活 [Office 开发人员订阅](./vs-m365.md)

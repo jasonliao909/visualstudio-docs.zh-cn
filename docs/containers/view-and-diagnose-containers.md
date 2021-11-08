@@ -4,15 +4,15 @@ description: 介绍如何通过使用“容器”工具窗口查看环境变量�
 author: ghogen
 ms.author: ghogen
 ms.topic: how-to
-ms.date: 01/20/2020
+ms.date: 10/27/2021
 ms.technology: vs-container-tools
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: f33f0e86fff98d670d964766fcbedfca319b1780
-ms.sourcegitcommit: 4efdab6a579b31927c42531bb3f7fdd92890e4ac
+ms.openlocfilehash: 994804c897165cd5fb0b658163ead79396d3c530
+ms.sourcegitcommit: aff49629012f4d5fa07c75ea0ca5bf53d28aa173
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "130350789"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "131662189"
 ---
 # <a name="use-the-containers-window"></a>使用“容器”窗口
 
@@ -22,14 +22,27 @@ ms.locfileid: "130350789"
 
 ## <a name="prerequisites"></a>先决条件
 
+:::moniker range="vs-2019"
+
 - [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 - [Visual Studio 2019 版本 16.4](https://visualstudio.microsoft.com/downloads) 或更高版本。
+:::moniker-end
+:::moniker range=">=vs-2022"
+- [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
+- [Visual Studio 2022 RC](https://visualstudio.microsoft.com/downloads) 或 [Visual Studio 2019 版本 16.4](https://visualstudio.microsoft.com/downloads)（或更高版本）
+
+:::moniker-end
 
 ## <a name="view-information-about-your-containers"></a>查看容器的相关信息
 
 启动容器化 .NET 项目时，自动打开“容器”窗口  。 若要随时在 Visual Studio 中查看容器，请使用 Ctrl+Q 激活 Visual Studio 搜索框，键入 `Containers` 并选择第一项   。 还可以从主菜单中打开“容器”窗口  。 使用菜单路径“查看” > “其他 Windows” > “容器”    。  
 
+:::moniker range="vs-2019"
 ![Visual Studio 中“容器”窗口的屏幕截图，其中在左窗格中选中了一个容器，在右窗格中选中了“环境”选项卡。](media/view-and-diagnose-containers/container-window.png)
+:::moniker-end
+:::moniker range="vs-2022"
+![Visual Studio 中“容器”窗口的屏幕截图，其中在左窗格中选中了一个容器，在右窗格中选中了“环境”选项卡。](media/view-and-diagnose-containers/vs-2022/container-tools-window.png)
+:::moniker-end
 
 在左侧，可看到本地计算机上的容器列表。 与解决方案关联的容器显示在“解决方案容器”下  。 在右侧，可看到一个窗格，其中包含“环境”、“标签”、“端口”、“卷”、“日志”和“文件”选项卡     。
 
@@ -40,8 +53,12 @@ ms.locfileid: "130350789"
 
 “环境”选项卡显示容器中的环境变量  。 对于应用的容器，可以通过多种方式设置这些变量，例如，在 Dockerfile 中，在 .env 文件中，或使用 Docker 命令启动容器时使用 -e 选项进行设置。
 
+:::moniker range="vs-2019"
 ![Visual Studio 中“容器”窗口的屏幕截图，其中显示容器的“环境”变量。](media/view-and-diagnose-containers/containers-environment-vars.png)
-
+:::moniker-end
+:::moniker range=">=vs-2022"
+![Visual Studio 中“容器”窗口的屏幕截图，其中显示容器的“环境”变量。](media/view-and-diagnose-containers/vs-2022/containers-environment-variables.png)
+:::moniker-end
 > [!NOTE]
 > 对环境变量所做的任何更改都不会实时反映出来。 此外，此选项卡中的环境变量是容器上的系统环境变量，不反映应用程序的本地用户环境变量。
 
@@ -49,27 +66,46 @@ ms.locfileid: "130350789"
 
 “标签”选项卡显示容器的标签。 标签是在 Docker 对象上设置自定义元数据的一种方法。 某些标签由 Visual Studio 自动设置。
 
-![Visual Studio 中“容器”窗口的屏幕截图，其中显示“标签”选项卡](media/view-and-diagnose-containers/containers-labels.png)
+:::moniker range="vs-2019"
+![Visual Studio 中“容器”窗口的屏幕截图，其中显示“标签”选项卡。](media/view-and-diagnose-containers/containers-labels.png)
+:::moniker-end
+:::moniker range=">=vs-2022"
+![Visual Studio 中“容器”窗口的屏幕截图，其中显示“标签”选项卡。](media/view-and-diagnose-containers/vs-2022/containers-labels.png)
+:::moniker-end
 
 ## <a name="view-port-mappings"></a>查看端口映射
 
 在“端口”选项卡上，可以检查对容器有效的端口映射  。
 
-![“容器”窗口中“端口”选项卡的屏幕截图](media/view-and-diagnose-containers/containers-ports.png)
-
+:::moniker range="vs-2019"
+![“容器”窗口中“端口”选项卡的屏幕截图。](media/view-and-diagnose-containers/containers-ports.png)
+:::moniker-end
+:::moniker range=">=vs-2022"
+![“容器”窗口中“端口”选项卡的屏幕截图。](media/view-and-diagnose-containers/vs-2022/containers-ports.png)
+:::moniker-end
 已链接已知端口，因此，如果某个端口上有可用的内容，则可以单击该链接打开浏览器。
 
 ## <a name="view-volumes"></a>查看卷
 
 “卷”选项卡显示容器上的卷（装载的文件系统节点）。
 
-![“容器”窗口中“卷”选项卡的屏幕截图](media/view-and-diagnose-containers/containers-volumes.png)
+:::moniker range="vs-2019"
+![“容器”窗口中“卷”选项卡的屏幕截图。](media/view-and-diagnose-containers/containers-volumes.png)
+:::moniker-end
+:::moniker range=">=vs-2022"
+![“容器”窗口中“卷”选项卡的屏幕截图。](media/view-and-diagnose-containers/vs-2022/containers-volumes.png)
+:::moniker-end
 
 ## <a name="view-logs"></a>查看日志
 
 “日志”选项卡显示 `docker logs` 命令的结果  。 该选项卡默认显示容器上的 stdout 和 stderr 流，但你可以配置输出。 有关详细信息，请参阅 [Docker 日志记录](https://docs.docker.com/config/containers/logging/)。  “日志”选项卡默认流式传输日志，但你可以通过选择选项卡上的“停止”按钮来禁用流式传输   。
 
-![“容器”窗口中“日志”选项卡的屏幕截图](media/view-and-diagnose-containers/containers-logs.png)
+:::moniker range="vs-2019"
+![“容器”窗口中“日志”选项卡的屏幕截图。](media/view-and-diagnose-containers/containers-logs.png)
+:::moniker-end
+:::moniker range=">=vs-2022"
+![“容器”窗口中“日志”选项卡的屏幕截图。](media/view-and-diagnose-containers/vs-2022/containers-logs.png)
+:::moniker-end
 
 若要清除日志，请使用“日志”选项卡上的“清除”按钮   。若要获取所有日志，请使用“刷新”按钮  。
 
@@ -80,11 +116,21 @@ ms.locfileid: "130350789"
 
 在“文件”选项卡上，可以查看容器的文件系统，包括其中包含项目的应用文件夹  。
 
-![“容器”窗口中“文件”选项卡的屏幕截图](media/view-and-diagnose-containers/container-filesystem.png)
+:::moniker range="vs-2019"
+![“容器”窗口中“文件”选项卡的屏幕截图。](media/view-and-diagnose-containers/container-filesystem.png)
+:::moniker-end
+:::moniker range=">=vs-2022"
+![“容器”窗口中“文件”选项卡的屏幕截图。](media/view-and-diagnose-containers/vs-2022/containers-files.png)
+:::moniker-end
 
 若要在 Visual Studio 中打开文件，请浏览到该文件并双击它，或右键单击并选择“打开”  。 Visual Studio 在只读模式下打开文件。
 
-![在 Visual Studio 中打开以供查看的文件的屏幕截图](media/view-and-diagnose-containers/container-file-open.png)
+:::moniker range="vs-2019"
+![在 Visual Studio 中打开以供查看的文件的屏幕截图。](media/view-and-diagnose-containers/container-file-open.png)
+:::moniker-end
+:::moniker range="vs-2022"
+![在 Visual Studio 中打开以供查看的文件的屏幕截图。](media/view-and-diagnose-containers/vs-2022/container-file-open.png)
+:::moniker-end
 
 使用“文件”选项卡，可以查看容器的文件系统中的应用程序日志（例如 IIS 日志）、配置文件和其他内容文件  。
 
@@ -98,11 +144,21 @@ ms.locfileid: "130350789"
 
 可以使用“容器”窗口中的“打开终端窗口”按钮在容器中打开终端窗口（命令提示符或交互式 shell）   。
 
-![在“容器”窗口中打开终端窗口的屏幕截图](media/view-and-diagnose-containers/containers-open-terminal-window.png)
+:::moniker range="vs-2019"
+![在“容器”窗口中打开终端窗口的屏幕截图。](media/view-and-diagnose-containers/containers-open-terminal-window.png)
+:::moniker-end
+:::moniker range=">=vs-2022"
+![在“容器”窗口中打开终端窗口的屏幕截图。](media/view-and-diagnose-containers/vs-2022/containers-open-terminal-window.png)
+:::moniker-end
 
 对于 Windows 容器，将打开 Windows 命令提示符。 对于 Linux 容器，将使用 bash shell 打开窗口。
 
-![bash 窗口的屏幕截图](media/view-and-diagnose-containers/container-bash-window.png)
+:::moniker range="vs-2019"
+![bash 窗口的屏幕截图。](media/view-and-diagnose-containers/container-bash-window.png)
+:::moniker-end
+:::moniker range=">=vs-2022"
+![bash 窗口的屏幕截图。](media/view-and-diagnose-containers/vs-2022/container-bash-window.png)
+:::moniker-end
 
 通常，终端窗口会在 Visual Studio 之外作为单独的窗口打开。 如果希望将命令行环境作为可停靠的工具窗口集成到 Visual Studio IDE 中，则可以安装 [Whack Whack Terminal](https://marketplace.visualstudio.com/items?itemName=DanielGriffen.WhackWhackTerminal)。
 
@@ -110,7 +166,12 @@ ms.locfileid: "130350789"
 
 可以使用“容器”窗口工具栏上的“附加到进程”  按钮，将调试器附加到正在容器中运行的进程。 使用此按钮时，将出现“附加到进程”  对话框，并显示正在容器中运行的可用进程。  
 
-![“附加到进程”对话框的屏幕截图](media/view-and-diagnose-containers/containers-attach-to-process.jpg)
+:::moniker range="vs-2019"
+![“附加到进程”对话框的屏幕截图。](media/view-and-diagnose-containers/containers-attach-to-process.jpg)
+:::moniker-end
+:::moniker range=">=vs-2022"
+![“附加到进程”对话框的屏幕截图。](media/view-and-diagnose-containers/vs-2022/containers-attach-to-process.png)
+:::moniker-end
 
 可以附加到容器中的托管进程。 若要查找另一个容器中的进程，请使用“查找”按钮，然后在“选择 Docker 容器”对话框中选择另一个容器   。
 
@@ -118,11 +179,21 @@ ms.locfileid: "130350789"
 
 还可以使用“容器”窗口中的“图像”选项卡来查看本地计算机上的图像   。 从外部存储库中提取的图像将在树视图中组合在一起。
 
-![显示“容器”窗口的屏幕截图，其中显示了容器映像](media/view-and-diagnose-containers/containers-images.png)
+:::moniker range="vs-2019"
+![显示“容器”窗口的屏幕截图，其中显示了容器映像。](media/view-and-diagnose-containers/containers-images.png)
+:::moniker-end
+:::moniker range=">=vs-2022"
+![显示“容器”窗口的屏幕截图，其中显示了容器映像。](media/view-and-diagnose-containers/vs-2022/containers-images-labels.png)
+:::moniker-end
 
 此窗口只有适用于映像的选项卡：“标签”和“详细信息” 。 “详细信息”选项卡以 JSON 格式显示映像的配置详细信息。
 
-![屏幕截图显示“容器”窗口的“映像”>“详细信息”选项卡](media/view-and-diagnose-containers/containers-images-details.png)
+:::moniker range="vs-2019"
+![屏幕截图显示“容器”窗口的“映像”>“详细信息”选项卡。](media/view-and-diagnose-containers/containers-images-details.png)
+:::moniker-end
+:::moniker range=">=vs-2022"
+![屏幕截图显示“容器”窗口的“映像”>“详细信息”选项卡。](media/view-and-diagnose-containers/vs-2022/containers-images-details.png)
+:::moniker-end
 
 若要删除某个图像，请在树视图中右键单击该图像，然后选择“删除”  ，或选择该图像，然后使用工具栏上的“删除”  按钮。
 
@@ -130,7 +201,12 @@ ms.locfileid: "130350789"
 
 可以通过使用“容器”窗口工具栏上的“删除”按钮轻松删除不再使用的容器和映像 。
 
-![显示删除按钮的屏幕截图](media/view-and-diagnose-containers/container-window-prune.png)
+:::moniker range="vs-2019"
+![显示删除按钮的屏幕截图。](media/view-and-diagnose-containers/container-window-prune.png)
+:::moniker-end
+:::moniker range=">=vs-2022"
+![显示删除按钮的屏幕截图。](media/view-and-diagnose-containers/vs-2022/containers-prune.png)
+:::moniker-end
 
 系统会要求你确认是否要删除所有未使用的容器。
 

@@ -7,12 +7,12 @@ ms.assetid: 34eaceda-f5db-41d6-bc23-ecf55fe1768e
 ms.date: 10/13/2021
 ms.topic: conceptual
 description: 了解管理员删除 Visual Studio 订阅后会发生什么情况。
-ms.openlocfilehash: 731992def5e44aebb07d95d26b4a3b40e585c166
-ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
+ms.openlocfilehash: ccf02e271ed0f8a125cb2cb5b4f99497e8b37ad3
+ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "130010712"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "131127281"
 ---
 # <a name="what-happens-when-an-admin-removes-my-subscription"></a>管理员删除订阅后会发生什么情况？
 如果你的 Visual Studio 订阅由你的工作或学校组织中的管理员分配给你，则他们可能会在某个时间点删除该订阅。  原因可能包括对作业角色或组织购买计划的更改。  如果管理员删除你的订阅，本文将概述你可能会遇到的情况。  
@@ -30,8 +30,8 @@ Visual Studio IDE 的许可证依赖于分配给你的订阅。  如果删除你
 删除你的订阅后，你将不会再产生单个 Azure 信用额度。  已产生的信用额度将保留 30 天。  此时，资产将不再可用。 
 
 要避免丢失资产，请确保在删除订阅时执行以下操作之一：
-- 将订阅转换为即用即付。  有关详细信息，请访问我们的 [Azure 开发测试即用即付订阅](vs-azure-payg.md)一文。  你需要将付款方式（例如信用卡）附加到此订阅。 
-- 请你的资产移动到另一个可用的 Azure 订阅（如有）。  例如，如果你有不同 Visual Studio 订阅一部分的 Azure 订阅。  Azure 文档包括将[资源移动到新订阅](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription)的说明。  
+- 将订阅转换为即用即付。  有关详细信息，请访问 [Azure 开发测试即用即付订阅页面](https://azure.microsoft.com/offers/ms-azr-0023p/)。  你需要将付款方式（例如信用卡）附加到此订阅。 
+- 请你的资产移动到另一个可用的 Azure 订阅（如有）。  例如，如果你有不同 Visual Studio 订阅一部分的 Azure 订阅。  Azure 文档包括将[资源移动到新订阅](/azure/devtest/offer/how-to-change-directory-tenants-visual-studio-azure)的说明。  
 
   > [!IMPORTANT]
   > 重要的是，将 Azure 资产移动到新的 Azure 订阅，或将现有的 Azure 订阅更改为即用即付，以避免丢失现有的 Azure 资产。 

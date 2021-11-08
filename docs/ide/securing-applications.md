@@ -1,8 +1,8 @@
 ---
 title: 安全
 description: 了解一些安全概念以及有助于有效开发安全应用程序的安全功能。
-ms.custom: SEO-VS-2020
-ms.date: 06/01/2018
+ms.custom: SEO-VS-2021
+ms.date: 10/26/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - security [Visual Studio], applications
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: d95b640fc6daae8c9fe6734ab6cec5c73f96cd1c
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 975e3f286a3b7aeee0e7f0962e65d0b05ba570e5
+ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641105"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "131126423"
 ---
 # <a name="secure-applications"></a>安全应用程序
 
@@ -46,6 +46,7 @@ ms.locfileid: "126641105"
 - [.NET 中的安全性](/dotnet/standard/security/index)
 - [Azure 安全性](/azure/security/)
 - [Windows 10 移动版安全指南](/windows/security/threat-protection/windows-10-mobile-security-guide)
+- [Windows 安全性](/windows/security/)
 - [Apache Cordova 平台安全功能](/previous-versions/visualstudio/cross-platform/tools-for-cordova/security/best-practices?view=toolsforcordova-2017&preserve-view=true)
 - [ASP.NET Core 安全](/aspnet/core/security/?view=aspnetcore-2.1&preserve-view=true)
 - [Windows 窗体安全](/dotnet/framework/winforms/windows-forms-security)

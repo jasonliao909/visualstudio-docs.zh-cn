@@ -7,12 +7,12 @@ ms.assetid: c4b13464-76be-40f1-ad60-ed79ee264b12
 ms.date: 10/18/2021
 ms.topic: how-to
 description: 了解如何下载并安装包含在 Visual Studio 订阅中的 Visual Studio IDE
-ms.openlocfilehash: cb11004982cc0780118c0cb8144538c55d4986bb
-ms.sourcegitcommit: 6c847aedf0f943e253a4c2f0e4b516b953168bc7
+ms.openlocfilehash: 004aa32f6d4596727b5eed51c8450a609519677f
+ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "130152093"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "131126865"
 ---
 # <a name="the-visual-studio-ide"></a>Visual Studio IDE
 作为 Visual Studio 订阅者，你可以访问 Visual Studio IDE。  具体版本将取决于你的订阅级别。  在订阅者门户的[权益](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)页上，该权益将以磁贴形式显示在“工具”类别中。
@@ -98,5 +98,5 @@ Visual Studio 订阅支持提供有关销售、订阅、帐户和计费方面的
 ## <a name="next-steps"></a>后续步骤
 安装 Visual Studio 后，请不要忘记激活以下其他重要权益：
 - [Azure DevOps](vs-azure-devops.md)
-- [Azure 开发测试个人额度](vs-azure.md)
+- [Azure 开发测试套餐/额度](/azure/devtest/offer/)
 - [Windows 开发人员帐户](vs-windows-dev.md)

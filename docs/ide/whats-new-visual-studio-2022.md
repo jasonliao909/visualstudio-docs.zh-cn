@@ -2,7 +2,7 @@
 title: Visual Studio 2022 中的新增功能
 titleSuffix: ''
 description: 了解 Visual Studio 2022 预览版中的新增功能。
-ms.date: 10/13/2021
+ms.date: 10/29/2021
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -14,12 +14,12 @@ ms.prod: visual-studio-dev17
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c82c1c83f4575000e107f506fe1d746723c652a
-ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
+ms.openlocfilehash: 16c932a37547e8c166768f3da94a97cbec1395cf
+ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "130010829"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "131127073"
 ---
 # <a name="whats-new-in-visual-studio-2022"></a>Visual Studio 2022 中的新增功能
 
@@ -76,7 +76,11 @@ Windows 上的 Visual Studio 2022 现在是 64 位应用程序。 这意味着�
 
 我们正在重新整理用户界面，以便使你的操作更加顺畅。 其中一些更改是细微的外观修改，目的是使 UI 现代化或减轻元素拥挤情况。
 
-### <a name="personalization-improvements"></a>个性化改进
+### <a name="look--feel"></a>外观和感觉
+
+从新的图标到细微的颜色对比度调整和新的 Cascadia Code 字体，我们致力于使每个人都能更轻松地使用 Visual Studio 2022。 有关所有详细信息，请参阅[我们已升级 Visual Studio 2022 中的 UI](https://devblogs.microsoft.com/visualstudio/weve-upgraded-the-ui-in-visual-studio-2022/) 博客文章。
+
+### <a name="personalization"></a>个性化设置
 
 我们的主要重点之一是使 Visual Studio 更加个性化和灵活，使 IDE 成为你自己的 IDE。 例如，[Visual Studio 2022 预览版 3](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-preview-3-now-available/) 提供与 Windows 主题同步的功能。 因此，如果你在其中启用了“夜灯”功能，Visual Studio 也将使用此功能。 有关详细信息，请参阅[个性化设置 Visual Studio 2022](https://devblogs.microsoft.com/visualstudio/personalize-your-visual-studio-2022/) 博客文章。
 

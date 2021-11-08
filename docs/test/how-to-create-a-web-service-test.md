@@ -13,12 +13,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
-ms.openlocfilehash: b41f17b50c359ff7ff8f14bac99d783520a8bc5a
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: b3c1e8f18937ba0947fbaac50a74ff4d8ebd5e8c
+ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641503"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "131128022"
 ---
 # <a name="how-to-create-a-web-service-test"></a>如何：创建 Web 服务测试
 
@@ -29,7 +29,11 @@ ms.locfileid: "126641503"
 
 **要求**
 
-Visual Studio Enterprise
+* Visual Studio Enterprise
+* Internet Explorer
+
+>[!NOTE]
+> Web 性能和负载测试功能仅支持 Internet Explorer，其在 Windows 11 和某些版本的 Windows 10 上不可用。 阅读有关 [Internet Explorer 生命周期策略](/lifecycle/faq/internet-explorer-microsoft-edge#what-is-the-lifecycle-policy-for-internet-explorer-)的详细信息。
 
 ## <a name="to-create-a-simple-web-service"></a>创建一个简单的 Web 服务
 

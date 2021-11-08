@@ -1,7 +1,7 @@
 ---
 title: 客户体验改善计划
 description: 了解如何在 Visual Studio 中管理隐私设置，并了解 Visual Studio 系统生成的日志、收集的数据类型，以及如何使用该日志来解决问题并提高产品质量。
-ms.date: 10/18/2021
+ms.date: 10/28/2021
 ms.topic: conceptual
 author: anandmeg
 ms.author: meghaanand
@@ -9,12 +9,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d2148ee4629e8d43edf60ab855dfe0d38eabae5
-ms.sourcegitcommit: efe1d737fd660cc9183177914c18b0fd4e39ba8b
+ms.openlocfilehash: b5f8991deec8543cd0ce6bf1d134318996bdfc22
+ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "130211462"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "131127620"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio 客户体验改善计划
 
@@ -31,13 +31,29 @@ Visual Studio 客户体验改善计划 (VSCEIP) 旨在随着时间推移帮助 M
 
 VSCEIP 默认开启。 可以按照以下步骤将其关闭或者再次打开：
 
-1. 在 Visual Studio 中，选择“帮助” > “发送反馈”，然后选择“设置”。
+::: moniker range="vs-2017"
+
+1. 在 Visual Studio 中，选择“帮助”>“发送反馈”，然后选择“设置” 。
 
    “Visual Studio 体验改善计划”对话框随即打开。
 
 1. 若要选择退出，请选择“否，我不想参加”，然后选择“确定”。 若要选择加入，请选择“是，我愿意参加”，然后选择“确定”。
 
    ![“Visual Studio 体验改善计划”对话框](media/experience-improvement-program.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. 在 Visual Studio 中，选择“帮助”>“隐私”>“隐私设置”  。
+
+   “Visual Studio 体验改善计划”对话框随即打开。
+
+1. 若要选择退出，请选择“否，我不想参加”，然后选择“确定”。 若要选择加入，请选择“是，我愿意参加(建议)”，然后选择“确定” 。
+
+   ![“Visual Studio 体验改善计划”对话框](media/vs-2022/experience-improvement-program.png)
+
+::: moniker-end
 
 #### <a name="registry-settings"></a>注册表设置
 
@@ -53,10 +69,18 @@ VSCEIP 默认开启。 可以按照以下步骤将其关闭或者再次打开：
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 
 - 在 64 位操作系统上，Key = HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\16.0\SQM
 - 在 32 位操作系统上，Key = HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\16.0\SQM
+- 启用“组策略”时，Key = HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+- 在 64 位操作系统上，Key = HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\17.0\SQM
+- 在 32 位操作系统上，Key = HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\17.0\SQM
 - 启用“组策略”时，Key = HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM
 
 ::: moniker-end

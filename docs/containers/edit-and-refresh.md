@@ -7,14 +7,14 @@ manager: jmartens
 ms.assetid: 480e3062-aae7-48ef-9701-e4f9ea041382
 ms.topic: how-to
 ms.workload: multiple
-ms.date: 03/08/2021
+ms.date: 10/27/2021
 ms.technology: vs-container-tools
-ms.openlocfilehash: 1e6ff0539e46f38a5a81631c5a38ab6f792a7b15
-ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
+ms.openlocfilehash: 34dfcb364f1c64db4f36d4efa8171ee98aa07f79
+ms.sourcegitcommit: aff49629012f4d5fa07c75ea0ca5bf53d28aa173
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "130011011"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "131662077"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>在本地 Docker 容器中调试应用
 
@@ -47,7 +47,7 @@ Visual Studio 提供了一种一致方法来开发 Docker 容器，并在本地�
 
 ::: moniker-end
 
-若要在本地运行 Docker 容器，必须安装本地 Docker 客户端。 你可以使用[用于 Windows 的 Docker](https://www.docker.com/get-docker)，它使用 Hyper-V 并要求安装 Windows 10。
+若要在本地运行 Docker 容器，必须安装本地 Docker 客户端。 你可以使用 [Docker Desktop](https://www.docker.com/get-docker)，这需要 Windows 10 或更高版本。
 
 Docker 容器可用于 .NET Framework 和 .NET Core 项目。 请看以下两个示例。 首先，我们来了解一下 .NET Core Web 应用。 接下来，我们来了解 .NET Framework 控制台应用。
 
@@ -58,8 +58,11 @@ Docker 容器可用于 .NET Framework 和 .NET Core 项目。 请看以下两个
 ::: moniker range="vs-2017"
 [!INCLUDE [create-aspnet5-app](../azure/includes/create-aspnet5-app.md)]
 ::: moniker-end
-::: moniker range=">= vs-2019"
+::: moniker range="vs-2019"
 [!INCLUDE [create-aspnet5-app-2019](../azure/includes/vs-2019/create-aspnet5-app-2019.md)]
+::: moniker-end
+::: moniker range=">=vs-2022"
+[!INCLUDE [create-aspnet5-app-2022](../azure/includes/vs-2022/create-aspnet5-app-2022.md)]
 ::: moniker-end
 
 ### <a name="edit-your-code-and-refresh"></a>编辑代码并刷新
@@ -136,29 +139,36 @@ Docker 容器可用于 .NET Framework 和 .NET Core 项目。 请看以下两个
 4. 要启动调试并命中断点，请按 F5。
 5. 切换到 Visual Studio 以查看断点。 检查值。
 
+   :::moniker range="vs-2019"
    ![显示 Visual Studio 中 Index.cshtml.cs 的部分代码的屏幕截图，其中在以黄色突出显示的代码行的左侧设置了一个断点。](media/edit-and-refresh/breakpoint.png)
+   :::moniker-end
+   :::moniker range=">=vs-2022"
+   ![显示 Visual Studio 中 Index.cshtml.cs 的部分代码的屏幕截图，其中在以黄色突出显示的代码行的左侧设置了一个断点。](media/edit-and-refresh/vs-2022/breakpoint.png)
+   :::moniker-end
 
-## <a name="create-a-net-framework-console-app&quot;></a>创建 .NET Framework 控制台应用
+## <a name="create-a-net-framework-console-app"></a>创建 .NET Framework 控制台应用
 
 使用 .NET Framework 控制台应用项目时，不支持在没有业务流程的情况下添加 Docker 支持的方式。 即使仅使用单个 Docker 项目，你仍可以使用以下过程。
 
 1. 创建新的 .NET Framework 控制台应用项目。
 1. 在解决方案资源管理器中，右键单击项目节点，然后选择“添加” > “容器业务流程支持” 。  在出现的对话框中，选择“Docker Compose”。 将 Dockerfile 添加到项目中，并添加一个包含相关支持文件的 Docker Compose 项目。
 
-### <a name=&quot;debug-with-breakpoints&quot;></a>使用断点进行调试
+### <a name="debug-with-breakpoints"></a>使用断点进行调试
 
 1. 在解决方案资源管理器中，打开 Program.cs。
 2. 将 `Main` 方法的内容替换为以下代码：
 
    ```csharp
-       System.Console.WriteLine(&quot;Hello, world!");
+       System.Console.WriteLine("Hello, world!");
    ```
 
 3. 在代码行的左侧设置一个断点。
 4. 要启动调试并命中断点，请按 F5。
 5. 切换到 Visual Studio 以查看断点，并检查值。
 
+   :::moniker range="<=vs-2019"
    ![Visual Studio 中 Program.cs 的代码窗口的屏幕截图，其中在以黄色突出显示的代码行的左侧设置了一个断点。](media/edit-and-refresh/breakpoint-console.png)
+   ::: moniker-end
 
 ## <a name="container-reuse"></a>容器重复使用
 
