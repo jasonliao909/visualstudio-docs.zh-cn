@@ -36,12 +36,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b714de7bd050430eae1a45e36fa877acc7aa2b8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: b2d60c9d020cb5dbc788ebe13d2360ed11430a51
+ms.sourcegitcommit: 4efdab6a579b31927c42531bb3f7fdd92890e4ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122090325"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "130351198"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中使用断点
 
@@ -88,7 +88,11 @@ ms.locfileid: "122090325"
 
 1. 右键单击该断点符号并选择“条件”（或按 Alt  +  F9，C）。 或者将鼠标悬停在断点符号上，选择“设置”图标，然后在“断点设置”窗口中选择“条件”  。
 
-   还可以在“断点”窗口中设置条件，方法是右键单击断点并选择“设置”，然后选择“条件”  。
+::: moniker range=">= vs-2022"
+还可以右键单击代码行旁边的最左边距，然后从上下文菜单中选择“插入条件断点”以设置新的条件断点。 
+::: moniker-end
+
+还可以在“断点”窗口中设置条件，方法是右键单击断点并选择“设置”，然后选择“条件”
 
    ![断点设置](../debugger/media/breakpointsettings.png "BreakpointSettings")
 
@@ -262,6 +266,47 @@ ms.locfileid: "122090325"
 > - 数据断点取决于特定的内存地址。 变量的地址随调试会话而更改，因此将在每个调试会话结束时自动禁用数据断点。
 >
 > - 如果在局部变量上设置数据断点，则断点在函数结束时仍处于启用状态，但内存地址不再适用，因此断点的行为不可预测。 如果在局部变量上设置了数据断点，则应在函数结束前删除或禁用该断点。
+
+::: moniker range=">= vs-2022"
+## <a name="set-a-dependent-breakpoint"></a><a name="BKMK_set_a_dependent_breakpoint"></a>设置依赖断点
+
+仅当第一次命中另一个断点时，依赖断点才会中断执行。 因此，在复杂场景中（例如调试多线程应用程序），可以在第一次命中另一个断点之后配置其他断点。 这可以使常见路径中的代码调试（例如游戏循环或实用工具 API）变得更加容易，因为这些函数中的断点可以配置为仅当从应用程序的特定部分调用函数时才启用。
+
+设置依赖断点：
+
+1. 将鼠标悬停在断点符号上，选择“设置”图标，然后在“断点设置”窗口中选择“仅在命中以下断点时才启用”。
+
+2. 在下拉列表中，选择你希望当前断点依赖于的先决条件断点。
+
+选择“关闭”或按 Ctrl+Enter 关闭“断点设置”窗口。 或者，从“断点”窗口中，选择“确定”以关闭对话框。
+![依赖断点](../debugger/media/dbg-dependent-breakpoint.png "DependentBreakpoint")
+
+还可以使用右键单击上下文菜单设置依赖断点。
+1. 右键单击代码行旁边的最左边距，然后从上下文菜单中选择“插入依赖断点”。
+
+![依赖断点上下文](../debugger/media/dbg_dependent-breakpoint-context.png "DependentBreakpointContext")
+
+- 如果你的应用程序中只有一个断点，则依赖断点不起作用。 
+- 如果删除了先决条件断点，则会将依赖断点转换为普通行断点。 
+
+## <a name="set-a-temporary-breakpoint"></a><a name="BKMK_set_a_temporary_breakpoint"></a>设置临时断点
+
+此断点只允许你中断代码一次。 调试时，Visual Studio 调试器针对此断点仅暂停运行中的应用程序一次，然后在命中该断点之后立即将其删除。
+
+设置临时断点：
+
+1. 将鼠标悬停在断点符号上，选择“设置”图标，然后在“断点设置”窗口中选择“仅在命中时删除断点”。
+2. 选择“关闭”或按 Ctrl+Enter 关闭“断点设置”窗口。 或者，从“断点”窗口中，选择“确定”以关闭对话框。
+
+![临时断点](../debugger/media/dbg_temporary-breakpoint.png "TemporaryBreakpoint")
+
+还可以使用右键单击上下文菜单设置临时断点。
+1. 右键单击代码行旁边的最左边距，然后从上下文菜单中选择“插入临时断点”。
+
+![临时断点上下文](../debugger/media/dbg_temporary-breakpoint-context.png "TemporaryBreakpointContext")
+
+或者只需使用快捷方式 F9 + Shift + Alt、T，并根据需要在行上设置临时断点。
+::: moniker-end
 
 ## <a name="manage-breakpoints-in-the-breakpoints-window"></a><a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a>在“断点”窗口中管理断点
 

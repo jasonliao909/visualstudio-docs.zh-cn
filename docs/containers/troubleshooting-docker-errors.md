@@ -8,14 +8,14 @@ ms.assetid: 346f70b9-7b52-4688-a8e8-8f53869618d3
 ms.devlang: dotnet
 ms.topic: troubleshooting
 ms.workload: multiple
-ms.date: 01/27/2020
+ms.date: 10/08/2021
 ms.author: ghogen
-ms.openlocfilehash: 5bead44960453af7410d89cea4b5eca05945a6fb
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 83b4d1cb3053f7e92aec273878337b66399e498a
+ms.sourcegitcommit: 4efdab6a579b31927c42531bb3f7fdd92890e4ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129970212"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "130350726"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>使用 Docker 排查 Visual Studio 开发方面的问题
 
@@ -57,7 +57,7 @@ The current user must be in the 'docker-users' group to use Docker Desktop.
 Add yourself to the 'docker-users' group and then log out of Windows.
 ```
 
-必须是“docker-users”组的成员，才有使用 Docker 容器的权限。  若要将自己添加到 Windows 10 中的组，请执行以下步骤：
+必须是“docker-users”组的成员，才有使用 Docker 容器的权限。  若要将自己添加到 Windows 10 或更高版本中的组，请执行以下步骤：
 
 1. 从“开始”菜单中，打开“计算机管理”  。
 1. 展开“本地用户和组”，并选择“组”   。
@@ -85,7 +85,7 @@ net localgroup docker-users DOMAIN\username /add
     "graph": "D:\\mypath\\images"
 ```
 
-:::image type="content" source="media/troubleshooting-docker-errors/docker-daemon-settings.png" alt-text="Docker 文件共享的屏幕截图":::
+:::image type="content" source="media/troubleshooting-docker-errors/docker-daemon-settings.png" alt-text="Docker 守护程序设置的屏幕截图":::
 
 单击“应用和重启”。 这些步骤会修改 %ProgramData%\docker\config\daemon.json 的配置文件  。 以前生成的映像不会移动。
 

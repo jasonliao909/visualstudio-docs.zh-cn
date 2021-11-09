@@ -30,12 +30,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ad2da32cf1d500d1f3890730dc7ba0aaa0b2fd6c
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 739100149890c737245d66573b6aab69a484c53f
+ms.sourcegitcommit: 4efdab6a579b31927c42531bb3f7fdd92890e4ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129970121"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "130351036"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio 调试器附加到正在运行的进程
 
@@ -83,6 +83,11 @@ ms.locfileid: "129970121"
    1. 选择“确定”。
 
 1. 选择“附加”。
+
+::: moniker range=">= vs-2022"
+> [!TIP]
+> 在具有多个相同进程的场景中，使用“命令行”列或“标题”列中的“w3wp 进程详细信息”来确定正确的进程。
+::: moniker-end
 
 >[!NOTE]
 >可附加到多个应用进行调试，但在调试器中一次只能有一个应用处于活动状态。 可在 Visual Studio 的“调试位置”工具栏或“进程”窗口中设置活动的应用 。

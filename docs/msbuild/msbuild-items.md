@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 520349f829a696e2b34aef262efd01e937ad1998
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: de25a3d1433a067869a5725ec725d8d20d174e32
+ms.sourcegitcommit: 4efdab6a579b31927c42531bb3f7fdd92890e4ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122077226"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "130350698"
 ---
 # <a name="msbuild-items"></a>MSBuild 项
 
@@ -205,6 +205,61 @@ MSBuild 项是生成系统的输入，通常表示文件（文件在 `Include` �
     </ItemGroup>
 </Target>
 ```
+
+#### <a name="matchonmetadata-attribute"></a>MatchOnMetadata 属性
+
+`MatchOnMetadata` 属性仅适用于引用其他项（例如 `Remove="@(Compile);@(Content)"`）的 `Remove` 属性，并指示删除操作根据指定的元数据名称的值匹配项，而不是基于项值进行匹配。
+
+`B Remove="@(A)" MatchOnMetadata="M"` 匹配规则：从 `B` 中删除具有元数据 `M` 的所有项，其 `M` 的元数据值 `V` 与 `A` 中 `M` 元数据值为 `V` 的任何项匹配。
+
+```xml
+<Project>
+  <ItemGroup>
+    <A Include='a1' M1='1' M2='a' M3="e"/>
+    <A Include='b1' M1='2' M2='x' M3="f"/>
+    <A Include='c1' M1='3' M2='y' M3="g"/>
+    <A Include='d1' M1='4' M2='b' M3="h"/>
+
+    <B Include='a2' M1='x' m2='c' M3="m"/>
+    <B Include='b2' M1='2' m2='x' M3="n"/>
+    <B Include='c2' M1='2' m2='x' M3="o"/>
+    <B Include='d2' M1='3' m2='y' M3="p"/>
+    <B Include='e2' M1='3' m2='Y' M3="p"/>
+    <B Include='f2' M1='4'        M3="r"/>
+    <B Include='g2'               M3="s"/>
+
+    <B Remove='@(A)' MatchOnMetadata='M1;M2'/>
+  </ItemGroup>
+
+  <Target Name="PrintEvaluation">
+    <Message Text="%(B.Identity) M1='%(B.M1)' M2='%(B.M2)' M3='%(B.M3)'" />
+  </Target>
+</Project>
+```
+
+在上面的示例中，项值 `b2`、`c2` 和 `d2` 从项 `B` 中删除，因为：
+ - `B` 中的 `b2` 和 `c2` 匹配 `M1=2` 和 `M2=x` 上 `A` 中的 `b1`
+ - `B` 中的 `d2` 匹配 `M1=3` 和 `M2=y` 上 `A` 中的 `c1`
+
+`Message` 任务输出以下内容：
+```
+  a2 M1='x' M2='c' M3='m'
+  e2 M1='3' M2='Y' M3='p'
+  f2 M1='4' M2='' M3='r'
+  g2 M1='' M2='' M3='s'
+```
+
+[msbuild 公用 sdk](https://github.com/dotnet/msbuild/blob/808b2ae2a176679d15f8c3299e551a63cb55b799/src/Tasks/Microsoft.Common.CurrentVersion.targets#L5019) 中 `MatchOnMetadata` 的示例用法：
+```xml
+      <_TransitiveItemsToCopyToOutputDirectory Remove="@(_ThisProjectItemsToCopyToOutputDirectory)" MatchOnMetadata="TargetPath" MatchOnMetadataOptions="PathLike" />
+```
+上述行将从 `_TransitiveItemsToCopyToOutputDirectory` 中删除与 `_ThisProjectItemsToCopyToOutputDirectory` 中的项具有相同 `TargetPath` 元数据值的项
+
+#### <a name="matchonmetadataoptions-attribute"></a>MatchOnMetadataOptions 属性
+
+指定 `MatchOnMetadata` 用于匹配项之间的元数据值的字符串匹配策略（元数据名称匹配始终不区分大小写）。 可能的值为 `CaseSensitive`、`CaseInsensitive` 或 `PathLike`。 默认值为 `CaseSensitive`。
+
+`PathLike` 对如下值应用路径感知标准化：如规范化斜杠方向、忽略尾随斜杠、消除 `.` 和 `..`，以及将当前目录的所有相对路径设置为绝对路径。
 
 ### <a name="keepmetadata-attribute"></a><a name="BKMK_KeepMetadata"></a>KeepMetadata 属性
 

@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ccca084f783e9f436ba3f701501c7c3fbf36b2b
-ms.sourcegitcommit: efe1d737fd660cc9183177914c18b0fd4e39ba8b
+ms.openlocfilehash: 268c0b2030b39ff512aa74fc7ea84c185331e0a2
+ms.sourcegitcommit: 4efdab6a579b31927c42531bb3f7fdd92890e4ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "130208326"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "130350685"
 ---
 # <a name="property-functions"></a>属性函数
 
@@ -190,7 +190,13 @@ $([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 $([MSBuild]::BitwiseAnd(32, $([System.IO.File]::GetAttributes(tempFile))))
 ```
 
-此示例返回由路径 <xref:System.IO.FileAttributes> 所指定文件的 `Archive``tempFile` 位（32 或 0）的值。 请注意，枚举的数据值不能以名称形式显示在属性函数内。 必须改用数字值 (32)。
+此示例返回路径 <xref:System.IO.FileAttributes> 提供的 文件的 . 位（32 或 0）值。 请注意，枚举的数据值在某些上下文中不能按名称显示。 在上一示例中，必须使用数值 (32)。 在其他情况下，根据所调用方法的预期结果，必须使用枚举数据值。 在下面的示例中，必须使用枚举值 <xref:System.Text.RegularExpressions.RegexOptions>.`ECMAScript`， 因为无法按此方法预期那样转换数值。
+
+```xml
+<PropertyGroup>
+    <GitVersionHeightWithOffset>$([System.Text.RegularExpressions.Regex]::Replace("$(PrereleaseVersion)", "^.*?(\d+)$", "$1", "System.Text.RegularExpressions.RegexOptions.ECMAScript"))</GitVersionHeightWithOffset>
+</PropertyGroup>
+```
 
 元数据也可以出现在嵌套的属性函数中。 有关详细信息，请参阅[批处理](../msbuild/msbuild-batching.md)。
 
@@ -386,10 +392,12 @@ MSBuild 16.7 及更高版本定义了几个用于处理 [TargetFramework 和 Tar
 |函数签名|描述|
 |------------------------|-----------------|
 |GetTargetFrameworkIdentifier(string targetFramework)|从 TargetFramework 分析 TargetFrameworkIdentifier。|
-|GetTargetFrameworkVersion(string targetFramework)|从 TargetFramework 分析 TargetFrameworkVersion。|
+|GetTargetFrameworkVersion(string targetFramework, int versionPartCount)|从 TargetFramework 分析 TargetFrameworkVersion。|
 |GetTargetPlatformIdentifier(string targetFramework)|从 TargetFramework 分析 TargetPlatformIdentifier。|
-|GetTargetPlatformVersion(string targetFramework)|从 TargetFramework 分析 TargetPlatformVersion。|
+|GetTargetPlatformVersion(string targetFramework, int versionPartCount)|从 TargetFramework 分析 TargetPlatformVersion。|
 |IsTargetFrameworkCompatible(string targetFrameworkTarget, string targetFrameworkCandidate)|如果候选目标框架与此目标框架兼容，则返回“True”，否则返回 false。|
+
+`GetTargetFrameworkVersion` 和 `GetTargetPlatformVersion` 的 `versionPartCount` 参数的默认值为 2。
 
 下面的示例演示如何使用这些函数。 
 

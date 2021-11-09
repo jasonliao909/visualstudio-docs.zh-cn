@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: cfade1d9f357eda4a741726e65ca02f2b8f6ccc3
-ms.sourcegitcommit: 0257750be796cc46e01cebd8976f637743d29417
+ms.openlocfilehash: f5e602aa4b338df167308a46b4fe3ef1fee268fa
+ms.sourcegitcommit: 4efdab6a579b31927c42531bb3f7fdd92890e4ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "130290611"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "130350997"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>控制对基于网络的 Visual Studio 部署的更新
 
@@ -93,11 +93,11 @@ ms.locfileid: "130290611"
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019&quot;
+::: moniker range=">=vs-2019"
 
 如上所述，Visual Studio 检查其安装位置（例如，网络共享或 Internet），以确定是否有任何更新。 若有更新，Visual Studio 会在窗口右下角显示通知图标来通知用户。
 
-   ![Visual Studio IDE 中的通知图标](media/vs-2019/notification-bar.png &quot;Visual Studio IDE 中的通知图标")
+   ![Visual Studio IDE 中的通知图标](media/vs-2019/notification-bar.png "Visual Studio IDE 中的通知图标")
 
 ::: moniker-end
 
