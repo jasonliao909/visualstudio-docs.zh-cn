@@ -11,12 +11,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: f78d942ae625e45af6ff74ec1360715348708983
-ms.sourcegitcommit: d63ba1eff845d41ca095efb14b499ea96c4b6eba
+ms.openlocfilehash: a09519701bba5dde08649a3b4875f4b2f1a15490
+ms.sourcegitcommit: ac681e983f3b217c3fd9d2a31e3a3ddcc4dd3546
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "129561134"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "132041882"
 ---
 # <a name="devops-with-unity-apps"></a>适用于 Unity 应用的 DevOps
 
@@ -122,7 +122,7 @@ Visual Studio、Azure DevOps Services 和 Team Foundation Server 提供了各种
 
 ## <a name="monitor-with-hockeyapp"></a>使用 HockeyApp 进行监控
 
-参考链接： **[使用 HockeyApp 进行监控](https://www.hockeyapp.net/features/)**
+参考链接： **[使用 HockeyApp 进行监控](https://marketplace.visualstudio.com/items?itemName=ms.hockeyapp)**
 
 |功能|通过 Unity 提供支持|其他注释|
 |-------------|--------------------------|-------------------------|
