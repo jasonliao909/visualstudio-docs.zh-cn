@@ -2,7 +2,7 @@
 title: 自定义菜单和工具栏
 description: 了解如何自定义 Visual Studio 菜单和工具栏，并了解如何自定义菜单和工具栏中包含的任意命令。
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 09/01/2021
 ms.topic: how-to
 f1_keywords:
 - vs.renametoolbar
@@ -30,19 +30,19 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: ecd720eac25f6f3cc7baedc3119e38d2fe9953a5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 8223dfb14ab626e6509cf0df32cba05526fc707f
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122028158"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126644448"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>如何：在 Visual Studio 中自定义菜单和工具栏
 
 在自定义 Visual Studio 时，不仅可以添加和删除工具栏及菜单栏上的菜单，还可以添加和删除任何给定工具栏或菜单上的命令。
 
-> [!WARNING]
-> 自定义工具栏或菜单后，请确保在“自定义”对话框中继续选中其复选框。 否则，在关闭并重新打开 Visual Studio 之后，你所做的更改将不会保留。
+> [!TIP]
+> 若要详细了解如何个性化设置工具栏，来使其具有你的风格，请参阅我们的最新博客文章：[针对工作流优化工具栏](https://devblogs.microsoft.com/visualstudio/optimizing-toolbars-for-your-workflow/)。
 
 ## <a name="add-remove-or-move-a-menu-on-the-menu-bar"></a>添加、删除或移动菜单栏上的菜单
 
@@ -85,6 +85,9 @@ ms.locfileid: "122028158"
         > 有关如何改进工具栏的可用性和辅助功能的详细信息，请参阅[如何：设置 IDE 辅助功能选项](../ide/reference/how-to-set-ide-accessibility-options.md)。
 
 ## <a name=""></a><a name="customizing_menu">自定义菜单或工具栏</a>
+
+> [!WARNING]
+> 自定义工具栏或菜单后，请确保在“自定义”对话框中继续选中其复选框。 否则，在关闭并重新打开 Visual Studio 之后，你所做的更改将不会保留。
 
 1. 在菜单栏上，依次选择“工具” > “自定义” 。
 

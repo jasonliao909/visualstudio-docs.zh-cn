@@ -1,7 +1,7 @@
 ---
-title: “字符串可视化工具”对话框 | Microsoft Docs
+title: 字符串可视化工具（文本、XML、HTML、JSON）
 description: 在 Visual Studio 中进行调试时，使用内置字符串可视化工具对话框查看字符串。
-ms.date: 10/10/2018
+ms.date: 10/10/2021
 ms.custom: contperf-fy21q4
 ms.topic: reference
 f1_keywords:
@@ -22,14 +22,14 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 52d50d7e2bf204de7907f568318b100aa53349d6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: da842df7f92bdcdbd5463755a9c56b5d42613778
+ms.sourcegitcommit: 4efdab6a579b31927c42531bb3f7fdd92890e4ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122146675"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "130350802"
 ---
-# <a name="string-visualizer-dialog-box"></a>“字符串可视化工具”对话框
+# <a name="view-text-xml-html-json-strings-in-the-string-visualizer"></a>在字符串可视化工具中查看文本、XML、HTML、JSON 字符串
 
 在 Visual Studio 中进行调试时，可以使用内置字符串可视化工具查看字符串。 字符串可视化工具显示对于数据提示或调试器窗口而言过长的字符串。 它还可以帮助识别格式错误的字符串。
 
@@ -38,7 +38,12 @@ ms.locfileid: "122146675"
 > [!NOTE]
 > 如果需要在可视化工具中检查 XAML 或 WPF UI 元素，请参阅[在调试时检查 XAML 属性](../xaml-tools/inspect-xaml-properties-while-debugging.md)或[如何使用 WPF 树可视化工具](../debugger/how-to-use-the-wpf-tree-visualizer.md)。
 
-要打开字符串可视化工具，必须在调试期间暂停。 将鼠标悬停在具有纯文本、XML、HTML 或 JSON 字符串值的变量上，然后选择放大镜图标 ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "可视化工具图标")。
+## <a name="open-the-visualizer"></a>打开可视化工具
+
+若要打开字符串可视化工具：
+1. 调试期间暂停。 
+2. 将鼠标悬停在具有纯文本、XML、HTML 或 JSON 字符串值的变量上。
+3. 选择放大镜图标 ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "可视化工具图标")。
 
 ## <a name="uielement-list"></a>UIElement 列表
 
