@@ -60,6 +60,8 @@
           href: xaml-hot-reload.md
         - name: 疑难解答
           href: xaml-hot-reload-troubleshooting.md
+    - name: XAML 实时预览
+      href: xaml-live-preview.md
     - name: 在 Blend 中调试 XAML
       href: debug-xaml-in-blend.md
     - name: 调试 UWP 应用 >>

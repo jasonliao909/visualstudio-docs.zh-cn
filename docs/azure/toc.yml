@@ -1,6 +1,8 @@
 - name: 利用 Visual Studio 开发 Azure
   href: index.yml
   expanded: true
+- name: 概述
+  href: overview-azure-integration.md
 - name: 部署到 Azure App Service
   expanded: true
   items:
@@ -17,6 +19,8 @@
 - name: 连接到 Azure 服务
   expanded: false
   items:
+    - name: 连接的服务概述
+      href: overview-connected-services.md
     - name: 添加 Azure Active Directory (AD)
       href: /azure/active-directory/develop/vs-active-directory-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
     - name: 添加 Azure App Insights
@@ -35,6 +39,14 @@
       href: vs-azure-tools-connected-services-storage.md
     - name: 添加 Azure 应用程序配置
       href: vs-azure-tools-connected-services-app-configuration.md
+- name: GitHub 操作
+  href: overview-github-actions.md
+- name: 操作方法
+  items:
+    - name: 从 Azure 应用服务获取发布配置文件
+      href: how-to-get-publish-profile-from-azure-app-service.md
+    - name: 使用 Azure 订阅登录
+      href: how-to-sign-in-with-azure-subscription.md
 - name: Azure 云服务开发
   expanded: false
   items:
