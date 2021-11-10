@@ -2,19 +2,19 @@
 title: Visual Studio 中的 Git 体验
 titleSuffix: ''
 description: 了解 Visual Studio 中新的集成 Git 体验如何帮助提高工作效率。
-ms.date: 09/08/2021
+ms.date: 11/05/2021
 ms.topic: overview
 ms.author: tglee
 author: TerryGLee
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.manager: jmartens
-ms.openlocfilehash: 8b9bfcf12c978a0f3fd2f347787249e992921c8d
-ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
+ms.openlocfilehash: 864d1b26d50c1d58d9093dc1594ca587e99af992
+ms.sourcegitcommit: 32fa8ec0b469a7a9a87de25ff769d8d21d9f30d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "130010764"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "131897861"
 ---
 # <a name="git-experience-in-visual-studio"></a>Visual Studio 中的 Git 体验
 
@@ -29,7 +29,7 @@ Git 现在是 Visual Studio 中的默认版本控制体验。 我们会继续构
 Git 现在是 Visual Studio 2019 中的默认版本控制体验。 从[版本 16.6](/visualstudio/releases/2019/release-notes-v16.6) 开始，我们致力于构建功能集，并根据你的反馈对其进行迭代。 在 [16.8 版本](/visualstudio/releases/2019/release-notes-v16.8)中，它成为每个人的默认版本控制体验。
 
 > [!NOTE]
-> 我们也会继续在 [Visual Studio 2022 RC](/visualstudio/releases/2022/release-notes-preview) 中构建 Git 功能集并进行迭代更新。 若要了解最新功能更新的详细信息，请参阅 [Visual Studio 中的多存储库支持](https://devblogs.microsoft.com/visualstudio/multi-repo-support-in-visual-studio/)博客文章。
+> 我们也会继续在 [Visual Studio 2022](/visualstudio/releases/2022/release-notes-preview) 中构建 Git 功能集并进行迭代更新。 若要了解最新功能更新的详细信息，请参阅 [Visual Studio 中的多存储库支持](https://devblogs.microsoft.com/visualstudio/multi-repo-support-in-visual-studio/)博客文章。
 
 ::: moniker-end
 
@@ -53,10 +53,29 @@ Git 是使用最广泛的新式版本控制系统，因此，无论你是专业�
 - [创建新的 Git 存储库](#create-a-new-git-repository)。 如果你的代码未与 Git 关联，则可以创建一个新的 Git 存储库。
 - [克隆现有 Git 存储库](#clone-an-existing-git-repository)。 如果要处理的代码不在计算机上，则可以克隆任何现有的远程存储库。
 
+::: moniker range="<=vs-2019"
+
 > [!NOTE]
 > 自 [16.8 版本](/visualstudio/releases/2019/release-notes-v16.8)起，Visual Studio 2019 包含完全集成的 GitHub 帐户体验。 你现在可以将 GitHub 和 GitHub Enterprise 帐户都添加到密钥链中。 你可以添加并使用这些帐户，就像使用 Microsoft 帐户一样，也就是说，你将能够更轻松地跨 Visual Studio 访问 GitHub 资源。 有关详细信息，请参阅[在 Visual Studio 中使用 GitHub 帐户](../ide/work-with-github-accounts.md)页面。
 
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+> [!NOTE]
+> Visual Studio 包含完全集成的 GitHub 帐户体验。 你不仅可将 GitHub 和 GitHub Enterprise 帐户添加到密钥链中，还可以像使用 Microsoft 帐户一样使用它们。 有关详细信息，请参阅[在 Visual Studio 中使用 GitHub 帐户](../ide/work-with-github-accounts.md)页面。
+
+::: moniker-end
+
 ## <a name="create-a-new-git-repository"></a>创建新的 Git 存储库
+
+::: moniker range="vs-2022"
+
+如果你的代码未与 Git 关联，则可以首先创建一个新的 Git 存储库。 有关所有详细信息，请参阅[在 Visual Studio 中创建存储库](git-create-repository.md)页面。
+
+::: moniker-end
+
+::: moniker range="<=vs-2019"
 
 如果你的代码未与 Git 关联，则可以首先创建一个新的 Git 存储库。 为此，请从菜单栏中选择“Git” > “创建 Git 存储库” 。 然后，在“创建 Git 存储库”对话框中，输入你的信息。
 
@@ -69,13 +88,25 @@ Git 是使用最广泛的新式版本控制系统，因此，无论你是专业�
 
 可选择使用“仅限本地”选项，创建仅限本地的 Git 存储库。 也可使用“现有远程”选项，将本地项目与 Azure DevOps 或任何其他 Git 提供程序上的任何现有空远程存储库关联。
 
+::: moniker-end
+
 ## <a name="clone-an-existing-git-repository"></a>克隆现有 Git 存储库
+
+::: moniker range="vs-2022"
+
+Visual Studio 包含简单的克隆体验。 有关分步指南，请参阅[在 Visual Studio 中克隆存储库](git-clone-repository.md)页面。
+
+::: moniker-end
+
+::: moniker range="<=vs-2019"
 
 Visual Studio 包含简单的克隆体验。 如果知道要克隆的存储库的 URL，则可以将该 URL 粘贴到“存储库位置”部分，然后选择要将 Visual Studio 克隆到的磁盘位置。
 
 :::image type="content" source="media/git-clone-repository.png" alt-text="Visual Studio 中“克隆 Git 存储库”对话框。":::
 
 如果不知道存储库 URL，则可以利用 Visual Studio 轻松浏览到现有的 GitHub 或 Azure DevOps 存储库，然后再进行克隆。
+
+::: moniker-end
 
 ### <a name="open-an-existing-local-repository"></a>打开现有的本地存储库
 
@@ -206,7 +237,7 @@ Visual Studio 中的合并编辑器是一种三向合并工具，用于显示传
 
 :::image type="content" source="media/git-options-settings.png" alt-text="Visual Studio IDE 中“选项”对话框，可以在该对话框中选择个性化设置和自定义设置 ":::
 
-::: moniker range="vs-2019"
+::: moniker range="<=vs-2019"
 
 ## <a name="how-to-use-the-full-team-explorer-experience-in-visual-studio"></a>如何在 Visual Studio 中使用完整的团队资源管理器体验
 
@@ -218,16 +249,37 @@ Visual Studio 中的合并编辑器是一种三向合并工具，用于显示传
 
 ## <a name="whats-next"></a>后续步骤
 
+::: moniker range="<=vs-2019"
+
 虽然自 Visual Studio 2019 [16.8 版本](/visualstudio/releases/2019/release-notes/)起新的 Git 体验默认便处于启用状态，不过我们会继续添加新功能以增强体验。 如果要在预览版本中查看对 Git 体验的新更新，可以从 [Visual Studio 2022 预览版](https://aka.ms/vspreview/)页面下载并安装它。
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+我们将继续添加新功能，以增强 Visual Studio 中的 Git 体验。 若要获取有关最新功能更新的详细信息以及可在其中共享反馈的调查的链接，请参阅 [Visual Studio 中的多存储库支持](https://devblogs.microsoft.com/visualstudio/multi-repo-support-in-visual-studio/)博客文章。
+
+::: moniker-end
 
 > [!IMPORTANT]
 > 如果你对我们有任何建议，请告诉我们！ 我们非常感激能够通过[开发人员社区](https://aka.ms/vs-suggest)门户与你交流设计决策。
 
 ## <a name="see-also"></a>另请参阅
 
-- Microsoft Learn 上的 [Visual Studio 中的 Git 和 GitHub 入门](/learn/modules/visual-studio-github-push/)教程
+::: moniker range="<=vs-2019"
+
+- Microsoft Learn 上的 [Visual Studio 2019 中的 Git 和 GitHub 入门](/learn/modules/visual-studio-github-push/)教程
 - YouTube 上的 [Visual Studio 中的 Git 入门](https://www.youtube.com/watch?v=GCZ9x3yqkyc)视频
 - [宣布在 Visual Studio 中推出 Git 体验](https://devblogs.microsoft.com/visualstudio/announcing-the-release-of-the-git-experience-in-visual-studio/)博客文章
 - [在 Visual Studio 中使用 GitHub 帐户](../ide/work-with-github-accounts.md)
 - [Visual Studio 2019 发行说明](/visualstudio/releases/2019/release-notes)
 - [Visual Studio 2022 RC 和预览版发行说明](/visualstudio/releases/2022/release-notes-preview)
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+- [在 Visual Studio 中使用 GitHub 帐户](../ide/work-with-github-accounts.md)
+- [Visual Studio 2022 RC 和预览版发行说明](/visualstudio/releases/2022/release-notes-preview)
+
+::: moniker-end

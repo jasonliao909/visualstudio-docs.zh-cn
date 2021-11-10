@@ -102,8 +102,18 @@
           href: map-methods-on-the-call-stack-while-debugging-in-visual-studio.md
         - name: “调用堆栈”窗口中的混合代码与丢失信息
           href: mixed-code-and-missing-information-in-the-call-stack-window.md
-    - name: 暂停代码并继续
+    - name: 实时代码编辑
       items:
+        - name: 热重载 (.NET/C++)
+          href: hot-reload.md
+        - name: XAML 热重载
+          items:
+            - name: 编写和调试正在运行的 XAML 代码
+              href: ../xaml-tools/xaml-hot-reload.md?toc=/visualstudio/debugger/toc.json
+            - name: 排查 XAML 热重载问题
+              href: ../xaml-tools/xaml-hot-reload-troubleshooting.md?toc=/visualstudio/debugger/toc.json
+        - name: F# 不支持“编辑并继续”
+          href: edit-and-continue-not-supported-for-f-hash.md
         - name: 编辑代码并继续调试
           href: edit-and-continue.md
         - name: 启用和禁用“编辑并继续”
@@ -130,14 +140,6 @@
               href: edit-and-continue-visual-basic.md
             - name: 使用“编辑并继续”在中断模式下应用编辑
               href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
-        - name: XAML 热重载
-          items:
-            - name: 编写和调试正在运行的 XAML 代码
-              href: ../xaml-tools/xaml-hot-reload.md?toc=/visualstudio/debugger/toc.json
-            - name: 排查 XAML 热重载问题
-              href: ../xaml-tools/xaml-hot-reload-troubleshooting.md?toc=/visualstudio/debugger/toc.json
-        - name: F# 不支持“编辑并继续”
-          href: edit-and-continue-not-supported-for-f-hash.md
     - name: 记录到“输出”窗口
       href: using-tracepoints.md
     - name: 查看调试程序数据
