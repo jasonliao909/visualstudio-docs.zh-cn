@@ -1,7 +1,7 @@
 ---
 title: 使用 Vue 创建 ASP.NET Core 应用
 description: 在本教程中，使用 ASP.NET Core 和 Vue 创建应用
-ms.date: 09/28/2021
+ms.date: 11/08/2021
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -13,12 +13,12 @@ dev_langs:
 ms.workload:
 - nodejs
 monikerRange: '>= vs-2022'
-ms.openlocfilehash: 64db27eb96d3ea3536377a68ab322e6df2e09d1d
-ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
+ms.openlocfilehash: e87572bdff6d2fae8a2ffdbce844af3d8a85472b
+ms.sourcegitcommit: ac681e983f3b217c3fd9d2a31e3a3ddcc4dd3546
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "131126475"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "132041967"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-vue-in-visual-studio"></a>教程：在 Visual Studio 中使用 Vue 创建 ASP.NET Core 应用
 
@@ -30,6 +30,9 @@ ms.locfileid: "131126475"
 
 - 将客户端应用放在 ASP.NET Core 项目之外的独立项目中
 - 基于计算机上安装的框架 CLI 创建客户端项目
+
+> [!NOTE]
+> 目前，必须手动发布前端项目（当前不支持发布工具）。 有关附加信息，请参阅 [https://github.com/MicrosoftDocs/visualstudio-docs/issues/7135](https://github.com/MicrosoftDocs/visualstudio-docs/issues/7135)。
 
 ## <a name="prerequisites"></a>先决条件
 

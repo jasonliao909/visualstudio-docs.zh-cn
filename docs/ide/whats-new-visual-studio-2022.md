@@ -2,7 +2,7 @@
 title: Visual Studio 2022 中的新增功能
 titleSuffix: ''
 description: 了解 Visual Studio 2022 预览版中的新增功能。
-ms.date: 11/04/2021
+ms.date: 11/08/2021
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -14,21 +14,24 @@ ms.prod: visual-studio-dev17
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: bd86bebeb4256a5bce645aa88123ad6444fcea57
-ms.sourcegitcommit: aff49629012f4d5fa07c75ea0ca5bf53d28aa173
+ms.openlocfilehash: ba5d202809bf6bb7b5587406332902842f30440a
+ms.sourcegitcommit: ac681e983f3b217c3fd9d2a31e3a3ddcc4dd3546
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "131662610"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "132041915"
 ---
 # <a name="whats-new-in-visual-studio-2022"></a>Visual Studio 2022 中的新增功能
 
-更新了 17.0 预览版 5/候选发布 (RC)。 参阅[完整的发行说明](/visualstudio/releases/2022/release-notes-preview/) | 查看[产品路线图](/visualstudio/productinfo/vs-roadmap/)
+已针对 17.0 GA（正式发布）版进行了更新。 参阅[完整的发行说明](/visualstudio/releases/2022/release-notes) | 查看[产品路线图](/visualstudio/productinfo/vs-roadmap/)
 
 >[!div class="button"]
->[下载 Visual Studio 2022 RC](https://visualstudio.microsoft.com/downloads/)
+>[下载 Visual Studio 2022](https://visualstudio.microsoft.com/downloads/)
 
-使用 [Visual Studio 2022 RC](https://visualstudio.microsoft.com/vs/preview/)，你将始终获得可供任何开发人员、应用和平台使用的一流工具和服务。 无论是首次使用 Visual Studio 还是已经使用多年，此最新版本都有很多让你惊艳的地方！
+使用 [Visual Studio 2022](https://visualstudio.microsoft.com/vs/)，你将始终获得可供任何开发人员、应用和平台使用的一流工具和服务。 无论是首次使用 Visual Studio 还是已经使用多年，此最新版本都有很多让你惊艳的地方！
+
+> [!TIP]
+> 请在我们的 [YouTube 频道](https://www.youtube.com/visualstudio)上观看 [Visual Studio 2022 发布活动](https://www.youtube.com/watch?v=f8jXO946eDw)。 你也可以在我们的 [Twitch 频道](https://www.twitch.tv/visualstudio)上收看。
 
 ## <a name="performance-improvements"></a>性能改进
 
@@ -88,7 +91,7 @@ Windows 上的 Visual Studio 2022 现在是 64 位应用程序。 这意味着�
 
 ## <a name="whats-next"></a>后续步骤
 
-想要详细了解我们对 Visual Studio 2022 制定的计划吗？ 有关详细信息，请参阅[路线图](/visualstudio/productinfo/vs-roadmap/)页和 [Visual Studio 2022 愿景](https://devblogs.microsoft.com/visualstudio/visual-studio-2022/)博客文章 。
+想要详细了解我们对 Visual Studio 2022 制定的计划吗？ 有关详细信息，请参阅[路线图](/visualstudio/productinfo/vs-roadmap/)页和 [Visual Studio 2022 预览版](/visualstudio/releases/2022/release-notes-preview/)发行说明 。
 
 ## <a name="give-us-feedback"></a>给我们提供反馈
 
@@ -100,7 +103,8 @@ Windows 上的 Visual Studio 2022 现在是 64 位应用程序。 这意味着�
 
 ## <a name="see-also"></a>请参阅
 
-* [Visual Studio 2022 正式上市](https://devblogs.microsoft.com/visualstudio/join-us-november-8th-for-the-launch-of-visual-studio-2022/)
+* [Visual Studio 2022 现已推出](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-now-available/)
+* [发布：Visual Studio 2022 GA（正式发布）](https://devblogs.microsoft.com/visualstudio/join-us-november-8th-for-the-launch-of-visual-studio-2022/)
 * [Visual Studio 2022 RC（候选发布版本）](https://devblogs.microsoft.com/visualstudio/join-us-november-8th-for-the-launch-of-visual-studio-2022/)
 * [Visual Studio 2022 预览版 4](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-preview-4-is-now-available/)
 * [Visual Studio 2022 预览版 3](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-preview-3-now-available/)
