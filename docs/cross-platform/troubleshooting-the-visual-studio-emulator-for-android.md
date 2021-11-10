@@ -13,12 +13,12 @@ manager: crdun
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d4f1c7007b21fd3580ffcde0d22ba2f92f5841f
-ms.sourcegitcommit: d63ba1eff845d41ca095efb14b499ea96c4b6eba
+ms.openlocfilehash: 867908c32cf6610c1915e554720d6c9be937dac7
+ms.sourcegitcommit: ac681e983f3b217c3fd9d2a31e3a3ddcc4dd3546
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "129560862"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "132041993"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>适用于 Android 的 Visual Studio 模拟器疑难解答
 本主题包含的信息有助于解决使用适用于 Android 的 Visual Studio 仿真程序时可能会遇到的一些问题。
@@ -150,7 +150,7 @@ ms.locfileid: "129560862"
 
   1. 确保计算机满足 [系统要求](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)。
 
-  2. 验证确认 [SLAT 工具](https://slatstatuscheck.codeplex.com/) 报告计算机支持 SLAT。
+  2. 验证 [coreinfo 工具](/sysinternals/downloads/coreinfo)是否报告计算机支持 SLAT。
 
   3. 在计算机的 BIOS 设置内，确保已启用所有虚拟化技术。 具体的 BIOS 说明可能会因硬件制造商而异。 一般情况下，启用与以下内容相关的功能：
 
