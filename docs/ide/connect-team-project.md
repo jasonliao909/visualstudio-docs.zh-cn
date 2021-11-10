@@ -2,18 +2,18 @@
 title: 连接到团队资源管理器中的项目
 description: 了解如何使用 Visual Studio 中的团队资源管理器，与团队成员一起开发和管理项目。
 ms.custom: SEO-VS-2020
-ms.date: 06/11/2021
+ms.date: 11/05/2021
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jmartens
 monikerRange: <=vs-2019
-ms.openlocfilehash: fd95da37fc0f6dcf5d7c735bc1e8b1afe050b9f8
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 0110246e3295149bd11fbfd570589d7f9d289070
+ms.sourcegitcommit: 32fa8ec0b469a7a9a87de25ff769d8d21d9f30d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641208"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "131897848"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>连接到团队资源管理器中的项目
 
@@ -25,12 +25,12 @@ ms.locfileid: "126641208"
 
 ::: moniker range="vs-2019"
 
-团队资源管理器将 Visual Studio 连接到 Team Foundation 版本控制 (TFVC) 存储库以及 [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops-services) 或本地 [Azure DevOps Server](/azure/devops/user-guide/about-azure-devops-services-tfs?view=azure-devops&preserve-view=true)（以前称为 TFS）上托管的项目。 你可管理源代码、工作项和生成。
+团队资源管理器将 Visual Studio 2019 及早期版本连接到 Team Foundation 版本控制 (TFVC) 存储库以及 [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops-services) 或本地 [Azure DevOps Server](/azure/devops/user-guide/about-azure-devops-services-tfs?view=azure-devops&preserve-view=true)（以前称为 TFS）上托管的项目。 你可管理源代码、工作项和生成。
 
 > [!IMPORTANT]
 > 在 Visual Studio 2019 [版本 16.8](/visualstudio/releases/2019/release-notes-history) 中，默认启用 Git 版本控制体验。 若要详细了解它如何与团队资源管理器进行比较，请参阅 [Git 和团队资源管理器的并行比较](../version-control/git-team-explorer-feature-comparison.md)页。
 >
-> 不过，如果更希望继续使用团队资源管理器，则转到“工具”>“选项”>“环境”>“预览功能”，然后切换“新的 Git 用户体验”复选框。
+> 不过，如果更希望继续在 Visual Studio 2019 中使用团队资源管理器，则转到“工具” > “选项” > “环境” > “预览功能”，然后切换“新的 Git 用户体验”复选框。 （此选项不适用于 Visual Studio 2022 及更高版本。）
 
 使用团队资源管理器连接到项目的方式取决于你使用的 Visual Studio 2019 的版本。
 
@@ -100,9 +100,9 @@ ms.locfileid: "126641208"
 
 ::: moniker-end
 
-::: moniker range="vs-2017&quot;
+::: moniker range="vs-2017"
 
-![Visual Studio 中的团队资源管理器主页](media/team-explorer/team-explorer.png &quot;Visual Studio 中的团队资源管理器主页。")
+![Visual Studio 中的团队资源管理器主页](media/team-explorer/team-explorer.png "Visual Studio 中的团队资源管理器主页。")
 
 > [!TIP]
 > 如果打开 Visual Studio 但未显示团队资源管理器，请从菜单栏中选择“视图” > “团队资源管理器”将其打开，或者通过按“Ctrl+\”和“Ctrl+M”      。
