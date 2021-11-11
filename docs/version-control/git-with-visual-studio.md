@@ -2,19 +2,19 @@
 title: Visual Studio 中的 Git 体验
 titleSuffix: ''
 description: 了解 Visual Studio 中新的集成 Git 体验如何帮助提高工作效率。
-ms.date: 11/05/2021
+ms.date: 11/08/2021
 ms.topic: overview
 ms.author: tglee
 author: TerryGLee
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.manager: jmartens
-ms.openlocfilehash: 864d1b26d50c1d58d9093dc1594ca587e99af992
-ms.sourcegitcommit: 32fa8ec0b469a7a9a87de25ff769d8d21d9f30d2
+ms.openlocfilehash: c2e1d75347e3d10da0971fbf2da3d22148f0860b
+ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "131897861"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "132001061"
 ---
 # <a name="git-experience-in-visual-studio"></a>Visual Studio 中的 Git 体验
 
@@ -49,9 +49,9 @@ Git 是使用最广泛的新式版本控制系统，因此，无论你是专业�
 
 可以通过三种方式开始结合使用 Git 与 Visual Studio 来提高工作效率：
 
-- [打开现有 Git 存储库](#open-an-existing-local-repository)。 如果计算机上已有代码，则可以使用“文件” > “打开” > “项目/解决方案”（或“文件夹”）打开代码，Visual Studio 会自动检测其是否具有已初始化的 Git 存储库   。
 - [创建新的 Git 存储库](#create-a-new-git-repository)。 如果你的代码未与 Git 关联，则可以创建一个新的 Git 存储库。
 - [克隆现有 Git 存储库](#clone-an-existing-git-repository)。 如果要处理的代码不在计算机上，则可以克隆任何现有的远程存储库。
+- [打开现有 Git 存储库](#open-an-existing-local-repository)。 如果计算机上已有代码，则可以使用“文件” > “打开” > “项目/解决方案”（或“文件夹”）打开代码，Visual Studio 会自动检测其是否具有已初始化的 Git 存储库   。
 
 ::: moniker range="<=vs-2019"
 
@@ -108,17 +108,31 @@ Visual Studio 包含简单的克隆体验。 如果知道要克隆的存储库�
 
 ::: moniker-end
 
-### <a name="open-an-existing-local-repository"></a>打开现有的本地存储库
+## <a name="open-an-existing-local-repository"></a>打开现有的本地存储库
 
-克隆存储库或创建存储库之后，Visual Studio 将检测该 Git 存储库，并将其添加到 Git 菜单中的“本地存储库”列表。 在这里，你可以快速访问 Git 存储库并在其之间快速切换。
+克隆存储库或创建存储库之后，Visual Studio 将检测该 Git 存储库，并将其添加到 Git 菜单中的“本地存储库”列表。
+
+::: moniker range="<=vs-2019"
+
+在这里，你可以快速访问 Git 存储库并在其之间快速切换。
 
 :::image type="content" source="media/git-local-repositories.png" alt-text="Visual Studio 中 Git 菜单上的“本地存储库”选项 ":::
 
+::: moniker-end
+
 ## <a name="view-files-in-solution-explorer"></a>解决方案资源管理器中的的视图文件
 
-克隆存储库或打开本地存储库时，Visual Studio 会通过保存并关闭先前打开的解决方案和项目，将你切换到该 Git 上下文。 解决方案资源管理器将在 Git 存储库的根目录中加载文件夹，并在目录树中扫描所有视图文件。 其中包括 CMakeLists.txt 等文件或具有 .sln 文件扩展名的文件。
+克隆存储库或打开本地存储库时，Visual Studio 会通过保存并关闭先前打开的解决方案和项目，将你切换到该 Git 上下文。 解决方案资源管理器将在 Git 存储库的根目录中加载文件夹，并在目录树中扫描所有可查看文件。 其中包括 CMakeLists.txt 等文件或具有 .sln 文件扩展名的文件。
 
-Visual Studio 将根据你在解决方案资源管理器中加载的视图文件调整其视图：
+::: moniker range="vs-2022"
+
+有关详细信息，请参阅[打开存储库中的项目](../get-started/tutorial-open-project-from-repo.md?view=vs-2022&preserve-view=true)教程的[解决方案资源管理器中的视图文件](../get-started/tutorial-open-project-from-repo.md#view-files-in-solution-explorer)部分。
+
+::: moniker-end
+
+::: moniker range="<=vs-2019"
+
+Visual Studio 将根据你在解决方案资源管理器中加载的文件调整其视图：
 
 - 如果克隆包含单个 .sln 文件的存储库，则解决方案资源管理器会直接为你加载该解决方案。
 - 如果解决方案资源管理器在存储库中未检测到任何 .sln 文件，则默认情况下将加载文件夹视图。
@@ -127,6 +141,8 @@ Visual Studio 将根据你在解决方案资源管理器中加载的视图文件
 可以使用解决方案资源管理器工具栏中的“切换视图”按钮，在当前打开的视图和视图列表之间进行切换。
 
 :::image type="content" source="media/git-solution-explorer-views.png" alt-text="Visual Studio 中选中“切换视图”按钮的解决方案资源管理器。":::
+
+::: moniker-end
 
 ## <a name="git-changes-window"></a>Git 更改窗口
 
@@ -138,7 +154,11 @@ Visual Studio 将根据你在解决方案资源管理器中加载的视图文件
 
 当你执行操作时，Visual Studio 会在“Git 更改”窗口的“更改”部分中跟踪对项目的文件更改 。
 
+::: moniker range="<=vs-2019"
+
 :::image type="content" source="media/git-changes-window.png" alt-text="Visual Studio 中“Git 更改”窗口。":::
+
+::: moniker-end
 
 准备暂存更改时，请单击要暂存的每个文件上的“+”（加号）按钮，或右键单击文件，然后选择“暂存” 。 还可以使用“更改”部分顶部的暂存全部 +（加号）按钮，一键暂存所有已修改的文件 。
 
@@ -148,20 +168,43 @@ Visual Studio 将根据你在解决方案资源管理器中加载的视图文件
 
 还可通过 Visual Studio 的“全部提交并推送”和“全部提交并同步”快捷方式，轻松地一键提交和同步 。 双击“更改”和“已暂存的更改”部分中的任何文件时，可以看到与该文件的未修改版本的逐行比较 。
 
+::: moniker range="<=vs-2019"
+
 :::image type="content" source="media/git-file-version-compare.png" alt-text="Visual Studio 中文件版本的逐行比较 ":::
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+> [!TIP]
+> 如果已连接到 Azure DevOps 存储库，可使用“#”字符将 Azure DevOps 工作项和提交相关联。
+
+::: moniker-end
+
+::: moniker range="<=vs-2019"
 
 > [!TIP]
 > 如果已连接到 Azure DevOps 存储库，可使用“#”字符将 Azure DevOps 工作项和提交相关联。 可通过“团队资源管理器” > “管理连接”连接 Azure DevOps 存储库。
+
+::: moniker-end
 
 ### <a name="select-an-existing-branch"></a>选择一个现有分支
 
 Visual Studio 会在“Git 更改”窗口顶部的选择器中显示当前分支。
 
+::: moniker range="<=vs-2019"
+
 :::image type="content" source="media/git-changes-current-branch-selector.png" alt-text="可以使用 Visual Studio 中“Git 更改”选择器顶部的选择器来查看的当前分支 ":::
+
+::: moniker-end
 
 当前分支也显示在 Visual Studio IDE 右下角的状态栏中。
 
+::: moniker range="<=vs-2019"
+
 :::image type="content" source="media/git-changes-current-branch-status-bar.png" alt-text="可以使用 Visual Studio IDE 右下角的状态栏来查看的当前分支 ":::
+
+::: moniker-end
 
 可以从这两个位置在现有分支之间进行切换。
 
@@ -171,7 +214,11 @@ Visual Studio 会在“Git 更改”窗口顶部的选择器中显示当前分�
 
 创建新分支非常简单，只需输入分支名称并将其基于现有分支。
 
+::: moniker range="<=vs-2019"
+
 :::image type="content" source="media/git-changes-create-new-branch.png" alt-text="Visual Studio 中“创建新分支”对话框 ":::
+
+::: moniker-end
 
 可以选择一个现有的本地或远程分支作为基础。 “签出分支”复选框会自动切换到新创建的分支。 此操作的等效命令是 `git checkout -b <new-branch><existing-branch>`。
 
@@ -187,21 +234,41 @@ Visual Studio 有一个新的“Git 存储库”窗口，该窗口是存储库�
 
 提取分支时，“Git 更改”窗口在分支下拉箭头下有一个指示器，其中显示了远程分支的未拉取提交数。 该指示器还显示未推送的本地提交数。
 
+::: moniker range="<=vs-2019"
+
 :::image type="content" source="media/git-repo-drop-down-indicator.png" alt-text="Visual Studio 中显示指示器下拉 UI 元素的“Git 更改”窗口 ":::
+
+::: moniker-end
 
 该指示器还可作为链接，将你带到“Git 存储库”窗口中该分支的提交历史记录。 历史记录的顶部现在会显示这些传入和传出提交的详细信息。 你还可以在这里决定拉取或推送提交。
 
+::: moniker range="<=vs-2019"
+
 :::image type="content" source="media/git-branch-commit-history.png" alt-text="Visual Studio 中显示分支提交历史记录的 Git 存储库窗口 ":::
+
+::: moniker-end
 
 #### <a name="commit-details"></a>提交详细信息
 
 双击“提交”时，Visual Studio 会在单独的工具窗口中打开其详细信息。 在此处，你可以还原提交、重置提交、修改提交消息，或在提交上创建标记。 在提交中单击已更改的文件时，Visual Studio 将打开该提交及其父级的并排差异视图。
 
+::: moniker range="<=vs-2019"
+
 :::image type="content" source="media/git-branch-commit-details.png" alt-text="Visual Studio 中“提交详细信息”对话框 ":::
+
+::: moniker-end
 
 ## <a name="handle-merge-conflicts"></a>处理合并冲突
 
 如果两个开发人员在文件中修改了相同的行，并且 Git 无法自动识别哪个是正确的，则在合并期间可能会发生冲突。 Git 暂停合并，并通知你处于冲突状态。
+
+::: moniker range="vs-2022"
+
+若要了解有关合并冲突以及如何处理它们的详细信息，请参阅[解决合并冲突](git-resolve-conflicts.md)页。
+
+::: moniker-end
+
+::: moniker range="<=vs-2019"
 
 使用 Visual Studio 可以轻松地识别和解决合并冲突。 首先，“Git 存储库”窗口会在窗口顶部显示一个金色的信息栏。
 
@@ -231,11 +298,13 @@ Visual Studio 中的合并编辑器是一种三向合并工具，用于显示传
 
 还可以使用切换来显示/隐藏差异、显示/隐藏单词差异，以及自定义布局。 每侧的顶部都有复选框，你可从任何一侧通过这些复选框来执行所有更改。 但若要进行单独的更改，可以单击任一侧的冲突行左侧的复选框。 最后，解决完冲突后，可以在合并编辑器中选择“接受合并”按钮。 然后，可以编写提交消息并提交更改以完成解决操作。
 
+::: moniker-end
+
 ## <a name="personalize-your-git-settings"></a>个性化设置 Git 设置
 
 若要在存储库级别和全局级别对 Git 设置进行个性化设置和自定义，请转到菜单栏上的“Git” > “设置”，或转到菜单栏上的“工具” > “选项” > “源代码管理”    。 然后选择所需的[选项](git-settings.md)。
 
-:::image type="content" source="media/git-options-settings.png" alt-text="Visual Studio IDE 中“选项”对话框，可以在该对话框中选择个性化设置和自定义设置 ":::
+:::image type="content" source="media/git-options-settings.png" alt-text="Visual Studio IDE 中的“选项”对话框，可以在该对话框中选择个性化设置和自定义设置。":::
 
 ::: moniker range="<=vs-2019"
 
