@@ -4,17 +4,17 @@ titleSuffix: ''
 description: 了解如何在 Visual Studio 中使用 Git 和 GitHub 来跟踪代码更改，并在需要时将其还原。
 ms.date: 11/08/2021
 ms.topic: conceptual
+author: Taysser-Gherfal
 ms.author: tglee
-author: TerryGLee
 ms.manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: a32ef55b8f14da7931557b533464804672de1b49
-ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
+ms.openlocfilehash: 6d7d3d5e78cd16cf10bfb982bac866a2d9baf759
+ms.sourcegitcommit: dc12d3d0ca2ec3601cb9de7c22e61ecf22c7c514
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "132001913"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "132264057"
 ---
 # <a name="how-visual-studio-makes-source-control-easy"></a>Visual Studio 如何简化源代码管理
 

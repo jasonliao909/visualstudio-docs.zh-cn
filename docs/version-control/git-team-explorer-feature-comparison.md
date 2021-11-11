@@ -4,17 +4,18 @@ titleSuffix: ''
 description: 比较和对比如何使用 Visual Studio 中的新 Git 体验与团队资源管理器来进行源代码管理。
 ms.date: 11/08/2021
 ms.topic: how-to
+author: Taysser-Gherfal
 ms.author: tglee
-author: TerryGLee
 ms.manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 8275c57a3165a39653974a3368ddb07fab46148e
-ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
+monikerRange: <=vs-2019
+ms.openlocfilehash: 0869ea999132694d06871aa2b7c39cea37463d19
+ms.sourcegitcommit: dc12d3d0ca2ec3601cb9de7c22e61ecf22c7c514
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "132001584"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "132264166"
 ---
 # <a name="side-by-side-comparison-of-git-and-team-explorer"></a>Git 和团队资源管理器的并行比较
 

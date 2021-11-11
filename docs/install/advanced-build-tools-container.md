@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4f8086c72e1a4e16f1a81d3f252f9e66cfc850bf
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 4b418277dbac0ba6d61b7c426139f74b62f66f0e
+ms.sourcegitcommit: dc12d3d0ca2ec3601cb9de7c22e61ecf22c7c514
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128430629"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "132264186"
 ---
 # <a name="advanced-example-for-containers"></a>容器的高级示例
 
@@ -107,7 +107,7 @@ RUN `
         --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
         --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
         --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
-        --remove Microsoft.VisualStudio.Component.Windows81SDK
+        --remove Microsoft.VisualStudio.Component.Windows81SDK)
     
     # Cleanup
     && del /q vs_buildtools.exe
@@ -160,7 +160,7 @@ RUN `
         --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
         --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
         --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
-        --remove Microsoft.VisualStudio.Component.Windows81SDK
+        --remove Microsoft.VisualStudio.Component.Windows81SDK)
     
     # Cleanup
     && del /q vs_buildtools.exe
@@ -211,7 +211,7 @@ RUN `
         --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
         --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
         --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
-        --remove Microsoft.VisualStudio.Component.Windows81SDK
+        --remove Microsoft.VisualStudio.Component.Windows81SDK)
     
     # Cleanup
     && del /q vs_buildtools.exe
