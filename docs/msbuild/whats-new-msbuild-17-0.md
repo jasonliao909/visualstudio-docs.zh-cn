@@ -10,18 +10,18 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 699c42b7315ed73c8576169041c043d89b851c11
-ms.sourcegitcommit: 32fa8ec0b469a7a9a87de25ff769d8d21d9f30d2
+ms.openlocfilehash: 5ca502169d2c238be7871ca19cc9372e91f4207a
+ms.sourcegitcommit: abfcccf63234819c75a61bf2c4c7f710a9d23cdb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "131898188"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "132250590"
 ---
 # <a name="whats-new-in-msbuild-170"></a>MSBuild 17.0 中的新增功能
 
 本文介绍 MSBuild 17.0 中的重要更新。 有关详细的发行说明，请参阅 [MSBuild 17.0.0](https://github.com/dotnet/msbuild/releases/tag/v17.0.0)。
 
-随 [Visual Studio 2022](../ide/whats-new-visual-studio-2022.md) 和 [.NET 6.0](/dotnet/...) 一起提供的 MSBuild 17.0。
+随 [Visual Studio 2022](../ide/whats-new-visual-studio-2022.md) 和 [.NET 6.0](/dotnet/) 一起提供的 MSBuild 17.0。
 
 ## <a name="changed-path"></a>更改的路径
 
