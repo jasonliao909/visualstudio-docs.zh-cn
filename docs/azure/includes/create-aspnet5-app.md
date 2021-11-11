@@ -1,5 +1,5 @@
 ---
-title: include 文件
+title: 包含文件
 description: include 文件
 services: container-registry
 author: ghogen
@@ -8,12 +8,12 @@ ms.author: ghogen
 ms.topic: include
 ms.date: 02/22/2021
 ms.custom: include file
-ms.openlocfilehash: 7db1ff71e95c977ec0cf7b8ca6713e97de488cec
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 5c98d4f05289e20aa3d29b65b062ed6d7e4f42cc491ecfe4a991fec541e128b8
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101750278"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121240869"
 ---
 1. 在 Visual Studio 菜单中，选择“文件” > “新建” > “项目”  。
 2. 在“新建项目”对话框的“模板”部分中，选择“Visual C#” > “Web”。

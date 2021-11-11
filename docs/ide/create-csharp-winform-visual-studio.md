@@ -13,12 +13,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 282dd4fb2fc1f3f68d3f4c4b6b5d5d0b17f5e947
-ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
+ms.openlocfilehash: 9f700de151d589ab3e97eda6c01f41782218df74
+ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "130011414"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "132001473"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-c"></a>在 Visual Studio 中使用 C\# 创建 Windows 窗体应用
 
@@ -41,7 +41,7 @@ ms.locfileid: "130011414"
 
 ::: moniker range="vs-2022"
 
-如果尚未安装 Visual Studio，请转到 [Visual Studio 2022 预览版下载](https://visualstudio.microsoft.com/downloads)页免费安装。
+如果尚未安装 Visual Studio，请转到 [Visual Studio 2022 下载](https://visualstudio.microsoft.com/downloads)页免费安装。
 
 > [!NOTE]
 > 本教程中的部分屏幕截图使用深色主题。 如果没有深色主题但想要使用，请参阅[个性化设置 Visual Studio IDE 和编辑器](../ide/quickstart-personalize-the-ide.md)页面，了解具体方法。

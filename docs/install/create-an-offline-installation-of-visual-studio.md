@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 096beaa6dda4f75db03c6b9dc7a65144ea370300
-ms.sourcegitcommit: 0257750be796cc46e01cebd8976f637743d29417
+ms.openlocfilehash: 42f9524ba62ee73f2ef630c7c0c1bb7839a663dd
+ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "130290702"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "132002050"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>创建 Visual Studio 的脱机安装
 
@@ -32,7 +32,7 @@ Visual Studio 2017 经过精心设计，可在各种网络和计算机配置中�
 
 ::: moniker range=">=vs-2019"
 
-Visual Studio 2019 和更高版本经过精心设计，可在各种网络和计算机配置中良好运行。 虽然我们建议你试用 [Visual Studio Web 安装程序](https://visualstudio.microsoft.com/downloads)（这是一个小巧文件，可及时提供最新修补程序和功能），但我们知道对你而言这也许并不可行。
+Visual Studio 经过精心设计，可在各种网络和计算机配置中良好运行。 虽然我们建议你试用 [Visual Studio Web 安装程序](https://visualstudio.microsoft.com/downloads)（这是一个小巧文件，可及时提供最新修补程序和功能），但我们知道对你而言这也许并不可行。
 
 ::: moniker-end
 

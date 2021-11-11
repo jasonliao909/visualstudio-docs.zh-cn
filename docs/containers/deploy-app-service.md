@@ -9,12 +9,12 @@ ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 10/28/2021
 ms.author: ghogen
-ms.openlocfilehash: 68902c071b2b76de4fcb36a6f1c2461d838bc1e9
-ms.sourcegitcommit: aff49629012f4d5fa07c75ea0ca5bf53d28aa173
+ms.openlocfilehash: af1f0664da29e01c5c9eead3eb0343330253683f
+ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "131662761"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "132001972"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>使用 Visual Studio 将 ASP.NET Core 容器部署到 Azure 应用服务
 
@@ -33,7 +33,7 @@ ms.locfileid: "131662761"
 - [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) 与“ASP.NET 和 Web 开发”工作负载。
 ::: moniker-end
 ::: moniker range=">=vs-2022"
-- 带有“ASP.NET 和 Web 开发”工作负载的 [Visual Studio 2022 RC](https://visualstudio.microsoft.com/downloads)。
+- [Visual Studio 2022](https://visualstudio.microsoft.com/downloads) 与“ASP.NET 和 Web 开发”工作负载。
 ::: moniker-end
 
 - 安装 [Docker Desktop](https://docs.docker.com/docker-for-windows/install/)

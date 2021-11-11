@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: bccfb9eee59aba9397f57b773cb06c3d2de89f9f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b7066c467d6f9e703549ce676aa20311d25c2968eabfdc106f716a916ac956f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89324300"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121454264"
 ---
 [下载 Visual Studio Community](https://visualstudio.microsoft.com/vs/#downloadvs) 或 [比较 Visual Studio 版本](https://visualstudio.microsoft.com/vs/compare/)

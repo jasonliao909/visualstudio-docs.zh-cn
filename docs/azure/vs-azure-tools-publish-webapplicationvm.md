@@ -29,7 +29,7 @@ Publish-WebApplicationVM
 -Verbose
 ```
 
-### <a name="configuration"></a>配置
+### <a name="configuration"></a>Configuration
 描述部署详细信息的 JSON 配置文件的路径。
 
 | 别名 | 无 |

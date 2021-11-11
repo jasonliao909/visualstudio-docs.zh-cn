@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ccbcddfaff619a56299279583fe14a0326519dc
-ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
+ms.openlocfilehash: 3d0a9390424553d020bc6deba5f00e244730214f
+ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "130011505"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "132002089"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>教程：了解如何使用 Visual Studio 调试 C# 代码
 
@@ -40,7 +40,7 @@ ms.locfileid: "130011505"
 
 ::: moniker range=">=vs-2022"
 
-必须安装 Visual Studio 2022 RC 且具有“.NET 桌面开发”工作负载。
+须安装 Visual Studio 2022 且具有“.NET 桌面开发”工作负载。
 
 ::: moniker-end
 

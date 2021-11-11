@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 10/08/2021
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: a7d3b70e2c8ce4f761e1ec6dff25a0cd3a989e9a
-ms.sourcegitcommit: aff49629012f4d5fa07c75ea0ca5bf53d28aa173
+ms.openlocfilehash: 15861e9a22ca77267e636cb0861c97d3d41c3ab9
+ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "131662636"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "132001734"
 ---
 # <a name="launch-a-subset-of-compose-services"></a>启动 Compose 服务的子集
 
@@ -29,7 +29,7 @@ ms.locfileid: "131662636"
 - [使用 Docker Compose 进行容器编排](tutorial-multicontainer.md)的 .NET 解决方案
 :::moniker-end
 :::moniker range=">=vs-2022"
-- [Visual Studio 2022 RC](https://visualstudio.microsoft.com/downloads) 或 [Visual Studio 2019 版本 16.10](https://visualstudio.microsoft.com/vs/)（或更高版本）
+- [Visual Studio 2022](https://visualstudio.microsoft.com/downloads) 或 [Visual Studio 2019 版本 16.10](https://visualstudio.microsoft.com/vs/) 或更高版本
 - [使用 Docker Compose 进行容器编排](tutorial-multicontainer.md)的 .NET 解决方案
 :::moniker-end
 

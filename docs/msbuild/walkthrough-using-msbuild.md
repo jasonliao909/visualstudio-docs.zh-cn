@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: d97ac42b6df32fb045ca846295d1dfeea9ef166a
-ms.sourcegitcommit: 0257750be796cc46e01cebd8976f637743d29417
+ms.openlocfilehash: dde3984e34e7ede783b9a7eb00a82885bf12994f
+ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "130290689"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "132000906"
 ---
 # <a name="walkthrough-use-msbuild"></a>演练：使用 MSBuild
 
@@ -55,7 +55,7 @@ MSBuild 是 Microsoft 和 Visual Studio 的生成平台。 本演练介绍 MSBui
 
 在 Visual Studio 安装程序中，导航到“各个组件”，并找到“MSBuild”。 当你选择安装任何其他工作负荷时，会自动选择它。
 
-若要在没有 Visual Studio 的系统上安装 MSBuild，请转到 [Visual Studio 2022 RC 生成工具](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022-rc)。 另一种安装 MSBuild 的方式是安装 [.NET SDK](/dotnet/core/sdk#acquiring-the-net-sdk)。
+若要在没有 Visual Studio 的系统上安装 MSBuild，请转到[下载页面](https://visualstudio.microsoft.com/downloads/)上的 Visual Studio 2022 生成工具。 另一种安装 MSBuild 的方式是安装 [.NET SDK](/dotnet/core/sdk#acquiring-the-net-sdk)。
 
 ::: moniker-end
 

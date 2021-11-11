@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 10/27/2021
 ms.technology: vs-container-tools
-ms.openlocfilehash: 4b9e4925334c80e8ba1b62a8dafe5eb84e756d9b
-ms.sourcegitcommit: aff49629012f4d5fa07c75ea0ca5bf53d28aa173
+ms.openlocfilehash: dccb2e4aab4dff6af5b27404e91bca6124ed3785
+ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "131662142"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "132001359"
 ---
 # <a name="visual-studio-container-tools-for-docker"></a>Visual Studio Container Tools for Docker
 
@@ -67,7 +67,7 @@ Visual Studio 中的 Docker 支持因版本而异，以响应客户需求。 可
 ## <a name="prerequisites"></a>先决条件
 
 * [Docker Desktop](https://www.docker.com/get-docker)
-* 安装了“Web 开发”、“Azure 工具”工作负载和/或“.NET 桌面开发”工作负载的 [Visual Studio 2022 RC](https://visualstudio.microsoft.com/downloads)  
+* 安装了“Web 开发”、“Azure 工具”工作负载和/或“.NET 桌面开发”工作负载的 [Visual Studio 2022](https://visualstudio.microsoft.com/downloads)  
 * 若要发布到 Azure 容器注册表，需要 Azure 订阅。 [注册免费试用版](https://azure.microsoft.com/offers/ms-azr-0044p/)。
 
 ## <a name="docker-support-in-visual-studio"></a>Visual Studio 中的 Docker 支持

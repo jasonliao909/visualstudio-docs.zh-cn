@@ -6,12 +6,12 @@ ms.date: 05/28/2021
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: c56f780f7c46205c250b43af4e3a307db2ed7a10
-ms.sourcegitcommit: 2430a38f23ac17b65dd8d3baa806e90433aba24f
+ms.openlocfilehash: 7298cc8560f8b35e80dea028c957025afff1da41e44893899dd5a592b5649fa2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "115094025"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121386507"
 ---
 | 值 | **结果** |
 | --------- | ---------- |

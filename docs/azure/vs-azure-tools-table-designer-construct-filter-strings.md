@@ -26,13 +26,13 @@ WCF 数据服务基于[开放数据协议](https://www.odata.org/) (OData)。 �
 
 | 逻辑运算符 | 说明 | 示例筛选器字符串 |
 | --- | --- | --- |
-| eq |Equal |City eq 'Redmond' |
+| eq |等于 |City eq 'Redmond' |
 | gt |大于 |Price gt 20 |
 | ge |大于或等于 |Price ge 10 |
 | lt |小于 |Price lt 20 |
 | le |小于或等于 |Price le 100 |
 | ne |不等于 |City ne 'London' |
-| 和 |且 |Price le 200 and Price gt 3.5 |
+| 和 |And |Price le 200 and Price gt 3.5 |
 | 或 |或 |Price le 3.5 or Price gt 200 |
 | not |Not |not isAvailable |
 

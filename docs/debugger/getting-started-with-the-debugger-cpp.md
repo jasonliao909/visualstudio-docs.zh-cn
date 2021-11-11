@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c1a469e303ec112cd0a025edb87587bf0816ff99
-ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
+ms.openlocfilehash: 7b0c724c226d516c3c27996844bd986b9f34eb59
+ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "130011492"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "132001858"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>教程：了解如何使用 Visual Studio 调试 C++ 代码
 
@@ -62,7 +62,7 @@ ms.locfileid: "130011492"
 
 ::: moniker range="vs-2022"
 
-如果尚未安装 Visual Studio 2022 RC，请转到 [Visual Studio 2022 预览版下载](https://visualstudio.microsoft.com/downloads)页免费安装。
+如果尚未安装 Visual Studio 2022，请转到 [Visual Studio 2022 下载](https://visualstudio.microsoft.com/downloads)页免费安装。
 
 ::: moniker-end
 
