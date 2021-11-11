@@ -15,12 +15,12 @@ helpviewer_keywords:
 - mark of the web
 - trusted files
 - trusted folders
-ms.openlocfilehash: 4e92e449bf947ebbb03e676d6cb77d926c6971d8
-ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
+ms.openlocfilehash: 6b0f907f7bf6526cbf671c2acb5e4d3d91f6a5ed
+ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "131127923"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "132001294"
 ---
 # <a name="configure-trust-settings-for-files-and-folders"></a>配置文件和文件夹的信任设置
 
@@ -105,7 +105,7 @@ Visual Studio 在打开具有 [Web 标记](/previous-versions/windows/internet-e
 > 在审批文件、文件夹或解决方案之前，仍应先确保它们来自受信任的人员或受信任的位置。
 
 > [!NOTE]
-> 在 Visual Studio 2022 RC 中，我们改进了信任设置功能，以便在用户将要在 IDE 中打开文件、文件夹、项目和解决方案中的不受信任代码时显示警告。 默认情况下，该功能被禁用。 若要了解详细信息，请参阅此页面上的 [Visual Studio 2022 版本](?view=vs-2022&preserve-view=true)。
+> 在 Visual Studio 2022 中，我们改进了信任设置功能，以便在用户将要在 IDE 中打开文件、文件夹、项目和解决方案中的不受信任代码时显示警告。 默认情况下，该功能被禁用。 若要了解详细信息，请参阅此页面上的 [Visual Studio 2022 版本](?view=vs-2022&preserve-view=true)。
 
 ## <a name="configure-trust-settings"></a>配置信任设置
 

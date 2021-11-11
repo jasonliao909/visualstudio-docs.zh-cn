@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 1ab8a5aa69315ef48f3314a087edf841245701f9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c1c674087c3530087d45b364eaf1fb5803387d47c188b3317e628b7e83e10fd
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89326710"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121280588"
 ---
 Microsoft Store

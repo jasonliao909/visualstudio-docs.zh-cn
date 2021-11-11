@@ -2,19 +2,19 @@
 title: 在 Visual Studio 中创建存储库
 titleSuffix: ''
 description: 使用 Git 在 Visual Studio 中创建存储库，或浏览到 Azure DevOps 存储库。
-ms.date: 10/29/2021
+ms.date: 11/08/2021
 ms.topic: how-to
 author: TerryGLee
 ms.author: tglee
 ms.manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 3eb85359ca8c00bd129051acc92c62eb4e5f1716
-ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
+ms.openlocfilehash: 652d1c374f078fae73c7ba157ddaadce02695a41
+ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "131128734"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "132001724"
 ---
 # <a name="create-a-repo-in-visual-studio"></a>在 Visual Studio 中创建存储库
 
@@ -44,6 +44,10 @@ ms.locfileid: "131128734"
 
     :::image type="content" source="media/vs-2022/git-menu-create-git-repo-push-code.png" alt-text="使用“创建 Git 存储库”窗口输入的用户的 GitHub 信息的屏幕截图。":::
 
+### <a name="open-an-existing-local-repository"></a>打开现有的本地存储库
+
+创建存储库或[克隆存储库](git-clone-repository.md)之后，Visual Studio 将检测该 Git 存储库，并将其添加到 Git 菜单中的“本地存储库”列表。 在这里，你可以快速访问 Git 存储库并在其之间快速切换。
+
 ## <a name="create-an-azure-devops-repo"></a>创建 Azure DevOps 存储库
 
 1. 打开 Visual Studio，然后选择“创建新项目”。
@@ -63,7 +67,7 @@ ms.locfileid: "131128734"
 
 ## <a name="next-steps"></a>后续步骤
 
-有关完整概述，请参阅 [Visual Studio 中的 Git 体验](git-with-visual-studio.md)页面。
+若要继续学习，请访问[创建分支](git-create-branch.md)页面。
 
 ## <a name="see-also"></a>请参阅
 

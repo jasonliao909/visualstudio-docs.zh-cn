@@ -6,12 +6,12 @@ ms.technology: vs-azure
 ms.author: ghogen
 ms.topic: include
 ms.date: 03/08/2021
-ms.openlocfilehash: 1d6f103de6988565ff6d46b20334d852d258ce12
-ms.sourcegitcommit: 3c5b1a1d51b521356f42a6879c1f1745573dda65
+ms.openlocfilehash: 4933cda8df6e852ac9ee1bf781fd9c4bf576de1154f9afda535cd8bee7b8f379
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "114592018"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121240856"
 ---
 1. 在 Visual Studio“启动”窗口，选择“创建新项目”。
 1. 选择“ASP.NET Core Web 应用”，然后选择“下一步” 。

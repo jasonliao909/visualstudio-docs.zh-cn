@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.date: 10/27/2021
 ms.technology: vs-container-tools
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 994804c897165cd5fb0b658163ead79396d3c530
-ms.sourcegitcommit: aff49629012f4d5fa07c75ea0ca5bf53d28aa173
+ms.openlocfilehash: 0170d7e1e84cb5d2a6e37eca271866187f599d58
+ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "131662189"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "132002076"
 ---
 # <a name="use-the-containers-window"></a>使用“容器”窗口
 
@@ -29,7 +29,7 @@ ms.locfileid: "131662189"
 :::moniker-end
 :::moniker range=">=vs-2022"
 - [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-- [Visual Studio 2022 RC](https://visualstudio.microsoft.com/downloads) 或 [Visual Studio 2019 版本 16.4](https://visualstudio.microsoft.com/downloads)（或更高版本）
+- [Visual Studio 2022](https://visualstudio.microsoft.com/downloads) 或 [Visual Studio 2019 版本 16.4](https://visualstudio.microsoft.com/downloads) 或更高版本。
 
 :::moniker-end
 

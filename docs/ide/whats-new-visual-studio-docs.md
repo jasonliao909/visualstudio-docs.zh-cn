@@ -14,12 +14,12 @@ ms.prod: visual-studio-windows
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: ee2413cb90d7ff1fd64b8ce1cef8282d24f57e73
-ms.sourcegitcommit: d3ce2900d838d1fb509df51bda9a9a8b72dfd880
+ms.openlocfilehash: 2e6b673622ba469c2c6fea70ca57846eadef9ebc
+ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "131521619"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "132002063"
 ---
 # <a name="whats-new-in-visual-studio-docs"></a>Visual Studio 新增功能文档
 
@@ -201,7 +201,7 @@ ms.locfileid: "131521619"
 - [如何：更改生成输出目录](./how-to-change-the-build-output-directory.md)
   - 针对 Visual Studio 2022 预览版进行查看并在需要时更新
   - 更新适用于 VS 2022 的生成配置文章
-- [如何：配置项目以面向目标平台](./how-to-configure-projects-to-target-platforms.md) - 针对 Visual Studio 2022 RC 进行查看并在需要时更新
+- [如何：配置项目以面向目标平台](./how-to-configure-projects-to-target-platforms.md) - 针对 Visual Studio 2022 进行查看并在需要时更新
 - [了解解决方案资源管理器](./use-solution-explorer.md) - 添加解决方案资源管理器上下文菜单信息
 
 ### <a name="install"></a>安装

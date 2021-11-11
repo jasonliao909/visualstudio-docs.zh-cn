@@ -10,19 +10,19 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b016a52efaf247f2556c44905a81cd5af00a525
-ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
+ms.openlocfilehash: b45b1baa351014d5ebe410e3154fc784c4e50b78
+ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "130011440"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "132001525"
 ---
 # <a name="manage-project-and-solution-properties"></a>管理项目和解决方案属性
 
 项目具有一些控制编译、调试、测试和部署的很多方面的属性。 有些属性在所有项目类型中是通用的，而有些则只用于特定语言或平台。
 
 > [!TIP]
-> 在 [Visual Studio 2022 RC](/visualstudio/releases/2022/release-notes-preview) 中，我们向项目属性添加了新的功能，还刷新了其用户界面。 若要了解详细信息，请参阅[改良版项目属性 UI](https://devblogs.microsoft.com/visualstudio/revamped-project-properties-ui/) 博客文章。
+> 在 [Visual Studio 2022](/visualstudio/releases/2022/release-notes) 中，我们向项目属性添加了新的功能，还刷新了其用户界面。 若要了解详细信息，请参阅[改良版项目属性 UI](https://devblogs.microsoft.com/visualstudio/revamped-project-properties-ui/) 博客文章。
 
 右键单击解决方案资源管理器中的项目节点并选择“属性”，或者在菜单栏上的搜索框中键入“属性”并从结果中选择“属性窗口”，即可访问项目属性   。
 

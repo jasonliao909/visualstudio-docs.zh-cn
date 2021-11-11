@@ -2,19 +2,19 @@
 title: Visual Studio 如何简化源代码管理
 titleSuffix: ''
 description: 了解如何在 Visual Studio 中使用 Git 和 GitHub 来跟踪代码更改，并在需要时将其还原。
-ms.date: 04/01/2021
+ms.date: 11/08/2021
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 982eea07b6668678669ac73678f6a0460a4ebff0
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: a32ef55b8f14da7931557b533464804672de1b49
+ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "127832962"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "132001913"
 ---
 # <a name="how-visual-studio-makes-source-control-easy"></a>Visual Studio 如何简化源代码管理
 
@@ -48,10 +48,10 @@ Visual Studio 中的 Git 集成通过提供上下文帮助并提示你执行正�
 
 ## <a name="next-steps"></a>后续步骤
 
-若要详细了解如何在 Visual Studio 中使用 Git 和 GitHub，请观看以下 YouTube 视频：[在 Visual studio 中开始使用 Git](https://www.youtube.com/watch?v=GCZ9x3yqkyc&list=PLReL099Y5nRc-zbaFbf0aNcIamBQujOxP)
+若要详细了解如何在 Visual Studio 2019 中使用 Git 和 GitHub，请观看以下 YouTube 视频：[在 Visual studio 中开始使用 Git](https://www.youtube.com/watch?v=GCZ9x3yqkyc&list=PLReL099Y5nRc-zbaFbf0aNcIamBQujOxP)
 
 ## <a name="see-also"></a>请参阅
 
-- [Visual Studio 中的 Git 和 GitHub 入门](/learn/modules/visual-studio-github-push/)
-- [Visual Studio 中的 Git 新体验](git-with-visual-studio.md)
-- [并行比较 Git 和团队资源管理器](git-team-explorer-feature-comparison.md)
+- [Visual Studio 2019 中的 Git 和 GitHub 入门](/learn/modules/visual-studio-github-push/)
+- [Visual Studio 2019 中的 Git 新体验](git-with-visual-studio.md?view=vs-2019&preserve-view=true)
+- [在 Visual Studio 2019 中并行比较 Git 和团队资源管理器](git-team-explorer-feature-comparison.md?view=vs-2019&preserve-view=true)

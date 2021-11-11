@@ -3,17 +3,17 @@ title: 安装 Visual Studio 2017 for Mac
 description: 有关如何安装 Visual Studio for Mac 和跨平台开发所需附加组件的说明。
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 11/03/2018
+ms.date: 11/10/2021
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: be799764c3d6913cd2a13c6d631fc3450f8875a0
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: a1a6c7760d32801a41dd13d78143ad4674eedf7c
+ms.sourcegitcommit: abfcccf63234819c75a61bf2c4c7f710a9d23cdb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736779"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "132250616"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>安装 Visual Studio 2017 for Mac
 
@@ -22,7 +22,7 @@ ms.locfileid: "126736779"
 
 ## <a name="downgrading-from-visual-studio-2019-for-mac"></a>从 Visual Studio 2019 for Mac 降级？
 
-为获得最佳体验，降级之前，应确保[卸载](uninstall.md) Visual Studio 2019 for Mac。 如果遇到导致下载的问题，请务必通过[报告问题](report-a-problem.md)让我们知道。
+为获得最佳体验，降级之前，应确保[卸载](uninstall.md) Visual Studio 2019 for Mac。
  
 ## <a name="requirements"></a>要求
 
@@ -68,7 +68,7 @@ ms.locfileid: "126736779"
       - 完全跨平台的 Xamarin 应用 - 选择“Android”、“iOS”和“macOS”平台。
    * **.NET Core 应用程序** - 选择“.NET Core”平台。
    * **ASP.NET Core Web 应用程序** - 选择“.NET Core”平台。
-   * **跨平台 Unity 游戏开发** - 除 Visual Studio for Mac 之外，无需安装其他任何平台。 若要详细了解如何安装 Unity 扩展，请参阅 [Unity 安装指南](./setup-vsmac-tools-unity.md)。
+   * **跨平台 Unity 游戏开发** - 除 Visual Studio for Mac 之外，无需安装其他任何平台。
 
    此安装屏幕显示每个组件的版本和大小。 可单击每个组件查看该组件的依赖项列表（对于 Android），该组件下载的其他包（对于 .NET Core），或任何其他所需应用程序（对于 iOS 和 macOS）：
 
@@ -120,7 +120,7 @@ ms.locfileid: "126736779"
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>.NET Core 应用、ASP.NET Core Web 应用、Unity 游戏开发
 
-有关其他工作负载，请参阅[工作负载](./workloads.md)页。
+有关其他工作负载，请参阅[工作负载](./asp-net-core.md)部分。
 
 ## <a name="related-video"></a>相关视频
 

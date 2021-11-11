@@ -3,15 +3,15 @@ title: Visual Studio for Mac 工作负载
 description: 本文介绍了可以在 Visual Studio for Mac 中使用的各种工作负载，包括 Xamarin 移动应用、ASP.NET Core 和适用于游戏的 Unity。
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 12/05/2018
+ms.date: 11/10/2021
 ms.assetid: DDC39599-8C5D-4CB9-8DA5-229E085384CA
 ms.topic: overview
-ms.openlocfilehash: fa298e97c2db05ee3be526e5e1b3cc7a7affed99
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: f39dcf028b2aeadd68a09e162742377109036542
+ms.sourcegitcommit: abfcccf63234819c75a61bf2c4c7f710a9d23cdb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736769"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "132250577"
 ---
 # <a name="visual-studio-for-mac-workloads"></a>Visual Studio for Mac 工作负载
 
@@ -39,4 +39,4 @@ Visual Studio for Mac 预安装有用于开发以下类型应用的工作负荷�
 
 ## <a name="unity-game-development"></a>Unity 游戏开发
 
-要开始使用 Unity 生成游戏，请参阅[设置页面](setup-vsmac-tools-unity.md)和[使用 Unity 工具的指南](using-vsmac-tools-unity.md)，或查看 Unity [动手实验](https://github.com/Microsoft/vs4mac-labs/tree/master/Unity/Getting-Started)。
+若要开始使用 Unity 生成游戏，请查看 Unity [动手实验室](https://github.com/Microsoft/vs4mac-labs/tree/master/Unity/Getting-Started)。

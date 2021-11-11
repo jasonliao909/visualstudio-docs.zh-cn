@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.technology: vs-container-tools
 ms.date: 10/27/2021
 ms.author: ghogen
-ms.openlocfilehash: aec9686abfe015016adc59c8c2d21ef1f229c912
-ms.sourcegitcommit: aff49629012f4d5fa07c75ea0ca5bf53d28aa173
+ms.openlocfilehash: d4cd920fb09cd7418822f85d681fa177b76b97cb
+ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "131661935"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "132001203"
 ---
 # <a name="deploy-an-aspnet-container-to-a-container-registry-using-visual-studio"></a>使用 Visual Studio 将 ASP.NET 容器部署到容器注册表
 
@@ -38,7 +38,7 @@ Docker 是轻型容器引擎，在某些方面类似于虚拟机，可以将其�
 * 安装 [Docker Desktop for Windows](https://docs.docker.com/desktop/windows/install/)
 ::: moniker-end
 ::: moniker range=">=vs-2022"
-* 安装带有“ASP.NET 和 Web 开发”工作负载的最新版 [Visual Studio 2022 RC](https://visualstudio.microsoft.com/downloads)
+* 安装带有“ASP.NET 和 Web 开发”工作负载的最新版本 [Visual Studio 2022](https://visualstudio.microsoft.com/downloads)
 * 安装 [Docker Desktop for Windows](https://docs.docker.com/desktop/windows/install/)
 :::moniker-end
 

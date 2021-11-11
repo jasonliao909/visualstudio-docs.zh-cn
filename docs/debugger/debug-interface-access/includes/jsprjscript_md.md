@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 021bc563846f4dcfcea07a16dfcbb4023da3e88a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
-ms.translationtype: MT
+ms.openlocfilehash: 547d0cbfe26a4b52f9d6db8e1044bddc976c1657aadd0c78e998f36feaa96dec
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89325490"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121379671"
 ---
 JScript

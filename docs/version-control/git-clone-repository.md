@@ -2,19 +2,19 @@
 title: 在 Visual Studio 中克隆存储库
 titleSuffix: ''
 description: 使用 Git 或 Azure DevOps 在 Visual Studio 中克隆存储库。
-ms.date: 10/29/2021
+ms.date: 11/08/2021
 ms.topic: how-to
 author: TerryGLee
 ms.author: tglee
 ms.manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 6f8b7bef8b9c8c94d505e3d3b2dfbcbf45a0ac80
-ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
+ms.openlocfilehash: 5fc34f78236b3f79f44e80a8be8faef66e235a58
+ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "131128736"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "132001747"
 ---
 # <a name="clone-a-repo-in-visual-studio"></a>在 Visual Studio 中克隆存储库
 
@@ -68,7 +68,9 @@ ms.locfileid: "131128736"
     > [!TIP]
     > 可以通过 Git 菜单将默认“文件夹视图”更改为“解决方案视图”。 选择“设置” > “源代码管理” > “Git 全局设置” > “打开 Git 存储库时自动加载解决方案”，以执行该操作。
 
-祝贺你！ 你已成功登录到 GitHub，并通过 Visual Studio 克隆了 GitHub 存储库。
+### <a name="open-an-existing-local-repository"></a>打开现有的本地存储库
+
+克隆存储库或[创建存储库](git-create-repository.md)之后，Visual Studio 将检测该 Git 存储库，并将其添加到 Git 菜单中的“本地存储库”列表。 在这里，你可以快速访问 Git 存储库并在其之间快速切换。
 
 ## <a name="browse-to-and-then-clone-an-azure-devops-repo"></a>浏览到 Azure DevOps 存储库并进行克隆
 
