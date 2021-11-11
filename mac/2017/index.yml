@@ -40,18 +40,6 @@ sections:
               src: 'https://docs.microsoft.com/media/logos/logo_NETcore.svg'
             text: ASP.NET Core
             href: asp-net-core.md
-          - image:
-              src: 'https://docs.microsoft.com/media/logos/logo_azure.svg'
-            text: Azure
-            href: azure-workload.md
-          - image:
-              src: 'https://docs.microsoft.com/media/logos/logo_unity.svg'
-            text: Unity
-            href: unity-tools.md
-          - image:
-              src: 'https://docs.microsoft.com/media/logos/logo_xamarin.svg'
-            text: Xamarin
-            href: xamarin.md
   - title: 我可以使用哪些语言？
     items:
       - type: paragraph
@@ -75,36 +63,3 @@ sections:
               src: 'https://docs.microsoft.com/media/logos/logo_TS.svg'
             text: TypeScript
             href: javascript.md
-          - image:
-              src: 'https://docs.microsoft.com/media/logos/logo_html5.svg'
-            text: HTML/Razor
-            href: razor.md
-  - title: 使用 Visual Studio for Mac 编写代码
-    items:
-      - type: paragraph
-        text: 详细了解如何使用 Visual Studio 编写、编译、调试和存储代码。
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: source-editor.md
-            html: <p>针对你最喜爱的语言的 Intellisense、重构和语法突出显示。</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_code-edit.svg'
-            title: 编写代码
-          - href: compiling-and-building.md
-            html: <p>配置编译器和构建应用。</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_build.svg'
-            title: 编译和生成
-          - href: debugging.md
-            html: <p>在调试器下运行应用以探查问题。</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_debug.svg'
-            title: 调试
-          - href: version-control.md
-            html: <p>访问 Azure DevOps、Git 或 Subversion 源存储库。</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_pull-request.svg'
-            title: 版本控制
