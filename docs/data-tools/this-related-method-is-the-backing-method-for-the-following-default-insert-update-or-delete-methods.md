@@ -1,5 +1,5 @@
 ---
-title: 无法删除后备方法
+title: 无法删除备份方法
 description: 此相关方法是以下默认插入、更新或删除方法的支持方法
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -13,24 +13,24 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: 8dcf07340584a3103a854dae3ffa7787cabee448
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126601080"
 ---
 # <a name="this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods"></a>此相关方法是以下默认插入、更新或删除方法的支持方法
 
-此相关方法是以下默认 `Insert` 、或方法的后备方法 `Update` `Delete` 。 如果删除这些方法，则备份方法也将被删除。 是否要继续?
+此相关方法是下列默认 `Insert`、`Update` 或 `Delete` 方法的备份方法。 如果删除这些方法，则备份方法也将被删除。 是否要继续?
 
-所选 `DataContext` 方法当前用作 `Insert` `Update` `Delete` **O/R 设计器** 上某个实体类的、或方法之一。 删除所选方法会导致使用此方法的实体类恢复为在更新过程中执行插入、更新或删除操作的默认运行时行为。
+所选的 `DataContext` 方法当前用作 O/R 设计器上某实体类的 `Insert`、`Update` 或 `Delete` 方法之一。 如果删除所选方法，则使用此方法的实体类在更新过程中执行插入、更新或删除时将还原为默认的运行时行为。
 
 ## <a name="selected-method-options"></a>选择的方法选项
 
-- 若要删除所选方法，使实体类使用运行时更新，请单击 **"是"**。
+- 若要删除所选方法，使实体类使用运行时更新，请单击“是”。
 
-   将删除所选方法，并使用默认的 LINQ to SQL 运行时行为将使用此方法替代更新行为的任何类还原为。
+   所选方法将被删除，并且使用此方法重写更新行为的所有类将还原为使用默认 LINQ to SQL 运行时行为。
 
-- 若要关闭该消息框，使所选方法保持不变，请单击 " **否**"。
+- 关闭消息框，不对所选方法进行更改，单击“否”。
 
    消息框关闭，不进行任何更改。
 

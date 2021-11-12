@@ -1,6 +1,6 @@
 ---
 title: 属性参与关联
-description: 无法删除属性，因为该属性正在参与关联。 查看有关此对象关系设计器的信息 (O/R 设计器) 消息。
+description: 无法删除属性，因为该属性正在参与关联。 查看此对象关系设计器（O/R 设计器）消息的相关信息。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -13,7 +13,7 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: dc732273719484b7f2f3eaf26a39a8ff518ee3dc
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126601081"
@@ -26,7 +26,7 @@ ms.locfileid: "126601081"
 
 ## <a name="to-correct-this-error"></a>更正此错误
 
-1. 在连接错误消息中指示的数据类的 **O/R 设计器** 上选择关联连线。
+1. 在 O/R 设计器中选择连接错误消息中指示的数据类的关联连线。
 
 2. 双击该连线以打开“关联编辑器”对话框。
 

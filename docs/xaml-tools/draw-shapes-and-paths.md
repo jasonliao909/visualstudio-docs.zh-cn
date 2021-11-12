@@ -1,6 +1,6 @@
 ---
 title: 绘制形状和路径
-description: 使用 Blend for Visual Studio 中 XAML 设计器的功能绘制路径和形状，对其进行修改，然后将它们组合在一起。
+description: 在 Blend for Visual Studio 中使用 XAML 设计器的功能，可以绘制路径和形状，对它们进行修改和组合。
 ms.custom: SEO-VS-2020
 titleSuffix: Blend for Visual Studio
 ms.date: 09/22/2020
@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: f534d1917e6533c7a03e313f29f3a792dd545aee
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126664891"
@@ -29,7 +29,7 @@ ms.locfileid: "126664891"
 
 在“资产”窗口中查找形状。
 
-:::image type="content" source="media/blend-shapes.png" alt-text="Blend for Visual Studio 中 &quot;资产&quot; 窗口的 &quot;形状&quot; 类别的屏幕截图":::
+:::image type="content" source="media/blend-shapes.png" alt-text="屏幕截图：Blend for Visual Studio 中“资产”窗口的“形状”类别":::
 
 将所需的任何形状拖到美工板上。 然后，使用形状的图柄缩放、旋转、移动或扭曲形状。
 
@@ -81,17 +81,17 @@ ms.locfileid: "126664891"
 
 ### <a name="remove-a-point-in-a-path"></a>删除路径中的点
 
-使用“选择”工具，以选中路径。 然后，使用 " **笔** " 工具单击你要删除的点。
+使用“选择”工具，以选中路径。 然后，使用“笔”工具，以单击想要删除的点。
 
 ### <a name="add-a-point-to-a-path"></a>向路径添加点
 
-使用“选择”工具，以选中路径。 使用 " **笔** " 工具单击路径上要添加点的任何位置。
+使用“选择”工具，以选中路径。 使用“笔”工具，以单击想要在其中添加点的路径上的任意位置。
 
 ## <a name="convert-a-shape-to-a-path"></a>将形状转换为路径
 
-若要采用与修改路径相同的方式来修改形状，请将形状转换为路径。 选择形状，然后选择 "**格式化**  >  **路径**" "  >  **转换为路径**"。
+若要采用与修改路径相同的方式来修改形状，请将形状转换为路径。 选择形状，然后选择“格式” > “路径” > “转换为路径”。
 
-**观看简短视频：** ![配置已安装的功能使用 ](../designers/media/bldadminconsoleinitialconfigicon.png) [路径：将形状转换为路径](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147)。
+**观看短片：** ![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.png)[使用路径：将形状转换为路径](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147)。
 
 > [!NOTE]
 > “转换为路径”当前不适用于 `TargetPlatformVersion` 至少为 10.0.16299.0 或更高版本的 UWP 应用。
@@ -111,7 +111,7 @@ ms.locfileid: "126664891"
 |![相斥](../designers/media/b1_5.png)|排除重叠|
 |![减](../designers/media/b1_6.png)|减|
 
-**观看简短视频：** ![配置已安装的功能使用 ](../designers/media/bldadminconsoleinitialconfigicon.png) [路径：合并路径](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195)。
+**观看短片：** ![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.png)[使用路径：合并路径](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195)。
 
 ## <a name="create-a-compound-path"></a>创建复合路径
 
@@ -121,7 +121,7 @@ ms.locfileid: "126664891"
 
 ![中断复合路径](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png)
 
-**观看简短视频：** ![配置已安装的功能使用 ](../designers/media/bldadminconsoleinitialconfigicon.png) [路径：创建复合路径](https://www.youtube.com/watch?v=Io5bC0-nH6Q)。
+**观看短片：** ![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.png)[使用路径：创建复合路径](https://www.youtube.com/watch?v=Io5bC0-nH6Q)。
 
 ## <a name="create-a-clipping-path"></a>创建剪切路径
 
@@ -129,4 +129,4 @@ ms.locfileid: "126664891"
 
 ![剪切路径](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png)
 
-**观看简短视频：** ![配置已安装的功能使用 ](../designers/media/bldadminconsoleinitialconfigicon.png) [路径：创建剪切路径](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232)。
+**观看短片：** ![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.png)[使用路径：创建剪切路径](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232)。

@@ -1,5 +1,5 @@
 ---
-title: '将受信任的发布者添加到客户端 box (ClickOnce) '
+title: 将受信任的发布者添加到客户端 (ClickOnce)
 description: 了解如何将证书添加到客户端计算机，以便在不提示用户的情况下以更高的信任级别运行 ClickOnce 应用程序。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -19,11 +19,11 @@ ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
 ms.openlocfilehash: 5005c64ba03b91a9150258e501e8ef07deac00ac
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122146399"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126665627"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>如何：为 ClickOnce 应用程序向客户端计算机添加一个受信任的发行者
 借助受信任的应用程序部署，可以配置客户端计算机，以便 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序在不提示用户的情况下以更高信任级别运行。 下面的过程演示如何使用命令行工具 CertMgr.exe 将发布者的证书添加到客户端计算机上的“受信任的发布者”存储。
@@ -35,13 +35,13 @@ ms.locfileid: "122146399"
 
  还可以使用 <xref:System.Security.Cryptography.X509Certificates.X509Store> 类以编程方式将证书添加到存储。
 
- 有关受信任的应用程序部署的概述，请参阅 [受信任的应用程序部署概述](../deployment/trusted-application-deployment-overview.md)。
+ 有关受信任的应用程序部署的概述，请参阅[受信任的应用程序部署概述](../deployment/trusted-application-deployment-overview.md)。
 
 ### <a name="to-add-a-certificate-to-the-trusted-publishers-store-under-the-trusted-root"></a>将证书添加到受信任的根下的“受信任的发布者”存储
 
 1. 从 CA 获取数字证书。
 
-2. 将证书导出为 Base64 x.509 (*.cer*) 格式。 有关证书格式的详细信息，请参阅 [导出证书](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10))。
+2. 将证书导出为 Base64 X.509 (.cer) 格式。 有关证书格式的详细信息，请参阅[导出证书](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10))。
 
 3. 从客户端计算机上的命令提示符处，运行以下命令：
 
@@ -51,7 +51,7 @@ ms.locfileid: "122146399"
 
 1. 从 CA 获取数字证书。
 
-2. 将证书导出为 Base64 x.509 (*.cer*) 格式。 有关证书格式的详细信息，请参阅 [导出证书](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10))。
+2. 将证书导出为 Base64 X.509 (.cer) 格式。 有关证书格式的详细信息，请参阅 [导出证书](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10))。
 
 3. 从客户端计算机上的命令提示符处，运行以下命令：
 
@@ -59,7 +59,7 @@ ms.locfileid: "122146399"
 
      **certmgr.exe -add good.cer -c -s -r localMachine TrustedPublisher**
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 - [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)
 - [ClickOnce 应用程序的代码访问安全性](../deployment/code-access-security-for-clickonce-applications.md)
@@ -69,6 +69,6 @@ ms.locfileid: "122146399"
 - [如何：为 ClickOnce 应用程序设置安全区域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
 - [如何：设置 ClickOnce 应用程序的自定义权限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
 - [如何：使用受限权限对 ClickOnce 应用程序进行调试](securing-clickonce-applications.md)
-- [如何将受信任的发布者添加到 ClickOnce 应用程序的客户端计算机](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)
-- [如何：对应用程序和部署清单进行重新签名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
+- [如何：为 ClickOnce 应用程序向客户端计算机添加一个受信任的发行者](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)
+- [如何：为应用程序和部署清单重新签名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
 - [如何：配置 ClickOnce 信任提示行为](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)

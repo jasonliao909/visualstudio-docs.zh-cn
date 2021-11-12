@@ -15,14 +15,14 @@ ms.workload:
 - multiple
 ms.openlocfilehash: daa88d858af5b99beda41631c6c139be9aff425d
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126664900"
 ---
 # <a name="writeline-activity-designer"></a>WriteLine 活动设计器
 
-**WriteLine** 活动设计器用于创建和配置 <xref:System.Activities.Statements.WriteLine> 活动。
+“WriteLine”活动设计器用于创建和配置 <xref:System.Activities.Statements.WriteLine> 活动。
 
 ## <a name="the-writeline-activity"></a>WriteLine 活动
 
@@ -30,16 +30,16 @@ ms.locfileid: "126664900"
 
 ### <a name="using-the-writeline-activity-designer"></a>使用 WriteLine 活动设计器
 
-访问" **工具箱"** 的 **"基元"类别中的** WriteLine 活动 **设计器**。 可以将 **WriteLine** 活动设计器从"工具箱"拖动到工作流设计器放置活动的位置（例如 位于 内）上 <xref:System.Activities.Statements.Sequence> 。 这将创建具有 WriteLine 的默认 <xref:System.Activities.Statements.WriteLine> 的 <xref:System.Activities.Activity.DisplayName%2A> 活动。 <xref:System.Activities.Activity.DisplayName%2A>可以在 **WriteLine** 活动设计器的标头或属性网格的 **DisplayName** 框中编辑 。
+访问 WriteLine 活动设计器，其位于工具箱的“基元”类别中  。 可以将“WriteLine”活动设计器从“工具箱”拖放到工作流设计器图面上通常放置活动的任何位置，如 <xref:System.Activities.Statements.Sequence> 内 。 这将创建具有 WriteLine 的默认 <xref:System.Activities.Statements.WriteLine> 的 <xref:System.Activities.Activity.DisplayName%2A> 活动。 可以在“WriteLine”活动设计器的标头中或在属性网格的“DisplayName”框中编辑 <xref:System.Activities.Activity.DisplayName%2A> 。
 
 ### <a name="the-writeline-properties"></a>WriteLine 属性
 
-下表列出 <xref:System.Activities.Statements.WriteLine> 属性并说明如何在设计器中使用它们。 这些属性可以在属性网格中编辑，其中一些属性可以在工作流设计器编辑。
+下表列出 <xref:System.Activities.Statements.WriteLine> 属性并说明如何在设计器中使用它们。 这些属性可以在属性网格中进行编辑，其中一些属性还可以在工作流设计器图面上进行编辑。
 
 |属性名称|必选|使用情况|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|错误|<xref:System.Activities.Statements.WriteLine> 活动的友好名称。 默认值为 WriteLine。 虽然 <xref:System.Activities.Activity.DisplayName%2A> 不是绝对必需的，但最好使用该属性。|
-|<xref:System.Activities.Statements.WriteLine.Text%2A>|错误|要写入的文本。 若要设置 属性，请Visual Basic **设计器** 或属性网格的 **"** 文本框"框中键入一个表达式。|
+|<xref:System.Activities.Statements.WriteLine.Text%2A>|错误|要写入的文本。 若要设置该属性，请在“WriteLine”活动设计器或属性网格中的“文本”框中键入 Visual Basic 表达式 。|
 |<xref:System.Activities.Statements.WriteLine.TextWriter%2A>|错误|<xref:System.IO.TextWriter> 向其写入 <xref:System.Activities.Statements.WriteLine> 的 <xref:System.Activities.Statements.WriteLine.Text%2A>。 默认为控制台。|
 
 ## <a name="see-also"></a>另请参阅

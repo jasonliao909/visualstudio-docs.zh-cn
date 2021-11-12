@@ -1,6 +1,6 @@
 ---
-title: ClickOnce 应用程序的代码访问安全性 |Microsoft Docs
-description: 了解 ClickOnce 应用程序的代码访问安全性以及如何配置代码访问安全权限。
+title: ClickOnce 应用程序的代码访问安全性 | Microsoft Docs
+description: 了解 ClickOnce 应用程序的代码访问安全性以及如何配置代码访问安全性权限。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -27,11 +27,11 @@ ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
 ms.openlocfilehash: 1d60cc8e982e094a3deff406763c234c755a1c32
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122153740"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126666953"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>ClickOnce 应用程序的代码访问安全性
 ClickOnce 应用程序基于 .NET Framework，需遵从代码访问安全性约束。 因此，了解代码访问安全性的含义并且相应地编写 ClickOnce 应用程序是十分重要的。
@@ -46,11 +46,11 @@ ClickOnce 应用程序基于 .NET Framework，需遵从代码访问安全性约�
 - 当应用程序需要完全信任权限时，可能会提示最终用户向其授予对该应用程序的权限。 这意味着应用程序不会真正提供 ClickOnce 体验，并且该提示可能会给经验较少的用户造成混淆。
 
   > [!NOTE]
-  > 当从可移动媒体（如 CD-ROM）安装应用程序时，将不会提示用户。 此外，网络管理员可以配置网络策略，以便在从受信任的源安装应用程序时不会提示用户。 有关详细信息，请参阅 [受信任的应用程序部署概述](../deployment/trusted-application-deployment-overview.md)。
+  > 当从可移动媒体（如 CD-ROM）安装应用程序时，将不会提示用户。 此外，网络管理员可以配置网络策略，以便在从受信任的源安装应用程序时不会提示用户。 有关详细信息，请参阅[受信任的应用程序部署概述](../deployment/trusted-application-deployment-overview.md)。
 
   若要限制 ClickOnce 应用程序的权限，可以修改应用程序的代码访问安全性权限，以请求最适合你的应用程序所需权限的区域。 在大多数情况下，你可以选择从中部署该应用程序的区域。 例如，如果你的应用程序是企业应用程序，则可以使用 **“本地 Intranet”** 区域。 如果你的应用程序是 Internet 应用程序，则可以使用 **“Internet”** 区域。
 
-## <a name="configure-security-permissions"></a>配置安全权限
+## <a name="configure-security-permissions"></a>配置安全性权限
  你始终应该配置 ClickOnce 应用程序，以请求适当的区域来限制代码访问安全性权限。 可以在 **“项目设计器”** 的 **“安全”** 页上配置安全性权限。
 
  **“项目设计器”** 中的 **“安全”** 页包含 **“启用 ClickOnce 安全设置”** 复选框。 选中此复选框后，安全权限请求会添加到应用程序的部署清单。 安装时，如果请求的权限超出从中部署该应用程序的区域的默认权限，则会提示用户授予权限。 有关详细信息，请参阅[如何：启用 ClickOnce 安全设置](../deployment/how-to-enable-clickonce-security-settings.md)。
@@ -93,7 +93,7 @@ ClickOnce 应用程序基于 .NET Framework，需遵从代码访问安全性约�
 
   在 **“高级安全设置”** 对话框中， **“使用所选的权限集调试此应用程序”** 复选框被选中然后禁用。 这是因为不能关闭浏览器托管的应用程序的“在区域中调试”。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)
 - [如何：启用 ClickOnce 安全设置](../deployment/how-to-enable-clickonce-security-settings.md)
 - [如何：为 ClickOnce 应用程序设置安全区域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
