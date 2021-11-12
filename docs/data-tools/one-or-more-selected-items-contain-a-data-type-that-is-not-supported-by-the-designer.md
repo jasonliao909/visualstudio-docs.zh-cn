@@ -1,6 +1,6 @@
 ---
 title: 不支持的数据类型
-description: 一个或多个选定项包含设计器不支持的数据类型。 查看有关此 Visual Studio O/R 设计器消息的信息。
+description: 一个或多个所选项包含设计器不支持的数据类型。 查看此 Visual Studio O/R 设计器消息的相关信息。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -13,20 +13,20 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: 55402288d52f6f4b5eeac41efbb15d9f164ff5cd
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126601118"
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>一个或多个所选项包含设计器不支持的数据类型
 
-从 **服务器资源管理器** 或 **数据库资源管理器** 拖到 **o/r 设计器** 的一个或多个项包含 **o/r 设计器** 不支持的数据类型，例如， [CLR 用户定义类型](/dotnet/framework/data/adonet/sql/clr-user-defined-types)。
+从“服务器资源管理器”或“数据库资源管理器”中拖动到 O/R 设计器上的一个或多个项包含 O/R 设计器不支持的数据类型（例如 [CLR 用户定义类型](/dotnet/framework/data/adonet/sql/clr-user-defined-types)）   。
 
 ## <a name="to-correct-this-error"></a>更正此错误
 
 1. 创建一个基于所需的表的视图，且其中不包括不支持的数据类型。
 
-2. 将视图从 **服务器资源管理器** 或 **数据库资源管理器** 拖到设计器上。
+2. 将该视图从“服务器资源管理器”或“数据库资源管理器”中拖动到设计器上 。
 
 ## <a name="see-also"></a>另请参阅
 

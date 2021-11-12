@@ -13,7 +13,7 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: f0394b000239889b9e6444cdf07988f3aaa9d702
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126601091"
@@ -29,11 +29,11 @@ ms.locfileid: "126601091"
 
 ## <a name="save-options"></a>保存选项
 
-- 若要保存包含敏感信息的连接字符串，请选择 **"是"**。
+- 若要保存包含敏感信息的连接字符串，请选择“是”。
 
    连接字符串将存储为应用程序设置。 连接字符串以纯文本形式包含敏感信息。 DBML 文件不包含敏感信息。
 
-- 若要保存不包含敏感信息的连接字符串，请选择 " **否**"。
+- 若要保存连接字符串而不保存敏感信息，请选择“否”。
 
    连接字符串将存储为应用程序设置，但不包含密码。
 

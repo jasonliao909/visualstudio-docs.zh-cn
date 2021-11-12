@@ -1,5 +1,5 @@
 ---
-description: 以下 FxCop 旧分析规则已弃用，不能作为分析器实现。
+description: 以下 FxCop 旧版分析规则已弃用，不会作为分析器实现。
 title: 弃用的规则
 ms.date: 05/21/2019
 ms.topic: reference
@@ -14,14 +14,14 @@ ms.workload:
 - dotnet
 ms.openlocfilehash: 7804d8dc3baa9df631ae721ea3a2c89328293642
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126601319"
 ---
 # <a name="deprecated-rules"></a>弃用的规则
 
-以下 FxCop 旧分析规则已弃用，不能作为分析器实现。 有关详细信息，可以在 [roslyn GitHub 问题 "页](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port)上按规则 ID (搜索，例如 **CA1009**) 。
+以下 FxCop 旧版分析规则已弃用，不会作为分析器实现。 若要了解进一步的信息，可以在 [roslyn-analyzers GitHub 问题页面](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port)上按规则 ID（例如 CA1009）进行搜索。
 
 - [CA1006](ca1006.md)
 - [CA1009](ca1009.md)
@@ -91,7 +91,7 @@ ms.locfileid: "126601319"
 - [CA2210](ca2210.md)
 - [CA2220](ca2220.md)
 - [CA2221](ca2221.md)
-- [CA2222](ca2222.md) ([理由](https://github.com/dotnet/roslyn-analyzers/issues/1378)) 
+- [CA2222](ca2222.md)（[论证](https://github.com/dotnet/roslyn-analyzers/issues/1378)）
 - [CA2223](ca2223.md)
 - [CA2228](ca2228.md)
 - [CA2230](ca2230.md)

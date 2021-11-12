@@ -1,5 +1,5 @@
 ---
-title: '&lt;fileAssociation &gt; 元素 (ClickOnce应用程序) |Microsoft Docs'
+title: '&lt;fileAssociation&gt; 元素（ClickOnce 应用程序） | Microsoft Docs'
 description: fileAssociation 元素标识要与应用程序关联的文件扩展名。 fileAssociation 元素是可选的。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -19,13 +19,13 @@ ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
 ms.openlocfilehash: a17f239b7abaf981416b86ec785cb7a4d7e95e8a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122160811"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126665629"
 ---
-# <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation &gt; 元素 (ClickOnce应用程序) 
+# <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation&gt; 元素（ClickOnce 应用程序）
 标识要与应用程序关联的文件扩展名。
 
 ## <a name="syntax"></a>语法
@@ -43,20 +43,20 @@ ms.locfileid: "122160811"
 ## <a name="elements-and-attributes"></a>元素和属性
  `fileAssociation` 元素是可选的。 元素具有以下属性。
 
-|Attribute|说明|
+|属性|说明|
 |---------------|-----------------|
 |`extension`|必需。 要与应用程序关联的文件扩展名。|
-|`description`|必需。 shell 使用的文件类型的说明。|
+|`description`|必需。 对 shell 使用的文件类型的说明。|
 |`progid`|必需。 唯一标识文件类型的名称。|
-|`defaultIcon`|必需。 指定要用于具有此扩展名的文件的图标。 必须使用包含此元素的[ \<file> Element](../deployment/file-element-clickonce-application.md)中的[ \<assembly> 元素](../deployment/assembly-element-clickonce-application.md)指定图标文件。|
+|`defaultIcon`|必需。 指定要用于具有此扩展名的文件的图标。 必须使用包含此元素的 [\<assembly> 元素](../deployment/assembly-element-clickonce-application.md)中的 [\<file> 元素](../deployment/file-element-clickonce-application.md)指定图标文件。|
 
 ## <a name="remarks"></a>备注
- 此元素必须包含对"urn：schemas-microsoft-com：clickonce.v1"的 XML 命名空间引用。 如果使用 `<fileAssociation>` 元素，它必须位于其父元素 `<application>` 中的 元素[ \<assembly> 之后](../deployment/assembly-element-clickonce-application.md)。
+ 此元素必须包含对“urn:schemas-microsoft-com:clickonce.v1”的 XML 命名空间引用。 如果使用了 `<fileAssociation>` 元素，它必须位于其父元素 [\<assembly> 元素](../deployment/assembly-element-clickonce-application.md) 中的 `<application>` 元素之后。
 
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 不会覆盖现有文件关联。 但是，ClickOnce应用程序只能覆盖当前用户的文件扩展名。 卸载ClickOnce后，ClickOnce删除用户的文件关联，并且每台计算机关联再次处于活动状态。
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 不会覆盖现有文件关联。 但 ClickOnce 应用程序只能替代当前用户的文件扩展名。 卸载 ClickOnce 的应用程序后，ClickOnce 会删除该用户的文件关联，每台计算机的关联会再次变为活动状态。
 
 ## <a name="example"></a>示例
- 下面的代码示例演示使用 部署的文本 `fileAssociation` 编辑器应用程序的应用程序清单中的元素 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 此代码示例还包括[ \<file> 属性](../deployment/file-element-clickonce-application.md)所需的 `defaultIcon` 元素。
+ 下面的代码示例演示使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署的文本编辑器应用程序的应用程序清单中的 `fileAssociation` 元素。 此代码示例还包括 `defaultIcon` 属性所需的 [\<file> 元素](../deployment/file-element-clickonce-application.md)。
 
 ```xml
 <file name="text.ico" size="4286">
@@ -81,5 +81,5 @@ ms.locfileid: "122160811"
 <fileAssociation xmlns="urn:schemas-microsoft-com:clickonce.v1" extension=".writing" description="Writings (ClickOnce)" progid="Writing.Document" defaultIcon="writing.ico" />
 ```
 
-## <a name="see-also"></a>请参阅
-- [ClickOnce应用程序清单](../deployment/clickonce-application-manifest.md)
+## <a name="see-also"></a>另请参阅
+- [ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)

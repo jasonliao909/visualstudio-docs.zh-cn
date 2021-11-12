@@ -1,6 +1,6 @@
 ---
 title: Customize code maps by editing the DGML files
-description: 了解如何通过编辑代码图的"定向标记语言"Graph.dgml (.dgml) 自定义代码图。
+description: 了解如何通过编辑代码图的定向图形标记语言 (.dgml) 文件来自定义代码图。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -24,22 +24,22 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: 8b38af7e21d6aab6def7858bc251e5886a40bd57
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122157535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126665028"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Customize code maps by editing the DGML files
 
-若要自定义代码图，可以编辑其"定向Graph标记语言 (.dgml) 文件。 例如，可以编辑元素来指定自定义样式，向代码元素和链接分配属性和类别，或将文档（或 URL）链接到代码元素（或链接）。 有关 DGML 元素详细信息，请参阅[DGML Graph语言 (DGML) 引用](../modeling/directed-graph-markup-language-dgml-reference.md)。
+若要自定义代码图，可以编辑代码图的定向图形标记语言 (.dgml) 文件。 例如，可以编辑元素来指定自定义样式，向代码元素和链接分配属性和类别，或将文档（或 URL）链接到代码元素（或链接）。 有关 DGML 元素的详细信息，请参阅[定向图形标记语言 (DGML) 引用](../modeling/directed-graph-markup-language-dgml-reference.md)。
 
-在文本编辑器或 XML 编辑器中编辑代码图的 .dgml 文件。 如果地图是 Visual Studio 解决方案的一部分，请在 解决方案资源管理器 中选择它，打开快捷菜单，然后选择"使用 、XML  (文本) **编辑器"。**
+在文本编辑器或 XML 编辑器中编辑代码图的 .dgml 文件。 如果代码图属于 Visual Studio 解决方案的一部分，请在“解决方案资源管理器”中选择该代码图，打开快捷菜单，然后依次选择“打开方式”和“XML (文本)编辑器”  。
 
 > [!NOTE]
-> 若要创建代码图，必须具有Visual Studio Enterprise版本。 在 Visual Studio 中编辑代码图时，Visual Studio 会在保存 .dgml 文件时删除所有未使用的 DGML 元素和属性以进行清理。 当手动添加新链接时，它还将自动创建代码元素。 当你保存 .dgml 文件时，你添加到元素的任何特性可能会按字母顺序重新排列。
+> 若要创建代码图，必须拥有 Visual Studio Enterprise 版本。 在 Visual Studio 中编辑代码图时，Visual Studio 会在保存 .dgml 文件时删除所有未使用的 DGML 元素和属性以进行清理。 当手动添加新链接时，它还将自动创建代码元素。 当你保存 .dgml 文件时，你添加到元素的任何特性可能会按字母顺序重新排列。
 
-## <a name="group-code-elements"></a><a name="OrganizeNodes"></a> 对代码元素进行分组
+## <a name="group-code-elements"></a><a name="OrganizeNodes"></a>对码位元素分组
  你可以添加新组，也可以将现有节点转换为一个组。
 
 1. 在文本编辑器或 XML 编辑器中打开 .dgml 文件。
@@ -78,10 +78,10 @@ ms.locfileid: "122157535"
    </Links>
    ```
 
-    有关 属性详细信息 `Category` ，请参阅 [将类别分配给代码元素和链接](#AssignCategories)。
+    有关 `Category` 属性的详细信息，请参阅[向码位元素和链接分配类别](#AssignCategories)。
 
-## <a name="change-the-style-of-the-map"></a><a name="ChangeGraphStyle"></a> 更改地图的样式
- 你可以通过编辑代码图的 .dgml 文件来更改代码图的背景色和边框颜色。 若要更改代码元素和链接的样式，请参阅 [更改代码元素和链接的样式](#Highlight)。
+## <a name="change-the-style-of-the-map"></a><a name="ChangeGraphStyle"></a>更改代码图的样式
+ 你可以通过编辑代码图的 .dgml 文件来更改代码图的背景色和边框颜色。 若要更改码位元素和链接的样式，请参阅[更改码位元素和链接的样式](#Highlight)。
 
 1. 在文本编辑器或 XML 编辑器中打开 .dgml 文件。
 
@@ -108,7 +108,7 @@ ms.locfileid: "122157535"
     </DirectedGraph>
     ```
 
-## <a name="change-the-style-of-code-elements-and-links"></a><a name="Highlight"></a> 更改代码元素和链接的样式
+## <a name="change-the-style-of-code-elements-and-links"></a><a name="Highlight"></a>更改代码元素和链接的样式
 
 ### <a name="CreateCustomStyles"></a>
  你可以将自定义样式应用于以下代码元素：
@@ -120,7 +120,7 @@ ms.locfileid: "122157535"
 - 基于特定条件的代码元素和链接组
 
 > [!TIP]
-> 如果很多代码元素或链接具有重复的样式，则可以考虑向这些代码元素或链接应用一个类别，然后向该类别应用一个样式。 有关详细信息，请参阅将 [类别分配给代码元素和链接](#AssignCategories) 和将属性 [分配给代码元素和链接](#AssignProperties)。
+> 如果很多代码元素或链接具有重复的样式，则可以考虑向这些代码元素或链接应用一个类别，然后向该类别应用一个样式。 有关详细信息，请参阅[向码位元素和链接分配类别](#AssignCategories)和[向码位元素和链接分配属性](#AssignProperties)。
 
 ##### <a name="to-apply-a-custom-style-to-a-single-code-element"></a>将自定义样式应用于单个代码元素
 
@@ -257,9 +257,9 @@ ms.locfileid: "122157535"
 
    - `TargetType="Node` &#124; `Link | Graph"`
 
-   - `GroupLabel="`*NameInLegendBox*`"`
+   - `GroupLabel="` NameInLegendBox `"`
 
-   - `ValueLabel="`*NameInStylePickerBox*`"`
+   - `ValueLabel="` NameInStylePickerBox `"`
 
      若要将自定义样式应用于所有目标类型，请不要使用条件。
 
@@ -289,31 +289,31 @@ ms.locfileid: "122157535"
 
     此表达式使用以下 Backus-Naur 形式 (BNF) 语法：
 
-    \<Expression>：：= \<BinaryExpression> \<UnaryExpression> &#124;&#124;" (") "&#124;&#124;&#124; \<Expression> \<MemberBindings> \<Literal>\<Number>
+    \<Expression> ::= \<BinaryExpression> &#124; \<UnaryExpression> &#124; "("\<Expression>")" &#124; \<MemberBindings> &#124; \<Literal> &#124; \<Number>
 
-    \<BinaryExpression>::= \<Expression> \<Operator>\<Expression>
+    \<BinaryExpression> ::= \<Expression> \<Operator> \<Expression>
 
-    \<UnaryExpression>::= "!" \<Expression>\<Expression>&#124;"+"&#124;"-"\<Expression>
+    \<UnaryExpression> ::= "!" \<Expression> &#124; "+" \<Expression> &#124; "-" \<Expression>
 
-    \<Operator> ：：= "<" &#124; " \<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "！=" &#124; "or" &#124; "and" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
+    \<Operator> ::= "<" &#124; "\<=" &#124; "=" &#124; ">=" &#124; ">" &#124; "!=" &#124; "or" &#124; "and" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
 
-    \<MemberBindings> ：：= \<MemberBindings> &#124; \<MemberBinding> "." \<MemberBinding>
+    \<MemberBindings> ::= \<MemberBindings> &#124; \<MemberBinding> "." \<MemberBinding>
 
-    \<MemberBinding> ：：= \<MethodCall> &#124; \<PropertyGet>
+    \<MemberBinding> ::= \<MethodCall> &#124; \<PropertyGet>
 
-    \<MethodCall> ：：= \<Identifier> " (" \<MethodArgs> ") "
+    \<MethodCall> ::= \<Identifier> "(" \<MethodArgs> ")"
 
-    \<PropertyGet> ：：= 标识符
+    \<PropertyGet> ::= Identifier
 
-    \<MethodArgs>：：= \<Expression> \<Expression> &#124;"，"&#124; \<MethodArgs>\<empty>
+    \<MethodArgs> ::= \<Expression> &#124; \<Expression> "," \<MethodArgs> &#124; \<empty>
 
     \<Identifier> ::= [^. ]*
 
-    \<Literal> ：：= 单引号或双引号字符串文本
+    \<Literal> ::= 单引号或双引号括起来的文本
 
-    \<Number> ：：= 具有可选小数点的数字字符串
+    \<Number> ::= 可带小数点的数字字符串
 
-    可以指定多个 `<Condition/>` 元素，这些元素必须全部为 true 才能应用样式。
+    你可以指定多个 `<Condition/>` 元素，这些元素必须均为 true 才能应用样式。
 
 3. 在 `<Condition/>` 元素后的下一行上，添加一个或多个 `<Setter/>` 元素，以指定要应用于满足条件的代码图、代码元素或链接的 `Property` 特性和固定 `Value` 特性或者计算所得的 `Expression` 特性。
 
@@ -376,9 +376,9 @@ ms.locfileid: "122157535"
 
  在本示例中：
 
-1. 如果 `Coverage` 为 > 80，则将 `Background` 属性设置为绿色。
+1. 如果 `Coverage` 大于 80，则将 `Background` 属性设置为绿色。
 
-2. 否则 `Coverage` ，如果为 > 50，则将 `Background` 属性设置为基于属性值的橙色底纹 `Coverage` 。
+2. 如果 `Coverage` 大于 50，则基于 `Coverage` 属性的值将 `Background` 属性设置为橙色阴影。
 
 3. 否则基于 `Background` 属性的值将 `Coverage` 属性设置为红色阴影。
 
@@ -438,7 +438,7 @@ ms.locfileid: "122157535"
 </DirectedGraph>
 ```
 
-## <a name="assign-properties-to-code-elements-and-links"></a><a name="AssignProperties"></a> 向代码元素和链接分配属性
+## <a name="assign-properties-to-code-elements-and-links"></a><a name="AssignProperties"></a>向码位元素和链接分配属性
  你可以通过向代码元素和链接分配属性来组织代码元素和链接。 例如，可以选择具有特定属性的代码元素，以便能够对这些代码元素进行分组、更改它们的样式或隐藏它们。
 
 #### <a name="to-assign-a-property-to-a-code-element"></a>向代码元素分配属性
@@ -483,7 +483,7 @@ ms.locfileid: "122157535"
     </Properties>
     ```
 
-## <a name="assign-categories-to-code-elements-and-links"></a><a name="AssignCategories"></a> 向代码元素和链接分配类别
+## <a name="assign-categories-to-code-elements-and-links"></a><a name="AssignCategories"></a>向码位元素和链接分配类别
  以下各节演示如何通过将类别分配给代码元素来组织代码元素，以及如何创建可帮助组织代码元素并通过使用继承将特性添加到子类别的分层类别。
 
 #### <a name="to-assign-a-category-to-a-code-element"></a>向代码元素分配类别
@@ -554,7 +554,7 @@ ms.locfileid: "122157535"
 
      在此示例中，`MyFirstNode` 的背景为绿色，因为它的 `Category` 特性继承 `Background` 的 `MyParentCategory` 特性。
 
-## <a name="link-documents-or-urls-to-code-elements-and-links"></a><a name="AddReferences"></a> 将文档或 Url 链接到代码元素和链接
+## <a name="link-documents-or-urls-to-code-elements-and-links"></a><a name="AddReferences"></a>将文档或 URL 链接到码位元素和链接
  可以通过以下方式将文档或 URL 链接到代码元素或链接：编辑代码图的 .dgml 文件并将 `Reference` 特性添加到代码元素的 `<Node/>` 元素或链接的 `<Link/>` 元素。 然后，你可以打开并查看代码元素或链接的内容。 `Reference` 特性指定该内容的路径。 此路径可能是相对于 .dgml 文件位置的路径，也可能是绝对路径。
 
 > [!CAUTION]
@@ -564,7 +564,7 @@ ms.locfileid: "122157535"
 
 - 若要描述某个类的更改，则可以将工作代码元素、文档或另一个 .dgml 文件的 URL 链接到该类的代码元素。
 
-- 你可以将依赖关系图链接到表示软件逻辑体系结构中的层的组代码元素。
+- 你可以将依赖项关系图链接到表示软件逻辑体系结构中的层的组码位元素。
 
 - 若要显示有关公开某接口的组件的更多信息，可以将组件图链接到该接口的代码元素。
 
@@ -606,9 +606,9 @@ ms.locfileid: "122157535"
 
       2. 将 `Id` 特性设置为新引用特性的名称。
 
-      3. 添加 `IsReference` 特性，并将其设置为 `True` ，使引用显示在代码元素的 " **转向引用** " 快捷菜单上。
+      3. 添加 `IsReference` 属性，并将其设置为 `True`，使引用出现在码位元素的“转到引用”快捷菜单上。
 
-      4. 使用 `Label` 特性指定代码元素的 " **跳到引用** " 快捷菜单上的显示文本。
+      4. 使用 `Label` 属性以指定码位元素“转到引用”快捷菜单上的显示文本。
 
       例如：
 
@@ -622,7 +622,7 @@ ms.locfileid: "122157535"
    </Properties>
    ```
 
-    在代码图上，代码元素的名称带下划线显示。 当您打开代码元素或链接的快捷菜单时，您将看到一个 " **跳到引用** " 快捷菜单，其中包含要选择的链接代码元素。
+    在代码图上，代码元素的名称带下划线显示。 当打开码位元素或链接的快捷菜单时，将看到一个“转到引用”快捷菜单，其中包含供你选择的链接码位元素。
 
 4. 使用 `ReferenceTemplate` 特性来指定多个引用使用的公共字符串（例如 URL），而不是在引用中重复该字符串。
 
@@ -639,7 +639,7 @@ ms.locfileid: "122157535"
    </Properties>
    ```
 
-5. 若要查看引用的代码元素或代码图中的代码元素，请打开代码元素或链接的快捷菜单。 选择 " **转向引用** "，然后选择 "代码" 元素。
+5. 若要查看引用的代码元素或代码图中的代码元素，请打开代码元素或链接的快捷菜单。 选择“转到引用”，然后选择该码位元素。
 
 ## <a name="see-also"></a>请参阅
 

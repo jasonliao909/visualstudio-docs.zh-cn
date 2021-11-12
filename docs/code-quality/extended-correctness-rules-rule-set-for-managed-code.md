@@ -1,7 +1,7 @@
 ---
 title: 托管代码的“扩展的更正规则”规则集
 ms.date: 11/04/2016
-description: 了解中针对 COM 互操作性和移动应用程序Visual Studio扩展正确性规则集。 请参阅规则说明。
+description: 了解 Visual Studio 中的“扩展的正确性规则”规则集，其对 COM 互操作性和移动应用程序很有用。 请参阅规则说明。
 ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: 5b181f5b-6c7a-4e46-a783-360e1da427a0
@@ -13,18 +13,18 @@ ms.workload:
 - dotnet
 ms.openlocfilehash: a664b01f5fec771f4891389d3ec807d2e4976797
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126601325"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>托管代码的“扩展的更正规则”规则集
 
-Microsoft 扩展正确性规则规则集可最大化代码分析报告的逻辑和框架使用错误。 特别侧重于 COM 互操作性和移动应用程序等特定方案。 如果其中一个方案适用于项目或查找项目中的其他问题，应考虑包括此规则集。
+Microsoft“扩展的正确性规则”规则集可最大化代码分析报告的逻辑和框架使用错误。 这里特别强调特定方案，如 COM 互操作性和移动应用程序。 如果其中一个方案适用于你的项目或适用于查找项目中的其他问题，应考虑包括此规则集。
 
-Microsoft 扩展正确性规则规则集包括基本正确性规则规则集中[](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md)的规则，其中包含托管建议规则[规则集中](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)的规则。
+Microsoft“扩展的正确性规则”规则集包括[基本更正规则](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md)规则集中的规则，其中包含[托管建议规则](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)规则集中的规则。
 
-下表描述了 Microsoft 扩展正确性规则规则集内的所有规则。
+下表描述了 Microsoft“扩展的正确性规则”规则集内的所有规则。
 
 |规则|描述|
 |----------|-----------------|

@@ -1,6 +1,6 @@
 ---
-title: 工作流设计器流程图活动设计器
-description: 了解 Flowchart 活动设计器，其中包含可用于管理工作流中的流程图的系统提供的活动。
+title: 工作流设计器 - 流程图活动设计器
+description: 了解流程图活动设计器，其中包含系统提供的活动，可用于管理工作流中的流程图。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,15 +12,15 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: 369d1ba066fb1a87a13c9204bd0bb45a897153d8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122099069"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126665661"
 ---
 # <a name="flowchart-activity-designers"></a>流程图活动设计器
 
-工作流设计器包括多个系统提供的活动，这些活动在构造工作流时可以使用。 本节包含系统提供的活动中用于管理工作流中的流程图的活动。 以下主题介绍这些活动以及如何使用它们。
+工作流设计器包含系统提供的若干活动，构造工作流时可以使用它们。 本节包含系统提供的活动中用于管理工作流中的流程图的活动。 以下主题介绍这些活动以及如何使用它们。
 
 ## <a name="reference"></a>参考
  <xref:System.Activities.Activity>
