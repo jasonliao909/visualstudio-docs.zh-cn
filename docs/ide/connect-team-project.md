@@ -2,18 +2,18 @@
 title: 连接到团队资源管理器中的项目
 description: 了解如何使用 Visual Studio 中的团队资源管理器，与团队成员一起开发和管理项目。
 ms.custom: SEO-VS-2020
-ms.date: 11/05/2021
+ms.date: 11/11/2021
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jmartens
 monikerRange: <=vs-2019
-ms.openlocfilehash: 0110246e3295149bd11fbfd570589d7f9d289070
-ms.sourcegitcommit: 32fa8ec0b469a7a9a87de25ff769d8d21d9f30d2
+ms.openlocfilehash: a318f033d010d50fb379e3d1ca8cec34d6cb2fbc
+ms.sourcegitcommit: 00451b7258ab86e259d0fe787669330b61efa8e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "131897848"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "132364951"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>连接到团队资源管理器中的项目
 
@@ -34,7 +34,7 @@ ms.locfileid: "131897848"
 
 使用团队资源管理器连接到项目的方式取决于你使用的 Visual Studio 2019 的版本。
 
-## <a name="in-version-168-and-later"></a>在版本 16.8 及更高版本中
+## <a name="in-visual-studio-2019-version-168-and-later"></a>在 Visual Studio 2019 版本 16.8 及更高版本中
 
 1. 打开 Visual Studio 2019。
 
@@ -61,7 +61,7 @@ ms.locfileid: "131897848"
 
       ![从 Visual Studio 2019 版本 16.8 及更高版本生成的“团队资源管理器”对话框的屏幕截图](../ide/media/vs-2019/team-explorer-azure-devops.png)
 
-## <a name="in-version-167-and-earlier"></a>在版本 16.7 及更低版本中
+## <a name="in-visual-studio-2019-version-167-and-earlier"></a>在 Visual Studio 2019 版本 16.7 及更早版本中
 
 1. 打开 Visual Studio 2019。
 
@@ -131,7 +131,7 @@ ms.locfileid: "131897848"
 ## <a name="see-also"></a>请参阅
 
 - [并行比较 Git 和团队资源管理器](git-team-explorer-feature-comparison.md)
-- [Visual Studio 中的 Git 新体验](git-with-visual-studio.md)
+- [Visual Studio 版本控制文档](../version-control/index.yml)
 - [团队资源管理器参考](reference/team-explorer-reference.md)
 - [连接到项目 (Azure DevOps)](/azure/devops/organizations/projects/connect-to-projects)
 - [排查项目连接问题](/azure/devops/user-guide/troubleshoot-connection?view=azure-devops&preserve-view=true)

@@ -2,7 +2,7 @@
 title: 远程调试 C++ 项目 | Microsoft Docs
 description: 遵循以下分步说明，了解如何从远程计算机调试 Visual Studio C ++ 应用程序。
 ms.custom: remotedebugging
-ms.date: 08/14/2018
+ms.date: 11/11/2021
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -19,14 +19,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ffaa8d1dde6e1304cda0dec33809a01e36fdd56b
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: a23952fb49154e288f2de29db4c0893ed9483ecc
+ms.sourcegitcommit: 00451b7258ab86e259d0fe787669330b61efa8e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126640934"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "132364966"
 ---
 # <a name="remote-debugging-a-c-project-in-visual-studio"></a>在 Visual Studio 中远程调试 C++ 项目
+
 若要调试其他计算机上的 Visual Studio 应用程序，请在将要部署应用的计算机上安装和运行远程工具，将项目配置为从 Visual Studio 连接到远程计算机，然后部署和运行应用。
 
 ![远程调试器组件](../debugger/media/remote-debugger-client-apps.png "Remote_debugger_components")
@@ -35,14 +36,14 @@ ms.locfileid: "126640934"
 
 ## <a name="requirements"></a>要求
 
-Windows 7 和更高版本（非电话）以及从 Windows Server 2008 Service Pack 2 开始的 Windows Server 版本支持远程调试器。 有关要求的完整列表，请参阅[要求](../debugger/remote-debugging.md#requirements_msvsmon)。
+Windows 7 和更高版本以及从 Windows Server 2008 Service Pack 2 开始的 Windows Server 版本支持远程调试器。 有关要求的完整列表，请参阅[要求](../debugger/remote-debugging.md#requirements_msvsmon)。
 
 > [!NOTE]
 > 不支持在通过代理连接的两台计算机之间进行调试。 不建议通过高延迟或低带宽连接（如拨号 Internet）或跨国家/地区的 Internet 进行调试，否则可能会导致调试失败或速度过慢。
 
 ## <a name="download-and-install-the-remote-tools"></a>下载和安装远程工具
 
-[!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
+[!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download-cpp.md)]
 
 > [!TIP]
 > 在某些情况下，从文件共享运行远程调试器可能是最有效的方法。 有关详细信息，请参阅[从文件共享运行远程调试器](../debugger/remote-debugging.md#fileshare_msvsmon)。

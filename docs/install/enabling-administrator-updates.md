@@ -3,7 +3,6 @@ title: 启用使用 Microsoft Endpoint Configuration Manager 的 Visual Studio �
 titleSuffix: ''
 description: 详细了解如何部署 Visual Studio 的管理员更新。
 ms.date: 04/06/2021
-ms.custom: ''
 ms.topic: overview
 ms.assetid: 546fbad6-f12b-49cf-bccc-f2e63e051a18
 author: anandmeg
@@ -13,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 147a244e31fab420755857f698b5a11cc6cedce2
-ms.sourcegitcommit: 7a6358d7c7de0a7b9b9553801e72d91d972b0c94
+ms.openlocfilehash: b40235177141e705f85e6d3af898718ca191cb76
+ms.sourcegitcommit: 215680b355cf613bfa125cf6b864c8bb5f2c71a5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "129680026"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "132453719"
 ---
 # <a name="enabling-administrator-updates-to-visual-studio-with-microsoft-endpoint-configuration-manager"></a>启用使用 Microsoft Endpoint Configuration Manager 的 Visual Studio 管理员更新
 

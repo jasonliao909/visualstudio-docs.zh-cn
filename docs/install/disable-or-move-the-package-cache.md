@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: eef24b5a4d9968ba6eb9a3e79f599b4052b4dc7f
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 5a32d27cda2b414a8b62357db03efe2980dd98e7
+ms.sourcegitcommit: 215680b355cf613bfa125cf6b864c8bb5f2c71a5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129969354"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "132453955"
 ---
 # <a name="disable-or-move-the-package-cache"></a>禁用或移动包缓存
 
@@ -55,7 +55,7 @@ ms.locfileid: "129969354"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 * [安装 Visual Studio](install-visual-studio.md)
 * [为企业部署设置默认值](set-defaults-for-enterprise-deployments.md)

@@ -3,6 +3,7 @@ title: 删除 Visual Studio
 titleSuffix: ''
 description: 了解如何逐步从计算机中彻底删除 Visual Studio。
 ms.date: 08/24/2021
+ms.custom: vs-acquisition
 ms.topic: how-to
 f1_keywords:
 - uninstall
@@ -21,12 +22,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5a7a3f39a9981f3f02c3788ad3ac4dfd67ebefd3
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 360124f0e831233728ba8b4c222e6ad2106ef098
+ms.sourcegitcommit: 215680b355cf613bfa125cf6b864c8bb5f2c71a5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129969380"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "132453576"
 ---
 # <a name="remove-visual-studio"></a>删除 Visual Studio
 

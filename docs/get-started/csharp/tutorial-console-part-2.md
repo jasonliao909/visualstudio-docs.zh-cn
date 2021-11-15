@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 86649110e83a9bce0768bddc81f148b3c4370793
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: b4b323611897a7977d906eb585f49006b54e5b9e
+ms.sourcegitcommit: dc12d3d0ca2ec3601cb9de7c22e61ecf22c7c514
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128430595"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "132264143"
 ---
 # <a name="tutorial-extend-c-console-app-and-debug-in-visual-studio-part-2-of-2"></a>教程：扩展 C# 控制台应用并在 Visual Studio 中调试（第 2 部分，共 2 部分）
 
@@ -140,7 +140,7 @@ ms.locfileid: "128430595"
 
    添加 `using` 指令应该可以让你从调用站点中删除 `CalculatorLibrary` 命名空间，但现在存在歧义。 `Calculator` 是 `CalculatorLibrary` 中的类？还是 `Calculator` 是命名空间？
    
-   要解决歧义，请将 Program.cs 和 CalculatorLibrary.cs 中的命名空间从 `Calculator` 重命名为 `CalculatorProgram` 。
+   为了解决歧义，请在 Program.cs 中将命名空间从 `Calculator` 重命名为 `CalculatorProgram`。
 
    ```csharp
    namespace CalculatorProgram

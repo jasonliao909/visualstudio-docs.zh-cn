@@ -7,6 +7,7 @@ author: anandmeg
 ms.author: meghaanand
 manager: jmartens
 ms.date: 10/12/2021
+ms.custom: vs-acquisition
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,12 +17,12 @@ ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: d5acfc9ac5ffd6491e807049afbd12a53715868d
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 5917237dcf17d0227c0b36e488cb72a1b62ff7f0
+ms.sourcegitcommit: 215680b355cf613bfa125cf6b864c8bb5f2c71a5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129969328"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "132453745"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>Visual Studio 工作负荷和组件 ID
 

@@ -5,19 +5,19 @@ description: Visual Studio 已发布的版本和生成号列表，按日期排�
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.date: 11/08/2021
+ms.date: 11/09/2021
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 956d342835760e3115771fc0a99e855fac45466b
-ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
+ms.openlocfilehash: b82e18baa2827927a500925ab79d43701c98a683
+ms.sourcegitcommit: 6f5b4291888f17c33431fa72892e37a41980fc5e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "132001946"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "132122867"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio 内部版本号和发布日期
 
@@ -25,7 +25,7 @@ ms.locfileid: "132001946"
 
 ## <a name="visual-studio-2022"></a>Visual Studio 2022
 
-下表列出了 Visual Studio 2022 RC 的最新生成号和发布日期。
+下表列出了 Visual Studio 2022 的最新版本号和发布日期。
 
 | **Version**| **频道** | **发布日期** | **内部版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
@@ -56,6 +56,9 @@ ms.locfileid: "132001946"
 
 | **Version**| **频道** | **发布日期** | **内部版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.11.6 | Release | 2021 年 11 月 9 日 | 16.11.31829.152 |
+| 16.9.13 | Release | 2021 年 11 月 9 日 | 16.9.31828.109 |
+| 16.7.21 | Release | 2021 年 11 月 9 日 | 16.7.31828.227 |
 | 16.11.5 | Release | 2021年10 月 12 日 | 16.11.31729.503 |
 | 16.9.12 | Release | 2021年10 月 12 日 | 16.9.31728.308 |
 | 16.7.20 | Release | 2021年10 月 12 日 | 16.7.31727.298 |
@@ -289,6 +292,7 @@ ms.locfileid: "132001946"
 
 | **Version**      | **频道** | **发布日期**   | **内部版本** |
 |------------------|-------------|--------------------|-------------------|
+| 15.9.41          | Release     | 2021 年 11 月 9 日   | 15.9.28307.1745   |
 | 15.9.40          | Release     | 2021年10 月 12 日   | 15.9.28307.1705   |
 | 15.9.39          | 发布     | 2021 年 9 月 14 日 | 15.9.28307.1684   |
 | 15.9.38          | 发布     | 2021 年 8 月 10 日    | 15.9.28307.1622   |

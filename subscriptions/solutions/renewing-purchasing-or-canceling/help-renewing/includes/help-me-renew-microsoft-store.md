@@ -1,21 +1,21 @@
 ---
-title: 帮助我通过 Microsoft Store 进行续订
-description: 帮助我续订从 Microsoft Store 购买的 Visual Studio 订阅。
+title: 帮我通过 Microsoft Store 续订 Visual Studio 订阅
+description: 帮我续订从 Microsoft Store 购买的 Visual Studio 订阅。
 ms.topic: include
 ms.assetid: 3b36270b-aa3b-4c05-b12e-4df8d6f823c1
-author: caitybuschlen
-ms.author: cabuschl
-ms.date: 08/14/2020
+author: rigel512
+ms.author: amast
+ms.date: 11/10/2021
 user.type: subscriber
 tags: renewing
 subscription.type: retail
 sap.id: b324c31f-5d44-4cc2-537a-9c354bc5fbfc
-ms.openlocfilehash: e337fc3df5b930dc09f9d3b13be3f64efc7dd749
-ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
+ms.openlocfilehash: 530f60660b27fbbf8cbf8ac1ab38664586bb3ca3
+ms.sourcegitcommit: dc12d3d0ca2ec3601cb9de7c22e61ecf22c7c514
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99541304"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "132354208"
 ---
 ## <a name="renewing-subscriptions-through-microsoft-store"></a>通过 Microsoft Store 续订订阅 
 

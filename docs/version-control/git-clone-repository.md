@@ -2,19 +2,19 @@
 title: 在 Visual Studio 中克隆存储库
 titleSuffix: ''
 description: 使用 Git 或 Azure DevOps 在 Visual Studio 中克隆存储库。
-ms.date: 11/08/2021
+ms.date: 11/10/2021
 ms.topic: how-to
 author: TerryGLee
 ms.author: tglee
 ms.manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 5fc34f78236b3f79f44e80a8be8faef66e235a58
-ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
+ms.openlocfilehash: 15c5bc68302006e314219a3d7fcf3381d441eb50
+ms.sourcegitcommit: dc12d3d0ca2ec3601cb9de7c22e61ecf22c7c514
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "132001747"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "132264037"
 ---
 # <a name="clone-a-repo-in-visual-studio"></a>在 Visual Studio 中克隆存储库
 
@@ -93,6 +93,7 @@ ms.locfileid: "132001747"
 ## <a name="see-also"></a>另请参阅
 
 - [Visual Studio 中的 Git 体验](../ide/git-with-visual-studio.md)
+- [Visual Studio 和 GitHub：更好地协同工作](https://visualstudio.microsoft.com/vs/github/)
 - [教程：打开存储库中的项目](../get-started/tutorial-open-project-from-repo.md)
 - [在 Visual Studio 中使用 GitHub 帐户](../ide/work-with-github-accounts.md)
 - [使用多个用户帐户](../ide/work-with-multiple-user-accounts.md)

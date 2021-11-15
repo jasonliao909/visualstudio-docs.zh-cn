@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c73bb14065a28e0bdfd15c80d25562b6d884e63c
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: f275ede57614f369628c3f9e3ae733569ad1b4d5
+ms.sourcegitcommit: 215680b355cf613bfa125cf6b864c8bb5f2c71a5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129969471"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "132453823"
 ---
 # <a name="known-issues-for-containers"></a>容器的已知问题
 

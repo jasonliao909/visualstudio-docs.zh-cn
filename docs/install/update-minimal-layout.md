@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ceb9094d303bc1cd1409338d4d7987248e6c2d1e
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: b91ac7e43eb28b4bacad9c88e308d01e25bac5ed
+ms.sourcegitcommit: 215680b355cf613bfa125cf6b864c8bb5f2c71a5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129967881"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "132454005"
 ---
 # <a name="update-visual-studio-using-a-minimal-offline-layout"></a>使用最小脱机布局更新 Visual Studio
 

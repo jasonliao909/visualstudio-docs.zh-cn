@@ -2,6 +2,7 @@
 title: Visual Studio Enterprise 指南
 description: 在企业环境中安装 Visual Studio 并对其进行故障排除。
 ms.date: 04/06/2021
+ms.custom: vs-acquisition
 ms.topic: overview
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -15,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 39acfccc16472215a368594b7562bb9eefa724cd
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 455be234d82354be68afde3704c87776f347abc6
+ms.sourcegitcommit: 215680b355cf613bfa125cf6b864c8bb5f2c71a5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129969360"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "132453956"
 ---
 # <a name="visual-studio-enterprise-guide"></a>Visual Studio Enterprise 指南
 如果你想节省在 Visual Studio 上正常运行公司业务的时间，请阅读本文。 本企业指南提供了一些提示，可帮助你在常见的企业场景中安装和更新 Visual Studio、在遇到问题时解决问题，并了解如何在需要更多帮助的情况下报告问题。 
