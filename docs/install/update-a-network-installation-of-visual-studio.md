@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: bf6a4957d09c797a80aff746456b2288a3187967
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 2ee79274c6203f0de7217dbe058edb0b62a78a88
+ms.sourcegitcommit: 215680b355cf613bfa125cf6b864c8bb5f2c71a5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129970862"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "132453797"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>更新基于网络的 Visual Studio 安装
 
@@ -173,7 +173,7 @@ c:\VSLayout\vs_enterprise.exe --layout c:\VSLayout --clean c:\VSLayout\Archive\1
 
 我们还提供其他支持选项。 请参阅[开发人员社区](https://developercommunity.visualstudio.com/home)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 * [安装 Visual Studio](install-visual-studio.md)
 * [Visual Studio 管理员指南](visual-studio-administrator-guide.md)

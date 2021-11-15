@@ -2,19 +2,19 @@
 title: 在 Visual Studio 中创建分支
 titleSuffix: ''
 description: 在 Visual Studio 中使用 Git 或 Azure DevOps 创建分支。
-ms.date: 11/08/2021
+ms.date: 11/10/2021
 ms.topic: how-to
 author: TerryGLee
 ms.author: tglee
 ms.manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 59d6b39817ed4175b646acf7a83c6decca849163
-ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
+ms.openlocfilehash: 9f6e72e1254f251114b1798d97e2937ddd41aab0
+ms.sourcegitcommit: dc12d3d0ca2ec3601cb9de7c22e61ecf22c7c514
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "132002823"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "132263997"
 ---
 # <a name="create-a-branch-in-visual-studio"></a>在 Visual Studio 中创建分支
 
@@ -47,4 +47,5 @@ ms.locfileid: "132002823"
 
 ## <a name="see-also"></a>另请参阅
 
-[Visual Studio 中的 Git 体验](git-with-visual-studio.md)
+- [Visual Studio 中的 Git 体验](git-with-visual-studio.md)
+- [Visual Studio 和 GitHub：更好地协同工作](https://visualstudio.microsoft.com/vs/github/)

@@ -2,19 +2,19 @@
 title: 在 Visual Studio 中提取、拉取、推送和同步
 titleSuffix: ''
 description: 在 Visual Studio 中使用 Git 或 Azure DevOps Visual Studio 提取、拉取、推送和同步。
-ms.date: 11/08/2021
+ms.date: 11/10/2021
 ms.topic: how-to
 author: TerryGLee
 ms.author: tglee
 ms.manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 0e532234bdfd694f36d672247986413983bedd15
-ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
+ms.openlocfilehash: 617af7d27fa696d5221093bb3d0cb7c5f619df10
+ms.sourcegitcommit: dc12d3d0ca2ec3601cb9de7c22e61ecf22c7c514
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "132002789"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "132264199"
 ---
 # <a name="fetch-pull-and-sync-in-visual-studio"></a>在 Visual Studio 中提取、拉取和同步
 
@@ -68,4 +68,5 @@ Visual Studio 通过下载（提取和拉取）和上传（推送）操作来使
 
 ## <a name="see-also"></a>请参阅
 
-[教程：打开存储库中的项目](../get-started/tutorial-open-project-from-repo.md)
+- [教程：打开存储库中的项目](../get-started/tutorial-open-project-from-repo.md)
+- [Visual Studio 和 GitHub：更好地协同工作](https://visualstudio.microsoft.com/vs/github/)

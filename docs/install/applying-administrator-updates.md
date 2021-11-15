@@ -3,7 +3,6 @@ title: 应用使用 Microsoft Endpoint Configuration Manager 的 Visual Studio �
 titleSuffix: ''
 description: 了解如何应用 Visual Studio 的管理员更新。
 ms.date: 04/16/2021
-ms.custom: ''
 ms.topic: overview
 ms.assetid: 9a3fdb28-db3d-4970-bc17-7417a985f0fb
 author: anandmeg
@@ -13,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 10a247e48255fd98a097581f7597d0a4d21d8a79
-ms.sourcegitcommit: 7a6358d7c7de0a7b9b9553801e72d91d972b0c94
+ms.openlocfilehash: 755bfb09826ec168228fbea16db26abc2a232a8c
+ms.sourcegitcommit: 215680b355cf613bfa125cf6b864c8bb5f2c71a5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "129680052"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "132453357"
 ---
 # <a name="applying-administrator-updates-that-use-microsoft-endpoint-configuration-manager"></a>应用使用 Microsoft Endpoint Configuration Manager 的管理员更新
 

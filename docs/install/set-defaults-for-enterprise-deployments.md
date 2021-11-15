@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b841233c4a5588be4c9fa96ffa7060824a62a077
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 8d36951502fb9c3e6a012532b5c872e017847219
+ms.sourcegitcommit: 215680b355cf613bfa125cf6b864c8bb5f2c71a5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129971122"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "132453173"
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>为 Visual Studio 企业部署设置默认值
 

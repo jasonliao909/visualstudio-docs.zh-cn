@@ -2,19 +2,19 @@
 title: Visual Studio 中的 Git 体验
 titleSuffix: ''
 description: 了解 Visual Studio 中新的集成 Git 体验如何帮助提高工作效率。
-ms.date: 11/08/2021
+ms.date: 11/10/2021
 ms.topic: overview
+author: Taysser-Gherfal
 ms.author: tglee
-author: TerryGLee
+ms.manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.manager: jmartens
-ms.openlocfilehash: c2e1d75347e3d10da0971fbf2da3d22148f0860b
-ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
+ms.openlocfilehash: c5427de953c424fb3b1b2ab8b14a8da84f0e5381
+ms.sourcegitcommit: dc12d3d0ca2ec3601cb9de7c22e61ecf22c7c514
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "132001061"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "132264110"
 ---
 # <a name="git-experience-in-visual-studio"></a>Visual Studio 中的 Git 体验
 
@@ -342,13 +342,13 @@ Visual Studio 中的合并编辑器是一种三向合并工具，用于显示传
 - [宣布在 Visual Studio 中推出 Git 体验](https://devblogs.microsoft.com/visualstudio/announcing-the-release-of-the-git-experience-in-visual-studio/)博客文章
 - [在 Visual Studio 中使用 GitHub 帐户](../ide/work-with-github-accounts.md)
 - [Visual Studio 2019 发行说明](/visualstudio/releases/2019/release-notes)
-- [Visual Studio 2022 RC 和预览版发行说明](/visualstudio/releases/2022/release-notes-preview)
+- [Visual Studio 2022 发行说明](/visualstudio/releases/2022/release-notes)
 
 ::: moniker-end
 
 ::: moniker range="vs-2022"
 
-- [在 Visual Studio 中使用 GitHub 帐户](../ide/work-with-github-accounts.md)
-- [Visual Studio 2022 RC 和预览版发行说明](/visualstudio/releases/2022/release-notes-preview)
+- [Visual Studio 和 GitHub：更好地协同工作](https://visualstudio.microsoft.com/vs/github/)
+- [Visual Studio 2022 发行说明](/visualstudio/releases/2022/release-notes)
 
 ::: moniker-end

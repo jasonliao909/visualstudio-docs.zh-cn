@@ -12,12 +12,12 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 5031fb608d736c3645d7aef989f2b146aaa0d353
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: bca4ca6872532a16b1328707c1a11ecd4935fab9
+ms.sourcegitcommit: 215680b355cf613bfa125cf6b864c8bb5f2c71a5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129972747"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "132453957"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>在维修基线上更新 Visual Studio
 

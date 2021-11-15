@@ -9,12 +9,12 @@ ms.author: tglee
 ms.manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 08e7eaa4fd19df01a8d4f372db9e71ae9f321739
-ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
+ms.openlocfilehash: 958e5f9eb6eaff6a4a28183cae4ebe0afe210e72
+ms.sourcegitcommit: dc12d3d0ca2ec3601cb9de7c22e61ecf22c7c514
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "131128783"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "132264219"
 ---
 # <a name="create-a-github-account-to-use-with-visual-studio"></a>创建 GitHub 帐户以用于 Visual Studio
 
@@ -64,4 +64,5 @@ ms.locfileid: "131128783"
 
 ## <a name="see-also"></a>请参阅
 
-[教程：打开存储库中的项目](../get-started/tutorial-open-project-from-repo.md)
+- [教程：打开存储库中的项目](../get-started/tutorial-open-project-from-repo.md)
+- [Visual Studio 和 GitHub：更好地协同工作](https://visualstudio.microsoft.com/vs/github/)

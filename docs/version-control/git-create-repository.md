@@ -2,19 +2,19 @@
 title: 在 Visual Studio 中创建存储库
 titleSuffix: ''
 description: 使用 Git 在 Visual Studio 中创建存储库，或浏览到 Azure DevOps 存储库。
-ms.date: 11/08/2021
+ms.date: 11/10/2021
 ms.topic: how-to
 author: TerryGLee
 ms.author: tglee
 ms.manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 652d1c374f078fae73c7ba157ddaadce02695a41
-ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
+ms.openlocfilehash: 3ef08c327e7fb0945338477f2a971a0decb364eb
+ms.sourcegitcommit: dc12d3d0ca2ec3601cb9de7c22e61ecf22c7c514
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "132001724"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "132264156"
 ---
 # <a name="create-a-repo-in-visual-studio"></a>在 Visual Studio 中创建存储库
 
@@ -75,3 +75,4 @@ ms.locfileid: "132001724"
 - [在 Visual Studio 中使用 GitHub 帐户](../ide/work-with-github-accounts.md)
 - [使用多个用户帐户](../ide/work-with-multiple-user-accounts.md)
 - [登录 Visual Studio](../ide/signing-in-to-visual-studio.md)
+- [Visual Studio 和 GitHub：更好地协同工作](https://visualstudio.microsoft.com/vs/github/)

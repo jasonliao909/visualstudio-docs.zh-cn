@@ -3,6 +3,7 @@ title: 卸载 Visual Studio
 titleSuffix: ''
 description: 了解如何逐步卸载 Visual Studio。
 ms.date: 10/12/2020
+ms.custom: vs-acquisition
 ms.topic: how-to
 f1_keywords:
 - uninstall
@@ -15,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d3e7171868a78f26433dbdc1f3ae8f08632c40e0
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: fab86c2125e45309a0cb8c8098ef1ae9236b3731
+ms.sourcegitcommit: 215680b355cf613bfa125cf6b864c8bb5f2c71a5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129972346"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "132453862"
 ---
 # <a name="uninstall-visual-studio"></a>卸载 Visual Studio
 

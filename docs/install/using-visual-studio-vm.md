@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: cff02fe30a029e4c3a5ef5d9f08bd4ab2686dcb2
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 06b61908e18f37244852c84ba82abf899a7b77ae
+ms.sourcegitcommit: 215680b355cf613bfa125cf6b864c8bb5f2c71a5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129973124"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "132453394"
 ---
 # <a name="visual-studio-images-on-azure"></a>Azure 上的 Visual Studio 映像
 

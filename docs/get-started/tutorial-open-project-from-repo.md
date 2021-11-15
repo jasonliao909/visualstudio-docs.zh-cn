@@ -2,7 +2,7 @@
 title: 教程：在 Visual Studio 中打开存储库中的项目
 description: 了解如何使用 Visual Studio 打开 Git 或 Azure DevOps 存储库中的项目。
 ms.custom: vs-acquisition, get-started
-ms.date: 11/05/2021
+ms.date: 11/11/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: fc69410334c4c9bdf8c3538f9aa9f34a1d2f1e1a
-ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
+ms.openlocfilehash: a71c87c29e7ec6a10eeb551bc1989e4621bbe0cb
+ms.sourcegitcommit: 00451b7258ab86e259d0fe787669330b61efa8e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "132001395"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "132364990"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>教程：打开存储库中的项目
 在本教程中，你将使用 Visual Studio 首次连接到存储库，然后打开其中的一个项目。
@@ -111,9 +111,9 @@ ms.locfileid: "132001395"
 
 1. 按照提示连接到包含要查找的文件的 Git 存储库。
 
-## <a name="browse-to-an-azure-devops-server"></a>浏览到 Azure DevOps Server
+## <a name="browse-to-an-azure-devops-repo"></a>浏览到 Azure DevOps 存储库
 
-下面介绍如何使用 Visual Studio 浏览到 Azure DevOps Server。
+下面介绍如何使用 Visual Studio 浏览到并克隆 Azure DevOps 存储库。
 
 1. 打开 Visual Studio。
 
@@ -125,7 +125,7 @@ ms.locfileid: "132001395"
 
     :::image type="content" source="../ide/media/vs-2022/browse-repository-azure-devops.png" alt-text="Visual Studio 中“克隆存储库”对话框的“浏览存储库”部分的屏幕截图，突出显示了 Azure DevOps。":::
 
-1. 按照提示连接到一个托管要查找的文件的 Azure DevOps Server。
+1. 按照提示克隆要查找的文件所在的 Azure DevOps 存储库，然后打开你的项目。
 
 ::: moniker-end
 
@@ -137,7 +137,7 @@ ms.locfileid: "132001395"
 
 但无论安装的是哪个版本，你始终可以使用 Visual Studio 打开 GitHub 存储库中的项目。
 
-### <a name="168-and-later"></a>16.8 及更高版本
+### <a name="visual-studio-2019-version-168-and-later"></a>Visual Studio 2019 版本 16.8 及更高版本
 
 下面介绍了如何使用 Visual Studio 2019 [版本 16.8](/visualstudio/releases/2019/release-notes-history) 或更高版本中的 Git。
 
@@ -200,7 +200,7 @@ ms.locfileid: "132001395"
 
     开始编码！
 
-### <a name="167-and-earlier"></a>16.7 及更低版本
+### <a name="visual-studio-2019-version-167-and-earlier"></a>Visual Studio 2019 版本 16.7 及更早版本
 
 下面介绍如何使用 Visual Studio 2019 [版本 16.7](/visualstudio/releases/2019/release-notes-history) 或更低版本中的 Git。
 
@@ -226,13 +226,13 @@ ms.locfileid: "132001395"
 
     开始编码！
 
-## <a name="connect-to-an-azure-devops-server-with-visual-studio-2019"></a>使用 Visual Studio 2019 连接到 Azure DevOps Server
+## <a name="browse-to-an-azure-devops-repo-with-visual-studio-2019"></a>使用 Visual Studio 2019 浏览到 Azure DevOps 存储库
 
-使用 Visual Studio 2019 连接到 Azure DevOps Server 时看到的内容取决于你的版本。 具体来说，如果你已安装 [16.8 版本](/visualstudio/releases/2019/release-notes-history)或更高版本，我们已更改了 UI，以适应 Visual Studio 中更全面集成的全新 [Git 体验](../ide/git-with-visual-studio.md)。
+使用 Visual Studio 2019 浏览到并克隆 Azure DevOps 存储库时看到的内容取决于你的版本。 具体来说，如果你已安装 [16.8 版本](/visualstudio/releases/2019/release-notes-history)或更高版本，我们已更改了 UI，以适应 Visual Studio 中更全面集成的全新 [Git 体验](../ide/git-with-visual-studio.md)。
 
-但无论安装的是哪个版本，你始终可以使用 Visual Studio 连接到 Azure DevOps Server。
+但无论安装的是哪个版本，你始终可以使用 Visual Studio 浏览到并克隆 Azure DevOps 存储库。
 
-### <a name="168-and-later"></a>16.8 及更高版本
+### <a name="visual-studio-2019-version-168-and-later"></a>Visual Studio 2019 版本 16.8 及更高版本
 
 1. 打开 Visual Studio 2019 [版本 16.8](/visualstudio/releases/2019/release-notes-history) 或更高版本。
 
@@ -259,7 +259,7 @@ ms.locfileid: "132001395"
 
       ![从 Visual Studio 2019 版本 16.8 及更高版本生成的“团队资源管理器”对话框的屏幕截图。](../ide/media/vs-2019/team-explorer-azure-devops.png)
 
-#### <a name="167-and-earlier"></a>16.7 及更低版本
+#### <a name="visual-studio-2019-version-167-and-earlier"></a>Visual Studio 2019 版本 16.7 及更早版本
 
 1. 打开 Visual Studio 2019 [版本 16.7](/visualstudio/releases/2019/release-notes-history) 或更低版本。
 
@@ -381,8 +381,18 @@ ms.locfileid: "132001395"
 
 ## <a name="see-also"></a>另请参阅
 
+::: moniker range="<=vs-2019"
+
 - [Visual Studio 中的 Git 体验](../ide/git-with-visual-studio.md)
 - [并行比较 Git 和团队资源管理器](../ide/git-team-explorer-feature-comparison.md)
 - [Microsoft Learn：Visual Studio 中的 Git 和 GitHub 入门](/learn/modules/visual-studio-github-push/)
 - [Microsoft Learn：Azure DevOps 入门](/learn/modules/get-started-with-devops/)
 - [Azure DevOps Services：Azure Repos 和 Visual Studio 入门](/azure/devops/repos/git/gitquickstart/)
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+[Visual Studio 版本控制文档](../version-control/index.yml)
+
+::: moniker-end
