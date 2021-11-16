@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, ems
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 1d9d2aa2d8b86fc6a2481955d8d06967637415ab
-ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
+ms.openlocfilehash: abe75ee0fb6875872894c018c1b78c3da8c155d2
+ms.sourcegitcommit: cc8b4e96ec49a8045b6c31a9cdce1caa30c3ab54
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99541317"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "132429984"
 ---
 ## <a name="im-unable-to-activate-my-enterprise-mobility--security-ems-benefit"></a>我无法激活企业移动性 + 安全性 (EMS) 权益。
 
@@ -25,7 +25,7 @@ ms.locfileid: "99541317"
 
 1. 登录到[订阅门户](https://my.visualstudio.com/benefits)。 
 1. 在“工具”类别中找到 Microsoft 365 权益磁贴，并单击“激活”。 
-1. 按照提示设置 Microsoft 355 E5 订阅 
+1. 按照提示设置 Microsoft 365 E5 订阅 
 1. 在“添加新用户”页上，将看到一个网格，可用于添加将向其分配许可证的所有用户。 如果需要添加更多用户，请单击“+ 添加其他用户”。 
 1. 添加用户后，可以选择执行“创建团队”和“安装应用程序”之类的操作。 现在可以执行任一操作或所有这些操作，也可以随时返回管理中心来执行这些设置。 
 

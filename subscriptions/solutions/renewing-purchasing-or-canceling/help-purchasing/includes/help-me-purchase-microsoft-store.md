@@ -10,12 +10,12 @@ user.type: subscriber
 tags: purchasing
 subscription.type: vl, cloud, retail, partner
 sap.id: c374762c-640b-8b2c-d049-bda9545e903c
-ms.openlocfilehash: e9d6dea72a229dbfb49074124f62592118d4730f
-ms.sourcegitcommit: 65a1b6aae8387735f05a83b45e1a6865e9805e1f
+ms.openlocfilehash: 067748a085e48e2db6517040e08d74b398882d06
+ms.sourcegitcommit: cc8b4e96ec49a8045b6c31a9cdce1caa30c3ab54
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "129378481"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "132429975"
 ---
 ## <a name="purchase-subscriptions-through-microsoft-store"></a>通过 Microsoft Store 购买订阅 
 
@@ -36,9 +36,7 @@ ms.locfileid: "129378481"
 1. 转到 [Microsoft Store](https://www.microsoft.com/store) 并找到要购买的订阅。
 2. 单击“下载 - 新建”，并将其添加到购物车。 
 
-> [!NOTE] 
-> 
-> 有时，商店会默认显示续订价格，请确保你购买的是新订阅。 以续订价格购买时，商店将不会验证你是否具有当前订阅。 如果没有当前匹配的订阅，则无法激活续订。
+注意：有时，商店会默认显示续订价格，请确保你购买的是新订阅。 以续订价格购买时，商店将不会验证你是否具有当前订阅。 如果没有当前匹配的订阅，则无法激活续订。
 
 3. 签出。在“确认”页上，你将获得一个产品密钥，用于激活订阅。 请参阅下面的说明。 
 
