@@ -58,12 +58,10 @@
   href: vs-ide-benefit.md
 - name: Azure 权益
   items:
-    - name: Azure 开发测试个人额度
-      href: vs-azure.md
-    - name: Azure 开发测试即用即付
-      href: vs-azure-payg.md
-    - name: Azure EA DevTest
-      href: azure-ea-devtest.md
+    - name: Azure 开发测试套餐
+      href: /azure/devtest/offer/
+    - name: Azure 开发/测试套餐资格
+      href: vs-azure-eligibility.md
     - name: Azure DevOps
       href: vs-azure-devops.md
 - name: 其他优点
@@ -172,8 +170,12 @@
           href: assign-license-bulk.md
         - name: 分配特定订阅
           href: assign-guid.md
+    - name: 访问新协议
+      href: agreement-renewals.md
     - name: 将订阅移到新协议
       href: migrate-subscriptions.md
+    - name: 协议续订时会发生什么情况
+      href: agreement-renewals.md
     - name: 编辑订阅
       href: edit-license.md
     - name: 删除订阅
