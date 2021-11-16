@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d6208ae736b01c13a9666b67fe694743d2421d1e
-ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
+ms.openlocfilehash: 1dc974ec108aac9e93b26dbdf38dd2ba641264f3
+ms.sourcegitcommit: bfae1f88c278835e26f3200cfced769be3191fc4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "129430555"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "132535069"
 ---
 # <a name="install-build-tools-into-a-container"></a>将生成工具安装到容器
 
@@ -158,7 +158,7 @@ ms.locfileid: "129430555"
 
    RUN `
        # Download the Build Tools bootstrapper.
-       curl -SL --output vs_buildtools.exe https://aka.ms/vs/17/pre/vs_buildtools.exe `
+       curl -SL --output vs_buildtools.exe https://aka.ms/vs/17/release/vs_buildtools.exe `
        `
        # Install Build Tools with the Microsoft.VisualStudio.Workload.AzureBuildTools workload, excluding workloads and components with known issues.
        && (start /w vs_buildtools.exe --quiet --wait --norestart --nocache modify `

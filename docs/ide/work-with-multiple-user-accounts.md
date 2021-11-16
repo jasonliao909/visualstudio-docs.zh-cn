@@ -3,19 +3,19 @@ title: Work with multiple user accounts
 description: 了解如何将所有 Microsoft 帐户添加到 Visual Studio，以便可以从任何帐户访问资源，而无需单独登录到这些帐户。
 ms.custom: SEO-VS-2020
 ms.date: 03/02/2021
-ms.topic: conceptual
+ms.topic: how-to
 author: anandmeg
 ms.author: meghaanand
 manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 44391718babe74dc2c7b2398189909aadec624d9
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: ae6a91d5df31b5ee154b4074b5661bd36f3ade61
+ms.sourcegitcommit: bfae1f88c278835e26f3200cfced769be3191fc4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126737286"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "132535290"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Work with multiple user accounts
 

@@ -2,7 +2,7 @@
 title: 扩展试用版或更新许可证
 description: 了解如何扩展免费试用版 Visual Studio，使用联机订阅或产品密钥解锁 Visual Studio，以及更新过时或过期的许可证。
 ms.date: 12/18/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 author: anandmeg
 ms.author: meghaanand
@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 98e9deea5c05098cb07995d1d1898f3d7848100e
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 0d3eb53ec6fc73cb72d31d1dfd31f9ed1fc6e906
+ms.sourcegitcommit: bfae1f88c278835e26f3200cfced769be3191fc4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126642184"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "132535056"
 ---
 # <a name="extend-a-trial-version-or-update-a-license"></a>扩展试用版或更新许可证
 
