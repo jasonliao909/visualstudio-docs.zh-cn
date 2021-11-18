@@ -2,7 +2,7 @@
 title: 向项目添加类图（类设计器）
 description: 了解如何设计、编辑及重构类和其他类型，如何将类图添加到 C#、Visual Basic 或 C++ 项目中。
 ms.custom: SEO-VS-2020
-ms.date: 05/08/2018
+ms.date: 11/11/2021
 ms.topic: how-to
 helpviewer_keywords:
 - class diagrams, creating
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 539c3f9bbd59de6bc1df1bf60f39d96b1b1f439b
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: d8677fea9668269f2440d2bc2745d837808f2fa1
+ms.sourcegitcommit: cc8b4e96ec49a8045b6c31a9cdce1caa30c3ab54
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641892"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "132387298"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>如何：向项目添加类图
 
@@ -39,7 +39,15 @@ ms.locfileid: "126641892"
 
 1. 选择“类设计器”  ，然后选择“修改”  。
 
-   ![Visual Studio 安装程序中的类设计器组件](media/class-designer-component.png)
+    ::: moniker range="vs-2017"
+   ![Visual Studio 安装程序中的类设计器组件的屏幕截图](media/class-designer-component.png)
+   ::: moniker-end
+   ::: moniker range="vs-2019"
+   :::image type="content" source="media/vs-2019/class-designer-component.png" alt-text="Visual Studio 安装程序中的类设计器组件的屏幕截图。" lightbox="media/vs-2019/class-designer-component.png":::
+   ::: moniker-end
+   ::: moniker range="vs-2022"
+   :::image type="content" source="media/vs-2022/class-designer-component.png" alt-text="Visual Studio 安装程序中的类设计器组件的屏幕截图。" lightbox="media/vs-2022/class-designer-component.png":::
+   ::: moniker-end
 
    “类设计器”  组件开始安装。
 
@@ -75,7 +83,7 @@ ms.locfileid: "126641892"
 
 即会创建一个自动填充的类图。
 
-> [!NOTE]
+> [!IMPORTANT]
 > 类设计器在 .NET Core 项目中不可用。
 
 ## <a name="see-also"></a>另请参阅

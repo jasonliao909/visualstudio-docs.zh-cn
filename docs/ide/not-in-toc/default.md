@@ -111,12 +111,12 @@ f1_keywords:
 manager: jmartens
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: b5d893b0cc2aa33415a109c406a636ee78be970f
-ms.sourcegitcommit: 0257750be796cc46e01cebd8976f637743d29417
+ms.openlocfilehash: 98b8b0b5c03e3f5bad36a396bc355b73c451acb1
+ms.sourcegitcommit: cc8b4e96ec49a8045b6c31a9cdce1caa30c3ab54
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "130290624"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "132387257"
 ---
 # <a name="oops-no-f1-help-match-was-found"></a>糟糕！ 未找到 `F1` 帮助匹配项
 
@@ -141,22 +141,13 @@ ms.locfileid: "130290624"
 - [Stack Overflow](https://stackoverflow.com/search?q=%22visual+studio%22)
 - [Reddit](https://www.reddit.com/r/VisualStudio)
 
-## <a name="product-support"></a>产品支持
+##  <a name="feedback-and-additional-support"></a>反馈和附加支持
 
-如果借助其他资源仍不能解决问题，则可以访问 [Microsoft 支持](https://support.microsoft.com/en-us)网站，与 Microsoft 支持服务联系。 若要了解所在区域中可用的产品支持，请参阅[开发者社区](https://developercommunity.visualstudio.com/home)页。
-
+如果尝试其他资源后仍有问题， 
+- 通过访问 [Microsoft 支持部门](https://support.microsoft.com/en-us)网站，与 Microsoft 支持服务联系。 
+- 若要了解所在区域中可用的产品支持，请参阅[开发者社区](https://developercommunity.visualstudio.com/home)页。
 
 不是有意单击？ [重新映射或禁用 `F1` 帮助键](../not-in-toc/change-f1-help-key.md)
-
-
-## <a name="help-us-serve-you-better"></a>帮助我们提供更好的服务
-
-我们非常希望收到有关如何提供所需帮助的反馈。
-
-> [!div class="nextstepaction"]
-> [分享你的反馈（5 分钟调查）](https://www.surveymonkey.com/r/F1_Help_Visual_Studio)
-
-:::image type="content" source="../media/search-error-page-sm.png" alt-text="抱歉，无法找到匹配项" border="false":::
 
 ## <a name="see-also"></a>请参阅
 
