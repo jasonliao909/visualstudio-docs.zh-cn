@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: f50c3a96b3d2b7ff4d18e28b74ace5f9cd31f522
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 09390421bbf4a64486ffa59ab91bf361f0227b2b
+ms.sourcegitcommit: 76541583274c4af4218ac2a8ab4308077a7e340e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126735928"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "132733135"
 ---
 # <a name="findinlist-task"></a>FindInList 任务
 
@@ -36,7 +36,7 @@ ms.locfileid: "126735928"
 
 |参数|说明|
 |---------------|-----------------|
-|`CaseSensitive`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则搜索区分大小写，否则不区分大小写。 默认值为 `true`。|
+|`CaseSensitive`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则搜索区分大小写，否则不区分大小写。 默认值为 `false`。|
 |`FindLastMatch`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则返回最后一个匹配项；否则返回第一个匹配项。 默认值为 `false`。|
 |`ItemFound`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 只读输出参数。<br /><br /> 在列表中发现的第一个匹配项（如有）。|
 |`ItemSpecToFind`|必选 `String` 参数。<br /><br /> 要搜索的 itemspec。|
