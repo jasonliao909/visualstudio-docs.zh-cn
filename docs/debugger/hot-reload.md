@@ -13,12 +13,12 @@ ms.technology: vs-ide-debug
 monikerRange: '>= vs-2022'
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ac42fe3706034c1b527ab45f89ca2c9a8092275
-ms.sourcegitcommit: ac681e983f3b217c3fd9d2a31e3a3ddcc4dd3546
+ms.openlocfilehash: c71817fcbb57414af91f2e53d491fd9e9d872a9f
+ms.sourcegitcommit: bfae1f88c278835e26f3200cfced769be3191fc4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "132041928"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "132535095"
 ---
 # <a name="write-and-debug-running-code-with-hot-reload-in-visual-studio-c-c-visual-basic"></a>在 Visual Studio（C#、C++、Visual Basic）中使用热重载编写和调试正在运行的代码
 
@@ -158,6 +158,7 @@ ms.locfileid: "132041928"
 * .NET 热重载不支持某些启动或编译优化。 例如，如果项目的调试配置文件是通过以下方式配置的，则不支持 .NET 热重载：
   * 为你的项目启用了[修整](/dotnet/core/deploying/trimming/trimming-options)。 例如，如果在调试配置文件的项目文件中将 `PublishTrimmed` 设置为 True，则不支持热重载。
   * 为你的项目启用了 [ReadyToRun](/dotnet/core/deploying/ready-to-run)。 例如，如果在调试配置文件的项目文件中将 `PublishReadyToRun` 设置为 True，则不支持热重载。
+* 对于 WinUI 3 应用程序，会默认启用本机代码调试（即使 LaunchSettings.json 中缺少设置也会默认启用），在按此方式执行混合模式调试时，不支持 .NET 热重载。 因此，必须将显式设置 `nativeDebugging: false` 添加到 LaunchSettings.json 中，以便 .NET 热重载正常工作。
 
 ## <a name="configure-hot-reload"></a>配置热重载
 

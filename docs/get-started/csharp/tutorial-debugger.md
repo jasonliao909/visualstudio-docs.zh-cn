@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d0a9390424553d020bc6deba5f00e244730214f
-ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
+ms.openlocfilehash: 5a6bc40fc19dd36c7cfae35e33b94c6c27a348e5
+ms.sourcegitcommit: bfae1f88c278835e26f3200cfced769be3191fc4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "132002089"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "132535303"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>教程：了解如何使用 Visual Studio 调试 C# 代码
 
@@ -142,7 +142,7 @@ ms.locfileid: "132002089"
 
 1. 在“配置新项目”窗口中，在“项目名称”框中键入或输入“GetStartedDebugging”    。 然后，选择“下一步”。
 
-1. 在“其他信息”窗口中，确保在“框架”下拉菜单中选择“.NET 6.0 (预览版)”，然后选择“创建”   。
+1. 在“其他信息”窗口中，确保在“框架”下拉菜单中选择“.NET 6.0”，然后选择“创建”   。
 
     此时，Visual Studio 将打开新项目。
 

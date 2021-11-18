@@ -15,67 +15,34 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 42f9524ba62ee73f2ef630c7c0c1bb7839a663dd
-ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
+ms.openlocfilehash: 8ca9b7b669c99e1d3ea35476bf661af902ef6963
+ms.sourcegitcommit: 215680b355cf613bfa125cf6b864c8bb5f2c71a5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "132002050"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "132453407"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>创建 Visual Studio 的脱机安装
 
-::: moniker range="vs-2017"
-
-Visual Studio 2017 经过精心设计，可在各种网络和计算机配置中良好运行。 虽然我们建议你试用 [Visual Studio Web 安装程序](https://visualstudio.microsoft.com/vs/older-downloads)（这是一个小巧文件，可及时提供最新修补程序和功能），但我们知道对你而言这也许并不可行。
-
-::: moniker-end
-
-::: moniker range=">=vs-2019"
-
-Visual Studio 经过精心设计，可在各种网络和计算机配置中良好运行。 虽然我们建议你试用 [Visual Studio Web 安装程序](https://visualstudio.microsoft.com/downloads)（这是一个小巧文件，可及时提供最新修补程序和功能），但我们知道对你而言这也许并不可行。
-
-::: moniker-end
-
-例如，你的 Internet 连接不可靠或带宽较低。 如果是这样，可选择：在安装之前使用新的“全部下载后再安装”功能下载文件，或使用命令行创建文件的本地缓存。
+Visual Studio 经过精心设计，可在各种网络和计算机配置中良好运行。 建议使用 [Visual Studio 安装程序](https://visualstudio.microsoft.com/downloads)，这是一个小文件，用于定期检查联机更新，并帮助你随时了解所有最新的修补程序和功能。 但是，有时联机访问存在问题。 例如，Internet 连接可能不可靠，或者 Internet 连接的带宽较低。 对于此类情况，我们提供了一些其他方法来获取 Visual Studio。 可使用 Visual Studio 安装程序中的“全部下载后再安装”功能，在安装之前将文件下载到本地计算机上的本地缓存中，或者可使用命令行创建文件的本地缓存，以便以后安装。
 
 > [!NOTE]
-> 如果你是企业管理员，并且要将 Visual Studio 部署到客户端工作站网络（与 Internet 之间设有防火墙），请参阅[创建 Visual Studio 的网络安装](../install/create-a-network-installation-of-visual-studio.md)和[安装 Visual Studio 脱机安装所需的证书](../install/install-certificates-for-visual-studio-offline.md)页面。
+> 如果你是企业 IT 管理员，希望将 Visual Studio 部署到客户端工作站网络，请参阅 [Visual Studio 管理员指南](https://aka.ms/vs/admin/guide)。
 
 ## <a name="use-the-download-all-then-install-feature"></a>使用“全部下载，然后安装”功能
 
-::: moniker range="vs-2017"
-
-[版本 15.8 中的新增功能](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install)：下载 Web 安装程序后，从 Visual Studio 安装程序中选择新的“全部下载后再安装”选项。 然后，继续安装。
-
-   ![“全部下载后再安装”选项](media/download-all-then-install.png)
-
-::: moniker-end
-
-::: moniker range=">=vs-2019"
-
-下载 Web 安装程序后，从 Visual Studio 安装程序中选择新的“全部下载后再安装”选项。 然后，继续安装。
+在 Visual Studio 安装程序的“工作负载”选项卡上，可在对话框底部的下拉列表中选择“全部下载后再安装”选项 。 此功能的目的是将下载的 Visual Studio 包预加载到你计划最终安装 Visual Studio 的同一台计算机上。 通过先将包下载到本地缓存，可在安装 Visual Studio 之前安全地断开与 Internet 的连接。
 
    ![“全部下载后再安装”选项](media/vs-2019/download-all-then-install-from-installer.png)
 
-::: moniker-end
-
-我们设计了“全部下载后再安装”功能，以便为进行下载的同一台计算机下载 Visual Studio 作为一个单独安装。 这样就可以在安装 Visual Studio 之前安全断开 Web。
-
 > [!IMPORTANT]
-> 请勿使用“全部下载后再安装”功能来创建要传输到另一台计算机的脱机缓存。 这不是该功能的运作方式。 <br><br>如果要在可用于安装 Visual Studio 的本地计算机上创建脱机缓存，请参阅下面的[使用命令行创建本地缓存](#use-the-command-line-to-create-a-local-cache)部分。  或者，[创建 Visual Studio 的网络安装](../install/create-a-network-installation-of-visual-studio.md)页提供了有关如何在网络上创建缓存的信息。
+> 请勿使用“全部下载后再安装”功能来创建要传输到另一台计算机的本地缓存。 这不是该功能的运作方式。 
+
+你还可将更新配置为遵守“全部下载后再安装”行为。 有关详细信息，请参阅[自定义更新设置](/visualstudio/install/update-visual-studio?#installation-and-download-behaviors-1)文档。
 
 ## <a name="use-the-command-line-to-create-a-local-cache"></a>使用命令行创建本地缓存
-::: moniker range="vs-2017"
 
-下载小型引导程序后，使用命令行创建本地缓存。 然后，使用本地缓存安装 Visual Studio。 （此过程替换了以前版本中可用的 ISO 文件）。 
-
-::: moniker-end
-
-::: moniker range=">=vs-2019"
-
-下载小型引导程序文件后，使用命令行创建本地缓存。 然后，使用本地缓存安装 Visual Studio。
-
-::: moniker-end
+可下载小型引导程序文件，然后使用命令行创建本地缓存。 创建缓存后，可使用它来安装 Visual Studio。 
 
 ### <a name="step-1---download-the-visual-studio-bootstrapper"></a>步骤 1 - 下载 Visual Studio 引导程序
 
@@ -83,60 +50,52 @@ Visual Studio 经过精心设计，可在各种网络和计算机配置中良好
 
 ::: moniker range="vs-2017"
 
-若要获取 Visual Studio 2017 版本 15.9 的最新引导程序，请转到 [Visual Studio 早期版本](https://visualstudio.microsoft.com/vs/older-downloads/)页，并下载以下引导程序文件之一：
+若要获取 Visual Studio 2017 15.9 版的最新引导程序，请下载以下文件之一。 无论何时运行这些引导程序，它们将始终安装最新版本的 Visual Studio 2017。
 
-| 版本                                      | Filename            |
+| 版本                                      | 引导程序            |
 |----------------------------------------------|---------------------|
-| Visual Studio Professional 2017 版本 15.9 | vs_professional.exe |
-| Visual Studio Enterprise 2017 版本 15.9   | vs_enterprise.exe   |
-| Visual Studio 生成工具 2017 版本 15.9  | vs_buildtools.exe   |
+| Visual Studio 2017 Professional 版本 15.9 | [vs_professional.exe](https://aka.ms/vs/15/release/vs_professional.exe) |
+| Visual Studio 2017 Enterprise 版本 15.9   | [vs_enterprise.exe](https://aka.ms/vs/15/release/vs_enterprise.exe)   |
+| Visual Studio 2017 生成工具版本 15.9  | [vs_buildtools.exe](https://aka.ms/vs/15/release/vs_buildtools.exe)   |
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-首先从 [Visual Studio 下载页](https://visualstudio.microsoft.com/downloads)或 [Visual Studio 2019 版本](/visualstudio/releases/2019/history#installing-an-earlier-release)页下载 Visual Studio 2019 引导程序，以找到所选版本的 Visual Studio。 安装程序文件或引导程序将是以下项之一，或与之类似：
+若要获取始终安装最新版本 16.11 的 Visual Studio 2019 的最新引导程序，请下载以下文件之一。 或者，如果要安装特定版本的 Visual Studio 2019，请转到 [Visual Studio 2019 版本](/visualstudio/releases/2019/history#installing-an-earlier-release)页，该页包含指向每个服务版本的固定版本引导程序的链接。 
 
-| 版本                         | 文件                                                                                                                                                                                                                               |
-|---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Visual Studio 2019 Community    | [vs_community.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)       |
-| Visual Studio 2019 Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
-| Visual Studio 2019 Enterprise   | [vs_enterprise.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
-| Visual Studio 2019 生成工具  | [vs_buildtools.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
+| 版本                         | 引导程序                                                                    |
+|---------------------------------|-------------------------------------------------------------------------|
+| Visual Studio 2019 Professional 版本 16.11 | [vs_professional.exe](https://aka.ms/vs/16/release/vs_professional.exe) |
+| Visual Studio 2019 Enterprise 版本 16.11 | [vs_enterprise.exe](https://aka.ms/vs/16/release/vs_enterprise.exe) |
+| Visual Studio 2019 生成工具版本 16.11 | [vs_buildtools.exe](https://aka.ms/vs/16/release/vs_buildtools.exe) |
 
 ::: moniker-end
 
-::: moniker range=">=vs-2022"
+::: moniker range="vs-2022"
 
->[!TIP]
-> 发布的 Visual Studio 2022 版尚不可用，以下引导程序适用于 Visual Studio 2022 预览版。
->首先从 [Visual Studio 下载页](https://aka.ms/vs2022preview)下载 Visual Studio 2022 引导程序。
+若要获取始终安装最新当前频道版本的 Visual Studio 2022 的最新引导程序，请下载以下文件之一。 或者，如果要安装 Visual Studio 2022 的特定版本或特定频道，请转到 [Visual Studio 2022 版本历史记录](/visualstudio/releases/2022/release-history#release-dates-and-build-numbers)页，该页包含指向每个服务版本的固定版本引导程序的链接。 
 
-| 版本                         | 下载                                                            |
+| 版本                         | 引导程序                                                            |
 |---------------------------------|---------------------------------------------------------------------|
+| Visual Studio 2022 Community | [vs_community.exe](https://aka.ms/vs/17/release/vs_community.exe) |
 | Visual Studio 2022 Professional | [vs_professional.exe](https://aka.ms/vs/17/pre/vs_professional.exe) |
-| Visual Studio 2022 Enterprise   | [vs_enterprise.exe](https://aka.ms/vs/17/pre/vs_enterprise.exe)     |
-
-::: moniker-end
-
-::: moniker range="vs-2017"
-
->[!TIP]
->如果以前下载过引导程序文件，并且想要验证其版本，操作方法如下。 在 Windows 中，打开文件资源管理器，右键单击引导程序文件，依次选择“属性”、“详细信息”选项卡，然后查看“产品版本”号    。 若要将该编号与 Visual Studio 的版本匹配，请参阅 [Visual Studio 内部版本号和发布日期](/visualstudio/releasenotes/vs2017-relnotes-history)页。
+| Visual Studio 2022 Enterprise | [vs_enterprise.exe](https://aka.ms/vs/17/pre/vs_enterprise.exe)     |
+| Visual Studio 2022 Professional | [vs_buildtools.exe](https://aka.ms/vs/17/pre/vs_buildtools.exe) |
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
 >[!TIP]
->如果以前下载过引导程序文件，并且想要验证其版本，则操作方法如下。 在 Windows 中，打开文件资源管理器，右键单击引导程序文件，依次选择“属性”、“详细信息”选项卡，然后查看“产品版本”号    。 若要将该编号与 Visual Studio 的版本匹配，请参阅 [Visual Studio 2019 版本](/visualstudio/releases/2019/history)页。
+>如果之前从 [Visual Studio 2019 版本](/visualstudio/releases/2019/history#release-dates-and-build-numbers)页下载了特定的引导程序文件，并想要验证它将安装的版本，操作方法如下。 在 Windows 中，打开文件资源管理器，右键单击引导程序文件，依次选择“属性”、“详细信息”选项卡，然后查看“产品版本”号    。 若要将该编号与 Visual Studio 版本匹配，请参阅该页底部的表。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2022"
 
 >[!TIP]
->如果以前下载过引导程序文件，并且想要验证其版本，则操作方法如下。 在 Windows 中，打开文件资源管理器，右键单击引导程序文件，依次选择“属性”、“详细信息”选项卡，然后查看“产品版本”号    。 若要将该编号与 Visual Studio 的版本匹配，请参阅 [Visual Studio 2022 版本](/visualstudio/releases/2022/release-notes)页。
+>如果你之前下载了一个引导程序文件，并且想要验证它将安装的版本，操作方法如下。 在 Windows 中，打开“文件资源管理器”，右键单击该引导程序文件，选择“属性”，然后选择“详细信息”选项卡。“产品版本”字段将描述该引导程序将安装的[频道和版本](/visualstudio/releases/2022/vs2022-release-rhythm)  。 版本号应始终读取为“指定内容的最新服务版本”，除非显式指定，否则频道为“当前”。 因此，产品版本为 LTSC 17.0 的引导程序将安装 17.0 LTSC 频道上提供的最新 17.0.x 服务版本。 产品版本仅显示“Visual Studio 2022”的引导程序将在当前频道上安装最新版本的 Visual Studio 2022。
 
 ::: moniker-end
 
@@ -144,76 +103,109 @@ Visual Studio 经过精心设计，可在各种网络和计算机配置中良好
 
 必须连接 Internet 才能完成此步骤。
 
-打开命令提示符并使用[使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md) 页中定义的引导程序参数来创建本地安装缓存。 下文和[命令行参数示例](command-line-parameter-examples.md)页介绍了使用 Enterprise 引导程序的常见示例。 可以通过从[语言区域设置列表](#list-of-language-locales)中将 `en-US` 更改为区域设置来安装非英语语言，也可以使用[组件和工作负载列表](workload-and-component-ids.md)来进一步自定义缓存。
+打开命令提示符并使用[使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md) 页中定义的引导程序参数来创建本地安装缓存。 下文和[命令行参数示例](command-line-parameter-examples.md)页介绍了使用 Enterprise 引导程序的常见示例。 可以通过从[语言区域设置列表](#list-of-language-locales)中将 `en-US` 更改为区域设置来安装非英语语言，也可以使用[组件和工作负载列表](workload-and-component-ids.md)来进一步自定义本地缓存。
 
 > [!TIP]
 > 为了防止错误出现，请确保完全安装路径的长度小于 80 个字符。
 
+::: moniker range="<=vs-2019"
+
 - 对于 .NET Web 和.NET 桌面开发，请运行：
 
    ```shell
-    vs_enterprise.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US
+    vs_enterprise.exe --layout c:\localVScache --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US
     ```
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+- 对于 .NET Web 和.NET 桌面开发，请运行：
+
+   ```shell
+    vs_enterprise.exe --layout c:\localVScache --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --includeOptional --lang en-US
+    ```
+
+::: moniker-end
 
 - 对于 .NET 桌面和 Office 开发，请运行：
 
    ```shell
-    vs_enterprise.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.Office --includeOptional --lang en-US
+    vs_enterprise.exe --layout c:\localVScache --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.Office --includeOptional --lang en-US
     ```
 
 - 对于 C++ 桌面开发，请运行：
 
    ```shell
-    vs_enterprise.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.NativeDesktop --includeRecommended --lang en-US
+    vs_enterprise.exe --layout c:\localVScache --add Microsoft.VisualStudio.Workload.NativeDesktop --includeRecommended --lang en-US
     ```
 
-- 若要创建包含所有功能的完整本地布局（仅限英文版）（耗时将很长，因为我们提供的功能非常多！），请运行：
+- 若要创建包含所有功能的完整本地缓存（仅限英文版）（耗时将很长，因为我们提供的功能非常多！），请运行：
 
    ```shell
-    vs_enterprise.exe --layout c:\vslayout --lang en-US
+    vs_enterprise.exe --layout c:\localVScache --lang en-US
     ```
 
 ::: moniker range="vs-2017"
 
    > [!NOTE]
-   > 完整的 Visual Studio 布局至少需要 35 GB 磁盘空间。 有关详细信息，请参阅[系统需求](/visualstudio/productinfo/vs2017-system-requirements-vs/)。 
+   > 完整的 Visual Studio 本地缓存至少需要 35 GB 磁盘空间。 有关详细信息，请参阅[系统需求](/visualstudio/productinfo/vs2017-system-requirements-vs/)。 
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 
    > [!NOTE]
-   > 完整的 Visual Studio 布局至少需要 41 GB 磁盘空间。 有关详细信息，请参阅[系统需求](/visualstudio/releases/2019/system-requirements/)。
+   > 完整的 Visual Studio 本地缓存至少需要 41 GB 磁盘空间。 有关详细信息，请参阅[系统需求](/visualstudio/releases/2019/system-requirements/)。
 
 ::: moniker-end
 
+::: moniker range="vs-2022"
+
+   > [!NOTE]
+   > 完整的 Visual Studio 本地缓存至少需要 45 GB 磁盘空间。 有关详细信息，请参阅[系统需求](/visualstudio/releases/2022/system-requirements/)。
+
+::: moniker-end
 
 ### <a name="step-3---install-visual-studio-from-the-local-cache"></a>步骤 3 - 从本地缓存安装 Visual Studio
-当你从本地安装缓存安装 Visual Studio 时，Visual Studio 安装程序会使用这些文件的本地缓存版本。 不过，如果你在安装过程中选择的组件不在缓存中，则 Visual Studio 安装程序将尝试从 Internet 下载。 若要确保仅安装先前下载的文件，请使用在创建布局缓存时所用的相同[命令行选项](use-command-line-parameters-to-install-visual-studio.md)。 
+当你从本地安装缓存安装 Visual Studio 时，Visual Studio 安装程序会使用这些文件的本地缓存版本。 不过，如果你在安装过程中选择的组件不在缓存中，则 Visual Studio 安装程序将尝试从 Internet 下载。 若要确保仅安装先前下载的文件，请使用在创建本地缓存时所用的相同[命令行选项](use-command-line-parameters-to-install-visual-studio.md)。 若要确保安装程序不会尝试访问 Internet，请使用 `--noweb` 开关。
 
 例如，如果使用以下命令创建了本地安装缓存：
 
+::: moniker range="<=vs-2019"
+
 ```shell
-vs_enterprise.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US
+vs_enterprise.exe --layout c:\localVScache --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US
 ```
 
 然后使用此命令运行安装：
 
 ```shell
-c:\vslayout\vs_enterprise.exe --noweb --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional
+c:\localVScache\vs_enterprise.exe --noweb --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional
 ```
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+```shell
+vs_enterprise.exe --layout c:\localVScache --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --includeOptional --lang en-US
+```
+
+然后使用此命令运行安装：
+
+```shell
+c:\localVScache\vs_enterprise.exe --noweb --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --includeOptional
+```
+
+::: moniker-end
 
 > [!IMPORTANT]
 > 如果使用的是 Visual Studio Community，则必须在安装后的 30 天内登录产品以激活它。 激活需要 Internet 连接。
 
 > [!NOTE]
-> 如果你遇到签名无效的错误，则必须[安装更新的证书](install-certificates-for-visual-studio-offline.md)。 在脱机缓存中打开证书文件夹。 双击每个证书文件，然后单击完成证书管理器向导。 如果要求输入密码，请将密码留空。
+> 如果你遇到签名无效的错误，则必须[安装更新的证书](install-certificates-for-visual-studio-offline.md)。 在本地缓存中打开证书文件夹。 双击每个证书文件，然后单击完成证书管理器向导。 如果要求输入密码，请将密码留空。
 
-::: moniker range=">=vs-2019"
-> [!TIP]
-> 对于脱机安装，如果收到一条错误消息，指出“找不到与以下参数匹配的项目”，请确保将 `--noweb` 开关用于版本 16.3.5 或更高版本。
-
-::: moniker-end
 
 ### <a name="list-of-language-locales"></a>语言区域设置列表
 
@@ -238,8 +230,7 @@ c:\vslayout\vs_enterprise.exe --noweb --add Microsoft.VisualStudio.Workload.Mana
 
 ## <a name="see-also"></a>另请参阅
 
-- [创建 Visual Studio 的网络安装](../install/create-a-network-installation-of-visual-studio.md)
-- [更新基于网络的 Visual Studio 安装](update-a-network-installation-of-visual-studio.md)
+- [Visual Studio 管理员指南](https://aka.ms/vs/admin/guide)
 - [安装 Visual Studio 脱机安装所需的证书](../install/install-certificates-for-visual-studio-offline.md)
 - [使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 - [Visual Studio 工作负荷和组件 ID](workload-and-component-ids.md)

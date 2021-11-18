@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 8a7d6b0d29181ea464c8e98325e0c1ade53a45dd
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 497012d04d0015d5b2006670475875240a6f5e83
+ms.sourcegitcommit: 215680b355cf613bfa125cf6b864c8bb5f2c71a5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128426874"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "132453759"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>教程：Visual Studio 中的 C# 和 ASP.NET Core 入门
 
@@ -172,7 +172,7 @@ ms.locfileid: "128426874"
     - Microsoft 标识平台：此选项使用 Active Directory、Azure AD 或 Microsoft 365 进行身份验证。
     - Windows：适用于 Intranet 应用程序。
     
-    保持“启用 Docker”框处于未选中状态，并选择“无”作为身份验证类型。 然后选择“创建”。
+    将“启用 Docker”框保持未选中状态，并选择“无”作为身份验证类型 。 然后选择“创建”。
 
    :::image type="content" source="media/vs-2022/aspnet-core-additional-information.png" alt-text="显示“附加信息”窗口中默认设置的屏幕截图。Framework 值为“.NET 6.0”。":::
 
@@ -424,7 +424,7 @@ ms.locfileid: "128426874"
 
 ## <a name="run-debug-and-make-changes"></a>运行、调试和更改
 
-1. 在 IDE 中选择“IIS Express”  按钮，在调试模式下生成并运行应用。 （或者，按 F5  或从菜单栏选择“调试”   > “启动调试”  。）
+1. 在 IDE 中选择“IIS Express”按钮，在调试模式下生成并运行应用。 （或者，按 F5  或从菜单栏选择“调试”   > “启动调试”  。）
 
      :::image type="content" source="media/vs-2022/csharp-aspnet-razor-iisexpress.png" alt-text="显示 Visual Studio IDE 中突出显示的 IIS Express 按钮的屏幕截图。":::
 

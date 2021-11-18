@@ -2,7 +2,7 @@
 title: 应用程序页上的 C# 项目属性
 description: 了解如何使用“C# 项目设计器”的“应用程序”页指定项目的应用程序设置和属性。
 ms.custom: SEO-VS-2020
-ms.date: 10/30/2018
+ms.date: 11/12/2021
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesApplicationWPF
@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: e32aec81f3d931c52426d04c2592b38a4ffe6865
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 66b882c90343910836295923e7ec5efd73f67eeb
+ms.sourcegitcommit: 215680b355cf613bfa125cf6b864c8bb5f2c71a5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641825"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "132454019"
 ---
 # <a name="application-page-project-designer-c"></a>“项目设计器”->“应用程序”页 (C#)
 
@@ -57,9 +57,19 @@ ms.locfileid: "126641825"
 
 对于 .NET Framework 项目，默认值与创建项目时指定的目标框架一致。
 
-对于面向 .NET Core 的项目，可用版本将如下显示：
+对于面向 .NET Core 的项目，可用版本可能如下显示：
+
+::: moniker range="vs-2022"
+
+:::image type="content" source="../media/vs-2022/application-target-framework.png" alt-text="Visual Studio 2022 中 .NET Core 项目的目标框架版本的屏幕截图。":::
+
+::: moniker-end
+
+::: moniker range="<=vs-2019"
 
 ![.NET Core 项目的目标框架版本](../media/application-target-framework.png)
+
+::: moniker-end
 
 > [!NOTE]
 > 第一次打开对话框时将自动设置[“系统必备”对话框](../../ide/reference/prerequisites-dialog-box.md)中所列的必备组件包。 如果随后更改项目的目标框架，则必须手动选择必备组件，以便与新目标框架相匹配。
@@ -127,3 +137,7 @@ ms.locfileid: "126641825"
 输入路径名或使用“浏览”按钮 (**...**)，以向项目添加 Win32 资源文件。
 
 有关详细信息，请参阅[为 .NET 应用创建资源文件](/dotnet/framework/resources/creating-resource-files-for-desktop-apps)。
+
+## <a name="see-also"></a>请参阅
+
+[改进的项目属性 UI](https://devblogs.microsoft.com/visualstudio/revamped-project-properties-ui/)

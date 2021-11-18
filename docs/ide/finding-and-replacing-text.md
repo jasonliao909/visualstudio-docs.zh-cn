@@ -2,7 +2,7 @@
 title: 查找和替换文本以及多个插入点选择
 description: 了解“查找和替换”功能，并了解如何使用它查找和替换模式的实例。
 ms.custom: SEO-VS-2020
-ms.date: 11/19/2020
+ms.date: 11/15/2021
 ms.topic: conceptual
 f1_keywords:
 - vs.find
@@ -33,12 +33,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 796ccada43eed1363b80422eab03e6237a8893e1
-ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
+ms.openlocfilehash: 5abfbcc906cd64e63bce545bb71167439dc69d9f
+ms.sourcegitcommit: 215680b355cf613bfa125cf6b864c8bb5f2c71a5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "129431154"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "132453188"
 ---
 # <a name="find-and-replace-text"></a>查找和替换文本
 
@@ -102,9 +102,36 @@ ms.locfileid: "129431154"
 > [!NOTE]
 > 本部分适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅[块选择](/visualstudio/mac/block-selection)。
 
+::: moniker range="vs-2017"
+
 **在 Visual Studio 2017 版本 15.8 中引入**
 
+::: moniker-end
+
 使用“多个插入点选择”同时在两个或多个位置进行相同编辑。 例如，可同时插入相同的文本或修改多个位置的现有文本。
+
+::: moniker range="vs-2022"
+
+在 Visual Studio 2022 中，改进了多插入点复制和粘贴体验。 以前，将多行粘贴到多个插入点时，会在每个插入点复制整个剪贴板。 现在，将多行粘贴到相同数量的插入点时，会将每一行插入相应的插入点。
+
+若要使用多插入点，请按 Alt+Shift+鼠标单击，或按 Alt+Shift+.      然后，使用 Ctrl+Shift+箭头键来展开选择项  。 接下来，按 Ctrl+C 复制多个选择项中的文本 。 使用 Alt+Shift+鼠标单击，为每一行创建多个要粘贴到所需位置的插入点  。 最后，按 Ctrl+V 将每行粘贴到其自己的插入点 。
+
+:::image type="content" source="media/vs-2022/multi-caret-copy-paste.gif" alt-text="Visual Studio 中多插入点选择操作的动画。":::
+
+:::image-end:::
+
+此外，可使用 Alt+Shift+向上键（或向下键），或者使用 Alt+Shift+鼠标拖动，来选择多个插入点      。 以前，这些笔势会创建框选择。 现在，框选择将转换为多个插入点。 与在精确位置单击以插入单独的插入点相比，此方法操作起来更容易且速度更快。
+
+> [!TIP]
+> 如果希望在展开多插入点选择时将框选择与 Alt+Shift+箭头键和 Alt+Shift+鼠标拖动一起使用，请转到“工具” > “选项” > “文本编辑器” > “高级”，然后选择“使用框选择”           。
+
+你也可以通过选择“编辑”>“多个插入点”，然后选择所需的操作，从菜单栏中访问多插入点选择 。
+
+:::image type="content" source="media/vs-2022/edit-menu-multiple-carets-find-replace.png" alt-text="Visual Studio 2022 中的“多个插入点”飞出式菜单的屏幕截图。":::
+
+::: moniker-end
+
+::: moniker range="<=vs-2019"
 
 在以下屏幕截图中，在三个位置选择了 `-0000`；如果用户按 Delete，则删除所有三个选项：
 
@@ -134,6 +161,8 @@ ms.locfileid: "129431154"
 “编辑”菜单上的“多个插入点”下也提供了一些命令：
 
 :::image type="content" source="media/edit-menu-multiple-carets-find-replace.png" alt-text="Visual Studio 中的“多个插入点”飞出式菜单的屏幕截图":::
+
+::: moniker-end
 
 ## <a name="see-also"></a>另请参阅
 
