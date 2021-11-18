@@ -2,7 +2,7 @@
 title: 选项，文本编辑器，常规
 description: 了解如何使用“常规”页面更改 Visual Studio Code 和文本编辑器的全局设置。
 ms.custom: SEO-VS-2020
-ms.date: 01/18/2019
+ms.date: 11/12/2021
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor
@@ -37,22 +37,50 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cfd0ef18f85511d23825468f1b208c34bc7e209
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: dbeffd70a4a11ed8e89388a3e558f14c2a54247c
+ms.sourcegitcommit: 215680b355cf613bfa125cf6b864c8bb5f2c71a5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126642511"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "132453436"
 ---
 # <a name="options-dialog-box-text-editor--general"></a>“选项”对话框：“文本编辑器”\>“常规”
 
 使用此对话框可以更改 Visual Studio 代码和文本编辑器的全局设置。 若要显示此对话框，请在“工具”菜单上选择“选项”，展开“文本编辑器”文件夹，然后选择“常规”     。
 
+::: moniker range="vs-2022"
+
+:::image type="content" source="media/vs-2022/tools-options-text-editor-general.png" alt-text="“选项”对话框中文本编辑器常规设置的屏幕截图。":::
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+:::image type="content" source="media/vs-2019/tools-options-text-editor-general.png" alt-text="“选项”对话框中文本编辑器常规设置的屏幕截图。":::
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+:::image type="content" source="media/tools-options-text-editor-general.png" alt-text="“选项”对话框中文本编辑器常规设置的屏幕截图。":::
+
+::: moniker-end
+
 ## <a name="settings"></a>设置
+
+“工具” > “选项” > “文本编辑器” > “常规”的“设置”部分包括以下选项   。
 
 ### <a name="drag-and-drop-text-editing"></a>拖放文本编辑
 
-勾选此项后，使用鼠标选定文本并将其拖到当前文档的其他位置或任何其他打开的文档中，即可移动文本。
+勾选此设置后，可使用鼠标选定文本，然后将其拖动到当前文档或任何其他打开的文档中的另一个位置，即可移动文本。
+
+::: moniker range="vs-2022"
+
+### <a name="select-subword-on-double-click"></a>双击时选择子字
+
+切换此设置时，双击只会选择一个子词，而不是全字。 （例如，在使用 camelCase 文本时，这会很有帮助。）
+
+::: moniker-end
 
 ### <a name="automatic-delimiter-highlighting"></a>自动突出显示分隔符
 
@@ -74,9 +102,21 @@ ms.locfileid: "126642511"
 
 如果选中此选项，可以在单击鼠标的同时，按 Ctrl  并将鼠标悬停在元素之上。 这样，就可以转到选定元素的定义了。 也可以从“使用修改键”  下拉列表中选择“Alt”  或“Ctrl   + Alt  ”。
 
-选中“在速览视图中打开定义”  复选框，可以在窗口中显示元素定义，而无需离开代码编辑器中的当前位置。
+#### <a name="open-definition-in-peek-view"></a>在速览视图中打开定义
+
+选中此复选框，可以在窗口中显示元素定义，而无需离开代码编辑器中的当前位置。 有关详细信息，请参阅[如何：使用速览定义查看和编辑代码](../how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)。
 
 ## <a name="display"></a>显示
+
+“工具” > “选项”>“文本编辑器” > “常规”的“设置”部分包括以下选项   。
+
+::: moniker range=">=vs-2019"
+
+### <a name="view-whitespace"></a>查看空白
+
+选中时，可将空格和制表符可视化。
+
+::: moniker-end
 
 ### <a name="selection-margin"></a>选定内容的边距
 
@@ -98,9 +138,31 @@ ms.locfileid: "126642511"
 
 如果你选中此选项，与结构化代码块对齐的竖线就会在编辑器中显示，这样你就能轻松识别各个代码块了。
 
+::: moniker range=">=vs-2019"
+
+### <a name="show-error-squiggles"></a>显示错误波形曲线
+
+选中后，不同颜色的波浪下划线（称为波形曲线）会出现在代码中。 （红色波形曲线表示语法错误，蓝色表示编译器错误，绿色表示警告，而紫色表示其他类型的错误。）
+
 ### <a name="show-file-health-indicator"></a>显示文件运行状况指示器
 
-如果选择此选项，带有“代码清理”选项的文件运行状况指示器状态（错误、警告）栏将显示在编辑器的左下角。
+如果选择此选项，带有“代码清理”选项的文件运行状况指示器状态（错误、警告）栏显示在编辑器的左下角。
+
+### <a name="line-spacing"></a>行距
+
+使用此控件可将 1.0 的默认行距更改为所需的增量，包括 1.15、1.5、2.0、2.5 和 3.0。
+
+### <a name="show-editing-context-in-the-editor"></a>在编辑器中显示编辑上下文
+
+使用此控件可完全切换编辑上下文设置，或者通过从以下设置中进行选择来个性化首选项：
+
+- 行/列
+- 选择
+- 插入/覆盖
+- 制表符/空格
+- 行尾
+
+::: moniker-end
 
 ## <a name="see-also"></a>请参阅
 

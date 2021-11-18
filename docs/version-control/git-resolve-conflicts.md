@@ -2,19 +2,19 @@
 title: 在 Visual Studio 中解决合并冲突
 titleSuffix: ''
 description: 在 Visual Studio 中了解、防止和解决合并冲突。
-ms.date: 11/08/2021
+ms.date: 11/10/2021
 ms.topic: how-to
 author: Taysser-Gherfal
 ms.author: tglee
 ms.manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: e6de198dc0e29fd2a44cc6a50aece22f3d9b28d8
-ms.sourcegitcommit: 5f60dd61e7f281db7892118dbed6387c4903701f
+ms.openlocfilehash: c088e526f4a999f0637068322c4a26f4900f3f81
+ms.sourcegitcommit: dc12d3d0ca2ec3601cb9de7c22e61ecf22c7c514
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "132079598"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "132264027"
 ---
 # <a name="resolve-merge-conflicts-in-visual-studio"></a>在 Visual Studio 中解决合并冲突
 
@@ -51,13 +51,14 @@ ms.locfileid: "132079598"
 
 - 让我们选择“拉取然后推送”以添加引入远程存储库的更改。 如果在拉取更改或尝试合并两个分支时存在任何合并冲突，Visual Studio 会通过“Git 更改”窗口、“Git 存储库”窗口以及任何存在冲突的文档通知我们。
 
-    :::image type="content" source="media/vs-2022/git-conflicts-notification-ui.png" alt-text="合并冲突通知的屏幕截图。" lightbox="media/vs-2022/git-conflicts-notification-ui.png":::
+    :::image type="content" source="media/vs-2022/git-conflicts-notification-ui.png" alt-text="合并冲突通知的屏幕截图。":::
 
 - “Git 更改”窗口在“未合并的更改”下显示存在冲突的文档列表。 若要开始解决冲突，可双击要解决的文档；如果在编辑器中打开了存在冲突的文档，可单击“打开合并编辑器”。
 
     :::image type="content" source="media/vs-2022/git-conflicts-status-ui.png" alt-text="“Git 更改”窗口中的合并冲突状态的屏幕截图。" lightbox="media/vs-2022/git-conflicts-status-ui.png":::
 
-- 打开合并编辑器后，可使用以下任一方法开始解决冲突：
+- 打开合并编辑器后，可使用以下任一方法开始解决冲突（如带编号的屏幕截图中所示）。
+
     1. 逐行查看冲突，并通过勾选复选框选择保留左侧还是右侧更改。
     1. 保留或忽略所有存在冲突的更改。
     1. 在“结果”窗口中手动编辑代码。
@@ -66,6 +67,7 @@ ms.locfileid: "132079598"
 
     > [!TIP]
     > 如果不喜欢合并编辑器的默认布局，可随时使用齿轮下拉菜单进行更改。
+    >
     > :::image type="content" source="media/vs-2022/git-conflicts-layout-options.png" alt-text="合并编辑器布局选项的屏幕截图。":::
     >
     >例如，以下屏幕截图显示了垂直视图的呈现效果：
@@ -92,3 +94,4 @@ ms.locfileid: "132079598"
 ## <a name="see-also"></a>另请参阅
 
 - [Visual Studio 中的 Git 体验](../ide/git-with-visual-studio.md)
+- [Visual Studio 和 GitHub：更好地协同工作](https://visualstudio.microsoft.com/vs/github/)

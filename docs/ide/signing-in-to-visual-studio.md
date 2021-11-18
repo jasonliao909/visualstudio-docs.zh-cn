@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d674a46ec68810df8575f963bccf9b2ed70f574
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: d269462f2130d8df399b07c0f1daf389929f112e
+ms.sourcegitcommit: bfae1f88c278835e26f3200cfced769be3191fc4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641108"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "132535082"
 ---
 # <a name="sign-in-to-visual-studio-on-windows"></a>在 Windows 上登录到 Visual Studio 
 
@@ -32,6 +32,8 @@ ms.locfileid: "126641108"
 > 使用 Visual Studio 2017 访问为条件访问配置的资源时，可能会触发降级身份验证体验，进而在同一 Visual Studio 会话中多次提示重新进行身份验证。 
 > 
 ::: moniker-end
+
+## <a name="benefits-to-signing-in"></a>登录的好处
 
 以下是登录后可体验的内容及可执行的操作的完整列表：
 

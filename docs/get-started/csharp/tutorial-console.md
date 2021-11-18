@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: e46b3ed2449972b065ac005ac83f2650cb93d03d
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 09496b55d971173040aa6ad69428979d4d43398a
+ms.sourcegitcommit: bfae1f88c278835e26f3200cfced769be3191fc4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128426636"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "132535230"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio-part-1-of-2"></a>教程：在 Visual Studio 中创建一个简单的 C# 控制台应用（第 1 部分，共 2 部分）
 
@@ -130,10 +130,10 @@ ms.locfileid: "128426636"
 
 1. 在“创建新项目”窗口中选择“所有语言”，然后从下拉列表中选择“C#”  。 从“所有平台”列表中选择“Windows”，然后从“所有项目类型”列表中选择“控制台”   。
 
-   应用语言、平台和项目类型筛选器之后，选择“控制台应用程序”模板，然后选择“下一步” 。
+   应用语言、平台和项目类型筛选器后，选择“控制台应用”模板，然后选择“下一步” 。
 
    > [!NOTE]
-   > 如果未看到“控制台应用程序”模板，请选择“安装更多工具和功能” 。
+   > 如果未看到“控制台应用”模板，请选择“安装更多工具和功能” 。
    >
    > ![显示“安装更多工具和功能”链接的屏幕截图。](media/vs-2022/not-finding-what-looking-for.png)
    >
@@ -203,10 +203,10 @@ ms.locfileid: "128426636"
 1. 关闭控制台窗口。
 ::: moniker-end
 
-::: moniker range=">=vs-2022&quot;
+::: moniker range=">=vs-2022"
 1. 在“解决方案资源管理器”的右侧窗格中选择“Program.cs”，以在代码编辑器中显示该文件 
 
-1. 在代码编辑器中，替换显示了 `Console.WriteLine(&quot;Hello World!");` 的默认“Hello World”代码。
+1. 在代码编辑器中，替换显示了 `Console.WriteLine("Hello World!");` 的默认“Hello World”代码。
 
     ![显示要在 program 文件中替换的行的屏幕截图。](media/vs-2022/csharp-console-calculator-delete-hello-world.png)
 

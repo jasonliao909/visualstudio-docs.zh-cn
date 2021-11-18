@@ -2,7 +2,7 @@
 title: 键盘快捷方式
 description: 了解 Visual Studio 中的默认键盘快捷方式，以便通过它们访问各种命令和窗口。
 ms.custom: SEO-VS-2020
-ms.date: 09/23/2021
+ms.date: 11/15/2021
 ms.topic: reference
 helpviewer_keywords:
 - shortcut keys [Visual Studio], keyboard binding schemes
@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 75c7ddb84d561c123a7bb7bc1bc4a41df2a711b8
-ms.sourcegitcommit: 65a1b6aae8387735f05a83b45e1a6865e9805e1f
+ms.openlocfilehash: 8d14362f62a6ea8698054961043e8b3ccba1e8d4
+ms.sourcegitcommit: 215680b355cf613bfa125cf6b864c8bb5f2c71a5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "129339624"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "132453992"
 ---
 # <a name="keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的键盘快捷方式
 
@@ -127,7 +127,7 @@ ms.locfileid: "129339624"
 |全选|**Ctrl+A**| 编辑.全选 |
 |选择当前字词|**Ctrl+W** [文本编辑器]| 编辑.选择当前字 |
 |取消选择|**Esc** [文本编辑器、报表设计器、设置设计器、Windows 窗体设计器、托管资源编辑器]| 编辑.取消选定 |
-|环绕|**Ctrl+K、Ctrl+S**| 编辑.外侧代码 |
+|环绕|**Ctrl+K、Ctrl+S** <br>（仅可用于 Visual Studio 2019 及更早版本）| 编辑.外侧代码 |
 |选项卡左侧|**Shift+Tab** [文本编辑器、报表设计器、Windows 窗体设计器]| 编辑.左缩进 |
 |切换所有大纲显示|**Ctrl+M、Ctrl+L** [文本编辑器]| 编辑.切换所有大纲显示 |
 |切换书签|**Ctrl+K、Ctrl+K** [文本编辑器]| 编辑.切换书签 |
@@ -413,7 +413,7 @@ ms.locfileid: "129339624"
 |向上调整控件大小|**Ctrl+Shift+向上键**| 编辑.向上调整控件大小 |
 |向上调整控件大小网格|**Shift+向上键**| 编辑.将控件调大到上侧网格 |
 |停止搜索|**Alt+F3、S**| 编辑.停止搜索 |
-|环绕|**Ctrl+K、Ctrl+S**| 编辑.外侧代码 |
+|环绕|**Ctrl+K、Ctrl+S** <br>（仅可用于 Visual Studio 2019 及更早版本）| 编辑.外侧代码 |
 |撤消|**Ctrl+Z**<br /><br /> or<br /><br /> **Alt+Backspace**| 编辑.取消 |
 
 ### <a name="editor-context-menus-global-shortcuts"></a><a name="bkmk_editorContext-global-shortcuts"></a> 编辑器上下文菜单：全局快捷方式

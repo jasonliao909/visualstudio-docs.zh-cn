@@ -1,7 +1,7 @@
 ---
 title: 项目和解决方案简介
 description: 了解 Visual Studio 中的项目和解决方案之间的区别，以及如何使用它们。
-ms.date: 09/14/2021
+ms.date: 11/12/2021
 ms.technology: vs-ide-general
 ms.custom:
 - vs-acquisition
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: db3eea7017645d51065ed62e038c3323125e7b71
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 7e869d593be04c42151753039a6e9be4981cdd2d
+ms.sourcegitcommit: 215680b355cf613bfa125cf6b864c8bb5f2c71a5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128432030"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "132453487"
 ---
 # <a name="introduction-to-projects-and-solutions"></a>项目和解决方案简介
 
@@ -209,7 +209,7 @@ ms.locfileid: "128432030"
    }
    ```
 
-   你还不需要了解代码执行的所有操作。 按 Ctrl+F5 运行应用，查看应用是否将今天的日期输出到控制台（标准输出）窗口 。
+   你还不需要了解代码执行的所有操作。 按 Ctrl+F5 运行应用，查看应用是否将今天的日期输出到控制台（标准输出）窗口 。 然后，关闭控制台窗口。
 
 ## <a name="add-a-second-project"></a>添加第二个项目
 
@@ -414,7 +414,7 @@ ms.locfileid: "128432030"
 
     ::: moniker range=">=vs-2022"
 
-    :::image type="content" source="media/vs-2022/tutorial-project-properties.png" alt-text="显示项目属性的屏幕截图。" border="false":::
+    :::image type="content" source="media/vs-2022/tutorial-project-properties.png" alt-text="显示项目属性的屏幕截图。" lightbox="media/vs-2022/tutorial-project-properties.png":::
 
     ::: moniker-end
 

@@ -13,12 +13,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 27386ceb7ec02b2e04a96b125346f9be92e6af68
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: a4a763a221a6aba7ade463d27a608afcd8f406e0
+ms.sourcegitcommit: 215680b355cf613bfa125cf6b864c8bb5f2c71a5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128432484"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "132453642"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>快速入门：使用 Visual Studio 创建首个 ASP.NET Core Web 应用
 
@@ -272,7 +272,7 @@ ms.locfileid: "128432484"
 
    :::image type="content" source="media/vs-2022/csharp-aspnet-index-cshtml-page-hello-world.png" alt-text="显示 Visual Studio 代码编辑器中“Index.cshtml”文件的屏幕截图，其中“Welcome”文本已更改为“Hello World!”。":::
 
-1. 选择“IIS Express”或按 Ctrl+F5 运行此应用，并在 Web 浏览器中打开它。
+1. 选择“IIS Express”或按 Ctrl+F5 运行此应用，并在 Web 浏览器中打开它  。
 
    :::image type="content" source="media/vs-2022/csharp-aspnet-generic-iis-button.png" alt-text="显示 Visual Studio 中突出显示的“IIS Express”按钮的屏幕截图。":::
 
