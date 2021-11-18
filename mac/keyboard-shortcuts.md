@@ -1,16 +1,16 @@
 ---
 title: 默认键盘快捷键
 description: 本文列出了 Visual Studio for Mac 中的默认键盘快捷键
-ms.date: 03/14/2019
+ms.date: 11/14/2021
 author: heiligerdankgesang
 ms.author: dominicn
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 3a4b2a56e5ac6ed29289c3946a65fc57b54eaa21
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: cc344cbca31293b86a357da08d6ba4f94a2267a6
+ms.sourcegitcommit: a98fa8a8362525f67824ce52b7e71757f10f1362
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736390"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "132736456"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Visual Studio for Mac 中的默认键盘快捷键
 
