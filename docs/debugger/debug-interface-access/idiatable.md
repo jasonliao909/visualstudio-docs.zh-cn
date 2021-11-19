@@ -1,7 +1,8 @@
 ---
+description: 枚举 DIA 数据源表。
 title: IDiaTable | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,15 +10,16 @@ helpviewer_keywords:
 ms.assetid: c99a2c44-7b72-4e3c-b963-25fe3df3a555
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: bc7a573eb92d7c51079b0a7e97067abd155ae4fa
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: 7f8dc87343a425d87c2936b6667f350c456b45cf
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738711"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127831788"
 ---
 # <a name="idiatable"></a>IDiaTable
 枚举 DIA 数据源表。
@@ -25,28 +27,28 @@ ms.locfileid: "72738711"
 ## <a name="syntax"></a>语法
 
 ```
-IDiaTable : IEnumUnknown
+IDiaTable : IEnumUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
-下表显示 `IDiaTable` 的方法。
+下表显示了 的方法 `IDiaTable` 。
 
-|方法|描述|
+|方法|说明|
 |------------|-----------------|
-|[IDiaTable::get__NewEnum](../../debugger/debug-interface-access/idiatable-get-newenum.md)|检索此枚举器的[IEnumVARIANT 接口](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant)版本。|
+|[IDiaTable::get__NewEnum](../../debugger/debug-interface-access/idiatable-get-newenum.md)|检索此 [枚举数的 IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) 接口版本。|
 |[IDiaTable::get_name](../../debugger/debug-interface-access/idiatable-get-name.md)|检索表的名称。|
 |[IDiaTable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)|检索表中的项数。|
-|[IDiaTable::Item](../../debugger/debug-interface-access/idiatable-item.md)|检索对特定项索引的引用。|
+|[IDiaTable::Item](../../debugger/debug-interface-access/idiatable-item.md)|检索对特定条目索引的引用。|
 
 ## <a name="remarks"></a>备注
-此接口实现 VisualStudio 命名空间中的 `IEnumUnknown` 枚举方法。 与[IDiaTable：： get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)和[IDiaTable：： Item](../../debugger/debug-interface-access/idiatable-item.md)方法相比，要循环访问表内容，`IEnumUnknown` 枚举接口要高效得多。
+此接口实现 `IEnumUnknown` Microsoft.VisualStudio.OLE.Interop 命名空间中的枚举方法。 `IEnumUnknown`与[IDiaTable：：get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)和[IDiaTable：：Item](../../debugger/debug-interface-access/idiatable-item.md)方法不同，枚举接口在访问表内容时要高效得多。
 
-从 `IDiaTable::Item` 方法或 `Next` 方法（VisualStudio 命名空间）中返回的 `IUnknown` 接口的解释依赖于表的类型的解释。 例如，如果 `IDiaTable` 接口表示注入的源的列表，则应为[IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)接口查询 `IUnknown` 接口。
+`IUnknown` `IDiaTable::Item` 从 Microsoft.VisualStudio.OLE.Interop 命名空间中的 (方法返回的接口的解释) 取决于表 `Next` 的类型。 例如，如果 `IDiaTable` 接口表示注入源的列表，应查询接口的 `IUnknown` [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) 接口。
 
 ## <a name="notes-for-callers"></a>调用方说明
-通过调用[IDiaEnumTables：： Item](../../debugger/debug-interface-access/idiaenumtables-item.md)或[IDiaEnumTables：： Next](../../debugger/debug-interface-access/idiaenumtables-next.md)方法获取此接口。
+通过调用 [IDiaEnumTables：：Item](../../debugger/debug-interface-access/idiaenumtables-item.md) 或 [IDiaEnumTables：：Next](../../debugger/debug-interface-access/idiaenumtables-next.md) 方法获取此接口。
 
-下面的接口是通过 `IDiaTable` 接口实现的（也就是说，你可以查询以下接口之一的 `IDiaTable` 接口）：
+以下接口是使用 接口接口实现的 (，也就是说，可以在接口中查询以下接口 `IDiaTable` `IDiaTable` 之一) ：
 
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
 
@@ -63,10 +65,10 @@ IDiaTable : IEnumUnknown
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
 
 ## <a name="example"></a>示例
-第一个函数 `ShowTableNames` 显示会话中所有表的名称。 @No__t_0 的第二个函数在表中搜索实现指定接口的所有表。 @No__t_0 的第三个函数演示如何使用 `GetTable` 函数。
+第一个 `ShowTableNames` 函数 显示会话中所有表的名称。 第二个函数 在所有表中搜索 `GetTable` 实现指定接口的表。 第三个 `UseTable` 函数 演示如何使用 `GetTable` 函数。
 
 > [!NOTE]
-> `CDiaBSTR` 是一个包装 `BSTR` 并在实例化超出范围时自动处理释放该字符串的类。
+> `CDiaBSTR` 是一个类，它包装 ，在实例化超出范围时自动 `BSTR` 处理释放字符串。
 
 ```C++
 void ShowTableNames(IDiaSession *pSession)
@@ -131,13 +133,13 @@ void UseTable(IDiaSession *pSession)
 ```
 
 ## <a name="requirements"></a>要求
-标头： Dia2
+标头：Dia2.h
 
-库： diaguids
+库：diaguids.lib
 
-DLL： msdia80
+DLL：msdia80.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [接口（调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
 - [IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)

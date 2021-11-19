@@ -25,7 +25,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: f97d5cdce15d5bc46256db709421bf83ab48ac9c
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126664876"
@@ -152,17 +152,17 @@ ms.locfileid: "126664876"
 
 4. 使用 Visual Studio IDE 发布 PublishLocales。
 
-     在“解决方案资源管理器”中选择 PublishLocales。 在“项目”菜单上选择“属性”。 在 Project 设计器的"发布"页上，指定 的发布位置，然后单击 **http://localhost/PublishLocales** "立即 **发布"。**
+     在“解决方案资源管理器”中选择 PublishLocales。 在“项目”菜单上选择“属性”。 在"Project设计器"的"发布"页上，指定 的发布位置，然后单击 **http://localhost/PublishLocales** "立即 **发布"。**
 
      当出现发布网页时，关闭它。 （对于此步骤，你只需发布该项目，而不必安装它。）
 
-5. 通过在 Visual Studio 命令提示符窗口中调用宏，再次发布 PublishLocales。 若要查看命令提示符窗口，请在"视图"菜单上指向"其他Windows然后单击"命令窗口 **"，或** 按 **Ctrl** + **Alt** + **A**。 在"命令提示符"窗口中，键入 `macros` ;自动完成将提供可用宏的列表。 选择以下宏并按 Enter：
+5. 通过在 Visual Studio 命令提示符窗口中调用宏，再次发布 PublishLocales。 若要查看"命令提示符"窗口，请在"视图"菜单上指向"其他Windows然后单击"命令窗口 **"，或** 按 **Ctrl** + **Alt** + **A**。 在"命令提示符"窗口中，键入 `macros` ;自动完成将提供可用宏的列表。 选择以下宏并按 Enter：
 
      `Macros.MyMacros.PublishSpecificCulture.PublishProjectFirstProjectWithEnLocale`
 
 6. 发布过程成功后，将生成一条消息，指出 *"PublishLocales\PublishLocales.vbproj 发布成功"。* 发布语言为"en"。在 **消息框中** 单击"确定"。 当发布网页出现时，单击“安装”。
 
-7. 在 *C：\Inetpub\wwwroot\PublishLocales\en 中查找*。 除了已本地化的资源 DLL 外，还应看到已安装的文件，例如，清单、setup.exe 和发布网页文件。  (默认情况下ClickOnce在 EXEs 和 DLL 上追加 *.deploy* 扩展;可以在 deployment.) 
+7. 在 *C：\Inetpub\wwwroot\PublishLocales\en 中查找*。 除了已本地化的资源 DLL 外，还应看到已安装的文件，例如，清单、setup.exe 和发布网页文件。  (默认情况下，ClickOnce在 EXEs 和 DLL 上追加 *.deploy* 扩展;可以在 deployment.) 之后删除此扩展
 
 ## <a name="see-also"></a>另请参阅
 - [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)

@@ -19,18 +19,18 @@ ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
 ms.openlocfilehash: 421f48615cc46e401d9cd982f66c735807c403c6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122160889"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126671825"
 ---
 # <a name="clickonce-application-manifest"></a>ClickOnce 应用程序清单
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序清单是一个 XML 文件，描述使用部署的应用程序 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。
 
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序清单具有以下元素和属性。
 
-| 元素 | 说明 | 特性 |
+| 元素 | 说明 | 属性 |
 | - | - | - |
 | [\<assembly> 元素](../deployment/assembly-element-clickonce-application.md) | 必需。 顶级元素。 | `manifestVersion` |
 | [\<assemblyIdentity> 元素](../deployment/assemblyidentity-element-clickonce-application.md) | 必需。 标识应用程序的主要程序集 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language` |
@@ -117,5 +117,5 @@ ms.locfileid: "122160889"
 </Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)

@@ -11,15 +11,15 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: 59d34149dedb08778839dcf4a2d9116321b86a6e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122040302"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664168"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>如何：添加拖放处理程序
 
-可以将拖放事件的处理程序添加到 DSL，以便用户可以将项从其他关系图或其他关系图的其他部分拖动到Visual Studio。 还可以添加诸如双击事件的处理程序。 拖放和双击处理程序一起称为笔 *势处理程序*。
+可以将拖放事件的处理程序添加到 DSL，以便用户可以将项从其他关系图或其他部件拖动到关系图上Visual Studio。 还可以添加诸如双击事件的处理程序。 拖放和双击处理程序一起称为笔 *势处理程序*。
 
 本主题讨论了在其他关系图上发起的拖放笔势。 对于单个关系图内的移动和复制事件，请考虑另一种方法：定义 `ElementOperations` 的子类。 有关详细信息，请参阅 [自定义复制行为](../modeling/customizing-copy-behavior.md)。 你可能还可以自定义 DSL 定义。
 
@@ -163,7 +163,7 @@ MEF (Managed Extensibility Framework) 允许定义可使用最小配置安装的
 
 使源 DSL 可由Visual Studio总线访问：
 
-1. 在 DSL 设计器中打开源 DSL 的 DSL 定义文件。 右键单击设计图面，然后单击"**启用模型总线"。** 在该对话框中，选择一个或两个选项。  单击“确定”。 新项目“ModelBus”随即添加到 DSL 解决方案中。
+1. 在 DSL 设计器中打开源 DSL 的 DSL 定义文件。 右键单击设计图面，然后单击"**启用模型总线"。** 在该对话框中，选择一个或两个选项。  单击 **“确定”** 。 新项目“ModelBus”随即添加到 DSL 解决方案中。
 
 2. 单击 **"转换所有模板"** 并重新生成解决方案。
 
@@ -572,7 +572,7 @@ namespace Company.CompartmentDrag  // EDIT.
 }
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [自定义复制行为](../modeling/customizing-copy-behavior.md)
 - [部署域特定语言解决方案](msi-and-vsix-deployment-of-a-dsl.md)

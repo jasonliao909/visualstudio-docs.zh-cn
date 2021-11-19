@@ -1,7 +1,8 @@
 ---
+description: 返回本地符号有效的范围起始地址的部分。
 title: IDiaSymbol::get_liveRangeStartAddressSection | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,15 +10,16 @@ helpviewer_keywords:
 ms.assetid: 892b80ff-5957-4233-b4d7-6144167be289
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a23f0661d8af6417d754fd7a71c66c5dd3ef1135
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: 93efcf7412835fa9a4f1146d293d2d4e4d25e05f
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739910"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127832696"
 ---
 # <a name="idiasymbolget_liverangestartaddresssection"></a>IDiaSymbol::get_liveRangeStartAddressSection
 返回本地符号有效的范围起始地址的部分。
@@ -25,7 +27,7 @@ ms.locfileid: "72739910"
 ## <a name="syntax"></a>语法
 
 ```C++
-HRESULT get_liveRangeStartAddressSection ( 
+HRESULT get_liveRangeStartAddressSection ( 
    DWORD* section
 );
 ```
@@ -36,7 +38,7 @@ HRESULT get_liveRangeStartAddressSection ( 
 弄返回起始地址范围的部分。
 
 ## <a name="return-value"></a>返回值
- 如果成功，将返回 `S_OK`;否则，将返回错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 > [!NOTE]
 > 返回的错误代码表示该符号没有活动范围信息。
@@ -44,14 +46,14 @@ HRESULT get_liveRangeStartAddressSection ( 
 ## <a name="remarks"></a>备注
  由节和偏移量组成的地址是符号有效的范围的开始位置。
 
- 若要获取地址的偏移量部分，请使用[IDiaSymbol：： get_liveRangeStartAddressOffset](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddressoffset.md)。
+ 若要获取地址的偏移量部分，请使用 [IDiaSymbol：： get_liveRangeStartAddressOffset](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddressoffset.md)。
 
 ## <a name="requirements"></a>要求
  标头： Dia2
 
  库： diaguids
 
- DLL： msdia100
+ DLL： msdia100.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

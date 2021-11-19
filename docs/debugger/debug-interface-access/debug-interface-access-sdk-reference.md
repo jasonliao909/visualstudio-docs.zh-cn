@@ -1,7 +1,8 @@
 ---
+description: 对 DIA SDK 中的所有接口和支持枚举和结构的完整引用。
 title: 调试接口访问 SDK 参考 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -11,15 +12,16 @@ helpviewer_keywords:
 ms.assetid: 7cdbbce1-8b59-43ce-b6aa-a948bb4d7148
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 5aa8e898a4f045f739eed156e181346a9a6e2df3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: d3a06891aa68b8cacbb64e6d65830de86ee3bbda
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745267"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127832382"
 ---
 # <a name="debug-interface-access-sdk-reference"></a>调试接口访问 SDK 参考
 
@@ -45,6 +47,6 @@ ms.locfileid: "72745267"
 
 描述什么是符号以及如何按类型标识它们。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [调试接口访问 SDK](../../debugger/debug-interface-access/debug-interface-access-sdk.md)

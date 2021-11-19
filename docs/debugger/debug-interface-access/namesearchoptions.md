@@ -1,7 +1,8 @@
 ---
+description: 指定符号和文件名的搜索选项。
 title: NameSearchOptions |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,15 +10,16 @@ helpviewer_keywords:
 ms.assetid: 67dfbede-2678-47df-b664-5c49841d0b9b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 61905c0c6c40d893cc8723b711d67690133a7155
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: 82bebfc05ac360ac2cb32eac70679805b592c4cf
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738616"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127832807"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
 指定符号和文件名的搜索选项。
@@ -49,9 +51,9 @@ enum NameSearchOptions {
 
 `nsfCaseInsensitive` 应用不区分大小写的名称匹配。
 
-`nsfFNameExt` 将名称视为路径，并应用文件名。 ext name match。
+`nsfFNameExt` 将名称视为路径并应用文件名。 ext 名称匹配。
 
-`nsfRegularExpression` 使用星号（*）和问号（？）作为通配符来应用区分大小写的名称匹配。 （不支持其他常见正则表达式字符。）
+`nsfRegularExpression` 使用星号 ( * ) 和问号 (？ ) 作为通配符来应用区分大小写的名称匹配。  (不支持其他常见正则表达式字符。 ) 
 
 `nsfUndecoratedName` 仅适用于具有未修饰名称和修饰名的符号。
 
@@ -67,7 +69,7 @@ enum NameSearchOptions {
 ## <a name="requirements"></a>要求
 标头： dia2
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [枚举和结构](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)
 - [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)

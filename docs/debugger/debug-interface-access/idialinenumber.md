@@ -1,7 +1,8 @@
 ---
+description: 访问描述从图像的字节块到源文件行号的映射过程的信息。
 title: IDiaLineNumber | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,15 +10,16 @@ helpviewer_keywords:
 ms.assetid: 1071f7d0-1f8c-4384-933f-c49c7eb930bd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 819fe28b9ba3fb95e749f0be53702dd7fdccf008
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: c1c547688dc7eb004d07a54d7b2319113bbf42fc
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743096"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127832049"
 ---
 # <a name="idialinenumber"></a>IDiaLineNumber
 访问描述从图像的字节块到源文件行号的映射过程的信息。
@@ -25,13 +27,13 @@ ms.locfileid: "72743096"
 ## <a name="syntax"></a>语法
 
 ```
-IDiaLineNumber : IUnknown
+IDiaLineNumber : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
-下表显示 `IDiaLineNumber` 的方法。
+下表显示的方法 `IDiaLineNumber` 。
 
-|方法|描述|
+|方法|说明|
 |------------|-----------------|
 |[IDiaLineNumber::get_compiland](../../debugger/debug-interface-access/idialinenumber-get-compiland.md)|检索提供图像文本字节的编译单位的符号引用。|
 |[IDiaLineNumber::get_sourceFile](../../debugger/debug-interface-access/idialinenumber-get-sourcefile.md)|检索对源文件对象的引用。|
@@ -41,8 +43,8 @@ IDiaLineNumber : IUnknown
 |[IDiaLineNumber::get_columnNumberEnd](../../debugger/debug-interface-access/idialinenumber-get-columnnumberend.md)|检索表达式或语句结束的列号。|
 |[IDiaLineNumber::get_addressSection](../../debugger/debug-interface-access/idialinenumber-get-addresssection.md)|检索内存地址中某个块开始的部分。|
 |[IDiaLineNumber::get_addressOffset](../../debugger/debug-interface-access/idialinenumber-get-addressoffset.md)|检索内存地址中某个块开始处的偏移量部分。|
-|[IDiaLineNumber::get_relativeVirtualAddress](../../debugger/debug-interface-access/idialinenumber-get-relativevirtualaddress.md)|检索块的映像相对虚拟地址（RVA）。|
-|[IDiaLineNumber::get_virtualAddress](../../debugger/debug-interface-access/idialinenumber-get-virtualaddress.md)|检索块的虚拟地址（VA）。|
+|[IDiaLineNumber::get_relativeVirtualAddress](../../debugger/debug-interface-access/idialinenumber-get-relativevirtualaddress.md)|检索块 (RVA) 的映像相对虚拟地址。|
+|[IDiaLineNumber::get_virtualAddress](../../debugger/debug-interface-access/idialinenumber-get-virtualaddress.md)|检索块 (VA) 的虚拟地址。|
 |[IDiaLineNumber::get_length](../../debugger/debug-interface-access/idialinenumber-get-length.md)|检索块中的字节数。|
 |[IDiaLineNumber::get_sourceFileId](../../debugger/debug-interface-access/idialinenumber-get-sourcefileid.md)|检索提供此行的源文件的唯一源文件标识符。|
 |[IDiaLineNumber::get_statement](../../debugger/debug-interface-access/idialinenumber-get-statement.md)|检索一个标志，该标志指示此行信息描述程序源中语句的开头。|
@@ -51,10 +53,10 @@ IDiaLineNumber : IUnknown
 ## <a name="remarks"></a>备注
 
 ## <a name="notes-for-callers"></a>调用方说明
-通过调用[IDiaEnumLineNumbers：： Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)或[IDiaEnumLineNumbers：： Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md)方法获取此接口。
+通过调用 [IDiaEnumLineNumbers：： Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md) 或 [IDiaEnumLineNumbers：： Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md) 方法获取此接口。
 
 ## <a name="example"></a>示例
-以下函数显示函数中使用的行号（由 `pSymbol` 表示）。
+下面的函数显示) 所表示的函数 (中使用的行号 `pSymbol` 。
 
 ```C++
 void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
@@ -139,9 +141,9 @@ void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
 
 库： diaguids
 
-DLL： msdia80
+DLL： msdia80.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [接口（调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
 - [IDiaEnumLineNumbers::Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)

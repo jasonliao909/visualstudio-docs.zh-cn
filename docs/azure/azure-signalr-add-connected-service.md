@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: d2f90c7b1a5b389243bf91ff46aa6892689bf17c
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.openlocfilehash: a6fe465c064239c66fe88b9e49b8950604f614ec
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126602174"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129430568"
 ---
 # <a name="add-azure-signalr-by-using-visual-studio-connected-services"></a>使用 Visual Studio 连接的服务添加 Azure SignalR
 
@@ -53,7 +53,7 @@ ms.locfileid: "126602174"
 
     ![添加 Azure SignalR 服务](./media/azure-signalr-add-connected-service/add-signalr-service.png)
 
-    如果尚未登录，请登录到 Azure 帐户。 如果没有 Azure 帐户，可以注册[免费试用版](https://azure.microsoft.com/account/free)。
+    如果尚未登录，请登录到 Azure 帐户。 如果没有 Azure 帐户，可以注册[免费试用版](https://azure.microsoft.com/free/)。
 
 1. 在 " **配置 Azure SignalR** " 屏幕中，选择现有的 azure SignalR 组件，然后选择 " **下一步**"。
 

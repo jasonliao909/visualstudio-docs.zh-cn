@@ -8,12 +8,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: e8ac1d909cba36a7204ae781aacf1b8fdb2abee0
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.openlocfilehash: eba0fbc1dc2cb6feced3e52f3f4b6dfbce1fa1d4
+ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126602120"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "131126527"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>在 Visual Studio Cloud Explorer 中管理与 Azure 帐户关联的资源
 
@@ -21,6 +21,7 @@ ms.locfileid: "126602120"
 > [!Important]
 > Cloud Explorer已在 2022 年Visual Studio停用。 可以改为使用以下替代方法：
 > - 使用[Microsoft Azure 存储资源管理器](/azure/vs-azure-tools-storage-manage-with-storage-explorer)是 Microsoft 提供的免费独立应用。 可以通过它在 Windows、macOS 和 Linux 上直观地使用 Azure 存储数据。
+> - 若要调试 Azure 应用服务 或 Azure Function 应用，可以使用所有项目连接的服务或"发布"功能。 如果依赖于Visual Studio，则此选项在"托管"部分的其他选项下可用。 如果不使用发布功能，则你将能够从"连接服务"选项卡连接到任何 Azure 应用服务 或 Azure Function 应用，并调用各种操作，例如远程调试、远程配置文件、启动/停止站点、查看流式处理日志等。 
 > - 使用 [Kudu 控制台](https://github.com/projectkudu/kudu/wiki/Kudu-console)可直接以提升的命令行访问应用服务服务器及其文件系统。 这是一个重要的调试工具，同时也支持 CLI 操作（如安装包）。
 >
 > 如果需要，可以使用 Azure 门户或继续使用以前版本中服务器资源管理器的 Azure Visual Studio。
@@ -37,7 +38,7 @@ ms.locfileid: "126602120"
 
 ## <a name="prerequisites"></a>先决条件
 
-* Visual Studio 2017 或更高版本（请参阅[Visual Studio 下载](https://visualstudio.microsoft.com/downloads)），已选择“Azure 工作负载”。 还可以使用带有 [Microsoft Azure SDK for .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657) 的 Visual Studio 早期版本。
+* Visual Studio 2017 或更高版本（请参阅[Visual Studio 下载](https://visualstudio.microsoft.com/downloads)），已选择“Azure 工作负载”。 还可以使用带有 Microsoft Azure SDK for .NET 2.9 的 Visual Studio 早期版本。
 * Microsoft Azure 帐户 - 如果没有帐户，可以[注册免费试用帐户](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/)，或者[激活 Visual Studio 订户权益](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/)。
 
 > [!NOTE]
@@ -114,7 +115,7 @@ ms.locfileid: "126602120"
 
 ## <a name="find-resources-in-cloud-explorer"></a>在 Cloud Explorer 中查找资源
 
-若要在 Azure 帐户订阅中查找具有特定名称的资源，请在 "搜索"框中输入 **Cloud Explorer。**
+若要在 Azure 帐户订阅中查找具有特定名称的资源，请在 azure 帐户订阅的"搜索"框中 **Cloud Explorer。**
 
   ![在云资源管理器中查找资源](./media/vs-azure-tools-resources-managing-with-cloud-explorer/search-for-resources.png)
 

@@ -1,6 +1,6 @@
 ---
-title: 在 Visual Studio | 中为 SharePoint Tools 部署扩展Microsoft Docs
-description: 在 SharePoint 中为 Visual Studio 工具部署扩展。 在 VSIX Visual Studio项目中 (扩展) 创建 VSIX 包。
+title: 在 Visual Studio | 中为 SharePoint Tools 部署Visual Studio |Microsoft Docs
+description: 在 Visual Studio 中为 SharePoint 工具部署Visual Studio。 在 VSIX Visual Studio项目中 (扩展) 创建 VSIX 包。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -17,19 +17,19 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: 26c2b23be3708f3e55b5559f06d3ae869c49764e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122060253"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664160"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>在 Visual Studio 中部署 SharePoint 工具扩展
 
-若要部署 SharePoint 工具扩展，请创建一个扩展 (VSIX) 包，其中包含扩展程序集以及要随扩展一起分发的 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 其他任何文件。 VSIX 包是一个压缩文件，遵循 开放打包约定 (OPC) 标准。 VSIX 包具有 *.vsix* 扩展。
+若要部署 SharePoint 工具扩展，请创建一个扩展 (VSIX) 包，其中包含扩展程序集以及要随扩展一起分发的 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 其他任何文件。 VSIX 包是一个压缩文件，它遵循 开放打包约定 (OPC) 标准。 VSIX 包具有 *.vsix* 扩展。
 
 创建 VSIX 包后，其他用户可以运行 .vsix 文件来安装扩展。 当用户安装扩展时，所有文件将安装到 %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions 文件夹中。 若要部署扩展，可以将 VSIX 包上传到 Visual Studio [Marketplace](https://marketplace.visualstudio.com/)网站，或者可以通过某种其他方式（例如，在网络共享或其他网站上托管包）将包分发给客户。
 
-有关创建 VSIX 包以及将它们部署到 Visual Studio[市场的信息，](https://marketplace.visualstudio.com/)请参阅[Shipping Visual Studio Extensions。](../extensibility/shipping-visual-studio-extensions.md)
+有关创建 VSIX 包以及将它们部署到 Visual Studio[市场，](https://marketplace.visualstudio.com/)请参阅 Shipping Visual Studio [Extensions。](../extensibility/shipping-visual-studio-extensions.md)
 
  可以使用 VISUAL STUDIO 中的 VSIX Project模板创建 **VSIX** 包，也可以手动创建 VSIX 包。
 
@@ -55,11 +55,11 @@ ms.locfileid: "122060253"
 
 - 实现扩展使用的任何SharePoint命令的类库项目。 有关演示此方案的演练，请参阅演练：扩展服务器资源管理器以显示 [Web 部件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)。
 
-- 一个项模板Project创建项模板或项目模板的模板项目（如果扩展定义了新类型的SharePoint项目项）。 有关演示此方案的演练，请参阅演练：使用项模板创建自定义操作项目项 [，第 1 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)。
+- 创建项Project或项目模板的项模板或项目模板项目（如果扩展定义了新类型的SharePoint项目项）。 有关演示此方案的演练，请参阅演练：使用项模板创建自定义 [操作项目项，第 1 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)。
 
 - 实现项模板或项目模板的自定义向导的类库项目（如果扩展包含模板）。 有关演示此方案的演练，请参阅演练：使用项模板创建自定义 [操作项目项，第 2 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)。
 
-如果在同一个 Visual Studio 解决方案中包括所有项目，可以修改 VSIX 项目中的 source.extension.vsixmanifest 文件，以包括类库项目的生成输出。
+如果在同一个 Visual Studio 解决方案中包括所有项目，可以修改 VSIX 项目中的 source.extension.vsixmanifest 文件，以包含类库项目的生成输出。
 
 ### <a name="edit-the-vsix-manifest"></a>编辑 VSIX 清单
 
@@ -69,7 +69,7 @@ ms.locfileid: "122060253"
 
 - 扩展程序集。
 
-- 实现扩展SharePoint的任何命令的程序集。
+- 实现扩展所使用的SharePoint命令的程序集。
 
 - 与扩展关联的任何项目模板或项模板。
 
@@ -107,7 +107,7 @@ ms.locfileid: "122060253"
 
      " **添加新资产"** 对话框随即打开。
 
-3. 在"**类型"** 框中，输入 **SharePoint。Commands.v4**。
+3. 在"**类型"** 框中，**输入SharePoint。Commands.v4**。
 
 4. 在" **源** "列表中，执行以下步骤之一：
 
@@ -131,7 +131,7 @@ ms.locfileid: "122060253"
 
 4. 在" **源"** 列表中， **选择当前解决方案 中的项目**。
 
-5. 在 **Project** 列表中，选择项目的名称，然后选择"确定 **"** 按钮。
+5. 在Project **列表中**，选择项目的名称，然后选择"确定 **"** 按钮。
 
 6. 在 **解决方案资源管理器** 中，打开"模板"或"Project模板"项目的快捷菜单，然后选择"卸载 **Project"。**
 
@@ -151,7 +151,7 @@ ms.locfileid: "122060253"
     </VSTemplate>
     ```
 
-     `OutputSubPath`元素在生成项目时创建项目模板的路径中指定其他文件夹。 此处指定的文件夹可确保项模板仅在客户打开"添加新 Project"对话框时可用，展开 SharePoint 节点，然后选择 **"2010"** 节点。 
+     `OutputSubPath`元素在生成项目时创建项目模板的路径中指定其他文件夹。 此处指定的文件夹可确保项模板仅在客户打开"添加新 Project"对话框、展开"SharePoint"节点，然后选择 **"2010"****节点时** 可用。
 
 10. 保存并关闭该文件。
 
@@ -161,7 +161,7 @@ ms.locfileid: "122060253"
 
 1. 在 VSIX 项目中，向项目添加新文件夹以包含模板。
 
-2. 在此新文件夹下，创建以下子文件夹，然后将模板 (.zip) 文件添加到区域 *设置 ID* 文件夹。
+2. 在此新文件夹下，创建以下子文件夹，然后将模板 (.zip) 文件添加到 *区域设置 ID* 文件夹。
 
      *YourTemplateFolder*
 
@@ -191,7 +191,7 @@ ms.locfileid: "122060253"
 
 8. 在"**源"** 列表中，选择 **"文件系统上的文件"。**
 
-9. 在"**路径**"字段中，输入程序集的完整 (例如ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip，或使用"浏览 *"* 按钮查找并选择程序集，然后选择"确定 **"** 按钮。 
+9. 在"**路径**"字段中，输入程序集的完整 (例如ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip，或使用"浏览 *"* 按钮查找并选择程序集，然后选择"确定 **"** 按钮。
 
 #### <a name="to-include-a-wizard-for-a-project-template-or-item-template"></a>包含项目模板或项模板的向导
 
@@ -228,11 +228,11 @@ ms.locfileid: "122060253"
 
 如果要手动为 SharePoint 工具扩展创建 VSIX 包，请执行以下步骤：
 
-1. 创建新文件夹中的 extension.vsixmanifest 文件和 [Content_Types].xml文件。 有关详细信息，请参阅 [VSIX 包剖析](../extensibility/anatomy-of-a-vsix-package.md)。
+1. 创建新文件夹中的 extension.vsixmanifest 文件和 [Content_Types].xml 文件。 有关详细信息，请参阅 [VSIX 包剖析](../extensibility/anatomy-of-a-vsix-package.md)。
 
 2. 在Windows资源管理器中，右键单击包含两个 XML 文件的文件夹，单击"发送到"，然后单击"压缩 (压缩) 文件夹" 。 将生成的 .zip 文件重命名为 Filename.vsix，其中 Filename 是用于安装包的可再发行文件的名称。
 
-3. 将扩展程序集添加到 VSIX 包。 如果扩展包含 SharePoint，则还要将实现 SharePoint 命令的程序集添加到 VSIX 包。
+3. 将扩展程序集添加到 VSIX 包。 如果扩展包含 SharePoint 命令，则还要将实现 SharePoint 命令的程序集添加到 VSIX 包。
 
 4. 修改 extension.vsixmanifest 文件：
 
@@ -240,13 +240,13 @@ ms.locfileid: "122060253"
 
     - 如果扩展包含一SharePoint调用服务器对象模型的 SharePoint，请添加 `Microsoft.VisualStudio.Assembly` 元素下的 `Assets` 元素。 将新元素的值设置为在 VSIX 包中实现 SharePoint 命令的程序集的相对路径。 有关详细信息，请参阅[ASSET Element (VSX Schema) 。 ](/previous-versions/dd393737(v=vs.110))
 
-    - 如果扩展包含项目模板或项模板，则添加 元素下的 `ProjectTemplate` `ItemTemplate` 或 `Assets` 元素。 将新元素的值设置为 VSIX 包中包含模板的文件夹的相对路径。 有关详细信息，请参阅[PROJECTTemplate 元素 (VSX](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\))架构) [和 ItemTemplate 元素 (VSX 架构) 。 ](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\))
+    - 如果扩展包含项目模板或项模板，则添加 元素下的 `ProjectTemplate` `ItemTemplate` 或 `Assets` 元素。 将新元素的值设置为 VSIX 包中包含模板的文件夹的相对路径。 有关详细信息，请参阅[PROJECTTemplate 元素 (VSX](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\))架构) [ItemTemplate 元素 (VSX 架构) 。 ](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\))
 
     - 如果扩展包含项目模板或项模板的自定义向导，则添加 `Assembly` 元素下的 `Assets` 元素。 将新元素的值设置为 VSIX 包中程序集的相对路径，然后将 属性设置为完整的程序集名称 (包括版本、区域性和公钥 `AssemblyName`) 。 有关详细信息，请参阅[VSX 架构 (依赖项元素) 。 ](/previous-versions/dd393682(v=vs.110))
 
 ### <a name="example"></a>示例
 
-以下示例显示了扩展工具扩展的 extension.vsixmanifest SharePoint的内容。 扩展在名为 Contoso.ProjectExtension.dll 的程序集中实现。 该扩展SharePoint名为 Contoso.ExtensionCommands.dll 的命令程序集，以及 VSIX 包中名为 **ItemTemplates** 的文件夹下的项模板。 此示例假定两个程序集与 VSIX 包中的 extension.vsixmanifest 文件在同一文件夹中。
+以下示例显示了扩展工具扩展的 extension.vsixmanifest SharePoint的内容。 扩展在名为 Contoso.ProjectExtension.dll 的程序集中实现。 该扩展SharePoint名为 Contoso.ExtensionCommands.dll 的命令程序集，以及 VSIX 包中 **名为 ItemTemplates** 的文件夹下的项模板。 此示例假定两个程序集与 VSIX 包中的 extension.vsixmanifest 文件在同一文件夹中。
 
 ```xml
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
@@ -268,7 +268,7 @@ ms.locfileid: "122060253"
 </PackageManifest>
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [扩展 SharePoint 项目系统](../sharepoint/extending-the-sharepoint-project-system.md)
 - [扩展服务器资源管理器中的“SharePoint 连接”节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)

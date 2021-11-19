@@ -1,7 +1,8 @@
 ---
+description: 检索在指定地址处有效的符号子级。
 title: IDiaSymbol::findChildrenExByAddr | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,15 +10,16 @@ helpviewer_keywords:
 ms.assetid: c1e7885d-2d15-4529-9ac2-32dd22efe31c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dc49d9501e72fb81849943144973574a0d55fef
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: 0be4ee10e4f343b36b16e5406c9f6d23d16d816d
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741283"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127831758"
 ---
 # <a name="idiasymbolfindchildrenexbyaddr"></a>IDiaSymbol::findChildrenExByAddr
 检索在指定地址处有效的符号子级。
@@ -25,7 +27,7 @@ ms.locfileid: "72741283"
 ## <a name="syntax"></a>语法
 
 ```C++
-HRESULT findChildrenExByAddr ( 
+HRESULT findChildrenExByAddr ( 
    enum SymTagEnum   symtag,
    LPCOLESTR         name,
    DWORD             compareFlags,
@@ -37,11 +39,11 @@ HRESULT findChildrenExByAddr ( 
 #### <a name="parameters"></a>参数
  `symtag`
 
-中指定要检索的子级的符号标记，如[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)中所定义。 设置为要检索的所有子级 `SymTagNull`。
+中指定要检索的子级的符号标记，如 [SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)中所定义。 `SymTagNull`对于要检索的所有子级，将设置为。
 
  `name`
 
-中指定要检索的子项的名称。 设置为要检索的所有子级 `NULL`。
+中指定要检索的子项的名称。 `NULL`对于要检索的所有子级，将设置为。
 
  `compareFlags`
 
@@ -53,10 +55,10 @@ HRESULT findChildrenExByAddr ( 
 
  `ppResult`
 
-弄返回一个[IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)对象，该对象包含所检索到的子符号的列表。
+弄返回一个 [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) 对象，该对象包含所检索到的子符号的列表。
 
 ## <a name="return-value"></a>返回值
- 如果找到至少一个符号子级，则返回 `S_OK`; 如果未找到任何子级，则返回 `S_FALSE`;否则，将返回错误代码。
+ `S_OK`如果找到至少一个符号子级，则返回 `S_FALSE` ; 如果未找到任何子级，则返回; 否则返回错误代码。
 
 ## <a name="remarks"></a>备注
  返回的本地符号包含实时范围信息。
@@ -66,9 +68,9 @@ HRESULT findChildrenExByAddr ( 
 
  库： diaguids
 
- DLL： msdia100
+ DLL： msdia100.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

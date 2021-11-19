@@ -18,7 +18,7 @@ ms.workload:
 - office
 ms.openlocfilehash: c10373f0c04a6c68faff795d08ff0e288ce02836
 ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/13/2021
 ms.locfileid: "122106908"
@@ -49,7 +49,7 @@ ms.locfileid: "122106908"
 |任务|-在工作流 *Elements.xml* 文件中引用此窗体。<br />-不重构工作流的 *Elements.xml* 文件。|-导入窗体，但在工作流的 *Elements.xml* 中未引用该窗体。<br />-不重构工作流的 *Elements.xml* 文件。 **注意：**  若要运行此方案，必须添加和更改规则和属性。|
 |修改|不适用。 无法在 SharePoint 设计器中创建 ASPX 修改窗体。|不适用。 InfoPath 修改窗体不能在 SharePoint 设计器中创建，内置 SharePoint 服务器工作流除外，导出工作流时，该工作流不会包含在 .wsp 文件中。|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [演练：使用关联和启动窗体创建工作流](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)
 - [创建 SharePoint 工作流解决方案](../sharepoint/creating-sharepoint-workflow-solutions.md)
 - [从现有的 SharePoint 网站导入项](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)

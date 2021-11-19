@@ -14,11 +14,11 @@ ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
 ms.openlocfilehash: 66ce1219f3a18c65e23c2ddc420449a0d8bc7b3c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122157483"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664165"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>如何：更改域特定语言的命名空间
 
@@ -56,6 +56,6 @@ ms.locfileid: "122157483"
 
 11. 在 " **生成** " 菜单上，选择 " **重新生成解决方案**"。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 [域特定语言工具术语表](/previous-versions/bb126564(v=vs.100))

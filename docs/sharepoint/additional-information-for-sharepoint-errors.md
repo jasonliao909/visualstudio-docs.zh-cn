@@ -20,17 +20,17 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: 2343212faa44d2085f216e8e44ba3e45eb807f5d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122060411"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664247"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>SharePoint 错误的其他信息
   可以在故障排除主题和公共论坛SharePoint解决工具错误和 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 警告的帮助。
 
 ## <a name="troubleshoot-errors-and-issues"></a>排查错误和问题
- 有关工具中一些常见错误和其他SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 的帮助，请参阅以下主题：
+ 有关工具中的一些常见错误和其他SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 的帮助，请参阅以下主题：
 
 - [解决方案SharePoint疑难解答](../sharepoint/troubleshooting-sharepoint-solutions.md)
 
@@ -49,5 +49,5 @@ ms.locfileid: "122060411"
 
  如果仍然找不到所需的答案，可以访问联机支持选项，例如联系 Microsoft 产品支持服务或搜索 KnowledgeBase 文章。 有关详细信息，请参阅 Microsoft [帮助和支持](https://support.microsoft.com/) 页。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [生成和调试 SharePoint 解决方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)

@@ -1,6 +1,6 @@
 ---
-title: '&lt;Signature &gt; 元素 (ClickOnce部署) |Microsoft Docs'
-description: Signature 元素包含对此部署清单进行数字签名所必需的信息。 为部署清单签名是可选的，但建议这样做。
+title: '&lt;&gt;ClickOnce 部署)  (签名元素 |Microsoft Docs'
+description: 签名元素包含用于对此部署清单进行数字签名所需的信息。 对部署清单进行签名是可选的，但建议这样做。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,13 +18,13 @@ ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
 ms.openlocfilehash: 8312a9660ca621857b835f43f9e43a173c93240e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122035600"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126665460"
 ---
-# <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;部署 &gt; (ClickOnce签名) 
+# <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;&gt;ClickOnce 部署 (的签名元素) 
 包含对此部署清单进行数字签名所需的信息。
 
 ## <a name="syntax"></a>语法
@@ -37,12 +37,12 @@ ms.locfileid: "122035600"
 ```
 
 ## <a name="remarks"></a>备注
- 使用信封签名对部署清单进行签名是可选的，但建议这样做。 有关对 XML 文件进行签名的信息，请参阅 万维网联合会 建议，"XML 签名语法和处理"，如 中所述 [http://www.w3.org/TR/xmldsig-core/](https://www.w3.org/TR/xmldsig-core/) 。
+ 使用信封签名对部署清单进行签名是可选的，但建议使用。 有关对 XML 文件进行签名的详细信息，请参阅中所述的万维网联合会建议 "XML 签名语法和处理" [http://www.w3.org/TR/xmldsig-core/](https://www.w3.org/TR/xmldsig-core/) 。
 
- 如果要对清单进行签名，则必须为所有文件提供哈希。 无法对包含未哈希的文件的清单进行签名，因为用户无法验证未哈希文件的内容。
+ 如果要对清单进行签名，则必须为所有文件提供哈希。 无法对包含未进行哈希处理的文件的清单进行签名，因为用户无法验证未经过哈希处理的文件的内容。
 
 ## <a name="example"></a>示例
- 下面的代码示例演示部署 `Signature` 中使用的部署清单中的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 元素。
+ 下面的代码示例演示 `Signature` 部署中使用的部署清单中的元素 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。
 
 ```xml
 <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
@@ -73,5 +73,5 @@ MIIHnTCCBoWgAwIBAgIKJY9+nwAHAAB...
 </Signature>
 ```
 
-## <a name="see-also"></a>请参阅
-- [ClickOnce部署清单](../deployment/clickonce-deployment-manifest.md)
+## <a name="see-also"></a>另请参阅
+- [ClickOnce 部署清单](../deployment/clickonce-deployment-manifest.md)

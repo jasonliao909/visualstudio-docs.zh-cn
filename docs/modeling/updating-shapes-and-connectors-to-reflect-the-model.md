@@ -12,7 +12,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 0f667821a9940603f887850a9b26fc1d8ca2f073
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126663856"
@@ -45,7 +45,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ## <a name="define-change-rules-to-make-color-style-or-location-depend-on-model-element-properties"></a>定义更改规则，使颜色、样式或位置依赖于模型元素属性
  可以定义规则，这些规则根据模型的其他部分更新形状的外观。 例如，可以在模型元素上定义更改规则，以根据模型元素的属性更新其形状的颜色。 有关更改规则详细信息，请参阅 [规则在模型中传播更改](../modeling/rules-propagate-changes-within-the-model.md)。
 
- 应仅使用规则来更新在 Store 中维护的属性，因为执行 Undo 命令时不会调用规则。 这不包括一些图形功能，例如形状的大小和可见性。 若要更新形状的这些功能，请参阅 [更新非存储图形功能](#OnAssociatedProperty)。
+ 应仅使用规则来更新在 Store 中维护的属性，因为执行 Undo 命令时不会调用规则。 这不包括某些图形功能，例如形状的大小和可见性。 若要更新形状的这些功能，请参阅 [更新非存储图形功能](#OnAssociatedProperty)。
 
  以下示例假定已公开为域属性 `FillColor` ，如上一部分所述。
 

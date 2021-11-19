@@ -23,12 +23,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: b08f2814fc20cf97da0e0c081ea2d8a6d49e0129
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.openlocfilehash: 88cec24c9741c746e1eeffe0b9873d381aa1d317
+ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122055440"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "131127892"
 ---
 # <a name="dependency-diagrams-reference"></a>依赖项关系图：参考
 
@@ -51,7 +51,7 @@ ms.locfileid: "122055440"
 
 - 在开发和维护你的代码过程中，通过包括对签入的验证来强化预期体系结构并生成操作。
 
-本主题介绍可在依赖项关系图上使用的元素。 有关如何创建和绘制依赖项关系图的详细信息，请参阅 [依赖项关系图：准则](../modeling/layer-diagrams-guidelines.md)。 有关分层模式的详细信息，请参阅 [模式 & 实践](https://archive.codeplex.com/?p=apparch)。
+本主题介绍可在依赖项关系图上使用的元素。 有关如何创建和绘制依赖项关系图的详细信息，请参阅 [依赖项关系图：准则](../modeling/layer-diagrams-guidelines.md)。 有关分层模式的详细信息，请参阅 [模式 & 实践](/archive/msdn-magazine/2009/may/patterns-and-practices-simplifying-patterns-and-practices)。
 
 ## <a name="reading-dependency-diagrams"></a>读取依赖项关系图
 
@@ -99,6 +99,6 @@ ms.locfileid: "122055440"
 |**支持验证**|如果 **为 True**，则层验证过程可以验证项目是否符合与此元素的依赖关系。<br /><br /> 如果 **为 False**，则链接不参与层验证过程。<br /><br /> 有关详细信息，请参阅 [依赖关系图：准则](../modeling/layer-diagrams-guidelines.md)。|
 |**Identifier**|对链接的项目的引用|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [为你的应用程序创建模型](../modeling/create-models-for-your-app.md)

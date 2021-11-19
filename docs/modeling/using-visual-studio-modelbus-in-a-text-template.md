@@ -10,11 +10,11 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: 1406479a021c365df817224b5ee0ad2381cb8f7f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122150516"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126665504"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>在文本模板中使用 Visual Studio ModelBus
 
@@ -43,7 +43,7 @@ ms.locfileid: "122150516"
 
     3. 在对话框中，选择 **"我想要向 ModelBus 公开此 DSL"**。 如果希望此 DSL 同时公开其模型并使用对其他 Dsl 的引用，则可以选择这两个选项。
 
-    4. 单击“确定”。 新项目“ModelBusAdapter”随即添加到 DSL 解决方案中。
+    4. 单击 **“确定”** 。 新项目“ModelBusAdapter”随即添加到 DSL 解决方案中。
 
     5. 单击 " **转换所有模板**"。
 
@@ -265,7 +265,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 3. 在 DSL 定义关系图中，右键单击关系图，然后单击"**启用 ModelBus"。** 在对话框中，选择"**启用此 DSL 以使用 ModelBus"。**
 
-4. 在 类 `ExampleElement` 中，添加新的域属性 ，属性窗口 `MBR` 中将其类型设置为 `ModelBusReference` 。
+4. 在 类 `ExampleElement` 中，添加新的域属性 ，在 属性窗口 `MBR` 中将其类型设置为 `ModelBusReference` 。
 
 5. 右键单击关系图上的域属性，然后单击"编辑 **模型""总线""引用特定属性"。** 在对话框中，选择 **模型元素**。
 
@@ -275,7 +275,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
     "&#124;"后的子字符串是文件选择对话框的筛选器。 可以使用 *设置它以允许任何文件。\*
 
-    在 **"模型元素类型"** 列表中，在提供程序 DSL 中输入一个或多个域类的名称 (例如 Company.MBProvider.Task) 。 它们可以是抽象类。 如果将列表留空，用户可以设置对任意元素的引用。
+    在 **"模型元素类型** "列表中，在提供程序 DSL 中输入一个或多个域类的名称 (例如 Company.MBProvider.Task) 。 它们可以是抽象类。 如果将列表留空，用户可以设置对任意元素的引用。
 
 6. 关闭对话框并 **转换所有模板**。
 
@@ -289,7 +289,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
    1. 右键单击调试项目，指向"**添加"，** 然后单击"现有 **项"。**
 
-   2. 在"**添加项"** 对话框中，将筛选器设置为"所有 **文件" (\* \* ") "。**
+   2. 在"**添加项"** 对话框中，将筛选器设置为"所有文件 (**\* \* .) "。**
 
    3. 导航到 `MBProvider\Debugging\Sample.provide` ，然后单击"添加 **"。**
 
@@ -398,7 +398,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
     如果已设置该元素的 MBR，则引用的模型将打开并选中引用的元素。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [使用 Visual Studio Modelbus 集成模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)
 - [代码生成和 T4 文本模板](../modeling/code-generation-and-t4-text-templates.md)

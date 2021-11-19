@@ -1,7 +1,8 @@
 ---
+description: 访问存储在 DIA 数据源中的注入的源代码。
 title: IDiaInjectedSource | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,15 +10,16 @@ helpviewer_keywords:
 ms.assetid: 75192c5c-812d-4675-9dc5-4c2cff3ba503
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 994f454372883f2516d1eab03bf1152693969b16
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: 6b58eae372af82a03dc2629b4b92a5e472342fdd
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743307"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127832077"
 ---
 # <a name="idiainjectedsource"></a>IDiaInjectedSource
 访问存储在 DIA 数据源中的注入的源代码。
@@ -25,15 +27,15 @@ ms.locfileid: "72743307"
 ## <a name="syntax"></a>语法
 
 ```
-IDiaInjectedSource : IUnknown
+IDiaInjectedSource : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
-下表显示 `IDiaInjectedSource` 的方法。
+下表显示的方法 `IDiaInjectedSource` 。
 
-|方法|描述|
+|方法|说明|
 |------------|-----------------|
-|[IDiaInjectedSource::get_crc](../../debugger/debug-interface-access/idiainjectedsource-get-crc.md)|检索从源代码字节计算得出的循环冗余检查（CRC）。|
+|[IDiaInjectedSource::get_crc](../../debugger/debug-interface-access/idiainjectedsource-get-crc.md)|检索循环冗余检查 (CRC) 从源代码字节计算得出的。|
 |[IDiaInjectedSource::get_length](../../debugger/debug-interface-access/idiainjectedsource-get-length.md)|检索代码的字节数。|
 |[IDiaInjectedSource::get_filename](../../debugger/debug-interface-access/idiainjectedsource-get-filename.md)|检索源的文件名。|
 |[IDiaInjectedSource::get_objectFilename](../../debugger/debug-interface-access/idiainjectedsource-get-objectfilename.md)|检索源所编译到的对象文件名。|
@@ -42,13 +44,13 @@ IDiaInjectedSource : IUnknown
 |[IDiaInjectedSource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)|检索源代码字节。|
 
 ## <a name="remarks"></a>备注
-注入的源是编译期间注入的文本。 这并不意味着在中C++使用了预处理器 `#include`。
+注入的源是编译期间注入的文本。 这并不意味着 `#include` c + + 中使用的预处理器。
 
 ## <a name="notes-for-callers"></a>调用方说明
-通过调用[IDiaEnumInjectedSources：： Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)或[IDiaEnumInjectedSources：： Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md)方法获取此接口。 有关获取 `IDiaInjectedSource` 接口的示例，请参阅[IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)接口。
+通过调用 [IDiaEnumInjectedSources：： Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md) 或 [IDiaEnumInjectedSources：： Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md) 方法获取此接口。 有关获取接口的示例，请参阅 [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) 接口 `IDiaInjectedSource` 。
 
 ## <a name="example"></a>示例
-此示例显示 `IDiaInjectedSource` 接口中可用的数据。 有关使用[IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)接口的替代方法，请参阅[IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)接口中的示例。
+此示例显示了接口中可用的数据 `IDiaInjectedSource` 。 有关使用 [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md) 接口的替代方法，请参阅 [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) 接口中的示例。
 
 ```C++
 void PrintInjectedSource(IDiaInjectedSource* pSource)
@@ -117,9 +119,9 @@ void PrintInjectedSource(IDiaInjectedSource* pSource)
 
 库： diaguids
 
-DLL： msdia80
+DLL： msdia80.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [接口（调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumInjectedSources::Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)
 - [IDiaEnumInjectedSources::Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md)

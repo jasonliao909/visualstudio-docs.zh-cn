@@ -13,14 +13,14 @@ ms.workload:
 - multiple
 ms.openlocfilehash: b0daeebb7db8ca87ebd225f683b171b56e28822d
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126664678"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>如何：使用痕迹导航
 
-有三种主要方法来更改在活动集中显示的活动工作流设计器：
+有三种主要方法来更改在活动中显示的活动工作流设计器：
 
 1. 双击以钻入子活动。
 

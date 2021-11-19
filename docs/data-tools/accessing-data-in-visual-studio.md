@@ -1,6 +1,6 @@
 ---
 title: 在 Visual Studio 中处理数据
-description: 使用数据Visual Studio。 创建通过本地计算机、LAN 或公有云或私有云连接到其他数据库产品或服务中数据的应用。
+description: 使用 Visual Studio 中的数据。 通过本地计算机、Lan 或公有云或私有云创建连接到其他数据库产品或服务中的数据的应用。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -15,35 +15,35 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0b6f79c38b599a66a9609bd88399f075f54f59dd
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.openlocfilehash: 24051678c5d17344684c806abde7940bc619b10e
+ms.sourcegitcommit: 3cfe24a74b611440b831d9591e067874c51a3bfb
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126601243"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "130087470"
 ---
 # <a name="work-with-data-in-visual-studio"></a>在 Visual Studio 中处理数据
 
-在 Visual Studio 中，可以创建应用程序，以几乎任何格式、任何格式、任何位置（在本地计算机、本地区域网络或公有云、私有云或混合云中）连接到数据。
+在 Visual Studio 中，你可以创建应用程序，这些应用程序在任何格式、任何位置、本地计算机上、在本地计算机上或在公有云、私有云或混合云中以任何格式连接到数据。
 
-对于 JavaScript、Python、PHP、Ruby 或 C++ 中的应用程序，通过获取库和编写代码，可以像连接任何其他操作一样连接到数据。 对于 .NET 应用程序，Visual Studio提供的工具可用于浏览数据源、创建对象模型以存储和操作内存中的数据，以及将数据绑定到用户界面。 Microsoft Azure .NET、Java、Node.js、PHP、Python、Ruby 和移动应用的 SDK，以及 Visual Studio 中用于连接到 Azure 存储。
+对于 JavaScript、Python、PHP、Ruby 或 c + + 中的应用程序，你可以通过获取库和编写代码来连接到你执行任何其他操作等数据。 对于 .net 应用程序，Visual Studio 提供可用于浏览数据源、创建对象模型以便在内存中存储和处理数据以及将数据绑定到用户界面的工具。 Microsoft Azure 提供适用于 .net、Java、Node.js、PHP、Python、Ruby 和移动应用的 sdk 以及用于连接到 Azure 存储的 Visual Studio 中的工具。
 
 ::: moniker range="vs-2017"
-以下列表只显示了许多数据库和存储系统中的一些，这些系统可以从 Visual Studio。 服务[Microsoft Azure](https://azure.microsoft.com/)包括基础数据存储的所有预配和管理的数据服务。 通过[2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) Visual Studio中的 Azure 开发工作负载，可以直接从 Visual Studio。 
+以下列表仅显示了可从 Visual Studio 中使用的多个数据库和存储系统中的几个。 [Microsoft Azure](https://azure.microsoft.com/)产品是数据服务，其中包括基础数据存储的所有预配和管理。 利用 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)中的 **azure 开发** 工作负载，你可以直接从 Visual Studio 使用 azure 数据存储。
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-以下列表只显示了许多数据库和存储系统中的一些，这些系统可以从 Visual Studio。 服务[Microsoft Azure](https://azure.microsoft.com/)包括基础数据存储的所有预配和管理的数据服务。 通过[2019](https://visualstudio.microsoft.com/downloads) Visual Studio中的 Azure 开发工作负载，可以直接从 Visual Studio。 
+以下列表仅显示了可从 Visual Studio 中使用的多个数据库和存储系统中的几个。 [Microsoft Azure](https://azure.microsoft.com/)产品是数据服务，其中包括基础数据存储的所有预配和管理。 利用 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)中的 **azure 开发** 工作负载，你可以直接从 Visual Studio 使用 azure 数据存储。
 ::: moniker-end
 
 ![Azure 开发工作负载](media/azure-development-workload.png)
 
-此处列出的大多数其他 SQL 和 NoSQL 数据库产品可以托管在本地计算机、本地网络或虚拟机Microsoft Azure中。 如果在虚拟机中托管Microsoft Azure，则你负责管理数据库本身。
+此处列出的大部分其他 SQL 和 NoSQL 数据库产品可以托管在本地计算机、本地网络或虚拟机上的 Microsoft Azure 中。 如果在 Microsoft Azure 虚拟机中托管数据库，则需要负责管理数据库本身。
 
 **Microsoft Azure**
 
 - SQL 数据库
 - Azure Cosmos DB
-- 存储 (Blob、表、队列、文件) 
+- 存储 (blob、表、队列和文件) 
 - SQL 数据仓库
 - SQL Server Stretch Database
 - StorSimple
@@ -66,65 +66,81 @@ ms.locfileid: "126601243"
 - CouchDB
 - MongoDB
 - NDatabase
-- 方向DB|
+- OrientDB |
 - RavenDB
 - VelocityDB
 - 等等。
 
 ::: moniker range="vs-2017"
 
-许多数据库供应商和第三方支持Visual Studio包进行NuGet集成。 可以浏览 nuget.org 产品/服务，NuGet 程序包管理器在 Visual Studio (**Tools** NuGet 程序包管理器  >    >  **管理解决方案NuGet包) 。** 其他数据库产品与 Visual Studio作为扩展集成。 可以在 Visual Studio Marketplace 中浏览这些产品/服务，或者导航到"工具[扩展和更新](https://marketplace.visualstudio.com/)"，然后在对话框的左窗格中选择"联机  >  "。  有关详细信息，请参阅兼容的[数据库系统Visual Studio。](../data-tools/installing-database-systems-tools-and-samples.md)
+许多数据库供应商和第三方通过 NuGet 包支持 Visual Studio 集成。 您可以在 nuget.org 上或通过 NuGet 程序包管理器 Visual Studio (**工具**  >  **NuGet 程序包管理器**  >  **管理解决方案 NuGet 的) 包** 中了解产品/服务。 其他数据库产品与 Visual Studio 作为扩展集成。 你可以在 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)中浏览这些产品/服务，也可以导航到 "**工具**" "  >  **扩展和更新**"，然后在对话框的左窗格中选择 "**联机**"。 有关详细信息，请参阅[Visual Studio 的兼容数据库系统](../data-tools/installing-database-systems-tools-and-samples.md)。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-许多数据库供应商和第三方支持Visual Studio包进行NuGet集成。 可以浏览 nuget.org 产品/服务，NuGet 程序包管理器在 Visual Studio (**Tools** NuGet 程序包管理器  >    >  **管理解决方案NuGet包) 。** 其他数据库产品与 Visual Studio作为扩展集成。 可以在 Visual Studio Marketplace 中浏览这些产品/服务，或者导航[到"扩展""管理扩展](https://marketplace.visualstudio.com/)"，然后在对话框的左窗格中选择"联机  >  "。  有关详细信息，请参阅兼容的[数据库系统Visual Studio。](../data-tools/installing-database-systems-tools-and-samples.md)
+许多数据库供应商和第三方通过 NuGet 包支持 Visual Studio 集成。 您可以在 nuget.org 上或通过 NuGet 程序包管理器 Visual Studio (**工具**  >  **NuGet 程序包管理器**  >  **管理解决方案 NuGet 的) 包** 中了解产品/服务。 其他数据库产品与 Visual Studio 作为扩展集成。 你可以在 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)中浏览这些产品/服务，或者导航到 "**扩展**" "  >  **管理扩展**"，然后在对话框的左窗格中选择 "**联机**"。 有关详细信息，请参阅[Visual Studio 的兼容数据库系统](../data-tools/installing-database-systems-tools-and-samples.md)。
 
 ::: moniker-end
 
 > [!NOTE]
-> 对 SQL Server 2005 的延长支持已于 2016 年 4 月 12 日结束。 无法保证 2015 Visual Studio及更高版本的数据工具将继续与 2005 SQL Server一起工作。 有关详细信息，请参阅[2005](https://www.microsoft.com/sql-server/sql-server-2005)年 5 月的支持终止SQL Server公告。
+> 对 SQL Server 2005 的延长支持已于 2016 年 4 月 12 日结束。 不保证 Visual Studio 2015 及更高版本中的数据工具将继续与 SQL Server 2005 一起使用。 有关详细信息，请参阅[SQL Server 2005 的支持终止公告](https://www.microsoft.com/sql-server/sql-server-2005)。
 
 ## <a name="net-languages"></a>.NET 语言
 
-所有 .NET 数据访问（包括在 .NET Core 中）都基于 ADO.NET，ADO.NET 是一组类，用于定义用于访问任何类型的数据源（关系数据源和非关系数据源）的接口。 Visual Studio多个工具和设计器，它们 ADO.NET 帮助连接到数据库、操作数据以及向用户呈现数据。 本部分中的文档介绍如何使用这些工具。 还可以直接针对命令 ADO.NET 编程。 有关直接调用 ADO.NET API 的信息[，请参阅](/dotnet/framework/data/adonet/index)ADO.NET。
+所有 .net 数据访问（包括在 .net Core 中）都基于 ADO.NET，这是一组类，用于定义用于访问任何类型数据源（关系数据源和非关系数据源）的接口。 Visual Studio 具有多个工具和设计器，这些工具和设计器可与 ADO.NET 结合使用，以帮助你连接到数据库、操作数据以及向用户提供数据。 本部分中的文档介绍了如何使用这些工具。 您还可以对 ADO.NET 命令对象直接编程。 有关直接调用 ADO.NET api 的详细信息，请参阅[ADO.NET](/dotnet/framework/data/adonet/index)。
 
-有关与数据相关的数据访问 ASP.NET，[请参阅在](https://www.asp.net/web-forms/overview/presenting-and-managing-data)ASP.NET 站点上使用数据。 有关将 实体框架 与 MVC ASP.NET 的教程，请参阅入门[MVC 5 实体框架 Code First 6 的教程](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)。
+有关与 ASP.NET 相关的数据访问文档，请参阅使用 ASP.NET 网站上的[数据](https://www.asp.net/web-forms/overview/presenting-and-managing-data)。 有关将实体框架与 ASP.NET MVC 配合使用的教程，请参阅[使用 mvc 5 入门与实体框架 6 Code First](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)。
 
-通用 Windows 平台 (C#) UWP Visual Basic 应用可以使用 用于 .NET 的 Microsoft Azure SDK 访问 Azure 存储 和其他 Azure 服务。 Windows。Web.HttpClient 类允许与任何 RESTful 服务通信。 有关详细信息，请参阅如何使用 Windows[连接到 HTTP 服务器。Web.Http](/previous-versions/windows/apps/dn469430(v=win.10))。
+通用 Windows 平台 (UWP) c # 中的应用或 Visual Basic 可以使用用于 .NET 的 Microsoft Azure SDK 访问 Azure 存储和其他 Azure 服务。 Windows。HttpClient 类启用与任何 RESTful 服务的通信。 有关详细信息，请参阅[如何使用 Windows 连接到 HTTP 服务器。Http.sys](/previous-versions/windows/apps/dn469430(v=win.10))。
 
-对于本地计算机上数据存储，建议的方法是使用 SQLite，该 SQLite 与应用在同一进程中运行。 如果需要 ORM 层 (对象) 映射，可以使用实体框架。 有关详细信息，请参阅开发人员[中心](/windows/uwp/data-access/index)Windows数据访问。
+对于本地计算机上的数据存储，推荐的方法是使用 SQLite，此方法在应用程序的进程中运行。 如果需要 (ORM) 层的对象关系映射，则可以使用实体框架。 有关详细信息，请参阅 Windows 开发人员中心的[数据访问权限](/windows/uwp/data-access/index)。
 
-如果要连接到 Azure 服务，请务必下载最新的 [Azure SDK 工具](https://azure.microsoft.com/downloads/)。
+如果要连接到 Azure 服务，请确保下载最新的 [AZURE SDK 工具](https://azure.microsoft.com/downloads/)。
 
 ### <a name="data-providers"></a>数据提供程序
 
-若要在数据库中使用 ADO.NET，该数据库必须具有自定义 ADO.NET *数据提供程序，* 否则必须公开 ODBC 或 OLE DB接口。 Microsoft 提供了[适用于](/dotnet/framework/data/adonet/ado-net-overview)ADO.NET 产品SQL Server以及 ODBC 和 OLE DB 提供程序的列表。
+对于要在 ADO.NET 中使用的数据库，该数据库必须具有自定义 *ADO.NET 数据提供程序*，否则必须公开 ODBC 或 OLE DB 接口。 Microsoft 提供 SQL Server 产品以及 ODBC 和 OLE DB 提供程序的[ADO.NET 数据提供程序列表](/dotnet/framework/data/adonet/ado-net-overview)。
+
+::: moniker range=">=vs-2022"
+> [!NOTE]
+> 如果使用 Visual Studio 2022 连接到 OLEDB 或 ODBC 数据访问接口，则需要注意 Visual Studio 2022 现在是64位进程。
+>
+> 这意味着，Visual Studio 中的某些数据工具将无法使用32位数据提供程序连接到 OLEDB 或 ODBC 数据库。 这包括 Microsoft Access 32 位 OLEDB 数据访问接口以及其他第三方32位提供程序。
+>
+>如果需要维护连接到 OLEDB 或 ODBC 的32位应用程序，仍可以 Visual Studio 2022 生成并运行该应用程序。 但是，如果需要使用任何 Visual Studio 数据工具（如服务器资源管理器、数据源向导或数据集设计器），则需要使用仍为32位进程的 Visual Studio 的早期版本。 32位进程 Visual Studio 的最后版本 Visual Studio 2019。
+>
+>如果计划将项目转换为64位进程，则需要更新 OLEDB 和 ODBC 数据连接才能使用64位数据访问接口。
+>
+>如果你的应用程序使用 Microsoft Access 数据库，并可以将项目转换为64位，则建议你使用64位 Microsoft Access 数据库引擎（也称为访问连接引擎 (ACE) ）。 有关详细信息，请参阅 [适用于 Jet 和 ODBC 驱动程序的 OLE DB 提供程序是32位版本](/office/troubleshoot/access/jet-odbc-driver-available-32-bit-version) 。
+>
+>如果你使用的是第三方数据提供程序，我们建议与你的供应商联系，以了解在将项目转换为64位之前，它们是否提供了64位提供程序。
+
+::: moniker-end
 
 ### <a name="data-modeling"></a>数据建模
 
-在 .NET 中，在从数据源检索数据后，有三个选项用于对内存中的数据进行建模和操作：
+在 .NET 中，你有三种方法可以在从数据源中检索数据后在内存中对数据进行建模和操作：
 
-[实体框架](../data-tools/entity-data-model-tools-in-visual-studio.md) 首选 Microsoft ORM 技术。 可以使用它以第一类 .NET 对象对关系数据进行编程。 对于新应用程序，它应该是需要模型时的默认第一个选择。 它需要基础提供程序的自定义 ADO.NET 支持。
+[实体框架](../data-tools/entity-data-model-tools-in-visual-studio.md) 首选的 Microsoft ORM 技术。 您可以使用它来针对关系数据编程，作为第一类 .NET 对象。 对于新应用程序，它应该是需要模型时的默认首选项。 它需要底层 ADO.NET 提供程序的自定义支持。
 
-[LINQ to SQL](../data-tools/linq-to-sql-tools-in-visual-studio2.md)早期生成的对象关系映射器。 它适用于不太复杂的方案，但不再用于主动开发。
+[LINQ to SQL](../data-tools/linq-to-sql-tools-in-visual-studio2.md)早期代对象关系映射器。 它适用于不太复杂的方案，但不再处于活动状态。
 
-[数据集](../data-tools/dataset-tools-in-visual-studio.md) 三种建模技术中最早的一种。 它主要用于快速开发"基于数据的表单"应用程序，其中不会处理大量数据或执行复杂的查询或转换。 DataSet 对象由 DataTable 和 DataRow 对象组成，这些对象在逻辑上SQL数据库对象比 .NET 对象要多。 对于基于数据源的SQL应用程序，数据集可能仍是一个不错的选择。
+[数据集](../data-tools/dataset-tools-in-visual-studio.md) 最早的三个建模技术。 它主要设计用于快速开发 "窗体超过数据" 应用程序，在这些应用程序中，您不会处理大量数据或执行复杂的查询或转换。 DataSet 对象由数据表和 DataRow 对象组成，它们在逻辑上类似于 SQL 数据库对象，而不仅仅是 .net 对象。 对于基于 SQL 数据源的相对简单的应用程序，数据集可能仍是一个不错的选择。
 
-无需使用上述任何技术。 在某些情况下，尤其是在性能至关重要的情况下，只需使用 DataReader 对象从数据库读取，将所需的值复制到集合对象（如列表 \<T> ）中。
+不需要使用其中的任何一种技术。 在某些情况下，尤其是在性能至关重要的情况下，只需使用 DataReader 对象从数据库中读取数据，并将需要的值复制到集合对象（如 List） \<T> 。
 
 ## <a name="native-c"></a>本机 C++
 
-在大多数情况下，连接到 SQL Server 的 C++ 应用程序® [Microsoft SQL Server ODBC Driver 13.1。](https://www.microsoft.com/download/details.aspx?id=53339) 如果服务器已链接，OLE DB是必需的，并且对于 ，请使用[SQL Server Native Client。](/sql/relational-databases/native-client/sql-server-native-client) 可以使用 [ODBC](/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-2017&preserve-view=true) 访问其他数据库，也可以OLE DB驱动程序。 ODBC 是当前的标准数据库接口，但大多数数据库系统都提供无法通过 ODBC 接口访问的自定义功能。 OLE DB是一种旧版 COM 数据访问技术，仍受支持，但不建议用于新应用程序。 有关详细信息，请参阅 [Visual C++ 中的数据访问](/cpp/data/data-access-in-cpp)。
+在大多数情况下，连接到 SQL Server 的 c + + 应用程序应使用[Microsoft® ODBC 驱动程序13.1 进行 SQL Server](https://www.microsoft.com/download/details.aspx?id=53339) 。 如果服务器已链接，则 OLE DB 是必需的，并且你使用[SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client)。 您可以直接使用 [ODBC](/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-2017&preserve-view=true) 或 OLE DB 驱动程序来访问其他数据库。 ODBC 是当前的标准数据库接口，但大多数数据库系统都提供无法通过 ODBC 接口访问的自定义功能。 OLE DB 是一种旧的 COM 数据访问技术，仍受支持，但不建议用于新应用程序。 有关详细信息，请参阅 [Visual C++ 中的数据访问](/cpp/data/data-access-in-cpp)。
 
-使用 REST 服务的 C++ 程序可以使用 [C++ REST SDK](https://github.com/Microsoft/cpprestsdk)。
+使用 REST 服务的 c + + 程序可使用 [c + + REST SDK](https://github.com/Microsoft/cpprestsdk)。
 
-使用客户端 的 C++ Microsoft Azure 存储可以使用 Microsoft Azure 存储[客户端](https://www.nuget.org/packages/Microsoft.Azure.Storage.CPP)。
+使用 Microsoft Azure 存储的 c + + 程序可以使用[Microsoft Azure 存储客户端](https://www.nuget.org/packages/Microsoft.Azure.Storage.CPP)。
 
-数据建模 &mdash; Visual Studio不提供 C++ 的 ORM 层。 [ODB](https://www.codesynthesis.com/products/odb/) 是适用于 C++ 的常用开源 ORM。
+数据建模 &mdash; Visual Studio 不提供 c + + 的 ORM 层。 [ODB](https://www.codesynthesis.com/products/odb/) 是适用于 c + + 的常用开源 ORM。
 
-若要详细了解如何从 C++ 应用连接到数据库，请参阅[Visual Studio C++ 的数据工具](../data-tools/visual-studio-data-tools-for-cpp.md)。 有关旧 Visual C++ 数据访问技术的详细信息，请参阅 [数据访问](/cpp/data/data-access-in-cpp)。
+若要详细了解如何从 c + + 应用程序连接到数据库，请参阅[Visual Studio data tools for c + +](../data-tools/visual-studio-data-tools-for-cpp.md)。 有关旧 Visual C++ 数据访问技术的详细信息，请参阅 [数据访问](/cpp/data/data-access-in-cpp)。
 
 ## <a name="javascript"></a>JavaScript
 

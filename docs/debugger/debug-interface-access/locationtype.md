@@ -1,7 +1,8 @@
 ---
+description: 指示符号中包含的位置信息类型。
 title: LocationType | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,15 +10,16 @@ helpviewer_keywords:
 ms.assetid: d3e1eedc-bfd3-4c91-881b-d69565138d0f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: dc40cc6cc8e821db7c28a4647e36e7bad241b29f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: d68e541060c07a523af001558f2804eed35d498d
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738637"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127832812"
 ---
 # <a name="locationtype"></a>LocationType
 指示符号中包含的位置信息类型。
@@ -46,35 +48,35 @@ enum LocationType {
 
 `LocIsStatic` 位置是静态的。
 
-`LocIsTLS` 位置在线程本地存储中。
+`LocIsTLS` 位置位于线程本地存储中。
 
-`LocIsRegRel` 位置是寄存器相关的。
+`LocIsRegRel` 位置是寄存器相对位置。
 
-`LocIsThisRel` 位置是 `this` 相关的。
+`LocIsThisRel` 位置为 `this` -relative。
 
-`LocIsEnregistered` 位置位于寄存器中。
+`LocIsEnregistered` 位置在寄存器中。
 
-`LocIsBitField` 位置在位域中。
+`LocIsBitField` 位置位于位字段中。
 
-`LocIsSlot` 位置是 Microsoft 中间语言（MSIL）槽。
+`LocIsSlot` Location 是 Microsoft 中间语言 (MSIL) 槽。
 
-`LocIsIlRel` 位置是 MSIL 相关的。
+`LocIsIlRel` 位置是 MSIL 相对位置。
 
-`LocInMetaData` 位置在元数据中。
+`LocInMetaData` 位置位于元数据中。
 
-`LocIsConstant` 位置在常量值中。
+`LocIsConstant` 位置位于常量值中。
 
-`LocTypeMax` 此枚举中的位置类型的数目。
+`LocTypeMax` 此枚举中的位置类型数。
 
 ## <a name="remarks"></a>备注
-[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)接口可用的属性取决于该符号在图像文件中的位置。 有关详细信息，请参阅[符号位置](../../debugger/debug-interface-access/symbol-locations.md)。
+[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)接口可用的属性取决于符号在图像文件中的位置。 有关详细信息，请参阅 [符号位置](../../debugger/debug-interface-access/symbol-locations.md)。
 
-此枚举中的值由对[IDiaSymbol：： get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)方法的调用返回。
+此枚举中的值通过调用 [IDiaSymbol：：get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) 方法返回。
 
 ## <a name="requirements"></a>要求
-标头： cvconst
+标头：cvconst.h
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [枚举和结构](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)

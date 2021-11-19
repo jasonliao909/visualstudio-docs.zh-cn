@@ -15,7 +15,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 017a89d2e68e3d466f7625c8dbb2312d450f888c
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126602193"
@@ -40,7 +40,7 @@ ms.locfileid: "126602193"
 |属性名称|必选|使用情况|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|错误|指定 <xref:System.Activities.Statements.CancellationScope> 活动的可选友好名称。 默认值为 Confirm。|
-|<xref:System.Activities.Statements.Confirm.Target%2A>|正确|指定 <xref:System.Activities.InArgument%601>，它包含此 <xref:System.Activities.Statements.CompensationToken> 活动的 <xref:System.Activities.Statements.Confirm>。|
+|<xref:System.Activities.Statements.Confirm.Target%2A>|True|指定 <xref:System.Activities.InArgument%601>，它包含此 <xref:System.Activities.Statements.CompensationToken> 活动的 <xref:System.Activities.Statements.Confirm>。|
 
 ## <a name="see-also"></a>另请参阅
 

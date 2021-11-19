@@ -1,7 +1,6 @@
 ---
 title: 更改日志（Visual Studio Tools for Unity、Mac）| Microsoft Docs
 description: 查看 Visual Studio Tools for Unity、Mac 的更改日志。 查看版本 1.0.0.0 到 2.7.0.0 及更高版本的版本变化。
-ms.custom: ''
 ms.date: 6/3/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
@@ -12,12 +11,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 2d3faf8e5231ca5d2e99bcf80dc18b6d4f4607cd
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.openlocfilehash: 2f48e50c6f9f6bb6fd9e7b710944c9da648f714b
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126664669"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129970797"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>更改日志（Visual Studio Tools for Unity、Mac）
 
@@ -190,49 +189,49 @@ Visual Studio Tools for Unity 更改日志。
   - 修复了即使解决方案中没有任何 VSTU 项目，也附加到 Unity 的问题。
 
 ## <a name="2820"></a>2.8.2.0
-2020年10月27日发布
+发布时间：2020 年 10 月 27 日
 
 ### <a name="new-features"></a>新增功能
 
 - **集成：**
 
-  - 改进了 [`UNT0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0010.md) 诊断，适用于从继承的所有内容 `Component` ，而不仅仅是 `MonoBehaviour` 。
+  - 改进了 [`UNT0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0010.md) 诊断以应用于从 继承的所有内容 `Component` ，而不只是 `MonoBehaviour` 。
 
 ## <a name="2810"></a>2.8.1.0
-2020年10月13日发布
+发布时间：2020 年 10 月 13 日
 
 ### <a name="new-features"></a>新增功能
 
 - **评估版：**
 
-  - 添加了对具有调用的隐式转换的支持。 之前，计算器强制执行严格的类型检查，从而导致 `Failed to find a match for method([parameters...])` 警告消息。
+  - 添加了对使用调用进行隐式转换的支持。 以前，评估程序强制实施严格的类型检查，从而导致 `Failed to find a match for method([parameters...])` 警告消息。
 
 - **集成：**
 
-  - 添加了 [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) 诊断。 不应使用 `System.Reflection` 性能关键消息（如 `Update` 、、或）中的功能 `FixedUpdate` `LateUpdate` `OnGUI` 。
+  - 添加了 [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) 诊断。 不应在性能 `System.Reflection` 关键型消息（如 `Update` `FixedUpdate` 、、 或 ） `LateUpdate` 中使用功能 `OnGUI` 。
 
-  - 改进 [`USP0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0003.md) 了 [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0005.md) suppressors，支持所有 `AssetPostprocessor` 静态方法。
+  - 改进了 [`USP0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0003.md) 和 [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0005.md) 抑制器，支持所有 `AssetPostprocessor` 静态方法。
 
-  - 为 `CS8618` 添加了 [`USP0016`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0016.md) 抑制器。 `C# 8.0` 引入了可以为 null 的引用类型和不可为 null 的引用类型。 不支持从继承的类型的初始化检测 `UnityEngine.Object` ，并将导致错误。
+  - 为 `CS8618` 添加了 [`USP0016`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0016.md) 抑制器。 `C# 8.0` 引入了可为空引用类型和不可为 null 的引用类型。 不支持从 继承的类型的初始化 `UnityEngine.Object` 检测，将导致错误。
 
-  - 现在为 Unity 2019. x 和 2020. x 使用相同的播放器和 asmdef 项目生成机制。
+  - 现在，对 Unity 2019.x 和 2020.x+ 使用相同的播放器和 asmdef 项目生成机制。
   
-  - 改善了使用向导生成 Unity 消息时的用户体验。
+  - 改进了使用向导生成 Unity 消息时的体验。
 
 ### <a name="bug-fixes"></a>Bug 修复
 
 - **集成：**
 
-  - 修复了注释中消息的意外完成。
+  - 修复了注释中消息意外完成的问题。
 
 ## <a name="2800"></a>2.8.0.0 
-2020年9月14日发布
+发布时间：2020 年 9 月 14 日
 
 ### <a name="bug-fixes"></a>Bug 修复
 
 - **集成：**
 
-  - 修复了 Unity 2019. x 的播放机项目生成。
+  - 修复了 Unity 2019.x 的播放器项目生成问题。
 
 ## <a name="2710"></a>2.7.1.0
 发布日期：2020 年 8 月 5 日

@@ -1,7 +1,8 @@
 ---
+description: 公开堆栈帧的属性。
 title: IDiaStackFrame | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,15 +10,16 @@ helpviewer_keywords:
 ms.assetid: 486d25b8-a590-41c1-bdb5-faff3ae35632
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a54bd52f3783bb0bedc279cffafab2f21e0b0f39
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: dfc07bf755951afb303be684803aa226c40147fd
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741561"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127832446"
 ---
 # <a name="idiastackframe"></a>IDiaStackFrame
 公开堆栈帧的属性。
@@ -31,11 +33,11 @@ IDiaStackFrame : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
 下面是此接口支持的方法：
 
-|方法|描述|
+|方法|说明|
 |------------|-----------------|
-|[IDiaStackFrame::get_allocatesBasePointer](../../debugger/debug-interface-access/idiastackframe-get-allocatesbasepointer.md)|检索一个标志，该标志指示该地址范围内的代码分配了基指针。 已弃用此方法。|
+|[IDiaStackFrame::get_allocatesBasePointer](../../debugger/debug-interface-access/idiastackframe-get-allocatesbasepointer.md)|检索一个标志，该标志指示该地址范围内的代码分配了基指针。 不推荐使用此方法。|
 |[IDiaStackFrame::get_base](../../debugger/debug-interface-access/idiastackframe-get-base.md)|检索帧的地址基。|
-|[IDiaStackFrame::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)|检索一个标志，该C++标志指示异常处理是否有效。|
+|[IDiaStackFrame::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)|检索一个标志，该标志指示 c + + 异常处理是否有效。|
 |[IDiaStackFrame::get_functionStart](../../debugger/debug-interface-access/idiastackframe-get-functionstart.md)|检索一个标志，该标志指示块包含函数的入口点。|
 |[IDiaStackFrame::get_lengthLocals](../../debugger/debug-interface-access/idiastackframe-get-lengthlocals.md)|检索推送到堆栈上的局部变量的字节数。|
 |[IDiaStackFrame::get_lengthParams](../../debugger/debug-interface-access/idiastackframe-get-lengthparams.md)|检索推送到堆栈上的参数的字节数。|
@@ -54,7 +56,7 @@ IDiaStackFrame : IUnknown
 堆栈帧是函数调用在其执行过程中的抽象。
 
 ## <a name="notes-for-callers"></a>调用方说明
-通过调用[IDiaEnumStackFrames：： Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)方法获取此接口。 有关获取 `IDiaStackFrame` 接口的示例，请参阅[IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)接口。
+通过调用 [IDiaEnumStackFrames：： Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md) 方法获取此接口。 有关获取接口的示例，请参阅 [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) 接口 `IDiaStackFrame` 。
 
 ## <a name="example"></a>示例
 此示例显示堆栈帧的各种属性。
@@ -105,9 +107,9 @@ void PrintStackFrame(IDiaStackFrame* pFrame)
 
 库： diaguids
 
-DLL： msdia80
+DLL： msdia80.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [接口（调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)
 - [IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)

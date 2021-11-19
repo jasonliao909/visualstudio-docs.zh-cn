@@ -1,7 +1,8 @@
 ---
+description: 通过索引或名称检索表。
 title: IDiaEnumTables::Item | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,15 +10,16 @@ helpviewer_keywords:
 ms.assetid: d65ab262-10c6-48ce-95a3-b5e4cb2c85af
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: bf2d6b14f17d42a128e59446e27bfc251de40d17
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: 30e224b7edb621cb31d4124ac092e39e53f801fd
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743752"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127832146"
 ---
 # <a name="idiaenumtablesitem"></a>IDiaEnumTables::Item
 通过索引或名称检索表。
@@ -25,7 +27,7 @@ ms.locfileid: "72743752"
 ## <a name="syntax"></a>语法
 
 ```C++
-HRESULT Item ( 
+HRESULT Item ( 
    VARIANT     index,
    IDiaTable** table
 );
@@ -34,17 +36,17 @@ HRESULT Item ( 
 #### <a name="parameters"></a>参数
  `index`
 
-中要检索的[IDiaTable](../../debugger/debug-interface-access/idiatable.md)的索引或名称。 如果使用整数变量，则该变量的范围必须介于0到 `count`-1 之间，其中 `count` 为[IDiaEnumTables：： get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)方法返回的。
+[in]要检索的 [IDiaTable](../../debugger/debug-interface-access/idiatable.md) 的索引或名称。 如果使用整数变体，则它必须在 0 到 -1 的范围内，其中 由 `count` `count` [IDiaEnumTables：：get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md) 方法返回。
 
  `table`
 
-弄返回一个[IDiaTable](../../debugger/debug-interface-access/idiatable.md)对象，该对象表示所需的表。
+[out]返回表示 [所需表的 IDiaTable](../../debugger/debug-interface-access/idiatable.md) 对象。
 
 ## <a name="return-value"></a>返回值
- 如果成功，将返回 `S_OK`;否则，将返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 如果指定字符串变量，则该字符串将命名特定表。 名称应为常量中定义的表名称之一[（调试接口访问 SDK）](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)。
+ 如果指定了字符串变体，则字符串将命名特定表。 该名称应为常量中定义的表名称之一[ (调试接口访问 SDK) 。 ](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)
 
 ## <a name="example"></a>示例
 
@@ -56,7 +58,7 @@ IDiaTable* pTable;
 pEnumTables->Item( var, &pTable );
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
 - [IDiaTable](../../debugger/debug-interface-access/idiatable.md)
 - [IDiaEnumTables::get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)

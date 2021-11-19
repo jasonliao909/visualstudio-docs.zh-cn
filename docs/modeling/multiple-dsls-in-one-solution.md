@@ -11,11 +11,11 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: 967d8190b488bf4b10a9f01739e52e93fac5bb3b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122047798"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663942"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>一个解决方案中的多个 DSL
 
@@ -57,7 +57,7 @@ ms.locfileid: "122047798"
 
    生成的 VSIX 将安装这两个 DSL。 可以使用 F5 测试它们，或部署 _YourVsixProject_**\bin\Debug \\ \***。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [使用 Visual Studio Modelbus 集成模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)
 - [如何：添加拖放处理程序](../modeling/how-to-add-a-drag-and-drop-handler.md)

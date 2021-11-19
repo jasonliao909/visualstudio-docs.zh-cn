@@ -1,6 +1,6 @@
 ---
 title: 如何：在工作流设计器中使用搜索
-description: 了解如何在工作流中工作流设计器关键字查找项，以便创建更大、更复杂的工作流。
+description: 了解如何在工作流设计器中搜索以按关键字查找项，以便你可以轻松创建更大、更复杂的工作流。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -13,18 +13,18 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 846fbcae4cde785234048696d43466251a663f57
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126664677"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>如何：在工作流设计器中使用搜索
 
-为了便于创建更大、更复杂的工作流，可以在工作流中搜索工作流设计器关键字查找项。 请注意，设计器不支持替换。
+为了便于创建更大、更复杂的工作流，你可以在工作流设计器中搜索以按关键字查找项。 请注意，设计器不支持替换。
 
 ## <a name="quick-find"></a>快速查找
 
-快速查找在设计器中查找以下内容：
+"快速查找" 在设计器中查找以下内容：
 
 - <xref:System.Activities.Activity> 对象、<xref:System.Activities.Statements.FlowNode> 对象、<xref:System.Activities.Statements.State> 对象、转换以及其他自定义流控制项的属性。
 
@@ -36,9 +36,9 @@ ms.locfileid: "126664677"
 
 ### <a name="use-quick-find"></a>使用快速查找
 
-1. 打开工作流设计器后，按 **Ctrl+F，** 或选择 **"编辑**  >  **查找和替换**  >  **快速查找"。**
+1. 打开工作流设计器后，按 **Ctrl + F**，或选择 "**编辑**  >  **查找并替换**  >  **快速查找**"。
 
-2. 在"查找内容"文本框中 **输入搜索** 词，然后单击"查找下 **一个"。**
+2. 在 " **查找内容** " 文本框中输入搜索词，然后单击 " **查找下一个**"。
 
 3. 搜索词位于当前工作流中。 下图显示了位于设计器中的活动显示名称：
 
@@ -46,12 +46,12 @@ ms.locfileid: "126664677"
 
 ## <a name="find-in-files"></a>在文件中查找
 
-"在文件中查找"可查找工作流文件（包括 XAML 文件）中的字符串。
+"在文件中查找" 在工作流文件（包括 XAML 文件）中查找字符串。
 
-### <a name="use-find-in-files"></a>使用"在文件中查找"
+### <a name="use-find-in-files"></a>使用 "在文件中查找"
 
-1. 在Visual Studio中，按 **Ctrl** + **Shift** + **F，** 或选择"编辑  >  **在文件中查找和**  >  **替换查找"。**
+1. 在 Visual Studio 中，按 **Ctrl** + **Shift** + **F**，或选择 "**编辑**  >  **查找并替换**  >  **在文件中查找**"。
 
-2. 在"查找内容"文本框中 **输入搜索** 项，然后单击"**查找全部"。**
+2. 在 " **查找内容** " 文本框中输入搜索项，并单击 " **查找所有** 内容"。
 
-3. 查找结果显示在"查找结果 **"** 视图中。 双击结果项将导航到工作流设计器中包含匹配项的活动。
+3. 查找结果将显示在 " **查找结果** " 视图中。 双击某一结果项会在工作流设计器中导航到包含匹配项的活动。

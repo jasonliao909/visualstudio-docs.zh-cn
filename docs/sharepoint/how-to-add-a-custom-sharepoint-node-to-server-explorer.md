@@ -19,13 +19,13 @@ ms.workload:
 - office
 ms.openlocfilehash: 73dac3ba52b31efd55a1c6621b0e32d098bdb997
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126600641"
 ---
 # <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>如何：将自定义SharePoint节点添加到服务器资源管理器
-  可以在 中的"连接"SharePoint **下** 添加自定义 **服务器资源管理器。** 当你想要显示默认情况下未显示在SharePoint的其他组件时 **，服务器资源管理器** 很有用。 有关详细信息，请参阅[扩展服务器资源管理器中的 SharePoint 连接节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。
+  可以在 服务器资源管理器 中的"SharePoint **连接**"**节点下添加服务器资源管理器。** 当你想要显示默认情况下未显示在SharePoint的其他组件时，服务器资源管理器 **很有用。** 有关详细信息，请参阅[扩展服务器资源管理器中的 SharePoint 连接节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。
 
  若要添加自定义节点，请首先创建一个定义新节点的类。 然后创建一个扩展，该扩展将节点添加为现有节点的子节点。
 
@@ -66,9 +66,9 @@ ms.locfileid: "126600641"
 
 3. 将 <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute> 特性添加到该类中。 在节点扩展中，此属性指定要扩展的节点类型的字符串标识符。
 
-     若要指定由 Visual Studio提供的内置节点类型，请向属性构造函数传递以下枚举值之一：
+     若要指定由 Visual Studio 提供的内置节点类型，请向属性构造函数传递以下枚举值之一：
 
-    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypes>：使用这些值指定站点连接节点， (中显示站点 URL 的) 、站点节点或所有其他父 **服务器资源管理器。**
+    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypes>：使用这些值指定站点连接节点， (中显示站点 URL 的节点) 、站点节点或所有其他父 **服务器资源管理器。**
 
     - <xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.ExtensionNodeTypes>：使用这些值指定一个内置节点，这些节点表示 SharePoint 站点上的单个组件，例如表示列表、字段或内容类型的节点。
 
@@ -82,7 +82,7 @@ ms.locfileid: "126600641"
      :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs" id="Snippet7":::
 
 ## <a name="complete-example"></a>完整示例
- 下面的代码示例提供了用于定义简单节点的完整代码，并将其添加到 服务器资源管理器 中的 SharePoint 站点 **节点的子服务器资源管理器。**
+ 下面的代码示例提供了用于定义简单节点的完整代码，并将其添加到 SharePoint 站点节点的 **服务器资源管理器。**
 
  :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb" id="Snippet5":::
  :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs" id="Snippet5":::
@@ -97,7 +97,7 @@ ms.locfileid: "126600641"
 - System.Drawing
 
 ## <a name="deploy-the-extension"></a>部署扩展
- 若要部署 **服务器资源管理器** 扩展，请 (该程序集) 的 VSIX 文件包以及要随扩展一起分发的其他任何文件 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 有关详细信息，请参阅 在 Visual Studio 中为[SharePoint 工具部署Visual Studio。](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)
+ 若要部署 **服务器资源管理器** 扩展，请为程序集 (VSIX) 包以及要随扩展一起分发的其他任何文件 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 创建扩展。 有关详细信息，请参阅 在 Visual Studio 中为[SharePoint 工具部署Visual Studio。](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)
 
 ## <a name="see-also"></a>另请参阅
 - [扩展服务器资源管理器中的“SharePoint 连接”节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)

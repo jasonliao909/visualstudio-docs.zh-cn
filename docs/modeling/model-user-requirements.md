@@ -1,6 +1,6 @@
 ---
 title: 建立用户需求模型
-description: 了解 Visual Studio 如何通过绘制有关活动的关系图来帮助你了解、讨论和传达用户的需求。
+description: 了解Visual Studio通过绘制有关用户活动的关系图来帮助你了解、讨论和传达用户的需求。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,11 +14,11 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: 29970ff3c50a0e28e35751e1c9807f201f48f51f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122047863"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663949"
 ---
 # <a name="model-user-requirements"></a>建立用户需求模型
 
@@ -57,13 +57,13 @@ ms.locfileid: "122047863"
 |附加文档或工作项|性能、安全性、可用性和可靠性条件。|[描述服务质量要求](#QoSRequirements)|
 |附加文档或工作项|不针对特定用例的约束和规则|[显示业务规则](#BusinessRules)|
 
-请注意，大多数关系图类型可以用于其他目的。 有关关系图类型的概述，请参阅为 [应用程序创建模型](../modeling/create-models-for-your-app.md)。
+请注意，大多数关系图类型可以用于其他目的。 有关关系图类型的概述，请参阅 [为应用创建模型](../modeling/create-models-for-your-app.md)。
 
 ## <a name="showing-business-rules"></a><a name="BusinessRules"></a> Showing Business Rules
 
 业务规则是一个不与特定用例相关联的要求，应在整个系统中进行观察。
 
-许多业务规则受概念类间关系的约束。 您可以编写这些 *静态业务规则* 作为与概念类图上的相关类关联的注释。 例如：
+许多业务规则受概念类间关系的约束。 可以将这些 *静态业务规则编写* 为与概念类图上的相关类关联的注释。 例如：
 
 ![附加到 Order 类的注释中的规则。](../modeling/media/uml_reqmcd2.png)
 
@@ -97,9 +97,9 @@ ms.locfileid: "122047863"
 
 如果餐厅在顾客订餐时删除了菜单项，则任何引用该菜单项的订单项将显示为红色。
 
-有关如何开发符合服务质量要求的代码，请参阅为 [应用程序的体系结构建模](../modeling/model-your-app-s-architecture.md) 。
+请参阅 [为应用的体系结构建模](../modeling/model-your-app-s-architecture.md) ，了解如何开发符合服务质量要求的代码。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [在你的开发过程中使用模型](../modeling/use-models-in-your-development-process.md)
 - [应用体系结构建模](../modeling/model-your-app-s-architecture.md)

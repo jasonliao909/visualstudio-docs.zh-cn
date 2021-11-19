@@ -1,0 +1,78 @@
+### YamlMime:FAQ
+metadata:
+  title: 常见问题
+  description: Devinit 工具的常见问题。
+  ms.date: 08/28/2020
+  ms.topic: reference
+  author: andysterland
+  ms.author: andster
+  manager: jmartens
+  ms.workload:
+  - multiple
+  monikerRange: '>= vs-2019'
+  ms.prod: visual-studio-windows
+  ms.technology: devinit
+  ms.openlocfilehash: d3e662fed1f4df54498aed7ed957d070019b6fae
+  ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+  ms.translationtype: HT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 09/13/2021
+  ms.locfileid: "127833049"
+title: Devinit 常见问题
+summary: >
+  > [!IMPORTANT]
+
+  > 从2021年4月12日开始，将不再支持从 Visual Studio 2019 连接到 GitHub Codespaces，此专用预览已结束。 我们将重点放在针对广泛的 Visual Studio 工作负荷进行优化的云驱动内部循环和 VDI 解决方案的不断变化方面。 作为此 `devinit` 和相关工具的一部分将不再可用。 建议参与 Visual Studio 的开发人员社区论坛，了解未来要推出的预览版和路线图信息。
+sections:
+- name: 忽略
+  questions:
+  - question: >
+      devinit 仅用于 GitHub Codespaces？
+    answer: >
+      目前，devinit 仅作为 GitHub Codespaces 私有 beta 版的一部分提供。 但是，我们计划在 Visual Studio 2019 的即将发布的版本中包括 devinit。
+  - question: >
+      它是否 Windows？
+    answer: >
+      是的，devinit 侧重于创建使用 Visual Studio 开发人员的开发环境，这意味着 Windows。 我们正在考虑其他平台，但其中许多平台已经实施了强大的解决方案，因此我们想要开始 Visual Studio 和 Windows。
+  - question: >
+      没有用于所需的依赖项的工具！
+    answer: >
+      非常抱歉！ 如果你是 GitHub Codespaces 私有 beta 的一部分，则可以通过专用 beta 的反馈渠道返回到我们。 如果您不是私有 beta 的一部分，我们仍会对您所需的内容感兴趣，并且您可以使用标签在我们的[Visual Studio 文档](https://github.com/MicrosoftDocs/visualstudio-docs/)上提出问题， `devinit` 以便为您所需的工具请求支持。
+  - question: >
+      出现问题，如何调试？
+    answer: >
+      如果 devinit 失败，首先要尝试的是 `--verbose / -v` 用于获取详细信息的标志。 Devinit 正在调用的基础工具可能会遇到问题。 详细日志信息应包括一个线索，以了解下一步的位置。
+  - question: >
+      为什么不只是脚本？
+    answer: >
+      通过脚本设置环境是一种旧的技术，可以很好地运行。 如果适合你，请使用！ 对于开发人员而言，devinit 是另一种选择。
+  - question: >
+      为什么不使用容器？
+    answer: >
+      容器和 Docker 是通过代码部署环境的强大工具。 容器可能不适合您的解决方案，原因如下：
+
+
+      1. 如果要使用基于 Windows 桌面的开发环境。
+
+      1. 如果你已经有一个操作系统，只是想要进行调整，而不是部署一个新的环境。
+
+
+      出于这种原因，devinit 将自定义当前拥有的 Windows 环境。
+  - question: "其他 VM 创建工具 (例如，Terraform、Packer、Chef、Vagrant) \n"
+    answer: >
+      有大量用于创建 Windows 映像的有用工具，你应该使用这些工具！ 但是，我们找不到满足我们所想到的所有方案的应用程序。 我们希望 devinit 成为一种工具，使开发人员能够使用特定存储库所需的任何内容自定义其环境，并与 Visual Studio 而不是创建 VM 映像的工具。
+  - question: >
+      Winget 怎么样？
+    answer: >
+      devinit 不是像 winget 这样的包管理器，我们不想要这样做。 我们确实希望你能够将 winget 与 devinit 配合使用，并且我们正在努力实现一种工具。
+  - question: >
+      如何处理重启？
+    answer: >
+      如果 devinit 安装的任何内容需要重新启动操作系统，则会将错误消息输出到控制台。 你将需要在一段时间内重新启动操作系统。 重新启动后，如果所有依赖项都未安装，你可能需要重新运行 devinit。
+  - question: >
+      与他人协作
+    answer: >-
+      devinit 是为了实现使用的广泛生态系统，用于部署和配置应用可能具有的依赖项。 尽管 devinit 对它提供的内容有看法，但 devinit 主要是为了实现从声明性 JSON 文件中执行其他工具。
+
+
+      如今，devinit 只是开始使用，我们 [的工具列表](devinit-tool-list.md) 只是一开始。

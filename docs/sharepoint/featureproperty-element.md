@@ -17,7 +17,7 @@ ms.workload:
 - office
 ms.openlocfilehash: 01536094bdb9fd084b32ce56429d085f5f377f8f
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126600644"
@@ -40,7 +40,7 @@ ms.locfileid: "126600644"
 |属性|说明|
 |---------------|-----------------|
 |**键**|必需的 **xs：string** 属性。<br /><br /> 用于存储和检索属性值的键。 每个属性必须具有在功能中唯一的键。|
-|**值**|必需的 **xs：string** 属性。<br /><br /> 属性值。|
+|值|必需的 **xs：string** 属性。<br /><br /> 属性值。|
 
 ### <a name="child-elements"></a>子元素
  无。
@@ -56,7 +56,7 @@ ms.locfileid: "126600644"
 
 ## <a name="element-information"></a>元素信息
 
-|Property|值|
+|属性|值|
 |-|-|
 |**Namespace**|\/ \/ http：schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**架构名称**|SharePoint Project项架构|

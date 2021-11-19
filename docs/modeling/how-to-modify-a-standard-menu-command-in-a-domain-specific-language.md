@@ -14,11 +14,11 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: cb575eb52e9a95d2ba548659ec8d265605f5e64d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122055453"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126665998"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>如何：使用域特定语言修改标准的菜单命令
 
@@ -31,7 +31,7 @@ ms.locfileid: "122055453"
 
 ### <a name="to-discover-what-commands-you-can-modify"></a>发现可以修改的命令
 
-1. 在 `DslPackage` 项目中，打开 `GeneratedCode\CommandSet.cs`。 此 C# 文件可以在 解决方案资源管理器作为 的子公司找到 `CommandSet.tt` 。
+1. 在 `DslPackage` 项目中，打开 `GeneratedCode\CommandSet.cs`。 此 C# 文件可在 解决方案资源管理器作为 的子公司找到 `CommandSet.tt` 。
 
 2. 在此文件中查找名称以""结尾的类 `CommandSet` ，例如 `Language1CommandSet` 和 `Language1ClipboardCommandSet` 。
 
@@ -146,7 +146,7 @@ protected override void ProcessOnMenuDeleteCommand()
 
 若要详细了解如何从元素导航到元素，以及如何创建对象和链接，请参阅在程序代码中导航 [和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - <xref:System.ComponentModel.Design.MenuCommand>
 - [编写代码以自定义域特定语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)

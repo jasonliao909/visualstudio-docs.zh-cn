@@ -1,6 +1,6 @@
 ---
 title: 如何：将参数添加到方法|Microsoft Docs
-description: 了解如何使用 BDC (方法将参数) 业务数据连接，从而将信息传递到方法中或从方法返回信息。
+description: 了解如何使用 BDC (方法将) 添加到业务数据连接，从而将信息传递到方法中或从方法返回信息。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -22,7 +22,7 @@ ms.workload:
 - office
 ms.openlocfilehash: 5868dfe761030ed46d71b45cbe646959f8824ece
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126600636"
@@ -54,7 +54,7 @@ ms.locfileid: "126600636"
 
      有关为要创建的类型方法选择哪个方向的信息，请参阅 [设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
 
-8. 修改参数的类型描述符。 有关详细信息，请参阅 [如何：定义](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)参数 的类型描述符。
+8. 修改参数的类型描述符。 有关详细信息，请参阅 [如何：定义参数 的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。
 
 ## <a name="see-also"></a>另请参阅
 - [BDC 模型设计工具概述](../sharepoint/bdc-model-design-tools-overview.md)

@@ -12,17 +12,17 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: d09699c345878d27eecba518c54f8ff0cfd44d1b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122082499"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126666980"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>如何：向工作流项目添加新项
 
 创建工作流项目后，可以将工作流活动、设计器和其他熟悉的Visual Studio添加到项目。
 
-下表列出了可以添加到Windows项目 (WF) 的 Workflow Foundation 项目：
+下表列出了 WF Windows的 (工作流) 添加到工作流项目的项：
 
 | 名称 | 说明 |
 |-| - |
@@ -46,6 +46,6 @@ ms.locfileid: "122082499"
 
 1. 选择 **"** 添加"，将项添加到项目。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [创建工作流项目](../workflow-designer/creating-a-workflow-project.md)

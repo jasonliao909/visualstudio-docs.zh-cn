@@ -1,7 +1,8 @@
 ---
+description: 检索包含指向参数的基指针的寄存器的 ID。
 title: IDiaSymbol::get_paramBasePointerRegisterId | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,23 +10,24 @@ helpviewer_keywords:
 ms.assetid: 9f5caeb4-5c88-4054-bf8b-50d34bbbf8c5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 09bdfb5d276e4dc7414c78529c2a6f1644597cd3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: f1213f1b201b76c31bed1f494bdd62710a9231aa
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739517"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127832455"
 ---
 # <a name="idiasymbolget_parambasepointerregisterid"></a>IDiaSymbol::get_paramBasePointerRegisterId
-检索包含指向参数的基指针的寄存器 ID。 当[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)设置为 `SymTagFunction` 时使用。
+检索包含指向参数的基指针的寄存器的 ID。 当 [SymTagEnum 枚举设置为](../../debugger/debug-interface-access/symtagenum.md) 时，请使用 `SymTagFunction` 。
 
 ## <a name="syntax"></a>语法
 
 ```C++
-HRESULT get_paramBasePointerRegisterId ( 
+HRESULT get_paramBasePointerRegisterId ( 
    DWORD* pRetVal
 );
 ```
@@ -33,22 +35,22 @@ HRESULT get_paramBasePointerRegisterId ( 
 #### <a name="parameters"></a>参数
  `pRetVal`
 
-弄返回寄存器的 ID，该 ID 包含指向参数的基指针。
+[out]返回寄存器的 ID，该寄存器包含指向参数的基指针。
 
 ## <a name="return-value"></a>返回值
- 如果成功，将返回 `S_OK`;否则，将返回 `S_FALSE` 或错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回 `S_FALSE` 或错误代码。
 
 > [!NOTE]
-> @No__t_0 的返回值意味着该属性对符号不可用。
+> 返回值 `S_FALSE` 表示属性不可用于符号。
 
 ## <a name="remarks"></a>备注
 
 ## <a name="requirements"></a>要求
- 标头： Dia2
+ 标头：Dia2.h
 
- 库： diaguids
+ 库：diaguids.lib
 
- DLL： msdia100
+ DLL：msdia100.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

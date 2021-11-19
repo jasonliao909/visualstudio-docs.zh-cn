@@ -17,11 +17,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: bbce7034434051690dad7ee3c54d83498f200ab4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122047603"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664147"
 ---
 # <a name="how-to-localize-a-feature"></a>如何：本地化功能
   默认情况下，功能标题和说明使用硬编码的字符串值。 若要本地化功能标题和说明，请将字符串替换为引用本地化资源的表达式。
@@ -46,7 +46,7 @@ ms.locfileid: "122047603"
 
 6. 若要本地化功能中的 " **标题** " 和 " **说明** " 字段，请使用以下格式在其框中输入值：
 
-     `$Resources:`*字符串 ID*
+     `$Resources:` *字符串 ID*
 
      例如，在 **功能标题** 框中输入 $Resources：**Title** ，并 $Resources： "**功能说明**" 框中的 "**说明**"。
 
@@ -60,7 +60,7 @@ ms.locfileid: "122047603"
 
      本地化功能标题和说明显示在应用程序中。 若要显示本地化的资源，SharePoint 服务器必须已安装与资源文件的区域性匹配的语言包。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [本地化 SharePoint 解决方案](../sharepoint/localizing-sharepoint-solutions.md)
 - [如何：添加资源文件](../sharepoint/how-to-add-a-resource-file.md)
 - [如何：本地化 ASPX 标记](../sharepoint/how-to-localize-aspx-markup.md)

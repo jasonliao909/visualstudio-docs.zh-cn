@@ -20,7 +20,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 0599c7739388b44bcbb0c6413a0ee4213ecd3797
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126663903"
@@ -65,7 +65,7 @@ This report is Company Confidential.
     > [!NOTE]
     > 模板文件名将用作生成的代码中的类名。 因此，它不应包含空格或标点。
 
-4. 选择“添加”  。
+4. 选择“添加”。
 
     将创建一个扩展名为 **tt** 的新文件。 其 " **自定义工具** " 属性设置为 " **TextTemplatingFilePreprocessor**"。 它包含以下行：
 
@@ -293,27 +293,27 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 <#@include file="CommonHeader.txt" #>
 ```
 
-包含的内容可以包含程序代码和纯文本的任意组合，还可以包含其他包含指令和其他指令。
+包含的内容可以包含程序代码和纯文本的任何混合，并且可以包含其他 include 指令和其他指令。
 
-Include 指令可用于模板文件文本或包含的文件文本中的任意位置。
+include 指令可用于模板文件或包含文件的文本中的任何位置。
 
-### <a name="inheritance-between-run-time-text-templates"></a>Run-Time 文本模板之间的继承
+### <a name="inheritance-between-run-time-text-templates"></a>文本Run-Time之间的继承
 
-可以通过编写一个基类模板来共享运行时模板之间的内容，该模板可以是抽象的。 使用 `inherits` 指令的参数 `<@#template#>` 引用另一个运行时模板类。
+可以通过编写基类模板（可以是抽象的）在运行时模板之间共享内容。 使用 `inherits` 指令的 `<@#template#>` 参数引用另一个运行时模板类。
 
 #### <a name="inheritance-pattern-fragments-in-base-methods"></a>继承模式：基方法中的片段
 
 在下面的示例中使用的模式中，请注意以下几点：
 
-- 基类 `SharedFragments` 定义类功能块中 `<#+ ... #>` 的方法。
+- 基类 `SharedFragments` 定义类功能块 中的方法 `<#+ ... #>` 。
 
-- 基类不包含任何可用文本。 相反，它的所有文本块都出现在类功能方法中。
+- 基类不包含自由文本。 相反，其所有文本块都出现在类功能方法内。
 
-- 派生类调用中定义的方法 `SharedFragments` 。
+- 派生类调用 中定义的方法 `SharedFragments` 。
 
-- 应用程序调用 `TextTransform()` 派生类的方法，但不转换基类 `SharedFragments` 。
+- 应用程序调用 `TextTransform()` 派生类的 方法，但不转换基类 `SharedFragments` 。
 
-- 基类和派生类均为运行时文本模板;也就是说，" **自定义工具** " 属性设置为 **TextTemplatingFilePreprocessor**。
+- 基类和派生类都是运行时文本模板;也就是说，自定义 **工具属性** 设置为 **TextTemplatingFilePreprocessor**。
 
 **SharedFragments.tt：**
 
@@ -339,7 +339,7 @@ begin 1
 end 1
 ```
 
-**Myprogram.exe：**
+**MyProgram.cs：**
 
 ```csharp
 ...
@@ -356,9 +356,9 @@ begin 1
 end 1
 ```
 
-#### <a name="inheritance-pattern-text-in-base-body"></a>继承模式：基本正文中的文本
+#### <a name="inheritance-pattern-text-in-base-body"></a>继承模式：基体中的文本
 
-在此替代方法中，使用模板继承时，会在基本模板中定义大量文本。 派生模板提供适合基本内容的数据和文本片段。
+在此使用模板继承的替代方法中，大部分文本在基本模板中定义。 派生模板提供适合基本内容的数据和文本片段。
 
 **AbstractBaseTemplate1.tt：**
 
@@ -432,9 +432,9 @@ End material for DerivedTemplate1.
 
 ## <a name="related-topics"></a>相关主题
 
-设计时模板：如果要使用模板生成将成为应用程序一部分的代码，请参阅 [使用 T4 文本模板生成设计时代码](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。
+设计时模板：若要使用模板生成成为应用程序一部分的代码，请参阅使用 T4 文本模板设计时 [代码生成](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。
 
-可在编译时确定模板及其内容的任何应用程序中使用运行时模板。 但是，如果想要编写从运行时更改的模板生成文本的 Visual Studio 扩展，请参阅[在 VS 扩展中调用文本转换](../modeling/invoking-text-transformation-in-a-vs-extension.md)。
+运行时模板可用于任何在编译时确定模板及其内容的应用程序。 但是，如果要编写一Visual Studio模板生成文本的扩展，请参阅在 VS 扩展[中调用文本转换](../modeling/invoking-text-transformation-in-a-vs-extension.md)。
 
 ## <a name="see-also"></a>另请参阅
 

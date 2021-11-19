@@ -1,6 +1,6 @@
 ---
 title: 扩展SharePoint项目|Microsoft Docs
-description: 了解如何在想要自定义项目的项目级功能时创建SharePoint扩展。
+description: 了解如何在要自定义项目的项目级功能时创建SharePoint扩展。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -19,7 +19,7 @@ ms.workload:
 - office
 ms.openlocfilehash: 79cd81292f6551a922744dc03ac9a83da8990e05
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126600659"
@@ -32,16 +32,16 @@ ms.locfileid: "126600659"
 
  创建项目扩展时，还可以将以下功能添加到SharePoint项目：
 
-- 添加快捷菜单项。 通过右键单击该节点或选择该节点，然后选择 Shift   + **F10** 键解决方案资源管理器打开 SharePoint 项目节点的快捷菜单时，将显示菜单项。 有关详细信息，请参阅[如何：向项目添加SharePoint菜单项](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)。
+- 添加快捷菜单项。 通过右键单击或选择该节点，然后选择"shift   + **F10"** 键解决方案资源管理器打开 SharePoint 项目节点的快捷菜单时，将显示菜单项。 有关详细信息，请参阅[如何：向项目添加SharePoint菜单项](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)。
 
-- 添加自定义属性。 在 中选择项目 **时**，属性 **SharePoint"属性** 解决方案资源管理器。 有关详细信息，请参阅[如何：向项目SharePoint属性](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)。
+- 添加自定义属性。 在 中选择项目 **时**，属性 **SharePoint"解决方案资源管理器。** 有关详细信息，请参阅[如何：向项目SharePoint属性](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)。
 
   有关演示如何创建、部署和测试项目扩展的演练，请参阅[演练：](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)创建SharePoint扩展。
 
 ## <a name="understand-the-relationship-between-project-extensions-and-project-instances"></a>了解项目扩展插件与项目实例之间的关系
  创建项目扩展时，当 在 中打开任何类型的项目SharePoint将加载该扩展 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]包括多个SharePoint模板，例如列表定义、内容类型和事件接收器。 但是，只有一SharePoint项目类型。 "新建项目"对话框中 **Project类型只是** 将一个或多个项目项捆绑在一SharePoint模板。 由于只有一个SharePoint类型，因此为一个项目创建的扩展将应用于所有SharePoint项目。 例如，不能创建仅应用于内容类型 **项目的扩展** 。
 
- 若要访问特定项目实例，请处理 方法实现 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> *中的 projectService* 参数的其中一 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> 个事件。 例如，若要确定何时将SharePoint添加到解决方案中，请处理 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded> 事件。 有关详细信息，请参阅[如何：创建SharePoint扩展。](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
+ 若要访问特定项目实例，请处理方法实现 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> *中的 projectService* 参数的其中一 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> 个事件。 例如，若要确定何时将SharePoint添加到解决方案中，请处理 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded> 事件。 有关详细信息，请参阅[如何：创建SharePoint扩展。](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
 
 ## <a name="see-also"></a>另请参阅
 - [如何：创建SharePoint扩展](../sharepoint/how-to-create-a-sharepoint-project-extension.md)

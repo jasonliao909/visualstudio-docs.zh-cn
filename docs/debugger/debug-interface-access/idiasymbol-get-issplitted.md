@@ -1,7 +1,8 @@
 ---
-title: IDiaSymbol：： get_isSplitted |Microsoft Docs
+description: 检索一个标志，该标志指定数据符号是否已拆分为聚合或其他符号的集合;编译器将符号视为单独的实体，即使它们确实是较大符号的一部分。
+title: IDiaSymbol：：get_isSplitted |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,18 +10,19 @@ helpviewer_keywords:
 ms.assetid: ff160cf6-003b-4ef5-a406-20a7b287b2bf
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9511551a2f3530adc14bee0f6eec3cf360b41c03
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: c025460f04cbd2d9eb5546f434ff990584fa7e26
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740043"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127832558"
 ---
 # <a name="idiasymbolget_issplitted"></a>IDiaSymbol::get_isSplitted
-检索一个标志，该标志指定数据符号是否已拆分为聚合或其他符号的集合。编译器会将符号视为单独的实体，即使它们确实是较大符号的组成部分。
+检索一个标志，该标志指定数据符号是否已拆分为聚合或其他符号的集合;编译器将符号视为单独的实体，即使它们确实是较大符号的一部分。
 
 ## <a name="syntax"></a>语法
 
@@ -33,24 +35,24 @@ HRESULT get_isSplitted(
 #### <a name="parameters"></a>参数
  `pFlag`
 
-弄如果符号已拆分为符号聚合，则返回 `TRUE`;否则，将返回 `FALSE`。
+[out]如果 `TRUE` 符号已拆分为符号的聚合，则返回 ;否则返回 `FALSE` 。
 
 ## <a name="return-value"></a>返回值
- 如果成功，将返回 `S_OK`;否则，将返回 `S_FALSE` 或错误代码。
+ 如果成功，则返回 `S_OK` ;否则 `S_FALSE` 返回 或错误代码。
 
 > [!NOTE]
-> @No__t_0 的返回值意味着该属性对符号不可用。
+> 返回值 `S_FALSE` 表示属性不可用于符号。
 
 ## <a name="remarks"></a>备注
- [IDiaSymbol：： get_isAggregated](../../debugger/debug-interface-access/idiasymbol-get-isaggregated.md)方法为作为拆分符号一部分的所有符号返回 `TRUE`。
+ [IDiaSymbol：：get_isAggregated](../../debugger/debug-interface-access/idiasymbol-get-isaggregated.md)方法返回属于拆分符号一 `TRUE` 部分的所有符号。
 
 ## <a name="requirements"></a>要求
 
-|需求|描述|
+|要求|说明|
 |-----------------|-----------------|
-|标头：|dia2|
+|标头：|dia2.h|
 |版本：|DIA SDK v8.0|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [IDiaSymbol::get_isAggregated](../../debugger/debug-interface-access/idiasymbol-get-isaggregated.md)

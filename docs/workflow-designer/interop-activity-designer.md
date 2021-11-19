@@ -1,6 +1,6 @@
 ---
-title: 工作流设计器-互操作活动设计器
-description: 了解互操作活动设计器以及如何使用 "互操作" 活动设计器创建和配置互操作活动。
+title: 工作流设计器 - 互操作活动设计器
+description: 了解互操作活动设计器，以及如何使用互操作活动设计器创建和配置互操作活动。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,40 +13,40 @@ manager: jmartens
 ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 66593b49472a5f4f426b7764bfc0b66128908045432fb63346fdde0b900c52cb
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
-ms.translationtype: MT
+ms.openlocfilehash: 785fa491d78c0286404918f01149752af2f0dc69
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121440482"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126667573"
 ---
 # <a name="interop-activity-designer"></a>Interop 活动设计器
 
-" **Interop** " 活动设计器用于创建和配置 <xref:System.Activities.Statements.Interop> 活动。
+**互操作** 活动设计器用于创建和配置 <xref:System.Activities.Statements.Interop> 活动。
 
 ## <a name="the-interop-activity"></a>Interop 活动
 
 <xref:System.Activities.Statements.Interop> 活动管理从工作流中的 <xref:System.Workflow.ComponentModel.Activity?displayProperty=fullName> 派生的活动类型的执行。
 
-### <a name="use-the-interop-activity-designer"></a>使用 Interop 活动设计器
+### <a name="use-the-interop-activity-designer"></a>使用互操作活动设计器
 
-"**互操作**" 活动设计器可在 "**工具箱**" 的 "**迁移**" 类别中找到，可通过单击 "**工具箱**" 选项卡进行访问。或者，从 "**视图**" 菜单中选择 **"工具箱**"，或按 **Ctrl** + **Alt** + **X**。
+可在 **"工具箱**"的"迁移"类别中找到互操作活动设计器，单击"工具箱"选项卡 **即可访问该** 类别。或者，从"视图 **"菜单中** 选择"**工具箱"，** 或按 **Ctrl** + **Alt** + **X**。
 
-[](../workflow-designer/migration-activity-designers.md) <xref:System.Activities.Statements.Interop> 如果项目面向 .NET Framework 4 (full) 或更高版本，则包含该活动的迁移类别仅显示在 **工具箱** 中。 如有必要，可以更改项目所面向的框架版本。
+如果[项目](../workflow-designer/migration-activity-designers.md)面向 4 或更高版本，则包含活动的"迁移"类别 <xref:System.Activities.Statements.Interop> .NET Framework" (") "。  如有必要，可以更改项目面向的框架版本。
 
-可以将 " **互操作** " 活动设计器从 **"工具箱** " 拖放到工作流设计器图面上通常放置活动的任何位置，例如中 <xref:System.Activities.Statements.Sequence> 。 删除 **interop** 活动设计器将创建一个 <xref:System.Activities.Statements.Interop> 活动，该活动具有 "互操作" 的默认 **DisplayName** 。 您可以在 " <xref:System.Activities.Activity.DisplayName%2A> **Interop** " 活动设计器的标头中或在属性网格的 " **DisplayName** " 框中编辑。
+可以将 **互操作** 活动设计器从"工具箱"拖动到工作流设计器放置活动的位置（例如 位于 内）上 <xref:System.Activities.Statements.Sequence> 。 删除 **互操作** 活动设计器会创建默认 <xref:System.Activities.Statements.Interop> DisplayName 为 **Interop** 的活动。 可以在互 <xref:System.Activities.Activity.DisplayName%2A> 操作活动设计器的标头或属性网格的 **DisplayName** 框中编辑 。
 
-单击 " **单击以浏览** " 中的 " **ActivityType** " 框中的文本，在 " **互操作**  " 活动设计器或属性网格中，打开 " **浏览并选择 .net 类型** " 对话框。 仅显示工作流3.0 或工作流3.5 活动的类型。 也就是说，仅显示从派生的类型 <xref:System.Workflow.ComponentModel.Activity> 。 有关使用此框指定类型的详细信息，请参阅 " [浏览并选择 .Net 类型" 对话框](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box.md)。
+单击 **"单击以浏览** **ActivityType"** 框中的文本（在 **互**  操作活动设计器或属性网格中）以打开"浏览和选择 **.Net 类型"** 对话框。 只显示工作流 3.0 或工作流 3.5 活动的类型。 也就是说，只显示派生自 <xref:System.Workflow.ComponentModel.Activity> 的类型。 有关使用此框指定类型的详细信息，请参阅浏览和 [选择 .NET 类型对话框](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box.md)。
 
 ### <a name="the-interop-properties"></a>Interop 属性
 
-下表显示了 <xref:System.Activities.Statements.Interop> 这些属性，并介绍了如何在设计器中使用它们。 这些属性可以在属性网格中编辑，也可以在工作流设计器图面上进行编辑。
+下表显示了 <xref:System.Activities.Statements.Interop> 属性，并介绍了如何在设计器中使用这些属性。 这些属性可以在属性网格中编辑，也可以编辑工作流设计器图面。
 
 |属性名称|必选|使用情况|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|错误|<xref:System.Activities.Statements.Interop> 活动的友好名称。 默认值为 **互操作**。 尽管显示名称不是必需的，但建议提供一个。|
-|<xref:System.Activities.Statements.Interop.ActivityType%2A>|正确|指定 <xref:System.Activities.Statements.Interop> 活动包含的活动类型。 指定的此类型必须派生自 <xref:System.Workflow.ComponentModel.Activity>。|
+|<xref:System.Activities.Activity.DisplayName%2A>|错误|<xref:System.Activities.Statements.Interop> 活动的友好名称。 默认值为 **Interop**。 尽管显示名称不是必需的，但建议提供一个。|
+|<xref:System.Activities.Statements.Interop.ActivityType%2A>|True|指定 <xref:System.Activities.Statements.Interop> 活动包含的活动类型。 指定的此类型必须派生自 <xref:System.Workflow.ComponentModel.Activity>。|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [迁移](../workflow-designer/migration-activity-designers.md)

@@ -12,7 +12,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: b0e96a74b56226818c96e049df93dba8b1fa721a
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126663894"
@@ -38,13 +38,13 @@ ms.locfileid: "126663894"
 
 7. 在" **资源** "选项卡 **上，单击"此项目不包含默认资源文件"。单击此处创建一个。**
 
-8. 将图片从资源窗口拖动到资源 **解决方案资源管理器文件添加到** 资源文件。
+8. 将图片从资源窗口拖动到资源窗口中，解决方案资源管理器 **文件添加到** 资源文件。
 
 9. 打开“文件”菜单，然后单击该选项以保存项目属性。
 
 10. 验证文件 Dsl\Properties\Resources.resx 是否存在，以及该文件下面是否具有文件 Resources.Designer.cs。
 
-11. 如果缺少 Resources.Designer.cs，请单击 中的文件 Resources.resx **解决方案资源管理器。**
+11. 如果缺少 Resources.Designer.cs，请单击中的文件 Resources.resx **解决方案资源管理器。**
 
 12. 在“属性”  窗口中，将 `Custom Tool` 属性设置为 `ResXFileCodeGenerator`。
 

@@ -13,15 +13,15 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: c4a2573501f8a7776ed1a68ec2c50f521c54154f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122157496"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126671863"
 ---
 # <a name="domain-property-value-change-handlers"></a>域属性值更改处理程序
 
-在Visual Studio域特定语言中，当域属性的值发生更改时，在域属性处理程序中调用 `OnValueChanging()` `OnValueChanged()` 和 方法。 若要响应更改，可以重写这些方法。
+在Visual Studio域特定语言中，当域属性的值更改时，在域属性处理程序中 `OnValueChanging()` 调用 和 `OnValueChanged()` 方法。 若要响应更改，可以重写这些方法。
 
 ## <a name="override-the-property-handler-methods"></a>重写属性处理程序方法
 

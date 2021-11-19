@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 608bb21c2fb9d8335cd2ba212a6b7501392087d9
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126663858"
@@ -61,7 +61,7 @@ Domain-Specific 语言 (DSL) 解决方案生成一个可用于读取和更新 Vi
 ## <a name="generated-files-in-dsl"></a>DSL 中生成的文件
  以下生成的文件将出现在 **Dsl** 项目中。
 
- *Yourdsl 可*`Schema.xsd`
+ *Yourdsl 可* `Schema.xsd`
 
  包含 DSL 实例的文件的架构。 此文件将复制到编译 (**bin**) 目录。 安装 DSL 时，可以将此文件复制到 **\Program 文件 \ Microsoft Visual Studio 11.0 \ Xml\Schemas** ，以便可以验证模型文件。 有关详细信息，请参阅[部署域特定语言解决方案](msi-and-vsix-deployment-of-a-dsl.md)。
 
@@ -136,7 +136,7 @@ Domain-Specific 语言 (DSL) 解决方案生成一个可用于读取和更新 Vi
 > [!NOTE]
 > 这与模型的根类不同。
 
- “复制”和“删除”闭包定义在复制或删除一个元素时应包含哪些其他元素。 可以通过在每个关系的每一端设置角色的"传播 **复制**"和"传播删除"属性来控制此行为。  如果想要动态确定这些值，则可编写代码来重写“闭包”类的方法。
+ “复制”和“删除”闭包定义在复制或删除一个元素时应包含哪些其他元素。 可以通过设置每个关系的每个角色的 " **传播复制** " 和 " **传播删除** " 属性来控制此行为。 如果想要动态确定这些值，则可编写代码来重写“闭包”类的方法。
 
  `DomainModelResx.resx`
 
@@ -156,11 +156,11 @@ Domain-Specific 语言 (DSL) 解决方案生成一个可用于读取和更新 Vi
 
  在你在其中指定重数为 1..1 或 1..* 的关系角色中，应警告用户至少需要一个关系实例。 此文件提供实现这些警告的验证约束。 指向嵌入父级的 1..1 链接未进行验证。
 
- 若要执行这些约束，必须在 DSL 资源管理器的 **Editor\Validation** 节点中设置"使用 **..."** 选项之一。 有关详细信息，请参阅在语言 [中Domain-Specific验证](../modeling/validation-in-a-domain-specific-language.md)。
+ 若要执行这些约束，你必须已在 DSL 资源管理器的 **编辑器 \ 验证** 节点中设置 "**使用 ...** " 选项之一。 有关详细信息，请参阅 [Domain-Specific 语言的验证](../modeling/validation-in-a-domain-specific-language.md)。
 
  `PropertiesGrid.cs`
 
- 此文件仅在你已将自定义类型描述符附加到域属性时才包含代码。 有关详细信息，请参阅 [自定义属性窗口](../modeling/customizing-the-properties-window.md)。
+ 此文件仅在你已将自定义类型描述符附加到域属性时才包含代码。 有关详细信息，请参阅 [自定义 "属性" 窗口](../modeling/customizing-the-properties-window.md)。
 
  `SerializationHelper.cs`
 
@@ -172,15 +172,15 @@ Domain-Specific 语言 (DSL) 解决方案生成一个可用于读取和更新 Vi
 
   用于每个域类、关系、形状、连接符、关系图和模型的序列化程序类。
 
-  这些类的许多功能可以通过 DSL 资源管理器中的"Xml 序列化行为" **下的设置进行控制**。
+  这些类的许多功能可通过 DSL 资源管理器中的 " **Xml 序列化行为**" 下的设置进行控制。
 
   `Shapes.cs`
 
   用于 DSL 定义中的每个形状类的类。 形状派生自 <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>。 有关详细信息，请参阅[自定义文件存储和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)。
 
-  若要在分部类中用自己的方法替代生成的方法，请为DSL 定义中的连接器设置"生成双重派生"。 若要将构造函数替换为自己的代码，请设置 **"具有自定义构造函数"。**
+  若要用自己的方法替代分部类中生成的方法，请设置在 DSL 定义中为连接器 **生成双精度派生** 。 若要将构造函数替换为自己的代码，请设置 **具有自定义构造函数**。
 
-  若要使颜色和某些其他样式功能可运行时更改，请右键单击 DSL 定义关系图上的 类，并指向"**添加公开"。**
+  若要使颜色和某些其他样式功能在运行时变量，请右键单击 DSL 定义关系图上的类，然后单击 "添加" " **公开**"。
 
   若要使其他样式功能在运行时可变，请参阅示例 <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField> 和 <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement>
 
@@ -188,14 +188,14 @@ Domain-Specific 语言 (DSL) 解决方案生成一个可用于读取和更新 Vi
 
   通过将元素组原型安装到元素工具中来设置工具箱。 当用户运行该工具时，这些原型的副本将与目标元素合并。
 
-  可以重写 `CreateElementPrototype()` 来定义用于创建一组多个对象的工具箱项。 例如，你可以定义某个项来表示具有子组件的对象。 更改代码后，重置 Visual Studio实例以清除工具箱缓存。
+  可以重写 `CreateElementPrototype()` 来定义用于创建一组多个对象的工具箱项。 例如，你可以定义某个项来表示具有子组件的对象。 更改代码后，重置 Visual Studio 的实验实例以清除工具箱缓存。
 
 ## <a name="generated-files-in-the-dslpackage-project"></a>DslPackage 项目中生成的文件
- DslPackage 将 DSL 模型与 Visual Studio shell 耦合，管理窗口、工具箱和菜单命令。 大多数类都是双派生的，以便你可以重写它们的任何方法。
+ DslPackage 将 DSL 模型耦合到 Visual Studio shell，管理窗口、工具箱和菜单命令。 大多数类都是双派生的，以便你可以重写它们的任何方法。
 
  `CommandSet.cs`
 
- 右键单击关系图上可见的菜单命令。 可以改写此集或向其添加项。 此文件包含命令的代码。 菜单上的命令的位置由 Commands.vsct 文件确定。 有关详细信息，请参阅编写 [用户命令和操作](how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
+ 显示在关系图上的右键菜单命令。 可以改写此集或向其添加项。 此文件包含命令的代码。 菜单上的命令的位置由 Commands.vsct 文件确定。 有关详细信息，请参阅 [编写用户命令和操作](how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
 
  `Constants.cs`
 
@@ -203,13 +203,13 @@ Domain-Specific 语言 (DSL) 解决方案生成一个可用于读取和更新 Vi
 
  `DocData.cs`
 
- *YourDsl* `DocData` 管理将模型加载和保存到文件，并创建 Store 实例。
+ *Yourdsl 可* `DocData` 管理将模型加载并保存到文件中，并创建存储实例。
 
  例如，如果想要将 DSL 保存在数据库而不是文件中，则可以重写 `Load` 和 `Save` 方法。
 
  `DocView.cs`
 
- *YourDsl* `DocView` 管理显示关系图的窗口。 例如，可以将关系图嵌入在 Windows 窗体内：
+ *Yourdsl 可* `DocView` 管理显示关系图的窗口。 例如，可以将关系图嵌入在 Windows 窗体内：
 
  将用户控件文件添加到 DslPackage 项目。 添加可在其中显示关系图的面板。 添加按钮和其他控件。 在窗体的代码视图中，添加以下代码，从而调整名称以适应你的 DSL：
 
@@ -281,11 +281,11 @@ namespace Company.EmbedInForm
 
  `EditorFactory.cs`
 
- 实例化 `DocData` 和 `DocView`。 它满足一个标准接口，Visual Studio DSL 包启动时打开编辑器。 将在 Package.cs 的 `ProvideEditorFactory` 特性中引用它。
+ 实例化 `DocData` 和 `DocView`。 它实现了一个标准接口，该接口 Visual Studio 在 DSL 包启动时用来打开编辑器。 将在 Package.cs 的 `ProvideEditorFactory` 特性中引用它。
 
  `GeneratedVSCT.vsct`
 
- 在菜单上找到标准菜单命令，如关系图右键单击 (菜单) "编辑"菜单等上下文。  命令的代码是 CommandSet.cs。 可以重定位或修改标准命令，并可以添加自己的命令。 有关详细信息，请参阅编写 [用户命令和操作](how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
+ 在菜单上查找标准菜单命令，如关系图右键单击 (上下文) "菜单"、" **编辑** " 菜单等。 命令的代码是 CommandSet.cs。 可以重定位或修改标准命令，并可以添加自己的命令。 有关详细信息，请参阅 [编写用户命令和操作](how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
 
  `ModelExplorer.cs`
 
@@ -336,14 +336,14 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 
  `Package.cs`
 
- 此文件定义 DSL 如何集成到 Visual Studio。 程序包类上的特性将 DSL 注册为具有文件扩展名的文件的处理程序、定义其工具箱以及定义打开新窗口的方式。 将第 () DSL 加载到实例中时，将调用一次 Initialize Visual Studio方法。
+ 此文件定义 DSL 如何集成到 Visual Studio。 程序包类上的特性将 DSL 注册为具有文件扩展名的文件的处理程序、定义其工具箱以及定义打开新窗口的方式。 将第一个 DSL 加载到 Visual Studio 实例中时，将调用 Initialize () 方法一次。
 
  `Source.extension.vsixmanifest`
 
  若要自定义此文件，请编辑 `.tt` 文件。
 
 > [!WARNING]
-> 如果编辑 .tt 文件来包括资源（例如图标或图像），请确保该资源包括在 VSIX 生成中。 在解决方案资源管理器中，选择文件，并确保" **在 VSIX 中包括"** 属性为 `True` 。
+> 如果编辑 .tt 文件来包括资源（例如图标或图像），请确保该资源包括在 VSIX 生成中。 在解决方案资源管理器中，选择该文件并确保 " **包含在 VSIX 中** " 属性为 `True` 。
 
  此文件控制将 DSL 打包到 Visual Studio 集成扩展 (VSIX) 中的方式。 有关详细信息，请参阅[部署域特定语言解决方案](msi-and-vsix-deployment-of-a-dsl.md)。
 
@@ -352,4 +352,4 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 - [如何定义域特定语言](../modeling/how-to-define-a-domain-specific-language.md)
 - [了解模型、类和关系](../modeling/understanding-models-classes-and-relationships.md)
 - [自定义和扩展域特定语言](../modeling/customizing-and-extending-a-domain-specific-language.md)
-- [编写代码以自定义Domain-Specific语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+- [编写代码以自定义 Domain-Specific 语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)

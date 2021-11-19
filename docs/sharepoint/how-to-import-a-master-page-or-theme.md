@@ -1,6 +1,6 @@
 ---
 title: 如何：导入母版页或主题|Microsoft Docs
-description: 在设计器中为母版页和主题SharePoint模板，然后导入Visual Studio，使SharePoint站点中的页面具有一致的外观。
+description: 在设计器中为母版页和主题SharePoint模板，然后导入Visual Studio，使SharePoint站点上的页面具有一致的外观。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -17,14 +17,14 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: 69d304d476be4b1e0ab97500b1f13b04bd68ff1f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122093003"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664158"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>如何：导入母版页或主题
-  可以通过创建和使用母版页和SharePoint为站点中的页面提供一致的外观。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]不提供这些元素的模板，但可以在设计器SharePoint模板，然后将它们导入 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 有关详细信息，请参阅 Microsoft 网站上 [构建基块：用户界面](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)) 和页面。
+  可以通过创建和使用母版页和主题SharePoint站点中的页面提供一致的外观。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]不提供这些元素的模板，但可以在设计器SharePoint模板，然后将它们导入 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 有关详细信息，请参阅 Microsoft 网站上 [构建基块：用户界面](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)) 和页面。
 
 ### <a name="to-import-a-master-page-or-theme"></a>导入母版页或主题
 
@@ -40,7 +40,7 @@ ms.locfileid: "122093003"
 
      模块包含 (文件，例如母版页或主题) ，用于部署到在 SharePoint 中指定的位置。
 
-5. 在模块中，删除名为 的默认文件，该文件 *Sample.txt。*
+5. 在模块中，删除名为 的默认文件，*该文件Sample.txt。*
 
 6. 选择模块节点。
 
@@ -55,7 +55,7 @@ ms.locfileid: "122093003"
 
 9. 在模块中 *，打开* Elements.xml。
 
-     必须 *更新Elements.xml以* 引用添加的母版页或主题。
+     必须 *更新Elements.xml文件* 以引用添加的母版页或主题。
 
 10. 对于母版页，请将现有模块标记替换为以下标记。
 
@@ -88,11 +88,11 @@ ms.locfileid: "122093003"
 
 12. 在菜单栏上，选择"**生成部署**  >  **解决方案"。**
 
-13. 若要验证文件是否已正确部署，请打开 SharePoint 站点，选择"站点操作"菜单，选择"站点 **设置"命令，** 然后选择"母版页"链接或"**主题"链接**。
+13. 若要验证文件是否已正确部署，请打开 SharePoint 站点，选择"站点操作"菜单，选择"站点 **设置"** 命令，然后选择"母版页"链接或"主题"**链接**。
 
      将显示母版页或主题的列表，其中包含已导入的母版页或主题。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [母版页](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14))
 - [从现有站点导入SharePoint项](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [为 SharePoint 创建页](../sharepoint/creating-pages-for-sharepoint.md)

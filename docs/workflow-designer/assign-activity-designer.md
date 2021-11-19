@@ -14,11 +14,11 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: 524d55608b8cc75deea1c876ab03a4a437ad2049
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122135372"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126667597"
 ---
 # <a name="assign-activity-designer"></a>Assign 活动设计器
 
@@ -41,10 +41,10 @@ Assign 活动设计器用于创建和配置 <xref:System.Activities.Statements.A
 |属性名称|必选|使用情况|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|错误|<xref:System.Activities.Statements.Assign> 活动的友好名称。 默认值为 Assign。 虽然 <xref:System.Activities.Activity.DisplayName%2A> 值不是绝对必需的，但最好使用该属性值。|
-|<xref:System.Activities.Statements.Assign.To%2A>|正确|为其赋 <xref:System.Activities.Statements.Assign.Value%2A> 的变量或自变量。 该值必须是有效的Visual Basic标识符。 若要设置 属性，请Visual Basic"分配活动设计器"或属性网格中的"To"框中键入一个表达式。 |
-|<xref:System.Activities.Statements.Assign.Value%2A>|True|赋给变量的值。 若要设置 <xref:System.Activities.Statements.Assign.Value%2A> ，在"分配Visual Basic或属性网格的"值"框中键入一个表达式。|
+|<xref:System.Activities.Statements.Assign.To%2A>|True|为其赋 <xref:System.Activities.Statements.Assign.Value%2A> 的变量或自变量。 该值必须是有效的标识符Visual Basic标识符。 若要设置 属性，请Visual Basic活动设计器或属性网格中的"To"框中键入一个表达式。 |
+|<xref:System.Activities.Statements.Assign.Value%2A>|True|赋给变量的值。 若要设置 ，请Visual Basic设计器或属性网格的"值"框中键入 <xref:System.Activities.Statements.Assign.Value%2A> 一个表达式。 |
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [基元](../workflow-designer/primitives-activity-designers.md)
 - [延迟](../workflow-designer/delay-activity-designer.md)

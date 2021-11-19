@@ -1,7 +1,8 @@
 ---
+description: 表示一个源文件。
 title: IDiaSourceFile | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,15 +10,16 @@ helpviewer_keywords:
 ms.assetid: 6e9be757-797f-4960-ba62-c14092620bbd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 08334c59ea061cee1618c76aa61ec6aa6fb8d7d4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: 69368bf24161834bcc7a92737291c5da36434a9e
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741779"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127831846"
 ---
 # <a name="idiasourcefile"></a>IDiaSourceFile
 表示一个源文件。
@@ -25,13 +27,13 @@ ms.locfileid: "72741779"
 ## <a name="syntax"></a>语法
 
 ```
-IDiaSourceFile : IUnknown
+IDiaSourceFile : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
-下表显示 `IDiaSourceFile` 的方法。
+下表显示的方法 `IDiaSourceFile` 。
 
-|方法|描述|
+|方法|说明|
 |------------|-----------------|
 |[IDiaSourceFile::get_uniqueId](../../debugger/debug-interface-access/idiasourcefile-get-uniqueid.md)|检索对此图像唯一的简单整数键值。|
 |[IDiaSourceFile::get_fileName](../../debugger/debug-interface-access/idiasourcefile-get-filename.md)|检索源文件名。|
@@ -42,7 +44,7 @@ IDiaSourceFile : IUnknown
 ## <a name="remarks"></a>备注
 
 ## <a name="notes-for-callers"></a>调用方说明
-通过调用[IDiaEnumSourceFiles：： Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)或[IDiaEnumSourceFiles：： Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md)方法获取此接口。 有关详细信息，请参阅示例。
+通过调用 [IDiaEnumSourceFiles：： Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md) 或 [IDiaEnumSourceFiles：： Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md) 方法获取此接口。 参阅示例了解详细信息。
 
 ## <a name="example"></a>示例
 此函数显示对指定表构成的所有源文件的名称。
@@ -77,9 +79,9 @@ void ShowSourceFiles(IDiaTable *pTable)
 
 库： diaguids
 
-DLL： msdia80
+DLL： msdia80.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [接口（调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)
 - [IDiaEnumSourceFiles::Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md)

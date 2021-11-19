@@ -2,7 +2,7 @@
 title: 调试时检查 XAML |Microsoft Docs
 description: 了解如何在调试时使用实时可视化树和实时属性资源管理器工具检查 XAML 属性并获取 UI 元素的树视图。
 ms.custom: SEO-VS-2020
-ms.date: 03/02/2021
+ms.date: 10/26/2021
 ms.topic: how-to
 ms.assetid: 390edde4-7b8d-4c89-8d69-55106b7e6b11
 author: TerryGLee
@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-xaml-tools
 ms.workload:
 - uwp
-ms.openlocfilehash: 0ecf5a1c11c9f942a3c89510ecaab050abfa9df3
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.openlocfilehash: 4ff5d56a29642d67a59f06b73270336af73219a3
+ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126664886"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "131127697"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>在调试时检查 XAML 属性
 
@@ -26,8 +26,8 @@ ms.locfileid: "126664886"
 
 |应用类型|操作系统和工具|
 |-----------------|--------------------------------|
-|Windows Presentation Foundation（4.0 和更高版本）应用程序|Windows 7 和更高版本|
-|通用 Windows 应用|Windows 10及以上版本，使用[Windows 10 SDK](https://dev.windows.com/downloads/windows-10-sdk)|
+|Windows Presentation Foundation (4.0 及更高版本) 应用程序|Windows 7 及更高版本|
+|通用 Windows 应用|Windows 10及更高版本，使用[Windows 10 SDK](https://dev.windows.com/downloads/windows-10-sdk)及更高版本|
 
 ## <a name="look-at-elements-in-the-live-visual-tree"></a>查看实时可视化树中的元素
 
@@ -124,7 +124,7 @@ ms.locfileid: "126664886"
 
    选择“实时可视化树”中的第一个列表框项并单击工具栏上的“显示属性”图标。 应显示“实时属性资源管理器”。 请注意，"**内容"** 字段为"Item1"，"**背景**  >  **颜色**"字段#FFFFFFE0。
 
-1. 返回到“实时可视化树”，然后选择第二个列表框项。 实时 **属性资源管理器** 应显示"内容"字段为"Item2"，"背景颜色"字段#FFD3D3D3 ( >  主题) 。 
+1. 返回到“实时可视化树”，然后选择第二个列表框项。 "**实时属性资源管理器**"应显示"内容"字段为"Item2"，"背景颜色"字段#FFD3D3D3 ( >  取决于主题) 。 
 
    > [!NOTE]
    > 实时属性资源管理器中属性周围的黄色 **边框** 表示通过绑定（如 ）设置属性值 `Color = {BindingExpression}` 。 绿色边框表示使用资源（如 ）设置值 `Color = {StaticResource MyBrush}` 。
@@ -132,9 +132,9 @@ ms.locfileid: "126664886"
    XAML 的实际结构具有大量你可能并不直接感兴趣的元素，并且如果不熟悉代码，可能很难导航树以查找正在寻找的内容。 因此“实时可视化树”有几种方法可使用应用程序的 UI 来帮助找到想要检查的元素。
 
    ::: moniker range=">= vs-2019"
-   **在正在运行的应用程序中选择 元素**。 当选择“实时可视化树”工具栏上最左侧的按钮时，可以启用此模式。 在此模式下，可以在应用程序中选择 UI 元素，并且“实时可视化树”（以及“实时属性查看器”）会自动更新以显示对应于该元素及其属性的树中的节点。 从 2019 Visual Studio 16.4 开始，可以配置元素[选择 的行为](../debugger/general-debugging-options-dialog-box.md)。
+   **在正在运行的应用程序中选择 元素**。 当选择“实时可视化树”工具栏上最左侧的按钮时，可以启用此模式。 在此模式下，可以在应用程序中选择 UI 元素，并且“实时可视化树”（以及“实时属性查看器”）会自动更新以显示对应于该元素及其属性的树中的节点。 从 2019 Visual Studio 16.4 开始，可以配置[元素选择 的行为](../debugger/general-debugging-options-dialog-box.md)。
 
-   在运行的应用程序中显示布局装饰器。 当选择“启用选择”按钮右侧紧靠的按钮时，可以启用此模式。 当“显示布局装饰器”打开时，它会导致应用程序窗口沿所选对象的边界显示水平线和垂直线，以便看到它与什么对齐，以及显示边距的矩形。 例如，同时打开 **"选择元素** "和" **显示布局** "，然后选择应用程序中的"添加 **项** "文本块。 应看到“实时可视化树”中的文本块节点和“实时属性查看器”中的文本块属性，以及文本块边界上的水平线和垂直线。
+   在运行的应用程序中显示布局装饰器。 当选择“启用选择”按钮右侧紧靠的按钮时，可以启用此模式。 当“显示布局装饰器”打开时，它会导致应用程序窗口沿所选对象的边界显示水平线和垂直线，以便看到它与什么对齐，以及显示边距的矩形。 例如，同时打开 **"选择元素** "和" **显示布局** "，然后选择应用程序中 **的"添加项** "文本块。 应看到“实时可视化树”中的文本块节点和“实时属性查看器”中的文本块属性，以及文本块边界上的水平线和垂直线。
 
    ![DisplayLayout 中的 LivePropertyViewer](../debugger/media/vs-2019/livevisualtreelivepropertyviewer-displaylayout.png "LiveVisualTreeLivePropertyViewer-DisplayLayout")
 

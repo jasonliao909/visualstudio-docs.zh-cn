@@ -1,7 +1,7 @@
 ---
 title: 禁止显示代码分析违规情况
 ms.date: 05/10/2021
-description: 了解如何在 Visual Studio 中取消显示代码分析冲突。 了解如何使用 SuppressMessageAttribute 属性进行源内禁止显示。
+description: 了解如何在代码中禁止显示代码Visual Studio。 了解如何使用 SuppressMessageAttribute 属性进行源内抑制。
 ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,124 +17,124 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 224de248715a75a3291869f4bc588384f662643f
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.openlocfilehash: a509aa12f59298af97245647bd971a7272ffcaef
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126601287"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129968171"
 ---
 # <a name="suppress-code-analysis-violations"></a>禁止显示代码分析违规情况
 
-它通常用于指示警告不适用。 这向团队成员表明代码已评审，并且可以禁止显示该警告。 本文介绍使用 Visual Studio IDE 取消代码分析冲突的不同方法。
+指示警告不适用通常很有用。 这向团队成员指示已评审代码，并且可以禁止显示警告。 本文介绍使用 IDE 取消代码分析冲突Visual Studio方式。
 
 ::: moniker range=">=vs-2019"
 
-## <a name="suppress-violations-using-the-editorconfig-file"></a>使用 EditorConfig 文件取消冲突
+## <a name="suppress-violations-using-the-editorconfig-file"></a>使用 EditorConfig 文件禁止冲突
 
-在 **EditorConfig 文件** 中，将严重性设置为 `none` ，例如 `dotnet_diagnostic.CA1822.severity = none` 。 若要添加 EditorConfig 文件，请参阅 [将 EditorConfig 文件添加到项目](../ide/create-portable-custom-editor-options.md#add-and-remove-editorconfig-files)。
+在 **EditorConfig 文件中**，将严重性设置为 `none` ，例如 `dotnet_diagnostic.CA1822.severity = none` 。 若要添加 EditorConfig 文件，请参阅 [将 EditorConfig 文件添加到项目](../ide/create-portable-custom-editor-options.md#add-and-remove-editorconfig-files)。
 
 ::: moniker-end
 
-## <a name="suppress-violations-in-source-code"></a>禁止在源代码中发生冲突
+## <a name="suppress-violations-in-source-code"></a>禁止显示源代码中的冲突
 
-您可以使用预处理器指令取消代码中的冲突， [#pragma 警告 (c # ) ](/dotnet/csharp/language-reference/preprocessor-directives.md#pragma-warning)或[禁用 (Visual Basic) ](/dotnet/visual-basic/language-reference/directives/disable-enable.md)指令来仅禁止显示特定代码行的警告。 或者，可以使用 [SuppressMessage 属性](#in-source-suppression-and-the-suppressmessage-attribute)。
+可以使用预处理器指令、#pragma 警告[ (C#) ](/dotnet/csharp/language-reference/preprocessor-directives#pragma-warning)或禁用[ (Visual Basic) ](/dotnet/visual-basic/language-reference/directives/disable-enable)指令在代码中取消冲突，以仅禁止显示特定代码行的警告。 或者，可以使用 [SuppressMessage 属性](#in-source-suppression-and-the-suppressmessage-attribute)。
 
 - 从 **代码编辑器**
 
-  将光标放在包含冲突的代码行中，然后按 **Ctrl** + **Period (。 )** 打开 "**快速操作**" 菜单。 选择 "**取消 CAXXXX**"，然后在 "源" 或 **"源 (属性")****中** 进行选择。
+  将光标置于具有冲突的代码行中，然后按 **Ctrl** + **Period (.)** 打开"**快速操作"** 菜单。 选择 **"取消 CAXXXX"，** 然后选择 **"源** "或"源 (**属性) "**。
 
-  如果在 " **源" 中** 选择，则会看到将添加到代码中的预处理器指令的预览。
+  如果在" **源"中选择**，则会看到预处理器指令的预览，该指令将添加到代码中。
 
   ::: moniker range="vs-2017"
-  :::image type="content" source="media/suppress-diagnostic-from-editor.png" alt-text="禁止显示 &quot;快速操作&quot; 菜单中的诊断":::
+  :::image type="content" source="media/suppress-diagnostic-from-editor.png" alt-text="从快速操作菜单取消诊断":::
   ::: moniker-end
   ::: moniker range=">=vs-2019"
-  :::image type="content" source="media/vs-2019/suppress-diagnostic-from-editor.png" alt-text="禁止显示 &quot;快速操作&quot; 菜单中的诊断":::
+  :::image type="content" source="media/vs-2019/suppress-diagnostic-from-editor.png" alt-text="从快速操作菜单取消诊断":::
 
-  如果在 " **源 (属性") 中** 进行选择，则会看到将添加到代码中的 [SuppressMessage 属性](#in-source-suppression-and-the-suppressmessage-attribute) 的预览。
+  如果在" **源" (属性**) ，则会看到将添加到代码中的 [SuppressMessage](#in-source-suppression-and-the-suppressmessage-attribute) 属性的预览。
 
-  :::image type="content" source="media/vs-2019/suppress-diagnostic-from-editor-attribute.png" alt-text="使用特性禁止显示 &quot;快速操作&quot; 菜单中的诊断":::
+  :::image type="content" source="media/vs-2019/suppress-diagnostic-from-editor-attribute.png" alt-text="使用属性禁止从快速操作菜单进行诊断":::
   ::: moniker-end
 
-- 从 **错误列表**
+- 从 **错误列表中**
 
-  选择要禁止显示的规则，然后右键单击并选择 "   >  **在源中** 禁止显示"。
+  选择要取消的规则，然后右键单击并选择"在源 **中**  >  **禁止显示"。**
 
-  - 如果在 "**源" 中** 取消，则会打开 "**预览更改**" 对话框，并显示 c # [#pragma 警告](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning)或 Visual Basic 添加到源代码中 [#Disable 警告](/dotnet/visual-basic/language-reference/directives/directives)指令的预览。
+  - 如果取消 **"在源中"，"** 预览更改"对话框将打开，并#pragma [C#](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) Visual Basic#Disable [添加到](/dotnet/visual-basic/language-reference/directives/directives)源代码的警告指令的预览。 
 
-    ![在代码文件中添加 #pragma 警告的预览](media/pragma-warning-preview.png)
+    ![在代码#pragma添加警告的预览](media/pragma-warning-preview.png)
 
-  在 " **预览更改** " 对话框中，选择 " **应用**"。
+  在"**预览更改"** 对话框中，选择"应用 **"。**
 
   > [!NOTE]
-  > 如果在 **解决方案资源管理器** 中看不到 "**禁止显示**" 菜单选项，则可能是由于冲突而导致生成，而非实时分析。 **错误列表** 显示来自实时代码分析和生成的诊断或规则冲突。 由于生成诊断可能已过时，例如，如果已编辑代码以修复冲突，但未重新生成，则无法从 **错误列表** 中取消这些诊断。 来自实时分析或 IntelliSense 的诊断对于当前源始终是最新的，并且可以从 **错误列表** 中抑制。 若要从所选内容中排除 *生成* 诊断，请将 **错误列表** 源筛选器从 " **生成** " 改为 " **仅** intellisense"。 然后，选择要禁止显示的诊断，并按照前面所述进行操作。
+  > 如果未在"取消"菜单中看到"取消"解决方案资源管理器，**则** 冲突可能来自生成，而不是实时分析。 " **错误列表** "显示实时代码分析和生成中的诊断或规则冲突。 例如，由于生成诊断可能过时，因此，如果已编辑代码来修复冲突，但尚未重新生成，则不能从错误列表 取消这些 **诊断**。 实时分析或 IntelliSense 中的诊断始终与当前源一样最新，可以从错误 **列表 取消。** 若要从 *所选* 内容中排除生成诊断，将"错误 **列表**"源筛选器从"生成 **+ IntelliSense"** 切换为"**仅 IntelliSense"。** 然后，选择要取消的诊断，然后按前面所述继续。
   >
-  > ![Visual Studio 中的错误列表源筛选器](media/error-list-filter.png)
+  > ![错误列表中源筛选器Visual Studio](media/error-list-filter.png)
 
-## <a name="suppress-violations-using-a-global-suppression-file"></a>使用全局禁止显示文件取消冲突
+## <a name="suppress-violations-using-a-global-suppression-file"></a>使用全局抑制文件抑制冲突
 
-[全局禁止显示文件](#global-level-suppressions)使用[SuppressMessage 属性](#in-source-suppression-and-the-suppressmessage-attribute)。
+全局 [抑制文件使用](#global-level-suppressions) [SuppressMessage 属性](#in-source-suppression-and-the-suppressmessage-attribute)。
 
-- 从 "**错误列表** 中，选择要禁止显示的规则，然后右键单击并选择"   >  **在禁止显示文件中** 取消 "。 " **预览更改** " 对话框将打开，并显示 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 添加到全局禁止显示文件的属性的预览。
+- 从"**错误列表"** 中，选择要取消的规则，然后右键单击并选择"抑制  >  **文件"中的"禁止显示"。** " **预览更改** "对话框随即打开，其中显示了添加到全局抑制 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 文件的属性预览。
 
-  ![向禁止显示文件添加 SuppressMessage 属性的预览](media/preview-changes-in-suppression-file.png)
+  ![将 SuppressMessage 属性添加到抑制文件的预览](media/preview-changes-in-suppression-file.png)
 
-- 在 **代码编辑器** 中，将光标放在代码行中，并按 "**快速操作和重构**" (或按 **Ctrl** + **Period (。 )**) 以打开 "**快速操作**" 菜单。 选择 " **取消 CAXXXX**"，然后选择 **"在禁止显示文件**"。 将创建或修改 [全局禁止显示文件](#global-level-suppressions) 的预览。
+- 在代码编辑器中，将光标置于具有冲突的代码行中，然后按"快速操作和 **重构" (** 或按 **Ctrl** + **Period (.)**) 打开"**快速操作**"菜单。 选择 **"取消 CAXXXX"，** 然后在" **抑制文件"中选择**。 你会看到将创建 [或修改的](#global-level-suppressions) 全局抑制文件的预览。
 
 ::: moniker range=">=vs-2019"
 
-- 从 "**分析**" 菜单上，选择 "**分析**  >  **生成" 和 "取消显示** 菜单栏上的活动问题" 以取消所有当前冲突。 这有时称为 "基线"。
+- 在"**分析"** 菜单中，**选择菜单** 栏上的"分析生成和抑制活动问题  >  "，以禁止显示所有当前冲突。 这有时称为"基线"。
 
 ::: moniker-end
 ::: moniker range="vs-2017"
 
-- 从 "**分析**" 菜单中，选择 "**分析**  >  **运行 Code Analysis 并取消** 菜单栏上的活动问题以禁止显示所有当前冲突。 这有时称为 "基线"。
+- 在"**分析"** 菜单中，**选择"分析** Code Analysis"菜单栏上的"禁止显示活动问题"，  >  以禁止显示所有当前冲突。 这有时称为"基线"。
 ::: moniker-end
 
-## <a name="suppress-violations-using-project-settings"></a>使用项目设置取消冲突
+## <a name="suppress-violations-using-project-settings"></a>使用项目设置禁止冲突
 
-在 **解决方案资源管理器** 中，打开项目的 "属性" (右键单击项目并选择 "**属性**" (或按 **Alt + enter**) 并使用 " **Code Analysis** " 选项卡配置选项。 例如，你可以禁用实时代码分析或禁用 .NET 分析器。
+在 **解决方案资源管理器** 中，打开项目的属性 (右键单击该项目并选择"**属性" (** 或按 Alt + **Enter**) 并使用"Code Analysis"**选项卡配置** 选项。 例如，可以禁用实时代码分析或禁用 .NET 分析器。
 
-## <a name="suppress-violations-using-a-rule-set"></a>使用规则集禁止发生冲突
+## <a name="suppress-violations-using-a-rule-set"></a>使用规则集禁止冲突
 
-从 **规则集编辑器** 中清除其名称旁边的复选框，或将 " **操作** " 设置为 " **无**"。
+在规则 **集编辑器中**，清除其名称旁边的复选框，或将"**操作"** 设置为"无 **"。**
 
-## <a name="in-source-suppression-and-the-suppressmessage-attribute"></a>源代码中禁止显示和 SuppressMessage 属性
+## <a name="in-source-suppression-and-the-suppressmessage-attribute"></a>源内抑制和 SuppressMessage 属性
 
- (ISS) 中的源代码中禁止 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 显示警告。 特性可放置在生成警告的代码段附近。 可以 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 通过在源文件中键入来将其添加到源文件中，也可以使用 **错误列表** 中的警告的快捷菜单来自动添加该属性。
+ISS (源) <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 使用 属性来禁止显示警告。 属性可以放置在生成警告的代码段附近。 可以通过键入属性将属性添加到源文件，或者可以使用"错误列表"中的警告上的快捷菜单 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 自动添加它。 
 
-<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>特性是一个条件特性，仅当编译时定义了 CODE_ANALYSIS 编译符号时，它才包含在托管代码程序集的 IL 元数据中。
+属性是一个条件属性，它包含在托管代码程序集的 IL 元数据中，CODE_ANALYSIS编译符号 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 在编译时定义。
 
-在 c + +/CLI 中，使用 \_ 标头文件中的宏 CA 禁止显示 \_ 消息或 CA \_ 全局 \_ SUPPRESS_MESSAGE 来添加属性。
+在 C++/CLI 中，使用标头SUPPRESS_MESSAGE CA SUPPRESS MESSAGE 或 \_ \_ CA GLOBAL \_ \_ 命令来添加 属性。
 
 > [!NOTE]
-> 不应在发布版本中使用源内禁止显示，以防止意外发送源中禁止显示元数据。 此外，由于源中禁止显示的处理成本，你的应用程序的性能可能会下降。
+> 不应在发布版本上使用源内抑制，以防止意外交付源内抑制元数据。 此外，由于源内抑制的处理成本，应用程序的性能可能会下降。
 
 ::: moniker range="vs-2017"
 
 > [!NOTE]
-> 如果将项目迁移到 Visual Studio 2017，可能会突然遇到大量代码分析警告。 如果尚未准备好修复警告，则可以通过选择 "**分析**  >  **运行 Code Analysis 并取消显示活动问题** 来禁止显示这些警告。
+> 如果将项目迁移到 2017 Visual Studio，可能会突然面临大量代码分析警告。 如果还没有准备好修复警告，可以通过选择"分析运行状态"和"禁止Code Analysis  >  **取消显示所有警告**。
 >
-> ![运行代码分析并取消 Visual Studio 中的问题](media/suppress-active-issues.png)
+> ![运行代码分析并禁止显示Visual Studio](media/suppress-active-issues.png)
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019&quot;
+::: moniker range=">=vs-2019"
 
 > [!NOTE]
-> 如果将项目迁移到 Visual Studio 2019，可能会突然遇到大量代码分析警告。 如果尚未准备好修复警告，则可以通过选择 &quot;**分析**  >  **生成并取消活动问题**&quot; 来禁止显示这些警告。
+> 如果将项目迁移到 2019 Visual Studio，可能会突然面临大量代码分析警告。 如果还没有准备好修复警告，可以通过选择"分析生成"和"禁止活动问题"来  >  **取消显示所有这些警告**。
 
 ::: moniker-end
 
-### <a name=&quot;suppressmessage-attribute&quot;></a>SuppressMessage 特性
+### <a name="suppressmessage-attribute"></a>SuppressMessage 特性
 
-如果从 **错误列表** 中的 &quot;代码分析&quot; 警告的上下文或右键单击菜单中选择 &quot;**隐藏**&quot;，则 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 会在代码或项目的全局禁止显示文件中添加特性。
+在 **"错误** 列表"中选择代码分析警告的上下文或右键单击菜单时，会向代码或项目的全局抑制文件添加 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 属性。
 
-该 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 属性具有以下格式：
+<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>属性采用以下格式：
 
 ```vb
-<Scope:SuppressMessage(&quot;Rule Category&quot;, &quot;Rule Id&quot;, Justification = &quot;Justification&quot;, MessageId = &quot;MessageId&quot;, Scope = &quot;Scope&quot;, Target = &quot;Target")>
+<Scope:SuppressMessage("Rule Category", "Rule Id", Justification = "Justification", MessageId = "MessageId", Scope = "Scope", Target = "Target")>
 ```
 
 ```csharp
@@ -147,41 +147,41 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 属性的属性包括：
 
-- **类别** -定义规则的类别。 有关代码分析规则类别的详细信息，请参阅 [托管代码警告](/dotnet/fundamentals/code-analysis/quality-rules/index)。
+- **类别** - 定义规则的类别。 有关代码分析规则类别的信息，请参阅 [托管代码警告](/dotnet/fundamentals/code-analysis/quality-rules/index)。
 
-- **CheckId** -规则的标识符。 支持包括规则标识符的短名称和长名称。 短名称为 CAXXXX;长名称为 CAXXXX： FriendlyTypeName。
+- **CheckId** - 规则的标识符。 支持包括规则标识符的短名称和长名称。 短名称为 CAXXXX;长名称为 CAXXXX：FriendlyTypeName。
 
-- **对齐** -用于记录取消消息原因的文本。
+- **理由** - 用于记录取消消息原因的文本。
 
-- **MessageId** -每个消息的问题的唯一标识符。
+- **MessageId** - 每条消息的问题的唯一标识符。
 
-- **作用域** -要禁止显示警告的目标。 如果未指定目标，则将其设置为属性的目标。 支持的 [范围](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope) 包括：
+- **范围** - 要禁止显示警告的目标。 如果未指定目标，则设置为属性的目标。 支持 [的范围](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope) 包括：
 
-  - [`module`](#module-suppression-scope) -此作用域禁止对程序集发出警告。 它是适用于整个项目的全局禁止显示。
+  - [`module`](#module-suppression-scope) - 此范围禁止显示针对程序集的警告。 它是应用于整个项目的全局抑制。
 
-  - `resource` - ([仅](../code-quality/static-code-analysis-for-managed-code-overview.md)) 此作用域中的警告，会禁止将诊断信息中的警告写入属于模块 (程序集) 模块的资源文件中。 在 c #/VB 编译器中，对于 Roslyn 分析器诊断（仅分析源文件），不读取/遵循此范围。
+  - `resource` - (旧版 [FxCop](../code-quality/static-code-analysis-for-managed-code-overview.md)) 此范围禁止在写入到属于模块程序集的模块的一部分的资源文件的诊断信息 (警告) 。 在仅分析源文件的 Roslyn 分析器诊断的 C#/VB编译器中不读取/遵守此范围。
 
-  - `type` -此作用域禁止对类型发出警告。
+  - `type` - 此范围禁止显示针对类型的警告。
 
-  - `member` -此作用域禁止对成员的警告。
+  - `member` - 此范围禁止显示针对成员发出的警告。
 
-  - `namespace` -此范围禁止显示针对命名空间本身的警告。 它不会禁止对命名空间中的类型发出警告。
+  - `namespace` - 此范围禁止显示针对命名空间本身的警告。 它不会禁止显示针对命名空间中的类型的警告。
 
-  - `namespaceanddescendants`- (需要编译器版本1.x 或更高版本，并且 Visual Studio 2019) 此作用域禁止显示命名空间及其所有子代符号中的警告。 `namespaceanddescendants`旧分析将忽略该值。
+  - `namespaceanddescendants`- (编译器版本 3.x 或更高版本以及 Visual Studio 2019) 此范围禁止命名空间及其所有子代符号中的警告。 旧 `namespaceanddescendants` 分析将忽略该值。
 
-- **目标** -用于指定取消警告的目标的标识符。 它必须包含完全限定的项目名称。
+- **目标** - 一个标识符，用于指定要禁止显示警告的目标。 它必须包含完全限定的项名称。
 
-如果在 Visual Studio 中看到警告，则可以 `SuppressMessage` 通过[将抑制添加到全局禁止显示文件来](../code-quality/use-roslyn-analyzers.md#suppress-violations)查看的示例。 禁止显示属性及其必需的属性将显示在预览窗口中。
+在全局抑制文件中Visual Studio警告时，可以通过向全局抑制文件 添加抑制来 `SuppressMessage` [查看 的示例](../code-quality/use-roslyn-analyzers.md#suppress-violations)。 抑制属性及其必需属性显示在预览窗口中。
 
 ### <a name="suppressmessage-usage"></a>SuppressMessage 用法
 
-Code Analysis 警告会在属性应用到的级别上取消 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 。 例如，可以将属性应用于程序集、模块、类型、成员或参数级别。 这样做的目的是将抑制信息紧密地耦合到发生冲突的代码中。
+Code Analysis属性应用到的级别取消显示 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 警告。 例如，可以在程序集、模块、类型、成员或参数级别应用 属性。 这样做的目的是将抑制信息与发生冲突的代码紧密耦合。
 
-禁止显示的一般形式包括规则类别和规则标识符，其中包含规则名称的可选可读表示形式。 例如：
+抑制的一般形式包括规则类别和规则标识符，其中包含规则名称的可选可读表示形式。 例如：
 
 `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`
 
-如果由于最大程度地减少了源中禁止显示元数据的性能原因，则可以省略规则名称。 规则类别及其规则 ID 共同构成了一个足够唯一的规则标识符。 例如：
+如果出于严格的性能原因来最小化源内抑制元数据，可以省略规则名称。 规则类别及其规则 ID 共同构成了足够唯一的规则标识符。 例如：
 
 `[SuppressMessage("Microsoft.Design", "CA1039")]`
 
@@ -191,9 +191,9 @@ Code Analysis 警告会在属性应用到的级别上取消 <xref:System.Diagnos
 
 抑制特性可以应用于方法，但不能嵌入在方法体中。 这意味着，如果将 属性添加到 方法，将禁止特定规则 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 的所有冲突。
 
-在某些情况下，你可能想要禁止显示特定冲突实例，例如，这样以后的代码不会自动从代码分析规则中免除。 某些代码分析规则允许通过使用 属性的 属性 `MessageId` 来 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 这样做。 通常，特定符号冲突的旧规则 (局部变量或参数) 属性 `MessageId` 。 [CA1500：VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500.md) 就是此类规则的一个示例。 但是，针对非符号 (代码冲突的旧) 规则不遵守 `MessageId` 属性。 此外，.NET Compiler Platform ("Roslyn") 分析器不遵守 `MessageId` 属性。
+在某些情况下，你可能想要禁止显示特定冲突实例，例如，这样以后的代码不会自动从代码分析规则中免除。 某些代码分析规则允许通过使用 属性的 属性 `MessageId` 来 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 这样做。 通常，特定符号冲突的旧规则 (局部变量或参数) 属性 `MessageId` 。 [CA1500：VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500.md) 就是此类规则的一个示例。 但是，针对非符号 (代码冲突的旧) 不遵守 `MessageId` 属性。 此外，.NET Compiler Platform (分析器) "Roslyn"属性 `MessageId` 。
 
-若要禁止与规则的特定符号冲突，请为属性的 `MessageId` 属性指定符号 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 名称。 以下示例显示的代码与[CA1500：VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500.md)的两个冲突一个针对变量，另 &mdash; `name` 一个冲突针对 `age` 变量。 仅禁止显示 `age` 符号冲突。
+若要禁止与规则的特定符号冲突，请为属性的 `MessageId` 属性指定符号 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 名称。 以下示例显示的代码与[CA1500：VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500.md)的两个冲突一个针对变量，一 &mdash; `name` 个针对 `age` 变量。 仅禁止显示 `age` 符号冲突。
 
 ```vb
 Public Class Animal
@@ -248,7 +248,7 @@ public class Animal
 
 #### <a name="global-suppression-file"></a>全局抑制文件
 
-全局抑制文件保留全局级抑制或未指定目标的抑制。 例如，程序集级违规的抑制存储在此文件中。 此外，ASP.NET 抑制存储在此文件中，因为项目级设置不适用于窗体后面的代码。 第一次在"错误列表"窗口中选择"禁止显示"命令的"in **Project抑制** 文件"选项时，会创建全局抑制文件并 **添加到** 项目中。
+全局抑制文件保留全局级抑制或未指定目标的抑制。 例如，程序集级违规的抑制存储在此文件中。 此外，ASP.NET 抑制存储在此文件中，因为项目级设置不适用于窗体后面的代码。 第一次在"错误列表"窗口中选择"禁止显示"命令的"in **Project Suppress File"** 选项时，会创建全局抑制文件并 **添加到项目中。**
 
 #### <a name="module-suppression-scope"></a>模块抑制范围
 

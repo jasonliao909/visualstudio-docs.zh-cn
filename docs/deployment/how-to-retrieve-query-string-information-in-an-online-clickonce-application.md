@@ -1,5 +1,5 @@
 ---
-title: 检索联机应用ClickOnce字符串信息
+title: 在联机查询应用中检索ClickOnce信息
 description: 了解ClickOnce应用程序如何读取 URL 的查询部分，以及如何使用 MageUI 将应用程序配置为接受查询字符串参数。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -20,7 +20,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 13a3a02b8853ede34ec257c01c0300e22fba136a
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126602515"

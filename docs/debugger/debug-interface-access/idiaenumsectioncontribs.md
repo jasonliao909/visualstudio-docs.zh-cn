@@ -1,7 +1,8 @@
 ---
+description: 枚举数据源中包含的各种节发布。
 title: IDiaEnumSectionContribs | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,15 +10,16 @@ helpviewer_keywords:
 ms.assetid: 0d6c0632-310f-4a99-8921-58149a1817e3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: e332bacdeaeca00d4e43d80807ee5f95c51c7e93
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: d56b5aa6bb35aa65b1e3736359fe0774c59fd1a1
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744247"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127832222"
 ---
 # <a name="idiaenumsectioncontribs"></a>IDiaEnumSectionContribs
 枚举数据源中包含的各种节发布。
@@ -25,15 +27,15 @@ ms.locfileid: "72744247"
 ## <a name="syntax"></a>语法
 
 ```
-IDiaEnumSectionContribs : IUnknown
+IDiaEnumSectionContribs : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
-下表显示 `IDiaEnumSectionContribs` 的方法。
+下表显示的方法 `IDiaEnumSectionContribs` 。
 
-|方法|描述|
+|方法|说明|
 |------------|-----------------|
-|[IDiaEnumSectionContribs::get__NewEnum](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-newenum.md)|检索此枚举器的[IEnumVARIANT 接口](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant)版本。|
+|[IDiaEnumSectionContribs::get__NewEnum](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-newenum.md)|检索此枚举器的 [IEnumVARIANT 接口](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) 版本。|
 |[IDiaEnumSectionContribs::get_Count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md)|检索部分基值。|
 |[IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)|通过索引检索节基值。|
 |[IDiaEnumSectionContribs::Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md)|检索枚举序列中指定数目的节内容。|
@@ -44,10 +46,10 @@ IDiaEnumSectionContribs : IUnknown
 ## <a name="remarks"></a>备注
 
 ## <a name="note-for-callers"></a>调用方的注释
-从[IDiaSession：： getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)方法获取此接口。 有关详细信息，请参阅示例。
+从 [IDiaSession：： getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md) 方法获取此接口。 参阅示例了解详细信息。
 
 ## <a name="example"></a>示例
-此示例演示如何获取（`GetEnumSectionContribs` 函数）并使用（`ShowSectionContribs` 函数） `IDiaEnumSectionContribs` 接口。 有关使用节发布的更完整示例，请参阅[IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)接口。
+此示例演示如何获取 (`GetEnumSectionContribs` 函数) 并使用 `ShowSectionContribs`) 接口 (函数 `IDiaEnumSectionContribs` 。 有关使用节发布的更完整示例，请参阅 [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) 接口。
 
 ```C++
 
@@ -104,9 +106,9 @@ void ShowSectionContribs(IDiaSession *pSession)
 
 库： diaguids
 
-DLL： msdia80
+DLL： msdia80.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [接口（调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

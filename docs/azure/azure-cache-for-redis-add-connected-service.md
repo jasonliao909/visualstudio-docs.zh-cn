@@ -1,6 +1,6 @@
 ---
 title: 使用 Azure Cache for Redis 添加连接的服务 |Microsoft Docs
-description: 使用 Azure Cache for Redis 添加对应用的支持Visual Studio添加连接的服务
+description: 使用Azure Cache for Redis添加连接服务，Visual Studio应用添加支持
 author: AngelosP
 manager: jmartens
 ms.technology: vs-azure
@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 16d67b8436368bc4b32f20e714a5c397817a1847
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.openlocfilehash: a8c234db5d9b0f003fa269def46b8c3fcc3da164
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126602178"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129430708"
 ---
 # <a name="add-azure-cache-for-redis-by-using-visual-studio-connected-services"></a>使用 Azure Cache for Redis 添加Visual Studio 连接的服务
 
-使用 Visual Studio，可以使用 连接的服务 功能将以下任一项 **Azure Cache for Redis连接：**
+使用 Visual Studio，可以使用 连接的服务 功能将以下任一项连接到 **Azure Cache for Redis：**
 
 - .NET Framework控制台应用
 - ASP.NETMVC (.NET Framework)  
@@ -36,7 +36,7 @@ ms.locfileid: "126602178"
 > 本主题适用于 Visual Studio  Windows 版。 有关 Visual Studio for Mac，请参阅 [Visual Studio for Mac 中连接服务](/visualstudio/mac/connected-services)。
 ## <a name="prerequisites"></a>先决条件
 
-- Visual Studio已安装 Azure 工作负荷。
+- Visual Studio已安装 Azure 工作负载。
 - 支持的类型之一的项目
 
 ## <a name="connect-to-azure-cache-for-redis-using-connected-services"></a>连接 Azure Cache for Redis 连接的服务
@@ -53,7 +53,7 @@ ms.locfileid: "126602178"
 
     ![添加 Azure Cache for Redis](./media/azure-redis-cache-add-connected-service/azure-redis-cache.png)
 
-    如果还没有登录，请登录到 Azure 帐户。 如果没有 Azure 帐户，可以注册[免费试用版](https://azure.microsoft.com/account/free)。
+    如果还没有登录，请登录到 Azure 帐户。 如果没有 Azure 帐户，可以注册[免费试用版](https://azure.microsoft.com/free/)。
 
 1. 在"**配置Azure Cache for Redis"** 屏幕中，选择现有Azure Cache for Redis，然后选择"下一 **步"。**
 
@@ -67,11 +67,11 @@ ms.locfileid: "126602178"
 
    1. 填写 **"Azure Cache for Redis：创建新屏幕**"，然后选择"创建 **"。**
 
-       ![新建Azure Cache for Redis](./media/azure-redis-cache-add-connected-service/create-new-azure-redis-cache.png)
+       ![新Azure Cache for Redis](./media/azure-redis-cache-add-connected-service/create-new-azure-redis-cache.png)
 
    1. 显示 **"配置Azure Cache for Redis"** 屏幕时，新缓存将显示在列表中。 在列表中选择新数据库，然后选择"下一 **步"。**
 
-1. 输入连接字符串名称或选择默认值，然后选择是希望连接字符串存储在本地机密文件中， [还是](/azure/key-vault)存储在 Azure Key Vault。
+1. 输入连接字符串名称，或选择默认值，然后选择是希望连接字符串存储在本地机密文件中， [还是](/azure/key-vault)存储在 Azure Key Vault。
 
    ![指定连接字符串](./media/azure-redis-cache-add-connected-service/connection-string.png)
 

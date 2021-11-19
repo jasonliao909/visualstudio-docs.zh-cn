@@ -1,6 +1,6 @@
 ---
 title: 使用 Azure 应用程序 Insights 添加连接的服务 |Microsoft Docs
-description: 使用 Azure 应用程序 Insights 向应用添加Visual Studio连接服务
+description: 使用 Azure 应用程序 Insights向应用添加Visual Studio连接服务
 author: AngelosP
 manager: jmartens
 ms.technology: vs-azure
@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: dc5bb07ef70ee5082fded77725205c1d29174ed4
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.openlocfilehash: 0f7cf3bd3166d4051dd100ca3d3a4d7a94b2b207
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126602179"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129430695"
 ---
 # <a name="add-azure-application-insights-by-using-visual-studio-connected-services"></a>使用 Azure 应用程序 Insights 添加Visual Studio 连接的服务
 
-使用 Visual Studio，可以使用 连接的服务 功能将以下任一项连接到 **Azure 应用程序 Insights：**
+使用 Visual Studio，可以使用 Azure 应用程序 Insights 功能将以下任何 **连接的服务连接：**
 
 - .NET Framework控制台应用
 - ASP.NETMVC (.NET Framework)  
@@ -53,9 +53,9 @@ ms.locfileid: "126602179"
 
     ![添加Azure 应用程序 Insights](./media/azure-app-insights-add-connected-service/azure-app-insights.png)
 
-    如果还没有登录，请登录到 Azure 帐户。 如果没有 Azure 帐户，可以注册[免费试用版](https://azure.microsoft.com/account/free)。
+    如果还没有登录，请登录到 Azure 帐户。 如果没有 Azure 帐户，可以注册[免费试用版](https://azure.microsoft.com/free/)。
 
-1. 在"**配置Azure 应用程序 Insights"** 屏幕中，选择现有Azure 应用程序 Insights组件，然后选择"下一 **步"。**
+1. 在"**配置Azure 应用程序 Insights"** 屏幕中，选择现有的Azure 应用程序 Insights组件，然后选择"下一 **步"。**
 
     如果需要创建新组件，请转到下一步。 否则，请跳到步骤 7。
 
@@ -65,13 +65,13 @@ ms.locfileid: "126602179"
 
    1. 选择 **屏幕底部的"Insights** 应用程序组件"。
 
-   1. 填写"应用程序 **"Insights：创建新** 屏幕，然后选择"创建 **"。**
+   1. 填写"应用程序 **Insights：创建新屏幕**，然后选择"创建 **"。**
 
        ![新的 Azure 应用 Insights 组件](./media/azure-app-insights-add-connected-service/create-new-app-insights.png)
 
    1. 显示 **"配置Azure 应用程序 Insights"** 屏幕时，新组件将显示在列表中。 在列表中选择新组件，然后选择"下一 **步"。**
 
-1. 输入检测密钥名称，或选择默认值，然后选择是希望连接字符串存储在本地机密文件中， [还是](/azure/key-vault)存储在 Azure Key Vault。
+1. 输入检测密钥名称或选择默认值，然后选择是希望连接字符串存储在本地机密文件中， [还是](/azure/key-vault)存储在 Azure Key Vault。
 
    ![指定连接字符串](./media/azure-app-insights-add-connected-service/connection-string.png)
 

@@ -20,7 +20,7 @@ ms.workload:
 - office
 ms.openlocfilehash: 482e0e3a797f0906792868a022bea4f7e5aa329e
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126600625"
@@ -45,7 +45,7 @@ ms.locfileid: "126600625"
 :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemextensionproperty.vb" id="Snippet8":::
 
 ### <a name="understand-the-code"></a>了解代码
- 为了确保每次发生事件时都使用相同的 类实例，代码示例在首次发生此事件时将 properties 对象添加到项目项 `CustomProperties` <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> 的 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 属性中。 每当再次发生此事件时，代码将检索此对象。 有关使用 属性将数据与项目项关联的 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 详细信息，请参阅将自定义数据与SharePoint[扩展关联](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)。
+ 为了确保每次发生事件时都使用相同的 类实例，代码示例在首次发生此事件时将 properties 对象添加到项目项 `CustomProperties` <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> 的 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 属性中。 每当此事件再次发生时，代码将检索此对象。 有关使用 属性将数据与项目项关联的信息， <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 请参阅将自定义数据与SharePoint[扩展关联](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)。
 
  若要保留对属性值的更改，的 **set** 访问器会将新值保存到与该属性关联的 `ExampleProperty` 对象的 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> 属性中。 有关使用 属性将数据与项目项一起保存详细信息，请参阅将数据保存在项目SharePoint <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> [扩展中](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)。
 
@@ -70,7 +70,7 @@ ms.locfileid: "126600625"
 - System.ComponentModel.Composition
 
 ## <a name="deploy-the-extension"></a>部署扩展
- 若要部署扩展，请为程序集 (VSIX) 包以及要随扩展一起分发的其他任何文件 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 创建扩展。 有关详细信息，请参阅 在 SharePoint 中为 Visual Studio[工具部署Visual Studio。](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)
+ 若要部署扩展，请为程序集 (VSIX) 包以及要随扩展一起分发的其他任何文件 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 创建扩展。 有关详细信息，请参阅在 Visual Studio 中为 SharePoint[工具部署Visual Studio。](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)
 
 ## <a name="see-also"></a>另请参阅
 - [如何：创建SharePoint项目项扩展](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)

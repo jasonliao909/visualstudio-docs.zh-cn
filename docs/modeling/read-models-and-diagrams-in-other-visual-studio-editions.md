@@ -15,7 +15,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 4adcdb442e31a0de834a05a06ea96981b761ea73
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126663908"
@@ -28,9 +28,9 @@ ms.locfileid: "126663908"
 
 ## <a name="obtaining-access-to-a-model-and-diagrams"></a>获取对某一模型和关系图的访问权限
 
-若要读取依赖项关系图，必须先使用 Visual Studio打开建模项目，然后打开其中关系图。
+若要读取依赖项关系图，必须先使用 Visual Studio打开建模项目，然后打开其中该关系图。
 
-因此，如果要读取依赖项关系图，则还必须有权访问创建它的建模项目。 为此，可以从源代码管理访问项目，也可以获取项目文件的副本。
+因此，如果要读取依赖项关系图，还必须有权访问创建它的建模项目。 为此，可以从源代码管理访问项目，也可以获取项目文件的副本。
 
 > [!NOTE]
 > 这不适用于从代码生成的代码图和 .NET 类图。 这些关系图可以独立建模项目中查看。

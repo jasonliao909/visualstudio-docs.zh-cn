@@ -17,7 +17,7 @@ ms.workload:
 - office
 ms.openlocfilehash: 66024105ac41c6c72d7eec019d507183fdd7479a
 ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/13/2021
 ms.locfileid: "122115546"
@@ -54,6 +54,6 @@ ms.locfileid: "122115546"
 > [!NOTE]
 > 您可以使用 [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] variable 语法 `$(` *propertyname* `)` 或环境变量语法 `%` *propertyname* `%` 来指定属性。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [MSBuild 参考](../msbuild/msbuild-reference.md)

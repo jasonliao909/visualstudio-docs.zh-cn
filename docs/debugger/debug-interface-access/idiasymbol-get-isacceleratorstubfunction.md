@@ -1,24 +1,26 @@
 ---
+description: 指示符号是否对应于为对应于 parallel_for_each 调用的快捷键编译的着色器的顶级函数符号。
 title: IDiaSymbol：： get_isAcceleratorStubFunction |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: cc4ea375-76f6-4ba8-baed-c5fa82108137
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: baf71d3be8916c18b16e4022a2af884617b5fd70
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: b652591ea55aa7b25a95c12b1813c67c252fd817
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740304"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127832667"
 ---
 # <a name="idiasymbolget_isacceleratorstubfunction"></a>IDiaSymbol::get_isAcceleratorStubFunction
-指示符号是否对应于为对应于 `parallel_for_each` 调用的快捷键编译的着色器的顶级函数符号。
+指示符号是否对应于为对应于调用的快捷键编译的着色器的顶级函数符号 `parallel_for_each` 。
 
 ## <a name="syntax"></a>语法
 
@@ -30,10 +32,10 @@ HRESULT get_isAcceleratorStubFunction(
 #### <a name="parameters"></a>参数
  `pFlag`
 
-弄一个指向 `BOOL` 的指针，该指针指示符号是否对应于为对应于 `parallel_for_each` 调用的快捷键编译的着色器的顶级函数符号。
+弄指向 `BOOL` 的指针，该指针指示符号是否对应于为对应于调用的快捷键编译的着色器的顶级函数符号 `parallel_for_each` 。
 
 ## <a name="return-value"></a>返回值
- 如果成功，将返回 `S_OK`;否则，将返回 `S_FALSE` 或错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回 `S_FALSE` 错误代码。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -19,11 +19,11 @@ ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
 ms.openlocfilehash: ba4096c9e0a3f4f949d8d8705c012b4867567b0a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122127852"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664131"
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt;产品 &gt; 元素 (引导程序) 
 `Product`元素是产品文件内的顶级 XML 元素。
@@ -143,7 +143,7 @@ ProductCode
 ## <a name="elements-and-attributes"></a>元素和属性
  `Product`产品文件中需要 元素。 它具有以下属性。
 
-|Attribute|说明|
+|属性|说明|
 |---------------|-----------------|
 |`ProductCode`|产品的唯一标识符。|
 
@@ -252,5 +252,5 @@ ProductCode
 </Product>
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [产品和包架构参考](../deployment/product-and-package-schema-reference.md)
