@@ -19,22 +19,22 @@ ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
 ms.openlocfilehash: 048d379aa3194eb7e6fca46019e6c5a2ddbd60c5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122035808"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126665865"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>如何：为 ClickOnce 部署中的各个系统必备项指定一个支持 URL
 部署可以测试许多必备组件，这些先决条件必须在客户端计算机 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 上提供，应用程序 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 才能运行。 这些依赖项包括所需的最低版本 .NET Framework、操作系统的版本，以及必须预装在全局程序集缓存 (GAC) 。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]但是，无法自行安装任何这些先决条件;如果找不到必备组件，则只会停止安装并显示一个对话框，说明安装失败的原因。
 
  有两种方法用于安装必备组件。 可以使用引导程序应用程序安装它们。 或者，可以指定单个先决条件的支持 URL，如果找不到先决条件，该 URL 将在对话框中向用户显示。 该 URL 引用的页面可以包含指向安装所需先决条件的说明的链接。 如果应用程序未指定单个先决条件的支持 URL，则显示整个应用程序的部署清单中指定的支持 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] URL（如果已定义）。
 
- 虽然 、Mage.exe和MageUI.exe都可用于生成部署，但这些工具都直接不支持为各个先决条件 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 指定支持 URL。 本文档介绍如何修改部署的应用程序清单和部署清单，以包含这些支持 URL。
+ 虽然 、Mage.exe和MageUI.exe都可用于生成部署，但这些工具都直接不支持为单个先决条件 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 指定支持 URL。 本文档介绍如何修改部署的应用程序清单和部署清单，以包含这些支持 URL。
 
 ### <a name="specify-a-support-url-for-an-individual-prerequisite"></a>为单个先决条件指定支持 URL
 
-1. 在文本编辑器 (*打开应用程序的 .manifest*) [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 清单。
+1. 在文本编辑器 (*.manifest*) [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 打开应用程序清单。
 
 2. 对于操作系统先决条件，将 `supportUrl` 属性添加到 `dependentOS` 元素：
 
@@ -84,7 +84,7 @@ ms.locfileid: "122035808"
 ## <a name="net-framework-security"></a>.NET Framework 安全性
  如果将应用程序标记为在部分信任下运行，则支持 URL 不会显示在对话框中。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Mage.exe（清单生成和编辑工具）](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 - [\<compatibleFrameworks> 元素](../deployment/compatibleframeworks-element-clickonce-deployment.md)

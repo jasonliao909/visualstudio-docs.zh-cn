@@ -1,7 +1,8 @@
 ---
-title: 枚举和结构 |Microsoft Docs
+description: 这些是集合使用的枚举和DIA SDK。
+title: 枚举和结构|Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,19 +13,20 @@ helpviewer_keywords:
 ms.assetid: d17eed2d-d8fd-4a47-82d3-8125c0624010
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 6769af8a417c111de6c8dfc68cd7cda548eaa24c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: 3380ab7db034649bacb05d6b9908ce5c6461c774
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745221"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127832370"
 ---
 # <a name="enumerations-and-structures"></a>枚举和结构
 
-这些是 DIA SDK 使用的枚举和结构。
+这些是集合使用的枚举和DIA SDK。
 
 ## <a name="in-this-section"></a>本节内容
 
@@ -36,7 +38,7 @@ ms.locfileid: "72745221"
 
 - [CV_access_e 枚举](../../debugger/debug-interface-access/cv-access-e.md)
 
- 指定成员函数和变量的可见性（访问级别）的作用域。
+ 指定成员函数和 (访问) 的可见性范围。
 
 - [CV_call_e 枚举](../../debugger/debug-interface-access/cv-call-e.md)
 
@@ -84,7 +86,7 @@ ms.locfileid: "72745221"
 
 - [UdtKind 枚举](../../debugger/debug-interface-access/udtkind.md)
 
- 描述用户定义类型（UDT）的各种类型。
+ 介绍 UDT (用户定义) 。
 
 ### <a name="structures"></a>结构
 
@@ -96,12 +98,12 @@ ms.locfileid: "72745221"
 
 [接口（调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 
-指定由 DIA SDK 提供的接口。
+指定由接口提供的DIA SDK。
 
 [常量（调试接口访问 SDK）](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)
 
-指定 DIA SDK 中可用的常量。
+指定该参数中可用的DIA SDK。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [引用](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)

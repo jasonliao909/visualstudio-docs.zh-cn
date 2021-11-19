@@ -1,7 +1,8 @@
 ---
-title: IDiaPropertyStorage：： ReadPropertyNames |Microsoft Docs
+description: 检索给定属性标识符的相应字符串名称。
+title: IDiaPropertyStorage：：ReadPropertyNames |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,18 +10,19 @@ helpviewer_keywords:
 ms.assetid: f8bcab77-afca-4a8f-8710-697842f8a518
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f554485ae56a9d5f190c749879545165d299531c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: 3c49a688fe1ecf9892ec5943934749694e8a839b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742871"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127832009"
 ---
 # <a name="idiapropertystoragereadpropertynames"></a>IDiaPropertyStorage::ReadPropertyNames
-检索给定属性标识符对应的字符串名称。
+检索给定属性标识符的相应字符串名称。
 
 ## <a name="syntax"></a>语法
 
@@ -35,21 +37,21 @@ HRESULT ReadPropertyNames (
 #### <a name="parameters"></a>参数
  `cpropid`
 
-中@No__t_0 中的属性 id 数。
+[in]中的属性 ID 数 `rgpropid` 。
 
  `rgpropid`
 
-中要获取其名称的属性 id 的数组（`PROPID` 在 WTypes 中定义为 `ULONG`）。
+[in]要获取其名称的属性 ID 数组 (`PROPID` WTypes.h 中定义为 `ULONG`) 。
 
  `rglpwstrName`
 
-[in，out]指定的属性 id 的属性名称数组。 必须预先分配数组以容纳请求的属性名称数，并且必须能够至少容纳 `cpropid``BSTR` 字符串。
+[in， out]指定属性 ID 的属性名称数组。 必须预先分配数组以保存请求的属性名称数，并且必须能够保存至少字符串 `cpropid``BSTR` 。
 
 ## <a name="return-value"></a>返回值
- 如果成功，将返回 `S_OK`;否则，将返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 当不再需要返回的属性名称时，必须通过调用 `SysFreeString` 函数将其释放。
+ 返回的属性名称必须释放 (不再需要时) `SysFreeString` 函数名称。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

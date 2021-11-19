@@ -1,7 +1,8 @@
 ---
+description: 从映像读取内存。
 title: IDiaStackWalkFrame：： readMemory |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,15 +10,16 @@ helpviewer_keywords:
 ms.assetid: 7ab0b525-a5a7-4692-acad-e8c00fa9ab9a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ae1201fca1fc25cce19b40b47d6435d02d80e1b4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: de206ac94a03d6f50d301fed84067e56dbc88a30
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741483"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127831803"
 ---
 # <a name="idiastackwalkframereadmemory"></a>IDiaStackWalkFrame::readMemory
 从映像读取内存。
@@ -25,7 +27,7 @@ ms.locfileid: "72741483"
 ## <a name="syntax"></a>语法
 
 ```C++
-HRESULT readMemory ( 
+HRESULT readMemory ( 
    MemoryTypeEnum type,
    ULONGLONG va,
    DWORD     cbData,
@@ -37,7 +39,7 @@ HRESULT readMemory ( 
 #### <a name="parameters"></a>参数
  `type`
 
-中[MemoryTypeEnum 枚举](../../debugger/debug-interface-access/memorytypeenum.md)值之一，用于指定要访问的内存类型。
+中 [MemoryTypeEnum 枚举](../../debugger/debug-interface-access/memorytypeenum.md) 值之一，用于指定要访问的内存类型。
 
  `va`
 
@@ -49,14 +51,14 @@ HRESULT readMemory ( 
 
  `pcbData`
 
-弄返回返回的字节数。 如果 `NULL` `data`，则 `pcbData` 包含可用数据的总字节数。
+弄返回返回的字节数。 如果 `data` 为 `NULL` ，则 `pcbData` 包含可用数据的总字节数。
 
  `data`
 
 弄要使用来自指定位置的数据进行填充的缓冲区。
 
 ## <a name="return-value"></a>返回值
- 如果成功，将返回 `S_OK`;否则，将返回错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

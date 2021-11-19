@@ -1,7 +1,8 @@
 ---
+description: 枚举数据源中包含的各种源文件。
 title: IDiaEnumSourceFiles | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,15 +10,16 @@ helpviewer_keywords:
 ms.assetid: 5c0779a6-a2ea-408a-90da-ebdecf2b83c0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 091d2f5996d53341e57c5c1b2125609642a156eb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: be3b2016b076fd9b2276e2bc64dfe3764b4e962e
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744030"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127832188"
 ---
 # <a name="idiaenumsourcefiles"></a>IDiaEnumSourceFiles
 枚举数据源中包含的各种源文件。
@@ -25,15 +27,15 @@ ms.locfileid: "72744030"
 ## <a name="syntax"></a>语法
 
 ```
-IDiaEnumSourceFiles : IUnknown
+IDiaEnumSourceFiles : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
-下表显示 `IDiaEnumSourceFiles` 的方法。
+下表显示的方法 `IDiaEnumSourceFiles` 。
 
-|方法|描述|
+|方法|说明|
 |------------|-----------------|
-|[IDiaEnumSourceFiles::get__NewEnum](../../debugger/debug-interface-access/idiaenumsourcefiles-get-newenum.md)|检索此枚举器的 `IEnumVARIANT Interface` 版本。|
+|[IDiaEnumSourceFiles::get__NewEnum](../../debugger/debug-interface-access/idiaenumsourcefiles-get-newenum.md)|检索 `IEnumVARIANT Interface` 此枚举器的版本。|
 |[IDiaEnumSourceFiles::get_Count](../../debugger/debug-interface-access/idiaenumsourcefiles-get-count.md)|检索源文件的数目。|
 |[IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)|通过索引检索源文件。|
 |[IDiaEnumSourceFiles::Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md)|检索枚举序列中指定数目的源文件。|
@@ -44,10 +46,10 @@ IDiaEnumSourceFiles : IUnknown
 ## <a name="remarks"></a>备注
 
 ## <a name="notes-for-callers"></a>调用方说明
-通过对[IDiaTable](../../debugger/debug-interface-access/idiatable.md)对象调用 `QueryInterface` 方法来获取此接口。 有关详细信息，请参阅示例。
+通过 `QueryInterface` 对 [IDiaTable](../../debugger/debug-interface-access/idiatable.md) 对象调用方法获取此接口。 参阅示例了解详细信息。
 
 ## <a name="example"></a>示例
-此示例演示如何从 DIA session 对象的表列表中获取 `IDiaEnumSourceFiles` 接口。 有关访问源文件信息的示例，请参阅[IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)接口。
+此示例演示如何 `IDiaEnumSourceFiles` 从 DIA session 对象的表列表中获取接口。 有关访问源文件信息的示例，请参阅 [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) 接口。
 
 ```C++
 
@@ -84,9 +86,9 @@ IDiaEnumSourceFiles* GetEnumSourceFiles(IDiaSession *pSession)
 
 库： diaguids
 
-DLL： msdia80
+DLL： msdia80.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [接口（调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)
 - [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)

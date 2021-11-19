@@ -17,16 +17,16 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: dddd3df6669ed401c6097ebd5761ed9a2c5e5660
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122040237"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664164"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>如何：创建域特定语言解决方案
 使用专用 Visual Studio 解决方案创建 (DSL) 域特定语言。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 在开始此过程之前，请安装以下组件：
 
@@ -119,7 +119,7 @@ ms.locfileid: "122040237"
 
  有关强命名的详细信息，请参阅 [创建和使用 Strong-Named 程序集](/dotnet/standard/assembly/create-use-strong-named)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [如何定义域特定语言](../modeling/how-to-define-a-domain-specific-language.md)
 - [域特定语言工具术语表](/previous-versions/bb126564(v=vs.100))

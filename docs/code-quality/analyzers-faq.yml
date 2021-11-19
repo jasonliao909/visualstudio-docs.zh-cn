@@ -1,7 +1,7 @@
 ### YamlMime:FAQ
 metadata:
   title: EditorConfig 与分析器
-  ms.date: 03/11/2019
+  ms.date: 10/05/2021
   description: 了解 Visual Studio 中基于 .NET Compiler Platform 的代码分析。 请参阅有关 EditorConfig 文件、规则集和其他主题的问题的解答。
   ms.custom: SEO-VS-2020
   ms.topic: conceptual
@@ -12,13 +12,13 @@ metadata:
   manager: jmartens
   ms.workload:
   - multiple
-  ms.openlocfilehash: a9ff57daf22d61758b3bbc7d99beb6d2555b7e18
-  ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-  ms.translationtype: MT
+  ms.openlocfilehash: 6e93f704bc792f2c8eb3b0ede8d12e8274ea0d45
+  ms.sourcegitcommit: d63ba1eff845d41ca095efb14b499ea96c4b6eba
+  ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/13/2021
-  ms.locfileid: "126602101"
-title: 代码分析常见问题解答
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "129561082"
+title: Visual Studio 中的代码分析常见问题解答
 summary: 此页包含有关 Visual Studio 中基于 .NET Compiler Platform 代码分析的一些常见问题的解答。
 sections:
 - name: 代码分析与 EditorConfig

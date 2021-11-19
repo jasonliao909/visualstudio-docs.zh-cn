@@ -11,7 +11,7 @@ ms.author: ghogen
 monikerRange: '>=vs-2019'
 ms.openlocfilehash: 250b89c983da039717982b31873a470172bde0f5
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126602147"
@@ -48,7 +48,7 @@ ms.locfileid: "126602147"
 
     如果尚未登录，请登录到 Azure 帐户。 如果没有 Azure 帐户，可以注册[免费试用版](https://azure.microsoft.com/free/dotnet)。
 
-1. 在 " **配置 Azure 应用配置** " 屏幕上，选择你的订阅和现有的配置存储。 然后选择“下一步”。
+1. 在 " **配置 Azure 应用配置** " 屏幕上，选择你的订阅和现有的配置存储。 然后，选择“下一步”。
 
     如果需要创建应用配置存储，请参阅下一步。 否则，请跳到步骤 6。
 

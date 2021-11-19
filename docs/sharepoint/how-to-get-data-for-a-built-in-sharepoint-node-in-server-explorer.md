@@ -18,11 +18,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: 322a5278ab2b21b02fb501523bfe9663948ae0fe
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122026923"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126666180"
 ---
 # <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>如何：获取服务器资源管理器中内置 SharePoint 节点的数据
   对于 **服务器资源管理器** 中的每个内置 SharePoint 节点，你可以获取该节点表示的基础 SharePoint 组件的数据。 有关详细信息，请参阅[扩展服务器资源管理器中的 SharePoint 连接节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。
@@ -51,7 +51,7 @@ ms.locfileid: "122026923"
 ## <a name="deploy-the-extension"></a>部署扩展
  若要部署 **服务器资源管理器** 扩展，请 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 为程序集以及要使用该扩展分发的任何其他文件创建扩展 (VSIX) 包。 有关详细信息，请参阅[Visual Studio 中的 SharePoint 工具的部署扩展](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [扩展服务器资源管理器中的“SharePoint 连接”节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [如何：扩展中的 SharePoint 节点服务器资源管理器](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)
 - [使用 SharePoint 项目服务](../sharepoint/using-the-sharepoint-project-service.md)

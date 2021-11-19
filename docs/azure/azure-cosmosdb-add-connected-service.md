@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 182e39c3dd1c166b539023427891c8bcd63eb193
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.openlocfilehash: 10271830f3b46633138ef1d9a3e9b6c84e8b89f5
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126602177"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129430742"
 ---
 # <a name="add-azure-cosmos-db-to-your-app-by-using-visual-studio-connected-services"></a>使用 Visual Studio 将 Azure Cosmos DB 添加到应用连接的服务
 
@@ -53,7 +53,7 @@ ms.locfileid: "126602177"
 
     ![添加 Azure Cosmos DB](./media/azure-cosmosdb-add-connected-service/azure-cosmosdb.png)
 
-    如果尚未登录，请登录到 Azure 帐户。 如果没有 Azure 帐户，可以注册[免费试用版](https://azure.microsoft.com/account/free)。
+    如果尚未登录，请登录到 Azure 帐户。 如果没有 Azure 帐户，可以注册[免费试用版](https://azure.microsoft.com/free/)。
 
 1. 在 " **Azure Cosmos DB** " 屏幕上，选择现有 Azure Cosmos DB，然后选择 "**下一步**"。
 

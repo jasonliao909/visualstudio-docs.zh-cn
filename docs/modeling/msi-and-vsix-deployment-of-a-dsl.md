@@ -11,11 +11,11 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: 65df491989278f768f44cb0f768a216e082a6570
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122100824"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663945"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL 的 MSI 和 VSIX 部署
 可以在自己的计算机或其他计算机上安装域特定语言。 Visual Studio 必须已安装在目标计算机上。
@@ -23,7 +23,7 @@ ms.locfileid: "122100824"
 ## <a name="choosing-between-vsix-and-msi-deployment"></a><a name="which"></a> 在 VSIX 和 MSI 部署之间选择
  部署域特定语言的方法有两种：
 
-|方法|优点|
+|方法|好处|
 |-|-|
 |VSX (Visual Studio 扩展) |易于部署：从 DslPackage 项目复制并执行 **.vsix** 文件。<br /><br /> 有关详细信息，请参阅 [使用 VSX 安装和卸载 DSL](#Installing)。|
 |MSI (安装程序文件) |-允许用户通过双击 DSL 文件来打开 Visual Studio。<br />-将图标与目标计算机中的 DSL 文件类型相关联。<br />-将 XSD (XML 架构) 与 DSL 文件类型相关联。 这可以避免在将文件加载到 Visual Studio 时出现警告。<br /><br /> 必须将安装项目添加到解决方案才能创建 MSI。<br /><br /> 有关详细信息，请参阅 [使用 MSI 文件部署 DSL](#msi)。|
@@ -137,4 +137,4 @@ ms.locfileid: "122100824"
 
 2. 卸载 DSL。
 
-3. 重启 Visual Studio。
+3. 重新启动 Visual Studio。

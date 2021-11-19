@@ -1,7 +1,8 @@
 ---
+description: 确定编译的行号，并确定源文件中的指定行号位于 或附近。
 title: IDiaSession::findLinesByLinenum | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,23 +10,24 @@ helpviewer_keywords:
 ms.assetid: 76d5622d-9a91-4c2a-a98f-263af5d1daef
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f5d64e9484b9450f5211e271df3b154ebab0fa75
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: 54a5d74e65879873db3d6a9394b9f7a74e6d0a64
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742106"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127831888"
 ---
 # <a name="idiasessionfindlinesbylinenum"></a>IDiaSession::findLinesByLinenum
-确定源文件中指定行号位于或接近的编译单位的行号。
+确定编译的行号，并确定源文件中的指定行号位于 或附近。
 
 ## <a name="syntax"></a>语法
 
 ```C++
-HRESULT findLinesByLinenum ( 
+HRESULT findLinesByLinenum ( 
     IDiaSymbol*           compiland,
     IDiaSourceFile*       file,
     DWORD                 linenum,
@@ -37,32 +39,32 @@ HRESULT findLinesByLinenum ( 
 #### <a name="parameters"></a>参数
 `compiland`
 
-中表示要在其中搜索行号的编译单位的[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)对象。 此参数不能为 `NULL`。
+[in]一 [个 IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 对象，表示要搜索行号的 compiland。 此参数不能为 `NULL`。
 
 `file`
 
-中一个[IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)对象，表示要在其中进行搜索的源文件。 此参数不能为 `NULL`。
+[in]表示 [要搜索的源文件的 IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) 对象。 此参数不能为 `NULL`。
 
 `linenum`
 
-中指定一个从1开始的行号。
+[in]指定从 1 到 1 的行号。
 
 > [!NOTE]
-> 不能使用零来指定所有行（使用[IDiaSession：： findLines](../../debugger/debug-interface-access/idiasession-findlines.md)方法查找所有行）。
+> 不能使用零指定所有行 ([IDiaSession：：findLines](../../debugger/debug-interface-access/idiasession-findlines.md) 方法查找所有行) 。
 
 `column`
 
-中指定列号。 使用零来指定所有列。 列是行中的字节偏移量。
+[in]指定列号。 使用零指定所有列。 列是行中的字节偏移量。
 
 `ppResult`
 
-弄返回包含检索的行号列表的[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objta。
+[out]返回一 [个 IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objta，其中包含检索到的行号列表。
 
 ## <a name="return-value"></a>返回值
-如果成功，将返回 `S_OK`;否则，将返回错误代码。
+如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="example"></a>示例
-下面的示例演示如何打开源文件，枚举此文件所提供的 compiland，并在每个编译单位的起始位置查找源文件中的行号。
+下面的示例演示如何打开源文件、枚举此文件贡献的编译和 ，以及如何在源文件中查找每个编译和启动的行号。
 
 ```C++
 void ShowLinesInCompilands(IDiaSession *pSession, LPCOLESTR filename)
@@ -101,7 +103,7 @@ void ShowLinesInCompilands(IDiaSession *pSession, LPCOLESTR filename)
 }
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)

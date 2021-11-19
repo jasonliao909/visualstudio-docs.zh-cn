@@ -15,7 +15,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: b3334b2be145dd01bd89fcc0b0d792238e9a684f
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126602195"
@@ -39,7 +39,7 @@ ms.locfileid: "126602195"
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|错误|<xref:System.Activities.Statements.CompensableActivity> 活动的可选友好名称。 默认值为 CompensableActivity。|
 |<xref:System.Activities.Activity%601.Result%2A>|错误|指定 <xref:System.Activities.Statements.CompensableActivity> 的返回值。 此属性必须在属性网格中进行编辑。|
-|<xref:System.Activities.Statements.CompensableActivity.Body%2A>|正确|指定为其提供补偿、取消和确认逻辑的活动。 若要添加 <xref:System.Activities.Statements.CompensableActivity.Body%2A> 活动，请将 **"工具箱**" 中的活动拖放到 " **CompensableActivity** " 活动设计器的 "**正文**" 框中。 添加提示文本 "在此处放置活动"。|
+|<xref:System.Activities.Statements.CompensableActivity.Body%2A>|True|指定为其提供补偿、取消和确认逻辑的活动。 若要添加 <xref:System.Activities.Statements.CompensableActivity.Body%2A> 活动，请将 **"工具箱**" 中的活动拖放到 " **CompensableActivity** " 活动设计器的 "**正文**" 框中。 添加提示文本 "在此处放置活动"。|
 |<xref:System.Activities.Statements.CompensableActivity.CancellationHandler%2A>|错误|指定在取消时执行的活动。 若要添加活动，请将其设计器从 **"工具箱**" 拖到 " **CompensableActivity** " 活动设计器上的 " **CancellationHandler** " 框。 添加提示文本 "在此处放置活动"。|
 |<xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A>|错误|指定补偿 <xref:System.Activities.Statements.CompensableActivity.Body%2A> 活动时要执行的活动。 可使用 <xref:System.Activities.Statements.Compensate> 活动显式调用此处理程序。<br /><br /> 若要添加活动，请将其活动设计器从 **"工具箱**" 拖到 " **CompensableActivity** " 活动设计器上的 " **CompensationHandler** " 框中。 添加提示文本 "在此处放置活动"。|
 |<xref:System.Activities.Statements.CompensableActivity.ConfirmationHandler%2A>|错误|指定确认 <xref:System.Activities.Statements.CompensableActivity.Body%2A> 活动时要执行的活动。 可使用 <xref:System.Activities.Statements.Confirm> 活动显式调用此处理程序。<br /><br /> 若要添加活动，请将其活动设计器从 **"工具箱**" 拖到 " **CompensableActivity** " 活动设计器上的 " **ConfirmationHandler** " 框中。 添加提示文本 "在此处放置活动"。|

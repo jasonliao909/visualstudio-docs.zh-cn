@@ -15,7 +15,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 942552f127cebaff4c0f923118fb8be0ac9b141a
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126602189"
@@ -31,7 +31,7 @@ ms.locfileid: "126602189"
 |属性名称|必选|使用情况|
 |-|--------------|-|
 |<xref:System.Activities.Statements.DoWhile.Body%2A>|错误|当条件为 true 时要执行 **的活动**。 若要添加活动，请从工具箱将活动拖放到 DoWhile 活动设计器上的"正文"框中，提示 <xref:System.Activities.Statements.DoWhile.Body%2A> 文本为"此处放置活动"。  |
-|<xref:System.Activities.Statements.DoWhile.Condition%2A>|正确|每次循环迭代后要计算的条件。 若要设置 <xref:System.Activities.Statements.DoWhile.Condition%2A> ，请Visual Basic **DoWhile** 活动设计器上的"条件"框中或在属性网格中键入一个表达式。|
+|<xref:System.Activities.Statements.DoWhile.Condition%2A>|True|每次循环迭代后要计算的条件。 若要设置 ，请Visual Basic DoWhile 活动设计器上的"条件"框中或在属性网格中 <xref:System.Activities.Statements.DoWhile.Condition%2A> 键入一个表达式。  |
 
 ## <a name="see-also"></a>另请参阅
 

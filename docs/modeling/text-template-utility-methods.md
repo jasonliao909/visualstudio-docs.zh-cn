@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 7ee6eff6c47a818eca29673b5aad6905e6f52e28
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126663864"
@@ -42,7 +42,7 @@ while (i-- > 0)
 #>
 ```
 
-### <a name="code-block-using-writeline"></a>使用 WriteLine 代码块 () 
+### <a name="code-block-using-writeline"></a>使用 WriteLine () 的代码块
 
 ```
 <#
@@ -56,7 +56,7 @@ while (i-- > 0)
 
 你可能会发现，使用这些实用工具方法之一，而不是在具有嵌套控件结构的长代码块内使用表达式块会很有帮助。
 
-和 方法具有两个重载，一个重载采用单个字符串参数，另一个重载采用复合格式字符串以及要包括在字符串中的对象数组 (`Write()` `WriteLine()` 如 `Console.WriteLine()` 方法) 。 的以下两个 `WriteLine()` 用法在功能上是等效的：
+和 方法具有两个重载，一个重载采用单个字符串参数，另一个重载采用复合格式字符串以及要包括在字符串中的对象数组 (如 方法 `Write()` `WriteLine()` `Console.WriteLine()`) 。 的以下两个 `WriteLine()` 用法在功能上是等效的：
 
 ```
 <#
@@ -122,7 +122,7 @@ Hello
 
 `<#@template ... hostspecific="true" #>`
 
-的类型 `this.Host` 取决于执行模板的主机类型。 在 Visual Studio 中运行的模板中，可以将 强制转换到 ，以获得对服务（如 `this.Host` `IServiceProvider` IDE）的访问权限。 例如：
+的类型 `this.Host` 取决于执行模板的主机类型。 在 Visual Studio 中运行的模板中，可以将 强制转换到 ，以获得对 `this.Host` `IServiceProvider` 服务（如 IDE）的访问权限。 例如：
 
 ```
 EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)

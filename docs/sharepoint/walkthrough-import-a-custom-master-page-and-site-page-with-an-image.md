@@ -17,11 +17,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: 7694c80d47e7dd16c603eaedd0527ac4ec4d9031
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122135827"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126671842"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>演练：导入带有图像的自定义母版页和网站页面
   本演练演示如何将 SharePoint 自定义母版页和包含图像的网站页面导入 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 项目。
@@ -36,7 +36,7 @@ ms.locfileid: "122135827"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
  若要完成本演练，必须具有以下组件：
 
 - 支持的 [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] 和 SharePoint 的版本。
@@ -179,7 +179,7 @@ ms.locfileid: "122135827"
 
    导入文件并将其部署到 SharePoint 的另一种方法 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 是将文件添加到中的模块中 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][如何：导入母版页或主题](../sharepoint/how-to-import-a-master-page-or-theme.md)，并[使用模块在解决方案中包含文件](../sharepoint/using-modules-to-include-files-in-the-solution.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [从现有 SharePoint 网站导入项](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)
 - [为 Web 部件或应用程序页创建可重用控件](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

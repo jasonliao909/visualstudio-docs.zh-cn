@@ -19,11 +19,11 @@ ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
 ms.openlocfilehash: 0f2487489d75ca4ce7275153fd754b6fac7ebf5e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122051568"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664132"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks &gt; 元素 (引导程序) 
 `InstallChecks`元素支持对本地计算机启动各种测试，以确保已安装应用程序的所有适当的先决条件。
@@ -75,7 +75,7 @@ ms.locfileid: "122051568"
 ## <a name="assemblycheck"></a>AssemblyCheck
  此元素是的可选子元素 `InstallChecks` 。 对于每个实例 `AssemblyCheck` ，引导程序将确保由元素标识的程序集存在于全局程序集缓存中 (GAC) 。 它不包含任何元素，并且具有以下属性。
 
-|Attribute|说明|
+|属性|说明|
 |---------------|-----------------|
 |`Property`|必需。 要存储结果的属性的名称。 可以从元素下的测试中引用此属性 `InstallConditions` ，该元素是元素的子元素 `Command` 。 有关详细信息，请参阅 [\<Commands> 元素](../deployment/commands-element-bootstrapper.md)。|
 |`Name`|必需。 要检查的程序集的完全限定名称。|
@@ -89,7 +89,7 @@ ms.locfileid: "122051568"
 
  `ExternalCheck` 不包含任何元素，并且具有以下属性。
 
-|Attribute|说明|
+|属性|说明|
 |---------------|-----------------|
 |`Property`|必需。 要存储结果的属性的名称。 可以从元素下的测试中引用此属性 `InstallConditions` ，该元素是元素的子元素 `Command` 。 有关详细信息，请参阅 [\<Commands> 元素](../deployment/commands-element-bootstrapper.md)。|
 |`PackageFile`|必需。 要执行的外部程序。 此程序必须是安装分发包的一部分。|
@@ -100,7 +100,7 @@ ms.locfileid: "122051568"
 
  `FileCheck` 不包含任何元素，并且具有以下属性。
 
-| Attribute | 说明 |
+| 属性 | 说明 |
 |-----------------| - |
 | `Property` | 必需。 要存储结果的属性的名称。 可以从元素下的测试中引用此属性 `InstallConditions` ，该元素是元素的子元素 `Command` 。 有关详细信息，请参阅 [\<Commands> 元素](../deployment/commands-element-bootstrapper.md)。 |
 | `FileName` | 必需。 要查找的文件的名称。 |
@@ -113,7 +113,7 @@ ms.locfileid: "122051568"
 
  `MsiProductCheck` 不包含任何元素，并且具有以下属性。
 
-|Attribute|说明|
+|属性|说明|
 |---------------|-----------------|
 |`Property`|必需。 要存储结果的属性的名称。 可以从元素下的测试中引用此属性 `InstallConditions` ，该元素是元素的子元素 `Command` 。 有关详细信息，请参阅 [\<Commands> 元素](../deployment/commands-element-bootstrapper.md)。|
 |`Product`|必需。 已安装产品的 GUID。|
@@ -124,7 +124,7 @@ ms.locfileid: "122051568"
 
  `RegistryCheck` 不包含任何元素，并且具有以下属性。
 
-|Attribute|说明|
+|属性|说明|
 |---------------|-----------------|
 |`Property`|必需。 要存储结果的属性的名称。 可以从 元素（元素的子元素）下面的测试 `InstallConditions` 引用 `Command` 此属性。 有关详细信息，请参阅 [\<Commands> 元素](../deployment/commands-element-bootstrapper.md)。|
 |`Key`|必需。 注册表项的名称。|
@@ -135,7 +135,7 @@ ms.locfileid: "122051568"
 
  `RegistryFileCheck` 不包含任何元素，并且具有以下属性。
 
-|Attribute|说明|
+|属性|说明|
 |---------------|-----------------|
 |`Property`|必需。 要存储结果的属性的名称。 可以从 元素（元素的子元素）下面的测试 `InstallConditions` 引用 `Command` 此属性。 有关详细信息，请参阅 [\<Commands> 元素](../deployment/commands-element-bootstrapper.md)。|
 |`Key`|必需。 注册表项的名称。 除非设置了 属性，否则其值将解释为 `File` 文件的路径。 如果此键不存在， `Property` 则不设置 。|
@@ -147,7 +147,7 @@ ms.locfileid: "122051568"
  虽然下面的元素 `InstallChecks` 定义要运行的测试，但不会执行它们。 若要执行测试，必须在 `Command` 元素下创建 `Commands` 元素。
 
 ## <a name="example"></a>示例
- 下面的代码示例演示 了 `InstallChecks` 元素，因为它在 .NET Framework 的产品文件中使用。
+ 下面的代码示例演示 了 `InstallChecks` 元素，因为它在产品文件中用于 .NET Framework。
 
 ```xml
 <InstallChecks>
@@ -170,8 +170,8 @@ ms.locfileid: "122051568"
 |属性|注释|可能的值|
 |--------------|-----------|---------------------|
 |`Version9X`|9X 操作系统Windows版本号。|4.10 = Windows 98|
-|`VersionNT`|基于 Windows NT操作系统的版本号。|Major.Minor.ServicePack<br /><br /> 5.0 = Windows 2000<br /><br /> 5.1.0 = Windows XP<br /><br /> 5.1.2 = Windows XP Professional SP2<br /><br /> 5.2.0 = Windows Server 2003|
-|`VersionNT64`|基于操作系统的 64 位Windows NT版本号。|与前面所述相同。|
+|`VersionNT`|基于 Windows NT的操作系统的版本号。|Major.Minor.ServicePack<br /><br /> 5.0 = Windows 2000<br /><br /> 5.1.0 = Windows XP<br /><br /> 5.1.2 = Windows XP Professional SP2<br /><br /> 5.2.0 = Windows Server 2003|
+|`VersionNT64`|基于 64 位操作系统Windows NT版本号。|与前面所述相同。|
 |`VersionMsi`|安装程序服务的Windows版本号。|2.0 = Windows安装程序 2.0|
 |`AdminUser`|指定用户是否具有基于 Windows NT操作系统的管理员权限。|0 = 无管理员特权<br /><br /> 1 = 管理员特权|
 
@@ -192,6 +192,6 @@ ms.locfileid: "122051568"
 >[!NOTE]
 >从 `BeforeInstallChecks` 2019 Update 9 Visual Studio开始支持 属性。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [\<Commands> 元素](../deployment/commands-element-bootstrapper.md)
 - [产品和包架构参考](../deployment/product-and-package-schema-reference.md)

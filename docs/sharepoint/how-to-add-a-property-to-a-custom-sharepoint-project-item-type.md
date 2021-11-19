@@ -19,13 +19,13 @@ ms.workload:
 - office
 ms.openlocfilehash: cde438dc6a43f158d119ac380a28bd276c04c7e1
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126600623"
 ---
 # <a name="how-to-add-a-property-to-a-custom-sharepoint-project-item-type"></a>如何：将属性添加到自定义SharePoint项目项类型
-  定义自定义项目SharePoint类型时，可以将属性添加到项目项。 在 "**属性"** 窗口中选择项目项时， 属性 **解决方案资源管理器。**
+  定义自定义项目SharePoint类型时，可以将属性添加到项目项。 在 " **属性"** 窗口中选择项目项时， **该属性将显示在** 解决方案资源管理器。
 
  以下步骤假定已定义自己的项目SharePoint类型。 有关详细信息，请参阅[如何：定义SharePoint项目项类型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)。
 
@@ -44,9 +44,9 @@ ms.locfileid: "126600623"
  :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs" id="Snippet11":::
 
 ### <a name="understand-the-code"></a>了解代码
- 为了确保每次发生事件时都使用相同的 类实例，代码示例在首次发生此事件时将 properties 对象保存到项目项 `CustomProperties` <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> 的 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 属性中。 每当再次发生此事件时，代码将检索此对象。 有关使用 属性通过项目项保存数据的信息， <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 请参阅将自定义数据与SharePoint[扩展关联](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)。
+ 为了确保每次发生事件时都使用相同的 类实例，代码示例在首次发生此事件时将 properties 对象保存到项目项 `CustomProperties` <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> 的 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 属性中。 每当此事件再次发生时，代码将检索此对象。 有关使用 属性保存项目项数据详细信息， <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 请参阅将自定义数据与SharePoint[扩展关联](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)。
 
- 若要保留对属性值的更改，的 **set** 访问器会将新值保存到与该属性关联的 `ExampleProperty` 对象的 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> 属性中。 有关使用 属性将数据与项目项一起保存详细信息，请参阅将数据保存在项目SharePoint <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> [扩展中](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)。
+ 若要保留对属性值的更改，的 **set** 访问器会将新值保存到与该属性关联的 `ExampleProperty` 对象的 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> 属性中。 有关使用 属性将数据与项目项一起保存详细信息，请参阅在项目系统的扩展 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> [SharePoint保存数据](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)。
 
 ### <a name="specify-the-behavior-of-custom-properties"></a>指定自定义属性的行为
  可以通过将命名空间中的属性应用于属性定义来定义自定义属性在"属性"窗口中的 <xref:System.ComponentModel> 显示和行为方式。 以下属性在许多情况下都很有用：
@@ -71,7 +71,7 @@ ms.locfileid: "126600623"
 ## <a name="deploy-the-project-item"></a>部署项目项
  若要使其他开发人员能够使用项目项，请创建项目模板或项目项模板。 有关详细信息，请参阅[为项目项 创建项模板SharePoint模板](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)。
 
- 若要部署项目项，请为程序集 (模板以及要随项目项分发的其他任何文件创建 VSIX) 包 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 的扩展名。 有关详细信息，请参阅 在 SharePoint 中为 Visual Studio[工具部署Visual Studio。](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)
+ 若要部署项目项，请为程序集 (模板以及要随项目项一起分发的其他任何文件创建 VSIX) 包 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 的扩展。 有关详细信息，请参阅在[SharePoint 中为 SharePoint 工具部署Visual Studio。](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)
 
 ## <a name="see-also"></a>另请参阅
 - [如何：定义SharePoint项类型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)

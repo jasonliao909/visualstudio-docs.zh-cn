@@ -16,11 +16,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: 662cb032ad0469625abb736361c2824560a78636
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122060383"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664245"
 ---
 # <a name="api-reference-sharepoint-tools-extensibility"></a>SharePoint 工具扩展性的 API 参考 () 
   本部分包含用于扩展 Visual Studio 中的 SharePoint 工具的 API 参考文档。
@@ -70,7 +70,7 @@ ms.locfileid: "122060383"
 
  包含用于为 SharePoint 项目自定义功能和包验证行为的类型。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [SharePoint 工具扩展性 &#40;引用&#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)
 - [SharePoint 工具扩展的编程模型概述](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
 - [扩展 SharePoint 项目系统](../sharepoint/extending-the-sharepoint-project-system.md)

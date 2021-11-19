@@ -1,29 +1,31 @@
 ---
+description: IDiaSymbol：：findInlineeLinesByVA 检索枚举，该枚举允许客户端在指定的虚拟地址 (VA) 内直接或间接地在此符号中访问所有函数的行号信息。
 title: IDiaSymbol::findInlineeLinesByVA | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 61427d33-30d2-4ac9-9bd6-c58c6c705072
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: de092109282506747606799b45b89059bf41fd8a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: c734fb46b759160e4424da97cb00dd6a97bd559e
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127831811"
 ---
 # <a name="idiasymbolfindinlineelinesbyva"></a>IDiaSymbol::findInlineeLinesByVA
-检索一个枚举，该枚举允许客户端循环访问在指定虚拟地址（VA）中此符号内直接或间接内联的所有函数的行号信息。
+检索一个 枚举，该枚举允许客户端在指定的虚拟地址或 VA) 中直接或间接地在此符号中内 (行号) 。
 
 ## <a name="syntax"></a>语法
 
 ```C++
-HRESULT findInlineeLinesByVA ( 
+HRESULT findInlineeLinesByVA ( 
    ULONGLONG             va,
    DWORD                 length,
    IDiaEnumLineNumbers** ppResult
@@ -33,20 +35,20 @@ HRESULT findInlineeLinesByVA ( 
 #### <a name="parameters"></a>参数
  `va`
 
-中指定地址作为 VA。
+[in]将地址指定为 VA。
 
  `length`
 
-中指定要用于此查询的地址范围（以字节数为单位）。
+[in]指定要在此查询中覆盖的地址范围（以字节数为单位）。
 
  `ppResult`
 
-弄保存一个包含所检索的行号列表的 `IDiaEnumLineNumbers` 对象。
+[out]保存 `IDiaEnumLineNumbers` 一个 对象，该对象包含检索到的行号列表。
 
 ## <a name="return-value"></a>返回值
- 如果成功，将返回 `S_OK`;否则，将返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)

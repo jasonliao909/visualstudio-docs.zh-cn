@@ -14,11 +14,11 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: 1b5110a28dd46acff895a52d0e3c05f3f53b7700
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122099160"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126665199"
 ---
 # <a name="existsincollectiont-activity-designer"></a>ExistsInCollection\<T> 活动设计器
 
@@ -32,7 +32,7 @@ ms.locfileid: "122099160"
 
    **ExistsInCollection \<T>** 活动设计器可以在"工具箱"的"集合"类别中找到，单击"工具箱"的"工具箱"选项卡即可工作流设计器。 或者，从"视图 **"菜单中** 选择"**工具箱"，** 或按 **Ctrl** + **Alt** + **X**。
 
-**ExistsInCollection \<T>** 活动设计器可以从"工具箱"拖动并拖放到工作流设计器图面上，无论活动通常位于何处，例如位于 内 <xref:System.Activities.Statements.Sequence> 。 这会创建 <xref:System.Activities.Statements.ExistsInCollection%601> Int32 中默认为 <xref:System.Activities.Activity.DisplayName%2A> ExistsInCollection<的活动 \> 。 *(，TypeArgument* 默认为 **Int32**。 可以在属性 grid.) 在 <xref:System.Activities.Activity.DisplayName%2A> **ExistsInCollection<\> T** 活动设计器的标头或属性网格的 **DisplayName** 框中编辑该值。 其他属性必须在属性网格上编辑。
+**ExistsInCollection \<T>** 活动设计器可以从"工具箱"拖动并拖放到工作流设计器图面上，无论活动通常位于何处，例如位于 内 <xref:System.Activities.Statements.Sequence> 。 这会创建一 <xref:System.Activities.Statements.ExistsInCollection%601> 个活动，其默认值为 <xref:System.Activities.Activity.DisplayName%2A> ExistsInCollection<Int32 \> 。 *(，TypeArgument* 默认为 **Int32**。 可以在属性 grid.) 在 <xref:System.Activities.Activity.DisplayName%2A> **ExistsInCollection<\> T** 活动设计器的标头或属性网格的 **DisplayName** 框中编辑该值。 其他属性必须在属性网格上编辑。
 
 ### <a name="the-existsincollectiont-properties"></a>ExistsInCollection \<T> 属性
 
@@ -41,12 +41,12 @@ ms.locfileid: "122099160"
 |属性名称|必选|使用情况|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|错误|<xref:System.Activities.Statements.ExistsInCollection%601> 活动的友好名称。 默认值为 ExistsInCollection<Int32 \> 。 虽然 <xref:System.Activities.Activity.DisplayName%2A> 值不是绝对必需的，但最好使用该属性值。|
-|<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|正确|集合 中要查找的项 \<T> 。 此项的类型为 *T*，类型为 *TypeArgument*。 若要指定项，请在属性网格中键入 Visual Basic 表达式。|
+|<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|True|集合 中要查找的项 \<T> 。 此项的类型为 *T*，类型为 *TypeArgument*。 若要指定项，请在属性网格中键入 Visual Basic 表达式。|
 |<xref:System.Activities.Statements.ExistsInCollection%601.Collection%2A>|True|要检查该项是否存在的集合。 此集合的类型为 **ICollection<TypeArgument \> 。** 若要指定集合，请在属性网格中键入 Visual Basic 表达式。|
 |*TypeArgument*|True|包含在 <xref:System.Collections.Generic.ICollection%601> 中的项的类型 T。 默认情况下，此 *TypeArgument* 类型设置为 **Int32**。 若要更改类型，请更改属性网格中组合框中 *TypeArgument* 的值。|
 |<xref:System.Activities.Activity%601.Result%2A>|错误|一个指示集合中是否存在指定项的值。 若要指定要绑定到结果的变量，请在属性网格中键入 Visual Basic 变量。|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [集合](../workflow-designer/collection-activity-designers.md)
 - [AddToCollection\<T>](../workflow-designer/addtocollection-t-activity-designer.md)

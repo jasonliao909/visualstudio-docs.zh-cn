@@ -12,7 +12,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 572f0daff0d4ca114f3c718f0334eeced32e42fc
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126600676"
@@ -21,9 +21,9 @@ ms.locfileid: "126600676"
 
 如果要创建更多 C++ 项目的完整代码图，请在这些项目上设置浏览信息编译器选项 (**/FR**)。 否则，将出现一条消息并提示你设置此选项。 如果选择“确定” ，就只会为当前代码图设置选项。 可以选择隐藏所有之后的代码图的信息。
 
-打开包含 Visual C++ 项目的解决方案时，可能需要花一些时间来更新 IntelliSense 数据库。 在此期间，在 IntelliSense 数据库完成更新之前，可能无法为标头 *(.h* 或) 文件 `#include` 创建代码图。 你可在 Visual Studio 状态栏中监视更新进度。
+打开包含 Visual C++ 项目的解决方案时，可能需要花一些时间来更新 IntelliSense 数据库。 在此期间，在 IntelliSense 数据库完成更新之前，可能无法为 (*.h* 或) 头文件创建 `#include` 代码图。 你可在 Visual Studio 状态栏中监视更新进度。
 
-- 若要查看解决方案中所有源文件和头文件之间的依赖关系，请选择"体系结构生成Graph  >  **文件"**。
+- 若要查看解决方案中所有源文件和头文件之间的依赖关系，请选择"体系结构生成Graph  >  **文件"。**
 
    ![本机代码的依赖项关系图](../modeling/media/dependencygraphgeneral_nativecode.png)
 

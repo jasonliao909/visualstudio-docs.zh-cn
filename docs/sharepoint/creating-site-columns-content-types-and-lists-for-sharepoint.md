@@ -24,13 +24,13 @@ ms.workload:
 - office
 ms.openlocfilehash: 40ca1ca19e15e0e25e4decf6a3b932a3bcbf78b5
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126602549"
 ---
 # <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>创建 SharePoint 的站点栏、内容类型和列表
-  Visual Studio为许多不同的基本项目项（SharePoint列表和内容类型）提供项目项模板，这两者都可以合并站点列 *(或字段*) 。 用于内容类型和列表的新设计器可更简单地创建这些项。
+  Visual Studio为许多不同的基本项目项（包括列表和内容SharePoint）提供项目项模板，这两者都可以合并站点列 *(或字段*) 。 用于内容类型和列表的新设计器可更简单地创建这些项。
 
 ## <a name="site-columns"></a>网站栏
  网站栏是您可以向 SharePoint 项目添加的一种最基本元素。 网站栏表示数据的类型，例如联系人列表中某一联系人的电话号码、注释或者所在城市的名称。
@@ -53,4 +53,4 @@ ms.locfileid: "126602549"
 |[演练：创建 SharePoint 的网站栏、内容类型和列表](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|演示如何创建网站栏以用于自定义内容类型。 此内容类型随后将用于自定义列表。|
 
 ## <a name="see-also"></a>另请参阅
-- [入门2010 SharePoint 日开发](/sharepoint/dev/)
+- [入门在 2010 SharePoint进行开发](/sharepoint/dev/)

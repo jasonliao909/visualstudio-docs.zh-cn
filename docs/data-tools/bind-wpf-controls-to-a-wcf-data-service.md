@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 214975aa03da6181108e2d10046610d1afa20580
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.openlocfilehash: 062bf282f68326014b47c27503e9454bd2484798
+ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126601219"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "131127827"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>将 WPF 控件绑定到 WCF 数据服务
 
@@ -49,7 +49,7 @@ ms.locfileid: "126601219"
 
 - Visual Studio
 
-- 对附加了 AdventureWorksLT 示例数据库的 SQL Server 或 SQL Server Express 的正在运行的实例的访问权限。 可以从 [CodePlex 网站](https://archive.codeplex.com/?p=SqlServerSamples)下载 AdventureWorksLT 数据库。
+- 对附加了 AdventureWorksLT 示例数据库的 SQL Server 或 SQL Server Express 的正在运行的实例的访问权限。 若要下载数据库，请参阅 [AdventureWorks 示例数据库](/sql/samples/adventureworks-install-configure?tabs=ssms)
 
 事先了解以下概念也很有用，但对于完成本演练并不是必需的：
 

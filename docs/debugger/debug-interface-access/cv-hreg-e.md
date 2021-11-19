@@ -1,7 +1,9 @@
 ---
 title: CV_HREG_e | Microsoft Docs
+description: 获取有关 CV_HREG_e 枚举类型的参考信息，该类型指定调试接口访问 SDK 中的目标寄存器。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,15 +11,16 @@ helpviewer_keywords:
 ms.assetid: 3f0622f7-6790-41d8-8778-227cbbf8a212
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: aac055930e9d1b016bbdc4949cbbdbee798cfaa2
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: e2e35a4dd170d78aeda22200d4634300bdb8a184
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745306"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127832388"
 ---
 # <a name="cv_hreg_e"></a>CV_HREG_e
 指定目标寄存器。
@@ -409,27 +412,27 @@ enum CV_HREG_e {
 ```
 
 ## <a name="elements"></a>元素
-CV_REG_ * 寄存器，由 Intel 80x86 和 ix86 处理器以及 p 代码使用。
+CV_REG_ * 寄存器，由 Intel 80x86 和 ix86 处理器和 p 代码使用。
 
 68K 处理器使用的 CV_R68_ * 寄存器。
 
-MIPS 4000 系列处理器使用的 CV_M4_ * 寄存器。
+MIPS 4000 系列处理器使用 CV_M4_ * 寄存器。
 
 CV_ALPHA_ * 注册由数字设备 Corporation Alpha AXP 系列处理器使用。
 
-Motorola/IBM PowerPC processor 使用的 CV_PPC_ * 寄存器。
+Motorola/IBM PowerPC 处理器使用 CV_PPC_ * 寄存器。
 
-Hitachi SH3 和 Hitachi SH 系列处理器使用的 CV_SH3_ * 和 CV_SH_ \* 寄存器。
+\*HITACHI SH3 和 HITACHI SH 系列处理器使用的 CV_SH3_ * 和 CV_SH_ 寄存器。
 
-CV_ARM_ * 寄存器由高级 RISC 计算机（ARM）处理器使用。
+由高级 RISC 计算机使用的 CV_ARM_ * 寄存器 (ARM) 处理器。
 
 CV_IA64_ * 寄存器。
 
-Infineon 技术 TriCore 处理器使用的 CV_TRI_ * 寄存器。
+CV_TRI_ * 注册由 Infineon 技术 TriCore 处理器使用。
 
 Matsushita/Panasonic AM33 和相关处理器使用的 CV_AM33_ * 寄存器。
 
-Mitsubishi M32R 处理器使用的 CV_M32R_ * 寄存器。
+Mitsubishi M32R 处理器使用 CV_M32R_ * 寄存器。
 
 ## <a name="remarks"></a>备注
 每个处理器类型都使用其自己的唯一寄存器集。
@@ -449,7 +452,7 @@ Mitsubishi M32R 处理器使用的 CV_M32R_ * 寄存器。
 ## <a name="requirements"></a>要求：
 标头： cvconst
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [枚举和结构](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)
 - [IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)

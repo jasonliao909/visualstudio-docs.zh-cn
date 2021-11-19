@@ -20,14 +20,14 @@ ms.technology: vs-ide-deployment
 ms.workload:
 - dotnet
 ms.openlocfilehash: 0e0e1c010ee1dcf1cc53f37610e518b817a31871
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122096708"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664135"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>如何：使用 ClickOnce 部署可在多个版本的 .NET Framework 上运行的应用程序
-可以使用 ClickOnce 部署技术部署面向多个版本的 .NET Framework 的应用程序。 这要求生成和更新应用程序和部署清单。
+可以使用 ClickOnce 部署技术部署面向多个版本的 .NET Framework 应用程序。 这要求生成和更新应用程序和部署清单。
 
 > [!NOTE]
 > 在将应用程序更改为面向多个版本的 .NET Framework 之前，应确保应用程序使用多个版本的 .NET Framework。 版本公共语言运行时在 .NET Framework 4 与 .NET Framework 2.0、.NET Framework 3.0 和 .NET Framework 3.5 之间有所不同。
@@ -48,13 +48,13 @@ ms.locfileid: "122096708"
 
 ### <a name="to-generate-the-application-and-deployment-manifests"></a>生成应用程序和部署清单
 
-- 使用设计器的发布向导或Project页发布应用程序并生成应用程序和部署清单文件。 有关详细信息，请参阅[如何：](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)使用发布ClickOnce发布向导或发布页发布应用程序，Project[设计器。](../ide/reference/publish-page-project-designer.md)
+- 使用设计器的发布向导或Project页发布应用程序并生成应用程序和部署清单文件。 有关详细信息，请参阅[如何：](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)使用发布ClickOnce发布向导或发布页发布应用程序，Project[设计器](../ide/reference/publish-page-project-designer.md)。
 
 ### <a name="to-change-the-deployment-manifest-to-list-the-multiple-net-framework-versions"></a>更改部署清单以列出多个.NET Framework版本
 
-1. 在发布目录中，使用"发布"目录中的"XML 编辑器"打开部署Visual Studio。 部署清单具有 *.application* 文件扩展名。
+1. 在发布目录中，使用"发布"目录中的"XML 编辑器"打开Visual Studio。 部署清单具有 *.application* 文件扩展名。
 
-2. 将 和 元素之间的 XML 代码 `<compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">` `</compatibleFrameworks>` 替换为 XML，其中列出了.NET Framework支持的版本。
+2. 将 和 元素之间的 XML 代码 `<compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">` `</compatibleFrameworks>` 替换为 XML，该 XML 列出了.NET Framework应用程序支持的版本。
 
      下表显示了一些可用的.NET Framework版本以及可添加到部署清单的相应 XML。
 
@@ -68,9 +68,9 @@ ms.locfileid: "122096708"
 
 ### <a name="to-change-the-appconfig-file-to-list-the-compatible-net-framework-runtime-versions"></a>更改app.config文件以列出.NET Framework版本
 
-1. 在 解决方案资源管理器 中，使用app.config中的 XML 编辑器打开 Visual Studio。
+1. 在 解决方案资源管理器中，app.config中的XML 编辑器打开 Visual Studio。
 
-2. 将 (或) 和 元素之间的 XML 代码替换为 `<startup>` `</startup>` XML，该 XML 列出.NET Framework应用程序支持的应用程序运行时。
+2. 将 (或) 和 元素之间的 XML 代码替换为 `<startup>` `</startup>` XML，该 XML .NET Framework应用程序支持的应用程序运行时。
 
      下表显示了一些可用的.NET Framework版本以及可添加到部署清单的相应 XML。
 
@@ -83,7 +83,7 @@ ms.locfileid: "122096708"
 
 ### <a name="to-change-the-application-manifest-to-mark-dependent-assemblies-as-net-framework-assemblies"></a>更改应用程序清单以将依赖程序集标记为.NET Framework程序集
 
-1. 在发布目录中，使用"发布"中的"XML 编辑器"打开Visual Studio。 部署清单具有 *.manifest* 文件扩展名。
+1. 在发布目录中，使用"发布"目录中的"XML 编辑器"打开Visual Studio。 部署清单具有 *.manifest* 文件扩展名。
 
 2. 将 `group="framework"` 添加到 sentinel 程序集的依赖项 XML `System.Core` (、、 和 `WindowsBase` `Sentinel.v3.5Client` `System.Data.Entity`) 。 例如，XML 应如下所示：
 
@@ -105,7 +105,7 @@ ms.locfileid: "122096708"
 
 - 更新应用程序和部署清单并重新签名。 有关详细信息，请参阅[如何：对应用程序和部署清单重新签名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)
 - [\<compatibleFrameworks> 元素](../deployment/compatibleframeworks-element-clickonce-deployment.md)
 - [\<dependency> 元素](../deployment/dependency-element-clickonce-application.md)

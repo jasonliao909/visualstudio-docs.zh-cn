@@ -20,14 +20,14 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: 8a7beaea3b9a7becc2b162304287b4e1b340fceb
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122135853"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664143"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>演练：创建自定义站点工作流活动
-  本演练演示如何使用 为站点级工作流创建自定义活动 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。  (站点级工作流应用于整个站点，而不只是 site.) 自定义活动会创建备份公告列表，然后将公告列表的内容复制到其中。
+  本演练演示如何使用 为站点级工作流创建自定义活动 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。  (级工作流应用于整个站点，而不只是站点上的列表。) 自定义活动会创建备份公告列表，然后将公告列表的内容复制到其中。
 
  本演练演示了下列任务：
 
@@ -57,7 +57,7 @@ ms.locfileid: "122135853"
 
 1. 在菜单栏上，选择"**文件**  >    >  **""新建Project** 以显示"新建Project对话框。
 
-2. 在 Visual **C#** SharePoint下展开"Visual Basic"**节点**，然后选择 **"2010"** 节点。
+2. 展开SharePoint  **Visual C#** 或 **Visual Basic节点，** 然后选择 **"2010"** 节点。
 
 3. 在"**模板"窗格中**，选择SharePoint **2010 Project** 模板。
 
@@ -111,7 +111,7 @@ ms.locfileid: "122135853"
 3. 保存项目。
 
 ## <a name="test-the-site-workflow-custom-activity"></a>测试站点工作流自定义活动
- 接下来，运行项目并启动站点工作流。 自定义活动创建备份公告列表，将当前公告列表中的内容复制到该列表。 该代码还会在创建备份列表之前检查备份列表是否已存在。 如果备份列表已存在，则删除它。 该代码还会在站点快速启动栏上SharePoint列表的链接。
+ 接下来，运行项目并启动站点工作流。 自定义活动创建备份公告列表，将当前公告列表中的内容复制到该列表。 该代码还会在创建备份列表之前检查备份列表是否已存在。 如果备份列表已存在，则删除它。 该代码还会添加指向新列表的链接，SharePoint网站的"快速启动"栏上。
 
 #### <a name="to-test-the-site-workflow-custom-activity"></a>测试站点工作流自定义活动
 
@@ -125,6 +125,6 @@ ms.locfileid: "122135853"
 
 5. 在"快速启动"栏上，选择" **公告备份"** 链接。 请注意，"公告"列表中包含的所有公告已复制到此新列表。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [如何：创建事件接收器](../sharepoint/how-to-create-an-event-receiver.md)
 - [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)

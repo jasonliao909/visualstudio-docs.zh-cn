@@ -1,7 +1,8 @@
 ---
+description: 公开堆栈帧的详细信息。
 title: IDiaFrameData | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,15 +10,16 @@ helpviewer_keywords:
 ms.assetid: 2f1b4986-341b-4641-89a4-226e261e9d93
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: d586cfe3e78a320ffed42e7181463eb79a6b313a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: 908c645931a88874f4cd4214a44d295886b4e364
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743472"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127832101"
 ---
 # <a name="idiaframedata"></a>IDiaFrameData
 公开堆栈帧的详细信息。
@@ -25,41 +27,41 @@ ms.locfileid: "72743472"
 ## <a name="syntax"></a>语法
 
 ```
-IDiaFrameData : IUnknown
+IDiaFrameData : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
-下表显示 `IDiaFrameData` 的方法。
+下表显示了 的方法 `IDiaFrameData` 。
 
-|方法|描述|
+|方法|说明|
 |------------|-----------------|
-|[IDiaFrameData::get_addressSection](../../debugger/debug-interface-access/idiaframedata-get-addresssection.md)|检索框架的代码地址部分。|
-|[IDiaFrameData::get_addressOffset](../../debugger/debug-interface-access/idiaframedata-get-addressoffset.md)|检索帧的代码地址的偏移量部分。|
-|[IDiaFrameData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaframedata-get-relativevirtualaddress.md)|检索框架代码的映像相对虚拟地址（RVA）。|
-|[IDiaFrameData::get_virtualAddress](../../debugger/debug-interface-access/idiaframedata-get-virtualaddress.md)|检索框架代码的虚拟地址（VA）。|
-|[IDiaFrameData::get_lengthBlock](../../debugger/debug-interface-access/idiaframedata-get-lengthblock.md)|检索框架所描述的代码块的长度（以字节为单位）。|
-|[IDiaFrameData::get_lengthLocals](../../debugger/debug-interface-access/idiaframedata-get-lengthlocals.md)|检索推送到堆栈上的局部变量的字节数。|
-|[IDiaFrameData::get_lengthParams](../../debugger/debug-interface-access/idiaframedata-get-lengthparams.md)|检索推送到堆栈上的参数的字节数。|
-|[IDiaFrameData::get_maxStack](../../debugger/debug-interface-access/idiaframedata-get-maxstack.md)|检索堆栈中堆栈上推送的最大字节数。|
-|[IDiaFrameData::get_lengthProlog](../../debugger/debug-interface-access/idiaframedata-get-lengthprolog.md)|检索块中序言代码的字节数。|
-|[IDiaFrameData::get_lengthSavedRegisters](../../debugger/debug-interface-access/idiaframedata-get-lengthsavedregisters.md)|检索推送到堆栈上的已保存寄存器的字节数。|
-|[IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)|检索用于在调用当前函数之前计算注册集的程序字符串。|
-|[IDiaFrameData::get_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)|检索指示系统异常处理是否有效的标志。|
-|[IDiaFrameData::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)|检索一个标志，该标志C++指示异常处理是否有效。|
-|[IDiaFrameData::get_functionStart](../../debugger/debug-interface-access/idiaframedata-get-functionstart.md)|检索一个标志，该标志指示块包含函数的入口点。|
-|[IDiaFrameData::get_allocatesBasePointer](../../debugger/debug-interface-access/idiaframedata-get-allocatesbasepointer.md)|检索一个标志，该标志指示为此地址范围内的代码分配基指针。 已弃用此方法。|
+|[IDiaFrameData::get_addressSection](../../debugger/debug-interface-access/idiaframedata-get-addresssection.md)|检索帧的代码地址的节部分。|
+|[IDiaFrameData::get_addressOffset](../../debugger/debug-interface-access/idiaframedata-get-addressoffset.md)|检索帧的代码地址的偏移部分。|
+|[IDiaFrameData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaframedata-get-relativevirtualaddress.md)|检索帧代码的 RVA (虚拟) 相对虚拟地址。|
+|[IDiaFrameData::get_virtualAddress](../../debugger/debug-interface-access/idiaframedata-get-virtualaddress.md)|检索帧 (VA) 虚拟地址。|
+|[IDiaFrameData::get_lengthBlock](../../debugger/debug-interface-access/idiaframedata-get-lengthblock.md)|检索帧描述的代码块的长度（以字节为单位）。|
+|[IDiaFrameData::get_lengthLocals](../../debugger/debug-interface-access/idiaframedata-get-lengthlocals.md)|检索在堆栈上推送的本地变量的字节数。|
+|[IDiaFrameData::get_lengthParams](../../debugger/debug-interface-access/idiaframedata-get-lengthparams.md)|检索在堆栈上推送的参数的字节数。|
+|[IDiaFrameData::get_maxStack](../../debugger/debug-interface-access/idiaframedata-get-maxstack.md)|检索在帧中堆栈上推送的最大字节数。|
+|[IDiaFrameData::get_lengthProlog](../../debugger/debug-interface-access/idiaframedata-get-lengthprolog.md)|检索 块中序言代码的字节数。|
+|[IDiaFrameData::get_lengthSavedRegisters](../../debugger/debug-interface-access/idiaframedata-get-lengthsavedregisters.md)|检索在堆栈上推送的已保存寄存器的字节数。|
+|[IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)|检索在调用当前函数之前用于计算寄存器集的程序字符串。|
+|[IDiaFrameData::get_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)|检索指示系统异常处理生效的标志。|
+|[IDiaFrameData::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)|检索指示 C++ 异常处理生效的标志。|
+|[IDiaFrameData::get_functionStart](../../debugger/debug-interface-access/idiaframedata-get-functionstart.md)|检索一个标志，该标志指示 块包含函数的入口点。|
+|[IDiaFrameData::get_allocatesBasePointer](../../debugger/debug-interface-access/idiaframedata-get-allocatesbasepointer.md)|检索一个标志，该标志指示为此地址范围中的代码分配基指针。 不推荐使用此方法。|
 |[IDiaFrameData::get_type](../../debugger/debug-interface-access/idiaframedata-get-type.md)|检索特定于编译器的帧类型。|
-|[IDiaFrameData::get_functionParent](../../debugger/debug-interface-access/idiaframedata-get-functionparent.md)|检索封闭函数的帧数据接口。|
-|[IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md)|执行堆栈展开并返回堆栈审核帧接口中寄存器的当前状态。|
+|[IDiaFrameData::get_functionParent](../../debugger/debug-interface-access/idiaframedata-get-functionparent.md)|检索用于封闭函数的帧数据接口。|
+|[IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md)|执行堆栈展开，并返回堆栈演练帧接口中寄存器的当前状态。|
 
 ## <a name="remarks"></a>备注
- 帧的可用详细信息适用于地址范围内地址和块长度所指示的执行点。
+ 帧可用的详细信息适用于地址和块长度指示的地址范围内的执行点。
 
 ## <a name="notes-for-callers"></a>调用方说明
- 通过调用[IDiaEnumFrameData：： Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)或[IDiaEnumFrameData：： Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)方法获取此接口。 有关详细信息，请参阅[IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)接口。
+ 通过调用 [IDiaEnumFrameData：：Next 或](../../debugger/debug-interface-access/idiaenumframedata-next.md) [IDiaEnumFrameData：：Item 方法获取此](../../debugger/debug-interface-access/idiaenumframedata-item.md) 接口。 有关详细信息， [请参阅 IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md) 接口。
 
 ## <a name="example"></a>示例
- 此示例输出 `IDiaFrameData` 对象的属性。 有关如何获取 `IDiaFrameData` 接口的示例，请参阅[IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)接口。
+ 此示例打印出 对象 `IDiaFrameData` 的属性。 有关如何获取接口的示例，请参阅 [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md) `IDiaFrameData` 接口。
 
 ```C++
 void PrintFrameData(IDiaFrameData* pFrameData){
@@ -113,13 +115,13 @@ void PrintFrameData(IDiaFrameData* pFrameData){
 ```
 
 ## <a name="requirements"></a>要求
-标头： Dia2
+标头：Dia2.h
 
-库： diaguids
+库：diaguids.lib
 
-DLL： msdia80
+DLL：msdia80.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [接口（调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
 - [IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)

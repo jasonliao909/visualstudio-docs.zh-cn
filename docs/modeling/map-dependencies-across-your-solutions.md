@@ -1,6 +1,6 @@
 ---
-title: 使用代码图可视化依赖项
-description: 了解代码图如何帮助你了解代码如何协同工作，而无需通读文件和代码行。
+title: 用代码图可视化依赖项
+description: 了解代码图如何帮助你查看代码如何相互配合，而无需读取文件和代码行。
 ms.custom: SEO-VS-2020
 ms.date: 05/16/2021
 ms.topic: how-to
@@ -20,75 +20,75 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: d4968cd181a05cdfabce5eb3ae772afe42423291
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122047954"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126665983"
 ---
 # <a name="map-dependencies-with-code-maps"></a>使用代码图映射依赖关系
 
-本文将了解如何使用代码图可视化代码中的依赖项。
+在本文中，你将了解如何通过代码映射可视化代码中的依赖项。
 
 ## <a name="what-are-code-maps"></a>什么是代码图？
 
-在Visual Studio中，代码图可帮助你更快速地了解程序代码如何协同工作，而无需通读文件和代码行。  使用这些映射，可以在代码中查看组织和关系，包括其结构和依赖项、更新方法，以及估计建议的更改成本。
+在 Visual Studio 中，代码图有助于更快地了解程序代码如何搭配使用，而无需读取文件和代码行。  利用这些地图，你可以查看代码中的组织和关系，包括其结构及其依赖项、更新方式，并估计建议更改的成本。
 
-![使用代码中的代码图查看Visual Studio](../modeling/media/codemapsmainintro.png)
+![在 Visual Studio 中查看具有代码图的依赖项](../modeling/media/codemapsmainintro.png)
 
 可以映射以下语言中的代码的依赖关系：
 
-- Visual C# 或Visual Basic或程序集 (.dll *或**.exe)*
+- 解决方案中的 Visual c # 或 Visual Basic (*.dll* 或 *.exe*) 
 
-- 本机或托管 C 或 C++ 代码Visual C++项目、头文件 (*.h* 或) `#include` 或二进制文件
+- Visual C++ 项目、头文件 (*.h* 或) 或二进制文件中的本机或托管 c 或 c + + 代码 `#include`
 
 - 通过 Microsoft Dynamics AX 的 .NET 模块生成的 X++ 项目和程序集
 
 > [!NOTE]
-> 对于 C# 或 Visual Basic项目，启动代码图或将项添加到现有代码图的选项更少。 例如，不能用鼠标右键单击 C++ 项目的文本编辑器中的对象并将其添加到代码图。 但是，可以从 、解决方案资源管理器 和对象浏览器 拖放 **类视图** 代码 **元素或文件**。 
+> 对于 c # 或 Visual Basic 以外的项目，用于启动代码图或将项添加到现有代码图的选项更少。 例如，不能用鼠标右键单击 C++ 项目的文本编辑器中的对象并将其添加到代码图。 不过，您可以将各个代码元素或文件拖放到 **解决方案资源管理器**、 **类视图** 和 **对象浏览器**。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
-若要在 Visual Studio 创建代码图，请首先 [安装代码 **映射** 和 **实时依赖项验证** 组件](install-architecture-tools.md)
+若要在 Visual Studio 中创建代码图，请首先 [安装 **代码图** 和 **实时依赖项验证** 组件](install-architecture-tools.md)
 
-若要创建和编辑代码图，需要Visual Studio Enterprise **版本**。 但是，在 Visual Studio Community 和 Professional 版本中，可以打开在 Enterprise 版本中生成的关系图，但不能对其进行编辑。
+若要创建和编辑代码图，需要 **Visual Studio Enterprise 版本**。 但是，在 Visual Studio Community 和 Professional 版本中，你可以打开在 Enterprise edition 中生成的关系图，但不能对其进行编辑。
 
 > [!NOTE]
-> 与使用 Visual Studio Professional 的其他人共享在 Visual Studio Enterprise 中创建的映射之前，请确保 map (上的所有项（例如隐藏项、展开的组和跨组链接) 可见。
+> 在与使用 Visual Studio Professional 的其他人共享 Visual Studio Enterprise 中创建的地图之前，请确保地图上的所有项目 (如隐藏项、展开的组和跨组链接) 可见。
 
 ## <a name="add-a-code-map"></a>添加代码图
 
-可以创建空代码图并将项（包括程序集引用、文件和文件夹）拖动到其中，也可以为解决方案的一部分或所有部分生成代码图。
+您可以创建空代码图，并将项拖动到其上，包括程序集引用、文件和文件夹，也可以为解决方案的全部或部分生成代码图。
 
 添加空代码图：
 
-1. 在“解决方案资源管理器”中，打开顶级解决方案节点的快捷菜单 。 选择 **"添加新**  >  **项"。**
+1. 在“解决方案资源管理器”中，打开顶级解决方案节点的快捷菜单 。 选择 "**添加**  >  **新项**"。
 
-2. 在" **添加新项"对话框** 的" **已安装"下**，选择"常规 **"** 类别。
+2. 在 " **添加新项** " 对话框中的 " **已安装**" 下，选择 " **常规** " 类别。
 
-3. 选择"**有Graph文档 (.dgml)** 模板，然后选择"添加 **"。**
+3. 选择 "**定向 Graph 文档 ( .dgml)** " 模板，然后选择 "**添加**"。
 
    > [!TIP]
-   > 此模板可能不会按字母顺序显示，因此，如果看不到模板列表，请向下滚动到该模板列表的底部。
+   > 此模板可能不会按字母顺序显示，因此，如果看不到，请向下滚动到模板列表的底部。
 
-   解决方案的"解决方案项"文件夹中会显示一个 **空白** 地图。
+   解决方案的 " **解决方案项** " 文件夹中将显示一个空白地图。
 
-同样，可以通过选择"体系结构""新建代码图"或"文件""新建文件"来创建新的代码图文件，而无需  >  **将** 该文件  >  **添加到**  >  **解决方案** 中。
+同样，可以通过选择 "**体系结构**" "  >  **新建代码图**" 或 "**文件**" "  >  **新建**  >  **文件**" 来创建新的代码映射文件，而无需将其添加到解决方案
 
 了解详细信息：
 - [共享代码图](share-code-maps.md)
-- [为 C++ 创建代码图](code-maps-for-cpp.md)
+- [创建 c + + 代码图](code-maps-for-cpp.md)
 - [提高代码图性能](code-maps-performance.md)
 
 ## <a name="generate-a-code-map-for-your-solution"></a>为解决方案生成代码图
 
 查看解决方案中的所有依赖项：
 
-1. 在菜单栏上，选择"**体系结构**  >  **""生成解决方案的代码图"。** 如果自上次生成代码以来代码未发生更改，可以改为选择"体系结构""生成解决方案  >  **的代码图而不生成"。**
+1. 在菜单栏上，选择 "**体系结构**" "  >  **生成解决方案的代码图**"。 如果代码自上次生成后未发生更改，则可以选择 "在不 **生成**  >  **的情况下生成解决方案的代码图**"。
 
    ![生成代码映射命令](../modeling/media/codemapsarchitecturemenu.png)
 
-   将生成一个映射，该映射显示顶级程序集和它们之间的聚合链接。 聚合链路越广，它所代表的依赖关系就越多。
+   将生成一个映射，其中显示顶级程序集和它们之间的聚合链接。 聚合链路越广，它所代表的依赖关系就越多。
 
 2. 使用代码图工具栏上的“图例”  按钮以显示或隐藏项目类型图标（如测试项目、Web 项目和 Phone 项目）、代码项（如类、方法和属性）以及关系类型（如继承自、实现和调用）的列表。
 
@@ -104,10 +104,10 @@ ms.locfileid: "122047954"
 
    ![展开代码映射中的节点](../modeling/media/dependencygraph_containment.png)
 
-   或者，通过选择该项，然后按加号键 **+** () 。 若要查看更深层次的代码，请对命名空间、类型和成员执行相同操作。
+   或通过选择项，然后按加号键 () 来使用键盘 **+** 。 若要查看更深层次的代码，请对命名空间、类型和成员执行相同操作。
 
    > [!TIP]
-   > 有关使用鼠标、键盘和触摸处理代码图的更多详细信息，请参阅 [浏览和重新排列代码图](../modeling/browse-and-rearrange-code-maps.md)。
+   > 有关使用鼠标、键盘和触控处理代码图的详细信息，请参阅 [浏览和重新排列代码图](../modeling/browse-and-rearrange-code-maps.md)。
 
 5. 若要简化代码图并将重点关注各个部分，选择代码图工具栏上的“筛选器”  ，然后仅选择你感兴趣的节点和链接类型。 例如，可以隐藏所有的解决方案文件夹和程序集容器。
 
@@ -122,7 +122,7 @@ ms.locfileid: "122047954"
    在此示例中，紫色链接为调用，点式链接为引用，浅蓝色链接为字段访问。 绿色链接可以是继承，也可能是指示一个以上关系（或 *“类别”* ）类型的 *“聚合链接”*。
 
    > [!TIP]
-   > 如果你看到的是绿色链接，它是指可能不仅仅存在继承关系。 可能也存在方法调用，但是这些都被继承关系所隐藏。 若要查看特定类型的链接，请使用"筛选器"窗格中的复选框隐藏你感兴趣的类型。
+   > 如果你看到的是绿色链接，它是指可能不仅仅存在继承关系。 可能也存在方法调用，但是这些都被继承关系所隐藏。 若要查看特定类型的链接，请使用 " **筛选器** " 窗格中的复选框来隐藏不感兴趣的类型。
 
 7. 若要获取有关项或链接的详细信息，请将指针移至其顶部，直至出现工具提示。 这将显示代码元素或链接所表示的类别的详细信息。
 
@@ -130,15 +130,15 @@ ms.locfileid: "122047954"
 
 8. 若要检查聚合链接表示的项和依赖项，请首先选择该链接，然后打开它的快捷菜单。 选择“显示参与链接”  （或“在新代码图上显示参与链接” ）。 这将展开位于链接两端的组，且仅显示参与链接的项和依赖项。
 
-9. 若要专注于地图的特定部分，可以继续删除你感兴趣的项。 例如，若要深入了解类和成员视图，只需筛选“筛选器”  窗格中的所有命名空间节点。
+9. 若要重点关注地图的特定部分，可继续删除不感兴趣的项。 例如，若要深入了解类和成员视图，只需筛选“筛选器”  窗格中的所有命名空间节点。
 
    ![向下钻取到类和成员级别](../modeling/media/dependencygraph_expandedselectedgroups_2012.png)
 
-10. 集中精力处理复杂的解决方案代码图的另一种方式是从现有代码图生成包含选定项的新代码图。 在 **选择要聚焦** 的项时按住 Ctrl，打开快捷菜单，然后从"选择 **"Graph"新建"。**
+10. 集中精力处理复杂的解决方案代码图的另一种方式是从现有代码图生成包含选定项的新代码图。 按住 **Ctrl** 的同时选择要关注的项，打开快捷菜单，然后从 "选择"**中选择 "新建 Graph**"。
 
     ![显示新代码映射上的选定项](../modeling/media/codemapsshowonnewmap.png)
 
-11. 将包含上下文转入新代码图。 使用"筛选器"窗格隐藏解决方案文件夹和不想查看的 **其他任何容器。**
+11. 将包含上下文转入新代码图。 使用 " **筛选器** " 窗格隐藏解决方案文件夹以及不想看到的任何其他容器。
 
     ![筛选容器以简化视图](../modeling/media/codemapsexpandnewgroups.png)
 
@@ -150,11 +150,11 @@ ms.locfileid: "122047954"
 
 - [浏览和重新排列代码图](../modeling/browse-and-rearrange-code-maps.md)
 - [通过编辑 DGML 文件自定义代码图](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
-- 通过运行分析器查找 [代码中的潜在问题](../modeling/find-potential-problems-using-code-map-analyzers.md)
+- 通过[运行分析器](../modeling/find-potential-problems-using-code-map-analyzers.md)发现代码中的潜在问题
 
-## <a name="view-dependencies"></a>查看依赖项
+## <a name="view-dependencies"></a>查看依赖关系
 
-假设你有一个代码评审，需要在某些包含挂起更改的文件中执行。 若要查看这些更改中的依赖关系，请从这些文件中创建一个代码图。
+假设你有一个代码评审，可在某些具有挂起更改的文件中执行。 若要查看这些更改中的依赖关系，请从这些文件中创建一个代码图。
 
    ![显示代码图上的特定依赖关系](../modeling/media/codemapsspecificdependenciesintro.png)
 
@@ -162,7 +162,7 @@ ms.locfileid: "122047954"
 
    ![选择要映射的项](../modeling/media/codemapsselectinsolutionexplorer.png)
 
-1. 在"解决方案资源管理器"**工具栏上**，选择"在代码图上显示 ![ ""从Graph创建新的节点"按钮 ](../modeling/media/createnewgraphfromselectedbutton.gif) 。 或者，打开一个或一组项的快捷菜单，然后选择"**在代码图上显示"。**
+1. 在 **解决方案资源管理器** 工具栏上，选择 "**在代码图上显示**" " ![ 从所选节点创建新 Graph" 按钮 ](../modeling/media/createnewgraphfromselectedbutton.gif) 。 或者，打开一个或一组项目的快捷菜单，然后选择 " **在代码图上显示**"。
 
    还可以将项从 **解决方案资源管理器**、 **类视图** 或 **对象浏览器** 拖动到 [新](#add-a-code-map) 的或现有的代码图中。 若要包含项的父层次结构，请在拖动项时按住 **Ctrl** 键，或者使用代码图工具栏上的 " **包括父级** " 按钮来指定默认操作。 你还可以将程序集文件从外部 Visual Studio （例如从 **Windows 资源管理器**）中拖动。
 
@@ -236,7 +236,7 @@ ms.locfileid: "122047954"
 
    ![使用“筛选器”窗格以简化显示](../modeling/media/almcodemapfilterpane.png)
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [共享代码图](share-code-maps.md)
 - [创建 c + + 代码图](code-maps-for-cpp.md)

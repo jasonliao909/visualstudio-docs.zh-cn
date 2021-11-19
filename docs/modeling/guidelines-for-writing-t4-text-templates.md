@@ -11,11 +11,11 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: b0cb319b488bf080b95ce2651ccf21bad3c33d6a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122157509"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664169"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>T4 文本模板编写准则
 
@@ -51,7 +51,7 @@ ms.locfileid: "122157509"
 
 允许除生成的代码外，还允许手动编写的代码。 代码生成方案无法考虑到可能出现的所有可能的变体，这一点并不常见。 因此，应该会添加或重写某些生成的代码。 当生成的材料采用 .NET 语言（如 C# 或 Visual Basic）时，两种策略特别有用：
 
-- 生成的类应为分部类。 这使你可以将内容添加到生成的代码中。
+- 生成的类应为分部类。 这样，你可以将内容添加到生成的代码中。
 
 - 类应成对生成，一个继承自另一个。 基类应包含所有生成的方法和属性，派生类应仅包含构造函数。 这允许手动编写的代码重写任何生成的方法。
 
@@ -154,7 +154,7 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 
 请考虑使用类型模型。
 
-尽管你可以为模型创建 XML 或数据库架构，但使用 DSL 创建特定于域的语言 (DSL) 。 DSL 的优点在于，它会生成一个类来表示架构中的每个节点，并使用属性来表示属性。 这意味着您可以根据业务模式进行编程。 例如：
+尽管你可以为模型创建 XML 或数据库架构，但使用 DSL 创建特定于域的语言 (很有用) 。 DSL 的优点是，它生成一个类来表示架构中的每个节点，并生成属性来表示属性。 这意味着你可以根据业务模型进行编程。 例如：
 
 ```
 Team Members:
@@ -164,15 +164,15 @@ Team Members:
 <# } #>
 ```
 
-请考虑使用模型的关系图。
+请考虑为模型使用关系图。
 
-许多模型最有效地显示并作为文本表进行管理，尤其是在它们非常大的情况下。
+许多模型只作为文本表进行最有效地呈现和管理，尤其是在它们非常大时。
 
-但是，对于某些类型的业务要求，澄清复杂的关系和工作流集很重要，关系图是最适合的媒介。 关系图的优点是可以轻松地与用户和其他利益干系人进行讨论。 通过从模型中生成代码来满足业务要求，可以在需求改变时使代码更灵活。
+但是，对于某些类型的业务要求，必须阐明复杂的关系和数据流集，关系图是最适合的介质。 关系图的一个优点是，可以轻松与用户和其他利益干系人进行讨论。 通过从业务要求级别的模型生成代码，使代码在需求发生变化时更加灵活。
 
-你还可以将自己的关系图类型设计为域特定语言 (DSL) 。 可从 UML 和 Dsl 生成代码。 有关详细信息，请参阅 [体系结构分析和建模](../modeling/analyze-and-model-your-architecture.md)。
+还可以将自己的关系图类型设计为 DSL (域) 。 可以从 UML 和 DSL 生成代码。 有关详细信息，请参阅 [分析和建模体系结构](../modeling/analyze-and-model-your-architecture.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [使用 T4 文本模板生成设计时代码](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 - [使用 T4 文本模板的运行时文本生成](../modeling/run-time-text-generation-with-t4-text-templates.md)

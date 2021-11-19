@@ -19,11 +19,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: 63ae84fb6b7450a65962383b986625945440e432
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122149320"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126671939"
 ---
 # <a name="debug-sharepoint-solutions"></a>调试 SharePoint 解决方案
   您可以使用调试器调试 SharePoint 解决方案 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 开始调试时， [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 会将项目文件部署到 SharePoint 服务器，然后在 Web 浏览器中打开 SharePoint 网站的实例。 以下部分说明如何在中调试 SharePoint 的应用程序 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
@@ -151,5 +151,5 @@ ms.locfileid: "122149320"
 
  有关其他 SharePoint 注册表项的详细信息，请参阅[Visual Studio 中的 SharePoint 工具的调试扩展](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [解决 SharePoint 解决方案问题](../sharepoint/troubleshooting-sharepoint-solutions.md)

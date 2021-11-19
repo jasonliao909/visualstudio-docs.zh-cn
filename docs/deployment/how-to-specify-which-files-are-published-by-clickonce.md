@@ -21,11 +21,11 @@ ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
 ms.openlocfilehash: c6fbe8b1543fdff870a0a5557c313080acd390c8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122146285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664137"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>如何：指定通过 ClickOnce 发布的文件
 发布 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序时，会将项目中的所有非代码文件与应用程序一起部署。 在某些情况下，你可能不希望或不需要发布某些文件，或者可能想要根据条件安装某些文件。 Visual Studio 提供了排除文件、将文件标记为数据文件或系统必备的功能，以及为条件安装创建文件组。
@@ -116,6 +116,6 @@ ms.locfileid: "122146285"
     > [!NOTE]
     > 你无法更改应用程序运行所需的文件的 **下载组** 。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)
 - [如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

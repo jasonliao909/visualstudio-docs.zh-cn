@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: d50d1520bac84674fafb4441618b7118a033a3806d23ade0f8f02d9d1a7c92cb
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
-ms.translationtype: MT
+ms.openlocfilehash: 00e140b3191ef6d40fbd0ee519580dee46345e17
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121385817"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663947"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Visual Studio 的建模 SDK - 特定于域的语言
 

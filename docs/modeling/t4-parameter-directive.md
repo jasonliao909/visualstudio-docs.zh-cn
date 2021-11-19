@@ -12,7 +12,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: a8a6101915112c1d7035611bec84c6c8d6bf6bc4
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126663872"
@@ -27,7 +27,7 @@ ms.locfileid: "126663872"
 <#@ parameter type="Full.TypeName" name="ParameterName" #>
 ```
 
- 指令声明模板代码中从外部上下文传入的值 `parameter` 初始化的属性。 如果编写调用文本转换的代码，可以设置这些值。 这些值可以在字典中 `Session` 传递，也可以传入 <xref:System.Runtime.Remoting.Messaging.CallContext> 。
+ `parameter`指令声明模板代码中从从外部上下文传入的值初始化的属性。 如果编写调用文本转换的代码，可以设置这些值。 这些值可以在字典中 `Session` 传递，也可以传入 <xref:System.Runtime.Remoting.Messaging.CallContext> 。
 
  可以声明任何可远程处理类型的参数。 也就是说，必须使用 声明类型， <xref:System.SerializableAttribute> 或者它必须派生自 <xref:System.MarshalByRefObject> 。 这允许将参数值传递到处理模板的 AppDomain 中。
 
@@ -85,8 +85,8 @@ string result = t4.ProcessTemplate("",
 //     Test 32 test
 ```
 
-## <a name="passing-values-to-a-run-time-preprocessed-text-template"></a>将值传递给预Run-Time (文本) 模板
- 通常不需要将 指令与运行时和预处理 (`<#@parameter#>` 模板) 一起使用。 相反，你可以为生成的代码定义附加的构造函数或可设置的属性，通过它传递参数值。 有关详细信息，请参阅[使用 T4 文本模板的运行时文本生成](../modeling/run-time-text-generation-with-t4-text-templates.md)。
+## <a name="passing-values-to-a-run-time-preprocessed-text-template"></a>向文本模板Run-Time (预) 值
+ 通常不需要将 指令与预处理 (`<#@parameter#>` 模板的运行时) 一起使用。 相反，你可以为生成的代码定义附加的构造函数或可设置的属性，通过它传递参数值。 有关详细信息，请参阅[使用 T4 文本模板的运行时文本生成](../modeling/run-time-text-generation-with-t4-text-templates.md)。
 
  但是，如果要在运行时模板中使用 ，可以使用会话字典 `<#@parameter>` 将值传递给该模板。 例如，假设你已创建该文件作为名为 的预处理模板 `PreTextTemplate1` 。 可以使用以下代码在程序中调用模板。
 

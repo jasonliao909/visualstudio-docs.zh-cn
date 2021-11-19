@@ -9,7 +9,7 @@ manager: jmartens
 monikerRange: '>=vs-2017'
 ms.openlocfilehash: 9abc7752358c29a0331497303ebb71a11a235ce726f0a08f0cd28d21856c8c57
 ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/12/2021
 ms.locfileid: "121366480"
@@ -30,7 +30,7 @@ ms.locfileid: "121366480"
 
 如果经常使用 Visual Studio 2015 文档，则可能需要浏览使用帮助查看器和下载该版本的脱机帮助书籍的选项。 请参阅 [Microsoft Help viewer](./help-viewer/overview.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [Visual Studio 的旧版本的文档](/previous-versions/visualstudio/)
 - [Visual Studio 2015 版本](/visualstudio/releasenotes/vs2015-version-history)

@@ -1,7 +1,8 @@
 ---
+description: 检索地址位置的偏移部分。
 title: IDiaSymbol::get_addressOffset | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,23 +10,24 @@ helpviewer_keywords:
 ms.assetid: c15639b0-7f37-46c7-891b-40273b7f6319
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9290173fc9dcfdc07c7c0afbb33c741fe3e53f6c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: 2dcbee6f04a61bb21ffc1071b200297ecd0b3890
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741093"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127832533"
 ---
 # <a name="idiasymbolget_addressoffset"></a>IDiaSymbol::get_addressOffset
-检索地址位置的偏移量部分。 当[LocationType 枚举](../../debugger/debug-interface-access/locationtype.md)设置为 `LocIsStatic` 时使用。
+检索地址位置的偏移部分。 当 [LocationType 枚举设置为](../../debugger/debug-interface-access/locationtype.md) 时，请使用 `LocIsStatic` 。
 
 ## <a name="syntax"></a>语法
 
 ```C++
-HRESULT get_addressOffset ( 
+HRESULT get_addressOffset ( 
    DWORD* pRetVal
 );
 ```
@@ -33,27 +35,27 @@ HRESULT get_addressOffset ( 
 #### <a name="parameters"></a>参数
  `pRetVal`
 
-弄返回地址位置的偏移量部分。
+[out]返回地址位置的偏移部分。
 
 ## <a name="return-value"></a>返回值
- 如果成功，将返回 `S_OK`;否则，将返回 `S_FALSE` 或错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回 `S_FALSE` 或错误代码。
 
 > [!NOTE]
-> @No__t_0 的返回值意味着该属性对符号不可用。
+> 返回值 `S_FALSE` 表示 属性不可用于 符号。
 
 ## <a name="remarks"></a>备注
- 对于位于外部 DLL 中的静态成员，此方法返回的偏移量可能为0，因为此方法依赖于获取成员的虚拟地址。 仅当使用指定 DLL 的加载地址的非零参数调用[IDiaSession](../../debugger/debug-interface-access/idiasession.md)接口中的[IDiaSession：:p ut_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)方法时，虚拟地址才有效。
+ 对于位于外部 DLL 中的静态成员，此方法返回的偏移量可能是 0，因为此方法依赖于获取成员的虚拟地址。 只有当[IDiaSession 接口中的 IDiaSession：:p ut_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) [](../../debugger/debug-interface-access/idiasession.md)方法使用指定 DLL 加载地址的非零参数调用时，虚拟地址才有效。
 
- 若要获取地址部分，请调用[IDiaSymbol：： get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)方法。
+ 若要获取地址的节部分，请调用 [IDiaSymbol：：get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md) 方法。
 
 ## <a name="requirements"></a>要求
 
-|需求|描述|
+|要求|说明|
 |-----------------|-----------------|
-|标头：|dia2|
+|标头：|dia2.h|
 |版本：|DIA SDK v7.0|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [LocationType 枚举](../../debugger/debug-interface-access/locationtype.md)
 - [IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)

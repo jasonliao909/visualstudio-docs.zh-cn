@@ -1,6 +1,6 @@
 ---
 title: 如何：添加 Creator 方法|Microsoft Docs
-description: 了解如何添加 Creator 方法，该方法将新数据添加到 SharePoint 中 BDC (BDC) 实体的数据源。
+description: 了解如何添加 Creator 方法，该方法将新数据添加到 SharePoint 中 BDC (BDC) 服务中的实体的数据源。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -22,13 +22,13 @@ ms.workload:
 - office
 ms.openlocfilehash: adec17c0a381edb3587da50d3d9e3e8aedbc6cdd
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126600640"
 ---
 # <a name="how-to-add-a-creator-method"></a>如何：添加 Creator 方法
-  Creator 方法将新数据添加到实体的数据源。 当用户选择基于 (的列表功能区上的"新建项"按钮时，BDC) 服务将调用此方法。  有关详细信息，请参阅[设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
+  Creator 方法将新数据添加到实体的数据源。 当用户选择基于 (的列表功能区上的"新建项"按钮时，BDC) 服务会调用此方法。  有关详细信息，请参阅[设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
 
 ### <a name="to-add-a-creator-method"></a>添加 Creator 方法
 

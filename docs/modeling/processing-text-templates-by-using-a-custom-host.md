@@ -15,14 +15,14 @@ ms.workload:
 - multiple
 ms.openlocfilehash: ed2f7b273948bac1ba07322ed079dd5cbd92711a
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126663932"
 ---
 # <a name="process-text-templates-by-using-a-custom-host"></a>使用自定义主机处理文本模板
 
-*文本模板转换* 过程采用 *文本模板* 文件作为输入，并生成文本文件作为输出。 可以从扩展中调用文本转换引擎Visual Studio，也可以从安装了该扩展Visual Studio运行的独立应用程序。 但是，必须提供文本 *模板化主机*。 该类将模板连接到环境，查找资源（如程序集和包含文件），并处理输出和错误消息。
+*文本模板转换* 过程采用 *文本模板* 文件作为输入，并生成文本文件作为输出。 可以从扩展中调用Visual Studio转换引擎，也可以从安装该扩展Visual Studio运行的独立应用程序。 但是，必须提供文本 *模板化主机*。 该类将模板连接到环境，查找资源（如程序集和包含文件），并处理输出和错误消息。
 
 > [!TIP]
 > 如果要编写将在 Visual Studio 中运行的包或扩展，请考虑使用文本模板化服务，而不是编写自己的主机。 有关详细信息，请参阅调用 [VS 扩展中的文本转换](../modeling/invoking-text-transformation-in-a-vs-extension.md)。

@@ -1,29 +1,31 @@
 ---
+description: 返回对应于指定源位置的内联帧的符号枚举。
 title: IDiaSession::findAcceleratorInlineesByLinenum | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 386c87aa-f7b2-4d38-9dd6-fffba9ff01f0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d08168a83b9bb635fd6a0e22dc22f91a454001f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: a6c819ea1fe69c31f86165f9ce4e72111c48b651
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742324"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127831927"
 ---
 # <a name="idiasessionfindacceleratorinlineesbylinenum"></a>IDiaSession::findAcceleratorInlineesByLinenum
-返回与指定源位置对应的内联帧的符号枚举。
+返回对应于指定源位置的内联帧的符号枚举。
 
 ## <a name="syntax"></a>语法
 
 ```C++
-HRESULT findAcceleratorInlineeLinesByName ( 
+HRESULT findAcceleratorInlineeLinesByName ( 
    IDiaSymbol*           parent,
    IDiaSourceFile*       file,
    DWORD                 linenum,
@@ -35,28 +37,28 @@ HRESULT findAcceleratorInlineeLinesByName ( 
 #### <a name="parameters"></a>参数
  `parent`
 
-中与需要搜索的快捷键存根函数相对应的 `IDiaSymbol`。
+[in]一 `IDiaSymbol` 个 ，它对应于需要搜索的 Accelerator 存根函数。
 
  `file`
 
-中源位置的 `IDiaSourceFile`。
+[in]源 `IDiaSourceFile` 位置的 。
 
  `linenum`
 
-中源位置的行号。
+[in]源位置的行号。
 
  `colnum`
 
-中源位置的列号。
+[in]源位置的列号。
 
  `ppResult`
 
-弄指向使用结果初始化的 `IDiaEnumLineNumbers` 接口指针的指针。
+[out]指向使用 `IDiaEnumLineNumbers` 结果初始化的接口指针的指针。
 
 ## <a name="return-value"></a>返回值
- 如果成功，将返回 `S_OK`;否则，将返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

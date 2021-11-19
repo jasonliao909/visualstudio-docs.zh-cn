@@ -1,6 +1,6 @@
 ---
 title: T4 输出指令
-description: 了解在Visual Studio模板中，输出指令用于定义转换的文件的文件扩展名和编码。
+description: 了解 Visual Studio 文本模板中，output 指令用于定义转换文件的文件扩展名和编码。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,20 +12,20 @@ ms.workload:
 - multiple
 ms.openlocfilehash: b5b8bae97dbed7afbcae7611bd9787979b8ab882
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126663880"
 ---
 # <a name="t4-output-directive"></a>T4 输出指令
 
-在Visual Studio模板中， 指令用于定义转换的文件的文件扩展名 `output` 和编码。
+在 Visual Studio 文本模板中， `output` 指令用于定义转换文件的文件扩展名和编码。
 
- 例如，如果Visual Studio包含名为 **MyTemplate.tt** 的模板文件，该文件包含以下指令：
+ 例如，如果 Visual Studio 项目包含名为 **MyTemplate.tt** 的模板文件，其中包含以下指令：
 
  `<#@output extension=".cs"#>`
 
- 然后Visual Studio生成名为 **MyTemplate.cs 的文件**
+ 然后 Visual Studio 会生成一个名为 **MyTemplate** 的文件
 
  运行时（预处理）文本模板中不需要 `output` 指令。 相反，应用程序通过调用 `TextTransform()` 来获取已生成的字符串。 有关详细信息，请参阅[使用 T4 文本模板的运行时文本生成](../modeling/run-time-text-generation-with-t4-text-templates.md)。
 
@@ -37,7 +37,7 @@ ms.locfileid: "126663880"
 
  每个文本模板中不应该有多个 `output`。
 
-## <a name="extension-attribute"></a>extension 属性
+## <a name="extension-attribute"></a>extension 特性
  指定生成的文本输出文件的文件扩展名。
 
  默认值为 **.cs**

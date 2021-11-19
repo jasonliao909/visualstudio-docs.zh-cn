@@ -32,11 +32,11 @@ ms.technology: vs-ide-deployment
 ms.workload:
 - cplusplus
 ms.openlocfilehash: c78c5dc002caaa17569d3a71f01aa47e7ae901c1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122073859"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126671817"
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>ClickOnce 非托管 API 参考
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 来自 dfshim.dll 中的非托管公共 API。
@@ -92,5 +92,5 @@ ms.locfileid: "122073859"
 ### <a name="return-value"></a>返回值
  如果成功，则返回S_OK;否则，返回表示失败的 HRESULT。 如果发生托管异常，则 返回0x80020009 (DISP_E_EXCEPTION) 。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - <xref:System.Deployment.Application.DeploymentServiceCom.CleanOnlineAppCache%2A>

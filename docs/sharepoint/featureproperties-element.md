@@ -17,7 +17,7 @@ ms.workload:
 - office
 ms.openlocfilehash: d3bfb1a8e53c72f4a3d70e69658d78f8c336e9cf
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126600654"
@@ -58,7 +58,7 @@ ms.locfileid: "126600654"
 
 |元素|说明|
 |-------------|-----------------|
-|**命名空间**|http： \/ \/ schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Namespace**|http： \/ \/ schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**架构名称**|SharePoint Project 项架构|
 |**验证文件**|ProjectItemModelSchema|
 |**可以为空**|否|

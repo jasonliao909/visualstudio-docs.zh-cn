@@ -17,11 +17,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: ad3761012732f6191d40bfdf47da84221b78209e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122130983"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126667476"
 ---
 # <a name="how-to-create-a-sharepoint-web-part"></a>如何：创建 SharePoint web 部件
   您可以通过将 **web 部件** 项添加到任何 SharePoint 项目，然后编辑 web 部件的代码文件或使用设计器来创建和自定义 web 部件。 有关详细信息，请参阅[如何：使用设计器创建 SharePoint web 部件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)。
@@ -50,7 +50,7 @@ ms.locfileid: "122130983"
 
      有关示例，请参阅[演练：为 SharePoint 创建 web 部件](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [为 SharePoint 创建 Web 部件](../sharepoint/creating-web-parts-for-sharepoint.md)
 - [如何：使用设计器创建 SharePoint Web 部件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)
 - [演练：为 SharePoint 创建 Web 部件](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)

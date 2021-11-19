@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c0913e3d4f54f312e7d706ec6ab9771732e7b85c
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.openlocfilehash: 7f1188df1a13d83964f455738250544149d7044e
+ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126601225"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "131127424"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>将 WPF 控件绑定到数据集
 
@@ -47,7 +47,7 @@ ms.locfileid: "126601225"
 
 - Visual Studio
 
-- 访问 SQL Server 或 SQL Server Express 的运行实例，其中包含 AdventureWorks 灯 (AdventureWorksLT) 示例数据库附加到它。 可以从 [CodePlex 存档](https://archive.codeplex.com/?p=awlt2008dbscript)下载 AdventureWorksLT 数据库。
+- 访问 SQL Server 或 SQL Server Express 的运行实例，其中包含 AdventureWorks 灯 (AdventureWorksLT) 示例数据库附加到它。 若要下载数据库，请参阅 [AdventureWorks 示例数据库](/sql/samples/adventureworks-install-configure?tabs=ssms)。
 
 事先了解以下概念也很有用，但对于完成本演练并不是必需的：
 
@@ -231,7 +231,7 @@ ms.locfileid: "126601225"
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb" id="Snippet4":::
 
     > [!NOTE]
-    > 此示例使用 `Save` 的 `TableAdapter` 方法来保存更改。 这对于本演练很合适，因为本演练中只会更改一个数据表。 如果你需要保存对多个数据表所做的更改，则还可以使用 Visual Studio 利用你的数据集生成的 `UpdateAll` 的 `TableAdapterManager` 方法。 有关详细信息，请参阅 [tableadapter](../data-tools/create-and-configure-tableadapters.md)。
+    > 此示例使用 `Save` 的 `TableAdapter` 方法来保存更改。 这对于本演练很合适，因为本演练中只会更改一个数据表。 如果你需要保存对多个数据表所做的更改，则还可以使用 Visual Studio 利用你的数据集生成的 `UpdateAll` 的 `TableAdapterManager` 方法。 有关详细信息，请参阅 [TableAdapters](../data-tools/create-and-configure-tableadapters.md)。
 
 ## <a name="test-the-application"></a>测试应用程序
 
@@ -243,7 +243,7 @@ ms.locfileid: "126601225"
 
     - 文本框显示具有图片的第一条产品记录的数据。 此产品的产品 ID 为 713，名称为“Long-Sleeve Logo Jersey, S”。
 
-    - 您可以单击 **>** 或 **<** 按钮来浏览其他产品记录。
+    - 可以单击 **>** 或 **<** 按钮来浏览其他产品记录。
 
 2. 在某一产品记录中，更改“大小”值，然后依次“保存更改”。
 
@@ -255,11 +255,11 @@ ms.locfileid: "126601225"
 
 ## <a name="next-steps"></a>后续步骤
 
-完成本演练后，你可能会尝试以下相关任务：
+完成本演练后，可以尝试以下相关任务：
 
-- 了解如何使用 Visual Studio 中的“数据源”窗口将 WPF 控件绑定到其他类型的数据源上。 有关详细信息，请参阅 [将 WPF 控件绑定到 WCF 数据服务](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)。
+- 了解如何使用 Visual Studio 中的“数据源”窗口将 WPF 控件绑定到其他类型的数据源上。 有关详细信息，请参阅将 [WPF 控件绑定到 WCF 数据服务](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)。
 
-- 了解如何使用 Visual Studio 中的“数据源”窗口在 WPF 控件中显示相关数据（即父-子关系中的数据）。 有关详细信息，请参阅 [演练：在 WPF 应用中显示相关数据](../data-tools/display-related-data-in-wpf-applications.md)。
+- 了解如何使用 Visual Studio 中的“数据源”窗口在 WPF 控件中显示相关数据（即父-子关系中的数据）。 有关详细信息，请参阅 [演练：在 WPF 应用中显示相关的数据](../data-tools/display-related-data-in-wpf-applications.md)。
 
 ## <a name="see-also"></a>另请参阅
 

@@ -12,11 +12,11 @@ ms.workload:
 - multiple
 author: TerryGLee
 ms.openlocfilehash: 150b3b3ababe9e559cc8fe07d049509348201f08
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122114714"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126665192"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>如何：在工作流设计器中定义和使用活动委托
 
@@ -29,7 +29,7 @@ ms.locfileid: "122114714"
    > [!NOTE]
    > 如果看不到工作流项目模板，请首先安装 Windows **的 Workflow Foundation** Visual Studio。 有关详细说明，请参阅[Install Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)。
 
-3. 右键单击项目中的项目解决方案资源管理器并选择 **"****添加新**  >  **项"。** 选择" **工作流** "类别，然后选择" **活动项"** 模板。 将新活动 **"MyForEach.xaml"** 命名，然后选择"确定 **"。**
+3. 右键单击项目中的项目 **，解决方案资源管理器"**  >  **添加新项"。** 选择" **工作流** "类别，然后选择" **活动项"** 模板。 将新活动 **"MyForEach.xaml"** 命名，然后选择"确定 **"。**
 
    活动将在工作流设计器中打开。
 
@@ -53,7 +53,7 @@ ms.locfileid: "122114714"
 
 13. 选择"**创建变量"。** 将新 **变量命名索引**。
 
-14. 在"**变量类型"列中**，选择 **"Int32"。** 将" **作用域"** 保留 **为"While"，** 将" **默认"** 列留空。
+14. 在"**变量类型"列中**，选择 **"Int32"。** 将" **作用域"** 保留 **为"While"，** 将" **默认"列** 留空。
 
 15. 将活动的 **Condition** 属性 <xref:System.Activities.Statements.While> 设置为对 **Items.Length**<索引。
 
@@ -75,7 +75,7 @@ ms.locfileid: "122114714"
 
 1. 按 **Ctrl** Shift B + **生成** + **项目**。
 
-2. 在 **解决方案资源管理器** 中，在设计器中打开 **Workflow1.xaml。**
+2. 在 **解决方案资源管理器** 中，在 **设计器中打开 Workflow1.xaml。**
 
 3. 将 **MyForEach** 活动从工具箱拖动到设计器图面。 活动位于工具箱的一部分，其名称与项目相同。
 

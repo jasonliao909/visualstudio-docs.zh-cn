@@ -1,7 +1,8 @@
 ---
+description: 返回与虚拟地址关联的 PDATA 数据块。
 title: IDiaStackWalkHelper::pdataForVA | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,23 +10,24 @@ helpviewer_keywords:
 ms.assetid: fafc38fe-74dc-4726-9a51-eebf3a673d7f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d51736a80021847881db164c9e176a010124638
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: c2267173539401f9b673a6cf760abe9070279970
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741401"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127831771"
 ---
 # <a name="idiastackwalkhelperpdataforva"></a>IDiaStackWalkHelper::pdataForVA
-返回与虚拟地址相关联的 PDATA 数据块。
+返回与虚拟地址关联的 PDATA 数据块。
 
 ## <a name="syntax"></a>语法
 
 ```C++
-HRESULT pdataForVA( 
+HRESULT pdataForVA( 
    ULONGLONG  va,
    DWORD      cbData,
    DWORD*     pcbData,
@@ -36,27 +38,27 @@ HRESULT pdataForVA( 
 #### <a name="parameters"></a>参数
  `va`
 
-中指定要获取的数据的虚拟地址。
+[in]指定要获取的数据的虚拟地址。
 
  `cbData`
 
-中要获取的数据的大小（以字节为单位）。
+[in]要获取的数据的大小（以字节为单位）。
 
  `pcbData`
 
-弄返回获取的数据的实际大小（以字节为单位）。
+[out]返回获取的数据的实际大小（以字节为单位）。
 
  `pbData`
 
-[in，out]使用请求的数据填充的缓冲区。 不能为 `NULL`。
+[in， out]用请求的数据填充的缓冲区。 不能为 `NULL`。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK`。 如果指定地址没有 PDATA，则返回 `S_FALSE`。 否则，返回错误代码。
+ 如果成功，则返回 `S_OK`。 如果 `S_FALSE` 指定的地址没有 PDATA，则返回 。 否则，返回错误代码。
 
 ## <a name="remarks"></a>备注
- 编译单位的 PDATA （名为 "PDATA" 的部分）包含有关函数的异常处理的信息。
+ PDATA (编译的名为".pdata") 包含有关函数异常处理的信息。
 
- 调用方知道要返回多少数据，以便调用方无需询问可用数据量。 因此，如果 `pbData` 参数 `NULL`，此方法的实现就可以返回错误。
+ 调用方知道要返回多少数据，因此调用方无需询问有多少数据可用。 因此，如果 参数为 ，则此方法的实现可以 `pbData` 返回错误 `NULL` 。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

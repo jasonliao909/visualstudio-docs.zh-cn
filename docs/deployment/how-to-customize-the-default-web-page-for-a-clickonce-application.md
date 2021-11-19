@@ -21,11 +21,11 @@ ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
 ms.openlocfilehash: 2a1a3ae95889c3e57a2404090d7cf2db7a27e9a9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122073833"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126665610"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>如何：自定义 ClickOnce 应用程序的默认网页
 将 ClickOnce 应用程序发布到 web 时，将自动生成网页并将其与应用程序一起发布。 默认页面包含应用程序的名称和用于安装应用程序的链接、安装必备组件或访问 MSDN 上的帮助。
@@ -50,7 +50,7 @@ ms.locfileid: "122073833"
 
 4. 可选。 若要防止 Visual Studio 覆盖自定义的发布网页，请在 "**发布选项**" 对话框中的 "**每次发布后都自动生成部署** 网页" 复选框。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)
 - [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)
 - [如何：安装 ClickOnce 应用程序的先决条件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)

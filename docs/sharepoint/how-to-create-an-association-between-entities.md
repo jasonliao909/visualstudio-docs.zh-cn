@@ -26,7 +26,7 @@ ms.workload:
 - office
 ms.openlocfilehash: b433262c93112c073145000b523d0aea6fb385b0
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126663849"

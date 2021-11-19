@@ -15,7 +15,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: e3160f59542d8f54be767e507475971a806776f0
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126663888"
@@ -37,7 +37,7 @@ ms.locfileid: "126663888"
 
  只能在创建依赖项关系图的模型内打开该关系图。 若要提供对关系图的访问，你必须提供对所有建模项目文件的访问，或提供其副本。
 
- 有关详细信息，请参阅[读取其他版本](../modeling/read-models-and-diagrams-in-other-visual-studio-editions.md)中的Visual Studio关系图。
+ 有关详细信息，请参阅[读取其他版本中的模型Visual Studio关系图](../modeling/read-models-and-diagrams-in-other-visual-studio-editions.md)。
 
 ## <a name="using-diagrams-in-documents-and-presentations"></a>使用文档和演示文稿中的关系图
  可以将部分关系图复制到文档或演示文稿中。 也可以打印关系图，例如打印 XPS 文件。

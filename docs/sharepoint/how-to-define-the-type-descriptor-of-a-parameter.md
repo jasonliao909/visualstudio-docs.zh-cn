@@ -1,6 +1,6 @@
 ---
 title: 如何：定义参数参数的类型描述符|Microsoft Docs
-description: 了解如何在 BDC 数据连接模型的业务数据连接中定义 (参数) 描述符。
+description: 了解如何在 BDC 数据连接模型中为业务数据连接中 (参数) 描述符。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -20,7 +20,7 @@ ms.workload:
 - office
 ms.openlocfilehash: ae1570010fc71d6edf56cdf9090f371c218a322a
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126663832"
@@ -52,7 +52,7 @@ ms.locfileid: "126663832"
 
 2. 将 **TypeName** 属性设置为表示实体的类型的完全限定名称。 此类型可以是你的项目中的类，在你的解决方案中引用的程序集中定义的类型，或 BDC 对象模型中定义的类型。
 
-    - 对于项目中的类，请选择 **TypeName** 属性旁边的向下箭头，在出现的对话框中选择"当前 Project"**选项卡**，然后选择项目中的类。
+    - 对于项目中的类，请选择 **TypeName** 属性 **旁边的** 向下箭头，在出现的对话框中选择"当前 Project"选项卡，然后选择项目中的类。
 
          完全限定名包括后跟 LOB 系统名称的命名空间和类名称。 以下示例将 **TypeName** 属性的值设置到项目中的类。
 
@@ -86,13 +86,13 @@ ms.locfileid: "126663832"
 
 2. 在菜单栏上，选择"**视图"和**"**属性窗口"。**
 
-3. 在 **"属性**"窗口中，将 **"名称**"属性设置为描述实体名称 (例如：**联系人) 。**
+3. 在"**属性**"窗口中，将 **Name** 属性设置为描述实体名称的名称 (例如：**联系人) 。**
 
 4. 将 **IsCollection** 属性设置为 **True。** 这表示此类型描述符是实体的集合。
 
 5. 将 **TypeName** 属性设置为一个字符串，该字符串包含对接口的引用，以及表示实体的类型 <xref:System.Collections.Generic.IEnumerable%601> 的完全限定名称。 此类型可以是你的项目中的类，在你的解决方案中引用的程序集中定义的类型，或 BDC 对象模型中定义的类型。
 
-   - 对于项目中的类，请选择 **TypeName** 属性旁边的向下箭头，在出现的对话框中选择"当前 Project"**选项卡**，然后选择项目中的类。
+   - 对于项目中的类，请选择 **TypeName** 属性 **旁边的** 向下箭头，在出现的对话框中选择"当前 Project"选项卡，然后选择项目中的类。
 
       完全限定名包括后跟 LOB 系统名称的命名空间和类名称。
 

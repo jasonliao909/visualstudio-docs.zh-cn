@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: cf967b079fbd499a3e3cf244c5c6dd692aa01e363b7e69db10f7299ca3422448
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
-ms.translationtype: MT
+ms.openlocfilehash: ca9c66d68913e0791daea6736c7bb5aeeead4df2
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121383932"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126667596"
 ---
 # <a name="compensate-activity-designer"></a>Compensate 活动设计器
 
@@ -38,14 +38,14 @@ ms.locfileid: "121383932"
 
 ### <a name="the-compensate-properties"></a>Compensate 属性
 
-下表列出 <xref:System.Activities.Statements.CancellationScope> 属性并说明如何在设计器中使用它们。 可以在 <xref:System.Activities.Activity.DisplayName%2A> 属性网格中或在属性图面上编辑工作流设计器属性。 在 <xref:System.Activities.Statements.Compensate.Target%2A> 属性网格中编辑属性。
+下表列出 <xref:System.Activities.Statements.CancellationScope> 属性并说明如何在设计器中使用它们。 可以在 <xref:System.Activities.Activity.DisplayName%2A> 属性网格中或在图面上编辑工作流设计器属性。 在 <xref:System.Activities.Statements.Compensate.Target%2A> 属性网格中编辑属性。
 
 |属性名称|必选|使用情况|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|错误|指定 <xref:System.Activities.Statements.Compensate> 活动的可选友好名称。 默认值为 Compensate。|
-|<xref:System.Activities.Statements.Compensate.Target%2A>|正确|指定 <xref:System.Activities.InArgument%601>，它包含此 <xref:System.Activities.Statements.CompensationToken> 活动的 <xref:System.Activities.Statements.Compensate>。|
+|<xref:System.Activities.Statements.Compensate.Target%2A>|True|指定 <xref:System.Activities.InArgument%601>，它包含此 <xref:System.Activities.Statements.CompensationToken> 活动的 <xref:System.Activities.Statements.Compensate>。|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [事务](../workflow-designer/transaction-activity-designers.md)
 - [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)

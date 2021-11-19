@@ -18,7 +18,7 @@ ms.workload:
 - office
 ms.openlocfilehash: 4eaf4a9541834215c0c66aed7bb9271faa79a1e3
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126602551"
@@ -41,11 +41,11 @@ ms.locfileid: "126602551"
 
  下表介绍了功能设计器中显示的功能属性。
 
-|Property|说明|
+|属性|说明|
 |--------------|-----------------|
 |标题|可选。 功能的默认标题设置为 "*解决方案名称* " 功能名称。|
 |说明|可选。 SharePoint 功能的说明。|
-|作用域|必需。 如果功能是使用 **解决方案资源管理器** 创建的，则默认情况下，作用域设置为 Web。<br /><br /> -场：为整个服务器场激活一项功能。<br /><br /> -Site：为网站集中的所有网站激活某个功能。<br /><br /> -Web：激活特定网站的功能。<br /><br /> -WebApplication：为 web 应用程序中的所有网站激活某个功能。|
+|范围|必需。 如果功能是使用 **解决方案资源管理器** 创建的，则默认情况下，作用域设置为 Web。<br /><br /> -场：为整个服务器场激活一项功能。<br /><br /> -Site：为网站集中的所有网站激活某个功能。<br /><br /> -Web：激活特定网站的功能。<br /><br /> -WebApplication：为 web 应用程序中的所有网站激活某个功能。|
 |解决方案中的项|可以添加到功能的所有 SharePoint 项。|
 |功能中的项|已添加到功能 SharePoint 项目项。|
 
