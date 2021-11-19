@@ -1,26 +1,30 @@
 ---
-title: 在 Visual Studio 中禁用 DPI 感知
-description: 讨论 HDPI 监视器上 Windows 窗体设计器的限制，以及如何以非 DPI 感知进程的形式运行 Visual Studio。
-ms.date: 08/30/2021
+title: 禁用 DPI 感知，以在窗体中进行缩放
+description: 解决 HDPI 监视器上 Windows 窗体设计器的缩放问题。
+ms.date: 11/30/2021
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.technology: vs-ide-designers
-ms.topic: conceptual
-ms.openlocfilehash: d56a3650f2dd8df2b314bd80b27b321a68a92a2e
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.topic: how-to
+ms.openlocfilehash: 9dbe397ad9453c834b2614b326d2c4965f3fac34
+ms.sourcegitcommit: a98fa8a8362525f67824ce52b7e71757f10f1362
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126737329"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "132736482"
 ---
-# <a name="disable-dpi-awareness-in-visual-studio"></a>在 Visual Studio 中禁用 DPI 感知
+# <a name="disable-dpi-awareness-to-address-scaling-issues-with-windows-forms-designer-in-visual-studio"></a>禁用 DPI 感知，解决 Visual Studio 中 Windows 窗体设计器的缩放问题
+
+本文介绍 HDPI 监视器上 Windows 窗体设计器的限制，以及[如何以非 DPI 感知进程的形式运行 Visual Studio](#resolve-hdpi-display-problems)。
 
 Visual Studio 是一个每英寸点数 (DPI) 感知应用程序，因此其显示可以自动缩放。 如果某个应用程序声明自己是非 DPI 感知应用程序，则操作系统作将该应用程序作为位图缩放。 此行为也称为 DPI 虚拟化。 应用程序仍会认为它以 100% 缩放比例（即 96 dpi）运行。
 
-本文讨论 HDPI 监视器上 Windows 窗体设计器的限制，以及如何以非 DPI 感知进程的形式运行 Visual Studio。
+也可执行以下操作：
++ [在 Windows 窗体中自动缩放](/dotnet/framework/winforms/automatic-scaling-in-windows-forms) 
++ 选择“[使用不同像素密度优化屏幕呈现(需要重启)](../ide/reference/general-environment-options-dialog-box.md#visual-experience)”选项
 
-## <a name="windows-forms-designer-on-hdpi-monitors"></a>HDPI 监视器上的 Windows 窗体设计器
+## <a name="scaling-windows-forms-designer-on-hdpi-monitors"></a>缩放：HDPI 监视器上的 Windows 窗体设计器
 
 Visual Studio 中的 Windows 窗体设计器不支持缩放  。 因此，在高每英寸点数 (HDPI ) 监视器上，在 Windows 窗体设计器中打开某些窗体时，会出现显示问题  。 例如，控件可能会出现重叠，如下图所示：
 
@@ -35,9 +39,9 @@ Visual Studio 中的 Windows 窗体设计器不支持缩放  。 因此，在高
 > [!NOTE]
 > 此信息栏是在 Visual Studio 2017 版本 15.8 中引入的。
 
-如果不在设计器中工作，并且无需调整窗体的布局，可以忽略该信息栏，在代码编辑器或其他类型的设计器中继续工作。 （还可以[禁用通知](#disable-notifications)，以便信息栏不会继续显示。）只有 Windows 窗体设计器才会受到影响  。 如果确实需要在 Windows 窗体设计器中工作，下一部分将帮助你[解决问题](#to-resolve-the-display-problem)  。
+如果不在设计器中工作，并且无需调整窗体的布局，可以忽略该信息栏，在代码编辑器或其他类型的设计器中继续工作。 （还可以[禁用通知](#disable-notifications)，以便信息栏不会继续显示。）只有 Windows 窗体设计器才会受到影响  。 如果确实需要在 Windows 窗体设计器中工作，下一部分将帮助你[解决问题](#resolve-hdpi-display-problems)  。
 
-## <a name="to-resolve-the-display-problem"></a>解决显示问题
+## <a name="resolve-hdpi-display-problems"></a>解决 HDPI 显示问题
 
 有三个选项可解决显示问题：
 
@@ -64,16 +68,16 @@ Visual Studio 中的 Windows 窗体设计器不支持缩放  。 因此，在高
 
 可以通过修改注册表将 Visual Studio 标记为非 DPI 感知。 打开注册表编辑器并向 HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers 子项添加项   ：
 
-**项**：根据所使用的是 Visual Studio 2017 还是 2019，请使用以下值之一：
+条目：根据所使用的是 Visual Studio 2017、2019 还是 2022，请使用以下值之一：
 
 - C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe
 - C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe
+- C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\devenv.exe
 
 > [!NOTE]
 > 如果你正在使用 Visual Studio Professional 或 Enterprise Edition，请将该项中的“Community”替换为“Professional”或“Enterprise”    。 还可根据需要替换驱动器号。
 
-**类型**：REG_SZ
-
+**类型**：REG_SZ <br>
 **值**：DPIUNAWARE
 
 > [!NOTE]
@@ -89,7 +93,9 @@ Visual Studio 中的 Windows 窗体设计器不支持缩放  。 因此，在高
 
 可以在 Visual Studio 中选择不接收 DPI 缩放问题的通知。 例如，如果不在设计器中工作，可能需要禁用通知。
 
-若要禁用通知，请选择“工具” > “选项”，打开“选项”对话框    。 然后选择“Windows 窗体设计器” > “常规”，然后将“DPI 缩放通知”设置为“False”     。
+若要禁用通知，请执行以下操作：
+1. 选择“工具” > “选项”，打开“选项”对话框  。 
+2. 选择“Windows 窗体设计器” > “常规”，然后将“DPI 缩放通知”设置为“False”   。
 
 ![Visual Studio 中的 DPI 缩放通知选项](./media/notifications-option.png)
 
@@ -98,8 +104,3 @@ Visual Studio 中的 Windows 窗体设计器不支持缩放  。 因此，在高
 ## <a name="troubleshoot"></a>疑难解答
 
 如果 DPI 感知转换在 Visual Studio 中未按预期方式工作，请检查注册表编辑器中的 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\devenv.exe 子项中是否有 `dpiAwareness` 值  。 如果存在该值，请将其删除。
-
-## <a name="see-also"></a>请参阅
-
-- [Windows 窗体中的自动缩放](/dotnet/framework/winforms/automatic-scaling-in-windows-forms)
-- [通过 Visual Studio 创建更出色的多监视器体验](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/)

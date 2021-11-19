@@ -1,6 +1,6 @@
 ---
-title: 使用数据绑定创建 Windows 窗体用户控件
-description: 了解如何通过实现 ComplexBindingPropertiesAttribute 类来创建支持复杂数据绑定的 Windows 窗体用户控件。
+title: 创建具有数据绑定的 Windows 窗体用户控件
+description: 了解如何实现 ComplexBindingPropertiesAttribute 类来创建支持复杂数据绑定的 Windows 窗体用户控件。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -19,20 +19,20 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: b179c957320badae098d0f82107d26ebf0859df1
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126601194"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>创建支持复杂数据绑定的 Windows 窗体用户控件
 
-在 Windows 应用程序中的窗体上显示数据时，可以从 **工具箱** 中选择现有控件。 或者，如果您的应用程序需要的功能在标准控件中不可用，则可以创作自定义控件。 本演练显示了如何创建实现 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> 的控件。 实现 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> 的控件包含可以绑定到数据的 `DataSource` 和 `DataMember` 属性。 此类控件类似于 <xref:System.Windows.Forms.DataGridView> 或 <xref:System.Windows.Forms.ListBox>。
+在 Windows 应用程序的窗体上显示数据时，可以从“工具箱”中选择现有的控件。 或者，如果应用程序需要标准控件中无法实现的功能时，你还可以创作自定义控件。 本演练显示了如何创建实现 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> 的控件。 实现 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> 的控件包含可以绑定到数据的 `DataSource` 和 `DataMember` 属性。 此类控件类似于 <xref:System.Windows.Forms.DataGridView> 或 <xref:System.Windows.Forms.ListBox>。
 
 有关控件创作的详细信息，请参阅[在设计时开发 Windows 窗体控件](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time)。
 
 创作用于数据绑定方案中的控件时，需要实现以下数据绑定属性之一：
 
-|数据绑定属性用法|
+|数据绑定特性的用法|
 | - |
 |在简单控件上实现 <xref:System.ComponentModel.DefaultBindingPropertyAttribute>（如 <xref:System.Windows.Forms.TextBox>），此类控件用于显示数据的单个列（或属性）。 有关详细信息，请参阅[创建支持简单数据绑定的 Windows 窗体用户控件](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)。|
 |在控件上实现 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>（如 <xref:System.Windows.Forms.DataGridView>），此类控件用于显示数据列表（或表）。 （本演练页面描述了此过程）。|
@@ -40,7 +40,7 @@ ms.locfileid: "126601194"
 
 本演练创建显示表中多行数据的复杂控件。 本示例使用源自 Northwind 示例数据库的 `Customers` 表。 复杂用户控件将会在自定义控件中的 <xref:System.Windows.Forms.DataGridView> 中显示 Customers 表。
 
-在本演练中，您将学习如何：
+在本演练中，你将学会如何执行以下任务：
 
 - 将新的“用户控件”添加到项目中。
 
@@ -48,9 +48,9 @@ ms.locfileid: "126601194"
 
 - 实现 `ComplexBindingProperty` 特性。
 
-- 使用 " [数据源配置向导](../data-tools/media/data-source-configuration-wizard.png)" 创建数据集。
+- 使用[数据源配置向导](../data-tools/media/data-source-configuration-wizard.png)创建数据集。
 
-- 在 "[数据源" 窗口](add-new-data-sources.md#data-sources-window)中设置 **Customers** 表以使用新的复杂控件。
+- 在[“数据源”窗口](add-new-data-sources.md#data-sources-window)中，设置“Customers”表以使用新的复杂控件。
 
 - 通过将新控件从“数据源”窗口拖到“Form1”上来添加新控件。
 
@@ -58,27 +58,27 @@ ms.locfileid: "126601194"
 
 本演练使用 SQL Server Express LocalDB 和 Northwind 示例数据库。
 
-1. 如果没有 LocalDB SQL Server Express，请从 [SQL Server Express 下载页面](https://www.microsoft.com/sql-server/sql-server-editions-express)或通过 **Visual Studio 安装程序** 安装。 在 **Visual Studio 安装程序** 中，你可以将 SQL Server Express LocalDB 作为 **数据存储和处理** 工作负荷的一部分进行安装，也可以作为单个组件安装。
+1. 如果尚未安装 SQL Server Express LocalDB，可以从 [SQL Server Express 下载页](https://www.microsoft.com/sql-server/sql-server-editions-express)或通过 Visual Studio 安装程序安装。 在 Visual Studio 安装程序中，可以将 SQL Server Express LocalDB 作为数据存储和处理工作负载的一部分或作为单个组件进行安装 。
 
 1. 按照以下步骤安装 Northwind 示例数据库：
 
-    1. 在 Visual Studio 中，打开 **SQL Server 对象资源管理器**"窗口。  (SQL Server 对象资源管理器作为 Visual Studio 安装程序中的 **数据存储和处理** 工作负荷的一部分安装。 ) 展开 **SQL Server** 节点。 右键单击 LocalDB 实例，然后选择 "**新建查询**"。
+    1. 在 Visual Studio 中，打开“SQL Server 对象资源管理器”窗口。 （在 Visual Studio 安装程序中 SQL Server 对象资源管理器作为数据存储和处理工作负载的一部分安装。）展开 SQL Server 节点 。 右键单击 LocalDB 实例并选择“新建查询”。
 
        此时将打开查询编辑器窗口。
 
-    1. 将[Northwind transact-sql SQL 脚本](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true)复制到剪贴板。 此 t-sql SQL 脚本从头开始创建 Northwind 数据库，并用数据填充它。
+    1. 将 [Northwind Transact-SQL 脚本](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true)复制到剪贴板。 此 T-SQL 脚本从头开始创建 Northwind 数据库并用数据填充它。
 
-    1. 将 SQL 脚本粘贴到查询编辑器中，然后选择 "**执行**" 按钮。
+    1. 将 T-SQL 脚本粘贴到查询编辑器中，然后选择“执行”按钮。
 
-       一小段时间后，查询将完成运行，并创建 Northwind 数据库。
+       不久后，查询完成运行并且 Northwind 数据库创建完成。
 
 ## <a name="create-a-windows-forms-app-project"></a>创建 Windows 窗体应用项目
 
-第一步是为 c # 或 Visual Basic 创建 **Windows 窗体应用程序** 项目。 将项目命名为 **ComplexControlWalkthrough**。
+第一步是为 C# 或 Visual Basic 创建一个 Windows 窗体应用项目。 将项目命名为 **ComplexControlWalkthrough**。
 
 ## <a name="add-a-user-control-to-the-project"></a>将用户控件添加到项目中
 
-由于此演练从 **用户控件** 创建复杂的数据可绑定控件，因此将 **用户控件** 项添加到项目中：
+由于本演练是从“用户控件”创建复杂的可绑定数据控件，所以你必须将“用户控件”项添加到项目中 ：
 
 1. 从“项目”菜单，选择“添加用户控件”。
 
@@ -88,7 +88,7 @@ ms.locfileid: "126601194"
 
 ## <a name="design-the-complexdatagridview-control"></a>设计 ComplexDataGridView 控件
 
-若要将添加 <xref:System.Windows.Forms.DataGridView> 到用户控件，请将 <xref:System.Windows.Forms.DataGridView> 从 " **工具箱** " 拖动到用户控件的设计图面上。
+若要将 <xref:System.Windows.Forms.DataGridView> 添加到用户控件，请将 <xref:System.Windows.Forms.DataGridView> 从“工具箱”拖动到用户控件的设计图面上。
 
 ## <a name="add-the-required-data-binding-attribute"></a>添加所需的数据绑定特性
 
@@ -105,11 +105,11 @@ ms.locfileid: "126601194"
 
 ## <a name="create-a-data-source-from-your-database"></a>从数据库创建数据源
 
-使用 " **数据源配置** 向导" 可以根据 `Customers` Northwind 示例数据库中的表创建数据源：
+根据 Northwind 示例数据库中的 `Customers` 表，使用“数据源配置”向导创建数据源：
 
-1. 若要打开 " **数据源** " 窗口，请在 " **数据** " 菜单上单击 " **显示数据源**"。
+1. 若要打开“数据源”窗口，在“数据”菜单上单击“显示数据源”  。
 
-2. 在 " **数据源** " 窗口中，选择 " **添加新数据源** " 以启动 " **数据源配置** 向导"。
+2. 在“数据源”窗口，选择“添加新数据源”以启动“数据源配置”向导  。
 
 3. 在 **“选择数据源类型”** 页上选择 **“数据库”** ，然后单击 **“下一步”**。
 
@@ -121,17 +121,17 @@ ms.locfileid: "126601194"
 
 5. 如果数据库需要密码，请选择该选项以包括敏感数据，再单击“下一步”。
 
-6. 在 "将 **连接字符串保存到应用程序配置文件** " 页上，单击 " **下一步**"。
+6. 在“将连接字符串保存到应用程序配置文件”页面上，单击“下一步” 。
 
 7. 在“选择数据库对象”页上，展开“表”节点。
 
 8. 选择 `Customers` 表，然后单击“完成”。
 
-   **NorthwindDataSet** 将添加到项目中，并且 `Customers` 该表会出现在 "**数据源**" 窗口中。
+   将“NorthwindDataSet”添加到项目中，并且“数据源”窗口中将显示 `Customers` 表 。
 
 ## <a name="set-the-customers-table-to-use-the-complexdatagridview-control"></a>设置 Customers 表以使用 ComplexDataGridView 控件
 
-在 " **数据源** " 窗口中，可以设置要在将项拖动到窗体之前创建的控件：
+在“数据源”窗口中，可以先设置要创建的控件，然后再将项拖动到窗体上：
 
 1. 在设计器中打开“Form1”。
 
@@ -145,7 +145,7 @@ ms.locfileid: "126601194"
 
 ## <a name="add-controls-to-the-form"></a>向窗体添加控件
 
-可以通过将项从 " **数据源** " 窗口拖到窗体上来创建数据绑定控件。 将主“Customers”节点从“数据源”窗口拖动到窗体上。 验证 " **ComplexDataGridView** " 控件是否用于显示该表的数据。
+通过将某些项从“数据源”窗口拖到窗体，可创建数据绑定控件。 将主“Customers”节点从“数据源”窗口拖动到窗体上。 验证 ComplexDataGridView 控件是否用于显示表中的数据。
 
 ## <a name="run-the-application"></a>运行应用程序
 
@@ -163,4 +163,4 @@ ms.locfileid: "126601194"
 
 - [在 Visual Studio 中将 Windows 窗体控件绑定到数据](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [设置从“数据源”窗口中拖动时要创建的控件](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)
-- [Windows窗体控件](/dotnet/framework/winforms/controls/index)
+- [Windows 窗体控件](/dotnet/framework/winforms/controls/index)

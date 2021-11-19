@@ -1,6 +1,6 @@
 ---
-title: 工作流设计器 - 引发活动设计器
-description: 了解 Throw 活动，以及如何使用 Throw 活动设计器创建和配置 Throw 活动。
+title: 工作流设计器 - Throw 活动设计器
+description: 了解 Throw 活动，以及如何使用 Throw 活动设计器来创建和配置 Throw 活动。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,14 +15,14 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 8517ac1cfc2a1a4ba0c3a1c28e17970bea6e1598
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126664903"
 ---
 # <a name="throw-activity-designer"></a>Throw 活动设计器
 
-**Throw** 活动设计器用于创建和配置 <xref:System.Activities.Statements.Throw> 活动。
+Throw 活动设计器用于创建和配置 <xref:System.Activities.Statements.Throw> 活动。
 
 ## <a name="the-throw-activity"></a>Throw 活动
 
@@ -30,9 +30,9 @@ ms.locfileid: "126664903"
 
 ### <a name="using-the-throw-activity-designer"></a>使用 Throw 活动设计器
 
-访问工具箱 的"错误 **处理"类别中** 的 **Throw** 活动 **设计器**。
+访问 Throw 活动设计器，其位于“工具箱”的“错误处理”类别中  。
 
-可以将 **Throw** 活动设计器从"工具箱"拖动到工作流设计器放置活动的位置（例如，位于 内）上 <xref:System.Activities.Statements.Sequence> 。 这会创建默认 <xref:System.Activities.Statements.Throw> **DisplayName** 为 Throw 的活动。 可以在 Throw 活动设计器的标头或属性网格的 <xref:System.Activities.Activity.DisplayName%2A> **DisplayName** 框中编辑该值。 <xref:System.Activities.Statements.Throw.Exception%2A> 属性必须在属性网格上编辑。
+可以将 Throw 活动设计器从“工具箱”拖放到工作流设计器图面上通常放置活动的任意位置，如 <xref:System.Activities.Statements.Sequence> 内 。 这将创建具有 Throw 的默认“DisplayName”的 <xref:System.Activities.Statements.Throw> 活动。 可以在 Throw 活动设计器的标头中或在属性网格的“DisplayName”框中编辑 <xref:System.Activities.Activity.DisplayName%2A> 值 。 <xref:System.Activities.Statements.Throw.Exception%2A> 属性必须在属性网格上编辑。
 
 ### <a name="the-throw-properties"></a>Throw 属性
 
@@ -41,7 +41,7 @@ ms.locfileid: "126664903"
 |属性名称|必选|使用情况|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|错误|指定 <xref:System.Activities.Statements.Throw> 活动的可选友好名称。 默认值为 Throw。|
-|<xref:System.Activities.Statements.Throw.Exception%2A>|正确|要引发的异常。 此异常必须派生自 <xref:System.Exception>。 若要指定此异常，请在属性网格中键入 Visual Basic 表达式。|
+|<xref:System.Activities.Statements.Throw.Exception%2A>|True|要引发的异常。 此异常必须派生自 <xref:System.Exception>。 若要指定此异常，请在属性网格中键入 Visual Basic 表达式。|
 
 ## <a name="see-also"></a>另请参阅
 

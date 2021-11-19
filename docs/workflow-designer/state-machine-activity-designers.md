@@ -1,6 +1,6 @@
 ---
 title: 工作流设计器 - 状态机活动设计器
-description: 了解系统提供的活动设计器，可用于创建和管理状态机工作流。
+description: 了解系统提供的、可用于创建和管理状态机工作流的活动设计器。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,14 +13,14 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 50cd69ea0b46d54095faebf2981de1f1ba0299f2
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126664912"
 ---
 # <a name="state-machine-activity-designers"></a>状态机活动设计器
 
-工作流设计器包括许多可在构造工作流时使用的活动设计器。 本节包含系统提供的、用于创建和管理状态机工作流的活动设计器。 以下主题介绍这些设计器以及如何使用它们。
+工作流设计器包含很多在构造工作流时可以使用的活动设计器。 本节包含系统提供的、用于创建和管理状态机工作流的活动设计器。 以下主题介绍这些设计器以及如何使用它们。
 
 ## <a name="reference"></a>参考
  <xref:System.Activities.Statements.StateMachine>

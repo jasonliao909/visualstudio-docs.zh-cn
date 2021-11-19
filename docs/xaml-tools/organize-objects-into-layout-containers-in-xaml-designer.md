@@ -1,6 +1,6 @@
 ---
 title: 将对象组织到布局容器中
-description: 了解用于在页面上排列对象的 XAML 设计器布局面板和控件，例如网格、画布、边框和 Viewbox。
+description: 了解 XAML 设计器中的版式面板和控件，用于排列页面上的对象，例如网格、画布、边框和 Viewbox。
 ms.custom: SEO-VS-2020
 ms.date: 07/17/2020
 ms.topic: conceptual
@@ -10,11 +10,11 @@ ms.author: tglee
 manager: jmartens
 ms.technology: vs-xaml-tools
 ms.openlocfilehash: 8233304c0fdcd0092e134e9fe690bba21b9e4a90
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122037819"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126666967"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>在 XAML 设计器中将对象组织到布局容器中
 
@@ -22,7 +22,7 @@ ms.locfileid: "122037819"
 
 想象你希望对象出现在页面上的哪个位置&mdash;诸如图像、按钮和视频等对象。 也许你希望它们出现在行和列中、在单个行中（垂直或水平）或在固定位置中。
 
-在考虑好页面的显示情况后，请选择布局面板。 所有页面都从一个布局面板开始，因为你需要某个容器来向其中添加对象。 默认情况下，它是一个 **网格**，但你可以更改它。
+在考虑好页面的显示情况后，请选择布局面板。 所有页面都从一个布局面板开始，因为你需要某个容器来向其中添加对象。 默认情况下为 Grid，但可以进行更改。
 
 布局面板可帮助你在页面上排列对象，但是它们的作用不仅于此。 它们可以帮助你针对不同屏幕大小和分辨率进行设计。 当用户运行你的应用时，布局面板中的所有对象都会调整大小以匹配用户设备的屏幕空间。 当然，如果你不希望布局这样做，则可以为布局的一部分或整个布局重写该行为。 可以使用高度和宽度属性对此进行控制。
 
@@ -74,7 +74,7 @@ ms.locfileid: "122037819"
 
 ![DockPanel 版式面板](../designers/media/72d46b58-9a49-4dd5-8af7-6843c0440226.png)
 
-**观看简短视频：** !["播放" 按钮 ](../designers/media/bldadminconsoleinitialconfigicon.PNG) [WPF-system.windows.controls.dockpanel>](https://www.youtube.com/watch?v=EBH_OIM-zPo)
+观看短片：![播放按钮](../designers/media/bldadminconsoleinitialconfigicon.PNG) [WPF - DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo)
 
 ## <a name="layout-controls"></a>布局控件
 
@@ -104,7 +104,7 @@ ms.locfileid: "122037819"
 
 ![ViewBox 布局控件](../designers/media/f5b13c66-d918-4141-8a16-bd8f8628687a.png)
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [在 XAML 设计器中使用元素](../xaml-tools/working-with-elements-in-xaml-designer.md)
 - [使用 XAML 设计器创建 UI](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

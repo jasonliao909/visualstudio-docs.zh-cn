@@ -1,6 +1,6 @@
 ---
-title: 在 Blend | 中调试 XAMLMicrosoft Docs
-description: 了解如何使用应用程序中的工具Blend for Visual Studio、调试和解决应用中的 XAML 错误。
+title: 在 Blend 中调试 XAML | Microsoft Docs
+description: 了解如何使用 Blend for Visual Studio 中的工具来检测、调试和解决应用中的 XAML 错误。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,14 +13,14 @@ ms.workload:
 - uwp
 ms.openlocfilehash: 5cd32b2eab82cd148bec4f21fa7a6f5e1f95c5b9
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126664894"
 ---
 # <a name="debug-xaml-in-blend"></a>在 Blend 中调试 XAML
 
-可以使用 Blend for Visual Studio 中的工具来调试应用中的 XAML。 生成项目时，任何错误都会在“结果”面板中显示。 双击一个错误可找到与该错误相关的标记。 如果需要更多空间来工作，可以通过按 **F12****隐藏"** 结果"面板。
+可以使用 Blend for Visual Studio 中的工具来调试应用中的 XAML。 生成项目时，任何错误都会在“结果”面板中显示。 双击一个错误可找到与该错误相关的标记。 如果需要更多工作空间，可以按 F12 隐藏“结果”面板 。
 
 ## <a name="syntax-errors"></a>语法错误
 
@@ -41,21 +41,21 @@ XAML 语法错误的某些常见原因如下：
 
 有关常见 XAML 语法的详细信息，请参阅[基本 XAML 语法指南](/windows/uwp/xaml-platform/xaml-syntax-guide)。
 
-还可以识别和解决 Blend 中的简单代码隐藏语法错误、编译错误和运行时错误。 但是，在 Visual Studio 中标识和解决代码隐藏错误会更加轻松。
+还可以标识和解决 Blend 中简单的代码隐藏语法错误、编译错误和运行时错误。 但是，在 Visual Studio 中标识和解决代码隐藏错误会更加轻松。
 
 ### <a name="debugging-sample-xaml-code"></a>调试示例 XAML 代码
 
-以下示例将演示 Blend 中的简单 XAML 调试会话。
+下面的示例将指导你在 Blend 中完成简单的 XAML 调试会话。
 
 #### <a name="to-create-a-project"></a>创建项目
 
-1. 在 Blend 中，打开"**文件"** 菜单，然后单击"**新建Project"。**
+1. 在 Blend 中，打开“文件”菜单，然后单击“新建项目” 。
 
     在“新建项目”对话框中，左侧会显示项目类型列表。 单击一种项目类型后，右侧将显示与该类型关联的项目模板。
 
-2. 在项目类型列表中，单击"Windows **通用"。**
+2. 在项目类型列表中，单击“Windows 通用”。
 
-3. 在项目模板列表中，单击"通用应用 **" (空白Windows) 。**
+3. 在项目模板列表中，单击“空白应用(通用 Windows)”。
 
 4. 在“名称”文本框中，键入 `DebuggingSample`。 
 
@@ -91,7 +91,7 @@ XAML 语法错误的某些常见原因如下：
     </Grid>
     ```
 
-10. 按 **Ctrl** + **Shift** + **B** 生成项目。
+10. 按 Ctrl+Shift+B 生成项目  。
 
     将显示一条错误消息，表示无法生成该项目，并且应用的底部将显示列出了错误的“结果”面板。
 
@@ -111,18 +111,18 @@ XAML 语法错误的某些常见原因如下：
 
 4. 双击“无法识别或访问成员‘content’”。 `c` 中的 `content` 应为大写。 将小写“c”替换为大写“c”。
 
-5. 双击"命名空间中不存在属性 `http://schemas.microsoft.com/winfx/2006/xaml` 'Mame'"。 “Mame”中的“M”应为“N”。 将“M”替换为“N”。 现在可以分析 XAML，应用程序将显示在设计图面上。
+5. 双击“`http://schemas.microsoft.com/winfx/2006/xaml` 命名空间中不存在属性 'Mame'。” “Mame”中的“M”应为“N”。 将“M”替换为“N”。 现在可以分析 XAML，应用程序将显示在设计图面上。
 
     ![在 Blend for Visual Studio 中调试 XAML](../debugger/media/blend_debugartboard_xaml.png "blend_debugArtboard_XAML")
 
-    按 **Ctrl** + **Shift** + **B** 生成项目并确认没有剩余错误。
+    按 Ctrl+Shift+B 生成项目，并确认没有剩余错误  。
 
 ## <a name="debug-in-visual-studio"></a>在 Visual Studio 中进行调试
 
-可以在应用中打开 Blend 项目Visual Studio更轻松地调试应用中的代码。 若要在 Visual Studio 中打开 Blend 项目，请在"项目"面板中右键单击该项目，然后单击"在 **Visual Studio"。** 在中完成调试会话后Visual Studio按 Ctrl+Shift+S 保存所有更改，然后切换回 Blend。 系统将提示你重新加载该项目。 单击 **"是"到"全部** "以继续在 Blend 中工作。
+你可以在 Visual Studio 中打开 Blend 项目，以便在应用中更轻松地调试代码。 若要在 Visual Studio 中打开 Blend 项目，右键单击“项目”面板中的项目，然后单击“在 Visual Studio 中编辑” 。 在 Visual Studio 中完成调试会话后，按 Ctrl+Shift+S 保存所有更改，然后切换回 Blend。 系统将提示你重新加载该项目。 单击“全选‘是’”以继续在 Blend 中工作。
 
-有关调试应用的信息，请参阅在 Visual Studio[中调试 UWP 应用](../debugger/debugging-windows-store-and-windows-universal-apps.md)。
+有关调试应用的详细信息，请参阅[在 Visual Studio 中调试 UWP 应用](../debugger/debugging-windows-store-and-windows-universal-apps.md)。
 
 ## <a name="get-help"></a>获取帮助
 
-如果在调试 Blend 应用时需要更多的帮助，可以在 [UWP](https://social.msdn.microsoft.com/Forums/windowsapps/home?category=windowsapps) 应用社区论坛中搜索与问题相关的帖子或发布问题。
+如果需要有关调试 Blend 应用的更多帮助，可以在 [UWP 应用社区论坛](https://social.msdn.microsoft.com/Forums/windowsapps/home?category=windowsapps)中搜索与你的问题相关的帖子或发布问题。

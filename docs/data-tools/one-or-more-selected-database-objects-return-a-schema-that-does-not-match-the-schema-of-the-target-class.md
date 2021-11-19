@@ -13,7 +13,7 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: bf2bab7f5e1d859ba4e706614ac6f7ac11852860
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126601121"
@@ -28,7 +28,7 @@ ms.locfileid: "126601121"
 
 1. 单击“确定”关闭对话框。
 
-2. 选择一个数据库对象，该对象返回的数据与目标类的架构匹配， (要将数据库对象放置到 **O/R 设计器**) 中的类。
+2. 选择一个数据库对象，该对象返回的数据与目标类（要在 O/R 设计器中将该数据库对象拖动到它上面的类）的架构相匹配。
 
 ## <a name="see-also"></a>另请参阅
 

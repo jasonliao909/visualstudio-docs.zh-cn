@@ -1,6 +1,6 @@
 ---
 title: 工作流设计器 - InvokeDelegate
-description: 了解 InvokeDelegate 设计器，以及如何使用 InvokeDelegate 设计器创建和配置 InvokeDelegate 活动。
+description: 了解 InvokeDelegate 设计器，以及如何使用 InvokeDelegate 设计器来创建和配置 InvokeDelegate 活动。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,16 +12,16 @@ author: TerryGLee
 ms.author: tglee
 ms.workload:
 - multiple
-ms.openlocfilehash: 12fd42bd51a252470c2b7d4fbae23581847ddf0f6d3dede60f6e2659215d80fd
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
-ms.translationtype: MT
+ms.openlocfilehash: a482f23b1df1587e9a1c7e3023bfb0d1737f1fae
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121393505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126667572"
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
 
-**InvokeDelegate** 设计器用于创建和配置 <xref:System.Activities.Statements.InvokeDelegate> 活动。
+InvokeDelegate 设计器用于创建和配置 <xref:System.Activities.Statements.InvokeDelegate> 活动。
 
 ## <a name="the-invokedelegate-activity"></a>InvokeDelegate 活动
 
@@ -29,18 +29,18 @@ ms.locfileid: "121393505"
 
 ### <a name="use-the-invokedelegate-activity-designer"></a>使用 InvokeDelegate 活动设计器
 
-访问"工具箱"的"基元 **"类别中** 的 **InvokeDelegate** 活动 **设计器**。 **可以从"工具箱"拖动 InvokeDelegate** 活动设计器，工作流设计器放置活动（例如，位于 内）的"对象"图面 <xref:System.Activities.Statements.Sequence> 。 删除活动设计器会创建 <xref:System.Activities.Statements.InvokeDelegate> 默认为 <xref:System.Activities.Activity.DisplayName%2A> InvokeDelegate 的活动。 <xref:System.Activities.Activity.DisplayName%2A>可以在 **InvokeDelegate** 活动设计器的标头或属性网格的 **DisplayName** 框中编辑 。
+访问 InvokeDelegate 活动设计器，其位于工具箱的“基元”类别中  。 可以将 InvokeDelegate 活动设计器从“工具箱”拖放到工作流设计器图面上通常放置活动的任何位置，如 <xref:System.Activities.Statements.Sequence> 内 。 删除活动设计器将创建一个 <xref:System.Activities.Statements.InvokeDelegate> 活动，其默认的 <xref:System.Activities.Activity.DisplayName%2A> 为“InvokeDelegate”。 可以在 InvokeDelegate 活动设计器的标头中或在属性网格的“DisplayName”框中编辑 <xref:System.Activities.Activity.DisplayName%2A> 。
 
 ### <a name="the-invokedelegate-properties"></a>InvokeDelegate 属性
 
-下表列出 <xref:System.Activities.Statements.InvokeDelegate> 属性并说明如何在设计器中使用它们。 这些属性可以在属性网格中编辑，某些属性可以在工作流设计器编辑。
+下表列出 <xref:System.Activities.Statements.InvokeDelegate> 属性并说明如何在设计器中使用它们。 这些属性可以在属性网格中进行编辑，其中一些属性还可以在工作流设计器图面上进行编辑。
 
 |属性名称|必选|使用情况|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|错误|<xref:System.Activities.Statements.InvokeDelegate> 活动的友好名称。 默认值为 InvokeDelegate。<br /><br /> 虽然 <xref:System.Activities.Activity.DisplayName%2A> 不严格要求 ，但最好使用一个 。|
-|<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|正确|要在执行活动时调用的 <xref:System.Activities.ActivityDelegate> 的名称。 此属性可以在设计器图面上编辑，并且是必需的。|
-|<xref:System.Activities.Statements.InvokeDelegate.DelegateArguments%2A>|错误|调用委托的参数集合。 键是 上的参数对象的名称，值是计算表达式并将其分配给 <xref:System.Activities.ActivityDelegate> 相应参数对象的参数。 若要显示 **可在其中设置此属性的 DelegateArguments** 对话框，请单击属性网格的 **DelegateArguments** 字段中的省略号按钮。 单击" **创建参数** "字段以添加参数。|
+|<xref:System.Activities.Activity.DisplayName%2A>|错误|<xref:System.Activities.Statements.InvokeDelegate> 活动的友好名称。 默认值为 InvokeDelegate。<br /><br /> 虽然 <xref:System.Activities.Activity.DisplayName%2A> 不是绝对必需的，但最好使用该属性。|
+|<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|True|要在执行活动时调用的 <xref:System.Activities.ActivityDelegate> 的名称。 此属性可以在设计器图面上进行编辑，它是必需的。|
+|<xref:System.Activities.Statements.InvokeDelegate.DelegateArguments%2A>|错误|调用委托的参数集合。 键为 <xref:System.Activities.ActivityDelegate> 上的参数对象的名称，值为其表达式将进行计算并分配给对应参数对象的参数。 要显示可在其中设置此属性的“DelegateArguments”对话框，请单击属性窗格的“DelegateArguments”字段中的省略号按钮 。 单击“创建参数”字段以添加参数。|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [如何：在工作流设计器中定义和使用活动委托](../workflow-designer/how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md)

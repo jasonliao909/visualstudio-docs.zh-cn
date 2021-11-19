@@ -1,7 +1,7 @@
 ---
 title: “混合最少量规则”规则集
 ms.date: 11/04/2016
-description: 了解中设置的混合最低规则规则Visual Studio。 请参阅支持公共语言运行时的 C++ 项目的规则说明。
+description: 了解 Visual Studio 中的“混合最少量规则”规则集。 请参阅支持公共语言运行时的 C++ 项目的规则说明。
 ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: bc8df61c-19af-40ab-a871-315807e5f4bf
@@ -13,16 +13,16 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 159cbea1197579240b54fe5a38713d2c24c42424
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126601273"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>“混合最少量规则”规则集
 
-Microsoft 混合最低规则侧重于支持公共语言运行时的 C++ 项目中的最关键问题，包括潜在的安全漏洞和应用程序崩溃。
+Microsoft 混合最少量规则侧重于支持公共语言运行时的 C++ 项目中最关键的问题，包括潜在的安全漏洞和应用程序故障。
 
-在为支持公共语言运行时的 C++ 项目创建的任何自定义规则集中包括此规则集。
+将此规则集包含在为支持公共语言运行时的 C++ 项目创建的任何自定义规则集中。
 
 |规则|描述|
 |----------|-----------------|
@@ -89,18 +89,18 @@ Microsoft 混合最低规则侧重于支持公共语言运行时的 C++ 项目�
 |[C28182](/cpp/code-quality/c28182)|取消引用 NULL 指针。 该指针包含与另一指针相同的 NULL 值。|
 |[C28202](/cpp/code-quality/c28202)|非法引用非静态成员|
 |[C28203](/cpp/code-quality/c28203)|对类成员的不明确的引用。|
-|[C28205](/cpp/code-quality/c28205)|\_在 \_ 非法 \_ \_ 上下文中 \_ 使用的成功或失败|
+|[C28205](/cpp/code-quality/c28205)|在非法上下文中使用的 \_Success\_ 或 \_On\_failure\_|
 |[C28206](/cpp/code-quality/c28206)|若左操作数指向结构，则使用“->”|
 |[C28207](/cpp/code-quality/c28207)|若左操作数是一个结构，则使用“.”|
 |[C28210](/cpp/code-quality/c28210)|__on_failure 上下文的批注不得位于显式的 pre 上下文中|
 |[C28211](/cpp/code-quality/c28211)|SAL_context 所需的静态上下文名称|
 |[C28212](/cpp/code-quality/c28212)|批注所需的指针表达式|
-|[C28213](/cpp/code-quality/c28213)|" \_ 使用 decl 注释"批注必须用于引用之前的声明 \_ \_ ，而无需 \_ 进行修改。|
+|[C28213](/cpp/code-quality/c28213)|\_Use\_decl\_annotations\_ 批注必须用于引用上一个声明，且不对其进行修改。|
 |[C28214](/cpp/code-quality/c28214)|特性参数的名称必须为 p1...p9|
 |[C28215](/cpp/code-quality/c28215)|不能将 typefix 应用于已包含 typefix 的参数|
 |[C28216](/cpp/code-quality/c28216)|checkReturn 批注仅应用于特定函数参数的后置条件。|
 |[C28217](/cpp/code-quality/c28217)|对于函数，批注的参数数目与在文件中找到的数目不匹配|
-|[C28218](/cpp/code-quality/c28218)|对于函数参数，批注的 参数与在 文件中找到的参数不匹配|
+|[C28218](/cpp/code-quality/c28218)|对于函数参数，批注的参数与在文件中找到的参数不匹配|
 |[C28219](/cpp/code-quality/c28219)|批注中的批注参数所需的枚举成员|
 |[C28220](/cpp/code-quality/c28220)|批注中的批注参数所需的整数表达式|
 |[C28221](/cpp/code-quality/c28221)|批注中的参数所需的字符串表达式|
@@ -137,7 +137,7 @@ Microsoft 混合最低规则侧重于支持公共语言运行时的 C++ 项目�
 |[C28267](/cpp/code-quality/c28267)|在函数中找到了批注的语法错误。|
 |[C28272](/cpp/code-quality/c28272)|在检查参数时，函数的批注与函数声明不一致|
 |[C28273](/cpp/code-quality/c28273)|对于函数，线索与函数声明不一致|
-|[C28275](/cpp/code-quality/c28275)|宏值 \_ 的参数 \_ 为 \_ null|
+|[C28275](/cpp/code-quality/c28275)|\_Macro\_value\_ 的参数值为 NULL|
 |[C28279](/cpp/code-quality/c28279)|对于符号，已找到“起始”符号，但没有匹配的“结束”符号|
 |[C28280](/cpp/code-quality/c28280)|对于符号，已找到“结束”符号，但没有匹配的“起始”符号|
 |[C28282](/cpp/code-quality/c28282)|格式字符串必须位于前置条件中|

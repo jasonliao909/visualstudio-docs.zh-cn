@@ -1,6 +1,6 @@
 ---
 title: 如何：启用和禁用复数形式（O-R 设计器）
-description: 了解如何对象关系设计器 (O/R 设计器) 打开和关闭复数形式。 默认设置将复数名称转换为单数形式。
+description: 了解如何在对象关系设计器（O/R 设计器）中启用和禁用复数形式。 默认设置将复数名称转换为单数名称。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -13,13 +13,13 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: f51d48f2d4af4ed723dbe0dcd720ee460e1feb1b
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126601130"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>如何：启用和禁用复数形式（O/R 设计器）
-默认情况下，当您将名称以 s 或从 **服务器资源管理器** 结尾或 **数据库资源管理器** 的数据库对象拖到 [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)时，所生成的实体类的名称将从复数改为单数形式。 这样可以更准确地表示实例化的实体类映射到单个数据记录的事实。 例如，将表添加 `Customers` 到 **O/R 设计器** 会生成一个名为的实体类， `Customer` 因为该类只保存单个客户的数据。
+默认情况下，将名称以 s 或 ies 结尾的数据库对象从“服务器资源管理器”或“数据库资源管理器”拖放到 [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)上时，生成的实体类的名称从复数形式变为单数形式 。 这样可以更准确地表示实例化的实体类映射到单个数据记录的事实。 例如，将 `Customers` 表添加到 O/R 设计器将生成名为 `Customer` 的实体类，因为该类将仅为一个客户保存数据。
 
 > [!NOTE]
 > 默认情况下，复数形式仅在 Visual Studio 的英语版本中启用。
@@ -37,9 +37,9 @@ ms.locfileid: "126601130"
 
 3. 单击“O/R 设计器”。
 
-4. 将 "**名称" 的复数形式****设置为 "**  =  **False** "，以设置 **O/R 设计器**，使其不更改类名称。
+4. 将“名称的复数形式”设置为“启用 = False”，可将 O/R 设计器设置为不更改类名称   。
 
-5. 将 **复数形式的名称** 设置 **为 "**  =  **True** " 可将复数形式规则应用于添加到 **O/R 设计器** 的对象的类名。
+5. 将“名称的复数形式”设置为“启用 = True”，可向添加到 O/R 设计器的对象的类名称应用复数规则   。
 
 ## <a name="see-also"></a>另请参阅
 

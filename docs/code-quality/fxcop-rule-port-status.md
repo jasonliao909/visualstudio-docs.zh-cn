@@ -1,7 +1,7 @@
 ---
-title: FxCop 规则端口状态
+title: FxCop 规则移植状态
 ms.date: 05/21/2019
-description: 了解已经移植到 Visual Studio 中的 .NET 分析器的静态代码分析规则。 查看移植规则和移植更新的资源。
+description: 了解已移植到 Visual Studio 中的 .NET 分析器中的静态代码分析规则。 在移植更新中查看已移植的规则和资源。
 ms.custom: SEO-VS-2020
 ms.topic: reference
 helpviewer_keywords:
@@ -15,20 +15,20 @@ ms.workload:
 - dotnet
 ms.openlocfilehash: 8445e7fa26fb8beef7452a53b3e4733bcfc43f47
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126601323"
 ---
-# <a name="fxcop-rule-port-status"></a>Fxcop 规则端口状态
+# <a name="fxcop-rule-port-status"></a>Fxcop 规则移植状态
 
-如果以前在 Visual Studio 中使用了静态代码分析，则可能会想知道哪些规则在当前实现中作为[.net 分析器](install-net-analyzers.md)提供。 此页列出了已移植的规则。 请参阅 [Unported 规则](fxcop-unported-rules.md) ，了解尚未移植的规则，以及是否有计划对其进行端口。
+如果之前在 Visual Studio 中使用过静态代码分析，你可能想知道在当前实现中，哪些规则作为 [.NET 分析器](install-net-analyzers.md)提供。 此页列出已移植的规则。 请参阅[未移植的规则](fxcop-unported-rules.md)，了解尚未移植的规则，以及是否有移植这些规则的计划。
 
 ## <a name="ported-rules"></a>移植的规则
 
-Roslyn 存储库中自动 [生成的文档页](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Microsoft.CodeAnalysis.NetAnalyzers.md) 具有已移植到 roslyn 分析器的最新规则列表。 该页还包含其他信息，例如是否默认启用规则，以及是否有关联的 *代码修复*。  ([代码修补程序](../ide/quick-actions.md)是 Visual Studio 中灯泡图标菜单中可用的一次单击的修复程序。 ) 
+roslyn-analyzers 存储库中的[自动生成文档页面](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Microsoft.CodeAnalysis.NetAnalyzers.md)包含已移植到 Roslyn 分析器的最新规则列表。 该页面还包含其他信息，例如该规则默认是否启用以及它是否具有关联的代码修复。 （[代码修复](../ide/quick-actions.md)是 Visual Studio 中灯泡图标菜单中可用的一键修复。）
 
-截止到此页上的日期，已移植到 [.net 分析器](install-net-analyzers.md) 的 FxCop 规则列表包括：
+截至本页面上的日期，已移植到 [.NET 分析器](install-net-analyzers.md)的 FxCop 规则列表包括：
 
 规则 ID | 标题
 --------|---------
@@ -64,26 +64,26 @@ Roslyn 存储库中自动 [生成的文档页](https://github.com/dotnet/roslyn-
 [CA1047](/dotnet/fundamentals/code-analysis/quality-rules/ca1047) | 不要在密封类型中声明受保护的成员
 [CA1050](/dotnet/fundamentals/code-analysis/quality-rules/ca1050) | 在命名空间中声明类型
 [CA1051](/dotnet/fundamentals/code-analysis/quality-rules/ca1051) | 不要声明可见实例字段
-[CA1052](/dotnet/fundamentals/code-analysis/quality-rules/ca1052) | 静态容器类型应为 static 或 NotInheritable
-[CA1053](/dotnet/fundamentals/code-analysis/quality-rules/ca1053) | 静态容器类型不应具有构造函数 (CA1053 是 .NET 分析器 [CA1052](/dotnet/fundamentals/code-analysis/quality-rules/ca1052) 的一部分) 
-[CA1054](/dotnet/fundamentals/code-analysis/quality-rules/ca1054) | Uri 参数不应为字符串
-[CA1055](/dotnet/fundamentals/code-analysis/quality-rules/ca1055) | Uri 返回值不应是字符串
-[CA1056](/dotnet/fundamentals/code-analysis/quality-rules/ca1056) | Uri 属性不应是字符串
+[CA1052](/dotnet/fundamentals/code-analysis/quality-rules/ca1052) | 静态容器类型应为 Static 或 NotInheritable
+[CA1053](/dotnet/fundamentals/code-analysis/quality-rules/ca1053) | 静态持有者类型不应具有构造函数（CA1053 是 .NET 分析器的 [CA1052](/dotnet/fundamentals/code-analysis/quality-rules/ca1052) 的一部分）
+[CA1054](/dotnet/fundamentals/code-analysis/quality-rules/ca1054) | URI 参数不应是字符串
+[CA1055](/dotnet/fundamentals/code-analysis/quality-rules/ca1055) | URI 返回值不应是字符串
+[CA1056](/dotnet/fundamentals/code-analysis/quality-rules/ca1056) | URI 属性不应是字符串
 [CA1058](/dotnet/fundamentals/code-analysis/quality-rules/ca1058) | 类型不应扩展某些基类型
-[CA1060](/dotnet/fundamentals/code-analysis/quality-rules/ca1060) | 将 pinvoke 移动到本机方法类
+[CA1060](/dotnet/fundamentals/code-analysis/quality-rules/ca1060) | 将 pinvoke 移到原生方法类
 [CA1061](/dotnet/fundamentals/code-analysis/quality-rules/ca1061) | 不要隐藏基类方法
 [CA1062](/dotnet/fundamentals/code-analysis/quality-rules/ca1062) | 验证公共方法的参数
 [CA1063](/dotnet/fundamentals/code-analysis/quality-rules/ca1063) | 正确实现 IDisposable
 [CA1064](/dotnet/fundamentals/code-analysis/quality-rules/ca1064) | 异常应该是公共的
 [CA1065](/dotnet/fundamentals/code-analysis/quality-rules/ca1065) | 不要在意外的位置引发异常
-[CA1066](/dotnet/fundamentals/code-analysis/quality-rules/ca1066) | 类型 {0} 应实现 IEquatable， \<T> 因为它会替代 Equals
-[CA1067](/dotnet/fundamentals/code-analysis/quality-rules/ca1067) | 实现 IEquatable 时 (对象) Object.Equals\<T>
+[CA1066](/dotnet/fundamentals/code-analysis/quality-rules/ca1066) | 类型 {0} 应实现 IEquatable\<T>，因为它会覆盖 Equals
+[CA1067](/dotnet/fundamentals/code-analysis/quality-rules/ca1067) | 当实现 IEquatable\<T> 时，覆盖 Object.Equals(object)
 [CA1303](/dotnet/fundamentals/code-analysis/quality-rules/ca1303) | 请不要将文本作为本地化参数传递
 [CA1304](/dotnet/fundamentals/code-analysis/quality-rules/ca1304) | 指定 CultureInfo
 [CA1305](/dotnet/fundamentals/code-analysis/quality-rules/ca1305) | 指定 IFormatProvider
-[CA1307](/dotnet/fundamentals/code-analysis/quality-rules/ca1307) | 为清楚起见，请指定 StringComparison
+[CA1307](/dotnet/fundamentals/code-analysis/quality-rules/ca1307) | 为了清晰起见，请指定 StringComparison
 [CA1308](/dotnet/fundamentals/code-analysis/quality-rules/ca1308) | 将字符串规范化为大写
-[CA1309](/dotnet/fundamentals/code-analysis/quality-rules/ca1309) | 使用序号字符串比较
+[CA1309](/dotnet/fundamentals/code-analysis/quality-rules/ca1309) | 使用序数字符串比较
 [CA1401](/dotnet/fundamentals/code-analysis/quality-rules/ca1401) | P/Invokes 应该是不可见的
 [CA1501](/dotnet/fundamentals/code-analysis/quality-rules/ca1501) | 避免过度继承
 [CA1502](/dotnet/fundamentals/code-analysis/quality-rules/ca1502) | 避免过度复杂
@@ -102,11 +102,11 @@ Roslyn 存储库中自动 [生成的文档页](https://github.com/dotnet/roslyn-
 [CA1717](/dotnet/fundamentals/code-analysis/quality-rules/ca1717) | 只有 FlagsAttribute 枚举应采用复数形式的名称
 [CA1720](/dotnet/fundamentals/code-analysis/quality-rules/ca1720) | 标识符包含类型名称
 [CA1721](/dotnet/fundamentals/code-analysis/quality-rules/ca1721) | 属性名不应与 get 方法冲突
-[CA1724](/dotnet/fundamentals/code-analysis/quality-rules/ca1724) | 类型名称不应与命名空间匹配
+[CA1724](/dotnet/fundamentals/code-analysis/quality-rules/ca1724) | 类型名称不应与命名空间一致
 [CA1725](/dotnet/fundamentals/code-analysis/quality-rules/ca1725) | 参数名应与基方法中的声明保持一致
 [CA1801](/dotnet/fundamentals/code-analysis/quality-rules/ca1801) | 检查未使用的参数
-[CA1802](/dotnet/fundamentals/code-analysis/quality-rules/ca1802) | 在适当时使用文本
-[CA1805](/dotnet/fundamentals/code-analysis/quality-rules/ca1805) | 不不必要地初始化
+[CA1802](/dotnet/fundamentals/code-analysis/quality-rules/ca1802) | 在合适的位置使用文本
+[CA1805](/dotnet/fundamentals/code-analysis/quality-rules/ca1805) | 避免进行不必要的初始化
 [CA1806](/dotnet/fundamentals/code-analysis/quality-rules/ca1806) | 不要忽略方法结果
 [CA1810](/dotnet/fundamentals/code-analysis/quality-rules/ca1810) | 以内联方式初始化引用类型的静态字段
 [CA1812](/dotnet/fundamentals/code-analysis/quality-rules/ca1812) | 避免未实例化的内部类
@@ -116,7 +116,7 @@ Roslyn 存储库中自动 [生成的文档页](https://github.com/dotnet/roslyn-
 [CA1816](/dotnet/fundamentals/code-analysis/quality-rules/ca1816) | Dispose 方法应调用 SuppressFinalize
 [CA1819](/dotnet/fundamentals/code-analysis/quality-rules/ca1819) | 属性不应返回数组
 [CA1820](/dotnet/fundamentals/code-analysis/quality-rules/ca1820) | 使用字符串长度测试是否有空字符串
-[CA1821](/dotnet/fundamentals/code-analysis/quality-rules/ca1821) | 删除空终结器
+[CA1821](/dotnet/fundamentals/code-analysis/quality-rules/ca1821) | 移除空终结器
 [CA1822](/dotnet/fundamentals/code-analysis/quality-rules/ca1822) | 将成员标记为 static
 [CA1823](/dotnet/fundamentals/code-analysis/quality-rules/ca1823) | 避免未使用的私有字段
 [CA1824](/dotnet/fundamentals/code-analysis/quality-rules/ca1824) | 用 NeutralResourcesLanguageAttribute 标记程序集
@@ -138,13 +138,13 @@ Roslyn 存储库中自动 [生成的文档页](https://github.com/dotnet/roslyn-
 [CA2215](/dotnet/fundamentals/code-analysis/quality-rules/ca2215) | Dispose 方法应调用基类释放
 [CA2216](/dotnet/fundamentals/code-analysis/quality-rules/ca2216) | 可释放类型应声明终结器
 [CA2217](/dotnet/fundamentals/code-analysis/quality-rules/ca2217) | 不要使用 FlagsAttribute 标记枚举
-[CA2219](/dotnet/fundamentals/code-analysis/quality-rules/ca2219) | 不在 finally 子句中引发异常
+[CA2219](/dotnet/fundamentals/code-analysis/quality-rules/ca2219) | 请勿在 finally 子句中引发异常
 [CA2225](/dotnet/fundamentals/code-analysis/quality-rules/ca2225) | 运算符重载具有命名的备用项
 [CA2226](/dotnet/fundamentals/code-analysis/quality-rules/ca2226) | 运算符应有对称重载
 [CA2227](/dotnet/fundamentals/code-analysis/quality-rules/ca2227) | 集合属性应为只读
 [CA2229](/dotnet/fundamentals/code-analysis/quality-rules/ca2229) | 实现序列化构造函数
-[CA2231](/dotnet/fundamentals/code-analysis/quality-rules/ca2231) | 重写值类型等于时重载相等运算符
-[CA2234](/dotnet/fundamentals/code-analysis/quality-rules/ca2234) | 传递系统 uri 对象而不是字符串
+[CA2231](/dotnet/fundamentals/code-analysis/quality-rules/ca2231) | 重载运算符等于覆盖值类型 Equals
+[CA2234](/dotnet/fundamentals/code-analysis/quality-rules/ca2234) | 传递 system uri 对象，而不传递字符串
 [CA2235](/dotnet/fundamentals/code-analysis/quality-rules/ca2235) | 标记所有不可序列化的字段
 [CA2237](/dotnet/fundamentals/code-analysis/quality-rules/ca2237) | 用 serializable 标记 ISerializable 类型
 [CA2241](/dotnet/fundamentals/code-analysis/quality-rules/ca2241) | 为格式化方法提供正确的参数
@@ -172,35 +172,35 @@ Roslyn 存储库中自动 [生成的文档页](https://github.com/dotnet/roslyn-
 [CA3010](/dotnet/fundamentals/code-analysis/quality-rules/ca3010) | 查看 XAML 注入漏洞的代码
 [CA3011](/dotnet/fundamentals/code-analysis/quality-rules/ca3011) | 查看 DLL 注入漏洞的代码
 [CA3012](/dotnet/fundamentals/code-analysis/quality-rules/ca3012) | 查看正则表达式注入漏洞的代码
-[CA3061](/dotnet/fundamentals/code-analysis/quality-rules/ca3061) | 不按 URL 添加架构
+[CA3061](/dotnet/fundamentals/code-analysis/quality-rules/ca3061) | 请勿按 URL 添加架构
 [CA3075](/dotnet/fundamentals/code-analysis/quality-rules/ca3075) | XML 中不安全的 DTD 处理
 [CA3076](/dotnet/fundamentals/code-analysis/quality-rules/ca3076) | 不安全的 XSLT 脚本处理。
-[CA3077](/dotnet/fundamentals/code-analysis/quality-rules/ca3077) | API 设计、Xml 中和 XmlTextReader 中的不安全处理
-[CA3147](/dotnet/fundamentals/code-analysis/quality-rules/ca3147) | 用 Validate 防伪标记标记谓词处理程序
+[CA3077](/dotnet/fundamentals/code-analysis/quality-rules/ca3077) | API 设计、XmlDocument 和 XmlTextReader 中不安全的处理
+[CA3147](/dotnet/fundamentals/code-analysis/quality-rules/ca3147) | 用验证防伪令牌标记谓词处理程序
 [CA5350](/dotnet/fundamentals/code-analysis/quality-rules/ca5350) | 请勿使用弱加密算法
-[CA5351](/dotnet/fundamentals/code-analysis/quality-rules/ca5351) | 不要使用损坏的加密算法
+[CA5351](/dotnet/fundamentals/code-analysis/quality-rules/ca5351) | 请勿使用损坏的加密算法
 [CA5358](/dotnet/fundamentals/code-analysis/quality-rules/ca5358) | 请勿使用不安全的密码模式
-CA5359 | 不禁用证书验证
-CA5360 | 不要在反序列化中调用危险方法
-[CA5361](/dotnet/fundamentals/code-analysis/quality-rules/ca5361) | 不要禁止 SChannel 使用强加密
-CA5362 | 不要在可序列化类中引用 Self
-[CA5363](/dotnet/fundamentals/code-analysis/quality-rules/ca5363) | 不禁用请求验证
-[CA5364](/dotnet/fundamentals/code-analysis/quality-rules/ca5364) | 不要使用已弃用的安全协议
-CA5365 | 不禁用 HTTP 头检查
-CA5366 | 将 XmlReader 用于数据集读取 Xml
-CA5367 | 不要将类型与指针字段序列化
-CA5368 | 为从页面派生的类设置 ViewStateUserKey
-[CA5369](/dotnet/fundamentals/code-analysis/quality-rules/ca5369) | 使用 XmlReader 进行反序列化
-[CA5370](/dotnet/fundamentals/code-analysis/quality-rules/ca5370) | 使用 XmlReader 验证读取器
-[CA5371](/dotnet/fundamentals/code-analysis/quality-rules/ca5371) | 使用 XmlReader 进行架构读取
+CA5359 | 请勿禁用证书验证
+CA5360 | 请勿在反序列化中调用危险的方法
+[CA5361](/dotnet/fundamentals/code-analysis/quality-rules/ca5361) | 请勿禁用强加密的 Schannel 使用
+CA5362 | 请勿在可序列化类中引用自身
+[CA5363](/dotnet/fundamentals/code-analysis/quality-rules/ca5363) | 请勿禁用请求验证
+[CA5364](/dotnet/fundamentals/code-analysis/quality-rules/ca5364) | 请勿使用已弃用的安全协议
+CA5365 | 请勿禁用 HTTP 头检查
+CA5366 | 将 XmlReader 用于数据集读取 XML
+CA5367 | 请勿序列化具有 Pointer 字段的类型
+CA5368 | 针对派生自 Page 的类设置 ViewStateUserKey
+[CA5369](/dotnet/fundamentals/code-analysis/quality-rules/ca5369) | 将 XmlReader 用于反序列化
+[CA5370](/dotnet/fundamentals/code-analysis/quality-rules/ca5370) | 将 XmlReader 用于验证读取器
+[CA5371](/dotnet/fundamentals/code-analysis/quality-rules/ca5371) | 将 XmlReader 用于架构读取
 [CA5372](/dotnet/fundamentals/code-analysis/quality-rules/ca5372) | 将 XmlReader 用于 XPathDocument
 [CA5373](/dotnet/fundamentals/code-analysis/quality-rules/ca5373) | 请勿使用已过时的密钥派生功能
-CA5374 | 不使用 XslTransform
-CA5375 | 不要使用帐户共享访问签名
+CA5374 | 请勿使用 XslTransform
+CA5375 | 请勿使用帐户共享访问签名
 CA5376 | 使用 SharedAccessProtocol HttpsOnly
 CA5377 | 使用容器级别访问策略
 [CA5378](/dotnet/fundamentals/code-analysis/quality-rules/ca5378) | 不禁用 ServicePointManagerSecurityProtocols
-CA5379 | 不要使用弱密钥派生函数算法
+CA5379 | 请勿使用弱密钥派生功能算法
 CA9999 | 分析器版本不匹配
 
 ## <a name="see-also"></a>另请参阅

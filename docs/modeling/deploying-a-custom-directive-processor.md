@@ -1,6 +1,6 @@
 ---
 title: 部署自定义指令处理器
-description: 了解可用于在计算机或任何计算机上Visual Studio指令处理器的方法。
+description: 了解可用于在 Visual Studio 中或在任何计算机上部署自定义指令处理器的方法。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -13,29 +13,29 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: 7659d5ab851704e686bb7ed63bb4b10fccd57f46
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122150594"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126671875"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>部署自定义指令处理器
 
-若要在任何计算机的 Visual Studio 中使用自定义指令处理器，必须通过本主题中所述的方法之一进行注册。
+若要在任何计算机上的 Visual Studio 中使用自定义指令处理器，必须使用本主题中介绍的方法之一来注册该处理器。
 
 可用的方法包括：
 
-- [Visual Studio 扩展。](../extensibility/shipping-visual-studio-extensions.md) 通过这种方法，可以在自己或他人的计算机上安装和卸载指令处理器。 通常，可能会在同一 VSIX 中包含其他功能。
+- [Visual Studio 扩展](../extensibility/shipping-visual-studio-extensions.md)。 通过这种方法，可以在自己或他人的计算机上安装和卸载指令处理器。 通常，可能会在同一 VSIX 中包含其他功能。
 
 - [VSPackage](../extensibility/internals/vspackages.md)。 如果要定义一个包含指令处理器和其他功能的 VSPackage，有一种方便的方法可以注册指令处理器。
 
 - 设置注册表项。 如果采用此方法，则会为指令处理器添加一个注册表项。
 
-只有在希望将文本模板转换为 Visual Studio 或 MSBuild 时，才需要使用这些方法之一。 如果在自己的应用程序中使用自定义宿主，则由自定义宿主负责查找每条指令的指令处理器。
+仅当要在 Visual Studio 或 MSBuild 中转换文本模板时才需要从这些方法中选用一种。 如果在自己的应用程序中使用自定义宿主，则由自定义宿主负责查找每条指令的指令处理器。
 
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>在 VSIX 中部署指令处理器
 
-可以将自定义指令处理器添加到[VSIX Visual Studio扩展 (扩展) 。 ](../extensibility/starting-to-develop-visual-studio-extensions.md)
+可以向 [Visual Studio 扩展 (VSIX)](../extensibility/starting-to-develop-visual-studio-extensions.md) 添加自定义指令处理器。
 
  需要确保 .vsix 文件包含以下两项：
 
@@ -49,21 +49,21 @@ ms.locfileid: "122150594"
 
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>在 VSIX 项目中开发自定义指令处理器
 
-1. 创建新的 **VSIX Project** 项目。
+1. 创建新的“VSIX 项目”项目。
 
-2. 在 **source.extension.vsixmanifest** 中，设置内容类型和支持的版本。
+2. 在“source.extension.vsixmanifest”中，设置内容类型和支持的版本。
 
-    1. 在 VSIX 清单编辑器中的"资产 **"** 选项卡上，选择 **"新建"** 并设置新项的属性：
+    1. 在 VSIX 清单编辑器中，在“资产”选项卡上，选择“新建”并设置新项的属性 ：
 
-         **内容类型**  = **VSPackage**
+         内容类型 = VSPackage 
 
-         **源Project** = \<*the current project*>
+         源项目 = \<*the current project*>
 
-    2. 单击 **"所选** 版本"，并检查希望指令处理器可用于的安装类型。
+    2. 单击“所选版本”，然后选中指令处理器适用的安装类型。
 
 3. 添加 .pkgdef 文件，并设置其属性，以便使其包含在 VSIX 中。
 
-    1. 创建文本文件，并命名 \<*assemblyName*> .pkgdef。
+    1. 创建一个文本文件，将它命名为 \<*assemblyName*>.pkgdef。
 
          \<*assemblyName*> 通常与项目的名称相同。
 
@@ -71,9 +71,9 @@ ms.locfileid: "122150594"
 
          **生成操作** = **内容**
 
-         **复制到输出目录**  = **始终复制**
+         复制到输出目录 = 始终复制 
 
-         **在 VSIX 中包括**  = **True**
+         包括在 VSIX 中 = True 
 
     3. 设置 VSIX 的名称并确保该 ID 是唯一的。
 
@@ -92,11 +92,11 @@ ms.locfileid: "122150594"
 
 5. 将下列引用添加到该项目中：
 
-    - **Microsoft.VisualStudio.TextTemplating。 \*0**
+    - Microsoft.VisualStudio.TextTemplating.\*.0
 
-    - **Microsoft.VisualStudio.TextTemplating.Interfaces。 \*0**
+    - Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0
 
-    - **Microsoft.VisualStudio.TextTemplating.VSHost。 \*0**
+    - Microsoft.VisualStudio.TextTemplating.VSHost.\*.0
 
 6. 将自定义指令处理器类添加到项目。
 
@@ -104,21 +104,21 @@ ms.locfileid: "122150594"
 
 #### <a name="to-install-the-custom-directive-processor"></a>安装自定义指令处理器
 
-1. 在Windows资源管理器中，打开生成目录 (bin\Debug 或 bin\Release) 。
+1. 在 Windows 资源管理器中，打开生成目录（通常为 bin\Debug 或 bin\Release）。
 
 2. 如果要在另一台计算机上安装指令处理器，请将 .vsix 文件复制到该计算机。
 
-3. 双击 .vsix 文件。 将显示Visual Studio扩展安装程序。
+3. 双击 .vsix 文件。 Visual Studio 扩展安装程序将出现。
 
-4. 重启 Visual Studio。 现在，可以运行包含引用自定义指令处理器的指令的文本模板。 每个指令的形式如下：
+4. 重新启动 Visual Studio。 现在，可以运行包含引用自定义指令处理器的指令的文本模板。 每个指令的形式如下：
 
      `<#@ CustomDirective Processor="CustomDirectiveProcessorName" parameter1="value1" ... #>`
 
 #### <a name="to-uninstall-or-temporarily-disable-the-custom-directive-processor"></a>卸载或临时禁用自定义指令处理器
 
-1. 在 **"Visual Studio"菜单中**，单击"**扩展管理器"。**
+1. 在 Visual Studio“工具”菜单中，单击“扩展管理器” 。
 
-2. 选择包含指令处理器的 VSIX，然后单击"卸载 **"或**"禁用 **"。**
+2. 选择包含指令处理器的 VSIX，然后单击“卸载”或“禁用” 。
 
 ### <a name="troubleshooting-a-directive-processor-in-a-vsix"></a>VSIX 中指令处理器的疑难解答
  如果指令处理器不能正常运行，可以尝试以下建议：
@@ -127,7 +127,7 @@ ms.locfileid: "122150594"
 
 - `IsDirectiveSupported` 方法在传递 `true` 的名称时必须返回 `CustomDirective`。
 
-- 如果在扩展管理器中看不到扩展，但系统不允许安装该扩展，请从 **%localappdata%\Microsoft\VisualStudio \\ \* .0\Extensions \\** 中删除扩展。
+- 如果在“扩展管理器”中看不到扩展，系统又不允许安装它，请从 %localappdata%\Microsoft\VisualStudio\\\*.0\Extensions\\ 删除该扩展。
 
 - 打开 .vsix 文件并检查其内容。 若要打开该文件，请将文件扩展名更改为 .zip。 确认该文件包含 .dll、.pkgdef 和 extension.vsixmanifest 文件。 extension.vsixmanifest 文件的 SupportedProducts 节点应包含相应的列表，“内容”节点下还应包含 VsPackage 节点：
 
@@ -167,17 +167,17 @@ ms.locfileid: "122150594"
 
 2. 在 regedit 中，定位到
 
-    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ \* .0\TextTemplating\DirectiveProcessors**
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors
 
-    如果要在实验版本的 Visual Studio 中安装指令处理器，请将"Exp"插入"11.0"之后。
+    如果要在 Visual Studio 的实验性版本中安装指令处理器，请在“11.0”之后插入“Exp”。
 
 3. 添加与指令处理器类同名的注册表项。
 
-   - 在注册表树中，右键单击 **"DirectiveProcessors"** 节点，指向"**新建**"，然后单击"密钥 **"。**
+   - 在注册表树中，右键单击“DirectiveProcessors”节点，指向“新建”，然后单击“项”  。
 
 4. 在新建节点中，根据下表为 Class 和 CodeBase 或 Assembly 添加字符串值。
 
-   1. 右键单击创建的节点，指向"**新建"，** 然后单击"字符串 **值"。**
+   1. 右键单击创建的节点，指向“新建”，然后单击“字符串值” 。
 
    2. 编辑值的名称。
 
@@ -189,7 +189,7 @@ ms.locfileid: "122150594"
 |-|-|-|
 |（默认值）|REG_SZ|(未设置值)|
 |类|REG_SZ|**\<Namespace Name>.\<Class Name>**|
-|CodeBase|REG_SZ|**\<Your Path>\\<程序集名称\>**|
+|CodeBase|REG_SZ|\<Your Path>\\<Your Assembly Name\>|
 
  如果程序集在 GAC 中，则注册表子项应如下表所示：
 
@@ -199,6 +199,6 @@ ms.locfileid: "122150594"
 |类|REG_SZ|\<**Your Fully Qualified Class Name**>|
 |程序集|REG_SZ|\<**Your Assembly Name in the GAC**>|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [创建自定义 T4 文本模板指令处理器](../modeling/creating-custom-t4-text-template-directive-processors.md)

@@ -1,6 +1,6 @@
 ---
-title: ClickOnce部署清单|Microsoft Docs
-description: 了解部署清单，这是一个 XML 文件，ClickOnce部署，包括ClickOnce应用程序版本。
+title: ClickOnce 部署清单 | Microsoft Docs
+description: 了解部署清单，它是描述 ClickOnce 部署的 XML 文件，其中包括要部署的当前 ClickOnce 应用程序版本。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -19,18 +19,18 @@ ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
 ms.openlocfilehash: 68d9aa79b08f210f8d8738f4f0113aa967bbf864
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122051620"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126665886"
 ---
 # <a name="clickonce-deployment-manifest"></a>ClickOnce 部署清单
 部署清单是一个 XML 文件，用于描述 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署，包括要部署的当前 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序版本的标识。
 
  部署清单具有下列元素和特性。
 
-| 元素 | 说明 | 特性 |
+| 元素 | 说明 | 属性 |
 | - | - | - |
 | [\<assembly> 元素](../deployment/assembly-element-clickonce-deployment.md) | 必需。 顶级元素。 | `manifestVersion` |
 | [\<assemblyIdentity> 元素](../deployment/assemblyidentity-element-clickonce-deployment.md) | 必需。 标识 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序的应用程序清单。 | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture` |
@@ -120,5 +120,5 @@ ms.locfileid: "122051620"
 </Signature></asmv1:assembly>
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)

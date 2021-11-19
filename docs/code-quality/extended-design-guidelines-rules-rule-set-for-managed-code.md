@@ -1,7 +1,7 @@
 ---
 title: 托管代码的“扩展的设计准则规则”规则集
 ms.date: 11/04/2016
-description: 了解 Visual Studio 中的扩展设计准则规则规则集，该规则侧重于可用性和可维护性。 请参阅规则说明。
+description: 了解 Visual Studio 中的“扩展的设计准则”规则集，其中重点介绍可用性和可维护性。 请参阅规则说明。
 ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: a338caf2-b75d-4f23-a0f9-3024fa0bceac
@@ -13,18 +13,18 @@ ms.workload:
 - dotnet
 ms.openlocfilehash: d284dec49e0973f2781f00f178fa193b52797085
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126601324"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>托管代码的“扩展的设计准则规则”规则集
 
-Microsoft 扩展设计准则规则规则集扩展了基本设计准则规则，以最大程度地提高报告的可用性和可维护性问题。 特别强调命名准则。 如果项目包含库代码，或者想要强制执行编写易于维护的代码的最高级别，则应考虑包括此规则集。
+Microsoft 扩展的设计准则规则集对基本设计准则进行了扩展，以最大程度地提高所报告的可用性和可维护性问题。 重点是命名准则。 如果你的项目包含库代码，或者如果你想要强制执行编写易于维护的代码的最高标准，则应考虑包含此规则集。
 
-扩展设计准则规则包括基本设计准则规则规则[](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md)集中的所有规则，其中包括托管建议[规则规则](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)集中的规则。
+扩展设计准则规则包括[基本设计准则规则](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md)规则集中的所有规则，其中包括[托管建议规则](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)规则集中的规则。
 
-下表描述了 Microsoft 扩展设计准则规则规则集内的所有规则。
+下表描述了 Microsoft“扩展设计准则规则”规则集内的所有规则。
 
 |规则|描述|
 |----------|-----------------|

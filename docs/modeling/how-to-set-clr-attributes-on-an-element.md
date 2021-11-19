@@ -1,6 +1,6 @@
 ---
 title: 如何：在元素上设置 CLR 特性
-description: 了解如何添加从 System.Attribute 类继承的任何属性。
+description: 了解如何添加任何继承自 System.Attribute 类的特性。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -15,35 +15,35 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: b6b11d186ea6c4831679c111a632ffe710a6b886
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122143360"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126665994"
 ---
 # <a name="how-to-set-clr-attributes-on-an-element"></a>如何：在元素上设置 CLR 特性
-自定义属性是可添加到域元素、形状、连接器和关系图的特殊属性。 可以添加从 类继承的任何 `System.Attribute` 属性。
+自定义属性是可以添加到域元素、形状、连接器和关系图中的特殊特性。 可以添加任何继承自 `System.Attribute` 类的特性。
 
 ### <a name="to-add-a-custom-attribute"></a>添加自定义属性
 
-1. 在 **DSL 资源管理器** 中，选择要将自定义属性添加到的元素。
+1. 在“DSL 资源管理器”中，选择要向其添加自定义属性的元素。
 
-2. 在"**属性"** 窗口中的"自定义属性"属性旁边，单击"浏览 **(...)** 图标。
+2. 在“属性”窗口中，单击“自定义属性”属性旁边的浏览 (…) 图标  。
 
-     " **编辑属性"** 对话框随即打开。
+     “编辑特性”对话框随即打开。
 
-3. 在" **名称** "列中， **\<add attribute>** 单击并键入属性的名称。 按 Enter。
+3. 在“名称”列中，单击 \<add attribute> 并键入特性的名称 。 按 Enter。
 
-4. 属性名称下的行显示括号。 在此行中，键入属性参数类型的 (例如，) ，然后 `string` 按 ENTER。
+4. 特性名称下面的行显示括号。 在此行上，键入特性的参数类型（例如 `string`），然后按 Enter。
 
-5. 在" **名称属性** "列中，键入适当的名称，例如 `MyString` 。
+5. 在“为属性命名”列中，键入适当的名称，例如 `MyString`。
 
-6. 单击“确定”。
+6. 单击 **“确定”** 。
 
-     " **自定义属性"** 属性现在按以下格式显示属性：
+     “自定义属性”属性现在按以下格式显示特性：
 
-     `[`*AttributeName* `(`*ParameterName* `=`*类型*`)]`
+     `[` AttributeName `(` ParameterName `=` Type `)]`  
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [域特定语言工具术语表](/previous-versions/bb126564(v=vs.100))

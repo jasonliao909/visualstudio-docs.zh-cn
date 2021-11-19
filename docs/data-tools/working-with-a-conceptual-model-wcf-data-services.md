@@ -1,6 +1,6 @@
 ---
 title: 使用概念模型（WCF 数据服务）
-description: 在 WCF Data Services 中处理概念WCF Data Services。 通过 对象查询数据，而不是在数据库架构和对象模型之间来回转换。
+description: 在 WCF Data Services 中使用概念模型。 通过对象查询数据，而不是在数据库架构和对象模型之间来回转换。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -17,31 +17,31 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: 84c5ae1cf5bff93389477071892aa420081731e9
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126601047"
 ---
-# <a name="work-with-a-conceptual-model-wcf-data-services"></a>使用概念模型 (WCF Data Services) 
+# <a name="work-with-a-conceptual-model-wcf-data-services"></a>使用概念模型 (WCF Data Services)
 
 使用概念模型描述数据库中的数据时，可以通过对象查询数据，而不必在数据库架构和对象模型之间来回转换。
 
-您可以对 WCF 数据服务应用程序使用概念模型。 以下主题显示如何通过概念模型查询数据。
+您可以对 WCF 数据服务应用程序使用概念模型。 以下主题演示了如何通过概念模型查询数据。
 
 | 主题 | 说明 |
 | - | - |
-| [如何：执行数据服务查询](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | 演示如何从 .NET 应用程序查询数据服务。 |
-| [如何：Project查询结果](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | 演示如何减少通过数据服务查询返回的数据量。 |
+| [如何：指定数据服务查询](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | 演示如何从 .NET 应用程序查询数据服务。 |
+| [如何：项目查询结果](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | 演示如何减少通过数据服务查询返回的数据量。 |
 
-使用概念模型时，可以定义哪种类型的数据在符合域的语言中有效。 可以在模型中定义有效数据，也可以将验证添加到对实体或数据服务执行的操作。
+使用概念模型时，可以定义哪种类型的数据在匹配域的语言中有效。 可以在模型中定义有效数据，也可以向对实体或数据服务执行的操作添加验证。
 
 以下主题演示如何向 WCF 数据服务应用程序添加验证。
 
 |主题|说明|
 |-----------|-----------------|
-|[如何：截获数据服务消息](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|演示如何向数据服务操作添加验证。|
+|[如何：截断数据服务消息](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|演示如何向数据服务操作添加验证。|
 
- 以下主题显示如何对实体执行操作来创建、更新和删除数据。
+ 以下主题演示如何通过对实体执行操作来创建、更新和删除数据。
 
 |主题|说明|
 |-----------|-----------------|

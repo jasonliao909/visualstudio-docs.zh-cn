@@ -1,6 +1,6 @@
 ---
 title: “配置服务引用”对话框
-description: 使用 Visual Studio 中的 "配置服务引用" 对话框来配置 Windows Communication Foundation (WCF) 服务的行为。
+description: 使用 Visual Studio 中的“配置服务引用”对话框来配置 Windows Communication Foundation (WCF) 服务的行为。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -19,14 +19,14 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: 894583846c5e9a8843fbf9abeaa449b7b548abb2
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126601208"
 ---
 # <a name="configure-service-reference-dialog-box"></a>“配置服务引用”对话框
 
-通过 "**配置服务引用**" 对话框，您可以配置 Windows Communication Foundation (WCF) 服务的行为。
+通过“配置服务引用”对话框可以配置 Windows Communication Foundation (WCF) 服务的行为。
 
 要访问“配置服务引用”对话框，请右键单击“解决方案资源管理器”中的服务引用，然后选择“配置服务引用”。 还可以通过单击“添加服务引用对话框”中的“高级”按钮来访问该对话框。
 
@@ -48,7 +48,7 @@ ms.locfileid: "126601208"
 
 **Address**
 
-更新服务引用在其中查找服务的 web 地址。 例如，在开发过程中，该服务可能会托管在一个开发服务器上，稍后会移到生产服务器上，使得一个地址更改。
+更新服务引用查找服务的 web 地址。 例如，在开发过程中，服务可能托管在开发服务器上，之后又移到了生产服务器上，因而需要进行地址更改。
 
 > [!NOTE]
 > 从“添加服务引用”对话框中显示“配置服务引用”对话框时，“地址”元素不可用。
@@ -62,15 +62,15 @@ ms.locfileid: "126601208"
 
 **生成异步操作**
 
-确定 (默认) 还是异步调用 WCF 服务方法。
+确定 WCF 服务方法是同步调用（默认）还是异步调用。
 
 **生成基于任务的操作**
 
-编写异步代码时，此选项可让你充分利用通过 .NET 4 引入的任务并行库 (TPL) 。 请参阅 [任务并行库 (TPL) ](/dotnet/standard/parallel-programming/task-parallel-library-tpl)。
+编写异步代码时，此选项允许你使用随 .Net 4 一起引入的任务并行库 (TPL)。 请参阅[任务并行库 (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)。
 
 **始终生成消息约定**
 
-确定是否为 WCF 客户端生成消息协定类型。 有关消息约定的详细信息，请参阅[使用消息约定](/dotnet/framework/wcf/feature-details/using-message-contracts)。
+确定是否将为 WCF 客户端生成消息协定类型。 有关消息约定的详细信息，请参阅[使用消息约定](/dotnet/framework/wcf/feature-details/using-message-contracts)。
 
 **集合类型**
 
@@ -82,29 +82,29 @@ ms.locfileid: "126601208"
 
 **重新使用引用的程序集中的类型**
 
-确定在添加或更新服务时，WCF 客户端是否尝试重用引用程序集中已存在的内容，而不是生成新类型。 默认情况下，此选项处于选中状态。
+确定在添加或更新服务时，WCF 客户端是否将设法重用引用的程序集中已经存在的类型，而不是生成新的类型。 默认情况下，此选项处于选中状态。
 
 **重新使用所有引用的程序集中的类型**
 
-如果选择此选项，则会在可能的情况下重用 **被引用程序集中** 的所有类型。 默认情况下选择此选项。
+如果选择此选项，则会尽可能重用“引用的程序集列表”中的所有类型。 默认情况下选择此选项。
 
 **重新使用所引用的指定程序集中的类型**
 
-如果选择此选项，则只会重复使用所 **引用的程序集列表** 中的选定类型。
+如果选择此选项，将只重用“引用的程序集列表”中选定的类型。
 
 **引用的程序集列表**
 
-包含项目或网站的被引用程序集的列表。 选择 " **在指定的引用程序集中重用类型**" 时，可以选择或清除各个程序集。
+包含一个列表，此列表针对项目或网站列出了引用的程序集。 如果选择“重新使用所指定的引用的指定程序集中的类型”则可以选择或清除个别程序集。
 
 **添加 Web 引用**
 
 显示“添加 Web 引用”对话框。
 
 > [!NOTE]
-> 此选项应仅用于面向 .NET Framework 版本2.0 的项目。
+> 此选项应仅用于面向 .NET Framework 版本 2.0 的项目。
 >
 > [!NOTE]
-> 只有在 "**添加服务引用" 对话框** 中显示 "**配置服务引用**" 对话框时，"**添加 Web 引用**" 按钮才可用。
+> 仅在从“添加服务引用”对话框中显示“配置服务引用”对话框时，“添加 Web 引用”按钮才可用  。
 
 ## <a name="see-also"></a>另请参阅
 

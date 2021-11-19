@@ -1,6 +1,6 @@
 ---
-title: 工作流设计器 "初始化相关" 对话框
-description: 了解如何使用工作流设计器中的 "初始化相关" 对话框来编辑 InitializeCorrelation 活动的 CorrelationData 属性。
+title: 工作流设计器 -“初始化相关”对话框
+description: 了解如何使用工作流设计器中的“初始化相关”对话框来编辑 InitializeCorrelation 活动的 CorrelationData 属性。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,27 +14,27 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: 391ff86b47b766b01066913b492d4f963361d49c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122155169"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126666111"
 ---
 # <a name="initialize-correlation-dialog-box"></a>“初始化相关”对话框
 
-" **初始化相关** " 对话框在工作流设计器中用于编辑活动的 <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> 属性 <xref:System.ServiceModel.Activities.InitializeCorrelation> 。 有关详细信息，请参阅 [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)。
+“初始化相关”对话框在工作流设计器中用于编辑 <xref:System.ServiceModel.Activities.InitializeCorrelation> 活动的 <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> 属性。 有关详细信息，请参阅 [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)。
 
-下表描述了 " **初始化相关** " 对话框 (UI) 元素的用户界面：
+下表描述“初始化相关”对话框的用户界面 (UI) 元素：
 
 |UI 元素|说明|
 |-|-----------------|
 |**相关性**|要初始化的相关的 <xref:System.ServiceModel.Activities.CorrelationHandle>。|
-|**初始化开**|一个键/值对，包含要初始化的数据。 此值与属性相对应 <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> 。 有效的键/值对的一个示例是一个名为 "订单 Id" 的键，与一个名为 "订单 Id" 的变量配对。|
+|**初始化开**|一个键/值对，包含要初始化的数据。 此值与 <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> 属性相对应。 有效键/值对的一个示例是名为“OrderID”的键与名为“OrderID”的变量配对。|
 
 ## <a name="to-launch-the-initialize-correlation-dialog-box"></a>启动“初始化相关”对话框
 
-单击 " **InitializeCorrelation** " 活动设计器上的 "**查看**"，或 <xref:System.ServiceModel.Activities.InitializeCorrelation> 在工作流设计器中选择一个活动。 然后，在属性网格中单击属性旁的省略号按钮 <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> 。
+在“InitializeCorrelation”活动设计器上单击“查看”，或在工作流设计器中选择一个 <xref:System.ServiceModel.Activities.InitializeCorrelation> 活动 。 然后，在属性网格中单击 <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> 属性旁的省略号按钮。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
