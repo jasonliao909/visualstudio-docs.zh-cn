@@ -1,5 +1,5 @@
 ---
-description: IDiaStackWalkHelper：:p ut_registerValue 设置寄存器的值。
+description: IDiaStackWalkHelper::put_registerValue 设置寄存器的值。
 title: IDiaStackWalkHelper::put_registerValue | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -36,17 +36,17 @@ HRESULT put_registerValue (
 #### <a name="parameters"></a>参数
  `index`
 
-中一个来自 [CV_HREG_e 枚举](../../debugger/debug-interface-access/cv-hreg-e.md) 枚举的值，该值指定要写入的寄存器。
+[in] [CV_HREG_e Enumeration](../../debugger/debug-interface-access/cv-hreg-e.md) 枚举的一个值，指定要写入的寄存器。
 
  `NewVal`
 
-中新寄存器值。
+[in] 新寄存器值。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回错误代码。
 
 ## <a name="remarks"></a>备注
- 尽管值的大小，实现应只存储寄存器通常保存的内容。 例如，8位寄存器仅保存给定值的最低8位。
+ 无论值的大小如何，实现应该只存储寄存器通常保留的内容。 例如，8 位寄存器将只保留给定值的最低 8 位。
 
 ## <a name="see-also"></a>另请参阅
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

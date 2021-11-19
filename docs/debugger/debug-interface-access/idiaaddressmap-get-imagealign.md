@@ -35,13 +35,13 @@ HRESULT get_imageAlign (
 #### <a name="parameters"></a>参数
  `pRetVal`
 
-弄返回可执行文件中的图像对齐值。
+[in] 返回可执行文件的图像对齐值。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回错误代码。
 
 ## <a name="remarks"></a>备注
- 根据映像的加载和创建方式，图像与特定的内存边界对齐。 对齐通常在1、2、4、8、16、32或64字节边界上。 可以通过调用 [IDiaAddressMap：:p ut_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-put-imagealign.md) 方法设置图像对齐。
+ 图像与特定内存边界对齐，具体取决于图像的加载和创建方式。 对齐通常位于 1、2、4、8、16、32 或 64 字节边界上。 可以通过调用 [IDiaAddressMap::put_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-put-imagealign.md) 方法来设置图像对齐方式。
 
 ## <a name="see-also"></a>另请参阅
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)

@@ -31,10 +31,10 @@ HRESULT RestrictOriginalPathAccess ();
 ```
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回错误代码。
 
 ## <a name="remarks"></a>备注
- 除以外的任何返回代码 `S_OK` 都禁止在原始调试目录中查找 .pdb 文件。 初始调试目录是打开调试时编译到可执行文件中的符号文件的路径。 此路径不一定与可执行文件所在的路径相同。
+ 除 `S_OK` 以外的任何返回代码都会阻止在原始调试目录中查找 .pdb 文件。 原始调试目录是启用调试时编译到可执行文件中的符号文件的路径。 此路径不一定与可执行文件所在的路径相同。
 
 ## <a name="see-also"></a>另请参阅
 - [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

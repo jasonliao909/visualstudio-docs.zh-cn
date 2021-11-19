@@ -31,7 +31,7 @@ IDiaStackWalker: IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
-下表显示的方法 `IDiaStackWalker` 。
+下表显示了 `IDiaStackWalker` 方法。
 
 |方法|说明|
 |------------|-----------------|
@@ -39,13 +39,13 @@ IDiaStackWalker: IUnknown
 |[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)|检索特定平台类型的堆栈帧枚举器。|
 
 ## <a name="remarks"></a>备注
-此接口用于获取已加载模块的堆栈帧的列表。 每个方法都被传递 (由客户端应用程序实现的 [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) 对象) 提供创建堆栈帧列表所需的信息。
+此接口用于获取已加载模块的堆栈帧的列表。 每个方法都被传递一个 [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) 对象（由客户端应用程序实现），该对象提供必要的信息以创建堆栈帧列表。
 
-## <a name="notes-for-callers"></a>调用方说明
-此接口是通过调用 `CoCreateInstance` 具有类标识符 `CLSID_DiaStackWalker` 和的接口 ID 的方法获取的 `IID_IDiaStackWalker` 。 该示例演示如何获取此接口。
+## <a name="notes-for-callers"></a>对调用者的说明
+此接口是通过调用具有类标识符 `CLSID_DiaStackWalker` 和接口 ID `IID_IDiaStackWalker` 的 `CoCreateInstance` 方法获取的。 该示例演示如何获取此接口。
 
 ## <a name="example"></a>示例
-此示例演示如何获取 `IDiaStackWalker` 接口。
+本示例演示如何获取 `IDiaStackWalker` 接口。
 
 ```C++
 
@@ -62,11 +62,11 @@ if (FAILED(hr))
 ```
 
 ## <a name="requirements"></a>要求
-标头： Dia2
+标头：Dia2.h
 
-库： diaguids
+库：diaguids.lib
 
-DLL： msdia80.dll
+DLL：msdia80.dll
 
 ## <a name="see-also"></a>另请参阅
 - [接口（调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

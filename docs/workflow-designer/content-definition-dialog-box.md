@@ -1,6 +1,6 @@
 ---
-title: 工作流设计器 - 内容定义对话框
-description: 了解如何使用"内容定义"对话框配置 Send、Receive、SendReply 和 ReceiveReply 活动的 Content 属性。
+title: 工作流设计器 -“内容定义”对话框
+description: 了解如何使用“内容定义”对话框配置 Send、Receive、SendReply 和 ReceiveReply 活动的 Content 属性。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -22,20 +22,20 @@ ms.locfileid: "126602192"
 ---
 # <a name="content-definition-dialog-box"></a>“内容定义”对话框
 
-" **内容定义** "对话框用于工作流设计器、、 和 活动的 **Content** <xref:System.ServiceModel.Activities.Send> <xref:System.ServiceModel.Activities.Receive> <xref:System.ServiceModel.Activities.SendReply> <xref:System.ServiceModel.Activities.ReceiveReply> 属性。 有关使用此框的活动设计器详细信息，请参阅发送、接收[、ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)和[SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)主题。 [](../workflow-designer/send-activity-designer.md) [](../workflow-designer/receive-activity-designer.md)
+工作流设计器中的“内容定义”对话框用于配置 <xref:System.ServiceModel.Activities.Send>、<xref:System.ServiceModel.Activities.Receive>、<xref:System.ServiceModel.Activities.SendReply> 和 <xref:System.ServiceModel.Activities.ReceiveReply> 活动的 Content 属性 。 有关使用此框的活动设计器的详细信息，请参阅 [Send](../workflow-designer/send-activity-designer.md)、[Receive](../workflow-designer/receive-activity-designer.md)、[ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md) 和 [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md) 主题。
 
-下表介绍了"初始化关联" (用户界面) **元素的用户界面** ：
+下表描述了“初始化相关”对话框的用户界面 (UI) 元素：
 
 |UI 元素|说明|
 |-|-----------------|
-|**消息**|使用"消息类型"下拉列表框，使用"消息 **数据** 表达式"文本框和类型指定消息内容。 默认情况下， **内容定义** 使用 ，它要求工作流服务定义中的 <xref:System.ServiceModel.Activities.ReceiveMessageContent> <xref:System.ServiceModel.Channels.Message> 或消息协定类型。|
-|**Parameters**|单击 **"参数"** 单选按钮以 <xref:System.ServiceModel.Activities.ReceiveParametersContent> 使用 需要数据协定的 。 使用数据网格设置 <xref:System.Activities.OutArgument> 键/值对的泛型集合，这些键/值对的值将赋给当前工作流中的可变参数。|
+|**消息**|使用“消息数据”表达式文本框指定消息内容，并使用“消息类型”下拉列表框指定类型 。 默认情况下，“内容定义”使用 <xref:System.ServiceModel.Activities.ReceiveMessageContent>，它应为 <xref:System.ServiceModel.Channels.Message> 或工作流服务定义中的消息协定类型。|
+|**Parameters**|单击“参数”单选按钮以使用应为数据协定的 <xref:System.ServiceModel.Activities.ReceiveParametersContent>。 使用数据网格设置 <xref:System.Activities.OutArgument> 键/值对的泛型集合，这些键/值对的值将赋给当前工作流中的可变参数。|
 
-"**内容定义**"对话框由Send、Receive、ReceiveAndSendReply 和 **SendAndReceiveReply 设计器** 使用。   在任何情况下访问它们的方式都相同，此处使用“Receive”设计器来演示该过程。
+“内容定义”对话框由“Send”、“Receive”、“ReceiveAndSendReply”和“SendAndReceiveReply”设计器使用    。 在任何情况下访问它们的方式都相同，此处使用“Receive”设计器来演示该过程。
 
-可以 **拖动"** 接收"活动设计器，将其从"工具箱"拖放到工作流设计器放置活动的位置。 这将创建具有 Receive 的默认 <xref:System.ServiceModel.Activities.Receive> 的 <xref:System.Activities.Activity.DisplayName%2A> 活动。 选择"**接收**"活动设计器，然后单击"内容定义"对话框 (网格中"内容"属性) 文本旁边的省略号按钮。 
+可以将 Receive 活动设计器从“工具箱”拖动到工作流设计器图面上通常放置活动的任何位置 。 这将创建具有 Receive 的默认 <xref:System.ServiceModel.Activities.Receive> 的 <xref:System.Activities.Activity.DisplayName%2A> 活动。 选择“Receive”活动设计器，然后在属性网格中单击“内容”属性的“（内容）”文本旁的省略号按钮，以显示“内容定义”对话框  。
 
-可以在活动的"消息 **"部分或** 活动的" <xref:System.ServiceModel.Activities.ReceiveMessageContent> **参数"** 部分中指定 <xref:System.ServiceModel.Activities.ReceiveParametersContent> 内容。
+可以在 <xref:System.ServiceModel.Activities.ReceiveMessageContent> 活动的“消息”部分或在 <xref:System.ServiceModel.Activities.ReceiveParametersContent> 活动的“参数”部分中指定该内容 。
 
 ## <a name="see-also"></a>另请参阅
 

@@ -31,27 +31,27 @@ IDiaEnumDebugStreamData : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
-下表显示的方法 `IDiaEnumDebugStreamData` 。
+下表显示了 `IDiaEnumDebugStreamData` 方法。
 
 |方法|说明|
 |------------|-----------------|
-|[IDiaEnumDebugStreamData::get__NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-newenum.md)|检索此枚举器的 [IEnumVARIANT 接口](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) 版本。|
+|[IDiaEnumDebugStreamData::get__NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-newenum.md)|检索此枚举器的 [IEnumVARIANT Interface](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) 版本。|
 |[IDiaEnumDebugStreamData::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)|检索调试数据流中的记录数。|
 |[IDiaEnumDebugStreamData::get_name](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-name.md)|检索调试数据流的名称。|
 |[IDiaEnumDebugStreamData::Item](../../debugger/debug-interface-access/idiaenumdebugstreamdata-item.md)|检索指定的记录。|
-|[IDiaEnumDebugStreamData::Next](../../debugger/debug-interface-access/idiaenumdebugstreamdata-next.md)|检索枚举序列中指定数目的记录。|
-|[IDiaEnumDebugStreamData::Skip](../../debugger/debug-interface-access/idiaenumdebugstreamdata-skip.md)|跳过枚举序列中指定数目的记录。|
-|[IDiaEnumDebugStreamData::Reset](../../debugger/debug-interface-access/idiaenumdebugstreamdata-reset.md)|将枚举序列重置到开始处。|
-|[IDiaEnumDebugStreamData::Clone](../../debugger/debug-interface-access/idiaenumdebugstreamdata-clone.md)|创建一个枚举数，该枚举数包含与当前枚举数相同的枚举序列。|
+|[IDiaEnumDebugStreamData::Next](../../debugger/debug-interface-access/idiaenumdebugstreamdata-next.md)|检索枚举序列中指定数量的记录。|
+|[IDiaEnumDebugStreamData::Skip](../../debugger/debug-interface-access/idiaenumdebugstreamdata-skip.md)|跳过枚举序列中指定数量的记录。|
+|[IDiaEnumDebugStreamData::Reset](../../debugger/debug-interface-access/idiaenumdebugstreamdata-reset.md)|将枚举的序列重置到开头。|
+|[IDiaEnumDebugStreamData::Clone](../../debugger/debug-interface-access/idiaenumdebugstreamdata-clone.md)|创建一个枚举器，其中包含与当前枚举器相同的枚举序列。|
 
 ## <a name="remarks"></a>备注
-此接口表示调试数据流中的一条记录。 每条记录的大小和解释取决于记录所来自的数据流。 此接口有效地提供对符号文件中的原始数据字节的访问。
+此接口表示调试数据流中的一个记录流。 每条记录的大小和解释取决于记录来自的数据流。 此接口可以有效地提供对符号文件中的原始数据字节的访问。
 
-## <a name="notes-for-callers"></a>调用方说明
-调用 [IDiaEnumDebugStreams：： Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md) 或 [IDiaEnumDebugStreams：： Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md) 方法以获取 `IDiaEnumDebugStreamData` 对象。
+## <a name="notes-for-callers"></a>对调用者的说明
+调用 [IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md) 或 [IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md) 方法以获取 `IDiaEnumDebugStreamData` 对象。
 
 ## <a name="example"></a>示例
- 此示例演示如何访问单个数据流及其记录。
+ 本示例展示了如何访问单个数据流及其记录。
 
 ```C++
 void PrintStreamData(IDiaEnumDebugStreamData* pStream)
@@ -105,11 +105,11 @@ void PrintStreamData(IDiaEnumDebugStreamData* pStream)
 ```
 
 ## <a name="requirements"></a>要求
-标头： Dia2
+标头：Dia2.h
 
-库： diaguids
+库：diaguids.lib
 
-DLL： msdia80.dll
+DLL: msdia80.dll
 
 ## <a name="see-also"></a>另请参阅
 - [接口（调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

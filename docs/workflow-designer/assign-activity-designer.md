@@ -1,5 +1,5 @@
 ---
-title: 工作流设计器 - 分配活动设计器
+title: 工作流设计器 - Assign 活动设计器
 description: 了解如何使用 Assign 活动设计器创建和配置 Assign 活动，以及 Assign 活动如何将值分配给变量或参数。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -22,7 +22,7 @@ ms.locfileid: "126667597"
 ---
 # <a name="assign-activity-designer"></a>Assign 活动设计器
 
-Assign 活动设计器用于创建和配置 <xref:System.Activities.Statements.Assign> 活动。
+“Assign”活动设计器用于创建和配置 <xref:System.Activities.Statements.Assign> 活动。
 
 ## <a name="the-assign-activity"></a>Assign 活动
 
@@ -30,19 +30,19 @@ Assign 活动设计器用于创建和配置 <xref:System.Activities.Statements.A
 
 ### <a name="using-the-assign-activity-designer"></a>使用 Assign 活动设计器
 
-可以在 **"** 工具箱"的"基元"类别中找到"分配"活动设计器，可通过单击"工具箱"选项卡 (或者从"视图"菜单中选择"工具箱"或CTRL+ALT+X.) 
+“Assign”活动设计器可在“工具箱”的“基元”类别中找到，“工具箱”可通过单击“工具箱”选项卡（或者，从“视图”菜单中选择“工具箱”或按 CTRL+ALT+X）来访问。     
 
-可以将 **"** 分配"活动设计器从"工具箱"拖动到工作流设计器放置活动的位置（例如，位于 内）的图面上 <xref:System.Activities.Statements.Sequence> 。 删除 **"分配** "活动设计器会 <xref:System.Activities.Statements.Assign> 创建默认 **DisplayName** 为 Assign 的活动。 <xref:System.Activities.Activity.DisplayName%2A>可以在"分配"活动设计器的标头或属性网格的 **"DisplayName"** 框中编辑 。
+可以将“Assign”活动设计器从“工具箱”拖放到工作流设计器图面上通常放置活动的任何位置，如 <xref:System.Activities.Statements.Sequence> 内。  删除“Assign”活动设计器将创建一个 <xref:System.Activities.Statements.Assign> 活动，其默认的”DisplayName”为“Assign”。  可以在“Assign”活动设计器的标头中或在属性网格的“DisplayName”框中编辑 <xref:System.Activities.Activity.DisplayName%2A>。 
 
 ### <a name="the-assign-properties"></a>Assign 属性
 
-下表列出 <xref:System.Activities.Statements.Assign> 属性并说明如何在设计器中使用它们。 这些属性可以在属性网格中编辑，其中一些属性可以在工作流设计器编辑。
+下表列出 <xref:System.Activities.Statements.Assign> 属性并说明如何在设计器中使用它们。 这些属性可以在属性网格中进行编辑，其中一些属性还可以在工作流设计器图面上进行编辑。
 
 |属性名称|必选|使用情况|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|错误|<xref:System.Activities.Statements.Assign> 活动的友好名称。 默认值为 Assign。 虽然 <xref:System.Activities.Activity.DisplayName%2A> 值不是绝对必需的，但最好使用该属性值。|
-|<xref:System.Activities.Statements.Assign.To%2A>|True|为其赋 <xref:System.Activities.Statements.Assign.Value%2A> 的变量或自变量。 该值必须是有效的标识符Visual Basic标识符。 若要设置 属性，请Visual Basic活动设计器或属性网格中的"To"框中键入一个表达式。 |
-|<xref:System.Activities.Statements.Assign.Value%2A>|True|赋给变量的值。 若要设置 ，请Visual Basic设计器或属性网格的"值"框中键入 <xref:System.Activities.Statements.Assign.Value%2A> 一个表达式。 |
+|<xref:System.Activities.Statements.Assign.To%2A>|True|为其赋 <xref:System.Activities.Statements.Assign.Value%2A> 的变量或自变量。 该值必须是有效的 Visual Basic 标识符。 若要设置该属性，请在“Assign”活动设计器或属性网格中的“To”框中键入 Visual Basic 表达式。 |
+|<xref:System.Activities.Statements.Assign.Value%2A>|True|赋给变量的值。 若要设置 <xref:System.Activities.Statements.Assign.Value%2A>，请在“Assign”活动设计器或属性网格中的“值”框中键入 Visual Basic 表达式。 |
 
 ## <a name="see-also"></a>另请参阅
 

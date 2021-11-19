@@ -1,6 +1,6 @@
 ---
-description: 检索一个标志，该标志指定函数是否包含与 setjmp (/cpp/c-runtime-library/reference/setjmp) 命令配对的 longjmp) 命令 (，这构成了异常处理) 的 C 样式方法。
-title: IDiaSymbol：：get_hasLongJump |Microsoft Docs
+description: 检索一个标记，该标记指定函数是否包含 longjmp) 命令的使用（与 setjmp(/cpp/c-runtime-library/reference/setjmp) 命令搭配，这些形成了异常处理的 C 样式方法）。
+title: IDiaSymbol::get_hasLongJump | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -22,7 +22,7 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127831800"
 ---
 # <a name="idiasymbolget_haslongjump"></a>IDiaSymbol::get_hasLongJump
-检索一个标志，该标志指定函数是否包含 [longjmp](/cpp/c-runtime-library/reference/longjmp) 命令 (与 [setjmp](/cpp/c-runtime-library/reference/setjmp) 命令配对，这些标志构成了异常处理方法的 C 样式) 。
+检索一个标记，该标记指定函数是否包含 [longjmp](/cpp/c-runtime-library/reference/longjmp) 命令的使用（与 [setjmp](/cpp/c-runtime-library/reference/setjmp) 命令搭配，这些形成了异常处理的 C 样式方法）。
 
 ## <a name="syntax"></a>语法
 
@@ -35,13 +35,13 @@ HRESULT get_hasLongJump
 #### <a name="parameters"></a>参数
  `pFlag`
 
-[out]如果 `TRUE` 函数包含命令， `longjmp` 则返回 ;否则返回 `FALSE` 。
+[out] 如果该函数包含 `longjmp` 命令，则返回 `TRUE`；否则，返回 `FALSE`。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回 `S_FALSE` 或错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回 `S_FALSE` 或错误代码。
 
 > [!NOTE]
-> 返回值 `S_FALSE` 表示 属性不可用于 符号。
+> 返回值 `S_FALSE` 意味着该属性对符号不可用。
 
 ## <a name="requirements"></a>要求
 

@@ -1,6 +1,6 @@
 ---
 description: 为查询符号打开一个会话。
-title: IDiaDataSource：： openSession |Microsoft Docs
+title: IDiaDataSource::openSession | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -35,21 +35,21 @@ HRESULT openSession (
 #### <a name="parameters"></a>参数
 ppSession
 
-弄返回表示打开的会话的 [IDiaSession](../../debugger/debug-interface-access/idiasession.md) 对象。
+[out] 返回一个表示打开的会话的 [IDiaSession](../../debugger/debug-interface-access/idiasession.md) 对象。
 
 ## <a name="return-value"></a>返回值
-如果成功， `S_OK` 则返回; 否则返回错误代码。 下表显示了此方法的可能的返回值。
+如果成功，则返回 `S_OK`；否则，返回错误代码。 下表显示了此方法的可能返回值。
 
 |值|说明|
 |-----------|-----------------|
-|E_UNEXPECTED|尚未使用符号的源初始化 [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md) 对象。|
+|E_UNEXPECTED|[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md) 对象此前未使用符号源进行初始化。|
 |E_INVALIDARG|`ppSession` 参数无效。|
-|E_OUTOFMEMORY|没有足够的内存来打开会话。|
+|E_OUTOFMEMORY|内存不足，无法打开该会话。|
 
 ## <a name="remarks"></a>备注
 此方法将为数据源打开一个 [IDiaSession](../../debugger/debug-interface-access/idiasession.md) 对象。
 
-`IDiaSession` 对象将查询实现到数据源。 会话为每组调试符号管理一个地址空间。 例如，如果数据源符号描述的 .exe 或 .dll 文件在多个地址范围内处于活动状态 (例如，因为多个进程已加载) ，所以应使用每个地址范围的一个会话。
+`IDiaSession` 对象将查询实现到数据源。 一个会话为每组调试符号管理一个地址空间。 如果数据源符号描述的 .exe 或 .dll 文件在多个地址范围内处于活动状态（例如，因为多个进程加载了该文件），则应该为每个地址范围使用一个会话。
 
 ## <a name="example"></a>示例
 

@@ -1,6 +1,6 @@
 ---
-description: 大多数符号在图像文件中都有定义的位置。
-title: 符号位置|Microsoft Docs
+description: 大多数符号在图像文件中都有一个定义的位置。
+title: 符号位置 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -23,14 +23,14 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127832801"
 ---
 # <a name="symbol-locations"></a>符号位置
-大多数符号在图像文件中都有定义的位置。 使用 [LocationType](../../debugger/debug-interface-access/locationtype.md) 枚举枚举中的值指定符号的位置。 符号可能支持其他属性，具体取决于其位置。
+大多数符号在图像文件中都有一个定义的位置。 使用 [LocationType Enumeration](../../debugger/debug-interface-access/locationtype.md) 枚举的一个值指定符号的位置。 符号可能支持其他属性，具体取决于其位置。
 
  下表显示了最常用的位置类型及其附加属性。
 
 |位置类型|其他属性|
 |-------------------|---------------------------|
 |`LocIsNull`|无|
-|`LocIsStatic`|[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)<br /><br /> [IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)<br /><br /> [如果启用了相对虚拟地址，get_relativeVirtualAddress (IDiaSymbol：：) ](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md)<br /><br /> 如果映像基础已设置为非零值get_virtualAddress ([IDiaSymbol：：) ](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)|
+|`LocIsStatic`|[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)<br /><br /> [IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)<br /><br /> [IDiaSymbol::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md)（如果启用相对虚拟地址）<br /><br /> [IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)（如果基础映像已设置为非零）|
 |`LocIsTLS`|[IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)<br /><br /> [IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|
 |`LocIsRegRel`|[IDiaSymbol::get_registerId](../../debugger/debug-interface-access/idiasymbol-get-registerid.md)<br /><br /> [IDiaSymbol::get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md)|
 |`LocIsThisRel`|[IDiaSymbol::get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md)|

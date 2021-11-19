@@ -1,6 +1,6 @@
 ---
 description: 检索枚举序列中指定数目的行号。
-title: IDiaEnumLineNumbers：： Next |Microsoft Docs
+title: IDiaEnumLineNumbers::Next | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -37,18 +37,18 @@ HRESULT Next (
 #### <a name="parameters"></a>参数
  celt
 
-中要检索的枚举器中的行号数目。
+[in] 要检索的枚举器中的行号数量。
 
  rgelt
 
-弄返回 [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) 对象的数组，这些对象表示所需的行号。
+[out] 返回表示所需行号的 [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) 对象的数组。
 
  pceltFetched
 
-弄返回提取的枚举器中的行号数。
+[out] 返回提取的枚举器中的行号数量。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK`。 `S_FALSE`如果没有更多的行号，则返回。 否则，返回错误代码。
+ 如果成功，则返回 `S_OK`。 如果没有更多行号，则返回 `S_FALSE`。 否则，返回错误代码。
 
 ## <a name="see-also"></a>另请参阅
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

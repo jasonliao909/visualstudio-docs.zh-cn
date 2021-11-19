@@ -39,7 +39,7 @@ ms.locfileid: "131127034"
 
 部署到本地文件夹通常用于测试，或开始分阶段部署，其中使用另一个工具进行最终部署。
 
-- **ASP.NET**、**ASP.NET Core**、**Node.js**、**Python** 和 .**NET Core**：使用发布工具部署到本地文件夹。 可用的具体选项取决于应用类型。 在解决方案资源管理器中，右键单击项目，并选择“发布”。 （如果之前尚未配置任何发布配置文件，必须选择“新建配置文件”。）接下来选择“文件夹”。 有关详细信息，请参阅发布[ASP.NET 应用](quickstart-deploy-aspnet-web-app.md?tabs=folder)。
+- **ASP.NET**、**ASP.NET Core**、**Node.js**、**Python** 和 .**NET Core**：使用发布工具部署到本地文件夹。 可用的具体选项取决于应用类型。 在解决方案资源管理器中，右键单击项目，并选择“发布”。 （如果之前尚未配置任何发布配置文件，必须选择“新建配置文件”。）接下来选择“文件夹”。 有关详细信息，请参阅[发布 ASP.NET 应用](quickstart-deploy-aspnet-web-app.md?tabs=folder)。
 
     ![显示选择“发布”的屏幕截图。](../deployment/media/quickstart-publish.png)
 
@@ -55,7 +55,7 @@ ms.locfileid: "131127034"
 
   - 对于应用的连续（或自动）部署，请将 Azure DevOps 与 [Azure 管道](/azure/devops/pipelines/get-started-yaml?view=azdevops&preserve-view=true)结合使用。
   - 对于应用的一次性（或手动）部署，请使用 Visual Studio 中的“发布”工具。
-  - 若要为 GitHub GitHub.com 上托管的 ASP.NET 和 Azure Function 项目创建 GitHub 操作工作流，请参阅使用[GitHub Actions。](../deployment/azure-deployment-using-github-actions.md)
+  - 若要为 GitHub.com 上托管的 ASP.NET 和 Azure Function 项目创建 GitHub 操作工作流，请参阅[使用 GitHub Actions 部署到 Azure](../deployment/azure-deployment-using-github-actions.md)。
 
   对于可提供自定义程度更高的服务器配置的部署，还可以使用“发布”工具将应用部署到 Azure 虚拟机。
 
@@ -74,7 +74,7 @@ ms.locfileid: "131127034"
 
 ## <a name="publish-to-the-web-or-deploy-to-a-network-share"></a>发布到 Web 或部署到网络共享
 
-- **ASP.NET**、**ASP.NET Core**、**Node.js** 和 **Python**：可以通过 FTP 或 Web 部署使用发布工具部署到网站。 有关详细信息，请参阅发布[ASP.NET 应用](quickstart-deploy-aspnet-web-app.md?tabs=folder.md?tabs=web-server)。
+- **ASP.NET**、**ASP.NET Core**、**Node.js** 和 **Python**：可以通过 FTP 或 Web 部署使用发布工具部署到网站。 有关详细信息，请参阅[发布 ASP.NET 应用](quickstart-deploy-aspnet-web-app.md?tabs=folder.md?tabs=web-server)。
 
     在“解决方案资源管理器”中，右键单击项目，然后选择“发布”。 （如果之前尚未配置任何发布配置文件，必须选择“新建配置文件”。）在发布工具中，选择想要的选项并遵循配置步骤。
 
@@ -96,7 +96,7 @@ ms.locfileid: "131127034"
 
 - 可以使用 [WiX 工具集 Visual Studio 2017 扩展](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension)创建基于 MSI 的安装程序包。 这是一个命令行工具集。
 
-- 可以使用安装项目 (vdproj) 创建 MSI 或 EXE 安装程序包。 若要使用此选项，请参阅 Visual Studio 安装程序 扩展和[.NET Core 3.1 和 .NET 5.0，](../deployment/installer-projects-net-core.md)或者直接转到 Visual Studio 安装程序[项目扩展](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview)。
+- 可以使用安装项目 (vdproj) 创建 MSI 或 EXE 安装程序包。 若要使用此选项，请参阅 [Visual Studio 安装程序扩展和 .NET Core 3.1 和 .NET 5.0](../deployment/installer-projects-net-core.md)，或者直接转到 [Visual Studio 安装程序项目扩展](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview)。
 
 - 可以使用 Flexera Software 中的 [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) 创建 MSI 或 EXE 安装程序包。 InstallShield 可与 Visual Studio 2017 及更高版本一起使用。 不支持 Community Edition。
 

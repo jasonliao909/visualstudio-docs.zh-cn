@@ -1,6 +1,6 @@
 ---
 title: 发布有特定区域设置的项目
-description: 了解如何使用宏发布解决方案中包含多个不同区域设置的项目的第一个项目。
+description: 了解如何使用宏发布解决方案中的第一个项目，其中包含多个不同区域设置的项目。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -152,20 +152,20 @@ ms.locfileid: "126664876"
 
 4. 使用 Visual Studio IDE 发布 PublishLocales。
 
-     在“解决方案资源管理器”中选择 PublishLocales。 在“项目”菜单上选择“属性”。 在"Project设计器"的"发布"页上，指定 的发布位置，然后单击 **http://localhost/PublishLocales** "立即 **发布"。**
+     在“解决方案资源管理器”中选择 PublishLocales。 在“项目”菜单上选择“属性”。 在“项目设计器”中的“发布”页上指定发布位置 http://localhost/PublishLocales，然后单击“立即发布”。
 
      当出现发布网页时，关闭它。 （对于此步骤，你只需发布该项目，而不必安装它。）
 
-5. 通过在 Visual Studio 命令提示符窗口中调用宏，再次发布 PublishLocales。 若要查看"命令提示符"窗口，请在"视图"菜单上指向"其他Windows然后单击"命令窗口 **"，或** 按 **Ctrl** + **Alt** + **A**。 在"命令提示符"窗口中，键入 `macros` ;自动完成将提供可用宏的列表。 选择以下宏并按 Enter：
+5. 通过在 Visual Studio 命令提示符窗口中调用宏，再次发布 PublishLocales。 若要查看命令提示符窗口，请在“视图”菜单上指向“其他窗口”，然后单击“命令窗口”，或按 Ctrl+Alt+A。 在命令提示符窗口中键入 `macros`；自动完成功能将提供可用宏的列表。 选择以下宏并按 Enter：
 
      `Macros.MyMacros.PublishSpecificCulture.PublishProjectFirstProjectWithEnLocale`
 
-6. 发布过程成功后，将生成一条消息，指出 *"PublishLocales\PublishLocales.vbproj 发布成功"。* 发布语言为"en"。在 **消息框中** 单击"确定"。 当发布网页出现时，单击“安装”。
+6. 当发布过程成功后，它将生成一则消息，指出 PublishLocales\PublishLocales.vbproj 发布成功。 发布语言为“en”。在消息框中单击“确定”。 当发布网页出现时，单击“安装”。
 
-7. 在 *C：\Inetpub\wwwroot\PublishLocales\en 中查找*。 除了已本地化的资源 DLL 外，还应看到已安装的文件，例如，清单、setup.exe 和发布网页文件。  (默认情况下，ClickOnce在 EXEs 和 DLL 上追加 *.deploy* 扩展;可以在 deployment.) 之后删除此扩展
+7. 查看 C:\Inetpub\wwwroot\PublishLocales\en。 除了已本地化的资源 DLL 外，还应看到已安装的文件，例如，清单、setup.exe 和发布网页文件。 （默认情况下，ClickOnce 会为 EXE 和 DLL 追加 .deploy 扩展名；完成部署后，可以移除此扩展名。）
 
 ## <a name="see-also"></a>另请参阅
 - [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)
 - [宏开发环境](/previous-versions/visualstudio/visual-studio-2010/fb30sxt3(v=vs.100))
 - [Macro 资源管理器窗口](/previous-versions/visualstudio/visual-studio-2010/wwkx67sw(v=vs.100))
-- [如何：编辑和以编程方式创建宏](/previous-versions/visualstudio/visual-studio-2010/k91y6132(v=vs.100))
+- [操作说明：编辑和以编程方式创建宏](/previous-versions/visualstudio/visual-studio-2010/k91y6132(v=vs.100))

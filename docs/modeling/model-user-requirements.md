@@ -1,6 +1,6 @@
 ---
 title: 建立用户需求模型
-description: 了解Visual Studio通过绘制有关用户活动的关系图来帮助你了解、讨论和传达用户的需求。
+description: 了解 Visual Studio 如何通过绘制有关用户活动的关系图来帮助你了解用户需求，并与他们展开讨论、沟通其需求。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -42,7 +42,7 @@ ms.locfileid: "126663949"
 
 - 使用模型作为系统测试的基础，明确测试和要求之间的关系。 要求发生改变时，这种关系将帮助你正确地更新测试。 这可以确保系统满足新的要求。
 
-如果在与用户或其代表进行重点讨论时使用需求模型，并在每次迭代开始时重新查看需求模型，那么使用需求模型会获得最大的好处。 无需在编写代码之前详细地完成它。 即使是非常简单的部分工作的应用程序，通常也能构成与用户讨论需求时的最具激励性的基础。 模型是汇总讨论结果的一种有效方式。 有关详细信息，请参阅 [在开发过程中使用模型](../modeling/use-models-in-your-development-process.md)。
+如果在与用户或其代表进行重点讨论时使用需求模型，并在每次迭代开始时重新查看需求模型，那么使用需求模型会获得最大的好处。 无需在编写代码之前详细地完成它。 即使是非常简单的部分工作的应用程序，通常也能构成与用户讨论需求时的最具激励性的基础。 模型是汇总讨论结果的一种有效方式。 有关详细信息，请参阅[在开发过程中使用模型](../modeling/use-models-in-your-development-process.md)。
 
 > [!NOTE]
 > 在这些主题中，“系统”表示正在开发的系统或应用程序。 它可能是许多软件和硬件组件的大型集合、单个应用程序或一个更大型系统内的某个软件组件。 在每种情况下，需求模型都描述了在系统外部可以通过用户界面或 API 看到的行为。
@@ -57,13 +57,13 @@ ms.locfileid: "126663949"
 |附加文档或工作项|性能、安全性、可用性和可靠性条件。|[描述服务质量要求](#QoSRequirements)|
 |附加文档或工作项|不针对特定用例的约束和规则|[显示业务规则](#BusinessRules)|
 
-请注意，大多数关系图类型可以用于其他目的。 有关关系图类型的概述，请参阅 [为应用创建模型](../modeling/create-models-for-your-app.md)。
+请注意，大多数关系图类型可以用于其他目的。 有关关系图类型的概述，请参阅[为应用创建模型](../modeling/create-models-for-your-app.md)。
 
 ## <a name="showing-business-rules"></a><a name="BusinessRules"></a> Showing Business Rules
 
 业务规则是一个不与特定用例相关联的要求，应在整个系统中进行观察。
 
-许多业务规则受概念类间关系的约束。 可以将这些 *静态业务规则编写* 为与概念类图上的相关类关联的注释。 例如：
+许多业务规则受概念类间关系的约束。 可以作为与概念类图上的相关类关联的注释，编写这些静态业务规则。 例如：
 
 ![附加到 Order 类的注释中的规则。](../modeling/media/uml_reqmcd2.png)
 
@@ -79,7 +79,7 @@ ms.locfileid: "126663949"
 |-|-|
 |如何开发符合业务规则的代码|[应用体系结构建模](../modeling/model-your-app-s-architecture.md)|
 
-## <a name="describing-quality-of-service-requirements"></a><a name="QoSRequirements"></a> 描述服务质量要求
+## <a name="describing-quality-of-service-requirements"></a><a name="QoSRequirements"></a> Describing Quality of Service Requirements
 
 服务质量要求有多个类别。 它们包括以下内容：
 
@@ -97,7 +97,7 @@ ms.locfileid: "126663949"
 
 如果餐厅在顾客订餐时删除了菜单项，则任何引用该菜单项的订单项将显示为红色。
 
-请参阅 [为应用的体系结构建模](../modeling/model-your-app-s-architecture.md) ，了解如何开发符合服务质量要求的代码。
+若要了解如何开发符合服务质量要求的代码，请参阅[应用体系结构建模](../modeling/model-your-app-s-architecture.md)。
 
 ## <a name="see-also"></a>另请参阅
 

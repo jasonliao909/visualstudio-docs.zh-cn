@@ -1,6 +1,6 @@
 ---
-title: '指定详细日志文件 (ClickOnce部署) '
-description: 了解如何为要维护的活动日志指定详细ClickOnce，以安装、初始化、更新和卸载 ClickOnce部署。
+title: 指定详细的日志文件（ClickOnce 部署）
+description: 了解如何指定 ClickOnce 为安装、初始化、更新和卸载 ClickOnce 部署而维护的活动日志的详细程度。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -26,22 +26,22 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "126671812"
 ---
 # <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>如何：指定 ClickOnce 部署的详细日志文件
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 维护所有部署的活动日志文件。 这些日志记录有关安装、初始化、更新和卸载部署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 的详细信息。 若要增加写入这些日志文件的详细信息，请使用注册表编辑器 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] *(regedit.exe)* 指定详细级别。
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 为所有部署维护活动日志文件。 这些日志记录了有关安装、初始化、更新和卸载 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署的详细信息。 要增加 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 写入这些日志文件的详细信息，请使用注册表编辑器 (regedit.exe) 指定详细级别。
 
 > [!CAUTION]
-> 如果不正确地使用注册表编辑器，可能会导致严重问题，这些问题可能需要重新安装操作系统。 请慎用注册表编辑器，风险自负。
+> 如果注册表编辑器使用不当，则可能会产生严重问题，导致重新安装操作系统。 请慎用注册表编辑器，风险自负。
 
- 以下过程介绍如何为当前用户指定 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 日志文件详细级别。 若要降低详细级别，请删除此注册表值。
+ 以下过程介绍如何为当前用户指定 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 日志文件的详细级别。 要降低详细级别，请删除此注册表值。
 
-### <a name="to-specify-verbose-log-files"></a>指定详细日志文件
+### <a name="to-specify-verbose-log-files"></a>指定详细的日志文件
 
-1. 打开 *Regedit.exe*。
+1. 打开 Regedit.exe。
 
-2. 导航到 节点 **HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment。**
+2. 导航到节点 HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment。
 
-3. 如有必要，请创建名为 的新字符串值 `LogVerbosityLevel` 。
+3. 如有必要，请创建名为 `LogVerbosityLevel` 的新字符串值。
 
-4. 将 `LogVerbosityLevel` 值设置为 `1` 。
+4. 将 `LogVerbosityLevel` 值设置为 `1`。
 
 ## <a name="see-also"></a>另请参阅
 - [ClickOnce 部署疑难解答](../deployment/troubleshooting-clickonce-deployments.md)

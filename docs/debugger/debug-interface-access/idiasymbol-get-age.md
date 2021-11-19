@@ -35,22 +35,22 @@ HRESULT get_age (
 #### <a name="parameters"></a>参数
  `pRetVal`
 
-弄返回 .pdb 文件的 age 值。
+[out] 返回 .pdb 文件的 age 值。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回 `S_FALSE` 或错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回 `S_FALSE` 或错误代码。
 
 > [!NOTE]
 > 返回值 `S_FALSE` 意味着该属性对符号不可用。
 
 ## <a name="remarks"></a>备注
- 保留时间不一定对应于任何已知时间值;它通常用于确定 .pdb 文件是否与相应的 .exe 文件不同步。
+ 年限不一定与任何已知的时间值相对应；它通常用于确定 .pdb 文件是否与相应的 .exe 文件不同步。
 
 ## <a name="requirements"></a>要求
 
 |要求|说明|
 |-----------------|-----------------|
-|标头：|dia2|
+|标头：|dia2.h|
 |版本：|DIA SDK v7.0|
 
 ## <a name="see-also"></a>另请参阅

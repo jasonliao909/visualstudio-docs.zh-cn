@@ -1,6 +1,6 @@
 ---
 title: wsl-install
-description: devinit 工具 wsl-安装。
+description: devinit 工具 wsl-install。
 ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
@@ -21,26 +21,26 @@ ms.locfileid: "127833098"
 # <a name="wsl-install"></a>wsl-install
 
 > [!IMPORTANT]
-> 从 2021 年 4 月 12 日开始，将不再支持从 Visual Studio 2019 连接到 GitHub Codespaces，此个人预览版已结束。 我们将重点放在针对广泛的 Visual Studio 工作负荷进行优化的云驱动内部循环和 VDI 解决方案的不断变化方面。 作为此 `devinit` 和相关工具的一部分将不再可用。 建议参与 Visual Studio 的开发人员社区论坛，了解未来要推出的预览版和路线图信息。
+> 从 2021 年 4 月 12 日开始，将不再支持从 Visual Studio 2019 连接到 GitHub Codespaces，此个人预览版已结束。 我们的工作重点是改进云支持型内部循环和针对多种 Visual Studio 工作负载优化的 VDI 解决方案的体验。 在此期间，`devinit` 和关联工具将不再可用。 建议参与 Visual Studio 的开发人员社区论坛，了解未来要推出的预览版和路线图信息。
 
-该 `wsl-install` 工具用于安装适用于[适用于 Linux 的 Windows 子系统](/windows/wsl/) (WSL) 的 Linux 发行版。
+`wsl-install` 工具用于安装[适用于 Linux 的 Windows 子系统](/windows/wsl/) (WSL) 的 Linux 发行版。
 
 > [!IMPORTANT]
-> 该 `wsl-install` 工具要求在 Windows 上已启用 WSL 2。 如果由于某种原因而未启用 WSL 2，则可以按照 [WSL 安装文档](https://docs.microsoft.com/windows/wsl/install-win10)进行操作。 你还可以[使用启用了 smi-s 的工具来](tool-windowsfeature-enable.md)启用任何所需的 Windows 功能。
+> `wsl-install` 工具要求在 Windows 上已启用 WSL 2。 如果由于某种原因导致 WSL 2 未启用，你可以按照 [WSL 安装文档](https://docs.microsoft.com/windows/wsl/install-win10)操作。 还可以使用 [windowsfeature-enable](tool-windowsfeature-enable.md) 工具来启用任何所需的 Windows 功能。
 
 ## <a name="usage"></a>使用情况
 
-如果 `input` 和 `additionalOptions` 属性均省略或为空，则该工具将遵循下面详细说明的 [默认](#default-behavior) 行为。
+如果 `input` 和 `additionalOptions` 属性被省略或为空，则该工具将遵循下面详述的[默认](#default-behavior)行为。
 
 | 名称                                             | 类型   | 必须 | 值                                                             |
 |--------------------------------------------------|--------|----------|-------------------------------------------------------------------|
 | **注释**                                     | 字符串型 | 否       | 可选注释属性。 未使用。                             |
-| [**送**](#input)                              | 字符串 | 是      | 要安装的发行版。 有关详细信息，请参阅以下 [输入](#input) 。     |
-| [**additionalOptions**](#additional-options)     | 字符串型 | 否       | 有关详细信息，请参阅下面的 [其他选项](#additional-options) 。  |
+| [input](#input)                              | 字符串 | 是      | 要安装的发行版。 有关详细信息，请参阅下方的 [Input](#input)。     |
+| [**additionalOptions**](#additional-options)     | 字符串型 | 否       | 有关详细信息，请参阅下方的[其他选项](#additional-options)。  |
 
 ### <a name="input"></a>输入
 
-AppX 应用程序分发包的 URI (`.appx`) 包含要部署的发行版。 该 URI 必须指向 `.appx` `install.tar.gz` 在 archive root 或内部存档内包含单一存档的存档 `.appx` 。 支持的发行版示例包括：
+AppX 应用程序分发包的 URI (`.appx`) 包含要部署的发行版。 URI 必须指向一个 `.appx` 存档，该存档包含一个 `install.tar.gz`，它要么在存档根中，要么在一个内部 `.appx` 存档中。 支持的发行版示例包括：
 
 | 分发版                          | Uri                                                           |
 |---------------------------------|---------------------------------------------------------------|
@@ -61,17 +61,17 @@ AppX 应用程序分发包的 URI (`.appx`) 包含要部署的发行版。 该 U
 
 | 名称                      | 类型      | 必须 | 值                                                                                                                                                                                    |
 |---------------------------|-----------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| --wsl             | 字符串型    | 否       | 要使用的 WSL 版本。 默认值为 2。                                                                                                                                  |
-| --create-command     | 字符串型    | 否       | 安装完成后，在 Linux 发行版内部执行的命令。 应将此命令格式化为一个词，或将其括在引号中。 默认值为 no 命令。  |
+| --wsl-version             | 字符串型    | 否       | 要使用的 WSL 版本。 默认值为 2。                                                                                                                                  |
+| --post-create-command     | 字符串型    | 否       | 安装完成后要在 Linux 发行版内部执行的命令。 应将此命令格式化为一个字词，或将其括在引号中。 默认无命令。  |
 
 ### <a name="default-behavior"></a>默认行为
 
-此工具的默认行为 `wsl-install` 是 "错误"，因为 `input` 需要安装发行版属性。
+`wsl-install` 工具的默认行为出错，因为需要 `input` 属性，即要安装的发行版。
 
 ## <a name="example-usage"></a>用法示例
-下面是如何使用运行的示例 `wsl-install` `.devinit.json` 。
+下面是有关如何使用 `.devinit.json` 运行 `wsl-install` 的示例。
 
-#### <a name="devinitjson-that-will-install-ubuntu-2004"></a>devinit 将安装 Ubuntu 20.04：
+#### <a name="devinitjson-that-will-install-ubuntu-2004"></a>将安装 Ubuntu 20.04 的 .devinit.json：
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
@@ -84,7 +84,7 @@ AppX 应用程序分发包的 URI (`.appx`) 包含要部署的发行版。 该 U
 }
 ```
 
-#### <a name="devinitjson-that-will-install-ubuntu-2004-and-perform-a-post-create-command"></a>devinit 将安装 Ubuntu 20.04 并执行 post create 命令：
+#### <a name="devinitjson-that-will-install-ubuntu-2004-and-perform-a-post-create-command"></a>将安装 Ubuntu 20.04 并执行创建后命令的 .devinit.json：
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
@@ -98,7 +98,7 @@ AppX 应用程序分发包的 URI (`.appx`) 包含要部署的发行版。 该 U
 }
 ```
 
-#### <a name="devinitjson-that-will-install-ubuntu-2004-and-perform-a-post-create-command-that-configures-the-packages-listed"></a>devinit 将安装 Ubuntu 20.04 并执行 post create 命令，该命令用于配置列出的包：
+#### <a name="devinitjson-that-will-install-ubuntu-2004-and-perform-a-post-create-command-that-configures-the-packages-listed"></a>将安装 Ubuntu 20.04 并执行创建后命令（用于配置列出的包）的 .devinit.json：
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",

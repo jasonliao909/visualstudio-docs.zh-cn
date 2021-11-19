@@ -1,6 +1,6 @@
 ---
-title: 可视化Visual Studio建模 SDK 支持的版本
-description: 了解Visual Studio和部署环境中 DSL 工具支持的版本。
+title: 可视化和建模 SDK 支持的 Visual Studio 版本
+description: 了解在创作和部署环境中支持 DSL 工具的 Visual Studio 版本。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 11/04/2016
@@ -22,7 +22,7 @@ ms.locfileid: "126663887"
 ---
 # <a name="supported-visual-studio-editions-for-visualization--modeling-sdk"></a>可视化和建模 SDK 支持的 Visual Studio 版本
 
-以下是创作和Visual Studio环境中支持的版本 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 列表。 有关这些版本的信息，请参阅 Microsoft Visual Studio[开发人员中心](https://visualstudio.microsoft.com/)。
+下面是在创作和部署环境中支持 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 的 Visual Studio 版本的列表。 有关这些版本的详细信息，请参阅 Microsoft Visual Studio [开发人员中心](https://visualstudio.microsoft.com/)。
 
 ## <a name="authoring-edition"></a>创作版
 
@@ -38,7 +38,7 @@ ms.locfileid: "126663887"
 
 ## <a name="deployment-editions"></a>部署版
 
-[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 支持以下配置来部署你构建的特定于域的语言：
+[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 支持以下用于部署生成的域特定语言的配置：
 
 - Visual Studio Enterprise
 
@@ -49,7 +49,7 @@ ms.locfileid: "126663887"
 - Visual Studio Shell（独立模式）可再发行组件包
 
 > [!NOTE]
-> 若要使 DSL 能够在 Shell 产品上运行，必须在扩展清单中设置" **支持的 VS Edition"** 字段。 有关详细信息，请参阅[部署域特定语言解决方案](msi-and-vsix-deployment-of-a-dsl.md)。
+> 为使 DSL 能够在 Shell 产品上运行，必须在“扩展清单”中设置“支持的 VS 版本”字段。 有关详细信息，请参阅[部署域特定语言解决方案](msi-and-vsix-deployment-of-a-dsl.md)。
 
 ## <a name="see-also"></a>另请参阅
 

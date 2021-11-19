@@ -31,21 +31,21 @@ IDiaEnumLineNumbers : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
-下表显示了 的方法 `IDiaEnumLineNumbers` 。
+下表显示了 `IDiaEnumLineNumbers` 方法。
 
 |方法|说明|
 |------------|-----------------|
-|[IDiaEnumLineNumbers::get__NewEnum](../../debugger/debug-interface-access/idiaenumlinenumbers-get-newenum.md)|检索此 [枚举数的 IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) 接口版本。|
-|[IDiaEnumLineNumbers::get_Count](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md)|检索行号数。|
+|[IDiaEnumLineNumbers::get__NewEnum](../../debugger/debug-interface-access/idiaenumlinenumbers-get-newenum.md)|检索该枚举器的 [IEnumVARIANT Interface](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) 版本。|
+|[IDiaEnumLineNumbers::get_Count](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md)|检索行号的数量。|
 |[IDiaEnumLineNumbers::Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)|通过索引检索行号。|
-|[IDiaEnumLineNumbers::Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md)|检索枚举序列中的指定行号数。|
-|[IDiaEnumLineNumbers::Skip](../../debugger/debug-interface-access/idiaenumlinenumbers-skip.md)|跳过枚举序列中的指定行号数。|
-|[IDiaEnumLineNumbers::Reset](../../debugger/debug-interface-access/idiaenumlinenumbers-reset.md)|将枚举序列重置为开头。|
+|[IDiaEnumLineNumbers::Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md)|检索枚举序列中指定数目的行号。|
+|[IDiaEnumLineNumbers::Skip](../../debugger/debug-interface-access/idiaenumlinenumbers-skip.md)|跳过枚举序列中指定数目的行号。|
+|[IDiaEnumLineNumbers::Reset](../../debugger/debug-interface-access/idiaenumlinenumbers-reset.md)|将枚举序列重置到开头。|
 |[IDiaEnumLineNumbers::Clone](../../debugger/debug-interface-access/idiaenumlinenumbers-clone.md)|创建一个枚举器，其中包含与当前枚举器相同的枚举状态。|
 
 ## <a name="remarks"></a>备注
 
-## <a name="notes-for-callers"></a>调用方说明
+## <a name="notes-for-callers"></a>对调用者的说明
 此接口通过调用 [IDiaSession](../../debugger/debug-interface-access/idiasession.md) 接口中的以下方法之一获得：
 
 - [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)
@@ -59,7 +59,7 @@ IDiaEnumLineNumbers : IUnknown
 - [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)
 
 ## <a name="example"></a>示例
-此示例演示如何从会话 `IDiaEnumLineNumbers` 获取 接口。 在这种情况下，该示例演示如何获取由 (表示的函数的行 `pSymbol`) 。 有关使用行号的更完整示例，请参阅 [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) 接口。
+此示例演示如何从会话获取 `IDiaEnumLineNumbers` 接口。 在这种情况下，该示例演示如何获取函数（用 `pSymbol` 表示）的行号枚举。 有关使用行号的更完整示例，请参阅 [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) 接口。
 
 ```C++
 void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )

@@ -1,5 +1,5 @@
 ---
-description: 检索指定编译和中包含指定地址的行。
+description: 检索包含指定地址的指定编译单位中的行。
 title: IDiaSession::findLinesByAddr | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127831890"
 ---
 # <a name="idiasessionfindlinesbyaddr"></a>IDiaSession::findLinesByAddr
-检索指定编译和中包含指定地址的行。
+检索包含指定地址的指定编译单位中的行。
 
 ## <a name="syntax"></a>语法
 
@@ -38,22 +38,22 @@ HRESULT findLinesByAddr (
 #### <a name="parameters"></a>参数
 `seg`
 
-[in]指定特定地址的节组件。
+[in] 指定特定地址的节组件。
 
 `offset`
 
-[in]指定特定地址的偏移部分。
+[in] 指定特定地址的偏移量组件。
 
 `length`
 
-[in]指定此查询要涵盖的地址范围的字节数。
+[in] 指定此查询要涵盖的地址范围的字节数。
 
 `ppResult`
 
-[out]返回一 [个 IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) 对象，该对象包含涵盖指定地址范围的所有行号的列表。
+[out] 返回一个 [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) 对象，该对象包含涵盖指定地址范围的所有行号的列表。
 
 ## <a name="return-value"></a>返回值
-如果成功，则返回 `S_OK` ;否则返回错误代码。
+如果成功，则返回 `S_OK`；否则，返回错误代码。
 
 ## <a name="example"></a>示例
 此示例演示一个函数，该函数使用函数的地址和长度获取函数中包含的所有行号。

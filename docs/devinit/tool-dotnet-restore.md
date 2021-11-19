@@ -21,19 +21,19 @@ ms.locfileid: "127832998"
 # <a name="dotnet-restore"></a>dotnet-restore
 
 > [!IMPORTANT]
-> 从 2021 年 4 月 12 日开始，将不再支持从 Visual Studio 2019 连接到 GitHub Codespaces，此个人预览版已结束。 我们专注于为云支持的内部循环和 VDI 解决方案提供不断发展的体验，这些解决方案针对一组广泛的Visual Studio工作负载进行优化。 作为此和 `devinit` 关联工具的一部分，将不再可用。 建议参与 Visual Studio 的开发人员社区论坛，了解未来要推出的预览版和路线图信息。
+> 从 2021 年 4 月 12 日开始，将不再支持从 Visual Studio 2019 连接到 GitHub Codespaces，此个人预览版已结束。 我们的工作重点是改进云支持型内部循环和针对多种 Visual Studio 工作负载优化的 VDI 解决方案的体验。 在此期间，`devinit` 和关联工具将不再可用。 建议参与 Visual Studio 的开发人员社区论坛，了解未来要推出的预览版和路线图信息。
 
-`dotnet-restore`该工具还原项目文件中指定的依赖项和特定于项目的工具。 在此处详细了解[dotnet restore。](/dotnet/core/tools/dotnet-restore)
+`dotnet-restore` 工具还原依赖项以及在项目文件中指定的特定于项目的工具。 有关 dotnet 还原的详细信息，请参阅[此处](/dotnet/core/tools/dotnet-restore)。
 
 ## <a name="usage"></a>使用情况
 
-如果省略 `input` 和 属性或属性 `additionalOptions` 为空，该工具将遵循 [下面详述](#default-behavior) 的默认行为。
+如果 `input` 和 `additionalOptions` 属性省略或为空，则该工具将遵循下面详述的[默认](#default-behavior)行为。
 
 | 名称                                             | 类型   | 必须 | 值                                                                                |
 |--------------------------------------------------|--------|----------|--------------------------------------------------------------------------------------|
 | **注释**                                     | 字符串型 | 否       | 可选注释属性。 未使用。                                                |
-| [**输入**](#input)                              | 字符串型 | 否       | 要还原的项目/解决方案文件的路径。 有关详细信息 [，](#input) 请参阅下面的输入。 |
-| [**additionalOptions**](#additional-options)     | 字符串型 | 否       | 有关详细信息 [，请参阅](#additional-options) 下面的其他选项。                     |
+| [input](#input)                              | 字符串型 | 否       | 要还原的项目/解决方案文件的路径。 有关详细信息，请参阅下方的 [input](#input)。 |
+| [**additionalOptions**](#additional-options)     | 字符串型 | 否       | 有关详细信息，请参阅下方的[其他选项](#additional-options)。                     |
 
 ### <a name="input"></a>输入
 
@@ -41,14 +41,14 @@ ms.locfileid: "127832998"
 
 ### <a name="additional-options"></a>附加选项
 
-其他选项将像现在一样传递到 dotnet restore 命令。
+其他选项按原样传递到 dotnet 还原命令。
 
 ### <a name="default-behavior"></a>默认行为
 
-该工具的默认 `dotnet-restore` 行为是在当前 `dotnet restore` 目录中运行。
+`dotnet-restore` 工具的默认行为是在当前目录中运行 `dotnet restore`。
 
 ## <a name="example-usage"></a>用法示例
-下面是如何使用 运行 `dotnet-restore` 的示例 `.devinit.json` 。
+下面是有关如何使用 `.devinit.json` 运行 `dotnet-restore` 的示例。
 
 #### <a name="devinitjson-that-will-restore-dependencies-and-tools-of-a-project"></a>将还原项目的依赖项和工具的 .devinit.json：
 ```json

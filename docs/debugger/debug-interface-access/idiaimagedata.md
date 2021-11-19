@@ -1,5 +1,5 @@
 ---
-description: 公开模块或图像的基位置和内存偏移量的详细信息。
+description: 公开模块或映像的基位置和内存偏移量的详细信息。
 title: IDiaImageData | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127832091"
 ---
 # <a name="idiaimagedata"></a>IDiaImageData
-公开模块或图像的基位置和内存偏移量的详细信息。
+公开模块或映像的基位置和内存偏移量的详细信息。
 
 ## <a name="syntax"></a>语法
 
@@ -31,22 +31,22 @@ IDiaImageData : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
-下表显示了 的方法 `IDiaImageData` 。
+下表显示了 `IDiaImageData` 方法。
 
 |方法|说明|
 |------------|-----------------|
 |[IDiaImageData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|检索模块虚拟内存中相对于应用程序的位置。|
 |[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|检索映像的虚拟内存中的位置。|
-|[IDiaImageData::get_imageBase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|检索图像应基于的内存位置。|
+|[IDiaImageData::get_imageBase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|检索映像应基于的内存位置。|
 
 ## <a name="remarks"></a>备注
-某些调试 (XDATA、PDATA) 包含同样存储在映像中的数据的副本。 可以查询接口的这些流数据 `IDiaImageData` 对象。 有关详细信息，请参阅本主题中的"调用方说明"部分。
+某些调试流（XDATA、PDATA）包含同样存储在映像中的数据的副本。 可以针对 `IDiaImageData` 接口查询这些流数据对象。 有关详细信息，请参阅本主题中的“对调用者的说明”部分。
 
-## <a name="notes-for-callers"></a>调用方说明
-通过调用 `QueryInterface` [IDiaEnumDebugStreamData 对象来获取此](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) 接口。 请注意，并非所有调试流都支持 `IDiaImageData` 接口。 例如，目前只有 XDATA 和 PDATA 流支持 `IDiaImageData` 接口。
+## <a name="notes-for-callers"></a>对调用者的说明
+通过在 [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) 对象上调用 `QueryInterface` 来获取此接口。 请注意，并非所有调试流都支持 `IDiaImageData` 接口。 例如，目前只有 XDATA 和 PDATA 流支持 `IDiaImageData` 接口。
 
 ## <a name="example"></a>示例
-此示例在所有调试流中搜索支持 接口的任何 `IDiaImageData` 流。 如果找到此类流，则会显示有关该流的一些信息。
+本示例在所有调试流中搜索支持 `IDiaImageData` 接口的任何流。 如果找到此类流，则会显示有关该流的一些信息。
 
 ```C++
 void ShowImageData(IDiaSession *pSession)

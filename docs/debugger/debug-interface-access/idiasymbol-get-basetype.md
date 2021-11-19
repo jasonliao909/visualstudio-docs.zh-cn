@@ -35,16 +35,16 @@ HRESULT get_baseType (
 #### <a name="parameters"></a>参数
 `pRetVal`
 
-[out]从 [BasicType 枚举枚举返回](../../debugger/debug-interface-access/basictype.md) 一个值，该值指定符号的基类型。
+[out] 从 [BasicType 枚举](../../debugger/debug-interface-access/basictype.md)返回一个值，该值指定符号的基类型。
 
 ## <a name="return-value"></a>返回值
-如果成功，则返回 `S_OK` ;否则返回 `S_FALSE` 或错误代码。
+如果成功，则返回 `S_OK`；否则返回 `S_FALSE` 或错误代码。
 
 > [!NOTE]
-> 返回值 `S_FALSE` 表示 属性不可用于 符号。
+> 返回值 `S_FALSE` 意味着该属性对符号不可用。
 
 ## <a name="remarks"></a>备注
-符号的基本类型可以通过先获取符号的类型，然后询问基类型的返回类型来确定。 请注意，某些符号可能没有基类型，例如结构名称。
+可以先获取符号的类型，然后询问基本类型的返回类型，确定符号的基本类型。 请注意，某些符号可能没有基类型，例如结构名称。
 
 ## <a name="example"></a>示例
 

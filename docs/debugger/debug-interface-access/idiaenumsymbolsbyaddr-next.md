@@ -1,5 +1,5 @@
 ---
-description: 按地址检索下一个符号。
+description: 按地址顺序检索后面的符号。
 title: IDiaEnumSymbolsByAddr::Next | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127832166"
 ---
 # <a name="idiaenumsymbolsbyaddrnext"></a>IDiaEnumSymbolsByAddr::Next
-按地址检索下一个符号。
+按地址顺序检索后面的符号。
 
 ## <a name="syntax"></a>语法
 
@@ -37,21 +37,21 @@ HRESULT Next (
 #### <a name="parameters"></a>参数
  celt
 
-中要检索的枚举器中的符号数。
+[in] 要检索的枚举器中的符号数。
 
  rgelt
 
-弄要使用表示所需符号的 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 对象填充的数组。
+[out] 要用表示所需符号的 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 对象填充的数组。
 
  pceltFetched
 
-弄返回提取的枚举器中的符号数。
+[out] 返回提取的枚举器中的符号数。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK`。 `S_FALSE`如果没有其他符号，则返回。 否则，返回错误代码。
+ 如果成功，则返回 `S_OK`。 如果没有更多符号，则返回 `S_FALSE`。 否则，返回错误代码。
 
 ## <a name="remarks"></a>备注
- 此方法按提取的元素数更新枚举器的位置。
+ 此方法按提取的元素数更新枚举器位置。
 
 ## <a name="see-also"></a>另请参阅
 - [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)

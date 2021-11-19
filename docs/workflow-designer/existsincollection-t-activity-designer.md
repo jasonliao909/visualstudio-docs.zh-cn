@@ -1,6 +1,6 @@
 ---
-title: ExistsInCollection &lt; T &gt; 活动设计器
-description: 了解如何使用 工作流设计器 中的 <T> ExistsInCollection 活动设计器来创建和配置 ExistsInCollection <T> 活动。
+title: ExistsInCollection&lt;T&gt; 活动设计器
+description: 了解如何在工作流设计器中使用 ExistsInCollection <T> 活动设计器创建和配置 ExistsInCollection <T> 活动。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -22,28 +22,28 @@ ms.locfileid: "126665199"
 ---
 # <a name="existsincollectiont-activity-designer"></a>ExistsInCollection\<T> 活动设计器
 
-**\<T> ExistsInCollection** 活动设计器用于创建和配置 <xref:System.Activities.Statements.ExistsInCollection%601> 活动。
+ExistsInCollection\<T> 活动设计器用于创建和配置 <xref:System.Activities.Statements.ExistsInCollection%601> 活动。
 
-## <a name="the-existsincollectiont-activity"></a>ExistsInCollection \<T> 活动
+## <a name="the-existsincollectiont-activity"></a>ExistsInCollection\<T> 活动
 
 <xref:System.Activities.Statements.ExistsInCollection%601> 活动确定特定集合中是否存在指定项。
 
-### <a name="using-the-existsincollectiont-activity-designer"></a>使用 ExistsInCollection \<T> 活动设计器
+### <a name="using-the-existsincollectiont-activity-designer"></a>使用 ExistsInCollection\<T> 活动设计器
 
-   **ExistsInCollection \<T>** 活动设计器可以在"工具箱"的"集合"类别中找到，单击"工具箱"的"工具箱"选项卡即可工作流设计器。 或者，从"视图 **"菜单中** 选择"**工具箱"，** 或按 **Ctrl** + **Alt** + **X**。
+可以在“工具箱”的“集合”类别（通过单击工作流设计器的“工具箱”选项卡来访问）中找到 ExistsInCollection\<T> 活动设计器。 或者，从“视图”菜单栏中选择“工具箱”或按 Ctrl+Alt+X。
 
-**ExistsInCollection \<T>** 活动设计器可以从"工具箱"拖动并拖放到工作流设计器图面上，无论活动通常位于何处，例如位于 内 <xref:System.Activities.Statements.Sequence> 。 这会创建一 <xref:System.Activities.Statements.ExistsInCollection%601> 个活动，其默认值为 <xref:System.Activities.Activity.DisplayName%2A> ExistsInCollection<Int32 \> 。 *(，TypeArgument* 默认为 **Int32**。 可以在属性 grid.) 在 <xref:System.Activities.Activity.DisplayName%2A> **ExistsInCollection<\> T** 活动设计器的标头或属性网格的 **DisplayName** 框中编辑该值。 其他属性必须在属性网格上编辑。
+可以将 ExistsInCollection\<T> 活动设计器从“工具箱”拖放到工作流设计器图面上通常放置活动的任何位置，如 <xref:System.Activities.Statements.Sequence> 内。 这将创建具有 ExistsInCollection<Int32\> 的默认 <xref:System.Activities.Activity.DisplayName%2A> 的 <xref:System.Activities.Statements.ExistsInCollection%601> 活动。 （默认情况下，TypeArgument 为 Int32。 它可以在属性网格中更改。）可以在 ExistsInCollection<T\> 活动设计器的标头中或在属性网格的“DisplayName”框中编辑 <xref:System.Activities.Activity.DisplayName%2A> 值。 其他属性必须在属性网格上编辑。
 
-### <a name="the-existsincollectiont-properties"></a>ExistsInCollection \<T> 属性
+### <a name="the-existsincollectiont-properties"></a>ExistsInCollection\<T> 属性
 
-下表显示了属性 <xref:System.Activities.Statements.ExistsInCollection%601> ，并介绍了如何在设计器中使用这些属性：
+下表列出 <xref:System.Activities.Statements.ExistsInCollection%601> 属性并说明如何在设计器中使用它们：
 
 |属性名称|必选|使用情况|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|错误|<xref:System.Activities.Statements.ExistsInCollection%601> 活动的友好名称。 默认值为 ExistsInCollection<Int32 \> 。 虽然 <xref:System.Activities.Activity.DisplayName%2A> 值不是绝对必需的，但最好使用该属性值。|
-|<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|True|集合 中要查找的项 \<T> 。 此项的类型为 *T*，类型为 *TypeArgument*。 若要指定项，请在属性网格中键入 Visual Basic 表达式。|
-|<xref:System.Activities.Statements.ExistsInCollection%601.Collection%2A>|True|要检查该项是否存在的集合。 此集合的类型为 **ICollection<TypeArgument \> 。** 若要指定集合，请在属性网格中键入 Visual Basic 表达式。|
-|*TypeArgument*|True|包含在 <xref:System.Collections.Generic.ICollection%601> 中的项的类型 T。 默认情况下，此 *TypeArgument* 类型设置为 **Int32**。 若要更改类型，请更改属性网格中组合框中 *TypeArgument* 的值。|
+|<xref:System.Activities.Activity.DisplayName%2A>|错误|<xref:System.Activities.Statements.ExistsInCollection%601> 活动的友好名称。 默认值为 ExistsInCollection<Int32\>。 虽然 <xref:System.Activities.Activity.DisplayName%2A> 值不是绝对必需的，但最好使用该属性值。|
+|<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|True|要在 Collection\<T> 中查找的项。 此项的类型为 T，属于类型 TypeArgument。 若要指定项，请在属性网格中键入 Visual Basic 表达式。|
+|<xref:System.Activities.Statements.ExistsInCollection%601.Collection%2A>|True|要检查该项是否存在的集合。 此集合的类型为 ICollection<TypeArgument\>。 若要指定集合，请在属性网格中键入 Visual Basic 表达式。|
+|TypeArgument|True|包含在 <xref:System.Collections.Generic.ICollection%601> 中的项的类型 T。 默认情况下，此 TypeArgument 类型设置为“Int32”。 若要更改类型，请在属性网格的组合框中更改 TypeArgument 的值。|
 |<xref:System.Activities.Activity%601.Result%2A>|错误|一个指示集合中是否存在指定项的值。 若要指定要绑定到结果的变量，请在属性网格中键入 Visual Basic 变量。|
 
 ## <a name="see-also"></a>另请参阅

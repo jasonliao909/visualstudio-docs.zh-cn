@@ -1,5 +1,5 @@
 ---
-description: 从可执行文件的指定偏移量开始读取指定的字节数。
+description: 从可执行文件的指定偏移量开始读取指定数量的字节。
 title: IDiaReadExeAtOffsetCallback::ReadExecutableAt | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127832005"
 ---
 # <a name="idiareadexeatoffsetcallbackreadexecutableat"></a>IDiaReadExeAtOffsetCallback::ReadExecutableAt
-从可执行文件的指定偏移量开始读取指定的字节数。
+从可执行文件的指定偏移量开始读取指定数量的字节。
 
 ## <a name="syntax"></a>语法
 
@@ -38,22 +38,22 @@ HRESULT ReadExecutableAt (
 #### <a name="parameters"></a>参数
  fileOffset
 
-中要开始读取的可执行文件中的偏移量。
+[in] 要开始读取的可执行文件中的偏移量。
 
  cbData
 
-中要读取的字节数。
+[in] 要读取的字节数。
 
  pcbData
 
-弄返回读取的字节数。
+[out] 返回读取的字节数。
 
  data[]
 
-[in，out]使用从文件中读取的字节填充的数组。
+[in, out] 使用从文件中读取的字节填充的数组。
 
 ## <a name="remarks"></a>备注
- DIA 支持代码调用此方法，通过使用绝对文件偏移量从可执行文件加载数据字节。 调用此方法是为了支持 [IDiaDataSource：： loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) 方法。
+ DIA 支持代码调用此方法，通过使用绝对文件偏移量从可执行文件加载数据字节。 调用此方法是为了支持 [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) 方法。
 
 ## <a name="see-also"></a>另请参阅
 - [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)

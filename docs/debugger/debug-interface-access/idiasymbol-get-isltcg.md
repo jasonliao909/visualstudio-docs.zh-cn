@@ -1,5 +1,5 @@
 ---
-description: 检索一个标志，该标志指定 Compiland) 是否已与链接器开关 /LTCG (Link-time Code Generation)  (/cpp/build/reference/ltcg-link-time-code-generation) 链接，这有助于整个程序优化。
+description: 检索一个标记，该标记指定 Compiland) 是否已与链接器开关 /LTCG（链接时间代码生成）(/cpp/build/reference/ltcg-link-time-code-generation) 相链接，而链接器开关 /LTCG 有助于整个程序优化。
 title: IDiaSymbol::get_isLTCG | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127832656"
 ---
 # <a name="idiasymbolget_isltcg"></a>IDiaSymbol::get_isLTCG
-检索一个标志，该标志指定 [Compiland](../../debugger/debug-interface-access/compiland.md) 是否已与链接器开关 [/LTCG ](/cpp/build/reference/ltcg-link-time-code-generation) (链接时代码生成) 链接，这有助于优化整个程序。 此开关仅适用于托管代码。
+检索一个标记，该标记指定 [Compiland](../../debugger/debug-interface-access/compiland.md) 是否已与链接器开关 [/LTCG（链接时间代码生成）](/cpp/build/reference/ltcg-link-time-code-generation)相链接，而 /LTCG 有助于整个程序优化。 此开关仅适用于托管代码。
 
 ## <a name="syntax"></a>语法
 
@@ -35,13 +35,13 @@ HRESULT get_iSLTCG(
 #### <a name="parameters"></a>参数
  pFlag
 
-[out]如果 与 /LTCG 链接器开关链接 `TRUE` `compiland` ，则返回 ;否则返回 `FALSE` 。
+[out] 如果 `compiland` 与 /LTCG 链接器开关链接，则返回 `TRUE`；否则，返回 `FALSE`。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回 `S_FALSE` 或错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回 `S_FALSE` 或错误代码。
 
 > [!NOTE]
-> 返回值 `S_FALSE` 表示 属性不可用于 符号。
+> 返回值 `S_FALSE` 意味着该属性对符号不可用。
 
 ## <a name="requirements"></a>要求
 

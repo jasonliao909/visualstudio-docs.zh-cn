@@ -1,5 +1,5 @@
 ---
-description: 检索指定编译和中的行，这些行包含 RVA (的相对) 。
+description: 检索包含指定相对虚拟地址 (RVA) 的指定编译单位中的行。
 title: IDiaSession::findLinesByRVA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127831891"
 ---
 # <a name="idiasessionfindlinesbyrva"></a>IDiaSession::findLinesByRVA
-检索指定编译和中的行，这些行包含 RVA (的相对) 。
+检索包含指定相对虚拟地址 (RVA) 的指定编译单位中的行。
 
 ## <a name="syntax"></a>语法
 
@@ -37,18 +37,18 @@ HRESULT findLinesByRVA (
 #### <a name="parameters"></a>参数
 `rva`
 
-[in]将地址指定为 RVA。
+[in] 将地址指定为 RVA。
 
 `length`
 
-[in]指定此查询要涵盖的地址范围的字节数。
+[in] 指定此查询要涵盖的地址范围的字节数。
 
 `ppResult`
 
-[out]返回一 [个 IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) 对象，该对象包含涵盖指定地址范围的所有行号的列表。
+[out] 返回一个 [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) 对象，该对象包含涵盖指定地址范围的所有行号的列表。
 
 ## <a name="return-value"></a>返回值
-如果成功，则返回 `S_OK` ;否则返回错误代码。
+如果成功，则返回 `S_OK`；否则，返回错误代码。
 
 ## <a name="example"></a>示例
 此示例演示一个函数，该函数使用函数的相对虚拟地址和长度获取指定函数中包含的所有行号。

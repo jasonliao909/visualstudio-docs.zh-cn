@@ -1,5 +1,5 @@
 ---
-description: 检索包含指向参数的基指针的寄存器的 ID。
+description: 检索保留指向参数的基指针的寄存器的 ID。
 title: IDiaSymbol::get_paramBasePointerRegisterId | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127832455"
 ---
 # <a name="idiasymbolget_parambasepointerregisterid"></a>IDiaSymbol::get_paramBasePointerRegisterId
-检索包含指向参数的基指针的寄存器的 ID。 当 [SymTagEnum 枚举设置为](../../debugger/debug-interface-access/symtagenum.md) 时，请使用 `SymTagFunction` 。
+检索保留指向参数的基指针的寄存器的 ID。 在 [SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)设置为 `SymTagFunction` 时使用。
 
 ## <a name="syntax"></a>语法
 
@@ -35,13 +35,13 @@ HRESULT get_paramBasePointerRegisterId (
 #### <a name="parameters"></a>参数
  `pRetVal`
 
-[out]返回寄存器的 ID，该寄存器包含指向参数的基指针。
+[out] 返回保留指向参数的基指针的寄存器的 ID。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回 `S_FALSE` 或错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回 `S_FALSE` 或错误代码。
 
 > [!NOTE]
-> 返回值 `S_FALSE` 表示属性不可用于符号。
+> 返回值 `S_FALSE` 意味着该属性对符号不可用。
 
 ## <a name="remarks"></a>备注
 

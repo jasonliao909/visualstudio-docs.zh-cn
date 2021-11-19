@@ -1,6 +1,6 @@
 ---
 description: 检索对符号的词法父级的引用。
-title: IDiaSymbol：：get_lexicalParent |Microsoft Docs
+title: IDiaSymbol::get_lexicalParent | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -35,18 +35,18 @@ HRESULT get_lexicalParent (
 #### <a name="parameters"></a>参数
  `pRetVal`
 
-[out]返回表示符号的词法父级的 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 对象。
+[out] 返回表示符号的词法父级的 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 对象。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则 `S_FALSE` 返回 或错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回 `S_FALSE` 或错误代码。
 
 > [!NOTE]
-> 返回值 `S_FALSE` 表示属性不可用于符号。
+> 返回值 `S_FALSE` 意味着该属性对符号不可用。
 
 ## <a name="remarks"></a>备注
  符号的词法父级是封闭函数或模块。 例如，函数参数或局部变量的词法父级是函数本身，而函数的词法父级是定义函数的模块。
 
- 可能显示为词法父项的符号记录在符号类型的词 [法层次结构中](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)。
+ [符号类型的词法层次结构](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)中记录了可以显示为词法父级的可能符号。
 
 ## <a name="see-also"></a>另请参阅
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

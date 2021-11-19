@@ -101,7 +101,7 @@ env:
 
 ## <a name="add-a-service-dependency"></a>添加服务依赖项
 
-您可以使用通用依赖项字段指定服务依赖项（如数据库或缓存），这与声明服务的方式类似。 如果正在调试的服务需要连接到群集上未运行的资源，请在此处指定依赖项。 声明一个依赖项，如以下示例中所示：
+你可以使用通用依赖项字段指定服务依赖项（如数据库或缓存），这与声明服务的方式类似。 如果你正在调试的服务需要连接到群集上未运行的资源，请在此处指定依赖项。 声明一个依赖项，如以下示例中所示：
 
 ```yaml
 version: 0.1
@@ -111,9 +111,9 @@ env:
     value: $(externalendpoints:server-bridgetest123.database.windows.net:1433)
 ```
 
-在依赖项的示例) 中提供主机 DNS 名称 (`server-bridgetest13.database.windows.net`) 和端口 (1433。
+为你的依赖项提供主机 DNS 名称（本例中为 `server-bridgetest13.database.windows.net`）和端口（本例中为 1433）。
 
-当指定依赖项（如数据库）时，重定向身份验证模型将不起作用。 例如，对于 Azure SQL 数据库，应将连接策略设置为 "Proxy" (而不是 "重定向" 或 "默认" ) 。 
+当你指定依赖项（如数据库）时，重定向身份验证模型将不起作用。 例如，对于 Azure SQL 数据库，应将连接策略设置为“代理”（而不是“重定向”或“默认”）。 
 
 ## <a name="example-kuberneteslocalprocessconfigyaml"></a>示例 KubernetesLocalProcessConfig.yaml
 

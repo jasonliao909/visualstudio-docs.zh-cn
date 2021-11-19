@@ -1,6 +1,6 @@
 ---
-description: 给定相应的标记值，此方法返回指定相对虚拟地址上指定父 Accelerator 存根函数中包含的符号的枚举。
-title: IDiaSession：：findSymbolsByRVAForAcceleratorPointerTag |Microsoft Docs
+description: 给定相应的标记值后，此方法将在指定的相对虚拟地址返回指定父级 Accelerator 存根函数中包含的符号的枚举。
+title: IDiaSession::findSymbolsByRVAForAcceleratorPointerTag | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -20,7 +20,7 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127831874"
 ---
 # <a name="idiasessionfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSession::findSymbolsByRVAForAcceleratorPointerTag
-给定相应的标记值，此方法返回指定相对虚拟地址上指定父 Accelerator 存根函数中包含的符号的枚举。
+给定相应的标记值后，此方法将在指定的相对虚拟地址返回指定父级 Accelerator 存根函数中包含的符号的枚举。
 
 ## <a name="syntax"></a>语法
 
@@ -36,25 +36,25 @@ HRESULT findSymbolsByRVAForAcceleratorPointerTag (
 #### <a name="parameters"></a>参数
  `parent`
 
-[in]一 `IDiaSymbol` 个 ，它对应于要搜索的 Accelerator 存根函数。
+[in] 对应于要搜索的 Accelerator 存根函数的 `IDiaSymbol`。
 
  `tagValue`
 
-[in]指针标记值。
+[in] 指针标记值。
 
  `rva`
 
-[in]相对虚拟地址。
+[in] 相对虚拟地址。
 
  `ppResult`
 
-[out]指向使用 `IDiaEnumSymbols` 结果初始化的接口指针的指针。
+[out] 指向使用结果初始化的 `IDiaEnumSymbols` 接口指针的指针。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回错误代码。
 
 ## <a name="remarks"></a>备注
- 仅在与 Accelerator 存根 `IDiaSymbol` 函数对应的接口上调用此方法。
+ 仅在对应于 Accelerator 存根函数的 `IDiaSymbol` 接口上调用此方法。
 
 ## <a name="see-also"></a>另请参阅
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

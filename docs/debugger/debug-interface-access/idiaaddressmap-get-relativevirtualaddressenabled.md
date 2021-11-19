@@ -1,5 +1,5 @@
 ---
-description: 指示是否启用了计算和使用 RVA (虚拟) 地址。
+description: 指示是否启用了相对虚拟地址 (RVA) 的计算与使用。
 title: IDiaAddressMap::get_relativeVirtualAddressEnabled | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127832349"
 ---
 # <a name="idiaaddressmapget_relativevirtualaddressenabled"></a>IDiaAddressMap::get_relativeVirtualAddressEnabled
-指示是否启用了计算和使用 RVA (虚拟) 地址。
+指示是否启用了相对虚拟地址 (RVA) 的计算与使用。
 
 ## <a name="syntax"></a>语法
 
@@ -35,15 +35,15 @@ HRESULT get_relativeVirtualAddressEnabled (
 #### <a name="parameters"></a>参数
  pRetVal
 
-[out]如果 `TRUE` 启用了 RVA 的计算，则返回 。
+[out] 如果启用了 RVA 的计算，则返回 `TRUE`。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回错误代码。
 
 ## <a name="remarks"></a>备注
- 如果最初从 PDB 文件加载了段，则启用 RVA。 可以通过调用 [IDiaAddressMap：:p ut_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md) 方法暂时禁用 RVA 的使用。
+ 如果最初已从 PDB 文件加载段，则将启用 RVA。 可以通过调用 [IDiaAddressMap::put_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md) 方法来暂时禁用 RVA 的使用。
 
- 此外，可以通过调用 [IDiaAddressMap：：set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) 方法，然后调用 方法来建立新的映像标头，以便使用新的映像标头使用 `put_relativeVirtualAddressEnabled` RVA。
+ 此外，可以通过调用 [IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) 方法，再调用 `put_relativeVirtualAddressEnabled` 方法来建立新的映像标头，以便使用新的映像标头来启用 RVA。
 
 ## <a name="see-also"></a>另请参阅
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)

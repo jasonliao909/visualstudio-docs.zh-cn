@@ -34,25 +34,25 @@ struct DiaAddressMapEntry {
 ```
 
 ## <a name="elements"></a>元素
-`rva` 映像 A 中 (RVA) 的相对虚拟地址。
+`rva` 映像 A 中的相对虚拟地址 (RVA)。
 
-`rvaTo` 相对虚拟地址 `rva` 将映射到映像 B 中的。
+`rvaTo` 相对虚拟地址 `rva` 映射到映像 B 中。
 
 ## <a name="remarks"></a>备注
-地址映射提供从一个图像布局到另一个 (B)  () 的转换。 `DiaAddressMapEntry`按定义地址映射的结构的数组 `rva` 。
+地址映射提供从一种映射布局 (A) 到另一种 (B) 的转换。 按 `rva` 排序的 `DiaAddressMapEntry` 结构数组定义了地址映射。
 
-若要将地址（ `addrA` 如中的图像 A）转换为地址， `addrB` 请在图像 B 中执行以下步骤：
+要将映像 A 中的地址 `addrA` 转换为映像 B 中的地址 `addrB`，请执行以下步骤：
 
-1. 在地图中搜索 `e` `rva` 小于或等于的条目 `addrA` 。
+1. 在地图上搜索条目 `e`，其中最大的 `rva` 小于或等于 `addrA`。
 
 2. 设置 `delta = addrA - e.rva`。
 
 3. 设置 `addrB = e.rvaTo + delta`。
 
-    结构的数组 `DiaAddressMapEntry` 将传递给 [IDiaAddressMap：： set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) 方法。
+    `DiaAddressMapEntry` 结构的数组传递给 [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) 方法。
 
 ## <a name="requirements"></a>要求
-标头： dia2
+标头：dia2.h
 
 ## <a name="see-also"></a>另请参阅
 - [枚举和结构](../../debugger/debug-interface-access/enumerations-and-structures.md)

@@ -42,28 +42,28 @@ enum DataKind {
 ```
 
 ## <a name="elements"></a>元素
-无法确定 DataIsUnknown 数据符号。
+无法确定 DataIsUnknown Data 符号。
 
-DataIsLocal 数据项是局部变量。
+DataIsLocal Data 项是一个局部变量。
 
-DataIsStaticLocal 数据项是静态局部变量。
+DataIsStaticLocal Data 项是一个静态的局部变量。
 
-DataIsParam 数据项是一个形参。
+DataIsParam Data 项是一个形参。
 
-DataIsObjectPtr 数据项是一个对象指针 `this` () 。
+DataIsObjectPtr Data 项是一个对象指针 (`this`)。
 
-DataIsFileStatic 数据项是文件范围的变量。
+DataIsFileStatic Data 项是一个文件范围的变量。
 
-DataIsGlobal 数据项是全局变量。
+DataIsGlobal Data 项是一个全局变量。
 
-DataIsMember 数据项是对象成员变量。
+DataIsMember Data 项是一个对象成员变量。
 
-DataIsStaticMember 数据项是类静态变量。
+DataIsStaticMember Data 项是一个类静态变量。
 
-DataIsConstant 数据项是一个常量值。
+DataIsConstant Data 项是一个常数值。
 
 ## <a name="remarks"></a>备注
-此枚举中的值由 [IDiaSymbol：：get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) 方法返回。
+此枚举中的值由 [IDiaSymbol::get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) 方法返回。
 
 ## <a name="requirements"></a>要求
 标头：cvconst.h

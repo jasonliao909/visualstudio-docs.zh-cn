@@ -1,5 +1,5 @@
 ---
-description: 提供对 DIA SDK 如何计算调试对象的虚拟和相对虚拟地址的控制。
+description: 提供对 DIA SDK 对调试对象的虚拟地址和相对虚拟地址的计算方式的控制。
 title: IDiaAddressMap | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127832340"
 ---
 # <a name="idiaaddressmap"></a>IDiaAddressMap
-提供对 DIA SDK 如何计算调试对象的虚拟和相对虚拟地址的控制。
+提供对 DIA SDK 对调试对象的虚拟地址和相对虚拟地址的计算方式的控制。
 
 ## <a name="syntax"></a>语法
 
@@ -31,31 +31,31 @@ IDiaAddressMap : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
- 下表显示的方法 `IDiaAddressMap` 。
+ 下表显示了 `IDiaAddressMap` 方法。
 
 |方法|说明|
 |------------|-----------------|
 |[IDiaAddressMap::get_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md)|指示是否已为特定会话建立地址映射。|
-|[IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)|指定是否应使用地址映射来转换符号地址。|
+|[IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)|指定是否应当使用地址映射来转换符号地址。|
 |[IDiaAddressMap::get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)|指示是否启用了相对虚拟地址的计算与使用。|
 |[IDiaAddressMap::put_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md)|允许客户端启用或禁用相对虚拟地址的计算。|
 |[IDiaAddressMap::get_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md)|检索当前图像的对齐方式。|
-|[IDiaAddressMap::put_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-put-imagealign.md)|设置图像的对齐方式。|
+|[IDiaAddressMap::put_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-put-imagealign.md)|设置图像对齐方式。|
 |[IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)|设置图像标头以支持相对虚拟地址的转换。|
-|[IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)|提供用于支持图像布局翻译的地址映射。|
+|[IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)|提供用于支持图像布局转换的地址映射。|
 
 ## <a name="remarks"></a>备注
- 此接口提供的控件封装在提供的两个数据集中：图像标头和地址映射。 大多数客户端使用 [IDiaDataSource：： loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) 方法查找图像的正确调试信息，并且方法通常可以发现所有必需的标头并映射数据本身。 但是，某些客户端实现专用处理和搜索数据。 此类客户端使用接口的方法 `IDiaAddressMap` 为 DIA SDK 提供搜索结果。
+ 此接口提供的控制封装在你提供的两个数据集中：图像标头和地址映射。 大多数客户端使用 [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) 方法查找图像的正确调试信息，并且该方法通常可以发现所有必需的标头和映射数据本身。 但是，某些客户端实现专门的数据处理和搜索。 此类客户端使用 `IDiaAddressMap` 接口方法为 DIA SDK 提供搜索结果。
 
-## <a name="notes-for-callers"></a>调用方说明
- 此接口可从 DIA 会话对象中获取。 客户端 `QueryInterface` 在 DIA 会话对象接口（通常为 [IDiaSession](../../debugger/debug-interface-access/idiasession.md)）上调用方法来检索 `IDiaAddressMap` 接口。
+## <a name="notes-for-callers"></a>对调用者的说明
+ 此接口可从 DIA 会话对象中获取。 客户端在 DIA 会话对象接口（通常为 [IDiaSession](../../debugger/debug-interface-access/idiasession.md)）上调用 `QueryInterface` 方法来检索 `IDiaAddressMap` 接口。
 
 ## <a name="requirements"></a>要求
- 标头： Dia2
+ 标头：Dia2.h
 
- 库： diaguids
+ 库：diaguids.lib
 
- DLL： msdia80.dll
+ DLL：msdia80.dll
 
 ## <a name="see-also"></a>另请参阅
 - [接口（调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

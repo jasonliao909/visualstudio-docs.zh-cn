@@ -1,6 +1,6 @@
 ---
-description: 检索一个值，该值指示函数是否已使用堆栈帧运行时错误检查进行编译。 这是 /RTCs 标志。
-title: IDiaSymbol：：get_isRTCs |Microsoft Docs
+description: 检索一个值，该值指示函数是否使用堆栈帧运行时错误检查进行编译。 这是 /RTC 标记。
+title: IDiaSymbol::get_isRTCs | Microsoft Docs
 ms.date: 04/27/2021
 ms.topic: reference
 dev_langs:
@@ -22,7 +22,7 @@ ms.locfileid: "127833010"
 ---
 # <a name="idiasymbolget_isrtcs"></a>IDiaSymbol::get_isRTCs
 
-返回一个值，该值指示函数是否已使用堆栈帧运行时错误检查进行编译。 这是 /RTCs 标志。
+返回一个值，该值指示函数是否使用堆栈帧运行时错误检查进行编译。 这是 /RTC 标记。
 
 ## <a name="syntax"></a>语法
 
@@ -36,18 +36,18 @@ HRESULT get_isRTCs (
 
  `pRetVal`
 
-[out]指向 BOOL 的指针，该指针指定函数是否使用堆栈帧运行时错误检查进行编译。
+[out] 指向 BOOL 的指针，该指针指定函数是否使用堆栈帧运行时错误检查进行编译。
 
 ## <a name="return-value"></a>返回值
 
- 如果成功，则返回 `S_OK` ;否则 `S_FALSE` 返回 或错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回 `S_FALSE` 或错误代码。
 
 > [!NOTE]
-> 返回值 `S_FALSE` 表示属性不可用于符号。
+> 返回值 `S_FALSE` 意味着该属性对符号不可用。
 
 ## <a name="remarks"></a>备注
 
-从 2019 版本 16.10 Visual Studio 2 开始支持此方法。
+从 Visual Studio 2019 版本 16.10 预览版 2 开始支持此方法。
 
 ## <a name="requirements"></a>要求
 

@@ -1,6 +1,6 @@
 ---
 description: 检索指定的记录。
-title: IDiaEnumDebugStreamData：：Item |Microsoft Docs
+title: IDiaEnumDebugStreamData::Item | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -38,22 +38,22 @@ HRESULT Item (
 #### <a name="parameters"></a>参数
  索引
 
-[in]要检索的记录的索引。 索引的范围为 0 到 `count` -1，其中 `count` 由[IDiaEnumDebugStreamData：：get_Count。](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)
+[in] 要检索的记录的索引。 索引在 0 到 `count`-1 范围内，其中 `count` 由 [IDiaEnumDebugStreamData::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md) 返回。
 
  cbData
 
-[in]数据缓冲区的大小（以字节为单位）。
+[in] 数据缓冲区的大小（以字节为单位）。
 
  pcbData
 
-[out]返回返回的字节数。 如果 `data` `NULL` 为 ， `pcbData` 则包含指定记录中可用数据的总字节数。
+[out] 返回字节数。 如果 `data` 为 `NULL`，则 `pcbData` 包含指定记录中可用数据的总字节数。
 
  data[]
 
-[out]用调试流记录数据填充的缓冲区。
+[out] 用调试流记录数据填充的缓冲区。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。 如果 `E_INVALIDARG` 参数在边界外，则返回无效 `index` 参数和 。
+ 如果成功，则返回 `S_OK`；否则，返回错误代码。 如果参数无效且 `index` 参数超出范围，则返回 `E_INVALIDARG`。
 
 ## <a name="see-also"></a>另请参阅
 - [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

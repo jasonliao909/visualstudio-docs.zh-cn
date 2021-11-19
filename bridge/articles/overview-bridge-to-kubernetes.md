@@ -24,7 +24,7 @@ Bridge to Kubernetes 可直接在开发计算机与群集之间创建连接，�
 
 Bridge to Kubernetes 可重定向已连接的 Kubernetes 群集与开发计算机之间的流量。 此流量重定向允许开发计算机上的代码与 Kubernetes 群集中运行的服务进行通信，就像它们位于同一个 Kubernetes 群集中一样。 Bridge to Kubernetes 还提供了一种方法来复制开发计算机中可用于 Kubernetes 群集中 pod 的环境变量和已装载的卷。 允许访问开发计算机上的环境变量和已装载卷，可以快速处理代码而无需手动复制这些依赖项。
 
-在 Visual Studio Code中，Bridge to Kubernetes支持所有语言，只要可以在本地运行它们。 在 Visual Studio 中，Bridge to Kubernetes支持 .NET Core;.NET Framework，因为它需要Windows节点支持，Bridge to Kubernetes不支持。
+在 Visual Studio Code 中，Bridge to Kubernetes 支持所有语言，只要可以在本地运行。 在 Visual Studio 中，Bridge to Kubernetes 支持 .NET Core，但不支持 .NET Framework，因为它需要 Windows 节点支持，而 Bridge to Kubernetes 没有。
 
 > [!WARNING]
 > Bridge to Kubernetes 仅适用于开发和测试场景。 它不适合用于生产群集或正在使用的实时服务，也不支持这样做。
@@ -33,7 +33,7 @@ Bridge to Kubernetes 可重定向已连接的 Kubernetes 群集与开发计算�
 
 ## <a name="using-bridge-to-kubernetes"></a>使用 Bridge to Kubernetes
 
-若要在 Visual Studio Bridge to Kubernetes 使用 Bridge to Kubernetes，需要安装 [Bridge to Kubernetes](https://aka.ms/bridge-to-k8s-vsc-extension)扩展的 VS Code，或者 [Visual Studio 2019][visual-studio]版本 16.7 预览版 4 或更大版本在 Windows 10 上运行，并且已安装 ASP.NET 和 *Web* 开发工作负载Bridge to Kubernetes [已安装][btk-extension]扩展。 使用 Bridge to Kubernetes 建立与 Kubernetes 群集的连接时，可以选择将所有流量重定向到群集中的现有 pod，或将所有流量从群集中的现有 pod 重定向到开发计算机。
+若要在 Visual Studio 中使用 Bridge to Kubernetes，你需要安装了 [Bridge to Kubernetes 扩展](https://aka.ms/bridge-to-k8s-vsc-extension)的 VS Code，或者在 Windows 10 上运行、安装了 ASP.NET 和 Web 开发工作负载及 [Bridge to Kubernetes 扩展][btk-extension]的 [Visual Studio 2019][visual-studio] 版本 16.7 预览版 4 或更高版本。 使用 Bridge to Kubernetes 建立与 Kubernetes 群集的连接时，可以选择将所有流量重定向到群集中的现有 pod，或将所有流量从群集中的现有 pod 重定向到开发计算机。
 
 > [!NOTE]
 > 使用 Bridge to Kubernetes 时，系统将提示你输入要重定向到开发计算机的服务的名称。 使用此选项可以方便地识别用于重定向的 pod。 Kubernetes 群集与开发计算机之间的所有重定向都适用于 pod。
@@ -73,8 +73,8 @@ Bridge to Kubernetes 与群集建立连接时会执行以下操作：
 启用隔离工作模式后，除了连接到 Kubernetes 群集，Bridge to Kubernetes 还会执行以下操作：
 
 * 验证 Kubernetes 群集是否未启用 Azure Dev Spaces。
-* 在同一命名空间的群集中复制所选服务，并添加 routing.visualstudio.io/route-from=SERVICE_NAME *标签**routing.visualstudio.io/route-on-header=kubernetes-route-as=GENERATED_NAME* 批注。
-* 在 Kubernetes 群集上的同一命名空间中配置并启动路由管理器。 在命名空间中配置路由时，路由管理器 routing.visualstudio.io/route-from=SERVICE_NAME *标签和* routing.visualstudio.io/route-on-header=kubernetes-route-as=GENERATED_NAME批注。
+* 复制同一命名空间的群集中的所选服务，并添加 routing.visualstudio.io/route-from=SERVICE_NAME 标签和 routing.visualstudio.io/route-on-header=kubernetes-route-as=GENERATED_NAME 注释。 
+* 在 Kubernetes 群集上的同一命名空间中配置并启动路由管理器。 在命名空间中配置路由时，路由管理器使用标签选择器查找 routing.visualstudio.io/route-from=SERVICE_NAME 标签和 routing.visualstudio.io/route-on-header=kubernetes-route-as=GENERATED_NAME 注释。 
 
 如果 Bridge to Kubernetes 检测到已在 Kubernetes 群集上启用 Azure Dev Spaces，系统将提示你禁用 Azure Dev Spaces，然后才能使用 Bridge to Kubernetes。
 
@@ -160,7 +160,7 @@ Bridge to Kubernetes 具有以下限制：
 
 ## <a name="next-steps"></a>后续步骤
 
-若要开始使用 Bridge to Kubernetes 连接到群集的本地开发计算机，请参阅使用 Bridge to Kubernetes ([VS) ](bridge-to-kubernetes-vs.md)或使用[Bridge to Kubernetes (VS Code) 。 ](bridge-to-kubernetes-vs-code.md)
+若要开始使用 Bridge to Kubernetes 将本地开发计算机连接到群集，请参阅[使用 Bridge to Kubernetes (VS)](bridge-to-kubernetes-vs.md) 或[使用 Bridge to Kubernetes (VS Code)](bridge-to-kubernetes-vs-code.md)。
 
 [asp-net-header]: https://www.nuget.org/packages/Microsoft.AspNetCore.HeaderPropagation/
 [azds-cli]: /azure/dev-spaces/how-to/install-dev-spaces#install-the-client-side-tools

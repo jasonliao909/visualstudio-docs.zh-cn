@@ -1,5 +1,5 @@
 ---
-title: 诊断-Azure 云服务 & Vm
+title: 诊断 - Azure 云服务 & VM
 ms.custom: SEO-VS-2020
 description: 了解如何在 Visual Studio 中为调试 Azure 云服务和虚拟机 (VM) 设置诊断。
 author: ghogen
@@ -29,7 +29,7 @@ ms.locfileid: "126602143"
 ## <a name="azure-sdk-26-diagnostics-changes"></a>Azure SDK 2.6 诊断更改
 以下更改适用于 Visual Studio 中的 Azure SDK 2.6 及更高版本的项目：
 
-* 本地模拟器现在支持诊断。 这意味着，在 Visual Studio 中进行开发和测试时，可以收集诊断数据并确保应用程序创建相应的跟踪。 `UseDevelopmentStorage=true`使用 Azure 存储 Emulator 在 Visual Studio 中运行云服务项目时，连接字符串将启用诊断数据收集。 所有诊断数据都在“开发存储”存储帐户中收集。
+* 本地模拟器现在支持诊断。 这意味着，在 Visual Studio 中进行开发和测试时，可以收集诊断数据并确保应用程序创建相应的跟踪。 使用 Azure 存储模拟器在 Visual Studio 中运行云服务项目时，连接字符串 `UseDevelopmentStorage=true` 启用诊断数据收集。 所有诊断数据都在“开发存储”存储帐户中收集。
 * 诊断存储帐户连接字符串 `Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString` 存储在服务配置 (.cscfg) 文件中。 在 Azure SDK 2.5 中，诊断存储帐户是在 diagnostics.wadcfgx 文件中指定的。
 
 将 Azure SDK 2.6 及更高版本与 Azure SDK 2.4 及更低版本进行对比就可以发现，连接字符串在某些关键方面的使用方式并不相同：
@@ -37,7 +37,7 @@ ms.locfileid: "126602143"
 * 在 Azure SDK 2.4 及更低版本中，连接字符串由诊断插件用作运行时以获取用于传输诊断日志的存储帐户信息。
 * 在 Azure SDK 2.6 及更高版本中，Visual Studio 在发布过程中通过诊断连接字符串使用相应的存储帐户信息来设置 Azure 诊断扩展。 可以使用连接字符串，为 Visual Studio 在发布时使用的不同服务配置定义不同的存储帐户。 但是，因为诊断插件在 Azure SDK 2.5 之后不可用，.cscfg 文件本身不能设置诊断扩展。 必须使用 Visual Studio 或 PowerShell 之类的工具分别设置扩展。
 * Visual Studio 的包输出包括每个角色的诊断扩展的公共配置 XML，可简化使用 PowerShell 设置诊断扩展的过程。 Visual Studio 使用诊断连接字符串来填充公共配置中的存储帐户信息。 公共配置文件在 Extensions 文件夹中创建。 公共配置文件使用的命名模式为 PaaSDiagnostics.&lt;角色名称\>.PubConfig.xml。 任何基于 PowerShell 的部署都可以使用此模式将每个配置映射到角色。
-* [Azure 门户](https://portal.azure.com)使用 .cscfg 文件中的连接字符串来访问诊断数据。 数据将显示在 " **监视** " 选项卡上。需要连接字符串才能将服务设置为在门户中显示详细监视数据。
+* [Azure 门户](https://portal.azure.com)使用 .cscfg 文件中的连接字符串来访问诊断数据。 数据显示在“监视”选项卡中。需要连接字符串才能设置服务，以便在门户中显示详细监视数据。
 
 ## <a name="migrate-projects-to-azure-sdk-26-and-later"></a>将项目迁移到 Azure SDK 2.6 及更高版本
 从 Azure SDK 2.5 迁移到 Azure SDK 2.6 或更高版本时，如果在 .wadcfgx 文件中指定了诊断存储帐户，此存储帐户会保留在该文件中。 可以针对不同的存储配置使用不同的存储帐户，若要充分利用这种灵活性，请手动将连接字符串添加到项目。 如果将项目从 Azure SDK 2.4 或更低版本迁移到 Azure SDK 2.6，则会保留诊断连接字符串。 但是，请注意 Azure SDK 2.6 中连接字符串处理方式的变化，如上一部分所述。
@@ -52,7 +52,7 @@ ms.locfileid: "126602143"
 
 例如，如果选择此复选框且诊断连接字符串指定了 `UseDevelopmentStorage=true`，则在将项目发布到 Azure 时，Visual Studio 会通过发布向导中的指定存储帐户自动更新诊断连接字符串。 但是，如果已将实际的存储帐户指定为诊断连接字符串，则会改用该帐户。
 
-## <a name="diagnostics-functionality-differences-in-azure-sdk-24-and-earlier-vs-azure-sdk-25-and-later"></a>Azure SDK 2.4 及更早版本与 Azure SDK 2.5 及更高版本中的诊断功能差异
+## <a name="diagnostics-functionality-differences-in-azure-sdk-24-and-earlier-vs-azure-sdk-25-and-later"></a>Azure SDK 2.4 及更早版本与 Azure SDK 2.5 及更高版本之间的诊断功能差异
 如果要将项目从 Azure SDK 2.4 及更低版本升级到 Azure SDK 2.5 或更高版本，则应考虑到以下诊断功能差异：
 
 * **配置 API 已弃用**。 诊断的编程配置在 Azure SDK 2.4 及更低版本中可用，但在 Azure SDK 2.5 及更高版本中已弃用。 如果目前在代码中定义了诊断配置，则必须在已迁移的项目中从头开始重新配置这些设置，这样才能让诊断正常工作。 Azure SDK 2.4 的诊断配置文件是 diagnostics.wadcfg。 Azure SDK 2.5 及更高版本的诊断配置文件是 diagnostics.wadcfgx。
@@ -74,23 +74,23 @@ ms.locfileid: "126602143"
 3. 若要为诊断数据指定存储帐户，请选择省略号 (…) 按钮。
 
     ![指定要使用的存储帐户](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796661.png)
-4. 在 "**创建存储连接字符串**" 对话框中，指定是要使用 Azure 存储 Emulator、Azure 订阅还是手动输入凭据进行连接。
+4. 在“创建存储连接字符串”对话框中，指定在需要进行连接时，是使用 Azure 存储模拟器、Azure 订阅还是手动输入的凭据。
 
     ![存储帐户对话框](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796662.png)
 
-   * 如果选择 **Microsoft Azure 存储 Emulator**，则连接字符串将设置为 `UseDevelopmentStorage=true` 。
+   * 如果选择“Microsoft Azure 存储模拟器”，则连接字符串设置为 `UseDevelopmentStorage=true`。
    * 如果选择“你的订阅”，则可选择要使用的 Azure 订阅，然后输入帐户名称。 若要管理 Azure 订阅，请选择“管理帐户”。
    * 如果选择“手动输入的凭据”选项，则请输入要使用的 Azure 帐户的名称和密钥。
 5. 若要查看“诊断配置”对话框，请选择“配置”。 每个选项卡（“常规”和“日志目录”除外）都表示可以收集的诊断数据源。 默认的“常规”选项卡提供以下诊断数据收集选项：“仅限错误”、“所有信息”和“自定义计划”。 默认的“仅限错误”选项占用最少量的存储，因为该选项不传输警告或跟踪消息。 “所有信息”选项传输的信息最多，占用最多的存储，因此是成本最高的选项。
 
    > [!NOTE]
-   > "磁盘配额（MB）" 支持的最小大小为50MB，默认大小为4GB。 但是，如果要收集内存转储，请将此限制提高到更高值（如 10GB）。
+   > “磁盘配额(MB)”支持的最小大小为 50MB，默认大小为 4GB。 但是，如果要收集内存转储，请将此限制提高到更高值（如 10GB）。
    >
 
     ![启用 Azure 诊断和配置](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758144.png)
 6. 对于此示例，请选择“自定义计划”选项，以便自定义所收集的数据。
 7. 在“磁盘配额(MB)”框中，可以设置需要在存储帐户中为诊断数据分配的空间量。 可以更改或接受默认值。
-8. 在要收集的诊断数据的每个选项卡上，选中 "**启用的 \<log type\> 传输**" 复选框。 例如，如果要收集应用程序日志，请在“应用程序日志”选项卡上选中“启用应用程序日志的传输”复选框。 另外，请指定每种诊断数据类型所需的其他任何信息。 有关每个选项卡的配置信息，请参阅本文后面的“设置诊断数据源”部分。
+8. 在要收集的诊断数据的每个选项卡上，选中“启用 \<log type\> 的传输”复选框。 例如，如果要收集应用程序日志，请在“应用程序日志”选项卡上选中“启用应用程序日志的传输”复选框。 另外，请指定每种诊断数据类型所需的其他任何信息。 有关每个选项卡的配置信息，请参阅本文后面的“设置诊断数据源”部分。
 9. 允许收集所有需要的诊断数据后，请选择“确定”。
 10. 照常在 Visual Studio 中运行 Azure 云服务项目。 使用应用程序时，允许的日志信息会保存到指定的 Azure 存储帐户中。
 
@@ -124,7 +124,7 @@ ms.locfileid: "126602143"
 8. **“磁盘配额(MB)”** 框指定你要在存储帐户中为诊断数据分配的空间量。 可以根据需要更改默认值。
 9. 在要收集的诊断数据的每个选项卡上，选中其“启用 \<log type\> 的传输”复选框。
 
-    例如，如果要收集应用程序日志，请在"应用程序日志"选项卡上选中"启用应用程序 **日志传输"** 复选框。此外，请指定每种诊断数据类型所需的任何其他信息。 有关每个选项卡的配置信息，请参阅本文后面的“设置诊断数据源”部分。
+    例如，如果要收集应用程序日志，请选中“应用程序日志”选项卡上的“启用应用程序日志的传输”复选框。此外，还要指定每种诊断数据类型所需的任何其他信息。 有关每个选项卡的配置信息，请参阅本文后面的“设置诊断数据源”部分。
 10. 允许收集所有需要的诊断数据后，请选择“确定”。
 11. 保存更新的项目。
 
@@ -145,7 +145,7 @@ ms.locfileid: "126602143"
 
 ![事件日志](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796664.png)
 
-如果使用的是 Azure SDK 2.6 或更高版本，并且想要指定自定义数据源，请在文本框中输入该数据源，然后选择 **\<Data source name\>** "添加 **"。** 该数据源将添加到 diagnostics.cfcfg 文件中。
+如果使用的是 Azure SDK 2.6 或更高版本并想要指定自定义数据源，请在 \<Data source name\> 文本框中输入它，然后选择“添加”。 该数据源将添加到 diagnostics.cfcfg 文件中。
 
 如果使用的是 Azure SDK 2.5 并想要指定自定义数据源，可以将其添加到 diagnostics.wadcfgx 文件的 `WindowsEventLog` 节，如下例所示：
 
@@ -161,7 +161,7 @@ ms.locfileid: "126602143"
 
 ![性能计数器](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758147.png)
 
-若要跟踪未列出的性能计数器，请使用建议的语法输入该性能计数器， 然后选择"添加 **"。** 虚拟机上的操作系统确定可以跟踪哪些性能计数器。有关语法详细信息，请参阅 [指定计数器路径](/windows/win32/perfctrs/specifying-a-counter-path)。
+若要跟踪未列出的性能计数器，请使用建议的语法输入该性能计数器， 然后选择“添加”。 虚拟机上的操作系统确定可以跟踪哪些性能计数器。有关语法详细信息，请参阅[指定计数器路径](/windows/win32/perfctrs/specifying-a-counter-path)。
 
 ### <a name="infrastructure-logs"></a>基础结构日志
 基础结构日志包含的信息涉及 Azure 诊断基础结构、RemoteAccess 模块和 RemoteForwarder 模块。 若要收集有关基础结构日志的信息，请选中“启用基础结构日志的传输”复选框。 若要增加或减少将基础结构将日志传输到存储帐户的时间间隔，请更改“传输周期(分钟)”值。
@@ -189,7 +189,7 @@ ms.locfileid: "126602143"
 ASP.NET 通过 [System.Diagnostics.aspx](/dotnet/api/system.diagnostics) 命名空间中的类支持 ETW 框架。 Microsoft.WindowsAzure.Diagnostics 命名空间继承自标准 [System.Diagnostics.aspx](/dotnet/api/system.diagnostics) 类并对其进行了扩展，在 Azure 环境中，可以通过该命名空间将 [System.Diagnostics.aspx](/dotnet/api/system.diagnostics) 用作日志记录框架。 有关详细信息，请参阅[在 Microsoft Azure 中控制日志记录和跟踪](/archive/msdn-magazine/2010/june/msdn-magazine-cloud-diagnostics-take-control-of-logging-and-tracing-in-windows-azure)以及[在 Azure 云服务和虚拟机中启用诊断](/azure/cloud-services/cloud-services-dotnet-diagnostics)。
 
 ### <a name="crash-dumps"></a>故障转储
-若要捕获有关角色实例何时发生故障的信息，请选中“启用故障转储的传输”复选框。  (由于 ASP.NET 处理大多数异常，因此这通常仅适用于辅助角色。) 若要增加或减少专用于故障转储的存储空间百分比，请更改"目录配额 **(%) "** 值。 可以更改将故障转储存储到其中的存储容器，然后选择要捕获“完整”转储还是“微型”转储。
+若要捕获有关角色实例何时发生故障的信息，请选中“启用故障转储的传输”复选框。 （由于 ASP.NET 处理大多数异常，因此这通常仅适用于辅助角色。）若要增加或减少专用于故障转储的存储空间百分比，请更改“目录配额(%)”值。 可以更改将故障转储存储到其中的存储容器，然后选择要捕获“完整”转储还是“微型”转储。
 
 下一屏幕截图列出了当前跟踪的进程。 选中与要捕获的进程对应的复选框。 若要将另一进程添加到列表，请输入进程名称，然后选择“添加进程”。
 
@@ -286,7 +286,7 @@ ASP.NET 通过 [System.Diagnostics.aspx](/dotnet/api/system.diagnostics) 命名�
 
 **从 RoleEntryPoint 方法中，没能像 OnStart 中一样获得跟踪信息。什么地方错了？**
 
-RoleEntryPoint 的方法在 WAIISHost.exe 上下文而非 IIS 中调用。 web.config 中通常会启用跟踪的配置信息在此不适用。 若要解决此问题，将.config文件添加到 Web 角色项目，并命名该文件以匹配包含 **RoleEntryPoint** 代码的输出程序集。 在默认的 Web 角色项目中，应.config文件的名称WAIISHost.exe.config。将以下行添加到此文件：
+RoleEntryPoint 的方法在 WAIISHost.exe 上下文而非 IIS 中调用。 web.config 中通常会启用跟踪的配置信息在此不适用。 若要解决此问题，请向 Web 角色项目添加一个 .config 文件，并使其名称匹配包含 RoleEntryPoint 节点的输出程序集。 在默认 Web 角色项目中，.config 文件的名称应为 WAIISHost.exe.config。请将以下行添加到此文件：
 
 ```xml
 <system.diagnostics>

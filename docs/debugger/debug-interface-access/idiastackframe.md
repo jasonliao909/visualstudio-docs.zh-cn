@@ -35,31 +35,31 @@ IDiaStackFrame : IUnknown
 
 |方法|说明|
 |------------|-----------------|
-|[IDiaStackFrame::get_allocatesBasePointer](../../debugger/debug-interface-access/idiastackframe-get-allocatesbasepointer.md)|检索一个标志，该标志指示该地址范围内的代码分配了基指针。 不推荐使用此方法。|
-|[IDiaStackFrame::get_base](../../debugger/debug-interface-access/idiastackframe-get-base.md)|检索帧的地址基。|
-|[IDiaStackFrame::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)|检索一个标志，该标志指示 c + + 异常处理是否有效。|
-|[IDiaStackFrame::get_functionStart](../../debugger/debug-interface-access/idiastackframe-get-functionstart.md)|检索一个标志，该标志指示块包含函数的入口点。|
-|[IDiaStackFrame::get_lengthLocals](../../debugger/debug-interface-access/idiastackframe-get-lengthlocals.md)|检索推送到堆栈上的局部变量的字节数。|
-|[IDiaStackFrame::get_lengthParams](../../debugger/debug-interface-access/idiastackframe-get-lengthparams.md)|检索推送到堆栈上的参数的字节数。|
+|[IDiaStackFrame::get_allocatesBasePointer](../../debugger/debug-interface-access/idiastackframe-get-allocatesbasepointer.md)|检索一个标记，该标记指示为此地址范围内的代码分配基指针。 不推荐使用此方法。|
+|[IDiaStackFrame::get_base](../../debugger/debug-interface-access/idiastackframe-get-base.md)|检索帧的基址。|
+|[IDiaStackFrame::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)|检索一个标记，该标记指示 C++ 异常处理有效。|
+|[IDiaStackFrame::get_functionStart](../../debugger/debug-interface-access/idiastackframe-get-functionstart.md)|检索一个标记，该标记指示块包含函数的入口点。|
+|[IDiaStackFrame::get_lengthLocals](../../debugger/debug-interface-access/idiastackframe-get-lengthlocals.md)|检索在堆栈上推送的局部变量的字节数。|
+|[IDiaStackFrame::get_lengthParams](../../debugger/debug-interface-access/idiastackframe-get-lengthparams.md)|检索在堆栈上推送的参数的字节数。|
 |[IDiaStackFrame::get_lengthProlog](../../debugger/debug-interface-access/idiastackframe-get-lengthprolog.md)|检索块中序言代码的字节数|
-|[IDiaStackFrame::get_lengthSavedRegisters](../../debugger/debug-interface-access/idiastackframe-get-lengthsavedregisters.md)|检索推送到堆栈上的已保存寄存器的字节数。|
-|[IDiaStackFrame::get_localsBase](../../debugger/debug-interface-access/idiastackframe-get-localsbase.md)|检索局部变量的地址基。|
-|[IDiaStackFrame::get_maxStack](../../debugger/debug-interface-access/idiastackframe-get-maxstack.md)|检索堆栈中堆栈上推送的最大字节数。|
-|[IDiaStackFrame::get_rawLVarInstanceValue](../../debugger/debug-interface-access/idiastackframe-get-rawlvarinstancevalue.md)|检索指定局部变量的值作为原始字节。|
+|[IDiaStackFrame::get_lengthSavedRegisters](../../debugger/debug-interface-access/idiastackframe-get-lengthsavedregisters.md)|检索在堆栈上推送的已保存寄存器的字节数。|
+|[IDiaStackFrame::get_localsBase](../../debugger/debug-interface-access/idiastackframe-get-localsbase.md)|检索局部变量的基址。|
+|[IDiaStackFrame::get_maxStack](../../debugger/debug-interface-access/idiastackframe-get-maxstack.md)|检索在帧中的堆栈上推送的最大字节数。|
+|[IDiaStackFrame::get_rawLVarInstanceValue](../../debugger/debug-interface-access/idiastackframe-get-rawlvarinstancevalue.md)|检索指定局部变量的原始字节的值。|
 |[IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)|检索指定寄存器的值。|
 |[IDiaStackFrame::get_returnAddress](../../debugger/debug-interface-access/idiastackframe-get-returnaddress.md)|检索帧的返回地址。|
 |[IDiaStackFrame::get_size](../../debugger/debug-interface-access/idiastackframe-get-size.md)|检索帧的大小（以字节为单位）。|
-|[IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)|检索指示系统异常处理是否有效的标志。|
+|[IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)|检索一个标记，该标记指示系统异常处理有效。|
 |[IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)|检索帧类型。|
 
 ## <a name="remarks"></a>备注
 堆栈帧是函数调用在其执行过程中的抽象。
 
-## <a name="notes-for-callers"></a>调用方说明
-通过调用 [IDiaEnumStackFrames：： Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md) 方法获取此接口。 有关获取接口的示例，请参阅 [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) 接口 `IDiaStackFrame` 。
+## <a name="notes-for-callers"></a>对调用者的说明
+通过调用 [IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md) 方法获取此接口。 有关获取 `IDiaStackFrame` 接口的示例，请参阅 [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) 接口。
 
 ## <a name="example"></a>示例
-此示例显示堆栈帧的各种属性。
+本示例显示堆栈帧的各种属性。
 
 ```C++
 void PrintStackFrame(IDiaStackFrame* pFrame)
@@ -103,11 +103,11 @@ void PrintStackFrame(IDiaStackFrame* pFrame)
 ```
 
 ## <a name="requirements"></a>要求
-标头： Dia2
+标头：Dia2.h
 
-库： diaguids
+库：diaguids.lib
 
-DLL： msdia80.dll
+DLL：msdia80.dll
 
 ## <a name="see-also"></a>另请参阅
 - [接口（调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

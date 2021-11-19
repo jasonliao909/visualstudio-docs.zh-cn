@@ -31,22 +31,22 @@ IDiaDataSource : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
-下表显示的方法 `IDiaDataSource` 。
+下表显示了 `IDiaDataSource` 方法。
 
 |方法|说明|
 |------------|-----------------|
-|[IDiaDataSource::get_lastError](../../debugger/debug-interface-access/idiadatasource-get-lasterror.md)|检索最后一个加载错误的文件名。|
-|[IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)|打开并准备程序数据库 ( .pdb) 文件作为调试数据源。|
-|[IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)|打开并验证程序数据库 ( .pdb) 文件是否与提供的签名信息匹配;准备用作调试数据源的 .pdb 文件。|
+|[IDiaDataSource::get_lastError](../../debugger/debug-interface-access/idiadatasource-get-lasterror.md)|检索上次加载错误的文件名。|
+|[IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)|打开并准备程序数据库 (.pdb) 文件作为调试数据源。|
+|[IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)|打开并验证程序数据库 ( .pdb) 文件是否与提供的签名信息匹配；准备用作调试数据源的 .pdb 文件。|
 |[IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)|打开并准备与 .exe/.dll 文件关联的调试数据。|
-|[IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)|准备 ( 程序数据库中存储的调试数据，) 通过内存中数据流访问的文件。|
+|[IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)|准备存储在程序数据库 (.pdb) 文件中通过内存中数据流访问的调试数据。|
 |[IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)|为查询符号打开一个会话。|
 
 ## <a name="remarks"></a>备注
-对接口的其中一个 load 方法的调用 `IDiaDataSource` 会打开符号源。 对 [IDiaDataSource：： openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md) 方法的成功调用将返回支持查询数据源的 [IDiaSession](../../debugger/debug-interface-access/idiasession.md) 接口。 如果 load 方法返回与文件相关的错误，则 [IDiaDataSource：： get_lastError](../../debugger/debug-interface-access/idiadatasource-get-lasterror.md) 方法返回值将包含与该错误关联的文件名。
+对 `IDiaDataSource` 接口的其中一个 load 方法的调用会打开符号源。 对 [IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md) 方法的成功调用将返回支持查询数据源的 [IDiaSession](../../debugger/debug-interface-access/idiasession.md) 接口。 如果 load 方法返回与文件相关的错误，则 [IDiaDataSource::get_lastError](../../debugger/debug-interface-access/idiadatasource-get-lasterror.md) 方法返回值将包含与该错误关联的文件名。
 
-## <a name="notes-for-callers"></a>调用方说明
-此接口是通过调用 `CoCreateInstance` 具有类标识符 `CLSID_DiaSource` 和的接口 ID 的函数获取的 `IID_IDiaDataSource` 。 该示例演示如何获取此接口。
+## <a name="notes-for-callers"></a>对调用者的说明
+此接口是通过调用具有类标识符 `CLSID_DiaSource` 和接口 ID `IID_IDiaDataSource` 的 `CoCreateInstance` 函数获取的。 该示例演示如何获取此接口。
 
 ## <a name="example"></a>示例
 
@@ -65,11 +65,11 @@ if (FAILED(hr))
 ```
 
 ## <a name="requirements"></a>要求
-标头： Dia2
+标头：Dia2.h
 
-库： diaguids
+库：diaguids.lib
 
-DLL： msdia80.dll
+DLL：msdia80.dll
 
 ## <a name="see-also"></a>另请参阅
 - [接口（调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

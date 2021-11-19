@@ -1,6 +1,6 @@
 ---
 description: 准备存储在程序数据库 (.pdb) 文件中通过内存中数据流访问的调试数据。
-title: IDiaDataSource：：loadDataFromIStream |Microsoft Docs
+title: IDiaDataSource::loadDataFromIStream | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -35,25 +35,25 @@ HRESULT loadDataFromIStream (
 #### <a name="parameters"></a>参数
  pIStream
 
-[in]一 <xref:IStream> 个 对象，该对象表示要使用的数据流。
+[in] 表示要使用的数据流的 <xref:IStream> 对象。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。 下表显示了此方法的可能返回值。
+ 如果成功，则返回 `S_OK`；否则，返回错误代码。 下表显示了此方法的可能返回值。
 
 |值|说明|
 |-----------|-----------------|
 |E_PDB_FORMAT|尝试访问采用过时格式的文件。|
 |E_INVALIDARG|参数无效。|
-|E_UNEXPECTED|数据源已准备就绪。|
+|E_UNEXPECTED|数据源已准备好。|
 
 ## <a name="remarks"></a>备注
- 此方法允许通过 对象从内存中获取可执行文件的调试 <xref:IStream> 数据。
+ 此方法允许通过 <xref:IStream> 对象从内存中获取可执行文件的调试数据。
 
- 若要在不进行验证的情况下加载 .pdb 文件，请使用 [IDiaDataSource：：loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) 方法。
+ 若要在不进行验证的情况下加载 .pdb 文件，请使用 [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) 方法。
 
- 若要根据特定条件验证 .pdb 文件，请使用 [IDiaDataSource：：loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md) 方法。
+ 若要根据特定条件验证 .pdb 文件，请使用 [IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md) 方法。
 
- 若要通过回调机制 (数据加载过程) ，请使用 [IDiaDataSource：：loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) 方法。
+ 若要获取对数据加载过程的访问权限（通过回调机制），请使用 [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) 方法。
 
 ## <a name="see-also"></a>另请参阅
 - [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)

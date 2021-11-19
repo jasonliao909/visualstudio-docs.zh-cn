@@ -35,16 +35,16 @@ HRESULT get_type (
 #### <a name="parameters"></a>参数
 `pRetVal`
 
-[out]返回表示 [此符号类型的 IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 对象。
+[out] 返回表示此符号类型的 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 对象。
 
 ## <a name="return-value"></a>返回值
-如果成功，则返回 `S_OK` ;否则返回 `S_FALSE` 或错误代码。
+如果成功，则返回 `S_OK`；否则返回 `S_FALSE` 或错误代码。
 
 > [!NOTE]
-> 返回值 `S_FALSE` 表示属性不可用于符号。
+> 返回值 `S_FALSE` 意味着该属性对符号不可用。
 
 ## <a name="remarks"></a>备注
-若要确定符号的类型，必须调用此方法并检查生成的 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 对象。 请注意，符号可能没有类型。 例如，结构的名称没有类型，但它可能有子符号 ([IDiaSymbol：：findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md) 方法检查这些子) 。
+若要确定符号的类型，必须调用此方法并检查生成的 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 对象。 请注意，符号可能没有类型。 例如，结构的名称没有类型，但它可能有子符号（使用 [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md) 方法检查这些子符号）。
 
 ## <a name="example"></a>示例
 
