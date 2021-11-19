@@ -36,12 +36,12 @@ IDiaLoadCallback2 : IDiaLoadCallback
 |方法|说明|
 |------------|-----------------|
 |[IDiaLoadCallback2::RestrictOriginalPathAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictoriginalpathaccess.md)|确定是否在原始调试目录中查找 .pdb 文件。|
-|[IDiaLoadCallback2::RestrictReferencePathAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictreferencepathaccess.md)|确定是否允许在文件所在的路径中查找 .pdb .exe文件。|
+|[IDiaLoadCallback2::RestrictReferencePathAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictreferencepathaccess.md)|确定是否允许在 .exe 文件所在的路径中查找 .pdb 文件。|
 |[IDiaLoadCallback2::RestrictDBGAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictdbgaccess.md)|确定是否允许从 .dbg 文件中查找调试信息。|
 |[IDiaLoadCallback2::RestrictSystemRootAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictsystemrootaccess.md)|确定是否允许在系统根目录中搜索 .pdb 文件。|
 
 ## <a name="remarks"></a>备注
- 客户端应用程序实现此接口，在调用 [IDiaDataSource：：loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) 方法时提供对它的引用。 请记住实现 [IDiaLoadCallback 接口中的所有](../../debugger/debug-interface-access/idialoadcallback.md) 方法。
+ 客户端应用程序实现此接口，并在对 [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) 方法的调用中提供对它的引用。 请记得同时也在 [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md) 接口中实现所有方法。
 
 ## <a name="requirements"></a>要求
  标头：Dia2.h

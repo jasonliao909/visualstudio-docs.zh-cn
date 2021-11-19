@@ -1,6 +1,6 @@
 ---
 description: 使用 DIA SDK 访问 Microsoft 调试信息。
-title: 概述 (调试接口访问 SDK) |Microsoft Docs
+title: 概述（调试接口访问 SDK）| Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -31,9 +31,9 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127832804"
 ---
 # <a name="overview-debug-interface-access-sdk"></a>概述（调试接口访问 SDK）
-使用 DIA SDK 访问 Microsoft 调试信息。 DIA SDK 提供了基于 COM 的 API 集，无需在 Microsoft 更改调试信息格式时重写代码。 使用 DIA SDK 还可以读取一组以前版本的调试信息，这些信息位于 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 版本5.0 及更高版本生成的 .pdb 和 dbg 文件中。
+使用 DIA SDK 访问 Microsoft 调试信息。 DIA SDK 提供了基于 COM 的 API 集，使你无需在 Microsoft 更改调试信息格式时重写代码。 使用 DIA SDK 还可以读取一组以前版本的调试信息，这些信息位于 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 版本5.0 及更高版本生成的 .pdb 和 .dbg 文件中。
 
- DIA SDK 中的每个接口都表示不同的 COM 对象，但在其他情况下除外。 附加接口，因此其他对象是通过显式查询（如 [IDiaDataSource：： openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md) 或 [IDiaSession：： findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)）创建的，而不是通过调用现有的 `QueryInterface` 接口指针来创建的。
+ DIA SDK 中的每个接口都表示不同的 COM 对象，除非另有说明。 额外的接口，以及额外的对象，是通过显式查询（如 [IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md) 或 [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)）创建的，而不是通过调用现有接口指针上的 `QueryInterface` 来创建的。
 
 ## <a name="see-also"></a>另请参阅
 - [IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)

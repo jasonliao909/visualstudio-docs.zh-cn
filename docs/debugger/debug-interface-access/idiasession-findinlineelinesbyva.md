@@ -1,5 +1,5 @@
 ---
-description: IDiaSession：： findInlineeLinesByVA 检索允许客户端通过指定的父符号直接或间接地循环访问所有函数的行号信息的枚举，并将其包含在指定的虚拟地址 (VA) 中。
+description: IDiaSession::findInlineeLinesByVA 检索一个枚举，该枚举允许客户端遍历由指定的父符号直接或间接内联并包含在指定虚拟地址 (VA) 中的所有函数的行号信息。
 title: IDiaSession::findInlineeLinesByVA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -20,7 +20,7 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127831906"
 ---
 # <a name="idiasessionfindinlineelinesbyva"></a>IDiaSession::findInlineeLinesByVA
-检索一个枚举，该枚举允许客户端通过指定的父符号直接或间接地循环访问所有函数的行号信息，并将其包含在指定的虚拟地址 (VA) 中。
+检索一个枚举，该枚举允许客户端遍历由指定的父符号直接或间接内联并包含在指定虚拟地址 (VA) 中的所有函数的行号信息。
 
 ## <a name="syntax"></a>语法
 
@@ -34,22 +34,22 @@ HRESULT findInlineeLinesByVA (
 #### <a name="parameters"></a>参数
  `parent`
 
-中 `IDiaSymbol` 表示父对象的对象。
+[in] 表示父级的 `IDiaSymbol` 对象。
 
  `va`
 
-中指定地址作为 VA。
+[in] 将地址指定为 VA。
 
  `length`
 
-中指定要用于此查询的地址范围（以字节数为单位）。
+[in] 指定此查询要涵盖的地址范围（以字节数为单位）。
 
  `ppResult`
 
-弄包含一个 `IDiaEnumLineNumbers` 对象，该对象包含所检索的行号的列表。
+[out] 保留包含已检索的行号的列表的 `IDiaEnumLineNumbers` 对象。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回错误代码。
 
 ## <a name="see-also"></a>另请参阅
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

@@ -1,6 +1,6 @@
 ---
 title: BasicType | Microsoft Docs
-description: 查找有关 BasicType 枚举的参考信息，该枚举在调试接口访问 SDK Visual Studio符号的基本类型。
+description: 查找有关 BasicType 枚举的参考信息，该枚举在 Visual Studio 调试接口访问 SDK 中指定符号的基本类型。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -55,42 +55,42 @@ enum BasicType {
 ## <a name="elements"></a>元素
 btNoType 未指定基本类型。
 
-btVoid 基本类型为 `void` 。
+btVoid 基本类型为 `void`。
 
-btChar Basic 类型 (`char` C/C++ 类型) 。
+btChar 基本类型为 `char`（C/C++ 类型）。
 
-btWChar Basic 类型是一种宽 (Unicode) 字符 `WCHAR` () 。
+btWChar 基本类型是一种宽 (Unicode) 字符 (`WCHAR`)。
 
-btInt Basic 类型 `signed int` (C/C++ 类型) 。
+btInt 基本类型为 `signed int`（C/C++ 类型）。
 
-btUInt Basic 类型 `unsigned int` (C/C++ 类型) 。
+btUInt 基本类型为 `unsigned int`（C/C++ 类型）。
 
-btFloat Basic 类型是浮点数 `FLOAT` () 。
+btFloat 基本类型是浮点数 (`FLOAT`)。
 
-btBCD 基本类型是二进制编码的十进制 `BCD` () 。
+btBCD 基本类型是二进制编码的十进制 (`BCD`)。
 
-btBool Basic 类型是布尔值 `BOOL` () 。
+btBool 基本类型是布尔值 (`BOOL`)。
 
-btLong Basic 类型 (`long int` C/C++ 类型) 。
+btLong 基本类型为 `long int`（C/C++ 类型）。
 
-btULong Basic 类型是 (`unsigned long int` C/C++ 类型的) 。
+btULong 基本类型为 `unsigned long int`（C/C++ 类型）。
 
-btCurrency 基本类型为 currency。
+btCurrency 基本类型是货币。
 
-btDate 基本类型是日期/时间 `DATE` () 。
+btDate 基本类型是日期/时间 (`DATE`)。
 
-btVariant 基本类型是一种变量类型结构 `VARIANT` () 。
+btVariant 基本类型是变量类型结构 (`VARIANT`)。
 
-btComplex 基本类型是一个复数。
+btComplex 基本类型是复数。
 
-btBit Basic 类型为位。
+btBit 基本类型是位。
 
-btBSTR 基本类型是基本字符串或二进制字符串 `BSTR` () 。
+btBSTR 基本类型是基本字符串或二进制字符串 (`BSTR`)。
 
-btHresult 基本类型是 `HRESULT` 。
+btHresult 基本类型是 `HRESULT`。
 
 ## <a name="remarks"></a>备注
-此枚举中的值由 [IDiaSymbol：：get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md) 方法返回。
+此枚举中的值由 [IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md) 方法返回。
 
 ## <a name="requirements"></a>要求
 标头：cvconst.h

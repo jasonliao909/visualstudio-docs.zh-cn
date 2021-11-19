@@ -1,5 +1,5 @@
 ---
-description: 检索枚举序列中指定数目的节贡献。
+description: 检索枚举序列中指定数量的节贡献。
 title: IDiaEnumSectionContribs::Next | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127832227"
 ---
 # <a name="idiaenumsectioncontribsnext"></a>IDiaEnumSectionContribs::Next
-检索枚举序列中指定数目的节贡献。
+检索枚举序列中指定数量的节贡献。
 
 ## <a name="syntax"></a>语法
 
@@ -37,18 +37,18 @@ HRESULT Next(
 #### <a name="parameters"></a>参数
  celt
 
-[in]要检索的枚举器中的节贡献数。
+[in] 枚举器中要检索的节贡献数。
 
  rgelt
 
-[out]一个数组，该数组使用表示所需节贡献的 [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) 对象填充。
+[out] 要用表示所需节贡献的 [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) 对象填充的数组。
 
  pceltFetched
 
-[out]返回提取的枚举器中的节贡献数。
+[out] 返回提取的枚举器中的节贡献数。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK`。 如果没有 `S_FALSE` 更多节贡献，则返回 。 否则，返回错误代码。
+ 如果成功，则返回 `S_OK`。 如果没有更多节贡献，则返回 `S_FALSE`。 否则，返回错误代码。
 
 ## <a name="see-also"></a>另请参阅
 - [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)

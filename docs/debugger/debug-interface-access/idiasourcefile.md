@@ -1,5 +1,5 @@
 ---
-description: 表示一个源文件。
+description: 表示源文件。
 title: IDiaSourceFile | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127831846"
 ---
 # <a name="idiasourcefile"></a>IDiaSourceFile
-表示一个源文件。
+表示源文件。
 
 ## <a name="syntax"></a>语法
 
@@ -31,23 +31,23 @@ IDiaSourceFile : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
-下表显示的方法 `IDiaSourceFile` 。
+下表显示了 `IDiaSourceFile` 方法。
 
 |方法|说明|
 |------------|-----------------|
-|[IDiaSourceFile::get_uniqueId](../../debugger/debug-interface-access/idiasourcefile-get-uniqueid.md)|检索对此图像唯一的简单整数键值。|
+|[IDiaSourceFile::get_uniqueId](../../debugger/debug-interface-access/idiasourcefile-get-uniqueid.md)|检索对于此图像唯一的简单整数键值。|
 |[IDiaSourceFile::get_fileName](../../debugger/debug-interface-access/idiasourcefile-get-filename.md)|检索源文件名。|
 |[IDiaSourceFile::get_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md)|检索校验和类型。|
-|[IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)|检索具有引用此文件的行号的 compiland 的枚举器。|
+|[IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)|检索具有引用此文件的行号的编译单位的枚举器。|
 |[IDiaSourceFile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)|检索校验和字节。|
 
 ## <a name="remarks"></a>备注
 
-## <a name="notes-for-callers"></a>调用方说明
-通过调用 [IDiaEnumSourceFiles：： Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md) 或 [IDiaEnumSourceFiles：： Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md) 方法获取此接口。 参阅示例了解详细信息。
+## <a name="notes-for-callers"></a>对调用者的说明
+通过调用 [IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md) 或 [IDiaEnumSourceFiles::Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md) 方法获取此接口。 参阅示例了解详细信息。
 
 ## <a name="example"></a>示例
-此函数显示对指定表构成的所有源文件的名称。
+此函数显示构成指定表的所有源文件的名称。
 
 ```C++
 void ShowSourceFiles(IDiaTable *pTable)
@@ -75,11 +75,11 @@ void ShowSourceFiles(IDiaTable *pTable)
 ```
 
 ## <a name="requirements"></a>要求
-标头： Dia2
+标头：Dia2.h
 
-库： diaguids
+库：diaguids.lib
 
-DLL： msdia80.dll
+DLL：msdia80.dll
 
 ## <a name="see-also"></a>另请参阅
 - [接口（调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

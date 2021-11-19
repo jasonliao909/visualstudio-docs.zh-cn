@@ -1,6 +1,6 @@
 ---
-description: IDiaSymbol：： findInlineeLinesByRVA 检索一个枚举，该枚举允许客户端在此符号中直接或间接直接或间接地循环访问所有函数的行号信息 (RVA) 。
-title: IDiaSymbol：： findInlineeLinesByRVA |Microsoft Docs
+description: IDiaSymbol::findInlineeLinesByRVA 检索一个枚举，该枚举允许客户端遍历指定相对虚拟地址 (RVA) 内直接或间接内联到此符号中的所有函数的行号信息。
+title: IDiaSymbol::findInlineeLinesByRVA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -20,7 +20,7 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127831747"
 ---
 # <a name="idiasymbolfindinlineelinesbyrva"></a>IDiaSymbol::findInlineeLinesByRVA
-检索一个枚举，该枚举允许客户端在此符号中直接或间接直接或间接地循环访问所有函数的行号信息 (RVA) 。
+检索一个枚举，该枚举允许客户端遍历指定相对虚拟地址 (RVA) 内直接或间接内联到此符号中的所有函数的行号信息。
 
 ## <a name="syntax"></a>语法
 
@@ -33,18 +33,18 @@ HRESULT findInlineeLinesByRVA (    DWORD                 rva,   DWORD           
 #### <a name="parameters"></a>参数
  `rva`
 
-中指定作为 RVA 的地址。
+[in] 将地址指定为 RVA。
 
  `length`
 
-中指定要用于此查询的地址范围（以字节数为单位）。
+[in] 指定此查询要涵盖的地址范围（以字节数为单位）。
 
  `ppResult`
 
-弄包含一个 `IDiaEnumLineNumbers` 对象，该对象包含所检索的行号的列表。
+[out] 保留 `IDiaEnumLineNumbers` 对象，其中包含已检索的行号的列表。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回错误代码。
 
 ## <a name="see-also"></a>另请参阅
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

@@ -1,6 +1,6 @@
 ---
-description: 检索一个标志，该标志指定数据符号是否已拆分为聚合或其他符号的集合;编译器将符号视为单独的实体，即使它们确实是较大符号的一部分。
-title: IDiaSymbol：：get_isSplitted |Microsoft Docs
+description: 检索一个标记，该标记指定数据符号是否已拆分为其他符号的聚合或集合；编译器将符号视为单独的实体，即使它们确实是较大符号的一部分。
+title: IDiaSymbol::get_isSplitted | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -22,7 +22,7 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127832558"
 ---
 # <a name="idiasymbolget_issplitted"></a>IDiaSymbol::get_isSplitted
-检索一个标志，该标志指定数据符号是否已拆分为聚合或其他符号的集合;编译器将符号视为单独的实体，即使它们确实是较大符号的一部分。
+检索一个标记，该标记指定数据符号是否已拆分为其他符号的聚合或集合；编译器将符号视为单独的实体，即使它们确实是较大符号的一部分。
 
 ## <a name="syntax"></a>语法
 
@@ -35,16 +35,16 @@ HRESULT get_isSplitted(
 #### <a name="parameters"></a>参数
  `pFlag`
 
-[out]如果 `TRUE` 符号已拆分为符号的聚合，则返回 ;否则返回 `FALSE` 。
+[out] 如果符号已被拆分为符号的聚合，则返回 `TRUE`；否则，返回 `FALSE`。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则 `S_FALSE` 返回 或错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回 `S_FALSE` 或错误代码。
 
 > [!NOTE]
-> 返回值 `S_FALSE` 表示属性不可用于符号。
+> 返回值 `S_FALSE` 意味着该属性对符号不可用。
 
 ## <a name="remarks"></a>备注
- [IDiaSymbol：：get_isAggregated](../../debugger/debug-interface-access/idiasymbol-get-isaggregated.md)方法返回属于拆分符号一 `TRUE` 部分的所有符号。
+ 对于属于拆分符号的所有符号，[IDiaSymbol::get_isAggregated](../../debugger/debug-interface-access/idiasymbol-get-isaggregated.md) 返回 `TRUE`。
 
 ## <a name="requirements"></a>要求
 

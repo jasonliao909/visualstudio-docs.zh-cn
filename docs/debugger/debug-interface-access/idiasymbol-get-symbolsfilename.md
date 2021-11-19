@@ -35,16 +35,16 @@ HRESULT get_symbolsFileName (
 #### <a name="parameters"></a>参数
  `pRetVal`
 
-弄返回从中加载符号的文件的名称。
+[out] 返回从中加载符号的文件的名称。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回 `S_FALSE` 错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回 `S_FALSE` 或错误代码。
 
 > [!NOTE]
 > 返回值 `S_FALSE` 意味着该属性对符号不可用。
 
 ## <a name="remarks"></a>备注
- 此属性仅对 [SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md) 值为且 `SymTagExe` 具有全局作用域的符号有效。
+ 此属性仅对 [SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)值为 `SymTagExe`，且同时具有全局范围的符号有效。
 
 ## <a name="see-also"></a>另请参阅
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

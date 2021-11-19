@@ -1,6 +1,6 @@
 ---
-title: 工作流设计器 - "类型集合编辑器"对话框
-description: 了解如何使用"类型集合编辑器"对话框将已知类型添加到"发送和接收"活动。
+title: 工作流设计器 -“类型集合编辑器”对话框
+description: 了解如何使用“类型集合编辑器”对话框将已知类型添加到 Send 和 Receive 活动。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -22,11 +22,11 @@ ms.locfileid: "126665185"
 ---
 # <a name="type-collection-editor-dialog-box"></a>“类型集合编辑器”对话框
 
-"**类型集合编辑器**"对话框用于向"发送和接收"活动 **添加已知** 类型。  此对话框还用于向 **InvokeMethod** 活动添加泛型类型参数。 当用于"**发送和接收"** 活动以添加已知类型时 **，"类型** 集合编辑器"对话框要求类型添加项是唯一的。 如果添加重复类型，并且通过单击"确定"提交更改，则返回错误消息。 当用于 **InvokeMethod** 活动以添加泛型类型参数时，"类型集合编辑器"对话框允许添加重复类型。 
+“类型集合编辑器”对话框用于向“Send”和“Receive”活动添加已知的类型。   还可以使用此对话框向“InvokeMethod”活动添加泛型类型参数。 当“类型集合编辑器”对话框用于向“Send”和“Receive”活动添加已知类型时，该对话框要求添加的类型唯一。   如果添加了重复的类型并且通过单击“确定”提交了更改，则会返回一条错误消息。 当“类型集合编辑器”对话框用于向“InvokeMethod”活动添加泛型类型参数时，该对话框允许添加重复的类型。 
 
-有关详细信息，请参阅数据 [协定已知类型](/dotnet/framework/wcf/feature-details/data-contract-known-types)。
+有关详细信息，请参阅[数据协定已知类型](/dotnet/framework/wcf/feature-details/data-contract-known-types)。
 
-下表描述了"类型集合" (UI) 元素 **的** 用户界面。
+下表描述“类型集合”对话框的用户界面 (UI) 元素。
 
 |UI 元素|说明|
 |-|-----------------|
@@ -34,16 +34,16 @@ ms.locfileid: "126665185"
 
 ## <a name="to-bring-up-the-type-collection-editor-for-the-send-and-receive-activities"></a>为 Send 和 Receive 活动打开“类型集合编辑器”
 
-1. 在设计 **视图中****选择"发送**"或"接收"活动。
+1. 在设计视图中选择“Send”或“Receive”活动。 
 
-2. 按 **F4** 打开"属性 **"** 窗口。
+2. 按 F4 打开“属性”窗口。 
 
-3. 在" **属性** "窗口中，单击 **KnownTypes 属性旁边的省略号** 按钮。
+3. 在“属性”窗口中，单击“KnownTypes”属性旁的省略号按钮。 
 
 ## <a name="to-bring-up-the-type-collection-editor-for-the-invokemethod-activity"></a>为 InvokeMethod 活动打开“类型集合编辑器”
 
-1. 在设计 **视图中选择 InvokeMethod** 活动。
+1. 在设计视图中选择“InvokeMethod”活动。
 
-2. 按 **F4** 打开"属性 **"** 窗口。
+2. 按 F4 打开“属性”窗口。 
 
-3. 在" **属性** "窗口中，单击 **GenericTypeArguments** 属性旁边的省略号按钮。
+3. 在“属性”窗口中，单击“GenericTypeArguments”属性旁的省略号按钮。 

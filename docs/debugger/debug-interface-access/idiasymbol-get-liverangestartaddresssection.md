@@ -1,5 +1,5 @@
 ---
-description: 返回本地符号有效的范围起始地址的部分。
+description: 返回本地符号有效的范围的起始地址的节部分。
 title: IDiaSymbol::get_liveRangeStartAddressSection | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127832696"
 ---
 # <a name="idiasymbolget_liverangestartaddresssection"></a>IDiaSymbol::get_liveRangeStartAddressSection
-返回本地符号有效的范围起始地址的部分。
+返回本地符号有效的范围的起始地址的节部分。
 
 ## <a name="syntax"></a>语法
 
@@ -35,25 +35,25 @@ HRESULT get_liveRangeStartAddressSection (
 #### <a name="parameters"></a>参数
  `section`
 
-弄返回起始地址范围的部分。
+[out] 返回起始地址范围的节部分。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回错误代码。
 
 > [!NOTE]
-> 返回的错误代码表示该符号没有活动范围信息。
+> 返回的错误代码表示符号没有实时范围信息。
 
 ## <a name="remarks"></a>备注
- 由节和偏移量组成的地址是符号有效的范围的开始位置。
+ 由节和偏移组成的地址是符号有效的范围的开始位置。
 
- 若要获取地址的偏移量部分，请使用 [IDiaSymbol：： get_liveRangeStartAddressOffset](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddressoffset.md)。
+ 若要获取地址的偏移部分，请使用 [IDiaSymbol::get_liveRangeStartAddressOffset](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddressoffset.md)。
 
 ## <a name="requirements"></a>要求
- 标头： Dia2
+ 标头：Dia2.h
 
- 库： diaguids
+ 库：diaguids.lib
 
- DLL： msdia100.dll
+ DLL：msdia100.dll
 
 ## <a name="see-also"></a>另请参阅
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

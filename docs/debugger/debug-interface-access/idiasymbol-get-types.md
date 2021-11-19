@@ -1,6 +1,6 @@
 ---
 description: 检索此符号的编译器特定类型的数组。
-title: IDiaSymbol：： get_types |Microsoft Docs
+title: IDiaSymbol::get_types | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -37,18 +37,18 @@ HRESULT get_types (
 #### <a name="parameters"></a>参数
  `cTypes`
 
-中用于保存数据的缓冲区大小。
+[in] 用于保留数据的缓冲区的大小。
 
  `pcTypes`
 
-弄返回写入的类型的数目，或者如果 `types` 参数为 `NULL` ，则返回可用的类型总数。
+[out] 返回写入的类型数，如果 `types` 参数为 `NULL`，则返回可用的类型总数。
 
  `types[]`
 
-弄要使用表示此符号的所有类型的 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 对象填充的数组。
+[out] 要用表示此符号的所有类型的 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 对象填充的数组。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回 `S_FALSE` 错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回 `S_FALSE` 或错误代码。
 
 > [!NOTE]
 > 返回值 `S_FALSE` 意味着该属性对符号不可用。

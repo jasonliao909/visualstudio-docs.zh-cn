@@ -1,6 +1,6 @@
 ---
-description: 检索此符号表示的对象使用的内存位数或字节数。
-title: IDiaSymbol：：get_length |Microsoft Docs
+description: 检索此符号表示的对象所使用的内存的位数或字节数。
+title: IDiaSymbol::get_length | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -22,7 +22,7 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127832550"
 ---
 # <a name="idiasymbolget_length"></a>IDiaSymbol::get_length
-检索此符号表示的对象使用的内存位数或字节数。
+检索此符号表示的对象所使用的内存的位数或字节数。
 
 ## <a name="syntax"></a>语法
 
@@ -35,16 +35,16 @@ HRESULT get_length (
 #### <a name="parameters"></a>参数
  `pRetVal`
 
-[out]返回此符号表示的对象所使用的字节数或内存位数。
+[out] 返回此符号表示的对象所使用的内存的字节数或位数。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回 `S_FALSE` 或错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回 `S_FALSE` 或错误代码。
 
 > [!NOTE]
-> 返回值 `S_FALSE` 表示属性不可用于符号。
+> 返回值 `S_FALSE` 意味着该属性对符号不可用。
 
 ## <a name="remarks"></a>备注
- 如果 [符号的 LocationType 枚举](../../debugger/debug-interface-access/locationtype.md) 为 ，则此方法返回的长度为 `LocIsBitField` 位;否则，所有其他位置类型的长度为字节。
+ 如果符号的 [LocationType Enumeration](../../debugger/debug-interface-access/locationtype.md) 为 `LocIsBitField`，则此方法返回的长度以位为单位；否则，所有其他位置类型的长度以字节为单位。
 
 ## <a name="example"></a>示例
 

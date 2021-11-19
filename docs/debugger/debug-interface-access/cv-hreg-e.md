@@ -26,7 +26,7 @@ ms.locfileid: "127832388"
 指定目标寄存器。
 
 > [!NOTE]
-> 由于 `CV_HREG_e` 枚举太大而无法在此处完整复制，因此提供了一个缩写形式作为参考。 缺失项以斜体形式存在。 Cvconst 头文件中提供了完整的枚举。
+> 由于 `CV_HREG_e` 枚举太大而无法在此处完整复制，因此提供了一个缩写形式作为参考。 缺少的条目用斜体字标出。 cvconst.h 头文件中提供了完整的枚举。
 
 ## <a name="syntax"></a>语法
 
@@ -412,32 +412,32 @@ enum CV_HREG_e {
 ```
 
 ## <a name="elements"></a>元素
-CV_REG_ * 寄存器，由 Intel 80x86 和 ix86 处理器和 p 代码使用。
+CV_REG_* 寄存器，由 Intel 80x86 和 ix86 处理器以及 p-code 使用。
 
-68K 处理器使用的 CV_R68_ * 寄存器。
+CV_R68_* 寄存器，由 68K 处理器使用。
 
-MIPS 4000 系列处理器使用 CV_M4_ * 寄存器。
+CV_M4_* 寄存器，由 MIPS 4000 系列处理器使用。
 
-CV_ALPHA_ * 注册由数字设备 Corporation Alpha AXP 系列处理器使用。
+CV_ALPHA_* 寄存器，由 Digital Equipment Corporation Alpha AXP 系列处理器使用。
 
-Motorola/IBM PowerPC 处理器使用 CV_PPC_ * 寄存器。
+CV_PPC_* 寄存器，由 Motorola/IBM PowerPC 处理器使用。
 
-\*HITACHI SH3 和 HITACHI SH 系列处理器使用的 CV_SH3_ * 和 CV_SH_ 寄存器。
+CV_SH3_* 和 CV_SH_\* 寄存器，由 Hitachi SH3 和 Hitachi SH 系列处理器使用。
 
-由高级 RISC 计算机使用的 CV_ARM_ * 寄存器 (ARM) 处理器。
+CV_ARM_* 寄存器，由 Advanced RISC Machine (ARM) 处理器使用。
 
-CV_IA64_ * 寄存器。
+CV_IA64_* 寄存器，由 Intel IA64 系列处理器使用。
 
-CV_TRI_ * 注册由 Infineon 技术 TriCore 处理器使用。
+CV_TRI_* 寄存器，由 Infineon Technologies TriCore 处理器使用。
 
-Matsushita/Panasonic AM33 和相关处理器使用的 CV_AM33_ * 寄存器。
+CV_AM33_* 寄存器，由 Matsushita/Panasonic AM33 和相关处理器使用。
 
-Mitsubishi M32R 处理器使用 CV_M32R_ * 寄存器。
+CV_M32R_* 寄存器，由 Mitsubishi M32R 处理器使用。
 
 ## <a name="remarks"></a>备注
-每个处理器类型都使用其自己的唯一寄存器集。
+每个处理器类型都使用自己独特的一组寄存器。
 
-此枚举中的值将传递给以下方法：
+此枚举中的值被传递到以下方法：
 
 - [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)
 
@@ -450,7 +450,7 @@ Mitsubishi M32R 处理器使用 CV_M32R_ * 寄存器。
 - [IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)
 
 ## <a name="requirements"></a>要求：
-标头： cvconst
+标头：cvconst.h
 
 ## <a name="see-also"></a>另请参阅
 - [枚举和结构](../../debugger/debug-interface-access/enumerations-and-structures.md)

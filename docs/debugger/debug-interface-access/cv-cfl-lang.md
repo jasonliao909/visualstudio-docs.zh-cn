@@ -1,6 +1,6 @@
 ---
 title: CV_CFL_LANG | Microsoft Docs
-description: 获取有关 CV_CFL_LANG 枚举类型的信息，该类型指定调试界面访问 SDK 中应用程序或链接模块的代码语言。
+description: 获取有关 CV_CFL_LANG 枚举类型的信息，该类型指定调试接口访问 SDK 中应用程序或链接模块的代码语言。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -50,19 +50,19 @@ typedef enum CV_CFL_LANG {
 ```
 
 ## <a name="elements"></a>元素
-CV_CFL_C 应用程序语言为 C。
+CV_CFL_C 应用程序语言是 C。
 
-CV_CFL_CXX 应用程序语言是 c + +。
+CV_CFL_CXX 应用程序语言是 C++。
 
 CV_CFL_FORTRAN 应用程序语言是 FORTRAN。
 
 CV_CFL_MASM 应用程序语言是 Microsoft 宏汇编程序。
 
-CV_CFL_PASCAL 应用程序语言为 Pascal。
+CV_CFL_PASCAL 应用程序语言是 Pascal。
 
-BASIC. CV_CFL_BASIC 应用程序语言
+CV_CFL_BASIC 应用程序语言是 BASIC。
 
-CV_CFL_COBOL 应用程序语言为 COBOL。
+CV_CFL_COBOL 应用程序语言是 COBOL。
 
 CV_CFL_LINK 应用程序是链接器生成的模块。
 
@@ -70,25 +70,25 @@ CV_CFL_CVTRES 应用程序是使用 CVTRES 工具转换的资源模块。
 
 CV_CFL_CVTPGD 应用程序是使用 CVTPGD 工具生成的 POGO 优化模块。
 
-CV_CFL_CSHARP 应用程序语言是 c #。
+CV_CFL_CSHARP 应用程序语言是 C#。
 
-Visual Basic CV_CFL_VB 应用程序语言。
+CV_CFL_VB 应用程序语言是 Visual Basic。
 
-CV_CFL_ILASM 应用程序语言是中间语言程序集 (即， (CLR) 程序集) 的公共语言运行时。
+CV_CFL_ILASM 应用程序语言是中间语言程序集（即公共语言运行时 (CLR) 程序集）。
 
 CV_CFL_JAVA 应用程序语言是 Java。
 
-CV_CFL_JSCRIPT 应用程序语言为 Jscript。
+CV_CFL_JSCRIPT 应用程序语言是 Jscript。
 
-CV_CFL_MSIL 应用程序语言是未知的 Microsoft 中间语言 (MSIL) ，可能是使用 [/ltcg (链接时代码生成) ](/cpp/build/reference/ltcg-link-time-code-generation) 开关导致的。
+CV_CFL_MSIL 应用程序语言是未知的 Microsoft 中间语言 (MSIL)，可能是使用 [/LTCG（链接时代码生成）](/cpp/build/reference/ltcg-link-time-code-generation)开关的结果。
 
 CV_CFL_HLSL 应用程序语言是高级着色器语言。
 
 ## <a name="remarks"></a>备注
-此枚举中的值由对 [IDiaSymbol：： get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md) 方法的调用返回。
+此枚举中的值是通过调用 [IDiaSymbol::get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md) 方法返回的。
 
 ## <a name="requirements"></a>要求
-标头： cvconst
+标头：cvconst.h
 
 ## <a name="see-also"></a>另请参阅
 - [枚举和结构](../../debugger/debug-interface-access/enumerations-and-structures.md)

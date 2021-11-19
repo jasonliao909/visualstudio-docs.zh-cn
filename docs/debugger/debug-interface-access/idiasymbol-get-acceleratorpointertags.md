@@ -1,5 +1,5 @@
 ---
-description: 返回与快捷键存根函数C++ AMP指针标记值。
+description: 返回对应于 C++ AMP 加速器存根函数的所有加速器指针标记值。
 title: IDiaSymbol::get_acceleratorPointerTags | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -20,7 +20,7 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127831810"
 ---
 # <a name="idiasymbolget_acceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
-返回与快捷键存根函数C++ AMP指针标记值。
+返回对应于 C++ AMP 加速器存根函数的所有加速器指针标记值。
 
 ## <a name="syntax"></a>语法
 
@@ -34,21 +34,21 @@ HRESULT get_acceleratorPointerTags(
 #### <a name="parameters"></a>参数
  `cnt`
 
-[in]输出数组 的大小 `pPointerTags` 。
+[in] 输出数组 `pPointerTags` 的大小。
 
  `pcnt`
 
-[out]快捷键存根函数中C++ AMP标记的计数。
+[out] C++ AMP 加速器存根函数中加速器指针标记的计数。
 
  `pPointerTags`
 
-[out]使用 `DWORD` 快捷键存根函数中的快捷键指针标记值填充的C++ AMP指针。
+[out] 填充了 C++ AMP 加速器存根函数中加速器指针标记值的 `DWORD` 数组指针。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回 `S_FALSE` 或错误代码。
+ 如果成功，则返回 `S_OK`；否则返回 `S_FALSE` 或错误代码。
 
 ## <a name="remarks"></a>备注
- 此方法在一个接口 `IDiaSymbol` 上调用，该接口对应于C++ AMP存根函数。
+ 此方法是在对应于 C++ AMP 快捷键存根函数的 `IDiaSymbol` 接口上调用的。
 
 ## <a name="see-also"></a>另请参阅
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

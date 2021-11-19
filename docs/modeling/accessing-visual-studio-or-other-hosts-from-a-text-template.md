@@ -1,6 +1,6 @@
 ---
 title: 从文本模板访问 Visual Studio 或其他主机
-description: 了解如何在由执行模板的主机公开的文本模板中使用方法和属性。
+description: 了解如何在文本模板中使用由执行模板的主机公开的方法和属性。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 11/04/2016
@@ -18,20 +18,20 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126664791"
 ---
-# <a name="access-visual-studio-or-other-hosts-from-a-text-template"></a>从Visual Studio模板访问主机或其他主机
+# <a name="access-visual-studio-or-other-hosts-from-a-text-template"></a>从文本模板访问 Visual Studio 或其他主机
 
-在文本模板中，可以使用由执行模板的主机公开的方法和属性。 Visual Studio主机的示例。
+在文本模板中，可以使用由执行模板的主机公开的方法和属性。 Visual Studio 是主机的一个示例。
 
 > [!NOTE]
-> 可以在常规文本模板中（但不能在预处理的文本模板中）使用主机 *方法和* 属性。
+> 你可以在常规文本模板中使用主机方法和属性，但不能在预处理文本模板中使用。
 
 ## <a name="obtain-access-to-the-host"></a>获取对主机的访问权限
 
-若要访问主机，在 `hostspecific="true"` 指令 `template` 中设置 。 现在可以使用 类型为 `this.Host` [ITextTemplatingEngineHost 的](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))。 例如 [，ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) 类型具有可用于解决文件名和日志错误的成员。
+若要访问主机，请在 `template` 指令中设置 `hostspecific="true"`。 现在，可以使用 `this.Host`，类型为 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))。 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) 类型具有可用于解析例如文件名和日志错误的成员。
 
 ### <a name="resolve-file-names"></a>解析文件名
 
-若要查找相对于文本模板的文件的完整路径，请使用 `this.Host.ResolvePath()` 。
+若要查找相对于文本模板的文件的完整路径，请使用 `this.Host.ResolvePath()`。
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -47,7 +47,7 @@ Content of myFile is:
 
 ### <a name="display-error-messages"></a>显示错误消息
 
-此示例在转换模板时记录消息。 如果主机已Visual Studio，则错误将添加到错误 **列表**。
+此示例在转换模板时记录消息。 如果主机是 Visual Studio，则错误将添加到“错误列表”。
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -65,11 +65,11 @@ Content of myFile is:
 
 ## <a name="use-the-visual-studio-api"></a>使用 Visual Studio API
 
-如果要在 Visual Studio 中执行文本模板，可以使用 访问 Visual Studio 和加载的任何包 `this.Host` 或扩展提供的服务。
+如果在 Visual Studio 中执行文本模板，可以使用 `this.Host` 访问 Visual Studio 提供的服务和加载的任何包或扩展。
 
-将 hostspecific="true"设置为 ，然后 `this.Host` 强制转换到 <xref:System.IServiceProvider> 。
+设置 hostspecific="true" 并将 `this.Host` 强制转换为 <xref:System.IServiceProvider>。
 
-此示例获取Visual Studio <xref:EnvDTE.DTE> API， 作为服务：
+此示例将 Visual Studio API <xref:EnvDTE.DTE> 作为服务：
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -85,4 +85,4 @@ Number of projects in this solution: <#=  dte.Solution.Projects.Count #>
 
 ## <a name="use-hostspecific-with-template-inheritance"></a>将 hostSpecific 与模板继承一同使用
 
-指定 `hostspecific="trueFromBase"` 是否也使用 `inherits` 属性，以及是否从指定 的模板继承 `hostspecific="true"` 。 如果没有，可能会收到编译器警告，指出属性 `Host` 已声明两次。
+如果你还使用 `inherits` 属性，并且如果从指定 `hostspecific="true"` 的模板继承，则指定 `hostspecific="trueFromBase"`。 如果没有，可能会收到编译器警告，指示属性 `Host` 已声明两次。

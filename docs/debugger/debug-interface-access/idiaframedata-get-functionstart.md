@@ -1,5 +1,5 @@
 ---
-description: IDiaFrameData：：get_functionStart检索一个标志，该标志指示块是否包含函数的入口点。
+description: IDiaFrameData::get_functionStart 检索一个标记，该标记指示块是否包含函数的入口点。
 title: IDiaFrameData::get_functionStart | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127832125"
 ---
 # <a name="idiaframedataget_functionstart"></a>IDiaFrameData::get_functionStart
-检索一个标志，该标志指示 块是否包含函数的入口点。
+检索指示块是否包含函数的入口点的标记。
 
 ## <a name="syntax"></a>语法
 
@@ -35,13 +35,13 @@ HRESULT get_functionStart (
 #### <a name="parameters"></a>参数
  `pRetVal`
 
-[out]如果 `TRUE` 块包含入口点，则返回 ;否则返回 `FALSE` 。
+[out] 如果块包含入口点，则返回 `TRUE`；否则返回 `FALSE`。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK`。 如果 `S_FALSE` 不支持此属性，则返回 。 否则，返回错误代码。
+ 如果成功，则返回 `S_OK`。 如果不支持此属性，则返回 `S_FALSE`。 否则，返回错误代码。
 
 ## <a name="remarks"></a>备注
- 堆栈帧可能不是函数的开始，因为该帧表示插入到函数中的内联方法或函数。
+ 堆栈帧可能不是函数的开头，因为该帧表示插入到函数中的内联方法或函数。
 
 ## <a name="see-also"></a>另请参阅
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

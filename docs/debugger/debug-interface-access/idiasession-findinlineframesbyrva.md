@@ -1,5 +1,5 @@
 ---
-description: IDiaSession：：findInlineFramesByRVA 检索枚举，该枚举允许客户端在指定的相对虚拟地址 (RVA) 上 (内联帧。
+description: IDiaSession::findInlineFramesByRVA 检索允许客户端在指定相对虚拟地址 (RVA) 中循环访问所有内联帧的枚举。
 title: IDiaSession::findInlineFramesByRVA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -20,7 +20,7 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127831901"
 ---
 # <a name="idiasessionfindinlineframesbyrva"></a>IDiaSession::findInlineFramesByRVA
-检索一个 枚举，该枚举允许客户端在 RVA (上访问指定相对虚拟地址上) 。
+检索允许客户端在指定相对虚拟地址 (RVA) 中循环访问所有内联帧的枚举。
 
 ## <a name="syntax"></a>语法
 
@@ -34,18 +34,18 @@ HRESULT findInlineFramesByRVA (
 #### <a name="parameters"></a>参数
  `parent`
 
-[in]一 `IDiaSymbol` 个表示父级的对象。
+[in] 表示父级的 `IDiaSymbol` 对象。
 
  `rva`
 
-[in]将地址指定为 RVA。
+[in] 将地址指定为 RVA。
 
  `ppResult`
 
-[out]保存 `IDiaEnumSymbols` 一个 对象，该对象包含检索到的帧的列表。
+[out] 保留包含已检索的帧的列表的 `IDiaEnumSymbols` 对象。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回错误代码。
 
 ## <a name="see-also"></a>另请参阅
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

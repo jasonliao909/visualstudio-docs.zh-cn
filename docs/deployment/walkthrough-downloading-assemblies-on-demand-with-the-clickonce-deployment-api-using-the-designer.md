@@ -1,6 +1,6 @@
 ---
-title: '使用设计器 (ClickOnce API 按需下载程序集) '
-description: 了解如何使用设计器将 ClickOnce 应用程序中的某些程序集标记为可选的，并在公共语言运行时需要它们时下载这些程序集。
+title: 使用设计器按需下载程序集 (ClickOnce API)
+description: 了解如何使用设计器将 ClickOnce 应用程序中的某些程序集标记为可选，以及如何在公共语言运行时需要它们时进行下载。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -27,7 +27,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126664649"
 ---
-# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>演练：使用设计器通过 ClickOnce 部署 API 按需下载程序集
+# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>演练：在设计器中使用 ClickOnce 部署 API 按需下载程序集
 默认情况下， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序中包含的所有程序集都会在应用程序首次运行时进行下载。 但是，可能有一小部分用户使用部分应用程序。 在这种情况下，你希望仅当创建其类型之一时才下载程序集。 下面的演练演示如何将应用程序中的某些程序集标记为“可选”，以及如何在公共语言运行时需要它们时使用 <xref:System.Deployment.Application> 命名空间中的类下载它们。
 
 > [!NOTE]
@@ -82,11 +82,11 @@ ms.locfileid: "126664649"
 
 4. 展开“组”  下拉框，然后选择“新建” 。 输入名称 `ClickOnceLibrary` 作为新的组名称。
 
-5. 继续发布应用程序，如[如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)中所述。
+5. 继续发布应用程序，如[操作说明：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)中所述。
 
 ### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-manifest-generation-and-editing-tool--graphical-client-mageuiexe"></a>使用清单生成和编辑工具在 ClickOnce 应用程序中将程序集标记为可选 — 图形客户端 (MageUI.exe)
 
-1. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]按照[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)中所述创建清单。
+1. 创建 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 清单，如[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)中所述。
 
 2. 关闭 MageUI.exe 之前，选择包含部署应用程序清单的选项卡，然后在该选项卡中选择“文件”  选项卡。
 

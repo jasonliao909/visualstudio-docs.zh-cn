@@ -1,6 +1,6 @@
 ---
-description: Microsoft 调试接口访问软件开发工具包 (DIA SDK) 提供对存储在程序数据库 (.pdb) 由 Microsoft 后编译器工具生成的文件的调试信息的访问权限。
-title: 调试接口访问 SDK |Microsoft Docs
+description: Microsoft 调试接口访问软件开发工具包 (DIA SDK) 提供对存储在由 Microsoft 后编译器工具生成的程序数据库 (.pdb) 文件中的调试信息的访问。
+title: 调试接口访问 SDK | Microsoft Docs
 ms.date: 07/24/2018
 ms.topic: reference
 dev_langs:
@@ -25,13 +25,13 @@ ms.locfileid: "127832384"
 ---
 # <a name="debug-interface-access-sdk"></a>调试接口访问 SDK
 
-Microsoft 调试接口访问软件开发工具包 (DIA SDK) 提供对存储在程序数据库 (.pdb) 由 Microsoft 后编译器工具生成的文件的调试信息的访问权限。 由于后编译器工具生成的 .pdb 文件的格式会持续修订，因此公开格式不切实际。 使用 DIA API，可以开发搜索和浏览 .pdb 文件中存储的调试信息的应用程序。 例如，此类应用程序可以报告堆栈跟踪信息和分析性能数据。
+Microsoft 调试接口访问软件开发工具包 (DIA SDK) 提供对存储在由 Microsoft 后编译器工具生成的程序数据库 (.pdb) 文件中的调试信息的访问。 由于后编译器工具生成的 .pdb 文件的格式会不断修订，因此公开该格式是不切实际的。 使用 DIA API，可以开发搜索和浏览存储在 .pdb 文件中的调试信息的应用程序。 例如，此类应用程序可以报告堆栈追溯信息和分析性能数据。
 
 ## <a name="in-this-section"></a>本节内容
 
 [入门](../../debugger/debug-interface-access/getting-started-debug-interface-access-sdk.md)
 
-概述了这些DIA SDK，并指定安装DIA SDK以及所需的标头和库文件的位置。
+概述 DIA SDK 功能并指定 DIA SDK 的安装位置以及所需的头文件和库文件。
 
 [查询 .Pdb 文件](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)
 
@@ -47,4 +47,4 @@ Microsoft 调试接口访问软件开发工具包 (DIA SDK) 提供对存储在�
 
 [Dia2dump 示例](../../debugger/debug-interface-access/dia2dump-sample.md)
 
-演示如何使用 DIA API 搜索和浏览调试信息。
+说明如何使用 DIA API 搜索和浏览调试信息。

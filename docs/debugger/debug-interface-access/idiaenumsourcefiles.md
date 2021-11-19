@@ -31,25 +31,25 @@ IDiaEnumSourceFiles : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
-下表显示的方法 `IDiaEnumSourceFiles` 。
+下表显示了 `IDiaEnumSourceFiles` 方法。
 
 |方法|说明|
 |------------|-----------------|
-|[IDiaEnumSourceFiles::get__NewEnum](../../debugger/debug-interface-access/idiaenumsourcefiles-get-newenum.md)|检索 `IEnumVARIANT Interface` 此枚举器的版本。|
-|[IDiaEnumSourceFiles::get_Count](../../debugger/debug-interface-access/idiaenumsourcefiles-get-count.md)|检索源文件的数目。|
+|[IDiaEnumSourceFiles::get__NewEnum](../../debugger/debug-interface-access/idiaenumsourcefiles-get-newenum.md)|检索该枚举器的 `IEnumVARIANT Interface` 版本。|
+|[IDiaEnumSourceFiles::get_Count](../../debugger/debug-interface-access/idiaenumsourcefiles-get-count.md)|检索源文件的数量。|
 |[IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)|通过索引检索源文件。|
 |[IDiaEnumSourceFiles::Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md)|检索枚举序列中指定数目的源文件。|
-|[IDiaEnumSourceFiles::Skip](../../debugger/debug-interface-access/idiaenumsourcefiles-skip.md)|跳过枚举序列中指定数目的源文件。|
-|[IDiaEnumSourceFiles::Reset](../../debugger/debug-interface-access/idiaenumsourcefiles-reset.md)|将枚举序列重置到开始处。|
-|[IDiaEnumSourceFiles::Clone](../../debugger/debug-interface-access/idiaenumsourcefiles-clone.md)|创建与当前枚举数包含相同枚举状态的枚举数。|
+|[IDiaEnumSourceFiles::Skip](../../debugger/debug-interface-access/idiaenumsourcefiles-skip.md)|跳过枚举序列中指定数量的源文件。|
+|[IDiaEnumSourceFiles::Reset](../../debugger/debug-interface-access/idiaenumsourcefiles-reset.md)|将枚举序列重置到开头。|
+|[IDiaEnumSourceFiles::Clone](../../debugger/debug-interface-access/idiaenumsourcefiles-clone.md)|创建一个枚举器，其中包含与当前枚举器相同的枚举状态。|
 
 ## <a name="remarks"></a>备注
 
-## <a name="notes-for-callers"></a>调用方说明
-通过 `QueryInterface` 对 [IDiaTable](../../debugger/debug-interface-access/idiatable.md) 对象调用方法获取此接口。 参阅示例了解详细信息。
+## <a name="notes-for-callers"></a>对调用者的说明
+通过在 [IDiaTable](../../debugger/debug-interface-access/idiatable.md) 对象上调用 `QueryInterface` 方法来获取此接口。 参阅示例了解详细信息。
 
 ## <a name="example"></a>示例
-此示例演示如何 `IDiaEnumSourceFiles` 从 DIA session 对象的表列表中获取接口。 有关访问源文件信息的示例，请参阅 [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) 接口。
+此示例演示如何从 DIA 会话对象中的表列表中获取 `IDiaEnumSourceFiles` 接口。 有关访问源文件信息的示例，请参阅 [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) 接口。
 
 ```C++
 
@@ -82,11 +82,11 @@ IDiaEnumSourceFiles* GetEnumSourceFiles(IDiaSession *pSession)
 ```
 
 ## <a name="requirements"></a>要求
-标头： Dia2
+标头：Dia2.h
 
-库： diaguids
+库：diaguids.lib
 
-DLL： msdia80.dll
+DLL：msdia80.dll
 
 ## <a name="see-also"></a>另请参阅
 - [接口（调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

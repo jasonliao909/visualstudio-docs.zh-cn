@@ -21,18 +21,18 @@ ms.locfileid: "127832999"
 # <a name="enable-iis"></a>enable-iis
 
 > [!IMPORTANT]
-> 从 2021 年 4 月 12 日开始，将不再支持从 Visual Studio 2019 连接到 GitHub Codespaces，此个人预览版已结束。 我们将重点放在针对广泛的 Visual Studio 工作负荷进行优化的云驱动内部循环和 VDI 解决方案的不断变化方面。 作为此 `devinit` 和相关工具的一部分将不再可用。 建议参与 Visual Studio 的开发人员社区论坛，了解未来要推出的预览版和路线图信息。
+> 从 2021 年 4 月 12 日开始，将不再支持从 Visual Studio 2019 连接到 GitHub Codespaces，此个人预览版已结束。 我们的工作重点是改进云支持型内部循环和针对多种 Visual Studio 工作负载优化的 VDI 解决方案的体验。 在此期间，`devinit` 和关联工具将不再可用。 建议参与 Visual Studio 的开发人员社区论坛，了解未来要推出的预览版和路线图信息。
 
-该 `enable-iis` 工具用于启用 iis 功能并安装用于 ASP.NET 使用 iis 进行开发的[ASP.NET Core 模块](/aspnet/core/host-and-deploy/aspnet-core-module)。
+`enable-iis` 工具用于启用 IIS 功能并安装 [ASP.NET Core 模块](/aspnet/core/host-and-deploy/aspnet-core-module)，以便使用 IIS 进行 ASP.NET 开发。
 
 ## <a name="usage"></a>使用情况
 
-如果 `input` 和 `additionalOptions` 属性均省略或为空，则该工具将遵循下面详细说明的 [默认](#default-behavior) 行为。
+如果 `input` 和 `additionalOptions` 属性省略或为空，则该工具将遵循下面详述的[默认](#default-behavior)行为。
 
 | 名称                                             | 类型   | 必须 | 值                                                                               |
 |--------------------------------------------------|--------|----------|-------------------------------------------------------------------------------------|
 | **注释**                                     | 字符串型 | 否       | 可选注释属性。 未使用。                                               |
-| [**送**](#input)                              | 字符串型 | 否       | 未使用。                                                                           |
+| [input](#input)                              | 字符串型 | 否       | 未使用。                                                                           |
 | [**additionalOptions**](#additional-options)     | 字符串型 | 否       | 未使用。                                                                           |
 
 ### <a name="input"></a>输入
@@ -45,12 +45,12 @@ ms.locfileid: "127832999"
 
 ### <a name="default-behavior"></a>默认行为
 
-此工具的默认行为 `enable-iis` 是启用 iis 功能： iis-web 服务器、iis-webserverrole was-windowsactivationservice、iis websocket 和 WebAuthentication，然后安装包含 ASP.NET Core 模块的最新版本的 ASP.NET 托管捆绑包。
+`enable-iis` 工具的默认行为是启用 IIS 功能：IIS-WebServer、IIS-WebServerRole、IIS-WebSockets 和 IIS-WebAuthentication，然后安装包含 ASP.NET Core 模块的最新版本的 ASP.NET 托管捆绑包。
 
 ## <a name="example-usage"></a>用法示例
-下面是如何使用运行的示例 `enable-iis` `.devinit.json` 。
+下面是有关如何使用 `.devinit.json` 运行 `enable-iis` 的示例。
 
-#### <a name="devinitjson-that-will-enable-iis-development"></a>devinit 将启用 IIS 开发：
+#### <a name="devinitjson-that-will-enable-iis-development"></a>将启用 IIS 开发的 .devinit.json：
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0.json",

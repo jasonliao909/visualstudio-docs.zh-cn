@@ -1,6 +1,6 @@
 ---
-description: 检索 FORTRAN 多维数组) 维度的排名 (。
-title: IDiaSymbol：： get_rank |Microsoft Docs
+description: 检索 FORTRAN 多维数组的级别（维数）。
+title: IDiaSymbol::get_rank | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -22,7 +22,7 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127832729"
 ---
 # <a name="idiasymbolget_rank"></a>IDiaSymbol::get_rank
-检索 FORTRAN 多维数组) 维度的排名 (。
+检索 FORTRAN 多维数组的级别（维数）。
 
 ## <a name="syntax"></a>语法
 
@@ -35,16 +35,16 @@ HRESULT get_rank (
 #### <a name="parameters"></a>参数
  `pRetVal`
 
-弄返回 FORTRAN 多维数组中的维度数。
+[out] 返回 FORTRAN 多维数组中的维数。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回 `S_FALSE` 错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回 `S_FALSE` 或错误代码。
 
 > [!NOTE]
 > 返回值 `S_FALSE` 意味着该属性对符号不可用。
 
 ## <a name="remarks"></a>备注
- Rank 是指数组中数组的维数，其中数组被声明为 `myarray[1,2,3]` 。 此示例的排名为3和3。 Rank 不适用于 c + +，后者使用每个维度的数组的概念 (即 `myarray[1][2][3]`) 。
+ “级别”是指数组中的维数，其中数组声明为 `myarray[1,2,3]`。 此示例的级别为 3，维数为 3。 级别不适用于 C++，因为 C++ 使用每个维度的数组的概念（即 `myarray[1][2][3]`）。
 
 ## <a name="see-also"></a>另请参阅
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

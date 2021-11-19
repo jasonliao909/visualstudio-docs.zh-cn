@@ -1,6 +1,6 @@
 ---
-title: 在联机查询应用中检索ClickOnce信息
-description: 了解ClickOnce应用程序如何读取 URL 的查询部分，以及如何使用 MageUI 将应用程序配置为接受查询字符串参数。
+title: 在联机 ClickOnce 应用中检索查询字符串信息
+description: 了解 ClickOnce 应用程序如何读取 URL 的查询部分，以及如何使用 MageUI 将应用程序配置为接受查询字符串参数。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -42,14 +42,14 @@ ms.locfileid: "126602515"
 > [!NOTE]
 > 决定启用此功能之前，请参阅本主题后面的“安全性”一节。
 
- 有关如何使用Mage.exe或MageUI.exe创建部署的信息，请参阅演练：手动部署ClickOnce [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] [应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  **
+ 有关如何使用 Mage.exe 或 MageUI.exe 创建 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署的信息，请参阅[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。
 
 > [!NOTE]
 > 从 .NET Framework 3.5 SP1 开始，可以将命令行参数传递给脱机 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序。 如果要向应用程序提供参数，则可以将参数传入具有 .APPREF-MS 扩展名的快捷方式文件。
 
 ### <a name="to-obtain-query-string-information-from-a-clickonce-application"></a>从 ClickOnce 应用程序获取查询字符串信息
 
-1. 将以下代码置于项目中。 若要使此代码正常工作，必须引用 System.Web，并添加 或 针对 `using` `Imports` System.Web、System.Collections.Specialized 和 System.Deployment.Application 的 指令。
+1. 将以下代码置于项目中。 若要使此代码正常运行，必须具有对 System.Web 的引用，并且为 System.Web、System.Collections.Specialized 和 System.Deployment.Application 添加 `using` 或 `Imports` 指令。
 
     :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/ClickOnceQueryString/CS/Form1.cs" id="Snippet1":::
     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceQueryString/VB/Form1.vb" id="Snippet1":::

@@ -35,15 +35,15 @@ HRESULT get_addressMapEnabled (
 #### <a name="parameters"></a>参数
  pRetVal
 
-弄 `TRUE` 如果已启用地址映射，则返回。
+[out] 如果启用了地址映射，则返回 `TRUE`。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回错误代码。
 
 ## <a name="remarks"></a>备注
- 可执行的后处理器有时会更新可执行文件。 DIA 包含一种机制，用于支持将符号转换为新的布局。
+ 可执行的后处理器有时会更新可执行文件。 DIA 包含一种机制，用于支持将符号转换为新布局。
 
- 客户端应用程序可以通过从[IDiaSession](../../debugger/debug-interface-access/idiasession.md)接口获取[IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)接口并调用[IDiaAddressMap：： Set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)方法，然后调用[IDiaAddressMap：:p ut_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)方法来设置特定会话的地址映射。 `get_addressMapEnabled`方法返回调用方法的结果 `put_addressMapEnabled` 。
+ 客户端应用程序可以通过从 [IDiaSession](../../debugger/debug-interface-access/idiasession.md) 接口获取 [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md) 接口并调用 [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) 方法，然后调用 [IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md) 方法来设置特定会话的地址映射。 `get_addressMapEnabled` 方法返回调用 `put_addressMapEnabled` 方法的结果。
 
 ## <a name="see-also"></a>另请参阅
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)

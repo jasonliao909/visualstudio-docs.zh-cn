@@ -19,7 +19,7 @@ ms.locfileid: "126663893"
 ---
 # <a name="share-code-maps"></a>共享代码图
 
-可以将代码图另存为作为 Visual Studio 项目的一部分、作为图像或 XPS 文件。
+可以将代码图另存为 Visual Studio 项目、图像或 XPS 文件的一部分。
 
 ## <a name="share-a-code-map-with-other-visual-studio-users"></a>与其他 Visual Studio 用户共享代码图
 
@@ -27,11 +27,11 @@ ms.locfileid: "126663893"
 
 -或-
 
-若要将地图保存为特定项目的一部分，请在地图工具栏上选择 "  >  **将" 移动 \<CodeMapName> 到**"" 共享 "，然后选择要在其中保存地图的项目。
+若要将代码图作为特定项目的一部分保存，请在代码图工具栏上，依次选择“共享” > “将 \<CodeMapName>.dgml 移至”，然后选择要用于保存代码图的项目。
 
 ![将映射移动到另一个项目中](../modeling/media/codemapsmovemapmenu.png)
 
-Visual Studio 将映射保存为可与 Visual Studio Enterprise 和 Visual Studio Professional 的其他用户共享的 *.dgml* 文件。
+Visual Studio 将代码图另存为 .dgml 文件，以便你可与 Visual Studio Enterprise 和 Visual Studio Professional 的其他用户共享。
 
 > [!NOTE]
 > 在与使用 Visual Studio Professional 的用户共享代码图之前，请确保展开所有组、显示隐藏节点和跨组链接，并检索希望其他人在你的代码图上查看的所有已删除的节点。 否则，其他用户将无法查看这些项目。
@@ -44,21 +44,21 @@ Visual Studio 将映射保存为可与 Visual Studio Enterprise 和 Visual Studi
 
 ## <a name="export-a-code-map-as-an-image"></a>将代码图导出为图像
 
-将代码图导出为图像时，可以将其复制到其他应用程序，如 Microsoft Word 或 PowerPoint。
+将代码图导出为图像，可以将它复制到其他应用程序，如 Microsoft Word 或 PowerPoint。
 
-1. 在代码图工具栏上，选择 "**共享**  >  **电子邮件" 作为图像** 或 **复制图像**。
+1. 在代码图工具栏上，选择“共享” > “以图像形式发送电子邮件”或“复制图像”。
 
 2. 将该图像粘贴到另一个应用程序中。
 
-## <a name="export-the-map-as-an-xps-file"></a>将地图作为 XPS 文件导出
+## <a name="export-the-map-as-an-xps-file"></a>将代码图导出为 XPS 文件
 
-将代码图导出为 XPS 文件时，可以在 XML 或 XAML 查看器（如 Internet Explorer）中查看它。
+将代码图导出为 XPS 文件，可以在 XML 或 XAML 查看器（如 Internet Explorer）中查看它。
 
-1. 在代码图工具栏上，选择"  >  **以便携式 xps 共享电子邮件**" 或 "**另存为可移植 xps**"。
+1. 在代码图工具栏上，依次选择“共享” > “作为可移植 XPS 发送电子邮件”或“另存为可移植 XPS”。
 
 2. 浏览到你要保存文件的位置。
 
-3. 对代码图命名。 请确保将 " **保存类型** " 框设置为 " **xps 文件 (.xps \*)**。 选择 **“保存”** 。
+3. 对代码图命名。 确保将“保存类型”框设置为“XPS 文件(\*.xps)”。 选择 **“保存”** 。
 
 ## <a name="see-also"></a>另请参阅
 

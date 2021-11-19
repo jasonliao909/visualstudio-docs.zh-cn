@@ -1,6 +1,6 @@
 ---
 description: 检索指定编译单位和源文件标识符中的行号。
-title: IDiaSession：： findLines |Microsoft Docs
+title: IDiaSession::findLines | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -37,18 +37,18 @@ HRESULT findLines (
 #### <a name="parameters"></a>参数
  `compiland`
 
-中表示编译单位的 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 对象。 使用此接口作为要在其中搜索行号的上下文。
+[in] 表示编译单位的 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 对象。 使用此接口作为要在其中搜索行号的上下文。
 
  `file`
 
-中一个 [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) 对象，该对象表示要在其中搜索行号的源文件。
+[in] 一个 [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) 对象，该对象表示要在其中搜索行号的源文件。
 
  `ppResult`
 
-弄返回一个 [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) 对象，该对象包含检索到的行号的列表。
+[out] 返回一个 [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) 对象，该对象包含检索到的行号列表。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回错误代码。
 
 ## <a name="see-also"></a>另请参阅
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

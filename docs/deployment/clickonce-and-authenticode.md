@@ -1,5 +1,5 @@
 ---
-title: ClickOnce验证码|Microsoft Docs
+title: ClickOnce 和验证码 | Microsoft Docs
 description: 了解验证码用于验证应用程序真实性的证书。 了解如何验证和存储证书。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -36,7 +36,7 @@ ms.locfileid: "129431583"
 ## <a name="authenticode-and-code-signing"></a>验证码和代码签名
  *数字证书* 是一个包含一个加密公钥/私钥对和元数据的文件，元数据描述了向其颁发证书的发行者以及颁发证书的机构。
 
- 有各种类型的验证码证书。 每种验证码证书为不同类型的签名而配置。 对于 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序，必须具有对代码签名有效的验证码证书。 如果尝试使用其他类型证书（如数字电子邮件证书）对 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序进行签名，将不起作用。 有关详细信息，请参阅 [代码签名简介](/windows/desktop/seccrypto/cryptography-tools)。
+ 有各种类型的验证码证书。 每种验证码证书为不同类型的签名而配置。 对于 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序，必须具有对代码签名有效的验证码证书。 如果尝试使用其他类型证书（如数字电子邮件证书）对 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序进行签名，将不起作用。 有关详细信息，请参阅[代码签名简介](/windows/desktop/seccrypto/cryptography-tools)。
 
  可以通过以下三种方法之一获取代码签名证书：
 
@@ -44,14 +44,14 @@ ms.locfileid: "129431583"
 
 - 从组织中负责创建数字证书的组中接收证书。
 
-- 使用 PowerShell cmdlet New-SelfSignedCertificate或MakeCert.exe *，从而* 生成自己的证书 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] 。
+- 使用 New-SelfSignedCertificate PowerShell cmdlet 或使用 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] 中包含的 MakeCert.exe 生成你自己的证书。
 
 ### <a name="how-using-certificate-authorities-helps-users"></a>使用证书颁发机构对用户的好处
  使用 New-selfsignedcertificate 生成的证书或 *MakeCert.exe* 通常称为实用工具 *自发证书* 或 *测试证书*。这种证书的工作方式与.NET Framework 中 *.snk* 文件的工作方式大致相同。 它只包含公钥/私钥加密密钥对，不包含有关发行者的可验证信息。 可以使用自发证书在 Intranet 上部署具有高信任级别的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序。 但是，当这些应用程序在客户端计算机上运行时， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 会将它们标识为来自未知发行者。 默认情况下，使用自发证书签名并在 Internet 上部署的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序不能使用受信任的应用程序部署。
 
  相反，从 CA（如证书供应商或企业内部部门）收到的证书可以为你的用户提供更高的安全性。 该证书不仅会标识已签名软件的发行者，还会通过与签发该证书的 CA 进行核实来验证发行者的身份。 如果 CA 不是根证书颁发机构，验证码还会沿证书链回溯到根颁发机构来验证该 CA 是否有权颁发证书。 为了提高安全性，应尽量使用 CA 颁发的证书。
 
- 有关生成自证书的信息，请参阅 [New-SelfSignedCertificate](/powershell/module/pki/new-selfsignedcertificate) 或 [MakeCert](/windows/desktop/SecCrypto/makecert)。
+ 有关生成自发证书的详细信息，请参阅 [New-SelfSignedCertificate](/powershell/module/pki/new-selfsignedcertificate) 或 [MakeCert](/windows/desktop/SecCrypto/makecert)。
 
 ### <a name="timestamps"></a>时间戳
  用于对 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序签名的证书在特定时间长度（通常为 12 个月）后会过期。 为了避免不断使用新证书对应用程序重新签名， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 支持时间戳。 使用时间戳对应用程序签名，只要时间戳有效，即使过期之后证书仍将被接受。 这将允许下载和运行证书已过期，但时间戳有效的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序。 还允许使用过期证书的已安装应用程序继续下载和安装更新。

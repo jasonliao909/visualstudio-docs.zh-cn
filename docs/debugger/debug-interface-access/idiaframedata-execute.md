@@ -1,5 +1,5 @@
 ---
-description: 执行堆栈展开并返回堆栈审核帧接口中的结果。
+description: 执行堆栈展开，并返回堆栈遍历帧接口中的结果。
 title: IDiaFrameData::execute | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127832133"
 ---
 # <a name="idiaframedataexecute"></a>IDiaFrameData::execute
-执行堆栈展开并返回堆栈审核帧接口中的结果。
+执行堆栈展开，并返回堆栈遍历帧接口中的结果。
 
 ## <a name="syntax"></a>语法
 
@@ -35,20 +35,20 @@ HRESULT execute (
 #### <a name="parameters"></a>参数
  `frame`
 
-中保存框架寄存器状态的 [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) 对象。
+[in] 保留帧寄存器的状态的 [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) 对象。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。 下表显示了此方法的可能的返回值。
+ 如果成功，则返回 `S_OK`；否则，返回错误代码。 下表显示了此方法的可能返回值。
 
 |值|说明|
 |-----------|-----------------|
 |E_DIA_INPROLOG|无法在序言代码中执行堆栈帧。|
 |E_DIA_SYNTAX|帧程序中出现分析错误。|
 |E_DIA_FRAME_ACCESS|无法访问寄存器或内存。|
-|E_DIA_VALUE|计算值时出错 (例如，被零除) 。|
+|E_DIA_VALUE|计算值时出错（例如，被零除）。|
 
 ## <a name="remarks"></a>备注
- 在调试过程中调用此方法展开堆栈。 [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)对象由客户端应用程序实现，以接收对寄存器的更新并提供方法使用的方法 `execute` 。
+ 在调试期间调用此方法来展开堆栈。 [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) 对象由客户端应用程序实现，用于接收对寄存器的更新并提供 `execute` 方法使用的方法。
 
 ## <a name="see-also"></a>另请参阅
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

@@ -1,6 +1,6 @@
 ---
-description: 这些是集合使用的枚举和DIA SDK。
-title: 枚举和结构|Microsoft Docs
+description: 这些是 DIA SDK 使用的枚举和结构。
+title: 枚举和结构 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -26,7 +26,7 @@ ms.locfileid: "127832370"
 ---
 # <a name="enumerations-and-structures"></a>枚举和结构
 
-这些是集合使用的枚举和DIA SDK。
+这些是 DIA SDK 使用的枚举和结构。
 
 ## <a name="in-this-section"></a>本节内容
 
@@ -38,7 +38,7 @@ ms.locfileid: "127832370"
 
 - [CV_access_e 枚举](../../debugger/debug-interface-access/cv-access-e.md)
 
- 指定成员函数和 (访问) 的可见性范围。
+ 指定成员函数和变量的可见性范围（访问级别）。
 
 - [CV_call_e 枚举](../../debugger/debug-interface-access/cv-call-e.md)
 
@@ -66,7 +66,7 @@ ms.locfileid: "127832370"
 
 - [MemoryTypeEnum 枚举](../../debugger/debug-interface-access/memorytypeenum.md)
 
- 指定要访问的内存类型。
+ 指定要访问的内存的类型。
 
 - [NameSearchOptions 枚举](../../debugger/debug-interface-access/namesearchoptions.md)
 
@@ -86,7 +86,7 @@ ms.locfileid: "127832370"
 
 - [UdtKind 枚举](../../debugger/debug-interface-access/udtkind.md)
 
- 介绍 UDT (用户定义) 。
+ 描述各种用户定义类型 (UDT)。
 
 ### <a name="structures"></a>结构
 
@@ -98,11 +98,11 @@ ms.locfileid: "127832370"
 
 [接口（调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 
-指定由接口提供的DIA SDK。
+指定由 DIA SDK 提供的接口。
 
 [常量（调试接口访问 SDK）](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)
 
-指定该参数中可用的DIA SDK。
+指定 DIA SDK 中可用的常量。
 
 ## <a name="see-also"></a>另请参阅
 

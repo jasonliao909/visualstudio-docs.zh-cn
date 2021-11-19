@@ -1,6 +1,6 @@
 ---
-title: AddToCollection &lt; T &gt; 活动设计器
-description: 了解如何使用 AddToCollection 活动设计器在 工作流设计器 <T> 中创建和配置 AddToCollection <T> 活动。
+title: AddToCollection&lt;T&gt; 活动设计器
+description: 了解如何使用 AddToCollection<T> 活动设计器在工作流设计器中创建和配置 AddToCollection <T> 活动。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -22,28 +22,28 @@ ms.locfileid: "126664687"
 ---
 # <a name="addtocollectiont-activity-designer"></a>AddToCollection\<T> 活动设计器
 
-**\<T> AddToCollection** 活动设计器用于创建和配置 <xref:System.Activities.Statements.AddToCollection%601> 活动。
+AddToCollection\<T> 活动设计器用于创建和配置 <xref:System.Activities.Statements.AddToCollection%601> 活动。
 
-## <a name="the-addtocollectiont-activity"></a>AddToCollection \<T> 活动
+## <a name="the-addtocollectiont-activity"></a>AddToCollection\<T> 活动
 
 <xref:System.Activities.Statements.AddToCollection%601> 活动向集合添加一项。
 
-### <a name="using-the-addtocollectiont-activity-designer"></a>使用 AddToCollection \<T> 活动设计器
+### <a name="using-the-addtocollectiont-activity-designer"></a>使用 AddToCollection\<T> 活动设计器
 
-   **AddToCollection \<T>** 活动设计器可以在"工具箱"的"集合"类别中找到，单击"工具箱"的"工具箱"选项卡即可工作流设计器。 或者，从"视图 **"菜单中** 选择"**工具箱"，** 或按 **Ctrl** + **Alt** + **X**。
+可以在“工具箱”的“集合”类别（通过单击工作流设计器的“工具箱”选项卡来访问）中找到 AddToCollection\<T> 活动设计器   。 或者，从“视图”菜单中选择“工具箱”或按 Ctrl+Alt+X    。
 
-**AddToCollection \<T>** 活动设计器可以从"工具箱"拖动，并拖放到工作流设计器放置活动的位置（例如 位于 内）的图面上 <xref:System.Activities.Statements.Sequence> 。 删除 **AddToCollection \<T>** 活动设计器会创建 <xref:System.Activities.Statements.AddToCollection%601> <xref:System.Activities.Activity.DisplayName%2A> Int32 中的默认 AddToCollection<活动 \> 。 *(，TypeArgument* 默认为 **Int32**。 TypeArgument 可以在属性 grid.) <xref:System.Activities.Activity.DisplayName%2A> **可以在 AddToCollection<T \>** 活动设计器的标头或属性网格的 **DisplayName** 框中编辑该值。 其他属性必须在属性网格上编辑。
+可以将 AddToCollection\<T> 活动设计器从“工具箱”拖放到工作流设计器图面上放置活动的任何位置，如 <xref:System.Activities.Statements.Sequence> 内 。 放置 AddToCollection\<T> 活动设计器将创建一个 <xref:System.Activities.Statements.AddToCollection%601> 活动，其默认的 <xref:System.Activities.Activity.DisplayName%2A> 为 AddToCollection<Int32\>。 （默认情况下，TypeArgument 为 Int32。 可以在属性网格中更改 TypeArgument。可以在 AddToCollection<T\> 活动设计器的标头中或在属性网格的“DisplayName”框中编辑 <xref:System.Activities.Activity.DisplayName%2A> 值 。 其他属性必须在属性网格上编辑。
 
-### <a name="the-addtocollectiont-properties"></a>AddToCollection \<T> 属性
+### <a name="the-addtocollectiont-properties"></a>AddToCollection\<T> 属性
 
 下表列出 <xref:System.Activities.Statements.AddToCollection%601> 属性并说明如何在设计器中使用它们。
 
 |属性名称|必选|使用情况|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|错误|<xref:System.Activities.Statements.AddToCollection%601> 活动的友好名称。 默认值为 AddToCollection<Int32 \> 。 虽然 <xref:System.Activities.Activity.DisplayName%2A> 值不是绝对必需的，但最好使用该属性值。|
-|<xref:System.Activities.Statements.AddToCollection%601.Item%2A>|True|要添加到集合 中的项 \<T> 。 此项的类型为 *T*，类型为 *TypeArgument*。 若要指定项，请在属性网格中键入 Visual Basic 表达式。|
-|<xref:System.Activities.Statements.AddToCollection%601.Collection%2A>|True|项应添加到的集合。 此集合的类型为 **ICollection<TypeArgument \>**。 若要指定集合，请在属性网格中键入 Visual Basic 表达式。|
-|*TypeArgument*|True|包含在 <xref:System.Collections.Generic.ICollection%601> 中的项的类型 T。 默认情况下，此 *TypeArgument* 类型设置为 **Int32**。 若要更改类型，请更改属性网格中组合框中 *TypeArgument* 的值。|
+|<xref:System.Activities.Activity.DisplayName%2A>|错误|<xref:System.Activities.Statements.AddToCollection%601> 活动的友好名称。 默认值为 AddToCollection<Int32\>。 虽然 <xref:System.Activities.Activity.DisplayName%2A> 值不是绝对必需的，但最好使用该属性值。|
+|<xref:System.Activities.Statements.AddToCollection%601.Item%2A>|True|要添加到 Collection\<T> 的项。 此项的类型为 T，属于类型 TypeArgument。 若要指定项，请在属性网格中键入 Visual Basic 表达式。|
+|<xref:System.Activities.Statements.AddToCollection%601.Collection%2A>|True|项应添加到的集合。 此集合的类型为 ICollection<TypeArgument\>。 若要指定集合，请在属性网格中键入 Visual Basic 表达式。|
+|*TypeArgument*|True|包含在 <xref:System.Collections.Generic.ICollection%601> 中的项的类型 T。 默认情况下，此 TypeArgument 类型设置为“Int32”。 若要更改类型，请在属性网格的组合框中更改 TypeArgument 的值。|
 
 ## <a name="see-also"></a>另请参阅
 

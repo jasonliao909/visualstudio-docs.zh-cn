@@ -1,7 +1,7 @@
 ---
 title: 为 SharePoint 解决方案创建功能和包验证
 titleSuffix: ''
-description: 创建自定义验证规则以验证 Visual Studio 生成的解决方案包或验证整个功能。
+description: 创建自定义验证规则来验证 Visual Studio 生成的解决方案包或验证整个功能。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -26,7 +26,7 @@ ms.locfileid: "126663844"
 ---
 # <a name="create-feature-and-package-validations-for-sharepoint-solutions"></a>为 SharePoint 解决方案创建功能和包验证
 
-  你可以创建自定义验证规则来验证 Visual Studio 生成的解决方案包。 可以通过在 **PackagingExplorer** 的包或功能的上下文菜单中选择 "**验证**"，对整个功能或包执行完全验证。 在项目中添加新的 SharePoint 项目项或功能以确定包或功能是否处于有效状态时，将执行部分验证。
+  可以创建自定义验证规则来验证 Visual Studio 生成的解决方案包。 可以通过从包的上下文菜单或“打包资源管理器”的功能中选择“验证”来对整个功能或包执行完全验证。 向项目添加新的 SharePoint 项目项或功能以确定包或功能是否处于有效状态时，将执行部分验证。
 
 ### <a name="to-create-a-custom-package-validation-rule"></a>创建自定义包验证规则
 
@@ -34,7 +34,7 @@ ms.locfileid: "126663844"
 
 2. 添加对下列程序集的引用：
 
-    - VisualStudio。SharePoint
+    - Microsoft.VisualStudio.SharePoint
 
     - System.ComponentModel.Composition
 
@@ -44,23 +44,23 @@ ms.locfileid: "126663844"
 
     - 若要创建功能验证规则，请实现 <xref:Microsoft.VisualStudio.SharePoint.Validation.IFeatureValidationRule> 接口。
 
-4. 将添加 <xref:System.ComponentModel.Composition.ExportAttribute> 到类。 此属性允许 Visual Studio 发现和加载验证规则。 将 <xref:Microsoft.VisualStudio.SharePoint.Validation.IPackageValidationRule> 或 <xref:Microsoft.VisualStudio.SharePoint.Validation.IFeatureValidationRule> 类型传递给特性构造函数。
+4. 将 <xref:System.ComponentModel.Composition.ExportAttribute> 添加到类。 此属性使 Visual Studio 能够发现并加载验证规则。 将 <xref:Microsoft.VisualStudio.SharePoint.Validation.IPackageValidationRule> 或 <xref:Microsoft.VisualStudio.SharePoint.Validation.IFeatureValidationRule> 类型传递给属性构造函数。
 
 ## <a name="example"></a>示例
- 下面的代码示例演示如何创建自定义功能验证规则。
+ 下列代码示例演示了如何创建自定义功能验证规则。
 
  :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/featurevalidation/extension/customvalidationrule.vb" id="Snippet1":::
  :::code language="csharp" source="../sharepoint/codesnippet/CSharp/featurevalidation/extension/customfeaturevalidationrule.cs" id="Snippet1":::
 
 ## <a name="compile-the-code"></a>编译代码
- 此示例需要引用以下程序集：
+ 本示例需要引用以下程序集：
 
-- VisualStudio。SharePoint。
+- Microsoft.VisualStudio.SharePoint.
 
-- System.componentmodel。
+- System.ComponentModel.Composition.
 
 ## <a name="deploy-the-extension"></a>部署扩展
- 若要部署该扩展，请为 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 该程序集创建一个扩展 (VSIX) 包，并为您要使用该扩展分发的任何其他文件创建该扩展。 有关详细信息，请参阅[Visual Studio 中的 SharePoint 工具的部署扩展](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。
+ 若要部署扩展，请为程序集以及要随扩展分发的任何其他文件创建 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 扩展 (VSIX) 包。 有关详细信息，请参阅[在 Visual Studio 中部署 SharePoint 工具扩展](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。
 
 ## <a name="see-also"></a>另请参阅
 - [扩展 SharePoint 打包和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)

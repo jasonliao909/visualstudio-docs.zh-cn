@@ -1,5 +1,5 @@
 ---
-description: 检索符号存储中包含的所有表的枚举器。
+description: 检索符号存储区中包含的所有表的枚举器。
 title: IDiaSession::getEnumTables | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127831865"
 ---
 # <a name="idiasessiongetenumtables"></a>IDiaSession::getEnumTables
-检索符号存储中包含的所有表的枚举器。
+检索符号存储区中包含的所有表的枚举器。
 
 ## <a name="syntax"></a>语法
 
@@ -35,13 +35,13 @@ HRESULT getEnumTables (
 #### <a name="parameters"></a>参数
 `ppEnumTables`
 
-[out]返回 [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md) 对象。 使用此接口枚举符号存储中的表。
+[out] 返回一个 [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md) 对象。 使用此接口枚举符号存储区中的表。
 
 ## <a name="return-value"></a>返回值
-如果成功，则返回 `S_OK` ;否则返回错误代码。
+如果成功，则返回 `S_OK`；否则，返回错误代码。
 
 ## <a name="example"></a>示例
-此示例演示一个常规函数，该函数 `getEnumTables` 使用 方法获取特定的枚举器对象。 如果找到枚举器，该函数将返回可强制转换到所需接口的指针;否则，该函数返回 `NULL` 。
+此示例提供一个常规函数，该函数使用 `getEnumTables` 方法获取特定枚举器对象。 如果找到枚举器，则该函数返回可强制转换为所需接口的指针；否则，该函数返回 `NULL`。
 
 ```C++
 IUnknown *GetTable(IDiaSession *pSession, REFIID iid)

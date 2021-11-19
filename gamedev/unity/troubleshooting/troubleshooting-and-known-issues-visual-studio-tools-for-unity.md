@@ -24,13 +24,13 @@ ms.locfileid: "129970914"
 
 ## <a name="troubleshooting-the-connection-between-unity-and-visual-studio"></a>Unity 和 Visual Studio 之间的连接疑难解答
 
-### <a name="confirm-editor-attaching-is-enabled-or-code-optimization-on-startup-is-set-to-debug"></a>确认 `Editor Attaching` 已启用或 `Code Optimization On Startup` 设置为 `Debug`
+### <a name="confirm-editor-attaching-is-enabled-or-code-optimization-on-startup-is-set-to-debug"></a>确认“`Editor Attaching`”已启用或“`Code Optimization On Startup`”已设置为“`Debug`”
 
-在 Unity 菜单中，选择 `Edit / Preferences` 。
+在 Unity 菜单中，选择“`Edit / Preferences`”。
 
 根据所使用的 Unity 版本：
-- 确认 `Code Optimization On Startup` 设置为 `Debug` 。
-- 或选择 `External Tools` 选项卡。确认 `Editor Attaching` 复选框已启用。 
+- 确认“`Code Optimization On Startup`”已设置为“`Debug`”。
+- 或选择“`External Tools`”选项卡。确认“`Editor Attaching`”复选框已启用。 
 
 有关详细信息，请查阅 [Unity 首选项文档](https://docs.unity3d.com/Manual/Preferences.html)。
 
@@ -65,18 +65,18 @@ Parse、FMOD、UMP (Universal Media Player)、ZFBrowser 或嵌入式浏览器等
 
 ## <a name="incompatible-project-in-visual-studio"></a>Visual Studio 中的不兼容项目
 
-需要注意的一点是，Visual Studio 正在保存项目设置中的 "不兼容" 状态，并且在你显式使用之前，不会尝试重新加载项目 `Reload Project` 。 因此，在每个故障排除步骤后，请确保尝试重新打开解决方案，然后尝试右键单击所有不兼容的项目并选择 `Reload Project` 。
+非常重要的一点是，Visual Studio 在项目设置中保存了“不兼容”状态，除非你显式使用 `Reload Project`，否则它不会尝试重新加载项目。 因此，在执行每个故障排除步骤后，请确保尝试重新打开解决方案，然后尝试右键单击所有不兼容的项目并选择“`Reload Project`”。
 
-1. 使用将 Visual Studio 设置为 Unity 中的外部脚本编辑器 `Edit / Preferences / External Tools` 。
-2. 取决于 Unity 版本：
-   - 检查 Unity 中是否安装了 Visual Studio 插件。 `Help / About`应显示一条消息，如在底部启用 Unity Microsoft Visual Studio 工具。
-   - Unity 2020. x +：检查是否在中使用最新的 Visual Studio 编辑器包 `Window / Package Manager` 。
+1. 使用“`Edit / Preferences / External Tools`”检查 Visual Studio 是否被设置为 Unity 中的外部脚本编辑器。
+2. 根据你的 Unity 版本：
+   - 检查 Unity 中是否安装了 Visual Studio 插件。 “`Help / About`”应会在底部显示一条类似“Microsoft Visual Studio Tools for Unity 已启用”的消息。
+   - Unity 2020.x+：检查你是否使用了“`Window / Package Manager`”中最新的 Visual Studio 编辑器包。
 3. 尝试删除项目中的所有项目/解决方案文件和 `.vs` 文件夹。
-4. 尝试使用或重新创建项目/解决方案 `Open C# Project` `Edit / Preferences / External tools / Regenerate Project files` 。
-5. 请确保已在 Visual Studio 中安装游戏/Unity 工作负荷。
-6. 尝试清理 MEF 缓存，如 [此处](#visual-studio-crashes)所述。
-7. 尝试使用游戏/Unity 工作负荷仅启动) Visual Studio (。
-8. 尝试禁用第三方扩展，以防它们会干扰中的 Unity 扩展 `Tools / Extensions` 。
+4. 尝试使用“`Open C# Project`”或“`Edit / Preferences / External tools / Regenerate Project files`”重新创建项目/解决方案。
+5. 确保已在 Visual Studio 中安装游戏/Unity 工作负荷。
+6. 尝试清理 MEF 缓存，如[此处](#visual-studio-crashes)所述。
+7. 尝试重新安装 Visual Studio（仅使用游戏/Unity 工作负荷来启动）。
+8. 尝试禁用第三方扩展，以防它们可能干扰“`Tools / Extensions`”中的 Unity 扩展。
 
 ## <a name="extra-reloads-or-visual-studio-losing-all-open-windows"></a>其他重载，或 Visual Studio丢失所有打开的窗口
 
@@ -94,15 +94,15 @@ Parse、FMOD、UMP (Universal Media Player)、ZFBrowser 或嵌入式浏览器等
 
 ## <a name="on-windows-visual-studio-asks-to-download-the-unity-target-framework"></a>在 Windows 上，Visual Studio 会要求下载 Unity 目标框架
 
-当使用旧版 Unity 运行时 ( .net 3.5 等效) 时，Visual Studio Tools for Unity 需要 .net framework 3.5，但默认情况下未安装在 Windows 8 或10上。 若要解决此问题，请按照说明下载并安装 .NET framework 3.5。
+当使用旧版 Unity 运行时（相当于 .NET 3.5）时，Visual Studio Tools for Unity 要求安装 .NET framework 3.5（默认情况下在 Windows 8 或 10 上未安装）。 若要解决此问题，请按照说明下载并安装 .NET framework 3.5。
 
-使用新的 Unity 运行时时，还需要 .NET 目标包版本4.6 或4.7.1，具体取决于 Unity 版本。 可以使用 Visual Studio 安装程序快速安装它们 (修改安装、单个组件、.net 类别、选择 "所有 4. x 目标包) "。
+使用新的 Unity 运行时还需要 .NET 目标包版本 4.6 或 4.7.1，具体取决于 Unity 版本。 可以使用 Visual Studio 安装程序快速安装它们（修改安装、单个组件、.NET 类别，并选择所有 4.x 目标包）。
 
 ## <a name="assembly-reference-or-project-property-issues"></a>程序集引用或项目属性问题
 
 如果项目中存在复杂引用，或者如果希望能更好地控制此生成步骤，可以使用我们的 [API](../extensibility/customize-project-files-created-by-vstu.md) 来操作生成的项目或解决方案内容。 也可以在 Unity 项目中使用[响应文件](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html)，我们将对它们进行处理。
 
-使用最近 Visual Studio 和 Unity 版本时，最好的方法就是使用自定义 `Directory.Build.props` 文件和生成的项目。 然后，你将能够在不干扰生成过程的情况下参与项目结构。
+使用最新的 Visual Studio 和 Unity 版本时，最好的方法就是使用自定义 `Directory.Build.props` 文件和生成的项目。 然后，你将能够在不干扰生成过程的情况下参与项目结构。
 
 ## <a name="breakpoints-with-a-warning"></a>带有警告的断点
 
@@ -110,7 +110,7 @@ Parse、FMOD、UMP (Universal Media Player)、ZFBrowser 或嵌入式浏览器等
 
 ## <a name="breakpoints-not-hit"></a>未命中断点
 
-检查当前的 Unity 场景中是否已正确加载/使用你正在使用的脚本。 退出 Visual Studio 和 Unity，然后删除所有生成的文件 (\* .csproj， \* .sln) ， `.vs` 文件夹和整个库文件夹。 可以在 Unity [网站](https://docs.unity3d.com/Manual/ManagedCodeDebugging.html)上找到有关 c # 调试的详细信息。
+检查当前的 Unity 场景中是否已正确加载/使用你正在使用的脚本。 退出 Visual Studio 和 Unity，然后删除生成的所有文件（\*.csproj、\*.sln）、`.vs` 文件夹和整个“库”文件夹。 有关 C# 调试的详细信息，请参阅 Unity [网站](https://docs.unity3d.com/Manual/ManagedCodeDebugging.html)。
 
 ## <a name="unable-to-debug-android-players"></a>无法调试 Android 播放器
 
@@ -120,9 +120,9 @@ Wifi 是通用的，但与 USB 比起来非常慢，因为存在延迟。 我们
 
 USB 调试速度非常快，Visual Studio Tools for Unity 现可检测 USB 设备，并与 adb 服务器对话，使其正确转接接口以进行调试。
 
-## <a name="issues-with-intellisense-or-code-coloration"></a>IntelliSense 或代码着色功能的问题
+## <a name="issues-with-intellisense-or-code-coloration"></a>IntelliSense 或代码着色出现问题
 
-尝试将 Visual Studio 升级到最新版本。 尝试执行与 [不兼容项目](#incompatible-project-in-visual-studio)相同的故障排除步骤。
+尝试将 Visual Studio 升级到最新版本。 尝试执行与[不兼容的项目](#incompatible-project-in-visual-studio)相同的故障排除步骤。
 
 ## <a name="known-issues"></a>已知问题
 

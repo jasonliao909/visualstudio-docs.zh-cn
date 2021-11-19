@@ -1,6 +1,6 @@
 ---
-description: 从可执行文件的图像的内存中读取数据块。
-title: IDiaStackWalkHelper：： readMemory |Microsoft Docs
+description: 从可执行文件的内存图像中读取数据块。
+title: IDiaStackWalkHelper::readMemory | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -22,7 +22,7 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127831768"
 ---
 # <a name="idiastackwalkhelperreadmemory"></a>IDiaStackWalkHelper::readMemory
-从可执行文件的图像的内存中读取数据块。
+从可执行文件的内存图像中读取数据块。
 
 ## <a name="syntax"></a>语法
 
@@ -39,26 +39,26 @@ HRESULT readMemory(
 #### <a name="parameters"></a>参数
  `type`
 
-中 [MemoryTypeEnum 枚举](../../debugger/debug-interface-access/memorytypeenum.md) 枚举中的一个值，该值指定要读取的内存类型。
+[in] [MemoryTypeEnum Enumeration](../../debugger/debug-interface-access/memorytypeenum.md) 枚举的一个值，指定要读取的内存类型。
 
  va
 
-中要从其开始读取的映像中的虚拟地址。
+[in] 要从其开始读取的映像中的虚拟地址。
 
  `cbData`
 
-中数据缓冲区的大小（以字节为单位）。
+[in] 数据缓冲区的大小（以字节为单位）。
 
  `pcbData`
 
-弄返回实际读取的字节数。 如果 `pbData` 为 `NULL` ，则这是可用数据的总字节数。
+[out] 返回实际读取的字节数。 如果 `pbData` 为 `NULL`，则这是可用数据的总字节数。
 
  `pbData`
 
-[in，out]填充内存读取的缓冲区。
+[in, out] 使用所读取内存填充的缓冲区。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回错误代码。
 
 ## <a name="see-also"></a>另请参阅
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

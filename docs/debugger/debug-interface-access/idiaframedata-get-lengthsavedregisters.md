@@ -1,5 +1,5 @@
 ---
-description: IDiaFrameData：： get_lengthSavedRegisters 检索推送到堆栈上的已保存寄存器的字节数。
+description: IDiaFrameData::get_lengthSavedRegisters 检索在堆栈上推送的已保存寄存器的字节数。
 title: IDiaFrameData::get_lengthSavedRegisters | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127832114"
 ---
 # <a name="idiaframedataget_lengthsavedregisters"></a>IDiaFrameData::get_lengthSavedRegisters
-检索推送到堆栈上的已保存寄存器的字节数。
+检索在堆栈上推送的已保存寄存器的字节数。
 
 ## <a name="syntax"></a>语法
 
@@ -35,13 +35,13 @@ HRESULT get_lengthSavedRegisters (
 #### <a name="parameters"></a>参数
  `pRetVal`
 
-弄返回已保存寄存器的字节数。
+[out] 返回已保存寄存器的字节数。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK`。 `S_FALSE`如果此属性不受支持，则返回。 否则，返回错误代码。
+ 如果成功，则返回 `S_OK`。 如果不支持此属性，则返回 `S_FALSE`。 否则，返回错误代码。
 
 ## <a name="remarks"></a>备注
- 此方法返回的值通常用在程序字符串的解释中 (有关程序字符串的定义，请参阅 [IDiaFrameData：： get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) 方法) 。
+ 此方法返回的值通常用于解释程序字符串（有关程序字符串的定义，请参阅 [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) 方法）。
 
 ## <a name="see-also"></a>另请参阅
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

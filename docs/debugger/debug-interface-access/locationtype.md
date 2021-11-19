@@ -50,28 +50,28 @@ enum LocationType {
 
 `LocIsTLS` 位置位于线程本地存储中。
 
-`LocIsRegRel` 位置是寄存器相对位置。
+`LocIsRegRel` 位置与寄存器相关。
 
-`LocIsThisRel` 位置为 `this` -relative。
+`LocIsThisRel` 位置与 `this` 相关。
 
-`LocIsEnregistered` 位置在寄存器中。
+`LocIsEnregistered` 位置位于寄存器中。
 
-`LocIsBitField` 位置位于位字段中。
+`LocIsBitField` 位置位于位域中。
 
-`LocIsSlot` Location 是 Microsoft 中间语言 (MSIL) 槽。
+`LocIsSlot` 位置为 Microsoft 中间语言 (MSIL) 插槽。
 
-`LocIsIlRel` 位置是 MSIL 相对位置。
+`LocIsIlRel` 位置与 MSIL 相关。
 
 `LocInMetaData` 位置位于元数据中。
 
-`LocIsConstant` 位置位于常量值中。
+`LocIsConstant` 位置位于常数值中。
 
-`LocTypeMax` 此枚举中的位置类型数。
+`LocTypeMax` 此枚举中的位置类型的数量。
 
 ## <a name="remarks"></a>备注
-[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)接口可用的属性取决于符号在图像文件中的位置。 有关详细信息，请参阅 [符号位置](../../debugger/debug-interface-access/symbol-locations.md)。
+[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 接口可用的属性取决于符号在图像文件中的位置。 有关详细信息，请参阅[符号位置](../../debugger/debug-interface-access/symbol-locations.md)。
 
-此枚举中的值通过调用 [IDiaSymbol：：get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) 方法返回。
+此枚举中的值是通过调用 [IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) 方法返回的。
 
 ## <a name="requirements"></a>要求
 标头：cvconst.h

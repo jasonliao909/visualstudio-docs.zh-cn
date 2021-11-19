@@ -1,6 +1,6 @@
 ---
 description: 检索一个标志，该标志指示此行信息描述程序源中的语句（而不是表达式）的开头。
-title: IDiaLineNumber：：get_statement |Microsoft Docs
+title: IDiaLineNumber::get_statement | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -35,13 +35,13 @@ HRESULT get_statement (
 #### <a name="parameters"></a>参数
  `pRetVal`
 
-[out]如果 `TRUE` 此行信息描述程序源中语句的开头，则返回 。
+[out] 如果此行信息描述程序源中的语句的开头，则返回 `TRUE`。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK`。 如果 `S_FALSE` 不支持此属性，则返回 。 否则，返回错误代码。
+ 如果成功，则返回 `S_OK`。 如果不支持此属性，则返回 `S_FALSE`。 否则，返回错误代码。
 
 ## <a name="remarks"></a>备注
- 语句可以跨多行。 此方法指示关联的行号是否标记此类多行语句的开头。
+ 语句可跨多行。 此方法指示关联的行号是否标记此类多行语句的开头。
 
 ## <a name="see-also"></a>另请参阅
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

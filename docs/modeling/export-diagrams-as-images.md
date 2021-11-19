@@ -1,6 +1,6 @@
 ---
 title: 将关系图导出为图像
-description: 了解可以以只读格式保存建模关系图，以便可以与不使用同一版本的关系图Visual Studio。
+description: 了解你可以将建模图保存为只读格式，以便你可以与不使用相同版本 Visual Studio 的人员共享它们。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -27,21 +27,21 @@ ms.locfileid: "126671857"
 
 若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/analyze-and-model-your-architecture.md#VersionSupport)。
 
-## <a name="copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>将关系图或关系图的一部分复制到另一个应用程序
+## <a name="copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>将关系图或部分关系图复制到另一个应用程序
 
 1. 在关系图上，选择部分或全部形状。
 
-2. 右键单击所选内容，然后单击"复制 **"。**
+2. 右键单击选择内容，然后单击“复制”。
 
 3. 将所选内容粘贴到所需的应用程序中。
 
-## <a name="save-a-modeling-diagram-as-an-xml-paper-specification-xps-file"></a>将建模关系图另存为 XML 纸张规范 (.xps) 文件
+## <a name="save-a-modeling-diagram-as-an-xml-paper-specification-xps-file"></a>将建模图另存为 XML 纸张规范 (.xps) 文件
 
-1. 在" **文件"** 菜单上，单击 **"打印** "以打开 **"打印"** 对话框。
+1. 在“文件”菜单上，单击“打印”以打开“打印”对话框。  
 
-2. 在"**名称"** 列表中，选择 **"Microsoft XPS 文档编写器**"，然后单击"确定 **"。**
+2. 在“名称”列表中，选择“Microsoft XPS 文档编写器”，然后单击“确定”。  
 
-3. 在 **"将文件另存** 为"对话框中，将文件另存为 **\* .xps** (XPS) 文件。
+3. 在“文件另存为”对话框中，将文件另存为“XPS 文档 (\*.xps)”文件。 
 
 ## <a name="see-also"></a>另请参阅
 

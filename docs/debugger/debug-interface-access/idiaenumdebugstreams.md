@@ -31,26 +31,26 @@ IDiaEnumDebugStreams : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
-下表显示的方法 `IDiaEnumDebugStreams` 。
+下表显示了 `IDiaEnumDebugStreams` 方法。
 
 |方法|说明|
 |------------|-----------------|
-|[IDiaEnumDebugStreams::get__NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreams-get-newenum.md)|检索 `IEnumVARIANT` 此枚举器的版本。|
+|[IDiaEnumDebugStreams::get__NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreams-get-newenum.md)|检索该枚举器的 `IEnumVARIANT` 版本。|
 |[IDiaEnumDebugStreams::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md)|检索调试流的数量。|
 |[IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)|通过索引检索调试流。|
-|[IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)|检索枚举序列中指定数目的调试流。|
-|[IDiaEnumDebugStreams::Skip](../../debugger/debug-interface-access/idiaenumdebugstreams-skip.md)|跳过枚举序列中指定数目的调试流。|
-|[IDiaEnumDebugStreams::Reset](../../debugger/debug-interface-access/idiaenumdebugstreams-reset.md)|将枚举序列重置到开始处。|
-|[IDiaEnumDebugStreams::Clone](../../debugger/debug-interface-access/idiaenumdebugstreams-clone.md)|创建与当前枚举数包含相同枚举状态的枚举数。|
+|[IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)|检索枚举序列中指定数量的调试流。|
+|[IDiaEnumDebugStreams::Skip](../../debugger/debug-interface-access/idiaenumdebugstreams-skip.md)|跳过枚举序列中指定数量的调试流。|
+|[IDiaEnumDebugStreams::Reset](../../debugger/debug-interface-access/idiaenumdebugstreams-reset.md)|将枚举序列重置到开头。|
+|[IDiaEnumDebugStreams::Clone](../../debugger/debug-interface-access/idiaenumdebugstreams-clone.md)|创建一个枚举器，其中包含与当前枚举器相同的枚举状态。|
 
 ## <a name="remarks"></a>备注
-调试流的内容是依赖实现的，并且数据格式未记录。
+调试流的内容与实现相关，并且数据格式未记录。
 
-## <a name="notes-for-callers"></a>调用方说明
-调用 [IDiaSession：： getEnumDebugStreams](../../debugger/debug-interface-access/idiasession-getenumdebugstreams.md) 方法以获取 `IDiaEnumDebugStreams` 对象。
+## <a name="notes-for-callers"></a>对调用者的说明
+调用 [IDiaSession::getEnumDebugStreams](../../debugger/debug-interface-access/idiasession-getenumdebugstreams.md) 方法以获取 `IDiaEnumDebugStreams` 对象。
 
 ## <a name="example"></a>示例
-此示例演示如何访问此接口提供的数据流。 有关函数的实现，请参阅 [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) 接口 `PrintStreamData` 。
+此示例演示如何访问此接口提供的数据流。 有关 `PrintStreamData` 函数的实现，请参阅 [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) 接口。
 
 ```C++
 void DumpAllDebugStreams( IDiaSession* pSession)
@@ -80,11 +80,11 @@ void DumpAllDebugStreams( IDiaSession* pSession)
 ```
 
 ## <a name="requirements"></a>要求
-标头： Dia2
+标头：Dia2.h
 
-库： diaguids
+库：diaguids.lib
 
-DLL： msdia80.dll
+DLL：msdia80.dll
 
 ## <a name="see-also"></a>另请参阅
 - [接口（调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

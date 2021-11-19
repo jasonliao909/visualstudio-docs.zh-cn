@@ -23,7 +23,7 @@ ms.locfileid: "129967829"
 Visual Studio Tools for Unity 更改日志。
 
 ## <a name="41140"></a>4.11.4.0
-2021年10月4日发布
+发布日期：2021 年 10 月 4 日
 
 ### <a name="new-features"></a>新增功能
 
@@ -38,119 +38,119 @@ Visual Studio Tools for Unity 更改日志。
   - 修复了支持的表达式检测和 [`UNT0024`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0024.md) 诊断。
 
 ## <a name="41130"></a>4.11.3.0
-2021年8月发布
+发布日期：2021 年 8 月 10 日
 
 ### <a name="bug-fixes"></a>Bug 修复
 
 - **集成：**
 
-  - 减少处理资产时的内存消耗。
+  - 减少了处理资产时的内存消耗。
 
-  - 用 [`USP0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0008.md) 、 [`USP0009`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0009.md) [`USP0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0010.md) 和 suppressors 优化分配 [`USP0011`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0011.md) 。
+  - 用 [`USP0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0008.md)、[`USP0009`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0009.md)、[`USP0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0010.md) 和 [`USP0011`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0011.md) 抑制器优化了分配。
 
-  - 使用 [`UNT0002`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0002.md) 、 [`UNT0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0003.md) 、 [`UNT0012`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0012.md) 、诊断优化符号用法 [`UNT0014`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0014.md) 。
+  - 使用 [`UNT0002`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0002.md)、[`UNT0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0003.md)、[`UNT0012`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0012.md)、[`UNT0014`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0014.md) 诊断优化了符号用法。
 
 ## <a name="41120"></a>4.11.2.0
-2021年7月13日发行
+发布日期：2021 年 7 月 13 日
 
 ### <a name="bug-fixes"></a>Bug 修复
 
 - **集成：**
 
-  - 缩短了一段时间，只是运行 suppressors 即可处理 CS 编译器警告。 所有其他分析器都将通过解决方案分析来运行。
+  - 缩短了轻型构建的时间，只是运行抑制器即可处理 CS 编译器警告。 所有其他分析器都将通过解决方案分析来运行。
 
 ## <a name="41110"></a>4.11.1.0
-2021年6月15日发布
+发布日期：2021 年 6 月 15 日
 
 ### <a name="bug-fixes"></a>Bug 修复
 
 - **集成：**
 
-  - 在分析 yaml 资产时减少内存消耗。
+  - 减少了分析 yaml 资产时的内存消耗。
 
 ## <a name="41100"></a>4.11.0.0
-发布时间可能为25，2021
+发布日期：2021 年 5 月 25 日
 
 ### <a name="new-features"></a>新增功能
 
 - **集成：**
 
-  - 添加了 [`UNT0025`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0025.md) 诊断。 首选 GetKey 重载与 KeyCode 参数。
+  - 添加了 [`UNT0025`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0025.md) 诊断。 首选 Input.GetKey 重载与 KeyCode 参数。
 
-  - 添加了更多无效的用法 (静态和 readonly 字段) 到 [`UNT0013`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0013.md) 诊断。
+  - 添加了更多无效的用法（静态和只读字段）到 [`UNT0013`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0013.md) 诊断。
 
 ### <a name="bug-fixes"></a>Bug 修复
 
 - **集成：**
 
-  - 修复了显式方法实现和诊断的问题 [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md) 。
+  - 修复了显式方法实现和 [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md) 诊断的问题。
 
 ## <a name="41030"></a>4.10.3.0
-2021年6月8日发布
+发布日期：2021 年 6 月 8 日
 
 ### <a name="bug-fixes"></a>Bug 修复
 
 - **集成：**
 
-  - 向后移植在分析 yaml 资产时减少内存消耗。
+  - [向后移植]减少了分析 yaml 资产时的内存消耗。
 
 ## <a name="41020"></a>4.10.2.0
-发布时间可能为25，2021
+发布日期：2021 年 5 月 25 日
 
 ### <a name="new-features"></a>新增功能
 
 - **集成：**
 
-  - 添加了 [`UNT0024`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0024.md) 诊断。 为矢量计算的标量计算指定优先级。
+  - 添加了 [`UNT0024`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0024.md) 诊断。 优先考虑标量计算，而不是矢量计算。
 
 - **评估版：**
 
-  - 添加了对使用可移植 pdb 符号正确筛选可见局部变量的支持。
+  - 添加了对使用可移植 pdb 符号来正确筛选可见局部变量的支持。
 
 ### <a name="bug-fixes"></a>Bug 修复
 
 - **集成：**
 
-  - 固定资产引用搜索稳定性。
+  - 修复了资产引用搜索稳定性。
 
-  - 固定玩家公告使用最新 Unity 版本进行分析。
+  - 修复了播放机宣布使用 Unity 最新版本进行分析。
 
 ## <a name="41010"></a>4.10.1.0
-发布时间为11月11日，2021
+发布日期：2021 年 5 月 11 日
 
 ### <a name="bug-fixes"></a>Bug 修复
 
 - **集成：**
 
-  - 修复了 quickfix 的稳定性问题 [`UNT0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0008.md) 。
+  - 修复了与 [`UNT0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0008.md) 快速修复有关的稳定性问题。
 
   - 修复了线程的性能问题。
 
 ## <a name="41000"></a>4.10.0.0
-2021年4月13日发布
+发布日期：2021 年 4 月 13 日
 
 ### <a name="new-features"></a>新增功能
 
 - **集成：**
 
-  - 添加了 [`UNT0019`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0019.md) 诊断。 不必要的间接调用 `GameObject.gameObject` 。
+  - 添加了 [`UNT0019`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0019.md) 诊断。 不必要的间接调用 `GameObject.gameObject`。
 
-  - 添加了 [`UNT0020`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0020.md) 诊断。 `MenuItem` 用于非静态方法的特性。
+  - 添加了 [`UNT0020`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0020.md) 诊断。 在非静态方法中使用的 `MenuItem` 特性。
 
-  - 添加了 [`UNT0021`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0021.md) 诊断。 应 (选择加入) ，才能保护 Unity 消息。
+  - 添加了 [`UNT0021`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0021.md) 诊断。 应保护 Unity 消息（选择加入）。
 
   - 添加了 [`UNT0022`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0022.md) 诊断。 设置位置和旋转的低效方法。
 
-  - 添加了 [`UNT0023`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0023.md) 诊断。 合并 Unity 对象上的分配。
+  - 添加了 [`UNT0023`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0023.md) 诊断。 Unity 对象上的合并赋值。
 
-  - 为 `IDE0074` 添加了 [`USP0017`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0017.md) 抑制器。 Unity 对象不应使用合并分配。
+  - 为 `IDE0074` 添加了 [`USP0017`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0017.md) 抑制器。 Unity 对象不应使用合并赋值。
 
-  - 添加了针对 Unity 的 unflavored c # 项目的检测。
+  - 添加了针对 Unity 的原生 C# 项目的检测。
 
   - 在 CodeLens 中添加了 Unity 资产引用搜索。
 
 ## <a name="4910"></a>4.9.1.0
-2021年3月发布
+发布日期：2021 年 3 月 2 日
 
 ### <a name="new-features"></a>新增功能
 
@@ -187,7 +187,7 @@ Visual Studio Tools for Unity 更改日志。
   - 修复了对抛出异常的过时属性的筛选。
 
 ## <a name="4900"></a>4.9.0.0
-2021年1月20日发布
+发布时间：2021 年 1 月 20 日
 
 ### <a name="new-features"></a>新增功能
 
@@ -195,7 +195,7 @@ Visual Studio Tools for Unity 更改日志。
 
   - 新增了对 `raytrace shaders`、`UXML` 和 `USS` 文件的支持。
 
-  - 添加了 `.vsconfig` 生成支持。 Visual Studio 现在应检测缺少哪些组件，并在使用 Unity 项目时提示您安装这些组件。
+  - 添加了 `.vsconfig` 生成支持。 在使用 Unity 项目时，Visual Studio 现在应检测缺少哪些组件，并提示你安装这些组件。
 
   - 更新了 Unity 消息 API（用于所有用作协同例程的方法）。
 
@@ -210,22 +210,22 @@ Visual Studio Tools for Unity 更改日志。
   - 修复了对协同例程和 `AssetPostprocessor.OnAssignMaterialModel` 发出错误警告的 [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md) 诊断。
 
 ## <a name="4820"></a>4.8.2.0
-2020年11月10日发行
+发布时间：2020 年 11 月 10 日
 
 ### <a name="new-features"></a>新增功能
 
 - **集成：**
 
-  - 改进了 [`UNT0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0010.md) 诊断，适用于从继承的所有内容 `Component` ，而不仅仅是 `MonoBehaviour` 。
+  - 改进了 [`UNT0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0010.md) 诊断，适用于从 `Component` 继承的所有内容，而不仅仅是 `MonoBehaviour`。
 
 ### <a name="bug-fixes"></a>Bug 修复
 
 - **集成：**
 
-  - 固定 CodeLens 消息失效。
+  - 修复了 CodeLens 消息失效。
 
 ## <a name="4810"></a>4.8.1.0
-2020年10月13日发布
+发布日期：2020 年 10 月 13 日
 
 ### <a name="new-features"></a>新增功能
 
@@ -235,13 +235,13 @@ Visual Studio Tools for Unity 更改日志。
 
 - **集成：**
 
-  - 添加了 [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) 诊断。 不应使用 `System.Reflection` 性能关键消息（如 `Update` 、、或）中的功能 `FixedUpdate` `LateUpdate` `OnGUI` 。
+  - 添加了 [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) 诊断。 不应使用性能关键消息（如 `Update`、`FixedUpdate`、`LateUpdate` 或 `OnGUI`）中的 `System.Reflection` 功能。
 
-  - 改进 [`USP0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0003.md) 了 [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0005.md) suppressors，支持所有 `AssetPostprocessor` 静态方法。
+  - 改进了 [`USP0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0003.md) 和 [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0005.md) 抑制器，其中支持所有 `AssetPostprocessor` 静态方法。
 
-  - 为 `CS8618` 添加了 [`USP0016`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0016.md) 抑制器。 `C# 8.0` 引入了可以为 null 的引用类型和不可为 null 的引用类型。 不支持从继承的类型的初始化检测 `UnityEngine.Object` ，并将导致错误。
+  - 为 `CS8618` 添加了 [`USP0016`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0016.md) 抑制器。 `C# 8.0` 引入了可以为 null 的引用类型和不可为 null 的引用类型。 不支持从 `UnityEngine.Object` 继承的类型的初始化检测，并将导致错误。
 
-  - 现在为 Unity 2019. x 和 2020. x 使用相同的播放器和 asmdef 项目生成机制。
+  - 现在为 Unity 2019. x 和 2020. x+ 采用相同的播放机和 asmdef 项目生成机制。
 
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -250,13 +250,13 @@ Visual Studio Tools for Unity 更改日志。
   - 修复了注释中消息的意外完成。
 
 ## <a name="4800"></a>4.8.0.0 
-2020年9月14日发布
+发布日期：2020 年 9 月 14 日
 
 ### <a name="bug-fixes"></a>Bug 修复
 
 - **集成：**
 
-  - 修复了 Unity 2019. x 的播放机项目生成。
+  - 使用 Unity 2019. x 修复了播放机项目生成。
 
 ## <a name="4710"></a>4.7.1.0
 发布日期：2020 年 8 月 5 日

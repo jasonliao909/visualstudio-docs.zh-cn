@@ -1,6 +1,6 @@
 ---
 title: CV_access_e | Microsoft Docs
-description: 获取有关 CV_access_e 类型的信息，该枚举类型指定 (访问级别和) 访问 SDK 中成员的可见性范围。
+description: 获取有关 CV_access_e 枚举类型的信息，该类型指定了调试接口访问 SDK 中成员的可见性范围（访问级别）。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -23,7 +23,7 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127832400"
 ---
 # <a name="cv_access_e"></a>CV_access_e
-指定成员函数和 (访问) 的可见性范围。
+指定成员函数和变量的可见性范围（访问级别）。
 
 ## <a name="syntax"></a>语法
 
@@ -36,14 +36,14 @@ typedef enum CV_access_e {
 ```
 
 ## <a name="elements"></a>元素
-CV_private成员具有专用访问权限。
+CV_private 成员具有专用访问权限。
 
-CV_protected成员具有受保护的访问权限。
+CV_protected 成员具有受保护的访问权限。
 
-CV_public成员具有公共访问权限。
+CV_public 成员具有公共访问权限。
 
 ## <a name="remarks"></a>备注
-此处不包括访问说明器，因为它通常由有权访问 类的私有元素和受保护元素的非成员 `friend` 函数使用。 使用 [IDiaSymbol：：get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) 方法查找具有访问权限的 `SymTagFriend` 符号。
+这里不包括 `friend` 访问说明符，因为它通常由有权访问类的专用元素和受保护元素的非成员函数使用。 使用 [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) 方法查找具有 `SymTagFriend` 访问权限的符号。
 
 ## <a name="requirements"></a>要求
 标头：cvconst.h

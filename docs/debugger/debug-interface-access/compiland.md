@@ -1,6 +1,6 @@
 ---
-title: 编译|Microsoft Docs
-description: 在调试接口访问 SDK 中 (SymTagCompiland) 编译符号Visual Studio参考信息。
+title: 编译单位 | Microsoft Docs
+description: 在 Visual Studio 调试接口访问 SDK 中查找有关 Compiland 符号类型 (SymTagCompiland) 的参考信息。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -24,21 +24,21 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127832408"
 ---
 # <a name="compiland"></a>编译单位
-链接到每个 `SymTagCompiland` 编译文件的每个 Compiland 都有.exe符号。 编译和信息在具有 标记的符号之间拆分，无需加载其他编译符号即可检索此信息，而标记符号可能需要加载 `SymTagCompiland` `SymTagCompilandDetails` 其他符号。
+每个被链接到 .exe 文件的编译单位都有一个 `SymTagCompiland` 符号。 编译单位信息被拆分为带有 `SymTagCompiland` 标记的符号（无需加载额外的编译单位符号即可检索）和带有 `SymTagCompilandDetails` 标签的符号（可能需要加载额外的符号）。
 
 ## <a name="properties"></a>属性
  下表显示了对此符号类型有效的属性。
 
 |属性|数据类型|说明|
 |--------------|---------------|-----------------|
-|[IDiaSymbol::get_editAndContinueEnabled](../../debugger/debug-interface-access/idiasymbol-get-editandcontinueenabled.md)|`BOOL`|`TRUE` 如果在编译时启用了"编辑并继续"，为 。|
-|[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|文件符号.exe符号。|
-|[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|词法父符号的 ID。|
-|[IDiaSymbol::get_libraryName](../../debugger/debug-interface-access/idiasymbol-get-libraryname.md)|`BSTR`|加载对象的库或对象文件的名称。|
-|[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|编译和的对象文件的文件名。|
+|[IDiaSymbol::get_editAndContinueEnabled](../../debugger/debug-interface-access/idiasymbol-get-editandcontinueenabled.md)|`BOOL`|如果在编译时启用了“编辑并继续”，则为 `TRUE`。|
+|[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|.exe 文件的符号。|
+|[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|词法父级符号的 ID。|
+|[IDiaSymbol::get_libraryName](../../debugger/debug-interface-access/idiasymbol-get-libraryname.md)|`BSTR`|从中加载对象的库或对象文件的名称。|
+|[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|编译单位的对象文件的文件名。|
 |[IDiaSymbol::get_sourceFileName](../../debugger/debug-interface-access/idiasymbol-get-sourcefilename.md)|`BSTR`|源文件的名称。|
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|符号的索引 ID。|
-|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|返回 `SymTagCompiland` ([SymTagEnum 枚举值之一) 。](../../debugger/debug-interface-access/symtagenum.md)|
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|返回 `SymTagCompiland`（[SymTagEnum Enumeration](../../debugger/debug-interface-access/symtagenum.md) 值之一）。|
 
 ## <a name="see-also"></a>另请参阅
 - [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)

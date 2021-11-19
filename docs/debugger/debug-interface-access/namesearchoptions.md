@@ -1,6 +1,6 @@
 ---
 description: 指定符号和文件名的搜索选项。
-title: NameSearchOptions |Microsoft Docs
+title: NameSearchOptions | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -51,14 +51,14 @@ enum NameSearchOptions {
 
 `nsfCaseInsensitive` 应用不区分大小写的名称匹配。
 
-`nsfFNameExt` 将名称视为路径并应用文件名。 ext 名称匹配。
+`nsfFNameExt` 将名称视为路径并应用 filename.ext 名称匹配。
 
-`nsfRegularExpression` 使用星号 ( * ) 和问号 (？ ) 作为通配符来应用区分大小写的名称匹配。  (不支持其他常见正则表达式字符。 ) 
+`nsfRegularExpression` 使用星号 (*) 和问号 (?) 作为通配符来应用区分大小写的名称匹配。 （不支持其他常见正则表达式字符。）
 
-`nsfUndecoratedName` 仅适用于具有未修饰名称和修饰名的符号。
+`nsfUndecoratedName` 仅适用于具有未修饰名和修饰名的符号。
 
 ## <a name="remarks"></a>备注
-此枚举中的值将传递给以下方法：
+此枚举中的值将传递到以下方法：
 
 - [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)
 
@@ -67,7 +67,7 @@ enum NameSearchOptions {
 - [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
 
 ## <a name="requirements"></a>要求
-标头： dia2
+标头：dia2.h
 
 ## <a name="see-also"></a>另请参阅
 - [枚举和结构](../../debugger/debug-interface-access/enumerations-and-structures.md)

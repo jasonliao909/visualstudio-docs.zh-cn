@@ -36,17 +36,17 @@ HRESULT Item (
 #### <a name="parameters"></a>参数
  `index`
 
-[in]要检索的 [IDiaTable](../../debugger/debug-interface-access/idiatable.md) 的索引或名称。 如果使用整数变体，则它必须在 0 到 -1 的范围内，其中 由 `count` `count` [IDiaEnumTables：：get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md) 方法返回。
+[in] 要检索的 [IDiaTable](../../debugger/debug-interface-access/idiatable.md) 的索引或名称。 如果使用整数变体，则它必须在 0 到 `count`-1 范围内，其中 `count` 由 [IDiaEnumTables::get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md) 方法返回。
 
  `table`
 
-[out]返回表示 [所需表的 IDiaTable](../../debugger/debug-interface-access/idiatable.md) 对象。
+[out] 返回表示所需表的 [IDiaTable](../../debugger/debug-interface-access/idiatable.md) 对象。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回错误代码。
 
 ## <a name="remarks"></a>备注
- 如果指定了字符串变体，则字符串将命名特定表。 该名称应为常量中定义的表名称之一[ (调试接口访问 SDK) 。 ](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)
+ 如果指定了字符串变体，则字符串将命名特定表。 该名称应该是[常量（调试接口访问 SDK）](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)中定义的表名之一。
 
 ## <a name="example"></a>示例
 

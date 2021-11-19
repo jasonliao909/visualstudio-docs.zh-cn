@@ -38,27 +38,27 @@ HRESULT pdataForVA(
 #### <a name="parameters"></a>参数
  `va`
 
-[in]指定要获取的数据的虚拟地址。
+[in] 指定要获取的数据的虚拟地址。
 
  `cbData`
 
-[in]要获取的数据的大小（以字节为单位）。
+[in] 要获取的数据的大小（以字节为单位）。
 
  `pcbData`
 
-[out]返回获取的数据的实际大小（以字节为单位）。
+[out] 返回获取的数据的实际大小（以字节为单位）。
 
  `pbData`
 
-[in， out]用请求的数据填充的缓冲区。 不能为 `NULL`。
+[in, out] 使用请求数据填充的缓冲区。 不能为 `NULL`。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK`。 如果 `S_FALSE` 指定的地址没有 PDATA，则返回 。 否则，返回错误代码。
+ 如果成功，则返回 `S_OK`。 如果指定的地址没有 PDATA，则返回 `S_FALSE`。 否则，返回错误代码。
 
 ## <a name="remarks"></a>备注
- PDATA (编译的名为".pdata") 包含有关函数异常处理的信息。
+ 编译的 PDATA（名为“.pdata”的部分）包含有关函数异常处理的信息。
 
- 调用方知道要返回多少数据，因此调用方无需询问有多少数据可用。 因此，如果 参数为 ，则此方法的实现可以 `pbData` 返回错误 `NULL` 。
+ 调用方知道要返回多少数据，因此调用方无需询问有多少数据可用。 因此，如果 `pbData` 参数为 `NULL`，则此方法的实现可以返回错误。
 
 ## <a name="see-also"></a>另请参阅
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

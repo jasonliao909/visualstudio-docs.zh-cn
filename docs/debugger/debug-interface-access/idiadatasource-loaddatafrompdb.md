@@ -1,6 +1,6 @@
 ---
-description: 打开并准备程序数据库 ( .pdb) 文件作为调试数据源。
-title: IDiaDataSource：： loadDataFromPdb |Microsoft Docs
+description: 打开并准备程序数据库 (.pdb) 文件作为调试数据源。
+title: IDiaDataSource::loadDataFromPdb | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -22,7 +22,7 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127832329"
 ---
 # <a name="idiadatasourceloaddatafrompdb"></a>IDiaDataSource::loadDataFromPdb
-打开并准备程序数据库 ( .pdb) 文件作为调试数据源。
+打开并准备程序数据库 (.pdb) 文件作为调试数据源。
 
 ## <a name="syntax"></a>语法
 
@@ -35,26 +35,26 @@ HRESULT loadDataFromPdb (
 #### <a name="parameters"></a>参数
 pdbPath
 
-中.Pdb 文件的路径。
+[in] .pdb 文件的路径。
 
 ## <a name="return-value"></a>返回值
-如果成功， `S_OK` 则返回; 否则返回错误代码。 下表显示了此方法的可能的返回值。
+如果成功，则返回 `S_OK`；否则，返回错误代码。 下表显示了此方法的可能返回值。
 
 |值|说明|
 |-----------|-----------------|
-|E_PDB_NOT_FOUND|无法打开文件或已确定该文件的格式无效。|
-|E_PDB_FORMAT|尝试访问具有过时格式的文件。|
+|E_PDB_NOT_FOUND|无法打开文件或确定该文件的格式无效。|
+|E_PDB_FORMAT|尝试访问采用过时格式的文件。|
 |E_INVALIDARG|参数无效。|
-|E_UNEXPECTED|数据源已准备就绪。|
+|E_UNEXPECTED|数据源已准备好。|
 
 ## <a name="remarks"></a>备注
 此方法直接从 .pdb 文件加载调试数据。
 
-若要根据特定条件验证 .pdb 文件，请使用 [IDiaDataSource：： loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md) 方法。
+若要根据特定条件验证 .pdb 文件，请使用 [IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md) 方法。
 
-若要通过回调机制) 访问数据加载过程 (，请使用 [IDiaDataSource：： loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) 方法。
+若要获取对数据加载过程的访问权限（通过回调机制），请使用 [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) 方法。
 
-若要直接从内存加载 .pdb 文件，请使用 [IDiaDataSource：： loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md) 方法。
+若要直接从内存加载 .pdb 文件，请使用 [IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md) 方法。
 
 ## <a name="example"></a>示例
 

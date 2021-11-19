@@ -1,5 +1,5 @@
 ---
-description: 检索一个标志，该标志指定函数是否包含 (异步) 异常处理。
+description: 检索一个标记，该标记指定函数是否包含异步（结构化）异常处理。
 title: IDiaSymbol::get_hasEHa | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127832570"
 ---
 # <a name="idiasymbolget_haseha"></a>IDiaSymbol::get_hasEHa
-检索一个标志，该标志指定函数是否包含 (异步) 异常处理。
+检索一个标记，该标记指定函数是否包含异步（结构化）异常处理。
 
 ## <a name="syntax"></a>语法
 
@@ -35,16 +35,16 @@ HRESULT get_hasEHa(
 #### <a name="parameters"></a>参数
  `pFlag`
 
-[out]如果 `TRUE` 函数具有任何异步异常处理，则返回 ;否则返回 `FALSE` 。
+[out] 如果函数具有任何异步异常处理，则返回 `TRUE`；否则返回 `FALSE`。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回 `S_FALSE` 或错误代码。
+ 如果成功，则返回 `S_OK`；否则返回 `S_FALSE` 或错误代码。
 
 > [!NOTE]
-> 返回值 `S_FALSE` 表示 属性不可用于 符号。
+> 返回值 `S_FALSE` 意味着该属性对符号不可用。
 
 ## <a name="remarks"></a>备注
- 可以混合使用异步或结构化异常处理和 C++样式的异常处理，但它需要特定的编译器开关 /EHa 来启用它。
+ 可以混合使用异步/结构化异常处理和 C++ 样式的异常处理，但需要使用特定的编译器开关 /EHa 来启用它。
 
 ## <a name="requirements"></a>要求
 

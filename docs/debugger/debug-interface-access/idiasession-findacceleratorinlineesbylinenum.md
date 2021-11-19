@@ -1,5 +1,5 @@
 ---
-description: 返回对应于指定源位置的内联帧的符号枚举。
+description: 返回与指定源位置对应的内联框架的符号枚举。
 title: IDiaSession::findAcceleratorInlineesByLinenum | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -20,7 +20,7 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127831927"
 ---
 # <a name="idiasessionfindacceleratorinlineesbylinenum"></a>IDiaSession::findAcceleratorInlineesByLinenum
-返回对应于指定源位置的内联帧的符号枚举。
+返回与指定源位置对应的内联框架的符号枚举。
 
 ## <a name="syntax"></a>语法
 
@@ -37,26 +37,26 @@ HRESULT findAcceleratorInlineeLinesByName (
 #### <a name="parameters"></a>参数
  `parent`
 
-[in]一 `IDiaSymbol` 个 ，它对应于需要搜索的 Accelerator 存根函数。
+[in] 与需要搜索的 Accelerator 存根函数对应的 `IDiaSymbol`。
 
  `file`
 
-[in]源 `IDiaSourceFile` 位置的 。
+[in] 源位置的 `IDiaSourceFile`。
 
  `linenum`
 
-[in]源位置的行号。
+[in] 源位置的行号。
 
  `colnum`
 
-[in]源位置的列号。
+[in] 源位置的列号。
 
  `ppResult`
 
-[out]指向使用 `IDiaEnumLineNumbers` 结果初始化的接口指针的指针。
+[out] 指向使用结果初始化的 `IDiaEnumLineNumbers` 接口指针的指针。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回错误代码。
 
 ## <a name="see-also"></a>另请参阅
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

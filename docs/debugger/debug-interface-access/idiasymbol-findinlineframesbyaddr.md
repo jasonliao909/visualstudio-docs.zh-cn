@@ -1,5 +1,5 @@
 ---
-description: IDiaSymbol：：findInlineFramesByAddr 检索枚举，该枚举允许客户端在给定地址上访问所有内联帧。
+description: IDiaSymbol::findInlineFramesByAddr 检索允许客户端在给定地址中遍历所有内联帧的枚举。
 title: IDiaSymbol::findInlineFramesByAddr | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -20,7 +20,7 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127831746"
 ---
 # <a name="idiasymbolfindinlineframesbyaddr"></a>IDiaSymbol::findInlineFramesByAddr
-检索一个枚举，该枚举允许客户端在给定地址上访问所有内联帧。
+检索允许客户端在给定地址中遍历所有内联帧的枚举。
 
 ## <a name="syntax"></a>语法
 
@@ -35,18 +35,18 @@ HRESULT findInlineFramesByAddr (
 #### <a name="parameters"></a>参数
  `isect`
 
-[in]指定地址的节组件。
+[in] 指定地址的节组件。
 
  `offset`
 
-[in]指定地址的偏移部分。
+[in] 指定地址的偏移量组件。
 
  `ppResult`
 
-[out]保存 `IDiaEnumSymbols` 一个 对象，该对象包含检索到的帧的列表。
+[out] 保留包含已检索的帧的列表的 `IDiaEnumSymbols` 对象。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回错误代码。
 
 ## <a name="see-also"></a>另请参阅
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

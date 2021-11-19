@@ -35,10 +35,10 @@ HRESULT get_checksumType (
 #### <a name="parameters"></a>参数
  `pRetVal`
 
-弄返回校验和类型。
+[out] 返回校验和类型。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回错误代码。
 
 ## <a name="remarks"></a>备注
  校验和类型是可以映射到校验和算法的值。 例如，标准 PDB 文件格式通常可以具有以下值之一：
@@ -46,12 +46,12 @@ HRESULT get_checksumType (
 |校验和类型|CryptoAPI 标签|说明|
 |-------------------|---------------------|-----------------|
 |0|\<none>|不存在任何校验和。|
-|1|`CALG_MD5`|用 MD5 哈希算法生成的校验和。|
-|2|`CALG_SHA1`|用 SHA1 哈希算法生成的校验和。|
+|1|`CALG_MD5`|使用 MD5 哈希算法生成的校验和。|
+|2|`CALG_SHA1`|使用 SHA1 哈希算法生成的校验和。|
 
- `CryptoAPI`标签来自 `ALG_ID` 枚举。 有关哈希算法的详细信息，请参阅 `CryptoAPI` Microsoft 的部分 [!INCLUDE[winsdkshort](../../debugger/debug-interface-access/includes/winsdkshort_md.md)] 。
+ `CryptoAPI` 标签来自 `ALG_ID` 枚举。 有关哈希算法的详细信息，请参阅 Microsoft [!INCLUDE[winsdkshort](../../debugger/debug-interface-access/includes/winsdkshort_md.md)] 的 `CryptoAPI` 部分。
 
- 若要获取源文件的实际校验和字节，请调用 [IDiaSourceFile：： get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md) 方法。
+ 若要获取源文件的实际校验和字节，请调用 [IDiaSourceFile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md) 方法。
 
 ## <a name="see-also"></a>另请参阅
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

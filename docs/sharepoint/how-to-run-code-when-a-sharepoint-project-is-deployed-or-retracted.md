@@ -24,7 +24,7 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "126665285"
 ---
 # <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>如何：在部署或收回 SharePoint 项目时运行代码
-  如果要在部署或收回 SharePoint 项目时执行其他任务，则可以处理 Visual Studio 引发的事件。 有关详细信息，请参阅[扩展 SharePoint 打包和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)。
+  如果要在部署或收回 SharePoint 项目时执行其他任务，可以处理 Visual Studio 引发的事件。 有关详细信息，请参阅[扩展 SharePoint 打包和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)。
 
 ### <a name="to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>在部署或收回 SharePoint 项目时运行代码
 
@@ -38,24 +38,24 @@ ms.locfileid: "126665285"
 
 2. 在扩展中，访问 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> 对象。 有关详细信息，请参阅[如何：检索 SharePoint 项目服务](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)。
 
-3. 处理 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentStarted> 项目服务的和 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentCompleted> 事件。
+3. 处理项目服务的 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentStarted> 和 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentCompleted> 事件。
 
-4. 在事件处理程序中，使用 <xref:Microsoft.VisualStudio.SharePoint.DeploymentEventArgs> 参数获取有关当前部署会话的信息。 例如，你可以确定当前部署会话中的项目，以及该项目是在部署还是收回。
+4. 在事件处理程序中，使用 <xref:Microsoft.VisualStudio.SharePoint.DeploymentEventArgs> 参数获取有关当前部署会话的信息。 例如，你可以确定哪个项目在当前部署会话中，以及是部署还是收回项目。
 
-   下面的代码示例演示如何处理 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentStarted> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentCompleted> 项目扩展中的和事件。 部署开始时，此扩展会向 "**输出**" 窗口中写入一条附加消息，并为 SharePoint 项目完成此操作。
+   下面的代码示例演示了如何在项目扩展中处理 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentStarted> 和 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentCompleted> 事件。 在 SharePoint 项目的部署启动并完成后，此扩展会向“输出”窗口写入附加消息。
 
    :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/handleprojectdeploymentevents.cs" id="Snippet12":::
    :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/handleprojectdeploymentevents.vb" id="Snippet12":::
 
 ## <a name="compile-the-code"></a>编译代码
- 此示例需要引用以下程序集：
+ 本示例需要引用以下程序集：
 
-- VisualStudio。SharePoint
+- Microsoft.VisualStudio.SharePoint
 
 - System.ComponentModel.Composition
 
 ## <a name="deploy-the-extension"></a>部署扩展
- 若要部署该扩展，请为 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 该程序集创建一个扩展 (VSIX) 包，并为您要使用该扩展分发的任何其他文件创建该扩展。 有关详细信息，请参阅[Visual Studio 中的 SharePoint 工具的部署扩展](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。
+ 若要部署扩展，请为程序集以及要随扩展分发的任何其他文件创建 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 扩展 (VSIX) 包。 有关详细信息，请参阅[在 Visual Studio 中部署 SharePoint 工具扩展](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。
 
 ## <a name="see-also"></a>另请参阅
 - [扩展 SharePoint 打包和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)

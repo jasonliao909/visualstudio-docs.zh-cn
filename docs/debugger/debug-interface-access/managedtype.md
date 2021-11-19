@@ -1,5 +1,5 @@
 ---
-description: 托管类型 (元数据定义的任何符号，或者由 SymTagManagedType 符号标识的语言（如 C#) ）的内存和资源管理功能的本机类型。
+description: 托管类型（任何由元数据定义的符号，或者是 C# 等语言的内存和资源管理功能的原生符号）由 SymTagManagedType 符号来标识。
 title: ManagedType | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -24,7 +24,7 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127832809"
 ---
 # <a name="managedtype"></a>ManagedType
-托管类型 (元数据定义的任何符号，或本机语言（如 C#) ）的内存和资源管理功能由符号 `SymTagManagedType` 标识。
+托管类型（任何由元数据定义的符号，或者是 C# 等语言的内存和资源管理功能的原生符号）由 `SymTagManagedType` 符号来标识。
 
 ## <a name="properties"></a>属性
  下表显示了此符号类型的其他有效属性。
@@ -33,7 +33,7 @@ ms.locfileid: "127832809"
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|托管符号的名称。|
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|符号的索引 ID。|
-|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|返回 `SymTagManagedType` ([SymTagEnum 枚举值之一) 。](../../debugger/debug-interface-access/symtagenum.md)|
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|返回 `SymTagManagedType`（[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)值之一）。|
 
 ## <a name="see-also"></a>另请参阅
 - [符号类型的类层次结构](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)

@@ -1,5 +1,5 @@
 ---
-description: 检索 thunk 目标 (VA) 的虚拟地址。
+description: 检索 thunk 目标的虚拟地址 (VA)。
 title: IDiaSymbol::get_targetVirtualAddress | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127831718"
 ---
 # <a name="idiasymbolget_targetvirtualaddress"></a>IDiaSymbol::get_targetVirtualAddress
-检索 thunk 目标 (VA) 的虚拟地址。
+检索 thunk 目标的虚拟地址 (VA)。
 
 ## <a name="syntax"></a>语法
 
@@ -35,18 +35,18 @@ HRESULT get_targetVirtualAddress (
 #### <a name="parameters"></a>参数
  `pRetVal`
 
-弄返回 thunk 目标的 VA。
+[out] 返回 thunk 目标的 VA。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回 `S_FALSE` 错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回 `S_FALSE` 或错误代码。
 
 > [!NOTE]
 > 返回值 `S_FALSE` 意味着该属性对符号不可用。
 
 ## <a name="remarks"></a>备注
- 仅当符号为的 [SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md) 值时，此属性才有效 `SymTagThunk` 。
+ 仅当符号为 `SymTagThunk` 的 [SymTagEnum Enumeration](../../debugger/debug-interface-access/symtagenum.md) 值时，此属性才有效。
 
- "Thunk" 是一段代码，用于在32位内存地址 (空间（也称为平面地址空间) ）和16位地址空间（)  (称为分段地址空间）之间进行转换。
+ “thunk”是一段在 32 位内存地址空间（也称为平面地址空间）和 16 位地址空间（称为分段地址空间）之间转换的代码。
 
 ## <a name="see-also"></a>另请参阅
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

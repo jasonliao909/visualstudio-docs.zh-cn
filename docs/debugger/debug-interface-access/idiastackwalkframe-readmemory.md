@@ -1,6 +1,6 @@
 ---
 description: 从映像读取内存。
-title: IDiaStackWalkFrame：： readMemory |Microsoft Docs
+title: IDiaStackWalkFrame::readMemory | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -39,26 +39,26 @@ HRESULT readMemory (
 #### <a name="parameters"></a>参数
  `type`
 
-中 [MemoryTypeEnum 枚举](../../debugger/debug-interface-access/memorytypeenum.md) 值之一，用于指定要访问的内存类型。
+[in] [MemoryTypeEnum Enumeration](../../debugger/debug-interface-access/memorytypeenum.md) 枚举值之一，指定了要访问的内存类型。
 
  `va`
 
-中要开始读取的映像中的虚拟地址位置。
+[in] 要开始读取的映像中的虚拟地址位置。
 
  `cbData`
 
-中数据缓冲区的大小（以字节为单位）。
+[in] 数据缓冲区的大小（以字节为单位）。
 
  `pcbData`
 
-弄返回返回的字节数。 如果 `data` 为 `NULL` ，则 `pcbData` 包含可用数据的总字节数。
+[out] 返回返回的字节数。 如果 `data` 为 `NULL`，则 `pcbData` 包含可用数据的总字节数。
 
  `data`
 
-弄要使用来自指定位置的数据进行填充的缓冲区。
+[out] 要使用指定位置的数据进行填充的缓冲区。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回错误代码。
 
 ## <a name="see-also"></a>另请参阅
 - [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

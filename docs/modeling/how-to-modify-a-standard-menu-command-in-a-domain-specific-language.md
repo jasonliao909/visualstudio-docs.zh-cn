@@ -1,6 +1,6 @@
 ---
 title: 在 DSL 中修改标准菜单命令
-description: 了解如何修改 DSL 中自动定义的某些标准命令的行为。
+description: 了解可如何修改某些在 DSL 中自动定义的标准命令的行为。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -22,18 +22,18 @@ ms.locfileid: "126665998"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>如何：使用域特定语言修改标准的菜单命令
 
-可修改某些在 DSL 中自动定义的标准命令的行为。 例如，可以修改 **Cut，** 以便排除敏感信息。 若要实现此目的，请重写命令集类中的方法。 这些类定义在 DslPackage 项目的 CommandSet.cs 文件中，并派生自 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>。
+可修改某些在 DSL 中自动定义的标准命令的行为。 例如，可以修改“Cut”，以便排除敏感信息。 若要实现此目的，请重写命令集类中的方法。 这些类定义在 DslPackage 项目的 CommandSet.cs 文件中，并派生自 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>。
 
 > [!NOTE]
-> 如果要创建自己的菜单命令，请参阅 [如何：向](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)快捷菜单 添加命令。
+> 如果要创建自己的菜单命令，请参阅[如何：向快捷菜单添加命令](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。
 
 ## <a name="what-commands-can-you-modify"></a>可以修改哪些命令？
 
 ### <a name="to-discover-what-commands-you-can-modify"></a>发现可以修改的命令
 
-1. 在 `DslPackage` 项目中，打开 `GeneratedCode\CommandSet.cs`。 此 C# 文件可在 解决方案资源管理器作为 的子公司找到 `CommandSet.tt` 。
+1. 在 `DslPackage` 项目中，打开 `GeneratedCode\CommandSet.cs`。 可在“解决方案资源管理器”中找到作为 `CommandSet.tt` 补充文件的这个 C# 文件。
 
-2. 在此文件中查找名称以""结尾的类 `CommandSet` ，例如 `Language1CommandSet` 和 `Language1ClipboardCommandSet` 。
+2. 在此文件中查找其名称以“`CommandSet`”结尾的类，例如 `Language1CommandSet` 和 `Language1ClipboardCommandSet`。
 
 3. 在每个命令集类中，键入“`override`”，后跟一个空格。 IntelliSense 将显示可重写方法的列表。 每个命令具有一对其名称以“`ProcessOnStatus`”和“`ProcessOnMenu`”开头的方法。
 
@@ -56,7 +56,7 @@ ms.locfileid: "126665998"
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2. 在 **DslPackage** 中，创建名为"自定义 **代码"的文件夹**。 在此文件夹中，创建名为 的新类文件 `CommandSet.cs` 。
+2. 在“DslPackage”中，创建名为“Custom Code”的文件夹。 在此文件夹中，创建名为 `CommandSet.cs` 的新的类文件。
 
 3. 在该新文件中，编写具有与生成的分部类相同的命名空间和名称的分部声明。 例如：
 
@@ -69,15 +69,15 @@ ms.locfileid: "126665998"
     ```
 
     > [!NOTE]
-    > 如果使用类文件模板创建新文件，则必须同时更正命名空间和类名。
+    > 如果已使用类文件模板创建该新文件，则必须同时更正命名空间和类名。
 
 ## <a name="override-the-command-methods"></a>重写命令方法
 
-大多数命令都有两个关联的方法：名称为 ...的方法 `ProcessOnStatus` 。确定是否应显示和启用该命令。 它将在每当用户右键单击关系图时调用，并应快速执行且不做任何更改。 `ProcessOnMenu`...当用户单击命令时调用 ，应执行命令的功能。 你可能想要重写其中一个方法，或两者都进行重写。
+大多数命令都有两个关联的方法：名称为 `ProcessOnStatus`... 的方法确定是否应显示和启用该命令。 它将在每当用户右键单击关系图时调用，并应快速执行且不做任何更改。 `ProcessOnMenu`... 将在用户单击命令时调用，并且应执行该命令的函数。 你可能想要重写其中一个方法，或两者都进行重写。
 
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>更改命令何时显示在菜单上
 
-替代 ProcessOnStatus...方法。 此方法应设置其参数 MenuCommand 的“可见”和“已启用”属性。 通常，命令查看 this.CurrentSelection 来确定命令是否应用到选定的元素，还可能查看其属性来确定命令是否可以应用到其当前状态中。
+重写 ProcessOnStatus... 方法。 此方法应设置其参数 MenuCommand 的“可见”和“已启用”属性。 通常，命令查看 this.CurrentSelection 来确定命令是否应用到选定的元素，还可能查看其属性来确定命令是否可以应用到其当前状态中。
 
 一般原则是，“可见”属性应由选定了哪些什么元素来确定。 “已启用”属性（确定命令在菜单上是显示为黑色还是灰色）应取决于选择的当前状态。
 
@@ -109,7 +109,7 @@ ProcessOnStatus 方法不应在“存储”中创建、删除或更新元素。
 
 ### <a name="to-change-the-behavior-of-the-command"></a>更改命令的行为
 
-替代 ProcessOnMenu...方法。 以下示例将阻止用户一次删除多个元素，即使使用 Delete 键也是如此。
+重写 ProcessOnMenu... 方法。 以下示例将阻止用户一次删除多个元素，即使使用 Delete 键也是如此。
 
 ```csharp
 /// <summary>
@@ -126,7 +126,7 @@ protected override void ProcessOnMenuDeleteCommand()
 }
 ```
 
-如果你的代码将对“存储”进行更改（例如创建、删除或更新元素或链接），则必须在事务内进行这些更改。 有关详细信息，请参阅 [如何创建和更新模型元素](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
+如果你的代码将对“存储”进行更改（例如创建、删除或更新元素或链接），则必须在事务内进行这些更改。 有关详细信息，请参阅[如何创建和更新模型元素](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
 
 ### <a name="write-the-code-of-the-methods"></a>编写方法的代码
 
@@ -134,7 +134,7 @@ protected override void ProcessOnMenuDeleteCommand()
 
 - `this.CurrentSelection`. 用户右键单击的形状始终包含在此形状和连接符列表中。 如果用户单击关系图的空白部分，则“关系图”是该列表中的唯一成员。
 
-- `this.IsDiagramSelected()` - `true` 如果用户单击了关系图的空白部分，则为 。
+- 如果用户单击了关系图的空白部分，则为 `this.IsDiagramSelected()` - `true`。
 
 - `this.IsCurrentDiagramEmpty()`
 
@@ -144,7 +144,7 @@ protected override void ProcessOnMenuDeleteCommand()
 
 - `shape.ModelElement as MyLanguageElement` - 由形状表示的模型元素。
 
-若要详细了解如何从元素导航到元素，以及如何创建对象和链接，请参阅在程序代码中导航 [和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
+有关如何在元素之间进行导航以及如何创建对象和链接的详细信息，请参阅[在程序代码中导航和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
 
 ## <a name="see-also"></a>另请参阅
 

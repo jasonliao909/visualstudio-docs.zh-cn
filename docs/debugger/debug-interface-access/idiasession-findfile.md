@@ -38,22 +38,22 @@ HRESULT findFile (
 #### <a name="parameters"></a>参数
  `pCompiland`
 
-中表示要用作搜索上下文的编译单位的 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 对象。 将此参数设置为 `NULL` 可以在所有 compiland 中查找源文件。
+[in] 表示要用作搜索上下文的编译单位的 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 对象。 若要在所有编译单位中查找源文件，请将此参数设置为 `NULL`。
 
  `name`
 
-中指定要检索的源文件的名称。 将此参数设置为可 `NULL` 检索所有源文件。
+[in] 指定要检索的源文件的名称。 对于要检索的所有源文件，将此参数设置为 `NULL`。
 
  `option`
 
-中指定应用于名称搜索的比较选项。 [NameSearchOptions 枚举](../../debugger/debug-interface-access/namesearchoptions.md)枚举中的值可以单独使用，也可以组合使用。
+[in] 指定应用于名称搜索的比较选项。 [NameSearchOptions 枚举](../../debugger/debug-interface-access/namesearchoptions.md)中的值可以单独使用，也可以组合使用。
 
  `ppResult`
 
-弄返回一个 [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md) 对象，该对象包含检索到的源文件的列表。
+[out] 返回一个包含检索到的源文件列表的 [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md) 对象。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回错误代码。
 
 ## <a name="example"></a>示例
 

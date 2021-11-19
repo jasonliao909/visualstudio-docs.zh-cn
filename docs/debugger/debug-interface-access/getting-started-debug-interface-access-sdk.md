@@ -1,6 +1,6 @@
 ---
-description: " (DIA) SDK 的 \"调试接口访问\" 提供了说明文档和说明如何使用 DIA API 的示例。"
-title: " (调试接口访问 SDK 入门) |Microsoft Docs"
+description: 调试接口访问 (DIA) SDK 为你提供了指导性的文档，以及一个说明如何使用 DIA API 的示例。
+title: 入门（调试接口访问 SDK）| Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -23,21 +23,21 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127832357"
 ---
 # <a name="getting-started-debug-interface-access-sdk"></a>入门（调试接口访问 SDK）
- (DIA) SDK 的 "调试接口访问" 提供了说明文档和说明如何使用 DIA API 的示例。 使用 DIA SDK 中的接口和方法开发自定义应用程序，这些应用程序打开 .pdb 和 dbg 文件，然后在其内容中搜索符号、值、属性、地址和其他调试信息。 此 SDK 还为与 c + + 应用程序中的符号关联的属性提供引用表。
+调试接口访问 (DIA) SDK 为你提供了指导性的文档，以及一个说明如何使用 DIA API 的示例。 使用 DIA SDK 中的接口和方法开发自定义应用程序，这些应用程序打开 .pdb 和 .dbg 文件，然后在其内容中搜索符号、值、属性、地址和其他调试信息。 此 SDK 还为与 C++ 应用程序中的符号关联的属性提供了参考表。
 
- 为了最好地使用 DIA SDK，你应熟悉以下内容：
+ 为了更好地使用 DIA SDK，你应熟悉以下内容：
 
-- C + + 编程语言
+- C++ 编程语言
 
 - COM 编程
 
-- Visual Studio 集成开发环境 (IDE) 用于编译示例
+- 用于编译示例的 Visual Studio 集成开发环境 (IDE)
 
-  DIA SDK 通常与 Visual Studio 一起安装，其默认位置为 *[drive]* \Program Files \ Microsoft Visual Studio 9.0 \ DIA SDK。 作为安装的一部分，将自动注册用于实现 DIA SDK 的 msdia90.dll，因此，你需要做的就是将其包含 `dia2.h` 在你的程序中并链接到 `diaguids.lib` 。
+  DIA SDK 通常与 Visual Studio 一起安装，其默认位置是 [驱动器]\Program Files\Microsoft Visual Studio 9.0\DIA SDK。 在安装过程中，将自动注册用于实现 DIA SDK 的 msdia90.dll，因此，你需要做的就是在你的程序中包含 `dia2.h` 并链接到 `diaguids.lib`。
 
-  标头： include\dia2。h
+  标头：include\dia2.h
 
-  库： lib\diaguids.lib
+  库：lib\diaguids.lib
 
   DLL: bin\msdia80.dll
 

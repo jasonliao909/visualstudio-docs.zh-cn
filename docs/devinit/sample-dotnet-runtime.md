@@ -1,6 +1,6 @@
 ---
 title: .NET Core 运行时
-description: 针对 dotnet/运行时存储库使用 devinit 的示例自定义。
+description: 为 dotnet/runtime 存储库使用 devinit 的自定义示例。
 ms.date: 08/28/2020
 ms.topic: reference
 author: andysterland
@@ -21,13 +21,13 @@ ms.locfileid: "127833030"
 # <a name="net-core-runtime"></a>.NET Core 运行时
 
 > [!IMPORTANT]
-> 从 2021 年 4 月 12 日开始，将不再支持从 Visual Studio 2019 连接到 GitHub Codespaces，此个人预览版已结束。 我们将重点放在针对广泛的 Visual Studio 工作负荷进行优化的云驱动内部循环和 VDI 解决方案的不断变化方面。 作为此 `devinit` 和相关工具的一部分将不再可用。 建议参与 Visual Studio 的开发人员社区论坛，了解未来要推出的预览版和路线图信息。
+> 从 2021 年 4 月 12 日开始，将不再支持从 Visual Studio 2019 连接到 GitHub Codespaces，此个人预览版已结束。 我们的工作重点是改进云支持型内部循环和针对多种 Visual Studio 工作负载优化的 VDI 解决方案的体验。 在此期间，`devinit` 和关联工具将不再可用。 建议参与 Visual Studio 的开发人员社区论坛，了解未来要推出的预览版和路线图信息。
 
-此示例演示如何自定义 .net Core 运行时[dotnet/运行时](https://github.com/dotnet/runtime)，以自动通过[GitHub Codespaces](https://github.com/features/codespaces)进行设置。
+此示例说明了如何自定义 .NET Core Runtime [dotnet/runtime](https://github.com/dotnet/runtime) 以自动使用 [GitHub Codespaces](https://github.com/features/codespaces) 进行预配。
 
 ## <a name="postclonesetupps1"></a>PostCloneSetup.ps1
 
-此脚本从 _PostCloneSetup.ps1_ 调用，也可以在本地运行以设置存储库。 该文件需要与 .devcontainer.json 位于相同的文件夹中。
+此脚本从 PostCloneSetup.ps1 调用，也可以在本地运行以设置存储库。 该文件需要与 .devcontainer.json 位于相同的文件夹中。
 
 ```console
 devinit init
@@ -36,7 +36,7 @@ git config --system core.longpaths true
 
 ## <a name="packagesconfig"></a>packages.config
 
-_packages.config_ 文件是一个 [Chocolatey](https://chocolatey.org/)文件，用于定义要安装的 Chocolatey 包的列表。 该文件需要与 .devcontainer.json 位于相同的文件夹中。
+packages.config 文件是一个 [Chocolatey](https://chocolatey.org/) 文件，用于定义要安装的 Chocolatey 包列表。 该文件需要与 .devcontainer.json 位于相同的文件夹中。
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -48,7 +48,7 @@ _packages.config_ 文件是一个 [Chocolatey](https://chocolatey.org/)文件，
 
 ## <a name="devinitjson"></a>.devinit.json
 
-文件的内容 [`.devinit.json`](devinit-json.md) 。 此文件需要与 _devcontainer_ 文件位于同一文件夹中。
+[`.devinit.json`](devinit-json.md) 文件的内容。 该文件需要与 .devcontainer.json 文件位于相同文件夹中。
 
 ```json
 {
@@ -67,7 +67,7 @@ _packages.config_ 文件是一个 [Chocolatey](https://chocolatey.org/)文件，
 }
 ```
 
-## <a name="devcontainerjson"></a>。 devcontainer
+## <a name="devcontainerjson"></a>.devcontainer.json
 
 存储库根中的 .devcontainer.json 文件的内容。
 

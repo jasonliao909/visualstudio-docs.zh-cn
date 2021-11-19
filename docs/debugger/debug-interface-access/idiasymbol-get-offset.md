@@ -1,6 +1,6 @@
 ---
 description: 检索符号位置的偏移量。
-title: IDiaSymbol：： get_offset |Microsoft Docs
+title: IDiaSymbol::get_offset | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -22,7 +22,7 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127832515"
 ---
 # <a name="idiasymbolget_offset"></a>IDiaSymbol::get_offset
-检索符号位置的偏移量。 当 [LocationType 枚举](../../debugger/debug-interface-access/locationtype.md) 为或时 `LocIsRegRel` 使用 `LocIsBitField` 。
+检索符号位置的偏移量。 当 [LocationType 枚举](../../debugger/debug-interface-access/locationtype.md)为 `LocIsRegRel` 或 `LocIsBitField` 时使用。
 
 ## <a name="syntax"></a>语法
 
@@ -35,22 +35,22 @@ HRESULT get_offset (
 #### <a name="parameters"></a>参数
  `pRetVal`
 
-弄返回符号位置的偏移量（以字节为单位）。
+[out] 返回符号位置的偏移量（以字节为单位）。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回 `S_FALSE` 错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回 `S_FALSE` 或错误代码。
 
 > [!NOTE]
 > 返回值 `S_FALSE` 意味着该属性对符号不可用。
 
 ## <a name="remarks"></a>备注
- 该偏移量来自之前确定的一些已知点。 例如，位置类型的偏移量 `LocIsBitField` 通常来自包含类的开头。
+ 偏移量来自之前确定的一些已知点。 例如，`LocIsBitField` 位置类型的偏移通常从包含类开始。
 
 ## <a name="requirements"></a>要求
 
 |要求|说明|
 |-----------------|-----------------|
-|标头：|dia2|
+|标头：|dia2.h|
 |版本：|DIA SDK v7.0|
 
 ## <a name="see-also"></a>另请参阅

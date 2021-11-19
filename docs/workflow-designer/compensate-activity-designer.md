@@ -1,6 +1,6 @@
 ---
-title: 工作流设计器 - 补偿活动设计器
-description: 了解"补偿"活动设计器，以及如何使用"补偿"活动设计器创建和配置"补偿"活动。
+title: 工作流设计器 - Compensate 活动设计器
+description: 了解 Compensate 活动设计器，以及如何使用 Compensate 活动设计器创建和配置 Compensate 活动。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "126667596"
 ---
 # <a name="compensate-activity-designer"></a>Compensate 活动设计器
 
-**Compensate** 活动设计器用于创建和配置 <xref:System.Activities.Statements.Compensate> 活动。
+Compensate 活动设计器用于创建和配置 <xref:System.Activities.Statements.Compensate> 活动。
 
 ## <a name="the-compensate-activity"></a>Compensate 活动
 
@@ -32,13 +32,13 @@ ms.locfileid: "126667596"
 
 ### <a name="using-the-compensate-activity-designer"></a>使用 Compensate 活动设计器
 
-可以在"工具箱"的"事务 **"** 类别中找到 **"补偿**"**活动设计器**。 若要打开 **"工具箱**"，请选择"工具箱"选项卡工作流设计器。 或者，从"视图 **"菜单中** 选择"**工具箱"，** 或按 **Ctrl** + **Alt** + **X**。
+可在“工具箱”的“事务”类别中找到 Compensate 活动设计器。 若要打开“工具箱”，请选择工作流设计器左侧的“工具箱”选项卡。 或者，从“视图”菜单中选择“工具箱”或按 Ctrl+Alt+X。
 
-可 **拖动"** 补偿"活动设计器，将其从"工具箱"拖放到工作流设计器放置活动（例如位于 内）的"补偿"图面 <xref:System.Activities.Statements.Sequence> 。 删除活动设计器会创建 <xref:System.Activities.Statements.Compensate> 一个默认为 <xref:System.Activities.Activity.DisplayName%2A> "补偿"的活动。 <xref:System.Activities.Activity.DisplayName%2A>可以在"补偿"活动设计器的标头或属性网格的 **"DisplayName"** 框中编辑该值。
+可以将 Compensate 活动设计器从“工具箱”拖放到工作流设计器图面上通常放置活动的任何位置，如 <xref:System.Activities.Statements.Sequence> 内。 放置活动设计器将创建一个 <xref:System.Activities.Statements.Compensate> 活动，其默认 <xref:System.Activities.Activity.DisplayName%2A> 为 Compensate。 可以在 Compensate 活动设计器的标头中或在属性网格的“DisplayName”框中编辑 <xref:System.Activities.Activity.DisplayName%2A> 值。
 
 ### <a name="the-compensate-properties"></a>Compensate 属性
 
-下表列出 <xref:System.Activities.Statements.CancellationScope> 属性并说明如何在设计器中使用它们。 可以在 <xref:System.Activities.Activity.DisplayName%2A> 属性网格中或在图面上编辑工作流设计器属性。 在 <xref:System.Activities.Statements.Compensate.Target%2A> 属性网格中编辑属性。
+下表列出 <xref:System.Activities.Statements.CancellationScope> 属性并说明如何在设计器中使用它们。 <xref:System.Activities.Activity.DisplayName%2A> 属性可以在属性网格中或工作流设计器图面上进行编辑。 在属性网格中编辑 <xref:System.Activities.Statements.Compensate.Target%2A> 属性。
 
 |属性名称|必选|使用情况|
 |-|--------------|-|

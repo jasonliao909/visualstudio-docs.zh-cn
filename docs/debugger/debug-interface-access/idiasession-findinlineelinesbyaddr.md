@@ -1,5 +1,5 @@
 ---
-description: IDiaSession：：findInlineeLinesByAddr 检索枚举，该枚举允许客户端通过指定父符号直接或间接内联并包含在指定地址范围内的所有函数的行号信息进行重新访问。
+description: IDiaSession::findInlineeLinesByAddr 检索一个枚举，该枚举允许客户端遍历由指定的父符号直接或间接内联并包含在指定地址范围中的所有函数的行号信息。
 title: IDiaSession::findInlineeLinesByAddr | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -20,7 +20,7 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127831908"
 ---
 # <a name="idiasessionfindinlineelinesbyaddr"></a>IDiaSession::findInlineeLinesByAddr
-检索一个 枚举，该枚举允许客户端通过指定父符号直接或间接地内向访问所有函数的行号信息，这些信息包含在指定的地址范围内。
+检索一个枚举，该枚举允许客户端遍历由指定的父符号直接或间接内联并包含在指定地址范围中的所有函数的行号信息。
 
 ## <a name="syntax"></a>语法
 
@@ -34,26 +34,26 @@ HRESULT findInlineeLinesByAddr (
 #### <a name="parameters"></a>参数
  `parent`
 
-[in]一 `IDiaSymbol` 个表示父级的对象。
+[in] 表示父级的 `IDiaSymbol` 对象。
 
  `isect`
 
-[in]指定地址的节组件。
+[in] 指定地址的节组件。
 
  `offset`
 
-[in]指定地址的偏移部分。
+[in] 指定地址的偏移量组件。
 
  `length`
 
-[in]指定要在此查询中覆盖的地址范围（以字节数为单位）。
+[in] 指定此查询要涵盖的地址范围（以字节数为单位）。
 
  `ppResult`
 
-[out]保存 `IDiaEnumLineNumbers` 一个 对象，该对象包含检索到的行号列表。
+[out] 保留 `IDiaEnumLineNumbers` 对象，其中包含已检索的行号的列表。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回错误代码。
 
 ## <a name="see-also"></a>另请参阅
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

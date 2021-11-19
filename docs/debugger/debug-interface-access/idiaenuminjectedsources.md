@@ -1,5 +1,5 @@
 ---
-description: 枚举数据源中包含的各种注入源。
+description: 枚举数据源中包含的各种注入源代码。
 title: IDiaEnumInjectedSources | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127832255"
 ---
 # <a name="idiaenuminjectedsources"></a>IDiaEnumInjectedSources
-枚举数据源中包含的各种注入源。
+枚举数据源中包含的各种注入源代码。
 
 ## <a name="syntax"></a>语法
 
@@ -31,25 +31,25 @@ IDiaEnumInjectedSources : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
-下表显示了 的方法 `IDiaEnumInjectedSources` 。
+下表显示了 `IDiaEnumInjectedSources` 方法。
 
 |方法|说明|
 |------------|-----------------|
-|[IDiaEnumInjectedSources::get__NewEnum](../../debugger/debug-interface-access/idiaenuminjectedsources-get-newenum.md)|检索此 [枚举数的 IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) 接口版本。|
-|[IDiaEnumInjectedSources::get_Count](../../debugger/debug-interface-access/idiaenuminjectedsources-get-count.md)|检索注入源的数量。|
-|[IDiaEnumInjectedSources::Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)|通过索引检索注入的源。|
-|[IDiaEnumInjectedSources::Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md)|检索枚举序列中指定数量的注入源。|
-|[IDiaEnumInjectedSources::Skip](../../debugger/debug-interface-access/idiaenuminjectedsources-skip.md)|跳过枚举序列中指定数量的注入源。|
-|[IDiaEnumInjectedSources::Reset](../../debugger/debug-interface-access/idiaenuminjectedsources-reset.md)|将枚举序列重置为开头。|
+|[IDiaEnumInjectedSources::get__NewEnum](../../debugger/debug-interface-access/idiaenuminjectedsources-get-newenum.md)|检索此枚举器的 [IEnumVARIANT Interface](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) 版本。|
+|[IDiaEnumInjectedSources::get_Count](../../debugger/debug-interface-access/idiaenuminjectedsources-get-count.md)|检索注入源代码的数量。|
+|[IDiaEnumInjectedSources::Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)|通过索引检索注入源代码。|
+|[IDiaEnumInjectedSources::Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md)|检索枚举序列中指定数量的注入源代码。|
+|[IDiaEnumInjectedSources::Skip](../../debugger/debug-interface-access/idiaenuminjectedsources-skip.md)|跳过枚举序列中指定数量的注入源代码。|
+|[IDiaEnumInjectedSources::Reset](../../debugger/debug-interface-access/idiaenuminjectedsources-reset.md)|将枚举序列重置到开头。|
 |[IDiaEnumInjectedSources::Clone](../../debugger/debug-interface-access/idiaenuminjectedsources-clone.md)|创建一个枚举器，其中包含与当前枚举器相同的枚举状态。|
 
 ## <a name="remarks"></a>备注
 
-## <a name="notes-for-callers"></a>调用方说明
-通过调用具有特定源文件名称的 [IDiaSession：：findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md) 方法，或者使用接口的 GUID 调用 [IDiaSession：：getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md) 方法，可获取此 `IDiaEnumInjectedSources` 接口。
+## <a name="notes-for-callers"></a>对调用者的说明
+此接口通过使用特定源文件的名称调用 [IDiaSession::findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md) 方法或通过使用 `IDiaEnumInjectedSources` 接口的 GUID 调用 [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md) 方法获得。
 
 ## <a name="example"></a>示例
-此示例演示如何获取 (函数 `GetEnumInjectedSources`) ， (`DumpAllInjectedSources` 接口) `IDiaEnumInjectedSources` 函数。 有关 [函数的实现，请参阅 IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md) `PrintPropertyStorage` 接口。 有关备用输出，请参阅 [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) 接口。
+此示例演示如何获取（`GetEnumInjectedSources` 函数）和使用（`DumpAllInjectedSources` 函数）`IDiaEnumInjectedSources` 接口。 有关 `PrintPropertyStorage` 函数的实现，请参阅 [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md) 接口。 有关备用输出，请参阅 [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) 接口。
 
 ```C++
 

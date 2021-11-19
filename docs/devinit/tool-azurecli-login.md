@@ -1,6 +1,6 @@
 ---
 title: azurecli-login
-description: devinit 工具 azurecli-登录。
+description: devinit 工具 azurecli-login。
 ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
@@ -21,19 +21,19 @@ ms.locfileid: "127833002"
 # <a name="azurecli-login"></a>azurecli-login
 
 > [!IMPORTANT]
-> 从 2021 年 4 月 12 日开始，将不再支持从 Visual Studio 2019 连接到 GitHub Codespaces，此个人预览版已结束。 我们将重点放在针对广泛的 Visual Studio 工作负荷进行优化的云驱动内部循环和 VDI 解决方案的不断变化方面。 作为此 `devinit` 和相关工具的一部分将不再可用。 建议参与 Visual Studio 的开发人员社区论坛，了解未来要推出的预览版和路线图信息。
+> 从 2021 年 4 月 12 日开始，将不再支持从 Visual Studio 2019 连接到 GitHub Codespaces，此个人预览版已结束。 我们的工作重点是改进云支持型内部循环和针对多种 Visual Studio 工作负载优化的 VDI 解决方案的体验。 在此期间，`devinit` 和关联工具将不再可用。 建议参与 Visual Studio 的开发人员社区论坛，了解未来要推出的预览版和路线图信息。
 
-该 `azurecli-login` 工具用于通过[Azure CLI](/cli/azure/authenticate-azure-cli?preserve-view=true&view=azure-cli-latest)登录 Azure Active Directory。 此工具使用 Azure CLI 命令： `az login --use-device-code` ，若要完成登录，您将需要按照打印到控制台的说明进行操作。
+`azurecli-login` 工具用于通过 [Azure CLI](/cli/azure/authenticate-azure-cli?preserve-view=true&view=azure-cli-latest) 登录 Azure Active Directory。 此工具使用 Azure CLI 命令：`az login --use-device-code`，为完成登录，你需要按照打印到控制台的说明进行操作。
 
 ## <a name="usage"></a>使用情况
 
-如果两个属性均省略或为空，则该工具将遵循下面详细说明的 [默认](#default-behavior) 行为。
+如果两个属性被省略或为空，该工具将遵循下面详述的[默认](#default-behavior)行为。
 
 | 名称                                             | 类型   | 必须 | 值                                                                          |
 |--------------------------------------------------|--------|----------|--------------------------------------------------------------------------------|
 | **注释**                                     | 字符串型 | 否       | 可选注释属性。 未使用。                                          |
-| [**送**](#input)                              | 字符串型 | 否       | 未使用。 有关详细信息，请参阅以下 [输入](#input) 。                               |
-| [**additionalOptions**](#additional-options)     | 字符串型 | 否       | 未使用。 有关详细信息，请参阅下面的 [其他选项](#additional-options) 。     |
+| [input](#input)                              | 字符串型 | 否       | 未使用。 有关详细信息，请参阅下方的 [Input](#input)。                               |
+| [**additionalOptions**](#additional-options)     | 字符串型 | 否       | 未使用。 有关详细信息，请参阅下方的[其他选项](#additional-options)。     |
 
 ### <a name="input"></a>输入
 
@@ -45,12 +45,12 @@ ms.locfileid: "127833002"
 
 ### <a name="default-behavior"></a>默认行为
 
-此工具的默认行为 `azurecli-login` 是安装最新版本的 Azure CLI，并将其添加到中 `PATH` 。
+`azurecli-login` 工具的默认行为是安装最新版本的 Azure CLI 并将其添加到 `PATH`。
 
 ## <a name="example-usage"></a>用法示例
-下面是如何使用运行的示例 `azurecli-login` `.devinit.json` 。
+下面是一个有关如何使用 `.devinit.json` 运行 `azurecli-login` 的示例。
 
-#### <a name="devinitjson-that-will-trigger-azure-login"></a>将触发 Azure 登录的 devinit：
+#### <a name="devinitjson-that-will-trigger-azure-login"></a>将触发 Azure 登录的 .devinit.json：
 
 ```json
 {

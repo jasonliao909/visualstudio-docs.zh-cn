@@ -35,18 +35,18 @@ HRESULT put_imageAlign (
 #### <a name="parameters"></a>参数
  NewVal
 
-[in]可执行文件的新图像对齐值。
+[in] 可执行文件的新图像对齐值。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回错误代码。
 
 ## <a name="remarks"></a>备注
- 加载 (可执行文件) 图像与指定的内存边界对齐。 这种对齐方式可能会受当前系统体系结构以及编译和链接时间选项的影响。 图像对齐始终位于字节边界上。 下图对齐值有效：1、2、4、8、16、32 和 64 字节边界。
+ 图像（加载的可执行文件）与指定的内存边界对齐。 此对齐方式可能会受当前系统体系结构以及编译和链接时间选项的影响。 图像对齐始终位于字节边界上。 以下图像对齐值有效：1、2、4、8、16、32 和 64 字节边界。
 
- 可以通过调用 [IDiaAddressMap：：get_imageAlign 方法来检索当前图像](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md) 对齐方式。
+ 可以通过调用 [IDiaAddressMap::get_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md) 方法来检索当前的图像对齐方式。
 
 > [!NOTE]
-> 调用此方法时，映像已加载。 当图像已移动或已更改并且需要新的对齐方式时， `put_imageAlign` 通常使用 方法。
+> 等到可以调用此方法时，图像已经加载。 当图像已移动或已更改并且需要新的对齐方式时，通常使用 `put_imageAlign` 方法。
 
 ## <a name="see-also"></a>另请参阅
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)

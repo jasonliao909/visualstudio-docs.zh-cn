@@ -1,5 +1,5 @@
 ---
-description: 检索一个标志，该标志指示符号是否与为 C++ AMP 加速器编译的代码中的组共享本地变量相对应。
+description: 检索一个标记，该标记指示符号是否与为 C++ AMP Accelerator 编译的代码中的组共享本地变量相对应。
 title: IDiaSymbol::get_isAcceleratorGroupSharedLocal | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -20,7 +20,7 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "127832458"
 ---
 # <a name="idiasymbolget_isacceleratorgroupsharedlocal"></a>IDiaSymbol::get_isAcceleratorGroupSharedLocal
-检索一个标志，该标志指示符号是否与为 C++ AMP 加速器编译的代码中的组共享本地变量相对应。
+检索一个标记，该标记指示符号是否与为 C++ AMP Accelerator 编译的代码中的组共享本地变量相对应。
 
 ## <a name="syntax"></a>语法
 
@@ -32,10 +32,10 @@ HRESULT get_isAcceleratorGroupSharedLocal(
 #### <a name="parameters"></a>参数
  `pFlag`
 
-弄指向 `BOOL` 的指针，该指针指示符号是否与为 C++ AMP 加速器编译的代码中的组共享本地变量相对应。 如果 `TRUE` 为，则 `get_baseDataSlot` 和 `get_baseDataOffset` 方法可用于获取变量的存储位置信息。
+[out] 指向 `BOOL` 的指针，该指针指示符号是否与为 C++ AMP Accelerator 编译的代码中的组共享本地变量相对应。 如果是 `TRUE`，则可以使用 `get_baseDataSlot` 和 `get_baseDataOffset` 方法获取变量的存储位置信息。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回 `S_FALSE` 错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回 `S_FALSE` 或错误代码。
 
 ## <a name="see-also"></a>另请参阅
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

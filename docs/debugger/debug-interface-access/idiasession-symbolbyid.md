@@ -36,22 +36,22 @@ HRESULT symbolById (
 #### <a name="parameters"></a>参数
 `id`
 
-中唯一标识符。
+[in] 唯一标识符。
 
 `ppSymbol`
 
-弄返回一个 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 对象，该对象表示检索到的符号。
+[out] 返回表示检索到的符号的 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 对象。
 
 ## <a name="return-value"></a>返回值
-如果成功， `S_OK` 则返回; 否则返回错误代码。
+如果成功，则返回 `S_OK`；否则，返回错误代码。
 
 ## <a name="remarks"></a>备注
-指定的标识符是 DIA SDK 在内部用来使所有符号都唯一的唯一值。
+指定标识符是由 DIA SDK 在内部使用的唯一值，用于使所有符号唯一。
 
-例如，可以使用此方法来检索表示其他符号类型的符号 (参见示例) 。
+例如，可以使用此方法来检索表示其他符号类型的符号（请参阅示例）。
 
 ## <a name="example"></a>示例
-此示例检索表示另一个符号类型的 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 。 此示例演示如何使用 `symbolById` 会话中的方法。 更简单的方法是调用 [IDiaSymbol：： get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md) 方法直接检索类型符号。
+此示例检索表示其他符号类型的 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)。 此示例演示如何在会话中使用 `symbolById` 方法。 更简单的方法是调用 [IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md) 方法来直接检索类型符号。
 
 ```C++
 IDiaSymbol *GetSymbolType(IDiaSymbol *pSymbol, IDiaSession *pSession)
