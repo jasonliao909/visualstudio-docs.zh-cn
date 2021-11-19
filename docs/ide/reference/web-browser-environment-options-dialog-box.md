@@ -24,22 +24,27 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e6c44f1a341d6a07691540060e50c2b0c867ae9
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 527163959146545fcf1e8d371bd13804e33d6610
+ms.sourcegitcommit: 76541583274c4af4218ac2a8ab4308077a7e340e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126642504"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "132733161"
 ---
 # <a name="options-dialog-box-environment--web-browser"></a>“选项”对话框：环境 \> Web 浏览器
 
 为内部 Web 浏览器和 Internet Explorer 设置选项。 若要访问此对话框，请在“工具”菜单上单击“选项”，展开“环境”文件夹，然后选择“Web 浏览器”。
 
-> [!NOTE]
-> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅[重置设置](../environment-settings.md#reset-settings)。
+> [!Important]
+> 此功能在 Visual Studio 2022 中已弃用，今后将不受支持。
+>
+> 有关 Visual Studio 2022 的详细信息，请查看[发行说明]( /visualstudio/releases/2022/release-notes)和 Visual Studio [路线图](/visualstudio/productinfo/vs-roadmap/)。
 
 > [!IMPORTANT]
 > 从 Web 打开某些文件或组件可在计算机上执行代码。
+
+> [!NOTE]
+> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅[重置设置](../environment-settings.md#reset-settings)。
 
 ## <a name="home-page"></a>主页
 

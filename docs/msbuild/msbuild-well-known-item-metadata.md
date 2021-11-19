@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: da48ecf879478be22c3a8e2db9bb6a3700390869
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: cfc29cf8b28e4a963efb251dcba560fe7fe07412
+ms.sourcegitcommit: 76541583274c4af4218ac2a8ab4308077a7e340e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641074"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "132733148"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>MSBuild 常见的项元数据
 

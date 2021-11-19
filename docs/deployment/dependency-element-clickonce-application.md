@@ -1,6 +1,6 @@
 ---
-title: '&lt;dependency &gt; Element (ClickOnce Application) |Microsoft Docs'
-description: 依赖项元素标识应用程序所需的平台或程序集依赖项。
+title: '&lt;dependency&gt; 元素（ClickOnce 应用程序）| Microsoft Docs'
+description: dependency 元素标识应用程序所需的平台或程序集依赖项。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -30,13 +30,13 @@ ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
 ms.openlocfilehash: 6dc3d0ad29597e801f4f28cc2b80335cab7240b1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122160876"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126671816"
 ---
-# <a name="ltdependencygt-element-clickonce-application"></a>&lt;应用程序 &gt; (ClickOnce依赖项) 
+# <a name="ltdependencygt-element-clickonce-application"></a>&lt;dependency&gt; 元素（ClickOnce 应用程序）
 标识应用程序所需的平台或程序集依赖项。
 
 ## <a name="syntax"></a>语法
@@ -90,19 +90,19 @@ ms.locfileid: "122160876"
 ```
 
 ## <a name="elements-and-attributes"></a>元素和属性
- `dependency` 元素是必需的。 同一应用程序清单中 `dependency` 可能有多个 实例。
+ `dependency` 元素是必需的。 同一应用程序清单中可能有多个 `dependency` 实例。
 
- `dependency`元素没有属性，并且包含以下子元素。
+ `dependency` 元素没有属性，并且包含以下子元素。
 
 ### <a name="dependentos"></a>dependentOS
- 可选。 包含 `osVersionInfo` 元素。 和 元素是互斥的：一个或另一个元素必须存在， `dependentOS` `dependentAssembly` `dependency` 但不能同时存在两者。
+ 可选。 包含 `osVersionInfo` 元素。 `dependentOS` 和 `dependentAssembly` 元素互相排斥：对于 `dependency` 元素，必须有一个存在，但两者不能同时存在。
 
  `dependentOS` 支持以下属性。
 
-|Attribute|说明|
+|属性|说明|
 |---------------|-----------------|
-|`supportUrl`|可选。 指定相关平台的支持 URL。 如果找到所需的平台，则向用户显示此 URL。|
-|`description`|可选。 以可读的形式描述 元素描述 `dependentOS` 的操作系统。|
+|`supportUrl`|可选。 为依赖平台指定一个支持 URL。 如果找到所需平台，则向用户显示此 URL。|
+|`description`|可选。 以用户可读的形式描述 `dependentOS` 元素描述的操作系统。|
 
 ### <a name="osversioninfo"></a>osVersionInfo
  必需。 此元素是 `dependentOS` 元素的子元素，并且包含 `os` 元素。 此元素没有属性。
@@ -110,70 +110,70 @@ ms.locfileid: "122160876"
 ### <a name="os"></a>os
  必需。 此元素是 `osVersionInfo` 元素的子元素。 此元素具有以下属性。
 
-|Attribute|说明|
+|属性|说明|
 |---------------|-----------------|
-|`majorVersion`|必需。 指定 OS 的主要版本号。|
-|`minorVersion`|必需。 指定 OS 的次版本号。|
-|`buildNumber`|必需。 指定 OS 的生成号。|
-|`servicePackMajor`|必需。 指定 OS 的 Service Pack 主编号。|
-|`servicePackMinor`|可选。 指定 OS 的 Service Pack 次要编号。|
-|`productType`|可选。 标识产品类型值。 有效值为 `server`、`workstation` 和 `domainController`。 例如，对于 Windows 2000 Professional，此属性值为 `workstation` 。|
-|`suiteType`|可选。 标识系统上可用的产品套件或系统的配置类型。 有效值为 `backoffice`、`blade`、`datacenter`、`enterprise`、`home`、`professional`、`smallbusiness`、`smallbusinessRestricted` 和 `terminal`。 例如，对于 Windows 2000 Professional，此属性值为 `professional` 。|
+|`majorVersion`|必需。 指定操作系统的主要版本号。|
+|`minorVersion`|必需。 指定操作系统的次要版本号。|
+|`buildNumber`|必需。 指定操作系统的内部版本号。|
+|`servicePackMajor`|必需。 指定操作系统的服务包主编号。|
+|`servicePackMinor`|可选。 指定操作系统的服务包次要编号。|
+|`productType`|可选。 标识产品类型值。 有效值为 `server`、`workstation` 和 `domainController`。 例如，对于 Windows 2000 Professional，此属性值为 `workstation`。|
+|`suiteType`|可选。 标识系统上可用的产品套件或系统的配置类型。 有效值为 `backoffice`、`blade`、`datacenter`、`enterprise`、`home`、`professional`、`smallbusiness`、`smallbusinessRestricted` 和 `terminal`。 例如，对于 Windows 2000 Professional，此属性值为 `professional`。|
 
 ### <a name="dependentassembly"></a>dependentAssembly
- 可选。 包含 `assemblyIdentity` 元素。 和 元素是互斥的：一个或另一个元素必须存在， `dependentOS` `dependentAssembly` `dependency` 但不能同时存在两者。
+ 可选。 包含 `assemblyIdentity` 元素。 `dependentOS` 和 `dependentAssembly` 元素互相排斥：对于 `dependency` 元素，必须有一个存在，但两者不能同时存在。
 
  `dependentAssembly` 具有以下属性。
 
-| Attribute | 说明 |
+| 属性 | 说明 |
 |-----------------------| - |
-| `dependencyType` | 必需。 指定依赖项类型。 有效值为 `preprequisite` 和 `install`。 `install`程序集作为应用程序的一部分 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 安装。 程序集 `prerequisite` 必须存在于全局程序集缓存中 (GAC) 才能 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 安装应用程序。 |
-| `allowDelayedBinding` | 必需。 指定是否可以以编程方式运行时加载程序集。 |
-| `group` | 可选。 如果 `dependencyType` 属性设置为 `install` ，则指定仅按需安装的命名程序集组。 有关详细信息，请参见[演练：在设计器中使用 ClickOnce 部署 API 按需下载程序集](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)。<br /><br /> 如果 设置为 `framework` 且 `dependencyType` 属性设置为 `prerequisite` ，则指定程序集作为该程序集的一.NET Framework。 在 .NET Framework 4 和更高版本) 时，不会检查此程序集的全局 (GAC 缓存。 |
-| `codeBase` | 当 特性 `dependencyType` 设置为 时是必需的 `install` 。 依赖程序集的路径。 可以是绝对路径，或者是相对于清单基本代码的路径。 此路径必须是有效的 URI，程序集清单才能有效。 |
-| `size` | 当 特性 `dependencyType` 设置为 时是必需的 `install` 。 依赖程序集的大小（以字节为单位）。 |
+| `dependencyType` | 必需。 指定依赖项类型。 有效值为 `preprequisite` 和 `install`。 `install` 程序集是作为 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序的一部分安装的。 `prerequisite` 程序集必须存在于全局程序集缓存 (GAC) 中，然后才能安装 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序。 |
+| `allowDelayedBinding` | 必需。 指定是否可以在运行时以编程方式加载程序集。 |
+| `group` | 可选。 如果 `dependencyType` 属性设置为 `install`，则指定一组仅按需安装的命名程序集。 有关详细信息，请参见[演练：在设计器中使用 ClickOnce 部署 API 按需下载程序集](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)。<br /><br /> 如果设置为 `framework`，并且 `dependencyType` 属性设置为 `prerequisite`，则将程序集指定为 .NET Framework 的一部分。 在 .NET Framework 4 及更高版本上安装时，不会为此程序集检查全局程序集缓存 (GAC)。 |
+| `codeBase` | 当 `dependencyType` 属性设置为 `install` 时，这为必需项。 依赖程序集的路径。 可以是绝对路径，也可以是相对于清单代码库的路径。 此路径必须是有效的 URI，程序集清单才会有效。 |
+| `size` | 当 `dependencyType` 属性设置为 `install` 时，这为必需项。 依赖程序集的大小（以字节为单位）。 |
 
 ### <a name="assemblyidentity"></a>assemblyIdentity
  必需。 此元素是 `dependentAssembly` 元素的子元素，并且包含下列元素。
 
-|Attribute|说明|
+|属性|说明|
 |---------------|-----------------|
 |`name`|必需。 标识应用程序的名称。|
-|`version`|必需。 采用以下格式指定应用程序的版本号： `major.minor.build.revision`|
-|`publicKeyToken`|可选。 指定一个 16 个字符的十六进制字符串，该字符串表示对应用程序或程序集进行签名的公钥哈希值的最后 8 `SHA-1` 个字节。 用于对目录进行签名的公钥必须是 2048 位或更多位。|
-|`processorArchitecture`|可选。 指定处理器。 有效值适用于 `x86` 32 位Windows `I64` 64 位Windows。|
-|`language`|可选。 标识程序集的两部分语言代码，如 EN-US。|
+|`version`|必需。 按以下格式指定应用程序的版本号：`major.minor.build.revision`|
+|`publicKeyToken`|可选。 指定一个 16 个字符的十六进制字符串，该字符串表示应用程序或程序集签名时所用公钥的 `SHA-1` 哈希值的最后 8 个字节。 用于对目录签名的公钥必须是 2048 位或更多。|
+|`processorArchitecture`|可选。 指定处理器。 适用于 32 位 Windows 的有效值为 `x86`，适用于 64 位 Windows 的有效值为 `I64`。|
+|`language`|可选。 标识程序集由两部分组成的语言代码，例如 EN-US。|
 
 ### <a name="hash"></a>hash
- `hash`元素是 元素的可选 `assemblyIdentity` 子元素。 `hash` 元素没有属性。
+ `hash` 元素是 `assemblyIdentity` 元素的可选子元素。 `hash` 元素没有属性。
 
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 使用应用程序中所有文件的算法哈希作为安全检查，以确保部署后未更改任何文件。 如果未 `hash` 包含 元素，则不执行此检查。 因此，不建议省略 `hash` 元素。
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 在应用程序中使用所有文件的算法哈希作为安全检查，确保在部署后没有任何文件发生更改。 如果不包含 `hash` 元素，则不会执行此检查。 因此，建议不要省略 `hash` 元素。
 
 ### <a name="dsigtransforms"></a>dsig:Transforms
- `dsig:Transforms`元素是 元素的必需 `hash` 子元素。 `dsig:Transforms` 元素没有属性。
+ `dsig:Transforms` 元素是 `hash` 元素的必需子元素。 `dsig:Transforms` 元素没有属性。
 
 ### <a name="dsigtransform"></a>dsig:Transform
- `dsig:Transform`元素是 元素的必需 `dsig:Transforms` 子元素。 `dsig:Transform` 元素具有以下属性。
+ `dsig:Transform` 元素是 `dsig:Transforms` 元素的必需子元素。 `dsig:Transform` 元素具有以下属性。
 
-| Attribute | 说明 |
+| 属性 | 说明 |
 |-------------| - |
-| `Algorithm` | 用于计算此文件摘要的算法。 当前使用的唯一值为 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `urn:schemas-microsoft-com:HashTransforms.Identity` 。 |
+| `Algorithm` | 用于计算此文件的摘要的算法。 目前，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 唯一使用的值是 `urn:schemas-microsoft-com:HashTransforms.Identity`。 |
 
 ### <a name="dsigdigestmethod"></a>dsig:DigestMethod
- `dsig:DigestMethod`元素是 元素的必需 `hash` 子元素。 `dsig:DigestMethod` 元素具有以下属性。
+ `dsig:DigestMethod` 元素是 `hash` 元素的必需子元素。 `dsig:DigestMethod` 元素具有以下属性。
 
-| Attribute | 说明 |
+| 属性 | 说明 |
 |-------------| - |
-| `Algorithm` | 用于计算此文件摘要的算法。 当前使用的唯一值为 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `http://www.w3.org/2000/09/xmldsig#sha1` 。 |
+| `Algorithm` | 用于计算此文件的摘要的算法。 目前，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 唯一使用的值是 `http://www.w3.org/2000/09/xmldsig#sha1`。 |
 
 ### <a name="dsigdigestvalue"></a>dsig:DigestValue
- `dsig:DigestValue`元素是 元素的必需 `hash` 子元素。 `dsig:DigestValue` 元素没有属性。 其文本值为指定文件的计算哈希。
+ `dsig:DigestValue` 元素是 `hash` 元素的必需子元素。 `dsig:DigestValue` 元素没有属性。 它的文本值是指定文件计算得出的哈希。
 
 ## <a name="remarks"></a>备注
- 应用程序使用的所有程序集都必须具有相应的 `dependency` 元素。 依赖程序集不包括必须预装在全局程序集缓存中作为平台程序集的程序集。
+ 应用程序使用的所有程序集都必须具有相应的 `dependency` 元素。 依赖程序集不包括那些必须在全局程序集缓存中预安装为平台程序集的程序集。
 
 ## <a name="example"></a>示例
- 下面的代码示例演示 `dependency` 了应用程序清单 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 中的元素。 此代码示例是为应用程序清单主题提供的ClickOnce[示例的一](../deployment/clickonce-application-manifest.md)部分。
+ 下面的代码示例演示了 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序清单中的 `dependency` 元素。 此代码示例摘自为 [ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)主题提供的一个更大的示例。
 
 ```xml
 <dependency>
@@ -219,6 +219,6 @@ ms.locfileid: "122160876"
 </dependency>
 ```
 
-## <a name="see-also"></a>请参阅
-- [ClickOnce应用程序清单](../deployment/clickonce-application-manifest.md)
+## <a name="see-also"></a>另请参阅
+- [ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)
 - [\<dependency> 元素](../deployment/dependency-element-clickonce-deployment.md)

@@ -1,7 +1,7 @@
 ---
 title: 托管代码的“安全规则”规则集
 ms.date: 11/04/2016
-description: 了解用于旧代码分析Visual Studio规则集。 请参阅侧重于潜在安全问题的规则的说明。
+description: 了解 Visual Studio 旧代码分析的“安全规则”规则集。 请参阅重点关注潜在安全问题的规则说明。
 ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: 564aeac6-03fa-41b0-b655-88179f0ab01b
@@ -13,14 +13,14 @@ ms.workload:
 - dotnet
 ms.openlocfilehash: 26aaec700d308e73249401e215fc1b1b93a87735
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126601259"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>托管代码的“安全规则”规则集
 
-使用 Microsoft 安全规则规则集进行旧代码分析，以最大程度地增加报告的潜在安全问题的数量。
+使用 Microsoft 安全规则规则集进行旧代码分析，以最大程度地报告潜在的安全问题。
 
 |规则|描述|
 |----------|-----------------|

@@ -1,6 +1,6 @@
 ---
 title: 属性类型不匹配
-description: 无法创建关联 - 属性类型不匹配。 查看有关此Visual Studio 对象关系设计器 (O/R 设计器) 消息。
+description: 无法创建关联 - 属性类型不匹配。 查看此 Visual Studio 对象关系设计器（O/R 设计器）消息的相关信息。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -13,14 +13,14 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: f752757aadf67529f915340434735e89bf7375da
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126601217"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>无法创建关联&lt;关联名称&gt; - 属性类型不匹配
 
-无法创建关联 \<association name> - 属性类型不匹配。 属性没有匹配的类型 \<property names> ：。
+无法创建关联 \<association name> - 属性类型不匹配。 属性没有匹配的类型：\<property names>。
 
 关联由在“关联编辑器”对话框中选择的“关联属性”定义。 关联双方的属性必须具有相同的数据类型。
 
@@ -38,5 +38,5 @@ ms.locfileid: "126601217"
 
 ## <a name="see-also"></a>请参阅
 
-- [LINQ to SQL工具Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [如何：在 O/R 设计器LINQ to SQL创建 (类之间的) ](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)
+- [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [如何：在 LINQ to SQL 类之间创建关联（O/R 设计器）](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)

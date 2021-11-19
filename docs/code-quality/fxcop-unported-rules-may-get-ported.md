@@ -14,14 +14,14 @@ ms.workload:
 - dotnet
 ms.openlocfilehash: b16f089496721f0291c49c2c7e515b2b3c1ce211
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126601317"
 ---
 # <a name="unported-rules-that-may-be-ported"></a>可移植但已取消移植的规则
 
-以下 FxCop 旧分析规则尚未作为分析器实现，但仍可能实现。 这可能是由于阻止技术原因，或只是规则优先级较低。 有关每个规则的移植状态详细信息，请单击"跟踪问题" **列中** 的链接。
+以下 FxCop 旧分析规则尚未作为分析器实现，但仍可能实现。 这可能是源于技术阻止，或只是因为该规则的优先级较低。 有关每个规则的移植状态的详细信息，请单击“跟踪问题”列中的链接。
 
 规则 ID | 跟踪问题
 --- | ---

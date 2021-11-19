@@ -1,6 +1,6 @@
 ---
-title: 无法撤消更改返回类型
-description: 更改 DataContext 方法的返回类型的操作无法撤消。 查看有关此 Visual Studio 的信息对象关系设计器 (O/R 设计器) 消息。
+title: 无法撤消返回类型的更改
+description: 更改 DataContext 方法的返回类型的操作无法撤消。 查看此 Visual Studio 对象关系设计器（O/R 设计器）消息的相关信息。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -13,7 +13,7 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: 0d06ec0c81fa731c775baf2b7b5754652a219af1
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126601214"

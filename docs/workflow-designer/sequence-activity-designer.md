@@ -1,6 +1,6 @@
 ---
-title: 工作流设计器 - 序列活动设计器
-description: 了解 Sequence 活动如何包含按顺序执行的子活动的有序集合。
+title: 工作流设计器 - Sequence 活动设计器
+description: 了解 Sequence 活动如何包含其按顺序执行的已排序的子活动集合。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,21 +14,21 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: 7980e01f23dab3ddb927af207e4e2ce67ab515a7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122098991"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126666106"
 ---
 # <a name="sequence-activity-designer"></a>Sequence 活动设计器
 
 <xref:System.Activities.Statements.Sequence> 活动包含子活动的已排序集合，将按该排序执行这些子活动。
 
-按顺序执行一组活动的另一个方法是使用 <xref:System.Activities.Statements.Flowchart> 活动。 当你有 [一个简单的](../workflow-designer/flowchart-activity-designer.md) 分支或循环程序流时，请考虑使用流程图，以关系图方式对流进行建模。
+按顺序执行一组活动的另一个方法是使用 <xref:System.Activities.Statements.Flowchart> 活动。 当你具有简单的分支或循环程序流并且希望通过图解法建模时，请考虑使用[流程图](../workflow-designer/flowchart-activity-designer.md)。
 
 ## <a name="using-the-sequence-activity-designer"></a>使用 Sequence 活动设计器
 
-若要添加 <xref:System.Activities.Statements.Sequence> 活动，请将"序列"活动设计器从"工具箱"拖动到工作流设计器图面。 若要将子活动添加到此活动，请从"工具箱"拖动一些其他活动，并将其拖放到框中提示文本为"此处放置活动 <xref:System.Activities.Statements.Sequence> "的三角形上。 
+若要添加 <xref:System.Activities.Statements.Sequence> 活动，请将“Sequence”活动设计器从“工具箱”拖到“工作流设计器”图面上 。 若要向此 <xref:System.Activities.Statements.Sequence> 活动添加子活动，请将一些其他活动从“工具箱”拖放到带提示文本“在此处放置活动”的框中的三角形上。
 
 ### <a name="sequence-activity-properties-in-the-workflow-designer"></a>工作流设计器中的 Sequence 活动属性
 
@@ -38,7 +38,7 @@ ms.locfileid: "122098991"
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|错误|指定 <xref:System.Activities.Statements.Sequence> 活动设计器在标头中的友好名称。 默认值为 Sequence。 可以在属性网格或直接在活动设计器的标头中编辑该值。<br /><br /> 虽然 <xref:System.Activities.Activity.DisplayName%2A> 不是绝对必需的，但最好使用该属性。|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [流程图](../workflow-designer/flowchart-activity-designer.md)
 - [控制流](../workflow-designer/control-flow-activity-designers.md)

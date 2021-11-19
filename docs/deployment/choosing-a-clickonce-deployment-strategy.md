@@ -1,5 +1,5 @@
 ---
-title: 选择 ClickOnce 部署策略 |Microsoft Docs
+title: 选择 ClickOnce 部署策略 | Microsoft Docs
 description: 了解部署 ClickOnce 应用程序的策略，以及如何根据要部署的应用程序的类型选择策略。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -19,11 +19,11 @@ ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
 ms.openlocfilehash: e3b518218204aa6eaeb06bae1cb519f8b4270dc1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122073911"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126671834"
 ---
 # <a name="choose-a-clickonce-deployment-strategy"></a>选择 ClickOnce 部署策略
 有三种不同的策略用于部署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序；所选择的策略主要取决于要部署的应用程序的类型。 下面介绍了这三种部署策略：
@@ -74,7 +74,7 @@ ms.locfileid: "122073911"
 
  面向 .NET Framework 2.0 的应用程序需要 Internet Explorer。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)
 - [选择 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)
 - [如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

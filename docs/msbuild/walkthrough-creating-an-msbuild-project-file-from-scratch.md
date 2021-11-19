@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 6824260c3bffad8e6d3000d8eb5d3e4405dafc1f
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: eace77a80823e1e47f9c685617630e2797706ae7
+ms.sourcegitcommit: 76541583274c4af4218ac2a8ab4308077a7e340e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126642048"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "132733174"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>演练：从头开始创建 MSBuild 项目文件
 
@@ -108,7 +108,7 @@ ms.locfileid: "126642048"
 
 ### <a name="to-create-a-minimal-msbuild-project-file"></a>创建最小的 MSBuild 项目文件
 
-1. 在文本编辑器中，用以下两行替换现有文本：
+1. 在文本编辑器中，创建一个新文件并输入以下两行：
 
     ```xml
     <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
