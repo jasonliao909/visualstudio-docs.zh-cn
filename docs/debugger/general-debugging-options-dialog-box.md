@@ -24,12 +24,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: b72d97d1300a0745270976afcc0a04e163bac406
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: a7dd8d85284cb615f3e203e638bec2e26a83f97a
+ms.sourcegitcommit: 8b44ba7864f67afa476708d5092729345e689f93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126642027"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "132861531"
 ---
 # <a name="general-debugging-options"></a>常规调试选项
 
@@ -116,6 +116,7 @@ ms.locfileid: "126642027"
 
 **如果写入的数据未更改值，则忽略 GPU 内存访问异常**：在调试时如果数据未更改，将忽略检测到的争用条件。 有关详细信息，请参阅[调试 GPU 代码](../debugger/debugging-gpu-code.md)。
 
+::: moniker range="<= vs-2019"
 **使用托管兼容模式**：将默认调试引擎替换为旧版本，以支持以下方案：
 
 - 使用 C#、Visual Basic 或 F# 以外的 .NET 语言，该语言提供自己的表达式计算器（包括 C + + CLI）。
@@ -124,6 +125,7 @@ ms.locfileid: "126642027"
 
 > [!NOTE]
 > 选择托管兼容模式会禁用仅可在默认调试引擎中实现的一些功能。 旧版调试引擎已在 Visual Studio 2012 中进行了替换。
+::: moniker-end
 
 ::: moniker range="vs-2017"
 **使用旧版 C# 和 VB 表达式计算器**：调试器将使用 Visual Studio 2013 C# 或 Visual Basic 表达式计算器而不是 Visual Studio 2015 基于 Roslyn 的表达式计算器。

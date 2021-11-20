@@ -5,19 +5,19 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 11/08/2021
 ms.assetid: db2dc420-63d2-44ef-bdda-a351561dc900
-ms.openlocfilehash: 333f6cb27ef7a3f94556f1e7a7b1caae514292ef
-ms.sourcegitcommit: 76541583274c4af4218ac2a8ab4308077a7e340e
+ms.openlocfilehash: 785eb0814e27e83df4cc921bda18c6ad04960b2f
+ms.sourcegitcommit: 8b44ba7864f67afa476708d5092729345e689f93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "132733187"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "132861550"
 ---
 # <a name="visual-studio-for-mac-810-and-net-on-apple-silicon-machines"></a>Apple Silicon 计算机上安装 Visual Studio for Mac 8.10 和 .NET
 
 在 Apple Silicon 计算机（也称为 M1 或 ARM）上，Visual Studio for Mac 8.10 目前不支持 11 月发布的 .NET 6、.NET 5 和 .NET Core 3.1 x64 SDK。 它还不支持 .NET 6 Arm64 SDK。 如果安装了其中任何一个，则它们将中断 Visual Studio for Mac 8.10，应卸载并安装较旧的 .NET SDK。 
 
 > [!NOTE]
-> 此信息特定于 Visual Studio for Mac 2019 (8.10.x) 版本。 有关 Visual Studio for Mac 2022 预览版此过程的信息，请参阅 [Apple Silicon 计算机上的 Visual Studio for Mac 17.0 和 .NET](/uninstall-net-2022.md) 了解详细信息。
+> 此信息特定于 Visual Studio for Mac 2019 (8.10.x) 版本。 有关 Visual Studio for Mac 2022 预览版此过程的信息，请参阅 [Apple Silicon 计算机上的 Visual Studio for Mac 17.0 和 .NET](/visualstudio/mac/uninstall-net-2022) 了解详细信息。
 
 ## <a name="uninstall-net-from-your-machine"></a>从计算机中卸载 .NET： 
 
