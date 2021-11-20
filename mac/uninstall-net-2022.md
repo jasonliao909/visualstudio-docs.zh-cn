@@ -5,19 +5,19 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 11/08/2021
 ms.assetid: 18f722bc-3d9d-4c75-9e77-d66b64784c8d
-ms.openlocfilehash: 5ab79d97f30dadb5791ed776b86ccd214717fb0d
-ms.sourcegitcommit: ac681e983f3b217c3fd9d2a31e3a3ddcc4dd3546
+ms.openlocfilehash: 048fc31412159cea02333086253ef0d8c22cd8be
+ms.sourcegitcommit: 8b44ba7864f67afa476708d5092729345e689f93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "132042009"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "132861674"
 ---
 # <a name="visual-studio-for-mac-170-previews-and-net-on-apple-silicon-machines"></a>Apple Silicon 计算机上的 Visual Studio for Mac 17.0 预览版和 .NET
 
 在安装了旧版 x64 SDK 的 Apple Silicon 计算机上（也称为 M1 或 ARM），需要删除所有现有的 .NET 安装才能使用 .NET 6 GA Arm64 SDK。  
 
 > [!NOTE]
-> 此信息特定于 Visual Studio for Mac 2022 Preview (17.0) 版本。 有关 Visual Studio for Mac 2019 版此过程的信息，请参阅 [Apple Silicon 计算机上的 Visual Studio for Mac 8.10 和 .NET](/uninstall-net-2019.md) 了解详细信息。
+> 此信息特定于 Visual Studio for Mac 2022 Preview (17.0) 版本。 有关 Visual Studio for Mac 2019 版此过程的信息，请参阅 [Apple Silicon 计算机上的 Visual Studio for Mac 8.10 和 .NET](/visualstudio/mac/uninstall-net-2019) 了解详细信息。
 
 ## <a name="uninstall-net-from-your-machine"></a>从计算机中卸载 .NET： 
 
