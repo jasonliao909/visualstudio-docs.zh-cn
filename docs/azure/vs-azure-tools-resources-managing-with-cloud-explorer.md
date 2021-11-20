@@ -8,12 +8,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: eba0fbc1dc2cb6feced3e52f3f4b6dfbce1fa1d4
-ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
+ms.openlocfilehash: bd80d022a71e1c5a13d084c477458537bc2330b6
+ms.sourcegitcommit: 932cf0f653c6258b73f42102d134cbaf50b8f20c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "131126527"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "132879807"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>在 Visual Studio Cloud Explorer 中管理与 Azure 帐户关联的资源
 
@@ -26,7 +26,7 @@ ms.locfileid: "131126527"
 >
 > 如果需要，可以使用 Azure 门户或继续使用早期版本的 Visual Studio 中服务器资源管理器的 Azure 节点。
 >
-> 有关 Visual Studio 2022 的详细信息，请参阅我们的[发行说明](/visualstudio/releases/2022/release-notes-preview/)。
+> 有关 Visual Studio 2022 的详细信息，请参阅我们的[发行说明](/visualstudio/releases/2022/release-notes/)。
 
 ::: moniker-end
 

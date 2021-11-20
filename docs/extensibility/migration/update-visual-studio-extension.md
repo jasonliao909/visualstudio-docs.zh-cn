@@ -11,12 +11,12 @@ monikerRange: vs-2022
 ms.workload:
 - vssdk
 feedback_system: GitHub
-ms.openlocfilehash: 71459535085cf8fef56cfdcb0bd01451e91edd87
-ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
+ms.openlocfilehash: 354312c6c874380297a7a7a5b70700d9f72ad6a3
+ms.sourcegitcommit: 932cf0f653c6258b73f42102d134cbaf50b8f20c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "132001190"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "132880139"
 ---
 # <a name="update-a-visual-studio-extension-for-visual-studio-2022"></a>更新 Visual Studio 2022 的 Visual Studio 扩展
 
@@ -112,7 +112,7 @@ ms.locfileid: "132001190"
 
    请确保选择与目标 Visual Studio 的最低版本匹配的包版本。
 
-   某些对 VS SDK 不唯一的程序集 (例如，Newtonsoft.Json.dll) 在 Visual Studio 2022 之前可能已通过简单引用发现， `<Reference Include="Newtonsoft.Json" />` 但在 Visual Studio 2022 中，需要包引用，因为在 Visual Studio 2022 中，我们从 Visual Studio 的默认程序集搜索路径中删除了某些 MSBuild 的运行时和 SDK 目录。
+   某些对 VS SDK 不唯一的程序集 (例如，Newtonsoft.Json.dll) 在 Visual Studio 2022 之前可能已通过简单引用发现， `<Reference Include="Newtonsoft.Json" />` 但在 Visual Studio 2022 中，需要包引用，因为在 Visual Studio 2022 中，我们从MSBuild 的默认程序集搜索路径。
 
    在从直接程序集引用切换到 NuGet 包引用时，可以选取其他程序集引用和分析器包，因为 NuGet 会自动安装依赖项的传递闭包。 这通常是正常的，但可能会导致在生成过程中标记其他警告。 完成这些警告并尽可能多地解决问题，并考虑禁止使用代码中区域无法解决的这些警告 `#pragma warning disable <id>` 。
 
@@ -298,8 +298,6 @@ Visual Studio 2022 之前，你将不能在 Visual Studio 的版本上运行64�
 将扩展发布到[Visual Studio Marketplace](https://marketplace.visualstudio.com/)是一种很好的方法，可让新用户查找和安装你的扩展。 无论扩展是以独占方式 Visual Studio 2022 还是以旧的 VS 版本为目标，Marketplace 都可以为你提供支持。
 
 今后，marketplace 将允许你将多个 VSIXs 上传到一个 Marketplace 列表，使你能够上传 Visual Studio 2022 目标 vsix 和预 Visual Studio 2022 vsix。 使用 VS 扩展管理器时，用户将自动获取已安装的 VS 版本的适当 VSIX。
-
-对于 Visual Studio 2022 的预览版本，marketplace 将仅支持每个 marketplace 列表的一个 VSIX 文件。 尽管 Visual Studio 2022 处于预览阶段，但我们鼓励你为扩展提供单独的 Visual Studio 2022 Marketplace 市场列表。 这样，就可以根据需要循环访问 Visual Studio 2022 扩展，而不会影响早期版本 Visual Studio 的客户。 你还可以将扩展标记为 "预览"，以设置其可能不太可靠的预期，即使该有些不可靠的源 Visual Studio 2022 （而不是你的主流扩展插件）。
 
 ### <a name="custom-installer"></a>自定义安装程序
 

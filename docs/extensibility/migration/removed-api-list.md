@@ -11,16 +11,14 @@ monikerRange: vs-2022
 ms.workload:
 - vssdk
 feedback_system: GitHub
-ms.openlocfilehash: b6dcbc54406b18a06c690a2cfb2b54fbfd4db858
-ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
+ms.openlocfilehash: d2edf8cbfca8d4ae26c3b6a67a49c389b2f46379
+ms.sourcegitcommit: 932cf0f653c6258b73f42102d134cbaf50b8f20c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "132001499"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "132879713"
 ---
 # <a name="visual-studio-2022-sdk-removed-apis"></a>Visual Studio 2022 SDK 已删除 api
-
-[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 以下 api 已从 Visual Studio SDK 中删除，不能再使用，有关如何更新代码的详细信息，请参阅每个部分。
 
@@ -134,7 +132,7 @@ Visual Studio 2022 中将删除异步解决方案加载 (ASL) 和轻型解决方
 
 ## <a name="new-wpf-xaml-designer-for-net-framework"></a>面向 .NET Framework 的新版 WPF XAML 设计器
 
-已弃用 .NET Framework 的当前 wpf XAML 设计器，并将根据用于 .net 的 wpf XAML 设计器 ( .net Core) 的相同体系结构替换为新的 wpf XAML 设计器 .NET Framework。 这也意味着 WPF .NET Framework 基于 design.dll 和 Microsoft 的扩展性模型。Windows。设计：不再支持扩展性。 .NET Framework 的新 wpf XAML 设计器将为 .net ( .net Core) 提供与 WPF XAML 设计器相同的扩展性模型。 如果已为 .NET ( .NET Core) 创建了. designtools.dll 扩展，则该相同扩展将适用于 .NET Framework 的新 WPF XAML 设计器。 请参阅下面的迁移链接，了解有关如何迁移到 WPF 平台的新扩展性模型的详细信息 (.NET Framework 和 .net Core) 和 UWP 平台向后移动。 
+已弃用 .NET Framework 的当前 wpf XAML 设计器，并将根据用于 .net 的 wpf XAML 设计器 ( .net Core) 的相同体系结构替换为新的 wpf XAML 设计器 .NET Framework。 这也意味着 WPF .NET Framework 基于 design.dll 和 Windows 的扩展性模型。设计：不再支持扩展性。 .NET Framework 的新 wpf XAML 设计器将为 .net ( .net Core) 提供与 WPF XAML 设计器相同的扩展性模型。 如果已为 .NET ( .NET Core) 创建了. designtools.dll 扩展，则该相同扩展将适用于 .NET Framework 的新 WPF XAML 设计器。 请参阅下面的迁移链接，了解有关如何迁移到 WPF 平台的新扩展性模型的详细信息 (.NET Framework 和 .net Core) 和 UWP 平台向后移动。 
 
 ### <a name="recommended-updates"></a>建议的更新
 

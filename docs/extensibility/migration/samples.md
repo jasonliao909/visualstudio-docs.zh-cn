@@ -11,16 +11,14 @@ monikerRange: vs-2022
 ms.workload:
 - vssdk
 feedback_system: GitHub
-ms.openlocfilehash: cb8a893ae22daae80d8fb1b4a301f6f62ed7021c
-ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
+ms.openlocfilehash: 0933fc3aadc26d435a7e5d0c029d933c5a5aceaa
+ms.sourcegitcommit: 932cf0f653c6258b73f42102d134cbaf50b8f20c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "132001178"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "132880144"
 ---
 # <a name="imageoptimizer---update-a-visual-studio-extension-step-by-step"></a>ImageOptimizer - 按步骤更新 Visual Studio 扩展
-
-[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 本指南将以案例研究的形式介绍添加 Visual Studio 2022 支持同时使用图像优化器扩展维护 Visual Studio 2019 支持所需的所有步骤。  
 该指南非常完整，包含各个步骤的 Git 提交链接，但你也可在此处查看最终 PR：[https://github.com/madskristensen/ImageOptimizer/pull/46](https://github.com/madskristensen/ImageOptimizer/pull/46)。
