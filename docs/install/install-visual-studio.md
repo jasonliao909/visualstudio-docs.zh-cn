@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 7db6278bd563295ef2e82cd014fa47ceb2062a55
-ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
+ms.openlocfilehash: 54ec9162f0982d81a783b94005a532413201e3e3
+ms.sourcegitcommit: 932cf0f653c6258b73f42102d134cbaf50b8f20c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "132001460"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "132880153"
 ---
 # <a name="install-visual-studio"></a>安装 Visual Studio
 
@@ -64,7 +64,7 @@ ms.locfileid: "132001460"
 
 ::: moniker range=">=vs-2022"
 
-想要详细了解此 RC 版本的其他新增功能？ 请参阅我们的[发行说明](/visualstudio/releases/2022/release-notes-preview/)。
+想要详细了解此版本的其他新增功能？ 请参阅我们的[发行说明](/visualstudio/releases/2022/release-notes/)。
 
 ::: moniker-end
 

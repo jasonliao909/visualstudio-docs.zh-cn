@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 7aa65f747907181bdca40833f7a705a054a9b451
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 7de549287f58c8f088c084c2cc40a305f1dae1b2
+ms.sourcegitcommit: 932cf0f653c6258b73f42102d134cbaf50b8f20c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128428760"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "132879898"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Visual Studio 安装和升级问题疑难解答
 
@@ -49,7 +49,7 @@ Visual Studio 安装程序存在一些已知问题，Microsoft 正在努力修�
 
 ::: moniker range=">=vs-2022"
 
-Visual Studio 安装程序存在一些已知问题，Microsoft 正在努力修复中。 在[发行说明的“已知问题”部分](/visualstudio/releases/2022/release-notes-preview#-known-issues)检查你遇到的问题是否已解决或查找解决方法。
+Visual Studio 安装程序存在一些已知问题，Microsoft 正在努力修复中。 在[发行说明的“已知问题”部分](/visualstudio/releases/2022/release-notes#-known-issues)检查你遇到的问题是否已解决或查找解决方法。
 
 ::: moniker-end
 

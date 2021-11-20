@@ -11,16 +11,14 @@ monikerRange: vs-2022
 ms.workload:
 - vssdk
 feedback_system: GitHub
-ms.openlocfilehash: 0c40a41517b9e9a87c695915016e19dbdcfe746a
-ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
+ms.openlocfilehash: 000bfeb1b5f493f02223ed89bb7eb4d1d1fb17e0
+ms.sourcegitcommit: 932cf0f653c6258b73f42102d134cbaf50b8f20c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "132001512"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "132879698"
 ---
 # <a name="breaking-api-changes-in-visual-studio-2022"></a>Visual Studio 2022 中的重大 API 更改
-
-[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 如果要将扩展迁移到 Visual Studio 2022，这里列出的重大更改可能会影响你。
 

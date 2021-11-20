@@ -11,16 +11,14 @@ monikerRange: vs-2022
 ms.workload:
 - vssdk
 feedback_system: GitHub
-ms.openlocfilehash: 448d615dab608a1f4a86fa2a36572163bb305da7
-ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
+ms.openlocfilehash: 22392f15590def9d068757ff54cb8667f54168c7
+ms.sourcegitcommit: 932cf0f653c6258b73f42102d134cbaf50b8f20c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "132001538"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "132880075"
 ---
 # <a name="target-a-previous-version-when-creating-an-extension-in-visual-studio-2022"></a>在 Visual Studio 2022 中创建扩展时面向以前的版本
-
-[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 使用 Visual Studio 2022 创建新的 VSIX 项目时，将从以 Visual Studio 2022 为目标的模板创建项目。 如果要以 Visual Studio 2019 或更早版本为目标，则必须修改创建的项目。
 

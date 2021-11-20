@@ -12,25 +12,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4b418277dbac0ba6d61b7c426139f74b62f66f0e
-ms.sourcegitcommit: dc12d3d0ca2ec3601cb9de7c22e61ecf22c7c514
+ms.openlocfilehash: 0584944c49fa143803f463f49d8f6381a4f04bfa
+ms.sourcegitcommit: 932cf0f653c6258b73f42102d134cbaf50b8f20c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "132264186"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "132880076"
 ---
 # <a name="advanced-example-for-containers"></a>容器的高级示例
 
 ::: moniker range="vs-2017"
 
 [将生成工具安装到容器](build-tools-container.md)中的示例 Dockerfile 始终使用基于最新 microsoft/windowsservercore 映像和最新 Visual Studio 生成工具安装程序的 [microsoft/dotnet-framework:4.7.2](https://hub.docker.com/r/microsoft/dotnet-framework) 映像。 如果将此映像发布到 [Docker 注册表](https://azure.microsoft.com/services/container-registry)以供他人进行拉取，则此映像可能适用于许多方案。 但在实际中，更常见的是明确使用的基础映像、下载的二进制文件和安装的工具版本。
-
-::: moniker-end
-
-::: moniker range=">=vs-2022"
-
->[!IMPORTANT]
-> Visual Studio 2022 目前处于预览阶段，尚未获得在生产环境中使用的[许可](https://visualstudio.microsoft.com/license-terms/vs2022-prerelease/)。
 
 ::: moniker-end
 
@@ -173,9 +166,6 @@ ENTRYPOINT ["C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\
 ::: moniker-end
 
 ::: moniker range=">=vs-2022"
-
->[!IMPORTANT]
-> Visual Studio 2022 目前处于预览阶段，尚未获得在生产环境中使用的[许可](https://visualstudio.microsoft.com/license-terms/vs2022-prerelease/)。
 
 ```dockerfile
 # escape=`
