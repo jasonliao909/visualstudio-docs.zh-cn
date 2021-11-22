@@ -1,6 +1,6 @@
 ---
-title: 如何：处理部署|Microsoft Docs
-description: 请参阅一个示例，了解如何实现自己的代码来处理项目项的SharePoint冲突。
+title: 如何：处理部署冲突 | Microsoft Docs
+description: 请参阅示例了解如何实施自己的代码以便为 SharePoint 项目项处理部署冲突。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -20,46 +20,46 @@ ms.lasthandoff: 09/13/2021
 ms.locfileid: "126664159"
 ---
 # <a name="how-to-handle-deployment-conflicts"></a>如何：处理部署冲突
-  可以提供自己的代码来处理项目项的SharePoint冲突。 例如，可以确定部署位置中当前项目项中是否存在任何文件，然后在部署当前项目项之前删除已部署的文件。 有关部署冲突的信息，请参阅扩展 SharePoint[打包和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)。
+  可以提供自己的代码以便为 SharePoint 项目项处理部署冲突。 例如，可以确定当前项目项中的任何文件是否已存在部署位置中，然后在部署当前项目项志群删除已部署的文件。 有关部署冲突的详细信息，请参阅[扩展 SharePoint 打包和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)。
 
-### <a name="to-handle-a-deployment-conflict"></a>处理部署冲突
+### <a name="to-handle-a-deployment-conflict"></a>若要处理部署冲突
 
 1. 创建项目项扩展、项目扩展或新项目项类型的定义。 有关详细信息，请参阅以下主题：
 
-    - [如何：创建SharePoint项目项扩展](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
+    - [如何：创建 SharePoint 项目项扩展](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
 
-    - [如何：创建SharePoint扩展](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
+    - [如何：创建 SharePoint 项目扩展](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
 
-    - [如何：定义SharePoint项类型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)
+    - [如何：定义 SharePoint 项目项类型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)
 
-2. 在扩展中，处理项目项扩展 (扩展或项目扩展) 或 (项目项类型定义中的对象 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition>) 。
+2. 在扩展中，处理 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType> 对象（项目项扩展或项目扩展中）或 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition> 对象（新的项目项类型的定义中）的 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> 事件。
 
-3. 在事件处理程序中，根据适用于方案的条件，确定正在部署的项目项与 SharePoint 站点上部署的解决方案之间是否发生冲突。 可以使用事件参数参数的 属性来分析正在部署的项目项，并且可以通过调用为此目的定义的 SharePoint 命令 <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemEventArgs.ProjectItem%2A> 来分析部署位置的文件。
+3. 在事件处理程序中，根据应用到方案的条件，确定正在部署的项目项和 SharePoint 站点上的已部署解决方案之间是否存在冲突。 可以使用事件自变量参数的 <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemEventArgs.ProjectItem%2A> 属性来分析正在部署的项目项，还可以通过调用为此目的定义的 SharePoint 命令来分析部署位置的文件。
 
-     对于多种类型的冲突，可能首先需要确定正在执行的部署步骤。 为此，可以使用 <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepStartedEventArgs.DeploymentStepInfo%2A> 事件参数参数的 属性。 尽管在内置部署步骤中检测冲突通常有意义，但可以在任何部署步骤中 <xref:Microsoft.VisualStudio.SharePoint.Deployment.DeploymentStepIds.AddSolution> 检查冲突。
+     对于多种类型的冲突，首先可能需要确定正在执行的部署步骤。 可以使用事件自变量参数的 <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepStartedEventArgs.DeploymentStepInfo%2A> 属性来执行此操作。 虽然在内置 <xref:Microsoft.VisualStudio.SharePoint.Deployment.DeploymentStepIds.AddSolution> 部署步骤中删除冲突尤其起效，但是可以在任意部署步骤中检查冲突。
 
-4. 如果存在冲突，请使用 <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflictCollection.Add%2A> 事件参数 <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepStartedEventArgs.Conflicts%2A> 的 属性的 方法来创建新 <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> 对象。 此对象表示部署冲突。 在调用 方法 <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflictCollection.Add%2A> 时，还指定调用以解决冲突的方法。
+4. 如果存在冲突，则使用事件自变量的 <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepStartedEventArgs.Conflicts%2A> 属性的 <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflictCollection.Add%2A> 方法来创建新的 <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> 对象。 该对象表示部署冲突。 在调用 <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflictCollection.Add%2A> 方法时，还指定调用来解决冲突的方法。
 
 ## <a name="example"></a>示例
- 下面的代码示例演示了处理列表定义项目项的项目项扩展中的部署冲突的基本过程。 若要处理不同类型的项目项的部署冲突，请向 传递其他字符串 <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute> 。 有关详细信息，请参阅扩展[SharePoint项目项](../sharepoint/extending-sharepoint-project-items.md)。
+ 下面的代码示例演示了为列表定义项目项处理项目项扩展中的部署冲突的基本流程。 若要为不同类型的项目项处理部署冲突，请将不同的字符串传递到 <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>。 有关详细信息，请参阅[扩展 SharePoint 项目项](../sharepoint/extending-sharepoint-project-items.md)。
 
- 为简单起见，此示例中的事件处理程序假定存在部署冲突 (也就是说，它始终添加新对象) ，并且 方法仅返回 true 以指示冲突已 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> `Resolve` 解决。 在真实方案中，事件处理程序将首先确定当前项目项中的文件与部署位置的文件之间是否存在冲突，然后仅在存在冲突时添加 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> 对象。 例如，可以使用事件处理程序中的 属性分析项目项中的文件，并调用 SharePoint 命令来分析部署位置 `e.ProjectItem.Files` 的文件。 同样，在真实方案中， `Resolve` 方法可能会调用 SharePoint 命令来解决该站点SharePoint冲突。 有关创建命令SharePoint，请参阅[如何：创建SharePoint命令](../sharepoint/how-to-create-a-sharepoint-command.md)。
+ 简单起见，本示例中的 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> 事件处理程序假设存在部署冲突（即，它始终添加新的 <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> 对象），且 `Resolve` 简单返回 true 以指示冲突已解决。 在真实方案中，<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> 事件处理程序会首先确定当前项目项中的文件和部署位置的文件之间是否存在冲突，只有存在冲突时才会添加 <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> 对象。 例如，可能在事件处理程序中使用 `e.ProjectItem.Files` 属性来分析项目项中的文件，还可能调用 SharePoint 命令来分析部署位置的文件。 同样，在真实方案中，`Resolve` 方法可能会调用 SharePoint 命令来解决 SharePoint 站点上的冲突。 有关创建 SharePoint 命令的详细信息，请参阅[如何：创建 SharePoint 命令](../sharepoint/how-to-create-a-sharepoint-command.md)。
 
  :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/deploymentconflict/extension/deploymentconflictextension.vb" id="Snippet1":::
  :::code language="csharp" source="../sharepoint/codesnippet/CSharp/deploymentconflict/extension/deploymentconflictextension.cs" id="Snippet1":::
 
 ## <a name="compile-the-code"></a>编译代码
- 此示例需要引用以下程序集：
+ 本示例需要引用以下程序集：
 
-- Microsoft.VisualStudio。SharePoint
+- Microsoft.VisualStudio.SharePoint
 
 - System.ComponentModel.Composition
 
 ## <a name="deploy-the-extension"></a>部署扩展
- 若要部署扩展，请为程序集 (VSIX) 包以及要随扩展一起分发的其他任何文件 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 创建扩展。 有关详细信息，请参阅在 Visual Studio 中为 SharePoint[工具部署Visual Studio。](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)
+ 若要部署扩展，请为程序集以及要随扩展分发的任何其他文件创建 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 扩展 (VSIX) 包。 有关详细信息，请参阅[在 Visual Studio 中部署 SharePoint 工具扩展](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。
 
 ## <a name="see-also"></a>另请参阅
-- [扩展SharePoint打包和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)
-- [扩展SharePoint项](../sharepoint/extending-sharepoint-project-items.md)
-- [如何：执行部署步骤时运行代码](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)
-- [如何：创建SharePoint命令](../sharepoint/how-to-create-a-sharepoint-command.md)
+- [扩展 SharePoint 打包和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)
+- [扩展 SharePoint 项目项](../sharepoint/extending-sharepoint-project-items.md)
+- [如何：在执行部署步骤时运行代码](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)
+- [操作说明：创建 SharePoint 命令](../sharepoint/how-to-create-a-sharepoint-command.md)

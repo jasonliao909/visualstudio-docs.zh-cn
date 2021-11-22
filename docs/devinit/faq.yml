@@ -1,7 +1,7 @@
 ### YamlMime:FAQ
 metadata:
   title: 常见问题
-  description: Devinit 工具的常见问题。
+  description: 有关 devinit 工具的常见问题。
   ms.date: 08/28/2020
   ms.topic: reference
   author: andysterland
@@ -18,61 +18,62 @@ metadata:
   ms.contentlocale: zh-CN
   ms.lasthandoff: 09/13/2021
   ms.locfileid: "127833049"
-title: Devinit 常见问题
+title: 有关 devinit 的常见问题
 summary: >
   > [!IMPORTANT]
 
-  > 从2021年4月12日开始，将不再支持从 Visual Studio 2019 连接到 GitHub Codespaces，此专用预览已结束。 我们将重点放在针对广泛的 Visual Studio 工作负荷进行优化的云驱动内部循环和 VDI 解决方案的不断变化方面。 作为此 `devinit` 和相关工具的一部分将不再可用。 建议参与 Visual Studio 的开发人员社区论坛，了解未来要推出的预览版和路线图信息。
+  > 自 2021 年 4 月 12 日起，将不再支持从 Visual Studio 2019 连接到 GitHub Codespaces，此个人预览版已结束。 我们的工作重点是改进云支持型内部循环和针对多种 Visual Studio 工作负载优化的 VDI 解决方案的体验。 在此期间，`devinit` 和关联工具将不再可用。 建议参与 Visual Studio 的开发人员社区论坛，了解未来要推出的预览版和路线图信息。
 sections:
 - name: 忽略
   questions:
   - question: >
-      devinit 仅用于 GitHub Codespaces？
+      devinit 是否仅用于 GitHub Codespaces？
     answer: >
-      目前，devinit 仅作为 GitHub Codespaces 私有 beta 版的一部分提供。 但是，我们计划在 Visual Studio 2019 的即将发布的版本中包括 devinit。
+      目前，devinit 仅作为 GitHub Codespaces 专用 beta 版本的一部分提供。 但是，我们计划将 devinit 包含在即将发布的 Visual Studio 2019 中。
   - question: >
-      它是否 Windows？
+      它是否仅限于 Windows？
     answer: >
-      是的，devinit 侧重于创建使用 Visual Studio 开发人员的开发环境，这意味着 Windows。 我们正在考虑其他平台，但其中许多平台已经实施了强大的解决方案，因此我们想要开始 Visual Studio 和 Windows。
+      是的，devinit 专注于创建适用于使用 Visual Studio 的开发人员的开发人员环境，即 Windows。 我们正在考虑其他平台，但其中许多平台已经就地实施了强大的解决方案，因此我们想要从 Visual Studio 和 Windows 开始。
   - question: >
-      没有用于所需的依赖项的工具！
+      没有用于我需要的依赖项的工具！
     answer: >
-      非常抱歉！ 如果你是 GitHub Codespaces 私有 beta 的一部分，则可以通过专用 beta 的反馈渠道返回到我们。 如果您不是私有 beta 的一部分，我们仍会对您所需的内容感兴趣，并且您可以使用标签在我们的[Visual Studio 文档](https://github.com/MicrosoftDocs/visualstudio-docs/)上提出问题， `devinit` 以便为您所需的工具请求支持。
+      非常抱歉！ 如果你是 GitHub Codespaces 专用 beta 版的成员，则可以通过专用 beta 版的反馈渠道反馈给我们。 如果你不是专用 beta 版的成员，我们仍然乐意收到有关所需内容的反馈，你可以通过标签 `devinit` 在 [Visual Studio 文档](https://github.com/MicrosoftDocs/visualstudio-docs/)上记录问题，以便请求对所需工具的支持。
   - question: >
-      出现问题，如何调试？
+      出现问题后如何进行调试？
     answer: >
-      如果 devinit 失败，首先要尝试的是 `--verbose / -v` 用于获取详细信息的标志。 Devinit 正在调用的基础工具可能会遇到问题。 详细日志信息应包括一个线索，以了解下一步的位置。
+      如果 devinit 失败，首先需要尝试 `--verbose / -v` 标记以获取更多信息。 很可能是 devinit 正在调入的基础工具遇到了问题。 详细日志信息应包括一个提示以了解下一步操作。
   - question: >
       为什么不只是脚本？
     answer: >
-      通过脚本设置环境是一种旧的技术，可以很好地运行。 如果适合你，请使用！ 对于开发人员而言，devinit 是另一种选择。
+      通过脚本设置环境是一种成熟的技术，可以很好地运行。 如果适合你，请使用它！ 对于开发人员而言，在脚本不是最佳选择的时候，devinit 是另一种选择。
   - question: >
       为什么不使用容器？
     answer: >
-      容器和 Docker 是通过代码部署环境的强大工具。 容器可能不适合您的解决方案，原因如下：
+      容器和 Docker 是非常强大的工具，可以通过代码部署环境。 容器可能不是最佳解决方案，原因如下：
 
 
       1. 如果要使用基于 Windows 桌面的开发环境。
 
-      1. 如果你已经有一个操作系统，只是想要进行调整，而不是部署一个新的环境。
+      1. 如果已经有一个操作系统，且只是想要进行调整，而不是部署一个新的环境。
 
 
-      出于这种原因，devinit 将自定义当前拥有的 Windows 环境。
-  - question: "其他 VM 创建工具 (例如，Terraform、Packer、Chef、Vagrant) \n"
-    answer: >
-      有大量用于创建 Windows 映像的有用工具，你应该使用这些工具！ 但是，我们找不到满足我们所想到的所有方案的应用程序。 我们希望 devinit 成为一种工具，使开发人员能够使用特定存储库所需的任何内容自定义其环境，并与 Visual Studio 而不是创建 VM 映像的工具。
+      出于这些原因，devinit 将自定义当前拥有的 Windows 环境。
   - question: >
-      Winget 怎么样？
+      其他 VM 创建工具（例如，Terraform、Packer、Chef、Vagrant）呢？
     answer: >
-      devinit 不是像 winget 这样的包管理器，我们不想要这样做。 我们确实希望你能够将 winget 与 devinit 配合使用，并且我们正在努力实现一种工具。
+      市面上提供了大量用于创建 Windows 映像的功能强大的工具，你应该使用这些工具！ 但是，我们找不到一个能够满足我们所想到的所有方案的工具。 我们希望 devinit 成为一种使开发人员可以通过特定存储库所需的任何内容来自定义其环境并能与 Visual Studio 很好地集成的工具，而不是成为一个创建 VM 的工具。
+  - question: >
+      winget 怎么样呢？
+    answer: >
+      devinit 不是像 winget 这样的包管理器，我们不想它成为这样的工具。 我们确实希望能够将 winget 与 devinit 结合使用，并且我们正在努力实现这样一种工具。
   - question: >
       如何处理重启？
     answer: >
-      如果 devinit 安装的任何内容需要重新启动操作系统，则会将错误消息输出到控制台。 你将需要在一段时间内重新启动操作系统。 重新启动后，如果所有依赖项都未安装，你可能需要重新运行 devinit。
+      如果 devinit 安装的任何内容需要重新启动操作系统，那么将有错误消息输出到控制台。 将需要在合适的时间内重新启动操作系统。 重新启动后，如果所有依赖项都未安装，则可能需要重新运行 devinit。
   - question: >
-      与他人协作
+      与其他工具协作
     answer: >-
-      devinit 是为了实现使用的广泛生态系统，用于部署和配置应用可能具有的依赖项。 尽管 devinit 对它提供的内容有看法，但 devinit 主要是为了实现从声明性 JSON 文件中执行其他工具。
+      devinit 是为了实现使用的广泛生态系统，用于部署和配置应用可能具有的依赖项。 尽管 devinit 对传递的内容有看法，但 devinit 主要是为了启用要从声明性 JSON 文件执行的其他工具。
 
 
-      如今，devinit 只是开始使用，我们 [的工具列表](devinit-tool-list.md) 只是一开始。
+      现在，devinit 刚刚投入使用，我们的[工具列表](devinit-tool-list.md)只是一个开端。
