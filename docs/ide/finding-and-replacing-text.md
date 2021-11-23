@@ -63,19 +63,19 @@ ms.locfileid: "132733226"
 
 ::: moniker range="vs-2022"
 
-:::image type="content" source="media/vs-2022/find-and-replace-box.png" alt-text="2022 年 1 月编辑器中&quot;查找和替换&quot;Visual Studio屏幕截图。":::
+:::image type="content" source="media/vs-2022/find-and-replace-box.png" alt-text="屏幕截图显示了 Visual Studio 2022 的编辑器中的“查找和替换”对话框。":::
 
 ::: moniker-end
 
 ::: moniker range="<=vs-2019"
 
-:::image type="content" source="media/find-and-replace-box.png" alt-text="2019 和更早版本中编辑器中&quot;查找Visual Studio对话框的屏幕截图。":::
+:::image type="content" source="media/find-and-replace-box.png" alt-text="屏幕截图显示了 Visual Studio 2019 及较低版本的编辑器中的“查找和替换”对话框。":::
 
 ::: moniker-end
 
 通过选择“查找”文本框旁边的按钮，可以访问替换选项。 若要一次替换一个，请选择“替换”文本框旁边的“替换下一个”按钮。 若要替换所有匹配项，请选择“全部替换”按钮。
 
-若要更改匹配项的突出显示颜色，请依次选择“工具”菜单、“选项”、“环境”、“字体和颜色”。 在"**显示设置"列表中**，选择"**文本编辑器"，** 然后在"显示 **项"列表中**，选择"**查找匹配突出显示"。**
+若要更改匹配项的突出显示颜色，请依次选择“工具”菜单、“选项”、“环境”、“字体和颜色”。 在“显示设置对象”列表中，选择“文本编辑器”，然后在“显示项”列表中，选择“查找匹配突出显示项”   。
 
 ### <a name="search-tool-windows"></a>搜索工具窗口
 
@@ -141,20 +141,20 @@ ms.locfileid: "132733226"
 
 ::: moniker range="vs-2022"
 
-在 Visual Studio 2022 中，我们改进了多点复制和粘贴体验。 以前，将多行粘贴到多个插入点时，会在每个插入点复制整个剪贴板。 现在，将多行粘贴到相同数量的插入点时，会将每一行插入相应的插入点。
+在 Visual Studio 2022 中，改进了多插入点复制和粘贴体验。 以前，将多行粘贴到多个插入点时，会在每个插入点复制整个剪贴板。 现在，将多行粘贴到相同数量的插入点时，会将每一行插入相应的插入点。
 
-若要使用多点光标，请按 **Alt** + **Shift** + **鼠标单击或** **Alt** + **Shift** + **。** 然后使用 **Ctrl** + **Shift** + **箭头键** 展开选择。 接下来，按 **Ctrl** + **C** 复制多个选定内容中的文本。 使用 **Alt** + **Shift** + **鼠标单击** 可为每个行创建多个光标，以粘贴到需要的位置。 最后，按 **Ctrl** + **V** 将每一行粘贴到其自己的点头。
+若要使用多插入点，请按 Alt+Shift+鼠标单击，或按 Alt+Shift+.      然后，使用 Ctrl+Shift+箭头键来展开选择项  。 接下来，按 Ctrl+C 复制多个选择项中的文本 。 使用 Alt+Shift+鼠标单击，为每一行创建多个要粘贴到所需位置的插入点  。 最后，按 Ctrl+V 将每行粘贴到其自己的插入点 。
 
-:::image type="content" source="media/vs-2022/multi-caret-copy-paste.gif" alt-text="多点点选择操作在 Visual Studio。":::
+:::image type="content" source="media/vs-2022/multi-caret-copy-paste.gif" alt-text="Visual Studio 中多插入点选择操作的动画。":::
 
-此外，可以使用 **Alt** 向上键键 (或向下键键) Alt Shift 鼠标拖动以选择 +  +  +  + 多个光标。 以前，这些笔势创建了一个框选择。 现在，一个框选择将转换为多个插入点。 与在精确位置单击以插入单独的插入点相比，此方法操作起来更容易且速度更快。
+此外，可使用 Alt+Shift+向上键（或向下键），或者使用 Alt+Shift+鼠标拖动，来选择多个插入点      。 以前，这些笔势会创建框选择。 现在，框选择将转换为多个插入点。 与在精确位置单击以插入单独的插入点相比，此方法操作起来更容易且速度更快。
 
 > [!TIP]
-> 如果希望在展开多点光标选择时将框选择与 **Alt** Shift 箭头键和 Alt Shift 鼠标拖动一起使用，请转到"工具""选项""文本编辑器高级"，然后选择" +  +  +  +   >    >    >  **使用框选择"。**
+> 如果希望在展开多插入点选择时将框选择与 Alt+Shift+箭头键和 Alt+Shift+鼠标拖动一起使用，请转到“工具” > “选项” > “文本编辑器” > “高级”，然后选择“使用框选择”           。
 
-还可以从菜单栏访问多点点选择，方法为：选择"编辑 > **多个 Caret"，** 然后选择想要的操作。
+你也可以通过选择“编辑”>“多个插入点”，然后选择所需的操作，从菜单栏中访问多插入点选择 。
 
-:::image type="content" source="media/vs-2022/edit-menu-multiple-carets-find-replace.png" alt-text="2022 年 1 月中&quot;多个小Visual Studio的屏幕截图。":::
+:::image type="content" source="media/vs-2022/edit-menu-multiple-carets-find-replace.png" alt-text="Visual Studio 2022 中的“多个插入点”飞出式菜单的屏幕截图。":::
 
 ::: moniker-end
 

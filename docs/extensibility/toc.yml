@@ -9,7 +9,7 @@
       href: starting-to-develop-visual-studio-extensions.md
     - name: 创建第一个扩展：Hello World
       href: extensibility-hello-world.md
-    - name: 更新 Visual Studio 2022 的扩展（预览版）
+    - name: 更新 Visual Studio 2022 的扩展
       items:
         - name: 更新扩展
           href: migration/update-visual-studio-extension.md

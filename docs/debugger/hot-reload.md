@@ -123,7 +123,7 @@ ms.locfileid: "132736469"
 * 无调试器：使用 Visual Studio 在没有调试器的情况下启动 Web 应用 (CTRL-F5) 时，可以获得热重载支持。
 
 > [!NOTE]
-> 处理 Blazor Wasm 应用和使用 Visual Studio 2022 时，热重载 Razor Pages 仅在没有调试器的情况下启动应用时有效。
+> 同时使用 Blazor Wasm 应用和 Visual Studio 2022 时，Razor Pages 的热重载目前仅在没有调试器的情况下启动应用时有效。
 
 ## <a name="supported-net-edits"></a>支持的 .NET 编辑
 
@@ -158,7 +158,7 @@ ms.locfileid: "132736469"
 * .NET 热重载不支持某些启动或编译优化。 例如，如果项目的调试配置文件是通过以下方式配置的，则不支持 .NET 热重载：
   * 为你的项目启用了[修整](/dotnet/core/deploying/trimming/trimming-options)。 例如，如果在调试配置文件的项目文件中将 `PublishTrimmed` 设置为 True，则不支持热重载。
   * 为你的项目启用了 [ReadyToRun](/dotnet/core/deploying/ready-to-run)。 例如，如果在调试配置文件的项目文件中将 `PublishReadyToRun` 设置为 True，则不支持热重载。
-* 对于 WinUI 3 应用，默认情况下会启用本机代码调试 (即使 *LaunchSettings.json*) 中不存在该设置，并且以这种方式执行混合模式调试时不支持 .NET 热重载。 因此，必须将显式设置添加到 `nativeDebugging: false` *LaunchSettings.json，* 使 .NET 热重载正常工作。
+* 对于 WinUI 3 应用程序，会默认启用本机代码调试（即使 LaunchSettings.json 中缺少设置也会默认启用），在按此方式执行混合模式调试时，不支持 .NET 热重载。 因此，必须将显式设置 `nativeDebugging: false` 添加到 LaunchSettings.json 中，以便 .NET 热重载正常工作。
 
 ## <a name="configure-hot-reload"></a>配置热重载
 
