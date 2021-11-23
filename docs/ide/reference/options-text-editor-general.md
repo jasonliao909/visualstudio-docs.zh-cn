@@ -50,35 +50,35 @@ ms.locfileid: "132535043"
 
 ::: moniker range="vs-2022"
 
-:::image type="content" source="media/vs-2022/tools-options-text-editor-general.png" alt-text="&quot;选项&quot;对话框中文本编辑器常规设置的屏幕截图。":::
+:::image type="content" source="media/vs-2022/tools-options-text-editor-general.png" alt-text="“选项”对话框中文本编辑器常规设置的屏幕截图。":::
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-:::image type="content" source="media/vs-2019/tools-options-text-editor-general.png" alt-text="&quot;选项&quot;对话框中文本编辑器常规设置的屏幕截图。":::
+:::image type="content" source="media/vs-2019/tools-options-text-editor-general.png" alt-text="“选项”对话框中文本编辑器常规设置的屏幕截图。":::
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-:::image type="content" source="media/tools-options-text-editor-general.png" alt-text="&quot;选项&quot;对话框中文本编辑器常规设置的屏幕截图。":::
+:::image type="content" source="media/tools-options-text-editor-general.png" alt-text="“选项”对话框中文本编辑器常规设置的屏幕截图。":::
 
 ::: moniker-end
 
 ## <a name="settings"></a>设置
 
-"设置"**文本编辑器**"的"常规"部分  >    >    >  包括以下选项。
+“工具” > “选项” > “文本编辑器” > “常规”的“设置”部分包括以下选项   。
 
 ### <a name="drag-and-drop-text-editing"></a>拖放文本编辑
 
-选中此设置后，通过选择文本，然后使用鼠标将其拖动到当前文档或任何其他打开的文档内的其他位置，即可移动文本。
+勾选此设置后，可使用鼠标选定文本，然后将其拖动到当前文档或任何其他打开的文档中的另一个位置，即可移动文本。
 
 ::: moniker range="vs-2022"
 
-### <a name="select-subword-on-double-click"></a>双击时选择子词
+### <a name="select-subword-on-double-click"></a>双击时选择子字
 
-切换此设置时，双击将仅选择一个子词，而不是整个单词。  (使用 medial 大写（例如.) 
+切换此设置时，双击只会选择一个子词，而不是全字。 （例如，在使用“中央大写”拼法时，这会很有帮助。）
 
 ::: moniker-end
 
@@ -92,29 +92,29 @@ ms.locfileid: "132535043"
 
 ### <a name="auto-detect-utf-8-encoding-without-signature"></a>自动检测不带签名的 UTF-8 编码
 
-默认情况下，编辑器通过搜索字节顺序标记或字符集标记检测编码。 如果在当前文档中未找到这两者，代码编辑器会尝试通过扫描字节序列来自动检测 UTF-8 编码。 若要禁用自动检测编码，请清除此选项。
+默认情况下，编辑器通过搜索字节顺序标记或字符集标记检测编码。 如果在当前文档中两者均未找到，代码编辑器会尝试通过扫描字节序列来自动检测 UTF-8 编码。 若要禁用自动检测编码，请清除此选项。
 
 ### <a name="follow-project-coding-conventions"></a>遵循项目编码约定
 
 如果你选中此选项，项目的指定编码约定就会替代你对个人项目使用的任何编码约定。
 
-### <a name="enable-mouse-click-to-perform-go-to-definition"></a>启用鼠标单击以执行"转到定义"
+### <a name="enable-mouse-click-to-perform-go-to-definition"></a>启用通过鼠标单击执行“转到定义”
 
 如果选中此选项，可以在单击鼠标的同时，按 Ctrl  并将鼠标悬停在元素之上。 这样，就可以转到选定元素的定义了。 也可以从“使用修改键”  下拉列表中选择“Alt”  或“Ctrl   + Alt  ”。
 
 #### <a name="open-definition-in-peek-view"></a>在速览视图中打开定义
 
-选中此复选框，在窗口中显示元素的定义，而无需离开代码编辑器中的当前位置。 有关详细信息，请参阅 [如何：使用"查看定义"查看和编辑代码](../how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)。
+选中此复选框，可以在窗口中显示元素定义，而无需离开代码编辑器中的当前位置。 有关详细信息，请参阅[如何：使用速览定义查看和编辑代码](../how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)。
 
 ## <a name="display"></a>显示
 
-"工具选项 **"** 的"显示"  >  部分 **>"文本编辑器**  >  **""** 常规"包括以下选项。
+“工具” > “选项”>“文本编辑器” > “常规”的“设置”部分包括以下选项   。
 
 ::: moniker range=">=vs-2019"
 
-### <a name="view-whitespace"></a>查看空格
+### <a name="view-whitespace"></a>查看空白
 
-选中后，可以可视化空格和制表符。
+选中时，可将空格和制表符可视化。
 
 ::: moniker-end
 
@@ -140,26 +140,26 @@ ms.locfileid: "132535043"
 
 ::: moniker range=">=vs-2019"
 
-### <a name="show-error-squiggles"></a>显示错误锯齿
+### <a name="show-error-squiggles"></a>显示错误波形曲线
 
-选中后，代码中会显示不同颜色的波浪下划线（称为波浪线）。  (表示语法错误，蓝色表示编译器错误，绿色表示警告，紫色表示其他类型的错误。) 
+选中后，不同颜色的波浪下划线（称为波形曲线）会出现在代码中。 （红色波形曲线表示语法错误，蓝色表示编译器错误，绿色表示警告，而紫色表示其他类型的错误。）
 
 ### <a name="show-file-health-indicator"></a>显示文件运行状况指示器
 
-选中后，编辑器左下角 (显示文件运行状况指示器状态) 错误、警告和代码清理选项。
+如果选择此选项，带有“代码清理”选项的文件运行状况指示器状态（错误、警告）栏显示在编辑器的左下角。
 
 ### <a name="line-spacing"></a>行距
 
-使用此控件将默认行距 1.0 更改为需要增量，以包括 1.15、1.5、2.0、2.5 和 3.0。
+使用此控件可将 1.0 的默认行距更改为所需的增量，包括 1.15、1.5、2.0、2.5 和 3.0。
 
 ### <a name="show-editing-context-in-the-editor"></a>在编辑器中显示编辑上下文
 
-使用此控件可以完全切换编辑上下文设置，或者通过从以下设置中选择进行个性化设置：
+使用此控件可完全切换编辑上下文设置，或者通过从以下设置中进行选择来个性化首选项：
 
-- Line/Col
+- 行/列
 - 选择
 - 插入/覆盖
-- 制表符/空格键
+- 制表符/空格
 - 行尾
 
 ::: moniker-end
