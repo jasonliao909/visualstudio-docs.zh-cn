@@ -13,12 +13,12 @@ dev_langs:
 ms.workload:
 - nodejs
 monikerRange: '>= vs-2022'
-ms.openlocfilehash: 3f0f083bebee0ba8b9a38c06496d540868719001
-ms.sourcegitcommit: ac681e983f3b217c3fd9d2a31e3a3ddcc4dd3546
+ms.openlocfilehash: d9de8cfcb3227c1ae60cda9df6c1f416a6bac3b5
+ms.sourcegitcommit: 8b44ba7864f67afa476708d5092729345e689f93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "132041941"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "132861635"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-react-in-visual-studio"></a>教程：在 Visual Studio 中使用 React 创建 ASP.NET Core 应用
 
@@ -105,11 +105,13 @@ ms.locfileid: "132041941"
 
 ## <a name="start-the-project"></a>启动项目
 
-启动项目之前，请确保端口号匹配。 转到 ASP.NET Core 项目中的 launchSettings.json 文件（在 Properties 文件夹中） 。 从 `applicationUrl` 属性获取端口号。 （它应该类似于 `https://localhost:7049`。）
+1. 启动项目之前，请确保端口号匹配。 转到 ASP.NET Core 项目中的 launchSettings.json 文件（在 Properties 文件夹中） 。 从 `applicationUrl` 属性获取端口号。
 
-然后，转到 React 项目的 setupProxy.js 文件（查看 src 文件夹） 。 更新目标属性，以匹配 launchSettings.json 中的 `applicationUrl` 属性。
+   如果有多个 `applicationUrl` 属性，请使用 `https` 终结点查找一个。 它看起来应该类似于 `https://localhost:7049`。
 
-若要启动项目，请按 F5 或选择窗口顶部的“开始”按钮 。 将显示两个命令提示符：
+1. 然后，转到 React 项目的 setupProxy.js 文件（查看 src 文件夹） 。 更新目标属性，以匹配 launchSettings.json 中的 `applicationUrl` 属性。
+
+1. 若要启动项目，请按 F5 或选择窗口顶部的“开始”按钮 。 将显示两个命令提示符：
 
 - 正在运行的 ASP.NET Core API 项目
 - 运行 react-scripts start 命令的 npm

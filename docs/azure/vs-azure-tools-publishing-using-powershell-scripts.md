@@ -7,14 +7,14 @@ manager: jmartens
 ms.technology: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
-ms.date: 11/11/2016
+ms.date: 11/22/2021
 ms.author: ghogen
-ms.openlocfilehash: 2e7b04c0411f5e07933cf4286edfcb112d6377e7
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.openlocfilehash: 412a8c46c632fc894b1410e207a6035077ff5b7c
+ms.sourcegitcommit: a1c18c491e310b00a43e76a911f778e643cd8f8d
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126602122"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "132994964"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>使用 Windows PowerShell 脚本发布到开发和测试环境
 
@@ -226,23 +226,21 @@ JSON 文件是在 **Configurations** 文件夹中创建的，其中包含的配�
     ```powershell
     function Get-MSBuildCmd
     {
-            process
-    {
-
-                $path =  Get-ChildItem "HKLM:\SOFTWARE\Microsoft\MSBuild\ToolsVersions\" |
-                                    Sort-Object {[double]$_.PSChildName} -Descending |
-                                    Select-Object -First 1 |
-                                    Get-ItemProperty -Name MSBuildToolsPath |
-                                    Select -ExpandProperty MSBuildToolsPath
-
-                $path = (Join-Path -Path $path -ChildPath 'msbuild.exe')
-
-            return Get-Item $path
+       process
+       {
+        $StartInfo  = New-Object System.Diagnostics.ProcessStartInfo;
+        $StartInfo.Filename = ${Env:ProgramFiles(x86)} + "\\Microsoft Visual Studio\\Installer\\vswhere.exe"
+        $StartInfo.Arguments = " -latest -requires Microsoft.Component.MSBuild -find MSBuild\\**\\Bin\\MSBuild.exe"
+        $StartInfo.RedirectStandardOutput = $True
+        $StartInfo.UseShellExecute = $False
+        [System.Diagnostics.Process] $VSWhere = [Diagnostics.Process]::Start($StartInfo)
+        $VSWhere.WaitForExit()
+        return $VSWhere.StandardOutput.ReadToEnd();
         }
     }
     ```
 
-1. 将 `New-WebDeployPackage` 替换为以下代码，并替换构造 `$msbuildCmd` 的行中的占位符。 此代码适用于 Visual Studio 2019。 如果使用的是 Visual Studio 2017，请将 VisualStudioVersion 属性更改为 `15.0`（Visual Studio 2015 为“14.0”，Visual Studio 2013 为 `12.0`）。
+1. 将 `New-WebDeployPackage` 替换为以下代码，并替换构造 `$msbuildCmd` 的行中的占位符。
 
     ```powershell
     function New-WebDeployPackage
@@ -250,12 +248,12 @@ JSON 文件是在 **Configurations** 文件夹中创建的，其中包含的配�
         #Write a function to build and package your web application
     ```
 
-    若要生成 Web 应用程序，请使用 MsBuild.exe。 有关帮助，请参阅[MSBuild Command-Line 参考](../msbuild/msbuild-command-line-reference.md)
+    若要生成 Web 应用程序，请使用 MsBuild.exe。 有关帮助，请参阅 [MSBuild 命令行参考](../msbuild/msbuild-command-line-reference.md)
 
     ```powershell
     Write-VerboseWithTime 'Build-WebDeployPackage: Start'
 
-    $msbuildCmd = '"{0}" "{1}" /T:Rebuild;Package /P:VisualStudioVersion=16.0 /p:OutputPath="{2}\MSBuildOutputPath" /flp:logfile=msbuild.log,v=d' -f (Get-MSBuildCmd), $ProjectFile, $scriptDirectory
+    $msbuildCmd = '"{0}" "{1}" /T:Rebuild;Package /p:OutputPath="{2}\MSBuildOutputPath" /flp:logfile=msbuild.log,v=d' -f (Get-MSBuildCmd), $ProjectFile, $scriptDirectory
 
     Write-VerboseWithTime ('Build-WebDeployPackage: ' + $msbuildCmd)
     ```
@@ -306,7 +304,7 @@ return $WebDeployPackage
     若要自动测试应用程序，请向 `Test-WebApplication` 添加代码。 请务必取消注释 **Publish-WebApplication.ps1** 中调用这些函数的行。 如果不提供实现，则可以使用 Visual Studio 手动生成项目，并运行发布脚本来发布到 Azure。
 
 ## <a name="publishing-function-summary"></a>发布函数摘要
-若要获取可在 Windows PowerShell 命令提示符处使用的函数的相关帮助，请使用 `Get-Help function-name` 命令。 帮助中包含参数帮助和示例。 脚本源文件 **AzureWebAppPublishModule.psm1** 和 **Publish-WebApplication.ps1。** 脚本和帮助已使用 Visual Studio 语言本地化。
+若要获取可在 Windows PowerShell 命令提示符处使用的函数的相关帮助，请使用 `Get-Help function-name` 命令。 帮助中包含参数帮助和示例。 脚本源文件 AzureWebAppPublishModule.psm1 和 Publish-WebApplication.ps1 中也提供了相同的帮助文本。 脚本和帮助已使用 Visual Studio 语言本地化。
 
 **AzureWebAppPublishModule**
 
@@ -322,7 +320,7 @@ return $WebDeployPackage
 | Find-AzureVM |获取指定的 Azure 虚拟机。 |
 | Format-DevTestMessageWithTime |在消息的前面添加日期和时间。 此函数适用于写入到错误流和详细流的消息。 |
 | Get-AzureSQLDatabaseConnectionString |汇编一个连接字符串以连接到 Azure SQL 数据库。 |
-| Get-AzureVMStorage |返回名称模式为"devtest"的第一个存储帐户 (指定位置或地缘) 不区分 *大小写。如果"开发测试*"存储帐户与位置或地缘组不匹配，则函数将忽略它。 指定一个位置或地缘组。 |
+| Get-AzureVMStorage |返回指定的位置或地缘组中名称模式为“devtest *（不区分大小写）的第一个存储帐户的名称。如果“devtest*”存储帐户与该位置或地缘组不匹配，则该函数会将其忽略。 指定一个位置或地缘组。 |
 | Get-MSDeployCmd |返回一个用于运行 MsDeploy.exe 工具的命令。 |
 | New-AzureVMEnvironment |在订阅中查找或创建与 JSON 配置文件中的值匹配的虚拟机。 |
 | Publish-WebPackage |使用 MsDeploy.exe 和 Web 发布包 .Zip 文件将资源部署到网站。 此函数不生成任何输出。 如果调用 MSDeploy.exe 失败，该函数将引发异常。 若要获取更详细的输出，请使用 **-Verbose** 选项。 |

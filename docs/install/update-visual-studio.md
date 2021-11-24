@@ -17,12 +17,12 @@ ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4747792137eca0745d2d005c441c6a3c045df0be
-ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
+ms.openlocfilehash: cfa9f47706f03fcef300e2b1eadd54d023214d83
+ms.sourcegitcommit: 932cf0f653c6258b73f42102d134cbaf50b8f20c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "132001615"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "132879821"
 ---
 # <a name="update-visual-studio"></a>更新 Visual Studio
 
@@ -194,7 +194,7 @@ ms.locfileid: "132001615"
 
 1. 在 Visual Studio 安装程序中，查找要更新的 Visual Studio 的安装。 
 
-   例如，如果以前安装了 Visual Studio Community 2022 Preview，并且具有该版本的更新，则 Visual Studio 安装程序中将显示“有可用更新”消息。
+   例如，如果以前安装了 Visual Studio Community 2022，并且具有该版本的更新，则 Visual Studio 安装程序中将显示“有可用更新”消息。
 
      ![显示有新的更新可用时 Visual Studio 安装程序中的“更新”按钮和消息的屏幕截图。](media/vs-2022/vs-installer-update-visual-studio-community.png "选择要更新的 Visual Studio 2022 版本")
 

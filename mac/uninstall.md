@@ -7,19 +7,20 @@ ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
 ms.topic: how-to
-ms.openlocfilehash: 518dd80d230e3d2518ae69520781818826363ecc
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: e278741e48bbacc314ba27c182204b6fced2149f
+ms.sourcegitcommit: 932cf0f653c6258b73f42102d134cbaf50b8f20c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126644493"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "132880122"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>卸载 Visual Studio for Mac
 
 可根据本指南导航到相关部分，单独卸载 Visual Studio for Mac 中的每个组件，或使用[卸载脚本](#uninstall-script)部分提供的脚本卸载所有内容。
 
 > [!NOTE]
-> 此信息仅从计算机的 Visual Studio 2019 for Mac 或 Visual Studio 2017 for Mac 中删除。 要卸载 Visual Studio Code，请参阅[此问题](https://github.com/Microsoft/vscode/issues/52151)了解详细信息。
+> 我们想详细了解你为何要卸载 Visual Studio for Mac，便于我们进行改进。 请花几分钟的时间[分享你的反馈](https://aka.ms/vs/mac/uninstallsurvey)。 谢谢！
+
 
 ## <a name="uninstall-script"></a>卸载脚本
 
@@ -243,3 +244,4 @@ rm -rf ~/Library/Preferences/com.microsoft.visual-studio-preview.plist
 ## <a name="see-also"></a>请参阅
 
 - [卸载 Visual Studio (Windows)](/visualstudio/install/uninstall-visual-studio)
+- [卸载 Visual Studio Code](https://github.com/Microsoft/vscode/issues/52151)

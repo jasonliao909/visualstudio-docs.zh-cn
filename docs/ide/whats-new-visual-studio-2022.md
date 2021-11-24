@@ -2,7 +2,7 @@
 title: Visual Studio 2022 中的新增功能
 titleSuffix: ''
 description: 了解 Visual Studio 2022 预览版中的新增功能。
-ms.date: 11/08/2021
+ms.date: 11/18/2021
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -14,12 +14,12 @@ ms.prod: visual-studio-dev17
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: ba5d202809bf6bb7b5587406332902842f30440a
-ms.sourcegitcommit: ac681e983f3b217c3fd9d2a31e3a3ddcc4dd3546
+ms.openlocfilehash: 1908a36c54e0a57e31450f7e159a084c39c42ad4
+ms.sourcegitcommit: 8b44ba7864f67afa476708d5092729345e689f93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "132041915"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "132861545"
 ---
 # <a name="whats-new-in-visual-studio-2022"></a>Visual Studio 2022 中的新增功能
 
@@ -53,7 +53,9 @@ Windows 上的 Visual Studio 2022 现在是 64 位应用程序。 这意味着�
 
 ### <a name="better-dev-tools-for-c-and-net-and-hot-reload"></a>适用于 C++、.NET 和热重载的更佳开发工具
 
-[Visual Studio 2022 预览版 2](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-preview-2-is-out/) 包括更好的跨平台应用开发工具和最新版本的 C++ 生成工具，以便提供 C++20 支持。 同时，我们正在更新热重载，以便可以在应用程序运行时编辑 C++ 或 .NET 项目。 有关详细信息，请参阅[在 Visual Studio 2022 中使用热重载加速 .NET 和 C++ 开发](https://devblogs.microsoft.com/visualstudio/speed-up-your-dotnet-and-cplusplus-development-with-hot-reload-in-visual-studio-2022/)博客文章。
+[Visual Studio 2022 预览版 2](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-preview-2-is-out/) 包括更好的跨平台应用开发工具和最新版本的 C++ 生成工具，以便提供 C++20 支持。
+
+同时，我们正在更新热重载，以便可以在应用程序运行时编辑 C++ 或 .NET 项目。 有关详细信息，请参阅[在 Visual Studio 2022 中使用热重载加快 .NET 和 C++ 开发](https://devblogs.microsoft.com/visualstudio/speed-up-your-dotnet-and-cplusplus-development-with-hot-reload-in-visual-studio-2022/)博客文章，以及[在 Visual Studio 中使用 C#、C++ 或 Visual Basic 通过热重载编写和调试正在运行的代码](../debugger/hot-reload.md)文档页面。
 
 ### <a name="updates-for-blazor--razor-editors--hot-reload-for-aspnet"></a>对 Blazor 和 Razor 编辑器 + 适用于 ASP.NET 的热重载的更新
 
@@ -77,7 +79,7 @@ Windows 上的 Visual Studio 2022 现在是 64 位应用程序。 这意味着�
 
 ## <a name="designing-for-everyone"></a>为每个人设计
 
-我们正在重新整理用户界面，以便使你的操作更加顺畅。 其中一些更改是细微的外观修改，目的是使 UI 现代化或减轻元素拥挤情况。
+我们正在重新整理用户界面，以便使你的操作更加顺畅。 其中一些更改包括外观修改，目的是使 UI 现代化或减轻元素拥挤情况。
 
 ### <a name="look--feel"></a>外观和感觉
 

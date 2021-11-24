@@ -1,18 +1,18 @@
 ---
 title: Visual Studio 订阅者数据匿名化 | Microsoft Docs
 author: evanwindom
-ms.author: cabuschl
-manager: cabuschl
+ms.author: amast
+manager: amast
 ms.assetid: ce5fc8a4-484c-4df6-97c3-cb60174fb66b
 ms.date: 03/11/2021
 ms.topic: conceptual
 description: 了解订阅访问丢失时订阅者数据的匿名方式。
-ms.openlocfilehash: 379875dbd7717d33f495f3d42a38facabdb11d81
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 5787ef469c8ce0f075bf83a3d7e127f2e77647d4
+ms.sourcegitcommit: a1c18c491e310b00a43e76a911f778e643cd8f8d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128428103"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "132995595"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Visual Studio 订阅者信息匿名化
 当发生阻止订阅者使用订阅的事件时，例如订阅到期或删除订阅者的登录帐户，用户的个人信息（如姓名和登录帐户）基本上被扰乱以使其无法使用。  这样做是为了保护订阅者的个人信息。

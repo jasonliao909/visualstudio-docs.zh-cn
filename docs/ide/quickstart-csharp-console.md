@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 99a2e2e6ba67d4604b945f61040005f13320fd7b
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: ca9dbaba1ddb1ea94e801c497aa3c6d3176b7c1b
+ms.sourcegitcommit: 932cf0f653c6258b73f42102d134cbaf50b8f20c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128431923"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "132880046"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>快速入门：使用 Visual Studio 创建第一个 C# 控制台应用
 
@@ -127,9 +127,9 @@ ms.locfileid: "128431923"
 
    ![Visual Studio 2022 中“配置新项目”窗口的屏幕截图，项目名称设置为“HelloWorld”。](media/vs-2022/csharp-name-your-helloworld-project.png)
 
-1. 在“附加信息”窗口中，确保“Framework”下拉菜单中选择“.NET 6.0 (预览)”，然后选择“创建”。
+1. 在“其他信息”窗口中，确保在“框架”下拉菜单中选择“.NET 6.0”，然后选择“创建”   。
 
-   ![Visual Studio 2022 中的“其他信息”窗口的屏幕截图，其中“Framework”设置为“.NET 6.0（预览版）”。](media/vs-2022/create-project-additional-info.png)
+   ![Visual Studio 2022 中的“其他信息”窗口的屏幕截图，其中“Framework”设置为“.NET 6.0”。](media/vs-2022/create-project-additional-info.png)
 
    此时，Visual Studio 将打开新项目。
    

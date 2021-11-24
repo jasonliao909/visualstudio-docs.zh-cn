@@ -1,18 +1,18 @@
 ---
 title: 将 Visual Studio 订阅分配给用户 | Microsoft Docs
 author: evanwindom
-ms.author: cabuschl
-manager: cabuschl
+ms.author: amast
+manager: amast
 ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
 ms.date: 10/25/2021
 ms.topic: conceptual
 description: 了解管理员如何将许可证分配给订阅者
-ms.openlocfilehash: 1a7273122a2949c3a519c00aae7cc464c0664d26
-ms.sourcegitcommit: 4efdab6a579b31927c42531bb3f7fdd92890e4ac
+ms.openlocfilehash: 0b20fe2cdf0561bebbc7023146313cdeb3bf4fa1
+ms.sourcegitcommit: a1c18c491e310b00a43e76a911f778e643cd8f8d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "130350776"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "132995729"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>在 Visual Studio 订阅管理门户中分配许可证
 作为 Visual Studio 订阅管理员，你可以使用管理门户为个人用户和用户组分配订阅。

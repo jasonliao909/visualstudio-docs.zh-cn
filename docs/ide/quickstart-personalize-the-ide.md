@@ -1,7 +1,7 @@
 ---
 title: 设置 Visual Studio 深色主题并更改文本颜色
 description: 了解如何在代码编辑器中将默认 Visual Studio 颜色主题更改为深色模式，以及如何更改字体颜色。
-ms.date: 11/04/2021
+ms.date: 11/19/2021
 ms.topic: how-to
 ms.custom: contperf-fy21q1
 author: TerryGLee
@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 42f5282df5e31473fe7dd00e5a9ad57ceee243f3
-ms.sourcegitcommit: aff49629012f4d5fa07c75ea0ca5bf53d28aa173
+ms.openlocfilehash: 52e8ab6a713e20b7ec3c9d574af05b7cceb727d6
+ms.sourcegitcommit: 932cf0f653c6258b73f42102d134cbaf50b8f20c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "131662810"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "132880004"
 ---
 # <a name="how-to-personalize-the-visual-studio-ide-and-the-editor"></a>如何：个性化设置 Visual Studio IDE 和编辑器
 
@@ -127,7 +127,7 @@ Visual Studio 用户界面的默认颜色主题命名为“蓝色”  。 让我
 
 1. 若要更改行号文本的颜色，请在“显示项目”  列表中选择“行号”  。 在“项目前景色”  框中，选择“橄榄色”  。
 
-   ![“选项”对话框，“字体和颜色”类别](media/quickstart-personalize-line-number-color.png)
+    :::image type="content" source="media/vs-2022/personalize-line-number-color.png" alt-text="“选项”对话框中“字体和颜色”类别的屏幕截图。":::
 
    某些语言有自己特定的字体和颜色设置。 如果你是 C++ 开发者，且想要更改函数的颜色，则可在“显示项”列表中查找“C++ 函数”   。
 
