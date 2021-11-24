@@ -1,6 +1,6 @@
 ---
 title: 脱机安装帮助
-description: 请参阅如何安装Microsoft Help Viewer以读取脱机帮助。 多种产品（如 Visual Studio 和 SQL Server）使用帮助查看器传递帮助内容。
+description: 请参阅如何安装 Microsoft Help Viewer 以读取脱机帮助。 某些产品（例如 Visual Studio 和 SQL Server）使用 Help Viewer 提供帮助内容。
 ms.date: 11/01/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,11 +13,11 @@ ms.technology: vs-help-viewer
 ms.workload:
 - multiple
 ms.openlocfilehash: d35a88c3ebfe8a42d5346c05b56af7c5c618e521
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122124277"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663959"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Microsoft Help Viewer 安装
 
@@ -35,7 +35,7 @@ Help Viewer 是 Visual Studio 的可选安装组件。 要通过 Visual Studio �
 
 也可通过搜索框轻松安装 Microsoft Help Viewer：
 
-1. 按 **Ctrl** + **Q，** 然后在搜索框中键入 **或** 输入帮助查看器。
+1. 按 Ctrl+Q，然后在搜索框中键入或输入“Help Viewer”  。
 
    ![搜索框](media/installation/quick-launch.png)
 
@@ -45,7 +45,7 @@ Help Viewer 是 Visual Studio 的可选安装组件。 要通过 Visual Studio �
 
    ![“安装”按钮](media/installation/install.png)
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [Microsoft Help Viewer](../help-viewer/overview.md)
-- [帮助查看器和脱机内容SQL Server](/sql/sql-server/sql-server-help-installation)
+- [SQL Server 的帮助查看器和脱机内容](/sql/sql-server/sql-server-help-installation)

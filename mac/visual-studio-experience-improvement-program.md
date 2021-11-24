@@ -32,7 +32,7 @@ VSCEIP 默认开启。 可以按照下面的说明将其关闭，或重新打开
 
 [!INCLUDE [GDPR-related guidance](../docs/misc/includes/gdpr-hybrid-note.md)]
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 * [客户体验改善计划（Windows 上的 Visual Studio）](/visualstudio/ide/visual-studio-experience-improvement-program)
 * [由 Visual Studio 收集的系统生成的日志 (Windows)](/visualstudio/ide/diagnostic-data-collection)

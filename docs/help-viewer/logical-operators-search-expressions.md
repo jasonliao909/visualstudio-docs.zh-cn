@@ -1,6 +1,6 @@
 ---
-title: '搜索表达式中的逻辑运算符 (帮助查看器) '
-description: 了解如何在 Microsoft Help Viewer 中使用逻辑运算符和高级搜索运算符来优化搜索表达式。
+title: 搜索表达式中的逻辑运算符 (Help Viewer)
+description: 理解如何使用逻辑运算符和高级搜索运算符来优化 Microsoft Help Viewer 中的搜索表达式。
 ms.custom: SEO-VS-2020
 ms.date: 11/02/2017
 ms.topic: reference
@@ -15,15 +15,15 @@ ms.technology: vs-help-viewer
 ms.workload:
 - multiple
 ms.openlocfilehash: 0a3580bdc4d91d2f09fc066919aa5bc66755f23c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122109690"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663956"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>搜索表达式中的逻辑和高级运算符
 
-可以使用逻辑运算符和高级搜索运算符优化 **帮助查看器** 中的帮助内容的搜索。
+可以在 Help Viewer 中使用逻辑运算符和高级搜索运算符优化帮助内容的搜索。
 
 ## <a name="logical-operators"></a>逻辑运算符
 
@@ -32,7 +32,7 @@ ms.locfileid: "122109690"
 |要搜索|用途|示例|结果|
 |-------------------|---------|-------------|------------|
 |同一文章中的两个词|AND|dib AND palette|包含“dib”和“palette”的主题。|
-|文章中的任一个词|或者|raster OR vector|包含“raster”或“vector”的主题|
+|文章中的任一个词|OR|raster OR vector|包含“raster”或“vector”的主题|
 |同一文章中包含第一个词，而不包含第二个词|NOT|"operating system" NOT DOS|包含“operating system”但不包含“DOS”的主题。|
 |文章中两个词相互靠近|NEAR|user NEAR kernel|包含与“kernel”靠近的“user”的主题。|
 
@@ -69,7 +69,7 @@ ms.locfileid: "122109690"
 > [!NOTE]
 > `code:` 运算符仅查找标记有编程语言标签的内容，而不查找一般标记为代码的内容。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [如何：搜索主题](../help-viewer/find-topics.md)
 - [Microsoft Help Viewer](../help-viewer/overview.md)

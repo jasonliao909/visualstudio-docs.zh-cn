@@ -52,7 +52,7 @@ Visual Studio for Mac 提供两种获取最新版本的通道：
 
 根据需要安装的组件，可能需要接受额外的许可证或输入计算机管理员用户名和密码。
 
-## <a name="troubleshooting"></a>故障排除
+## <a name="troubleshooting"></a>疑难解答
 
 如果更新程序出现问题，请尝试执行[更新程序故障排除](updater-troubleshooting.md)指南中的以下步骤。
 

@@ -1,6 +1,6 @@
 ---
-title: 工作流设计器 - 控制Flow设计器
-description: 了解控制Flow设计器，活动设计器是系统提供的活动，用于控制工作流中的流。
+title: 工作流设计器 - 控制流活动设计器
+description: 了解控制流活动设计器，这些是用于控制工作流中的流的系统提供的活动。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,14 +13,14 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 80e89e0ec82b8f5eed71845f084ee5700726a68f
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126602194"
 ---
 # <a name="control-flow-activity-designers"></a>控制流活动设计器
 
-工作流设计器包括许多系统提供的活动，可以在构造工作流时使用这些活动。 本节包含系统提供的活动中用于控制工作流中的流的活动。 以下主题介绍这些活动以及如何使用它们。
+工作流设计器包含系统提供的若干活动，构造工作流时可以使用它们。 本节包含系统提供的活动中用于控制工作流中的流的活动。 以下主题介绍这些活动以及如何使用它们。
 
 ## <a name="reference"></a>参考
 
@@ -48,7 +48,7 @@ ms.locfileid: "126602194"
 
 ## <a name="related-sections"></a>相关章节
 
-有关其他类型的活动设计器，请参阅以下主题：
+有关其他类型活动设计器的信息，请参见下列主题：
 
  [使用活动设计器](control-flow-activity-designers.md)
 

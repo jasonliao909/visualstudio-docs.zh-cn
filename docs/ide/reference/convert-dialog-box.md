@@ -28,6 +28,6 @@ ms.locfileid: "126641804"
 
 “转换”对话框曾在以前版本的 Visual Studio 中使用，现已被弃用。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [Porting, Migrating, and Upgrading Visual Studio Projects](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)

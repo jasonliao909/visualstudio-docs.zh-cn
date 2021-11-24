@@ -10,7 +10,7 @@ ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: e7d775bcb87e38bb2628814327ef72d739ad5695
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126602156"
@@ -20,10 +20,10 @@ ms.locfileid: "126602156"
 
 云服务信息存储在以下文件中：
 
-- **ServiceDefinition.csdef** - 服务定义文件定义云服务的运行时设置，包括所需的角色、终结点和虚拟机大小。 当角色正在运行时，无法更改 `ServiceDefinition.csdef` 中存储的任何数据。
+- ServiceDefinition.csdef - 服务定义文件定义了云服务的运行时设置，包括需要什么角色、终结点和虚拟机大小。 当角色正在运行时，无法更改 `ServiceDefinition.csdef` 中存储的任何数据。
 - **ServiceConfiguration.cscfg** - 服务配置文件则配置了角色有多少实例在运行以及为角色定义的设置的值。 当角色正在运行时，可以更改 `ServiceConfiguration.cscfg` 中存储的数据。
 
-若要存储用于控制角色运行方式的设置的不同值，可以定义多个服务配置。 对于每个部署环境可使用不同的服务配置。 例如，可以将存储帐户连接字符串设置为在本地服务配置Azure 存储 Emulator本地存储，并创建另一个服务配置以在云中使用 Azure 存储。
+若要存储用于控制角色运行方式的设置的不同值，可以定义多个服务配置。 对于每个部署环境可使用不同的服务配置。 例如，可以在本地服务配置中设置存储帐户连接字符串以使用本地 Azure 存储模拟器并在云中创建另一个服务配置以使用 Azure 存储。
 
 在 Visual Studio 中创建 Azure 云服务时，系统会自动创建两个服务配置并将其添加到 Azure 项目中：
 
@@ -55,7 +55,7 @@ ms.locfileid: "126602156"
 
 1. 在 Visual Studio 中创建或打开 Azure 云服务项目。
 
-1. 在 **解决方案资源管理器** 中，展开项目节点。 在“角色”节点下，右键单击要更新的角色，并从上下文菜单中选择“属性”。
+1. 在“解决方案资源管理器”中，展开项目节点。 在“角色”节点下，右键单击要更新的角色，并从上下文菜单中选择“属性”。
 
     ![解决方案资源管理器中的 Azure 角色上下文菜单](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
@@ -71,7 +71,7 @@ ms.locfileid: "126602156"
 
     ![更新实例计数](./media/vs-azure-tools-configure-roles-for-cloud-service/role-configuration-properties-page-instance-count.png)
 
-1. 在工具栏Visual Studio，选择"保存 **"。**
+1. 从 Visual Studio 工具栏中，选择“保存”。
 
 ## <a name="manage-connection-strings-for-storage-accounts"></a>管理存储帐户的连接字符串
 可添加、删除或修改服务配置的连接字符串。 例如，你可能需要具有 `UseDevelopmentStorage=true` 值的本地服务配置的本地连接字符串。 可能还希望将云服务配置为使用 Azure 中的存储帐户。
@@ -85,7 +85,7 @@ ms.locfileid: "126602156"
 
 1. 在 Visual Studio 中创建或打开 Azure 云服务项目。
 
-1. 在 **解决方案资源管理器** 中，展开项目节点。 在“角色”节点下，右键单击要更新的角色，并从上下文菜单中选择“属性”。
+1. 在“解决方案资源管理器”中，展开项目节点。 在“角色”节点下，右键单击要更新的角色，并从上下文菜单中选择“属性”。
 
     ![解决方案资源管理器中的 Azure 角色上下文菜单](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
@@ -111,13 +111,13 @@ ms.locfileid: "126602156"
 
 1. 在“创建存储连接字符串”对话框中，为“连接方式”选择一个选项。 然后，遵照所选选项的说明操作：
 
-    - **Microsoft Azure 存储 Emulator** - 如果选择此选项，则对话框上的剩余设置将被禁用，因为它们仅适用于 Azure。 选择“确定”。
+    - Microsoft Azure 存储模拟器 - 如果选择此选项，对话框中的剩余设置会被禁用，因为这些设置仅适用于 Azure。 选择“确定”。
     - **订阅** - 如果选择此选项，请使用下拉列表选择并登录到 Microsoft 帐户，或添加 Microsoft 帐户。 选择 Azure 订阅和 Azure 存储帐户。 选择“确定”。
-    - **手动输入的凭据** - 输入存储帐户名称，以及主密钥或辅助密钥。 对于大多数 **方案，请选择**"HTTPS ("选项。) 选择"确定 **"。**
+    - **手动输入的凭据** - 输入存储帐户名称，以及主密钥或辅助密钥。 为“连接”选择一个选项（对于大多数方案，建议使用 HTTPS。）选择“确认”。 
 
 1. 要删除某个连接字符串，请选择该连接字符串，并选择“删除设置”。
 
-1. 在工具栏Visual Studio，选择"保存 **"。**
+1. 从 Visual Studio 工具栏中，选择“保存”。
 
 ## <a name="programmatically-access-a-connection-string"></a>以编程方式访问连接字符串
 
@@ -147,7 +147,7 @@ ms.locfileid: "126602156"
 
 1. 在 Visual Studio 中创建或打开 Azure 云服务项目。
 
-1. 在 **解决方案资源管理器** 中，展开项目节点。 在“角色”节点下，右键单击要更新的角色，并从上下文菜单中选择“属性”。
+1. 在“解决方案资源管理器”中，展开项目节点。 在“角色”节点下，右键单击要更新的角色，并从上下文菜单中选择“属性”。
 
     ![解决方案资源管理器中的 Azure 角色上下文菜单](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
@@ -173,7 +173,7 @@ ms.locfileid: "126602156"
 
 1. 要删除某个自定义设置，选择该设置，并选择“删除设置”。
 
-1. 在工具栏Visual Studio，选择"保存 **"。**
+1. 从 Visual Studio 工具栏中，选择“保存”。
 
 ## <a name="programmatically-access-a-custom-settings-value"></a>以编程方式访问自定义设置的值
 
@@ -198,7 +198,7 @@ ms.locfileid: "126602156"
 
 1. 在 Visual Studio 中创建或打开 Azure 云服务项目。
 
-1. 在 **解决方案资源管理器** 中，展开项目节点。 在“角色”节点下，右键单击要更新的角色，并从上下文菜单中选择“属性”。
+1. 在“解决方案资源管理器”中，展开项目节点。 在“角色”节点下，右键单击要更新的角色，并从上下文菜单中选择“属性”。
 
     ![解决方案资源管理器中的 Azure 角色上下文菜单](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
@@ -224,7 +224,7 @@ ms.locfileid: "126602156"
 
 1. 要删除某个本地存储项，请选择该项，并选择“删除本地存储”。
 
-1. 在工具栏Visual Studio，选择"保存 **"。**
+1. 从 Visual Studio 工具栏中，选择“保存”。
 
 ## <a name="programmatically-accessing-local-storage"></a>以编程方式访问本地存储
 

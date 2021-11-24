@@ -1,7 +1,8 @@
 ---
+description: 检索段中节开始的偏移量。
 title: IDiaSegment::get_offset | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,23 +10,24 @@ helpviewer_keywords:
 ms.assetid: 97415ac6-b072-4e3c-9dd3-73087ae605fc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e0d6084f75b3ba903a89c3dfc4249b73887df39
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: 05d3e5caab93b0e4604a662a095f8a094b183b5b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742406"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127831936"
 ---
 # <a name="idiasegmentget_offset"></a>IDiaSegment::get_offset
-检索部分的偏移量（以段为起点）。
+检索段中节开始的偏移量。
 
 ## <a name="syntax"></a>语法
 
 ```C++
-HRESULT get_offset ( 
+HRESULT get_offset ( 
    DWORD* pRetVal
 );
 ```
@@ -33,10 +35,10 @@ HRESULT get_offset ( 
 #### <a name="parameters"></a>参数
  `pRetVal`
 
-弄返回部分开始处的偏移量（以段为起点）。
+[out] 返回段中节开始的偏移量。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK`。 如果此属性不受支持，则返回 `S_FALSE`。 否则，返回错误代码。
+ 如果成功，则返回 `S_OK`。 如果不支持此属性，则返回 `S_FALSE`。 否则，返回错误代码。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

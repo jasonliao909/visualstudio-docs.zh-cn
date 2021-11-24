@@ -1,6 +1,6 @@
 ---
 title: 文本模板控制块
-description: 了解文本模板控制块，以及控制块如何使你在文本模板中编写代码以改变输出。
+description: 了解文本模板控制块，以及控制块如何让你在文本模板中编写代码来改变输出。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 286bc3b1eba71f3c875e3cdf519a01464b19c6aa
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126663866"
@@ -65,7 +65,7 @@ Found another one!
 ```
 
 > [!WARNING]
-> 始终使用 {...} 分隔包含嵌入纯文本的嵌套语句。 以下示例可能无法正常工作：
+> 请始终使用 {...} 来分隔包含嵌入的纯文本的嵌套语句。 以下示例可能无法正常工作：
 >
 > `<# if (ShouldPrint) #> Some text. -- WRONG`
 >
@@ -144,17 +144,17 @@ Some text.
 ```
 
 ## <a name="how-to-use-control-blocks"></a>如何使用控制块
- 将单个模块中所有标准和表达式控制块中的所有代码（包括包含模板中的所有代码）组合在一起，以便形成所生成代码的 `TransformText()` 方法。  (有关使用 指令包括其他文本模板的信息 `include` ，请参阅 [T4 文本模板指令](../modeling/t4-text-template-directives.md).) 
+ 将单个模块中所有标准和表达式控制块中的所有代码（包括包含模板中的所有代码）组合在一起，以便形成所生成代码的 `TransformText()` 方法。 （有关使用 `include` 指令来包括其他文本模板的详细信息，请参阅 [T4 文本模板指令](../modeling/t4-text-template-directives.md)。）
 
  在使用控制块时，请记住考虑以下事项：
 
-- **语言。** 你可以使用文本模板中的 C# 或 Visual Basic 代码。 默认语言为 C#，但你可以使用 `template` 指令的 `language` 参数指定 Visual Basic。  (有关 指令的信息 `template` ，请参阅 [T4 文本模板指令](../modeling/t4-text-template-directives.md).) 
+- **语言。** 你可以使用文本模板中的 C# 或 Visual Basic 代码。 默认语言为 C#，但你可以使用 `template` 指令的 `language` 参数指定 Visual Basic。 （有关 `template` 指令的详细信息，请参阅 [T4 文本模板指令](../modeling/t4-text-template-directives.md)。）
 
      控制块中使用的语言与文本模板中生成的文本的语言或格式无关。 你可以使用 Visual Basic 代码生成 C#，反之亦然。
 
      在给定的文本模板（包括使用 `include` 指令包含的所有文本模板）中只能使用一种语言。
 
-- **局部变量。** 由于文本模板中标准和表达式控制块中的所有代码合并生成了一个单独的方法，因此，应确保不与局部变量的名称发生冲突。 如果包含其他文本模板，则必须确保变量名称在所有包含的模板中是唯一的。 要确保这种情况，可以将字符串添加到每个局部变量名称，该名称标识在其中进行声明的文本模块。
+- 局部变量。 由于文本模板中标准和表达式控制块中的所有代码合并生成了一个单独的方法，因此，应确保不与局部变量的名称发生冲突。 如果包含其他文本模板，则必须确保变量名称在所有包含的模板中是唯一的。 要确保这种情况，可以将字符串添加到每个局部变量名称，该名称标识在其中进行声明的文本模块。
 
      当你对局部变量进行声明时，尤其是当包括多个文本模板时，将局部变量初始化为合理的值也是一种不错的方法。
 
@@ -170,4 +170,4 @@ Some text.
     <# } #>
     ```
 
-- **重 构。** 为了使你的文本模板简短并易于理解，强烈建议你避免重复代码，可通过将可重用的代码分解到类功能块中的帮助程序函数或通过创建你自己的文本模板类（继承自 Microsoft.VisualStudio.TextTemplating.TextTransformation 类）实现。
+- 重构。 为了使你的文本模板简短并易于理解，强烈建议你避免重复代码，可通过将可重用的代码分解到类功能块中的帮助程序函数或通过创建你自己的文本模板类（继承自 Microsoft.VisualStudio.TextTemplating.TextTransformation 类）实现。

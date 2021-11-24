@@ -1,7 +1,8 @@
 ---
-title: IDiaDataSource：： get_lastError |Microsoft Docs
+description: 检索上次加载错误的文件名。
+title: IDiaDataSource::get_lastError | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,18 +10,19 @@ helpviewer_keywords:
 ms.assetid: cf08850b-8b75-4e8c-90bd-bd0214756f99
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 48595dda70560f555533a1857f73db4d7bd20a86
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: 1a15333df3c4c994f752ff7bd93978a7b7e34ffb
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744976"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127832335"
 ---
 # <a name="idiadatasourceget_lasterror"></a>IDiaDataSource::get_lastError
-检索最后一个加载错误的文件名。
+检索上次加载错误的文件名。
 
 ## <a name="syntax"></a>语法
 
@@ -33,10 +35,10 @@ HRESULT get_lastError (
 #### <a name="parameters"></a>参数
  pRetVal
 
-弄返回一个字符串，该字符串包含与上一次加载错误关联的 .pdb 文件名。
+[out] 返回包含与上次加载错误关联的 .pdb 文件名的字符串。
 
 ## <a name="return-value"></a>返回值
- 返回由加载操作引起的最后一个错误代码。 如果 `pRetVal` 参数 `NULL`，则返回 `E_INVALIDARG`。
+ 返回由加载操作引起的上一个错误代码。 如果 `pRetVal` 参数为 `NULL`，则返回 `E_INVALIDARG`。
 
 ## <a name="example"></a>示例
 
@@ -45,5 +47,5 @@ BSTR    fileName;
 HRESULT errorCode = pSource->get_lastError( &fileName );
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)

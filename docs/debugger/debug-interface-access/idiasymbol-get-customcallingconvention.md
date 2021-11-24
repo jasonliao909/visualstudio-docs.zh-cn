@@ -1,7 +1,8 @@
 ---
+description: 检索指定函数是否具有自定义调用约定的标志。
 title: IDiaSymbol::get_customCallingConvention | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,18 +10,19 @@ helpviewer_keywords:
 ms.assetid: 0aa97951-f7e1-4fa5-a87f-2920460c122d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 01fb33108c9952b8543d36b64b7743f4c0531be5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: f599463d31d79b6c4080fad032a86ba579c44e4f
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740737"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127832674"
 ---
 # <a name="idiasymbolget_customcallingconvention"></a>IDiaSymbol::get_customCallingConvention
-检索一个标志，该标志指定该函数是否具有自定义调用约定。
+检索指定函数是否具有自定义调用约定的标志。
 
 ## <a name="syntax"></a>语法
 
@@ -33,20 +35,20 @@ HRESULT get_customCallingConvention(
 #### <a name="parameters"></a>参数
  `pFlag`
 
-弄如果函数具有自定义调用约定，则返回 `TRUE`;否则，将返回 `FALSE`，该函数有一个已知的调用约定。
+[out] 如果函数具有自定义调用约定，则返回 `TRUE`；如果函数具有已知调用约定，则返回 `FALSE`。
 
 ## <a name="return-value"></a>返回值
- 如果成功，将返回 `S_OK`;否则，将返回 `S_FALSE` 或错误代码。
+ 如果成功，则返回 `S_OK`；否则返回 `S_FALSE` 或错误代码。
 
 > [!NOTE]
-> @No__t_0 的返回值意味着该属性对符号不可用。
+> 返回值 `S_FALSE` 意味着该属性对符号不可用。
 
 ## <a name="requirements"></a>要求
 
-|需求|描述|
+|要求|说明|
 |-----------------|-----------------|
-|标头：|dia2|
+|标头：|dia2.h|
 |版本：|DIA SDK v8.0|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

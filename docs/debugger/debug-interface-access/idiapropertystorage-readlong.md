@@ -1,7 +1,8 @@
 ---
+description: 读取属性集中的 LONG 值。
 title: IDiaPropertyStorage::ReadLONG | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,23 +10,24 @@ helpviewer_keywords:
 ms.assetid: 32054cbc-db55-4513-a1b4-de80e77aac8a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: af9d65c571c5e0a281b968d922c9b5170bd1c561
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: 5112970758a037754c61064ca073c79e950bafb4
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742893"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127832017"
 ---
 # <a name="idiapropertystoragereadlong"></a>IDiaPropertyStorage::ReadLONG
-读取属性集中 `LONG` 值。
+读取属性集中的 `LONG` 值。
 
 ## <a name="syntax"></a>语法
 
 ```C++
-HRESULT ReadDLONG ( 
+HRESULT ReadDLONG ( 
    PROPID id,
    LONG*  pValue
 );
@@ -34,17 +36,17 @@ HRESULT ReadDLONG ( 
 #### <a name="parameters"></a>参数
  `id`
 
-中要读取的属性的标识符（`PROPID` 在 WTypes 中定义为 `ULONG`）。
+[in] 要读取的属性的标识符（`PROPID` 在 WTypes.h 中定义为 `ULONG`）。
 
  `pValue`
 
-弄返回属性值。
+[out] 返回属性值。
 
 ## <a name="return-value"></a>返回值
- 如果成功，将返回 `S_OK`;否则，将返回错误代码。 如果属性不是类型 `LONG`，则返回 `E_INVALIDARG`。
+ 如果成功，则返回 `S_OK`；否则，返回错误代码。 如果此属性的类型不是 `LONG`，则返回 `E_INVALIDARG`。
 
 ## <a name="remarks"></a>备注
- @No__t_0 由 Windows 定义为32位有符号整数。
+ `LONG` 由 Windows 定义为 32 位带符号整数。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

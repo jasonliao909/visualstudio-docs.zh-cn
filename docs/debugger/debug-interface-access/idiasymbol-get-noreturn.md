@@ -1,7 +1,8 @@
 ---
-title: IDiaSymbol：： get_noReturn |Microsoft Docs
+description: 检索指定是否已将函数标记为永远不会返回 noreturn 属性的标志。
+title: IDiaSymbol::get_noReturn | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,18 +10,19 @@ helpviewer_keywords:
 ms.assetid: 704c1cc0-5b84-4334-a02a-70f43aff39d5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 68a1be922df32de2100c22a15b1656b451a603ef
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: 2acc5f7e725d31c0b2afe3e47ed09c641199df63
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739740"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127832793"
 ---
 # <a name="idiasymbolget_noreturn"></a>IDiaSymbol::get_noReturn
-检索一个标志，该标志指定是否已将函数标记为不使用[noreturn](/cpp/cpp/noreturn)特性进行返回。
+检索指定是否已将函数标记为永远不会返回 [noreturn](/cpp/cpp/noreturn) 属性的标志。
 
 ## <a name="syntax"></a>语法
 
@@ -33,21 +35,21 @@ HRESULT get_noReturn(
 #### <a name="parameters"></a>参数
  pFlag
 
-弄如果已将函数声明为从未返回的 `noreturn` 属性，则返回 `TRUE`;否则，将返回 `FALSE`。
+[out] 如果已将函数声明为永远不会返回 `noreturn` 属性，则返回 `TRUE`；否则返回 `FALSE`。
 
 ## <a name="return-value"></a>返回值
- 如果成功，将返回 `S_OK`;否则，将返回 `S_FALSE` 或错误代码。
+ 如果成功，则返回 `S_OK`；否则返回 `S_FALSE` 或错误代码。
 
 > [!NOTE]
-> @No__t_0 的返回值意味着该属性对符号不可用。
+> 返回值 `S_FALSE` 意味着该属性对符号不可用。
 
 ## <a name="requirements"></a>要求
 
-|需求|描述|
+|要求|说明|
 |-----------------|-----------------|
-|标头：|dia2|
+|标头：|dia2.h|
 |版本：|DIA SDK v8.0|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [noreturn](/cpp/cpp/noreturn)

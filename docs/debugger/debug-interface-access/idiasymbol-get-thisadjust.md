@@ -1,7 +1,8 @@
 ---
-title: IDiaSymbol：： get_thisAdjust |Microsoft Docs
+description: 检索此方法的逻辑 this 调整器。
+title: IDiaSymbol::get_thisAdjust | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,23 +10,24 @@ helpviewer_keywords:
 ms.assetid: 56b9a147-e8c0-4d4b-a42a-398214dd5f86
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: e92a18ce7b9b7206121d1ad514217f79d2f8628a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: 7b4f166f936bef12c183eb7064d10f1c1d6217e1
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739145"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127831710"
 ---
 # <a name="idiasymbolget_thisadjust"></a>IDiaSymbol::get_thisAdjust
-检索方法的逻辑 `this` adjustor。
+检索此方法的逻辑 `this` 调整器。
 
 ## <a name="syntax"></a>语法
 
 ```C++
-HRESULT get_thisAdjust ( 
+HRESULT get_thisAdjust ( 
    LONG* pRetVal
 );
 ```
@@ -33,16 +35,16 @@ HRESULT get_thisAdjust ( 
 #### <a name="parameters"></a>参数
  `pRetVal`
 
-弄返回方法的逻辑 `this` adjustor。
+[out] 返回此方法的逻辑 `this` 调整器。
 
 ## <a name="return-value"></a>返回值
- 如果成功，将返回 `S_OK`;否则，将返回 `S_FALSE` 或错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回 `S_FALSE` 或错误代码。
 
 > [!NOTE]
-> @No__t_0 的返回值意味着该属性对符号不可用。
+> 返回值 `S_FALSE` 意味着该属性对符号不可用。
 
 ## <a name="remarks"></a>备注
- 在某些多重继承情况下，方法本身必须通过将偏移量添加到 `this` 来计算 true `this` 值。
+ 在某些多重继承情况下，方法本身必须通过将偏移量添加到 `this` 来计算真正的 `this` 值。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -11,11 +11,11 @@ ms.prod: visual-studio-dev16
 ms.workload:
 - unity
 ms.openlocfilehash: c1b745e4a1da85324b2dc73e30bebb873e2d0720
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96559805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126665467"
 ---
 # <a name="using-net-4x-in-unity"></a>在 Unity 中使用 .NET 4.x
 
@@ -58,9 +58,9 @@ ms.locfileid: "96559805"
 
 ![缺少程序集引用](media/vs/vstu-missing-reference.png)
 
-每次打开 Unity 项目时 Visual Studio 都会为其重新生成 .csproj 和 .sln 文件。 因此，无法直接在 Visual Studio 中添加程序集引用，因为它们将在重新打开项目时丢失。 相反，必须使用一个名为 **csc. .rsp** 的特殊文本文件：
+每次打开 Unity 项目时 Visual Studio 都会为其重新生成 .csproj 和 .sln 文件。 因此，无法直接在 Visual Studio 中添加程序集引用，因为它们将在重新打开项目时丢失。 相反，必须使用名为 csc.rsp 的特殊文本文件：
 
-1. 在 Unity 项目的根 **资产** 目录中，创建名为 **csc** 的新文本文件。
+1. 在 Unity 项目的根 Assets 目录中创建名为 csc.rsp 的新文本文件 。
 
 1. 在空文本文件的第一行，输入：`-r:System.Net.Http.dll`，然后保存文件。 可将“System.Net.Http.dll”替换为可能缺少引用的任何包含的程序集。
 

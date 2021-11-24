@@ -1,7 +1,8 @@
 ---
-title: IDiaSymbol：： get_intrinsic |Microsoft Docs
+description: 检索一个标记，该标记指定类是否为内部类型。
+title: IDiaSymbol::get_intrinsic | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,23 +10,24 @@ helpviewer_keywords:
 ms.assetid: f969f595-d9f9-48b9-adaa-63a6e4e09575
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a300cd39e85e84ee3a008f3dc011ddcccb6ce5e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: 4e5ac1796a1a876a454dc976688799ba1033570e
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740356"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127832487"
 ---
 # <a name="idiasymbolget_intrinsic"></a>IDiaSymbol::get_intrinsic
-检索一个标志，该标志指定类是否为内部类型。
+检索一个标记，该标记指定类是否为内部类型。
 
 ## <a name="syntax"></a>语法
 
 ```C++
-HRESULT get_intrinsic( 
+HRESULT get_intrinsic( 
    BOOL* pRetVal)
 );
 ```
@@ -33,22 +35,22 @@ HRESULT get_intrinsic( 
 #### <a name="parameters"></a>参数
  `pRetVal`
 
-弄如果类是内部类型，则返回 `TRUE`;否则，将返回 `FALSE`。
+[out] 如果类是内部类型，则返回 `TRUE`；否则，返回 `FALSE`。
 
 ## <a name="return-value"></a>返回值
- 如果成功，将返回 `S_OK`;否则，将返回 `S_FALSE` 或错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回 `S_FALSE` 或错误代码。
 
 > [!NOTE]
-> @No__t_0 的返回值意味着该属性对符号不可用。
+> 返回值 `S_FALSE` 意味着该属性对符号不可用。
 
 ## <a name="remarks"></a>备注
 
 ## <a name="requirements"></a>要求
- 标头： Dia2
+ 标头：Dia2.h
 
- 库： diaguids
+ 库：diaguids.lib
 
- DLL： msdia100
+ DLL：msdia100.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

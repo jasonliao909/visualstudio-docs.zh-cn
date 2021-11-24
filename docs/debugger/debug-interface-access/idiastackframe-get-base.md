@@ -1,7 +1,8 @@
 ---
+description: 检索帧的基址。
 title: IDiaStackFrame::get_base | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,15 +10,16 @@ helpviewer_keywords:
 ms.assetid: f27477d7-26fe-4c1c-a08a-c52cb20c8293
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 6802737a69467fb823fb2df8df8160f459e739f1
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: 0513272e6dfaca63b9656952cc2880bf943e91da
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741737"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127831838"
 ---
 # <a name="idiastackframeget_base"></a>IDiaStackFrame::get_base
 检索帧的基址。
@@ -25,7 +27,7 @@ ms.locfileid: "72741737"
 ## <a name="syntax"></a>语法
 
 ```C++
-HRESULT get_base ( 
+HRESULT get_base ( 
    ULONGLONG* pRetVal
 );
 ```
@@ -33,10 +35,10 @@ HRESULT get_base ( 
 #### <a name="parameters"></a>参数
  `pRetVal`
 
-弄返回基址。
+[out] 返回基址。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK`。 如果属性不受支持，则返回 `S_FALSE`。 否则，返回错误代码。
+ 如果成功，则返回 `S_OK`。 如果不支持此属性，则返回 `S_FALSE`。 否则，返回错误代码。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

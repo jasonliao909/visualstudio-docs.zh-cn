@@ -1,7 +1,8 @@
 ---
+description: 检索符号类型分类器。
 title: IDiaSymbol::get_symTag | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,15 +10,16 @@ helpviewer_keywords:
 ms.assetid: 139a35bd-faeb-4878-be72-394dedfbb18f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 99f24e47ff04c6a7d37633c4f04bbd058b861cd6
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: ad31fc4290daeec60f57c510c7a48cd41343d954
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739232"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127831723"
 ---
 # <a name="idiasymbolget_symtag"></a>IDiaSymbol::get_symTag
 检索符号类型分类器。
@@ -25,7 +27,7 @@ ms.locfileid: "72739232"
 ## <a name="syntax"></a>语法
 
 ```C++
-HRESULT get_symTag ( 
+HRESULT get_symTag ( 
    DWORD* pRetVal
 );
 ```
@@ -33,13 +35,13 @@ HRESULT get_symTag ( 
 #### <a name="parameters"></a>参数
  `pRetVal`
 
-弄返回[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)枚举中的一个值，该值指定符号类型分类器。
+[out] 从 [SymTagEnum Enumeration](../../debugger/debug-interface-access/symtagenum.md) 枚举返回一个值，用于指定符号类型分类器。
 
 ## <a name="return-value"></a>返回值
- 如果成功，将返回 `S_OK`;否则，将返回 `S_FALSE` 或错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回 `S_FALSE` 或错误代码。
 
 > [!NOTE]
-> @No__t_0 的返回值意味着该属性对符号不可用。
+> 返回值 `S_FALSE` 意味着该属性对符号不可用。
 
 ## <a name="example"></a>示例
 
@@ -49,6 +51,6 @@ DWORD       tag = 0;
 pType->get_symTag( &tag );
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)
