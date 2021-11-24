@@ -13,12 +13,12 @@ dev_langs:
 ms.workload:
 - nodejs
 monikerRange: '>= vs-2022'
-ms.openlocfilehash: 50bd68ea9835c94dd20737162e414a37241a9d17
-ms.sourcegitcommit: ac681e983f3b217c3fd9d2a31e3a3ddcc4dd3546
+ms.openlocfilehash: f5890a40f445f2fc7b559f9f771a0ad80510390e
+ms.sourcegitcommit: 8b44ba7864f67afa476708d5092729345e689f93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "132041954"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "132861648"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-angular-in-visual-studio"></a>教程：在 Visual Studio 中使用 Angular 创建 ASP.NET Core 应用
 
@@ -108,14 +108,18 @@ ms.locfileid: "132041954"
 
 ## <a name="start-the-project"></a>启动项目
 
-启动项目之前，请确保端口号匹配。 转到 ASP.NET Core 项目中的 launchSettings.json 文件（在 Properties 文件夹中） 。 从 `applicationUrl` 属性获取端口号。 （它应该类似于 `https://localhost:7049`。）
+启动项目之前，请确保端口号匹配。
 
-然后，转到 Angular 项目的 proxy.conf.js 文件（查看 src 文件夹） 。 更新目标属性，以匹配 launchSettings.json 中的 `applicationUrl` 属性。
+1. 转到 ASP.NET Core 项目中的 launchSettings.json 文件（在 Properties 文件夹中） 。 从 `applicationUrl` 属性获取端口号。
 
-若要启动项目，请按 F5 或选择窗口顶部的“开始”按钮 。 将显示两个命令提示符：
+   如果有多个 `applicationUrl` 属性，请使用 `https` 终结点查找一个。 它看起来应该类似于 `https://localhost:7049`。
 
-- 正在运行的 ASP.NET Core API 项目
-- 运行 ng start 的 Angular CLI
+1. 然后，转到 Angular 项目的 proxy.conf.js 文件（查看 src 文件夹） 。 更新目标属性，以匹配 launchSettings.json 中的 `applicationUrl` 属性。
+
+1. 若要启动项目，请按 F5 或选择窗口顶部的“开始”按钮 。 将显示两个命令提示符：
+
+   - 正在运行的 ASP.NET Core API 项目
+   - 运行 ng start 的 Angular CLI
 
 应会显示一个 Angular 应用，该应用通过 API 填充。
 

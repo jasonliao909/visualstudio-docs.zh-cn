@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b0ce097591122b6f71b9cab8decfb01f20839f3c
-ms.sourcegitcommit: 215680b355cf613bfa125cf6b864c8bb5f2c71a5
+ms.openlocfilehash: 85e1b3a99be0020df7a710098f9fb44dac104589
+ms.sourcegitcommit: 8b44ba7864f67afa476708d5092729345e689f93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "132453549"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "132861518"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>使用命令行参数安装 Visual Studio
 
@@ -60,14 +60,14 @@ ms.locfileid: "132453549"
 
 ::: moniker range=">=vs-2022"
 
->[!TIP]
-> 发布的 Visual Studio 2022 版尚不可用，以下引导程序适用于 Visual Studio 2022 预览版。
-首先从 [Visual Studio 下载页](https://aka.ms/vs2022preview)下载 Visual Studio 2022 引导程序。
+若要获取始终安装最新当前频道版本的 Visual Studio 2022 的最新引导程序，请下载以下文件之一。 或者，如果要安装 Visual Studio 2022 的特定版本或特定频道，请转到 [Visual Studio 2022 版本历史记录](/visualstudio/releases/2022/release-history#release-dates-and-build-numbers)页，该页包含指向每个服务版本的固定版本引导程序的链接。 
 
-| 版本                    | 下载                                                                                  |
+| 版本                    | 引导程序                                                                                  |
 |----------------------------|-------------------------------------------------------------------------------------------|
-| Visual Studio 2022 Enterprise   | [vs_enterprise.exe](https://aka.ms/vs/17/preview/bootstrapper/vs_enterprise.exe)     |
-| Visual Studio 2022 Professional | [vs_professional.exe](https://aka.ms/vs/17/preview/bootstrapper/vs_professional.exe) |
+| Visual Studio 2022 Enterprise   | [vs_enterprise.exe](https://aka.ms/vs/17/release/vs_enterprise.exe)     |
+| Visual Studio 2022 Professional | [vs_professional.exe](https://aka.ms/vs/17/release/vs_professional.exe) |
+| Visual Studio 2022 Community    | [vs_community.exe](https://aka.ms/vs/17/release/vs_community.exe)       |
+| Visual Studio 2022 生成工具   | [vs_buildtools.exe](https://aka.ms/vs/17/release/vs_buildtools.exe)         |
 
 ::: moniker-end
 
@@ -88,7 +88,7 @@ ms.locfileid: "132453549"
 ::: moniker range=">=vs-2022"
 
 >[!TIP]
->如果以前下载过引导程序文件，并且想要验证其版本，则操作方法如下。 在 Windows 中，打开文件资源管理器，右键单击引导程序文件，依次选择“属性”、“详细信息”选项卡，然后查看“产品版本”号    。 若要将该编号与 Visual Studio 的版本匹配，请参阅 [Visual Studio 2022 版本](/visualstudio/releases/2022/release-notes)页。
+>如果你之前下载了一个引导程序文件，并且想要验证它将安装的版本，操作方法如下。 在 Windows 中，打开“文件资源管理器”，右键单击该引导程序文件，选择“属性”，然后选择“详细信息”选项卡。“产品版本”字段将描述该引导程序将安装的[频道和版本](/visualstudio/releases/2022/vs2022-release-rhythm)  。 版本号应始终读取为“指定内容的最新服务版本”，除非显式指定，否则频道为“当前”。 因此，产品版本为 LTSC 17.0 的引导程序将安装 17.0 LTSC 频道上提供的最新 17.0.x 服务版本。 产品版本仅显示“Visual Studio 2022”的引导程序将在当前频道上安装最新版本的 Visual Studio 2022。
 
 ::: moniker-end
 

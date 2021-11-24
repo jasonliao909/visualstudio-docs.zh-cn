@@ -1,18 +1,18 @@
 ---
 title: 分配带有 GitHub Enterprise 的 Visual Studio 订阅 | Microsoft Docs
 author: evanwindom
-ms.author: cabuschl
-manager: cabuschl
+ms.author: amast
+manager: amast
 ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
 ms.date: 03/03/2021
 ms.topic: conceptual
 description: 管理带有 GitHub Enterprise 的 Visual Studio 订阅中的订阅
-ms.openlocfilehash: b01baba84b0c75b5986ff82221ee915cf7b3f6fc
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: ab61a9adf5bf6912935ac1c548477dfe4eec5efe
+ms.sourcegitcommit: a1c18c491e310b00a43e76a911f778e643cd8f8d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128428094"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "132995665"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>管理带有 GitHub Enterprise 的 Visual Studio 订阅
 与 Microsoft 签订了企业协议 (EA) 的客户有资格购买新的订阅套餐，该套餐将 Visual Studio 标准订阅和 GitHub Enterprise 结合在了一起。 这是 Visual Studio 订阅者获取 GitHub Enterprise 的一种简单而实惠的方式。 

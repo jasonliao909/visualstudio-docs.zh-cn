@@ -1,7 +1,7 @@
 ---
 title: .NET 目标框架
 description: 了解如何指定希望项目所面向的 .NET Framework 版本，以便应用程序只能使用指定版本中可用的功能。
-ms.date: 12/01/2020
+ms.date: 11/19/2021
 ms.topic: overview
 helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7c61cca91c712825596b02cae6481492eecd824e
-ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
+ms.openlocfilehash: 7e6dba5216784cf8db45f7063e88b2a000cdc527
+ms.sourcegitcommit: 8b44ba7864f67afa476708d5092729345e689f93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "129431167"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "132861598"
 ---
 # <a name="framework-targeting-overview"></a>框架定位概述
 
@@ -73,9 +73,15 @@ Visual Studio 解决方案可以包含针对不同 .NET 版本的项目。  但�
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 
 ![VS 2019 中的“框架”下拉列表](media/vs-2019/configure-new-project-framework.png)
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+:::image type="content" source="media/vs-2022/configure-new-project-framework.png" alt-text="Visual Studio 2022 中框架下拉列表的屏幕截图。":::
 
 ::: moniker-end
 
@@ -83,7 +89,8 @@ Visual Studio 解决方案可以包含针对不同 .NET 版本的项目。  但�
 
 对于现有的 Visual Basic、C# 或 F# 项目，可在项目属性对话框中更改目标 .NET 版本。 有关如何更改 C++ 项目目标版本的信息，请改为参阅[如何修改目标框架和平台工具集](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)。
 
-1. 在“解决方案资源管理器”  中，打开要更改的项目的右键单击菜单，然后选择“属性”  。
+::: moniker range="<=vs-2019"
+1. 在“解决方案资源管理器”中，打开要更改的项目的右键单击上下文菜单，然后选择“属性” 。
 
 1. 在“属性”窗口的左列中，选择“应用程序”选项卡   。
 
@@ -97,6 +104,24 @@ Visual Studio 解决方案可以包含针对不同 .NET 版本的项目。  但�
 1. 在显示的“验证”对话框中，选择“是”  按钮。
 
    项目将卸载。 项目重载时，将面向刚选择的 .NET 版本。
+::: moniker-end
+
+::: moniker range="vs-2022"
+1. 在“解决方案资源管理器”中，打开要更改的项目的右键单击上下文菜单，然后选择“属性” 。
+
+1. 在“属性”窗口的左列中，选择“应用程序”选项卡   。
+
+   > [!NOTE]
+   > 创建 UWP 应用后，无法更改 Windows 或 .NET 目标版本。
+
+1. 在“目标框架”  列表中，选择所需版本。
+
+   :::image type="content" source="media/vs-2022/project-properties-application-tab-framework.png" alt-text="“项目属性”对话框的屏幕截图，其中突出显示了“.NET Framework”选项。":::
+
+1. 在显示的“验证”对话框中，选择“是”  按钮。
+
+   项目将卸载。 项目重载时，将面向刚选择的 .NET 版本。
+::: moniker-end
 
 > [!NOTE]
 > 如果代码中包含对非目标 .NET 版本的引用，则在编译或运行代码时可能会显示错误消息。 若要解决这些错误，请修改这些引用。 请参阅 [.NET 定位错误疑难解答](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)。

@@ -10,16 +10,15 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f7fe40f78b8a8447c1ae784e33a25e905e368118
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 07128c06a7602685e4944cd0fd947886eb73c8f9
+ms.sourcegitcommit: 8b44ba7864f67afa476708d5092729345e689f93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641574"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "132861661"
 ---
 # <a name="walkthrough-build-an-application"></a>演练：生成应用程序
-
-完成本演练后，你会更熟悉使用 Visual Studio 生成应用程序时可配置的多个选项。 将为示例应用程序创建自定义生成配置、隐藏特定警告消息以及增加生成输出信息。
+在本文中，你会更熟悉使用 Visual Studio 生成应用程序时可配置的多个选项。 将为示例应用程序创建自定义生成配置、隐藏特定警告消息以及增加生成输出信息。
 
 ## <a name="install-the-sample-application"></a>安装示例应用程序
 

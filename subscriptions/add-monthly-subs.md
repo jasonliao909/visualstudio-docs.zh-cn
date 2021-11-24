@@ -1,18 +1,18 @@
 ---
 title: 向订阅管理门户添加新的每月订阅 | Microsoft Docs
 author: evanwindom
-ms.author: cabuschl
-manager: cabuschl
+ms.author: amast
+manager: amast
 ms.assetid: 36f0d9f1-fe28-469f-a54c-dc46638270a8
 ms.date: 10/08/2021
 ms.topic: how-to
 description: 了解如何向订阅管理门户添加新购买的每月 Visual Studio 订阅
-ms.openlocfilehash: 682d81e45d36db0d284554e7c1e72d6a00c9cb45
-ms.sourcegitcommit: 5f1e0171626e13bb2c5a6825e28dde48061208a4
+ms.openlocfilehash: add6e5d575e1aa950faf555fa193f0ea432aad00
+ms.sourcegitcommit: a1c18c491e310b00a43e76a911f778e643cd8f8d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "129704712"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "132994918"
 ---
 # <a name="add-new-monthly-visual-studio-subscriptions-to-the-subscriptions-administration-portal"></a>向订阅管理门户添加新的每月 Visual Studio 订阅
 使用 Azure 订阅购买新的每月 Visual Studio 订阅后，可能需要将它们添加到订阅管理门户，以便将它们分配给用户。  

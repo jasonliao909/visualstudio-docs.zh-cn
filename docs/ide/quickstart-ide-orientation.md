@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ff4270fb819c010a31e4dce9e3e3376d41cf205
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 36d37966a30efdcf6a3d30eaaa824addbaa108c1
+ms.sourcegitcommit: 932cf0f653c6258b73f42102d134cbaf50b8f20c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128428303"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "132880092"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>快速入门：初步了解 Visual Studio IDE
 
@@ -150,7 +150,7 @@ ms.locfileid: "128428303"
 
     :::image type="content" source="media/vs-2022/quickstart-configure-new-project-console.png" alt-text="Visual Studio 2022 中“配置新项目”窗口的屏幕截图，你可在该窗口中输入项目的名称。":::
 
-1. 在“附加信息”窗口中，确保“框架”下拉菜单中显示“.NET 6.0 (预览)”，然后选择“创建”。
+1. 在“其他信息”窗口中，确保“框架”下拉菜单中显示“.NET 6.0”，然后选择“创建”   。
 
     :::image type="content" source="media/vs-2022/create-project-additional-info.png" alt-text="Visual Studio 2022 中“附加信息”窗口的屏幕截图，你可在该窗口中选择所需的 .NET 版本。":::
 
@@ -340,7 +340,7 @@ Visual Studio 顶部的菜单栏将命令分组成不同的类别。 例如，�
 > [!div class="nextstepaction"]
 > [了解项目和解决方案](../get-started/tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [Visual Studio IDE 概述](../get-started/visual-studio-ide.md)
 - [Visual Studio 的更多功能](../ide/advanced-feature-overview.md)

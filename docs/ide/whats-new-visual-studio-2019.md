@@ -15,12 +15,12 @@ ms.prod: visual-studio-windows
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: aaa3ad227fcd42295db0835cad637862df850df9
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: d1736de4811873e6ec081a7f89e69321a50c72b5
+ms.sourcegitcommit: 932cf0f653c6258b73f42102d134cbaf50b8f20c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736303"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "132880105"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 中的新增功能
 
@@ -230,9 +230,9 @@ Visual Studio 2019 中会默认安装此服务。
 
    有关详细信息，请参阅 [Visual Studio 中的版本控制](/visualstudio/version-control/)页。
 
-- Visual Studio 2022（预览版）现已推出
+- **Visual Studio 2022 现已推出**
 
-    最新版本 [Visual Studio 2022（预览版）](/visualstudio/releases/2022/release-notes-preview/)更快、更容易上手，也更轻量。 而且，有史以来第一次，Visual Studio 是 64 位的。
+    最新版本 [Visual Studio 2022](/visualstudio/releases/2022/release-notes/) 更快、更容易上手，也更轻量。 而且，有史以来第一次，Visual Studio 是 64 位的。
 
     有关下载链接和详细信息，请参阅 [Visual Studio 2022 愿景](https://devblogs.microsoft.com/visualstudio/visual-studio-2022/)博客文章，以及 [Visual Studio 2022 预览版 3 现已推出](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-preview-3-now-available/)博客文章。
 
