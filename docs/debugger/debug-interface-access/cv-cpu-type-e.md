@@ -1,7 +1,9 @@
 ---
 title: CV_CPU_TYPE_e | Microsoft Docs
+description: 获取有关 CV_CPU_TYPE_e 枚举类型的参考信息，该类型指定调试接口访问 SDK 中的目标处理器。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,21 +11,22 @@ helpviewer_keywords:
 ms.assetid: df470a7e-1d04-448e-b920-c731189514fa
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ccc83062427ac2ecd3f340d6e1dbbe4d988ab0af
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: 7cf2450701ed3543b7bd210a268875ef7e4b04b1
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745321"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127832390"
 ---
 # <a name="cv_cpu_type_e"></a>CV_CPU_TYPE_e
 指定目标处理器。
 
 > [!NOTE]
-> 在 `CV_CFL_*` 前缀后的枚举元素中标识处理器。
+> 处理器是在 `CV_CFL_*` 前缀后的枚举元素中标识的。
 
 ## <a name="syntax"></a>语法
 
@@ -96,11 +99,11 @@ typedef enum CV_CPU_TYPE_e {
 ```
 
 ## <a name="remarks"></a>备注
-此枚举中的值由对[IDiaSymbol：： get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md)方法的调用返回。
+此枚举中的值是通过调用 [IDiaSymbol::get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md) 方法返回的。
 
 ## <a name="requirements"></a>要求
-标头： cvconst
+标头：cvconst.h
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [枚举和结构](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol::get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md)

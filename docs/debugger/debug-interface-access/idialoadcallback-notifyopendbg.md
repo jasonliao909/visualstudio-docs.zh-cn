@@ -1,7 +1,8 @@
 ---
+description: 在已打开候选 .dbg 文件时调用。
 title: IDiaLoadCallback::NotifyOpenDBG | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,23 +10,24 @@ helpviewer_keywords:
 ms.assetid: dbc4dcf0-4ace-4dce-9790-0fdaf3a23d3b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 70607af90469594491223afa5f316dc63bf935b3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: 87b69b408d02ad4787bb006dea33b010e9420c7f
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743071"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127832045"
 ---
 # <a name="idialoadcallbacknotifyopendbg"></a>IDiaLoadCallback::NotifyOpenDBG
-在已打开候选的 dbg 文件时调用。
+在已打开候选 .dbg 文件时调用。
 
 ## <a name="syntax"></a>语法
 
 ```C++
-HRESULT NotifyOpenDBG ( 
+HRESULT NotifyOpenDBG ( 
    LPCOLESTR dbgPath,
    HRESULT   resultCode
 );
@@ -34,14 +36,14 @@ HRESULT NotifyOpenDBG ( 
 #### <a name="parameters"></a>参数
  `dbgPath`
 
-中Dbg 文件的完整路径。
+[in] .dbg 文件的完整路径。
 
  `resultCode`
 
-中指示应用到此文件的成功（`S_OK`）或负载失败的代码。
+[in] 指示应用到此文件的加载是成功 (`S_OK`) 还是失败的代码。
 
 ## <a name="return-value"></a>返回值
- 如果成功，将返回 `S_OK`;否则，将返回错误代码。 通常会忽略返回代码。
+ 如果成功，则返回 `S_OK`；否则，返回错误代码。 通常会忽略返回代码。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

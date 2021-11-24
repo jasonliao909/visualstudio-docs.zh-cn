@@ -11,7 +11,7 @@ ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: b29f7b4380233a510fb34c3e72cf2aac9b948ba1
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126602160"
@@ -52,4 +52,4 @@ ms.locfileid: "126602160"
     ![发布 Azure 应用程序“摘要”页](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-summary.png)
 
 ## <a name="next-steps"></a>后续步骤
-- [使用 Visual Studio“发布 Azure 应用程序”向导](vs-azure-tools-publish-azure-application-wizard.md)
+- [使用 Visual Studio“发布 Azure 应用程序”向导 | Microsoft Docs](vs-azure-tools-publish-azure-application-wizard.md)

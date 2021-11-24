@@ -1,7 +1,8 @@
 ---
+description: 检索常量的值。
 title: IDiaSymbol::get_value | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,15 +10,16 @@ helpviewer_keywords:
 ms.assetid: 2e40174a-2a61-4e5f-bb32-9e0ceec2178a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ea0a0a2df1687d965437a8977eea649f77ea1ce4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: 9801c3afa48dc7f926cb6e99ece583a4b21dbf24
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738933"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127832648"
 ---
 # <a name="idiasymbolget_value"></a>IDiaSymbol::get_value
 检索常量的值。
@@ -33,16 +35,16 @@ HRESULT get_value (
 #### <a name="parameters"></a>参数
 `pRetVal`
 
-[in，out]使用常量的值填充的 `VARIANT` 对象。
+[in, out] 使用常量的值填充的 `VARIANT` 对象。
 
 ## <a name="return-value"></a>返回值
-如果成功，将返回 `S_OK`;否则，将返回 `S_FALSE` 或错误代码。
+如果成功，则返回 `S_OK`；否则，返回 `S_FALSE` 或错误代码。
 
 > [!NOTE]
-> @No__t_0 的返回值意味着该属性对符号不可用。
+> 返回值 `S_FALSE` 意味着该属性对符号不可用。
 
 ## <a name="remarks"></a>备注
-必须先初始化提供的变量，然后才能将其传递到此方法。 有关详细信息，请参阅示例。
+必须先初始化提供的 VARIANT，然后才能将其传递给此方法。 有关详细信息，请参阅此示例。
 
 ## <a name="example"></a>示例
 
@@ -69,5 +71,5 @@ void ProcessValue2(IDiaSymbol *pSymbol)
 }
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

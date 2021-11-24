@@ -91,6 +91,6 @@ ms.locfileid: "126642445"
 
      指定跟踪器日志目录。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [任务参考](../msbuild/msbuild-task-reference.md)

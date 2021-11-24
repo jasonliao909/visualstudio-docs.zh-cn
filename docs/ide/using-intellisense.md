@@ -94,7 +94,7 @@ IntelliSense 中的图标可以通过图标修饰符传达其他含义。 它们
 | ![内部图标修饰符](../ide/media/intellisenseInternalModifier.png)       |    内部类    |    访问限于当前程序集。    |
 |![私有图标修饰符](../ide/media/intellisensePrivateModifier.png)        |    私有类    |    访问限于包含类或当前程序集中派生自包含类的类型。 （自 C# 7.2 之后可用。）    |
 
-## <a name="troubleshoot-intellisense&quot;></a>IntelliSense 故障排除
+## <a name="troubleshoot-intellisense"></a>IntelliSense 故障排除
 
 在某些情况下，IntelliSense 选项可能不会像预期那样工作。
 
@@ -105,7 +105,7 @@ IntelliSense 中的图标可以通过图标修饰符传达其他含义。 它们
 **游标位于字符串文本中。** 如果游标位于字符串周围的引号中，你将无法使用 IntelliSense，如以下示例所示：
 
 ```cpp
-MessageBox( hWnd, &quot;String literal|")
+MessageBox( hWnd, "String literal|")
 ```
 
 **自动选项关闭。** 默认情况下，IntelliSense 会自动运行，但你可以禁用它。 即使禁用了自动语句完成，仍然可以调用 IntelliSense 功能。

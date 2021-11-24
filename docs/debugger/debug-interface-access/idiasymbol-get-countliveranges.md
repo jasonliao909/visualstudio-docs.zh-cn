@@ -1,7 +1,8 @@
 ---
-title: IDiaSymbol：： get_countLiveRanges |Microsoft Docs
+description: 检索与本地符号关联的有效地址范围数。
+title: IDiaSymbol::get_countLiveRanges | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,23 +10,24 @@ helpviewer_keywords:
 ms.assetid: 55f79e1a-d4c2-42cd-ab37-d8253b20e34c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 990673afdb01b1471ad75d65036610c486e735c4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: 2f1e8effd336ff578e7991a3a600167a20d6c3a3
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127832675"
 ---
 # <a name="idiasymbolget_countliveranges"></a>IDiaSymbol::get_countLiveRanges
-检索与本地符号关联的有效地址范围的数目。
+检索与本地符号关联的有效地址范围数。
 
 ## <a name="syntax"></a>语法
 
 ```C++
-HRESULT get_countLiveRanges ( 
+HRESULT get_countLiveRanges ( 
    DWORD* count
 );
 ```
@@ -33,17 +35,17 @@ HRESULT get_countLiveRanges ( 
 #### <a name="parameters"></a>参数
  `count`
 
-弄返回地址范围的数目。
+[out] 返回地址范围数。
 
 ## <a name="return-value"></a>返回值
- 如果成功，将返回 `S_OK`;否则，将返回错误代码。
+ 如果成功，则返回 `S_OK`；否则返回错误代码。
 
 ## <a name="requirements"></a>要求
- 标头： Dia2
+ 标头：Dia2.h
 
- 库： diaguids
+ 库：diaguids.lib
 
- DLL： msdia100
+ DLL：msdia100.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

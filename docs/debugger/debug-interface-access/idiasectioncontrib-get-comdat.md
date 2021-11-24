@@ -1,7 +1,8 @@
 ---
+description: 检索一个标志，该标志指示节是否为 COMDAT 记录。
 title: IDiaSectionContrib::get_comdat | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,15 +10,16 @@ helpviewer_keywords:
 ms.assetid: 8bd9be8d-59ee-4698-b055-daba354b8dcc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ef38d5c4afcb065f7a095501e2bf5d95ee493789
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: abf3d900714d94dc051cca2b601cf041820de865
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742729"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127831987"
 ---
 # <a name="idiasectioncontribget_comdat"></a>IDiaSectionContrib::get_comdat
 检索一个标志，该标志指示节是否为 COMDAT 记录。
@@ -25,7 +27,7 @@ ms.locfileid: "72742729"
 ## <a name="syntax"></a>语法
 
 ```C++
-HRESULT get_comdat ( 
+HRESULT get_comdat ( 
    BOOL* pRetVal
 );
 ```
@@ -33,13 +35,13 @@ HRESULT get_comdat ( 
 #### <a name="parameters"></a>参数
  `pRetVal`
 
-弄如果该部分是 COMDAT 记录，则返回 `TRUE`;否则，将返回 `FALSE`。
+[out] 如果该节是 COMDAT 记录，则返回 `TRUE`；否则，返回 `FALSE`。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK`。 如果此属性不受支持，则返回 `S_FALSE`。 否则，返回错误代码。
+ 如果成功，则返回 `S_OK`。 如果不支持此属性，则返回 `S_FALSE`。 否则，返回错误代码。
 
 ## <a name="remarks"></a>备注
- COMDAT 记录是一种通用对象文件格式（COFF）记录，它使打包函数对链接器可见。
+ COMDAT 记录是通用对象文件格式 (COFF) 记录，它使包函数对链接器可见。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

@@ -1,7 +1,7 @@
 ---
 title: 修改对象样式
 titleSuffix: Blend for Visual Studio
-description: 了解如何通过应用画笔、设置可视状态和应用可重复使用的样式和模板来修改 Blend for Visual Studio 中的对象的样式。
+description: 了解如何通过应用画笔、设置视觉状态和应用可重复使用的样式和模板来修改 Blend for Visual Studio 中的对象的样式。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,11 +12,11 @@ ms.technology: vs-xaml-tools
 ms.workload:
 - multiple
 ms.openlocfilehash: 0b42efe1299d6e2a05e03de5aa99893b97603805
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122037858"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126666092"
 ---
 # <a name="modify-the-style-of-objects-in-blend-for-visual-studio"></a>修改 Blend for Visual Studio 中对象的样式
 
@@ -70,7 +70,7 @@ ms.locfileid: "122037858"
 
 - 选择“创建空白项”可从头开始。
 
-仅当编辑已创建的样式或模板时，" **编辑当前** " 选项才会出现。 对于仍在使用默认系统模板的控件，它不会出现。
+仅当编辑已创建的样式或模板时，“编辑当前形状”选项才会出现。 对于仍在使用默认系统模板的控件，它不会出现。
 
 在“创建样式资源”对话框中，可以命名样式或模板以便可以在以后使用它，也可以将样式或模板应用于该类型的所有控件。
 
@@ -78,7 +78,7 @@ ms.locfileid: "122037858"
 
 > [!NOTE]
 > 不能为控件的每种类型都创建样式或模板。 如果控件不支持它们，则痕迹导航按钮不会出现在美工板上方。
-> 若要返回到主文档的编辑范围，请单击 " **返回范围" 以** 将 "作用域返回到" ![ 图标 ](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png) 。
+> 若要返回主文档编辑范围，请单击“返回范围”![返回到图标范围](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png)。
 
 ### <a name="apply-a-style-or-template-to-a-control"></a>将样式或模板应用于控件
 
@@ -88,7 +88,7 @@ ms.locfileid: "122037858"
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>还原控件的默认样式或模板
 
-选择控件，在 "属性" 窗口中，找到 " **样式** " 或 " **模板** " 属性。 选择“高级选项”，然后在快捷菜单上单击“重置”。
+选择控件，在“属性”窗口中，找到“样式”或“模板”属性 。 选择“高级选项”，然后在快捷菜单上单击“重置”。
 
 ## <a name="visual-states"></a>可视状态
 
@@ -96,7 +96,7 @@ ms.locfileid: "122037858"
 
 ![鼠标悬停状态](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png)
 
-**观看简短视频：** !["播放 ](../designers/media/bldadminconsoleinitialconfigicon.PNG) [" 按钮管理 WPF 控件的状态](https://www.youtube.com/watch?v=m0PlkF5i6uw)。
+观看短片：![播放按钮](../designers/media/bldadminconsoleinitialconfigicon.PNG) [管理 WPF 控件的状态](https://www.youtube.com/watch?v=m0PlkF5i6uw)。
 
 ## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>资源：创建颜色、样式和模板，并在以后重复使用它们
 
@@ -104,6 +104,6 @@ ms.locfileid: "122037858"
 
 ![将颜色转换为资源按钮](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png) ![“创建颜色资源”对话框](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png)
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [使用 Blend for Visual Studio 创建 UI](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md)

@@ -11,7 +11,7 @@ ms.date: 11/11/2016
 ms.author: ghogen
 ms.openlocfilehash: 30197480c1108340a9b27c5fc28f874699defa9d
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126602123"
@@ -30,7 +30,7 @@ Publish-WebApplicationWebSite
 -Verbose
 ```
 
-## <a name="configuration"></a>配置
+## <a name="configuration"></a>Configuration
 描述部署详细信息的 JSON 配置文件的路径。
 
 | 参数 | 默认值 |
@@ -122,4 +122,4 @@ JSON 配置文件指定要部署的内容的详细信息。 它包括当创建�
 可以编辑 JSON 配置文件以更改部署的内容。 网站部分是必需的，但数据库部分则是可选的。
 
 ## <a name="next-steps"></a>后续步骤
-有关详细信息，请参阅[Publish-WebApplicationVM (Windows PowerShell 脚本) 。 ](vs-azure-tools-publish-webapplicationvm.md)
+有关详细信息，请参阅 [Publish-WebApplicationVM（Windows PowerShell 脚本）](vs-azure-tools-publish-webapplicationvm.md)。

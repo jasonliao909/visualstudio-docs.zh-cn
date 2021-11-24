@@ -1,7 +1,8 @@
 ---
+description: 检索帧的局部变量的基址。
 title: IDiaStackFrame::get_localsBase | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,23 +10,24 @@ helpviewer_keywords:
 ms.assetid: eb0bd73e-d92d-468e-a0b1-fbc279919f54
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ae3f83469e14e826802ca82d3d58686a340d9e0
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: a6af9474c0350512243c4076a3ed31d4bc08bef2
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741661"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127831821"
 ---
 # <a name="idiastackframeget_localsbase"></a>IDiaStackFrame::get_localsBase
-检索框架的局部变量的基址。
+检索帧的局部变量的基址。
 
 ## <a name="syntax"></a>语法
 
 ```C++
-HRESULT get_localsBase ( 
+HRESULT get_localsBase ( 
    ULONGLONG* pRetVal
 );
 ```
@@ -33,10 +35,10 @@ HRESULT get_localsBase ( 
 #### <a name="parameters"></a>参数
  `pRetVal`
 
-弄返回局部变量的基址。
+[out] 返回局部变量的基址。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK`。 如果属性不受支持，则返回 `S_FALSE`。 否则，返回错误代码。
+ 如果成功，则返回 `S_OK`。 如果不支持此属性，则返回 `S_FALSE`。 否则，返回错误代码。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

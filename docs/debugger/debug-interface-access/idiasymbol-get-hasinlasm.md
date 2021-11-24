@@ -1,7 +1,8 @@
 ---
-title: IDiaSymbol：： get_hasInlAsm |Microsoft Docs
+description: 检索指定函数是否包含内联程序集的标记。
+title: IDiaSymbol::get_hasInlAsm | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,18 +10,19 @@ helpviewer_keywords:
 ms.assetid: 7001c7cc-1459-4929-851b-a08066a803c6
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 336849e6818bd3b8d68558b381b8f0a0f8600028
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: 2ba0d01db80fa494fb0f1c74b82bca4d6ac396cc
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740518"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127831802"
 ---
 # <a name="idiasymbolget_hasinlasm"></a>IDiaSymbol::get_hasInlAsm
-检索一个标志，该标志指定该函数是否包含内联程序集。
+检索指定函数是否包含内联程序集的标记。
 
 ## <a name="syntax"></a>语法
 
@@ -33,20 +35,20 @@ HRESULT get_hasInlAsm(
 #### <a name="parameters"></a>参数
  `pFlag`
 
-弄如果函数具有任何内联程序集，则返回 `TRUE`;否则，将返回 `FALSE`。
+[out] 如果函数具有任何内联程序集，则返回 `TRUE`；否则返回 `FALSE`。
 
 ## <a name="return-value"></a>返回值
- 如果成功，将返回 `S_OK`;否则，将返回 `S_FALSE` 或错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回 `S_FALSE` 或错误代码。
 
 > [!NOTE]
-> @No__t_0 的返回值意味着该属性对符号不可用。
+> 返回值 `S_FALSE` 意味着该属性对符号不可用。
 
 ## <a name="requirements"></a>要求
 
-|需求|描述|
+|要求|说明|
 |-----------------|-----------------|
-|标头：|dia2|
+|标头：|dia2.h|
 |版本：|DIA SDK v8.0|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

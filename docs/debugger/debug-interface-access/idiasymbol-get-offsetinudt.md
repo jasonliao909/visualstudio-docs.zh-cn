@@ -1,7 +1,8 @@
 ---
+description: 检索 UDT 中成员的用户定义类型 (UDT) 开头的偏移量。
 title: IDiaSymbol::get_offsetInUdt | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,23 +10,24 @@ helpviewer_keywords:
 ms.assetid: 442f20d9-9d6a-44a1-83fb-c3f8c14b6c97
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f0eeffba743d7fae1d473c45eb350fbfc8bcd0b9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: beb8e93156063969b96165fc633f0dab67bbd154
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739560"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127832513"
 ---
 # <a name="idiasymbolget_offsetinudt"></a>IDiaSymbol::get_offsetInUdt
-检索 UDT 中成员的用户定义类型（UDT）的起始位置的偏移量。
+检索 UDT 中成员的用户定义类型 (UDT) 开头的偏移量。
 
 ## <a name="syntax"></a>语法
 
 ```C++
-HRESULT get_offsetInUdt( 
+HRESULT get_offsetInUdt( 
    DWORD* pRetVal)
 );
 ```
@@ -33,23 +35,23 @@ HRESULT get_offsetInUdt( 
 #### <a name="parameters"></a>参数
  `pRetVal`
 
-弄返回符号位置的偏移量（以字节为单位）。
+[out] 返回符号位置的偏移量（以字节为单位）。
 
 ## <a name="return-value"></a>返回值
- 如果成功，将返回 `S_OK`;否则，将返回 `S_FALSE` 或错误代码。
+ 如果成功，则返回 `S_OK`；否则返回 `S_FALSE` 或错误代码。
 
 > [!NOTE]
-> @No__t_0 的返回值意味着该属性对符号不可用。
+> 返回值 `S_FALSE` 意味着该属性对符号不可用。
 
 ## <a name="remarks"></a>备注
- 此函数仅用于优化生成中的本地记录。
+ 此函数仅在优化生成的本地记录中使用。
 
 ## <a name="requirements"></a>要求
- 标头： Dia2
+ 标头：Dia2.h
 
- 库： diaguids
+ 库：diaguids.lib
 
- DLL： msdia100
+ DLL：msdia100.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

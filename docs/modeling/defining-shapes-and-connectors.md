@@ -1,6 +1,6 @@
 ---
 title: 定义形状和连接线
-description: 了解可用于在特定于域的语言 (DSL) 的关系图上显示信息的几种基本形状。
+description: 了解可用于在关系图上用域特定语言 (DSL) 显示信息的多种基本类型的形状。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,19 +11,19 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: 9ece735583ff93176206d85687f20637ee2b34b4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122061254"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126671876"
 ---
-# <a name="define-shapes-and-connectors"></a>定义形状和连接线
+# <a name="define-shapes-and-connectors"></a>定义形状和连接符
 
 在域特定语言 (DSL) 中，有多种基本类型的形状，可用于在关系图上显示信息。
 
-## <a name="basic-types-of-shapes-and-connectors"></a><a name="shapeTypes"></a> 形状和连接线的基本类型
+## <a name="basic-types-of-shapes-and-connectors"></a><a name="shapeTypes"></a> 形状和连接符的基本类型
 
-DSL 关系图显示按线条或 *连接符* 了的 *形状* 集合。 通常情况下（但并非总是如此）：
+DSL 关系图显示了由线条或连接符互连的形状的集合。  通常情况下（但并非总是如此）：
 
 - 形状是模型元素的可视表示形式。
 
@@ -39,7 +39,7 @@ DSL 关系图显示按线条或 *连接符* 了的 *形状* 集合。 通常情�
 
 |形状类型|说明|
 |-|-|
-|几何形状|通用矩形或椭圆形形状。 可在相对于形状边界的特定位置中显示文本和图标修饰器。 您还可以将形状嵌套在 geometry 形状中。|
+|几何形状|通用矩形或椭圆形形状。 可在相对于形状边界的特定位置中显示文本和图标修饰器。 你也可以将形状嵌套在几何形状内。|
 |隔离舱形状|包含标头和隔离舱的矩形（如 UML 类）。 每个隔离舱都可包含文本行列表。<br /><br /> 这些行通常表示嵌入在由形状表示的元素下方的元素。 有关示例，请从类关系图解决方案模板中创建 DSL。|
 |图像形状|显示图像的形状。|
 |端口形状|设计为附加到另一个形状的轮廓的小矩形。 通常用于组件模型中。<br /><br /> 由端口表示的模型元素通常嵌入在由父形状表示的元素下。 有关示例，请通过使用组件解决方案模板创建 DSL。<br /><br /> 默认情况下，端口形状可沿其父形状的侧边滑动。 可定义边界规则以将其约束到特定位置。<br /><br /> 通过使端口形状变得极小并使其透明，可将其用于在其父形状的图面上提供一个固定连接点。|

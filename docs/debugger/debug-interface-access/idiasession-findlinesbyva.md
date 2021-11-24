@@ -1,7 +1,8 @@
 ---
+description: 检索包含在指定的虚拟地址 (VA) 范围内的行的行号信息。
 title: IDiaSession::findLinesByVA | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,18 +10,19 @@ helpviewer_keywords:
 ms.assetid: f647eee9-a73c-483b-9fe9-21f42e560a7b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 2513825fd2b6f4e6035f9f23295f0c9f00385d0a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: fca9006f0b7a556be022eaac9682aa58b9e70228
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742074"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127831889"
 ---
 # <a name="idiasessionfindlinesbyva"></a>IDiaSession::findLinesByVA
-检索指定虚拟地址（VA）范围内所包含行的行号信息。
+检索包含在指定的虚拟地址 (VA) 范围内的行的行号信息。
 
 ## <a name="syntax"></a>语法
 
@@ -35,15 +37,15 @@ HRESULT findLinesByVA (
 #### <a name="parameters"></a>参数
 `va`
 
-中指定地址作为 VA。
+[in] 将地址指定为 VA。
 
 `length`
 
-中指定包含此查询的地址范围的字节数。
+[in] 指定此查询要涵盖的地址范围的字节数。
 
 `ppResult`
 
-弄返回一个[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)对象，该对象包含涵盖指定地址范围的所有行号的列表。
+[out] 返回一个 [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) 对象，该对象包含涵盖指定地址范围的所有行号的列表。
 
 ## <a name="example"></a>示例
 此示例演示一个函数，该函数使用函数的虚拟地址和长度获取函数中包含的所有行号。
@@ -64,6 +66,6 @@ IDiaEnumLineNumbers *GetLineNumbersByVA(IDiaSymbol *pFunc, IDiaSession *pSession
 }
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

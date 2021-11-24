@@ -1,6 +1,6 @@
 ---
 title: T4 文本模板指令
-description: 了解 T4 测试模板指令以及它们如何向文本模板转换引擎提供说明。
+description: 了解 T4 测试模板指令以及它们如何向文本模板转换引擎提供指令。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -19,7 +19,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 59dee856b6779328d7382d2b816e55b66c6f50e9
 ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "126663869"
@@ -80,4 +80,4 @@ ms.locfileid: "126663869"
 <#@ CleanupBehavior processor="T4VSHost" CleanupAfterProcessingtemplate="true" #>
 ```
 
-此外，您还可以创建自己的指令。 有关详细信息，请参阅 [创建自定义 T4 文本模板指令处理器](../modeling/creating-custom-t4-text-template-directive-processors.md)。 如果使用可视化和建模 SDK 来创建域特定语言 (DSL)，将作为 DSL 的一部分生成指令处理器。
+此外，您还可以创建自己的指令。 有关详细信息，请参阅[创建自定义 T4 文本模板指令处理器](../modeling/creating-custom-t4-text-template-directive-processors.md)。 如果使用可视化和建模 SDK 来创建域特定语言 (DSL)，将作为 DSL 的一部分生成指令处理器。

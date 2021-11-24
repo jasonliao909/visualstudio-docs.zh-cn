@@ -1,7 +1,8 @@
 ---
-title: IDiaSymbol：： get_framePointerPresent |Microsoft Docs
+description: 检索一个标记，该标记指定帧指针是否存在。
+title: IDiaSymbol::get_framePointerPresent | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,23 +10,24 @@ helpviewer_keywords:
 ms.assetid: d036090a-1651-454d-9130-b798f58ba053
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fce085f134b844d7e53e19d9e2ec057aa8a89ca
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: 55706796a929e720b749d464c422c141415e2743
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740671"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127832700"
 ---
 # <a name="idiasymbolget_framepointerpresent"></a>IDiaSymbol::get_framePointerPresent
-检索一个标志，该标志指定是否存在帧指针。 当[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)设置为 `SymTagFunction` 时使用。
+检索一个标记，该标记指定帧指针是否存在。 在 [SymTagEnum Enumeration](../../debugger/debug-interface-access/symtagenum.md) 设置为 `SymTagFunction` 时使用。
 
 ## <a name="syntax"></a>语法
 
 ```C++
-HRESULT get_framePointerPresent( 
+HRESULT get_framePointerPresent( 
    BOOL* pRetVal
 );
 ```
@@ -33,22 +35,22 @@ HRESULT get_framePointerPresent( 
 #### <a name="parameters"></a>参数
  `pRetVal`
 
-[out]]如果存在帧指针，则返回 `TRUE`;否则，将返回 `FALSE`。
+[out] 如果帧指针存在，则返回 `TRUE`； 否则，返回 `FALSE`。
 
 ## <a name="return-value"></a>返回值
- 如果成功，将返回 `S_OK`;否则，将返回 `S_FALSE` 或错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回 `S_FALSE` 或错误代码。
 
 > [!NOTE]
-> @No__t_0 的返回值意味着该属性对符号不可用。
+> 返回值 `S_FALSE` 意味着该属性对符号不可用。
 
 ## <a name="remarks"></a>备注
 
 ## <a name="requirements"></a>要求
- 标头： Dia2
+ 标头：Dia2.h
 
- 库： diaguids
+ 库：diaguids.lib
 
- DLL： msdia100
+ DLL：msdia100.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

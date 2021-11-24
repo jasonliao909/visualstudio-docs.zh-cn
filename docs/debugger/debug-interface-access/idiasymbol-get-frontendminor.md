@@ -1,7 +1,8 @@
 ---
-title: IDiaSymbol：： get_frontEndMinor |Microsoft Docs
+description: 检索前端次要版本号。
+title: IDiaSymbol::get_frontEndMinor | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,23 +10,24 @@ helpviewer_keywords:
 ms.assetid: 40792153-827c-4859-be7c-6aa16d5abab6
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b329cd69d010cba4e3667bde0d7b976389037bb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: e0e49546da264bff8c1e9bddd32e8a973223c02d
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740649"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127832697"
 ---
 # <a name="idiasymbolget_frontendminor"></a>IDiaSymbol::get_frontEndMinor
-检索前端次版本号。
+检索前端次要版本号。
 
 ## <a name="syntax"></a>语法
 
 ```C++
-HRESULT get_frontEndMinor ( 
+HRESULT get_frontEndMinor ( 
    DWORD* pRetVal
 );
 ```
@@ -33,25 +35,25 @@ HRESULT get_frontEndMinor ( 
 #### <a name="parameters"></a>参数
  `pRetVal`
 
-弄返回前次版本号。
+[out] 返回前端次要版本号。
 
 ## <a name="return-value"></a>返回值
- 如果成功，将返回 `S_OK`;否则，将返回 `S_FALSE` 或错误代码。
+ 如果成功，则返回 `S_OK`；否则返回 `S_FALSE` 或错误代码。
 
 > [!NOTE]
-> @No__t_0 的返回值意味着该属性对符号不可用。
+> 返回值 `S_FALSE` 意味着该属性对符号不可用。
 
 ## <a name="remarks"></a>备注
- 编译器通常包含两个主要元素：前端（分析器），用于处理将源代码分析成中间窗体，并将中间窗体转换为程序集。 前端的版本不同于后端，这种情况并不常见。
+ 编译器通常由两个主要元素组成：前端（分析器），负责将源代码分析为中间形式；后端（代码生成器），将中间形式转换为程序集。 前端与后端具有不同版本的情况并不少见。
 
- 前端或后端版本号由三个部分组成： \<major >。\<minor >。\<build >，其中 \<major > 是主版本号，\<minor > 是次版本号，\<build > 是生成号。 例如，13.10.3077。
+ 前端或后端版本号由三部分组成：\<major>.\<minor>.\<build>，其中 \<major> 是主版本号，\<minor> 是次要版本号，\<build> 是生成号。 例如，13.10.3077。
 
 ## <a name="requirements"></a>要求
 
-|需求|描述|
+|要求|说明|
 |-----------------|-----------------|
-|标头：|dia2|
+|标头：|dia2.h|
 |版本：|DIA SDK v7.0|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

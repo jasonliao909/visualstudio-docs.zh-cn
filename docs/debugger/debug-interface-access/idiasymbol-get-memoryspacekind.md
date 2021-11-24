@@ -1,21 +1,23 @@
 ---
-title: IDiaSymbol：： get_memorySpaceKind |Microsoft Docs
+description: 检索内存空间类型。
+title: IDiaSymbol::get_memorySpaceKind | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 9a63b298-8577-4c15-8595-530558d41bf1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d146df46defd0b0d052e0d65d5c40ae58a404d6
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.openlocfilehash: fae68b092a89d0097fd123a19fe591e82ea12ea0
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739803"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127831733"
 ---
 # <a name="idiasymbolget_memoryspacekind"></a>IDiaSymbol::get_memorySpaceKind
 检索内存空间类型。
@@ -30,10 +32,10 @@ HRESULT get_memorySpaceKind(
 #### <a name="parameters"></a>参数
  `pRetVal`
 
-弄指向保存内存空间种类的 `DWORD` 的指针。
+[out] 指向保留内存空间类型的 `DWORD` 的指针。
 
 ## <a name="return-value"></a>返回值
- 如果成功，将返回 `S_OK`;否则，将返回 `S_FALSE` 或错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回 `S_FALSE` 或错误代码。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

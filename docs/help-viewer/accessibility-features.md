@@ -1,6 +1,6 @@
 ---
 title: 帮助查看器的辅助功能
-description: 查看屏幕中的辅助功能列表，Microsoft Help Viewer键盘访问、字号、窗口大小和帮助查看器位置。
+description: 查看 Microsoft Help Viewer 中的辅助功能列表，涵盖键盘访问、字号、窗口大小和 Help Viewer 的位置。
 ms.date: 11/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,11 +14,11 @@ ms.technology: vs-help-viewer
 ms.workload:
 - multiple
 ms.openlocfilehash: 9aff2c09e740aff68f98a27df7dff326cac7a0ea
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122109703"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663975"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Help Viewer 的辅助功能
 Microsoft 致力于使其产品和服务更便于每个人使用。 本主题包含有关功能、产品和服务的信息，有助于让用户可以使用 Microsoft Help Viewer 的丰富功能。
@@ -35,7 +35,7 @@ Microsoft 致力于使其产品和服务更便于每个人使用。 本主题包
 ## <a name="help-viewer-position"></a>帮助查看器位置
 可以通过将帮助查看器的标题栏拖到其他位置来重新定位帮助查看器。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [Microsoft Help Viewer](../help-viewer/overview.md)
-- [Help Viewer (快捷键) ](../help-viewer/shortcut-keys.md)
+- [快捷键 (Help Viewer)](../help-viewer/shortcut-keys.md)

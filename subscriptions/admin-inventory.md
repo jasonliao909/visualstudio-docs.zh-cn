@@ -1,18 +1,18 @@
 ---
 title: Visual Studio 订阅中的预生产库存 | Visual Studio Marketplace
 author: evanwindom
-ms.author: amast
-manager: amast
+ms.author: cabuschl
+manager: cabuschl
 ms.assetid: 7d74e113-8fb2-490e-8502-48cce7b1327a
 ms.date: 10/08/2021
 ms.topic: conceptual
 description: 了解管理员管理预生产库存的职责
-ms.openlocfilehash: 1d38c9e3f06c560df54b1a6af7592f5334603923
-ms.sourcegitcommit: a1c18c491e310b00a43e76a911f778e643cd8f8d
+ms.openlocfilehash: bfb62ff45d5a61311ea4dec5126be21ad6cf2863
+ms.sourcegitcommit: 7b2b00da38905c4560f823090c3140be77803711
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "132994869"
+ms.lasthandoff: 10/12/2021
+ms.locfileid: "129813097"
 ---
 # <a name="inventory-of-pre-production-environment"></a>清点预生产环境
 Visual Studio 订阅对用户而非设备计数，从而简化了资产管理。

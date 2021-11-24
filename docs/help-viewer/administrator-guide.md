@@ -1,6 +1,6 @@
 ---
 title: Help Viewer 管理员指南
-description: 阅读Microsoft Help Viewer管理员指南。 从 Internet 部署本地帮助内容，或在客户端计算机上部署预安装的本地帮助内容。
+description: 阅读 Microsoft Help Viewer 管理员指南。 从 Internet 部署本地帮助内容，或在客户端计算机上部署预安装的本地帮助内容。
 ms.date: 11/01/2017
 ms.topic: conceptual
 ms.assetid: 4340c69f-b96b-4932-bb82-38b16a5ab149
@@ -11,11 +11,11 @@ ms.technology: vs-help-viewer
 ms.workload:
 - multiple
 ms.openlocfilehash: f7f7256c806c0e7198569c2d323895d74f78ee03
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: MT
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122151985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663971"
 ---
 # <a name="help-viewer-administrator-guide"></a>Help Viewer 管理员指南
 
@@ -61,7 +61,7 @@ ms.locfileid: "122151985"
 
 #### <a name="to-install-english-content-from-the-internet"></a>从 Internet 安装英语内容
 
-1. 选择 **"开始**"，然后选择"**运行"。**
+1. 选择“开始”，然后选择“运行”。
 
 2. 键入下列命令：
 
@@ -80,7 +80,7 @@ ms.locfileid: "122151985"
 - 用户必须具有管理员权限才能在安装之后更新、添加或移除本地帮助内容。
 
     > [!TIP]
-    > 如果用户没有管理员权限，建议禁用帮助查看器中的"管理内容"选项卡。 有关详细信息，请参阅 [Help Content Manager 重写](../help-viewer/behavior-overrides.md)。
+    > 如果用户没有管理员权限，则建议在 Help Viewer 中禁用“管理内容”选项卡。 有关详细信息，请参阅 [Help Content Manager 重写](../help-viewer/behavior-overrides.md)。
 
 注意：
 
@@ -118,7 +118,7 @@ ms.locfileid: "122151985"
 
 1. 创建要将内容复制到其中的文件夹以便将来进行部署。 例如：C:\VSHelp。
 
-2. 打开 *cmd.exe* 管理员权限的登录名。
+2. 使用管理员权限打开 cmd.exe。
 
 3. 导航到在步骤 1 中创建的文件夹。
 
@@ -134,7 +134,7 @@ ms.locfileid: "122151985"
 
      例如，将 C:\VSHelp 中的内容复制到 \\\myserver\VSHelp。
 
-2. 创建 *.bat* 文件，以包含帮助内容的部署脚本。 由于客户端可能对在推送过程中删除的任何文件具有读取锁定，所以应在推送更新之前关闭客户端。 例如：
+2. 创建用于包含帮助内容的部署脚本的 .bat 文件。 由于客户端可能对在推送过程中删除的任何文件具有读取锁定，所以应在推送更新之前关闭客户端。 例如：
 
     ```cmd
     REM - copy pre-ripped content to ProgramData
@@ -144,9 +144,9 @@ ms.locfileid: "122151985"
 
 3. 在要安装帮助内容的本地计算机上运行 .bat 文件。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
-- [帮助内容管理器的命令行参数](../help-viewer/command-line-arguments.md)
-- [帮助内容管理器替代](../help-viewer/behavior-overrides.md)
+- [Help Content Manager 的命令行参数](../help-viewer/command-line-arguments.md)
+- [Help Content Manager 重写](../help-viewer/behavior-overrides.md)
 - [Microsoft Help Viewer](../help-viewer/overview.md)
 - [Help Viewer SDK](../extensibility/internals/microsoft-help-viewer-sdk.md)
