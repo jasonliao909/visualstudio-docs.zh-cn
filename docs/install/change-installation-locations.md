@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: be2c18e531af3a0aa6dd059206ce81db7734ab08
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: e242542b62546a6a53f142ecced26edefe626fb5
+ms.sourcegitcommit: 5af130d3ff64b71d415819e42f4f2efb2ae36a6a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128431793"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "133117480"
 ---
 # <a name="select-the-installation-locations-in-visual-studio"></a>在 Visual Studio 中选择安装位置
 
@@ -118,7 +118,7 @@ ms.locfileid: "128431793"
 
 1. 安装 Visual Studio 时，选择“安装位置”选项卡。
 
-   :::image type="content" source="media/vs-2022/vs-installer-installation-locations-cplusplus-workload.png" border="false" alt-text="显示 Visual Studio 安装程序的“安装位置”选项卡的屏幕截图。":::
+   :::image type="content" source="media/vs-2022/vs-installer-installation-locations-tab.png" border="false" alt-text="显示 Visual Studio 安装程序的“安装位置”选项卡的屏幕截图。":::
 
 1. 在“Visual Studio IDE”部分中，接受默认路径。 Visual Studio 将安装核心产品并包含特定于此版本的 Visual Studio 的文件。
 

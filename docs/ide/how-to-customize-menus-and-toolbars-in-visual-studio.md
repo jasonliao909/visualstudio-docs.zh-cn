@@ -2,7 +2,7 @@
 title: 自定义菜单和工具栏
 description: 了解如何自定义 Visual Studio 菜单和工具栏，并了解如何自定义菜单和工具栏中包含的任意命令。
 ms.custom: SEO-VS-2020
-ms.date: 09/01/2021
+ms.date: 11/24/2021
 ms.topic: how-to
 f1_keywords:
 - vs.renametoolbar
@@ -30,12 +30,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 8223dfb14ab626e6509cf0df32cba05526fc707f
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 6a93698d1bbc2f7240ff43f3e81a8fcb074b96af
+ms.sourcegitcommit: 5af130d3ff64b71d415819e42f4f2efb2ae36a6a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126644448"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "133117466"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>如何：在 Visual Studio 中自定义菜单和工具栏
 
@@ -54,7 +54,9 @@ ms.locfileid: "126644448"
 
     - 若要添加菜单，请选择“添加新菜单”按钮，选择“修改所选内容”按钮，然后命名要添加的菜单。
 
+        ::: moniker range="vs-2017"
         ![显示如何添加菜单的“自定义”对话框](../ide/media/addmenu.png)
+        ::: moniker-end
 
     - 若要删除菜单，请在“控件”列表中选择该菜单，然后选择“删除”按钮。
 
@@ -70,7 +72,9 @@ ms.locfileid: "126644448"
 
     - 若要添加工具栏，请选择“新建”按钮，指定要添加的工具栏的名称，然后选择“确定”按钮。
 
+        ::: moniker range="vs-2017"
         ![显示如何添加工具栏的“自定义”对话框](../ide/media/addtoolbar.png)
+        ::: moniker-end
 
     - 若要删除自定义工具栏，请在“工具栏”列表中选择该工具栏，然后选择“删除”按钮。
 
@@ -101,7 +105,9 @@ ms.locfileid: "126644448"
 
         在“添加命令”对话框中，依次选择“类别”列表中的项和“命令”列表中的项，然后选择“确定”按钮。
 
+        ::: moniker range="vs-2017"
         ![Visual Studio 中的“添加命令”对话框](../ide/media/addcommand.png)
+        ::: moniker-end
 
     - 若要删除命令，请在“控件”列表中选择该命令，然后选择“删除”按钮。
 
