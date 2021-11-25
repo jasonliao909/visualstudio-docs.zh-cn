@@ -1,7 +1,7 @@
 ---
 title: 添加、更新或删除 WCF 数据服务引用
 description: 查看如何添加、更新或删除 Windows Communication Foundation (WCF) 数据服务引用。
-ms.date: 11/04/2016
+ms.date: 11/22/2021
 ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -17,29 +17,26 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 46834208ab567ce4071c15a488ed14285328371e
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 662e93d7796ac9d611c274ace1f419a4f61e6111
+ms.sourcegitcommit: 8671132ee0425b273b060fa35c75657e7ae02583
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126601150"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "132924246"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>如何：添加、更新或删除 WCF 数据服务引用
 
-::: moniker range="vs-2017"
-服务引用使项目能够访问一个或多个 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]。 使用“添加服务引用”对话框通过本地、局域网或 Internet 在当前解决方案中搜索 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]。
-::: moniker-end
-::: moniker range=">=vs-2019"
-可以使用解决方案资源管理器中的连接服务节点访问 Microsoft WCF Web 服务引用提供程序，该程序可管理 Windows Communication Foundation (WCF) 数据服务引用  。
-::: moniker-end
+对于 .NET Framework 项目，服务引用使项目能够访问一个或多个 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]。 使用“添加服务引用”对话框通过本地、局域网或 Internet 在当前解决方案中搜索 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]。
+
+:::moniker range=">=vs-2019"
+对于 .NET Core 项目，可使用解决方案资源管理器中的连接服务节点访问 Microsoft WCF Web Service Reference 提供程序，该程序可管理 Windows Communication Foundation (WCF) 数据服务引用  。
+:::moniker-end
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
 ## <a name="add-a-wcf-service-reference"></a>添加 WCF 服务引用
 
-### <a name="to-add-a-reference-to-an-external-service"></a>添加对外部服务的引用
-
-::: moniker range="vs-2017"
+### <a name="to-add-a-reference-to-an-external-service-net-framework-projects"></a>若要添加对外部服务的引用（.NET Framework 项目）
 
 1. 在解决方案资源管理器中，右键单击要添加服务的项目的名称，然后单击“添加服务引用” 。
 
@@ -61,8 +58,10 @@ ms.locfileid: "126601150"
 1. 单击“确定”将参考添加到项目中。
 
      然后会生成服务客户端（代理），描述服务的元数据也会添加到 app.config 文件中。
-::: moniker-end
-::: moniker range=">=vs-2019"
+
+:::moniker range=">=vs-2019"
+### <a name="to-add-a-reference-to-an-external-service-net-core-projects-including-net-5-and-later"></a>若要添加对外部服务的引用（.NET Core 项目，包括 .NET 5 及更高版本）
+
 1. 在解决方案资源管理器中，双击或点击连接服务节点 。
 
    此时会打开“配置服务”选项卡。
@@ -72,7 +71,6 @@ ms.locfileid: "126601150"
    此时会显示“配置 WCF Web 服务引用”对话框。
 
    ![WCF Web 服务提供程序对话框的屏幕截图](media/vs-2019/configure-wcf-web-service-reference-dialog.png)
-
 
 1. 在“URI”框中，输入服务的 URL，然后单击“转到”以搜索服务 。 如果服务实施用户名和密码安全性，将提示你输入用户名和密码。
 
@@ -90,12 +88,9 @@ ms.locfileid: "126601150"
 1. 单击“完成”将参考添加到项目中。
 
      然后会生成服务客户端（代理），描述服务的元数据也会添加到 app.config 文件中。
+:::moniker-end
 
-::: moniker-end
-
-### <a name="to-add-a-reference-to-a-service-in-the-current-solution"></a>在当前解决方案中添加对服务的引用
-
-::: moniker range="vs-2017"
+### <a name="to-add-a-reference-to-a-service-in-the-current-solution-net-framework-projects"></a>若要在当前解决方案中添加对服务的引用（.NET Framework 项目）
 
 1. 在解决方案资源管理器中，右键单击要添加服务的项目的名称，然后单击“添加服务引用” 。
 
@@ -112,8 +107,11 @@ ms.locfileid: "126601150"
 1. 单击“确定”将参考添加到项目中。
 
     然后会生成服务客户端（代理），描述服务的元数据也会添加到 app.config 文件中。
-::: moniker-end
-::: moniker range=">=vs-2019"
+
+:::moniker range=">=vs-2019"
+
+### <a name="to-add-a-reference-to-a-service-in-the-current-solution-net-core-projects"></a>若要在当前解决方案中添加对服务的引用（.NET Core 项目）
+
 1. 在解决方案资源管理器中，双击或点击连接服务节点 。 
 
    此时会打开“配置服务”选项卡。
@@ -134,7 +132,7 @@ ms.locfileid: "126601150"
 
     然后会生成服务客户端（代理），描述服务的元数据也会添加到 app.config 文件中。
 
-::: moniker-end
+:::moniker-end
 
 ## <a name="update-a-service-reference"></a>更新服务引用
 

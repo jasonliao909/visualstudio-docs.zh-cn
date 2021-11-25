@@ -1,18 +1,18 @@
 ---
 title: 处理 Visual Studio 订阅中许可证超额分配的问题 | Microsoft Docs
 author: evanwindom
-ms.author: cabuschl
-manager: cabuschl
+ms.author: amast
+manager: amast
 ms.assetid: a747100c-6f08-41a4-aaad-05099741742b
 ms.date: 05/18/2021
 ms.topic: conceptual
 description: 了解管理员可如何解决订阅超额分配的问题
-ms.openlocfilehash: bb545d6bef8f50e1548e31ad6db73a84e6804f53
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: e557b0596e86abfa53b9076ccdb4914e9ef3d20c
+ms.sourcegitcommit: 17202f3ac3f7f17ce3756b57dd56321f7254d1dd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128429509"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "133092861"
 ---
 # <a name="over-allocated-subscriptions"></a>超额分配的订阅
 有时，添加订阅者后，订单发生变化，这可能会导致已分配的订阅数量超过公司拥有的许可证数量。 这称为“超额分配”。  
