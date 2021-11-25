@@ -9,12 +9,12 @@ keywords: Bridge to Kubernetes, Docker, Kubernetes, Azure, 容器
 manager: jmartens
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: bc05a9aa1c7a64c5176e8aee5500658035e2fe11
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 4b44c95a4c7567d3607ffb42201034b4917d0c6b
+ms.sourcegitcommit: 8671132ee0425b273b060fa35c75657e7ae02583
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "127832951"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "132924138"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Kubernetes 桥接的工作原理
 

@@ -1,18 +1,18 @@
 ---
 title: Visual Studio 订阅管理门户入门 | Visual Studio Marketplace
 author: evanwindom
-ms.author: cabuschl
-manager: cabuschl
+ms.author: amast
+manager: amast
 ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
-ms.date: 10/28/2020
+ms.date: 11/22/2020
 ms.topic: overview
 description: 了解如何开始在订阅管理门户中管理组织的 Visual Studio 订阅。
-ms.openlocfilehash: f6e68e3286b31ba3a0dc5a2f2b5c45683a212725
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 70b6fd55ae68a6b8ab93ca2f537bca725d569ff0
+ms.sourcegitcommit: 8671132ee0425b273b060fa35c75657e7ae02583
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128429487"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "132924155"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio 订阅管理员门户概述
 
@@ -57,7 +57,7 @@ Visual Studio 订阅管理门户提供了集中管理组织订阅的工具。
 - [Visual Studio 授权白皮书](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [比较订阅选项和定价](https://visualstudio.microsoft.com/vs/pricing)
 - [比较 Visual Studio IDE 功能](https://visualstudio.microsoft.com/vs/compare)
-- [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)
+- [针对管理员的订阅支持](https://aka.ms/VSSAdminSupport)
 
 ## <a name="see-also"></a>另请参阅
 - [Visual Studio 文档](/visualstudio/)

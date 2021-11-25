@@ -24,19 +24,32 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: a9f714b4e66f14e313fa53466db80c99dfbef50f
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 8c018ea86dc3bd3c2bcd5f676c7ef33b17cbb217
+ms.sourcegitcommit: 8671132ee0425b273b060fa35c75657e7ae02583
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126601065"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "132924272"
 ---
 # <a name="validate-data-in-datasets"></a>验证数据集中的数据
 验证数据是确认输入到数据对象中的值符合数据集架构内的约束的过程。 验证过程还会确认这些值遵循已为应用程序建立的规则。 在将更新发送到基础数据库之前对数据进行验证是一种很好的做法。 这可以减少错误，还能减少应用程序和数据库之间的潜在往返行程次数。
 
 可以通过在数据集本身中构建验证检查，来确认写入数据集的数据是有效的。 无论如何执行更新（无论是通过表单中的控件直接更新、在组件中更新，还是通过其他方式更新），数据集都可以检测数据。 由于数据集是应用程序的一部分（与数据库后端不同），因此在其中构建特定于应用程序的验证是符合逻辑的。
 
-向应用程序添加验证的最佳位置是数据集的分部类文件中。 在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 或 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 中打开数据集设计器，然后双击要为其创建验证的列或表。 此操作会自动创建 <xref:System.Data.DataTable.ColumnChanging> 或 <xref:System.Data.DataTable.RowChanging> 事件处理程序。
+向应用程序添加验证的最佳位置是数据集的分部类文件中。 在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 或 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 中打开数据集设计器，然后双击要为其创建验证的列或表。 此操作将打开代码文件，你可在该文件中创建 <xref:System.Data.DataTable.ColumnChanging> 或 <xref:System.Data.DataTable.RowChanging> 事件处理程序。
+
+```csharp
+private static void OnColumnChanging(object sender, DataColumnChangeEventArgs e)
+{
+
+}
+```
+
+```vb
+Private Shared Sub OnColumnChanging(sender As Object, e As DataColumnChangeEventArgs)
+ 
+End Sub
+```
 
 ## <a name="validate-data"></a>验证数据
 数据集内的验证通过以下方式完成：

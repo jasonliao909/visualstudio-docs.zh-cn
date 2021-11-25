@@ -1,7 +1,7 @@
 ---
 title: 更改主题、字体、文本和对比度以提供辅助功能
 description: 了解如何更改 Visual Studio 颜色主题、字体颜色、文本大小和额外的对比度颜色，以提供辅助功能。
-ms.date: 10/31/2021
+ms.date: 11/22/2021
 ms.topic: how-to
 ms.custom: contperf-fy21q1
 helpviewer_keywords:
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: ef8beedeee3b8ff71a1b7298df1fd7dd4267e35e
-ms.sourcegitcommit: aff49629012f4d5fa07c75ea0ca5bf53d28aa173
+ms.openlocfilehash: 67c6693e91c210e3ad938c8f2bc2a22fb2dbf1d4
+ms.sourcegitcommit: 8671132ee0425b273b060fa35c75657e7ae02583
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "131662822"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "132924259"
 ---
 # <a name="how-to-change-fonts-colors-and-themes-in-visual-studio"></a>如何：在 Visual Studio 中更改字体、颜色和主题
 
@@ -164,7 +164,42 @@ ms.locfileid: "131662822"
 
 ## <a name="accessibility-options"></a>辅助功能选项
 
+::: moniker range="vs-2022"
+
+如果你有神经发育性疾病或者是弱视，这里有字体选项和颜色主题供你使用：
+
+- 可使用 [Cascadia Code](#use-the-cascadia-code-font) 字体，它向字母、数字和字符的大小添加了更多权重，帮助用户区分这三者。 Cascadia Code 还包括编码连字。
+- 可选择对计算机上的所有应用和 UI 使用[高对比度](#use-windows-high-contrast)颜色主题，也可仅对 Visual Studio 使用[额外对比度](#use-visual-studio-extra-contrast)颜色主题。
+
+### <a name="use-the-cascadia-code-font"></a>使用 Cascadia Code 字体
+
+新的 [Cascadia Code](https://github.com/microsoft/cascadia-code#welcome) 字体包括 Cascade Mono，后者是 Visual Studio 2022 中的默认字体 。 这些字体不仅更容易阅读，而且 Cascadia Code 字体还包含编码连字，它可将字符序列转换为字形。 通过编码连字（也称为字形），用户可更容易在认知上关联其背后的含义。
+
+下面的屏幕截图显示了默认 Cascadia Mono 字体的示例，并列出了你在编码时可能发现自己在使用的一系列字符（包含数学符号）。
+
+:::image type="content" source="media/vs-2022/cascadia-mono-font.png" alt-text="编辑器中 Cascadia Mono 字体示例的屏幕截图。":::
+
+下面的屏幕截图显示了 Cascadia Code 字体的示例，其中前面所示的同一系列字符转换为编码连字（也称为字形）。
+
+:::image type="content" source="media/vs-2022/cascadia-code-font.png" alt-text="编辑器中 Cascadia Code 字体示例的屏幕截图。":::
+
+请注意，Cascadia Code 屏幕截图中的最后一行文本显示了重复字符之间的空格是如何缩短的，这也使得它们更易于阅读。
+
+下面介绍如何切换使用不同的 Cascadia 字体：
+
+1. 转到“工具”>“选项”>“环境”>“字体和颜色”   。
+
+1. 从“字体”下拉列表中，选择所需的 Cascadia Code 字体或 Cascadia Mono 字体，然后选择“确定”   。
+
+    :::image type="content" source="media/vs-2022/cascadia-font-options.png" alt-text="“选项”对话框中提供的 Cascadia 字体的屏幕截图。":::
+
+::: moniker-end
+
+::: moniker range="<=vs-2019"
+
 如果视力不好，可以选择颜色主题选项。 可以为计算机上的所有应用和 UI 使用高对比度选项，或使用仅适用于 Visual Studio 的额外对比度选项。
+
+::: moniker-end
 
 ### <a name="use-windows-high-contrast"></a>使用 Windows 高对比度
 

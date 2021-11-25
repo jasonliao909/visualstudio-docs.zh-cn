@@ -1,6 +1,6 @@
 ---
-title: 使用连接服务添加 Azure CosmosDB | Microsoft Docs
-description: 通过使用 Visual Studio 添加连接服务，添加 Azure CosmosDB 支持到你的应用
+title: 使用连接服务添加 Azure Cosmos DB | Microsoft Docs
+description: 通过使用 Visual Studio 添加连接服务，向应用添加 Azure Cosmos DB 支持
 author: AngelosP
 manager: jmartens
 ms.technology: vs-azure
@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 10271830f3b46633138ef1d9a3e9b6c84e8b89f5
-ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
+ms.openlocfilehash: 69e6fa19c1f89f5756096cfd41e533857df47476
+ms.sourcegitcommit: 8671132ee0425b273b060fa35c75657e7ae02583
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "129430742"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "132924168"
 ---
 # <a name="add-azure-cosmos-db-to-your-app-by-using-visual-studio-connected-services"></a>使用 Visual Studio 连接服务将 Azure Cosmos DB 添加到你的应用
 
