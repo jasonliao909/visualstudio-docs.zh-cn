@@ -2,7 +2,7 @@
 title: 查找并安装扩展
 description: 了解 Visual Studio 中的扩展并了解如何管理扩展，以便获得控件、示例、模板、工具以及其他所需组件。
 ms.custom: SEO-VS-2020
-ms.date: 08/30/2021
+ms.date: 11/23/2021
 ms.topic: conceptual
 f1_keywords:
 - vs.ExtensionManager
@@ -17,18 +17,28 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 891db6e62d33220494d6c19fe08e17f52dd810cb
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 6aaf9a49d7f12014936c6de4dacbbdda7d6c0dd7
+ms.sourcegitcommit: a1c18c491e310b00a43e76a911f778e643cd8f8d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126737121"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "132995564"
 ---
 # <a name="manage-extensions-for-visual-studio"></a>管理 Visual Studio 的扩展
 
 扩展是在 Visual Studio 内运行的代码包，并且提供了新的或者改进后的功能。 这些扩展可以是控件、示例、模板、工具或其他组件，用于向 Visual Studio 添加功能，例如 [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsls-vs) 或者 [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCode)。
 
+::: moniker range="vs-2022"
+
+若要了解如何创建 Visual Studio 扩展，请参阅 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。 若要了解如何使用扩展，请参阅 [Visual Studio Marketplace](https://marketplace.visualstudio.com) 上的单独扩展页。 如需了解如何查找扩展，请参阅 [Visual Studio 2022 中我最喜欢的扩展在哪儿？](https://devblogs.microsoft.com/visualstudio/where-are-my-favorite-extensions-in-visual-studio-2022/)博客文章。
+
+::: moniker-end
+
+::: moniker range="<=vs-2019"
+
 若要了解如何创建 Visual Studio 扩展，请参阅 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。 若要了解如何使用扩展，请参阅 [Visual Studio Marketplace](https://marketplace.visualstudio.com) 上的单独扩展页。
+
+::: moniker-end
 
 ::: moniker range="vs-2017"
 
