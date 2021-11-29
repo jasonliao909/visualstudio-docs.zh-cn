@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fab86c2125e45309a0cb8c8098ef1ae9236b3731
-ms.sourcegitcommit: 215680b355cf613bfa125cf6b864c8bb5f2c71a5
+ms.openlocfilehash: 230f8bc89324fe14f6d0a420dca8782a74f4d360
+ms.sourcegitcommit: 5af130d3ff64b71d415819e42f4f2efb2ae36a6a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "132453862"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "133117561"
 ---
 # <a name="uninstall-visual-studio"></a>卸载 Visual Studio
 
@@ -68,7 +68,7 @@ ms.locfileid: "132453862"
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 
 1. 在计算机上找到 Visual Studio 安装程序。
 
@@ -91,14 +91,51 @@ ms.locfileid: "132453862"
 
      ![卸载 Visual Studio 确认](media/vs-2019/uninstall-visualstudio-confirm.png "确认是否要卸载 Visual Studio 2019")
 
-如果稍后改变主意并想要重新安装 Visual Studio 2019 或 2022，请再次启动 Visual Studio 安装程序，选择“可用”选项卡，选择要安装的 Visual Studio 版本，然后选择“安装” 。
+如果稍后改变主意并想要重新安装 Visual Studio 2019，请再次启动 Visual Studio 安装程序，选择“可用”选项卡，选择要安装的 Visual Studio 版本，然后选择“安装” 。
 
 ## <a name="uninstall-visual-studio-installer"></a>卸载 Visual Studio 安装程序
 
-若要从计算机中删除 Visual Studio 2019、Visual Studio 2022 和 Visual Studio 安装程序的所有安装内容，请使用“应用和功能”进行卸载。
+若要从计算机中删除 Visual Studio 2019 的所有安装内容和 Visual Studio 安装程序，请使用“应用和功能”进行卸载。
 
 1. 在 Windows 10 或更高版本的“在此键入进行搜索”框中，键入“应用和功能”。
-1. 查找“Visual Studio 2019”或“Visual Studio 2022” 。
+1. 查找“Visual Studio 2019”。
+1. 选择“卸载”。
+1. 然后，查找“Microsoft Visual Studio 安装程序”。
+1. 选择“卸载”。
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+1. 在计算机上找到 Visual Studio 安装程序。
+
+     在 Windows“开始”菜单中，可以搜索“安装程序”。
+
+     ![Visual Studio 安装程序](media/vs-2019/visual-studio-installer.png "搜索 Visual Studio 安装程序")
+
+     > [!NOTE]
+     > 还可以在以下位置中找到 Visual Studio 安装程序：
+     >
+     > `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
+
+    可能需要先更新安装程序，然后才能继续操作。 如果是这样，请按照提示操作。
+
+1. 在安装程序中，查找已安装的 Visual Studio 版本。 接下来，选择“更多”，然后选择“卸载”。
+
+     ![卸载 Visual Studio 2019](media/vs-2022/vs-installer-uninstall.png "卸载 Visual Studio 2019")
+
+1. 单击“确定”确认所做选择。
+
+     ![卸载 Visual Studio 确认](media/vs-2022/uninstall-visualstudio-confirm.png "确认是否要卸载 Visual Studio 2019")
+
+如果稍后改变主意并想要重新安装 2022 版，请再次启动 Visual Studio 安装程序，选择“可用”选项卡，选择要安装的 Visual Studio 版本，然后选择“安装” 。
+
+## <a name="uninstall-visual-studio-installer"></a>卸载 Visual Studio 安装程序
+
+若要从计算机中删除 Visual Studio 2022 的所有安装内容和 Visual Studio 安装程序，请使用“应用和功能”进行卸载。
+
+1. 在 Windows 10 或更高版本的“在此键入进行搜索”框中，键入“应用和功能”。
+1. 查找“Visual Studio 2022”。
 1. 选择“卸载”。
 1. 然后，查找“Microsoft Visual Studio 安装程序”。
 1. 选择“卸载”。
