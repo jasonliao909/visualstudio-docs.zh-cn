@@ -2,7 +2,7 @@
 title: 自定义窗口布局
 description: 了解如何自定义窗口的显示特征，以创建适合各种开发工作流的布局。
 ms.custom: SEO-VS-2020
-ms.date: 03/02/2021
+ms.date: 11/24/2021
 ms.topic: conceptual
 f1_keywords:
 - vs.windows
@@ -26,12 +26,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d01ffd478c2ddaf95b46cf3d0ceb2a29fbb1aca
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 636f80024d87a07aa78723e9905ddaca21e5702d
+ms.sourcegitcommit: 5af130d3ff64b71d415819e42f4f2efb2ae36a6a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641191"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "133117508"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>在 Visual Studio 中自定义窗口布局
 
@@ -61,7 +61,7 @@ IDE 提供两种基本窗口类型，即 *“工具窗口”* 和 *“文档窗�
 
 #### <a name="vertical-document-tabs"></a>竖排文档选项卡
 
-**[版本 16.4 中的新增功能](/visualstudio/releases/2019/release-notes-v16.4/)** ：在 Visual Studio 2019 版本 16.4 中，我们添加了一个热门的功能请求，即 [竖排文档选项卡](https://developercommunity.visualstudio.com/idea/467369/vertical-group-tab.html)。 现在，可以在位于编辑器左侧或右侧的垂直列表中管理文档选项卡。
+**[Visual Studio 2019 版本 16.4 及更高版本中的新增功能](/visualstudio/releases/2019/release-notes-v16.4/)** ：我们添加了一个热门的功能请求，即[竖排文档选项卡](https://developercommunity.visualstudio.com/idea/467369/vertical-group-tab.html)。 现在，可以在位于编辑器左侧或右侧的垂直列表中管理文档选项卡。
 
 可以通过以下方式应用竖排文档选项卡：
 
@@ -70,6 +70,24 @@ IDE 提供两种基本窗口类型，即 *“工具窗口”* 和 *“文档窗�
 - 右键单击选项卡，选择“设置选项卡布局”，然后选择“左侧”或“右侧”。 （若要将选项卡返回到其默认位置，请选择“顶部”。）
 
     :::image type="content" source="./media/vs-2019/vertical-tabs.gif" alt-text="显示操作中的竖排文档选项卡的动画":::
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+#### <a name="color-document-tabs"></a>颜色文档选项卡
+
+**[Visual Studio 2022 版本 17.0 及更高版本中的新增功能](/visualstudio/releases/2022/release-notes)** ：我们又添加了一个热门的功能请求，即[颜色文档选项卡](https://devblogs.microsoft.com/visualstudio/personalize-docs/)。 现在，你可在编辑器的垂直和水平视图中设置选项卡的颜色。
+
+以下屏幕截图显示了垂直视图中的颜色选项卡示例：
+
+:::image type="content" source="media/vs-2022/color-tabs-vertical.png" alt-text="垂直视图中颜色选项卡的屏幕截图。":::
+
+以下屏幕截图显示了水平视图中的颜色选项卡示例：
+
+:::image type="content" source="media/vs-2022/color-tabs-horizontal.png" alt-text="水平视图中颜色选项卡的屏幕截图。":::
+
+若要使用颜色选项卡，请导航到“工具”>“选项”>“环境”>“选项卡和窗口”，然后选择“按项目对文档选项卡着色”    。
 
 ::: moniker-end
 
