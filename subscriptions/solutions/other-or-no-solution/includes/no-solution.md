@@ -3,19 +3,19 @@ title: 我的问题未列出
 description: 选择“未列出问题”类别或未找到解决方案时显示的解决方案
 ms.topic: include
 ms.assetid: c1537b27-0ae4-4bf3-b1e4-ff05f8e14359
-author: caitybuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 04/15/2021
 user.type: subscriber, admin
 tags: no-solution
 subscription.type: vl, cloud, retail, partner
 sap.id: 34fccc61-0a31-cc35-22dd-016a1ebf1134
-ms.openlocfilehash: d26b75015c427d771ab91526802d9b58e3ddb5e8
-ms.sourcegitcommit: beb16d5cc31b3565ec0c8d69f819a4ec67b45aae
+ms.openlocfilehash: 0bf04f578aedc734bcd446f05e8f7fa0d7199cc1
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110349955"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133255302"
 ---
 ## <a name="sorry-we-couldnt-find-a-solution-for-you"></a>抱歉，未找到解决方案。 
 

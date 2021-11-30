@@ -3,19 +3,19 @@ title: 为什么我只能看到我的 Visual Studio Dev Essentials，而看不�
 description: 了解看不到自己的所有 Visual Studio 订阅时应该怎么做
 ms.topic: include
 ms.assetid: ab387e76-baec-4f27-9769-b2fc86e0c932
-author: caitybuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 08/13/2021
 user.type: subscriber
 tags: portal-error
 subscription.type: vl, cloud, retail, partner
 sap.id: 8250612f-7446-20c5-7473-16d089f2280d
-ms.openlocfilehash: 013fcc9141e6189bb3dca4274a560a483d36cb2b
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 594d602240309073b1986a97ab78e785472c19a4
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128427618"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133255305"
 ---
 ## <a name="why-am-i-only-seeing-visual-studio-dev-essentials"></a>为什么我只能看到 Visual Studio Dev Essentials？
 

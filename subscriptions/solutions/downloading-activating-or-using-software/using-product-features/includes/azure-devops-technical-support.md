@@ -3,19 +3,19 @@ title: Azure DevOps 技术支持
 description: 获取 Azure DevOps 技术支持
 ms.topic: include
 ms.assetid: 8ee4f3fb-6cb6-473f-b497-208f5c3eaf01
-author: caitybuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 02/12/2021
 user.type: subscriber
 tags: redirect
 subscription.type: vl, cloud, retail, partner
 sap.id: af210210-e3e1-2b2e-8d79-9bd20e851241
-ms.openlocfilehash: b4c1a4cd5c4bfc8a7b9dcc97666fa10769bf7bad
-ms.sourcegitcommit: bbf532e50b9140724c1a0f66f9a35862bf6e4a97
+ms.openlocfilehash: fa6d614d74185aff80f9a18baa8e66289314d286
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "107291325"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133255300"
 ---
 ## <a name="azure-devops-technical-support"></a>Azure DevOps 技术支持  
 

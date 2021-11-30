@@ -3,19 +3,19 @@ title: 如何才能成为 Visual Studio 订阅管理员？
 description: 了解如何成为 Visual Studio 订阅管理员或超级管理员
 ms.topic: include
 ms.assetid: a50097ff-4c6f-4d6c-819a-ba0b8b412997
-author: caitybuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 08/13/2021
 user.type: subscriber, admin
 tags: portal-error, sign-in
 subscription.type: vl, cloud, retail, partner
 sap.id: 17a2bf94-0d03-2629-dfd8-e8935f9126ec
-ms.openlocfilehash: ea9bd502d5321e3dc4a3ba4ec5b08aa607df5f68
-ms.sourcegitcommit: 364e106fcbf4fb6af534e81d8b700901f79f4ec8
+ms.openlocfilehash: 2388955d7a5a6520c9e83c18ee1ccdb0492f884f
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2021
-ms.locfileid: "129013298"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133255320"
 ---
 ## <a name="how-to-become-a-visual-studio-subscriptions-admin-or-super-admin"></a>如何成为 Visual Studio 订阅管理员或超级管理员 
 

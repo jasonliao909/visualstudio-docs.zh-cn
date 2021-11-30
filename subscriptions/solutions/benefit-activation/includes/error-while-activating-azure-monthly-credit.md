@@ -3,19 +3,19 @@ title: 尝试激活 Azure 每月信用额度时遇到错误
 description: 尝试激活 Visual Studio 订阅随附的 Azure 每月信用额度时遇到错误。
 ms.topic: include
 ms.assetid: eed8114a-651a-47e2-bb24-130acd2a76d0
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 4/16/2021
 user.type: subscriber
 tags: benefit, azure
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: afc2cb5f64e3f52f9801b4633165b0b516516cbf
-ms.sourcegitcommit: beb16d5cc31b3565ec0c8d69f819a4ec67b45aae
+ms.openlocfilehash: 76612be763fedb77b8876d438db5d1f73b277ffb
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110349832"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133255281"
 ---
 ## <a name="im-getting-an-error-while-trying-to-activate-my-azure-monthly-credit"></a>尝试激活 Azure 每月信用额度时遇到错误。
 

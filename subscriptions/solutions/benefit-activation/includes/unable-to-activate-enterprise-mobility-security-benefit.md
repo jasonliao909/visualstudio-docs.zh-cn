@@ -3,19 +3,19 @@ title: 无法激活企业移动性 + 安全性 (EMS) 权益
 description: 无法激活 Visual Studio 订阅包含的企业移动性 + 安全性 (EMS) 权益？
 ms.topic: include
 ms.assetid: 104e6ef4-5bb1-4f26-af7c-a6925e3665c7
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 8/14/2020
 user.type: subscriber
 tags: benefit, ems
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: abe75ee0fb6875872894c018c1b78c3da8c155d2
-ms.sourcegitcommit: cc8b4e96ec49a8045b6c31a9cdce1caa30c3ab54
+ms.openlocfilehash: b0680d970de409ca77214cebb203153dc7502f17
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "132429984"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133255289"
 ---
 ## <a name="im-unable-to-activate-my-enterprise-mobility--security-ems-benefit"></a>我无法激活企业移动性 + 安全性 (EMS) 权益。
 

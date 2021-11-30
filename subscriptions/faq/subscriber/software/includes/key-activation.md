@@ -3,16 +3,16 @@ title: 如何使用产品密钥激活刚刚下载的软件？
 description: 产品并非总是需要激活。 在某些情况下，一个密钥可使用多次。 通常，如果…
 ms.topic: include
 ms.assetid: f4638a80-a11f-4662-954e-4dff118d8503
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 4/3/2020
 ms.faqid: q2_2
-ms.openlocfilehash: c549396bdb1ca4919e3e2e67ca3003f64ede733969b251b0d28d1851bad81030
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: edff54f35b5208bb1fe22aae0f8af24e0dec41c6
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121381210"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133254987"
 ---
 ## <a name="how-do-i-activate-the-software-i-just-downloaded-using-product-keys"></a>如何使用产品密钥激活刚刚下载的软件？
 

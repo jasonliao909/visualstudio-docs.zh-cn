@@ -4,18 +4,18 @@ description: 如果找不到要使用的 IDE 功能，则可能使用的 Visual 
 ms.topic: include
 ms.assetid: 986a4c63-610b-4d33-8b22-48452964da8b
 author: evanwindom
-ms.author: cabuschl
+ms.author: amast
 ms.date: 05/11/2020
 user.type: subscriber
 tags: download, activate, licensing
 subscription.type: vl, cloud, retail, partner
 sap.id: af210210-e3e1-2b2e-8d79-9bd20e851241
-ms.openlocfilehash: 662eae10edd485d274fdae9c7650c804992cb88f
-ms.sourcegitcommit: 364e106fcbf4fb6af534e81d8b700901f79f4ec8
+ms.openlocfilehash: 226898f94e317692d1dbd45c2ccea5d1b32083b0
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2021
-ms.locfileid: "129013217"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133255301"
 ---
 ## <a name="what-if-you-cant-find-the-ide-feature-you-want-to-use"></a>如果找不到要使用的 IDE 功能怎么办？ 
 

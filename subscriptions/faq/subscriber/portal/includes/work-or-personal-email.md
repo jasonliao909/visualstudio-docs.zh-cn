@@ -3,16 +3,16 @@ title: 我应该使用工作电子邮件还是个人电子邮件登录？
 description: 要访问订阅，应使用分配了订阅的电子邮件地址登录。 在大多数情况下...
 ms.topic: include
 ms.assetid: 68d39644-b5ce-4824-bd24-dd5bb27198dc
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 4/3/2020
 ms.faqid: q1_1
-ms.openlocfilehash: 9df919ae6a4dd95b2e4013b205c48a864cbfa326
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: becf630bb9ea7880273e1ecdc0cea4768a915d7e
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "81386006"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133257627"
 ---
 ## <a name="should-i-sign-in-using-my-work-email-or-my-personal-email"></a>我应该使用工作电子邮件还是个人电子邮件登录？
 

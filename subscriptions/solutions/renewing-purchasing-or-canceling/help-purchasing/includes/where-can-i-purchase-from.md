@@ -3,19 +3,19 @@ title: 我可以从何处购买 Visual Studio 订阅？
 description: 我可以从何处购买 Visual Studio 订阅？
 ms.topic: include
 ms.assetid: 2f23c628-1937-4ecd-a36e-cfe579265279
-author: caitybuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 08/14/2020
 user.type: subscriber
 tags: purchasing
 subscription.type: vl, cloud, retail, partner
 sap.id: c374762c-640b-8b2c-d049-bda9545e903c
-ms.openlocfilehash: be2c22f6ea8bb9b6b98823b8adbe763137fdec1a
-ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
+ms.openlocfilehash: 8ef2c4fae1ffd2a85c3162b044e944fb3edd630f
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99541231"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133255310"
 ---
 ## <a name="where-to-purchase-subscriptions"></a>订阅购买渠道 
 

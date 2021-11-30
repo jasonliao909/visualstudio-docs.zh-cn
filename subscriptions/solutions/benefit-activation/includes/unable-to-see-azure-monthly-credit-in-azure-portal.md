@@ -3,19 +3,19 @@ title: 无法在 Azure 门户中看到 Azure 每月额度
 description: 登录到 Azure 门户后，我看不到我的 Azure 每月额度
 ms.topic: include
 ms.assetid: 48420a4c-11b4-4bbd-a509-2c939d24e81a
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 8/14/2020
 user.type: subscriber
 tags: benefit, azure
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: cd353f056dce15b9a766bb4d1ea78df25a2f707b
-ms.sourcegitcommit: 54aac5044a9853a435577acc5a134cb254494ffb
+ms.openlocfilehash: a373ea56330c766eb2ad1233eaf10d7cdd2c35b3
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107589977"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133255276"
 ---
 ## <a name="im-unable-to-see-my-azure-monthly-credit-in-the-azure-portal"></a>我无法在 Azure 门户中看到我的 Azure 每月额度
 

@@ -4,16 +4,16 @@ description: 了解如何续订零售、云和批量许可证订阅
 ms.topic: include
 ms.assetid: 00b82d16-6a80-42d1-8b71-e12047c6b50c
 ms.technology: ''
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 04/19/2021
 ms.faqid: q4_2
-ms.openlocfilehash: c53b866cab32270cfa10b6a8632af776ff9afd92
-ms.sourcegitcommit: 6b74cb197e59c23492722935457c7ec278cadb57
+ms.openlocfilehash: 3df631bf55f4f3e3269118c3fc73e25f1a269fb7
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "107736996"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133255793"
 ---
 ## <a name="how-do-i-renew-visual-studio-subscriptions"></a>如何续订 Visual Studio 订阅？ 
 

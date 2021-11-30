@@ -3,19 +3,19 @@ title: 订阅许可条款和条件有哪些？
 description: Visual Studio 订阅的许可条款和条件
 ms.topic: include
 ms.assetid: 96c05bd0-044c-4791-9c33-6b89a0e6b087
-author: caitybuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 06/01/2021
 user.type: subscriber, admin
 tags: licensing-terms
 subscription.type: vl, cloud, retail, partner
 sap.id: 95b201e2-f079-cb93-1693-3d40ee05b552
-ms.openlocfilehash: ff85a0f77517414c1feaf5e738785106ba001487
-ms.sourcegitcommit: 65a1b6aae8387735f05a83b45e1a6865e9805e1f
+ms.openlocfilehash: d655d0f38f7bca1f92dbfead5a8da0c0adbfb95e
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "129378114"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133255297"
 ---
 ## <a name="what-are-the-subscription-licensing-terms-and-conditions"></a>订阅许可条款和条件有哪些？ 
 

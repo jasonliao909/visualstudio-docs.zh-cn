@@ -3,16 +3,16 @@ title: Visual Studio 订阅权益
 description: 激活订阅权益常见问题解答列表。
 ms.topic: conceptual
 ms.assetid: bc1a67a8-25b3-40a1-a355-6de2e658113e
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 04/20/2020
 ms.faqid: Section3
-ms.openlocfilehash: c85d5f4bb2cdf7b0b763c259acfeb9214d22263f133fc3d8ebddcd505ec8fc74
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8e34743b4f958341873a7ada230cdf3e9177fd52
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121392937"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133256373"
 ---
 # <a name="visual-studio-subscription-benefits"></a>Visual Studio 订阅权益
 

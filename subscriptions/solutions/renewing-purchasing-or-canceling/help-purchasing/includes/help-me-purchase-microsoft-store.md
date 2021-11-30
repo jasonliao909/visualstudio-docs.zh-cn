@@ -3,19 +3,19 @@ title: 帮助我从 Microsoft Store 购买
 description: 帮助我从 Microsoft Store 购买 Visual Studio 订阅
 ms.topic: include
 ms.assetid: f56c7642-f945-4bdf-b48e-9d548b08d91d
-author: caitybuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 09/17/2020
 user.type: subscriber
 tags: purchasing
 subscription.type: vl, cloud, retail, partner
 sap.id: c374762c-640b-8b2c-d049-bda9545e903c
-ms.openlocfilehash: 067748a085e48e2db6517040e08d74b398882d06
-ms.sourcegitcommit: cc8b4e96ec49a8045b6c31a9cdce1caa30c3ab54
+ms.openlocfilehash: 8c556b8f9c6f2268c8f57fc5a60ab3ea07ca019e
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "132429975"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133255312"
 ---
 ## <a name="purchase-subscriptions-through-microsoft-store"></a>通过 Microsoft Store 购买订阅 
 

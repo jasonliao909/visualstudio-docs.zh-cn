@@ -3,16 +3,16 @@ title: 如何在 Visual Studio 中进行故障排除？
 description: 在 Visual Studio 文档中查找有关 Visual Studio 故障排除的帮助
 ms.topic: include
 ms.assetid: 51dd1bb6-dc02-4e92-b843-261530814c58
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 09/20/2021
 ms.faqid: q2_6
-ms.openlocfilehash: 6d89ab5fad089ce79d004c81b61fd49a664f9e2c
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 41aa1f3c1e4e75d38826241e6291c0cfa46af535
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128319766"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133254986"
 ---
 ## <a name="how-do-i-troubleshoot-problems-with-visual-studio"></a>如何解决与 Visual Studio 有关的问题？ 
 

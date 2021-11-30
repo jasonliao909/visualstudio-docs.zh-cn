@@ -3,19 +3,19 @@ title: 如何激活 Azure 每月额度？
 description: 如何激活 Visual Studio 订阅随附的 Azure 每月额度？
 ms.topic: include
 ms.assetid: aa53b1d3-8e88-4d8c-8385-23f15a7b660b
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 4/16/2021
 user.type: subscriber
 tags: benefit, azure
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: bb387f9a359b6f645dd6a160ffb281375cd747a9
-ms.sourcegitcommit: beb16d5cc31b3565ec0c8d69f819a4ec67b45aae
+ms.openlocfilehash: 13754e149430c14944d75ac2ed1a4a0d78242eaf
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110349887"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133255284"
 ---
 ## <a name="how-to-activate-the-monthly-azure-devtest-individual-credit-benefit"></a>如何激活每月 Azure 开发/测试个人额度权益
 

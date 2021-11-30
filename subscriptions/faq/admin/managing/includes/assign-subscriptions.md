@@ -4,15 +4,15 @@ description: 你可以一次为最终用户分配一个订阅，也可以使用�
 ms.faqid: group1_3
 ms.topic: include
 ms.assetid: 59eb35fd-ec94-41ce-b24c-a8a120976bac
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 12/03/2020
-ms.openlocfilehash: 5a12d59f90ee2a09002efcb99c78cfd563060006
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 8b02ecbcdbf59a588a41633b80ae8edfd09283d9
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96584521"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133255125"
 ---
 ## <a name="how-do-i-assign-visual-studio-subscriptions"></a>如何分配 Visual Studio 订阅？
 

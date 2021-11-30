@@ -3,19 +3,19 @@ title: 帮助我从 marketplace.visualstudio.com 购买
 description: 帮助我从 marketplace.visualstudio.com 购买 Visual Studio 订阅
 ms.topic: include
 ms.assetid: 4d0c9d82-5bda-4021-b219-5e1cf948f325
-author: caitybuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 09/17/2020
 user.type: subscriber, admin
 tags: purchasing
 subscription.type: vl, cloud, retail, partner
 sap.id: c374762c-640b-8b2c-d049-bda9545e903c
-ms.openlocfilehash: 6a4758508c478612b75f51acef6136fde0fab9d3
-ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
+ms.openlocfilehash: f35aa1cce734abb49337683b4f44f04b5bfa3192
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99541092"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133255311"
 ---
 ## <a name="purchase-monthly-subscriptions-through-visual-studio-marketplace"></a>通过 Visual Studio Marketplace 购买月度订阅 
 

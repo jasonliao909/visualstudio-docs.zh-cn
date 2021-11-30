@@ -3,19 +3,19 @@ title: Visual Studio IDE 技术支持
 description: 获取 Visual Studio IDE 技术支持
 ms.topic: include
 ms.assetid: 4fa47dc5-3791-45c8-afba-9e01693ce45a
-author: caitybuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 04/16/2021
 user.type: subscriber
 tags: download, activate, licensing
 subscription.type: vl, cloud, retail, partner
 sap.id: af210210-e3e1-2b2e-8d79-9bd20e851241
-ms.openlocfilehash: e0b51a35e3ff1ca04e8556809d1318ecb389cf0c
-ms.sourcegitcommit: 364e106fcbf4fb6af534e81d8b700901f79f4ec8
+ms.openlocfilehash: 598631b75c5e0613c909194a3e8d3ebb33d9bd01
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2021
-ms.locfileid: "129013195"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133255303"
 ---
 ## <a name="visual-studio-ide-technical-support"></a>Visual Studio IDE 技术支持 
 

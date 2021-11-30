@@ -3,19 +3,19 @@ title: 如何查看我的发票？
 description: 如何查看我的 Visual Studio 订阅发票？
 ms.topic: include
 ms.assetid: 576ca2d3-aba4-4191-8639-64ea9f309536
-author: caitybuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 08/14/2020
 user.type: subscriber
 tags: billing
 subscription.type: vl, cloud, retail, partner
 sap.id: 2db8f927-5814-835b-cc9d-daab30a7a09e
-ms.openlocfilehash: 53630743cfdd1c81a37102f237ab15ee33df632a
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 68561d6809dfbc8aa598f6d08f2088d045b52dd7
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723176"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133255317"
 ---
 ## <a name="how-do-i-view-my-invoice"></a>如何查看我的发票？
 

@@ -4,15 +4,15 @@ description: 购买、续订、取消或计费常见问题解答列表
 ms.faqid: Section4
 ms.topic: conceptual
 ms.assetid: 9d7a7d4c-dce3-4655-983c-a7e4180a5433
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 02/15/2021
-ms.openlocfilehash: c174b6a7124231581ed68a53d784954c1117309a
-ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
+ms.openlocfilehash: 5aac0afb75680c2e51f011ce71029caeca89b0d7
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107800768"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133257899"
 ---
 # <a name="purchasing-renewing-canceling-or-billing"></a>购买、续订、取消或计费 
 
