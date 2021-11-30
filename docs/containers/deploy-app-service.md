@@ -9,12 +9,12 @@ ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 10/28/2021
 ms.author: ghogen
-ms.openlocfilehash: af1f0664da29e01c5c9eead3eb0343330253683f
-ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
-ms.translationtype: HT
+ms.openlocfilehash: 0ce25161031c3634b1e244af9bb3428180b807d6
+ms.sourcegitcommit: 0b949fd7bb38d784ff66edec4725de55d57e76fc
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "132001972"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "133219282"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>使用 Visual Studio 将 ASP.NET Core 容器部署到 Azure 应用服务
 
@@ -49,7 +49,7 @@ ms.locfileid: "132001972"
 4. 为新应用程序指定名称（或使用默认值），并选择“确定”。
 5. 选择“Web 应用程序”。
 6. 勾选“启用 Docker 支持”复选框。
-7. 选择“Linux”容器类型，然后单击“确定” 。 不支持将 Windows 容器作为容器部署到 Azure 应用服务。
+7. 选择“Linux”容器类型，然后单击“确定” 。 
 ::: moniker-end
 ::: moniker range=">= vs-2019"
 1. 在 Visual Studio“启动”窗口，选择“创建新项目”。
