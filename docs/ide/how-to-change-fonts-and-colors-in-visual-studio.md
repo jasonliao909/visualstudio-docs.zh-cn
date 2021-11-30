@@ -1,7 +1,7 @@
 ---
 title: 更改主题、字体、文本和对比度以提供辅助功能
 description: 了解如何更改 Visual Studio 颜色主题、字体颜色、文本大小和额外的对比度颜色，以提供辅助功能。
-ms.date: 11/22/2021
+ms.date: 11/24/2021
 ms.topic: how-to
 ms.custom: contperf-fy21q1
 helpviewer_keywords:
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 67c6693e91c210e3ad938c8f2bc2a22fb2dbf1d4
-ms.sourcegitcommit: 8671132ee0425b273b060fa35c75657e7ae02583
-ms.translationtype: HT
+ms.openlocfilehash: cc4aa4384b5be48d6456dccb38a6a92023b6ad04
+ms.sourcegitcommit: 2281b4f1f8737f263c0d7e55e00b5ec81517327d
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "132924259"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "133108869"
 ---
 # <a name="how-to-change-fonts-colors-and-themes-in-visual-studio"></a>如何：在 Visual Studio 中更改字体、颜色和主题
 
@@ -166,7 +166,7 @@ ms.locfileid: "132924259"
 
 ::: moniker range="vs-2022"
 
-如果你有神经发育性疾病或者是弱视，这里有字体选项和颜色主题供你使用：
+在神经多元性的世界中，我们希望通过提供以下字体选项和颜色主题来为不同学习者与低视力用户提供支持：
 
 - 可使用 [Cascadia Code](#use-the-cascadia-code-font) 字体，它向字母、数字和字符的大小添加了更多权重，帮助用户区分这三者。 Cascadia Code 还包括编码连字。
 - 可选择对计算机上的所有应用和 UI 使用[高对比度](#use-windows-high-contrast)颜色主题，也可仅对 Visual Studio 使用[额外对比度](#use-visual-studio-extra-contrast)颜色主题。

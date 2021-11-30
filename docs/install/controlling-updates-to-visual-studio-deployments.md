@@ -1,7 +1,7 @@
 ---
 title: 控制对部署的更新
 description: 了解从网络安装时，如何更改 Visual Studio 查找更新的位置。
-ms.date: 10/22/2021
+ms.date: 11/23/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
@@ -14,14 +14,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f5e602aa4b338df167308a46b4fe3ef1fee268fa
-ms.sourcegitcommit: 4efdab6a579b31927c42531bb3f7fdd92890e4ac
-ms.translationtype: HT
+ms.openlocfilehash: 620c848ee7d52ab802f8b05135f26bdade122a64
+ms.sourcegitcommit: 2281b4f1f8737f263c0d7e55e00b5ec81517327d
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "130350997"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "133108830"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>控制对基于网络的 Visual Studio 部署的更新
+> [!WARNING]
+> 此内容已合并到其他页面，因此将弃用。 此页已从 TOC 中删除。
 
 企业管理员通常会创建布局，并将其托管在网络文件共享上，以供部署给最终用户。 本页介绍如何正确配置网络布局选项。
 
@@ -82,127 +84,6 @@ ms.locfileid: "130350997"
 **方案 3：客户端最初已从 Web 安装，但现在只应从网络布局接收更新**
 
 在某些情况下，客户端计算机可能已从 Web 安装 Visual Studio，但现在管理员希望从托管布局接收所有将来的更新。 唯一受支持的方法是使用所需的产品版本创建网络布局，然后在客户端计算机上，从布局位置运行引导程序（例如 `\\server\share\vs_enterprise.exe`）。 理想情况下，初始客户端安装将从正确配置了 ChannelURI 的网络布局使用引导程序执行，但也可以从网络布局位置运行更新的引导程序。 其中任一操作将在客户端计算机上嵌入与该特定布局位置的连接。 为了使此方案能够正常运行，需要注意的是，布局的 `response.json` 文件中的“ChannelURI”必须与发生原始安装时在客户端计算机上设置的 ChannelURI 相同。 此值很可能最初设置为 Internet [发布通道](https://aka.ms/vs/16/release/channel)。
-
-## <a name="controlling-notifications-in-the-visual-studio-ide"></a>在 Visual Studio IDE 中控制通知
-
-::: moniker range="vs-2017"
-
-如上所述，Visual Studio 检查其安装位置（例如，网络共享或 Internet），以确定是否有任何更新。 若有更新，Visual Studio 会在窗口右上角显示通知标志来通知用户。
-
-   ![更新的通知标志](media/notification-flag.png)
-
-::: moniker-end
-
-::: moniker range=">=vs-2019"
-
-如上所述，Visual Studio 检查其安装位置（例如，网络共享或 Internet），以确定是否有任何更新。 若有更新，Visual Studio 会在窗口右下角显示通知图标来通知用户。
-
-   ![Visual Studio IDE 中的通知图标](media/vs-2019/notification-bar.png "Visual Studio IDE 中的通知图标")
-
-::: moniker-end
-
-如果不想提示最终用户进行更新，可禁用该通知。 （例如，如果通过中心软件分发机制来提供更新，可能希望禁用通知。）
-
-::: moniker range="vs-2017"
-
-由于 Visual Studio 2017 [将注册表项存储在专用注册表中](tools-for-managing-visual-studio-instances.md#editing-the-registry-for-a-visual-studio-instance)，因此无法照常直接编辑注册表。 不过，Visual Studio 提供可用于更改 Visual Studio 设置的实用工具 `vsregedit.exe`。 可以使用下面的命令禁用通知：
-
-```shell
-vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 0
-```
-
-可以使用下面的命令重新启用通知：
-
-```shell
-vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 1
-```
-
-若要返回到默认行为，还可以通过以下命令删除该值：
-
-```shell
-vsregedit.exe remove "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override
-```
-
-运行命令以更改 Visual Studio 设置后，启动 Visual Studio。 在关闭并重新启动 Visual Studio 之前，Visual Studio 的任何已运行的实例都不会更改行为。 另一种方法是，可以重新启动计算机，以确保设置生效。
-
-可以使用以下命令确认该设置：
-
-```shell
-vsregedit.exe read "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword
-```
-
-如果值不存在（默认情况下存在此条件），前面的命令将指示它无法读取该值。 如果设置了该值，前面的命令将反映出 Visual Studio 配置中的值（它将指示 0 或 1，或者设置的任何值，只应为 0 或 1）。
-
-::: moniker-end
-
-::: moniker range="vs-2019"
-
-由于 Visual Studio 2019 [将注册表项存储在专用注册表中](tools-for-managing-visual-studio-instances.md#editing-the-registry-for-a-visual-studio-instance)，因此无法照常直接编辑注册表。 不过，Visual Studio 提供可用于更改 Visual Studio 设置的实用工具 `vsregedit.exe`。 可以使用下面的命令禁用通知：
-
-```shell
-vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 0
-```
-
-可以使用下面的命令重新启用通知：
-
-```shell
-vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 1
-```
-
-若要返回到默认行为，还可以通过以下命令删除该值：
-
-```shell
-vsregedit.exe remove "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override
-```
-
-运行命令以更改 Visual Studio 设置后，启动 Visual Studio。 在关闭并重新启动 Visual Studio 之前，Visual Studio 的任何已运行的实例都不会更改行为。 另一种方法是，可以重新启动计算机，以确保设置生效。
-
-可以使用以下命令确认该设置：
-
-```shell
-vsregedit.exe read "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword
-```
-
-如果值不存在（默认情况下存在此条件），前面的命令将指示它无法读取该值。 如果设置了该值，前面的命令将反映出 Visual Studio 配置中的值（它将指示 0 或 1，或者设置的任何值，只应为 0 或 1）。
-
-::: moniker-end
-
-::: moniker range=">=vs-2022"
-
-由于 Visual Studio 2022 [将注册表项存储在专用注册表中](tools-for-managing-visual-studio-instances.md#editing-the-registry-for-a-visual-studio-instance)，因此无法照常直接编辑注册表。 不过，Visual Studio 提供可用于更改 Visual Studio 设置的实用工具 `vsregedit.exe`。 可以使用下面的命令禁用通知：
-
-```shell
-vsregedit.exe set "C:\Program Files\Microsoft Visual Studio\2022\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 0
-```
-
-可以使用下面的命令重新启用通知：
-
-```shell
-vsregedit.exe set "C:\Program Files\Microsoft Visual Studio\2022\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 1
-```
-
-若要返回到默认行为，还可以通过以下命令删除该值：
-
-```shell
-vsregedit.exe remove "c:\Program Files\Microsoft Visual Studio\2022\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override
-```
-
-运行命令以更改 Visual Studio 设置后，启动 Visual Studio。 在关闭并重新启动 Visual Studio 之前，Visual Studio 的任何已运行的实例都不会更改行为。 另一种方法是，可以重新启动计算机，以确保设置生效。
-
-可以使用以下命令确认该设置：
-
-```shell
-vsregedit.exe read "c:\Program Files\Microsoft Visual Studio\2022\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword
-```
-
-如果值不存在（默认情况下存在此条件），前面的命令将指示它无法读取该值。 如果设置了该值，前面的命令将反映出 Visual Studio 配置中的值（它将指示 0 或 1，或者设置的任何值，只应为 0 或 1）。
-
-::: moniker-end
-
-（请确保替换目录，以匹配要编辑的已安装实例。）
-
-> [!TIP]
-> 使用 [vswhere.exe](tools-for-managing-visual-studio-instances.md#detecting-existing-visual-studio-instances) 可以在客户端工作站上查找 Visual Studio 的特定实例。
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

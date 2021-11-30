@@ -2,7 +2,7 @@
 title: 更新 Visual Studio
 titleSuffix: ''
 description: 了解如何逐步将 Visual Studio 更新到最新版本。
-ms.date: 09/14/2021
+ms.date: 11/23/2021
 ms.custom: vs-acquisition
 ms.topic: how-to
 ms.prod: visual-studio-windows
@@ -17,12 +17,12 @@ ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cfa9f47706f03fcef300e2b1eadd54d023214d83
-ms.sourcegitcommit: 932cf0f653c6258b73f42102d134cbaf50b8f20c
-ms.translationtype: HT
+ms.openlocfilehash: 961561a30fa2505ad655899ef719e6d7aff15567
+ms.sourcegitcommit: 2281b4f1f8737f263c0d7e55e00b5ec81517327d
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "132879821"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "133108911"
 ---
 # <a name="update-visual-studio"></a>更新 Visual Studio
 
@@ -166,7 +166,7 @@ ms.locfileid: "132879821"
 1. 观察可在此对话框中设置的配置选项。 你可以选择“自动下载更新”设置，该设置允许在计算机处于空闲状态时下载更新。 还有两种安装模式可供选择：在下载时安装，以及全部下载后再安装 。   选择安装模式和 Visual Studio 更新所需的自动下载设置。
 
 ### <a name="configure-source-location-of-updates"></a>配置更新的源位置
-如果位于企业环境中，可以配置客户端实例查找更新的位置。 这适用于从网络布局安装客户端，但稍后希望客户端从其他网络布局获取更新的情况。 配置更新位置的能力要求存在较新的 Visual Studio 2022 安装程序，该安装程序可通过在客户端计算机上安装 Visual Studio 2022 或由管理员通过网络布局推送来获取。 若要详细了解如何配置此方案，请参阅 [Visual Studio 管理员指南](https://aka.ms/vs/admin/guide)
+如果位于企业环境中，可以配置客户端实例查找更新的位置。 这适用于从网络布局安装客户端，但稍后希望客户端从其他网络布局获取更新的情况。 配置更新位置的能力要求存在较新的 Visual Studio 2022 安装程序，该安装程序可通过在客户端计算机上安装 Visual Studio 2022 或由管理员通过网络布局推送来获取。 有关如何使用此功能的详细信息，请参阅[有关配置更新源位置的 Visual Studio 2022 文档](/visualstudio/install/update-visual-studio?view=vs-2022&preserve-view=true#configure-source-location-of-updates-1)。 另请参阅有关如何配置 Visual Studio 2019 布局以[使用最新的 Visual Studio 2022 安装程序](/visualstudio/install/create-a-network-installation-of-visual-studio#configure-the-layout-to-always-use-the-latest-installer)的信息。 
 
 ## <a name="update-on-close"></a>关闭时更新
 
@@ -226,7 +226,7 @@ ms.locfileid: "132879821"
 
 1. 在“更新可用”对话框中，选择“更新”。
 
-     ![显示“有可用更新”对话框中的“更新”按钮的屏幕截图。](media/vs-2022/update-visual-studio-community-from-ide.png "在“可用更新”对话框中选择“更新”按钮")
+     ![显示“有可用更新”对话框中的“更新”按钮的屏幕截图。](media/vs-2022/update-ready-install-visual-studio-community-from-ide.png "在“可用更新”对话框中选择“更新”按钮")
 
 ## <a name="use-the-notifications-hub"></a>使用“通知”中心
 
