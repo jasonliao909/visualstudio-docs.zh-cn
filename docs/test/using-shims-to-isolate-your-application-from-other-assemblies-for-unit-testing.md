@@ -11,12 +11,12 @@ author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 9bba159da05ad3e1c893c3fc241c44cd1c6de8d1
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 5f5b6da40f85687f1674ce11d405df42792e9277
+ms.sourcegitcommit: 0b949fd7bb38d784ff66edec4725de55d57e76fc
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126642245"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "133219295"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>使用填充码隔离应用以进行单元测试
 
@@ -531,4 +531,3 @@ System.Fakes.ShimEnvironment.GetCommandLineArgsGet = ...
 
 - [通过 Microsoft Fakes 隔离受测代码](../test/isolating-code-under-test-with-microsoft-fakes.md)
 - [Peter Provost 的博客：Visual Studio 2012 填充码](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)
-- [视频（1 小时 16 分钟）：在 Visual Studio 2012 中使用 Fakes 测试不可测试代码](https://channel9.msdn.com/Events/TechEd/Europe/2012/DEV411)

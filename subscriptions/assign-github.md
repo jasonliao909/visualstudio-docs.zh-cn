@@ -7,12 +7,12 @@ ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
 ms.date: 03/03/2021
 ms.topic: conceptual
 description: 管理带有 GitHub Enterprise 的 Visual Studio 订阅中的订阅
-ms.openlocfilehash: ab61a9adf5bf6912935ac1c548477dfe4eec5efe
-ms.sourcegitcommit: a1c18c491e310b00a43e76a911f778e643cd8f8d
-ms.translationtype: HT
+ms.openlocfilehash: fc2dd98d4c72e25cab834d26aebbaac34c297dc3
+ms.sourcegitcommit: 0b949fd7bb38d784ff66edec4725de55d57e76fc
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "132995665"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "133219243"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>管理带有 GitHub Enterprise 的 Visual Studio 订阅
 与 Microsoft 签订了企业协议 (EA) 的客户有资格购买新的订阅套餐，该套餐将 Visual Studio 标准订阅和 GitHub Enterprise 结合在了一起。 这是 Visual Studio 订阅者获取 GitHub Enterprise 的一种简单而实惠的方式。 
@@ -70,7 +70,7 @@ GitHub Enterprise 的设置和管理独立于 Visual Studio 订阅。 购买带�
 GitHub 可作为基于云的 GitHub.com 提供，也可提供为本地 GitHub Enterprise Server。  这两种版本的管理过程有所不同。  GitHub 提供了各种帮助主题和管理员指南来帮助你管理 GitHub Enterprise 订阅。  我们提供了下述精选主题的链接。  
 
 ## <a name="support-resources"></a>支持资源
-- 访问 [GitHub 文档](https://docs.github.com/en/github/setting-up-and-managing-your-enterprise-account/managing-licenses-for-the-github-enterprise-and-visual-studio-bundle)，了解有关 GitHub 分配的详细信息
+- 访问 [GitHub 文档](https://docs.github.com/en/enterprise-cloud@latest/billing/managing-licenses-for-visual-studio-subscriptions-with-github-enterprise/about-visual-studio-subscriptions-with-github-enterprise)，了解有关 GitHub 分配的详细信息
 - 有关各种 GitHub 主题的问题解答，请查看 [GitHub 帮助](https://help.github.com/en)。
 - 在 [GitHub 社区论坛](https://github.community/)获取其他 GitHub 用户的帮助。
 - 如需有关管理 Visual Studio 订阅的帮助，请联系 [Visual studio 订阅支持](https://aka.ms/vsadminhelp)。
