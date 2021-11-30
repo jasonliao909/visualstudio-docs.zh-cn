@@ -1,18 +1,18 @@
 ---
 title: Visual Studio 订阅中的 Windows 开发者帐户权益 | Microsoft Docs
 author: evanwindom
-ms.author: cabuschl
-manager: cabuschl
+ms.author: amast
+manager: shve
 ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
 ms.date: 10/18/2021
 ms.topic: how-to
 description: 了解有关 Visual Studio 订阅中包含的 Windows 开发者帐户。
-ms.openlocfilehash: e813d20b0e8010191d24c5531989b622fb446922
-ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
-ms.translationtype: HT
+ms.openlocfilehash: 2a19eb80cbd1458c120c90a4ba897bf5a271d16f
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "131127255"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133254886"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Windows 开发者帐户
 通过所选 Visual Studio 订阅包含的 Windows 开发者帐户，可以将免费和付费的 Windows 应用提交到 Windows 应用商店。

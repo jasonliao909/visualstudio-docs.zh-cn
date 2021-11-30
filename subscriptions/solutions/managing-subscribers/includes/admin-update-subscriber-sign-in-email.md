@@ -1,21 +1,21 @@
 ---
-title: 如何更新订阅者的登录电子邮件地址？
+title: 更新订阅者登录电子邮件地址
 description: 超级管理员或管理员想要批量更新订阅者域。
 ms.topic: include
 ms.assetid: c1220a33-26b0-4bf9-be97-ab2b3055e351
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 06/01/2021
 user.type: admin
 tags: email
 subscription.type: vl, cloud, retail, partner
 sap.id: b84fffb5-3363-eb7d-224e-1c63faf4067b
-ms.openlocfilehash: 56ba89a2546c384835addb05574c3280fed500e6
-ms.sourcegitcommit: 485f0f6f578568ee31b2ac093e32a6d01dc9c1c5
-ms.translationtype: HT
+ms.openlocfilehash: cb49fdec1f016486681cb628b8f1ef29c5c7e737
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "130019244"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133254476"
 ---
 ## <a name="update-subscribers-sign-in-email-address"></a>更新订阅者登录电子邮件地址
 

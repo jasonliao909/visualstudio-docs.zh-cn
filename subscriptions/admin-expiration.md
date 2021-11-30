@@ -2,17 +2,17 @@
 title: 管理员门户对过期 Visual Studio 订阅协议的更改 | Microsoft Docs
 author: evanwindom
 ms.author: amast
-manager: amast
+manager: shve
 ms.assetid: f38092ba-051c-4e58-97f5-4255dbe873ba
 ms.date: 10/08/2021
 ms.topic: conceptual
 description: 了解协议过期后会对管理员产生什么影响
-ms.openlocfilehash: e92dd6af6656dc9907ef3ff6d626c3360e338e19
-ms.sourcegitcommit: a1c18c491e310b00a43e76a911f778e643cd8f8d
-ms.translationtype: HT
+ms.openlocfilehash: d3f98972202e3e267122b775727751d9d3e67fa9
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "132995369"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133257824"
 ---
 # <a name="admin-portal-changes-for-expired-agreements"></a>管理员门户对过期协议的更改
 如果用于购买 Visual Studio 订阅的协议过期，则该协议和在该协议中分配的订阅将在有限的时间内保持可用。  对于所有协议而言，该时间段可能并不相同，在通过电子邮件和管理门户接收的通信中将提供有关该时长的更多具体信息。  根据公司的计划，你可能需要采取一些措施来帮助订阅者或防止丢失重要信息。

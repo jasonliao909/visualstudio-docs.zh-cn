@@ -1,18 +1,18 @@
 ---
 title: 管理 Microsoft 合作伙伴网络中的 Visual Studio 订阅 | Microsoft Docs
 author: evanwindom
-ms.author: cabuschl
-manager: cabuschl
+ms.author: amast
+manager: shve
 ms.assetid: 83efe4ee-9a9d-4776-b27c-852d89dadafd
 ms.date: 10/28/2020
 ms.topic: how-to
 description: 对于 MPN 合作伙伴而言，如何将 Visual Studio 订阅分配到最终用户。
-ms.openlocfilehash: a1ea239401805132d2205586b6167c7944cc5839
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
-ms.translationtype: HT
+ms.openlocfilehash: 3624f4737f5c624feb59cecbedc9d02df496cd5e
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128430203"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133257005"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>管理通过 Microsoft 合作伙伴网络 (MPN) 提供的 Visual Studio 订阅
 具备相应资格或在 MPN 中购买了Action Pack 的合作伙伴可以使用 Visual Studio 订阅。 这些订阅按用户授权，并且仅在分配给为合作伙伴公司工作的特定命名用户时才有效。

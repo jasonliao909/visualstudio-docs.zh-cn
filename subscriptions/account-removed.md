@@ -2,17 +2,17 @@
 title: Microsoft 删除的 Visual Studio 订阅分配 | Microsoft Docs
 author: evanwindom
 ms.author: amast
-manager: amast
+manager: shve
 ms.assetid: f853ed9d-3543-4f5f-a754-92381ee03523
 ms.date: 09/30/2021
 ms.topic: how-to
 description: 了解当你看到关于 Microsoft 已删除某个订阅的通知时意味着什么。
-ms.openlocfilehash: 1c35755053bd2f37f4553d0b84e39ea275f5f893
-ms.sourcegitcommit: a1c18c491e310b00a43e76a911f778e643cd8f8d
-ms.translationtype: HT
+ms.openlocfilehash: 7d8a0d44f147f3490afd85de28173839ee222629
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "132995489"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133257876"
 ---
 # <a name="why-does-my-dashboard-shows-microsoft-removed-a-subscriber"></a>为什么我的仪表板显示 Microsoft 删除了订阅者？ 
 在[管理门户](https://manage.visualstudio.com)上的仪表板的“最近的更改”部分，你可能会看到订阅已删除，原因显示为“帐户已关闭”。  出现这种情况的原因有两个。  

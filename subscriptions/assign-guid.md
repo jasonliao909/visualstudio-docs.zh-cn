@@ -2,17 +2,17 @@
 title: 向 Visual Studio 订阅者分配特定 GUID | Microsoft Docs
 author: evanwindom
 ms.author: amast
-manager: amast
+manager: shve
 ms.date: 03/19/2021
 ms.topic: conceptual
 ms.assetid: f9c82d7d-55bd-4e41-a170-6077b28ba5af
 description: 了解管理员如何将特定订阅 GUID 分配给订阅者
-ms.openlocfilehash: c71638390d1765f6b3e47b21ec74b3f6ffe4940a
-ms.sourcegitcommit: a1c18c491e310b00a43e76a911f778e643cd8f8d
-ms.translationtype: HT
+ms.openlocfilehash: ac93ce09f049d96d9e23455dd77f667c396648ab
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "132995652"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133257018"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>在 Visual Studio 订阅管理门户中分配特定订阅
 

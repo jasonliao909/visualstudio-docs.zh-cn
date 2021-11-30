@@ -1,18 +1,18 @@
 ---
 title: Visual Studio 订阅中的 Microsoft 技术社区 | Microsoft Docs
 author: evanwindom
-ms.author: cabuschl
-manager: cabuschl
+ms.author: amast
+manager: shve
 ms.assetid: 8fccb5f6-ff61-488f-a91e-447faeda798d
 ms.date: 10/21/2021
 ms.topic: conceptual
 description: 了解所选 Visual Studio 订阅中包含的 Microsoft 技术社区论坛支持权益。
-ms.openlocfilehash: 17084b2cdf9521b7dd2b429e00173b885d053371
-ms.sourcegitcommit: efe1d737fd660cc9183177914c18b0fd4e39ba8b
-ms.translationtype: HT
+ms.openlocfilehash: 61d884ff1d7c9b62ffbe514e298331a4cebf8f87
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "130211670"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133257057"
 ---
 # <a name="microsoft-tech-community-forum-support-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Microsoft 技术社区论坛支持
 与其他用户和 Microsoft 技术专家建立联系并交流互动，了解最佳实践、设计体系结构和最新更新。

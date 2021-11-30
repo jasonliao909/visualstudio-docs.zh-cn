@@ -1,18 +1,18 @@
 ---
 title: Visual Studio 订阅中的 LinkedIn 学习权益 | Microsoft Docs
 author: evanwindom
-ms.author: cabuschl
-manager: cabuschl
+ms.author: amast
+manager: shve
 ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
 ms.date: 10/18/2021
 ms.topic: how-to
 description: 了解有关所选 Visual Studio 订阅中包含的作为 LinkedIn Premium 订阅一部分的 LinkedIn Learning 权益。
-ms.openlocfilehash: 335a8c3b1014d1d13816d39b4fbcbc015e889e78
-ms.sourcegitcommit: 6c847aedf0f943e253a4c2f0e4b516b953168bc7
-ms.translationtype: HT
+ms.openlocfilehash: 79e401a296fbab6bd4f2236b4ffa6f470b4b9b22
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "130151874"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133256485"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 LinkedIn Learning 权益
 解放 LinkedIn 的强大功能，从而可以访问促进职业发展所需的人员、见解和技能。  从行业专家处了解最受欢迎的业务、技术和创造性技能。

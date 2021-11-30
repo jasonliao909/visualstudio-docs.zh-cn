@@ -1,18 +1,18 @@
 ---
 title: 为客户管理 Visual Studio 订阅的合作伙伴 | Microsoft Docs
 author: evanwindom
-ms.author: cabuschl
-manager: cabuschl
+ms.author: amast
+manager: shve
 ms.assetid: 6866dfab-c4fa-428e-bb0d-7b202c81f770
 ms.date: 10/28/2020
 ms.topic: conceptual
 description: 了解合作伙伴如何为其客户管理 Visual Studio 订阅。
-ms.openlocfilehash: 57f00834d3017613c9f22164dcc416cfb674229f
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
-ms.translationtype: HT
+ms.openlocfilehash: 56c0cd13fefc0105cb440743f9e7295dead4611b
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128432707"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133257591"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>合作伙伴代表客户管理订阅
 要在 Visual Studio [订阅管理门户](https://manage.visualstudio.com)中管理订阅，合作伙伴需要执行一些步骤。 

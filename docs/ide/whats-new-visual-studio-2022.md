@@ -14,12 +14,12 @@ ms.prod: visual-studio-dev17
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 1908a36c54e0a57e31450f7e159a084c39c42ad4
-ms.sourcegitcommit: 8b44ba7864f67afa476708d5092729345e689f93
-ms.translationtype: HT
+ms.openlocfilehash: 9f7b8c025790241910ceac4a13c98391f35ca833
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "132861545"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133255952"
 ---
 # <a name="whats-new-in-visual-studio-2022"></a>Visual Studio 2022 中的新增功能
 
@@ -45,7 +45,7 @@ Windows 上的 Visual Studio 2022 现在是 64 位应用程序。 这意味着�
 
 另外，在 [Visual Studio 2022 Preview 4](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-preview-4-is-now-available/) 中，我们重点改善了多个关键功能的性能。 例如，在搜索 [Orchard Core](https://github.com/OrchardCMS/OrchardCore) 等大型解决方案时，[在文件中查找](find-in-files.md)功能的速度现在比以前快了 3 倍。
 
-:::image type="content" source="media/vs-2022/find-files-faster.gif" alt-text="“在文件中查找”功能的动画，在搜索大型 C# 解决方案时，该功能的速度比旧版 Visual Studio 快了三倍。":::
+:::image type="content" source="media/vs-2022/find-files-faster.gif" alt-text="&quot;在文件中查找&quot; 功能的动画在搜索大型 c # 解决方案比以前版本的 Visual Studio 快三倍。":::
 
 ## <a name="build-modern-apps"></a>生成新式应用
 

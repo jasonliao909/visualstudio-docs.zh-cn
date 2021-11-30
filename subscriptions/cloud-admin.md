@@ -2,17 +2,17 @@
 title: 设置 Visual Studio 月度订阅的管理员 | Microsoft Docs
 author: evanwindom
 ms.author: amast
-manager: amast
+manager: shve
 ms.assetid: 8b30e2bc-2ac3-4fcc-b296-128731471032
 ms.date: 03/21/2021
 ms.topic: how-to
 description: 设置月度订阅的管理员
-ms.openlocfilehash: d316344d633d8ea328d13860235fe221e7476754
-ms.sourcegitcommit: 17202f3ac3f7f17ce3756b57dd56321f7254d1dd
-ms.translationtype: HT
+ms.openlocfilehash: cce8753392e52523f7125d6a4943b757adf94e57
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "133092887"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133256316"
 ---
 # <a name="set-up-admins-for-visual-studio-monthly-subscriptions"></a>设置 Visual Studio 月度订阅的管理员
 

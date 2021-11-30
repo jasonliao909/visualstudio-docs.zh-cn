@@ -1,18 +1,18 @@
 ---
 title: 使用工作或学校帐户登录到 Visual Studio 订阅 | Microsoft Docs
 author: evanwindom
-ms.author: cabuschl
-manager: cabuschl
+ms.author: amast
+manager: shve
 ms.assetid: f39a2672-c283-4755-93d3-31c7c7a032d0
 ms.date: 10/13/2021
 ms.topic: how-to
 description: 了解如何使用工作或学校帐户登录到 Visual Studio 订阅。
-ms.openlocfilehash: 827176cd4ca8d3dd6c7df84b9bba57948778c8d1
-ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
-ms.translationtype: HT
+ms.openlocfilehash: a2c92851d9f35bb2530d695622bf8bb12c168d3d
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "130010842"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133256199"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>使用工作或学校帐户登录到 Visual Studio 订阅 
 登录到 Visual Studio 订阅的步骤取决于你所使用的帐户类型。  例如，你可能正在使用由你的公司或学校提供的 Microsoft 帐户 (MSA) 或电子邮件地址。  自 2019 年 1 月起，现还可使用 GitHub 帐户登录某些订阅。 

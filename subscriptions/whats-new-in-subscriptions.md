@@ -4,15 +4,15 @@ description: 了解可用于管理 Visual Studio 订阅的新功能和更新功�
 ms.date: 10/18/2021
 ms.topic: conceptual
 author: evanwindom
-ms.author: cabuschl
-manager: cabuschl
+ms.author: amast
+manager: shve
 ms.assetid: 2dc938b5-37e9-4dfc-8676-5d0a91d366ab
-ms.openlocfilehash: 632134e2aa19eb6ff85adb56d4cbad09dceb6d0a
-ms.sourcegitcommit: 4efdab6a579b31927c42531bb3f7fdd92890e4ac
-ms.translationtype: HT
+ms.openlocfilehash: 3b219f3a5d084e80c504b7e7f884a75d6b1fd7c5
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "130350659"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133254834"
 ---
 # <a name="whats-new-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的新增功能
 我们会经常更新订阅权益包以使其更加有用。 我们还将对订阅者门户和订阅管理门户进行改进，竭尽所能为你提供最佳体验。  我们还会生成新内容来解答用户问题和反映所作的更改。  继续阅读，了解按季度排序的最新功能和更新。

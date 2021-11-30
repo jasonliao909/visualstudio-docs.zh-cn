@@ -1,20 +1,20 @@
 ---
-title: 如何将订阅者转到新协议？
+title: 我的协议已续订，但订阅者未转移
 description: 超级管理员或管理员预期订阅者会在新协议上，但新协议中未反映出订阅者的情况
 ms.assetid: a95181b0-b64c-4c29-a90e-928962c06d81
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 09/29/2021
 user.type: admin
 tags: renewal, transfer
 subscription.type: vl, cloud, retail, partner
 sap.id: b84fffb5-3363-eb7d-224e-1c63faf4067b
-ms.openlocfilehash: ec9b31ceac0b83d1e749e22762ecd6e7be51da5d
-ms.sourcegitcommit: 485f0f6f578568ee31b2ac093e32a6d01dc9c1c5
-ms.translationtype: HT
+ms.openlocfilehash: dd2e754b837e87a9d9cc002a7a7f0c713830a636
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "130019396"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133254446"
 ---
 ## <a name="my-agreement-was-renewed-but-the-subscribers-didnt-transfer-over-from-the-old-agreement"></a>我的协议已续订，但订阅者未从旧协议转移
 

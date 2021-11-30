@@ -2,17 +2,17 @@
 title: 在 Visual Studio 订阅管理门户中设置首选项
 author: evanwindom
 ms.author: amast
-manager: amast
+manager: shve
 ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
 ms.date: 10/08/2021
 ms.topic: conceptual
 description: 了解如何在管理门户中设置语言、联系人、订阅级别等的首选项
-ms.openlocfilehash: b246eda712c3ca7fce24b54fe5f6659112db7213
-ms.sourcegitcommit: a1c18c491e310b00a43e76a911f778e643cd8f8d
-ms.translationtype: HT
+ms.openlocfilehash: 80f6630d66cedcfe98f6915dc466176ef02b9faf
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "132995502"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133255965"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-admin-portal"></a>在管理门户中设置协议的首选项
 超级管理员可以在管理门户中设置某些首选项，这些首选项将全局应用于每个协议。  这些首选项将在管理员添加订阅者时为管理员自动填充订阅详细信息，并且只能由超级管理员进行全局修改。  

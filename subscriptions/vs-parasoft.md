@@ -1,18 +1,18 @@
 ---
 title: Visual Studio 订阅中的 Parasoft Virtualize/SOAtest Professional | Microsoft Docs
 author: evanwindom
-ms.author: cabuschl
-manager: cabuschl
+ms.author: amast
+manager: shve
 ms.assetid: 00c1f300-d04e-4695-815e-775ffbf0f931
 ms.date: 03/17/2021
 ms.topic: how-to
 description: 了解如何激活 Visual Studio 订阅中包含的 Parasoft Virtualize/SOA Test Professional 订阅。
-ms.openlocfilehash: 706d3c13cdfcc36c031d768321d4cc074015fa6a
-ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
-ms.translationtype: HT
+ms.openlocfilehash: 64733fe389b9777a8f21e2ed5d62f6366b8d329b
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "131127476"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133256303"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Parasoft Virtualize/SOAtest Professional 桌面
 

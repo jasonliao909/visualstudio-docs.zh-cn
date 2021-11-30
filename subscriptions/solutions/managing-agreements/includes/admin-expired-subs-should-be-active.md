@@ -3,19 +3,19 @@ title: 为什么我的组织的订阅在应该处于活动状态时会显示已�
 description: 订阅反映为已到期，但协议仍处于活动状态
 ms.topic: include
 ms.assetid: 9654f105-ad1f-42f7-ae4d-e3a56dfea508
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 03/23/2021
 user.type: admin
 tags: manage, agreement, expiration
 subscription.type: vl, cloud, retail, partner
 sap.id: 4e55abf9-8505-ecdc-c55f-c67a167a357c
-ms.openlocfilehash: 29b098976247d94acf879b2a75816752635c6ba6
-ms.sourcegitcommit: 65a1b6aae8387735f05a83b45e1a6865e9805e1f
-ms.translationtype: HT
+ms.openlocfilehash: 4d849e1b83f57b1a3ce653bf58a55d417a6c1056
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "129339687"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133254441"
 ---
 ## <a name="why-are-my-organizations-subscriptions-showing-as-expired-when-they-should-be-active"></a>为什么我的组织的订阅在应该处于活动状态时会显示为已到期？
 

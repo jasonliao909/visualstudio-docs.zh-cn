@@ -2,17 +2,17 @@
 title: Visual Studio 订阅的超级管理员和管理员角色
 author: evanwindom
 ms.author: amast
-manager: amast
+manager: shve
 ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
 ms.date: 03/19/2021
 ms.topic: conceptual
 description: 了解超级管理员和管理员角色以及如何分配管理员。
-ms.openlocfilehash: b47b6f2beef816acb6e67d4e0b53137c6de45eba
-ms.sourcegitcommit: a1c18c491e310b00a43e76a911f778e643cd8f8d
-ms.translationtype: HT
+ms.openlocfilehash: 9ea1cbd69572710248d91d3cf443ee00c093144d
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "132995019"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133257863"
 ---
 # <a name="super-admins-and-admins-for-visual-studio-subscription-agreements"></a>Visual Studio 订阅协议的超级管理员和管理员
 

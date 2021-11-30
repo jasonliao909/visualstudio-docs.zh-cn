@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 193b7cc73b87bee1a5332bd1b46a38276f0fb4b0
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: f5c56f26b575513d662db9b3636b5fe1c3b9ec5a
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126644241"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133256888"
 ---
 # <a name="options-text-editor-c-advanced"></a>选项，文本编辑器，C#，高级
 
@@ -90,13 +90,13 @@ ms.locfileid: "126644241"
    using System.Linq;
    ```
 
-::: moniker range=">=vs-2019"                                              
+::: moniker range=">=vs-2019"
 - 建议对 .NET Framework 程序集中的类型使用 using
 ::: moniker-end
-                                         
-::: moniker range="vs-2017"                                                
+
+::: moniker range="vs-2017"
 - 建议对引用程序集中的类型使用 using
-::: moniker-end                                                            
+::: moniker-end
 
 - 建议对 NuGet 包中的类型使用 using
 
@@ -138,25 +138,25 @@ ms.locfileid: "126644241"
 
 - 为 /// 生成 XML 文档注释
 
-   选中后，在键入 `///` 命令说明后为 XML 文档注释插入 XML 元素。 有关 XML 文档的详细信息，请参阅 [XML 文档注释（C# 编程指南）](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)。
+  选中后，在键入 `///` 命令说明后为 XML 文档注释插入 XML 元素。 有关 XML 文档的详细信息，请参阅 [XML 文档注释（C# 编程指南）](/dotnet/csharp/programming-guide/xmldoc/)。
 
 ::: moniker range=">=vs-2019"
 
 ## <a name="inline-hints"></a>内联提示
 
-- 内联参数名称提示 
-    
-    如果选择此项，则会在函数调用中的每个参数之前插入文本、强制转换文本和对象实例化的参数名称提示。  
-    
+- 内联参数名称提示
+
+    如果选择此项，则会在函数调用中的每个参数之前插入文本、强制转换文本和对象实例化的参数名称提示。
+
     ![CSharp 的内联参数名称提示](media/inline-parameter-name-hints-csharp.png)
 
-- 内联类型提示 
-    
-    选中后，为具有推断类型和 lambda 参数类型的变量插入类型提示。  
-    
+- 内联类型提示
+
+    选中后，为具有推断类型和 lambda 参数类型的变量插入类型提示。
+
     ![C# 的内联类型提示](media/inline-type-hints-csharp.png)
 
-## <a name="inheritance-margin"></a>继承边距 
+## <a name="inheritance-margin"></a>继承边距
 
 - 如果选择此项，则会向表示代码的实现和替代的边距添加图标。 单击“继承边距”图标将显示可以选择导航到的继承选项。
 
@@ -167,7 +167,6 @@ ms.locfileid: "126644241"
 ## <a name="see-also"></a>请参阅
 
 - [如何：为文档生成插入 XML 注释](../../ide/reference/generate-xml-documentation-comments.md)
-- [XML 文档注释（C# 编程指南）](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
-- [使用 XML 注释记录代码（C# 指南）](/dotnet/csharp/codedoc)
+- [使用 XML 注释记录代码（C# 指南）](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
 - [设置语言特定的编辑器选项](../../ide/reference/setting-language-specific-editor-options.md)
 - [C# IntelliSense](../../ide/visual-csharp-intellisense.md)

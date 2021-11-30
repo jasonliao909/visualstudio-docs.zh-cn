@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: dd1f130d8cc63ad86ca0ae93dfd551edf871311f
-ms.sourcegitcommit: 8b44ba7864f67afa476708d5092729345e689f93
-ms.translationtype: HT
+ms.openlocfilehash: 607f4ea75911c8ac7da0f1ef2443cc2234d33492
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "132861492"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133257083"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>在 Visual Studio 中对 JavaScript 和 TypeScript 代码进行单元测试
 
@@ -289,7 +289,7 @@ Test execution time: 1.5731 Seconds
 * `find_tests`
 * `run_tests`
 
-有关 `find_tests` 和 `run_tests` 实现的示例，请参阅 Mocha 单元测试框架实现：
+有关 和 实现的良好 `find_tests` 示例，请参阅以下各项中 `run_tests` Mocha 单元测试框架的实现：
 
 `<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter\TestFrameworks\mocha\mocha.js`
 

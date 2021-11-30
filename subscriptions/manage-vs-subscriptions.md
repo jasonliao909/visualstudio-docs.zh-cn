@@ -1,18 +1,18 @@
 ---
 title: 管理 Visual Studio 订阅
 author: evanwindom
-ms.author: cabuschl
-manager: cabuschl
+ms.author: amast
+manager: shve
 ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
 ms.date: 03/21/2021
 ms.topic: conceptual
 description: 了解如何充分利用 Visual Studio 订阅
-ms.openlocfilehash: ddd49d1725faaeed5b727d782888f94bbd2d107e
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
-ms.translationtype: HT
+ms.openlocfilehash: 851b7b785726400605c32aba32ed45fcc25006e4
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128432715"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133257447"
 ---
 # <a name="managing-subscriptions"></a>管理订阅
 

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a6bc40fc19dd36c7cfae35e33b94c6c27a348e5
-ms.sourcegitcommit: bfae1f88c278835e26f3200cfced769be3191fc4
-ms.translationtype: HT
+ms.openlocfilehash: b872043a5e8b200f6f5678857aa1c4e67c53945b
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "132535303"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133257044"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>教程：了解如何使用 Visual Studio 调试 C# 代码
 
@@ -104,11 +104,11 @@ ms.locfileid: "132535303"
 
    如果开始窗口未打开，请选择“文件”>“开始窗口”   。
 
-1. 在“开始”窗口上，选择“创建新项目”。
+1. 在“开始”窗口上，选择“创建新项目”  。
 
 1. 在“创建新项目”窗口的搜索框中输入或键入“控制台”   。 接下来，从“语言”列表中选择 C#，然后从“平台”列表中选择 Windows 。 
 
-   应用语言和平台筛选器之后，对 .NET Core 选择“控制台应用”模板，然后选择“下一步” 。
+   应用语言和平台筛选器之后，对 .NET Core 选择“控制台应用程序”模板，然后选择“下一步” 。
 
    ![控制台应用的 C# 模板的屏幕截图。](../csharp/media/vs-2019/get-started-create-console-project.png)
 
@@ -117,7 +117,7 @@ ms.locfileid: "132535303"
 
 1. 在“配置新项目”窗口中，在“项目名称”框中键入或输入“GetStartedDebugging”    。 然后，选择“下一步”。
 
-1. 选择建议的目标框架 (.NET Core 3.1) 或 .NET 5，然后选择“创建”。
+1. 选择 "推荐的目标框架" ( ".NET Core 3.1 (长期支持) ) 或 .NET 5.0 (" 当前) "，然后选择" **创建**"。
 
    此时，Visual Studio 将打开新项目。
 
@@ -142,7 +142,7 @@ ms.locfileid: "132535303"
 
 1. 在“配置新项目”窗口中，在“项目名称”框中键入或输入“GetStartedDebugging”    。 然后，选择“下一步”。
 
-1. 在“其他信息”窗口中，确保在“框架”下拉菜单中选择“.NET 6.0”，然后选择“创建”   。
+1. 在 "**附加信息**" 窗口中，确保在 "**框架**" 下拉菜单中选择 " **.net 6.0 (长期支持")** ，然后选择 "**创建**"。
 
     此时，Visual Studio 将打开新项目。
 

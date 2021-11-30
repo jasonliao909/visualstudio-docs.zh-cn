@@ -2,7 +2,7 @@
 title: “选项”对话框 ->“环境”->“常规”
 description: 了解如何通过“环境”部分的“常规”页来更改 IDE 的颜色主题、状态栏设置、文件扩展名关联等内容。
 ms.custom: SEO-VS-2020
-ms.date: 07/26/2019
+ms.date: 11/29/2021
 ms.topic: reference
 f1_keywords:
 - VS.Environment.General
@@ -23,12 +23,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c65f9e40e1e3369d8187347404baf4502275f8e
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 19c96e580a55c6b6a5deaf307fbe9e0653c7b0da
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126644406"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133256966"
 ---
 # <a name="options-dialog-box-environment--general"></a>“选项”对话框：环境 \> 常规
 
@@ -40,7 +40,26 @@ ms.locfileid: "126644406"
 
 为 IDE 选择“蓝色”、“浅色”、“深色”，或者“蓝色(额外对比度)”颜色主题。
 
-可以通过从 [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor) 中下载并安装“Visual Studio 颜色主题编辑器”来安装其他预定义的主题并创建自定义主题。 安装此工具后，其他颜色主题将显示在“颜色主题”列表框中。
+::: moniker range="vs-2022"
+
+还可以通过选择“使用系统设置”，选择使用 Windows 使用的主题。
+
+::: moniker-end
+
+可以通过下载并安装当前使用的版本的 Visual Studio 颜色主题设计器来安装其他预定义主题并创建自定义主题，如下所示：
+
+- [2022 年Visual Studio主题设计器](https://marketplace.visualstudio.com/items?itemName=idex.colorthemedesigner2022)
+- [Visual Studio 2019 的颜色主题设计器](https://marketplace.visualstudio.com/items?itemName=ms-madsk.ColorThemeDesigner)。
+- [Visual Studio 2017 的颜色主题编辑器](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor)
+
+安装此工具后，其他颜色主题将显示在“颜色主题”列表框中。
+
+::: moniker range="vs-2022"
+
+> [!NOTE]
+> 想要更多的主题选项？ 在 [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=VS&category=Tools&vsVersion=&subCategory=Themes&sortBy=Installs) 上查看各种自定义主题。 若要查看基于 VS Code 的新的 Visual Studio 2022 自定义主题的示例，请参阅[新的 Visual Studio 主题集合简介](https://devblogs.microsoft.com/visualstudio/custom-themes/)博客文章。
+
+::: moniker-end
 
 将词首字母大写样式应用到菜单栏
 

@@ -3,19 +3,19 @@ title: 登录管理门户后，我看不到任何要管理的协议
 description: 超级管理员或管理员已登录管理门户，但未看到任何协议
 ms.topic: include
 ms.assetid: e276637d-8a22-4bb2-a574-7ba9442b92f0
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 06/02/2021
 user.type: admin
 tags: agreement
 subscription.type: vl, cloud, retail, partner
 sap.id: 17a2bf94-0d03-2629-dfd8-e8935f9126ec
-ms.openlocfilehash: 4fa8ece98373c4dfec5b52ca424738af3b664ec8
-ms.sourcegitcommit: 364e106fcbf4fb6af534e81d8b700901f79f4ec8
-ms.translationtype: HT
+ms.openlocfilehash: e99cd26ec1b0bd2f2aa878740e189ce828c3cdd8
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2021
-ms.locfileid: "129013251"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133254506"
 ---
 ## <a name="when-i-sign-into-the-admin-portal-i-dont-see-any-agreements-to-manage"></a>登录管理门户后，我看不到任何要管理的协议
 

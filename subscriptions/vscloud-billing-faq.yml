@@ -2,18 +2,18 @@
 metadata:
   title: Visual Studio Visual 云订阅的计费常见问题解答 | Microsoft Docs
   author: evanwindom
-  ms.author: cabuschl
-  manager: cabuschl
+  ms.author: amast
+  manager: shve
   ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
   ms.date: 10/18/2021
   ms.topic: conceptual
   description: 云订阅的计费问题。
-  ms.openlocfilehash: 40bd954902a7fbd31dcf403d17fa2f6778d8c5e6
-  ms.sourcegitcommit: 6c847aedf0f943e253a4c2f0e4b516b953168bc7
-  ms.translationtype: HT
+  ms.openlocfilehash: 921f1529d623ce17f3d889c2653b295c48503ff1
+  ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+  ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 10/19/2021
-  ms.locfileid: "130151884"
+  ms.lasthandoff: 11/30/2021
+  ms.locfileid: "133257200"
 title: Visual Studio 云订阅计费常见问题解答
 summary: >
   请确保[比较云订阅权益和定价](https://visualstudio.microsoft.com/vs/pricing/)，了解每种 Visual Studio 订阅的权益，云订阅与标准 Visual Studio 订阅之间的不同之处，以及订阅者权益的相关详细信息等。

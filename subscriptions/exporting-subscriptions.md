@@ -2,17 +2,17 @@
 title: 在 Visual Studio 订阅中导出订阅信息| Microsoft Docs
 author: evanwindom
 ms.author: amast
-manager: amast
+manager: shve
 ms.assetid: 14e4cffb-a695-436c-b269-7820f7411f4e
 ms.date: 08/31/2021
 ms.topic: conceptual
 description: 了解如何导出订阅者列表及其订阅分配的详细信息。
-ms.openlocfilehash: c838d4d618efa6d5cecb0ba70f56bd199fcfae61
-ms.sourcegitcommit: 17202f3ac3f7f17ce3756b57dd56321f7254d1dd
-ms.translationtype: HT
+ms.openlocfilehash: 37713ea16898ad36a91cf2df2524e360001489f2
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "133092900"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133257421"
 ---
 # <a name="export-subscription-information"></a>导出订阅信息
 在 Visual Studio 订阅[管理门户](https://manage.visualstudio.com)中，可以导出订阅者列表和有关其分配的详细信息。 这些信息包括：订阅者的姓名、电子邮件地址、备用电子邮件地址、订阅级别、分配日期、激活状态、到期日期、引用字段、是否启用下载、国家/地区、语言、订阅状态和订阅 GUID。  此列表将导出为 CSV 文件，可以在 Microsoft Excel 中轻松打开，以创建图表、透视图和其他项目。

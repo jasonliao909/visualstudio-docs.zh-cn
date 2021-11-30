@@ -15,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 816b72782866bc8c44e88431db3782a182428969
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
-ms.translationtype: HT
+ms.openlocfilehash: 0a7efaa9fdff2c09cdbb6c26c1bf81e3bf285da8
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128430721"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133257980"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>通过 Visual Basic 了解项目和解决方案
 

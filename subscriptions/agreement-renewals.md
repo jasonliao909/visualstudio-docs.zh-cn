@@ -2,17 +2,17 @@
 title: Visual Studio 订阅协议续订后会发生什么情况 | Microsoft Docs
 author: evanwindom
 ms.author: amast
-manager: amast
+manager: shve
 ms.assetid: c7198d87-dfbf-4b2f-8ed4-bb4d56873dc1
 ms.date: 11/10/2021
 ms.topic: conceptual
 description: 了解 Visual Studio 订阅协议续订后管理员应看到的内容。
-ms.openlocfilehash: a702654f505d978068ea93d1f8bddc2e44509e7b
-ms.sourcegitcommit: 00451b7258ab86e259d0fe787669330b61efa8e5
-ms.translationtype: HT
+ms.openlocfilehash: 73b7d555aa4748b6b0ab8a813f938fe67d9886b8
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "132365004"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133257240"
 ---
 # <a name="what-happens-when-visual-studio-subscription-agreements-are-renewed"></a>Visual Studio 订阅协议续订后会发生什么情况
 当你的公司续订包含 Visual Studio 订阅的协议时，你在[管理门户](https://manage.visualstudio.com)中看到的内容将取决于续订的完成方式。  

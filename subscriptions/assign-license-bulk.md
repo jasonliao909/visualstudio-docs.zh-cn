@@ -2,16 +2,16 @@
 title: 将 Visual Studio 订阅分配给多个用户 | Microsoft Docs
 author: evanwindom
 ms.author: amast
-manager: amast
+manager: shve
 ms.date: 10/21/2021
 ms.topic: conceptual
 description: 了解管理员如何一次分配多个订阅。
-ms.openlocfilehash: a78a57690761501c1edea2e993bd8d6a83bc1554
-ms.sourcegitcommit: a1c18c491e310b00a43e76a911f778e643cd8f8d
-ms.translationtype: HT
+ms.openlocfilehash: de94a3990a69e4ca99b2d55243faad3ae842d45d
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "132995071"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133257993"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>将订阅分配给多个用户
 你可以在订阅管理门户中一次添加一个多个用户，也可以采用大用户组形式添加。  要添加各个用户，请参阅[添加单个用户](assign-license.md)。

@@ -3,19 +3,19 @@ title: 如何添加另一个超级管理员或管理员？
 description: 管理员想要向协议添加其他管理员。
 ms.topic: include
 ms.assetid: bd89a871-2f8b-405f-9a49-b0338063f8f1
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 06/01/2021
 user.type: admin
 tags: super, admin
 subscription.type: vl, cloud, retail, partner
 sap.id: 8789faa7-9d29-25d8-018a-4f6ecee827c8
-ms.openlocfilehash: 921f70c7415402cc3da531354e1dbe5449eb9b12
-ms.sourcegitcommit: d63ba1eff845d41ca095efb14b499ea96c4b6eba
-ms.translationtype: HT
+ms.openlocfilehash: 1a347f26bd853cb573837c534c7d0f1d9327e348
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "129585186"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133254482"
 ---
 ## <a name="how-to-add-another-super-admin-or-admin"></a>如何添加另一个超级管理员或管理员
 

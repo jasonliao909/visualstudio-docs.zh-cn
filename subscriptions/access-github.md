@@ -2,17 +2,17 @@
 title: 带有 GitHub Enterprise 的 Visual Studio 订阅 | Microsoft Docs
 author: evanwindom
 ms.author: amast
-manager: amast
+manager: shve
 ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
 ms.date: 10/08/2021
 ms.topic: conceptual
 description: 了解如何访问作为 Visual Studio 订阅的一部分的 GitHub Enterprise
-ms.openlocfilehash: d8fdd5b3892ff4b3fa325b647adca15584df9f6d
-ms.sourcegitcommit: 0b949fd7bb38d784ff66edec4725de55d57e76fc
+ms.openlocfilehash: 9f6cab69aa8458d1b05b8040e97ccfb7405fb353
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "133219256"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133255740"
 ---
 # <a name="visual-studio-subscriptions-with-github-enterprise"></a>带有 GitHub Enterprise 的 Visual Studio 订阅 
 
