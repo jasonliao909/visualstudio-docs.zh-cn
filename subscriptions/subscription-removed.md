@@ -1,18 +1,18 @@
 ---
 title: Visual Studio 订阅移除后会发生什么情况 | Microsoft Docs
 author: evanwindom
-ms.author: cabuschl
-manager: cabuschl
+ms.author: amast
+manager: shve
 ms.assetid: 34eaceda-f5db-41d6-bc23-ecf55fe1768e
 ms.date: 10/13/2021
 ms.topic: conceptual
 description: 了解管理员删除 Visual Studio 订阅后会发生什么情况。
-ms.openlocfilehash: ccf02e271ed0f8a125cb2cb5b4f99497e8b37ad3
-ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
-ms.translationtype: HT
+ms.openlocfilehash: b0de8bfd2d2a85ae88bb793bdffd5ca6ba2d5e3c
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "131127281"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133255926"
 ---
 # <a name="what-happens-when-an-admin-removes-my-subscription"></a>管理员删除订阅后会发生什么情况？
 如果你的 Visual Studio 订阅由你的工作或学校组织中的管理员分配给你，则他们可能会在某个时间点删除该订阅。  原因可能包括对作业角色或组织购买计划的更改。  如果管理员删除你的订阅，本文将概述你可能会遇到的情况。  

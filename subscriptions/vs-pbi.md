@@ -1,18 +1,18 @@
 ---
 title: Visual Studio 订阅中的 Power BI Pro 权益 | Microsoft Docs
 author: evanwindom
-ms.author: cabuschl
-manager: cabuschl
+ms.author: amast
+manager: shve
 ms.assetid: 383fc910-3f4c-474a-a3f8-0f13525f05e9
 ms.date: 08/26/2021
 ms.topic: how-to
 description: 了解有关所选 Visual Studio 订阅中随附的 Power BI Pro 订阅。
-ms.openlocfilehash: b741c44304c8b204321927265bfe9122ff71775b
-ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
-ms.translationtype: HT
+ms.openlocfilehash: 7e2538a376edf0c7ffc3509429bf39bde898b1ce
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "131127294"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133256602"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Power BI Pro
 

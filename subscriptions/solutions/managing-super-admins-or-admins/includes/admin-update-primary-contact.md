@@ -1,21 +1,21 @@
 ---
-title: 如果我是新的主要联系人，我可如何更新联系人信息？
+title: 我们的主要联系人离开了，我是新的主要联系人。 如何更新联系人信息？
 description: 新的主要联系人想要更新主要联系人或超级管理员角色。
 ms.topic: include
 ms.assetid: 1c123f81-325d-4f0b-a2b5-23f4cf263db1
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 06/01/2021
 user.type: admin
 tags: primary, contact
 subscription.type: vl, cloud, retail, partner
 sap.id: 8789faa7-9d29-25d8-018a-4f6ecee827c8
-ms.openlocfilehash: 1f47ce345e5d1dfee56fdf6d13e1565cc5fdeb54
-ms.sourcegitcommit: 485f0f6f578568ee31b2ac093e32a6d01dc9c1c5
-ms.translationtype: HT
+ms.openlocfilehash: c1d704dced0842e224e7007709aa06941348d42c
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "130019135"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133254488"
 ---
 ## <a name="our-primary-contact-left-and-im-the-new-one-how-can-i-update-the-contact-info"></a>我们的主要联系人离开了，我是新的主要联系人。 如何更新联系人信息？
 

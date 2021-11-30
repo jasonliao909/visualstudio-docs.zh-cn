@@ -1,18 +1,18 @@
 ---
 title: 在订阅者门户中联系你的订阅管理员 | Microsoft Docs
 author: evanwindom
-ms.author: cabuschl
-manager: cabuschl
+ms.author: amast
+manager: shve
 ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
 ms.date: 10/11/2021
 ms.topic: how-to
 description: 了解如何在有疑问或遇到问题时联系你的订阅管理员来寻求帮助。
-ms.openlocfilehash: 2edb686c555cb8c93a069d9705656905f6b51ada
-ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
-ms.translationtype: HT
+ms.openlocfilehash: 7a20b832e6732248b875cf4ef97f1efd62851d8b
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "131126449"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133256849"
 ---
 # <a name="get-assistance-from-your-subscriptions-admin"></a>从你的订阅管理员处获取帮助
 如果 Visual Studio 订阅是由你的工作单位或学校提供给你的，那么它很可能是由订阅管理员或“管理员”分配给你的。  管理员可以分配或删除订阅，更改登录电子邮件地址，确定你是否能够下载软件以及执行与订阅相关的其他功能。

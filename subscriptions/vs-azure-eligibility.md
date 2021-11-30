@@ -2,17 +2,17 @@
 title: Visual Studio 订阅中的 Azure 开发/测试额度资格 | Microsoft Docs
 author: evanwindom
 ms.author: amast
-manager: amast
+manager: shve
 ms.assetid: 3a8f9439-90e7-4a8a-a5a1-d0d6dcd1ba49
 ms.date: 11/11/2021
 ms.topic: conceptual
 description: 了解 Visual Studio 订阅是否包括 Azure 开发/测试额度
-ms.openlocfilehash: 559f0e455a2dc674d88709a07d7de2031b10c65a
-ms.sourcegitcommit: cc8b4e96ec49a8045b6c31a9cdce1caa30c3ab54
-ms.translationtype: HT
+ms.openlocfilehash: f36d3498ae60ebc4ffb05076078bf842f77b25c6
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "132396821"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133256641"
 ---
 # <a name="azure-devtest-credits-for-visual-studio-subscribers"></a>Visual Studio 订户的 Azure 开发/测试额度
 许多 Visual Studio 订阅都包含 Azure 个人开发/测试额度。  利用这些额度，你可以免费探索和尝试各种 Azure 服务。 信用额度因订阅级别而异。  本文介绍每个订阅级别的额度分配。  

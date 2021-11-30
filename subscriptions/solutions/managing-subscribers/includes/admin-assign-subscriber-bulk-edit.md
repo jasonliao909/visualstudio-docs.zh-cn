@@ -3,19 +3,19 @@ title: 如何批量分配订阅者？
 description: 超级管理员或管理员希望详细了解如何使用批量功能。
 ms.topic: include
 ms.assetid: 3b450a79-47d2-4434-899d-bea29a0271e1
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 06/01/2021
 user.type: admin
 tags: bulk
 subscription.type: vl, cloud, retail, partner
 sap.id: b84fffb5-3363-eb7d-224e-1c63faf4067b
-ms.openlocfilehash: d837b52d57a212f7519adfbc027eadbcf5f45dab
-ms.sourcegitcommit: 364e106fcbf4fb6af534e81d8b700901f79f4ec8
-ms.translationtype: HT
+ms.openlocfilehash: c77608822bc4a4718d33c787f7dc9669b3b893fc
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2021
-ms.locfileid: "129013210"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133254444"
 ---
 ## <a name="how-do-i-assign-subscribers-in-bulk"></a>如何批量分配订阅者？
 

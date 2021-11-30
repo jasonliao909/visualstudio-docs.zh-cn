@@ -1,18 +1,18 @@
 ---
 title: Visual Studio 订阅中的 Visual Studio App Center 权益 | Microsoft Docs
 author: evanwindom
-ms.author: cabuschl
+ms.author: amast
 manager: cabushcl
 ms.assetid: badd1d4a-90a6-46de-a037-945a91e6019b
 ms.date: 10/18/2021
 ms.topic: how-to
 description: 了解有关 Visual Studio 订阅中包含的 Visual Studio App Center 权益。
-ms.openlocfilehash: 56e7b49b58a131f2c565e75560dd83c49eb5b3a1
-ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
-ms.translationtype: HT
+ms.openlocfilehash: e87ff009733dd4e050be87ebda5a518220991bd5
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "131127684"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133256082"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Visual Studio App Center
 App Center 是针对应用的任务控制。

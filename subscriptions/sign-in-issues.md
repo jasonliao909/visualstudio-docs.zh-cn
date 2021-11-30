@@ -1,18 +1,18 @@
 ---
 title: 登录 Visual Studio 订阅时遇到的问题 | Microsoft Docs
 author: evanwindom
-ms.author: cabuschl
-manager: cabuschl
+ms.author: amast
+manager: shve
 ms.assetid: 176c7f11-b19d-49e9-a6dd-b2e5da5e8480
 ms.date: 10/13/2021
 ms.topic: conceptual
 description: 了解登录 Visual Studio 订阅时可能出现的问题
-ms.openlocfilehash: 2613a80eb6439e9ce152ad1ba23098e1ffb92209
-ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
-ms.translationtype: HT
+ms.openlocfilehash: 818bd85f64c29974804e4e4bc520d607546493f3
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "130011375"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133254860"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>登录 Visual Studio 订阅时遇到的问题
 若要使用 Visual Studio 订阅，必须先登录。  根据订阅，你可能已使用 Microsoft 帐户 (MSA) 或 Azure Active Directory (Azure AD) 标识进行设置。  本文讨论了在登录订阅时可能遇到的一些问题。

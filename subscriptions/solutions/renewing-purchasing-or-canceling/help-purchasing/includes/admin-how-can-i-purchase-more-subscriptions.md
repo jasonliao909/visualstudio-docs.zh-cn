@@ -2,19 +2,19 @@
 title: 如何购买更多订阅？
 description: 超级管理员/管理员希望详细了解如何购买更多订阅
 ms.assetid: 26fc654f-f76d-4c12-9d42-a827a5be5bdd
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 09/29/2021
 user.type: admin
 tags: purchasing
 subscription.type: vl, cloud, retail, partner
 sap.id: c374762c-640b-8b2c-d049-bda9545e903c
-ms.openlocfilehash: 32c35f2856c0662ed56e6b58705fd1cab082bc9c
-ms.sourcegitcommit: 65a1b6aae8387735f05a83b45e1a6865e9805e1f
-ms.translationtype: HT
+ms.openlocfilehash: 6f012c9cbbf276fe9c7528d8a8a45384f4c1f95a
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "129339697"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133254494"
 ---
 ## <a name="how-can-i-purchase-more-visual-studio-subscriptions"></a>如何购买更多 Visual Studio 订阅？
 

@@ -1,18 +1,18 @@
 ---
 title: Visual Studio 订阅中的 CloudPilot 权益 | Microsoft Docs
 author: evanwindom
-ms.author: cabuschl
-manager: cabuschl
+ms.author: amast
+manager: shve
 ms.assetid: 6255b6a3-f101-4b2c-b7fa-851eccc944b2
 ms.date: 10/18/2021
 ms.topic: conceptual
 description: 了解有关所选 Visual Studio 订阅中包含的可用 CloudPilot 权益
-ms.openlocfilehash: a1e33ba7d2379451f7c6c347582ec1bb80b631b9
-ms.sourcegitcommit: 6c847aedf0f943e253a4c2f0e4b516b953168bc7
-ms.translationtype: HT
+ms.openlocfilehash: 4871cb892971f2722af2c668bbcf6f67d5f6a182
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "130151939"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133257278"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 CloudPilot 权益
 将应用移至 Microsoft Azure 只需几个简单的步骤。 在几分钟内即可标识所有必需的代码更改（细至代码行），以便成功迁移到：容器、VM、应用服务、SQL Azure 和/或 SQL MI。 然后，通过使用 ASR、DMA 和 DMS 的向导将应用迁移到 Azure。

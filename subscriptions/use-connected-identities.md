@@ -1,19 +1,19 @@
 ---
 title: 如何在 Visual Studio 订阅中使用连接的标识 | Microsoft Docs
 author: evanwindom
-ms.author: cabuschl
-manager: cabuschl
+ms.author: amast
+manager: shve
 ms.assetid: 50ce0445-ef1a-4e92-b9d0-aebb2155a111
 ms.date: 10/14/2021
 ms.topic: conceptual
 robots: noindex, nofollow
 description: 了解如何使用已连接的 Microsoft 帐户和 Azure Active Directory 标识
-ms.openlocfilehash: 2e6c0ffc4c2173f9f80b30c6ab0e8deffd19afe9
-ms.sourcegitcommit: a8e6a8c6ca36dc76cdc44d1db934eae43470b5fa
-ms.translationtype: HT
+ms.openlocfilehash: 5092364b89f0a177d518ecac98b22d650086be9c
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "130030227"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133256695"
 ---
 # <a name="how-to-use-connected-identities-in-visual-studio-subscriptions"></a>如何在 Visual Studio 订阅中使用连接的标识
 如果你通过工作或学校收到 Visual Studio 订阅，并使用你的 Microsoft 帐户 (MSA) 登录，则你的订阅管理员可能会将你的 MSA 连接到组织的 Azure Active Directory (Azure AD) 中的标识。  这会改变你访问订阅中包含的一些权益的方式。 

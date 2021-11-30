@@ -1,18 +1,18 @@
 ---
 title: Visual Studio 订阅中下载的产品可用性 | Microsoft Docs
 author: evanwindom
-ms.author: cabuschl
-manager: cabuschl
+ms.author: amast
+manager: shve
 ms.assetid: abf271b5-7547-4695-a46f-72b2878ba8d4
 ms.date: 10/13/2021
 ms.topic: conceptual
 description: 了解 Visual Studio 订阅的软件下载中的产品可用性
-ms.openlocfilehash: 29b40c5d2346a011843f8267607ca358171eea28
-ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
-ms.translationtype: HT
+ms.openlocfilehash: abd25910d12fb07fb6ce0aa55e4238edda3e810a
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "130010751"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133256836"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Visual Studio 订阅的软件下载中的产品可用性
 订阅者权益包含可以下载各种各样的软件。

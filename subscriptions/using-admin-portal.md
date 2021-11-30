@@ -2,17 +2,17 @@
 title: Visual Studio 订阅管理门户入门 | Visual Studio Marketplace
 author: evanwindom
 ms.author: amast
-manager: amast
+manager: shve
 ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
 ms.date: 11/22/2020
 ms.topic: overview
 description: 了解如何开始在订阅管理门户中管理组织的 Visual Studio 订阅。
-ms.openlocfilehash: 70b6fd55ae68a6b8ab93ca2f537bca725d569ff0
-ms.sourcegitcommit: 8671132ee0425b273b060fa35c75657e7ae02583
-ms.translationtype: HT
+ms.openlocfilehash: b2920052168d96f5f575a7b1bcd1c5990a8f94a8
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "132924155"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133256225"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio 订阅管理员门户概述
 

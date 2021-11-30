@@ -1,18 +1,18 @@
 ---
 title: Visual Studio 订阅中的 CODE 杂志权益 | Microsoft 文档
 author: evanwindom
-ms.author: cabuschl
-manager: cabuschl
+ms.author: amast
+manager: shve
 ms.assetid: e5768153-2758-46d3-a323-3272def213ee
 ms.date: 10/18/2021
 ms.topic: how-to
 description: 了解有关 Visual Studio 订阅中包含的 CODE 杂志权益。
-ms.openlocfilehash: 8fd89325099d4cffecc8647a12002d4884bd7f64
-ms.sourcegitcommit: 6c847aedf0f943e253a4c2f0e4b516b953168bc7
-ms.translationtype: HT
+ms.openlocfilehash: 44fee28a47613bdbb09a6a05a4020d57927d02b6
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "130151923"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133257031"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 CODE 杂志权益
 

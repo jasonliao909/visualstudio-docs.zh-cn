@@ -1,18 +1,18 @@
 ---
 title: Visual Studio 订阅者的 Azure DevOps 权益 | Microsoft Docs
 author: evanwindom
-ms.author: cabuschl
-manager: cabuschl
+ms.author: amast
+manager: shve
 ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
 ms.date: 10/14/2021
 ms.topic: conceptual
 description: 了解如何以 Visual Studio 订阅者身份使用 Azure DevOps。
-ms.openlocfilehash: 3051c6aa50b7b34189363f843b28c14b9b3881f4
-ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
-ms.translationtype: HT
+ms.openlocfilehash: c628fbcffc0dc35b5d4c008bb5d6d94ef569dc7b
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "131126397"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133254327"
 ---
 # <a name="azure-devops-for-visual-studio-subscribers"></a>适用于 Visual Studio 订阅者的 Azure DevOps
 有效 Visual Studio 订阅者可使用订阅随附的一系列 Azure DevOps 功能。 可以在所属的每个 Azure DevOps 组织中使用这些相同的功能，无论你是创建了组织，还是被其他人添加到组织中。

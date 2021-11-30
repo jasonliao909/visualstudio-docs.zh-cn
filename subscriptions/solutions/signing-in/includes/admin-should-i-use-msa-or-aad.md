@@ -3,19 +3,19 @@ title: 我应该使用 Microsoft 帐户还是 Azure Active Directory？
 description: 管理员同时拥有 MSA 和 Azure AD 帐户，但不知道要使用哪个帐户
 ms.topic: include
 ms.assetid: 8cb1b018-b97a-42e9-a71e-68e60cb8cec1
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 06/02/2021
 user.type: admin
 tags: msa
 subscription.type: vl, cloud, retail, partner
 sap.id: 17a2bf94-0d03-2629-dfd8-e8935f9126ec
-ms.openlocfilehash: f52ffa3f65947d680dc4f6167b6bf7f57674701d
-ms.sourcegitcommit: 364e106fcbf4fb6af534e81d8b700901f79f4ec8
-ms.translationtype: HT
+ms.openlocfilehash: f6e17f0ba340aa150b4277c36afcd4da18cb9e83
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2021
-ms.locfileid: "129013214"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133254505"
 ---
 ## <a name="should-i-use-microsoft-account-msa-or-azure-active-directory-azure-ad"></a>我应该使用 Microsoft 帐户 (MSA) 还是 Azure Active Directory (Azure AD)？
 

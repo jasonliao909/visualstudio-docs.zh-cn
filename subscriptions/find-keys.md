@@ -1,18 +1,18 @@
 ---
 title: 在 Visual Studio 订阅中查找和声明产品密钥 | Microsoft Docs
 author: evanwindom
-ms.author: cabuschl
-manager: cabuschl
+ms.author: amast
+manager: shve
 ms.assetid: da8df006-4896-4ff9-b487-698d78deabc3
 ms.date: 10/13/2021
 ms.topic: conceptual
 description: 了解如何在 Visual Studio 订阅中查找、声明和导出产品密钥
-ms.openlocfilehash: 4c2ab908466275d9427b7e6a1aa9ed4b35c4b7df
-ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
-ms.translationtype: HT
+ms.openlocfilehash: 14136866cc4f1997d512e16aa20daeb8a0132d19
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "130011557"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133256342"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>在 Visual Studio 订阅中查找和声明产品密钥
 本文介绍如何从 https://my.visualstudio.com/productkeys 中查找、声明和导出产品密钥。  有关使用密钥激活产品、密钥的零售和批量许可版本以及每日产品密钥索取上限的详细信息，请访问[产品密钥概述](product-keys.md)。

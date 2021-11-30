@@ -2,19 +2,19 @@
 title: 在哪里可以找到新协议或现有协议的状态？
 description: 超级管理员或管理员在尝试查找新协议的状态
 ms.assetid: b1bca6ef-1f5f-40df-bef1-13054d3cbb3a
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 09/29/2021
 user.type: admin
 tags: agreement, status
 subscription.type: vl, cloud, retail, partner
 sap.id: 4e55abf9-8505-ecdc-c55f-c67a167a357c
-ms.openlocfilehash: fce804dd57022f2f990d6271811de62ffeb3779b
-ms.sourcegitcommit: 65a1b6aae8387735f05a83b45e1a6865e9805e1f
-ms.translationtype: HT
+ms.openlocfilehash: 31312043b64970e213ad8149ee603d9c15b30ee5
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "129339695"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133254443"
 ---
 ## <a name="where-can-i-find-out-the-status-of-a-new-or-existing-agreement"></a>在哪里可以找到新协议或现有协议的状态？
 

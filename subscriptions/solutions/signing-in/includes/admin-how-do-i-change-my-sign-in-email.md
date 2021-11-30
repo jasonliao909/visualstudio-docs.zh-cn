@@ -3,19 +3,19 @@ title: 如何更新我的登录电子邮件地址？
 description: 超级管理员或管理员想要在不丢失权限的情况下更新登录电子邮件
 ms.topic: include
 ms.assetid: 8270ddd8-3954-4c75-9f08-644777fef57f
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 06/02/2021
 user.type: admin
 tags: email
 subscription.type: vl, cloud, retail, partner
 sap.id: 17a2bf94-0d03-2629-dfd8-e8935f9126ec
-ms.openlocfilehash: e39ba4cbf128a7fd94ad79e1490d43e39c648ad9
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
-ms.translationtype: HT
+ms.openlocfilehash: 6429fabbf480dd95be822d2af6ee116461d7c8d1
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128431758"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133254501"
 ---
 ## <a name="how-do-i-update-my-sign-in-email-address-without-losing-permissions"></a>如何在不丢失权限的情况下更新我的登录电子邮件地址？ 
 如果管理员需要更改登录电子邮件地址，必须联系其超级管理员，并请他们帮你更新。 在左侧“协议详细信息”浮出控件面板的超级管理员列表下，系统会通过“超级管理员”列中的绿色勾号标示协议上的超级管理员。   

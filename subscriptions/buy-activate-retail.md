@@ -2,17 +2,17 @@
 title: 可在 Microsoft Store 中购买 Visual Studio 订阅 | Microsoft Docs
 author: evanwindom
 ms.author: amast
-manager: amast
+manager: shve
 ms.assetid: 76654645-08ee-445d-b9ee-123126d1f0fb
 ms.date: 10/11/2021
 ms.topic: how-to
 description: 了解如何在 Microsoft Store 中购买 Visual Studio 订阅，以及如何在 Visual Studio 订阅门户中激活该订阅。
-ms.openlocfilehash: dc54038921fe44820de6138c54207e972f55a863
-ms.sourcegitcommit: 17202f3ac3f7f17ce3756b57dd56321f7254d1dd
-ms.translationtype: HT
+ms.openlocfilehash: 54cd15289136be5489affafc749c6324ba9e1a61
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "133092978"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133256045"
 ---
 # <a name="visual-studio-subscriptions-are-available-through-the-microsoft-store"></a>Visual Studio 订阅可通过 Microsoft Store 获得
 Visual Studio 订阅可通过各种通道获得。 从[批量许可](https://www.microsoft.com/licensing/default)、云解决方案提供商、[Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions)和 Microsoft Store 中进行选择。  本文将探讨如何通过 [Microsoft Store](https://www.microsoft.com/store/collections/visualstudio) 购买和激活订阅。  

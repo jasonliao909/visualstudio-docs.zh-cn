@@ -1,18 +1,18 @@
 ---
 title: 使用 Visual Studio 订阅中的产品密钥 | Microsoft Docs
 author: evanwindom
-ms.author: cabuschl
-manager: cabuschl
+ms.author: amast
+manager: shve
 ms.assetid: 89e3fcf9-fe5d-4266-8dd7-5567d05fe869
 ms.date: 10/13/2021
 ms.topic: conceptual
 description: 了解如何获取和管理 Visual Studio 订阅中的产品密钥。
-ms.openlocfilehash: ee5a8133e6442b9258672b33197001b782c36249
-ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
-ms.translationtype: HT
+ms.openlocfilehash: c4159e4ff40987a2739e5541f442c680bf6c5433
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "130010920"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133257850"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>使用 Visual Studio 订阅中的产品密钥
 

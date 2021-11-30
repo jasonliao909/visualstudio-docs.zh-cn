@@ -2,19 +2,19 @@
 title: 如何取消月度或年度订阅？
 description: 需要有关如何取消月度或年度订阅的详细信息
 ms.assetid: 93d4b42a-d59c-4206-a562-44f9adc73bce
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 09/29/2021
 user.type: admin
 tags: cancel, cloud, monthly, annual
 subscription.type: cloud
 sap.id: cf10d424-47bb-7ca2-7d89-113949101f6f
-ms.openlocfilehash: cd61acadbf9adeed623d5d4a3b29676e6546332f
-ms.sourcegitcommit: 65a1b6aae8387735f05a83b45e1a6865e9805e1f
-ms.translationtype: HT
+ms.openlocfilehash: 25e85d85855365cb8a8071af06e16583f880b493
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "129339696"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133254489"
 ---
 ## <a name="how-do-i-cancel-monthly-or-annual-subscriptions"></a>如何取消月度或年度订阅？
 

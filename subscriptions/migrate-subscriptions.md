@@ -1,18 +1,18 @@
 ---
 title: 将 Visual Studio 订阅迁移到新协议 | Microsoft Docs
 author: evanwindom
-ms.author: cabuschl
-manager: cabuschl
+ms.author: amast
+manager: shve
 ms.assetid: 80e3b300-f2fc-40d4-bbb2-c831a2fa5d34
 ms.date: 09/28/2021
 ms.topic: how-to
 description: 本文介绍管理员如何将分配的订阅从一个协议迁移到另一个协议。
-ms.openlocfilehash: 74be7f7913dcfbf41c447721e6d5d4c283ba9c88
-ms.sourcegitcommit: 50b0db7f38c8eded41c6bca83ebe71ee5d74afe9
-ms.translationtype: HT
+ms.openlocfilehash: ab5d73e76c9b05f702f844020532f7bac69dec39
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "129206871"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133256498"
 ---
 # <a name="migrate-subscriptions-from-one-agreement-to-another"></a>将订阅从一个协议迁移到另一个协议
 如果你已将 Visual Studio 订阅作为协议的一部分分配给订阅者，并且你的公司购买了新协议，则你可能需要将订阅者从当前协议迁移到新协议。 本文介绍如何将分配的订阅移动到新协议。  

@@ -2,17 +2,17 @@
 title: 在 Visual Studio 订阅中跟踪分配和处理订单 | Visual Studio Marketplace
 author: evanwindom
 ms.author: amast
-manager: amast
+manager: shve
 ms.assetid: 83a9162a-b9e7-43a4-b07f-6c1fd8580f78
 ms.date: 03/21/2021
 ms.topic: conceptual
 description: 了解管理员跟踪用户分配和处理订单的职责。
-ms.openlocfilehash: ab7a83d98a6c71c7cfd7a6dcc178d41a38269eee
-ms.sourcegitcommit: a1c18c491e310b00a43e76a911f778e643cd8f8d
-ms.translationtype: HT
+ms.openlocfilehash: 4d53ca3292124e9e296547e5144424786aa1f855
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "132994993"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133254951"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>跟踪用户分配和处理订单
 Visual Studio 订阅管理员需要跟踪 Visual Studio 使用情况，并按批量许可协议或 Microsoft 产品和服务协议中的计划处理因使用量增加而产生的订单。 新的 Visual Studio 订阅管理门户提供一个有用的跟踪器，可显示可用和已用的许可证，从而简化了这一过程。
