@@ -1,7 +1,7 @@
 ---
 title: 创建脱机安装
 description: 了解如何在 Internet 连接不可靠或带宽较低时脱机安装 Visual Studio。
-ms.date: 4/16/2021
+ms.date: 11/23/2021
 ms.topic: conceptual
 f1_keywords:
 - offline installation [Visual Studio]
@@ -15,19 +15,19 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5cad03cae4baed3aff150b9af613de432f6df87c
-ms.sourcegitcommit: a98fa8a8362525f67824ce52b7e71757f10f1362
-ms.translationtype: HT
+ms.openlocfilehash: 9f8a06a615dfa76ef6426ad33132e7ca6cf131b3
+ms.sourcegitcommit: 2281b4f1f8737f263c0d7e55e00b5ec81517327d
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "132736676"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "133108669"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>创建 Visual Studio 的脱机安装
 
 Visual Studio 经过精心设计，可在各种网络和计算机配置中良好运行。 建议使用 [Visual Studio 安装程序](https://visualstudio.microsoft.com/downloads)，这是一个小文件，用于定期检查联机更新，并帮助你随时了解所有最新的修补程序和功能。 但是，有时联机访问存在问题。 例如，Internet 连接可能不可靠，或者 Internet 连接的带宽较低。 对于此类情况，我们提供了一些其他方法来获取 Visual Studio。 可使用 Visual Studio 安装程序中的“全部下载后再安装”功能，在安装之前将文件下载到本地计算机上的本地缓存中，或者可使用命令行创建文件的本地缓存，以便以后安装。
 
 > [!NOTE]
-> 如果你是企业 IT 管理员，希望将 Visual Studio 部署到客户端工作站网络，请参阅 [Visual Studio 管理员指南](https://aka.ms/vs/admin/guide)。
+> 如果你是企业 IT 管理员，希望将 Visual Studio 部署到客户端工作站网络，请参阅 [Visual Studio 管理员指南](https://aka.ms/vs/admin/guide)和[创建基于网络的 Visual Studio 安装](create-a-network-installation-of-visual-studio.md)文档。
 
 ## <a name="use-the-download-all-then-install-feature"></a>使用“全部下载，然后安装”功能
 
@@ -108,44 +108,35 @@ Visual Studio 经过精心设计，可在各种网络和计算机配置中良好
 > [!TIP]
 > 为了防止错误出现，请确保完全安装路径的长度小于 80 个字符。
 
-- 对于 .NET Web 和.NET 桌面开发，请运行：
 ::: moniker range="<=vs-2019"
+- 对于 .NET Web 和.NET 桌面开发，请运行：
+
    ```shell
     vs_enterprise.exe --layout c:\localVScache --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US
     ```
 ::: moniker-end
 
 ::: moniker range=">=vs-2022"
-   ```shell
-    vs_enterprise.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --includeOptional --lang en-US
-    ```
-::: moniker-end
-
-::: moniker-end
-
-::: moniker range="vs-2022"
-
-- For .NET web and .NET desktop development, run:
+- 对于 .NET Web 和.NET 桌面开发，请运行：
 
    ```shell
     vs_enterprise.exe --layout c:\localVScache --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --includeOptional --lang en-US
     ```
-
 ::: moniker-end
 
-- For .NET desktop and Office development, run:
+- 对于 .NET 桌面和 Office 开发，请运行：
 
    ```shell
     vs_enterprise.exe --layout c:\localVScache --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.Office --includeOptional --lang en-US
     ```
 
-- For C++ desktop development, run:
+- 对于 C++ 桌面开发，请运行：
 
    ```shell
     vs_enterprise.exe --layout c:\localVScache --add Microsoft.VisualStudio.Workload.NativeDesktop --includeRecommended --lang en-US
     ```
 
-- To create a complete local cache, English only, with all features (this will take a long time&mdash;we have _lots_ of features!), run:
+- 若要创建包含所有功能的完整本地缓存（仅限英文版）（耗时将很长，因为我们提供的功能非常多！），请运行：
 
    ```shell
     vs_enterprise.exe --layout c:\localVScache --lang en-US
@@ -154,28 +145,28 @@ Visual Studio 经过精心设计，可在各种网络和计算机配置中良好
 ::: moniker range="vs-2017"
 
    > [!NOTE]
-   > A complete local cache of Visual Studio requires a minimum of 35 GB of disk space. For more information, see [System requirements](/visualstudio/productinfo/vs2017-system-requirements-vs/). 
+   > 完整的 Visual Studio 本地缓存至少需要 35 GB 磁盘空间。 有关详细信息，请参阅[系统需求](/visualstudio/productinfo/vs2017-system-requirements-vs/)。 
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
    > [!NOTE]
-   > A complete local cache of Visual Studio requires a minimum of 41 GB of disk space. For more information, see [System requirements](/visualstudio/releases/2019/system-requirements/).
+   > 完整的 Visual Studio 本地缓存至少需要 41 GB 磁盘空间。 有关详细信息，请参阅[系统需求](/visualstudio/releases/2019/system-requirements/)。
 
 ::: moniker-end
 
 ::: moniker range="vs-2022"
 
    > [!NOTE]
-   > A complete local cache of Visual Studio requires a minimum of 45 GB of disk space. For more information, see [System requirements](/visualstudio/releases/2022/system-requirements/).
+   > 完整的 Visual Studio 本地缓存至少需要 45 GB 磁盘空间。 有关详细信息，请参阅[系统需求](/visualstudio/releases/2022/system-requirements/)。
 
 ::: moniker-end
 
-### Step 3 - Install Visual Studio from the local cache
-When you install Visual Studio from a local install cache, the Visual Studio installer uses the local cached versions of the files. But, if you select components during installation that aren't in the cache, then the Visual Studio installer will attempt to download them from the internet. To make sure that you install only the files that you've previously downloaded, use the same [command-line options](use-command-line-parameters-to-install-visual-studio.md) that you used to create the local cache. To make sure your installer doesn't try to access the internet, use the `--noweb` switch.
+### <a name="step-3---install-visual-studio-from-the-local-cache"></a>步骤 3 - 从本地缓存安装 Visual Studio
+当你从本地安装缓存安装 Visual Studio 时，Visual Studio 安装程序会使用这些文件的本地缓存版本。 不过，如果你在安装过程中选择的组件不在缓存中，则 Visual Studio 安装程序将尝试从 Internet 下载。 若要确保仅安装先前下载的文件，请使用在创建本地缓存时所用的相同[命令行选项](use-command-line-parameters-to-install-visual-studio.md)。 若要确保安装程序不会尝试访问 Internet，请使用 `--noweb` 开关。
 
-For example, if you created a local installation cache with the following command:
+例如，如果使用以下命令创建了本地安装缓存：
 
 ::: moniker range="<=vs-2019"
 
