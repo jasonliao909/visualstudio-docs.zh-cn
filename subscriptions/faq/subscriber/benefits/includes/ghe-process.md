@@ -3,16 +3,16 @@ title: 带有 GitHub Enterprise 的 Visual Studio 订阅的设置过程是怎样
 description: 了解激活 GitHub Enterprise 订阅的过程
 ms.topic: include
 ms.assetid: 6f9aa66b-111f-45a0-a168-e0e5ff21aa46
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 12/03/2020
 ms.faqid: q3_3
-ms.openlocfilehash: 5b6422db320deab327b525307116b6214b99eb67
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 43009f7e02067d2c45f31327c2705b13d7b54915
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560756"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133256372"
 ---
 ## <a name="what-is-the-visual-studio-subscriptions-with-github-enterprise-setup-process"></a>带有 GitHub Enterprise 的 Visual Studio 订阅的设置过程是怎样的？ 
 

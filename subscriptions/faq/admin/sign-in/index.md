@@ -4,15 +4,15 @@ description: 登录常见问题解答列表。
 ms.faqid: Section3
 ms.topic: conceptual
 ms.assetid: e4573b81-b40c-4008-9c33-9e7437cb5796
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 12/01/2020
-ms.openlocfilehash: 33619e156f932b888aa6710f92e961f319f989ab
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: dbcacdfb56219d24368db518e320ff7919fde8a1
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480078"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133257712"
 ---
 # <a name="signing-in"></a>登录
 

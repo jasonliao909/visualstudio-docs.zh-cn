@@ -3,16 +3,16 @@ title: 为什么找不到某些权益？
 description: 可用权益因订阅级别而异，并可能会发生变化。 要查看每个订阅级别包含哪些权益…
 ms.topic: include
 ms.assetid: 61513da1-8850-48b9-829d-8643ecb9dc4c
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 04/20/2021
 ms.faqid: q3_1
-ms.openlocfilehash: 7363004ab1b18b3f0a0741ae19f7492d3700b246
-ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
+ms.openlocfilehash: 704f6033a431cc22127cb86830c39d60dbbebbe8
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107800837"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133256371"
 ---
 ## <a name="why-cant-i-find-certain-benefits"></a>为什么找不到某些权益？ 
 

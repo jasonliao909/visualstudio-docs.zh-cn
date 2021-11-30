@@ -4,15 +4,15 @@ description: 添加备用帐户使开发人员能够使用与订阅分配到的�
 ms.faqid: group3_2
 ms.topic: include
 ms.assetid: a8fa961b-4e81-4af4-9913-67dd2c28897e
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 05/03/2021
-ms.openlocfilehash: 34480362c02c48797a3c0521cfecc1676849f662
-ms.sourcegitcommit: dd2fc6e03a789c044f8438096b8f112e4dba5557
+ms.openlocfilehash: 4ac5ac6fa462912661d68cf9222e3b6d7614379e
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "108792281"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133257710"
 ---
 ## <a name="what-does-it-mean-when-my-subscribers-add-alternate-identities"></a>当订阅者添加备用标识时，意味着什么？
 

@@ -4,15 +4,15 @@ description: SLP 和 MPSA 协议不会过期，但在配置协议时，我们的
 ms.faqid: group1_9
 ms.topic: include
 ms.assetid: 9e5fac98-676a-4187-9323-ff5e113be282
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 3/3/2020
-ms.openlocfilehash: 8a1692e9739a3cfe68f25cc61596a001732c6f7c
-ms.sourcegitcommit: 593bdd2da62633f8d1f1eef70d0238e2682f3e02
+ms.openlocfilehash: a15463ea2e5f37816e658e03c1251220e56b5031
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "92157914"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133255124"
 ---
 ## <a name="why-does-my-slp-agreement-have-an-end-date-and-why-is-it-sometimes-different-for-my-subscribers"></a>为什么我的 SLP 协议有结束日期？为什么订阅者的这个结束日期有时又是不同的？
 

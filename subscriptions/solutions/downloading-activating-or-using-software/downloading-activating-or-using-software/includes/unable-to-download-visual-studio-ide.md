@@ -3,19 +3,19 @@ title: 无法下载或激活 Visual Studio Enterprise 或 Visual Studio Professi
 description: 无法从 Visual Studio 订阅下载或激活 Visual Studio Enterprise 或 Visual Studio Professional
 ms.topic: include
 ms.assetid: 521818c1-124a-4ab9-a488-4326fdd1d18a
-author: caitybuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 08/14/2020
 user.type: subscriber
 tags: download, activate
 subscription.type: vl, cloud, retail, partner
 sap.id: 53a7a6d4-7755-352a-5a65-715d78af84bf
-ms.openlocfilehash: 5981db25adaad2e59693f942c15d1a2b0f292595
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 49f70fb64c5080f2c4d4d20f53af4eaf22d0aa5f
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915900"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133255292"
 ---
 ## <a name="im-unable-to-download-or-activate-visual-studio-enterprise-or-professional"></a>我无法下载或激活 Visual Studio Enterprise 或 Visual Studio Professional
 

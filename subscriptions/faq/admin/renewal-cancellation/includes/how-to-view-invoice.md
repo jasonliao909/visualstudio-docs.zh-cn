@@ -4,15 +4,15 @@ description: 如何查看我的 Visual Studio 月度和年度订阅的发票
 ms.faqid: group4_
 ms.topic: include
 ms.assetid: 2b91ea18-d8d5-4a75-a2cd-4996e63d77e8
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 05/03/2021
-ms.openlocfilehash: f51681e4d30f574db1c4103b0d5362abf748628c
-ms.sourcegitcommit: dd2fc6e03a789c044f8438096b8f112e4dba5557
+ms.openlocfilehash: ca8c67429321fadf5e61dbabde77e836c35bd4a4
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "108792165"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133257897"
 ---
 ## <a name="how-do-i-view-my-invoice-for-monthly-and-annual-subscriptions"></a>如何查看我的月度和年度订阅的发票？
 

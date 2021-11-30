@@ -3,19 +3,19 @@ title: 无法激活 Azure DevOps 权益
 description: 无法激活 Visual Studio 订阅附带的 Azure DevOps 权益。
 ms.topic: include
 ms.assetid: 3ec2a8c1-07e0-45cd-808c-c354b9e26fb4
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 8/14/2020
 user.type: subscriber
 tags: benefit, azure-devops
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 75399cf1549377d93e823b59155af1d0630f647b
-ms.sourcegitcommit: beb16d5cc31b3565ec0c8d69f819a4ec67b45aae
+ms.openlocfilehash: efc9b38891b43df82c47cfdebede19ab9eb5b1e9
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110349786"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133255288"
 ---
 ## <a name="im-unable-to-activate-my-azure-devops-benefit"></a>无法激活 Azure DevOps 权益。
 

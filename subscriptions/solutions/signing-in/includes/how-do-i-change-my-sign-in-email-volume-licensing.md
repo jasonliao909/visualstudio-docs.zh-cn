@@ -1,8 +1,8 @@
 ---
 title: 如何更改我的公司提供的 Visual Studio 订阅的登录电子邮件？
 description: 如何请求更改通过批量许可获取的订阅的 Visual Studio 登录地址
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 06/02/2021
 ms.assetid: 522e5fc5-037b-4723-a7d7-decc9c42c377
 ms.topic: include
@@ -10,12 +10,12 @@ user.type: subscriber
 tags: sign-in
 subscription.type: vl
 sap.id: 17a2bf94-0d03-2629-dfd8-e8935f9126ec
-ms.openlocfilehash: a860513e02047c1cc548bcc9ff9bd8b91bdc9f00
-ms.sourcegitcommit: 364e106fcbf4fb6af534e81d8b700901f79f4ec8
+ms.openlocfilehash: 9a70a54403c0f065c60f0f8f403574e9916d9a36
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2021
-ms.locfileid: "129013283"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133255328"
 ---
 ## <a name="how-to-change-your-sign-in-email-address"></a>如何更改登录电子邮件地址
 

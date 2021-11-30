@@ -4,15 +4,15 @@ description: 了解 Visual Studio 订阅的各种购买方式
 ms.faqid: group4_1
 ms.topic: include
 ms.assetid: c8dd39de-bf7f-40a2-a203-f2be21b87f5c
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 04/20/2021
-ms.openlocfilehash: c18d855ad79bc3463e310a9fcf1c3a17ea5c6fbc
-ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
+ms.openlocfilehash: dabd84a5168f64376c1f4921884c22f675aed2cb
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107800771"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133257895"
 ---
 ## <a name="how-do-i-purchase-visual-studio-subscriptions"></a>如何购买 Visual Studio 订阅？
 Visual Studio 订阅可通过多种渠道购买，包括 [批量许可](https://www.microsoft.com/licensing/default)、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions) 和 [Microsoft Store](https://www.microsoft.com/store/collections/visualstudio)。  

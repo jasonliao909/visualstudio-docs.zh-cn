@@ -3,16 +3,16 @@ title: 我的订阅何时过期？
 description: 有关订阅的信息可从订阅者门户获得。 连接到 https://my.visualstudio.com/subscriptions 以…
 ms.topic: include
 ms.assetid: 84f740c9-11e1-45d1-b8c7-3cda7adce9d9
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 4/3/2020
 ms.faqid: q1_4
-ms.openlocfilehash: 30cb991b14565faa55f2579a5fc0ce9aeb4eed4a
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 09b5a1d0f79a189ac6d7ede69ff17be39d51ab75
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "81385976"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133257623"
 ---
 ## <a name="when-does-my-subscription-expire"></a>我的订阅何时过期？
 

@@ -3,16 +3,16 @@ title: 有关订阅的购买、续订、取消或计费
 description: 针对 Visual Studio 订阅购买、计费和取消的常见问题解答列表。
 ms.topic: conceptual
 ms.assetid: 3c8d8652-b971-4a5a-887f-3c6944b1decf
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 04/20/2021
 ms.faqid: Section4
-ms.openlocfilehash: d7a8fa990b9fc2dbc9245bdec73c6b61011ace03
-ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
+ms.openlocfilehash: 36897178c38e197335de4bcc63bfe13419bae748
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107800900"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133255792"
 ---
 # <a name="purchasing-renewing-canceling-or-billing-for-subscriptions"></a>有关订阅的购买、续订、取消或计费
 

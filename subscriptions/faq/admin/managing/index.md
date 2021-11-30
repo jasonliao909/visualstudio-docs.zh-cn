@@ -4,15 +4,15 @@ description: 管理 Visual Studio 订阅常见问题解答列表。
 ms.faqid: Section1
 ms.topic: conceptual
 ms.assetid: 933c7f9e-dce9-46e7-939e-68682c65d972
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 01/27/2021
-ms.openlocfilehash: 61f6f6987aaf570edd1eac6b77eafdffeb37b430
-ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
+ms.openlocfilehash: b2d88a95a9fd71ecad55b82431df0ccf84c75d9c
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99105397"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133255123"
 ---
 # <a name="managing-visual-studio-subscriptions"></a>管理 Visual Studio 订阅
 

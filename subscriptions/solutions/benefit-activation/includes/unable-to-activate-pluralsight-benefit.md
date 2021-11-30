@@ -3,19 +3,19 @@ title: 无法激活 Pluralsight 权益
 description: 无法激活 Visual Studio 订阅附带的 Pluralsight 权益？
 ms.topic: include
 ms.assetid: 7e5d8886-538c-4e29-9c4c-8989cf4e09dd
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 04/16/2021
 user.type: subscriber
 tags: benefit, pluralsight
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: da73c5a9e2b8d9ac9ab1463fae6991bdbbe2f8e1
-ms.sourcegitcommit: 54aac5044a9853a435577acc5a134cb254494ffb
+ms.openlocfilehash: 2a96be2015cf45af307ba3da7c211582e70e71d5
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107590045"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133255280"
 ---
 ## <a name="im-unable-to-activate-my-pluralsight-benefit"></a>我无法激活我的 Pluralsight 权益
 

@@ -4,15 +4,15 @@ description: Visual Studio 订阅支持小组件内容 INCLUDE 文件的列表
 ms.topic: conceptual
 ms.assetid: 478648b9-f6f0-4ea3-83b4-5cffa196a496
 robots: noindex, nofollow
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 08/13/2021
-ms.openlocfilehash: fac69c3ea827263f83e91f9e5cdb4cbfb7bac51b
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: fbb6d792183200489f708090d297dd7ad59b525e
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128427620"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133255269"
 ---
 # <a name="visual-studio-subscriptions-support-widget-content-includes-files"></a>Visual Studio 订阅支持小组件内容 INCLUDE 文件
 

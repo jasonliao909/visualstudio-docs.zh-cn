@@ -3,19 +3,19 @@ title: 无法下载或激活 Visual Studio for Mac
 description: 无法从 Visual Studio 订阅下载或激活 Visual Studio for Mac
 ms.topic: include
 ms.assetid: afb945a3-b08e-4a9f-92d9-660f5657686b
-author: caitybuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 08/14/2020
 user.type: subscriber
 tags: download, activate
 subscription.type: vl, cloud, retail, partner
 sap.id: 53a7a6d4-7755-352a-5a65-715d78af84bf
-ms.openlocfilehash: 679ad453f6b3693e6c3eae90cc8f6b69d8c7f3b1
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 45818bcc2fcaac689691c22ef78e4fa9a6eb6628
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915901"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133255272"
 ---
 ## <a name="im-unable-to-download-or-activate-visual-studio-for-mac"></a>我无法下载或激活 Visual Studio for Mac
 

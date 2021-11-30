@@ -4,15 +4,15 @@ description: 了解 Visual Studio 订阅的各种购买方式
 ms.faqid: q4_1
 ms.topic: include
 ms.assetid: 5b27454c-f036-4f4d-9d67-54d1fc775f72
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 04/20/2021
-ms.openlocfilehash: cdacf4bb150d4fb836b4c7088f80f63e738aea15
-ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
+ms.openlocfilehash: 731a15d01037a64333dd1f97988fee531a936913
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107800909"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133255791"
 ---
 ## <a name="how-do-i-purchase-visual-studio-subscriptions"></a>如何购买 Visual Studio 订阅？
 

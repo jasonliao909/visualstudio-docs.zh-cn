@@ -3,19 +3,19 @@ title: 无法激活 Azure 开发/测试即用即付订阅
 description: 无法激活 Visual Studio 订阅附带的 Azure 开发/测试即用即付订阅？
 ms.topic: include
 ms.assetid: 6ad8bb6e-e571-450e-860b-acf1e78921d7
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 12/03/2020
 user.type: subscriber
 tags: benefit, azure, dev-test
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 712ca286b960dd4f315223dffe45809ea4f63ea0
-ms.sourcegitcommit: beb16d5cc31b3565ec0c8d69f819a4ec67b45aae
+ms.openlocfilehash: 9a34c1cec7696a142125d95625e5776c19213712
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110349881"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133255285"
 ---
 ## <a name="im-unable-to-activate-my-azure-dev--test-pay-as-you-go-subscription"></a>我无法激活 Azure 开发/测试即用即付订阅。
 

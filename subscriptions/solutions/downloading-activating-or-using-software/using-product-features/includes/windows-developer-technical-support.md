@@ -3,19 +3,19 @@ title: Windows 开发人员技术支持
 description: 获取 Windows 开发人员权益的技术支持
 ms.topic: include
 ms.assetid: 92d406c7-96e1-45a9-8259-d07d2a04a23e
-author: caitybuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 02/12/2021
 user.type: subscriber
 tags: redirect
 subscription.type: vl, cloud, retail, partner
 sap.id: af210210-e3e1-2b2e-8d79-9bd20e851241
-ms.openlocfilehash: 25e0c6a373a18613a1bbfe325e1c8c23a1b7a46b
-ms.sourcegitcommit: 5c146b2dfaefc4f44802600c2cd252a7a0e4b846
+ms.openlocfilehash: 9b11187fe75a105cedccd4881e6d52ac1af17423
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "100525535"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133255298"
 ---
 ## <a name="windows-developer-technical-support"></a>Windows 开发人员技术支持  
 

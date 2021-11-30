@@ -4,15 +4,15 @@ description: 了解在何处可以找到有关 Visual Studio 许可条款的完�
 ms.faqid: group4_4
 ms.topic: include
 ms.assetid: 2ae51494-98d3-4835-8378-4847b46d1a74
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 01/27/2021
-ms.openlocfilehash: 7eb34e20182c89cf6da80899a54ccf5c6512991d
-ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
+ms.openlocfilehash: d22a09627f6daea8313700bd22ed83333e0718db
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99104403"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133257898"
 ---
 ## <a name="what-are-the-licensing-terms-for-visual-studio-subscriptions"></a>Visual Studio 订阅的许可条款有哪些？ 
 

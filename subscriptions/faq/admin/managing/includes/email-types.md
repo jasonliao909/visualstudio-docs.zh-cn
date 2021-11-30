@@ -4,15 +4,15 @@ description: 分配了订阅的个人将定期收到来自 Visual Studio 团队�
 ms.faqid: group1_5
 ms.topic: include
 ms.assetid: 3b7b2932-3274-4275-9d80-b28406bcefc4
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 3/3/2020
-ms.openlocfilehash: dd2c7de8ad2c96c148857b2c11960fba190a5939
-ms.sourcegitcommit: 593bdd2da62633f8d1f1eef70d0238e2682f3e02
+ms.openlocfilehash: fd542a9fa9e7dd181ebc92bcfd35ba4da253c363
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "92157790"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133255117"
 ---
 ## <a name="what-is-the-difference-between-a-sign-in-email-address-and-a-notification-email-address"></a>登录电子邮件地址和通知电子邮件地址有什么区别？
 

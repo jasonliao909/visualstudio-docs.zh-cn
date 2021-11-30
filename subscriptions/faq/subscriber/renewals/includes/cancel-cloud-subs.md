@@ -4,15 +4,15 @@ description: 当取消 Visual Studio 云订阅时，会同时取消自动续订�
 ms.faqid: q4_6
 ms.topic: include
 ms.assetid: 2c83cd19-2692-4aef-9cd7-b7842639cbce
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 01/29/2021
-ms.openlocfilehash: ed82939c8a70a8b9591e8db4ee727bb1f888d53e
-ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
+ms.openlocfilehash: 82fcad9f1bb5a9f90cddb584e8eecf4df3c2e14c
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99104484"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133255789"
 ---
 ## <a name="how-do-i-cancel-monthly-and-annual-subscriptions"></a>如何取消月度和年度订阅？
 若要从 [Visual Studio Marketplace](https://marketplace.visualstudio.com) 中取消已购的月度和年度订阅，需要登录到[管理门户](https://manage.visualstudio.com)，然后将协议的订阅数设置为零。

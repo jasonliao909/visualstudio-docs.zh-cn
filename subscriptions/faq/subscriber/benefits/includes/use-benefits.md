@@ -3,16 +3,16 @@ title: 如何使用权益？
 description: 权益的类型不同，激活和使用它们的方法也不同。 例如，许多权益都是由…
 ms.topic: include
 ms.assetid: 9109bf1e-f725-439d-a870-13741e0dbc90
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 04/20/2021
 ms.faqid: q3_2
-ms.openlocfilehash: 8938ce58100630a13205b54e98515e41440b78ce
-ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
+ms.openlocfilehash: 9c6ce24ea8c16c9a11844ea122ce2cbd11e473cf
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107800825"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133256374"
 ---
 ## <a name="how-do-i-use-my-benefits"></a>如何使用权益？
 

@@ -3,19 +3,19 @@ title: 无法找到或声明产品密钥
 description: 我无法找到或声明 Visual Studio 订阅附带的产品密钥。
 ms.topic: include
 ms.assetid: 83a4f1ed-c77c-4b9c-b02d-bd929bd31072
-author: caitybuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 08/14/2020
 user.type: subscriber
 tags: download, activate, product-key
 subscription.type: vl, cloud, retail, partner
 sap.id: 631f9455-a027-34d0-12c8-c2b37d2c42cb
-ms.openlocfilehash: 8e8747f2b7f46778cc5e4a1069941ff264781f66
-ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
+ms.openlocfilehash: b48c45ca61b01fa15edf8284d97d60aa670e2d22
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99541147"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133255299"
 ---
 ## <a name="im-unable-to-find-or-claim-a-product-key"></a>我无法找到或声明产品密钥。
 
