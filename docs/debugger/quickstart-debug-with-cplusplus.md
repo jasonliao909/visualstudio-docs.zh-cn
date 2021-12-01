@@ -14,7 +14,7 @@ ms.workload:
 - cplusplus
 ms.openlocfilehash: 0efe8b1806602ffa977a860fd5954c6cd24763e7
 ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/13/2021
 ms.locfileid: "129970043"
@@ -31,7 +31,7 @@ Visual Studio 调试器提供了许多强大的功能以帮助调试应用。 �
     按 Esc 关闭启动窗口  。 键入 Ctrl+Q 以打开搜索框，键入“c++”，选择“模板”，然后选择“创建新的控制台应用项目”。 在出现的对话框中，选择“创建”  。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    从顶部菜单栏中选择“文件” > “新建” > “项目”。 在“新建项目”对话框的左窗格中，在“Visual C++”下，选择“Windows 桌面”，然后在中间窗格中选择“Windows 控制台应用程序”。 然后，键入名称（如 MyDbgApp），然后单击“确定”。
+    从顶部菜单栏中选择“文件”   > “新建”   > “项目”  。 在“新建项目”对话框的左窗格中，在“Visual C++”下，选择“Windows 桌面”，然后在中间窗格中选择“Windows 控制台应用程序”。 然后，键入名称（如 MyDbgApp），然后单击“确定”。
     ::: moniker-end
 
     如果没有看到“Windows 控制台应用程序”项目模板，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序。 Visual Studio 安装程序启动。 选择“使用 C++ 的桌面开发”工作负载，然后选择“修改”按钮 。

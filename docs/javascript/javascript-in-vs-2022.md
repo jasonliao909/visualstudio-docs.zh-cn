@@ -15,7 +15,7 @@ manager: jmartens
 monikerRange: '>= vs-2022'
 ms.openlocfilehash: 9b4ff4d4f0e345cd9cb69c98355d929f6209da09
 ms.sourcegitcommit: d63ba1eff845d41ca095efb14b499ea96c4b6eba
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/06/2021
 ms.locfileid: "129561069"

@@ -4,12 +4,12 @@ summary: Visual Studio 订阅权益包括可以获得开发和测试所需的开
 brand: visual-studio
 metadata:
   title: Visual Studio 订阅
-  description: Visual Studio 订阅提供全面的资源集合，便于你在首选平台和设备（包括 Windows、iOS、Android 和 Linux）上创建、部署及管理功能强大的应用程序。 订阅的权益包括可以获得开发和测试所需的开发人员工具、云服务和软件、培训及支持。
+  description: Visual Studio 订阅提供全面的资源集合，便于你在首选平台和设备（包括 Windows、iOS、Android 和 Linux）上创建、部署和管理应用程序。 权益包括可获得开发和测试所需的开发人员工具、云服务和软件、培训及支持。
   ms.topic: hub-page
   author: evanwindom
   ms.author: lank
   manager: lank
-  ms.date: 10/09/2020
+  ms.date: 10/09/2021
 highlightedContent:
   items:
     - title: Visual Studio 订阅中的新增功能
@@ -27,13 +27,13 @@ conceptualContent:
     - title: 使用权益
       links:
         - text: Azure 额度
-          url: ~/vs-azure.md
+          url: /azure/devtest/offer/quickstart-individual-credit
           itemType: get-started
         - text: 软件下载
           url: ~/software-download-list.md
           itemType: get-started
       footerLink:
-        url: ~/vs-azure.md
+        url: ~/about-benefits.md
         text: 查看详细信息
     - title: 常用资源
       links:
@@ -53,7 +53,7 @@ conceptualContent:
           itemType: get-started
 tools:
   title: 可用产品
-  summary: 这些只是通过 Visual Studio 订阅提供的一些产品
+  summary: 通过 Visual Studio 订阅提供的产品和服务
   items:
     - title: Azure
       imageSrc: 'https://docs.microsoft.com/media/logos/logo_azure.svg'
@@ -86,7 +86,7 @@ additionalContent:
         - title: 云服务
           links:
             - text: Azure 开发/测试
-              url: ~/vs-azure-payg.md
+              url: /azure/devtest/offer/
             - text: Visual Studio App Center
               url: ~/vs-visual-studio-app-center.md
             - text: Azure DevOps Server 和 CAL

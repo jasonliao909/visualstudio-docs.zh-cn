@@ -1,0 +1,206 @@
+{
+    "$schema": "https://whatsnewapi.azurewebsites.net/schema",
+    "docSetProductName": "Visual Studio",
+    "rootDirectory": "docs/",
+    "docLinkSettings": {
+        "linkFormat": "relative",
+        "relativeLinkPrefix": "../"
+    },
+    "inclusionCriteria": {
+        "additionalMicrosoftOrgs": [
+            "ASP.NET"
+        ],
+        "labels": [
+            "-label:CLA"
+        ],
+        "minAdditionsToFile": 10
+    },
+    "areas": [
+        {
+            "names": [
+                "ai"
+            ],
+            "heading": "AI"
+        },
+        {
+            "names": [
+                "azure"
+            ],
+            "heading": "Azure"
+        },
+        {
+            "names": [
+                "code-quality"
+            ],
+            "heading": "代码质量"
+        },
+        {
+            "names": [
+                "containers"
+            ],
+            "heading": "容器"
+        },
+        {
+            "names": [
+                "cross-platform"
+            ],
+            "heading": "跨平台"
+        },
+        {
+            "names": [
+                "data-tools"
+            ],
+            "heading": "数据工具"
+        },
+        {
+            "names": [
+                "debugger"
+            ],
+            "heading": "调试器"
+        },
+        {
+            "names": [
+                "deployment"
+            ],
+            "heading": "部署"
+        },
+        {
+            "names": [
+                "designers"
+            ],
+            "heading": "设计器"
+        },
+        {
+            "names": [
+                "extensibility"
+            ],
+            "heading": "扩展性"
+        },
+        {
+            "names": [
+                "get-started"
+            ],
+            "heading": "入门"
+        },
+        {
+            "names": [
+                "help-viewer"
+            ],
+            "heading": "Help viewer"
+        },
+        {
+            "names": [
+                "ide"
+            ],
+            "heading": "IDE"
+        },
+        {
+            "names": [
+                "install"
+            ],
+            "heading": "安装"
+        },
+        {
+            "names": [
+                "javascript"
+            ],
+            "heading": "JavaScript"
+        },
+        {
+            "names": [
+                "media"
+            ],
+            "heading": "媒体"
+        },
+        {
+            "names": [
+                "misc"
+            ],
+            "heading": "杂项"
+        },
+        {
+            "names": [
+                "modeling"
+            ],
+            "heading": "建模"
+        },
+        {
+            "names": [
+                "msbuild"
+            ],
+            "heading": "MSBuild"
+        },
+        {
+            "names": [
+                "porting"
+            ],
+            "heading": "移植"
+        },
+        {
+            "names": [
+                "profiling"
+            ],
+            "heading": "分析"
+        },
+        {
+            "names": [
+                "python"
+            ],
+            "heading": "Python"
+        },
+        {
+            "names": [
+                "rtvs"
+            ],
+            "heading": "RTVS"
+        },
+        {
+            "names": [
+                "sharepoint"
+            ],
+            "heading": "SharePoint"
+        },
+        {
+            "names": [
+                "test"
+            ],
+            "heading": "测试"
+        },
+        {
+            "names": [
+                "vs-2015"
+            ],
+            "heading": "VS 2015"
+        },
+        {
+            "names": [
+                "vsto"
+            ],
+            "heading": "VSTO"
+        },
+        {
+            "names": [
+                "windows"
+            ],
+            "heading": "Windows"
+        },
+        {
+            "names": [
+                "workflow-designer"
+            ],
+            "heading": "工作流设计器"
+        },
+        {
+            "names": [
+                "xaml-tools"
+            ],
+            "heading": "XAML 工具"
+        },
+        {
+            "names": [
+                "xml-tools"
+            ],
+            "heading": "XML 工具"
+        }
+    ]
+}

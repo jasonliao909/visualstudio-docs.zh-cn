@@ -8,7 +8,7 @@ ms.date: 03/09/2021
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
 ms.openlocfilehash: 33f6c5b6b8a536355da1b9416c3b316996f4b245
 ms.sourcegitcommit: 4efdab6a579b31927c42531bb3f7fdd92890e4ac
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/26/2021
 ms.locfileid: "130350711"

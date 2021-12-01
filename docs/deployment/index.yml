@@ -10,12 +10,12 @@ metadata:
   ms.author: mikejo
   manager: jmartens
   ms.date: 09/17/2019
-  ms.openlocfilehash: a85f501dd6a5c74acc18b50bc926e4518a0561d7
-  ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
+  ms.openlocfilehash: 2d326eef85ab2ebdfe274941f945de118480d1f7
+  ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 10/04/2021
-  ms.locfileid: "129431635"
+  ms.lasthandoff: 11/02/2021
+  ms.locfileid: "131127242"
 landingContent:
 - title: 关于部署
   linkLists:
@@ -23,25 +23,27 @@ landingContent:
     links:
     - text: 初探部署
       url: deploying-applications-services-and-components.md
-- title: 开始使用（.NET Core、Python）
+    - text: 发布概述
+      url: publish-overview.md
+- title: 立即开始 (.NET)
   linkLists:
-  - linkListType: overview
-    links:
-    - text: 部署到文件夹、IIS 或 Azure
-      url: deploying-applications-services-and-components-resources.md
   - linkListType: quickstart
     links:
-    - text: 发布到 Azure 应用服务
-      url: quickstart-deploy-to-azure.md
-    - text: 发布到适用于 Linux 的应用服务
-      url: quickstart-deploy-to-linux.md
-    - text: 发布到网站
-      url: quickstart-deploy-to-a-web-site.md
-    - text: 发布到文件夹
-      url: quickstart-deploy-to-local-folder.md
+    - text: 部署 ASP.NET Web 应用
+      url: quickstart-deploy-aspnet-web-app.md
     - text: 使用 ClickOnce 部署 .NET Core 应用
       url: quickstart-deploy-using-clickonce-folder.md
-- title: 部署 .NET 应用
+- title: 部署 ASP.NET Web 应用
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: 将 ASP.NET Core 发布到 Azure
+      url: /azure/app-service/quickstart-dotnetcore?tabs=netcore31&pivots=development-environment-vs#publish-your-web-app
+    - text: 从 IIS 获取发布设置
+      url: tutorial-import-publish-settings-iis.md
+    - text: 通过 Git 发布
+      url: /azure/app-service/deploy-continuous-deployment
+- title: 部署 .NET 桌面应用
   linkLists:
   - linkListType: tutorial
     links:
@@ -61,18 +63,6 @@ landingContent:
     links:
     - text: 使用安装程序包进行部署
       url: deploying-applications-services-and-components.md#create-an-installer-package-windows-desktop
-    - text: 为 Windows Store 打包桌面应用
-      url: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
-- title: 部署 ASP.NET Core 应用
-  linkLists:
-  - linkListType: tutorial
-    links:
-    - text: 将 ASP.NET Core 发布到 Azure
-      url: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs
-    - text: 导入发布设置并部署到 IIS
-      url: tutorial-import-publish-settings-iis.md
-    - text: 通过 Git 发布
-      url: /azure/app-service/deploy-continuous-deployment
 - title: 其他部署类型
   linkLists:
   - linkListType: how-to-guide

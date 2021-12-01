@@ -17,7 +17,7 @@ no-loc: cmdlet
 monikerRange: vs-2019
 ms.openlocfilehash: f25786e33a13cc526480a76a53215562146c4116
 ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/02/2021
 ms.locfileid: "131126501"

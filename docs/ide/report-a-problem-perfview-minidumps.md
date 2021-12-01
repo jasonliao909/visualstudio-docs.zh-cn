@@ -20,7 +20,7 @@ ms.workload:
 ms.description: Collect ETL traces using perfview.exe and create minidumps to send to Microsoft, for troubleshooting issues with Visual Studio
 ms.openlocfilehash: 45260d0e265f1c1104dad872528a7489994964da
 ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/14/2021
 ms.locfileid: "130010647"

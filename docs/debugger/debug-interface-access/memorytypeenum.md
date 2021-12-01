@@ -1,7 +1,8 @@
 ---
+description: 指定要访问的内存的类型。
 title: MemoryTypeEnum | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,18 +10,19 @@ helpviewer_keywords:
 ms.assetid: 8778c047-edeb-4495-8f9f-3f8bbb297099
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: e0710ec5cdfcfcb59407d18b43b885603f017fdb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5dd391950b3f5441d9f6d2b4e6030abfa5a399b2
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738632"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127832808"
 ---
 # <a name="memorytypeenum"></a>MemoryTypeEnum
-指定要访问的内存类型。
+指定要访问的内存的类型。
 
 ## <a name="syntax"></a>语法
 
@@ -40,14 +42,14 @@ enum MemoryTypeEnum {
 
 `MemTypeStack` 仅访问堆栈内存。
 
-`MemTypeAny` 访问任意类型的内存。
+`MemTypeAny` 仅访问代码类型。
 
 ## <a name="remarks"></a>备注
-此枚举中的值将传递给[IDiaStackWalkHelper：： readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md)方法，以限制对不同类型的内存的访问。
+此枚举中的值将传递到 [IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md) 方法，以限制对不同类型的内存的访问。
 
 ## <a name="requirements"></a>要求
-标头： cvconst
+标头：cvconst.h
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [枚举和结构](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md)

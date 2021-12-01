@@ -16,7 +16,7 @@ ms.workload:
 - dotnet
 ms.openlocfilehash: e96d0b52af0931c8d239d77381682d08c1b95462
 ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/13/2021
 ms.locfileid: "129972877"
@@ -344,7 +344,7 @@ IsChecked="True"
 
 ::: moniker-end
 
-::: moniker range=">=vs-2022&quot;
+::: moniker range=">=vs-2022"
 
 1. 通过按 F5或选择“调试”，然后选择“启动调试”，启动调试程序。
 
@@ -358,17 +358,17 @@ IsChecked="True"
 
 ::: moniker-end
 
-#### <a name=&quot;specify-greetingsxaml-as-the-startup-uri&quot;></a>将 Greetings.xaml 指定为启动 URI
+#### <a name="specify-greetingsxaml-as-the-startup-uri"></a>将 Greetings.xaml 指定为启动 URI
 
 1. 在“解决方案资源管理器”中，打开“Application.xaml”文件。
 
-1. 将 `StartupUri=&quot;MainWindow.xaml&quot;` 更改为 `StartupUri=&quot;Greetings.xaml&quot;`，然后保存更改。
+1. 将 `StartupUri="MainWindow.xaml"` 更改为 `StartupUri="Greetings.xaml"`，然后保存更改。
 
 再次启动调试程序 （按“F5”）。 你现在应该可以看到应用程序的 Greetings 窗口。
 
-::: moniker range=&quot;vs-2017&quot;
+::: moniker range="vs-2017"
 
-![正在运行的应用的屏幕截图](media/exploreide-wpf-running-app.png &quot;Greetings 窗口的屏幕截图，其中显示了 TextBlock、RadioButtons 和按钮控件，并选择了“Hello”单选按钮。")
+![正在运行的应用的屏幕截图](media/exploreide-wpf-running-app.png "Greetings 窗口的屏幕截图，其中显示了 TextBlock、RadioButtons 和按钮控件，并选择了“Hello”单选按钮。")
 
 ::: moniker-end
 

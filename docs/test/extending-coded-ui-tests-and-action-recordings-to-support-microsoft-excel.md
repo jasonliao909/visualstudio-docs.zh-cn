@@ -12,7 +12,7 @@ ms.workload:
 author: mikejo5000
 ms.openlocfilehash: 454e2065068a4f79bff96776a050a43c049af5c3
 ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/04/2021
 ms.locfileid: "129431297"

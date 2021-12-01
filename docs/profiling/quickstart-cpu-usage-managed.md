@@ -14,7 +14,7 @@ ms.workload:
 - dotnet
 ms.openlocfilehash: e3bfc29b25a57229a2848b568a11cf864e49a853
 ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/13/2021
 ms.locfileid: "129972292"
@@ -41,7 +41,7 @@ Visual Studio 提供了许多强大的功能来帮助你分析应用程序中的
    ::: moniker range=">=vs-2019"
    如果开始窗口未打开，请选择“文件”>“开始窗口”   。
 
-   在“开始”窗口上，选择“创建新项目”。
+   在“开始”窗口上，选择“创建新项目”  。
 
    在“创建新项目”窗口的搜索框中输入或键入“控制台”   。 接下来，从“语言”列表中选择“C#”或“Visual Basic”，然后从“平台”列表中选择“Windows”    。
 

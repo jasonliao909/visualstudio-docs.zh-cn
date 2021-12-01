@@ -15,7 +15,7 @@ ms.workload:
 monikerRange: <= vs-2019
 ms.openlocfilehash: 54752b44463b14ee0619300277bfc388abfd4203
 ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/13/2021
 ms.locfileid: "129970849"

@@ -15,7 +15,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 58f60e6c63057e115342e91e3ee50c880411e793
 ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/13/2021
 ms.locfileid: "129972487"
@@ -253,11 +253,11 @@ item.totalpoints += users[i].points;
 
 绿色波浪线消失。
 
-## <a name="fix-an-exception&quot;></a>修复异常
+## <a name="fix-an-exception"></a>修复异常
 
 如果已修复所有红色波浪线表示的问题，并解决（或者至少核查了）所有绿色波浪线表示的问题，就可以启动调试器并运行应用了。
 
-按 F5  （“调试”>“开始调试”  ）或调试工具栏中的“开始调试”  按钮![开始调试](../debugger/media/dbg-tour-start-debugging.png &quot;开始调试")。
+按 F5  （“调试”>“开始调试”  ）或调试工具栏中的“开始调试”  按钮![开始调试](../debugger/media/dbg-tour-start-debugging.png "开始调试")。
 
 此时，示例应用引发 `SerializationException` 异常（运行时错误）。 这表示，应用无法正常处理其尝试序列化的数据。 因为是在调试模式下启动的应用（附加调试器），因此调试器的异常帮助程序会直接转到引发异常的代码，并提供有用的错误消息。
 

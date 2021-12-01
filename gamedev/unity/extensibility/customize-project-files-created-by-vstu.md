@@ -1,7 +1,6 @@
 ---
 title: 自定义 VSTU 创建的项目文件 | Microsoft Docs
 description: 了解如何自定义 Visual Studio Tools for Unity (VSTU) 创建的项目文件。 查看 C# 代码示例。
-ms.custom: ''
 ms.date: 04/19/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
@@ -12,15 +11,15 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: a4a5973863877db2d071f9be8d4689928b21a689
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.openlocfilehash: db8d09f5b181796b3cb333963bec2772394728ff
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123961578"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129972799"
 ---
 # <a name="customize-project-files-created-by-vstu"></a>自定义 VSTU 创建的项目文件
-Unity 在项目文件生成期间提供回调。 实现 `OnGeneratedSlnSolution` 和 `OnGeneratedCSProject` 方法，以便在重新 [`AssetPostprocessor`](https://docs.unity3d.com/ScriptReference/AssetPostprocessor.html) 生成项目或解决方案文件时对其进行修改。
+Unity 在项目文件生成期间提供回调。 使用 [`AssetPostprocessor`](https://docs.unity3d.com/ScriptReference/AssetPostprocessor.html) 实现 `OnGeneratedSlnSolution` 和 `OnGeneratedCSProject` 方法，以在重新生成项目或解决方案文件时对其进行修改。
 
 ## <a name="demonstrates"></a>演示
 如何自定义由 Visual Studio Tools for Unity 生成的 Visual Studio 项目文件。

@@ -10,7 +10,7 @@ ms.technology: vs-xaml-tools
 monikerRange: '>=vs-2019'
 ms.openlocfilehash: dda0a61a0c634a227222a23176154ba6a9b2c77e
 ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/04/2021
 ms.locfileid: "129431388"

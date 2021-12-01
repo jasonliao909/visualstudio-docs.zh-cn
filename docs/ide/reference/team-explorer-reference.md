@@ -10,7 +10,7 @@ ms.manager: jmartens
 monikerRange: <=vs-2019
 ms.openlocfilehash: 37c44dbf52b941c1a2d88c4cec4d6536f4988a09
 ms.sourcegitcommit: 485f0f6f578568ee31b2ac093e32a6d01dc9c1c5
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/14/2021
 ms.locfileid: "130015999"
