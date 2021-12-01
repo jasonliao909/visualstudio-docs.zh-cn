@@ -13,12 +13,12 @@ author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 091789ea55ce323072a64c7564431af7f7a6f89c
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: a74b4064d73130720b1e218d7e51347165b584ea
+ms.sourcegitcommit: 263703af9c4840e0e0876aa99df6dd7455c43519
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641496"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "133387463"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>使用存根隔离应用程序的各个部分以进行单元测试
 
@@ -153,7 +153,7 @@ analyzer = new StockAnalyzer(new StockFeed());
 1. 在“解决方案资源管理器”中： 
     - 对于旧版 .NET Framework 项目（非 SDK 样式），展开单元测试项目的“引用”节点。
     ::: moniker range=">=vs-2019"
-    - 对于定目标到 .NET Framework、.NET Core 或 .NET 5.0 的 SDK 样式项目，展开“依赖项”节点，以在“程序集”、“项目”或“包”下找到要虚设的程序集。   
+    - 对于面向 .NET Framework、.net Core 或 .net 5.0 及更高版本的 SDK 样式项目，请展开 "**依赖项**" 节点，以查找要在 **程序集**、**项目** 或 **包** 下伪造的程序集。
     ::: moniker-end
     - 如果使用的是 Visual Basic，请选择“解决方案资源管理器”工具栏中的“显示所有文件”，以查看“引用”节点。
 

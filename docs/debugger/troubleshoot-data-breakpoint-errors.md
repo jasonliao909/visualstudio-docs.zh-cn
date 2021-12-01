@@ -17,12 +17,12 @@ ms.author: waan
 manager: caslan
 ms.workload:
 - multiple
-ms.openlocfilehash: 73e7e02d90e2a89c81b5e690718c95fe7efe0fb3
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: f7d599c1ceb0f6b767cf6c772c13a0babbdf175c
+ms.sourcegitcommit: 263703af9c4840e0e0876aa99df6dd7455c43519
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641942"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "133387401"
 ---
 # <a name="troubleshooting-data-breakpoint-errors"></a>数据断点错误疑难解答
 此页面将引导你解决在使用“值发生更改时中断”时出现的常见错误
@@ -37,7 +37,7 @@ ms.locfileid: "126641942"
 
   - 从 .NET Core 3.0 开始支持托管数据断点。 .NET Framework、早于 3.0 的 .NET Core 版本或早于 5.0.3 的 .NET 版本目前不支持数据断点。 
     
-  - **解决方案**；此错误的解决方案是将项目升级到 .NET Core 3.0。
+  - **解决方案**：解决方法是将项目升级到 .NET Core 3.x 或 .NET 5+。
 
 - “托管堆上找不到此值，无法对其进行跟踪。”
   - 变量在堆栈上声明。
@@ -92,5 +92,5 @@ ms.locfileid: "126641942"
 
 ## <a name="see-also"></a>请参阅
 
-- [在 .NET Core 3.0 中使用“值发生更改时中断”](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus)。
+- [在 .NET 中，使用"值更改时中断"。](using-breakpoints.md#BKMK_set_a_data_breakpoint_managed)
 - [DevBlog：值发生更改时中断：Visual Studio 2019 中用于 .NET Core 的数据断点](https://devblogs.microsoft.com/visualstudio/break-when-value-changes-data-breakpoints-for-net-core-in-visual-studio-2019/)

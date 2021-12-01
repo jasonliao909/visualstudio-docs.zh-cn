@@ -14,14 +14,15 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: a71c87c29e7ec6a10eeb551bc1989e4621bbe0cb
-ms.sourcegitcommit: 00451b7258ab86e259d0fe787669330b61efa8e5
-ms.translationtype: HT
+ms.openlocfilehash: e3bfa52a14eb58750ab31daaf6c694c3d3036df9
+ms.sourcegitcommit: 263703af9c4840e0e0876aa99df6dd7455c43519
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "132364990"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "133387261"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>教程：打开存储库中的项目
+
 在本教程中，你将使用 Visual Studio 首次连接到存储库，然后打开其中的一个项目。
 
 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads)页免费安装。
@@ -44,7 +45,7 @@ ms.locfileid: "132364990"
 
 1. 输入或键入存储库位置，然后选择“克隆”按钮。
 
-    :::image type="content" source="../ide/media/vs-2022/clone-repository-enter-location.png" alt-text="Visual Studio 中的“克隆存储库”对话框（在其中输入 Git 存储库 URL）的屏幕截图。":::
+    :::image type="content" source="../ide/media/vs-2022/clone-repository-enter-location.png" alt-text="&quot;克隆存储库&quot; 对话框的屏幕截图，可在其中输入 Git 存储库 URL Visual Studio。":::
 
 1. 系统可能会要求你在“Git 用户信息”对话框中提供用户登录信息。 可添加你的信息或编辑所提供的默认信息。
 

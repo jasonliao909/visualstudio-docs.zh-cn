@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: a0b477f4dcb5d7c2148b40f648c41b9fea5a1578
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 39b61dca9c550e70a4caa942a495274383849459
+ms.sourcegitcommit: 263703af9c4840e0e0876aa99df6dd7455c43519
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126652411"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "133387196"
 ---
 # <a name="overview-of-source-code-analysis"></a>源代码分析概述
 
@@ -30,7 +30,7 @@ ms.locfileid: "126652411"
 
 - [代码样式](/dotnet/fundamentals/code-analysis/code-style-rule-options?preserve-view=true&view=vs-2019#convention-categories)分析器内置于 Visual Studio 中。 对于这些分析器，诊断 ID 或代码的格式为 IDExxxx，如 IDE0067。 可以在[文本编辑器选项页](../ide/code-styles-and-code-cleanup.md)上或在 [EditorConfig 文件](/dotnet/fundamentals/code-analysis/code-style-rule-options)中配置首选项。 从 .NET 5.0 开始，代码样式分析器包含在 .NET SDK 中，并且可以作为生成警告或错误严格地强制实施。 有关详细信息，请参阅[此文](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis)。
 
-- 现在，[代码质量](/dotnet/fundamentals/code-analysis/quality-rules/index)分析器包含在 .NET 5 SDK 中并且在默认情况下已启用。 对于这些分析器，诊断 ID 或代码的格式为 CAxxxx，如 CA1822。 有关详细信息，请参阅 [.NET 代码质量分析概述](/dotnet/fundamentals/productivity/code-analysis#code-quality-analysis)。
+- [代码质量](/dotnet/fundamentals/code-analysis/quality-rules/index) 分析器现在从 .NET 5 SDK 开始包含在内，并默认启用。 对于这些分析器，诊断 ID 或代码的格式为 CAxxxx，如 CA1822。 有关详细信息，请参阅 [.NET 代码质量分析概述](/dotnet/fundamentals/productivity/code-analysis#code-quality-analysis)。
 
 - 可以将第三方分析器作为 NuGet 包或 Visual Studio 扩展进行安装。 第三方分析器，例如 [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/)、[Roslynator](https://www.nuget.org/packages/Roslynator.Analyzers/)、[XUnit Analyzers](https://www.nuget.org/packages/xunit.analyzers/) 和 [Sonar Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)。
 
@@ -80,7 +80,7 @@ ms.locfileid: "126652411"
 
 要在生成时强制执行规则，包括通过命令行执行或作为持续集成 (CI) 生成的一部分来执行，可以从以下选项中进行选择：
 
-- 创建 .NET 5.0 项目，其中默认在 .NET SDK 中包含分析器。 代码分析功能针对面向 .NET 5.0 或更高版本的项目默认启用。 可通过将 [EnableNETAnalyzers](/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) 属性设置为 true，在面向 .NET 早期版本的项目上启用代码分析。
+- 创建 .NET 5.0 或更高版本项目，其中默认在 .NET SDK 中包含分析器。 代码分析功能针对面向 .NET 5.0 或更高版本的项目默认启用。 可通过将 [EnableNETAnalyzers](/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) 属性设置为 true，在面向 .NET 早期版本的项目上启用代码分析。
 
 - 将分析器安装为 NuGet 包。 如果将分析器作为扩展安装，则分析器警告和错误不会显示在生成报告中。
 

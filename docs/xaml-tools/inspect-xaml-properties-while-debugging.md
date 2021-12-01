@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-xaml-tools
 ms.workload:
 - uwp
-ms.openlocfilehash: 4ff5d56a29642d67a59f06b73270336af73219a3
-ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
-ms.translationtype: HT
+ms.openlocfilehash: 8d0a4f7b66ca0e21800a31b3353f4e8cb368cfa7
+ms.sourcegitcommit: 263703af9c4840e0e0876aa99df6dd7455c43519
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "131127697"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "133387489"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>在调试时检查 XAML 属性
 
@@ -37,7 +37,7 @@ ms.locfileid: "131127697"
 
 ::: moniker range=">=vs-2019"
 
-1. 创建一个新的 C# WPF 应用程序（“文件”>“新建”>“项目”，键入“C# WPF”，选择“WPF 应用程序”项目模板），将项目命名为“TestXAML”，然后验证“.NET Core 3.1”是否显示在“目标框架”下拉列表中。      
+1. 创建新的 C# WPF 应用程序 (**文件** 新建 >  > **Project，** 键入"C# WPF"，选择 **WPF** 应用程序项目模板，将项目命名 **TestXAML，** 然后验证"目标 **框架**"下拉列表中是否显示正确的 .NET 版本。
 
 ::: moniker-end
 
@@ -47,7 +47,7 @@ ms.locfileid: "131127697"
 
 ::: moniker-end
 
-1. 将 MainWindow.xaml 更改为以下内容：
+2. 将 MainWindow.xaml 更改为以下内容：
 
    ```xaml
    <Window x:Class="TestXAML.MainWindow"
@@ -65,7 +65,7 @@ ms.locfileid: "131127697"
    </Window>
    ```
 
-1. 将下面的命令处理程序添加到 MainWindow.xaml.cs 文件中：
+3. 将下面的命令处理程序添加到 MainWindow.xaml.cs 文件中：
 
    ```csharp
    int count;
@@ -86,7 +86,7 @@ ms.locfileid: "131127697"
    }
    ```
 
-1. 生成项目并启动调试。 （生成配置必须为“调试”，而不是“发布”。 有关生成配置的详细信息，请参阅[了解生成配置](../ide/understanding-build-configurations.md)。）
+4. 生成项目并启动调试。 （生成配置必须为“调试”，而不是“发布”。 有关生成配置的详细信息，请参阅[了解生成配置](../ide/understanding-build-configurations.md)。）
 
    当窗口出现时，应会看到应用内工具栏显示在正在运行的应用程序中。
 
@@ -97,7 +97,7 @@ ms.locfileid: "131127697"
    ![该应用的主窗口](../debugger/media/livevisualtree-app.png "LiveVIsualTree-App")
    ::: moniker-end
 
-1. 现在，单击“添加项”按钮几次，将新项添加到列表中。
+5. 现在，单击“添加项”按钮几次，将新项添加到列表中。
 
 ### <a name="inspect-xaml-properties"></a>检查 XAML 属性
 

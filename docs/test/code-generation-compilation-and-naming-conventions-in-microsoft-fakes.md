@@ -1,6 +1,6 @@
 ---
 title: Microsoft Fakes：生成和编译代码；命名约定
-description: 了解 Fakes 代码生成和编译中的选项和问题，其中包括 Fakes 生成的类型、成员和参数的命名约定。
+description: 了解代码生成和Fakes中的选项和问题，包括Fakes类型、成员和参数的命名约定。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,23 +10,23 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e683d40d93dca29445491b1e3fccdcd9c863b8f6
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: d4622deaafd69da44b6e2dde835cc0cb6e3ec455
+ms.sourcegitcommit: 263703af9c4840e0e0876aa99df6dd7455c43519
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641430"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "133387414"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes 中的代码生成、编译和命名约定
 
-本文讨论 Fakes 代码生成和编译中的选项和问题，并介绍了 Fakes 生成的类型、成员和参数的命名约定。
+本文讨论代码生成和Fakes中的选项和问题，并介绍了Fakes类型、成员和参数的命名约定。
 
 **要求**
 
 - Visual Studio Enterprise
 - .NET Framework 项目
 ::: moniker range=">=vs-2019"
-- .NET Core、.NET 5.0 和 SDK 样式项目支持是在 Visual Studio 2019 Update 6 中预览，并在 Update 8 中默认启用。 有关详细信息，请参阅[适用于 .NET Core 和 SDK 样式项目的 Microsoft Fakes](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)。
+- .NET Core、.NET 5.0 或更高版本以及 SDK 样式的项目支持在 Visual Studio 2019 Update 6 中预览，在 Update 8 中默认启用。 有关详细信息，请参阅[适用于 .NET Core 和 SDK 样式项目的 Microsoft Fakes](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)。
 ::: moniker-end
 
 ## <a name="code-generation-and-compilation"></a>代码生成和编译
