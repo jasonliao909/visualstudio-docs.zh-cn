@@ -3,7 +3,7 @@ title: 如何：引用 MSBuild 项目 SDK | Microsoft 文档
 description: 了解如何使用 MSBuild 项目 SDK 来更轻松地使用需导入属性和目标的软件开发工具包。
 ms.custom: SEO-VS-2020
 ms.date: 01/25/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - MSBuild, SDKs, SDK
 author: ghogen
@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: b26c8704be6770954849a440f15683be68ce82aa
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 1a82a836671a6622593de58ffe990a06dad2295f
+ms.sourcegitcommit: 17202f3ac3f7f17ce3756b57dd56321f7254d1dd
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126640620"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "133092830"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>如何：使用 MSBuild 项目 SDK
 

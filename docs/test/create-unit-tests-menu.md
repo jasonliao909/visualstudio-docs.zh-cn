@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: 35eb729b08e969ded00bb2f6eb428ccdfece1032
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: d17afa2a73f395d99c73fc367c6f59d3666ff37c
+ms.sourcegitcommit: 197fb7b1a4d62c1c445ca2b2c7db054df1775933
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736833"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "133311937"
 ---
 # <a name="create-unit-test-method-stubs-from-code"></a>从代码创建单元测试方法存根
 
@@ -29,7 +29,7 @@ ms.locfileid: "126736833"
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 > [!NOTE]
-> “创建单元测试”菜单命令仅适用于 C# 代码  。 若要将此方法与 .NET Core 或 .NET Standard 一起使用，需要 Visual Studio 2019。
+> “创建单元测试”菜单命令仅适用于 C# 代码  。 若要将此方法与 .net Core 或 .NET Standard 一起使用，需要 Visual Studio 2019 或更高版本。
 ::: moniker-end
 
 “创建单元测试”菜单命令可扩展，并可用于为 MSTest、MSTest V2、NUnit 和 xUnit 生成测试  。
@@ -38,7 +38,12 @@ ms.locfileid: "126736833"
 
 首先，在代码编辑器中选择要测试项目中的方法、类型或命名空间，右键单击，然后选择“创建单元测试”  。 “创建单元测试”对话框随即打开，可在其中配置创建测试的方式  。
 
+::: moniker range="<=vs-2019"
 ![使用“创建单元测试”命令](media/createunittestcommand.png)
+::: moniker-end
+::: moniker range=">=vs-2022"
+![使用 "创建单元测试" 命令和菜单对话框](media/create-unit-test-command-menu-dialog.png)
+::: moniker-end
 
 如果未显示用于 NUnit 或 xUnit 的测试框架选项，请参阅[使用第三方单元测试框架](#use-third-party-unit-test-frameworks)。
 
@@ -46,7 +51,12 @@ ms.locfileid: "126736833"
 
 如果计划在测试自动化进程中运行这些测试，可以考虑在另一个测试项目中创建测试（上述对话框中的第二个选项），并为单元测试设置单元测试特征。 这样便可更轻松地在持续集成或持续部署管道中加入或排除这些特定的测试。 如下所示，通过直接向单元测试添加元数据来设置特征。
 
+::: moniker range="<=vs-2019"
 ![设置单元测试特征](media/createunittest.png)
+::: moniker-end
+::: moniker range=">=vs-2022"
+![使用创建单元测试特征](media/create-unit-test-traits.png)
+::: moniker-end
 
 ## <a name="use-third-party-unit-test-frameworks"></a>使用第三方单元测试框架
 

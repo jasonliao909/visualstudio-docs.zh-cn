@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: b4b323611897a7977d906eb585f49006b54e5b9e
-ms.sourcegitcommit: dc12d3d0ca2ec3601cb9de7c22e61ecf22c7c514
-ms.translationtype: HT
+ms.openlocfilehash: aba8cfeabad2bec1dbcc2b6c4ae5447b0eedec76
+ms.sourcegitcommit: a1c18c491e310b00a43e76a911f778e643cd8f8d
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "132264143"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "132995141"
 ---
 # <a name="tutorial-extend-c-console-app-and-debug-in-visual-studio-part-2-of-2"></a>教程：扩展 C# 控制台应用并在 Visual Studio 中调试（第 2 部分，共 2 部分）
 
@@ -570,8 +570,8 @@ namespace CalculatorProgram
                     if (num2 != 0)
                     {
                         result = num1 / num2;
-                        writer.WriteValue("Divide");
                     }
+                    writer.WriteValue("Divide");
                     break;
                 // Return text for an incorrect option entry.
                 default:
@@ -792,8 +792,8 @@ namespace CalculatorLibrary
                     if (num2 != 0)
                     {
                         result = num1 / num2;
-                        writer.WriteValue("Divide");
                     }
+                    writer.WriteValue("Divide");
                     break;
                 // Return text for an incorrect option entry.
                 default:

@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: c179ca35cd10f944a3a4c966b02267a53550de61
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 0f1b874554b7fd8b6359d91209474bfd81a15ebe
+ms.sourcegitcommit: a1c18c491e310b00a43e76a911f778e643cd8f8d
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736696"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "132994978"
 ---
 # <a name="msbuild-command-line-reference"></a>MSBuild 命令行参考
 
@@ -79,7 +79,7 @@ MSBuild.exe [Switches] [ProjectFile]
 
 |开关|缩写形式|描述|
 |------------|----------------|-----------------|
-|-binaryLogger[:[LogFile=]`output.binlog`<br/>[;ProjectImports=[None,Embed,ZipFile]]]|-bl|将所有生成事件串行化为压缩的二进制文件。 默认情况下，该文件位于当前目录中，名称为 msbuild.binlog。 二进制日志是对生成过程的详细描述，可在将来用于重建文本日志，或由其它分析工具使用。 二进制日志的大小通常只有最详细文本诊断级日志的 1/10 到 1/20，但却能包含更多信息。<br /><br />二进制记录器默认收集项目文件的源文本，包括所有导入的项目，以及在生成期间所遇到的目标文件。 可选的 `ProjectImports` 开关控制此行为：<br /><br /> -   ProjectImports=None。 不收集项目导入。<br /> -   ProjectImports=Embed。 在日志文件中嵌入项目导入（默认）。<br /> -   ProjectImports=ZipFile。 将项目文件保存至 \<output>.projectimports.zip，其中 \<output> 的名称与二进制日志文件的名称相同。<br /><br />ProjectImports 的默认设置为“嵌入”。<br />请注意：记录器不收集 .cs、.cpp 等非 MSBuild 源文件 。<br />将 .binlog 文件作为参数而非项目/解决方案传递给 msbuild.exe 可“播放”该文件 。 其他记录器将接收日志文件中包含的信息，就像原始生成发生时那样。 若要详细了解二进制日志及其使用情况，可访问 https://github.com/Microsoft/msbuild/wiki/Binary-Log <br /><br />示例：<br /> -   `-bl`<br /> -    `-bl:output.binlog`<br /> -   `-bl:output.binlog;ProjectImports=None`<br /> -   `-bl:output.binlog;ProjectImports=ZipFile`<br /> -   `-bl:..\..\custom.binlog`<br /> -   `-binaryLogger`|
+|-binaryLogger[:[LogFile=]`output.binlog`<br/>[;ProjectImports=[None,Embed,ZipFile]]]|-bl|将所有生成事件串行化为压缩的二进制文件。 默认情况下，该文件位于当前目录中，名称为 msbuild.binlog。 二进制日志是对生成过程的详细描述，可在将来用于重建文本日志，或由其它分析工具使用。 二进制日志的大小通常只有最详细文本诊断级日志的 1/10 到 1/20，但却能包含更多信息。<br /><br />二进制记录器默认收集项目文件的源文本，包括所有导入的项目，以及在生成期间所遇到的目标文件。 可选的 `ProjectImports` 开关控制此行为：<br /><br /> -   ProjectImports=None。 不收集项目导入。<br /> -   ProjectImports=Embed。 在日志文件中嵌入项目导入（默认）。<br /> -   ProjectImports=ZipFile。 将项目文件保存至 \<output>.projectimports.zip，其中 \<output> 的名称与二进制日志文件的名称相同。<br /><br />ProjectImports 的默认设置为“嵌入”。<br />请注意：记录器不收集 .cs、.cpp 等非 MSBuild 源文件 。<br />将 .binlog 文件作为参数而非项目/解决方案传递给 msbuild.exe 可“播放”该文件 。 其他记录器将接收日志文件中包含的信息，就像原始生成发生时那样。 若要详细了解二进制日志及其使用情况，可访问 https://github.com/dotnet/msbuild/blob/main/documentation/wiki/Binary-Log.md <br /><br />示例：<br /> -   `-bl`<br /> -    `-bl:output.binlog`<br /> -   `-bl:output.binlog;ProjectImports=None`<br /> -   `-bl:output.binlog;ProjectImports=ZipFile`<br /> -   `-bl:..\..\custom.binlog`<br /> -   `-binaryLogger`|
 |-consoleLoggerParameters:<br /><br /> `parameters`|-clp:`parameters`|将指定的参数传递到控制台记录器，后者会在控制台窗口中显示生成信息。 可以指定以下参数：<br /><br /> -   **PerformanceSummary**。 显示在任务、目标和项目中所花费的时间。<br />-   **Summary**。 在末尾显示错误和警告摘要。<br />-   **NoSummary**。 不在末尾显示错误和警告摘要。<br />-   **ErrorsOnly**。 仅显示错误。<br />-   **WarningsOnly**。 仅显示警告。<br />-   **NoItemAndPropertyList**。 如果详细级别设置为 `diagnostic`，则不在每个项目生成开头显示项和属性的列表。<br />-   **ShowCommandLine**。 显示 `TaskCommandLineEvent` 消息。<br />-   **ShowTimestamp**。 将时间戳显示为任何消息的前缀。<br />-   **ShowEventId**。 显示每个已启动事件、已完成事件和消息的事件 ID。<br />-   **ForceNoAlign**。 不将文本与控制台缓冲区大小对齐。<br />-   **DisableConsoleColor**。 将默认控制台颜色用于所有日志记录消息。<br />-   **DisableMPLogging**。 在非多处理器模式下运行时，禁用输出的多处理器日志记录样式。<br />-   **EnableMPLogging**。 启用多处理器日志记录样式（即使在非多处理器模式下运行）。 默认情况下，此日志记录样式处于启用状态。<br />-   **Verbosity**。 重写此记录器的 -verbosity 设置。<br /><br /> 使用分号分隔多个参数，如以下示例所示：<br /><br /> `-consoleloggerparameters:PerformanceSummary;NoSummary -verbosity:minimal`<br/><br/> 默认控制台记录器的详细级别为 normal，并包括 `Summary`。|
 |-distributedFileLogger|-dfl|将每个 MSBuild 节点的生成输出记录到其自己的文件。 这些文件的初始位置是当前目录。 默认情况下，这些文件命名为 MSBuild\<NodeId>.log。 可使用 -fileLoggerParameters 开关指定文件位置和 fileLogger 的其他参数。<br /><br /> 如果你使用 -fileLoggerParameters 开关命名日志文件，分布式记录器会在为每个节点创建日志文件时，将相应名称用作模板，并将节点 ID 追加到相应名称中。|
 |-distributedLogger:<br /><br /> `central logger`*<br /><br /> `forwarding logger`|-dl:`central logger`*`forwarding logger`|记录 MSBuild 中的事件，将不同记录器实例附加到每个节点。 若要指定多个记录器，请分别指定每个记录器。<br /><br /> 使用记录器语法指定记录器。 有关记录器语法，请参阅下面的 logger 开关。<br /><br /> 下面的示例演示如何使用此开关：<br /><br /> `-dl:XMLLogger,MyLogger,Version=1.0.2,Culture=neutral`<br /><br /> `-dl:MyLogger,C:\My.dll*ForwardingLogger,C:\Logger.dll`|
