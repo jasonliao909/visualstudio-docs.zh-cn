@@ -7,12 +7,12 @@ ms.assetid: d1257931-392a-4a65-bf26-177737505122
 ms.date: 03/21/2021
 ms.topic: how-to
 description: 了解和安装 Microsoft 365 应用企业版
-ms.openlocfilehash: b757aa8fbe12f8efe37704b9a60f2a4d88ac9f0b
-ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.openlocfilehash: 89e1a6d8f6e58fa6cd08c9a44700b7e132c4205e
+ms.sourcegitcommit: 197fb7b1a4d62c1c445ca2b2c7db054df1775933
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/30/2021
-ms.locfileid: "133256329"
+ms.locfileid: "133311920"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Microsoft 365 应用企业版
 Microsoft 365 应用企业版（旧称 Office 365 Pro Plus）在选定的 Visual Studio 订阅中提供。 
@@ -26,7 +26,8 @@ Microsoft 365 应用企业版（旧称 Office 365 Pro Plus）在选定的 Visual
 激活 Microsoft 365 应用企业版订阅的流程很简单。  按以下步骤激活订阅并安装应用程序：
 
 1. 通过 [https://my.visualstudio.com](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) 登录到 Visual Studio 订阅
-1. 找到 Microsoft 365 应用企业版磁贴，然后选择“激活”。
+1. 找到 "适用于企业的 Microsoft 365 应用" 磁贴，然后选择 "**获取代码**"。
+1. 单击“激活”  。
    > [!div class="mx-imgBorder"]
    > ![Microsoft 365 应用企业版磁贴](_img/microsoft-365-apps-for-enterprise/tile-activate.png "选择“激活”开始使用订阅。")
 
@@ -55,8 +56,8 @@ Microsoft 365 应用企业版（旧称 Office 365 Pro Plus）在选定的 Visual
 
 | 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise（标准）   | VL、Azure、零售| 可用       |  是          |
-| 包含 GitHub Enterprise 的 Visual Studio Enterprise 订阅  | VL | 可用       |  是          |
+| Visual Studio Enterprise（标准）   | VL、Azure、零售| 12个月试用版       |  否          |
+| 包含 GitHub Enterprise 的 Visual Studio Enterprise 订阅  | VL | 12个月试用版       |  否          |
 | Visual Studio Enterprise（标准）   | NFR<sup>1</sup> | 不可用       |  不可用          |
 | Visual Studio Professional（标准） | VL、Azure、零售                                       | 不可用                                                            |  不可用          |
 | 包含 GitHub Enterprise 的 Visual Studio Professional 订阅 | VL | 不可用         |  不可用          |

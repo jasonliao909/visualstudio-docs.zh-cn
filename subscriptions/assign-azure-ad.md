@@ -1,17 +1,17 @@
 ---
 title: 如何使用 Azure Active Directory 组自动完成 Visual Studio 订阅
 author: esteban-herrera
-ms.author: esherrer
+ms.author: amast
 manager: shve
 ms.date: 07/22/2021
 ms.topic: how-to
 description: 了解管理员如何使用 Azure Active Directory 组来分配订阅
-ms.openlocfilehash: de485170185049270d4819a418ea7d027b1a9d4b
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 0bcf6957ee2ab1c199a25858058e524bf76fa253
+ms.sourcegitcommit: a1c18c491e310b00a43e76a911f778e643cd8f8d
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "127833017"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "132995714"
 ---
 # <a name="how-to-automate-your-visual-studio-subscriptions-using-azure-active-directory-groups"></a>如何使用 Azure Active Directory 组自动完成 Visual Studio 订阅
 
