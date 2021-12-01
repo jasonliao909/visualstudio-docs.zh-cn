@@ -1,7 +1,8 @@
 ---
-title: IDiaSymbol：： get_virtualAddress |Microsoft Docs
+description: 检索位置的虚拟地址 (VA)。
+title: IDiaSymbol::get_virtualAddress | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,23 +10,24 @@ helpviewer_keywords:
 ms.assetid: dc20c7c0-15a6-4b78-a5c9-2e0b94cac522
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ee1c5e989c4e4d9937fad4ba23c261437b4009b4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 946038d7db5885f89b13be20cb7c01d343650775
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738897"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127832824"
 ---
 # <a name="idiasymbolget_virtualaddress"></a>IDiaSymbol::get_virtualAddress
-检索位置的虚拟地址（VA）。 当[LocationType 枚举](../../debugger/debug-interface-access/locationtype.md)设置为 `LocIsStatic` 时使用。
+检索位置的虚拟地址 (VA)。 当 [LocationType 枚举](../../debugger/debug-interface-access/locationtype.md)设置为 `LocIsStatic` 时使用。
 
 ## <a name="syntax"></a>语法
 
 ```C++
-HRESULT get_virtualAddress ( 
+HRESULT get_virtualAddress ( 
    ULONGLONG* pRetVal
 );
 ```
@@ -33,14 +35,14 @@ HRESULT get_virtualAddress ( 
 #### <a name="parameters"></a>参数
  `pRetVal`
 
-弄返回位置的虚拟地址。
+[out] 返回位置的虚拟地址。
 
 ## <a name="return-value"></a>返回值
- 如果成功，将返回 `S_OK`;否则，将返回 `S_FALSE` 或错误代码。
+ 如果成功，则返回 `S_OK`；否则，返回 `S_FALSE` 或错误代码。
 
 > [!NOTE]
-> @No__t_0 的返回值意味着该属性对符号不可用。
+> 返回值 `S_FALSE` 意味着该属性对符号不可用。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [LocationType 枚举](../../debugger/debug-interface-access/locationtype.md)

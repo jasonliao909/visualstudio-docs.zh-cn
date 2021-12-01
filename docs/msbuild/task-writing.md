@@ -17,7 +17,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: da50fb9934439d309235a5230cf2e60fba08ad1d
 ms.sourcegitcommit: efe1d737fd660cc9183177914c18b0fd4e39ba8b
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/22/2021
 ms.locfileid: "130211436"
@@ -265,6 +265,6 @@ namespace SimpleTask2
 </Project>
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [任务参考](../msbuild/msbuild-task-reference.md)

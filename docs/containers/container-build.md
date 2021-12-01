@@ -8,7 +8,7 @@ ms.technology: vs-container-tools
 ms.topic: conceptual
 ms.openlocfilehash: 3b5ed42542348d0697160c01837d4daf75079908
 ms.sourcegitcommit: efe1d737fd660cc9183177914c18b0fd4e39ba8b
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/22/2021
 ms.locfileid: "130211657"

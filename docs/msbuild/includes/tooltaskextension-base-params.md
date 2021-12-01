@@ -5,7 +5,7 @@ ms.topic: include
 ms.date: 4/23/2020
 ms.openlocfilehash: 455ae24a0efc98cbc081a2c99a36564dd25f8c8e166e94568aa64b1d4310e317
 ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/12/2021
 ms.locfileid: "121231244"

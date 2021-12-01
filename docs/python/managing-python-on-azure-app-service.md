@@ -13,7 +13,7 @@ ms.workload:
 - azure
 ms.openlocfilehash: 9b102abc3a1c163a9ae95d04579dd7417300b856
 ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/13/2021
 ms.locfileid: "129968392"

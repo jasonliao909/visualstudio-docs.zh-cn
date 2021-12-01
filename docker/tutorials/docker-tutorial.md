@@ -13,7 +13,7 @@ ms.workload:
 next_page: app.md
 ms.openlocfilehash: c4b1bd4a05c7c8a95a457c18be248cb40a0f94a2
 ms.sourcegitcommit: efe1d737fd660cc9183177914c18b0fd4e39ba8b
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/22/2021
 ms.locfileid: "130211449"

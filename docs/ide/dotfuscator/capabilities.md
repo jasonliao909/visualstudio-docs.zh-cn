@@ -20,7 +20,7 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.openlocfilehash: 484c05c988351d729be1e4d37763b62e99794ed5
 ms.sourcegitcommit: 485f0f6f578568ee31b2ac093e32a6d01dc9c1c5
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/14/2021
 ms.locfileid: "130015986"

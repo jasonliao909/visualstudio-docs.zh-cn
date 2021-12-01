@@ -9,7 +9,7 @@ ms.technology: vs-container-tools
 ms.topic: reference
 ms.openlocfilehash: b541568567d7af7002ecf576700099fec1aeb2d7
 ms.sourcegitcommit: ff81d69902e869b227d9ceb6e95023d1c63425b1
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/06/2021
 ms.locfileid: "129595126"

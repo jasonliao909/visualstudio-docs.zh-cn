@@ -7,7 +7,7 @@ ms.date: 11/09/2021
 ms.assetid: 61CB6883-08CE-470F-8599-6F7570DB756E
 ms.openlocfilehash: c6a98e8314bfdb9c838db3dc36afbec004755d2b
 ms.sourcegitcommit: 4efdab6a579b31927c42531bb3f7fdd92890e4ac
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/26/2021
 ms.locfileid: "130350984"

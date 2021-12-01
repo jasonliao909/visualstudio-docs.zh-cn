@@ -10,7 +10,7 @@ ms.author: mikejo
 ms.custom: include file
 ms.openlocfilehash: 36effcf08969c5233eaee54578c9f5e3101528b96e41cb7cbf6c0025c1f7c56b
 ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/12/2021
 ms.locfileid: "122058379"

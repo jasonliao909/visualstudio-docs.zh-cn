@@ -8,7 +8,7 @@ manager: jmartens
 ms.topic: include
 ms.openlocfilehash: 54effd262078cb9758d9464eb7438075b865e348
 ms.sourcegitcommit: aff49629012f4d5fa07c75ea0ca5bf53d28aa173
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/05/2021
 ms.locfileid: "131663733"

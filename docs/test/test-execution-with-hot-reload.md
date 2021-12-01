@@ -12,7 +12,7 @@ ms.workload:
 - CSharp
 ms.openlocfilehash: 358f55acf7bc54059a2f21624b26c45021815c64
 ms.sourcegitcommit: 0257750be796cc46e01cebd8976f637743d29417
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/23/2021
 ms.locfileid: "130290598"

@@ -19,7 +19,7 @@ manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: fd53079017ebfce2bb2602754a14d3f2e6e5547a
 ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/24/2021
 ms.locfileid: "128429077"

@@ -10,7 +10,7 @@ ms.date: 04/14/2021
 description: 了解如何使用 Bridge to Kubernetes将开发计算机连接到 Kubernetes 群集，并使用本地隧道调试在本地计算机上调试 Kubernetes 服务。
 ms.openlocfilehash: 4e6117dc3b449f964feea367ab6de920f2e88259
 ms.sourcegitcommit: d63ba1eff845d41ca095efb14b499ea96c4b6eba
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/06/2021
 ms.locfileid: "129561010"

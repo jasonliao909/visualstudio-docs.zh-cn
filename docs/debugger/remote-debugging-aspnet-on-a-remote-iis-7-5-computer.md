@@ -14,7 +14,7 @@ ms.workload:
 - aspnet
 ms.openlocfilehash: ec4a8fbd274671b4f2273087cfd59a4434ddd76f
 ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/13/2021
 ms.locfileid: "129972461"
@@ -217,7 +217,7 @@ ms.locfileid: "129972461"
     确保 Visual Studio 将所需的端口添加到计算机名称中，其格式为：\<remote computer name>:port
 
     ::: moniker range=">=vs-2022"
-    在 Visual Studio 2022 中应看到 \<remote computer name>：4026
+    在 Visual Studio 2022 中应看到 \<remote computer name>:4026
     ::: moniker-end
     ::: moniker range="vs-2019"
     在 Visual Studio 2019 中应看到 \<remote computer name>:4024

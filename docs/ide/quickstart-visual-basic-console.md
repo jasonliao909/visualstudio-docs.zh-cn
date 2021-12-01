@@ -15,7 +15,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 0ece22de8280742a099432fd5b3e527631718cfb
 ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/24/2021
 ms.locfileid: "128427793"
@@ -46,7 +46,7 @@ ms.locfileid: "128427793"
 
 1. 从顶部菜单栏中选择“文件”>“新建”>“项目”    。
 
-1. 在“新建项目”对话框左侧的窗格中，展开“Visual Basic”，然后选择“.NET Core”。 在中间窗格中，选择“控制台应用(.NET Core)”。 随后将项目命名为 HelloWorld。
+1. 在“新建项目”对话框左侧的窗格中，展开“Visual Basic”，然后选择“.NET Core”。 在中间窗格中，选择“控制台应用(.NET Core)”  。 随后将项目命名为 HelloWorld。
 
    ![Visual Studio IDE 中“新建项目”对话框中的控制台应用 (.NET Core) 项目模板](../ide/media/new-project-vb-dotnetcore-helloworld-console-app.png)
 
@@ -153,14 +153,14 @@ ms.locfileid: "128427793"
 
 但是，如果你在文件资源管理器中导航到“HelloWorld.exe”并运行该文件，则 `Main` 过程将在其单个语句执行后终止，并且控制台窗口很快就会关闭。
 
-### <a name="add-some-code&quot;></a>添加一些代码
+### <a name="add-some-code"></a>添加一些代码
 
 先添加一些代码来暂停应用程序，然后请求用户输入。
 
 1. 在 <xref:System.Console.WriteLine%2A> 方法调用后面紧接着添加以下代码：
 
    ```vb
-   Console.Write(&quot;Press any key to continue...")
+   Console.Write("Press any key to continue...")
    Console.ReadKey(true)
    ```
 
@@ -182,7 +182,7 @@ ms.locfileid: "128427793"
 
 ::: moniker-end
 
-::: moniker range=">=vs-2022&quot;
+::: moniker range=">=vs-2022"
 
 选择 Visual Basic 项目模板并为项目命名后，Visual Studio 会创建一个简单的“Hello World!” 应用程序。 Program.vb 文件包含默认代码，该代码调用 <xref:System.Console.WriteLine%2A> 方法以在控制台窗口中 显示文本字符串“Hello World!”。
 
@@ -196,14 +196,14 @@ ms.locfileid: "128427793"
 
 但是，如果你在文件资源管理器中导航到“HelloWorld.exe”并运行该文件，则 `Main` 过程将在其单个语句执行后终止，并且控制台窗口很快就会关闭。
 
-### <a name=&quot;add-some-code&quot;></a>添加一些代码
+### <a name="add-some-code"></a>添加一些代码
 
 先添加一些代码来暂停应用程序，然后请求用户输入。
 
 1. 在 <xref:System.Console.WriteLine%2A> 方法调用后面紧接着添加以下代码：
 
    ```vb
-   Console.Write(&quot;Press any key to continue...")
+   Console.Write("Press any key to continue...")
    Console.ReadKey(true)
    ```
 

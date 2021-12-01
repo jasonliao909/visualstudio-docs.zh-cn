@@ -25,7 +25,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 9e42a6640c2709ccabf7ca2c6a9987e29f31d095
 ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/07/2021
 ms.locfileid: "129635953"
@@ -69,7 +69,7 @@ ms.locfileid: "129635953"
 
    如果开始窗口未打开，请选择“文件”>“开始窗口”   。
 
-   在“开始”窗口上，选择“创建新项目”  。
+   在“开始”窗口上，选择“创建新项目”。
 
    在“创建新项目”窗口的搜索框中输入或键入“控制台”   。 接下来，从“语言”列表中选择“C#”、“C++”或“Visual Basic”，然后从“平台”列表中选择“Windows”     。
 

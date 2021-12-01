@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: c8ce30c5dded0c247467d47296429412d1a561eb
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 201a6f3d03c478fafd62c17b298d31e20de33ce1
+ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126665647"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "131127060"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>将应用部署到文件夹、IIS、Azure 或其他目标
 
@@ -40,7 +40,7 @@ ms.locfileid: "126665647"
 
    ![创建新的发布配置文件](../deployment/media/create-a-new-publish-profile.png)
 
-   然后，在“发布”窗口中选择部署选项。 有关发布选项的详细信息，请参阅以下部分。
+   然后，在“发布”工具中选择部署选项。 有关发布选项的详细信息，请参阅以下部分。
 
 ## <a name="what-publishing-options-are-right-for-me"></a>哪些发布选项适合我？
 

@@ -20,7 +20,7 @@ ms.workload:
 monikerRange: vs-2017
 ms.openlocfilehash: bd8558309ac9c389c0254d21339fab4f9029ef51
 ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/07/2021
 ms.locfileid: "129635745"

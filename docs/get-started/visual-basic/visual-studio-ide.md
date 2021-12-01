@@ -17,7 +17,7 @@ ms.workload:
 - dotnet
 ms.openlocfilehash: f2868a4a86f1ce70fbaf9f94bf1c5f3971b45c59
 ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/24/2021
 ms.locfileid: "128429791"
@@ -595,7 +595,7 @@ Visual Studio 有三个版本：社区版、专业版和企业版。 请参阅[�
    ::: moniker range="<=vs-2019"
    ![显示 Visual Studio 中的“重命名”操作的屏幕截图。](media/rename-quick-action.png)
    ::: moniker-end
-   ::: moniker range=">=vs-2022&quot;
+   ::: moniker range=">=vs-2022"
    :::image type="content" source="media/vs-2022/rename.png" alt-text="显示 Visual Studio 中的“重命名”操作的屏幕截图。" border="false":::
    ::: moniker-end
 
@@ -603,7 +603,7 @@ Visual Studio 有三个版本：社区版、专业版和企业版。 请参阅[�
 
 接下来了解下 IntelliSense。
 
-1. 在 `Console.WriteLine(&quot;Hello &quot; + username + &quot;!")` 行下方，键入以下代码：
+1. 在 `Console.WriteLine("Hello " + username + "!")` 行下方，键入以下代码：
 
    ```vb
    Dim now = Date.
@@ -614,7 +614,7 @@ Visual Studio 有三个版本：社区版、专业版和企业版。 请参阅[�
    ::: moniker range="<=vs-2019"
    ![显示 Visual Studio 中的 IntelliSense 列表成员的屏幕截图。](media/intellisense-list-members.png)
    ::: moniker-end
-   ::: moniker range=">=vs-2022&quot;
+   ::: moniker range=">=vs-2022"
    :::image type="content" source="media/vs-2022/intellisense-list-members.png" alt-text="显示 Visual Studio 中的 IntelliSense 列表成员的屏幕截图。" border="false":::
    ::: moniker-end
 
@@ -624,7 +624,7 @@ Visual Studio 有三个版本：社区版、专业版和企业版。 请参阅[�
 
    ```vb
    Dim dayOfYear = now.DayOfYear
-   Console.Write(&quot;Day of year: ")
+   Console.Write("Day of year: ")
    Console.WriteLine(dayOfYear)
    ```
 

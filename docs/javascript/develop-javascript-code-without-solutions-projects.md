@@ -15,7 +15,7 @@ ms.workload:
 - nodejs
 ms.openlocfilehash: f0d86db6369b33a7cc763b5567ff42ec88440e5f
 ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/13/2021
 ms.locfileid: "129969289"

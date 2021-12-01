@@ -11,7 +11,7 @@ author: ghogen
 manager: jmartens
 ms.openlocfilehash: 2be3c39f98b4127bf27801797beea35a1ec9f29f
 ms.sourcegitcommit: d63ba1eff845d41ca095efb14b499ea96c4b6eba
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/06/2021
 ms.locfileid: "129560965"
