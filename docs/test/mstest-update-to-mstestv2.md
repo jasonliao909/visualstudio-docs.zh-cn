@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: 68ca8dbe123fd0585a321fbefd49fd61713f4329
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 0cbbbe38d92f4eee74ca55939bbe5004aa8d7553
+ms.sourcegitcommit: 263703af9c4840e0e0876aa99df6dd7455c43519
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126735645"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "133387450"
 ---
 # <a name="upgrade-from-mstestv1-to-mstestv2"></a>从 MSTestV1 升级到 MSTestV2
 
@@ -52,7 +52,7 @@ ms.locfileid: "126735645"
 > [!NOTE]
 > 作为编码 UI 测试或 Web 负载测试的测试项目与 MSTestV2 不兼容。 已弃用这些项目类型。 详细了解[编码 UI 测试弃用](https://devblogs.microsoft.com/devops/changes-to-coded-ui-test-in-visual-studio-2019/)和 [Web 负载测试弃用](https://devblogs.microsoft.com/devops/cloud-based-load-testing-service-eol/)。
 
-### <a name="sdk-style-csproj-net-core-and-net-5"></a>SDK 样式的 csproj（.NET Core 和 .NET 5）
+### <a name="sdk-style-csproj-net-core-and-net-5-or-later"></a>SDK 样式 csproj (.NET Core 和 .NET 5 或更高版本) 
 
 如果 .csproj 是较新的 SDK 样式 .csproj ，则很可能已在使用 MSTestV2。  可在 NuGet 上查找 [MSTestV2](https://www.nuget.org/packages/MSTest.TestFramework) 和 [MSTestV2 适配器](https://www.nuget.org/packages/MSTest.TestAdapter/)的 NuGet 包。
 

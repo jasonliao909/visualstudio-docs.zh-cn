@@ -10,16 +10,22 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c2591caf6a16cc6993b33aa2a38e4b5344c2af3
-ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.openlocfilehash: c3c9783c4d4837109186909ab15bf12f88bca398
+ms.sourcegitcommit: 263703af9c4840e0e0876aa99df6dd7455c43519
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "133256511"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "133387226"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Work with multiple user accounts
 
+::: moniker range="vs-2017"
 本文介绍如何将多个帐户添加到 Visual Studio。 还显示如何查看可从“添加连接的服务”对话框、“服务器资源管理器”和“团队资源管理器”等位置的帐户访问的资源    。
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+本文介绍如何将多个帐户添加到 Visual Studio。 还介绍了如何在 " **添加连接的服务** " 对话框和 **服务器资源管理器** 等地方查看这些帐户可访问的资源。
+::: moniker-end
 
 如果有多个 Microsoft 帐户和/或单位或学校帐户，可将它们全部添加到 Visual Studio，以便可从任何帐户访问资源，而无需单独登录到这些帐户。 Azure、Application Insights、Azure DevOps 和 Microsoft 365 服务都支持简化的登录体验。
 
@@ -32,13 +38,33 @@ ms.locfileid: "133256511"
 
 使用 Microsoft 帐户或组织帐户登录到 Visual Studio。 窗口上方会显示你的用户名，类似于：
 
+::: moniker range="<=vs-2019"
+
 ![当前登录的用户](../ide/media/vs2015_username.png)
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+![当前登录的用户](../ide/media/vs-2022/visual-studio-sign-in.png)
+
+::: moniker-end
 
 ### <a name="access-your-azure-account-in-server-explorer"></a>在服务器资源管理器中访问你的 Azure 帐户
 
 若要打开服务器资源管理器，请选择“查看” > “服务器资源管理器”（或者，如果使用的是“常规”[环境设置](../ide/environment-settings.md)，请按 Ctrl+Alt+S）。 展开“Azure”节点，注意它包含 Azure 帐户中可用的资源，该资源与用于登录 Visual Studio 的帐户相关联  。 它看上去类似于下图：
 
+::: moniker range="<=vs-2019"
+
 ![展开了 Azure 节点的服务器资源管理器](../ide/media/work-with-multiple-user-accounts/server-explorer.png)
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+![展开了 Azure 节点的服务器资源管理器](../ide/media/vs-2022/server-explorer.png)
+
+::: moniker-end
 
 在任何特定设备上首次使用 Visual Studio 时，对话框都将只显示在登录的账户下注册的订阅。 通过右键单击“Azure”节点、选择“管理和筛选订阅”并从帐户选取器控件添加帐户，可以直接从“服务器资源管理器”访问任何其他帐户的资源    。 如果需要，可以通过单击向下箭头，从帐户列表中选择另一个帐户。 选择帐户之后，可以自定义帐户下的哪些订阅在“服务器资源管理器”中显示  。
 
@@ -52,7 +78,7 @@ ms.locfileid: "133256511"
 
 1. 选择“解决方案资源管理器”中的项目节点，然后右键单击并选择“添加” > “连接的服务”。
 
-   随即出现“添加连接的服务”向导，其中显示与 Visual Studio 个性化账户相关联的 Azure 帐户中的服务列表  。 无需单独登录 Azure。 但是，第一次尝试从另一计算机访问其资源时，你需要登录到其他帐户。
+   此时将显示 "**连接的服务**" 窗口，其中显示了与 Visual Studio 个性化帐户关联的 Azure 帐户中的服务列表。 无需单独登录 Azure。 但是，第一次尝试从另一计算机访问其资源时，你需要登录到其他帐户。
 
 ### <a name="access-azure-active-directory-in-a-web-project"></a>在 Web 项目中访问 Azure Active Directory
 
@@ -78,21 +104,37 @@ Azure Active Directory (AAD) 支持 ASP.NET MVC web 应用中的最终用户单�
 
 ::: moniker range="vs-2019"
 
-要了解此操作，请创建一个新的“ASP.NET Core Web 应用”项目。 在"其他 **信息**"页上，从"目标框架"下拉列表中选择 **".NET Core 3.1** (长期支持) "，然后从"身份验证类型"下拉列表中选择 **"Microsoft 标识** 平台"。
+要了解此操作，请创建一个新的“ASP.NET Core Web 应用”项目。 在 "**其他信息**" 页上，从 "**目标框架**" 下拉菜单中选择 " **.net Core 3.1 (长期) 支持**"，然后从 "**身份验证类型**" 下拉选择 "身份验证类型"。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2022"
 
-要了解此操作，请创建一个新的“ASP.NET Core Web 应用”项目。 在"**其他信息**"页上，从"目标 ("下拉列表中选择 **".NET Core 6**) 长期支持"，然后从"身份验证类型"下拉列表中选择 **"Microsoft** 标识平台"。
+要了解此操作，请创建一个新的“ASP.NET Core Web 应用”项目。 在 "**其他信息**" 页上，从 "**目标框架**" 下拉菜单中选择 " **.net Core 6 (长期支持")** ，然后从 "**身份验证类型**" 下拉选择 "身份验证类型"。
 
 ::: moniker-end
+
+::: moniker range=">=vs-2019"
 
 ## <a name="add-an-additional-account-to-visual-studio"></a>向 Visual Studio 添加另一个帐户
 
 若要将其他帐户添加到 Visual Studio：
 
-1. 选择“文件” > “帐户设置”。
+1. 选择 "**文件** > **帐户设置**。
+
+1. 从 " **所有帐户**" 中，使用 **+** 或 " **添加** " 下拉列表选择一个帐户。
+
+1. 在“登录到你的帐户”页面上，选择该帐户或选择“使用另一个帐户”   。 按照提示输入新的帐户凭据。
+
+（可选）现在可以转到“服务器资源管理器”，并查看与刚添加的帐户相关联的 Azure 服务  。 在“服务器资源管理器”中，右键单击“Azure”节点并选择“管理和筛选订阅”    。 通过单击当前帐户旁的下拉箭头选择新的帐户，然后选择想要在“服务器资源管理器”中显示的订阅  。 应可以看到与指定订阅关联的所有服务。 即使当前未使用第二个帐户登录到 Visual Studio，也可登录到该帐户的服务和资源。 **Project**  >  **添加连接的服务** 也是如此。
+::: moniker-end
+
+::: moniker range="vs-2017"
+## <a name="add-an-additional-account-to-visual-studio"></a>向 Visual Studio 添加另一个帐户
+
+若要将其他帐户添加到 Visual Studio：
+
+1. 选择 "**文件** > **帐户设置**。
 
 1. 在“所有帐户”下，选择“添加帐户”   。
 
@@ -108,7 +150,7 @@ Azure Active Directory (AAD) 支持 ASP.NET MVC web 应用中的最终用户单�
 
 1. 打开“工具” > “选项” > “环境”下的 [“帐户”](reference/accounts-environment-options-dialog-box.md)页面，然后选择“在添加或重新验证帐户时启用设备代码流”。 选择“确定”关闭选项页  。
 
-1. 选择“文件” > “帐户设置”以打开帐户管理页面。
+1. 选择 "**文件** > **帐户" 设置** 打开 "帐户管理" 页。
 
 1. 在“所有帐户”下，选择“添加帐户”   。
 
@@ -134,6 +176,8 @@ Azure Active Directory (AAD) 支持 ASP.NET MVC web 应用中的最终用户单�
 
 1. 返回 Visual Studio 中的帐户管理页面，其中的“所有帐户”下列出了新添加的帐户  。 选择“关闭”  。
 
+::: moniker-end
+
 ::: moniker range=">=vs-2019"
 
 ### <a name="add-a-github-account-to-visual-studio"></a>向 Visual Studio 添加 GitHub 帐户
@@ -141,6 +185,7 @@ Azure Active Directory (AAD) 支持 ASP.NET MVC web 应用中的最终用户单�
 自版本 16.8 起，可以将 GitHub 和 GitHub Enterprise 帐户都添加到密钥链中。 你可以添加并使用这些帐户，就像使用 Microsoft 帐户一样；也就是说，你将能够更轻松地跨 Visual Studio 访问 GitHub 资源。
 
 有关详细说明，请参阅[在 Visual Studio 中使用 GitHub 帐户](work-with-github-accounts.md)。
+
 ::: moniker-end
 
 ## <a name="see-also"></a>另请参阅

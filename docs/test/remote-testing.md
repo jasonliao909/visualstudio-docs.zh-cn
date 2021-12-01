@@ -10,12 +10,12 @@ ms.technology: vs-ide-test
 monikerRange: '>= vs-2022'
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e4094864c92ac95f879ff67023ee63c4b5c6c6d
-ms.sourcegitcommit: d3ce2900d838d1fb509df51bda9a9a8b72dfd880
-ms.translationtype: HT
+ms.openlocfilehash: 7b756ac42a7747d1d9011b5e3e84f75731b38a7e
+ms.sourcegitcommit: 263703af9c4840e0e0876aa99df6dd7455c43519
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "131521632"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "133387476"
 ---
 # <a name="remote-testing-experimental-preview"></a>远程测试（试验性预览）
 
@@ -26,7 +26,7 @@ ms.locfileid: "131521632"
 * 仅适用于 .NET 测试。
   * 如果你有兴趣了解对其他语言的远程测试支持，请[提交建议](/visualstudio/ide/suggest-a-feature)或投票支持现有建议。 [支持 C++ 远程测试](https://developercommunity.visualstudio.com/t/run-c-unit-tests-on-linux-with-visual-studio/1403357)。
 * 目前，我们只支持远程环境中的 Windows、Ubuntu 和 Debian 映像。 
-* 目前，环境的大部分预配由用户的规范决定。 用户必须在你的目标环境中安装必需的依赖项。 例如，如果测试面向 .NET 5.0，则需要确保容器通过 Dockerfile 安装了 .NET 5.0。 可能会有提示在远程环境中安装 .NET Core，这是远程运行和发现测试所必需的。 
+* 目前，环境的大部分预配由用户的规范决定。 用户必须在你的目标环境中安装必需的依赖项。 例如，如果测试面向 .NET 6.0，则需要确保容器已通过 Dockerfile 安装了 .NET 6.0。 可能会有提示在远程环境中安装 .NET Core，这是远程运行和发现测试所必需的。 
 * 通过“输出”>“测试”窗格，规划监视到远程环境的连接状态。 例如，如果已停止容器，“输出”>“测试”窗格中会显示一条消息。 我们可能不会检测到所有的情况，因此如果看起来像断开了连接，请计划检查你的输出。 特别是在“输出”窗格未设置为“测试”的情况下，你可能不会立即看到消息。 如果断开了连接，你可使用测试资源管理器中的环境下拉菜单将连接设置回本地环境，然后再次选择远程环境来重新启动连接。
 
 ## <a name="set-up-the-remote-testing-environment"></a>设置远程测试环境

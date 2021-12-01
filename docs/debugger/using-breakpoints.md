@@ -36,12 +36,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: b2d60c9d020cb5dbc788ebe13d2360ed11430a51
-ms.sourcegitcommit: 4efdab6a579b31927c42531bb3f7fdd92890e4ac
-ms.translationtype: HT
+ms.openlocfilehash: 2419d6cd57f9d6d8cc60c91272f2d92f6e673960
+ms.sourcegitcommit: 263703af9c4840e0e0876aa99df6dd7455c43519
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "130351198"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "133387502"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中使用断点
 
@@ -202,7 +202,7 @@ ms.locfileid: "130351198"
 
 1. 在“语言”下拉列表中，选择函数的语言。
 
-1. 选择“确定”。
+1. 选择“确定”  。
 
 ### <a name="set-a-function-breakpoint-using-a-memory-address-native-c-only"></a>使用内存地址设置函数断点（仅限本机 C++）
  你还可以使用对象的地址在类的特定实例调用的方法上设置函数断点。  例如，给定一个类型为 `my_class` 的可寻址对象，可以在实例调用的 `my_method` 方法上设置函数断点。
@@ -221,7 +221,7 @@ ms.locfileid: "130351198"
 
 ::: moniker range=">= vs-2019"
 
-## <a name="set-data-breakpoints-net-core-30-or-higher"></a><a name="BKMK_set_a_data_breakpoint_managed"></a>设置数据断点（.NET Core 3.0 或更高版本）
+## <a name="set-data-breakpoints-net-core-3x-or-net-5"></a><a name="BKMK_set_a_data_breakpoint_managed"></a>设置数据断点（A0.NET Core 3.x 或 .NET 5+) 
 
 当特定对象的属性更改时，数据断点中断执行。
 
