@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 989cea132815ef8b431e05cdf5f5ba6cdcd6d169
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 7bc000fdac61e6f3f1ef55cf64f3bbe689f2e197
+ms.sourcegitcommit: a149b3a034bb555ad217656c0ec8bc1672b1e215
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126735942"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "133514306"
 ---
 # <a name="exec-task"></a>Exec 任务
 
@@ -60,6 +60,8 @@ ms.locfileid: "126735942"
 在要执行的作业的特定 MSBuild 任务不可用时，此任务会非常有用。 但是，与更加具体的任务不同，`Exec` 任务不能根据运行的工具或命令的结果执行其他处理或条件操作。
 
 `Exec` 任务调用 cmd.exe 而不是直接调用进程。
+
+参数 `IgnoreExitCode` 和 `IgnoreStandardErrorWarningFormat` 影响任务返回 的条件 `false` ，指示错误。 使用两个) 的默认设置 (，如果可执行文件有非零退出代码，或在可执行文件的标准错误流中找到了诊断消息，则任务将指示失败 (返回 `false` `Exec` `false`) 。 如果只想指示可执行文件返回非零退出代码时失败，则 `Exec` 设置为 `IgnoreStandardErrorWarningFormat` `true` 。
 
 ## <a name="example"></a>示例
 

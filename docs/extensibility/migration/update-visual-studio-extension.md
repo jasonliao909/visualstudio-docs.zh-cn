@@ -11,61 +11,59 @@ monikerRange: vs-2022
 ms.workload:
 - vssdk
 feedback_system: GitHub
-ms.openlocfilehash: 354312c6c874380297a7a7a5b70700d9f72ad6a3
-ms.sourcegitcommit: 932cf0f653c6258b73f42102d134cbaf50b8f20c
+ms.openlocfilehash: 7969f08bef0a746df72de6a4582a06f7bdc1e685
+ms.sourcegitcommit: a149b3a034bb555ad217656c0ec8bc1672b1e215
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "132880139"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "133514579"
 ---
-# <a name="update-a-visual-studio-extension-for-visual-studio-2022"></a>更新 Visual Studio 2022 的 Visual Studio 扩展
+# <a name="update-a-visual-studio-extension-for-visual-studio-2022"></a>更新 Visual Studio 2022 Visual Studio 扩展
 
 > [!IMPORTANT]
-> 本指南中的建议旨在指导开发人员迁移扩展，这些扩展需要进行重大更改才能在 Visual Studio 2019 和2022中运行。 在这些情况下，建议使用两个 VSIX 项目和条件编译。
-> 许多扩展都可以在 Visual Studio 2019 和2022中工作，并且不需要遵循本指南中有关现代化扩展的建议。
-> 试用 Visual Studio 2022 中的扩展，并评估哪种选项最适合你的扩展。
+> 本文中的建议可以指导开发人员迁移需要在 2019 和 2022 Visual Studio中正常工作的Visual Studio扩展。 在这种情况下，我们建议你有两个 VSIX 项目和条件编译。
+>
+> 许多扩展在 Visual Studio 2019 和 Visual Studio 2022 中都工作，但需要进行细微更改，无需遵循本文中有关扩展现代化的建议。 在 2022 Visual Studio中试用扩展，并评估最适合你的扩展的选项。
 
-通过遵循本指南，你可以更新你的扩展以与 Visual Studio 2022 一起使用。 Visual Studio 2022 是64位应用程序，并且在 VS SDK 中引入了一些重大更改。 本指南将指导你完成以下步骤：使用 Visual Studio 2022 的当前预览版来处理你的扩展，这样，在 Visual Studio 2022 达到 GA 之前，你的扩展可供用户安装。
+Visual Studio 2022 是一个 64 位应用程序，在 Visual Studio SDK 中引入了一些中断性变更。 本文指导你完成使扩展使用 2022 年 2 月的当前预览版Visual Studio步骤。 然后，可以在 2022 年 2 月Visual Studio安装扩展。
 
-## <a name="installing"></a>安装
+## <a name="install-visual-studio-and-compile-extensions"></a>安装Visual Studio并编译扩展
 
-从[Visual Studio 2022 下载](https://visualstudio.microsoft.com/downloads)安装 Visual Studio 2022。
+从 Visual Studio 2022 Visual Studio[安装 2022。](https://visualstudio.microsoft.com/downloads)
 
-### <a name="extensions-written-in-a-net-language"></a>用 .NET 语言编写的扩展
+### <a name="extensions-written-in-a-net-language"></a>以 .NET 语言编写的扩展
 
-托管扩展的 VS SDK 目标 Visual Studio 2022 NuGet： 
+面向托管Visual Studio 2022 Visual Studio 2022 的托管 SDK 专门NuGet：
 
-- VisualStudio) 元包中的[](https://www.nuget.org/packages/Microsoft.VisualStudio.Sdk/) (版本 17. x 版本引入了所需的大多数或所有引用程序集。
-- 应从 VSIX 项目引用[VSSDK.](https://www.nuget.org/packages/Microsoft.VSSDK.BuildTools/) x () 包的版本，以便它能够生成与2022兼容的 Visual Studio。
+- [Microsoft.VisualStudio.Sdk](https://www.nuget.org/packages/Microsoft.VisualStudio.Sdk/) (17.x) 元包引入你所需的大部分或所有引用程序集。
+- 应从 VSIX 项目引用[Microsoft.VSSDK.BuildTools](https://www.nuget.org/packages/Microsoft.VSSDK.BuildTools/) (17.x) 包，以便它可以生成符合 Visual Studio 2022 的 VSIX。
 
-即使不引用任何重大更改，也 *必须* 用 "any CPU" 或 "x64" 平台编译扩展。 "x86" 平台与 Visual Studio 2022 的64位进程不兼容。
+即使未引用任何中断性变更，也必须使用"任何 **CPU"** 或 **"x64"** 平台编译扩展。  **x86** 平台与 2022 年 64 位Visual Studio不兼容。
 
-### <a name="extensions-written-in-c"></a>用 c + + 编写的扩展
+### <a name="extensions-written-in-c"></a>用 C++ 编写的扩展
 
-与使用 c + + 编译的扩展的 VS SDK 同样适用于已安装的 Visual Studio SDK。
+与Visual Studio一样，已安装的 Visual Studio SDK 中也提供了适用于使用 C++ 编译的扩展的 SDK。
 
-即使不引用任何重大更改，也 *必须* 针对 Visual Studio 2022 SDK 和 amd64 专门编译扩展。
+即使不引用任何中断性变更，也必须针对 Visual Studio 2022 SDK 和 AMD64 专门编译扩展。 
 
-### <a name="update-your-extension-to-visual-studio-2022"></a>将扩展更新为 Visual Studio 2022
+### <a name="extensions-with-running-code"></a>具有运行代码的扩展
 
-#### <a name="extensions-with-running-code"></a>运行代码的扩展
+具有运行代码 *的扩展必须* 专门针对 Visual Studio 2022 进行编译。 Visual Studio 2022 将不会加载任何面向早期版本的 Visual Studio。
 
-*必须* 专门针对 Visual Studio 2022 编译包含运行代码的扩展。 Visual Studio 2022 不会加载专门面向 Visual Studio 2022 的任何扩展。
+了解如何将早期版本的扩展迁移到 Visual Studio 2022 Visual Studio版本：
 
-了解如何将预 Visual Studio 2022 扩展迁移到 Visual Studio 2022：
-
-1. [使项目实现现代化](#modernize-your-vsix-project)。
-1. 将[您的源代码重构为共享项目](#use-shared-projects-for-multi-targeting)，以允许以 Visual Studio 2022 和更早版本为目标。
-1. [添加 Visual Studio 2022 目标 VSIX 项目](#add-a-visual-studio-2022-target)，以及[包/程序集重新映射表](migrated-assemblies.md)。
+1. [使项目现代化](#modernize-your-vsix-project)。
+1. [将源代码重构到共享](#use-shared-projects-for-multi-targeting)项目中，以面向 2022 Visual Studio版本。
+1. [添加一Visual Studio 2022](#add-a-visual-studio-2022-target)目标 VSIX 项目和[一个包/程序集重新映射表](migrated-assemblies.md)。
 1. [进行必要的代码调整](#handle-breaking-api-changes)。
 1. [测试 Visual Studio 2022 扩展](#test-your-extension)。
-1. [发布 Visual Studio 2022 扩展](#publish-your-extension)。
+1. [发布 2022 Visual Studio 2022 扩展](#publish-your-extension)。
 
-#### <a name="extensions-without-running-code"></a>不运行代码的扩展
+### <a name="extensions-without-running-code"></a>无需运行代码的扩展
 
-不包含任何正在运行的代码 (例如，项目/项模板) *无* 需遵循上述步骤，包括两个不同 VSIXs 的生产。
+不包含任何正在运行的代码的扩展 (例如，项目或项模板) 执行上述步骤，包括两个不同的 VSIX 的生产。
 
-相反，应修改一个 VSIX，使其 `source.extension.vsixmanifest` 文件声明两个安装目标，如下所示：
+相反，请修改一个 VSIX，以便其 `source.extension.vsixmanifest` 文件声明两个安装目标：
 
 ```xml
 <Installation>
@@ -78,22 +76,22 @@ ms.locfileid: "132880139"
 </Installation>
 ```
 
-可以跳过本文中有关使用共享项目和多个 VSIXs 的步骤。 你可以继续 [测试](#test-your-extension)！
+可以跳过本文中有关使用共享项目和多个 VSIX 的步骤。 可以继续 [测试](#test-your-extension)。
 
 > [!NOTE]
-> 如果要使用 Visual Studio 2022 创作 *新* 的 Visual Studio 扩展，并希望 () 目标 Visual Studio 2019 或更早版本，请参阅 [此指南](target-previous-versions.md)。
+> 如果要使用 Visual Studio 2022 创作新的 *Visual Studio* 扩展，并且还想要面向 Visual Studio 2019 或更早版本，请参阅 [本指南](target-previous-versions.md)。
 
 ### <a name="msbuild-tasks"></a>MSBuild 任务
 
-如果你创作 MSBuild 任务，请注意，在 Visual Studio 2022 中，可能会将其加载到64位 MSBuild.exe 进程中。 如果任务需要32位进程才能运行，请参阅[本 MSBuild 文档](../../msbuild/how-to-configure-targets-and-tasks.md#usingtask-attributes-and-task-parameters)，以确保 MSBuild 知道在32位进程中加载任务。
+如果创作MSBuild任务，请注意，在 Visual Studio 2022 中，它们很可能将加载到 64 位MSBuild.exe进程中。 如果任务需要 32 位进程才能运行，请参阅配置[](../../msbuild/how-to-configure-targets-and-tasks.md#usingtask-attributes-and-task-parameters)目标和任务以确保MSBuild 32 位进程中加载任务。
 
 ## <a name="modernize-your-vsix-project"></a>实现 VSIX 项目的现代化
 
-将 Visual Studio 2022 支持添加到扩展之前，我们强烈建议在继续操作之前，先清理并现代化现有项目，其中包括：
+在将 Visual Studio 2022 支持添加到扩展之前，我们强烈建议清理现有项目并使之现代化：
 
 1. [从 packages.config 迁移到 `PackageReference` ](/nuget/consume-packages/migrate-packages-config-to-package-reference)。
 
-1. 将任何直接程序集 VS SDK 程序集引用替换为 PackageReference 项。
+1. 将任何直接Visual Studio SDK 程序集引用替换为 `PackageReference` 项：
 
    ```diff
    -<Reference Include="Microsoft.VisualStudio.OLE.Interop" />
@@ -101,7 +99,7 @@ ms.locfileid: "132880139"
    ```
 
    > [!TIP]
-   > 只需将 *一个* PackageReference 替换为元包的 *多个* 程序集引用即可：
+   > 可以将许多 *程序集* 引用 *替换为元包* 的一 `PackageReference` 个实例：
    >
    >```diff
    >-<Reference Include="Microsoft.VisualStudio.OLE.Interop" />
@@ -110,76 +108,86 @@ ms.locfileid: "132880139"
    >+<PackageReference Include="Microsoft.VisualStudio.Sdk" Version="..." />
    >```
 
-   请确保选择与目标 Visual Studio 的最低版本匹配的包版本。
+   请务必选择与目标版本的最低版本Visual Studio包版本。
 
-   某些对 VS SDK 不唯一的程序集 (例如，Newtonsoft.Json.dll) 在 Visual Studio 2022 之前可能已通过简单引用发现， `<Reference Include="Newtonsoft.Json" />` 但在 Visual Studio 2022 中，需要包引用，因为在 Visual Studio 2022 中，我们从MSBuild 的默认程序集搜索路径。
+例如，某些不是 Visual Studio SDK (唯一的程序集Newtonsoft.Json.dll)  `<Reference Include="Newtonsoft.Json" />` 2022 年 1 月之前通过简单Visual Studio发现。 但在 2022 Visual Studio，它们需要包引用。 原因是某些 Visual Studio 运行时和 SDK 目录已从 MSBuild 中的默认程序集搜索路径中删除。
 
-   在从直接程序集引用切换到 NuGet 包引用时，可以选取其他程序集引用和分析器包，因为 NuGet 会自动安装依赖项的传递闭包。 这通常是正常的，但可能会导致在生成过程中标记其他警告。 完成这些警告并尽可能多地解决问题，并考虑禁止使用代码中区域无法解决的这些警告 `#pragma warning disable <id>` 。
+在从直接程序集引用切换到NuGet包引用时，可能会选取其他程序集引用和分析器包，NuGet自动安装依赖项的可传递闭包。 这通常正常，但可能会导致生成期间出现其他警告。 处理这些警告并尽可能解决。 请考虑使用代码 `#pragma warning disable <id>` 内区域来禁止显示无法解决的警告。
 
-## <a name="use-shared-projects-for-multi-targeting"></a>使用共享项目进行多目标
+## <a name="use-shared-projects-for-multi-targeting"></a>使用共享项目实现多目标
 
-[共享项目](/xamarin/cross-platform/app-fundamentals/shared-projects?tabs=windows)是 Visual Studio 2015 中引入的一种项目类型。 Visual Studio 中的共享项目允许在多个项目之间共享源代码文件，并使用条件编译符号和唯一的引用集以不同的方式进行构建。
+[共享项目](/xamarin/cross-platform/app-fundamentals/shared-projects?tabs=windows)是 2015 年 1 月Visual Studio项目类型。 使用 Visual Studio 中的共享项目，可以在多个项目之间共享源代码文件，并且使用条件编译符号和唯一引用集以不同方式生成。
 
-由于 Visual Studio 2022 需要从所有以前的 VS 版本中使用一组不同的引用程序集，因此，我们的指导是使用共享项目方便多个目标扩展，以预 Visual Studio 2022 并 Visual Studio 2022 (和更高) 版本的和更高版本，从而提供代码共享但不同的引用。
+Visual Studio 2022 年需要一组不同于所有早期版本的引用Visual Studio程序集。 因此，我们建议使用共享项目方便地将扩展多目标到 Visual Studio 2022、早期版本和更高版本。 此方法将提供代码共享，但提供不同的引用。
 
-在 Visual Studio 扩展的上下文中，可以为 Visual Studio 2022 和更高版本使用一个 vsix 项目，为 Visual Studio 2019 和更高版本创建一个 vsix 项目。 其中每个项目都只包含一个 `source.extension.vsixmanifest` ，包引用的是对 16. x sdk 或 17. x sdk 的引用。 这些 VSIX 项目还会对新的共享项目进行共享项目引用，该共享项目将托管可以在两个版本之间共享的所有源代码。
+在 Visual Studio 扩展的上下文中，可以有一个适用于 Visual Studio 2022 和更高版本的 VSIX 项目，以及一个适用于 Visual Studio 2019 及更早版本的项目。 每个项目都只包含一个实例和对 `source.extension.vsixmanifest` 16.x SDK 或 17.x SDK 的包引用。 这些 VSIX 项目还将具有对新的共享项目的共享项目引用，该项目将托管可在两个版本之间共享的所有Visual Studio代码。
 
-作为开始点，我们假设你已有一个面向 Visual Studio 2019 的 VSIX 项目，并且你希望你的扩展在 Visual Studio 2022 上工作。
+本部分假设已有一个面向 Visual Studio 2019 的 VSIX 项目，并且希望扩展在 2022 Visual Studio上工作。
 
-所有这些步骤都可以通过 Visual Studio 2019 完成。
+可以使用 2019 年 1 月Visual Studio这些步骤：
 
-1. 如果尚未这样做，请在此更新过程中将 [项目现代化](#modernize-your-vsix-project) ，以简化步骤。
+1. 如果尚未这样做，请 [实现](#modernize-your-vsix-project) 项目的现代化，以便稍后在此更新过程中简化步骤。
 
-1. 为每个引用 VS SDK 的现有项目，将新的共享项目添加到解决方案。
-   ![添加新的 Project 命令 ](media/update-visual-studio-extension/add-new-project.png)
-    ![ 新建项目模板](media/update-visual-studio-extension/new-shared-project-template.png)
+1. 为引用 Visual Studio SDK 的每个现有项目将一个新的共享项目添加到解决方案。 右键单击解决方案，然后选择"**添加新**  >  **Project"。**
 
-1. 将每个 VS SDK 引用项目中的引用添加到其共享项目对应项。
-   :::image type="content" source="media/update-visual-studio-extension/add-shared-project-reference.png" alt-text="添加共享项目引用" lightbox="media/update-visual-studio-extension/add-shared-project-reference.png":::
+   ![显示用于添加新项目的选择的屏幕截图。](media/update-visual-studio-extension/add-new-project.png)
 
-1. 将所有源代码 (包括 .cs、.resx) ，从每个 VS SDK 引用项目到其共享项目对应项。
-将 `source.extension.vsixmanifest` 文件保留在 VSIX 项目中。
-   ![共享项目包含所有源文件](media/update-visual-studio-extension/source-files-in-shared-project.png)
+1. 在 **"添加新项目"对话框中**，搜索 **共享项目**，然后选择"**共享** 项目Project模板。
 
-1. 应将) 和 .VSCT 文件 (的元数据文件移到共享目录，并将其作为链接文件添加到 VSIX 项目中。 请注意，共享目录与共享项目分开。
-   ![添加作为链接文件的元数据和 .VSCT 文件](media/update-visual-studio-extension/add-linked-items-to-vsix.png)
-    - 对于元数据文件，将 BuildAction 设置为， `Content` 并将 Include 包含在 VSIX 中 `true` 。
+   ![屏幕截图显示搜索并选择"共享Project模板。](media/update-visual-studio-extension/new-shared-project-template.png)
 
-      ![在 VSIX 中包含元数据文件](./media/update-visual-studio-extension/include-metadata-files-in-vsix.png)
-    - 对于 .VSCT 文件，将 BuildAction 设置为 `VSCTCompile` ，并且不包括在 VSIX 中。
-      Visual Studio 可能会抱怨此设置不受支持，但你可以通过卸载项目并 `Content` 将更改为来手动更改生成操作`VSCTCompile`
+1. 将每个引用 SDK Visual Studio项目的引用添加到其共享项目对应项。
 
-    ```diff
-    -<Content Include="..\SharedFiles\VSIXProject1Package.vsct">
-    -  <Link>VSIXProject1Package.vsct</Link>
-    -</Content>
-    +<VSCTCompile Include="..\SharedFiles\VSIXProject1Package.vsct">
-    +  <Link>VSIXProject1Package.vsct</Link>
-    +  <ResourceName>Menus.ctmenu</ResourceName>
-    +</VSCTCompile>
-    ```
+   :::image type="content" source="media/update-visual-studio-extension/add-shared-project-reference.png" alt-text="显示用于添加共享项目引用的选择的屏幕截图。" lightbox="media/update-visual-studio-extension/add-shared-project-reference.png":::
 
-      ![将 .VSCT 文件设置为 VSCTCompile](media/update-visual-studio-extension/build-linked-vsct-files.png)
+1. 将包含 *.cs* (*.resx* 文件) 从每个 Visual Studio SDK 引用项目移动到其共享项目对应项。
+在 VSIX *项目中保留 source.extension.vsixmanifest* 文件。
 
-1.  (的) 生成项目，确认未引入任何新错误。
+   ![显示包含所有源文件的共享项目的屏幕截图。](media/update-visual-studio-extension/source-files-in-shared-project.png)
 
-你的项目现已准备就绪，可以添加 Visual Studio 2022 支持。
+1. 将元数据 (例如发行说明、许可证和图标) VSCT 文件移动到共享目录。 然后将它们作为链接文件添加到 VSIX 项目。 请注意，共享目录与共享项目分开。
 
-## <a name="add-a-visual-studio-2022-target"></a>添加 Visual Studio 2022 目标
+   ![显示用于将元数据和 V S C T 文件添加为链接文件的选择的屏幕截图。](media/update-visual-studio-extension/add-linked-items-to-vsix.png)
+   
+   - 对于元数据文件，将"**生成操作"设置为****"内容"。** 将 **"在 VSIX 中包括"设置为** **True。**
 
-本文档假定你已完成将[Visual Studio 扩展与共享项目进行因式分解](#use-shared-projects-for-multi-targeting)的步骤。
+     ![显示包含 VS I X 中的元数据文件的屏幕截图。](./media/update-visual-studio-extension/include-metadata-files-in-vsix.png)
 
-继续使用以下步骤将 Visual Studio 2022 支持添加到扩展，这些步骤可能使用 Visual Studio 2019 完成：
+   - 对于 VSCT 文件，将 **"生成操作"** 设置为 **"VSCTCompile"。** 将 **"在 VSIX 中包括"设置为** **False。** 
+   
+     ![显示 V S C T 文件的选定属性的屏幕截图。](media/update-visual-studio-extension/build-linked-vsct-files.png)
+   
+     如果Visual Studio此设置不受支持，可以通过卸载项目并更改为 来手动更改 `Content` 生成操作 `VSCTCompile` ：
 
-1. 向解决方案添加新的 VSIX Project。 这将是面向 Visual Studio 2022 的项目。 删除模板附带的任何源代码，但 *保留该 `source.extension.vsixmanifest` 文件*。
+     ```diff
+     -<Content Include="..\SharedFiles\VSIXProject1Package.vsct">
+     -  <Link>VSIXProject1Package.vsct</Link>
+     -</Content>
+     +<VSCTCompile Include="..\SharedFiles\VSIXProject1Package.vsct">
+     +  <Link>VSIXProject1Package.vsct</Link>
+     +  <ResourceName>Menus.ctmenu</ResourceName>
+     +</VSCTCompile>
+     ```
 
-1. 在新的 VSIX 项目上，将共享项目引用添加到 Visual Studio 2019 目标 VSIX 引用的同一共享项目。
+1. 生成项目以确认未引入任何错误。
 
-   ![包含一个共享项目和两个 VSIX 项目的解决方案](media/update-visual-studio-extension/shared-project-with-two-heads.png)
+现在，你的项目已准备好添加Visual Studio 2022 支持。
 
-1. 验证是否已正确生成新的 VSIX 项目。 你可能需要添加引用以匹配原始 VSIX 项目，以解决任何编译器错误。
+## <a name="add-a-visual-studio-2022-target"></a>添加 2022 Visual Studio 2022 目标
 
-1. 对于托管的 VS 扩展，使用 NuGet 程序包管理器或直接编辑项目文件，将 (或更早) 版本的包引用更新到 Visual Studio 2022 目标项目文件中的 17. x 包版本：
+本部分假定你已完成将扩展与共享项目Visual Studio[因素的步骤](#use-shared-projects-for-multi-targeting)。
+
+使用Visual Studio将 2022 支持添加到扩展。 可以使用 2019 Visual Studio它们。
+
+1. 将新的 VSIX 项目添加到解决方案。 此项目面向 2022 Visual Studio。 删除模板提供的任何源代码，但保留 *source.extension.vsixmanifest* 文件。
+
+1. 在新的 VSIX 项目上，添加对 2019 年目标 VSIX Visual Studio共享项目的引用。
+
+   ![屏幕截图显示了一个解决方案，其中一个共享项目和两个 V S I X 项目。](media/update-visual-studio-extension/shared-project-with-two-heads.png)
+
+1. 验证新的 VSIX 项目是否正确生成。 可能需要添加引用以匹配原始 VSIX 项目，以解决任何编译器错误。
+
+1. 对于托管 Visual Studio 扩展，将包引用从 16.x (或更早版本) 更新到面向 Visual Studio 2022 的项目文件的 17.x 包版本。 使用 NuGet 程序包管理器或直接编辑项目文件：
 
     ```diff
     -<PackageReference Include="Microsoft.VisualStudio.SDK" Version="16.0.206" />
@@ -188,17 +196,17 @@ ms.locfileid: "132880139"
     +<PackageReference Include="Microsoft.VSSDK.BuildTools" Version="17.0.63-preview.1" />
     ```
 
-   你将使用 nuget.org 中实际可用的版本。以前使用的是用于演示目的。
+   上述代码中显示的版本仅供演示之用。 在代码中，使用[NuGet 网站](https://www.nuget.org/)中提供的版本。 
 
    在许多情况下，包 Id 已更改。 有关 Visual Studio 2022 中的更改列表，请参阅[包/程序集映射表](migrated-assemblies.md)。
 
    用 c + + 编写的扩展插件尚不具备可使用进行编译的 SDK。
 
-1. 对于 c + + 项目，必须为 amd64 编译它们。 对于托管扩展，请考虑将你的项目从生成更改为面向任何 CPU `x64` ，以反映在 Visual Studio 2022 中，你的扩展始终在64位进程中加载。 `Any CPU` 很好，但如果引用任何仅 x64 本机二进制文件，则可能会产生警告。
+1. 对于 c + + 项目，必须为 AMD64 编译扩展。 对于托管扩展，请考虑将你的项目更改为面向 **x64** 的 **任何 CPU** 。 这种更改可确保在 2022 Visual Studio，扩展始终在64位进程中加载。 **任何 CPU** 都很好，但如果引用任何仅 x64 本机二进制文件，则可能会产生警告。
 
-   你的扩展可能在本机模块上具有的任何依赖项都必须从 x86 映像更新到 amd64 映像。
+   扩展可能在本机模块上具有的任何依赖项都必须从 x86 映像更新到 AMD64 映像。
 
-1. 编辑 `source.extension.vsixmanifest` 文件以反映目标为 Visual Studio 2022。 设置 `<InstallationTarget>` 标记以反映 2022 并指示 amd64 有效负载：
+1. 编辑 *source.extension.vsixmanifest* 文件，以反映 Visual Studio 2022 的目标。 将 `<InstallationTarget>` 标记设置为指示 Visual Studio 2022。 设置 `ProductArchitecture` 元素以指示 AMD64 负载。
 
    ```xml
    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0,18.0)">
@@ -206,41 +214,44 @@ ms.locfileid: "132880139"
    </InstallationTarget>
    ```
 
-   在 Visual Studio 2019 中，此文件的设计器不会公开新 `ProductArchitecture` 元素，因此，需要使用 xml 编辑器来完成此更改，该编辑器可通过 **解决方案资源管理器** 中的 "**打开方式**" 命令进行访问。
-
-   此 `ProductArchitecture` 元素是关键元素。 Visual Studio 2022 *不* 会安装你的扩展。
+   > [!IMPORTANT]
+   > 在 Visual Studio 2019 中，此文件的设计器不公开新 `ProductArchitecture` 元素。 需要使用 XML 编辑器进行此更改。 若要访问 "XML 编辑器"，请访问解决方案资源管理器，然后选择 " **打开方式** " 命令。
+   >
+   > `ProductArchitecture`元素是关键元素。 Visual Studio 2022 不安装你的扩展。
 
    | 元素 | 值 | 说明 |
    | - | - | - |
-   | ProductArchitecture | X86、AMD64 | 此 VSIX 支持的平台。 不区分大小写。 每个元素一个平台，每个 InstallTarget 一个元素。 对于低于17.0 的产品版本，默认值为 x86，可以省略。  对于产品版本17.0 和更高版本，此元素是必需的，并且没有默认值。 对于 Visual Studio 2022，此元素的有效内容只有 "amd64"。 |
+   | `ProductArchitecture` | `x86`, `amd64` | 此 VSIX 支持的平台。 不区分大小写。 每个元素使用一个平台，每个实例使用一个元素 `InstallationTarget` 。 对于低于17.0 的产品版本，默认值为 `x86` ，可以省略。 对于产品版本17.0 及更高版本，此元素是必需的，并且没有默认值。 对于 Visual Studio 2022，此元素的唯一有效内容是 `amd64` 。 |
 
-1. 如果任何) ，请在 source.extension.vsixmanifest 中进行任何其他必要调整，以便与面向 Visual Studio 2019 (的任何其他调整。 如果你要发布两个不同版本的扩展，每个版本都针对不同版本的 VS，则对于这两个扩展，该 VSIX 的 ID 在 `Identity` 清单的元素中是不同的。
+1. 如果任何) ，则在 *source.extension.vsixmanifest* 中进行任何其他必要的调整，以便与面向 Visual Studio 2019 (的任何其他调整。 
 
-此时，你有一个 Visual Studio 2022 目标扩展 VSIX。 应生成 Visual Studio 2022 目标 VSIX 项目，并[处理出现的任何生成中断](#handle-breaking-api-changes)。 如果你在 Visual Studio 2022 目标 VSIX 项目中没有生成中断，恭喜：你已准备好进行测试！
+   如果要发布两个版本的扩展，每个版本都针对不同版本的 Visual Studio，请确保清单元素中的 VSIX ID `Identity` 对于每个扩展都是不同的。
+
+此时，你有一个 Visual Studio 2022 目标扩展 VSIX。 应生成 Visual Studio 2022 目标 VSIX 项目，并[处理出现的任何生成中断](#handle-breaking-api-changes)。 如果在 Visual Studio 2022 目标 VSIX 项目中没有生成中断，恭喜！ 你已准备好进行测试。
 
 ## <a name="handle-breaking-api-changes"></a>处理重大 API 更改
 
-Visual Studio 2022 中存在[重大的 API 更改](breaking-api-list.md)，可能需要更改代码，在以前的版本中运行。 请查看该文档，以获取有关如何更新每个代码的提示。
+中断 API 更改可能需要对 Visual Studio 早期版本上运行的代码进行更新。 有关如何更新代码的提示，请参阅[Visual Studio 2022 中的中断 API 更改](breaking-api-list.md)。
 
-调整代码时，建议使用[条件编译](#use-conditional-compilation-symbols)，以便在添加对 Visual Studio 2022 的支持时，你的代码可以继续支持预 Visual Studio 2022。
+如果要调整代码，建议使用 [条件编译](#use-conditional-compilation-symbols)。 然后，你的代码可以继续支持早期版本的 Visual Studio，同时添加对 Visual Studio 2022 的支持。
 
 当你获取 Visual Studio 2022 目标的扩展生成时，请继续进行[测试](#test-your-extension)。
 
 ## <a name="use-conditional-compilation-symbols"></a>使用条件编译符号
 
-如果希望使用相同的源代码（甚至同一个文件）来为 Visual Studio 2022 及更早版本，则可能需要使用条件编译，以便可以分叉代码以适应重大更改。 条件编译是 c #、Visual Basic 和 c + + 语言的一项功能，可用于共享大多数代码，同时适应特定位置的分歧 api。
+如果要为 Visual Studio 2022 及更早版本使用相同的源代码（甚至相同的文件），则可能需要使用条件编译。 然后，可以分叉代码以适应重大更改。 条件编译是 c #、Visual Basic 和 c + + 语言的一项功能。 它可用于共享大多数代码，同时适应特定位置的分歧 Api。
 
-有关预处理器指令和条件编译符号用法的详细信息，请参阅 Microsoft 文档 [#if 预处理器指令](/dotnet/csharp/language-reference/preprocessor-directives#conditional-compilation)。
+有关预处理器指令和条件编译符号的用法的详细信息，请参阅 [c # 预处理器指令](/dotnet/csharp/language-reference/preprocessor-directives#conditional-compilation)。
 
-面向早期 Visual Studio 版本的项目 () 将需要条件编译符号，然后可以使用该符号分叉代码以使用不同的 api。 您可以在 "项目属性" 页中设置条件编译符号，如下图所示：
+面向早期 Visual Studio 版本的项目将需要条件编译符号。 然后，可以使用此符号分叉代码以使用不同的 Api。 您可以在 "项目属性" 页上设置条件编译符号：
 
-![设置条件编译符号](media/update-visual-studio-extension/conditional-compilation-symbols.png)
+![显示用于输入条件编译符号的框的屏幕截图。](media/update-visual-studio-extension/conditional-compilation-symbols.png)
 
-请确保为 *所有* 配置设置编译符号，因为默认情况下，你输入的符号仅适用于一个配置。
+请确保为 **所有配置** 设置编译符号。 默认情况下，你输入的符号可能仅适用于一个配置。
 
 ### <a name="c-techniques"></a>C \# 方法
 
-然后，可以使用该符号作为 () 的预处理器指令， `#if` 如以下代码所示。 然后，可以分叉代码，处理不同 Visual Studio 版本之间的重大更改。
+您可以使用编译符号作为预处理器指令 (`#if`) ，如下面的代码所示。 然后，可以分叉代码，处理 Visual Studio 版本之间的重大更改。
 
 ```cs
     Guid myGuid = new Guid("{633FBA02-719B-40E7-96BF-0899767CD104}");
@@ -253,7 +264,7 @@ Visual Studio 2022 中存在[重大的 API 更改](breaking-api-list.md)，可�
 #endif
 ```
 
-在某些情况下，只需使用 `var` 来避免命名类型，从而避免了区域的需求 `#if` 。 上述代码段还可以编写为：
+在某些情况下，可以使用 `var` 来避免对类型命名，并避免区域需要 `#if` 。 前面的代码段还可以编写为：
 
 ```cs
     Guid myGuid = new Guid("{633FBA02-719B-40E7-96BF-0899767CD104}");
@@ -262,15 +273,15 @@ Visual Studio 2022 中存在[重大的 API 更改](breaking-api-list.md)，可�
     shell.LoadUILibrary(myGuid, myFlags, out var ptrLib);
 ```
 
-使用语法时 `#if` ，请注意如何使用下面所示的文档中的 "语言服务上下文" 下拉列表来更改语法突出显示，另外还可以帮助语言服务将重点放在一个目标 Visual Studio 版本上，以实现扩展与其他功能。
+使用 `#if` 语法时，请注意如何使用语言服务上下文的下拉列表来更改语法突出显示。 其他下拉列表可帮助语言服务将此扩展与另一个目标 Visual Studio 版本上的注意力集中在一起。
 
-![共享项目中的条件编译](media/update-visual-studio-extension/conditional-compilation-if-region.png)
+![在共享项目中显示条件编译的屏幕截图。](media/update-visual-studio-extension/conditional-compilation-if-region.png)
 
 ### <a name="xaml-sharing-techniques"></a>XAML 共享技术
 
-XAML 没有预处理器来允许基于预处理器符号自定义内容。 复制和维护两个 XAML 页，其中的内容必须在 Visual Studio 2022 和更早版本之间存在差异。
+XAML 没有预处理器来允许基于预处理器符号自定义内容。 你可能需要复制和维护两个 XAML 页面，它们的内容在 Visual Studio 2022 和更早版本之间不同。
 
-但是，在某些情况下，引用该程序集的命名空间可能仍会在一个 XAML 文件中表示对存在于不同的程序集中的类型的引用 Visual Studio 2022 和更早的版本：
+在某些情况下，对于不同 Visual Studio 2022 和更早版本中的不同程序集中存在的类型的引用，可能仍可在一个 XAML 文件中表示。 删除引用该程序集的命名空间：
 
 ```diff
 -xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.14.0"
@@ -280,59 +291,58 @@ XAML 没有预处理器来允许基于预处理器符号自定义内容。 复�
 
 ## <a name="test-your-extension"></a>测试扩展
 
-若要测试针对 Visual Studio 2022 的扩展，需要安装 Visual Studio 2022。
-Visual Studio 2022 之前，你将不能在 Visual Studio 的版本上运行64位扩展。
+若要测试针对 Visual Studio 2022 的扩展，需要安装 Visual Studio 2022。 你将无法在 Visual Studio 的早期版本上运行64位扩展。
 
-你可以使用 Visual Studio 2022 来生成和测试你的扩展，无论它们是面向 Visual Studio 2022 还是早期版本。 从 Visual Studio 2022 启动 VSIX 项目时，将启动 Visual Studio 的实验实例。
+你可以使用 Visual Studio 2022 来生成和测试你的扩展，无论它们是面向 Visual Studio 2022 还是早期版本。 当从 Visual Studio 2022 打开 VSIX 项目时，Visual Studio 的实验实例将打开。
 
-我们强烈建议你对要支持扩展的 Visual Studio 的每个版本进行测试。
-
-现在，你已准备好 [发布扩展](#publish-your-extension)。
+我们强烈建议你测试需要该扩展插件支持的每个 Visual Studio 版本。
 
 ## <a name="publish-your-extension"></a>发布扩展
 
-很好，你已将 Visual Studio 2022 目标添加到扩展并对其进行测试。 现在，你已准备好将世界各地的扩展发布到敬仰。
+已将 Visual Studio 2022 目标添加到扩展并对其进行测试。 现在，你已准备好将世界各地的扩展发布到敬仰。
 
 ### <a name="visual-studio-marketplace"></a>Visual Studio Marketplace
 
-将扩展发布到[Visual Studio Marketplace](https://marketplace.visualstudio.com/)是一种很好的方法，可让新用户查找和安装你的扩展。 无论扩展是以独占方式 Visual Studio 2022 还是以旧的 VS 版本为目标，Marketplace 都可以为你提供支持。
+将扩展发布到[Visual Studio Marketplace](https://marketplace.visualstudio.com/)是一种很好的方法，可让新用户查找和安装你的扩展。 无论你的扩展是以独占方式 Visual Studio 2022 还是以较旧 Visual Studio 版本为目标，都可以为你提供支持。
 
-今后，marketplace 将允许你将多个 VSIXs 上传到一个 Marketplace 列表，使你能够上传 Visual Studio 2022 目标 vsix 和预 Visual Studio 2022 vsix。 使用 VS 扩展管理器时，用户将自动获取已安装的 VS 版本的适当 VSIX。
+今后，Marketplace 允许将多个 VSIXs 上传到一个市场列表。 然后，你可以上传 Visual Studio 早期版本的 Visual Studio 2022 目标 vsix 和 vsix。 用户使用 Visual Studio 扩展管理器时，会自动获取已安装 Visual Studio 版本的适当 VSIX。
 
 ### <a name="custom-installer"></a>自定义安装程序
 
-如果生成一个 MSI/EXE 来安装扩展，并生成 vsixinstaller.exe 以便安装扩展)  (部分，请注意 Visual Studio 2022 中的 VSIX 安装程序已更新。 开发人员需要使用 Visual Studio 2022 附带的 VSIX 安装程序版本将扩展安装到 Visual Studio 2022。 Visual Studio 2022 中的 VSIX 安装程序还将安装适用于与以前版本的 Visual Studio 的适用扩展，这些扩展在同一台计算机上并行安装了 Visual Studio 2022。
+如果你构建一个 MSI 或 EXE 文件来安装扩展和生成 `vsixinstaller.exe` ，以便安装) 你的扩展 (的一部分，请注意 Visual Studio 2022 中的 VSIX 安装程序已更新。 开发人员需要使用 Visual Studio 2022 附带的 VSIX 安装程序版本来安装该版本 Visual Studio 的扩展。 
+
+Visual Studio 2022 中的 VSIX 安装程序还会安装适用于在同一台计算机上具有 Visual Studio 2022 Visual Studio 的早期版本的适用扩展。
 
 ### <a name="network-share"></a>网络共享
 
-你可以通过 LAN 或其他方式共享你的扩展。 如果以 Visual Studio 2022 和预 Visual Studio 2022 为目标，则需要单独共享多个 VSIXs，并为其指定文件名 (或将其放在唯一的文件夹中) ，以帮助用户了解要根据其安装的 Visual Studio 版本安装哪个 VSIX。
+你可以通过 LAN 或其他方式共享你的扩展。 如果以 Visual Studio 2022 及更早版本为目标，则需要单独共享多个 VSIXs。 为它们 (指定文件名，或将其放在唯一的文件夹中) 可帮助用户根据安装的 Visual Studio 版本了解要安装哪个 VSIX。
 
-### <a name="other-considerations"></a>其他注意事项
+### <a name="dependencies"></a>依赖项
 
-#### <a name="dependencies"></a>依赖项
+如果 VSIX 通过元素将其他 VSIXs 指定为依赖项 `<dependency>` ，则每个引用的 vsix 都需要安装在与 VSIX 相同的目标和产品体系结构中。 如果依赖 VSIX 不支持 Visual Studio 的目标安装，则 vsix 将失败。 
 
-如果 VSIX 通过元素将其他 VSIX 指定为依赖项 `<dependency>` ，则每个引用的 vsix 都需要在与 VSIX 相同的目标和产品体系结构中安装。 如果依赖 VSIX 不支持 Visual Studio 的目标安装，则 vsix 将失败。 对于依赖 VSIX，支持比你的目标和体系结构更多的目标和体系结构是可以的。 此限制意味着，具有依赖关系的 VSIX 的部署和分发方法应反映它们的依赖项。
+对于依赖 VSIX，支持比你的目标和体系结构更多的目标和体系结构是可以的。 此限制意味着，具有依赖关系的 VSIX 的部署和分发方法应反映其依赖项的依赖项。
 
 ## <a name="q--a"></a>问题解答
 
-**问**：我的扩展不需要任何互操作更改，因为它仅提供数据 (例如，模板) ，我是否可以创建包含 Visual Studio 2022 的单个扩展？
+**问**：我的扩展不需要任何互操作性更改，因为它仅提供数据 (例如，模板) 。 是否可以创建一个也包括 Visual Studio 2022 的扩展插件？
 
-**答**：能！  有关此方面的详细信息，请参阅 [扩展，不运行代码](#extensions-without-running-code) 。
+**答**：能！ 有关此方面的信息，请参阅 [未运行代码的扩展](#extensions-without-running-code) 。
 
-**问**： NuGet 依赖关系正在引入旧的互操作程序集并导致冲突类。
+**问**： NuGet 依赖关系正在引入旧的互操作性程序集并导致冲突类。 应采取何种操作？
 
-**答**：将以下行添加到 .csproj 文件以避免重复的程序集：
+**：** 将以下行添加到 *.csproj* 文件以避免重复的程序集：
 
 ```xml
     <PackageReference Include="<Name of offending assembly>" ExcludeAssets="compile" PrivateAssets="all" />
 ```
 
-这会阻止包引用从其他依赖项导入旧版本的程序集。
+此代码将阻止包引用从其他依赖项导入程序集的旧版本。
 
-**问**：在将源文件切换到共享项目后，我的命令和热键 Visual Studio 不起作用。
+**问**：将源文件切换到共享项目Visual Studio，我的命令和热键停止在 Visual Studio 中工作。 应采取何种操作？
 
-**答**： "映像优化器" 示例的 [步骤 2.4](samples.md#step-2---refactor-source-code-into-a-shared-project) 显示了如何添加 .vsct 文件作为链接项，以便将其编译到 .vsct 文件中。
+**答**：图像优化器示例的步骤 [2.4](samples.md#step-2---refactor-source-code-into-a-shared-project) 演示如何将 VSCT 文件添加为链接项，以便将其编译到 VSCT 文件中。
 
 ## <a name="next-steps"></a>后续步骤
 
-按照 [ImageOptimizer](samples.md)中的步骤进行操作，并提供指向项目的链接和每个步骤的代码更改。
+请遵循一个分步示例 [ImageOptimizer，](samples.md)其中提供了指向项目的链接，以及每个步骤的代码更改。

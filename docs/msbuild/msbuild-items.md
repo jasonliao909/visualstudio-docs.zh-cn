@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: de25a3d1433a067869a5725ec725d8d20d174e32
-ms.sourcegitcommit: 4efdab6a579b31927c42531bb3f7fdd92890e4ac
+ms.openlocfilehash: 11da7d47cf4d654564f5015afabfd842ce1f8d91
+ms.sourcegitcommit: a149b3a034bb555ad217656c0ec8bc1672b1e215
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "130350698"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "133514514"
 ---
 # <a name="msbuild-items"></a>MSBuild 项
 
@@ -166,7 +166,7 @@ MSBuild 项是生成系统的输入，通常表示文件（文件在 `Include` �
 </Target>
 ```
 
- 有关详细信息，请参阅[转换](../msbuild/msbuild-transforms.md)。
+有关项的更多操作，请参阅MSBuild[函数和](item-functions.md)[转换](../msbuild/msbuild-transforms.md)。
 
 ## <a name="item-definitions"></a>项定义
 
@@ -353,6 +353,8 @@ Output:
     Material:
 -->
 ```
+
+有关项的更多操作，请参阅[MSBuild 项函数](item-functions.md)。
 
 ### <a name="keepduplicates-attribute"></a><a name="BKMK_KeepDuplicates"></a>KeepDuplicates 属性
 

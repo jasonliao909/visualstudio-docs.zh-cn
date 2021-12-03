@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 534a1abf01f3b1493018c4d7adb5161e1a02cf60
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 8150231e6ecf6c2b2f789da68fd4aae8d334854f
+ms.sourcegitcommit: a149b3a034bb555ad217656c0ec8bc1672b1e215
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736992"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "133514501"
 ---
 # <a name="item-functions"></a>项函数
 
@@ -57,6 +57,8 @@ ms.locfileid: "126736992"
 
 下表列出了可用于各项的内部函数。
 
+:::moniker range="vs-2017"
+
 |函数|示例|描述|
 |--------------|-------------|-----------------|
 |`Count`|`@(MyItem->Count())`|返回项计数。|
@@ -69,6 +71,29 @@ ms.locfileid: "126736992"
 |`HasMetadata`|`@(MyItem->HasMetadata("MetadataName"))`|返回具有给定元数据名的项。 比较不区分大小写。|
 |`Metadata`|`@(MyItem->Metadata("MetadataName"))`|返回具有元数据名的元数据的值。|
 |`WithMetadataValue`|`@(MyItem->WithMetadataValue("MetadataName", "MetadataValue"))`|返回具有给定元数据名和值的项。 比较不区分大小写。|
+
+:::moniker-end
+:::moniker range=">=vs-2019"
+
+|函数|示例|说明|
+|--------------|-------------|-----------------|
+|`Combine`|`@(MyItems->Combine('path'))`|返回一个新的项集，其中包含附加到所有输入项的给定的相对路径。|
+|`Count`|`@(MyItems->Count())`|返回项计数。|
+|`DirectoryName`|`@(MyItems->DirectoryName())`|返回每个项的 `Path.DirectoryName` 等效项。|
+|`Distinct`|`@(MyItems->Distinct())`|返回具有不同 `Include` 值的项。 忽略元数据。 比较不区分大小写。|
+|`DistinctWithCase`|`@(MyItems->DistinctWithCase())`|返回具有不同 `itemspec` 值的项。 忽略元数据。 比较是区分大小写的。|
+|`Exists`|`@(MyItems->Exists())`|筛选一组项，这些项对磁盘上实际存在的项进行筛选。|
+|`GetPathsOfAllDirectoriesAbove`| `@(MyItems->GetPathsOfAllFilesAbove())`|给定一组项后，返回表示所有祖先目录的项。 不保证顺序。|
+|`Reverse`|`@(MyItems->Reverse())`|按相反顺序返回项。|
+|`AnyHaveMetadataValue`|`@(MyItems->AnyHaveMetadataValue("MetadataName", "MetadataValue"))` | 返回 `boolean`，指示是否有任何项具有给定的元数据名和值。 比较不区分大小写。 |
+|`ClearMetadata`|`@(MyItems->ClearMetadata())` |返回清除了元数据的项。 仅保留 `itemspec`。|
+|`HasMetadata`|`@(MyItems->HasMetadata("MetadataName"))`|返回具有给定元数据名的项。 比较不区分大小写。|
+|`Metadata`|`@(MyItems->Metadata("MetadataName"))`|返回具有元数据名的元数据的值。|
+|`WithMetadataValue`|`@(MyItems->WithMetadataValue("MetadataName", "MetadataValue"))`|返回具有给定元数据名和值的项。 比较不区分大小写。|
+
+> [!NOTE]
+> `Exists`还可在其他上下文中使用;例如，在[MSBuild 情况](msbuild-conditions.md)下， `Condition="Exists('path')"` 或在[静态属性函数](property-functions.md)中，例如 `$([System.IO.File]::Exists("path"))` 。
+:::moniker-end
 
 下面的示例显示如何使用内部项函数。
 
@@ -111,4 +136,4 @@ ms.locfileid: "126736992"
 
 ## <a name="see-also"></a>请参阅
 
-- [项](../msbuild/msbuild-items.md)
+你还可以使用属性对项列表执行操作，如对项元数据进行筛选;查看 [项](../msbuild/msbuild-items.md)。

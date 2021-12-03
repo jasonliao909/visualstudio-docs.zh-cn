@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: b1103345c189e81089b7dce85c7eadbfe26454e8
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 1c7f5c56a398629e85d7ebff64641f945b94c9cc
+ms.sourcegitcommit: a149b3a034bb555ad217656c0ec8bc1672b1e215
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641615"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "133514436"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>使用 DebuggerDisplay 特性（C#、Visual Basic、F#、C++/CLI）指示调试器要显示的内容
 
@@ -28,7 +28,7 @@ ms.locfileid: "126641615"
 
 `DebuggerDisplay` 特性有一个参数，此参数是要在值列中为类型的实例显示的字符串。 此字符串可以包含大括号（`{` 和 `}`）。 一对大括号之间的文本将作为字段、属性或方法进行计算。
 
-如果一个类中有重写的 `ToString()` 方法，调试器将使用该重写的方法而非默认 `{<typeName>}`。 因此，如果你已重写 `ToString()` 方法，调试器将使用重写的方法而非默认`{<typeName>}`，你无需使用 `DebuggerDisplay`。 如果同时使用，`DebuggerDisplay` 属性优先于替代的 `ToString()` 方法。 `DebuggerDisplay` 特性优先于子类中替代的 `ToString()` 方法。
+如果一个类中有重写的 `ToString()` 方法，调试器将使用该重写的方法而非默认 `{<typeName>}`。 因此，如果已重写 方法，则调试器将使用替代方法而不是默认 方法，并且 `ToString()` `{<typeName>}` 无需使用 `DebuggerDisplay` 。 如果同时使用，`DebuggerDisplay` 属性优先于替代的 `ToString()` 方法。 `DebuggerDisplay` 特性优先于子类中替代的 `ToString()` 方法。
 
 调试器是否计算此隐式 `ToString()` 调用取决于“工具”/“选项”/“调试”对话框中的用户设置。
 
@@ -49,7 +49,7 @@ ms.locfileid: "126641615"
 
 |参数|目标|
 |----------------|-------------|
-|`Name`, `Type`|这些参数影响变量窗口的 **“名称”** 和 **“类型”** 列。 （可将它们设置为使用与构造函数相同的语法的字符串。）如果过度使用这些参数或使用这些参数不当，则会导致混乱的输出。|
+|`Name`, `Type`|这些参数影响变量窗口的 **“名称”** 和 **“类型”** 列。  (可以使用与构造函数相同的语法将它们设置为字符串。) 过度使用这些参数或错误地使用这些参数可能会导致令人困惑的输出。|
 |`Target`, `TargetTypeName`|指定在程序集级别使用该特性时的目标类型。|
 
 autoexp.cs 文件在程序集级别使用 DebuggerDisplay 特性。 autoexp.cs 文件确定 Visual Studio 用于 .NET 对象的默认扩展。 可以检查 autoexp.cs 文件以获得如何使用 DebuggerDisplay 特性的示例，也可以修改和编译 autoexp.cs 文件以更改默认扩展。 在修改 autoexp.cs 文件之前，一定要对该文件进行备份。
