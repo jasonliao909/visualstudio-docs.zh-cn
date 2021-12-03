@@ -2,7 +2,7 @@
 title: 什么是 WPF？
 description: 开始使用 Windows Presentation Foundation，这是用于创建桌面客户端应用程序的框架，支持广泛的开发功能。
 ms.custom: SEO-VS-2020
-ms.date: 10/30/2020
+ms.date: 12/01/2021
 ms.topic: overview
 ms.assetid: f3be98cb-870f-472c-9da5-cb815e4f6598
 author: TerryGLee
@@ -11,20 +11,22 @@ manager: jmartens
 ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cf2babadfb976f6f1b5fa4b801f330babb733f4
-ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
+ms.openlocfilehash: 09a57db0479a1e304bc365ebc7584bf9a9102c09
+ms.sourcegitcommit: a149b3a034bb555ad217656c0ec8bc1672b1e215
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "129431544"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "133514462"
 ---
-# <a name="get-started-with-wpf"></a>WPF 入门
+# <a name="what-is-windows-presentation-foundation-wpf"></a>WPF) Windows Presentation Foundation (是什么？
 
-Windows Presentation Foundation (WPF) 是一个可创建桌面客户端应用程序的 UI 框架。 WPF 开发平台支持广泛的应用开发功能，包括应用模型、资源、控件、图形、布局、数据绑定、文档和安全性。 此框架是 .NET Framework 的一部分，因此，如果你曾经使用 ASP.NET 或 Windows 窗体通过 .NET 构建应用程序，应该会熟悉此编程体验。 WPF 使用 Extensible Application Markup Language (XAML)，为应用编程提供声明性模型。
+Windows Presentation Foundation 是创建桌面客户端应用程序的 UI 框架。  WPF 开发平台支持广泛的应用开发功能，包括应用模型、资源、控件、图形、布局、数据绑定、文档和安全性。
+
+WPF 是 .net 的一部分，因此，如果以前使用 ASP.NET 或 Windows 窗体通过 .net 生成了应用程序，则应熟悉编程体验。 WPF 使用 Extensible Application Markup Language (XAML)，为应用编程提供声明性模型。
+
+## <a name="get-started-with-wpf"></a>WPF 入门
 
 本节包含 WPF 简介及入门帮助等主题。
-
-## <a name="where-should-i-start"></a>我应从何处着手？
 
 |Subject|文章|
 |-|-|

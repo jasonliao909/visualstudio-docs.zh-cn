@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 52432b92be987f3340f0e722a37e6720b603f682
-ms.sourcegitcommit: 0257750be796cc46e01cebd8976f637743d29417
+ms.openlocfilehash: 4e64c59d773b17b1137f32d0da8906d7804ba7c7
+ms.sourcegitcommit: a149b3a034bb555ad217656c0ec8bc1672b1e215
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "130290650"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "133514280"
 ---
 # <a name="customize-your-build"></a>自定义生成
 
@@ -179,6 +179,22 @@ $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportAfter\*.t
 。 这一约定使已安装的 SDK 可以增强常见项目类型的生成逻辑。
 
 在 `$(MSBuildUserExtensionsPath)` 中搜索相同的目录结构，即按用户文件夹 %LOCALAPPDATA%\Microsoft\MSBuild。 放置在该文件夹中的文件将被导入该用户凭据下运行的相应项目类型的所有生成。 通过在模式 `ImportUserLocationsByWildcardBefore{ImportingFileNameWithNoDots}` 中设置以导入文件命名的属性，可以禁用用户扩展。 例如，将 `ImportUserLocationsByWildcardBeforeMicrosoftCommonProps` 设置为 `false` 会阻止导入 `$(MSBuildUserExtensionsPath)\$(MSBuildToolsVersion)\Imports\Microsoft.Common.props\ImportBefore\*`。
+
+## <a name="custom-configuration-based-on-project-language"></a>基于项目语言的自定义配置
+
+如果需要不同的行为，具体取决于 .net 语言 (c #、Visual Basic 或 F # ) ，则可以添加属性组，其中包含依赖于中项目文件扩展名的条件， `$(MSBuildProjectExtension)` 用于定义特定于语言的属性及其值。
+
+```xml
+<PropertyGroup Condition="'$(MSBuildProjectExtension)' == '.vbproj'">
+   <!-- Put VB-only property definitions here -->
+</PropertyGroup>
+<PropertyGroup Condition="'$(MSBuildProjectExtension)' == '.fsproj'">
+   <!-- Put F#-only property definitions here -->
+</PropertyGroup>
+<PropertyGroup Condition="'$(MSBuildProjectExtension)' == '.csproj'">
+   <!-- Put C#-only property definitions here -->
+</PropertyGroup>
+```
 
 ## <a name="customize-the-solution-build"></a>自定义解决方案生成
 

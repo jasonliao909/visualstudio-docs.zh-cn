@@ -11,12 +11,12 @@ metadata:
   manager: jmartens
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
-  ms.openlocfilehash: cc63b6d9b96e297b985e2eb3afe6a654e18b6a00
-  ms.sourcegitcommit: aef3e3f99e022675d339b7fe381cb37202be5be2
+  ms.openlocfilehash: c4741301d253fa9c159e667eb8dfdcf6cd24e370
+  ms.sourcegitcommit: a149b3a034bb555ad217656c0ec8bc1672b1e215
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/24/2021
-  ms.locfileid: "122785892"
+  ms.lasthandoff: 12/03/2021
+  ms.locfileid: "133514644"
 landingContent:
 - title: 开始使用
   linkLists:
@@ -24,6 +24,8 @@ landingContent:
     links:
     - text: 安装 Visual Studio SDK
       url: ./installing-the-visual-studio-sdk.md
+    - text: Visual Studio Community 写入 Visual Studio 扩展 Toolkit
+      url: ./vsix/visual-studio-community-toolkit.md
   - linkListType: overview
     links:
     - text: 编写 Visual Studio 扩展

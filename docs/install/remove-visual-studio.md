@@ -2,7 +2,7 @@
 title: 删除 Visual Studio
 titleSuffix: ''
 description: 了解如何逐步从计算机中彻底删除 Visual Studio。
-ms.date: 08/24/2021
+ms.date: 12/01/2021
 ms.custom: vs-acquisition
 ms.topic: how-to
 f1_keywords:
@@ -22,12 +22,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 360124f0e831233728ba8b4c222e6ad2106ef098
-ms.sourcegitcommit: 215680b355cf613bfa125cf6b864c8bb5f2c71a5
-ms.translationtype: HT
+ms.openlocfilehash: af5c4b66e3776e8e74f8e669cec5b7ed214e9c36
+ms.sourcegitcommit: a149b3a034bb555ad217656c0ec8bc1672b1e215
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "132453576"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "133514449"
 ---
 # <a name="remove-visual-studio"></a>删除 Visual Studio
 
@@ -56,6 +56,8 @@ ms.locfileid: "132453576"
    ```shell
    "C:\Program Files (x86)\Microsoft Visual Studio\Installer\InstallCleanup.exe"
    ```
+
+   例如，使用开关 *-i 17* `InstallCleanup.exe` 来删除所有17个版本的产品。
 
    > [!NOTE]
    > 如果在 Visual Studio 安装程序目录下找不到 `InstallCleanup.exe`，而该目录始终位于 `%ProgramFiles(x86)%\Microsoft Visual Studio`，则接下来要执行以下操作。 按照指示来[安装 Visual Studio](install-visual-studio.md)。 然后，在显示工作负载选择屏幕时，关闭窗口并再次执行此页上的步骤。

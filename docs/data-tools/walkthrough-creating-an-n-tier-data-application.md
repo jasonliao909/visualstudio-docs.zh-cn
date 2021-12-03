@@ -2,7 +2,7 @@
 title: 演练：创建 N 层数据应用程序
 description: 在本演练中，创建 N 层数据应用程序。 N 层数据应用程序是指用于访问数据且分为多个逻辑层（或“多层”）的应用。
 ms.custom: SEO-VS-2020
-ms.date: 09/08/2017
+ms.date: 11/22/2021
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +17,15 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: fbdd4b7ffbfdef2cfce9904a92cc392594e6508f
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 942e2bbfac2c3b6f47895f2d368736f481c20045
+ms.sourcegitcommit: a149b3a034bb555ad217656c0ec8bc1672b1e215
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126601055"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "133514358"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>演练：创建 N 层数据应用程序
+
 “N 层”数据应用程序是指用于访问数据且分为多个逻辑层（或“多层”）的应用程序。 通过将应用程序组件分离到相对独立的层中，可以提高应用程序的可维护性和可伸缩性。 该结构之所以具有这种优点，是因为它有利于采用可应用于单个层而无需重新设计整个解决方案的新技术。 N 层体系结构包括一个表示层、一个中间层和一个数据层。 中间层通常包括数据访问层、业务逻辑层和共享组件（例如身份验证和验证）。 数据层则包括关系数据库。 N 层应用程序通常将敏感信息存储在中间层的数据访问层中，目的是将它们与访问表示层的最终用户隔离。 请参阅 [N 层数据应用程序概述](../data-tools/n-tier-data-applications-overview.md)，了解更多相关信息。
 
 在 N 层应用程序中，分离各层的一种方法是为要包括在应用程序中的每一层创建相互独立的项目。 类型化数据集包含一个 `DataSet Project` 属性，该属性决定了生成的数据集和 `TableAdapter` 代码应归属到哪些项目中。
@@ -71,6 +72,7 @@ ms.locfileid: "126601055"
        不久后，查询完成运行并且 Northwind 数据库创建完成。
 
 ## <a name="create-the-n-tier-solution-and-class-library-to-hold-the-dataset-dataentitytier"></a>创建 N 层解决方案和用于保存数据集的类库 (DataEntityTier)
+
 本演练的第一步是创建一个解决方案和两个类库项目。 第一个类库将保存数据集（生成的类型化 `DataSet` 类以及将保存应用程序数据的数据表）。 此项目将用作应用程序的数据实体层，它通常位于中间层内。 数据集创建初始数据集，并自动将代码分离到两个类库中。
 
 > [!NOTE]
@@ -78,11 +80,7 @@ ms.locfileid: "126601055"
 
 ### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>创建 N 层解决方案和 DataEntityTier 类库
 
-1. 在 Visual Studio 的“文件”菜单中，依次选择“新建” > “项目”    。
-
-2. 在左侧窗格中展开“Visual C#”或“Visual Basic”，然后选择“Windows 桌面”  。
-
-3. 在中间窗格中，选择“类库”项目类型。
+1. 在 Visual Studio 中，使用 Windows 窗体 (.NET Framework c # 或) 的项目模板创建一个项目。 不支持 .NET Core、.NET 5 和更高版本。
 
 4. 将项目命名为“DataEntityTier”。
 
@@ -91,19 +89,21 @@ ms.locfileid: "126601055"
      创建包含 DataEntityTier 项目的 NTierWalkthrough 解决方案并将其添加到“解决方案资源管理器”中。
 
 ## <a name="create-the-class-library-to-hold-the-tableadapters-dataaccesstier"></a>创建用于保存 TableAdapter 的类库 (DataAccessTier)
+
 创建 DataEntityTier 项目后，下一步是创建另一个类库项目。 此项目将保存生成的 TableAdapter，它称为应用程序的“数据访问层”。 数据访问层包含连接到数据库所需的信息，通常位于中间层内。
 
 ### <a name="to-create-a-separate-class-library-for-the-tableadapters"></a>创建用于 TableAdapter 的单独类库
 
 1. 右键单击“解决方案资源管理器”中的解决方案，然后选择“添加” > “新建项目”。
 
-2. 在“新建项目”对话框的中间窗格中，选择“类库” 。
+2. 选择 **类库 (.NET Framework)** 项目模板。
 
 3. 将项目命名为“DataAccessTier”，然后选择“确定” 。
 
      DataAccessTier 项目即被创建并添加到 NTierWalkthrough 解决方案中。
 
 ## <a name="create-the-dataset"></a>创建数据集
+
 下一步是创建类型化数据集。 通过单个项目中的数据集类（包括 `DataTables` 类）和 `TableAdapter` 类创建类型化数据集。 （所有类都将生成到单个文件中。）在将数据集和 TableAdapter 分离到不同的项目中时，移到另一个项目中的是数据集类，`TableAdapter` 类则留在原始项目中。 因此，应在最终包含 TableAdapter 的项目（DataAccessTier 项目）中创建数据集。 使用“数据源配置向导”来创建数据集。
 
 > [!NOTE]
@@ -370,7 +370,17 @@ ms.locfileid: "126601055"
 
 1. 在“解决方案资源管理器”的“PresentationTier”项目中，双击“app.config”文件。
 
-2. 查找“maxReceivedMessage”大小属性，然后将该值更改为 `6553600`。
+2. 找到 **maxReceivedMessageSize** 属性，将值更改为 `6553600` 。 如果看不到该条目， `basicHttpBinding` 请添加一个条目，如以下示例所示：
+
+   ```xml
+   <system.serviceModel>
+    <bindings>
+        <basicHttpBinding>
+            <binding maxBufferSize="6553600" maxReceivedMessageSize="6553600" />
+        </basicHttpBinding>
+    </bindings>
+   </system.serviceModel>
+   ```
 
 ## <a name="test-the-application"></a>测试应用程序
 按 F5 运行应用程序。 应用程序会从数据服务中检索 `Customers` 和 `Orders` 表的数据，并将检索到的数据显示在窗体上。

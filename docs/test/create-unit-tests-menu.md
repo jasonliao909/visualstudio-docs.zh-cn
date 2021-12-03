@@ -2,7 +2,7 @@
 title: 创建单元测试方法存根
 description: 了解如何使用“创建单元测试”命令，以便通过它轻松配置测试项目、测试类和其中的测试方法存根。
 ms.custom: SEO-VS-2020
-ms.date: 08/19/2021
+ms.date: 12/01/2021
 ms.topic: how-to
 helpviewer_keywords:
 - unit testing, create unit tests
@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: d17afa2a73f395d99c73fc367c6f59d3666ff37c
-ms.sourcegitcommit: 197fb7b1a4d62c1c445ca2b2c7db054df1775933
+ms.openlocfilehash: 95dc8d9424c0881304e3812cfed79b2e87c91f70
+ms.sourcegitcommit: a149b3a034bb555ad217656c0ec8bc1672b1e215
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "133311937"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "133514685"
 ---
 # <a name="create-unit-test-method-stubs-from-code"></a>从代码创建单元测试方法存根
 
@@ -42,7 +42,7 @@ ms.locfileid: "133311937"
 ![使用“创建单元测试”命令](media/createunittestcommand.png)
 ::: moniker-end
 ::: moniker range=">=vs-2022"
-![使用 "创建单元测试" 命令和菜单对话框](media/create-unit-test-command-menu-dialog.png)
+![使用 "创建单元测试" 命令和菜单对话框](media/vs-2022/create-unit-test-command-menu-dialog.png)
 ::: moniker-end
 
 如果未显示用于 NUnit 或 xUnit 的测试框架选项，请参阅[使用第三方单元测试框架](#use-third-party-unit-test-frameworks)。
@@ -55,7 +55,7 @@ ms.locfileid: "133311937"
 ![设置单元测试特征](media/createunittest.png)
 ::: moniker-end
 ::: moniker range=">=vs-2022"
-![使用创建单元测试特征](media/create-unit-test-traits.png)
+![使用创建单元测试特征](media/vs-2022/create-unit-test-traits.png)
 ::: moniker-end
 
 ## <a name="use-third-party-unit-test-frameworks"></a>使用第三方单元测试框架

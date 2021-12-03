@@ -2,7 +2,7 @@
 title: C# 单元测试教程
 description: 了解如何使用托管代码的 Microsoft 单元测试框架和 Visual Studio 测试资源管理器创建、运行和自定义单元测试系列。
 ms.custom: SEO-VS-2020
-ms.date: 08/17/2021
+ms.date: 12/01/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, walkthrough
@@ -16,12 +16,12 @@ ms.technology: vs-ide-test
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: ccedcea78a1e05342c254cfc18cd2ca0523faec6
-ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
+ms.openlocfilehash: 3c44819e9c56a9f3fc68ebb3fc0e179a128fc208
+ms.sourcegitcommit: a149b3a034bb555ad217656c0ec8bc1672b1e215
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "129635655"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "133514658"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>演练：创建并运行托管代码的单元测试
 
@@ -167,10 +167,10 @@ ms.locfileid: "129635655"
 
 ::: moniker range=">=vs-2019"
 
-2. 在搜索框中键入“测试”，选择“C#”作为语言，然后为 .NET Core 选择 C#“单元测试项目”模板，再单击“下一步”   。
+2. 在 **搜索** 框中键入"测试"，选择 **"C#"** 作为语言，然后选择"C# MSTest 单元测试 **Project (.NET Core)** for .NET Core"模板，然后单击"下一步 **"。**
 
    > [!NOTE]
-   > 从 Visual Studio 2019 版本 16.9 开始，MSTest 项目模板名称已从“MSTest 单元测试项目(.NET Core)”更改为“单元测试项目”。
+   > 在 Visual Studio 2019 版本 16.9 中，MSTest 项目模板是单元测试 **Project。**
 
 3. 将项目命名为“BankTests”，然后单击“下一步” 。
 
@@ -182,7 +182,7 @@ ms.locfileid: "129635655"
 
 5. 在“BankTests”  项目中，添加对“Bank”  项目的引用。
 
-   在“解决方案资源管理器”中，依次选择“BankTests”项目下的“依赖项”，以及右键单击菜单中的“添加引用”     。
+   在 **解决方案资源管理器** 中，选择 **BankTests** 项目下的"依赖项"，然后从右键单击菜单中 ("添加引用Project") "添加引用"。 
 
 6. 在“引用管理器”对话框中，展开“项目”，选择“解决方案”，然后选中“Bank”项     。
 
@@ -332,7 +332,12 @@ m_balance -= amount;
 
 在测试资源管理器中，选择“全部运行”以重新运行测试（或按 Ctrl   +  R，V）。 红色/绿色栏变为绿色，指示已通过测试。
 
+::: moniker range="<=vs-2019"
 ![Visual Studio 2019 中显示已通过的测试的文本资源管理器](media/test-explorer-banktests-passed.png)
+::: moniker-end
+::: moniker range=">=vs-2022"
+![Visual Studio 2019 中显示已通过的测试的文本资源管理器](media/vs-2022/test-explorer-banktests-passed.png)
+::: moniker-end
 
 ## <a name="use-unit-tests-to-improve-your-code"></a>使用单元测试以改进代码
 
