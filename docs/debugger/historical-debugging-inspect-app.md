@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 2958f799b8b7b3540fc8c1c08089b5b8340eabe8
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 590ddc45d764b7bfffe54cb15e12463f2749f187
+ms.sourcegitcommit: 7a300823cf1bd3355be03bde561cf2777bc09eae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736359"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "133978168"
 ---
 # <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>在 Visual Studio 中使用 IntelliTrace 历史调试检查应用程序 (C#，Visual Basic、 c + +)
 
@@ -32,10 +32,10 @@ Visual Studio 企业版中可使用 IntelliTrace，但专业版或社区版中�
 static void Main(string[] args)
 {
     int testInt = 0;
-    int resultInt = AddAll(testInt);
+    int resultInt = AddIterative(testInt);
     Console.WriteLine(resultInt);
 }
-private static int AddAll(int j)
+private static int AddIterative(int j)
 {
     for (int i = 0; i < 20; i++)
     {
@@ -54,7 +54,7 @@ private static int AddInt(int add)
 }
 ```
 
-假定调用 `AddAll()` 后，`resultInt` 的预期值为 20（`testInt` 递增 20 次后的结果）。 （同时假定你看不到 `AddInt()` 中的 bug）。但实际结果为 44。 如何在不单步执行 `AddAll()` 10 次的情况下找到 Bug？ 可以使用历史调试更快、更轻松地查找 bug。 操作方法如下：
+假定调用 `AddIterative()` 后，`resultInt` 的预期值为 20（`testInt` 递增 20 次后的结果）。  (我们还将假定你看不到) `AddInt()` 中的 bug。 但结果实际上为 44。 如何在不单步执行 `AddIterative()` 10 次的情况下找到 Bug？ 可以使用历史调试更快、更轻松地查找 bug。 操作方法如下：
 
 1. 在“工具”>“选项”>“IntelliTrace”>“常规”中，请确保启用了 IntelliTrace，然后选择“IntelliTrace 事件和调用信息” 。 如果不选择此选项，则无法看到导航线（如下所述）。
 
@@ -74,7 +74,7 @@ private static int AddInt(int add)
 
     ![历史调试模式下的代码窗口](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")
 
-6. 现在，可以单步执行 `AddAll()` 方法（按 **F11** 或导航条中的“单步执行”按钮）。 单步前进（按 **F10** 或导航条中的“转到下一个调用”）。 粉红线现在位于 `j = AddInt(j);` 行。 在这种情况下，按 **F10** 不会单步执行到下一行代码， 而是会单步执行到下一个函数调用。 历史调试在调用之间移动，并跳过不包含函数调用的代码行。
+6. 现在可以单步执行 `AddIterative()` **F11** (方法，或导航槽中的"单步执行") 。 向前 (**F10，** 或 **转到** 导航槽中的"下一次调用") 。 粉红线现在位于 `j = AddInt(j);` 行。 在这种情况下，按 **F10** 不会单步执行到下一行代码， 而是会单步执行到下一个函数调用。 历史调试在调用之间移动，并跳过不包含函数调用的代码行。
 
 7. 现在单步执行到 `AddInt()` 方法。 应该立即看到此代码中的 Bug。
 

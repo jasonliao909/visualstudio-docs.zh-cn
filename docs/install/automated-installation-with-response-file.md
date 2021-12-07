@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8fba7b02adec1abfe5bc0325a7614414d05c2cdb
-ms.sourcegitcommit: 2281b4f1f8737f263c0d7e55e00b5ec81517327d
+ms.openlocfilehash: c3630257019227298285e32cb640dfec4f40b0a1
+ms.sourcegitcommit: 7a300823cf1bd3355be03bde561cf2777bc09eae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "133108687"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "133978103"
 ---
 # <a name="programmatically-configure-default-settings-using-a-response-file"></a>使用响应文件以编程方式配置默认设置
 
@@ -151,7 +151,7 @@ vs_enterprise.exe --in customInstall.json
 
 ::: moniker range="=vs-2019"
 
-以下 `response.json` 文件示例将初始化 Visual Studio Enterprise 的客户端安装，以便选择多个常见的工作负载和组件，同时选择英语和法语 UI 语言，并将更新位置配置为指向布局。 请注意，对于 Visual Studio 2019，更新位置 (channelURI) 只能在初始安装期间配置，并且在此之后无法更改，除非你使用最新安装程序中的功能。 有关如何对此进行配置的信息，请参阅[为 Visual Studio 企业部署设置默认值](\visualstudio\install\set-defaults-for-enterprise-deploymnets#Use-the-latest-installer)。
+以下 `response.json` 文件示例将初始化 Visual Studio Enterprise 的客户端安装，以便选择多个常见的工作负载和组件，同时选择英语和法语 UI 语言，并将更新位置配置为指向布局。 请注意，对于 Visual Studio 2019，更新位置 (channelURI) 只能在初始安装期间配置，并且在此之后无法更改，除非你使用最新安装程序中的功能。 有关如何对此进行配置的信息，请参阅[为 Visual Studio 企业部署设置默认值](/visualstudio/install/set-defaults-for-enterprise-deployments.md#configuring-source-location-for-updates)。
 
 ```Example response.json
 {

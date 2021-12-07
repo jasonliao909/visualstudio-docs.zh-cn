@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 65ba75b40ca2f82422a520f6082b8a1c04f47d43
-ms.sourcegitcommit: efe1d737fd660cc9183177914c18b0fd4e39ba8b
-ms.translationtype: HT
+ms.openlocfilehash: fc0557ae483456d1df4252e57558561b6583bb94
+ms.sourcegitcommit: 7a300823cf1bd3355be03bde561cf2777bc09eae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "130212067"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "133978336"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>在 Visual Studio 中创建一个数据库并添加表
 
@@ -118,6 +118,12 @@ ms.locfileid: "130212067"
    CREATE TABLE [dbo].[Customers]
    ```
 
+7. 将索引约束添加到 Customers 表。 在行的末尾添加一个逗号 `Phone` ，然后在右括号前面添加以下示例：
+
+   ```sql
+   CONSTRAINT [PK_Customers] PRIMARY KEY ([CustomerID])
+   ```
+
    你应看到与下面类似的内容：
 
    :::moniker range=">=vs-2022"
@@ -127,9 +133,9 @@ ms.locfileid: "130212067"
    ![具有 Customers 表的表设计器](media/table-designer.png)
    :::moniker-end
 
-7. 在“表设计器”的左上角中，选择“更新”，或按 Shift + Alt + U。
+8. 在“表设计器”的左上角中，选择“更新”，或按 Shift + Alt + U。
 
-8. 在“预览数据库更新”对话框中，选择“更新数据库”。
+9. 在“预览数据库更新”对话框中，选择“更新数据库”。
 
    在本地数据库文件中创建了 Customers 表。
 
@@ -152,9 +158,15 @@ ms.locfileid: "130212067"
    CREATE TABLE [dbo].[Orders]
    ```
 
-4. 在“表设计器”的左上角中，选择“更新”，或按 Shift + Alt + U。
+4. 将索引约束添加到 Customers 表。 在行的末尾添加一个逗号 `OrderQuantity` ，然后在右括号前面添加以下示例：
 
-5. 在“预览数据库更新”对话框中，选择“更新数据库”。
+   ```sql
+   CONSTRAINT [PK_Orders] PRIMARY KEY ([OrderId])
+   ```
+
+5. 在“表设计器”的左上角中，选择“更新”，或按 Shift + Alt + U。
+
+6. 在“预览数据库更新”对话框中，选择“更新数据库”。
 
    在本地数据库文件中创建了 Orders 表。 如果在服务器资源管理器中展开“表”节点，则可以看到两个表：
 
@@ -171,7 +183,12 @@ ms.locfileid: "130212067"
 
 1. 在 Orders 表的“表设计器”网格的右侧上下文窗格中，右键单击“外键”，然后选择“添加新的外键”。 
 
+   :::moniker range=">=vs-2022"
+   ![在 Visual Studio 的表设计器中添加外键](media/vs-2022/add-foreign-key.png)
+   :::moniker-end
+   :::moniker range="<=vs-2019"
    ![在 Visual Studio 的表设计器中添加外键](../data-tools/media/add-foreign-key.png)
+   :::moniker-end
 
 2. 在显示的文本框中，将文本“ToTable”替换为“Customers” 。
 

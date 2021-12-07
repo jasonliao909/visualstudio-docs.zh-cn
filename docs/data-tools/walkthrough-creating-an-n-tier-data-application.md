@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 942e2bbfac2c3b6f47895f2d368736f481c20045
-ms.sourcegitcommit: a149b3a034bb555ad217656c0ec8bc1672b1e215
+ms.openlocfilehash: 97f05e87583a24c2a38313fd2a046ea40ffba1df
+ms.sourcegitcommit: 7a300823cf1bd3355be03bde561cf2777bc09eae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "133514358"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "133978417"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>演练：创建 N 层数据应用程序
 
@@ -52,24 +52,45 @@ ms.locfileid: "133514358"
 
 - 编写代码以填充数据表。
 
-![视频链接](../data-tools/media/playvideo.gif)本主题的视频版本，请参阅[视频帮助：创建 N 层数据应用程序](/previous-versions/visualstudio/visual-studio-2008/cc178916(v=vs.90))。
-
 ## <a name="prerequisites"></a>先决条件
 本演练使用 SQL Server Express LocalDB 和 Northwind 示例数据库。
 
-1. 如果尚未安装 SQL Server Express LocalDB，可以从 [SQL Server Express 下载页](https://www.microsoft.com/sql-server/sql-server-editions-express)或通过 Visual Studio 安装程序安装。 在 Visual Studio 安装程序中，可以将 SQL Server Express LocalDB 作为 .NET 桌面开发工作负载的一部分或作为单个组件进行安装 。
+1. 如果尚未安装 SQL Server Express LocalDB，可以从 [SQL Server Express 下载页](https://www.microsoft.com/sql-server/sql-server-downloads)或通过 Visual Studio 安装程序安装。 在 Visual Studio 安装程序中，可以将 SQL Server Express LocalDB 作为 .NET 桌面开发工作负载的一部分或作为单个组件进行安装 。
 
 2. 按照以下步骤安装 Northwind 示例数据库：
+
+    :::moniker range="<=vs-2019"
 
     1. 在 Visual Studio 中，打开“SQL Server 对象资源管理器”窗口。 （在 Visual Studio 安装程序中 SQL Server 对象资源管理器作为数据存储和处理工作负载的一部分安装。）展开 SQL Server 节点  。 右键单击 LocalDB 实例并选择“新建查询”。
 
        此时将打开查询编辑器窗口。
 
-    2. 将 [Northwind Transact-SQL 脚本](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true)复制到剪贴板。 此 T-SQL 脚本从头开始创建 Northwind 数据库并用数据填充它。
+    2. 将 [Northwind Transact-SQL 脚本](https://github.com/MicrosoftDocs/visualstudio-docs/blob/main/docs/data-tools/samples/northwind.sql?raw=true)复制到剪贴板。 此 T-SQL 脚本从头开始创建 Northwind 数据库并用数据填充它。
 
     3. 将 T-SQL 脚本粘贴到查询编辑器中，然后选择“执行”按钮。
 
        不久后，查询完成运行并且 Northwind 数据库创建完成。
+    ::: moniker-end
+    ::: moniker range=">=vs-2022"
+    1. 在 Visual Studio 中，打开“SQL Server 对象资源管理器”窗口。 （在 Visual Studio 安装程序中 SQL Server 对象资源管理器作为数据存储和处理工作负载的一部分安装。）展开 SQL Server 节点  。 右键单击 LocalDB 实例并选择“新建查询”。
+
+       如果没有看到该实例LocalDB，请使用 **工具栏按钮"** 添加SQL Server"。 此时，将显示“导入” 对话框。 在对话框中，展开"**本地"** 并选择 **"MSSQLLocalDB"。** 输入适当的凭据。 可以保留数据库的默认选项。
+
+       !["连接SQL 数据库对话框的屏幕截图](media/vs-2022/connect-to-sql-database.png)
+
+    1. 选择“连接”。 在 中为 LocalDB **添加了** SQL Server 对象资源管理器。
+
+    1. 右键单击 LocalDB 实例并选择“新建查询”。
+
+       此时将打开查询编辑器窗口。
+
+    2. 将 [Northwind Transact-SQL 脚本](https://github.com/MicrosoftDocs/visualstudio-docs/blob/main/docs/data-tools/samples/northwind.sql?raw=true)复制到剪贴板。 此 T-SQL 脚本从头开始创建 Northwind 数据库并用数据填充它。
+
+    3. 将 T-SQL 脚本粘贴到查询编辑器中，然后选择“执行”按钮。
+
+       不久后，查询完成运行并且 Northwind 数据库创建完成。
+
+    ::: moniker-end
 
 ## <a name="create-the-n-tier-solution-and-class-library-to-hold-the-dataset-dataentitytier"></a>创建 N 层解决方案和用于保存数据集的类库 (DataEntityTier)
 
@@ -80,7 +101,7 @@ ms.locfileid: "133514358"
 
 ### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>创建 N 层解决方案和 DataEntityTier 类库
 
-1. 在 Visual Studio 中，使用 Windows 窗体 (.NET Framework c # 或) 的项目模板创建一个项目。 不支持 .NET Core、.NET 5 和更高版本。
+1. 在 Visual Studio中，使用 C# 或 Windows (.NET Framework) 窗体项目模板创建Visual Basic。 不支持 .NET Core、.NET 5 及更高版本。
 
 4. 将项目命名为“DataEntityTier”。
 
@@ -96,7 +117,7 @@ ms.locfileid: "133514358"
 
 1. 右键单击“解决方案资源管理器”中的解决方案，然后选择“添加” > “新建项目”。
 
-2. 选择 **类库 (.NET Framework)** 项目模板。
+2. 选择"**类库 (.NET Framework)** 项目模板。
 
 3. 将项目命名为“DataAccessTier”，然后选择“确定” 。
 
@@ -250,6 +271,9 @@ ms.locfileid: "133514358"
     [OperationContract]
     DataEntityTier.NorthwindDataSet.OrdersDataTable GetOrders();
     ```
+
+   > [!NOTE]
+   > 本教程的代码在 c # 和 Visual Basic 提供。 若要在 c # 和 Visual Basic 之间切换此页上的代码语言，请使用右侧页面顶部的代码语言切换器。
 
 3. 在 DataService 项目中，双击“Service1.vb”（或“Service1.cs”） 。
 

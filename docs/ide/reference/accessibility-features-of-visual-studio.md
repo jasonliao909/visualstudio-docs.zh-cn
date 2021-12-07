@@ -7,18 +7,18 @@ helpviewer_keywords:
 - Visual Studio, accessibility
 - accessibility [Visual Studio]
 ms.assetid: aa1ada29-4d93-4bf0-af8b-03633fcb0fba
-author: anandmeg
-ms.author: meghaanand
+author: TerryGLee
+ms.author: tglee
 manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 880863d483845f75d316db0f088ab8bcc6f98972
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 4ce9504f26d8d479d2d144ef2927ba4022f4a371
+ms.sourcegitcommit: 7a300823cf1bd3355be03bde561cf2777bc09eae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641847"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "133978129"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Visual Studio 的辅助功能
 

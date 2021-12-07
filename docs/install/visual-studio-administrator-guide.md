@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f9c378b732d8a74f8435533958f29a785d23192d
-ms.sourcegitcommit: 2281b4f1f8737f263c0d7e55e00b5ec81517327d
+ms.openlocfilehash: f8c0cd1465bc3ac47f4be63ff6fb44da5595e425
+ms.sourcegitcommit: 7a300823cf1bd3355be03bde561cf2777bc09eae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "133108661"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "133978051"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio 管理员指南
 
@@ -63,7 +63,7 @@ ms.locfileid: "133108661"
 
 * 确定安全性和兼容性需求。
 
-  如果公司需要继续使用某一功能集，但仍想获取常规维护安全更新，则应计划使用维护基线。 有关详细信息，请参阅 [Visual Studio 产品生命周期和维护](/visualstudio/releases/2019/servicing-vs2022#support-options-for-enterprise-and-professional-customers)页面以及[在维修基线上更新 Visual Studio](update-servicing-baseline.md)页面的“Enterprise 和 Professional 客户的支持选项”部分。
+  如果公司需要继续使用某一功能集，但仍想获取常规维护安全更新，则应计划使用维护基线。 有关详细信息，请参阅 [Visual Studio 产品生命周期和维护](/visualstudio/releases/2022/servicing-vs2022#enterprise-professional-and-build-tools-editions-support)页面以及[在维修基线上更新 Visual Studio](update-servicing-baseline.md)页面的“Enterprise 和 Professional 客户的支持选项”部分。
   
 ::: moniker-end  
 
@@ -93,7 +93,7 @@ ms.locfileid: "133108661"
 
 ## <a name="step-2---build-an-installation-script"></a>第 2 步 - 生成安装脚本
 
-* 生成一个安装脚本，该脚本使用[命令行参数](use-command-line-parameters-to-install-visual-studio.md)[从网络布局将 Visual Studio 安装到客户端计算机](/visualstudio/install/create-a-network-installation-of-visual-studio#install-visual-studio-onto-a-client-machine-from-a-network-installation。
+* 构建一个使用[命令行参数](use-command-line-parameters-to-install-visual-studio.md)[从网络布局将 Visual Studio 安装到客户端计算机](/visualstudio/install/create-a-network-installation-of-visual-studio#install-visual-studio-onto-a-client-machine-from-a-network-installation)的安装脚本。
 
 * （可选）[应用批量许可证产品密钥](automatically-apply-product-keys-when-deploying-visual-studio.md)作为安装脚本的一部分，这样用户便无需单独激活软件。
 
@@ -105,7 +105,7 @@ ms.locfileid: "133108661"
 
 使用所选部署技术，在目标开发者工作站上执行脚本。  
 
-* [使用所需的 Visual Studio 版本更新网络布局](/visualstudio/install/create-a-network-installation-of-visual-studio.md#update-or-modify-your-layout)
+* [使用所需的 Visual Studio 版本更新网络布局](/visualstudio/install/create-a-network-installation-of-visual-studio#update-or-modify-your-layout)
 
 * 使用 Visual Studio [的最新更新刷新客户端计算机](/visualstudio/install/update-a-network-installation-of-visual-studio)。
 
