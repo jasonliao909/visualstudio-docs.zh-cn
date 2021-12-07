@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3cc1516eb083f6446a30adba8a0973878cd99654
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 223a5985a34f5063eacfcd0125b624a09520e6fb
+ms.sourcegitcommit: 7a300823cf1bd3355be03bde561cf2777bc09eae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126601097"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "133978454"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>演练：在事务中保存数据
 
@@ -43,7 +43,7 @@ ms.locfileid: "126601097"
 
        此时将打开查询编辑器窗口。
 
-    2. 将 [Northwind Transact-SQL 脚本](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true)复制到剪贴板。 此 T-SQL 脚本从头开始创建 Northwind 数据库并用数据填充它。
+    2. 将 [Northwind Transact-SQL 脚本](https://github.com/MicrosoftDocs/visualstudio-docs/blob/main/docs/data-tools/samples/northwind.sql?raw=true)复制到剪贴板。 此 T-SQL 脚本从头开始创建 Northwind 数据库并用数据填充它。
 
     3. 将 T-SQL 脚本粘贴到查询编辑器中，然后选择“执行”按钮。
 

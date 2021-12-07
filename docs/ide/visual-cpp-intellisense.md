@@ -4,17 +4,17 @@ description: 了解一些可以在对 C++ 项目进行编码时使用的 Intelli
 ms.custom: SEO-VS-2020
 ms.date: 10/08/2018
 ms.topic: conceptual
-author: TerryGLee
-ms.author: tglee
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 49d555b2e509237e34375e1b85a35c57a6db4f3b
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 53ef15fda9ac09fc7d38ed2b6bbcfe8605ac8d5d
+ms.sourcegitcommit: 7a300823cf1bd3355be03bde561cf2777bc09eae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126642093"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "133977479"
 ---
 # <a name="visual-c-intellisense-features"></a>Visual C++ IntelliSense 功能
 

@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 30df44d4972f596204c5c6c9fd4a91ee23948c99
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: db1e6174ccfc7da536b9c0faba6225471adc87c4
+ms.sourcegitcommit: 7a300823cf1bd3355be03bde561cf2777bc09eae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126665014"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "133977388"
 ---
 # <a name="how-to-add-and-remove-feature-dependencies"></a>如何：添加和删除功能依赖项
   你的 SharePoint 功能可能依赖于功能或数据的其他功能。 在这些情况下，可以将这些其他功能标记为该功能的依赖项。 这样，SharePoint 服务器可确保在激活功能之前激活依赖功能。
@@ -39,7 +39,7 @@ ms.locfileid: "126665014"
 
      通过在按住 Ctrl 键的同时选择多个标题，可以添加多个功能。
 
-## <a name="addi-custom-dependencies"></a>添加自定义依赖项
+## <a name="add-custom-dependencies"></a>添加自定义依赖项
  可以添加已部署在 SharePoint 服务器上的功能作为依赖项。 这样，SharePoint 激活过程会进行检查，以确保在安装功能之前激活所有依赖功能。
 
 #### <a name="to-add-a-dependency-by-the-feature-id"></a>按功能 ID 添加依赖项

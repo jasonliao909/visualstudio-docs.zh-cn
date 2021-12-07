@@ -2,7 +2,7 @@
 title: 使用 ADO.NET 创建简单的数据应用程序
 description: 了解如何使用 Visual Studio 中的 Windows 窗体和 ADO.NET 创建简单的窗体基于数据的应用程序。
 ms.custom: SEO-VS-2020
-ms.date: 08/23/2017
+ms.date: 12/03/2021
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 506983ffacf846969f6e74fd503344d90180ca91
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 25c3c8bbab99536e83741bd1461dac4643453a8e
+ms.sourcegitcommit: 7a300823cf1bd3355be03bde561cf2777bc09eae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126601202"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "133978273"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 创建简单的数据应用程序
 
@@ -30,15 +30,18 @@ ms.locfileid: "126601202"
 > [!IMPORTANT]
 > 要使代码保持简单，请不要包括生产就绪的异常处理。
 
+> [!NOTE]
+> 可以在[C#](https://github.com/MicrosoftDocs/visualstudio-docs/tree/main/docs/data-tools/codesnippet/CSharp/SimpleDataApp)和 Visual Basic 中的 Visual Studio 文档GitHub本教程[的完整Visual Basic。](https://github.com/MicrosoftDocs/visualstudio-docs/tree/main/docs/data-tools/codesnippet/VisualBasic/SimpleDataApp)
+
 ## <a name="prerequisites"></a>先决条件
 
 要创建应用程序，你将需要：
 
 - Visual Studio。
 
-- SQL Server Express LocalDB。 如果尚未安装 SQL Server Express LocalDB，可从 [SQL Server Express 下载页面](https://www.microsoft.com/sql-server/sql-server-editions-express)安装它。
+- SQL Server Express LocalDB。 如果尚未安装SQL Server Express LocalDB，可以从下载页 SQL Server[它](https://www.microsoft.com/sql-server/sql-server-downloads)。
 
-本主题假定你已经熟悉 Visual Studio IDE 的基本功能，并能够创建 Windows 窗体应用程序，将窗体添加到项目，将按钮和其他控件安装到这些窗体上，为这些控件设置属性，以及对简单事件进行编码。 如果你对这些任务感到不适应，建议你在开始本演练前完成 [Visual C# 和 Visual Basic 入门](../ide/quickstart-visual-basic-console.md)主题。
+本主题假定你已经熟悉 Visual Studio IDE 的基本功能，并能够创建 Windows 窗体应用程序，将窗体添加到项目，将按钮和其他控件安装到这些窗体上，为这些控件设置属性，以及对简单事件进行编码。 如果对这些任务不太熟悉，建议在开始本演练之前完成使用 Visual Basic 在[Visual Studio](../ide/create-a-visual-basic-winform-in-visual-studio.md)中创建 Windows Forms 应用教程或使用[C#](../ide/create-csharp-winform-visual-studio.md)在 Visual Studio 中创建 Windows 窗体应用教程。
 
 ## <a name="set-up-the-sample-database"></a>设置示例数据库
 
@@ -58,7 +61,7 @@ ms.locfileid: "126601202"
 
      查询编辑器窗口将打开。
 
-6. 将 [Sales Transact-SQL 脚本](https://github.com/MicrosoftDocs/visualstudio-docs/raw/master/docs/data-tools/samples/sales.sql)复制到剪贴板。
+6. 将 [Sales Transact-SQL 脚本](https://github.com/MicrosoftDocs/visualstudio-docs/raw/main/docs/data-tools/samples/sales.sql)复制到剪贴板。
 
 7. 将 T-SQL 脚本粘贴到查询编辑器中，然后选择“执行”按钮。
 
@@ -138,6 +141,8 @@ ms.locfileid: "126601202"
 
 5. 在“值”列中，输入连接字符串（不使用任何引号），然后保存更改。
 
+   :::image type="content" source="media/vs-2022/simple-data-app-settings.png" alt-text="设置中连接字符串的屏幕截图。" lightbox="media/vs-2022/simple-data-app-settings.png":::
+
 > [!NOTE]
 > 在实际应用程序中，应安全地存储连接字符串，如[连接字符串和配置文件](/dotnet/framework/data/adonet/connection-strings-and-configuration-files)中所述。
 
@@ -159,12 +164,18 @@ ms.locfileid: "126601202"
 
 双击 Navigation 窗体上的三个按钮，创建空的事件处理程序方法。 双击按钮还会在设计器代码文件中添加自动生成的代码，启用按钮单击就会引发事件。
 
+> [!NOTE]
+> 如果跳过设计器中的双击操作并只复制代码并将其粘贴到代码文件中，请不要忘记将事件处理程序设置为正确的方法。 可以在 " **属性** " 窗口中执行此操作。 切换到 " **事件** " 选项卡 (使用闪电工具栏按钮) 并查找 **单击** 处理程序。
+
 #### <a name="add-code-for-the-navigation-form-logic"></a>添加适用于 Navigation 窗体逻辑的代码
 
 在 Navigation 窗体的代码页中，完成三个按钮单击事件处理程序的方法主体，如下面的代码所示。
 
 :::code language="csharp" source="../data-tools/codesnippet/CSharp/SimpleDataApp/Navigation.cs" id="Snippet1":::
 :::code language="vb" source="../data-tools/codesnippet/VisualBasic/SimpleDataApp/Navigation.vb" id="Snippet1":::
+
+> [!NOTE]
+> 本教程的代码在 c # 和 Visual Basic 提供。 若要在 c # 和 Visual Basic 之间切换此页上的代码语言，请使用右侧页面顶部的代码语言切换器。
 
 ### <a name="newcustomer-form"></a>NewCustomer 窗体
 
@@ -234,7 +245,7 @@ ms.locfileid: "126601202"
 
 ## <a name="test-your-application"></a>测试应用程序
 
-在对每个 Click 事件处理程序进行编码且完成编码后，请按 F5 键以生成并测试应用程序。
+运行应用程序并尝试创建几个客户和订单，以验证一切是否按预期工作。 若要验证数据库是否已更新，请在 **服务器资源管理器** 中打开 "**表**" 节点，右键单击 "**客户**" 和 "**订单**" 节点，然后选择 "**显示表数据**"。
 
 ## <a name="see-also"></a>请参阅
 

@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 8150231e6ecf6c2b2f789da68fd4aae8d334854f
-ms.sourcegitcommit: a149b3a034bb555ad217656c0ec8bc1672b1e215
+ms.openlocfilehash: 3f4685674ed963484111832df3c052a737527754
+ms.sourcegitcommit: 7a300823cf1bd3355be03bde561cf2777bc09eae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "133514501"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "133977440"
 ---
 # <a name="item-functions"></a>项函数
 
@@ -132,7 +132,7 @@ ms.locfileid: "133514501"
 
 ## <a name="msbuild-condition-functions"></a>MSBuild 条件函数
 
-函数 `Exists` 和 `HasTrailingSlash` 不是项函数。 它们可与 `Condition` 属性一起使用。 请参阅 [MSBuild 条件](msbuild-conditions.md)。
+函数 `HasTrailingSlash` 不是 item 函数。 它可与属性一起使用 `Condition` 。 请参阅 [MSBuild 条件](msbuild-conditions.md)。
 
 ## <a name="see-also"></a>请参阅
 

@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 55d2ecda1619f187f1a1fdd0854eb1e3dd1d7fb8
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 92bd5e084cf12e99f57cc02074287bf776506335
+ms.sourcegitcommit: 7a300823cf1bd3355be03bde561cf2777bc09eae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736065"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "133977882"
 ---
 # <a name="common-msbuild-project-properties"></a>常用的 MSBuild 项目属性
 
@@ -127,6 +127,7 @@ ms.locfileid: "126736065"
 | TargetCompactFramework | .NET | 运行你所生成的应用程序所需要的 .NET Compact Framework 的版本。 通过指定此属性，你可以引用否则将无法引用的某些 Framework 程序集。 |
 | TargetFrameworkVersion | .NET | 运行你生成的应用程序所需要的 .NET Framework 版本。 通过指定此属性，你可以引用否则将无法引用的某些 Framework 程序集。 |
 | TreatWarningsAsErrors | .NET | 一个布尔型参数，如果设置为 `true`，则会导致将所有警告都视为错误。 此参数等效于 `/nowarn` 编译器开关。 |
+| UseCommonOutputDirectory | .NET | 一个布尔值属性， `true` 当你希望解决方案中的所有生成输出都使用相同的输出目录时，可以将其设置为。 如果为 `true` ，则不会将引用项目的输出复制到使用这些依赖项的项目，这种情况通常在此设置为时 `false` 。 如果将此参数设置为，则 `true` 不会更改任何项目的实际输出目录; 你仍需要将输出目录设置为需要它的每个项目所需的通用输出目录。|
 | UseHostCompilerIfAvailable | .NET | 一个布尔型参数，如果设置为 `true`，则会使得生成任务使用进程内编译器对象（如果可用）。 此参数仅供 Visual Studio 使用。 |
 | Utf8Output | .NET | 一个布尔型参数，如果设置为 `true`，则使用 UTF-8 编码记录编译器输出。 此参数等效于 `/utf8Output` 编译器开关。 |
 | VbcToolPath | Visual Basic | 一个可选路径，在当前版本的 vbc.exe 被重写时它可以指示 vbc.exe 的另一个位置 。 |

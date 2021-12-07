@@ -2,7 +2,7 @@
 title: 自动换行
 description: 了解如何在代码编辑器中打开和关闭“自动换行”选项。
 ms.custom: SEO-VS-2020
-ms.date: 11/07/2018
+ms.date: 12/06/2021
 ms.topic: how-to
 helpviewer_keywords:
 - word wrap
@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 626ecc63152ca2ee46b2d2a132975c0039a02daf
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: d704f105b878aefcfc8233029ac421326167b11a
+ms.sourcegitcommit: 7a300823cf1bd3355be03bde561cf2777bc09eae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126737284"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "133978143"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>如何：在编辑器中管理自动换行
 
@@ -31,7 +31,9 @@ ms.locfileid: "126737284"
 
 ## <a name="to-set-word-wrap-preferences"></a>设置换行首选项
 
-1. 在“工具”菜单上选择“选项”   。
+1. 在"Visual Studio栏上，选择"**工具"，** 然后选择"选项 **"。**
+
+    :::image type="content" source="media/vs-2022/tools-options-menu-bar.png" alt-text="菜单中菜单栏的屏幕截图Visual Studio选择了&quot;工具和选项&quot;。":::
 
 2. 在“文本编辑器”文件夹的“所有语言”子文件夹中选择“常规”选项，在全局设置此选项    。
 
@@ -43,17 +45,15 @@ ms.locfileid: "126737284"
 
      选中“自动换行”选项将启用“显示可视的自动换行标志符号”选项   。
 
-4. 如果希望在较长行换行到下一行的位置处显示回车箭头指示符，请选择“显示可视的自动换行标志符号”选项  。 如果不希望显示这些指示箭头，则清除此复选框。
-
     > [!NOTE]
-    > 这些提醒箭头不会添加到代码中，它们仅用于显示。
+    > " **显示自动换行的视觉标志** 符号"选项显示一个返回箭头指示符，其中长行换行到第二行。 这些提醒箭头不会添加到代码中，它们仅用于显示。
 
 ## <a name="known-issues"></a>已知问题
 
 如果熟悉 Notepad++、Sublime Text 或 Visual Studio Code 中的自动换行功能，请注意 Visual Studio 的行为在以下方面与其他编辑器的行为不同：
 
-* [三次单击不会选择整行](https://developercommunity.visualstudio.com/content/problem/268989/triple-click-doesnt-select-whole-line-when-word-wr.html)
-* [按两次 End 键不会将光标移动到行尾](https://developercommunity.visualstudio.com/content/problem/138274/pressing-end-key-twice-should-move-cursor-to-end-o.html)
+* [三次单击不会选择整行](https://developercommunity.visualstudio.com/t/fix-known-issues-in-word-wrap/351760)
+* [按两次 End 键不会将光标移动到行尾](https://developercommunity.visualstudio.com/t/fix-known-issues-in-word-wrap/351760)
 
 ## <a name="see-also"></a>请参阅
 

@@ -2,7 +2,7 @@
 title: 了解生成配置
 description: 了解需要在 Visual Studio 中使用不同设置生成项目时如何生成配置。
 ms.custom: SEO-VS-2020
-ms.date: 01/20/2020
+ms.date: 12/06/2021
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 f1_keywords:
@@ -28,18 +28,23 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c6037bd6ed3b7899ff00bce202df7707356683a
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: d4308f1e49f531e0d7cb486d483e338fd234eb9e
+ms.sourcegitcommit: 7a300823cf1bd3355be03bde561cf2777bc09eae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126642113"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "133977547"
 ---
 # <a name="understand-build-configurations"></a>了解生成配置
 
 需要生成具有不同设置的项目时，生成配置是必备项。 例如，“调试”  和“发布”  是配置，在生成这些项时，将相应地使用不同的编译器选项。  一种配置处于活动状态，并显示在 IDE 顶部的命令栏中。
 
-![活动配置](media/understanding-build-configurations/active-config.png)
+:::moniker range="<=vs-2019"
+![显示主 Visual Studio 工具栏中的活动配置的屏幕截图。](media/understanding-build-configurations/active-config.png)
+:::moniker-end
+:::moniker range=">=vs-2022"
+![显示主 Visual Studio 工具栏中的活动配置的屏幕截图。](media/vs-2022/build-configurations-active-config.png)
+:::moniker-end
 
 > [!NOTE]
 > 本主题适用于 Visual Studio  Windows 版。 对于 Visual Studio for Mac，请参阅[在 Visual Studio for Mac 中生成配置](/visualstudio/mac/configurations)。
@@ -50,10 +55,10 @@ ms.locfileid: "126642113"
 
 若要创建、选择、修改或删除配置，可以使用“配置管理器”  。 若要打开它，请在菜单栏上选择“生成”   > “配置管理器”  ，或者直接在搜索框中键入“配置”  。 也可以使用“标准”  工具栏上的“解决方案配置”  列表，选择配置或打开“配置管理器”  。
 
-![配置管理器](media/understanding-build-configurations/config-manager.png)
+![Configuration Manager 对话框的屏幕截图。](media/understanding-build-configurations/config-manager.png)
 
 > [!NOTE]
-> 如果在工具栏上找不到解决方案配置设置且无法访问“配置管理器”  ，[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 开发设置可能适用。 有关详细信息，请参阅[如何：在应用 Visual Basic 开发人员设置后管理生成配置](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md)。
+> 如果在工具栏上找不到解决方案配置设置且无法访问 **Configuration Manager**，则可能是因为你使用的是 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 开发设置。 有关详细信息，请参阅[如何：在应用 Visual Basic 开发人员设置后管理生成配置](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md)。
 
 默认情况下，“调试”  和“发布”  配置包含在使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 模板创建的项目中。 “调试”  配置支持调试应用，而“发布”  配置生成可部署的应用的版本。 有关详细信息，请参阅[如何：设置调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)。 还可以创建自定义解决方案配置和项目配置。 有关详细信息，请参阅[如何：创建和编辑配置](../ide/how-to-create-and-edit-configurations.md)。
 
@@ -71,7 +76,12 @@ ms.locfileid: "126642113"
 
 项目针对的配置和平台结合使用以指定在生成时要使用的生成设置和编译器选项。 对于配置和平台的每种组合，项目可以具有不同的设置。 要修改项目属性，请在“解决方案资源管理器”  中打开项目的快捷菜单，然后选择“属性”  。  在项目设计器的“生成”  选项卡的顶部，选择活动配置以编辑其生成设置。
 
-![项目设计器配置](media/understanding-build-configurations/project-designer-configuration.png)
+:::moniker range="<=vs-2019"
+![项目设计器配置的屏幕截图。](media/understanding-build-configurations/project-designer-configuration.png)
+:::moniker-end
+:::moniker range=">=vs-2022"
+![项目设计器配置的屏幕截图。](media/vs-2022/build-configuration-project-designer-configuration.png)
+:::moniker-end
 
 ## <a name="building-multiple-configurations"></a>生成多个配置
 

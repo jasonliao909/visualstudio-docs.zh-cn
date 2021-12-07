@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 030fe8a72637e82bc317c5fb457f4e8861223c52
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 72dc1316ffc2e7d6ae787c5d0bf8e06b00f2b4b3
+ms.sourcegitcommit: 7a300823cf1bd3355be03bde561cf2777bc09eae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126601116"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "133978298"
 ---
 # <a name="pass-data-between-forms"></a>在窗体间传递数据
 
@@ -58,11 +58,11 @@ ms.locfileid: "126601116"
 
 2. 按照以下步骤安装 Northwind 示例数据库：
 
-    1. 在 Visual Studio 中，打开“SQL Server 对象资源管理器”窗口。 （SQL Server 对象资源管理器作为数据存储和处理工作负载的一部分安装在 Visual Studio 安装程序中。）展开 SQL Server 节点 。 右键单击 LocalDB 实例并选择“新建查询”。
+    1. 在 Visual Studio 中，打开“SQL Server 对象资源管理器”窗口。 （在 Visual Studio 安装程序中 SQL Server 对象资源管理器作为数据存储和处理工作负载的一部分安装。）展开 SQL Server 节点 。 右键单击 LocalDB 实例并选择“新建查询”。
 
-       此时打开查询编辑器窗口。
+       此时将打开查询编辑器窗口。
 
-    2. 将 [Northwind Transact-SQL 脚本](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true)复制到剪贴板。 该 T-SQL 脚本从头开始创建 Northwind 数据库并填充数据。
+    2. 将 [Northwind Transact-SQL 脚本](https://github.com/MicrosoftDocs/visualstudio-docs/blob/main/docs/data-tools/samples/northwind.sql?raw=true)复制到剪贴板。 此 T-SQL 脚本从头开始创建 Northwind 数据库并用数据填充它。
 
     3. 将 T-SQL 脚本粘贴到查询编辑器中，然后选择“执行”按钮。
 

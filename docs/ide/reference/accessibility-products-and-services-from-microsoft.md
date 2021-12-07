@@ -14,18 +14,18 @@ helpviewer_keywords:
 - TT/TDD services
 - recorded documentation
 ms.assetid: ef3c6247-9f59-4ef4-aa8b-a8922b3e0943
-author: anandmeg
-ms.author: meghaanand
+author: TerryGLee
+ms.author: tglee
 manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: d5b56f7c5e84eab0a95b9178c0a582da95adcfcf
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 103956108f8ec30fe259cae7d5ecf10b345799de
+ms.sourcegitcommit: 7a300823cf1bd3355be03bde561cf2777bc09eae
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126737079"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "133978064"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Microsoft 提供的辅助功能产品和服务
 
