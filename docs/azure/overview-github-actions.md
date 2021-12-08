@@ -7,15 +7,15 @@ ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: overview
-ms.date: 10/19/2021
+ms.date: 12/06/2021
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 581132bb222b3717e8cfbc22b1041ed11123a011
-ms.sourcegitcommit: 32fa8ec0b469a7a9a87de25ff769d8d21d9f30d2
-ms.translationtype: HT
+ms.openlocfilehash: f2f93625bc746aa7d3f77cb3c515090150a98ea2
+ms.sourcegitcommit: 64d6c5cf93984bbb22812577af17128cd2239f79
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "131898335"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "134366821"
 ---
 # <a name="an-overview-of-the-github-actions-integration-in-visual-studio"></a>Visual Studio 中 GitHub Actions 集成的概述
 
@@ -27,13 +27,13 @@ ms.locfileid: "131898335"
 
 ![显示 CI/CD 发布选项的屏幕截图。](./media/github-actions-deployment-mode.png)
 
-Visual Studio 还通过为你处理应用程序机密来简化此过程。 
+Visual Studio 还通过为你处理应用程序机密来简化此过程。
 
 首先，在“解决方案资源管理器”中右键单击你的项目，并从上下文菜单中选择“发布”。 有关教程，请参阅[使用 Visual Studio 创建的 GitHub Actions 工作流将应用程序部署到 Azure](../deployment/azure-deployment-using-github-actions.md)。
 
 ## <a name="how-do-i-get-my-project-on-githubcom"></a>如何在 GitHub.com 上获取项目？
 
-请参阅[创建新的 Git 存储库](../version-control/git-with-visual-studio.md#create-a-new-git-repository)。
+请参阅[创建新的 Git 存储库](../version-control/git-with-visual-studio.md?view=vs-2019&preserve-view=true#create-a-new-git-repository-in-visual-studio-2019)。
 
 ## <a name="see-also"></a>另请参阅
 
