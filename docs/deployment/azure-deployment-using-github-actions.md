@@ -1,7 +1,7 @@
 ---
 title: 使用 GitHub Actions 部署到 Azure
 description: 了解如何使用 Visual Studio 创建的 GitHub Actions 工作流将应用程序部署到 Azure
-ms.date: 09/03/2021
+ms.date: 12/06/2021
 ms.topic: how-to
 helpviewer_keywords:
 - deployment, GitHub Actions
@@ -13,12 +13,12 @@ ms.technology: vs-ide-deployment
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 43a6d56f5088dc542987cb7b850d511b80955698
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 21e6ed4123735ac2aa9dcead8451a6f4998b49a5
+ms.sourcegitcommit: 64d6c5cf93984bbb22812577af17128cd2239f79
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126665166"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "134366912"
 ---
 # <a name="deploy-your-application-to-azure-using-github-actions-workflows-created-by-visual-studio"></a>使用 Visual Studio 创建的 GitHub Actions 工作流将应用程序部署到 Azure
 
@@ -46,13 +46,13 @@ Visual Studio 会生成新的 GitHub Actions 工作流，并要求你提交它�
 
 ![提交和推送](./media/summary-commit-and-push.png)
 
-如果使用[内置 Git 工具](../version-control/git-with-visual-studio.md#git-changes-window)完成此步骤，Visual Studio 将检测工作流的执行情况。
+如果使用内置[Git](../version-control/git-with-visual-studio.md?view=vs-2019&preserve-view=true#git-changes-window-in-visual-studio-2019)工具完成此步骤，Visual Studio将检测工作流的执行。
 
 ![工作流正在运行](./media/summary-workflow-running.png)
 
 ## <a name="setting-the-github-secrets"></a>设置 GitHub 机密
 
-若要使生成的工作流成功部署到 Azure，可能需要访问[发布配置文件](/azure/app-service/deploy-github-actions?tabs=applevel#configure-the-github-secret) 
+若要成功将生成的工作流部署到 Azure，可能需要访问发布 [配置文件](/azure/app-service/deploy-github-actions?tabs=applevel#configure-the-github-secret)。
 
 ![一个 Github 机密](./media/summary-one-github-secret.png)
 

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: a68e4a5bf7b46c45aaf7061e1b994621d975a371
-ms.sourcegitcommit: 65a1b6aae8387735f05a83b45e1a6865e9805e1f
+ms.openlocfilehash: 11cc124fa3f8601ffb6d3ea621ab9bb709b60246
+ms.sourcegitcommit: 64d6c5cf93984bbb22812577af17128cd2239f79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "129339569"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "134366925"
 ---
 # <a name="learn-about-solution-explorer"></a>了解解决方案资源管理器
 
@@ -43,7 +43,7 @@ ms.locfileid: "129339569"
 - 项目节点 - 用于管理项目
 - 依赖项节点 - 用于管理解决方案和项目依赖项
 - 程序节点 - 用于查看、编辑和管理程序或应用程序（应用）
-- [“Git 更改”选项卡](../version-control/git-with-visual-studio.md?view=vs-2019&preserve-view=true#git-changes-window) - 可用于使用 Visual Studio 中的 Git 和 GitHub 与团队协作处理项目
+- [“Git 更改”选项卡](../version-control/git-with-visual-studio.md?view=vs-2019&preserve-view=true#git-changes-window-in-visual-studio-2019) - 可用于使用 Visual Studio 中的 Git 和 GitHub 与团队协作处理项目
 
 > [!TIP]
 > 如果没有看到解决方案资源管理器工具窗口，可以从 Visual Studio 菜单栏中使用“查看” > “解决方案资源管理器”或按 Ctrl+Alt+L 将其打开    。

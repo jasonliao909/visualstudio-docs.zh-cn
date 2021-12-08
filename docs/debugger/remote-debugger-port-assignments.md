@@ -11,21 +11,20 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b7e446fc0ed9300610ae265ac2aad07039c350a
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 9eacb91faa204f92b63ecf464c1ef418b387e38a
+ms.sourcegitcommit: 64d6c5cf93984bbb22812577af17128cd2239f79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128427208"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "134366938"
 ---
 # <a name="remote-debugger-port-assignments"></a>远程调试器端口分配
 Visual Studio 远程调试器可作为应用程序或后台服务运行。 当它作为应用程序运行时，它将使用默认分配的端口，如下所示：
-::: moniker range=">=vs-2022"
+
 - Visual Studio 2022：4026
-::: moniker-end
-::: moniker range="vs-2019"
+
 - Visual Studio 2019：4024
-::: moniker-end
+
 - Visual Studio 2017：4022
 
 - Visual Studio 2015：4020
