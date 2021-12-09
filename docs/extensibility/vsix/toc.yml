@@ -1,4 +1,4 @@
-- name: Visual Studio Community Toolkit
+- name: Visual Studio Community 工具包
   href: visual-studio-community-toolkit.md
   expanded: true
   items:
@@ -9,21 +9,21 @@
           href: get-started/get-started-guide.md
         - name: 获取工具
           href: get-started/get-tools.md
-        - name: 扩展解析
+        - name: 扩展剖析
           href: get-started/extension-anatomy.md
-        - name: 首个扩展
+        - name: 你的首个扩展
           href: get-started/first-extension.md
         - name: 有用的资源
           href: get-started/useful-resources.md
     - name: 配方
       items:
-        - name: 菜单 & 命令
+        - name: 菜单和命令
           href: recipes/menus-buttons-commands.md
         - name: 工具窗口
           href: recipes/custom-tool-windows.md
         - name: 主题设置
           href: recipes/use-themes.md
-        - name: 设置 & 选项
+        - name: 设置和选项
           href: recipes/settings-options.md
         - name: 通知
           href: recipes/notifications.md
@@ -31,9 +31,9 @@
           href: recipes/handle-errors.md
         - name: 显示进度
           href: recipes/show-progress.md
-    - name: 使用技巧 & 技巧
+    - name: 提示和技巧
       items:
-        - name: 文件 & 文档
+        - name: 文件和文档
           href: tips/files.md
         - name: 项目
           href: tips/projects.md
