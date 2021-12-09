@@ -5,7 +5,7 @@
       href: visual-studio-sdk.md
     - name: 安装 Visual Studio SDK
       href: installing-the-visual-studio-sdk.md
-    - name: Visual Studio Community Toolkit
+    - name: Visual Studio Community 工具包
       href: vsix/visual-studio-community-toolkit.md
     - name: 开始开发 Visual Studio 扩展
       href: starting-to-develop-visual-studio-extensions.md

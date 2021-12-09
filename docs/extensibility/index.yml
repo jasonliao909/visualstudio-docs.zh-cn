@@ -24,7 +24,7 @@ landingContent:
     links:
     - text: 安装 Visual Studio SDK
       url: ./installing-the-visual-studio-sdk.md
-    - text: Visual Studio Community 写入 Visual Studio 扩展 Toolkit
+    - text: 使用 Visual Studio Community 工具包编写 Visual Studio 扩展
       url: ./vsix/visual-studio-community-toolkit.md
   - linkListType: overview
     links:

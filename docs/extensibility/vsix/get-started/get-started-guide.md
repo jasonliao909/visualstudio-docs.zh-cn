@@ -1,6 +1,6 @@
 ---
 title: 入门指南
-description: 帮助初学者对扩展性有Visual Studio了解。
+description: 帮助初学者很好地基本了解 Visual Studio 扩展性。
 ms.date: 12/01/2021
 ms.topic: overview
 author: madskristensen
@@ -16,20 +16,20 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 12/03/2021
 ms.locfileid: "133517500"
 ---
-# <a name="getting-started-guide-on-visual-studio-extensions-toolkit"></a>有关扩展Visual Studio入门指南
+# <a name="getting-started-guide-on-visual-studio-extensions-toolkit"></a>Visual Studio 扩展工具包入门指南
 
-入门指南的目的是让你基本了解Visual Studio扩展，并获取编写成功扩展的合适路径。
+入门指南的目标是让你基本了解 Visual Studio 扩展，并获取编写成功扩展的正确路径。
 
-:::image type="content" source="../media/toolkit-intellisense.gif" alt-text="扩展性 API 的 IntelliSense。":::
+:::image type="content" source="../media/toolkit-intellisense.gif" alt-text="适用于扩展性 API 的 IntelliSense。":::
 
 ## <a name="get-the-tools"></a>获取工具
-该旅程首先[将正确的工具安装到](get-tools.md)Visual Studio。
+该旅程首先[将正确的工具安装](get-tools.md)到 Visual Studio。
 
-## <a name="your-first-extension"></a>第一个扩展
-接下来，我们将编写 [一个简单的扩展](first-extension.md) 作为将来自定义项的起点。
+## <a name="your-first-extension"></a>你的首个扩展
+接下来，我们将[编写一个简单的扩展](first-extension.md)作为将来自定义项的起点。
 
 ## <a name="extension-anatomy"></a>扩展剖析
-现在可以结束扩展 的所有 [移动部分](extension-anatomy.md)了。 这可让你对扩展性模型有更广泛的了解。
+现在可以仔细检查[扩展的所有移动部分](extension-anatomy.md)了。 这使你可以更广泛地了解扩展性模型。
 
 ## <a name="useful-resources"></a>有用的资源
-若要充分利用此工具包并Visual Studio扩展性，请查看[有用的资源](useful-resources.md)。 这是一种快速方法，可为自己设置，以便将来取得成功。
+若要充分利用此工具包和 Visual Studio 扩展性，请查看[有用的资源](useful-resources.md)。 这是让自己为将来取得成功做好准备的快速方法。
