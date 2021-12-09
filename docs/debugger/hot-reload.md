@@ -13,14 +13,14 @@ ms.technology: vs-ide-debug
 monikerRange: '>= vs-2022'
 ms.workload:
 - multiple
-ms.openlocfilehash: 6884aceaddb2133410797bb5f4e5a403badb08f7
-ms.sourcegitcommit: a98fa8a8362525f67824ce52b7e71757f10f1362
-ms.translationtype: HT
+ms.openlocfilehash: fd616cb467d5367fd317601ecfdbacf5fc946b48
+ms.sourcegitcommit: ba40c6208b2cb27d047fec4fa2c83c6be4f9ee5a
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "132736469"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "134463505"
 ---
-# <a name="write-and-debug-running-code-with-hot-reload-in-visual-studio-c-c-visual-basic"></a>在 Visual Studio（C#、C++、Visual Basic）中使用热重载编写和调试正在运行的代码
+# <a name="write-and-debug-running-code-with-hot-reload-in-visual-studio-c-visual-basic-c"></a>在 Visual Studio (c #、Visual Basic、c + + 中，用热重载编写和调试正在运行的代码) 
 
 从 Visual Studio 2022 开始，Visual Studio 中的热重载体验适用于托管 .NET 和本机 C++ 应用。 无论使用哪种类型的应用，热重载的目的都是尽可能节省编辑之间的应用重启次数，从而使你通过减少等待应用重新生成、重启、重新导航到你在应用中的上一个位置等操作的时间来提高工作效率。
 
@@ -48,21 +48,21 @@ ms.locfileid: "132736469"
 
 下表显示了哪些应用程序类型在附加调试器 (F5) 和不附加调试器 (Ctrl+F5) 的情况下支持 .NET 热重载，以及是否需要 .NET 6 才能获得最低支持（即 F5）。 Ctrl+F5 支持始终需要 .NET 6。 还显示了支持该功能的 Visual Studio 的最低版本。
 
-|应用程序类型|需要 .NET 6 (F5)|F5|Ctrl+F5|
+|应用程序类型|需要 .NET 6|F5|Ctrl+F5|
 |-|-|-|-|
 |ASP.NET 代码隐藏|否|16.11|17.0|
 |ASP.NET Razor（Blazor Server 和 ASP.NET Core）|是|17.0|17.0|
-|ASP.NET Razor (Blazor WASM)|是|否|17.0|
+|ASP.NET Razor (Blazor WASM)|是|17.1|17.0|
 |WPF|否|16.11|17.0|
-|WinUI3|否|16.11|否|
+|WinUI3|否|16.11|--|
 |WinForms|否|16.11|17.0|
 |控制台|否|16.11|17.0|
-|XAML .NET MAUI WinUI|是|17.1 预览版 1|否|
-|XAML .NET MAUI Android|是|17.1 预览版 1|否|
-|XAML .NET MAUI iOS|是|17.1 预览版 1|否|
-|XAML + Blazor .NET MAUI WinUI|是|17.1 预览版 1|否|
-|XAML + Blazor .NET MAUI Android|是|17.1 预览版 1|否|
-|XAML + Blazor .NET MAUI iOS|是|17.1 预览版 1|否|
+|.NET MAUI (WinUI 3) |是|17.1|--|
+|.NET MAUI (Android) |是|17.1|--|
+|.NET MAUI (iOS) |是|17.1|--|
+|.NET MAUI Blazor 混合 (WinUI 3) |是|17.1|--|
+|.NET MAUI Blazor 混合 (Android) |是|17.1|--|
+|.NET MAUI Blazor 混合 (iOS) |是|17.1|--|
 
 可以使用热重载进行的编辑类型由运行时决定，而不是由用于启动应用程序的方法（F5 或 Ctrl+F5）决定。
 
@@ -79,7 +79,7 @@ ms.locfileid: "132736469"
 使用 Visual Studio 2022 并启动具有调试器的应用时，热重载适用于大多数应用框架，包括典型的应用类型，例如控制台、Windows 窗体 (WinForms)、WPF、UWP、WinUI 3（请参阅注释）和大多数类型的 ASP.NET Web 项目（用于代码隐藏编辑），包括 ASP.NET MVC、Web API，甚至较旧的 Web Forms 项目。 这些就是示例。 在你拥有 .NET 且使用 Visual Studio 托管调试器的任何地方，你都应获得基本的热重载支持。 这一事实意味着，即使是 Azure Functions 之类的项目在此方案中也非常成功。
 
 > [!NOTE]
-> WinUI 3 默认使用混合模式调试，不支持热重载。 可以通过启用托管的调试器在项目设置中修改此设置，从而使热重载正常工作。
+> WinUI 3 默认使用混合模式调试，不支持热重载。 可以通过启用托管的调试器在项目设置中修改此设置，从而使热重载正常工作。 若要在项目中启用此项，请修改 Launchsettings.json 并在 `"nativeDebugging": false` 属性后面添加 `commandName` 。
 
 从 Visual Studio 2022 版本 17.1 预览版 1 开始支持 .NET MAUI 应用。
 
@@ -93,7 +93,7 @@ ms.locfileid: "132736469"
 
 * 在没有调试器的情况下，热重载不支持 UWP 应用。 这是设计使然，目前没有改善这一点的计划。
 * 面向 iOS 和 Android 的 Xamarin.Forms 应用不支持 .NET 热重载（无论是在有还是没有调试器的情况下启动应用），但将继续支持 XAML 热重载。
-* 不支持 .NET MAUI 应用。
+* .NET MAUI调试器才支持这些应用。
 
 ## <a name="visual-studio-2022-with-a-net-6-app"></a>使用 .NET 6 应用的 Visual Studio 2022
 
@@ -109,7 +109,7 @@ ms.locfileid: "132736469"
 如果你面向的是 .NET 6，将继续在即将推出的 Visual Studio 2022 更新和 .NET 功能区段和主要版本中获得改进。
 
 > [!NOTE]
-> 在 Visual Studio 2022 中，当前未启用在使用 Visual Studio 调试器时对 Blazor WebAssembly 的热重载支持。 如果在不使用调试器的情况下通过 Visual Studio 启动应用，则仍可进行热重载。
+> 在 Visual Studio 2022 (版本 17.0) 的第一个版本中，热重载 在使用 Visual Studio 调试器时对 Blazor WebAssembly 的支持当前未启用，但从 17.1 开始提供。 如果在没有调试热重载的情况下通过 Visual Studio或更新到 17.1 版本来启动应用，则仍可以继续运行。
 
 ## <a name="supported-aspnet-core-scenarios"></a>支持的 ASP.NET Core 方案
 
@@ -121,9 +121,6 @@ ms.locfileid: "132736469"
 * **浏览器刷新**：编辑 razor 文件将在调试时自动在 Web 浏览器中刷新更改。 此功能以前仅在没有调试器的情况下启动应用时可用。
 * **CSS 热重载**：可以在应用运行时更改 CSS 文件，键入的更改将立即应用到正在运行的应用。
 * 无调试器：使用 Visual Studio 在没有调试器的情况下启动 Web 应用 (CTRL-F5) 时，可以获得热重载支持。
-
-> [!NOTE]
-> 同时使用 Blazor Wasm 应用和 Visual Studio 2022 时，Razor Pages 的热重载目前仅在没有调试器的情况下启动应用时有效。
 
 ## <a name="supported-net-edits"></a>支持的 .NET 编辑
 
@@ -178,6 +175,21 @@ ms.locfileid: "132736469"
 
 ![.NET 热重载设置的屏幕截图](../debugger/media/vs-2022/dotnet-hot-reload-settings.png)
 
+还可通过修改 .NET 6 项目 launchSetting.json，将 设置为 来控制 .NET 热重载是否在项目级别 `hotReloadEnabled` 可用 `false` 。
+
+示例：
+
+```xaml
+{
+  "profiles": {
+    "Console": {
+      "commandName": "Project",
+      "hotReloadEnabled": false
+    }
+  }
+}
+```
+
 ## <a name="warning-message"></a>警告消息
 
 如果看到以下对话框，则热重载无法在不重启的情况下应用当前编辑。 可以选择重新生成应用，并应用更改（重启），或者继续编辑。 如果重新生成，则所有应用程序状态都将丢失。 如果继续编辑，其他更改或更正可能导致热重载再次运行。
@@ -187,7 +199,7 @@ ms.locfileid: "132736469"
 如果在对话框中选择“始终重新生成”选项，则不会在当前 Visual Studio 会话中再次看到该对话框，并且 Visual Studio 将自动重新生成和重新加载，而不是显示对话框。
 
 > [!NOTE]
-> 目前，在调试器中使用热重载时会显示标准的“编辑并继续”对话框。
+> 在版本 17.0 Visual Studio (版本 17.0) 在调试器中使用 热重载时，仍将显示标准"编辑并继续"对话框。 这是一个 bug，从 17.1 预览版 2 版本开始已解决。
 
 ## <a name="see-also"></a>另请参阅
 
