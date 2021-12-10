@@ -1,7 +1,7 @@
 ---
 title: 更新基于网络的安装
 description: 了解如何更新通过网络布局安装的 Visual Studio 客户端
-ms.date: 11/23/2021
+ms.date: 12/7/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 858e593ab6c2e5bc0beed0749c5864d8a75b3e97
-ms.sourcegitcommit: 2281b4f1f8737f263c0d7e55e00b5ec81517327d
+ms.openlocfilehash: d1961c85d6c918e9b3dcdbef9bf5511b77998186
+ms.sourcegitcommit: 99e0146dfe742f6d1955b9415a89c3d1b8afe4e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "133108817"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "134553981"
 ---
 # <a name="update-a-visual-studio-client-that-was-installed-from-a-network-layout"></a>更新通过网络布局安装的 Visual Studio 客户端
 
@@ -76,7 +76,7 @@ Visual Studio 一开始安装在客户端计算机上时，它会记录应在何
   * 启动 Visual Studio IDE 并响应通知标志或消息，或者选择“帮助”/“检查”获取更新。  
 
 ## <a name="programatically-update-the-client-machines"></a>以编程方式更新客户端计算机
-管理员可通过向客户端安装程序发出命令或通过调用引导程序，以编程方式更新 Visual Studio 的客户端安装。
+管理员可以通过向客户端安装程序发出Visual Studio或调用布局中的引导程序，以编程方式更新客户端的客户端安装。
 
 ### <a name="programatically-update-visual-studio-by-using-the-visual-studio-installer"></a>使用 Visual Studio 安装程序以编程方式更新 Visual Studio
 

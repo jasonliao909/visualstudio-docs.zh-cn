@@ -7,12 +7,12 @@ ms.assetid: d1257931-392a-4a65-bf26-177737505122
 ms.date: 03/21/2021
 ms.topic: how-to
 description: 了解和安装 Microsoft 365 应用企业版
-ms.openlocfilehash: 1b727ce16026a07122f85c45a11ef55a803486ca
-ms.sourcegitcommit: 7a300823cf1bd3355be03bde561cf2777bc09eae
+ms.openlocfilehash: 1364f3f42b6dbcd45313ec13e7a9a148845dad26
+ms.sourcegitcommit: 99e0146dfe742f6d1955b9415a89c3d1b8afe4e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "133977921"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "134553916"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Microsoft 365 应用企业版
 Microsoft 365 应用企业版（旧称 Office 365 Pro Plus）在选定的 Visual Studio 订阅中提供。 
@@ -71,7 +71,7 @@ Microsoft 365 应用企业版（旧称 Office 365 Pro Plus）在选定的 Visual
 > [!NOTE]
 > Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 建议新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)，查看各 Visual Studio 购买选项。
 
-无法确定正在使用哪些订阅？  连接 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) ，以查看分配给登录电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。
+无法确定正在使用哪些订阅？  连接 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) ，以查看分配给登录电子邮件地址的所有订阅。 如果未看到所有订阅，可能会将一个或多个订阅分配给其他登录电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。
 
 ## <a name="support-resources"></a>支持资源
 - 有关对 Microsoft 365 应用企业版的任何组件的技术支持，请访问 https://support.microsoft.com/allproducts ，然后选择产品。

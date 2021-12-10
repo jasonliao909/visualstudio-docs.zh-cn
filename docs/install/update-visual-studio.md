@@ -2,7 +2,7 @@
 title: 更新 Visual Studio
 titleSuffix: ''
 description: 了解如何逐步将 Visual Studio 更新到最新版本。
-ms.date: 11/23/2021
+ms.date: 12/7/2021
 ms.custom: vs-acquisition
 ms.topic: how-to
 ms.prod: visual-studio-windows
@@ -17,12 +17,12 @@ ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 961561a30fa2505ad655899ef719e6d7aff15567
-ms.sourcegitcommit: 2281b4f1f8737f263c0d7e55e00b5ec81517327d
+ms.openlocfilehash: 7eb808d9863cc1ee6dd52a3c9e13ba408806b82a
+ms.sourcegitcommit: 99e0146dfe742f6d1955b9415a89c3d1b8afe4e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "133108911"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "134554007"
 ---
 # <a name="update-visual-studio"></a>更新 Visual Studio
 
@@ -166,7 +166,7 @@ ms.locfileid: "133108911"
 1. 观察可在此对话框中设置的配置选项。 你可以选择“自动下载更新”设置，该设置允许在计算机处于空闲状态时下载更新。 还有两种安装模式可供选择：在下载时安装，以及全部下载后再安装 。   选择安装模式和 Visual Studio 更新所需的自动下载设置。
 
 ### <a name="configure-source-location-of-updates"></a>配置更新的源位置
-如果位于企业环境中，可以配置客户端实例查找更新的位置。 这适用于从网络布局安装客户端，但稍后希望客户端从其他网络布局获取更新的情况。 配置更新位置的能力要求存在较新的 Visual Studio 2022 安装程序，该安装程序可通过在客户端计算机上安装 Visual Studio 2022 或由管理员通过网络布局推送来获取。 有关如何使用此功能的详细信息，请参阅[有关配置更新源位置的 Visual Studio 2022 文档](/visualstudio/install/update-visual-studio?view=vs-2022&preserve-view=true#configure-source-location-of-updates-1)。 另请参阅有关如何配置 Visual Studio 2019 布局以[使用最新的 Visual Studio 2022 安装程序](/visualstudio/install/create-a-network-installation-of-visual-studio#configure-the-layout-to-always-use-the-latest-installer)的信息。 
+如果位于企业环境中，可以配置客户端实例查找更新的位置。 这适用于从网络布局安装客户端，但稍后希望客户端从其他网络布局获取更新的情况。 配置更新位置的能力要求存在较新的 Visual Studio 2022 安装程序，该安装程序可通过在客户端计算机上安装 Visual Studio 2022 或由管理员通过网络布局推送来获取。 有关如何使用此功能的详细信息，请参阅[有关配置更新源位置的 Visual Studio 2022 文档](/visualstudio/install/update-visual-studio?view=vs-2022&preserve-view=true#configure-source-location-of-updates-1)。 另请参阅有关如何配置 Visual Studio 2019 布局以[使用最新的 Visual Studio 2022 安装程序](/visualstudio/install/create-a-network-installation-of-visual-studio#configure-the-layout-to-always-include-and-provide-the-latest-installer)的信息。 
 
 ## <a name="update-on-close"></a>关闭时更新
 

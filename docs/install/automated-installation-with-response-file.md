@@ -1,7 +1,7 @@
 ---
 title: 通过响应文件自动执行安装
 description: 了解如何创建 JSON 响应文件，以便自动安装 Visual Studio
-ms.date: 11/23/2021
+ms.date: 12/7/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - response file
@@ -15,16 +15,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c3630257019227298285e32cb640dfec4f40b0a1
-ms.sourcegitcommit: 7a300823cf1bd3355be03bde561cf2777bc09eae
+ms.openlocfilehash: 922cc8f150b68489578e3f713e08f59507f5d5e4
+ms.sourcegitcommit: 99e0146dfe742f6d1955b9415a89c3d1b8afe4e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "133978103"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "134553890"
 ---
 # <a name="programmatically-configure-default-settings-using-a-response-file"></a>使用响应文件以编程方式配置默认设置
 
-Visual Studio 响应文件是 [JSON](http://json-schema.org/) 文件，其内容反映了命令行参数和实际参数。 响应文件用于在产品的初始安装过程中初始化设置。 
+Visual Studio 响应文件是 [JSON](http://json-schema.org/) 文件，其内容反映了命令行参数和实际参数。 响应文件用于在将产品初始安装到客户端期间初始化客户端设置。 
 
 ## <a name="automate-installation"></a>自动安装
 部署 Visual Studio 的管理员可以使用 `--in` 参数来指定响应文件，如下例所示：
@@ -151,7 +151,7 @@ vs_enterprise.exe --in customInstall.json
 
 ::: moniker range="=vs-2019"
 
-以下 `response.json` 文件示例将初始化 Visual Studio Enterprise 的客户端安装，以便选择多个常见的工作负载和组件，同时选择英语和法语 UI 语言，并将更新位置配置为指向布局。 请注意，对于 Visual Studio 2019，更新位置 (channelURI) 只能在初始安装期间配置，并且在此之后无法更改，除非你使用最新安装程序中的功能。 有关如何对此进行配置的信息，请参阅[为 Visual Studio 企业部署设置默认值](/visualstudio/install/set-defaults-for-enterprise-deployments.md#configuring-source-location-for-updates)。
+以下 `response.json` 文件示例将初始化 Visual Studio Enterprise 的客户端安装，以便选择多个常见的工作负载和组件，同时选择英语和法语 UI 语言，并将更新位置配置为指向布局。 请注意，对于 Visual Studio 2019，更新位置 (channelURI) 只能在初始安装期间配置，并且在此之后无法更改，除非你使用最新安装程序中的功能。 若要了解如何[配置此功能，请参阅](/visualstudio/install/set-defaults-for-enterprise-deployments.md#configuring-source-location-for-updates)为 Visual Studio 企业部署设置默认值和配置布局[](/visualstudio/install/create-a-network-installation-of-visual-studio#configure-the-layout-to-always-include-and-provide-the-latest-installer)以始终包括和提供最新的安装程序。  
 
 ```Example response.json
 {
