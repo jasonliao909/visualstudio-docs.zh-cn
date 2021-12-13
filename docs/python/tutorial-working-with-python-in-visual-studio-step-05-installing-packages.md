@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 中的 Python 教程步骤 5，安装包
 titleSuffix: ''
-description: 在 Visual Studio 中使用 Python 功能的核心教程的第 5 步，展示了用于在 Python 环境中管理包的 Visual Studio 功能。
+description: 步骤 5 是演示 Python 功能的核心演练，Visual Studio Visual Studio Python 环境中管理包的功能。
 ms.date: 03/09/2020
 ms.topic: tutorial
 author: rjmolyneaux
@@ -11,12 +11,12 @@ ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: df5f7a4bff771b271b3916974e29e07c934adac3
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 8e651320fe10def51a58a479aec413bca0b37945
+ms.sourcegitcommit: 0f2af2f1a8cf0a481fd8f673accf3aebf2e262c8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129969108"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "134714297"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>步骤 5：在 Python 环境中安装程序包
 
@@ -26,20 +26,38 @@ Python 开发者社区制作了数千个有用的程序包，用户可以将它�
 
 ## <a name="view-environments"></a>查看环境
 
-1. 选择“视图” > “其他窗口” > “Python 环境”菜单命令    。 “Python 环境”  窗口作为“解决方案资源管理器”  的同级打开，并向用户显示各种可用的环境。 列表中显示了使用 Visual Studio 安装程序安装的环境以及单独安装的环境。 其中包括全局环境、虚拟环境和 conda 环境。 粗体显示的环境是用于新项目的默认环境。 要详细了解如何使用环境，请参阅[如何在 Visual Studio 中创建和管理 Python 环境](managing-python-environments-in-visual-studio.md)。
+1. 选择“视图” > “其他窗口” > “Python 环境”菜单命令    。 "Python **环境**"窗口作为对等窗口 **打开，解决方案资源管理器。**
 
-   ![“Python 环境”窗口](media/environments/environments-default-view-2019.png)
+   "Python 环境"窗口显示可用的不同环境。 此列表显示使用安装程序安装的环境Visual Studio安装的环境。 这些环境包括全局、虚拟和 conda 环境。 粗体显示的环境是用于新项目的默认环境。 有关使用环境的信息，请参阅如何在 Visual Studio[环境中创建和管理 Python 环境](managing-python-environments-in-visual-studio.md)。
+
+   :::moniker range=">=vs-2022"
+   ![Python 环境窗口-2022](media/environments/environments-default-view-2022.png)
+   :::moniker-end
+
+   :::moniker range="<=vs-2019"
+   ![Python 环境窗口-2019](media/environments/environments-default-view-2019.png)
+   :::moniker-end
 
    > [!NOTE]
-   > 还可选择“解决方案资源管理器”窗口，再使用 Ctrl+K 或 Ctrl+` 键盘快捷方式打开“Python 环境”窗口。 如果快捷方式不起作用，并且在菜单中找不到“Python 环境”窗口，则可能是你未安装 Python 工作负载。 有关如何安装 Python 的指南，请参阅[如何在 Visual Studio 中安装 Python 支持](installing-python-support-in-visual-studio.md)。
+   > 还可使用 **Ctrl+K、Ctrl+'** 键盘快捷方式从"Python环境"窗口打开解决方案资源管理器窗口。 如果快捷方式不起作用，并且你在菜单中找不到"Python 环境"窗口，则可能是尚未安装 Python 工作负载。 有关如何[安装 Python](installing-python-support-in-visual-studio.md#how-to-install-python-support-in-visual-studio-on-windows)的指导，请参阅Visual Studio Windows 中的 Python 支持。
 
-2. 通过环境的“概述”  选项卡，可以快速访问该环境的交互  窗口以及安装文件夹和解释器。 例如，选择“打开交互窗口”  ，会在 Visual Studio 中显示该特定环境的交互  窗口。
+   打开 Python 项目后，可以从 解决方案资源管理器 **打开"Python 环境"窗口**。  右键单击 **"Python 环境"，** 然后选择 **"查看所有 Python 环境"。**
 
-3. 现在，通过选择“文件” > “新建” > “项目”来创建新项目，然后选择“Python 应用程序”模板     。 在随即出现的代码文件中，粘贴以下代码来创建像之前的教程步骤一样的余弦波，只不过这次以图形方式绘制。 或者，可使用之前创建的项目并替换代码。
+   :::moniker range="vs-2022"
+   ![Python 环境-2022](media/environments/environments-view-all-2022.png)
+   :::moniker-end
+
+   :::moniker range="<=vs-2019"
+   ![Python 环境-2019](media/environments/environments-view-all-2019.png)
+   :::moniker-end
+
+1. 现在，通过选择“文件” > “新建” > “项目”来创建新项目，然后选择“Python 应用程序”模板     。
+
+1. 在随即出现的代码文件中，粘贴以下代码来创建像之前的教程步骤一样的余弦波，只不过这次以图形方式绘制。 还可使用之前创建的项目并替换代码。
 
     ```python
     from math import radians
-    import numpy as np     # installed with matplotlib
+    import numpy as np # installed with matplotlib
     import matplotlib.pyplot as plt
 
     def main():
@@ -50,38 +68,73 @@ Python 开发者社区制作了数千个有用的程序包，用户可以将它�
     main()
     ```
 
-4. 打开 Python 项目后，还可右键单击 Python 环境，再选择“查看所有 Python 环境”，从解决方案资源管理器中打开“Python 环境”窗口 
+1. 在编辑器窗口中，将鼠标悬停在 `numpy` 和 `matplotlib` import 语句上。 你会注意到它们未解析。 若要解析 import 语句，请将包安装到默认全局环境。
+   :::moniker range=">=vs-2022"
+   ![未解析的包 import-2022](media/packages-unresolved-import-2022.png)
+   :::moniker-end
 
-   ![环境](media/environments/environments-view-all-2019.png)
+   :::moniker range="<=vs-2019"
+    ![未解析的包导入](media/packages-unresolved-import.png)
+   :::moniker-end
 
-5. 查看编辑器窗格，你会发现如果你将鼠标悬停到 `numpy` 和 `matplotlib` 上，会导入显示未解析的语句。 这是因为尚未在默认全局环境中安装包。
+1. 通过 **"Python** 环境"窗口中的"概述"选项卡，可以快速访问该环境的交互窗口以及环境和解释器的安装文件夹。 " **包"** 选项卡位于"概述"选项卡下方。
 
-   ![未解析的包导入](media/packages-unresolved-import.png)
+    例如，选择"**打开交互窗口"，交互窗口** 特定环境的列表将显示在Visual Studio。 
+
+1. **"Python** 环境"窗口中的"包"选项卡列出了环境中当前安装的所有包。
 
 ## <a name="install-packages-using-the-python-environments-window"></a>使用“Python 环境”窗口安装包
 
-1. 在“Python 环境”窗口中，为新的 Python 环境选择默认环境，然后选择“包”选项卡。然后，你将看到环境中当前已安装的包的列表。
+请参阅以下步骤，在"Python 环境"窗口中 **安装 Python** 包。
 
-   ![环境中安装的程序包](media/environments/environments-installed-packages-2019.png)
+   :::moniker range=">=vs-2022"
+   [在环境中安装包](media/environments/install-python-packages-2022.gif)
+   :::moniker-end
 
-2. 在搜索字段输入 `matplotlib` 的名称，再选择“运行命令: pip install matplotlib”选项来安装此项目  。 这将安装 `matplotlib`还将安装它依赖的所有包（在本例中，包含 `numpy`）。
+1. 在 **"Python 环境** "窗口中，选择新 Python 项目的默认环境。
 
-   ![在环境中安装 matplotlib](media/environments/environments-add-matplotlib-2019.png)
+1. 选择" **包"** 选项卡。
 
-5. 如果系统提示同意提升，请同意。
+   :::moniker range="vs-2022"
+   ![环境中安装的包-2022](media/environments/environments-installed-packages-2022.png)
+   :::moniker-end
 
-6. 安装程序包后，它会显示在“Python 环境”  窗口中。 单击程序包右侧的 **X** 可卸载它。
+   :::moniker range="<=vs-2019"
+   ![环境中安装的包-2019](media/environments/environments-installed-packages-2019.png)
+   :::moniker-end
 
-   ![在环境中完成 matplotlib 的安装](media/environments/environments-add-matplotlib2-2019.png)
+1. 在 `matplotlib` 搜索字段中输入 以安装 `matplotlib` 。
 
-   > [!NOTE]
+1. 选择" **运行命令：pip install matplotlib"** 选项。
+      此选项将安装 ，以及它 (`matplotlib` 任何包，包括 `numpy`) 。
+
+   :::moniker range="vs-2022"
+    ![在"包"选项卡的 environment-2022 中安装 matplotlib](media/environments/environments-add-matplotlib-2022.png)
+   :::moniker-end
+   :::moniker range="<=vs-2019"
+   ![在"包"选项卡的 environment-2019 中安装 matplotlib](media/environments/environments-add-matplotlib-2019.png)
+   :::moniker-end
+
+1. 如果系统提示同意提升，请同意。
+
+1. 安装包后，它将显示在 **"Python 环境"** 窗口中。 单击程序包右侧的 **X** 可卸载它。
+
+   :::moniker range="vs-2022"
+   ![在 environment-2022 中安装 matplotlib](media/environments/environments-add-matplotlib2-2022.png)
+   :::moniker-end
+
+   :::moniker range="<=vs-2019"
+   ![在 environment-2019 中安装 matplotlib](media/environments/environments-add-matplotlib2-2019.png)
+   :::moniker-end
+
+    > [!NOTE]
    > 环境下方可能会出现一个小进度栏，指示 Visual Studio 正在为新安装的程序包生成 IntelliSense 数据库。 “IntelliSense”  选项卡也显示了更多详细信息。 请注意，完成该数据库之前，编辑器中的自动完成和语法检查等 IntelliSense 功能针对该程序包处于非活动状态。
-   >
+
    > Visual Studio 2017 15.6 及更高版本采用不同且更快的方法来使用 IntelliSense，并在“IntelliSense”选项卡上显示一条简要介绍此内容的消息  。
 
 ## <a name="run-the-program"></a>运行程序
 
-1. 现已安装 [matplotlib](https://matplotlib.org/)，请按 (F5) 运行项目来查看输出；如果没有调试器，则使用 (Ctrl+F5)    ：
+安装 `matplotlib` [matplotlib](https://matplotlib.org/)后，使用 (**F5**) 或不带调试器 (**Ctrl** + **F5** 运行) 以查看输出：
 
    ![matplotlib 示例的输出](media/environments/environments-add-matplotlib3.png)
 

@@ -2,7 +2,7 @@
 title: 在调试器中使用断点 |Microsoft Docs
 description: 了解断点，它是最重要的调试技术之一。 本文介绍断点操作、跟踪点、条件以及其他内容。
 ms.custom: SEO-VS-2020
-ms.date: 12/21/2020
+ms.date: 12/08/2021
 ms.topic: how-to
 f1_keywords:
 - vs.debug.breakpointswin
@@ -36,12 +36,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: b2d60c9d020cb5dbc788ebe13d2360ed11430a51
-ms.sourcegitcommit: 4efdab6a579b31927c42531bb3f7fdd92890e4ac
+ms.openlocfilehash: 813f083a539b522236209d4768466f44cabf7886
+ms.sourcegitcommit: 99e0146dfe742f6d1955b9415a89c3d1b8afe4e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "130351198"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "134554058"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中使用断点
 
@@ -58,13 +58,23 @@ ms.locfileid: "130351198"
 
 对于大多数语言（包括 C#），会自动突出显示断点和当前执行的行。 对于 C++ 代码，可以通过选择“工具”（或“调试”）>“选项” > “调试” >  “突出显示断点和当前语句的整个源行(仅限 C++)”    。
 
+::: moniker range=">= vs-2022"
+![设置断点](../debugger/media/vs-2022/basic-breakpoint.png "基本断点")
+::: moniker-end
+::: moniker range="<= vs-2019"
 ![设置断点](../debugger/media/basicbreakpoint.png "基本断点")
+::: moniker-end
 
 调试时，在执行断点所在行上的代码之前，执行会在断点处暂停。 断点符号显示黄色箭头。
 
 在以下示例中的断点处，`testInt` 的值仍然为 1。 也就是说，从变量初始化（设置为值 1）以来，该值没有更改，因为尚未执行黄色的语句。
 
+::: moniker range=">= vs-2022"
+![断点执行已停止](../debugger/media/vs-2022/breakpoint-execution.png "断点执行")
+::: moniker-end
+::: moniker range="<= vs-2019"
 ![断点执行已停止](../debugger/media/breakpointexecution.png "断点执行")
+::: moniker-end
 
 当调试器在断点处停止时，可以查看应用程序的当前状态，包括[变量值](../debugger/debugger-feature-tour.md#inspect-variables-with-data-tips)和[调用堆栈](../debugger/how-to-use-the-call-stack-window.md)。
 
@@ -88,13 +98,18 @@ ms.locfileid: "130351198"
 
 1. 右键单击该断点符号并选择“条件”（或按 Alt  +  F9，C）。 或者将鼠标悬停在断点符号上，选择“设置”图标，然后在“断点设置”窗口中选择“条件”  。
 
-::: moniker range=">= vs-2022"
-还可以右键单击代码行旁边的最左边距，然后从上下文菜单中选择“插入条件断点”以设置新的条件断点。 
-::: moniker-end
+   ::: moniker range=">= vs-2022"
+   还可以右键单击代码行旁边的最左边距，然后从上下文菜单中选择“插入条件断点”以设置新的条件断点。 
+   ::: moniker-end
 
-还可以在“断点”窗口中设置条件，方法是右键单击断点并选择“设置”，然后选择“条件”
+   还可以在“断点”窗口中设置条件，方法是右键单击断点并选择“设置”，然后选择“条件”
 
+   ::: moniker range=">= vs-2022"
+   ![断点设置](../debugger/media/vs-2022/breakpoint-settings.png "BreakpointSettings")
+   ::: moniker-end
+   ::: moniker range="<= vs-2019"
    ![断点设置](../debugger/media/breakpointsettings.png "BreakpointSettings")
+   ::: moniker-end
 
 2. 在下拉列表中，选择“条件表达式”、“命中计数”或“筛选器”，并相应地设置其值  。
 
@@ -109,19 +124,28 @@ ms.locfileid: "130351198"
 
 在下面的示例中，仅当 `testInt` 的值为“4”时才会命中断点：
 
+::: moniker range=">= vs-2022"
+![断点条件为 true](../debugger/media/vs-2022/breakpoint-condition-is-true.png "断点为 true")
+::: moniker-end
+::: moniker range="<= vs-2019"
 ![断点条件为 true](../debugger/media/breakpointconditionistrue.png "断点为 true")
+::: moniker-end
 
 在下面的示例中，仅当 `testInt` 的值更改时才会命中断点：
 
+::: moniker range=">= vs-2022"
+![断点更改时](../debugger/media/vs-2022/breakpoint-when-changed.png "断点更改时")
+::: moniker-end
+::: moniker range="<= vs-2019"
 ![断点更改时](../debugger/media/breakpointwhenchanged.png "断点更改时")
+::: moniker-end
 
 如果使用无效语法设置断点条件，则会显示警告消息。 如果在指定断点条件时使用的语法有效但语义无效，则在第一次命中断点将出现警告消息。 在这两种情况下，调试器都会在遇到无效断点时中断。 仅在条件有效且计算结果为 `false`时才会跳过断点。
 
 >[!NOTE]
 > 对于“更改时”字段，调试器不会将条件的第一次计算视为更改，所以第一次计算时不会命中断点。
 
-<a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>
-### <a name="use-object-ids-in-conditional-expressions-c-and-f-only"></a>在条件表达式中使用对象 ID（仅限 C# 和 F#）
+### <a name="use-object-ids-in-conditional-expressions-c-and-f-only"></a><a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a> 在条件表达式中使用对象 (C# 和 F#) 
 
  有时，你想要观察特定对象的行为。 例如，你可能想要找出对象多次插入到集合中的原因。 在 C# 和 F# 中，可以创建[引用类型](/dotnet/csharp/language-reference/keywords/reference-types)的特定实例的对象 ID，并在断点条件下使用它们。 对象 ID 由公共语言运行时 (CLR) 调试服务生成并与该对象关联。
 
@@ -152,7 +176,12 @@ ms.locfileid: "130351198"
 
 在“断点设置”窗口的“条件”下，选择“命中计数”，然后指定迭代次数  。 在下面的示例中，将断点设置为每隔一次迭代命中一次：
 
+::: moniker range=">= vs-2022"
+![断点命中次数](../debugger/media/vs-2022/breakpoint-hit-count.png "BreakpointHitCount")
+::: moniker-end
+::: moniker range="<= vs-2019"
 ![断点命中次数](../debugger/media/breakpointhitcount.png "BreakpointHitCount")
+::: moniker-end
 
 ### <a name="set-a-filter-condition"></a>设置筛选条件
 
@@ -205,6 +234,7 @@ ms.locfileid: "130351198"
 1. 选择“确定”。
 
 ### <a name="set-a-function-breakpoint-using-a-memory-address-native-c-only"></a>使用内存地址设置函数断点（仅限本机 C++）
+
  你还可以使用对象的地址在类的特定实例调用的方法上设置函数断点。  例如，给定一个类型为 `my_class` 的可寻址对象，可以在实例调用的 `my_method` 方法上设置函数断点。
 
 1. 在实例化类的实例后的位置设置断点。
@@ -221,7 +251,7 @@ ms.locfileid: "130351198"
 
 ::: moniker range=">= vs-2019"
 
-## <a name="set-data-breakpoints-net-core-30-or-higher"></a><a name="BKMK_set_a_data_breakpoint_managed"></a>设置数据断点（.NET Core 3.0 或更高版本）
+## <a name="set-data-breakpoints-net-core-3x-or-net-5"></a><a name="BKMK_set_a_data_breakpoint_managed"></a>设置数据断点（A0.NET Core 3.x 或 .NET 5+) 
 
 当特定对象的属性更改时，数据断点中断执行。
 
@@ -316,17 +346,24 @@ ms.locfileid: "130351198"
 
 若要打开“断点”窗口，请选择“调试”  > “窗口” > “断点”，或按 Ctrl +Alt+B。
 
+::: moniker range=">= vs-2022"
+![“断点”窗口](../debugger/media/vs-2022/breakpoints-window.png "“断点”窗口")
+::: moniker-end
+::: moniker range="<= vs-2019"
 ![“断点”窗口](../debugger/media/breakpointswindow.png "“断点”窗口")
+::: moniker-end
 
 若要选择要在“断点”窗口中显示的列，请选择“显示列” 。 选择列标题以按该列对断点列表进行排序。
 
 ### <a name="breakpoint-labels"></a><a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a> 断点标签
+
 可以使用标签对“断点”窗口中的断点列表进行排序和筛选。
 
 1. 若要向断点添加标签，请在源代码或“断点”窗口中右键单击断点，然后选择“编辑标签” 。 添加新标签或选择现有标签，然后选择“确定”。
 2. 通过选择“标签”、“条件”或其他列标题，在“断点”窗口中对断点列表进行排序  。 可以通过选择工具栏中的“显示列”来选择要显示的列。
 
 ### <a name="export-and-import-breakpoints"></a>导入和导出断点
+
  若要保存或共享断点的状态和位置，可以导出或导入断点。
 
 - 若要将单个断点导出到 XML 文件，请在源代码或“断点”窗口中右键单击该断点，然后选择“导出”或“导出已选内容”  。 选择导出位置，然后选择“保存”。 默认位置是解决方案文件夹。

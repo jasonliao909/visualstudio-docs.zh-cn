@@ -2,7 +2,7 @@
 title: 使用 .runsettings 文件配置单元测试
 description: 了解如何使用 Visual Studio 中的 .runsettings 文件配置命令行、IDE 或生成工作流运行的单元测试。
 ms.custom: SEO-VS-2020
-ms.date: 11/06/2020
+ms.date: 12/06/2021
 ms.topic: conceptual
 ms.author: mikejo
 manager: jmartens
@@ -10,12 +10,12 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 42a2b2cc17bc6b808a78bc05bd6ee44504c9463d
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: ffb8a5544b52b292b2228d33253e42f32fc0e28b
+ms.sourcegitcommit: 99e0146dfe742f6d1955b9415a89c3d1b8afe4e1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126735459"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "134553933"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 .runsettings 文件配置单元测试
 
@@ -92,20 +92,20 @@ ms.locfileid: "126735459"
 
 - 选择“工具”>“选项”>“测试”>“自动检测 runsettings 文件”   
 
-   ![Visual Studio 2019 自动检测 runsettings 文件选项](media/vs-2019/auto-detect-runsettings-tools-window.png)
+   ![自动检测 Visual Studio 中的 runsettings 文件选项](media/auto-detect-runsettings-tools-window.png)
 
 - 选择“测试”>“配置运行设置”>“自动检测 runsettings 文件”  
 
-   ![Visual Studio 2019 自动检测 runsettings 文件菜单](media/vs-2019/auto-detect-runsettings-menu.png)
+   ![自动检测 Visual Studio 中的 runsettings 文件菜单](media/auto-detect-runsettings-menu.png)
 
 #### <a name="manually-select-the-run-settings-file"></a>手动选择运行设置文件
 
 在 IDE 中，选择“测试”>“配置运行设置”>“选择解决方案范围的 runsettings 文件”，然后选择 .runsettings 文件。
 
-   - 此文件替代解决方案根目录下的 .runsettings 文件（如果存在），并应用于所有测试运行。
-   - 此文件选择仅在本地保留。
+- 此文件替代解决方案根目录下的 .runsettings 文件（如果存在），并应用于所有测试运行。
+- 此文件选择仅在本地保留。
 
-![在 Visual Studio 2019 中选择测试解决方案范围的 runsettings 文件菜单](media/vs-2019/select-solution-settings-file.png)
+![选择"测试解决方案范围内的 runsettings 文件"菜单Visual Studio](media/select-solution-settings-file.png)
 
 #### <a name="set-a-build-property"></a>设置生成属性
 

@@ -2,7 +2,7 @@
 title: IManagedAddin::Unload
 description: 只在托管 VSTO 外接程序卸载之前调用。
 ms.date: 02/02/2017
-ms.topic: interface
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: f877150a747984d0d04f779b16338d04fd55f1ba
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 7c25da9bf5465ef25ba580cc5cb3ed2487ccde29
+ms.sourcegitcommit: 0f2af2f1a8cf0a481fd8f673accf3aebf2e262c8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126602228"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "134713611"
 ---
 # <a name="imanagedaddinunload"></a>IManagedAddin::Unload
   只在托管 VSTO 外接程序卸载之前调用。

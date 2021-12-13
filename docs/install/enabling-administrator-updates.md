@@ -2,7 +2,7 @@
 title: 启用使用 Microsoft Endpoint Configuration Manager 的 Visual Studio 管理员更新
 titleSuffix: ''
 description: 详细了解如何部署 Visual Studio 的管理员更新。
-ms.date: 04/06/2021
+ms.date: 12/7/2021
 ms.topic: overview
 ms.assetid: 546fbad6-f12b-49cf-bccc-f2e63e051a18
 author: anandmeg
@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b40235177141e705f85e6d3af898718ca191cb76
-ms.sourcegitcommit: 215680b355cf613bfa125cf6b864c8bb5f2c71a5
-ms.translationtype: HT
+ms.openlocfilehash: 7db34d7f43bc90bdd3e49e698d0eddab28646ed4
+ms.sourcegitcommit: 99e0146dfe742f6d1955b9415a89c3d1b8afe4e1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "132453719"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "134553877"
 ---
 # <a name="enabling-administrator-updates-to-visual-studio-with-microsoft-endpoint-configuration-manager"></a>启用使用 Microsoft Endpoint Configuration Manager 的 Visual Studio 管理员更新
 
@@ -40,8 +40,6 @@ Microsoft Endpoint Configuration Manager (SCCM) 可使用软件更新管理工�
 
 * 运行 Microsoft Endpoint Configuration Manager（当前分支）和 Windows Server Update Services (WSUS) 的 Windows Server 的当前许可版本。 不能单独使用 WSUS 来部署这些更新；它必须与 Configuration Manager 结合使用。
 
-* 层次结构的顶级 WSUS 服务器和顶层 Configuration Manager 站点服务器必须有权访问此处列出的 Visual Studio URL 和端口：[在防火墙或代理服务器后安装和使用 Visual Studio 和 Azure 服务](../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)。  
-
 * Microsoft Endpoint Configuration Manager 必须配置为在 Visual Studio 管理员更新包可用时接收通知。  为此，请使用以下步骤；有关详细信息，请参阅 [ Microsoft Endpoint Configuration Manager 中的软件更新简介](/mem/configmgr/sum/understand/software-updates-introduction)。
 
   1. 在 Configuration Manager 控制台中，依次选择“管理”（左下角）、“站点配置”（左中部）和“站点”，然后选择你的站点服务器  。
@@ -62,7 +60,7 @@ Microsoft Endpoint Configuration Manager (SCCM) 可使用软件更新管理工�
 
 ### <a name="visual-studio-client-detector-utility"></a>Visual Studio 客户端检测程序实用工具
 
-必须在客户端计算机上安装 [Visual Studio 客户端检测程序实用工具](https://support.microsoft.com/help/5001148)，才能正确识别和接收管理员更新。 此实用工具随附在 2020 年 5 月 12 日或之后发布的所有 Visual Studio 2017 和 Visual Studio 2019 产品更新中，并作为必备组件随附在所有 Visual Studio 管理员更新中，也可从 [Microsoft 更新目录](https://catalog.update.microsoft.com)获取并单独安装。
+必须在客户端计算机上安装 [Visual Studio 客户端检测程序实用工具](https://support.microsoft.com/help/5001148)，才能正确识别和接收管理员更新。 此实用工具包含在 2020 年 5 月 12 日或之后发布的所有 Visual Studio 2017 和 Visual Studio 2019 产品更新中，它作为所有 Visual Studio 管理员更新的先决条件包含在内，并且它也可在[Microsoft 更新](https://catalog.update.microsoft.com)目录中独立安装。
 
 ### <a name="encoding-administrator-intent-on-the-client-machines"></a>在客户端计算机上对管理员意向进行编码
 

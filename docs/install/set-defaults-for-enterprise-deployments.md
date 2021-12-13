@@ -1,7 +1,7 @@
 ---
 title: 为企业部署设置默认值
 description: 了解 Visual Studio 企业部署的域策略和其他配置操作。
-ms.date: 11/23/2021
+ms.date: 12/7/2021
 ms.topic: conceptual
 f1_keywords:
 - gpo
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 79a0e8fd07d9d30b15832c2b95accbb8ab479f62
-ms.sourcegitcommit: 2281b4f1f8737f263c0d7e55e00b5ec81517327d
+ms.openlocfilehash: 69546bac8ae47916a49b7d5bb6ae6076a0f2b5a0
+ms.sourcegitcommit: 99e0146dfe742f6d1955b9415a89c3d1b8afe4e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "133108856"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "134553864"
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>为 Visual Studio 企业部署设置默认值
 
@@ -106,18 +106,21 @@ ms.locfileid: "133108856"
 ## <a name="configuring-source-location-for-updates"></a>配置更新的源位置 
 
 通过此部分中的设置，管理员可以自定义和控制可用的更新通道及其在企业组织中向客户端呈现的方式。 有关更新设置的定义及其工作原理的信息，请参阅[配置更新的源位置](update-visual-studio.md#configure-source-location-of-updates-1)文档。 
-此功能要求客户端使用 Visual Studio 2022 安装程序，并且布局要使用 2021 年 11 月 10 日或之后发布的 2019 引导程序版本。 有关如何启用此功能的指南，请参阅[如何通过 Visual Studio 2019 布局在客户端计算机上获取 Visual Studio 2022 安装程序](create-a-network-installation-of-visual-studio.md#configure-the-layout-to-always-use-the-latest-installer)。
+此功能要求客户端使用 Visual Studio 2022 安装程序，并且布局要使用 2021 年 11 月 10 日或之后发布的 2019 引导程序版本。 有关如何启用此功能的指南，请参阅[如何通过 Visual Studio 2019 布局在客户端计算机上获取 Visual Studio 2022 安装程序](create-a-network-installation-of-visual-studio.md#configure-the-layout-to-always-include-and-provide-the-latest-installer)。
 
-本部分中的密钥仅适用于 Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\Setup\ 注册表路径
+本部分中的密钥仅适用于Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\Setup\registry路径
 
-| **名称**                         | **类型**                    | **说明**                                                |
+| **名称**                         | 类型                    | **说明**                                                |
 |----------------------------------|-----------------------------|-----------------------------------------------------|
-| `Channels` | `Key` |  用于存储自定义布局通道信息的密钥路径。 该键的值是通道名称，显示在[更新通道下拉列表](/visualstudio/install/update-visual-studio?#configure-source-location-of-updates-1)中。 |
-| `DisabledChannels` | `Key` | 用于抑制通道并阻止其在“更新通道”对话框中显示的密钥路径。 如果通道是在此处定义的，则会从对话框筛选出去。 |
+| `Channels` | `Key` |  用于存储自定义布局通道信息的子项路径。 此密钥的名称被视为通道名称，它是"更新通道"下拉列表 [中显示的名称](/visualstudio/install/update-visual-studio?#configure-source-location-of-updates-1)。 `ChannelURI`值必须存在于子项 `Channels` 下。 |
+| `DisabledChannels` | `Key` | 用于取消通道并防止通道显示在"更新通道"对话框中的子项路径。 如果在此处定义了通道 (以及) ，则它会从对话框中 `ChannelURI` 筛选出来。 |
 | `ChannelURI` | `REG_SZ` |  channelURI 通过添加到 `Channels` 配置单元添加到更新通道值列表，或通过添加到 `DisabledChannels` 注册表配置单元从更新通道列表中进行抑制。 对于 Microsoft 托管通道，channelURI 为“https://aka.ms/vs/16/release/channel”或“https://aka.ms/vs/16/pre/channel”。  对于布局，此值需要指向布局的 ChannelManifest.json。 请参阅以下示例。 |
 | `Description` | `REG_SZ` |  通道的两行自定义描述。 如果已通过布局安装，更新设置 UI 便默认为“专用通道”，你可以使用此描述对其进行更改。 |
 
-以下示例注册表文件演示了如何在[更新设置 UI](/visualstudio/install/update-visual-studio?#configure-source-location-of-updates-1) 中为自定义更新通道添加几个布局条目，以及如何禁止显示预览通道。
+
+下面是两个示例注册表文件，演示 IT 管理员可能希望如何自定义更新[设置 UI。](/visualstudio/install/update-visual-studio?#configure-source-location-of-updates-1) 
+
+第一个注册表示例可用于以前从 位于 的网络布局安装客户端的情况 `\\vslayoutserver3\vs\2019_Enterprise` 。 如前所述，Visual Studio此布局的通道名称默认为"专用通道"。 下面介绍了如何自定义此布局的通道名称和说明。
 
 ```example registry file
 Windows Registry Editor Version 5.00
@@ -127,6 +130,15 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\Setup\Channels\More meaningful name of my existing layout]
 "channelUri"="\\\\vslayoutserver3\\vs\\2019_Enterprise\\ChannelManifest.json"
 "Description"="Dev Tools based on VS 2019 16.9.Spring.2020 servicing baseline"
+```
+
+
+下面展示了如何为作为更新源的其他自定义更新通道添加更多布局条目，以及如何禁止显示预览频道。
+
+```example registry file
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\Setup\Channels]
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\Setup\Channels\Spring 2021 dev toolset]
 "channelUri"="\\\\new2019layoutserver\\share\\new2019layout\\ChannelManifest.json"

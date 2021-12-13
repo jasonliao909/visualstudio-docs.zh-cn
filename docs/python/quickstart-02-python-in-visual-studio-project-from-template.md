@@ -10,12 +10,12 @@ ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4e8b605a66b4b7c7e16873d84efb150abfa6620d
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: d55dbaa47140c3b0c4d8bc487c1460ed93b79f3b
+ms.sourcegitcommit: 0f2af2f1a8cf0a481fd8f673accf3aebf2e262c8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129971330"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "134713650"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>快速入门：从 Visual Studio 中的模板创建 Python 项目
 
@@ -94,6 +94,6 @@ Visual Studio 还提供各种文件或项模板，用于快速创建 Python 类�
 
 ## <a name="see-also"></a>另请参阅
 
-- [手动标识现有的 Python 解释器](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
-- [在 Visual Studio 2015 及更早版本中安装 Python 支持](installing-python-support-in-visual-studio.md)
-- [安装位置](installing-python-support-in-visual-studio.md#install-locations)
+- [手动标识现有的 Python 解释器](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment) 
+[在 Windows 上的](installing-python-support-in-visual-studio.md#how-to-install-python-support-in-visual-studio-on-windows)Visual Studio 安装 Python 支持
+- [Python 工具安装目录](installing-python-support-in-visual-studio.md#install-locations)

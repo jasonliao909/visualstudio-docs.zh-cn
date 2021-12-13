@@ -10,12 +10,12 @@ ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7d6e8ea17a54a0d9b1b96c255fb30977185b6697
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 5c260a805d2fbde7afe3f9ddd91c4ca9a95764dd
+ms.sourcegitcommit: 0f2af2f1a8cf0a481fd8f673accf3aebf2e262c8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129968353"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "134713998"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>使用 requirements.txt 管理所需的包
 
@@ -25,11 +25,21 @@ ms.locfileid: "129968353"
 
 - 如果已加载包含 requirements.txt 的项目，且想要安装该文件列出的所有包，请展开“解决方案资源管理器”中的“Python 环境”节点，然后右键单击环境节点并选择“从 requirements.txt 安装”：
 
-    ![从 requirements.txt 安装](media/environments/environments-requirements-txt-install.png)
+    :::moniker range=">=vs-2019"
+    ![从 requirements.txt 安装-2019](media/environments/environments-requirements-txt-install.png)
+    :::moniker-end
 
 - 如果要在虚拟环境中安装依赖项，请首先创建并激活该环境，然后使用“从 requirements.txt 安装”  命令。 有关创建虚拟环境的详细信息，请参阅[使用虚拟环境](selecting-a-python-environment-for-a-project.md#use-virtual-environments)。
 
 - 如果环境中已安装所有必需的包，可在“解决方案资源管理器”  中右键单击该环境，并选择“生成 requirements.txt”  以创建必需的文件。 如果文件已存在，会出现有关如何进行更新的提示：
+
+    :::moniker range=">=vs-2022"
+    ![生成 requirements.txt](media/environments/environments-requirements-txt-install-2022.png)
+    :::moniker-end
+
+    :::moniker range="<=vs-2019"
+    ![生成 requirements.txt](media/environments/environments-requirements-txt-install.png)
+    :::moniker-end
 
     ![更新 requirements.txt 选项](media/environments/environments-requirements-txt-replace.png)
 
@@ -37,9 +47,9 @@ ms.locfileid: "129968353"
   - “刷新现有条目”会检测包的要求并更新版本说明符，匹配当前安装的版本  。
   - “更新并添加项”  将刷新找到的任何要求，并将所有其他包添加到文件末尾。
 
-因为 requirements.txt  文件的目的是冻结环境的要求，因此所有已安装的包都采用精确的版本编写。 使用精确的版本可确保轻松地在其他计算机上重现环境。 即使采用一个版本范围（作为另一个包的依赖项）或使用安装程序而非 pip 安装了包，也会包含这些包。
+*requirements.txt* 文件包含所有已安装包的确切版本，你可以使用这些文件来冻结环境的要求。 使用精确的版本，可以轻松地在另一台计算机上重现环境。 要求文件包括包，即使它们是使用版本范围、其他包的依赖项或除了 pip 安装程序安装的，也是如此。
 
-如果包不能通过 pip 安装，且它出现在 requirements.txt  文件中，则整个安装会失败。 在这种情况下，手动编辑文件以排除此包或使用 [pip 的选项](https://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format)来指包的可安装版本。 例如，你可能更喜欢使用 [`pip wheel`](https://pip.readthedocs.org/en/latest/reference/pip_wheel.html) 来编译依赖项，并向 requirements.txt 添加 `--find-links <path>` 选项：
+如果 pip 未安装包，并且包出现在 *requirements.txt* 文件中，则整个安装将失败。 在这种情况下，手动编辑文件以排除此包或使用 [pip 的选项](https://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format)来指包的可安装版本。 例如，你可能更喜欢使用 [`pip wheel`](https://pip.readthedocs.org/en/latest/reference/pip_wheel.html) 来编译依赖项，并向 requirements.txt 添加 `--find-links <path>` 选项：
 
 ```output
 C:\Project>pip wheel azure
