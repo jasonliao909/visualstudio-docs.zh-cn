@@ -10,12 +10,12 @@ ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c124610bab413b59ec2dc00798f8bc63b7221eb5
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 7325e16558435ab1603e9e29ff1f0606956fbd2f
+ms.sourcegitcommit: 0f2af2f1a8cf0a481fd8f673accf3aebf2e262c8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129968340"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "134713676"
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>快速入门：通过 Cookiecutter 模板创建项目
 
@@ -49,6 +49,6 @@ ms.locfileid: "129968340"
 ## <a name="see-also"></a>请参阅
 
 - [使用 Cookiecutter 扩展](using-python-cookiecutter-templates.md)
-- [手动标识现有的 Python 解释器](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
-- [在 Visual Studio 2015 及更早版本中安装 Python 支持](installing-python-support-in-visual-studio.md)
-- [安装位置](installing-python-support-in-visual-studio.md#install-locations)
+- [手动标识现有 Python 解释](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment) 
+ 器[Visual Studio 上的 Windows 中安装 Python 支持](installing-python-support-in-visual-studio.md#how-to-install-python-support-in-visual-studio-on-windows)
+- [Python 工具安装目录](installing-python-support-in-visual-studio.md#install-locations)

@@ -10,12 +10,12 @@ ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4f78d3c754458039347a91a5e3d72a5f12c3d71d
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 15c839a8704dc3527cbb674ac62447390ffe8a27
+ms.sourcegitcommit: 0f2af2f1a8cf0a481fd8f673accf3aebf2e262c8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129972864"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "134713544"
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>快速入门：从现有代码创建 Python 项目
 
@@ -36,5 +36,5 @@ ms.locfileid: "129972864"
 ## <a name="see-also"></a>另请参阅
 
 - [手动标识现有的 Python 解释器](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
-- [在 Visual Studio 2015 及更早版本中安装 Python 支持](installing-python-support-in-visual-studio.md)
-- [安装位置](installing-python-support-in-visual-studio.md#install-locations)
+- [在 Visual Studio on Windows 中安装 Python 支持](installing-python-support-in-visual-studio.md#how-to-install-python-support-in-visual-studio-on-windows)
+- [Python 工具安装目录](installing-python-support-in-visual-studio.md#install-locations)
