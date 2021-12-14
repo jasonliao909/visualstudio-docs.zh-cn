@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cf02a169d775c2fb8391ee3c700f726c7462c660
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: afcd355961eddd16f2e615473d4496139ef96efb
+ms.sourcegitcommit: 5178819f49bb92995bca5c90c90e5fc5a1e04681
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128429533"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "134938264"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>教程：学习使用 Visual Studio 调试 Visual Basic 代码
 
@@ -538,7 +538,7 @@ ms.locfileid: "128429533"
 
 1. 按两次 F11 以运行 `Console.WriteLine` 方法  。
 
-1. 在 `SendMessage` 方法调用中暂停调试器后，使用鼠标抓取左侧的黄色箭头（执行指针），将其向上移动一行，返回到 `Console.WriteLine`。
+1. 在方法调用中暂停调试器的情况 `SendMessage` 下，使用鼠标抓住左 (执行指针) 的黄色箭头，并将其上移一行，返回到 `Console.WriteLine` 。
 
 1. 按下 F11  。
 
