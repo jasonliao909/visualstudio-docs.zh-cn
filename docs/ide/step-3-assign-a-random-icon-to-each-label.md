@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: f3713fd439017c9577120402f649d40a9b44bef0
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 10d72dac4fd4e5f636076dca88af67e3b7a9053f
+ms.sourcegitcommit: 5178819f49bb92995bca5c90c90e5fc5a1e04681
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126737066"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "134938238"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>步骤 3：向每个标签分配一个随机图标
 
@@ -69,6 +69,8 @@ ms.locfileid: "126737066"
     ```
 
 4. 保存并运行程序。 它应该显示一个窗体，其中每个标签都分配了随机图标。 
+   
+   如果窗体上的 Webdings 图标不能正确显示，请将窗体上标签的 **UseCompatibleTextRendering** 属性设置为 **True**。
 
 5. 关闭程序，然后重新运行。 请注意，每个标签都分配了不同的图标，如下图所示。 
 

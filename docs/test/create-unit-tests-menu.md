@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: 95dc8d9424c0881304e3812cfed79b2e87c91f70
-ms.sourcegitcommit: a149b3a034bb555ad217656c0ec8bc1672b1e215
+ms.openlocfilehash: a0252a0a2bc7ee84a8f32a75ab5c0a0b1da992aa
+ms.sourcegitcommit: 5178819f49bb92995bca5c90c90e5fc5a1e04681
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "133514685"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "134938251"
 ---
 # <a name="create-unit-test-method-stubs-from-code"></a>从代码创建单元测试方法存根
 
@@ -67,11 +67,11 @@ ms.locfileid: "133514685"
 
 ## <a name="when-should-i-use-this-feature"></a>应何时使用此功能？
 
-只要需要创建单元测试就可使用此功能，但在测试代码覆盖率很小或没有覆盖率且没有任何文档的现有代码时尤其适用。 换而言之，在代码说明有限或不存在代码说明的情况下适用。 它可有效实现类似于[智能单元测试](https://devblogs.microsoft.com/devops/introducing-smart-unit-tests/)的方法，确定观察到的代码行为的特征。
+只要需要创建单元测试就可使用此功能，但在测试代码覆盖率很小或没有覆盖率且没有任何文档的现有代码时尤其适用。 换而言之，在代码说明有限或不存在代码说明的情况下适用。 它有效地实现了类似于 [IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md) 的方法，该方法反映了代码的观察行为。
 
 但此功能同样适用于以下情况：开发人员在开始时编写代码，然后使用该代码启动单元测试。 在编码流程中，开发人员可能想要为特定的一段代码快速创建一个单元测试方法存根（包含合适的测试类和合适的测试项目）。
 
 ## <a name="see-also"></a>请参阅
 
-- [使用“创建单元测试”创建单元测试方法存根](https://devblogs.microsoft.com/devops/creating-unit-test-method-stubs-with-create-unit-tests/)
-- [单元测试博客文章](https://devblogs.microsoft.com/devops/?s=unit+testing)
+- [IntelliTest 入门](generate-unit-tests-for-your-code-with-intellitest.md)
+- [单元测试博客文章](https://devblogs.microsoft.com/search?query=unit+testing)
