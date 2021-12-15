@@ -10,12 +10,12 @@ author: mikejo5000
 ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: b9b78771c36dce26744ba74af63922cf1efa48e2
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: d7fc118de97fe2c898a414c16420e5e0fb642f03
+ms.sourcegitcommit: 04fb8ba0f7ea73ba17baa88f10563c8600e7fd7b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126640974"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "135121445"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>如何配置和使用 Live Unit Testing
 
@@ -98,23 +98,43 @@ Live Unit Testing 适用于下表中列出的三个常用的单元测试框架�
 
 一旦启用，Live Unit Testing 将在 Visual Studio 编辑器中更新每行代码，以显示正在编写的代码是否由单元测试覆盖以及覆盖这些代码的测试是否通过。 下图显示测试通过和失败的代码行，以及测试未覆盖的代码行。 绿色“✓”修饰的行只表示通过测试，红色“x”修饰的行表示未通过一项或多项测试，蓝色“➖”修饰的行表示未经过任何测试。
 
+::: moniker range="<=vs-2019"
 ![Visual Studio 中的代码覆盖率](./media/lut-codewindow.png)
+::: moniker-end
+::: moniker range=">=vs-2022"
+![Visual Studio 中的代码覆盖率](./media/vs-2022/lut-code-window.png)
+::: moniker-end
 
 当你在代码编辑器中修改代码后，将立即更新 Live Unit Testing 覆盖率可视化效果。 处理编辑时，可视化效果将变化，通过在通过、失败和未覆盖符号下方添加圆形计时器图像来指示数据非最新，如下图所示。
 
+::: moniker range="<=vs-2019"
 ![Visual Studio 中的代码覆盖率（带有计时器图标）](./media/lut-codeupdating.png)
+::: moniker-end
+::: moniker range=">=vs-2022"
+![Visual Studio 中的代码覆盖率（带有计时器图标）](./media/vs-2022/lut-code-updating.png)
+::: moniker-end
 
 ## <a name="get-information-about-test-status"></a>获取有关测试状态的信息
 
 将鼠标悬停在代码窗口中的成功或失败符号上，可以看到符合此条件的测试数目。 若要查看各个测试的状态，请选择该符号：
 
+::: moniker range="<=vs-2019"
 ![Visual Studio 中某个符号的测试状态](./media/lut-failedinfo.png)
+::: moniker-end
+::: moniker range=">=vs-2022"
+![Visual Studio 中某个符号的测试状态](./media/vs-2022/lut-failed-info.png)
+::: moniker-end
 
 除了提供测试名称和结果之外，工具提示还支持重新运行或调试测试集。 如果选择工具提示中的一个或多个测试，还可以仅运行或调试这些测试。 这样，不用离开代码窗口，就可以调试测试。 调试时，除了遵循已设置的所有断点外，程序执行还会在调试器执行返回意外结果的 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> 方法时暂停。
 
 如果将鼠标悬停于工具提示中的未通过测试之上，测试将展开，以提供未通过测试详细信息，如下图所示。 若要直接转到未通过测试，请在工具提示中双击它。
 
+::: moniker range="<=vs-2019"
 ![Visual Studio 中的未通过测试工具提示信息](./media/lut-failedmsg.png)
+::: moniker-end
+::: moniker range=">=vs-2022"
+![Visual Studio 中的未通过测试工具提示信息](./media/vs-2022/lut-failed-message.png)
+::: moniker-end
 
 转到未通过测试时，Live Unit Testing 会在方法签名中直观地指出：
 
@@ -124,7 +144,12 @@ Live Unit Testing 适用于下表中列出的三个常用的单元测试框架�
 
 非测试方法使用符号进行修饰。 下图展示了所有四种类型的方法。
 
+::: moniker range="<=vs-2019"
 ![Visual Studio 中的测试方法（带有通过或未通过符号）](media/lut-testsource.png)
+::: moniker-end
+::: moniker range=">=vs-2022"
+![Visual Studio 中的测试方法（带有通过或未通过符号）](media/vs-2022/lut-test-source.png)
+::: moniker-end
 
 ## <a name="diagnose-and-correct-test-failures"></a>诊断和更正测试失败
 
@@ -162,9 +187,16 @@ Live Unit Testing 类似于测试资源管理器，具有可供运行和调试�
 > 通过从 Visual Studio 顶层菜单中依次选择“测试” > “Live Unit Testing” > “启动”来启动 Live Unit Testing  。 你还可以通过使用“视图” > “其他窗口” > “Live Unit Testing 窗口”来打开 Live Unit Testing   。
 
 你可能会注意到，在 Live Unit Testing 窗口中，一些测试呈灰显状态。例如，停止并重启 Live Unit Testing 时，Live Unit Testing 窗口中的所有测试都呈灰显状态，如下图所示。 灰显的测试结果表明测试不是最新 Live Unit Test 运行的一部分。 仅在检测到这些测试或其依赖项发生更改时才会运行它们。 如果没有更改，将避免不必要地运行测试。 在这种情况下，灰显的测试结果虽然不是最新运行的一部分，但仍然是“最新的”。
+::: moniker-end
+::: moniker range="vs-2019"
 
 ![在测试资源管理器中让测试呈灰显状态](media/vs-2019/lut-test-explorer.png)
+::: moniker-end
+::: moniker range=">=vs-2022"
+![在测试资源管理器中让测试呈灰显状态](media/vs-2022/lut-test-explorer.png)
 
+::: moniker-end
+::: moniker range=">=vs-2019"
 你可以通过更改代码来重新运行任何灰显的测试。
 
 Live Unit Testing 自动运行、更新测试结果与通过“测试资源管理器”显式运行测试结果有所不同。 区别包括：
@@ -225,4 +257,3 @@ Live Unit Testing 自动运行、更新测试结果与通过“测试资源管�
 - [代码测试工具](https://visualstudio.microsoft.com/vs/testing-tools/)
 - [Live Unit Testing 博客](https://devblogs.microsoft.com/visualstudio/live-unit-testing-in-visual-studio-2017-enterprise/)
 - [实时单元测试常见问题解答](live-unit-testing-faq.yml)
-- [第 9 频道视频：Visual Studio 中的 Live Unit Testing](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)

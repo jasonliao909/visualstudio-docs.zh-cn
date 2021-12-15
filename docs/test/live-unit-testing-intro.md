@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-test
 ms.workload:
 - dotnet
-ms.openlocfilehash: c2b18f6443d6460350683e0f4feb53ebd8ccff5a
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: b3b12da9425de6852fb855ae1442b32d5e52a8e6
+ms.sourcegitcommit: 04fb8ba0f7ea73ba17baa88f10563c8600e7fd7b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126640972"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "135121769"
 ---
 # <a name="live-unit-testing-overview"></a>Live Unit Testing 概述
 
@@ -36,10 +36,6 @@ Live Unit Testing 指示单元测试是否充分覆盖代码。 它以图形方�
 - 阅读详细的文档：[在 Visual Studio Enterprise Edition 中使用 Live Unit Testing](live-unit-testing.md)。
 
 - 阅读 [Live Unit Testing 常见问题解答](live-unit-testing-faq.yml)，了解 Live Unit Testing 中的新增功能以及相关提示和技巧。
-
-- 观看第 9 频道的视频，获取 Live Unit Testing 及其功能的概述。</p>
-
-   > [!VIDEO https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105/player]
 
 ## <a name="related-resources"></a>相关资源
 

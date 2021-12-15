@@ -2,7 +2,8 @@
 title: Windows 上 Visual Studio 中的 Python 支持
 titleSuffix: ''
 description: Visual Studio 中的 Python 功能摘要，这些功能让 Visual Studio 成为 Windows 上卓越的 Python IDE（也称为针对 Visual Studio 的 Python 工具，PTVS）。
-ms.date: 06/05/2019
+ms.date: 12/11/2021
+ms.custom: devdivchpfy22
 ms.topic: overview
 author: rjmolyneaux
 ms.author: rmolyneaux
@@ -11,12 +12,12 @@ ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d2bb13a5ca98fd1850b5b4335566c104585895d7
-ms.sourcegitcommit: 0f2af2f1a8cf0a481fd8f673accf3aebf2e262c8
+ms.openlocfilehash: 99572fab435639bb233d494aca21a2ece50a9ebf
+ms.sourcegitcommit: 04fb8ba0f7ea73ba17baa88f10563c8600e7fd7b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "134714218"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "135121540"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>在 Windows 上的 Visual Studio 中使用 Python
 
@@ -90,7 +91,7 @@ Visual Studio一流的 Python 编辑器，包括语法着色、跨所有代码�
 
 对于 Visual Studio 已知的每个 Python 环境，用户都可以直接在 Visual Studio 中轻松打开 Python 解释器的相同交互 (REPL) 环境，而无需使用单独的命令提示符。 也可以轻松地切换环境。 （若要打开单独的命令提示符，请在“Python环境”窗口中选择所需的环境，然后如之前的[对多个解释器的支持](#support-for-multiple-interpreters)下所述，选择“在 PowerShell 中打开”命令）。
 
-:::moniker range="<=    vs-2019"
+:::moniker range="<=vs-2019"
    ![Visual Studio-2019 中的 Python 交互窗口](media/interactive-window.png)
 :::moniker-end
 
@@ -109,7 +110,7 @@ Visual Studio 还支持 REPL 中的 IPython/Jupyter，包括内联图、.NET 和
 
 ## <a name="project-system-and-project-and-item-templates"></a>项目系统、项目模板和项模板
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 > [!Note]
 > Visual Studio 2019 支持打开包含 Python 代码的文件夹并在不创建 Visual Studio 项目和解决方案文件的情况下运行该代码。 有关详细信息，请参阅[快速入门：打开并运行文件夹中的 Python 代码](quickstart-05-python-visual-studio-open-folder.md)。 但是，使用项目文件会获得本部分所述的优势。
 ::: moniker-end
@@ -311,7 +312,7 @@ Visual Studio 2015 及更早版本可在 [visualstudio.microsoft.com/vs/older-do
 |         不含项目进行调试         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 |        调试 - 附加到编辑        | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10007; | &#10004;  | &#10004;  |   &#10004;    |
 |            混合模式调试             | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10007;    |
-| 远程调试 (Windows、macOS X、Linux)  | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10007; | &#10004;  | &#10004;  |   &#10004;    |
+| 远程调试 (Windows，macOS X，Linux)  | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10007; | &#10004;  | &#10004;  |   &#10004;    |
 |          调试交互窗口           | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 
 <br/>

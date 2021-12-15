@@ -2,7 +2,7 @@
 title: 了解如何使用实时单元测试测试代码
 description: 通过创建面向 .NET Standard 的简单类库了解 Live Unit Testing 的用法，并通过创建面向 .NET Core 的 MSTest 项目对其进行测试。
 ms.custom: SEO-VS-2020
-ms.date: 04/03/2020
+ms.date: 12/13/2021
 ms.topic: how-to
 helpviewer_keywords:
 - Live Unit Testing
@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-test
 ms.workload:
 - dotnet
-ms.openlocfilehash: d4de85b2ef12dc6dbaf9ca8ebea984cdfa14a9b0
-ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
+ms.openlocfilehash: 5cc06f8b8129d6b439a06be97e40fa5377c49149
+ms.sourcegitcommit: 04fb8ba0f7ea73ba17baa88f10563c8600e7fd7b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "129635407"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "135121579"
 ---
 # <a name="get-started-with-live-unit-testing"></a>Live Unit Testing 入门
 
@@ -171,7 +171,12 @@ Live Unit Testing 可用于测试针对 .NET Framework 或 .NET Core 的解决�
 
 5. 单元测试项目无法自动访问它正在测试的类库。 可以通过添加对类库项目的引用来提供测试库访问权限。 为此，请右键单击 `StringLibraryTests` 项目，然后依次选择“添加” > “引用”   。 在“引用管理器”对话框中，确保“解决方案”选项卡处于选中状态，然后选择 StringLibrary 项目，如下图所示   。
 
+   ::: moniker range="<=vs-2019"
    ![“引用管理器”对话框](./media/lut-start/add-reference.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2022"
+   ![“引用管理器”对话框](./media/lut-start/vs-2022/add-unit-test-cs.png)
+   ::: moniker-end
 
 6. 将模板提供的样本单元测试代码替换为以下代码：
 
@@ -262,19 +267,34 @@ Live Unit Testing 可用于测试针对 .NET Framework 或 .NET Core 的解决�
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 运行完测试后，Live Unit Testing 同时显示总体结果和各个测试的结果  。 此外，代码编辑器窗口以图形方式显示测试代码覆盖率和测试结果。 如下图所示，三项测试均已成功执行。 它还显示测试中已覆盖 `StartsWithUpper` 方法中的所有代码路径，并已成功执行这些测试（用绿色复选标记“✓”指示）。 最后，显示 StringLibrary 中的其他方法都没有代码覆盖率（用蓝线“➖”指示）。
+::: moniker-end
 
+::: moniker range="vs-2019"
 ![启动 Live Unit testing 后的实时测试资源管理器和代码编辑器窗口](media/lut-start/vs-2019/lut-results-cs.png)
+::: moniker-end
+::: moniker range=">=vs-2022"
+![启动 Live Unit testing 后的实时测试资源管理器和代码编辑器窗口](media/lut-start/vs-2022/lut-results-cs.png)
 ::: moniker-end
 
 还可通过在代码编辑器窗口中选择一个特定的代码覆盖率图标来获得有关测试覆盖率和测试结果的更多详细信息。 若要查看此详细信息，请执行以下操作：
 
 1. 单击 `StartsWithUpper` 方法中写着 `if (String.IsNullOrWhiteSpace(s))` 的行上的绿色复选标记。 如下图所示，Live Unit Testing 指示三个测试均覆盖该代码行，并且都已成功执行。
 
+   ::: moniker range="<=vs-2019"
    ![`if` 条件语句的代码覆盖率](media/lut-start/code-coverage-cs1.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2022"
+   ![`if` 条件语句的代码覆盖率](media/lut-start/vs-2022/code-coverage-cs1.png)
+   ::: moniker-end
 
 1. 单击 `StartsWithUpper` 方法中写着 `return Char.IsUpper(s[0])` 的行上的绿色复选标记。 如下图所示，Live Unit Testing 指示只有两个测试均覆盖该代码行，并且都已成功执行。
 
+   ::: moniker range="<=vs-2019"
    ![return 语句的代码覆盖率](media/lut-start/code-coverage-cs2.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2022"
+   ![return 语句的代码覆盖率](media/lut-start/vs-2022/code-coverage-cs2.png)
+   ::: moniker-end
 
 Live Unit Testing 标识的主要问题是代码覆盖率不完整。 此问题将在下一部分得以解决。
 
@@ -297,13 +317,21 @@ Live Unit Testing 标识的主要问题是代码覆盖率不完整。 此问题�
    ::: moniker range="vs-2017"
    ![展开测试覆盖率之后的测试资源管理器](media/lut-start/test-dynamic.png)
    ::: moniker-end
-   ::: moniker range=">=vs-2019"
+   ::: moniker range="vs-2019"
    ![展开测试覆盖率之后的实时测试资源管理器](media/lut-start/vs-2019/test-dynamic.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2022"
+   ![展开测试覆盖率之后的实时测试资源管理器](media/lut-start/vs-2022/test-dynamic.png)
    ::: moniker-end
 
 1. 切换到包含 StringLibrary 类源代码的窗口。 Live Unit Testing 现在显示代码覆盖率已扩展到 `StartsWithLower` 方法。
 
-    ![StartsWithLower 方法的代码覆盖率](media/lut-start/lut-extended-cs.png)
+   ::: moniker range="<=vs-2019"
+   ![StartsWithLower 方法的代码覆盖率](media/lut-start/lut-extended-cs.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2022"
+   ![StartsWithLower 方法的代码覆盖率](media/lut-start/vs-2022/lut-extended-cs.png)
+   ::: moniker-end
 
 在某些情况下，“测试资源管理器”中的成功测试可能会灰显  。指示某个测试当前正在执行，或测试没有再次运行，因为测试自上次执行之后不会受到任何代码更改带来的影响。
 
@@ -322,23 +350,34 @@ Live Unit Testing 标识的主要问题是代码覆盖率不完整。 此问题�
    ::: moniker range="vs-2017"
    ![报告失败的测试的测试资源管理器](media/lut-start/test-failure.png)
    ::: moniker-end
-   ::: moniker range=">=vs-2019"
+   ::: moniker range="vs-2019"
    ![报告失败测试的实时测试资源管理器](media/lut-start/vs-2019/test-failure.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2022"
+   ![报告失败测试的实时测试资源管理器](media/lut-start/vs-2022/test-failure.png)
    ::: moniker-end
 
 1. 选择显示库代码的窗口。 Live Unit Testing 已将代码覆盖率扩展到 `HasEmbeddedSpaces` 方法。 它还报告测试失败，方法是将一个红色“🞩”添加到被失败的测试覆盖的行。
 
 1. 将鼠标悬停在有 `HasEmbeddedSpaces` 方法签名的行上。 Live Unit Testing 会显示一个工具提示，报告该方法被某个测试覆盖，如下图所示：
 
+   ::: moniker range="<=vs-2019"
    ![关于失败的测试的 Live Unit Testing 信息](media/lut-start/test-failure-info-cs.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2022"
+   ![关于失败的测试的 Live Unit Testing 信息](media/lut-start/vs-2022/test-failure-info-cs.png)
+   ::: moniker-end
 
 1. 选择失败的“TestHasEmbeddedSpaces”测试  。 Live Unit Testing 提供了几个选项，如运行所有测试和调试所有测试，如下图所示：
 
    ::: moniker range="vs-2017"
    ![失败的测试的 Live Unit Testing 选项](media/lut-start/test-failure-options.png)
    ::: moniker-end
-   ::: moniker range=">=vs-2019"
+   ::: moniker range="vs-2019"
    ![失败的测试的 Live Unit Testing 选项](media/lut-start/vs-2019/test-failure-options.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2022"
+   ![失败的测试的 Live Unit Testing 选项](media/lut-start/vs-2022/test-failure-options.png)
    ::: moniker-end
 
 1. 选择“全部调试”，调试失败的测试  。
@@ -347,11 +386,21 @@ Live Unit Testing 标识的主要问题是代码覆盖率不完整。 此问题�
 
    测试将数组中的每个字符串分配给名为 `phrase` 的变量，并将其传递给 `HasEmbeddedSpaces` 方法。 程序执行暂停，并在断言表达式第一次为 `false` 时调用调试程序。 下图显示了 [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) 方法调用中的意外值导致的异常对话框。
 
+   ::: moniker range="<=vs-2019"
    ![Live Unit Testing 异常对话框](media/lut-start/exception-dialog-cs.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2022"
+   ![Live Unit Testing 异常对话框](media/lut-start/vs-2022/exception-dialog-cs.png)
+   ::: moniker-end
 
    此外，Visual Studio 提供的所有调试工具均可帮助我们对失败的测试进行故障排除，如下图所示：
 
+   ::: moniker range="<=vs-2019"
    ![Visual Studio 调试工具](media/lut-start/debugging-tools-cs.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2022"
+   ![Visual Studio 调试工具](media/lut-start/vs-2022/debugging-tools-cs.png)
+   ::: moniker-end
 
    请注意，在“自动”窗口中，`phrase` 变量的值是“Name\tDescription”，它是数组的第二个元素  。 测试方法需要 `HasEmbeddedSpaces` 在传递该字符串时返回 `true`；而它返回 `false`。 显然，这是因为它无法将制表符“\t”识别为嵌入的空格。
 

@@ -1,7 +1,8 @@
 ---
 title: 安装 Python 支持
 description: 如何在 Visual Studio 2017、2015、2013、2012 和 2010 中安装针对 Visual Studio 的 Python 工具 (PTVS)，包括选项和安装位置。
-ms.date: 03/13/2019
+ms.date: 12/11/2021
+ms.custom: devdivchpfy22
 ms.topic: how-to
 author: rjmolyneaux
 ms.author: rmolyneaux
@@ -10,12 +11,12 @@ ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d8bced39dc9b2aea7678505bd597fd9e1aa6db39
-ms.sourcegitcommit: 0f2af2f1a8cf0a481fd8f673accf3aebf2e262c8
+ms.openlocfilehash: c3d53db62b1ba48013a7b0f03c8d0369c7e7feeb
+ms.sourcegitcommit: 04fb8ba0f7ea73ba17baa88f10563c8600e7fd7b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "134714371"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "135121782"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>如何在 Windows 上的 Visual Studio 中安装 Python 支持
 
@@ -89,8 +90,7 @@ ms.locfileid: "134714371"
 
    可选：如果使用数据科学，还可考虑使用 **数据科学和分析应用程序** 工作负载。 此工作负载包含 Python、R 和 F# 语言支持。 有关详细信息，请参阅[数据科学和分析应用程序工作负载](data-science-and-analytical-applications-workload.md)。
 
-   ![Visual Studio 安装程序中的 Python 开发工作负荷 ](media/installation-python-workload.png) 。
-    
+   ![Visual Studio 安装程序中的 Python 开发工作负载](media/installation-python-workload.png).
 
 1. 如果需要，请在安装程序的右侧选择其他选项。 跳过此步骤，接受默认选项。
    :::moniker range=">=vs-2022"
