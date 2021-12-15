@@ -1,7 +1,7 @@
 ---
 title: 在调试器中设置符号 (.pdb) 和源文件
 description: 了解如何配置和管理 Visual Studio 中的符号和源文件
-ms.date: 3/31/2021
+ms.date: 12/09/2021
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Debugger.Native
@@ -29,12 +29,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 58020c2be3440e71a5e31e7b4d4d3eeff4193f7d
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: a7e6694eeb17f67fff12a00d5e3627b6fb8d9fb1
+ms.sourcegitcommit: dc392e126dbd9176825fe68cfc10ede121cde0bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129972604"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "135047845"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>在 Visual Studio 调试器（C#、C++、Visual Basic、F#）中指定符号 (.pdb) 和源文件
 
@@ -114,7 +114,12 @@ ms.locfileid: "129972604"
      1. 选择工具栏中的 + 符号。
      1. 在文本字段中键入 URL (http)、网络共享以及符号服务器或符号位置的本地路径。 语句结束有助于找到正确的格式。
 
+     ::: moniker range=">= vs-2022"
+     ![“工具”-“选项”-“调试”-“符号”页面](media/vs-2022/dbg-options-symbols.png "“工具”-“选项”-“调试”-“符号”页面")
+     ::: moniker-end
+     ::: moniker range="<= vs-2019"
      ![“工具”-“选项”-“调试”-“符号”页面](media/dbg-options-symbols.gif "“工具”-“选项”-“调试”-“符号”页面")
+     ::: moniker-end
 
      >[!NOTE]
      >仅搜索指定的文件夹。 必须为要搜索的任何子文件夹添加条目。
@@ -155,7 +160,7 @@ ms.locfileid: "129972604"
 
   无法找到源或符号文件时，始终显示反汇编。
 
-  ![“选项”/“调试”/“常规”反汇编选项](../debugger/media/dbg_options_general_disassembly_checkbox.png "“选项”/“调试”/“常规”反汇编选项")
+  ![“选项”/“调试”/“常规”反汇编选项](../debugger/media/dbg-options-general-disassembly-checkbox.png "“选项”/“调试”/“常规”反汇编选项")
   <a name="BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine"></a>
 - **启用源服务器支持**
 
@@ -170,7 +175,7 @@ ms.locfileid: "129972604"
 
   选择此项和所需的子项。 “允许源服务器中的部分信任程序集(仅限托管)”和“始终运行不受信任的源服务器命令并且不再提示”都会增大上述安全风险 。
 
-  ![启用源服务器选项](../debugger/media/dbg_options_general_enablesrcsrvr_checkbox.png "DBG_Options_General_EnableSrcSrvr_checkbox")
+  ![启用源服务器选项](../debugger/media/dbg-options-general-enablesrcsrvr-checkbox.png "DBG_Options_General_EnableSrcSrvr_checkbox")
 
 ## <a name="compiler-symbol-options"></a>编译器符号选项
 
