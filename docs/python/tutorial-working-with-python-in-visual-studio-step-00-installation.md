@@ -2,22 +2,22 @@
 title: Visual Studio 中的 Python 教程步骤 0，安装
 titleSuffix: ''
 description: 在 Visual Studio 中使用 Python 的核心教程的第 0 步（安装前提条件）。
-ms.date: 09/14/2021
+ms.date: 12/11/2021
+ms.custom: devdivchpfy22, vs-acquisition
 ms.topic: tutorial
 author: rjmolyneaux
 ms.author: rmolyneaux
 manager: jmartens
 ms.technology: vs-python
-ms.custom: vs-acquisition
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f02fc5c537bbbdaa80b40f989014c14e36aacd46
-ms.sourcegitcommit: 0f2af2f1a8cf0a481fd8f673accf3aebf2e262c8
+ms.openlocfilehash: ab21d1939a79b3065dd27449d58ce72e4001005d
+ms.sourcegitcommit: 04fb8ba0f7ea73ba17baa88f10563c8600e7fd7b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "134714810"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "135121511"
 ---
 # <a name="install-python-support-in-visual-studio"></a>在 Visual Studio 中安装 Python 支持
 
@@ -32,7 +32,7 @@ ms.locfileid: "134714810"
     >[!Tip]
     > Community Edition 适用于个体开发者、课堂学习、学术研究和开放源代码开发。 对于其他用途，请安装 [Visual Studio Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted) 或 [Visual Studio Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)。
 
-1. 安装程序提供工作负荷列表，这些工作负荷是特定开发领域的相关选项组。 对于 Python，请选择 **Python 开发** 工作负载，然后选择“安装”：
+1. 安装程序提供了工作负荷列表，这些工作负荷是特定开发区域的相关选项的组。 对于 Python，请选择 **Python 开发** 工作负载，然后选择“安装”：
 
     ![Visual Studio 安装程序中选择的 Python 开发工作负载的屏幕截图。](media/installation-python-workload.png)
 
@@ -54,6 +54,6 @@ ms.locfileid: "134714810"
 ## <a name="see-also"></a>另请参阅
 
 - [手动标识现有的 Python 解释器](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
-- [在 2022 Visual Studio安装 Python 支持](installing-python-support-in-visual-studio.md#visual-studio-2022)
-- [在 2019 Visual Studio安装 Python 支持](installing-python-support-in-visual-studio.md#visual-studio-2019)
-- [在 2015 Visual Studio安装 Python 支持](installing-python-support-in-visual-studio.md#visual-studio-2015)
+- [Visual Studio 2022 中安装 Python 支持](installing-python-support-in-visual-studio.md#visual-studio-2022)
+- [Visual Studio 2019 中安装 Python 支持](installing-python-support-in-visual-studio.md#visual-studio-2019)
+- [Visual Studio 2015 中安装 Python 支持](installing-python-support-in-visual-studio.md#visual-studio-2015)

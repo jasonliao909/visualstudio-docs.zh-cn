@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 09496b55d971173040aa6ad69428979d4d43398a
-ms.sourcegitcommit: bfae1f88c278835e26f3200cfced769be3191fc4
-ms.translationtype: HT
+ms.openlocfilehash: b7bb5dae6761409c6d1dc9f80ec26dedc155b229
+ms.sourcegitcommit: 04fb8ba0f7ea73ba17baa88f10563c8600e7fd7b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "132535230"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "135121734"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio-part-1-of-2"></a>教程：在 Visual Studio 中创建一个简单的 C# 控制台应用（第 1 部分，共 2 部分）
 
@@ -150,6 +150,9 @@ ms.locfileid: "132535230"
    ![显示在“其他信息”窗口中选择了“.NET 6.0”的屏幕截图。](media/vs-2022/csharp-target-framework.png)
 
    Visual Studio 随即打开新项目，其中包含默认的“Hello World”代码。
+   
+   > [!NOTE]
+   > 从 .NET 6 开始，使用控制台模板的新项目生成的代码与以前的版本不同。 若要了解详细信息，请参阅 [新的 c # 模板生成顶级语句](/core/tutorials/top-level-templates.md) 页面。 
 
 ::: moniker-end
 
@@ -225,7 +228,7 @@ ms.locfileid: "132535230"
     > [!NOTE]
     > 以下动画并非旨在演示前面的代码，而只是演示 IntelliSense 的工作原理。
 
-    ![显示 Visual Studio IDE 中 IntelliSense 自动完成功能的整数数学运算代码动画。](media/integer-math-intellisense.gif)
+    ![显示 Visual Studio IDE 中 IntelliSense 自动完成功能的整数数学运算代码动画。](media/vs-2022/integer-math-intellisense.gif)
 
 1. 若要生成并运行应用，请按 F5，或者在顶部工具栏中选择名称“Calculator”旁边的绿色箭头 。
 
@@ -245,62 +248,64 @@ ms.locfileid: "132535230"
 
 向项目添加一组更复杂的计算器代码以继续操作。
 
+::: moniker range="<=vs-2019"
+
 1. 在代码编辑器中，将 program.cs 中的所有代码替换为以下新代码：
 
     ```csharp
-    using System;
+        using System;
 
-    namespace Calculator
-    {
-        class Program
+        namespace Calculator
         {
-            static void Main(string[] args)
+            class Program
             {
-                // Declare variables and then initialize to zero.
-                int num1 = 0; int num2 = 0;
-
-                // Display title as the C# console calculator app.
-                Console.WriteLine("Console Calculator in C#\r");
-                Console.WriteLine("------------------------\n");
-
-                // Ask the user to type the first number.
-                Console.WriteLine("Type a number, and then press Enter");
-                num1 = Convert.ToInt32(Console.ReadLine());
-
-                // Ask the user to type the second number.
-                Console.WriteLine("Type another number, and then press Enter");
-                num2 = Convert.ToInt32(Console.ReadLine());
-
-                // Ask the user to choose an option.
-                Console.WriteLine("Choose an option from the following list:");
-                Console.WriteLine("\ta - Add");
-                Console.WriteLine("\ts - Subtract");
-                Console.WriteLine("\tm - Multiply");
-                Console.WriteLine("\td - Divide");
-                Console.Write("Your option? ");
-
-                // Use a switch statement to do the math.
-                switch (Console.ReadLine())
+                static void Main(string[] args)
                 {
-                    case "a":
-                        Console.WriteLine($"Your result: {num1} + {num2} = " + (num1 + num2));
-                        break;
-                    case "s":
-                        Console.WriteLine($"Your result: {num1} - {num2} = " + (num1 - num2));
-                        break;
-                    case "m":
-                        Console.WriteLine($"Your result: {num1} * {num2} = " + (num1 * num2));
-                        break;
-                    case "d":
-                        Console.WriteLine($"Your result: {num1} / {num2} = " + (num1 / num2));
-                        break;
+                    // Declare variables and then initialize to zero.
+                    int num1 = 0; int num2 = 0;
+    
+                    // Display title as the C# console calculator app.
+                    Console.WriteLine("Console Calculator in C#\r");
+                    Console.WriteLine("------------------------\n");
+    
+                    // Ask the user to type the first number.
+                    Console.WriteLine("Type a number, and then press Enter");
+                    num1 = Convert.ToInt32(Console.ReadLine());
+    
+                    // Ask the user to type the second number.
+                    Console.WriteLine("Type another number, and then press Enter");
+                    num2 = Convert.ToInt32(Console.ReadLine());
+    
+                    // Ask the user to choose an option.
+                    Console.WriteLine("Choose an option from the following list:");
+                    Console.WriteLine("\ta - Add");
+                    Console.WriteLine("\ts - Subtract");
+                    Console.WriteLine("\tm - Multiply");
+                    Console.WriteLine("\td - Divide");
+                    Console.Write("Your option? ");
+    
+                    // Use a switch statement to do the math.
+                    switch (Console.ReadLine())
+                    {
+                        case "a":
+                            Console.WriteLine($"Your result: {num1} + {num2} = " + (num1 + num2));
+                            break;
+                        case "s":
+                            Console.WriteLine($"Your result: {num1} - {num2} = " + (num1 - num2));
+                            break;
+                        case "m":
+                            Console.WriteLine($"Your result: {num1} * {num2} = " + (num1 * num2));
+                            break;
+                        case "d":
+                            Console.WriteLine($"Your result: {num1} / {num2} = " + (num1 / num2));
+                            break;
+                    }
+                    // Wait for the user to respond before closing.
+                    Console.Write("Press any key to close the Calculator console app...");
+                    Console.ReadKey();
                 }
-                // Wait for the user to respond before closing.
-                Console.Write("Press any key to close the Calculator console app...");
-                Console.ReadKey();
             }
         }
-    }
     ```
 
 1. 选择“Calculator”按钮或按 F5 运行应用 。
@@ -312,6 +317,69 @@ ms.locfileid: "132535230"
    应用应如以下屏幕快照所示：
 
     ![控制台窗口的屏幕截图，其中显示了 Calculator 应用和提示。](media/csharp-console-calculator.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+1. 在代码编辑器中，将 program.cs 中的所有代码替换为以下新代码：
+
+    ```csharp
+        // Declare variables and then initialize to zero.
+        int num1 = 0; int num2 = 0;
+    
+        // Display title as the C# console calculator app.
+        Console.WriteLine("Console Calculator in C#\r");
+        Console.WriteLine("------------------------\n");
+    
+        // Ask the user to type the first number.
+        Console.WriteLine("Type a number, and then press Enter");
+        num1 = Convert.ToInt32(Console.ReadLine());
+    
+        // Ask the user to type the second number.
+        Console.WriteLine("Type another number, and then press Enter");
+        num2 = Convert.ToInt32(Console.ReadLine());
+    
+        // Ask the user to choose an option.
+        Console.WriteLine("Choose an option from the following list:");
+        Console.WriteLine("\ta - Add");
+        Console.WriteLine("\ts - Subtract");
+        Console.WriteLine("\tm - Multiply");
+        Console.WriteLine("\td - Divide");
+        Console.Write("Your option? ");
+    
+        // Use a switch statement to do the math.
+        switch (Console.ReadLine())
+        {
+            case "a":
+                Console.WriteLine($"Your result: {num1} + {num2} = " + (num1 + num2));
+                break;
+            case "s":
+                Console.WriteLine($"Your result: {num1} - {num2} = " + (num1 - num2));
+                break;
+            case "m":
+                Console.WriteLine($"Your result: {num1} * {num2} = " + (num1 * num2));
+                break;
+            case "d":
+                Console.WriteLine($"Your result: {num1} / {num2} = " + (num1 / num2));
+                break;
+        }
+        // Wait for the user to respond before closing.
+        Console.Write("Press any key to close the Calculator console app...");
+        Console.ReadKey();
+    ```
+
+1. 选择“Calculator”按钮或按 F5 运行应用 。
+
+   控制台窗口即会打开。
+
+1. 在控制台窗口中，按照提示将数字 42 和 119 相加 。
+
+   应用应如以下屏幕快照所示：
+
+    ![控制台窗口的屏幕截图，其中显示了 Calculator 应用和提示。](media/csharp-console-calculator.png)
+
+::: moniker-end
 
 ### <a name="add-decimal-functionality"></a>添加小数运算功能
 
