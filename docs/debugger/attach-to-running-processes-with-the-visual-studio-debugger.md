@@ -2,7 +2,7 @@
 title: 使用调试器附加到运行的进程
 description: 了解如何将 Visual Studio 调试器附加到正在本地或远程计算机上运行的进程上。
 ms.custom: SEO-VS-2020
-ms.date: 09/10/2021
+ms.date: 12/09/2021
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.processes.attach
@@ -30,12 +30,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 739100149890c737245d66573b6aab69a484c53f
-ms.sourcegitcommit: 4efdab6a579b31927c42531bb3f7fdd92890e4ac
+ms.openlocfilehash: 5e0195ad403b830ea0823f49fd00f49918c7b8d1
+ms.sourcegitcommit: dc392e126dbd9176825fe68cfc10ede121cde0bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "130351036"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "135047804"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio 调试器附加到正在运行的进程
 
@@ -58,9 +58,14 @@ ms.locfileid: "130351036"
 
    在大多数方案中，可以使用“默认”。 某些方案可能需要使用不同的连接类型。 有关详细信息，请参阅本文中的其他部分或[常见调试方案](#BKMK_Scenarios)。
 
-1. 将“连接目标”设置为本地计算机名。
+1. 将 **"连接目标** "设置为本地计算机名称。
 
+   ::: moniker range=">= vs-2022"
+   ![“附加到进程”对话框的屏幕截图，其中连接目标设置为本地计算机名称。](../debugger/media/vs-2022/dbg-basics-attach-to-process.png)
+   ::: moniker-end
+   ::: moniker range="<= vs-2019"
    ![“附加到进程”对话框的屏幕截图，其中连接目标设置为本地计算机名称。](../debugger/media/DBG_Basics_Attach_To_Process.png)
+   ::: moniker-end
 
 1. 在“可用进程”列表中，查找并选择要附加到的一个或多个进程。
 
@@ -76,7 +81,7 @@ ms.locfileid: "130351036"
    如果使用的是“默认”连接类型，可以手动选择要附加到的代码的类型。 否则，“选择”选项可能会被禁用。
 
    手动选择代码类型：
-   1. 单击“选择”  。
+   1. 单击“选择”。
    1. 在“选择代码类型”对话框中，选择“调试这些代码类型” 。
       如果在尝试附加到列表中的进程时失败，可以使用[“选择代码类型”](../debugger/select-code-type-dialog-box.md)对话框来帮助[排查](#BKMK_Troubleshoot_attach_errors)问题。
    1. 选择要调试的代码类型。
@@ -158,7 +163,7 @@ ms.locfileid: "130351036"
    如果使用的是“默认”连接类型，可以手动选择要附加到的代码的类型。 否则，“选择”选项可能会被禁用。
 
    手动选择代码类型：
-   1. 单击“选择”  。
+   1. 单击“选择”。
    1. 在“选择代码类型”对话框中，选择“调试这些代码类型” 。
       如果在尝试附加到列表中的进程时失败，可以使用[“选择代码类型”](../debugger/select-code-type-dialog-box.md)对话框来帮助[排查](#BKMK_Troubleshoot_attach_errors)问题。
    1. 选择“确定”。
@@ -174,7 +179,7 @@ ms.locfileid: "130351036"
 
 ## <a name="attach-to-a-net-core-process-running-on-azure-app-service-windows"></a>附加到在 Azure 应用服务 (Windows) 上运行的 .NET Core 进程
 
-如果要发布到 Azure 应用服务 (Windows)，则要在“承载”下的“...”菜单下找到“附加调试器”选项  。 Visual Studio 尝试将远程调试器附加到配置文件要发布到 Azure 应用服务 (Windows) 的实例。
+如果要发布到 Azure 应用服务 (Windows) ，将在发布配置文件中"托管"下的 **"..."** 菜单下找到"附加调试器"选项。  Visual Studio 尝试将远程调试器附加到配置文件要发布到 Azure 应用服务 (Windows) 的实例。
 
 :::image type="content" source="../debugger/media/attach-debugger-publish-profile.png" alt-text="“发布摘要”页中的附加调试器选项的屏幕截图。":::
 
@@ -211,18 +216,18 @@ ms.locfileid: "130351036"
 
 |方案|调试方法|进程名|备注和链接|
 |-|-|-|-|
-|远程调试 IIS 服务器上的 ASP.NET 4 或 4.5|使用远程工具和“附加到进程”|w3wp.exe|请参阅[远程调试远程 IIS 计算机上的 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|远程调试 IIS 服务器上的 ASP.NET Core|使用远程工具和“附加到进程”|w3wp.exe 或 dotnet.exe|从 .NET Core 3 开始，w3wp.exe 进程用于默认的[应用内托管模型](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#hosting-models)。 有关应用部署，请参阅[发布到 IIS](/aspnet/core/host-and-deploy/iis/)。 有关更多详细信息，请参阅[远程调试远程 IIS 计算机上的 ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md#BKMK_attach)|
-|针对受支持的应用类型，调试本地 IIS 服务器上的客户端脚本 |使用“附加到进程”|chrome.exe、MicrosoftEdgeCP.exe 或 iexplore.exe|必须启用脚本调试。 对于 Chrome，还必须在调试模式下运行 Chrome（在命令行中键入 `chrome.exe --remote-debugging-port=9222`），并在“附加到”字段中选择“JavaScript (Chrome)”。|
-|调试本地计算机上的 C#、Visual Basic 或 C++ 应用|使用标准调试 (F5) 或“附加到进程”|\<appname>.exe|在大多数情况下，请使用标准调试，而不是“附加到进程”。|
-|远程调试 Windows 桌面应用|远程工具|不可用| 请参阅[远程调试 C# 或 Visual Basic 应用](../debugger/remote-debugging-csharp.md)或[远程调试 C++ 应用](../debugger/remote-debugging-cpp.md)|
-|调试 Linux 上的 .NET Core|使用“附加到进程”|dotnet.exe 或唯一进程名称|若要使用 SSH，请参阅[使用 SSH 远程调试正在 Linux 上运行的 .NET Core](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md)。 对于容器化应用，请参阅[附加到在 Docker 容器上运行的进程](../debugger/attach-to-process-running-in-docker-container.md#attach-to-a-process-running-on-a-linux-docker-container)。|
-|调试容器化应用|使用“附加到进程”|dotnet.exe 或唯一进程名称|请参阅[附加到在 Docker 容器上运行的进程](../debugger/attach-to-process-running-in-docker-container.md)|
-|在 Linux 上远程调试 Python|使用“附加到进程”|debugpy|请参阅[从 Python 工具远程附加](../python/debugging-python-code-on-remote-linux-machines.md#attach-remotely-from-python-tools)|
-|在没有调试器的情况下，在启动本地计算机上的 ASP.NET 应用后调试该应用|使用“附加到进程”|*iiexpress.exe*|这可能有助于加快应用加载速度，例如在进行分析时。 |
-|在服务器进程上调试其他受支持的应用类型|如果是远程服务器，请使用远程工具和“附加到进程”|chrome.exe、iexplore.exe 或其他进程|如有必要，请使用资源监视器来帮助识别进程。 请参阅[远程调试](../debugger/remote-debugging.md)。|
-|远程调试通用 Windows 应用 (UWP)、OneCore、HoloLens 或 IoT 应用|调试安装的应用包|不可用|请参阅[调试安装的应用包](debug-installed-app-package.md)，而不是使用“附加到进程”|
-|调试不是从 Visual Studio 启动的通用 Windows 应用 (UWP)、OneCore、HoloLens 或 IoT 应用|调试安装的应用包|不可用|请参阅[调试安装的应用包](debug-installed-app-package.md)，而不是使用“附加到进程”|
+|ASP.NET Core - 在 IIS 服务器上进行远程调试|使用远程工具和“附加到进程”|w3wp.exe 或 dotnet.exe|从 .NET Core 3 开始，w3wp.exe 进程用于默认的[应用内托管模型](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#hosting-models)。 有关应用部署，请参阅[发布到 IIS](/aspnet/core/host-and-deploy/iis/)。 有关更多详细信息，请参阅[远程调试远程 IIS 计算机上的 ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md#BKMK_attach)|
+|ASP.NET Core - 在没有调试器的情况下启动应用后在本地计算机上调试|使用“附加到进程”|*iiexpress.exe*|这可能有助于加快应用加载速度，例如在进行分析时。 |
+|ASP.NET 4 或 4.5 - IIS 服务器上远程调试|使用远程工具和“附加到进程”|w3wp.exe|请参阅[远程调试远程 IIS 计算机上的 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
+|客户端脚本 - 在本地 IIS 服务器上调试受支持的应用类型 |使用“附加到进程”|chrome.exe、MicrosoftEdgeCP.exe 或 iexplore.exe|必须启用脚本调试。 对于 Chrome，还必须在调试模式下运行 Chrome（在命令行中键入 `chrome.exe --remote-debugging-port=9222`），并在“附加到”字段中选择“JavaScript (Chrome)”。|
+|C#、Visual Basic 或 C++ 应用 - 在本地计算机上调试|使用标准调试 (F5) 或“附加到进程”|\<appname>.exe|在大多数情况下，请使用标准调试，而不是“附加到进程”。|
+|Windows桌面应用 - 远程调试|远程工具|不可用| 请参阅[远程调试 C# 或 Visual Basic 应用](../debugger/remote-debugging-csharp.md)或[远程调试 C++ 应用](../debugger/remote-debugging-cpp.md)|
+|Linux 上的 .NET Core - 调试|使用“附加到进程”|dotnet.exe 或唯一进程名称|若要使用 SSH，请参阅[使用 SSH 远程调试正在 Linux 上运行的 .NET Core](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md)。 对于容器化应用，请参阅[附加到在 Docker 容器上运行的进程](../debugger/attach-to-process-running-in-docker-container.md#attach-to-a-process-running-on-a-linux-docker-container)。|
+|容器化应用 - 调试|使用“附加到进程”|dotnet.exe 或唯一进程名称|请参阅[附加到在 Docker 容器上运行的进程](../debugger/attach-to-process-running-in-docker-container.md)|
+|Linux 上的 Python - 远程调试|使用“附加到进程”|debugpy|请参阅[从 Python 工具远程附加](../python/debugging-python-code-on-remote-linux-machines.md#attach-remotely-from-python-tools)|
+|其他支持的应用类型 - 在服务器进程上调试|如果是远程服务器，请使用远程工具和“附加到进程”|chrome.exe、iexplore.exe 或其他进程|如有必要，请使用资源监视器来帮助识别进程。 请参阅[远程调试](../debugger/remote-debugging.md)。|
+|通用 Windows 应用 (UWP) 、OneCore、HoloLens 或 IoT 应用 - 远程调试|调试安装的应用包|不可用|请参阅[调试安装的应用包](debug-installed-app-package.md)，而不是使用“附加到进程”|
+|通用Windows应用 (UWP) 、OneCore、HoloLens 或 IoT - 调试未从 Visual Studio|调试安装的应用包|不可用|请参阅[调试安装的应用包](debug-installed-app-package.md)，而不是使用“附加到进程”|
 
 ## <a name="use-debugger-features"></a>使用调试器功能
 
