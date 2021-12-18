@@ -5,18 +5,18 @@ metadata:
   title: Visual Studio 中 Git 的版本控制和源代码管理
   description: 在 Visual Studio 中使用版本控制/源代码管理技术。 无需离开代码库，即可在 Git 和 GitHub共享、集成和管理代码版本。
   ms.topic: landing-page
-  ms.date: 11/09/2021
+  ms.date: 12/14/2021
   author: TerryGLee
   ms.author: tglee
   manager: jmartens
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
-  ms.openlocfilehash: 86d083ef0088b53d5c5290ec245b11ae8cc860ac
-  ms.sourcegitcommit: abfcccf63234819c75a61bf2c4c7f710a9d23cdb
+  ms.openlocfilehash: a0e643e2cce637a08751dd7c700247c9774156e3
+  ms.sourcegitcommit: f0c8b25d62fdb1427296ac26ad49ff7acd926521
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/11/2021
-  ms.locfileid: "132250564"
+  ms.lasthandoff: 12/15/2021
+  ms.locfileid: "135297039"
 landingContent:
 - title: 概述
   linkLists:
@@ -42,6 +42,8 @@ landingContent:
   linkLists:
   - linkListType: whats-new
     links:
+    - text: 熟练掌握 Git 和开放源代码
+      url: https://devblogs.microsoft.com/visualstudio/become-a-master-at-git-and-open-source/
     - text: Visual Studio 2022 中的多存储库支持
       url: https://devblogs.microsoft.com/visualstudio/multi-repo-support-in-visual-studio/
     - text: Visual Studio 2022 发行说明
