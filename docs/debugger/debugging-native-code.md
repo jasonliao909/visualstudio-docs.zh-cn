@@ -4,6 +4,8 @@ description: 了解 Visual Studio 中本机应用程序的常见调试问题和�
 ms.custom: SEO-VS-2020
 ms.date: 04/11/2017
 ms.topic: conceptual
+f1_keywords:
+- vs.debug
 dev_langs:
 - CSharp
 - VB
@@ -21,12 +23,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 109a05d64d425473c84ffd8e6eb26d3cee3f8a42
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: 5e09d729e86aa0b72c92940cf5f449ea79103631
+ms.sourcegitcommit: 52a425b5a541034cda26db8df9cd43281c007e80
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135804813"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "135540713"
 ---
 # <a name="debugging-native-code"></a>调试本机代码
 本节讲述本机应用程序的一些常见调试问题和调试技术。 本节阐述的技术属于高级别技术。 有关使用 Visual Studio 调试器的机制，请参阅[第一次查看调试器](../debugger/debugger-feature-tour.md)。
