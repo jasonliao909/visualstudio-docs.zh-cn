@@ -32,18 +32,16 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a726f73a866fc6b275877f3a457d3b2f6ed08dc0
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 214da76aed0b08dd3568d950205a4bc32ccb9a28
+ms.sourcegitcommit: fc874be3fe4637a23997b4ef2d99a2ee9a499581
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126642236"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135517116"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>在调试时创建调用堆栈的可视图（C#、Visual Basic、C++ 和 JavaScript）
 
 创建代码映射，以便在调试时对调用堆栈进行可视化跟踪。 可以在映射中进行标注以跟踪代码执行的操作，以便专注于查找 Bug。
-
-若要查看演练，请观看此视频：[视频：通过代码图调试器集成进行可视化调试（第 9 频道）](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012Debug-visually-with-Code-Map-debugger-integration)
 
 若要详细了解使用代码图时能使用的命令和操作，请参阅[浏览和重新排列代码图](../modeling/browse-and-rearrange-code-maps.md)。
 

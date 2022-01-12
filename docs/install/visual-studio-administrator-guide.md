@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f8c0cd1465bc3ac47f4be63ff6fb44da5595e425
-ms.sourcegitcommit: 7a300823cf1bd3355be03bde561cf2777bc09eae
+ms.openlocfilehash: e22cbc20ddd6c6d16a8cfc17a71bcb3fd47d45e6
+ms.sourcegitcommit: d38d1b083322019663fec7d1d85a4cda456aadca
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "133978051"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135533963"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio 管理员指南
 
@@ -69,15 +69,15 @@ ms.locfileid: "133978051"
 
 * 确定更新模型。
 
-  希望单个[客户端计算机在哪里获得产品更新](/visualstudio/install/update-a-network-installation-of-visual-studio)？ 具体而言，确定是希望客户端从[公司范围的网络布局](/visualstudio/install/create-a-network-installation-of-visual-studio)还是从 Internet 获取更新。
+  希望单个[客户端计算机在哪里获得产品更新](update-a-network-installation-of-visual-studio.md)？ 具体而言，确定是希望客户端从[公司范围的网络布局](create-a-network-installation-of-visual-studio.md)还是从 Internet 获取更新。
   
   还需要确定是单个用户可以自行更新客户端，还是需要管理员以编程方式更新客户端。 启动更新的任何人都必须拥有计算机的管理权限。 最好在客户端计算机上进行原始安装前做决定。 
 
-  可以使用最新的产品更新来[更新 Visual Studio 的网络布局](/visualstudio/install/create-a-network-installation-of-visual-studio#update-or-modify-your-layout)，以便将它用作 Visual Studio 最新更新的安装点，同时还可用于维护已部署到客户端工作站的安装。 
+  可以使用最新的产品更新来[更新 Visual Studio 的网络布局](create-a-network-installation-of-visual-studio.md#update-or-modify-your-layout)，以便将它用作 Visual Studio 最新更新的安装点，同时还可用于维护已部署到客户端工作站的安装。 
 
-  利用企业部署工具的组织可以充分利用 Visual Studio 更新在 Microsoft 更新目录和 Windows Server Update Services 上可用这一事实。 有关详细信息，请参阅[启用管理员更新](/visualstudio/install/enabling-administrator-updates)和[应用管理员更新](/visualstudio/install/applying-administrator-updates)。
+  利用企业部署工具的组织可以充分利用 Visual Studio 更新在 Microsoft 更新目录和 Windows Server Update Services 上可用这一事实。 有关详细信息，请参阅[启用管理员更新](enabling-administrator-updates.md)和[应用管理员更新](applying-administrator-updates.md)。
 
-  对于未连接到 Internet 的计算机，可[以编程方式更新客户端并阻止 Internet 访问](/visualstudio/install/update-a-network-installation-of-visual-studio#programatically-update-a-client-that-doesnt-have-internet-access)，也可以[使用最小布局更新 Visual Studio](update-minimal-layout.md)。 
+  对于未连接到 Internet 的计算机，可[以编程方式更新客户端并阻止 Internet 访问](update-a-network-installation-of-visual-studio.md#programatically-update-a-client-that-doesnt-have-internet-access)，也可以[使用最小布局更新 Visual Studio](update-minimal-layout.md)。 
 
 * 确定公司所需的[工作负载和组件](workload-and-component-ids.md)。
 
@@ -93,7 +93,7 @@ ms.locfileid: "133978051"
 
 ## <a name="step-2---build-an-installation-script"></a>第 2 步 - 生成安装脚本
 
-* 构建一个使用[命令行参数](use-command-line-parameters-to-install-visual-studio.md)[从网络布局将 Visual Studio 安装到客户端计算机](/visualstudio/install/create-a-network-installation-of-visual-studio#install-visual-studio-onto-a-client-machine-from-a-network-installation)的安装脚本。
+* 生成一个安装脚本[，该](use-command-line-parameters-to-install-visual-studio.md)脚本使用命令行参数将Visual Studio布局 安装到[客户端计算机上](create-a-network-installation-of-visual-studio.md#install-visual-studio-onto-a-client-machine-from-a-network-installation)。
 
 * （可选）[应用批量许可证产品密钥](automatically-apply-product-keys-when-deploying-visual-studio.md)作为安装脚本的一部分，这样用户便无需单独激活软件。
 
@@ -105,9 +105,9 @@ ms.locfileid: "133978051"
 
 使用所选部署技术，在目标开发者工作站上执行脚本。  
 
-* [使用所需的 Visual Studio 版本更新网络布局](/visualstudio/install/create-a-network-installation-of-visual-studio#update-or-modify-your-layout)
+* [使用所需的 Visual Studio 版本更新网络布局](create-a-network-installation-of-visual-studio.md#update-or-modify-your-layout)
 
-* 使用 Visual Studio [的最新更新刷新客户端计算机](/visualstudio/install/update-a-network-installation-of-visual-studio)。
+* 使用 Visual Studio [的最新更新刷新客户端计算机](update-a-network-installation-of-visual-studio.md)。
 
 * 可以使用类似 System Center Configuration Manager 的工具从 Windows Server Update Services 或 Windows 更新目录部署 Visual Studio。 有关详细信息，请参阅[应用管理员更新](applying-administrator-updates.md)。 
 

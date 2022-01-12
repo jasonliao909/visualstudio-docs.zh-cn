@@ -23,12 +23,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 391ff83ccefe79a7c14ac50ecc6c508d6aedd610
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: c265ba3a711f67f66bb45e0b06e28b89a96db8c9
+ms.sourcegitcommit: fc874be3fe4637a23997b4ef2d99a2ee9a499581
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736728"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135516525"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>IntelliTrace 功能（C#、Visual Basic、C++）
 
@@ -127,9 +127,3 @@ Visual Studio Enterprise 版中提供 IntelliTrace，但 Visual Studio Professio
 ## <a name="forums"></a>论坛
 
 [Visual Studio 调试器](https://social.msdn.microsoft.com/Forums/en-US/home)
-
-## <a name="videos"></a>视频
-
-[IntelliTrace 体验](https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/IntelliTrace-Experience)
-
-[Microsoft Visual Studio Ultimate 2015 中的 IntelliTrace 调试历史记录](https://channel9.msdn.com/events/Ignite/2015/BRK3716)

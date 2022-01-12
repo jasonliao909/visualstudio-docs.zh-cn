@@ -11,12 +11,12 @@ ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a3b82b65d5991a6606ad4894786bbda199b1ca17
-ms.sourcegitcommit: 04fb8ba0f7ea73ba17baa88f10563c8600e7fd7b
+ms.openlocfilehash: 57258ad766e34aeeec770ea1056472b309e253d7
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "135121568"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135805879"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>如何在 Visual Studio 中创建和管理 Python 环境
 
@@ -94,7 +94,7 @@ Visual Studio 使用注册表查找已安装的全局环境（遵循 [PEP 514 ](
 
 使用环境列表下方的下拉列表可切换到不同的选项卡，例如“包”和“IntelliSense”   。 [“Python 环境”窗口选项卡引用](python-environments-window-tab-reference.md)中也介绍了这些选项卡。
 
-选择环境不会改变其与任何项目的关系。 Visual Studio 可将列表中以粗体显示的默认环境用于任意新项目。 要在新项目中使用不同的环境，请使用“将此作为新项目的默认环境”命令  。 在项目的上下文中，始终可以选择特定环境。 有关详细信息，请参阅为 [项目) 选择环境](selecting-a-python-environment-for-a-project.md#how-to-select-a-python-environment-for-a-project) 。
+选择环境不会改变其与任何项目的关系。 Visual Studio 可将列表中以粗体显示的默认环境用于任意新项目。 要在新项目中使用不同的环境，请使用“将此作为新项目的默认环境”命令  。 在项目的上下文中，始终可以选择特定环境。 有关详细信息，请参阅[选择项目环境](selecting-a-python-environment-for-a-project.md)。
 
 在每个列出的环境右侧，都是一个控件，用于打开该环境的 **交互** 窗口。 （在 Visual Studio 2017 15.5 及更早版本中，可能还会显示另一个控件，用于刷新此环境的 IntelliSense 数据库。 有关数据库的详细信息，请参阅[“环境”窗口选项卡引用](python-environments-window-tab-reference.md)。）
 
@@ -315,7 +315,7 @@ conda 环境文件夹如下所示：
 
    !["添加环境"对话框中的"自定义环境"选项-2019](media/environments/environments-custom-2-2019.png)
 
-1. 在对话框中提供的字段中，输入或浏览 (前缀路径"下) "前缀路径"下解释器的路径，该路径将填充大多数其他字段。
+1. 在对话框中提供的字段中，输入或浏览 (**前缀** 路径 下) 解释器的路径，该路径将填充大多数其他字段。 
 
 1. 在检查这些值并根据需要修改后，选择“添加”  。
 
@@ -345,7 +345,7 @@ conda 环境文件夹如下所示：
 
     例如，C:\Users\user\Anaconda3\python.exe 中的 Anaconda 2021.05
 
-1. 在对话框中提供的字段中，输入或浏览 (前缀路径"下) "前缀路径"下解释器的路径，该路径将填充大多数其他字段。
+1. 在对话框中提供的字段中，输入或浏览 (**前缀** 路径 下) 解释器的路径，该路径将填充大多数其他字段。 
 
 1. 在检查这些值并根据需要修改后，选择“添加”  。
    ![在"添加环境"对话框-2022 中指定自定义环境选项详细信息的字段](media/environments/environments-custom-3-2022.png)

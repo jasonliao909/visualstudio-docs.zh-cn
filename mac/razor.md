@@ -1,18 +1,19 @@
 ---
 title: 创建 Razor Web 应用
 description: 提供有关 Visual Studio for Mac 中 ASP.NET Core 应用的 Razor 支持的信息。
-author: sayedihashimi
-ms.author: sayedha
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
 ms.topic: how-to
-ms.openlocfilehash: 26575367d7aff2b92c64dc5d07068b4900b24e7f
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 3a99b02009b940f6d51405ff81901763bce92816
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126737201"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135805515"
 ---
 # <a name="create-razor-web-apps"></a>创建 Razor Web 应用
 

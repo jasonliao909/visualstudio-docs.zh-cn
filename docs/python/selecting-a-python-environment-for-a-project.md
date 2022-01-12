@@ -1,5 +1,5 @@
 ---
-title: 选择用于项目的 Python 环境
+title: 选择 Python 环境
 description: 可以专门选择 Python 环境（包括 Anaconda 和虚拟环境）以应用于特定项目。
 ms.date: 03/18/2019
 ms.topic: how-to
@@ -10,14 +10,14 @@ ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 72ea6ec0c0451979180c142f14e41e285eac6481
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 6a906a69d581b0632c35baed548a52f9a8f3eb77
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129967634"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135806308"
 ---
-# <a name="how-to-select-a-python-environment-for-a-project"></a>如何选择用于项目的 Python 环境
+# <a name="select-a-python-environment-for-a-project-in-visual-studio"></a>为项目中的项目选择 Python Visual Studio
 
 Python 项目中的所有代码都在特定环境的上下文中运行，例如全局 Python 环境、Anaconda 环境、虚拟环境或 conda 环境。 Visual Studio 还将该环境用于调试、导入和成员完成、语法检查，以及需要特定于 Python 版本和一组已安装包的语言服务的任何其他任务。
 

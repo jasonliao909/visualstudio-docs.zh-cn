@@ -4,18 +4,18 @@ description: 已安装针对 Visual Studio 的 R 工具的开发人员的摘要�
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: ghogen
+ms.author: ghogen
 manager: jmartens
 ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: 91c8a3941039242a575bce7e60cbcb3b9e4f4d2c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
-ms.translationtype: HT
+ms.openlocfilehash: 7433e602967686d8d920496a8e5d86471c4f68bc
+ms.sourcegitcommit: dcecc0ed37b5e976b5dc83c5128ba5ecc8bc04b1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122054283"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "135751068"
 ---
 # <a name="welcome-to-r-tools-for-visual-studio"></a>欢迎使用针对 Visual Studio 的 R 工具
 

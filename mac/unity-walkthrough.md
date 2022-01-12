@@ -1,18 +1,19 @@
 ---
 title: 开始使用 Unity 生成游戏
 description: Unity 和 Visual Studio for Mac 入门
-author: heiligerdankgesang
-ms.author: dominicn
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.date: 11/09/2020
 ms.technology: vs-ide-general
 ms.assetid: D07FA43B-9D18-4DFA-8343-CD538FAD84DB
 ms.topic: how-to
-ms.openlocfilehash: 02cfb49a223d927dd8228bb961f2036fe59c050fe5492c4ee2e0e5538e86e931
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
-ms.translationtype: HT
+ms.openlocfilehash: 96a2fa0f949c2054b025f016959d4490c056ff53
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121382687"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135805450"
 ---
 # <a name="getting-started-building-games-with-unity-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中开始使用 Unity 生成游戏
 

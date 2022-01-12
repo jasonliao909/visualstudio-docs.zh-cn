@@ -1,7 +1,7 @@
 ---
 title: 使用测试资源管理器运行单元测试
 description: 了解如何使用测试资源管理器在 Visual Studio 中运行测试。 本主题介绍如何启用生成后自动测试运行、查看测试结果、对测试列表进行分组和筛选、创建播放列表以及使用测试快捷方式。
-ms.date: 01/11/2021
+ms.date: 12/16/2021
 ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
@@ -9,12 +9,12 @@ manager: jmartens
 ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: 97dd55ecfc5f66abc4df8becbecbe608d93a7dfb
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 1ba7d81c3d408ade040dc5c763d7e07c3c0e1f73
+ms.sourcegitcommit: d3578c384959f1b76dd06fb4b5d075fb052f8c69
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736591"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "135375215"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用测试资源管理器运行单元测试
 
@@ -38,8 +38,11 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 ::: moniker range="vs-2017"
 ![单元测试资源管理器](../test/media/ute_failedpassednotrunsummary.png)
 ::: moniker-end
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 ![测试资源管理器](../test/media/vs-2019/test-explorer-16-2.png)
+::: moniker-end
+::: moniker range=">=vs-2022"
+![测试资源管理器](../test/media/vs-2022/test-explorer-17-0.png)
 ::: moniker-end
 
 ::: moniker range="vs-2017"
@@ -54,8 +57,11 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 ::: moniker range="vs-2017"
 ![从测试资源管理器工具栏运行测试](../test/media/ute_toolbar.png)
 ::: moniker-end
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 ![从测试资源管理器工具栏运行测试](../test/media/vs-2019/test-explorer-toolbar-diagram-16-2.png)
+::: moniker-end
+::: moniker range=">=vs-2022"
+:::image type="content" source="../test/media/vs-2022/test-explorer-toolbar-diagram-17-0.png" alt-text="从测试资源管理器工具栏运行测试":::
 ::: moniker-end
 
 ### <a name="run-tests"></a>运行测试
@@ -109,8 +115,11 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 ::: moniker range="vs-2017"
 ![测试执行详细信息](../test/media/ute_testdetails.png)
 ::: moniker-end
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 ![测试执行详细信息](../test/media/vs-2019/test-explorer-detail.png)
+::: moniker-end
+::: moniker range=">=vs-2022"
+![测试执行详细信息](../test/media/vs-2022/test-explorer-details.png)
 ::: moniker-end
 
 测试细节窗格中显示以下信息：
@@ -142,7 +151,7 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 
 ![在测试资源管理器中按类别对测试分组](../test/media/ute_groupbycategory.png)
 ::: moniker-end
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 通过测试资源管理器，可以将测试分组到层次结构中。 默认层次结构分组包括“项目”、“命名空间”和“类”  。 若要更改测试的组织方式，请依次选择“分组依据”按钮 ![测试资源管理器的分组按钮](../test/media/ute_groupby_btn.png) 和新分组条件。
 
 ![在测试资源管理器中按类别对测试分组](../test/media/vs-2019/test-explorer-groupby-162.png)
@@ -150,6 +159,15 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 你可以定义自己的层次结构级别，然后通过按喜欢的顺序选择“分组依据”选项来依次按“状态”和“类”进行分组 。
 
 ![Visual Studio 测试资源管理器的屏幕截图，其中一个窗格显示测试层次结构，另一个窗格显示“分组依据”菜单，其中选中了“类”和“状态”选项。](../test/media/vs-2019/test-explorer-groupby-state-16-2.png)
+::: moniker-end
+::: moniker range=">=vs-2022"
+通过测试资源管理器，可以将测试分组到层次结构中。 默认层次结构分组包括“项目”、“命名空间”和“类”  。 若要更改测试的组织方式，请依次选择“分组依据”按钮 ![测试资源管理器的分组按钮](../test/media/ute_groupby_btn.png) 和新分组条件。
+
+![在测试资源管理器中按类别对测试分组](../test/media/vs-2022/test-explorer-groupby-17-0.png)
+
+你可以定义自己的层次结构级别，然后通过按喜欢的顺序选择“分组依据”选项来依次按“状态”和“类”进行分组 。
+
+![Visual Studio 测试资源管理器的屏幕截图，其中一个窗格显示测试层次结构，另一个窗格显示“分组依据”菜单，其中选中了“类”和“状态”选项。](../test/media/vs-2022/test-explorer-groupby-state-17-0.png)
 ::: moniker-end
 
 ### <a name="test-explorer-groups"></a>测试资源管理器组
@@ -188,7 +206,6 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|可以通过 TestCategory 属性指定单元测试的类别。|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>|你可以通过 TestProperty 属性定义特征类别/值对。|
 
-
 **适用于 C++ 的 Microsoft 单元测试框架中的特征**
 
 请参阅[如何使用适用于 C++ 的 Microsoft 单元测试框架](how-to-use-microsoft-test-framework-for-cpp.md)。
@@ -208,7 +225,7 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 
 如果各个测试没有防止其以任何顺序运行的依赖项，则可使用工具栏上的 ![Visual Studio 测试资源管理器工具栏上“并行测试执行”切换按钮的屏幕截图。](../test/media/ute_parallelicon-small.png) 切换按钮来打开并行测试执行。 这可以显著降低运行所有测试所需的时间。
 ::: moniker-end
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 你可以创建和保存想要作为组运行或查看的测试列表。 选择播放列表时，列表中的测试将显示在新的“测试资源管理器”选项卡中。可以将一个测试添加到多个播放列表中。
 
 **若要创建播放列表**，请在测试资源管理器中选择一个或多个测试。 在右键单击菜单中，依次选择“添加到播放列表” > “新建播放列表” 。
@@ -258,7 +275,57 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=vs-2022"
+你可以创建和保存想要作为组运行或查看的测试列表。 选择播放列表时，列表中的测试将显示在新的“测试资源管理器”选项卡中。可以将一个测试添加到多个播放列表中。
+
+**若要创建播放列表**，请在测试资源管理器中选择一个或多个测试。 在右键单击菜单中，依次选择“添加到播放列表” > “新建播放列表” 。
+
+![创建播放列表](../test/media/vs-2022/test-explorer-playlist-17-0.png)
+
+此时将在新的“测试资源管理器”选项卡中打开播放列表。可以使用此播放列表一次，然后将其丢弃，也可以单击播放列表窗口工具栏中的“保存”按钮，然后选择要保存播放列表的名称和位置。
+
+![在单独的“测试资源管理器”选项卡中打开播放列表](../test/media/vs-2022/test-explorer-playlist-tab-17-0.png)
+
+**若要创建播放列表**，请在测试资源管理器中选择一个或多个测试。 右键单击并选择“添加到播放列表” > “新建播放列表” 。
+
+若要打开播放列表，请选择 Visual Studio 工具栏中的播放列表图标，然后从菜单中选择以前保存的播放列表文件。
+
+**若要编辑播放列表**，可以右键单击任何测试，然后使用菜单选项将它添加到播放列表中或从中删除它。
+
+从 Visual Studio 2019 版本 16.7 开始，可以在工具栏中选择“编辑”按钮。 测试旁边将出现复选框，显示播放列表中包括和排除的测试。 根据需要编辑组。
+
+![“编辑播放列表”按钮](../test/media/vs-2022/test-explorer-playlist-edit-17-0.png)
+
+还可以选中或取消选中层次结构中父组的复选框。 此操作将创建一个动态播放列表，会始终基于该组中的测试更新播放列表。 例如，如果你在某一类旁边放置一个复选标记，那么从该类添加的任何测试都将成为此播放列表的一部分。 如果从该类中删除某个测试，该测试则会从播放列表中删除。 通过使用工具栏中的“保存”按钮保存播放列表，并打开在磁盘上创建的 .playlist 文件，可了解有关这些规则的更多信息。 此文件列出了构成播放列表的所有规则和各个测试。
+
+![播放列表 xml 文件](../test/media/vs-2022/test-explorer-playlist-xml-file.png)
+
+若要生成特征的播放列表，请为 MSTest 使用以下格式。
+```xml
+<Playlist Version="2.0">
+    <Rule Name="Includes" Match="Any">
+        <Property Name="Trait" Value="SchemaUpdateBasic" />
+    </Rule>
+</Playlist>
+```
+
+对 xUnit 使用以下格式。 请确保 `TestCategory` 名称和 `[Value]` 之间存在空格。
+```xml
+<Playlist Version="2.0">
+  <Rule Name="Includes" Match="Any">
+    <Rule Match="All">
+      <Property Name="Solution" />
+        <Rule Match="Any">
+            <Property Name="Trait" Value="TestCategory [Value]" />
+        </Rule>
+    </Rule>
+  </Rule>
+</Playlist>
+```
+
+::: moniker-end
+
+::: moniker range="vs-2019"
 ### <a name="test-explorer-columns"></a>测试资源管理器列
 
 除了特征、堆栈跟踪、错误消息和完全限定名以外，[组](#test-explorer-groups)也可用作测试资源管理器中的列。 默认情况下，大多数列不可见，你可以自定义要显示的列及其显示顺序。
@@ -278,6 +345,26 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 
   ![列排序](../test/media/vs-2019/test-explorer-sort-column-16-2.png)
 ::: moniker-end
+::: moniker range=">=vs-2022"
+### <a name="test-explorer-columns"></a>测试资源管理器列
+
+除了特征、堆栈跟踪、错误消息和完全限定名以外，[组](#test-explorer-groups)也可用作测试资源管理器中的列。 默认情况下，大多数列不可见，你可以自定义要显示的列及其显示顺序。
+
+![Visual Studio 测试资源管理器的屏幕截图，其中显示已选中“列”的菜单和已选中“持续时间”、“特征”和“错误消息”的子菜单。](../test/media/vs-2022/test-explorer-columns-17-0.png)
+
+### <a name="filter-sort-and-rearrange-test-columns"></a>对测试列进行筛选、排序和重新排列
+
+可以对列进行筛选、排序和重新排列。
+* 若要筛选到特定特征，请单击“特征”列顶部的“筛选器”图标。
+
+  ![列筛选器](../test/media/vs-2022/test-explorer-filter-column-17-0.png)
+
+* 若要更改列的顺序，请单击列标题并将其向左或向右拖动。
+
+* 若要对列进行排序，请单击列标题。 并非所有列都可以进行排序。 还可通过按住 Shift 并单击其他列标头来按辅助列进行排序。
+
+  ![列排序](../test/media/vs-2022/test-explorer-sort-column-17-0.png)
+::: moniker-end
 
 ## <a name="search-and-filter-the-test-list"></a>搜索和筛选测试列表
 
@@ -296,8 +383,11 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 ::: moniker range="vs-2017"
 ![在测试资源管理器中筛选测试](../test/media/ute_filtertestlist.png)
 ::: moniker-end
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 ![在测试资源管理器中筛选测试](../test/media/vs-2019/test-explorer-search-filter-16-2.png)
+::: moniker-end
+::: moniker range=">=vs-2022"
+![在测试资源管理器中筛选测试](../test/media/vs-2022/test-explorer-search-filter-17-0.png)
 ::: moniker-end
 
 > [!NOTE]
@@ -378,12 +468,13 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
 ::: moniker range=">=vs-2019"
 ## <a name="test-audio-cue"></a>测试音频提示
-测试资源管理器可以在测试运行完成时播放声音。 有两种声音：一种声音表示测试运行成功，所有测试都通过；另一种声音表示测试运行已完成，但至少有一个测试失败。 可以在默认的 Windows 10 声音对话框中设置这些声音。 此功能从 Visual Studio 2019 更新 16.9 预览版 3 开始提供。
 
-1. 打开默认的 Windows 10 声音对话框。
+测试资源管理器可以在测试运行完成时播放声音。 有两种声音：一种声音表示测试运行成功，所有测试都通过；另一种声音表示测试运行已完成，但至少有一个测试失败。 可以在 "默认 Windows 11 声音" 对话框中设置这些声音。 此功能从 Visual Studio 2019 更新 16.9 预览版 3 开始提供。
+
+1. 打开默认 Windows 11 声音对话框。
 2. 导航到“声音”选项卡。
 3. 找到“Microsoft Visual Studio”类别。 选择“测试运行成功”或“测试运行失败”声音，以选择预设声音或浏览到自己的音频文件 。  
-![Windows 10 声音对话框](../test/media/default-windows-10-sound-dialog.png)
+![Windows 10 声音对话框](../test/media/default-windows-11-sound-dialog.png)
 
 ::: moniker-end
 ## <a name="see-also"></a>请参阅

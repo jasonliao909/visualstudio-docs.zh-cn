@@ -12,12 +12,12 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e411beddb093a75528e2cacd2d3eba945e134b62
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 68abf47c04e6b311b48c5b4bf58be4bbcbcd9fab
+ms.sourcegitcommit: fc874be3fe4637a23997b4ef2d99a2ee9a499581
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736812"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135517679"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>使用实验室环境进行开发
 
@@ -36,15 +36,6 @@ ms.locfileid: "126736812"
 |![仅包含服务器的拓扑](../media/topology_backend.png)| 此实验室环境具有服务器拓扑，此拓扑常用于在服务器应用程序上运行手动测试，并且允许测试人员使用他们自己的客户端计算机验证环境中的 bug。 在后端拓扑中，你的实验室环境仅包含服务器。 当你使用此类型的拓扑时，通常使用不属于该环境一部分的客户端计算机连接实验室环境中的服务器。|
 |![云实验室环境](../media/topology_cloud.png)| 此实验室环境提供的功能与服务器拓扑类似，但无需在本地环境运行物理计算机或虚拟机，这样可以缩短安装时间、简化维护过程并降低成本。 在 Microsoft Azure 等云环境中可以快速方便地设置多个网站、虚拟机和自定义网络。|
 |![客户端服务器实验室环境](../media/topology_clientserver.png)| 此实验室环境具有客户端-服务器拓扑，此拓扑常用于测试具有服务器和客户端组件的应用程序。 在客户端/服务器拓扑中，所有用于测试应用程序的所有客户端和服务器计算机都在你的实验室环境中。 当你使用此拓扑时，你可以从影响测试的每台计算机收集测试数据。|
-
-:::row:::
-    :::column:::
-        ![视频的摄像机图标](../../install/media/video-icon.png)
-    :::column-end:::
-    :::column:::
-        [观看视频](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing)了解管理用于测试的实验室环境。
-    :::column-end:::
-:::row-end:::
 
 ## <a name="use-the-cloud-with-azure-pipelines-or-team-foundation-server-build-and-release"></a>通过 Azure Pipelines 或 Team Foundation Server 生成和发布使用云
 

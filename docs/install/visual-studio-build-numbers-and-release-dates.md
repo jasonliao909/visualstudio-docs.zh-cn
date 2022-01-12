@@ -5,7 +5,7 @@ description: Visual Studio 已发布的版本和生成号列表，按日期排�
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.date: 12/14/2021
+ms.date: 12/16/2021
 ms.custom: vs-acquisition
 ms.topic: reference
 ms.workload:
@@ -13,12 +13,12 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: c29c1ee907d6ff1dc1497b93eb34c28f8b98390e
-ms.sourcegitcommit: 04fb8ba0f7ea73ba17baa88f10563c8600e7fd7b
+ms.openlocfilehash: 66116f0f97fdf5f5f36a98db2b378748807be732
+ms.sourcegitcommit: d3578c384959f1b76dd06fb4b5d075fb052f8c69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "135121546"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "135374967"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio 内部版本号和发布日期
 
@@ -30,6 +30,7 @@ ms.locfileid: "135121546"
 
 | **Version**| **频道** | **发布日期** | **内部版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 17.0.4 | 发布 | 2021 年 12 月 16 日 | 17.0.32014.148 |
 | 17.0.3 | 发布 | 2021 年 12 月 14 日 | 17.0.32002.185 |
 | 17.0.2 | 发布 | 2021 年 11 月 30 日 | 17.0.31919.166 |
 | 17.0.1 | 预览版 1.1 | 2021 年 11 月 16 日 | 17.1.31911.260 |
@@ -303,7 +304,7 @@ ms.locfileid: "135121546"
 
 | **Version**      | **频道** | **发布日期**   | **内部版本** |
 |------------------|-------------|--------------------|-------------------|
-| 15.9.42          | 发布     | 2021年12月14日  | 15.9.28307.1759   |
+| 15.9.42          | 发布     | 2021 年 12 月 14 日  | 15.9.28307.1759   |
 | 15.9.41          | Release     | 2021 年 11 月 9 日   | 15.9.28307.1745   |
 | 15.9.40          | 发布     | 2021年10 月 12 日   | 15.9.28307.1705   |
 | 15.9.39          | 发布     | 2021 年 9 月 14 日 | 15.9.28307.1684   |

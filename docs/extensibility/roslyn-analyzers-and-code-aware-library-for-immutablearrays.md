@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad08b0635e4c81fef4b1747f1b5da1e859977f65
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: c430bc041e5212cd67aaf0801d58581b251c7770
+ms.sourcegitcommit: fc874be3fe4637a23997b4ef2d99a2ee9a499581
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122158354"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135517627"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>用于 ImmutableArrays 的 Roslyn 分析器和代码识别库
 
@@ -272,11 +272,11 @@ context.RegisterCodeFix(
 
 最后添加的代码片段通过为 `CodeAction` 找到的问题类型传递和诊断 ID 来注册代码修补程序。 在此示例中，此代码仅提供了一个诊断 ID，因此，你可以只传递诊断 Id 数组的第一个元素。 当你创建时 `CodeAction` ，会传入灯泡 UI 应将其用作代码修补说明的文本。 还会传入一个函数，该函数采用 CancellationToken 并返回新文档。 新文档有一个新的语法树，其中包含所调用的已修复代码 `ImmutableArray.Empty` 。 此代码片段使用 lambda，以便它可以在 objectCreation 节点和上下文的文档中关闭。
 
-**构造新的语法树。** 在 `ChangeToImmutableArrayEmpty` 之前生成的存根的方法中，输入代码行： `ImmutableArray<int>.Empty;` 。 如果再次查看 " **Syntax Visualizer** 工具" 窗口，则可以看到此语法是 SimpleMemberAccessExpression 节点。 这就是此方法需要在新文档中构造和返回的内容。
+**构造新的语法树。** 在 `ChangeToImmutableArrayEmpty` 之前生成的存根的方法中，输入代码行 `ImmutableArray<int>.Empty;` ：。 如果再次查看 **Syntax Visualizer** 窗口，可以看到此语法是 SimpleMemberAccessExpression 节点。 这就是此方法需要在新文档中构造和返回的内容。
 
-第一次更改 `ChangeToImmutableArrayEmpty` 是 `async` 在之前添加， `Task<Document>` 因为代码生成器不能假定方法应为 async。
+对 的第一 `ChangeToImmutableArrayEmpty` 个更改是在 之前添加 `async` ，因为 `Task<Document>` 代码生成器不能假定 方法应为异步方法。
 
-填写包含以下代码的正文，使方法类似于以下代码：
+用以下代码填充正文，以便方法如下所示：
 
 ```csharp
 private async Task<Document> ChangeToImmutableArrayEmpty(
@@ -292,28 +292,26 @@ private async Task<Document> ChangeToImmutableArrayEmpty(
 }
 ```
 
-需要将编辑器的插入符号放在 `SyntaxGenerator` 标识符中，并使用 **Ctrl 键** + **。** 为此类型添加适当语句)  (时间段 `using` 。
+需要将编辑器的 caret 置于标识符 `SyntaxGenerator` 中，并使用 **Ctrl** + **。**  (此) 添加相应 `using` 语句的时间段。
 
-此代码使用 `SyntaxGenerator` ，这是用于构造新代码的有用类型。 获取具有代码问题的文档的生成器后， `ChangeToImmutableArrayEmpty` 调用 `MemberAccessExpression` ，传递包含要访问的成员的类型，并将成员的名称作为字符串传递。
+此代码 `SyntaxGenerator` 使用 ，这是构造新代码的有用类型。 获取具有代码问题的文档的生成器后，调用 ，传递具有我们想要访问的成员的类型，并作为字符串 `ChangeToImmutableArrayEmpty` `MemberAccessExpression` 传递成员的名称。
 
-接下来，该方法提取文档的根目录，因为这可能涉及一般情况下的任意工作，代码会等待此调用并传递取消标记。 Roslyn 代码模型是不可变的，如使用 .NET 字符串;更新字符串时，将在返回中获取新的字符串对象。 调用时 `ReplaceNode` ，将返回一个新的根节点。 大多数语法树是 (共享的，因为它是不可变的) ，但 `objectCreation` 节点被替换为 `memberAccess` 节点，以及所有父节点（直到语法树根）。
+接下来， 方法提取文档的根，由于这一般情况下可能涉及任意工作，因此代码将等待此调用并传递取消令牌。 Roslyn 代码模型是不可变的，就像使用 .NET 字符串一样;更新字符串时，将返回新的字符串对象。 调用 时 `ReplaceNode` ，会返回一个新的根节点。 大多数语法树都是 (的，因为它是不可变的) ，但节点被替换为 节点以及语法树根目录前的所有父 `objectCreation` `memberAccess` 节点。
 
 ## <a name="try-your-code-fix"></a>尝试代码修复
 
-你现在可以按 **F5** 在 Visual Studio 的第二个实例中执行 analyzer。 打开之前使用的控制台项目。 现在应会看到灯泡出现在新对象创建表达式的位置 `ImmutableArray<int>` 。 按 Ctrl 键 + **。** )  (期间，你将看到你的代码修复，你会在灯泡 UI 中看到自动生成的代码差异预览。 Roslyn 会为你创建此。
+现在，可以按 **F5** 在分析器的第二个实例中执行Visual Studio。 打开之前使用的控制台项目。 现在，应会看到灯泡出现，其中新的对象创建表达式适用于 `ImmutableArray<int>` 。 如果按 **Ctrl** + **。**  (期间) ，你将看到代码修补程序，并且将在灯泡 UI 中看到自动生成的代码差异预览。 Roslyn 会创建它。
 
-**Pro 提示：** 如果您启动 Visual Studio 的第二个实例，并且您的代码修复程序看不到灯泡，则可能需要清除 Visual Studio 组件缓存。 清除缓存会强制 Visual Studio 重新检查组件，因此 Visual Studio 应选择最新的组件。 首先，关闭 Visual Studio 的第二个实例。 然后，在 **Windows 资源管理器** 中，导航到 *%LOCALAPPDATA%\Microsoft\VisualStudio\16.0Roslyn \\*。  ("16.0" 从版本更改为版本 Visual Studio。 ) 删除子目录 *ComponentModelCache*。
+**Pro提示**：如果启动 Visual Studio 的第二个实例，并且未看到带代码修补程序的灯泡，可能需要清除Visual Studio缓存。 清除缓存Visual Studio重新检查组件，因此Visual Studio选取最新的组件。 首先，关闭第二个 Visual Studio。 然后，在 **Windows** 资源管理器中，导航到 *%LOCALAPPDATA%\Microsoft\VisualStudio\16.0Roslyn \\*。  ("16.0"随 Visual Studio.) 删除子目录 *ComponentModelCache* 从版本更改。
 
-## <a name="talk-video-and-finish-code-project"></a>讨论视频和完成代码项目
+## <a name="talk-video-and-finish-code-project"></a>聊天视频并完成代码项目
 
-你可以看到本 [示例中开发和讨论的此](https://channel9.msdn.com/events/Build/2015/3-725)示例。 此对话演示了工作分析器，并引导您完成构建。
+可在此处查看所有已完成 [的代码](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)。 子文件夹 *DoNotUseImmutableArrayCollectionInitializer* 和 *DoNotUseImmutableArrayCtor* 各有一个 C# 文件用于查找问题，以及一个 C# 文件，用于实现 Visual Studio 灯泡 UI 中显示的代码修补程序。 请注意，已完成的代码具有更多的抽象，以避免一次又一次地提取 ImmutableArray \<T> 类型对象。 它使用嵌套的已注册操作将类型对象保存在每当子操作分析对象创建 (分析集合初始化时可用的上下文中) 对象。
 
-可在 [此处](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)查看全部完成的代码。 子文件夹 *DoNotUseImmutableArrayCollectionInitializer* 和 *DoNotUseImmutableArrayCtor* 每个都有一个 c # 文件，用于查找问题和一个 c # 文件，用于实现在 Visual Studio 灯泡 UI 中显示的代码修复。 请注意，已完成的代码具有更多抽象，以避免反复获取 ImmutableArray \<T> 类型对象。 它使用嵌套注册操作将类型对象保存在上下文中，每当子操作 (分析对象创建和分析) 执行的集合初始化时可用。
+## <a name="see-also"></a>另请参阅
 
-## <a name="see-also"></a>请参阅
-
-* [\\\Build 2015 交谈](https://channel9.msdn.com/events/Build/2015/3-725)
-* [GitHub 上的已完成代码](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)
-* [GitHub 上的几个示例，分为三类分析器](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
-* [GitHub OSS 站点上的其他文档](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
-* [在 GitHub 上用 Roslyn 分析器实现的 FxCop 规则](https://github.com/dotnet/roslyn/tree/master/src/Features/Core/Portable/Diagnostics/Analyzers)
+* \\\Build 2015 talk
+* [已完成代码GitHub](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)
+* [有关分析器GitHub，分为三种类型的分析器](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
+* [OSS 站点上GitHub文档](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
+* [使用 Roslyn 分析器在 GitHub](https://github.com/dotnet/roslyn/tree/master/src/Features/Core/Portable/Diagnostics/Analyzers)

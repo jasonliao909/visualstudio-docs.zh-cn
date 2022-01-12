@@ -2,19 +2,19 @@
 title: 在 XAML 设计器中调试或禁用项目代码
 description: 了解如何在 XAML 设计器中调试或禁用项目代码，包括如何在 Visual Studio 的另一个实例中调试正在运行的项目代码。
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 12/17/2021
 ms.topic: how-to
 ms.assetid: ac600581-8fc8-49e3-abdf-1569a3483d74
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.technology: vs-xaml-tools
-ms.openlocfilehash: 07107cac541f8845b031d39976be4041a7826551
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 4d260fb5afdc70d333b4e7ec7707148f2244f986
+ms.sourcegitcommit: d3578c384959f1b76dd06fb4b5d075fb052f8c69
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126666094"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "135374905"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>在 XAML 设计器中调试或禁用项目代码
 
@@ -58,11 +58,17 @@ ms.locfileid: "126666094"
 
 6. 在 Visual Studio 的新实例中，选择菜单栏上的“调试” > “附加到进程” 。
 
-7. 在“附加到进程”  对话框中，从“可用进程”  列表中选择“XDesProc.exe” ，然后选择“附加”  按钮。
+7. 在 "**附加到进程**" 对话框中的 "**可用进程**" 列表中，选择与要使用的 Visual Studio 版本和要开发的平台相匹配的进程 (请参阅下表) ，然后选择 "**附加**" 按钮。
 
-     ![XAML 设计器进程](media/xaml_attach.png)
+    |Visual Studio 版本 | 平台      | 进程名称   |
+    |----------------------|---------------|----------------|
+    |2017 &ndash; 2022       | UWP 应用      | UwpSurface.exe |
+    |2017 &ndash; 2022       | WPF Core 应用 | WpfSurface.exe |
+    |仅2019             | WPF 框架 | xDesProc.exe   |
+    |仅2022             | WPF 框架 | WpfSurface.exe |
 
-     这是 Visual Studio 的第一个实例中 XAML 设计器的进程。
+    > [!IMPORTANT]
+    > 在 Visual Studio 2019 中，如果在 "**工具** 选项"   >    >  **环境**  >  **预览功能** 中启用了新的 WPF XAML 设计器，则 WpfSurface.exe。
 
 8. 在 Visual Studio 的第一个实例中，选择菜单栏上的“调试” > “启动调试” 。
 

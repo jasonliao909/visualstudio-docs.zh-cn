@@ -1,17 +1,18 @@
 ---
 title: 生成 ASP.NET Core 应用程序
 description: 本文演练如何使用 Visual Studio for Mac 创建和浏览 ASP.NET Core 应用程序。
-author: sayedihashimi
-ms.author: sayedha
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
 ms.topic: how-to
-ms.openlocfilehash: 22dfa4a33005afd64be54828f3b49c45244779d2
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 1f7a84ef1414ee17d563011cb5b1399a7e02cccb
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736768"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135803799"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中生成 ASP.NET Core 应用程序
 

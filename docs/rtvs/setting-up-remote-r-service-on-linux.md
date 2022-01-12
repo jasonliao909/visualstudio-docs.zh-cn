@@ -4,19 +4,19 @@ description: 如何在 Ubuntu 和适用于 Linux 的 Windows 子系统上设置�
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: ghogen
+ms.author: ghogen
 ms.reviewer: karthiknadig
 manager: jmartens
 ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: badd4cda94055a4c3d50a1a82a1dce6e52a3365c
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: fc1d302fe4be0f95458402a5b18c626a54cb1dfa
+ms.sourcegitcommit: dcecc0ed37b5e976b5dc83c5128ba5ecc8bc04b1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126642254"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "135751018"
 ---
 # <a name="remote-r-service-for-linux"></a>适用于 Linux 的远程 R 服务
 

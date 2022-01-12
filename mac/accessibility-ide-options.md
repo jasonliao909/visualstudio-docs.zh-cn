@@ -1,17 +1,18 @@
 ---
 title: 设置 IDE 辅助功能选项
 description: 介绍如何在 Visual Studio for Mac 中设置辅助功能选项
-author: heiligerdankgesang
-ms.author: dominicn
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.date: 09/23/2019
 ms.assetid: 87D22340-2BE6-40EE-ACFD-3CF1BA886175
 ms.topic: how-to
-ms.openlocfilehash: f56141cb59cc679993140e2ed2093fe1cb9d9790
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: b3f43c1a48a4c1615f7790611760276f30b57c0e
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736249"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135806295"
 ---
 # <a name="set-ide-accessibility-options"></a>设置 IDE 辅助功能选项
 

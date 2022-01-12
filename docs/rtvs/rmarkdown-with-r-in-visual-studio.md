@@ -4,18 +4,18 @@ description: 如何在 Visual Studio 中创建 R Markdown 文档，以生成高�
 ms.date: 11/16/2017
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: ghogen
+ms.author: ghogen
 manager: jmartens
 ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: 89bd6ca22fab59837cbf949b6b90ffee628ee55b
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 2bfdb562eecb110ad7b859ad4d9565e00949ae40
+ms.sourcegitcommit: dcecc0ed37b5e976b5dc83c5128ba5ecc8bc04b1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126642252"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "135750768"
 ---
 # <a name="create-r-markdown-documents"></a>创建 R Markdown 文档
 

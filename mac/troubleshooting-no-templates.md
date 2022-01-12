@@ -2,16 +2,17 @@
 title: 为什么看不到所有可用模板？
 description: 关于看不到所有可用模板的原因的疑难解答文章。
 ms.topic: troubleshooting
-author: heiligerdankgesang
-ms.author: dominicn
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.date: 04/02/2019
 ms.assetid: 297D9094-B40F-4C1A-BF19-B14CB735003A
-ms.openlocfilehash: cb6f9e3a41236d10b0558a508c2531b08ec7fe13
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: f85ba19cb9663562f2644431feb3f875b63867c7
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126644502"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135805593"
 ---
 # <a name="troubleshooting-why-can-i-not-see-all-available-templates"></a>疑难解答：我为什么看不到部分可用模板？
 

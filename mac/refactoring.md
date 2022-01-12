@@ -3,15 +3,16 @@ title: 重构代码
 description: 使用 Visual Studio for Mac 和快速操作优化代码。
 author: jmatthiesen
 ms.author: jomatthi
+manager: dominicn
 ms.date: 07/03/2020
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
-ms.custom: video
-ms.openlocfilehash: 3892117e5c84a71f258d4e019105fca0a8cf9c5b
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.topic: reference
+ms.openlocfilehash: e197f7d8e7ed7e0c2dd9a5466837bea4d11953ef
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126737200"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135806633"
 ---
 # <a name="refactoring"></a>Refactoring
 
@@ -91,7 +92,7 @@ Visual Studio for Mac 与 Roslyn（Microsoft 的开源 .NET 编译器平台）�
 
 ## <a name="related-video"></a>相关视频
 
-> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Refactoring-Code/player]
+> [!Video https://docs.microsoft.com/shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Refactoring-Code/player]
 
 ## <a name="see-also"></a>请参阅
 

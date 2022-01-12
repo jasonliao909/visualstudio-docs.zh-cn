@@ -4,18 +4,18 @@ description: 在 Visual Studio 中如何使用绘图窗口从 R 程序中绘制�
 ms.date: 06/29/2017
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: ghogen
+ms.author: ghogen
 manager: jmartens
 ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: 150bc0a1fb78c58ecc9e086cf20a25e32243215b
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 1a11c0330f8bee99ad8350c07fd90befd1fefa51
+ms.sourcegitcommit: dcecc0ed37b5e976b5dc83c5128ba5ecc8bc04b1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126642247"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "135751061"
 ---
 # <a name="create-visual-data-plots-with-r"></a>使用 R 创建可视数据图
 

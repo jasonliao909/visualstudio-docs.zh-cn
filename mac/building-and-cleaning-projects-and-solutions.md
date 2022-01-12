@@ -1,17 +1,18 @@
 ---
 title: 生成和清理项目和解决方案
 description: 本文介绍如何在 Visual Studio for Mac 中生成项目
-author: heiligerdankgesang
-ms.author: dominicn
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.date: 09/19/2019
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
 ms.topic: how-to
-ms.openlocfilehash: de6be4b509eff8a013f7367614e0016f810b3657
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: fdc6a3ac2474bec07185423e1e1d6d17466c867d
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126644520"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135803214"
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>生成和清理项目和解决方案
 

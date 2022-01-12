@@ -2,16 +2,17 @@
 title: 报告 Visual Studio for Mac 的问题
 description: 如何提出建议或报告使用 Visual Studio for Mac 时遇到的问题。
 ms.topic: troubleshooting
-author: therealjohn
-ms.author: johmil
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.date: 06/18/2019
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
-ms.openlocfilehash: c104e4d819e58630f894405b3b56a8a442576816
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 0721c7feaf9f0f159e1bd8c59fad404af4065d7d
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641386"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135805047"
 ---
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>如何报告 Visual Studio for Mac 的问题
 

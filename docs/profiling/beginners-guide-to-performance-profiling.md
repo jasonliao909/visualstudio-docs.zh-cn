@@ -3,8 +3,6 @@ title: 衡量应用中的 CPU 使用情况
 description: 使用集成了调试器的诊断工具，分析应用程序中的 CPU 性能问题。
 ms.date: 04/03/2021
 ms.topic: tutorial
-f1_keywords:
-- vs.performance.wizard.intropage
 helpviewer_keywords:
 - Profiling Tools, quick start
 - Diagnostics Tools, CPU Usage
@@ -17,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 77186503ad40a5aed3d95e276d58be0b407e1692
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 4e5829dd05711599d5e9ec6e720539ddb79a3d95
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129968834"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135806152"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>通过分析 CPU 使用情况衡量应用程序性能
 

@@ -12,12 +12,12 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: ca6fc65adf546506b79f7cfc1b756e87172ad08c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: e17f61311b321bc7f531ba746bd05060fdcf888f
+ms.sourcegitcommit: fc874be3fe4637a23997b4ef2d99a2ee9a499581
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122033091"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135517692"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Microsoft IntelliTest 的概述
 
@@ -102,7 +102,6 @@ public void HelloWorldThrowsException167()
 就这么简单！
 
 其他资源：
-  * 观看[第 9 频道视频](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Intellitest)
   * 阅读 [MSDN 杂志上的此概述](/archive/msdn-magazine/2015/february/visual-studio-2015-build-better-software-with-smart-unit-tests)
 
 ## <a name="important-attributes"></a>重要属性

@@ -3,15 +3,16 @@ title: 在项目中包括 NuGet 包
 description: 本文档介绍如何使用 Visual Studio for Mac 在项目中包含 NuGet 包。 文档将介绍如何查找和下载包，同时介绍 IDE 集成功能。
 author: jmatthiesen
 ms.author: jomatthi
+manager: dominicn
 ms.date: 11/09/2020
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: conceptual
-ms.openlocfilehash: 46ceb99617c6a0e9ba457fdb769c1162090d1d31
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: bd4193cf47ccdf12bb58a4f068ea775ba487363f
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736248"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135804020"
 ---
 # <a name="install-and-manage-nuget-packages-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中安装和管理 NuGet 包
 
@@ -150,7 +151,7 @@ NuGet 文档讨论了[在不将包提交到源控件的情况下使用 NuGet](/n
 
 ## <a name="related-video"></a>相关视频
 
-> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Using-NuGet/player]
+> [!Video https://docs.microsoft.com/shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Using-NuGet/player]
 
 ## <a name="see-also"></a>请参阅
 

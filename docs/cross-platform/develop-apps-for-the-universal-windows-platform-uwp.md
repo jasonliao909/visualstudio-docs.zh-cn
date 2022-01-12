@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: e54fdd71d848d1edad93fe38598d71c9dbbede7f
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 6067e42dc0ea27024db0bfd863000ded6cf10333
+ms.sourcegitcommit: fc874be3fe4637a23997b4ef2d99a2ee9a499581
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641294"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135516860"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>开发面向通用 Windows 平台 (UWP) 的应用
 
@@ -64,7 +64,7 @@ ms.locfileid: "126641294"
 
 ## <a name="universal-windows-apps"></a>通用 Windows 应用
 
-从 C#、Visual Basic、C++ 或 JavaScript 中选择首选的开发语言用来为 Windows 10 设备创建通用 Windows 平台应用。 请参阅[创建你的第一个应用](/windows/uwp/get-started/your-first-app)或观看 [Tools for Windows 10 Overview](https://channel9.msdn.com/Series/ConnectOn-Demand/229)（Windows 10 工具概述）视频。
+从 C#、Visual Basic、C++ 或 JavaScript 中选择首选的开发语言用来为 Windows 10 设备创建通用 Windows 平台应用。 阅读 [创建第一个应用](/windows/uwp/get-started/your-first-app)。
 
 如果你目前已有通过 Visual Studio 2015 创建的 Windows 应用商店 8.1 应用、Windows Phone 8.1 应用或通用 Windows 应用，则需移植这些应用，以使用最新的通用 Windows 平台。 请参阅[从 Windows 运行时 8.x 移动到 UWP](/windows/uwp/porting/w8x-to-uwp-root)。
 

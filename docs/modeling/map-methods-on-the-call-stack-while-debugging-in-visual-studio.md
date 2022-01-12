@@ -31,12 +31,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d71be4e4bdf57616078b35a3fddcc0907ea3e5d
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: c2c9a458c1955e999196574ed4fd9a174241f66a
+ms.sourcegitcommit: fc874be3fe4637a23997b4ef2d99a2ee9a499581
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126665982"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135517282"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>在 Visual Studio 中调试时映射调用堆栈上的方法
 
@@ -61,8 +61,6 @@ ms.locfileid: "126665982"
 - 可调试的代码，例如 Visual C#、Visual Basic、C++、JavaScript 或 X++
 
   请参阅：
-
-- [视频：通过代码图调试器集成进行可视化调试（第 9 频道）](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012Debug-visually-with-Code-Map-debugger-integration)
 
 - [生成调用堆栈图](#MapStack)
 

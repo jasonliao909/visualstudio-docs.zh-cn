@@ -4,8 +4,6 @@ description: 在 Visual C++ 中，通过定义 _DEBUG 启用调试功能。 了�
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
-f1_keywords:
-- vs.debug
 dev_langs:
 - CSharp
 - VB
@@ -27,12 +25,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7d8760b4b95f7a68ab1a1b2b89204c5f1e6b2c96
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 448b97b4beefce753a2911b02ca005d95368de61
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126737176"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135804540"
 ---
 # <a name="enabling-debug-features-in-c-projects-d_debug"></a>在 C++ 项目中启用调试功能 (/D_DEBUG)
 在 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 中，如果在编译程序时定义了 _DEBUG 符号，则将启用某些调试功能（如断言）。 可以用下列两种方法之一定义 _DEBUG：

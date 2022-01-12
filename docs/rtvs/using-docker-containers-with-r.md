@@ -4,19 +4,19 @@ description: 如何在 Visual Studio 中设置适用于 R 的 Docker 容器并�
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: ghogen
+ms.author: ghogen
 ms.reviewer: karthiknadig
 manager: jmartens
 ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: 4b19e604b052e6f573ff6d07e0830cf4d0af8c37
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: ec8b1ec02e14e54e5f43d893481de37a1e0cb074
+ms.sourcegitcommit: dcecc0ed37b5e976b5dc83c5128ba5ecc8bc04b1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126642248"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "135750868"
 ---
 # <a name="use-docker-containers-with-r-tools-for-visual-studio"></a>配合使用 Docker 容器和针对 Visual Studio 的 R 工具
 

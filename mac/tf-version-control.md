@@ -3,16 +3,17 @@ title: Team Foundation 版本控制 (TFVC)
 description: 有关 TFVC 和 macOS 的疑难解答指南。
 author: jmatthiesen
 ms.author: jomatthi
+manager: dominicn
 ms.date: 11/18/2021
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.topic: troubleshooting
-ms.openlocfilehash: a477ebf36d3ddb9463de60cbec603d0e39631a12
-ms.sourcegitcommit: a98fa8a8362525f67824ce52b7e71757f10f1362
-ms.translationtype: HT
+ms.openlocfilehash: 68c72b4d564abab6f42fa0e49fc56d6a5c9861d2
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "132736443"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135806607"
 ---
 # <a name="does-visual-studio-for-mac-support-team-foundation-version-control"></a>Visual Studio for Mac 是否支持 Team Foundation 版本控制？
 

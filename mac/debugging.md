@@ -1,18 +1,19 @@
 ---
 title: 使用 Visual Studio for Mac 调试
 description: 调试是编程中常见且必要的部分。 Visual Studio for Mac 作为成熟的 IDE，具有一整套方便调试的功能。 本文将介绍如何在 Visual Studio for Mac 中充分使用调试功能，包括从安全调试到数据可视化效果。
-author: therealjohn
-ms.author: johmil
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.date: 5/13/2020
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.topic: overview
-ms.openlocfilehash: 04fae5874a4fefcb51bdef8b00c8cb3b7171057e
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.topic: conceptual
+ms.openlocfilehash: 62274cb42a26ea793dc2c61e68d8f758517e8ae0
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736752"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135803708"
 ---
 # <a name="debugging-with-visual-studio-for-mac"></a>使用 Visual Studio for Mac 调试
 

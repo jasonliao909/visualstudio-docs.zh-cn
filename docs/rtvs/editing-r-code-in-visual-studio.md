@@ -4,18 +4,18 @@ description: Visual Studio 为 R 提供量身定制的编辑体验，同时保�
 ms.date: 11/05/2018
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: ghogen
+ms.author: ghogen
 manager: jmartens
 ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: 27db2b3b5edfe5fbaed9899927f7e9e866bd7d7a
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 1a465f3f9927f32942d2091a229a5ad82e02c7f8
+ms.sourcegitcommit: dcecc0ed37b5e976b5dc83c5128ba5ecc8bc04b1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641020"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "135751119"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>在 Visual Studio 中编辑 R 代码
 

@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 0fc1504118bdff670a59078c151c850aeebcaf1b
-ms.sourcegitcommit: abfcccf63234819c75a61bf2c4c7f710a9d23cdb
-ms.translationtype: HT
+ms.openlocfilehash: d49e8bb4b657c3185693788c8e8c313cf39e43fe
+ms.sourcegitcommit: dcecc0ed37b5e976b5dc83c5128ba5ecc8bc04b1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "132250629"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "135750491"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>演练：部署项目任务列表定义
 
@@ -165,7 +165,7 @@ Visual Studio 回收 IIS 应用程序池，收回解决方案的任何现有版�
 
      例如，`Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName`。
 
-     有关远程部署的详细信息，请参阅[使用解决方案](/previous-versions/office/developer/sharepoint-2010/ee534972(v=office.14))和[使用 PowerShell 在 SharePoint 2010 中添加和部署解决方案](/powershell/module/sharepoint-server/install-spsolution?view=sharepoint-server-ps)。
+     有关远程部署的详细信息，请参阅[使用解决方案](/previous-versions/office/developer/sharepoint-2010/ee534972(v=office.14))和[使用 PowerShell 在 SharePoint 2010 中添加和部署解决方案](/powershell/module/sharepoint-server/install-spsolution?view=sharepoint-server-ps&preserve-view=true)。
 
 ## <a name="next-steps"></a>后续步骤
 

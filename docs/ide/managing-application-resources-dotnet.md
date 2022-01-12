@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 87f03dbbcf4e6c38d55d2a3c7deb5cbc9f0bb8b5
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 4698bcf3ba1833cec700f3e1446c105aa3c9a0fa
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126642174"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135805801"
 ---
 # <a name="manage-application-resources-net"></a>管理应用程序资源 (.NET)
 
@@ -42,7 +42,7 @@ ms.locfileid: "126642174"
 
 - 右键单击“解决方案资源管理器”  中的项目节点，并选择“属性” 
 - 在 Ctrl  +Q  搜索框中键入项目属性 
-- 在解决方案资源管理器窗口中，同时按 Alt+Enter   
+- 按 **Alt** + **Enter** 解决方案资源管理器
 
 选择“资源”  选项卡。如果你的项目尚未包含 .resx 文件，你可以添加一个，添加和删除不同类型的资源，并修改现有资源  。
 

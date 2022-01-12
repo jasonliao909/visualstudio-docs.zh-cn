@@ -6,18 +6,18 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.toolsoptionspages.text_editor.r.lint
-author: kraigb
-ms.author: kraigb
+author: ghogen
+ms.author: ghogen
 manager: jmartens
 ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: 7a278c5ad35b31bd5c0606d64a9fb16d03534229
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: beeee863cec001eb78f1eba7c18488d65b418178
+ms.sourcegitcommit: dcecc0ed37b5e976b5dc83c5128ba5ecc8bc04b1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736836"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "135751033"
 ---
 # <a name="lint-r-code-in-visual-studio"></a>在 Visual Studio 中 Lint R 代码
 

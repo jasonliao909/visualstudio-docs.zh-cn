@@ -1,7 +1,8 @@
 ---
 title: 在调试器中设置符号 (.pdb) 和源文件
 description: 了解如何配置和管理 Visual Studio 中的符号和源文件
-ms.date: 12/09/2021
+ms.date: 12/12/2021
+ms.custom: contperf-fy21q4
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Debugger.Native
@@ -29,55 +30,59 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a7e6694eeb17f67fff12a00d5e3627b6fb8d9fb1
-ms.sourcegitcommit: dc392e126dbd9176825fe68cfc10ede121cde0bf
+ms.openlocfilehash: cbcd8b330baa076b5e13998102a227062704bcf9
+ms.sourcegitcommit: 52a425b5a541034cda26db8df9cd43281c007e80
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "135047845"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "135540739"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>在 Visual Studio 调试器（C#、C++、Visual Basic、F#）中指定符号 (.pdb) 和源文件
 
 程序数据库 ( *.pdb*) 文件（也称为符号文件）将项目源代码中的标识符和语句映射到已编译应用中的相应标识符和说明。 这些映射文件将调试器链接到源代码，以进行调试。
 
-使用标准调试生成配置从 Visual Studio IDE 生成项目时，编译器会创建相应的符号文件。 本文介绍如何在 IDE 中管理符号文件，例如，如何[在调试器选项中指定符号的位置](#BKMK_Specify_symbol_locations_and_loading_behavior)，如何在调试时[检查符号加载状态](#work-with-symbols-in-the-modules-window)，以及如何[在代码中设置符号选项](#compiler-symbol-options)。
+使用标准调试生成配置从 Visual Studio IDE 生成项目时，编译器会创建相应的符号文件。 本文介绍如何在 IDE 中管理符号文件，例如：
+
+- [配置符号文件的位置](#configure-location-of-symbol-files-and-loading-options)
+- [调试时加载符号](#load-symbols-while-debugging)
+- [用于符号的编译器选项](#compiler-symbol-options)。
 
 有关符号文件的详细说明，请参阅以下内容：
 
 - [了解符号文件和 Visual Studio 符号设置](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/)
 
-- [为什么 Visual Studio 要求调试器符号文件必须与同时生成的二进制文件完全匹配？](/archive/blogs/jimgries/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with)
-
 ## <a name="how-symbol-files-work"></a>符号文件的工作方式
 
 .pdb 文件保存调试和项目状态信息，使用这些信息可以对应用的调试配置进行增量链接。 在调试时，Visual Studio 调试器使用 .pdb 文件来确定两项关键信息：
 
-* 要在 Visual Studio IDE 中显示的源文件名和行号。
-* 在应用中停止的断点位置。
+- 要在 Visual Studio IDE 中显示的源文件名和行号。
+- 在应用中停止的断点位置。
 
 符号文件还会显示源文件的位置，以及要从中检索它们的服务器（可选）。
 
-调试器只会加载与在生成应用时创建的 .pdb 文件完全匹配的 .pdb 文件（即原始 .pdb 文件或副本）  。 这样的[完全重复](/archive/blogs/jimgries/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with)是必需的，因为即使代码本身未更改，应用的布局也可能会更改。
+调试器只会加载与在生成应用时创建的 .pdb 文件完全匹配的 .pdb 文件（即原始 .pdb 文件或副本）  。 这样的完全重复是必需的，因为即使代码本身未更改，应用的布局也可能会更改。 有关详细信息，请参阅[为什么 Visual Studio 要求调试器符号文件与生成它们的二进制文件完全匹配？](/archive/blogs/jimgries/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with)
 
 > [!TIP]
 > 要在项目源代码之外调试代码（如项目调用的 Windows 代码或第三方代码），则必须指定外部代码的 .pdb 文件（也可以是源文件）的位置，这些文件必须与应用中生成的文件完全匹配。
 
-## <a name="symbol-file-locations-and-loading-behavior"></a>符号文件位置和加载行为
+## <a name="where-the-debugger-looks-for-symbols"></a>调试器在何处查找符号
 
-在 Visual Studio IDE 中调试项目时，调试器将自动加载位于项目文件夹中的符号文件。
+在 Visual Studio IDE 中调试项目时，调试器会自动加载默认情况下可以查找的符号文件。
 
 > [!NOTE]
-> 在远程设备上调试托管代码时，所有符号文件必须位于本地计算机上，或者位于[调试器选项中指定](#BKMK_Specify_symbol_locations_and_loading_behavior)的位置。
+> 在远程设备上调试托管代码时，所有符号文件必须位于本地计算机上，或者位于[调试器选项中指定](#configure-location-of-symbol-files-and-loading-options)的位置。
 
-调试器还会在以下位置搜索符号文件：
+调试器在下列位置中搜索符号文件：
+
+1. 项目文件夹。
 
 1. 在 DLL 或可执行 (.exe) 文件中指定的位置。
 
    默认情况下，如果你在计算机上已生成 DLL 或 .exe 文件，则链接器会将关联的 .pdb 文件的完整路径和文件名放入 DLL 或 .exe 文件中  。 调试器会检查该位置是否存在符号文件。
 
-2. 与 DLL 或 .exe 文件相同的文件夹。
+1. 与 DLL 或 .exe 文件相同的文件夹。
 
-3. 在调试器选项中为符号文件指定的任何位置。 要添加并启用符号位置，请参阅[配置符号位置和加载选项](#BKMK_Specify_symbol_locations_and_loading_behavior)。
+1. 在调试器选项中为符号文件指定的任何位置。 要添加并启用符号位置，请参阅[配置符号位置和加载选项](#configure-location-of-symbol-files-and-loading-options)。
 
    - 任何本地符号缓存文件夹。
 
@@ -94,14 +99,16 @@ ms.locfileid: "135047845"
      > [!WARNING]
      > 如果使用公共 Microsoft 符号服务器以外的符号服务器，请确保该符号服务器及其路径是可信任的。 由于符号文件可以包含任意可执行代码，因此你可能面临安全威胁。
 
-<a name="BKMK_Specify_symbol_locations_and_loading_behavior"></a>
-### <a name="configure-symbol-locations-and-loading-options"></a>配置符号位置和加载选项
+## <a name="configure-location-of-symbol-files-and-loading-options"></a>配置符号文件的位置和加载选项
+
+默认情况下，调试器检查符号的不同位置。 查看 [调试器查找符号的位置](#where-the-debugger-looks-for-symbols)。
 
 在“工具” > “选项” > “调试” > “符号”页面，你可以执行以下操作：   
 
-- 为 Microsoft、Windows 或第三方组件指定和选择搜索路径和符号服务器。
+- 指定并选择符号文件的搜索路径。
+- 指定 Microsoft、Windows 或第三方组件的符号服务器。
 - 指定你希望或不希望调试器自动为其加载符号的模块。
-- 在主动调试时更改这些设置。 请参阅[调试时管理符号](#manage-symbols-while-debugging)。
+- 在主动调试时更改这些设置。 请参阅 [在调试时加载符号](#load-symbols-while-debugging)。
 
 **指定符号位置和加载选项：**
 
@@ -161,7 +168,7 @@ ms.locfileid: "135047845"
   无法找到源或符号文件时，始终显示反汇编。
 
   ![“选项”/“调试”/“常规”反汇编选项](../debugger/media/dbg-options-general-disassembly-checkbox.png "“选项”/“调试”/“常规”反汇编选项")
-  <a name="BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine"></a>
+
 - **启用源服务器支持**
 
   如果本地计算机上没有源代码，或者 .pdb 文件与源代码不匹配，则使用源服务器来帮助调试应用。 源服务器接受文件请求并返回源代码管理中的实际文件。 源服务器使用名为 srcsrv.dll 的 DLL 来读取应用的 .pdb 文件 。 .pdb 文件包含指向源代码存储库的指针，以及用于从该存储库检索源代码的命令。
@@ -180,6 +187,8 @@ ms.locfileid: "135047845"
 ## <a name="compiler-symbol-options"></a>编译器符号选项
 
 当你使用标准调试生成配置从 Visual Studio IDE 生成项目时，C++ 和托管编译器将为你的代码创建相应的符号文件。 你还可以在代码中设置编译器选项。
+
+若要在 Visual Studio 中为生成配置设置编译器选项，请参阅[设置调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)。
 
 ### <a name="net-options"></a>.NET 选项
 
@@ -213,7 +222,7 @@ ms.locfileid: "135047845"
 
 将 ASP.NET 应用程序的 web.config 文件设置为调试模式。 调试模式将导致 ASP.NET 为动态生成的文件生成符号，并允许调试器附加到 ASP.NET 应用程序。 如果项目是通过 Web 项目模板创建的，则 Visual Studio 会在你开始调试时自动完成此设置。
 
-## <a name="manage-symbols-while-debugging"></a>调试时管理符号
+## <a name="load-symbols-while-debugging"></a>调试时加载符号
 
 你可以使用“模块”、“调用堆栈”、“本地”、“自动”或任何“监视”窗口在调试时加载符号或更改符号选项    。 有关详细信息，请参阅[熟悉调试器如何附加到应用](../debugger/debugger-tips-and-tricks.md#modules_window)。
 

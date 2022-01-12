@@ -3,14 +3,16 @@ title: 代码段
 description: 如何使用代码片段在 Visual Studio for Mac 中高效编程
 author: jmatthiesen
 ms.author: jomatthi
+manager: dominicn
 ms.date: 11/09/2020
+ms.topic: reference
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.openlocfilehash: a8fdf70b4d966c644719047eca4249e432561ace
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 413c5b0a637c2d3d4dfd9fe0f2c07a5d865153d3
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126644514"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135803591"
 ---
 # <a name="code-snippets"></a>代码片段
 

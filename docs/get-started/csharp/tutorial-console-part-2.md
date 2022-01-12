@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: aba8cfeabad2bec1dbcc2b6c4ae5447b0eedec76
-ms.sourcegitcommit: a1c18c491e310b00a43e76a911f778e643cd8f8d
+ms.openlocfilehash: 2fe1d32542c10a324f3c258e0fb1a8070d15015d
+ms.sourcegitcommit: aa5e295b9e3fc8e287f3ae2b6224f41e7d4ee833
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "132995141"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "135437285"
 ---
 # <a name="tutorial-extend-c-console-app-and-debug-in-visual-studio-part-2-of-2"></a>教程：扩展 C# 控制台应用并在 Visual Studio 中调试（第 2 部分，共 2 部分）
 
@@ -908,7 +908,7 @@ namespace CalculatorProgram
 恭喜你完成本教程！ 要更加深入地了解，请继续学习以下内容：
 
 - [继续学习更多 C# 教程](/dotnet/csharp/tutorials/)。
-- [快速入门：创建 ASP.NET Core Web 应用](../../ide/quickstart-aspnet-core.md)。
+- [快速入门：创建 ASP.NET Core 的 web 应用](../../ide/quickstart-aspnet-core.md)。
 - [了解如何在 Visual Studio 中调试 C# 代码](tutorial-debugger.md)。
 - [演练如何创建和运行单元测试](../../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)。
 - [运行 C# 程序](run-program.md)。

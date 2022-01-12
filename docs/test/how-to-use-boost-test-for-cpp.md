@@ -8,12 +8,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 34c593469a586d1314c7ee52f3aeb3ab6faf334c
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: e7e422322d1d2d03839fd16807c639c9c2420a9b
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736951"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135804761"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>如何在 Visual Studio 中使用适用于 C++ 的 Boost.Test
 
@@ -137,7 +137,7 @@ Boost.Test 需要[Boost](https://www.boost.org/)！ 如果未安装 Boost，则�
 
 ```cpp
 #define BOOST_TEST_MODULE MyTest
-#include <boost/test/included/unit_test.hpp\> //single-header
+#include <boost/test/included/unit_test.hpp> //single-header
 #include "../MyProgram/MyClass.h" // project being tested
 #include <string>
 

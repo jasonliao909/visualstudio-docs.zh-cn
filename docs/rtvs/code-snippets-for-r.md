@@ -4,18 +4,18 @@ description: Visual Studio 中的 R 的代码片段提供快捷方式，可用�
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: ghogen
+ms.author: ghogen
 manager: jmartens
 ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: 53da9805458647803b9590818748f604d32c6bd1
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: be7cc1a684a4d9db7a568e937dfe9326c0255a6b
+ms.sourcegitcommit: dcecc0ed37b5e976b5dc83c5128ba5ecc8bc04b1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126640507"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "135750815"
 ---
 # <a name="code-snippets-for-r"></a>R 的代码片段
 

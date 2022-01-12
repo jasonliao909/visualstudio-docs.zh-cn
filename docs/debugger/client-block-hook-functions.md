@@ -4,8 +4,6 @@ description: 编写客户端块挂钩函数来验证或报告存储在 _CLIENT_B
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
-f1_keywords:
-- vs.debug.hooks
 dev_langs:
 - CSharp
 - VB
@@ -24,12 +22,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 3528d52f7e185c804d2f56b3cc9b0baa61228f38
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 99011706a0f034f13bd9f9923358282f3b5d6e19
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641254"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135805021"
 ---
 # <a name="client-block-hook-functions"></a>客户端块挂钩函数
 如果想要验证或报告存储在 `_CLIENT_BLOCK` 块中的数据的内容，可以专为此目的编写函数。 如同 CRTDBG.H 中所定义的，所编写的函数必须有与下面类似的原型：

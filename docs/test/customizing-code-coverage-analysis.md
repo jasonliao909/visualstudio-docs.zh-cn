@@ -10,12 +10,12 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: b422efc8e3f8e6ec9c39b02089e22c5eab6ed3cc
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 221ca6dd18b8ec20087cb1683c0bd5d9ab7bf09c
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126735458"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135802927"
 ---
 # <a name="customize-code-coverage-analysis"></a>自定义代码覆盖率分析
 
@@ -116,6 +116,13 @@ ms.locfileid: "126735458"
 | 源 | 按在其中定义元素的源文件的路径名称匹配元素。 |
 | 特性 | 匹配具有指定特性的元素。 指定属性的完整名称，例如 `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`。<br/><br/>如果排除 <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute> 属性，将从代码覆盖率分析中排除使用语言功能（如 `async`、`await`、`yield return` 和自动实现的属性）的代码。 要排除真正生成的代码，只需排除 <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 属性。 |
 | 函数 | 按完全限定的名称匹配过程、函数或方法，包括参数列表。 还可以使用[正则表达式](#regular-expressions)来匹配部分名称。<br/><br/>示例：<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)` (C++) |
+
+::: moniker range=">=vs-2022"
+### <a name="code-coverage-formats"></a>代码覆盖率格式
+默认情况下，将在文件中收集并保存代码覆盖率 `.coverage` 。 你还可以使用其他格式（包括 Xml 和 Cobertura）来收集覆盖范围。 不同的格式在不同的编辑器和管道中可能非常有用。 可以通过在 `<Format>Cobertura</Format>` `<Format>Xml</Format>` [.Runsettings 文件的 azureml.datacollector 配置节中](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#codecoverage-data-collector)添加或，在 .runsettings 中启用此项。 可以在 Visual Studio Enterprise 的 "代码覆盖率结果" 窗口中查看此格式。
+
+还可以通过在 .runsettings 文件中指定或在参数中指定不同的格式，从命令行指定不同的格式。 例如，dotnet 命令行使用 `dotnet test --collect:"Code Coverage;Format=Cobertura"` 。 供 vstest.console.exe 使用 `vstest.console.exe /collect:"Code Coverage;Format=Cobertura"` 。 Collect 参数将重写 .runsettings 中指定的格式。
+::: moniker-end
 
 ### <a name="regular-expressions"></a>正则表达式
 

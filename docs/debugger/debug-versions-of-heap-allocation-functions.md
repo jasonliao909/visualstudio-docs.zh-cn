@@ -4,8 +4,6 @@ description: 使用 C 运行时库中的堆分配函数的调试版本。 这些
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
-f1_keywords:
-- vs.debug.crt
 dev_langs:
 - CSharp
 - VB
@@ -26,12 +24,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 47a704d69fb0a3487deaf14962a65d0b04fe00ad
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 12a81eb56b968c1b2a07f0accdf6ef58b192f3f0
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126640732"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135805307"
 ---
 # <a name="debug-versions-of-heap-allocation-functions"></a>堆分配函数的“Debug”版本
 C 运行库包含堆分配函数的特殊“Debug”版本。 这些函数的名称与发行版本相同，只是追加了“_dbg”。 本主题用 `malloc` 和 `_malloc_dbg` 作为示例，描述 CRT 函数的发行版本和 _dbg 版本之间的差异。

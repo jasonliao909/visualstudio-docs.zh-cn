@@ -1,7 +1,7 @@
 ---
 title: 首先了解分析工具
 description: 简要了解 Visual Studio 中提供的各种诊断工具。
-ms.date: 09/23/2021
+ms.date: 12/22/2021
 ms.topic: conceptual
 f1_keywords:
 - vs.diagnosticshub.overview
@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f52ff112713beffd388b533c6ecea71c64cb4ec6
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 7c27902bfe4d59667d1ea852589d07358ff16662
+ms.sourcegitcommit: ffd1bea76b51fd6b43d484a30bbd1e674f0ae49b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129973072"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "135563894"
 ---
 # <a name="first-look-at-profiling-tools"></a>首先了解分析工具
 
@@ -33,11 +33,21 @@ Visual Studio 提供了各种分析工具，可依据你的应用类型帮助你
 
 调试会话期间可以访问的分析工具在“诊断工具”窗口中提供。 将自动显示“诊断工具”窗口，除非你已将其关闭。 若要显示窗口，请依次单击“调试”、“Windows”、“显示诊断工具”（或按 Ctrl + Alt + F2）。 窗口打开后，可以选择想要用于收集数据的工具。
 
+::: moniker range=">=vs-2022"
+![“诊断工具”窗口](../profiling/media/vs-2022/prof-tour-diagnostic-tools.png "诊断工具")
+::: moniker-end
+::: moniker range="<=vs-2019"
 ![“诊断工具”窗口](../profiling/media/prof-tour-diagnostic-tools.png "诊断工具")
+::: moniker-end
 
 调试时，你可以使用“诊断工具”窗口分析 CPU 和内存使用情况，并且可以查看显示性能相关信息的事件。
 
+::: moniker range=">=vs-2022"
+![诊断工具“摘要”视图](../profiling/media/vs-2022/prof-tour-cpu-and-memory-graph.png "诊断工具“摘要”视图")
+::: moniker-end
+::: moniker range="<=vs-2019"
 ![诊断工具“摘要”视图](../profiling/media/prof-tour-cpu-and-memory-graph.gif "诊断工具“摘要”视图")
+::: moniker-end
 
 “诊断工具”窗口是探查应用的常见方式，但对于版本生成，也可改为对应用执行事后分析。 有关不同方法的详细信息，请参阅[运行带或不带调试器的分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。 若要了解不同应用类型对应的分析工具支持，请参阅[应使用哪一种工具？](#which-tool-should-i-use)
 
@@ -55,7 +65,12 @@ Visual Studio 提供了各种分析工具，可依据你的应用类型帮助你
 
 选择“调试” > “性能探查器”（或按 Alt + F2）以打开性能探查器。
 
+::: moniker range=">=vs-2022"
+![性能探查器](../profiling/media/vs-2022/prof-tour-performance-profiler.png "性能探查器")
+::: moniker-end
+::: moniker range="<=vs-2019"
 ![性能探查器](../profiling/media/prof-tour-performance-profiler.png "性能探查器")
+::: moniker-end
 
 有关如何使用性能探查器中的 CPU 使用率或内存使用率工具与集成了调试器的工具的详细信息，请参阅[运行带/不带调试器的分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。 
 
@@ -76,13 +91,23 @@ Visual Studio 提供了各种分析工具，可依据你的应用类型帮助你
 
 通常，查看性能信息的最简单方法是使用 [PerfTips](../profiling/perftips.md)。 使用 PerfTips，可以在与代码交互时查看性能信息。 你可以查看事件持续时间（从调试程序上次暂停或应用启动时开始计算）等信息。 例如，如果单步执行代码（F10、F11），PerfTips 将显示自上次单步执行操作到当前单步执行操作的应用运行时持续时间。
 
+::: moniker range=">=vs-2022"
+![分析简介性能提示](../profiling/media/vs-2022/prof-tour-perf-tips.png "分析简介性能提示")
+::: moniker-end
+::: moniker range="<=vs-2019"
 ![分析简介性能提示](../profiling/media/prof-tour-perf-tips.png "分析简介性能提示")
+::: moniker-end
 
 使用 PerfTips 可以检查执行代码块所用的时间，也可以检查完成单个函数所需的时间。
 
 PerfTips 与诊断工具的“事件”视图显示相同的事件。 在“事件”视图中，可以查看调试时发生的不同事件，例如设置断点或代码单步执行操作。
 
+::: moniker range=">=vs-2022"
+![诊断工具“事件”视图](../profiling/media/vs-2022/prof-tour-events.png "诊断工具“查看事件”")
+::: moniker-end
+::: moniker range="<=vs-2019"
 ![诊断工具“事件”视图](../profiling/media/prof-tour-events.png "诊断工具“查看事件”")
+::: moniker-end
 
  > [!NOTE]
  > 如果你有 Visual Studio Enterprise，你还可以在此选项卡中查看 [IntelliTrace 事件](../debugger/intellitrace.md)。
@@ -93,17 +118,37 @@ CPU 使用率工具很适合用于开始分析应用的性能。 它将向你详
 
 使用集成了调试器的 CPU 使用率工具时，打开“诊断工具”窗口（如果已关闭，请选择“调试/Windows/显示诊断工具”）。 调试时，打开“摘要”视图，然后选择“记录 CPU 配置文件”。
 
+::: moniker range=">=vs-2022"
+![诊断工具中的“启用 CPU 使用率”](../profiling/media/vs-2022/prof-tour-enable-cpu-profiling.png "诊断工具“启用 CPU 使用率”")
+::: moniker-end
+::: moniker range="<=vs-2019"
 ![诊断工具中的“启用 CPU 使用率”](../profiling/media/prof-tour-enable-cpu-profiling.png "诊断工具“启用 CPU 使用率”")
+::: moniker-end
 
 使用该工具的一种方法是在代码中设置两个断点，一个在开头，一个在函数的末尾或想要分析的代码区域。 在第二个断点暂停时，请检查分析数据。
+
+::: moniker range=">=vs-2022"
+"CPU **使用率** "视图显示按运行时间最长的排序的函数列表，运行时间最长的函数位于"Top **Functions"下的顶部**。 " **热路径** "部分显示 CPU 使用率最大的函数的调用堆栈。 这些列表可帮助你了解发生性能瓶颈的函数。
+
+![诊断工具“CPU 使用率”视图](../profiling/media/vs-2022/prof-tour-cpu-usage.png "诊断工具“CPU 使用率”")
+::: moniker-end
+::: moniker range="<=vs-2019"
 
 “CPU 使用率”视图显示按最长运行时间排序的函数列表，运行时间最长的函数排在前面。 这有助于将你引导至发生性能瓶颈的函数。
 
 ![诊断工具“CPU 使用率”视图](../profiling/media/prof-tour-cpu-usage.png "诊断工具“CPU 使用率”")
+::: moniker-end
 
+::: moniker range=">=vs-2022"
+双击感兴趣的函数，你将看到更详细的"调用树"视图，并突出显示所选函数。 该表显示包含数据（例如函数中花费的时间）的列（包括被调用的函数 (**CPU** 总) ）和另一列，该列显示函数中花费的时间（不包括称为函数 (**自 CPU**) ）。 此数据可以帮助评估函数本身是否属于性能瓶颈。
+
+![诊断工具调用方和被调用方“蝶形”视图](../profiling/media/vs-2022/prof-tour-call-tree-view.png "诊断工具“调用方和被调用方”视图")
+::: moniker-end
+::: moniker range="<=vs-2019"
 双击感兴趣的函数，然后将看到更加详细的三窗格“蝶形”视图，其中所选函数位于窗口中央，调用函数位于左侧，而被调用函数位于右侧。 **函数体** 部分显示函数体中所用的时间总量（及百分比），其中不包括调用和被调用函数中所用的时间。 此数据可以帮助评估函数本身是否属于性能瓶颈。
 
 ![诊断工具调用方和被调用方“蝶形”视图](../profiling/media/prof-tour-cpu-usage-caller-callee.png "诊断工具“调用方和被调用方”视图")
+::: moniker-end
 
 ## <a name="analyze-memory-usage"></a>分析内存使用情况
 
@@ -116,11 +161,21 @@ CPU 使用率工具很适合用于开始分析应用的性能。 它将向你详
 
 若要使用 **内存使用情况** 工具分析内存使用情况，需要拍摄至少一张内存快照。 通常，分析内存的最好方法是拍摄两张快照；一张正好拍摄于发生可疑内存问题之前，另一张拍摄于发生可疑内存问题之后。 然后可以查看两张快照的差异，并发现实际更改的内容。 下图显示了如何使用集成了调试器的工具拍摄快照。
 
+::: moniker range=">=vs-2022"
+![诊断工具中的“获取快照”](../profiling/media/vs-2022/prof-tour-take-snapshot.png "诊断工具“获取快照”")
+::: moniker-end
+::: moniker range="<=vs-2019"
 ![诊断工具中的“获取快照”](../profiling/media/prof-tour-take-snapshots.gif "诊断工具“获取快照”")
+::: moniker-end
 
 选择其中一个箭头链接时，系统会提供关于堆的差异视图（一个向上的红色箭头![内存使用量增加](../profiling/media/prof-tour-mem-usage-up-arrow.png "内存使用量增加")表明对象计数（左）增加或堆大小（右）增加）。 如果单击右侧的链接，将获得按堆大小增加最多的对象进行排序的差异堆视图。 这可帮助查明内存问题。 例如，在下图中，`ClassHandlersStore` 对象使用的字节数在第二张快照中增加了 3,492 字节。
 
+::: moniker range=">=vs-2022"
+![诊断工具“堆差异”视图](../profiling/media/vs-2022/prof-tour-mem-usage-diff-heap.png "诊断工具“堆差异”视图")
+::: moniker-end
+::: moniker range="<=vs-2019"
 ![诊断工具“堆差异”视图](../profiling/media/prof-tour-mem-usage-diff-heap.png "诊断工具“堆差异”视图")
+::: moniker-end
 
 如果改为单击“内存使用量”视图左侧的链接，堆视图将按对象计数排列；数量增加最多的特殊类型的对象显示在顶部（按“计数差异”列排序）。
 
@@ -130,11 +185,36 @@ CPU 使用率工具很适合用于开始分析应用的性能。 它将向你详
 
 **可视吞吐量** 关系图中的帧速率低可能对应运行应用时看到的视觉问题。 与此类似，**UI 线程使用率** 关系图中的高数值也可能对应 UI 响应能力问题。 在报表中，你可以选择出现可疑性能问题的时间段，然后在“时间线”详细信息视图（下方窗格）中检查详细的 UI 线程活动。
 
+::: moniker range=">=vs-2022"
+![应用程序时间线分析工具](../profiling/media/vs-2022/prof-tour-application-timeline.png "分析简介应用程序时间线")
+::: moniker-end
+::: moniker range="<=vs-2019"
 ![应用程序时间线分析工具](../profiling/media/prof-tour-application-timeline.gif "分析简介应用程序时间线")
+::: moniker-end
 
 在时间线详细信息视图中，可以找到活动类型（或涉及的 UI 元素）以及活动持续时间等信息。 例如，在图中，网格控件的 **布局** 事件需要 57.53 毫秒。
 
 有关详细信息，请参阅[应用程序时间线](../profiling/application-timeline.md)。
+
+::: moniker range=">=vs-2022"
+## <a name="analyze-asynchronous-code-net"></a>分析异步代码 (.NET)
+
+[.NET 异步工具](../profiling/analyze-async.md)使你可以分析应用程序中异步代码的性能。 此工具在性能探查器中提供。 选择“调试” > “性能探查器”（或按 Alt + F2）以打开性能探查器。
+
+该工具在列表视图中显示每个异步操作。 可以查看信息，如异步操作的开始时间、结束时间和总时间。
+
+![.NET Async 工具已停止](../profiling/media/vs-2022/prof-tour-async-tool.png ".NET Async 工具已停止")
+::: moniker-end
+
+::: moniker range="vs-2019"
+## <a name="analyze-asynchronous-code-net"></a>分析异步代码 (.NET)
+
+[.NET 异步工具](../profiling/analyze-async.md)使你可以分析应用程序中异步代码的性能。 此工具在性能探查器中提供。 选择“调试” > “性能探查器”（或按 Alt + F2）以打开性能探查器。
+
+该工具在列表视图中显示每个异步操作。 可以查看信息，如异步操作的开始时间、结束时间和总时间。
+
+![.NET Async 工具已停止](../profiling/media/async-tool-opened.png ".NET Async 工具已停止")
+::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
@@ -144,15 +224,7 @@ CPU 使用率工具很适合用于开始分析应用的性能。 它将向你详
 
 该工具在列表视图中显示每个事件。 列提供有关每个事件的信息，例如事件名称、时间戳和进程 ID。
 
-![事件查看器跟踪](../profiling/media/eventviewertrace.png "事件查看器跟踪")
-
-## <a name="analyze-asynchronous-code-net"></a>分析异步代码 (.NET)
-
-[.NET 异步工具](../profiling/analyze-async.md)使你可以分析应用程序中异步代码的性能。 此工具在性能探查器中提供。 选择“调试” > “性能探查器”（或按 Alt + F2）以打开性能探查器。
-
-该工具在列表视图中显示每个异步操作。 可以查看信息，如异步操作的开始时间、结束时间和总时间。
-
-![.NET Async 工具已停止](../profiling/media/async-tool-opened.png ".NET Async 工具已停止")
+![事件查看器跟踪](../profiling/media/prof-tour-events-viewer.png "事件查看器跟踪")
 
 ## <a name="analyze-database-performance-net-core"></a>分析数据库性能 (.NET Core)
 
@@ -176,7 +248,12 @@ Allocation![](./media/db-gotosource.png "分配")
 
 在 UWP 应用中，可在“诊断工具”窗口中启用“UI 分析” 。 该工具搜索常见的性能和辅助功能问题，在你进行调试时将其显示在“事件”视图中。 事件描述可提供有助于解决问题的信息。
 
+::: moniker range=">=vs-2022"
+![诊断工具中的“视图 UI 分析事件”](../profiling/media/vs-2022/prof-tour-ui-analysis.png "诊断工具“视图 UI 分析事件”")
+::: moniker-end
+::: moniker range="<=vs-2019"
 ![诊断工具中的“视图 UI 分析事件”](../profiling/media/prof-tour-ui-analysis.png "诊断工具“视图 UI 分析事件”")
+::: moniker-end
 
 ## <a name="analyze-gpu-usage-direct3d"></a>分析 GPU 使用情况 (Direct3D)
 
@@ -184,7 +261,12 @@ Allocation![](./media/db-gotosource.png "分配")
 
 在关系图中选择一个时间段，并选择“查看详细信息”后，下方窗格中将出现详细信息视图。 在详细信息视图中，你可以检查每个 CPU 和 GPU 上发生活动的数量。 选择底部窗格中的事件可在时间线中获得弹出窗口。 例如，选择 **Present** 事件可查看 **Present** 调用弹出窗口。 （浅灰色垂直 VSync 线可以作为参考，用于了解某些 Present 调用是否缺少 VSync。 每两个 VSync 之间必须有一个 Present 调用，这样应用才能稳定达到 60 FPS。）
 
+::: moniker range=">=vs-2022"
+![GPU 使用情况分析工具](../profiling/media/vs-2022/prof-tour-gpu-usage.png "诊断 GPU 使用情况")
+::: moniker-end
+::: moniker range="<=vs-2019"
 ![GPU 使用情况分析工具](../profiling/media/prof-tour-gpu-usage.png "诊断 GPU 使用情况")
+::: moniker-end
 
 关系图还可用于确定是否存在与 CPU 或 GPU 绑定的性能瓶颈。
 

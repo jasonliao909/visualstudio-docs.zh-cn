@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 7de549287f58c8f088c084c2cc40a305f1dae1b2
-ms.sourcegitcommit: 932cf0f653c6258b73f42102d134cbaf50b8f20c
-ms.translationtype: HT
+ms.openlocfilehash: 757b8f8c01145d2ec8c0a71105d19e3e76549953
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "132879898"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135803851"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Visual Studio 安装和升级问题疑难解答
 
@@ -133,7 +133,7 @@ Visual Studio 安装程序引导程序是轻型的可执行文件，用于启动
 
 作为最后一招，可以删除所有 Visual Studio 安装文件和产品信息：
 
-1. 按照[删除 Visual Studio](remove-visual-studio.md) 页上的步骤操作。
+1. 按照本文中的步骤操作：[删除 Visual Studio](uninstall-visual-studio.md#remove)页面。
 1. 重新运行 Visual Studio 安装程序引导程序。 引导程序可能位于“下载”文件夹中，其文件名与 `vs_[Visual Studio edition]__*.exe` 模式匹配。 或者，可以从 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads)页下载适用于你的 Visual Studio 版本的引导程序。
 1. 尝试重新安装 Visual Studio。
 
@@ -175,7 +175,7 @@ Visual Studio 安装程序引导程序是轻型的可执行文件，用于启动
 ## <a name="see-also"></a>请参阅
 
 * [修复 Visual Studio](repair-visual-studio.md)
-* [删除 Visual Studio](remove-visual-studio.md)
+* [删除 Visual Studio](uninstall-visual-studio.md#remove)
 * [在防火墙或代理服务器后面安装和使用 Visual Studio 和 Azure 服务](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [用于检测和管理 Visual Studio 实例的工具](tools-for-managing-visual-studio-instances.md)
 * [Visual Studio 管理员指南](visual-studio-administrator-guide.md)

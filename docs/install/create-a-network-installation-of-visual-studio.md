@@ -14,26 +14,28 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 493d39ce7da5009681d33f8d00315d21f22d78e0
-ms.sourcegitcommit: 99e0146dfe742f6d1955b9415a89c3d1b8afe4e1
+ms.openlocfilehash: 71d9713f9f3253b326442804f4f53ff6fcae7b3f
+ms.sourcegitcommit: d38d1b083322019663fec7d1d85a4cda456aadca
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "134553851"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135534264"
 ---
 # <a name="create-maintain-and-deploy-a-network-installation-of-visual-studio"></a>创建、维护和部署 Visual Studio 网络安装
 
 有时，企业管理员希望创建包含可部署到客户端工作站的 Visual Studio 文件的网络安装点。 这是为了向以下情况提供辅助：客户端计算机具有的权限有限或对 Internet 的访问权限有限，或者组织希望对特定版本的开发人员工具集进行标准化。 我们设计了 Visual Studio，以便管理员可创建和维护网络布局（文件缓存），该网络布局可存储在内部网络共享上。 网络布局包含初始安装和后续产品更新所需的所有 Visual Studio 文件。
 
 此网页中有很多信息，并已分组为以下部分：
+
 - [**准备工作**](#before-you-get-started)：突出显示在规划时应考虑的提示和其他重要注意事项。
 - [**获取正确的引导程序**](#download-the-visual-studio-bootstrapper-to-create-the-network-layout)：关于在何处查找以及如何区分可供你使用的各种引导程序的指南。
 - [**创建网络布局**](#create-the-network-layout)：说明如何使用正确的产品内容、通道设置和安装程序版本创建布局，以及如何将其复制到网络共享。 
 - [**更新、修改和维护网络布局**](#update-or-modify-your-layout)：关于如何以最佳方式维护布局的信息，包括如何更新布局的产品版本、产品内容、通道设置、安装程序版本和文件夹大小。 
-- [**将布局安装到客户端计算机上**](#install-visual-studio-onto-a-client-machine-from-a-network-installation)：说明如何配置客户端默认设置，如默认情况下要安装的工作负载和组件，以及客户端应从何处查找更新。 此外，还包括如何在客户端计算机上执行 Visual Studio 布局的初始安装。 有关更新最初从布局安装的客户端计算机的指南和信息在单独的[更新基于网络的 Visual Studio 安装](/visualstudio/install/update-a-network-installation-of-visual-studio)页面中有所介绍。
+- [**将布局安装到客户端计算机上**](#install-visual-studio-onto-a-client-machine-from-a-network-installation)：说明如何配置客户端默认设置，如默认情况下要安装的工作负载和组件，以及客户端应从何处查找更新。 此外，还包括如何在客户端计算机上执行 Visual Studio 布局的初始安装。 有关更新最初从布局安装的客户端计算机的指南和信息在单独的[更新基于网络的 Visual Studio 安装](update-a-network-installation-of-visual-studio.md)页面中有所介绍。
 - [**帮助和支持**](#get-support-for-your-network-layout)：在何处寻求帮助
 
 ## <a name="before-you-get-started"></a>准备工作
+
 在开始之前，有一些重要内容需要规划和注意。  
 ::: moniker range="vs-2017"
 
@@ -83,11 +85,11 @@ ms.locfileid: "134553851"
 
 无论何时运行下面所列的引导程序，它们都将始终安装最新且最安全的 Visual Studio 2019 版本。 或者，如果要针对特定版本的 Visual Studio 2019 创建或更新布局，请转到 [Visual Studio 2019 版本](/visualstudio/releases/2019/history#installing-an-earlier-release)页（该页包含指向每个服务版本的固定版本引导程序的链接），然后下载所需版本。 将其复制到要用作布局源位置的目录中。
 
-| 版本                    | 引导程序                                                                                                                                                                                                                           |
-|----------------------------|---------------------------------------------------------------------------|
-| Visual Studio 2019 Enterprise 版本 16.11   | [vs_enterprise.exe](https://aka.ms/vs/16/release/vs_enterprise.exe) |
+| 版本                                       | 引导程序                                                            |
+|-----------------------------------------------|-------------------------------------------------------------------------|
+| Visual Studio 2019 Enterprise 版本 16.11   | [vs_enterprise.exe](https://aka.ms/vs/16/release/vs_enterprise.exe)     |
 | Visual Studio 2019 Professional 版本 16.11 | [vs_professional.exe](https://aka.ms/vs/16/release/vs_professional.exe) |
-| Visual Studio 2019 生成工具版本 16.11 | [vs_buildtools.exe](https://aka.ms/vs/16/release/vs_buildtools.exe) |
+| Visual Studio 2019 生成工具版本 16.11  | [vs_buildtools.exe](https://aka.ms/vs/16/release/vs_buildtools.exe)     |
 
 其他受支持的引导程序包括 [vs_teamexplorer.exe](https://aka.ms/vs/16/release/vs_TeamExplorer.exe)、[vs_testagent.exe](https://aka.ms/vs/16/release/vs_TestAgent.exe) 和 [vs_testcontroller.exe](https://aka.ms/vs/16/release/vs_TestController.exe)。
 
@@ -132,7 +134,7 @@ ms.locfileid: "134553851"
 
 通过管理员特权打开命令提示符，导航到要下载引导程序的目标目录，并使用[使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md) 页中定义的引导程序参数来创建和维护网络布局。 下文和 [Visual Studio 安装的命令行参数示例](command-line-parameter-examples.md)页介绍了创建初始布局的常见示例。  
 
-对于 Visual Studio Community，单一语言区域设置的完整初始布局需要约 35 GB 的磁盘空间，而 Visual Studio Enterprise 则需要约 45 GB 的磁盘空间。 其他每个[语言区域设置](/visualstudio/install/use-command-line-parameters-to-install-visual-studio#list-of-language-locales)需要大约 0.5 GB 的磁盘空间。 
+对于 Visual Studio Community，单一语言区域设置的完整初始布局需要约 35 GB 的磁盘空间，而 Visual Studio Enterprise 则需要约 45 GB 的磁盘空间。 其他每个[语言区域设置](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales)需要大约 0.5 GB 的磁盘空间。 
  
 建议的方法是使用网络服务器上的布局目录中的所有语言和所有工作负载创建 Visual Studio Enterprise 的初始布局。 这样，客户端就有权访问整个产品/服务。 若要创建 Visual Studio 的完整布局，请从你计划用于托管网络布局的计算机上运行以下代码：
 
@@ -141,7 +143,8 @@ ms.locfileid: "134553851"
 ::: moniker range=">=vs-2022"
 
 ### <a name="ensure-your-layout-has-the-correct-channel"></a>确保布局具有正确通道
-请务必确保网络布局基于正确[通道](/visualstudio/releases/2022/vs2022-release-rhythm)，因为这是[管理员更新](/visualstudio/install/applying-administrator-updates)的条件之一，如果将其部署在整个组织中，请用于确定应更新的客户端实例。 例如，如果布局基于 VisualStudio.17.Release.LTSC.17.0 通道，并且客户端配置为从 Microsoft 托管服务器接收更新，则我们在 17.0 LTSC 通道上提供的任何安全更新都可供从该布局安装或更新的客户端使用。 
+
+请务必确保网络布局基于正确[通道](/visualstudio/releases/2022/vs2022-release-rhythm)，因为这是[管理员更新](applying-administrator-updates.md)的条件之一，如果将其部署在整个组织中，请用于确定应更新的客户端实例。 例如，如果布局基于 VisualStudio.17.Release.LTSC.17.0 通道，并且客户端配置为从 Microsoft 托管服务器接收更新，则我们在 17.0 LTSC 通道上提供的任何安全更新都可供从该布局安装或更新的客户端使用。 
 
 上面列出的引导程序基于当前通道。 若要基于其中一个 LTSC 通道创建布局，只需从 [Visual Studio 2022 版本历史记录](/visualstudio/releases/2022/release-history#release-dates-and-build-numbers)页获取正确的通道引导程序，将其复制到布局文件夹中，然后使用它来创建或更新布局。 
 
@@ -215,12 +218,14 @@ xcopy /e c:\VSLayout \\server\share\layoutdirectory
 > [!IMPORTANT]
 > 为防止出现错误，请确保网络共享上的完整布局路径少于 80 个字符。 不过，某些组织已成功使用[符号链接](/windows/win32/fileio/symbolic-links)来规避 80 个字符的限制。
 
-## <a name="update-or-modify-your-layout"></a>更新或修改布局 
+## <a name="update-or-modify-your-layout"></a>更新或修改布局
+
 可以使用最新产品更新来更新 Visual Studio 的网络布局，以便可以将其用作客户端工作站的安装点和更新源，以接收最新版本的 Visual Studio。 最佳做法是定期更新布局，尤其是在希望客户端从布局接收更新的情况下。 本部分介绍最常见或有用的布局维护操作。
 
 如果在文件共享上托管布局，可能需要更新布局的专用副本 (例如 c：\VSLayout) ，然后在下载所有更新的内容后，将其复制到文件共享 (例如 \\ \server\products\VS) 。 如果不这样做，那么在更新布局时正好运行安装程序的任何用户，都更有可能从布局中获得不匹配的内容，因为布局并未完全更新。
 
 ### <a name="update-the-layout-to-the-most-current-version-of-the-product"></a>将布局更新为产品的最新版本
+
 Microsoft 经常发布产品的更新版本，以修复功能或安全问题。 建议一直使用最新版本的产品，保持布局更新，让新客户端安装始终获得最新优势。 如果客户端配置为从布局接收更新，保持布局更新也很重要。 
 
 创建初始布局时，指定的选项（例如要包括在布局中的工作负载和语言）保存在布局的配置文件中。 稍后，当你想要将布局更新为较新版本的产品时，就不必重新指定初始布局创建期间使用的选项。 布局更新命令会自动使用保存的布局设置。 
@@ -244,6 +249,7 @@ vs_enterprise.exe --layout c:\VSLayout --passive
 ```
 
 ### <a name="update-the-layout-to-a-specific-version-of-the-product"></a>将布局更新为产品的特定版本
+
 有时，你可能要将布局更新为 _产品的特定版本_。  例如，你可能希望使布局与用于实现组织标准化的服务基线的最新安全版本相匹配。 下面是操作方法：
 
 ::: moniker range="vs-2019"
@@ -311,14 +317,17 @@ vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.Net
 ::: moniker range="vs-2019"
 
 >[!TIP]
->如果要更改客户端[2019](/visualstudio/install/update-visual-studio#configure-source-location-of-updates)Visual Studio安装查找更新的位置，则必须在客户端计算机上获取最新的 Visual Studio 2022 安装程序。  为此，一种方式是使用Visual Studio参数在 Visual Studio 2019 布局中包括 Visual Studio 2022 安装程序。 使用最新安装程序的功能仅适用于 2022 年Visual Studio 2022 年 1 月Visual Studio的 2019 引导程序。 因此，以下示例中的 vs_enterprise.exe 必须是 2021 年 11 月 10 日后发布的版本。 
+>如果要更改客户端[2019](update-visual-studio.md#configure-source-location-of-updates)Visual Studio安装查找更新的位置，则必须在客户端计算机上获取最新的 Visual Studio 2022 安装程序。  为此，一种方式是使用Visual Studio参数在 Visual Studio 2019 布局中包括 Visual Studio 2022 安装程序。 使用最新安装程序的功能仅适用于 2022 Visual Studio 2022 年 1 月Visual Studio的 2019 引导程序。 因此，以下示例中的 vs_enterprise.exe 必须是 2021 年 11 月 10 日后发布的版本。 
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
 有两种方法可让布局包含并提供最新的安装程序：
+
 - 创建或更新布局时，可以将 `--useLatestInstaller` 参数传递给引导程序。 这将导致在 layout.json 文件中进行一种设置，该文件位于布局的根目录中。 以下示例演示了如何更新布局以及如何将其配置为使用最新最好的可用安装程序。  
+
+
    ```shell
    vs_enterprise.exe --layout C:\VSLayout --useLatestInstaller
    ```
@@ -340,7 +349,7 @@ vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.Net
 
 无法以编程方式在 layout.json 文件中删除此设置，因此，如果希望布局停止使用 Microsoft 提供的最新安装程序，并改为使用与引导程序（很可能比最新安装程序版本旧）对应的安装程序版本，则只需编辑 layout.json 文件并删除 `"UseLatestInstaller": true` 设置即可。 
 
-请注意，你可能会在布局的 response.json 文件中找到此设置， `"UseLatestInstaller": true` 但会忽略它。 response.json 文件用于在客户端安装或更新布局 时在客户端[上设置默认配置选项](/visualstudio/install/automated-installation-with-response-file)。 此特定设置用于确保布局的内容包含最新的安装程序，以便客户端计算机随后可以从布局 `"useLatestInstaller": true` 获取最新的安装程序。    
+请注意，你可能会在布局的 response.json 文件中找到此设置， `"UseLatestInstaller": true` 但会忽略它。 response.json 文件用于在客户端安装或更新布局 时在客户端[上设置默认配置选项](automated-installation-with-response-file.md)。 此特定设置用于确保布局的内容包含最新的安装程序，以便客户端计算机随后可以从布局 `"useLatestInstaller": true` 获取最新的安装程序。 
 
 ::: moniker-end
 
@@ -406,10 +415,10 @@ c:\VSLayout\vs_enterprise.exe --layout c:\VSLayout --clean c:\VSLayout\Archive\1
 
 ### <a name="install-on-a-client-that-doesnt-have-internet-access"></a>在没有 Internet 访问的客户端上安装
 
-通过布局安装时，安装内容将默认为从布局中获取。 但是，如果你选择的组件不在布局中，并且[客户端已配置为查看 Microsoft 托管服务器以获取更新](/visualstudio/install/automated-installation-with-response-file)，则安装程序也会尝试从 Internet 获取 Visual Studio 包。 若要阻止 Visual Studio 安装程序尝试从 Web 下载布局中缺少的任何内容，请使用 `--noWeb` 选项。 如果使用 `--noWeb`，但布局中缺少要安装的选定内容，那么安装将会失败。
+通过布局安装时，安装内容将默认为从布局中获取。 但是，如果你选择的组件不在布局中，并且[客户端已配置为查看 Microsoft 托管服务器以获取更新](automated-installation-with-response-file.md)，则安装程序也会尝试从 Internet 获取 Visual Studio 包。 若要阻止 Visual Studio 安装程序尝试从 Web 下载布局中缺少的任何内容，请使用 `--noWeb` 选项。 如果使用 `--noWeb`，但布局中缺少要安装的选定内容，那么安装将会失败。
 
 > [!IMPORTANT]
-> `--noWeb`如果客户端已配置为查看 Microsoft 托管的服务器以查找更新，则该选项不会Visual Studio连接到Internet 的客户端计算机上的安装程序检查更新。 相反 `--noWeb` ，只是阻止客户端下载产品包。 有关详细信息，请参阅从网络[布局Visual Studio客户端更新客户端](/visualstudio/install/update-a-network-installation-of-visual-studio)。
+> 如果客户端已配置为Visual Studio Microsoft 托管服务器来查找更新，则此选项不会阻止连接到 Internet 的客户端计算机上的客户端安装程序检查 `--noWeb` 更新。  相反 `--noWeb` ，只是阻止客户端下载产品包。 有关详细信息，请参阅从网络[布局Visual Studio客户端更新客户端](update-a-network-installation-of-visual-studio.md)。
 
 ::: moniker range=">=vs-2019"
 
@@ -420,6 +429,7 @@ c:\VSLayout\vs_enterprise.exe --layout c:\VSLayout --clean c:\VSLayout\Archive\1
 ### <a name="configure-initial-client-installation-defaults-for-this-layout"></a>为此布局配置初始客户端安装默认值
 
 可以修改布局文件夹中的一些文件，以设置最初在客户端计算机上安装产品时使用的默认值。 常见配置选项包括：
+
 - 能够在初始安装期间 **配置应默认选择哪些工作负载、组件或语言**。 
 - 能够指定 **客户端应从何处接收更新**。  选项来自管理员控制的网络布局位置，或者来自 Internet 上的 Microsoft 托管服务器（默认情况）。
 
@@ -429,13 +439,13 @@ c:\VSLayout\vs_enterprise.exe --layout c:\VSLayout --clean c:\VSLayout\Archive\1
 
 ::: moniker range=">=vs-2019"
 
-还可以控制其他企业部署行为，例如 
+还可以控制其他企业部署行为，例如：
 
-- 是否应启用管理员更新以及如何应用管理员更新 
+- 是否应启用管理员更新以及如何应用管理员更新。
 - 可用更新通道有哪些，以及网络布局以何种方式在“更新设置”对话框中显示给客户端计算机。
 - 共享包的安装位置。
 - 是否要缓存及缓存位置。
-- 通知的显示方式或者不显示通知
+- 通知的显示方式或者不显示通知。
 
 有关其他详细信息，请参阅[为 Visual Studio 企业部署设置默认值](set-defaults-for-enterprise-deployments.md)。
 
@@ -455,7 +465,7 @@ c:\VSLayout\vs_enterprise.exe --layout c:\VSLayout --clean c:\VSLayout\Archive\1
 
 ### <a name="get-support-for-your-network-layout"></a>获取对网络布局的支持
 
-如果网络布局遇到问题，请告知我们。 通过[报告问题](/visualstudio/ide/how-to-report-a-problem-with-visual-studio)工具（会出现在 Visual Studio 安装程序和 Visual Studio IDE 中）是告知我们的最佳方式。 如果你是 IT 管理员，并且尚未安装 Visual Studio，可以[在此处提交 IT 管理员反馈](https://aka.ms/vs/admin/guide)。 使用此工具时，如果你可以发送 [VS 收集工具](https://aka.ms/vscollect)的日志，这将非常有帮助，可帮助我们诊断和解决问题。
+如果网络布局遇到问题，请告知我们。 通过[报告问题](../ide/how-to-report-a-problem-with-visual-studio.md)工具（会出现在 Visual Studio 安装程序和 Visual Studio IDE 中）是告知我们的最佳方式。 如果你是 IT 管理员，并且尚未安装 Visual Studio，可以[在此处提交 IT 管理员反馈](https://aka.ms/vs/admin/guide)。 使用此工具时，如果你可以发送 [VS 收集工具](https://aka.ms/vscollect)的日志，这将非常有帮助，可帮助我们诊断和解决问题。
 
 对于安装相关问题，我们还提供[安装聊天](https://visualstudio.microsoft.com/vs/support/#talktous)（仅限英语）支持选项  。
 

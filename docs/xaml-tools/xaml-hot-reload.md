@@ -1,7 +1,7 @@
 ---
 title: XAML 热重载 WPF 和 UWP 应用
 description: XAML 热重载（或 XAML 编辑并继续）允许你在运行应用时对 XAML 代码进行更改
-ms.date: 12/08/2021
+ms.date: 12/17/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - xaml edit and continue
@@ -13,33 +13,32 @@ ms.custom: contperf-fy22q1
 ms.technology: vs-xaml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 7784bfd0f1653b66f52cf3435adac54e79ffd232
-ms.sourcegitcommit: 64d6c5cf93984bbb22812577af17128cd2239f79
+monikerRange: '>=vs-2019'
+ms.openlocfilehash: 639177ebb7941009fe2567022466965e3333296c
+ms.sourcegitcommit: d3578c384959f1b76dd06fb4b5d075fb052f8c69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "134366808"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "135374928"
 ---
 # <a name="what-is-xaml-hot-reload-for-wpf-and-uwp-apps-visual-studio"></a>WPF XAML 热重载 UWP 应用有什么功能？  (Visual Studio) 
 
-使用 XAML 热重载，可以增量生成并测试作为 WPF 和 UWP 应用的 XAML 代码。 为此，可以受益于正在运行的应用的数据上下文、身份验证状态和其他在设计时难以模拟的实际复杂性。
+使用 XAML 热重载，可以增量生成并测试 WPF 和 UWP 应用的 XAML 代码。 为此，可以受益于正在运行的应用的数据上下文、身份验证状态和其他在设计时难以模拟的实际复杂性。
 
 > [!TIP]
 > 如果你是通过 XAML 热重载用户界面 (UI) 来到这里的，欢迎你的到来！ 你来对了地方，这里非常适合详细了解 XAML 热重载。
 >
 > 但是，如果你在此处寻求排查 XAML 热重载的相关帮助，请改为参阅 [XAML 热重载故障排除](xaml-hot-reload-troubleshooting.md)。
 
-
 ## <a name="where-to-get-xaml-hot-reload"></a>在何处获取XAML 热重载
 
-Visual Studio XAML 热重载当前仅在运行 Visual Studio **-** 或 **-** Blend for Visual Studio 应用程序，但调试器已连接到 **F5** 或启动调试 (时) 。 
+Visual Studio XAML 热重载在 **Visual Studio** - 或 **-** Blend for Visual Studio 中运行应用程序，但调试器已连接到 **F5** 或启动调试 (，) 。 
 
 [除非手动设置环境变量](xaml-hot-reload-troubleshooting.md#verify-that-you-use-start-debugging-rather-than-attach-to-process)，否则无法通过使用[附加到进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)来启用此体验。
 
-
 ## <a name="applications-for-xaml-hot-reload"></a>应用程序XAML 热重载
 
-XAML 热重载以下情况中，此配置尤其有用：
+XAML 热重载在这些情况下尤其有用：
 
 * 修复在调试模式下启动应用后在 XAML 代码中发现的 UI 问题。
 
@@ -54,13 +53,13 @@ XAML 热重载以下情况中，此配置尤其有用：
 
 如果使用的是 **Xamarin.Forms，** 请参阅 [XAML 热重载 Xamarin.Forms 。](/xamarin/xamarin-forms/xaml/hot-reload)
 
-## <a name="example"></a>示例 
+## <a name="example"></a>示例
 
 以下动画实例演示了如何使用实时可视化树打开一些源代码，然后使用 XAML 热重载更改按钮的文本和颜色。
 
 :::image type="content" source="media/vs-2022/xaml-hot-reload-live-visual-tree.gif" alt-text="打开源代码并使用 XAML 热重载更改 UI 元素的实时可视化树的动画。":::
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 * [排查 XAML 热重载问题](xaml-hot-reload-troubleshooting.md)
 * [适用于 Xamarin.Forms 的 XAML 热重载](/xamarin/xamarin-forms/xaml/hot-reload)

@@ -1,16 +1,18 @@
 ---
 title: 通过源链接调试 NuGet 包
 description: 本文介绍 Visual Studio for Mac 中的源链接功能。
-author: heiligerdankgesang
-ms.author: dominicn
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.date: 12/16/2019
+ms.topic: conceptual
 ms.assetid: 4bcb8acf-db50-4bd8-a48e-86248f00c90b
-ms.openlocfilehash: 307196dc7e33d268c45a9bb126c002ad426c5558
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: a5cecf4d3065a889e9ab48b9fc94e91341f778e7
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126644510"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135804605"
 ---
 # <a name="debugging-into-nuget-packages-with-source-link"></a>通过源链接调试 NuGet 包
 

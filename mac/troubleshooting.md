@@ -2,18 +2,19 @@
 title: 疑难解答
 description: Visual Studio for Mac 用户的常见问题和解决方法。
 ms.topic: troubleshooting
-author: therealjohn
-ms.author: johmil
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.date: 06/18/2019
 ms.assetid: CE860D79-E29E-4B93-B094-BE74B35FC1C2
-ms.openlocfilehash: b0f10e1f70349126ab48c41efc40f982212836f1
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: df6d28dbe97f9aff93a152ef97cbdbf83f1f026d
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126644500"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135806582"
 ---
-# <a name="troubleshooting"></a>疑难解答
+# <a name="troubleshooting"></a>故障排除
 
 ## <a name="viewing-logs-in-visual-studio-for-mac"></a>查看 Visual Studio for Mac 中的日志
 

@@ -4,8 +4,6 @@ description: 使用格式说明符更改值在“监视”、“自动”或“�
 ms.custom: SEO-VS-2020
 ms.date: 3/11/2019
 ms.topic: conceptual
-f1_keywords:
-- vs.debug
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -27,12 +25,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f00e81ea202b59dde227e8cf31fbc0ca2975a595
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 84f62c6c98e677de242482b055502c54451367af
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126737353"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135803903"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Visual Studio 调试器中的 C++ 格式说明符
 

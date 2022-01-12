@@ -1,16 +1,18 @@
 ---
 title: 了解生成配置
 description: 本文介绍 Visual Studio for Mac 中的各种生成配置
-author: heiligerdankgesang
-ms.author: dominicn
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.date: 09/18/2019
+ms.topic: conceptual
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: 911d8d3a65c414bc3c98494bda75c46b778e5b2b
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 9ec6564b667938a6a803ac2c05eff817d03df704
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736760"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135804241"
 ---
 # <a name="understanding-build-configurations"></a>了解生成配置
 

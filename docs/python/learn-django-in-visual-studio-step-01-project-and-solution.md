@@ -2,7 +2,8 @@
 title: 学习 Visual Studio 中的 Django 教程的第 1 步，Django 基础知识
 titleSuffix: ''
 description: Visual Studio 项目上下文中 Django 基础知识的演练，演示 Visual Studio 如何为 Django 开发提供支持。
-ms.date: 11/19/2018
+ms.custom: devdivchpfy22
+ms.date: 12/20/2021
 ms.topic: tutorial
 author: rjmolyneaux
 ms.author: rmolyneaux
@@ -11,12 +12,12 @@ ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2900e9bd4228d6cc45bdaec05db33d4dbbd0e4ab
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 829250064d43af913e102bd8e298760b732b0f69
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129972266"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135803323"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>教程：在 Visual Studio 中开始使用 Django Web 框架
 
@@ -43,9 +44,17 @@ ms.locfileid: "129972266"
 
 ## <a name="prerequisites"></a>系统必备
 
+::: moniker range="<=vs-2019"
 - Windows 版 Visual Studio 2017 及以上版本，且具有以下选项：
   - “Python 开发”工作负载（安装程序中的“工作负载”选项卡）   。 有关说明，请参阅[在 Visual Studio 中安装 Python 支持](installing-python-support-in-visual-studio.md)。
   - “代码工具”下“单个组件”选项卡上的“适用于 Windows 的 Git”和“适用于 Visual Studio 的 GitHub 扩展”     。
+::: moniker-end
+
+::: moniker range="vs-2022"
+- Visual Studio 2022 Windows以下选项：
+  - “Python 开发”工作负载（安装程序中的“工作负载”选项卡）   。 有关说明，请参阅[在 Visual Studio 中安装 Python 支持](installing-python-support-in-visual-studio.md)。
+  - **Git for Windows****位于"代码工具"下的"单个组件****"选项卡上**。
+::: moniker-end
 
 Django 项目模板也包含在针对 Visual Studio 的 Python 工具的所有早期版本中，尽管细节可能不同于本教程中讨论的内容（特别是不同于早期版本的 Django框架）。
 
@@ -63,7 +72,8 @@ Visual Studio 项目就其本身而言，可以包含 Django 项目和多个应�
 
 从命令行使用 Django 时，通常会通过运行 `django-admin startproject <project_name>` 命令来启动一个项目。 在 Visual Studio 中，使用“空白 Django Web 项目”模板在 Visual Studio 项目和解决方案中提供相同结构。
 
-1. 在 Visual Studio 中，选择“文件” > “新建” > “项目”，搜索“Django”，然后选择“空白 Django Web 项目”模板。 （还可以在左侧列表的“Python”   > “Web”  中找到模板。）
+::: moniker range="<=vs-2019"
+1. 在 Visual Studio 中，选择“文件” > “新建” > “项目”，搜索“Django”，然后选择“空白 Django Web 项目”模板。  (还可以在左侧列表 **"Python**  >  **Web"** 下找到模板。) 
 
     ![Visual Studio 中“空白 Django Web 项目”的新建项目对话框](media/django/step01-new-blank-project.png)
 
@@ -80,11 +90,27 @@ Visual Studio 项目就其本身而言，可以包含 Django 项目和多个应�
 
     ![指示项目需要外部包的提示](media/django/step01-requirements-prompt-install-myself.png)
 
-1. 选择选项“我将自行安装”  。 立即创建虚拟环境，确保它会从源代码管理中排除。 （始终可从 requirements.txt 创建该环境  。）
+1. 选择选项“我将自行安装”  。 立即创建虚拟环境，确保它会从源代码管理中排除。  (始终可以从 *.requirements.txt* 创建) 
+::: moniker-end
+
+::: moniker range="vs-2022"
+1. 在Visual Studio，选择"文件""Project"，搜索 >  > "Django"，然后选择"空白 **Django Web Project** 模板"，然后选择"下一 **步"。**
+
+    ![Visual Studio 中“空白 Django Web 项目”的新建项目对话框](media/django/step-01-create-new-project-screen-1-vs-2022.png)
+  
+1. 输入以下信息，然后选择"创建 **"：**
+
+    - **Project名称**：将项目的名称Visual Studio **BasicProject**。 此名称还用于 Django 项目。
+    -  位置：指定要在其中创建 Visual Studio 解决方案和项目的位置。
+    - **解决方案**：将此控件设置保留为默认“创建新解决方案”选项。
+    - **解决方案名称**：设置为“LearningDjango”，适用于本教程中作为多个项目的容器的解决方案。
+
+::: moniker-end
 
 ## <a name="step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository"></a>步骤 1-2：检查 Git 控件并发布到远程存储库
 
-由于选择了“新建项目”对话框中的“创建新的 Git 存储库”，在创建过程完成后，项目就已经提交到本地源代码管理。 在此步骤中，你将熟悉 Visual Studio 的 Git 控件和在其中使用源代码管理的“团队资源管理器”  窗口。
+::: moniker range="<=vs-2019"
+由于你在"新建 **存储库**"对话框中选择了"Project  Git 存储库"，因此项目已在创建过程完成时提交到本地源代码管理。 在此步骤中，你将熟悉 Visual Studio 的 Git 控件和在其中使用源代码管理的“团队资源管理器”  窗口。
 
 1. 在 Visual Studio 主窗口下角处检查 Git 控件。 这些控件从左到右依次显示未推送的提交、未提交的更改、存储库的名称以及当前分支：
 
@@ -105,7 +131,7 @@ Visual Studio 项目就其本身而言，可以包含 Django 项目和多个应�
 
     可以为自己的项目选择任何所需的服务。 本教程演示了如何使用 GitHub，其中本教程已完成的示例代码保存在 [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django) 存储库中。
 
-1. 选择任一“发布”  控件时，“团队资源管理器”  都将提示你输入详细信息。 例如，在发布本教程的示例时，必须首先创建存储库本身，在这种情况下，“推送到远程存储库”  选项将与存储库的 URL 结合使用。
+1. 选择任一“发布”  控件时，“团队资源管理器”  都将提示你输入详细信息。 例如，发布本教程的示例时，首先必须创建存储库本身，在这种情况下，"推送到远程存储库"选项与存储库的URL 一起使用。
 
     ![用于推送到现有远程存储库的团队资源管理器窗口](media/django/step01-push-to-github.png)
 
@@ -116,19 +142,61 @@ Visual Studio 项目就其本身而言，可以包含 Django 项目和多个应�
 > [!Tip]
 > 要在团队资源管理器中快速导航，请选择标头（上图中显示为“更改”或“推送”）来查看可用页面的弹出菜单    。
 
+::: moniker-end
+
+::: moniker range="vs-2022"
+在此步骤中，你将熟悉 Visual Studio 的 Git 控件和在其中使用源代码管理的“团队资源管理器”  窗口。
+
+1. 若要将项目提交到本地源代码管理，请在主窗口底部角推送"添加到源代码Visual Studio"命令，然后选择"Git"选项。 此操作将你打开"创建 Git 存储库"窗口，可在其中创建和推送新的存储库。
+
+    ![创建 Git 存储库](media/django/step01-git-add-to-source-control.png)
+
+1. 创建存储库后，底部会显示一组新的 Git 控件。 从左到右，这些控件显示未提交的提交、未提交的更改、当前分支和存储库的名称：
+
+    ![Visual Studio 窗口中的 Git 控件](media/django/step01-git-controls.png)
+
+
+1. 选择"Git 更改"按钮，Visual Studio"Git 更改团队资源管理器打开其"**更改**"窗口。 由于新创建的项目已经自动提交给源代码管理，因此，看不到任何挂起的更改。
+
+    ![团队资源管理器"Git 更改"页上的"更改"窗口](media/django/step-01-team-explorer-git-changes-vs-2022.png)
+    
+
+1. 在 Visual Studio 状态栏中，选择“未推送的提交”按钮（标有“2”的向上箭头）以打开团队资源管理器中的“同步”页    。 由于你只有一个本地存储库，页面将提供简单的选项将存储库发布到不同的远程存储库。
+
+    ![显示面向源代码管理的可用 Git 存储库选项的“团队资源管理器”窗口](media/django/step01-team-explorer.png)
+
+    可以为自己的项目选择任何所需的服务。 本教程演示了如何使用 GitHub，其中本教程已完成的示例代码保存在 [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django) 存储库中。
+
+1. 选择任一“发布”  控件时，“团队资源管理器”  都将提示你输入详细信息。 例如，发布本教程的示例时，首先必须创建存储库本身，在这种情况下，"推送到远程存储库"选项与存储库的URL 一起使用。
+
+    ![用于推送到现有远程存储库的团队资源管理器窗口](media/django/step01-push-to-github.png)
+
+    如果没有现有存储库，可通过“发布到 GitHub”  和“推送到 Azure DevOps”  选项直接从 Visual Studio 创建一个存储库。
+
+1. 按照本教程执行操作时，请养成定期在 Visual Studio 中使用控件提交和推送更改的习惯。 本教程会在适当时机提醒你。
+
+> [!Tip]
+> 要在团队资源管理器中快速导航，请选择标头（上图中显示为“更改”或“推送”）来查看可用页面的弹出菜单    。
+
+::: moniker-end
+
 ### <a name="question-what-are-some-advantages-of-using-source-control-from-the-beginning-of-a-project"></a>问：从项目一开始就使用源代码管理有什么好处？
 
-答：首先，从一开始就使用源代码管理，特别是如果同时还使用远程存储库，就可以提供项目的常规异地备份。 与在本地文件系统上维护项目不同，源代码管理还提供了完整的更改历史记录，用户可以轻松地将单个文件或整个项目还原到以前的状态。 此更改历史记录有助于确定回归的原因（测试失败）。 此外，如果多个人员执行一个项目，则源代码管理必不可少，因为它管理重写并提供冲突解决方案。 最后，源代码管理从根本上来说是一种自动化形式，它为自动化构建、测试和发布管理提供充分准备。 这实际上是将 DevOps 用于项目的第一步，而且由于入门门槛非常低，因此没有理由不从一开始就使用源代码管理。
+答：源代码管理从一开始（尤其是在使用远程存储库时）提供项目的定期场外备份。 与在本地文件系统上维护项目不同，源代码管理还提供了完整的更改历史记录，用户可以轻松地将单个文件或整个项目还原到以前的状态。 此更改历史记录有助于确定回归的原因（测试失败）。 如果多个人员正在处理项目，源代码管理至关重要，因为它管理覆盖并提供冲突解决。
+
+最后，源代码管理从根本上来说是一种自动化形式，它为自动化构建、测试和发布管理提供充分准备。 这是对项目使用 DevOps的第一步。 由于进入障碍如此低，因此实际上没有从一开始就不使用源代码管理的理由。
 
 关于自动化形式的源代码管理的进一步讨论，请参阅 [The Source of Truth: The Role of Repositories in DevOps](/archive/msdn-magazine/2016/september/mobile-devops-the-source-of-truth-the-role-of-repositories-in-devops)（真相之源：DevOps 中的存储库角色），这是 MSDN Magazine 上专为移动应用编写的一篇文章，同样适用于 Web 应用。
 
-### <a name="question-can-i-prevent-visual-studio-from-auto-committing-a-new-project"></a>问：我能否阻止 Visual Studio 自动提交新项目？
+### <a name="question-can-i-prevent-visual-studio-from-autocommitting-a-new-project"></a>问：我Visual Studio自动提交新项目吗？
 
-答：能。 若要禁用自动提交，请转到“团队资源管理器”中的“设置”页，选择“Git” > “全局设置”，清除标记为“合并后默认提交更改”的选项，然后选择“更新”。
+答：能。 若要禁用自动提交，请转到 设置中的"团队资源管理器"页，选择 **"Git****全局设置"，** 清除标记为"合并后默认提交更改"  >  **的选项**，然后选择"更新 **"。**
 
 ## <a name="step-1-3-create-the-virtual-environment-and-exclude-it-from-source-control"></a>步骤 1-3：创建虚拟环境并从源代码管理中将其排除
 
 你已为项目配置源代码管理，现在可为项目创建包含必需 Django 包的虚拟环境。 然后，可以使用“团队资源管理器”  从源代码管理中排除环境文件夹。
+
+::: moniker range="<=vs-2019"
 
 1. 在“解决方案资源管理器”  中，右键单击“Python 环境”  节点并选择“添加虚拟环境”  。
 
@@ -152,7 +220,36 @@ Visual Studio 项目就其本身而言，可以包含 Django 项目和多个应�
 
 1. 排除虚拟环境后，剩下的唯一更改是针对项目文件和 .gitignore  。 .gitignore 文件包含虚拟环境文件夹的附加条目  。 可以双击文件查看差异。
 
-1. 输入提交消息，然后选择“全部提交”  按钮，根据需要将提交推送到远程存储库。
+1. 输入提交消息并选择" **全部提交** "按钮，然后将提交推送到远程存储库。
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+1. 在 **解决方案资源管理器** 中，右键单击 **"Python 环境"节点**，然后选择"**添加环境"。**
+
+    ![解决方案资源管理器中的“添加虚拟环境”命令](media/django/step-01-add-virtual-environment-command-vs-2022.png)
+
+
+1. 在 **"添加** 虚拟环境"对话框中选择"创建"以接受默认值。 （如果你愿意，可以更改虚拟环境名称，这只会更改其子文件夹的名称，但 `env` 是标准约定。）
+
+    ![包含 requirements.txt 消息的“添加虚拟环境”对话框](media/django/step-01-add-virtual-environment-dialog-vs-2022.png)
+
+1. 如果系统提示，请同意管理员权限，然后等待几分钟Visual Studio并安装包。 在此期间，数千个文件传输到多个子文件夹！ 可以在 Visual Studio“输出”  窗口中查看进度。 在等待时，仔细考虑下面的“问题”部分。
+
+1. 在 Visual Studio Git 控件（位于状态栏上）上，选择更改指示器（显示“99&#42;”），这将打开团队资源管理器中的“更改”页    。
+
+    创建虚拟环境带来了数千项更改，但不需要在源代码管理中包含其中任何一项，因为你（或克隆项目的任何人员）始终可从 requirements.txt 重新创建环境。
+
+    要排除虚拟环境，请右键单击 env 文件夹，然后选择“忽略这些本地项”   。
+
+    ![忽略源代码管理更改中的虚拟环境](media/django/step-01-ignore-local-items-vs-2022.png)
+
+1. 排除虚拟环境后，剩下的唯一更改是针对项目文件和 .gitignore  。 .gitignore 文件包含虚拟环境文件夹的附加条目  。 可以双击文件查看差异。
+
+1. 输入提交消息并选择" **全部提交** "按钮，然后将提交推送到远程存储库。
+
+::: moniker-end
 
 ### <a name="question-why-do-i-want-to-create-a-virtual-environment"></a>问：为什么需要创建虚拟环境？
 
@@ -201,9 +298,9 @@ Visual Studio 项目就其本身而言，可以包含 Django 项目和多个应�
 
 1. 完成后，通过关闭控制台窗口，或使用 Visual Studio 中的“调试”   > “停止调试”  命令来停止服务器。
 
-### <a name="question-is-django-a-web-server-as-well-as-a-framework"></a>问：Django 既是 Web 服务器也是框架吗？
+### <a name="question-is-django-a-web-server-and-a-framework"></a>问： Django web 服务器和框架？
 
-答：是/否。 Django 确实有一个用于开发目的的内置 Web 服务器。 当你在本地运行 Web 应用时（例如在 Visual Studio 中调试时），就会使用此 Web 服务器。 但是在部署到 Web 主机时，Django 会改用主机的 Web 服务器。 Django 项目中的 wsgi.py 模块负责挂接到生产服务器。
+答：是/否。 Django 具有用于开发的内置 web 服务器。 当你在本地运行 web 应用时（例如，在 Visual Studio 中调试时），将使用此 web 服务器。 但是在部署到 Web 主机时，Django 会改用主机的 Web 服务器。 Django 项目中的 wsgi.py 模块负责挂接到生产服务器。
 
 ### <a name="question-whats-the-difference-between-using-the-debug-menu-commands-and-the-server-commands-on-the-projects-python-submenu"></a>问：在项目 Python 子菜单中使用“调试”菜单命令和服务器命令有何区别？
 

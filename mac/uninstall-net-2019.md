@@ -1,16 +1,18 @@
 ---
 title: Apple Silicon 计算机上安装 Visual Studio for Mac 8.10 和 .NET
 description: 在 M1 计算机上使受支持的 .NET 版本在 2019 年正常工作的步骤。
-author: heiligerdankgesang
-ms.author: dominicn
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.date: 11/08/2021
+ms.topic: how-to
 ms.assetid: db2dc420-63d2-44ef-bdda-a351561dc900
-ms.openlocfilehash: 785eb0814e27e83df4cc921bda18c6ad04960b2f
-ms.sourcegitcommit: 8b44ba7864f67afa476708d5092729345e689f93
-ms.translationtype: HT
+ms.openlocfilehash: 3cfda970cbada8ac746603f2439028552bd08478
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "132861550"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135805554"
 ---
 # <a name="visual-studio-for-mac-810-and-net-on-apple-silicon-machines"></a>Apple Silicon 计算机上安装 Visual Studio for Mac 8.10 和 .NET
 

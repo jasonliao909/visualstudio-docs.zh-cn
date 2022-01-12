@@ -4,18 +4,18 @@ description: 如何为 Visual Studio 中的 R 使用交互 REPL 环境（已与�
 ms.date: 06/28/2017
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: ghogen
+ms.author: ghogen
 manager: jmartens
 ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: bc00c97029daabc6b13a08f9a40a47cd612cbc7c
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: a942b59b06aebc079aaab220ff79be2868ed7974
+ms.sourcegitcommit: dcecc0ed37b5e976b5dc83c5128ba5ecc8bc04b1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736841"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "135750568"
 ---
 # <a name="work-with-the-r-interactive-window"></a>使用 R 交互窗口
 

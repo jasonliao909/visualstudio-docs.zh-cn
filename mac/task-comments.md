@@ -3,14 +3,16 @@ title: 任务注释
 description: 将任务注释添加到代码
 author: jmatthiesen
 ms.author: jomatthi
+manager: dominicn
 ms.date: 11/09/2020
+ms.topic: reference
 ms.assetid: 562DCB46-D8FA-4DC4-AAEA-F274448C4CD2
-ms.openlocfilehash: 02eacb312931d941b716ee65f91cd478eac8bb8a
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: aaa1c68e1089e3ff1df131df2fac84ecbf426551
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126644509"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135805814"
 ---
 # <a name="task-comments"></a>任务注释
 

@@ -6,7 +6,6 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.gpuexecution
-- vs.cv.threads.timeline.gpuactivity
 ms.assetid: 0956edbf-9bcd-4afe-9287-fda628648ca0
 author: mikejo5000
 ms.author: mikejo
@@ -14,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 22bebcc60cf0ed454cab95b1861f358955e64497
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 9c4249ee5992840449771e1acdcf491877199dde
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736626"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135803409"
 ---
 # <a name="gpu-activity-this-process"></a>GPU 活动(此进程)
 在并发可视化工具中，“线程”视图中的“GPU 活动(此进程)”段表示 GPU 代表当前进程处理请求的时间。 这些请求以直接内存访问 (DMA) 数据包的形式发送到 GPU。 段的长度代表 GPU 代表当前进程处理 DMA 数据包的时间。

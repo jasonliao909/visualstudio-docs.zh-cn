@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d1961c85d6c918e9b3dcdbef9bf5511b77998186
-ms.sourcegitcommit: 99e0146dfe742f6d1955b9415a89c3d1b8afe4e1
+ms.openlocfilehash: d9a36834b059da8ead4d3374d31072c0cd768503
+ms.sourcegitcommit: d38d1b083322019663fec7d1d85a4cda456aadca
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "134553981"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135533937"
 ---
 # <a name="update-a-visual-studio-client-that-was-installed-from-a-network-layout"></a>更新通过网络布局安装的 Visual Studio 客户端
 
@@ -34,14 +34,14 @@ ms.locfileid: "134553981"
 
 如果要通过 Microsoft 托管的服务器更新客户端，那么该客户端将在该[通道](/visualstudio/releases/2022/vs2022-release-rhythm)上下载并安装 Microsoft 提供的最新版本。 
 
-如果要通过网络布局中更新客户端，第一步是使用更新的产品准备网络布局。 你可以[利用最新产品更新来更新现有布局](/visualstudio/install/create-a-network-installation-of-visual-studio#update-or-modify-your-layout)，以便新的安装和更新都将收到更新的版本。 或者，你可以在另外的目录中[创建全新布局](/visualstudio/install/create-a-network-installation-of-visual-studio)，以便用于更新客户端计算机。
+如果要通过网络布局中更新客户端，第一步是使用更新的产品准备网络布局。 你可以[利用最新产品更新来更新现有布局](create-a-network-installation-of-visual-studio.md#update-or-modify-your-layout)，以便新的安装和更新都将收到更新的版本。 或者，你可以在另外的目录中[创建全新布局](create-a-network-installation-of-visual-studio.md)，以便用于更新客户端计算机。
 
 ## <a name="enable-manual-user-initiated-client-side-updates"></a>启用手动用户启动的客户端更新 
-客户端计算机上拥有足够权限的用户可以[自行手动启动 Visual Studio 更新](/visualstudio/install/update-visual-studio)。 必须正确配置 Visual Studio 客户端才能在正确的源位置中找到更新，这样才可以识别更新可用。 如果更新发生时正在使用任何文件，如 Visual Studio 已打开，则需要关闭 Visual Studio 才能完成更新。 偶尔，更新将需要重启。
+客户端计算机上拥有足够权限的用户可以[自行手动启动 Visual Studio 更新](update-visual-studio.md)。 必须正确配置 Visual Studio 客户端才能在正确的源位置中找到更新，这样才可以识别更新可用。 如果更新发生时正在使用任何文件，如 Visual Studio 已打开，则需要关闭 Visual Studio 才能完成更新。 偶尔，更新将需要重启。
 
 ### <a name="manually-configure-where-the-visual-studio-client-looks-for-updates"></a>手动配置 Visual Studio 客户端查找更新的位置
 
-Visual Studio 一开始安装在客户端计算机上时，它会记录应在何处检查更新。 如果 Visual Studio 通过 Microsoft 托管服务器安装，则默认情况下，它将从 Microsoft 托管的服务器中查找更新。 如果通过对网络布局调用引导程序来安装或更新 Visual Studio，它便将在[布局指定的位置](/visualstudio/install/automated-installation-with-response-file)中查找更新。  
+Visual Studio 一开始安装在客户端计算机上时，它会记录应在何处检查更新。 如果 Visual Studio 通过 Microsoft 托管服务器安装，则默认情况下，它将从 Microsoft 托管的服务器中查找更新。 如果通过对网络布局调用引导程序来安装或更新 Visual Studio，它便将在[布局指定的位置](automated-installation-with-response-file.md)中查找更新。  
 
 ::: moniker range="vs-2017"
 
@@ -53,25 +53,25 @@ Visual Studio 一开始安装在客户端计算机上时，它会记录应在何
 
 对于默认 Visual Studio 2019 功能，客户端安装产品后，客户端的更新位置配置就会锁定，并无法更改。 若要可靠地更改更新的源位置，唯一的方法是使用正确的配置卸载并重新安装该产品。
  
-但是，如果 Visual Studio 客户端使用最新的 Visual Studio 2022 安装程序，则可以更改客户端的更新源位置。 如果希望通过一种布局安装而让更新来自另一种布局，这就很有用。 可通过两种方法将 Visual Studio 2022 安装程序安装到客户端计算机上。 最简单的方法便是安装并使用 Visual Studio 2022 产品。 或者，你可以[通过 Visual Studio 2019 布局分发 Visual Studio 2022 安装程序](/visualstudio/install/create-a-network-installation-of-visual-studio#configure-the-layout-to-always-use-the-latest-installer)。
+但是，如果 Visual Studio 客户端使用最新的 Visual Studio 2022 安装程序，则可以更改客户端的更新源位置。 如果希望通过一种布局安装而让更新来自另一种布局，这就很有用。 可通过两种方法将 Visual Studio 2022 安装程序安装到客户端计算机上。 最简单的方法便是安装并使用 Visual Studio 2022 产品。 或者，你可以[通过 Visual Studio 2019 布局分发 Visual Studio 2022 安装程序](create-a-network-installation-of-visual-studio.md#configure-the-layout-to-always-include-and-provide-the-latest-installer)。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-若要手动查看和配置用于让客户端查找更新的更新位置，请打开[更新设置](/visualstudio/install/update-visual-studio?view=vs-2022&preserve-view=true#configure-source-location-of-updates-1)，确保其配置正确。 然后，你可以从客户端启动更新。  
+若要手动查看和配置用于让客户端查找更新的更新位置，请打开[更新设置](update-visual-studio.md?view=vs-2022&preserve-view=true#configure-source-location-of-updates-1)，确保其配置正确。 然后，你可以从客户端启动更新。  
 
 ::: moniker-end
 
 ### <a name="update-notifications"></a>更新通知
 
-如果客户端查找更新的位置有可用的更新，客户端便会[弹出一条消息或通知标志](/visualstudio/install/update-visual-studio?#use-the-message-box-in-the-ide-1)。  
+如果客户端查找更新的位置有可用的更新，客户端便会[弹出一条消息或通知标志](update-visual-studio.md?#use-the-message-box-in-the-ide-1)。  
 
-若要详细了解如何控制何时向用户显示更新通知，请参阅[控制对基于网络的 Visual Studio 部署的更新](/visualstudio/install/set-defaults-for-enterprise-deployments#controlling-notifications-in-the-visual-studio-ide)。
+若要详细了解如何控制何时向用户显示更新通知，请参阅[控制对基于网络的 Visual Studio 部署的更新](set-defaults-for-enterprise-deployments.md#controlling-notifications-in-the-visual-studio-ide)。
 
 ### <a name="manually-initiate-the-update"></a>手动启动更新
 
-用户可以通过以下方式[手动更新](/visualstudio/install/update-visual-studio) Visual Studio 实例： 
+用户可以通过以下方式[手动更新](update-visual-studio.md) Visual Studio 实例： 
   * 启动 Visual Studio 安装程序。 如果更新可用，则可以单击“更新”。
   * 启动 Visual Studio IDE 并响应通知标志或消息，或者选择“帮助”/“检查”获取更新。  
 
@@ -92,7 +92,7 @@ c:\program files (x86)\microsoft\visual studio\installer\>setup.exe update --ins
 
 ::: moniker range=">=vs-2019"
 
-可通过以编程方式调用客户端的安装程序并发出 update 命令来启动 Visual Studio 的更新。 此命令将根据[更新的源位置](/visualstudio/install/update-visual-studio#configure-source-location-of-updates-1)中提供的更新产品来更新 Visual Studio。 如果要更改客户端上的更新源位置，可以通过传入--channelURI 参数以编程方式执行此操作。 例如：  
+可通过以编程方式调用客户端的安装程序并发出 update 命令来启动 Visual Studio 的更新。 此命令将根据[更新的源位置](update-visual-studio.md#configure-source-location-of-updates-1)中提供的更新产品来更新 Visual Studio。 如果要更改客户端上的更新源位置，可以通过传入--channelURI 参数以编程方式执行此操作。 例如：  
 
 可以将通道更改为网络布局，并在客户端上执行 update 命令，如下所示：
 
@@ -111,7 +111,7 @@ c:\program files (x86)\microsoft\visual studio\installer\>setup.exe update --ins
 
 ::: moniker range=">=vs-2017"
 
-可以通过编程方式从最初安装所用的同一位置调用引导程序来更新 Visual Studio。 源自 Microsoft 托管服务器的所有引导程序均视为来自同一位置。 如果引导程序位于网络布局共享上，则[必须更新网络布局](/visualstudio/install/create-a-network-installation-of-visual-studio#update-or-modify-your-layout)以包含所需的产品更新。
+可以通过编程方式从最初安装所用的同一位置调用引导程序来更新 Visual Studio。 源自 Microsoft 托管服务器的所有引导程序均视为来自同一位置。 如果引导程序位于网络布局共享上，则[必须更新网络布局](create-a-network-installation-of-visual-studio.md#update-or-modify-your-layout)以包含所需的产品更新。
 
 ```shell
 \\server\share\originalinstallVSdirectory\vs_enterprise.exe update --installPath "C:\clientmachine\installpath" --quiet 
@@ -121,13 +121,13 @@ c:\program files (x86)\microsoft\visual studio\installer\>setup.exe update --ins
 
 ::: moniker range="vs-2019"
 
-你还可以通过编程方式从其他源位置（包含要将客户端更新到的产品版本）调用引导程序，从而启动 Visual Studio 2019 客户端的更新。 为此，需要在客户端上获取 Visual Studio 2022 安装程序。 若要实现此目的，最简单的方法是[确保新的 Visual Studio 2019 布局使用的是最新安装程序](/visualstudio/install/create-a-network-installation-of-visual-studio#ensure-your-layout-is-using-the-latest-installer)。 如果通过新布局运行引导程序，则客户端上的更新通道将设置为[布局中指定的更新位置](/visualstudio/install/automated-installation-with-response-file)。 例如，可以在客户端计算机上运行以下命令：
+你还可以通过编程方式从其他源位置（包含要将客户端更新到的产品版本）调用引导程序，从而启动 Visual Studio 2019 客户端的更新。 为此，需要在客户端上获取 Visual Studio 2022 安装程序。 若要实现此目的，最简单的方法是[确保新的 Visual Studio 2019 布局使用的是最新安装程序](create-a-network-installation-of-visual-studio.md#ensure-your-layout-is-using-the-latest-installer)。 如果通过新布局运行引导程序，则客户端上的更新通道将设置为[布局中指定的更新位置](automated-installation-with-response-file.md)。 例如，可以在客户端计算机上运行以下命令：
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2022"
 
-还可以通过编程方式从其他源位置（包含要将客户端更新到的产品版本）调用引导程序，从而启动 Visual Studio 客户端的更新。 如果通过新布局运行引导程序，则客户端上的更新通道将设置为[布局中指定的更新位置](/visualstudio/install/automated-installation-with-response-file)。 例如，可以在客户端计算机上运行以下命令：
+还可以通过编程方式从其他源位置（包含要将客户端更新到的产品版本）调用引导程序，从而启动 Visual Studio 客户端的更新。 如果通过新布局运行引导程序，则客户端上的更新通道将设置为[布局中指定的更新位置](automated-installation-with-response-file.md)。 例如，可以在客户端计算机上运行以下命令：
 
 ::: moniker-end
 
@@ -159,7 +159,7 @@ c:\program files (x86)\microsoft\visual studio\installer\>setup.exe update --ins
 
 ## <a name="get-support-for-your-network-layout"></a>获取对网络布局的支持
 
-如果网络布局遇到问题，请告知我们。 通过[报告问题](/visualstudio/ide/how-to-report-a-problem-with-visual-studio)工具（会出现在 Visual Studio 安装程序和 Visual Studio IDE 中）是告知我们的最佳方式。 如果你是 IT 管理员，并且尚未安装 Visual Studio，可以[在此处提交 IT 管理员反馈](https://aka.ms/vs/admin/guide)。 使用此工具时，如果你可以发送 [VS 收集工具的日志](https://aka.ms/vscollect)，这将非常有帮助，可帮助我们诊断和解决问题。
+如果网络布局遇到问题，请告知我们。 通过[报告问题](../ide/how-to-report-a-problem-with-visual-studio.md)工具（会出现在 Visual Studio 安装程序和 Visual Studio IDE 中）是告知我们的最佳方式。 如果你是 IT 管理员，并且尚未安装 Visual Studio，可以[在此处提交 IT 管理员反馈](https://aka.ms/vs/admin/guide)。 使用此工具时，如果你可以发送 [VS 收集工具的日志](https://aka.ms/vscollect)，这将非常有帮助，可帮助我们诊断和解决问题。
 
 对于安装相关问题，我们还提供[安装聊天](https://visualstudio.microsoft.com/vs/support/#talktous)（仅限英语）支持选项  。
 

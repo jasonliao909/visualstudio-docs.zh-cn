@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: be1dcdd4f0ca75f57992ff00d8bf3b3c1501b6ec
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: aee0d27701e2c170fffe85f871cb792045bed28b
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641818"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135805866"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
 
@@ -38,7 +38,7 @@ devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig Pr
 
 - *SolutionName*
 
-  必需。 解决方案文件的完整路径和名称。
+  必需。 解决方案文件的路径和名称（相对于解决方案的目录）。
 
 - *SolnConfigName*
 

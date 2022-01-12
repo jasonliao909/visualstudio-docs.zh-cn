@@ -22,12 +22,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bb9aeadd0e511ce5ed770eb56f0a2f02bf26542
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 962b29b92b61a3512ea9ad4ad127183289b4e446
+ms.sourcegitcommit: fc874be3fe4637a23997b4ef2d99a2ee9a499581
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126665502"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135517365"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>使用依赖项关系图验证代码
 
@@ -55,7 +55,7 @@ ms.locfileid: "126665502"
 
 若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/analyze-and-model-your-architecture.md#VersionSupport)。
 
-你可以从 Visual Studio 中打开的依赖项关系图或从命令提示符手动验证代码。 你还可以在运行本地生成或 Azure Pipelines 生成时自动验证代码。 请参阅[第 9 频道视频：使用依赖项关系图设计和验证体系结构](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture)。
+你可以从 Visual Studio 中打开的依赖项关系图或从命令提示符手动验证代码。 你还可以在运行本地生成或 Azure Pipelines 生成时自动验证代码。
 
 > [!IMPORTANT]
 > 如果想要使用 Team Foundation Server (TFS) 运行层验证，则还必须在生成服务器上安装相同版本的 Visual Studio。

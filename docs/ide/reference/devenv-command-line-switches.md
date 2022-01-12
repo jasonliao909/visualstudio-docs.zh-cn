@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: fbad39c210c5cefd45dfbdfa9bec8f6cafe432cc
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: c8d24f0f4d446c4edfecd519f95bcf867d82bd1b
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126640685"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135803461"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv 命令行开关
 
@@ -79,6 +79,7 @@ ms.locfileid: "126640685"
 |[/Run 或 /R](run-devenv-exe.md)|编译并运行指定的解决方案。<br /><br /> `devenv /run mysln.sln`|
 |[/RunExit](runexit-devenv-exe.md)|编译并运行指定的解决方案，在运行该解决方案时最小化 IDE，并在解决方案完成运行后关闭 IDE。<br /><br /> `devenv /runexit mysln.sln`|
 |[/SafeMode](safemode-devenv-exe.md)|在安全模式下启动 Visual Studio。 此开关仅加载默认环境、默认服务以及第三方包的发布版。<br /><br /> 此开关不带参数。|
+|/TfsLink|打开团队资源管理器并为所提供的项目 URI 启动查看器（如果已注册）。|
 |[/UseEnv](useenv-devenv-exe.md)|让 IDE 使用 PATH、INCLUDE、LIBPATH 和 LIB 环境变量，以用于 C++ 编译。 此开关与使用 C++ 的桌面开发工作负载一起安装  。 有关更多信息，请参阅 [为命令行生成设置路径和环境变量](/cpp/build/setting-the-path-and-environment-variables-for-command-line-builds)。|
 
 下面各个命令行开关不显示 IDE。

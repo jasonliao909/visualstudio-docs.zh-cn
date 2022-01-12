@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: b7bb5dae6761409c6d1dc9f80ec26dedc155b229
-ms.sourcegitcommit: 04fb8ba0f7ea73ba17baa88f10563c8600e7fd7b
+ms.openlocfilehash: c352fc371a8f49bd71cbab0a6ca8ece53605b062
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "135121734"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135806009"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio-part-1-of-2"></a>教程：在 Visual Studio 中创建一个简单的 C# 控制台应用（第 1 部分，共 2 部分）
 
@@ -152,7 +152,7 @@ ms.locfileid: "135121734"
    Visual Studio 随即打开新项目，其中包含默认的“Hello World”代码。
    
    > [!NOTE]
-   > 从 .NET 6 开始，使用控制台模板的新项目生成的代码与以前的版本不同。 若要了解详细信息，请参阅 [新的 c # 模板生成顶级语句](/core/tutorials/top-level-templates.md) 页面。 
+   > 从 .NET 6 开始，使用控制台模板的新项目生成的代码与以前的版本不同。 若要了解详细信息，请参阅 [新的 c # 模板生成顶级语句](/dotnet/core/tutorials/top-level-templates) 页面。 
 
 ::: moniker-end
 

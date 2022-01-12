@@ -1,17 +1,18 @@
 ---
 title: 编辑器主题
 description: 本文介绍如何编辑编辑器的主题或在 Visual Studio for Mac 中添加自己的主题
-author: cobey
-ms.author: cobey
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.date: 11/06/2018
 ms.assetid: 4C1B7952-CD45-4132-AD6B-01CF993D83F8
-ms.topic: how-to
-ms.openlocfilehash: 490ec4f5763ba7ba5be6bf9099dcd608a3712fa1
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.topic: reference
+ms.openlocfilehash: 070463bf0ad0def259c397c262f6b8090db0fecb
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736747"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135806100"
 ---
 # <a name="editor-themes"></a>编辑器主题
 

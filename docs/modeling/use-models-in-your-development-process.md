@@ -12,16 +12,16 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 910aa4d25325ac6498e941bbba3a1a6d7ee2f957
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 47da50dd9433ac00a42b858eded05752e1635e8f
+ms.sourcegitcommit: fc874be3fe4637a23997b4ef2d99a2ee9a499581
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126663854"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135516746"
 ---
 # <a name="use-models-in-your-development-process"></a>在你的开发过程中使用模型
 
-在 Visual Studio 中，你可以使用模型帮助你理解和更改系统、应用程序或组件。 模型能帮助你可视化系统工作的环境、阐明用户需求、定义你系统的体系结构、分析代码并确保你的代码符合要求。 请参阅[第 9 频道视频：通过建模改善体系结构](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Improving-architecture-through-modeling)。
+在 Visual Studio 中，你可以使用模型帮助你理解和更改系统、应用程序或组件。 模型能帮助你可视化系统工作的环境、阐明用户需求、定义你系统的体系结构、分析代码并确保你的代码符合要求。
 
 若要查看支持每种类型的模型的 Visual Studio 版本，请参阅 [Version support for architecture and modeling tools](../modeling/analyze-and-model-your-architecture.md#VersionSupport)。
 
@@ -134,7 +134,7 @@ ms.locfileid: "126663854"
 
 |**类别**|**链接**|
 |-|-|
-|**视频**|![链接到视频](../data-tools/media/playvideo.gif) [MSDN 如何操作视频：如何创建和使用 UML 模型和关系图 (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))<br /><br /> ![链接到视频](../data-tools/media/playvideo.gif) [第 9 频道：使用 Visual Studio 2010 的 UML](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-1-brainstorming-a-project)<br /><br /> ![链接到视频](../data-tools/media/playvideo.gif) [MSDN 如何操作系列：UML 工具和扩展性 (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))|
+|**视频**|![链接到视频](../data-tools/media/playvideo.gif) [MSDN 如何操作视频：如何创建和使用 UML 模型和关系图 (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))<br /><br /> ![链接到视频](../data-tools/media/playvideo.gif) [MSDN 如何操作系列：UML 工具和扩展性 (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))|
 |**论坛**|- [Visual Studio 可视化和建模工具](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Visual Studio 可视化和建模 SDK（DSL 工具）](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 |**Blogs**|[Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
 |**技术文章和日志**|[MSDN 体系结构中心](/previous-versions/dn630665(v=msdn.10))|

@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ee4e19dbf864f84dc1a9d3d662bed75b6c62c4b7
-ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
-ms.translationtype: HT
+ms.openlocfilehash: 92fc0cc683c770198741071f19fe2154f9d1c043
+ms.sourcegitcommit: 52a425b5a541034cda26db8df9cd43281c007e80
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "131126657"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "135540700"
 ---
 # <a name="navigate-through-code-by-using-the-visual-studio-debugger"></a>使用 Visual Studio 调试程序在代码中导航
 
@@ -191,7 +191,7 @@ Visual Studio 中的断点提供了一组丰富的功能，例如条件断点和
 
 如果你已加载 Microsoft 系统代码的调试符号，并已禁用“仅我的代码”，则可以像执行任何其他调用一样单步执行系统调用。
 
-若要了解如何加载 Microsoft 符号，请参阅[配置符号位置和加载选项](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#configure-symbol-locations-and-loading-options)。
+若要了解如何加载 Microsoft 符号，请参阅 [配置符号文件的位置和加载选项](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#configure-location-of-symbol-files-and-loading-options)。
 
 **加载特定系统组件的符号**
 

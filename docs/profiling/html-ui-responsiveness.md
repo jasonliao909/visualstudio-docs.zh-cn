@@ -19,12 +19,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: ff601ac5c2ff72cf1f309c42671c0a0802e3e796
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: f8b03cdea1c79f9ebb3258e4b412e795ba2e1578
+ms.sourcegitcommit: fc874be3fe4637a23997b4ef2d99a2ee9a499581
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641516"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135517596"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>分析中通用 Windows 应用中的 HTML UI 响应能力
 本主题介绍如何使用 UI 响应能力探查器（一种可用于 Windows 通用应用的性能工具）隔离应用中的性能问题。
@@ -352,8 +352,6 @@ if (performance.mark && performance.measure) {
 |“用户测量”|不适用|使用 `performance.measure` 方法测量应用特定的方案。 这是用于分析代码的工具生成的事件。|
 
 ## <a name="additional-information"></a>其他信息
-
-- 观看 [此视频](https://channel9.msdn.com/Events/Build/2013/3-316) （来自 Build 2013 大会，介绍了 UI 响应能力探查器）。
 
 - 阅读关于使用 JavaScript 为 Windows 生成的 UWP 应用的性能提示。 有关详细信息，请参阅[使用 JavaScript 的 UWP 应用的性能最佳做法](/previous-versions/windows/apps/hh465194\(v\=win.10\))。
 

@@ -3,16 +3,17 @@ title: MacOs 上的 Azure Functions
 description: Visual Studio for Mac 中的 Azure Functions 入门。
 author: jmatthiesen
 ms.author: jomatthi
+manager: dominicn
 ms.date: 04/02/2021
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
-ms.openlocfilehash: a91c40d0b6fe09aa88c0f3d72d21abde10621b5e
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: d65f38b2c025222d409ed51a52cbbf634d3a0886
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126644530"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135806282"
 ---
 # <a name="introduction-to-azure-functions"></a>Azure Functions 简介
 

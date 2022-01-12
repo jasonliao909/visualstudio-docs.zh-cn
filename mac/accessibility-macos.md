@@ -1,17 +1,18 @@
 ---
 title: 使用 macOS 辅助选项
 description: 使用 macOS 辅助选项和功能，如高对比度、键盘导航和 VoiceOver
-author: heiligerdankgesang
-ms.author: dominicn
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.date: 09/23/2019
 ms.assetid: 598FC25A-6DA3-44BB-B128-AD979E9F86EA
 ms.topic: how-to
-ms.openlocfilehash: 6796ab12716d1d2f3ec2570c32b410c8360b8a81
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: c581a1ec20734dd1d9292589b07853cb5a6136a1
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126644536"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135806386"
 ---
 # <a name="accessibility-features-of-macos"></a>macOS 辅助功能
 

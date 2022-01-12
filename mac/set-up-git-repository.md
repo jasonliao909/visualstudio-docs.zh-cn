@@ -1,17 +1,18 @@
 ---
 title: 设置 Git 存储库
 description: 使用 Visual Studio for Mac 连接到 Git 存储库。
-author: therealjohn
-ms.author: johmil
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.date: 12/03/2020
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
 ms.topic: how-to
-ms.openlocfilehash: bacd533bf5c28c6f431fe7088fad36b6bbd3d04b
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 35ab968b774eee4642bd19b24ef863a562b3d4f9
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736238"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135803981"
 ---
 # <a name="set-up-a-git-repository"></a>设置 Git 存储库
 

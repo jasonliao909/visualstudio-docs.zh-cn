@@ -1,15 +1,17 @@
 ---
 title: IntelliSense
 description: 有关使用 Visual Studio for Mac 中的 IntelliSense 的信息
-author: cobey
-ms.author: cobey
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.date: 08/16/2019
-ms.openlocfilehash: 07ef1d6292e4ac88ca616d0f35e3fd831cacc649
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.topic: reference
+ms.openlocfilehash: 4d33a75eb2f6e45d5768f3b1820c4de70146734e
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736396"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135804878"
 ---
 # <a name="intellisense"></a>IntelliSense
 
@@ -28,9 +30,9 @@ IntelliSense 提供了多种功能，有助于增强编写和编辑代码的体�
 | ![类图标](media/classes-icon.png)  | class         | `class`    |  ⌥C
 | ![“常量”图标](media/constant-icon.png) | constant      | `const`    |  ⌥O
 | ![委托图标](media/delegate-icon.png) | delegate      | `delegate` |  ⌥D
-| ![枚举图标](media/enums-icon.png)    | 枚举          | `enum`     |  ⌥E
+| ![枚举图标](media/enums-icon.png)    | enum          | `enum`     |  ⌥E
 | ![事件图标](media/event-icon.png)    | event         |            |  ⌥V
-| ![“字段”图标](media/fields-icon.png)   | Field — 字段         |            |  ⌥F
+| ![“字段”图标](media/fields-icon.png)   | field         |            |  ⌥F
 | ![接口图标](media/interface-icon.png)| 接口     | `interface`|  ⌥I
 | ![关键字图标](media/keyword-icon.png)  | 关键字 (keyword)       |            |  ⌥K
 | ![方法图标](media/method-icon.png)   | method        |            |  ⌥M

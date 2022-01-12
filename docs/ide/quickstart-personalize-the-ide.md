@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 48ac5ca7d1d1ce236ff51cff57ee9a152761d371
-ms.sourcegitcommit: 5af130d3ff64b71d415819e42f4f2efb2ae36a6a
-ms.translationtype: HT
+ms.openlocfilehash: 175b1ca7fc4bbe5194734d36e777a99a2c4c9e65
+ms.sourcegitcommit: 3972b1af15930a73d79482e798154f0417a68593
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "133117544"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "135649819"
 ---
 # <a name="how-to-personalize-the-visual-studio-ide-and-the-editor"></a>如何：个性化设置 Visual Studio IDE 和编辑器
 
@@ -33,7 +33,7 @@ Visual Studio 用户界面的默认颜色主题是“深色”。 下面介绍�
 
 1. 在选项列表中，选择“环境”>“常规” 。
 
-1. 在“颜色主题”列表中，选择默认的“深色”主题、“蓝色”主题、“蓝色(额外对比度)”主题或“浅色”主题    。 或者，选择“使用系统设置”选项选择 Windows 使用的主题。
+1. 在 " **颜色主题** " 列表中，选择 "默认 **深色** 主题"、" **蓝色** 主题"、" **蓝色 (额外对比度)** 主题和" **浅色** 主题 "。 或者，选择“使用系统设置”选项选择 Windows 使用的主题。
 
    :::image type="content" source="media/vs-2022/fonts-colors-theme.png" alt-text="可在其中更改颜色主题的“选项”对话框的屏幕截图。":::
 

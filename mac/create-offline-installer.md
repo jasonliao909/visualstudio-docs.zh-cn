@@ -2,17 +2,19 @@
 title: 创建脱机安装程序
 description: 了解如何在 Windows for Visual Studio for Mac 上创建脱机安装程序。
 ms.custom: SEO-VS-2020
-author: heiligerdankgesang
-ms.author: dominicn
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.date: 11/06/2018
 ms.technology: vs-ide-install
+ms.topic: how-to
 ms.assetid: 5CA4B8C1-2D01-46EA-A6B2-8573B324509B
-ms.openlocfilehash: 741f642ef4e68513406b3aebfeaa4faea30a6f40cfcd976b32b52f872df912d0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
-ms.translationtype: HT
+ms.openlocfilehash: a0095bfeb013bca13e18c96c63c88e06cb6d1c1c
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121266280"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135803175"
 ---
 # <a name="create-an-offline-installer-for-visual-studio-for-mac"></a>创建 Visual Studio for Mac 的脱机安装程序
 

@@ -4,18 +4,18 @@ description: 在键入 R 代码时，Visual Studio IntelliSense 将显示有关�
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: ghogen
+ms.author: ghogen
 manager: jmartens
 ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: a635ac8cc95648d1885239661c4b7edf4167692b
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 399daceccc5833d1bdd03b80bd08f703348c8255
+ms.sourcegitcommit: dcecc0ed37b5e976b5dc83c5128ba5ecc8bc04b1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126642260"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "135750995"
 ---
 # <a name="intellisense"></a>IntelliSense
 

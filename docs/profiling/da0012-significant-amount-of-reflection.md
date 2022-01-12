@@ -7,7 +7,7 @@ f1_keywords:
 - vs.performance.rules.DAReflection
 - vs.performance.12
 - vs.performance.rules.DA0012
-- vs.performance.DA0011
+- vs.performance.DA0012
 ms.assetid: c92a1d76-21fa-426e-8b1b-a3c08e9bcbca
 author: mikejo5000
 ms.author: mikejo
@@ -16,12 +16,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: aecafde31cf799122b9aae60003c1de22b026c8e
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 89368361b269dec80a46821395b6a0a23ce7e5ea
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641714"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135804358"
 ---
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012：大量反射
 

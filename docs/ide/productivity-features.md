@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: ab3f07f0b9ec86ad1ec854ba5960099a084fb234
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: d76f4a1f0f004b51fca0b39895839d76376aa9b9
+ms.sourcegitcommit: d38d1b083322019663fec7d1d85a4cda456aadca
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641593"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135534012"
 ---
 # <a name="productivity-guide-for-visual-studio"></a>Visual Studio 实用指南
 
@@ -182,7 +182,7 @@ ms.locfileid: "126641593"
 ## <a name="see-also"></a>请参阅
 
 - [Visual Studio 提示和技巧博客文章](https://devblogs.microsoft.com/visualstudio/visual-studio-tips-and-tricks/)
-- [常用命令的默认键盘快捷键](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
+- [常用命令的默认键盘快捷键](default-keyboard-shortcuts-in-visual-studio.md)
 - [如何：自定义菜单和工具栏](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
 - [演练：创建简单的应用程序](../get-started/csharp/tutorial-wpf.md)
 - [辅助功能提示和技巧](../ide/reference/accessibility-tips-and-tricks.md)

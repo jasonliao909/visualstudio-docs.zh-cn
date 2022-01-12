@@ -1,17 +1,17 @@
 ---
 title: 自定义 IDE
 description: 可以通过多种方式自定义 Visual Studio for Mac，因此用户可以在满足效率和美观需求的环境中开发应用。 本文将探讨调整 Visual Studio for Mac 的各种方式以满足你的需要。
-author: heiligerdankgesang
-ms.author: dominicn
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.date: 11/06/2020
-ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
-ms.custom: video
-ms.openlocfilehash: 05fd1091a279a085c2a727eb36cbc56fcb201057
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.topic: how-to
+ms.openlocfilehash: ef2f5c7e783c3bc10ec11a9ba4bce824c45c52c1
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736759"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135803071"
 ---
 # <a name="customizing-the-ide"></a>自定义 IDE
 
@@ -132,7 +132,7 @@ Visual Studio for Mac 提供包含其他信息、工具和导航帮助的工具�
 
 ## <a name="related-video"></a>相关视频
 
-> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Customize-the-Look-and-Feel/player]
+> [!Video https://docs.microsoft.com/shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Customize-the-Look-and-Feel/player]
 
 ## <a name="see-also"></a>请参阅
 

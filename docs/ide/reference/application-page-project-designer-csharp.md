@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 66b882c90343910836295923e7ec5efd73f67eeb
-ms.sourcegitcommit: 215680b355cf613bfa125cf6b864c8bb5f2c71a5
-ms.translationtype: HT
+ms.openlocfilehash: 355f7feb87d1221d05fbe6c21643760de1dd1499
+ms.sourcegitcommit: d3578c384959f1b76dd06fb4b5d075fb052f8c69
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "132454019"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "135374990"
 ---
 # <a name="application-page-project-designer-c"></a>“项目设计器”->“应用程序”页 (C#)
 
@@ -122,9 +122,9 @@ ms.locfileid: "132454019"
 
 **Manifest**
 
-当应用程序在 Windows Vista 上以用户帐户控制 (UAC) 模式运行时，选择一个清单生成选项。 此选项可以采用以下值：
+当应用程序在 UAC 帐户的"用户帐户控制"Windows下运行时， (清单) 。 此选项可以采用以下值：
 
-- **嵌入带默认设置的清单**。 支持 Visual Studio 在 Windows Vista 上的典型操作方式，即，将安全信息嵌入应用程序的可执行文件中，并指定 `requestedExecutionLevel` 为 `AsInvoker`。 这是默认选项。
+- **嵌入带默认设置的清单**。 支持在应用程序Visual Studio操作的典型Windows，即将安全信息嵌入应用程序的可执行文件中，并将 `requestedExecutionLevel` 指定为 `AsInvoker` 。 这是默认选项。
 
 - **创建不带清单的应用程序**。 此方法称为 *虚拟化*。 若要与早期的应用程序兼容，则使用此选项。
 

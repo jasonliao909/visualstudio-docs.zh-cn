@@ -3,15 +3,17 @@ title: 在有防火墙或代理服务器的情况下安装和使用 Visual Studi
 titleSuffix: ''
 description: 本文档列出了必须在防火墙中允许的主机，以便 Visual Studio for Mac（及其工作负载，包括 Xamarin）能够在企业环境中正常运行。
 ms.assetid: 79C0F1A3-0C13-4E55-A820-1138A4082B77
-author: heiligerdankgesang
-ms.author: dominicn
-ms.date: 09/18/2019
-ms.openlocfilehash: 25a4597c8d523b63e7ceb0cf8b5eff71af58071a
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
+ms.topic: reference
+ms.date: 01/10/2022
+ms.openlocfilehash: 5baa1c16960e0501731d337b4f4d3112f9374cdc
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736400"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135806373"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>在防火墙或代理服务器后面安装和使用 Visual Studio for Mac
 
@@ -31,6 +33,7 @@ ms.locfileid: "126736400"
 | ----------------------------------- |---------------------------|
 | *.live.com| 凭据管理 |
 | app.vssps.visualstudio.com| 安装程序元数据|
+| nw-umwatson.events.data.microsoft.com | 故障和错误报告 | 
 | vortex.data.microsoft.com | 故障和错误报告 |
 | az667904.vo.msecnd.net| 故障和错误报告 |
 | xamarin.com | 安装程序元数据|

@@ -2,16 +2,17 @@
 title: 项目和解决方案
 description: 本文档概述了 Visual Studio for Mac 中的项目和解决方案。
 ms.topic: overview
-author: heiligerdankgesang
-ms.author: dominicn
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.date: 03/09/2021
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
-ms.openlocfilehash: 33f6c5b6b8a536355da1b9416c3b316996f4b245
-ms.sourcegitcommit: 4efdab6a579b31927c42531bb3f7fdd92890e4ac
+ms.openlocfilehash: 441b4778ac98e66ba69b8983cac00a5d4425b347
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "130350711"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135803929"
 ---
 # <a name="projects-and-solutions-in-visual-studio-for-mac"></a>Visual Studio for Mac 中的项目和解决方案
 

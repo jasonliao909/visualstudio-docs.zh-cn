@@ -10,7 +10,6 @@ f1_keywords:
 - vs.debug.sourcewin.edit
 - vs.debug.file
 - vs.debug.breakpt.new
-- vs.debug.whenbreakpointishit
 - vs.debug.breakpt.location.address
 - vs.debug.breakpt.constraints
 - vs.debug.breakpoints.delete
@@ -36,12 +35,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 813f083a539b522236209d4768466f44cabf7886
-ms.sourcegitcommit: 99e0146dfe742f6d1955b9415a89c3d1b8afe4e1
+ms.openlocfilehash: 8c6848272f2e1d0ffa3a3dcf5937f5a271cfe3fc
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "134554058"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135804072"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中使用断点
 
@@ -145,7 +144,7 @@ ms.locfileid: "134554058"
 >[!NOTE]
 > 对于“更改时”字段，调试器不会将条件的第一次计算视为更改，所以第一次计算时不会命中断点。
 
-### <a name="use-object-ids-in-conditional-expressions-c-and-f-only"></a><a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a> 在条件表达式中使用对象 (C# 和 F#) 
+### <a name="use-object-ids-in-conditional-expressions-c-and-f-only"></a><a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a> 使用条件表达式中的对象 Id (c # 和 F # 仅) 
 
  有时，你想要观察特定对象的行为。 例如，你可能想要找出对象多次插入到集合中的原因。 在 C# 和 F# 中，可以创建[引用类型](/dotnet/csharp/language-reference/keywords/reference-types)的特定实例的对象 ID，并在断点条件下使用它们。 对象 ID 由公共语言运行时 (CLR) 调试服务生成并与该对象关联。
 
@@ -251,7 +250,7 @@ ms.locfileid: "134554058"
 
 ::: moniker range=">= vs-2019"
 
-## <a name="set-data-breakpoints-net-core-3x-or-net-5"></a><a name="BKMK_set_a_data_breakpoint_managed"></a>设置数据断点（A0.NET Core 3.x 或 .NET 5+) 
+## <a name="set-data-breakpoints-net-core-3x-or-net-5"></a><a name="BKMK_set_a_data_breakpoint_managed"></a>设置数据断点 ( .NET Core 2.x 或 .NET 5 +) 
 
 当特定对象的属性更改时，数据断点中断执行。
 

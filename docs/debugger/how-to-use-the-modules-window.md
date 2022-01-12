@@ -26,12 +26,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: dd4be2f7cef8615fe7b12a2440c5fcdc24257bf4
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 93fb75b96606a1bd7918604e5d84357d786a31b0
+ms.sourcegitcommit: 52a425b5a541034cda26db8df9cd43281c007e80
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129971149"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "135540544"
 ---
 # <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>在模块窗口中查看 DLL 和可执行文件（C＃、C++、Visual Basic、F＃）
 
@@ -60,7 +60,7 @@ ms.locfileid: "129971149"
 
 1. 如果符号未加载，请选择“符号设置”以打开“选项”对话框，并指定或更改符号加载位置。 
 
-   可以从公共 Microsoft 符号服务器或其他服务器下载符号，也可以从计算机上的文件夹中加载符号。 有关详细信息，请参阅[指定符号位置和加载行为](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#BKMK_Specify_symbol_locations_and_loading_behavior)。
+   可以从公共 Microsoft 符号服务器或其他服务器下载符号，也可以从计算机上的文件夹中加载符号。 有关详细信息，请参阅 [配置符号文件的位置和加载行为](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#configure-location-of-symbol-files-and-loading-options)。
 
 **更改符号加载行为设置：**
 

@@ -5,17 +5,17 @@ ms.date: 11/09/2020
 helpviewer_keywords:
 - deployment, website, console, publish
 ms.assetid: e963fb4b-6d32-4d45-86bb-ef7e4d3028b0
-author: sayedihashimi
-ms.author: sayedha
-manager: unniravindranathan
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.prod: visual-studio-mac
 ms.topic: how-to
-ms.openlocfilehash: f7bebfd1498290aa38ebb2ac5ed5ada9989afefb
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: c8da51de58abeb070e327aab7c4b7612891c1075
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736745"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135803656"
 ---
 # <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>使用 Visual Studio for Mac 发布到文件夹
 

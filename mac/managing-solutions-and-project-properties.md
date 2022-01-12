@@ -1,16 +1,18 @@
 ---
 title: 管理项目和解决方案属性
 description: 本文介绍如何在 Visual Studio for Mac 中管理项目和解决方案的属性
-author: heiligerdankgesang
-ms.author: dominicn
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.date: 11/09/2020
+ms.topic: how-to
 ms.assetid: 75247EB8-323A-4AFD-A451-6703A03D5D1F
-ms.openlocfilehash: 0c3277df3be22658acf85a4f0607ed9ad0308b5c
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 0c2edd3679f61e796b61f47eac1f5897ec7b16cf
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736387"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135804371"
 ---
 # <a name="managing-project-and-solution-properties"></a>管理项目和解决方案属性
 

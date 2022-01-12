@@ -13,14 +13,14 @@ ms.technology: vs-ide-debug
 monikerRange: '>= vs-2022'
 ms.workload:
 - multiple
-ms.openlocfilehash: fd616cb467d5367fd317601ecfdbacf5fc946b48
-ms.sourcegitcommit: ba40c6208b2cb27d047fec4fa2c83c6be4f9ee5a
+ms.openlocfilehash: b5d65709ff7e59825d67ecc2869fd415355285ae
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "134463505"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135804150"
 ---
-# <a name="write-and-debug-running-code-with-hot-reload-in-visual-studio-c-visual-basic-c"></a>在 Visual Studio (c #、Visual Basic、c + + 中，用热重载编写和调试正在运行的代码) 
+# <a name="write-and-debug-running-code-with-hot-reload-in-visual-studio-c-visual-basic-c"></a>使用 C#、热重载、C++ Visual Studio (中的 Visual Basic 编写和调试运行) 
 
 从 Visual Studio 2022 开始，Visual Studio 中的热重载体验适用于托管 .NET 和本机 C++ 应用。 无论使用哪种类型的应用，热重载的目的都是尽可能节省编辑之间的应用重启次数，从而使你通过减少等待应用重新生成、重启、重新导航到你在应用中的上一个位置等操作的时间来提高工作效率。
 
@@ -60,8 +60,8 @@ ms.locfileid: "134463505"
 |.NET MAUI (WinUI 3) |是|17.1|--|
 |.NET MAUI (Android) |是|17.1|--|
 |.NET MAUI (iOS) |是|17.1|--|
-|.NET MAUI Blazor 混合 (WinUI 3) |是|17.1|--|
-|.NET MAUI Blazor 混合 (Android) |是|17.1|--|
+|.NET MAUI Blazor Hybrid (WinUI 3) |是|17.1|--|
+|.NET MAUI Blazor Hybrid (Android) |是|17.1|--|
 |.NET MAUI Blazor 混合 (iOS) |是|17.1|--|
 
 可以使用热重载进行的编辑类型由运行时决定，而不是由用于启动应用程序的方法（F5 或 Ctrl+F5）决定。
@@ -79,7 +79,7 @@ ms.locfileid: "134463505"
 使用 Visual Studio 2022 并启动具有调试器的应用时，热重载适用于大多数应用框架，包括典型的应用类型，例如控制台、Windows 窗体 (WinForms)、WPF、UWP、WinUI 3（请参阅注释）和大多数类型的 ASP.NET Web 项目（用于代码隐藏编辑），包括 ASP.NET MVC、Web API，甚至较旧的 Web Forms 项目。 这些就是示例。 在你拥有 .NET 且使用 Visual Studio 托管调试器的任何地方，你都应获得基本的热重载支持。 这一事实意味着，即使是 Azure Functions 之类的项目在此方案中也非常成功。
 
 > [!NOTE]
-> WinUI 3 默认使用混合模式调试，不支持热重载。 可以通过启用托管的调试器在项目设置中修改此设置，从而使热重载正常工作。 若要在项目中启用此项，请修改 Launchsettings.json 并在 `"nativeDebugging": false` 属性后面添加 `commandName` 。
+> WinUI 3 默认使用混合模式调试，不支持热重载。 可以通过启用托管的调试器在项目设置中修改此设置，从而使热重载正常工作。 若要在项目中启用此功能，请修改 launchSettings.json，在 `"nativeDebugging": false` 属性后 `commandName` 添加 。
 
 从 Visual Studio 2022 版本 17.1 预览版 1 开始支持 .NET MAUI 应用。
 
@@ -109,7 +109,7 @@ ms.locfileid: "134463505"
 如果你面向的是 .NET 6，将继续在即将推出的 Visual Studio 2022 更新和 .NET 功能区段和主要版本中获得改进。
 
 > [!NOTE]
-> 在 Visual Studio 2022 (版本 17.0) 的第一个版本中，热重载 在使用 Visual Studio 调试器时对 Blazor WebAssembly 的支持当前未启用，但从 17.1 开始提供。 如果在没有调试热重载的情况下通过 Visual Studio或更新到 17.1 版本来启动应用，则仍可以继续运行。
+> 在 Visual Studio 2022 (版本 17.0) 的第一个版本中，热重载 在使用 Visual Studio 调试器时对 Blazor WebAssembly 的支持当前未启用，但从 17.1 开始提供。 如果在没有调试热重载的情况下通过 Visual Studio或更新到 17.1 版本来启动应用，则仍可以获取更新。
 
 ## <a name="supported-aspnet-core-scenarios"></a>支持的 ASP.NET Core 方案
 
@@ -142,7 +142,7 @@ ms.locfileid: "134463505"
 
 不支持的方案：
 
-* Xamarin.Forms 应用在 iOS 和 Android 方案中不支持 .NET 热重载。 面向 UWP 应用时，将获得对热重载的部分支持。 这是设计使然，我们不希望进行任何进一步的改进。 （注意：在最新的 SDK 上，XAML 热重载将继续可用，并支持 Xamarin.Forms 客户。）
+* Xamarin.Forms 应用在 iOS 和 Android 方案中不支持 .NET 热重载。 面向 UWP 应用时，将获得对热重载的部分支持。 这是设计使然，我们不希望进行任何进一步的改进。  (注意：XAML 热重载 SDK.) 上的 Xamarin.Forms 客户将继续获得支持) 
 * Visual Studio 2022 版本 17.1 预览版 1 之前不支持 .NET MAUI 应用。 从 17.1 预览版 1 开始，支持 .NET MAUI，但仅限于附加了调试器的情况。
 * 使用 F# 生成的应用或面向 .NET Native 的应用不支持热重载。
 
@@ -175,7 +175,7 @@ ms.locfileid: "134463505"
 
 ![.NET 热重载设置的屏幕截图](../debugger/media/vs-2022/dotnet-hot-reload-settings.png)
 
-还可通过修改 .NET 6 项目 launchSetting.json，将 设置为 来控制 .NET 热重载是否在项目级别 `hotReloadEnabled` 可用 `false` 。
+还可通过修改 .NET 6 项目 launchSetting.json 并设置为 来控制 .NET 热重载在项目级别 `hotReloadEnabled` 是否可用 `false` 。
 
 示例：
 

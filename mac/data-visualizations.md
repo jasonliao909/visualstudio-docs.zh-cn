@@ -3,15 +3,17 @@ title: 调试 - 数据可视化效果
 description: 调试是编程中常见且必要的部分。 Visual Studio for Mac 提供了一整套易于调试的功能。 本文介绍在调试程序中检查对象时可以查看的各种数据可视化效果。
 author: jmatthiesen
 ms.author: jomatthi
+manager: dominicn
 ms.date: 11/09/2020
 ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 838762435268ea06c09392475f294dbb22c3038d
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 748a4504e98a4a8a11a999c5cfa43ab91ef8adfc
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736754"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135806165"
 ---
 # <a name="data-visualizations"></a>数据可视化
 

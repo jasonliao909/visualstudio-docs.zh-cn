@@ -1,17 +1,19 @@
 ---
 title: JavaScript 和 TypeScript
 description: 有关 Visual Studio for Mac 中 JavaScript 支持的信息
-author: sayedihashimi
-ms.author: sayedha
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.date: 05/03/2018
 ms.technology: vs-ide-general
+ms.topic: how-to
 ms.assetid: 61432695-5B12-4257-B250-48D37EED106D
-ms.openlocfilehash: d2ce3b3cdbf1a4cf1f19956a7327d73c0bb34b62
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: bea3a53913bf9e96a14ad18d80d817a1ffafda2f
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736393"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135806659"
 ---
 # <a name="javascript-and-typescript-support"></a>JavaScript 和 TypeScript 支持
 

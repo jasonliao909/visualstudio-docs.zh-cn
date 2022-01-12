@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: d4968cd181a05cdfabce5eb3ae772afe42423291
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 49cce1da3473f4f5f6490edd1702007cc7ece265
+ms.sourcegitcommit: fc874be3fe4637a23997b4ef2d99a2ee9a499581
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126665983"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135517493"
 ---
 # <a name="map-dependencies-with-code-maps"></a>使用代码图映射依赖关系
 
@@ -241,8 +241,6 @@ ms.locfileid: "126665983"
 - [共享代码图](share-code-maps.md)
 - [创建 C++ 代码图](code-maps-for-cpp.md)
 - [提高代码图性能](code-maps-performance.md)
-- [视频：通过 Visual Studio 2015 代码图从代码中了解设计](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)
-- [视频：通过 Visual Studio 2015 代码图从代码中了解设计](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)
 - [使用代码图调试应用程序](../modeling/use-code-maps-to-debug-your-applications.md)
 - [调试时映射调用堆栈上的方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [使用代码图分析查找潜在问题](../modeling/find-potential-problems-using-code-map-analyzers.md)

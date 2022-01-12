@@ -4,18 +4,18 @@ description: 如何在 Visual Studio 中使用 R 程序包管理器来安装和�
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: ghogen
+ms.author: ghogen
 manager: jmartens
 ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: 70423ab665c9fe07d41ad7c8fe9a0653909d440a
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 8f89f7750cdaddcb2d12fe6384042cff2dcc2ce0
+ms.sourcegitcommit: dcecc0ed37b5e976b5dc83c5128ba5ecc8bc04b1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126642255"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "135750821"
 ---
 # <a name="package-manager"></a>程序包管理器
 
