@@ -2,7 +2,7 @@
 title: “在文件中查找”命令
 description: 了解 Find 命令，以及该命令如何使用“查找和替换”窗口的“在文件中查找”选项卡上提供的某些选项来搜索文件。
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 01/11/2022
 ms.topic: reference
 f1_keywords:
 - edit.findinfiles
@@ -16,12 +16,13 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ccc2bb3a6d324d64fb2332326ae083fc84a3db6
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+monikerRange: <=vs-2019
+ms.openlocfilehash: 8d419df0ddb35ffa83669c5ca597f762e04be76f
+ms.sourcegitcommit: 56ffe075ea321809a5b0e6bdc12cf3323b3482ba
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126644409"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135958841"
 ---
 # <a name="find-in-files-command"></a>“在文件中查找”命令
 若要搜索文件，请使用“查找和替换”窗口的“在文件中查找”选项卡上的可用选项子集。

@@ -2,18 +2,18 @@
 author: anandmeg
 ms.author: meghaanand
 manager: jmartens
-ms.date: 03/23/2020
+ms.date: 01/03/2022
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: fd6879ac7b9088edcfc6ec8102928cef7c6b5b35
-ms.sourcegitcommit: cc8b4e96ec49a8045b6c31a9cdce1caa30c3ab54
+ms.openlocfilehash: de29ab65b6b95f8a4c13e93572818b88fd5e408d
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "132429966"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135958869"
 ---
-## <a name="get-support"></a>获取支持
+## <a name="support-or-troubleshooting"></a>支持或故障排除
 
 有时，你难免遇到一些问题。 如果 Visual Studio 安装失败，请参阅 [Visual Studio 安装和升级问题疑难解答](../troubleshooting-installation-issues.md)获取分步指南。
 
