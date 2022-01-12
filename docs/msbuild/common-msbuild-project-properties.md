@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fe8e1158191917d16469ed08158d97f6cdfdc67
-ms.sourcegitcommit: 56ffe075ea321809a5b0e6bdc12cf3323b3482ba
+ms.openlocfilehash: 832d3938bee270511a23c73a2b8ee7195236c6cd
+ms.sourcegitcommit: 1d44a5509772c3926f5ad13b1796485d6d8c441e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/12/2022
-ms.locfileid: "135958835"
+ms.locfileid: "135963939"
 ---
 # <a name="common-msbuild-project-properties"></a>常用的 MSBuild 项目属性
 
@@ -90,7 +90,7 @@ ms.locfileid: "135958835"
 | OptionStrict | Visual Basic | 一个布尔值，设置为 `true` 时，将使得生成任务强制使用严格类型语义来限制隐式类型转换。 此属性等效于 vbc.exe 编译器的 `/optionstrict` 开关。 |
 | OutDir | 全部 | 指示项目或解决方案的最终输出位置。 在生成解决方案时，可以使用 OutDir 将多个项目输出收集到一个位置。 此外，OutDir 包含在用于解析引用的 AssemblySearchPaths 中。 例如 bin\Debug。 |
 | OutputPath | 全部 | 相对于项目目录，例如 bin\Debug，指定输出目录的路径。 |
-| OutputType | 全部 |  指定输出文件的文件格式。 此参数可以具有下列值之一：<br /><br /> -   Library。 创建一个代码库。 （默认值）。<br />-   Exe。 创建控制台应用程序。<br />-   Module。 创建一个模块。<br />-   Winexe。 创建一个基于 Windows 的程序。<br /><br /> 对于 C# 和 Visual Basic，此属性等效于 `/target` 开关。 |
+| OutputType | 全部 |  指定输出文件的文件格式。 此参数可以具有下列值之一：<br /><br /> -   Library。 创建一个代码库。 （默认值）。<br />-   Exe。 创建控制台应用程序。<br />-   Module。 创建一个模块。<br />-   Winexe。 创建一个基于 Windows 的程序。<br /><br /> 对于 C# 和 Visual Basic，此属性等效于 `/target` 开关。 可以通过推断自动重写输出类型。 请参阅[WPF 和 WinForms 应用的 OutputType 设置为 WinExe。](/dotnet/core/compatibility/sdk/5.0/automatically-infer-winexe-output-type) 将 设置为 来禁用 `DisableWinExeOutputInference` 推断 `true` 。 |
 | OverwriteReadOnlyFiles | 全部 | 一个布尔值，指示要让生成覆盖只读文件还是触发错误。 |
 | PathMap | .NET | 指定如何将物理路径映射到编译器输出的源路径名称。 此属性等效于编译器的 `/pathmap` 开关。 |
 | PdbFile | .NET | 正在发出的 .pdb 文件的文件名。 此属性等效于 csc.exe 编译器的 `/pdb` 开关。 |
@@ -127,7 +127,7 @@ ms.locfileid: "135958835"
 | TargetCompactFramework | .NET | 运行你所生成的应用程序所需要的 .NET Compact Framework 的版本。 通过指定此属性，你可以引用否则将无法引用的某些 Framework 程序集。 |
 | TargetFrameworkVersion | .NET | 运行你生成的应用程序所需要的 .NET Framework 版本。 通过指定此属性，你可以引用否则将无法引用的某些 Framework 程序集。 |
 | TreatWarningsAsErrors | .NET | 一个布尔型参数，如果设置为 `true`，则会导致将所有警告都视为错误。 此参数等效于 `/nowarn` 编译器开关。 |
-| UseCommonOutputDirectory | .NET | 一个布尔属性，当你想要解决方案中所有生成输出使用相同的输出目录时，可以设置为 `true` 该属性。 如果为 ，则引用项目的输出不会复制到使用这些依赖项的项目，因为此设置通常为 `true` `false` 。 将此参数设置为 不会更改任何项目的实际输出目录;对于需要该目录的每个项目，你仍然需要将输出目录设置为所需的 `true` 公共输出目录。|
+| UseCommonOutputDirectory | .NET | 一个布尔值属性， `true` 当你希望解决方案中的所有生成输出都使用相同的输出目录时，可以将其设置为。 如果为 `true` ，则不会将引用项目的输出复制到使用这些依赖项的项目，这种情况通常在此设置为时 `false` 。 如果将此参数设置为，则 `true` 不会更改任何项目的实际输出目录; 你仍需要将输出目录设置为需要它的每个项目所需的通用输出目录。|
 | UseHostCompilerIfAvailable | .NET | 一个布尔型参数，如果设置为 `true`，则会使得生成任务使用进程内编译器对象（如果可用）。 此参数仅供 Visual Studio 使用。 |
 | Utf8Output | .NET | 一个布尔型参数，如果设置为 `true`，则使用 UTF-8 编码记录编译器输出。 此参数等效于 `/utf8Output` 编译器开关。 |
 | VbcToolPath | Visual Basic | 一个可选路径，在当前版本的 vbc.exe 被重写时它可以指示 vbc.exe 的另一个位置 。 |
