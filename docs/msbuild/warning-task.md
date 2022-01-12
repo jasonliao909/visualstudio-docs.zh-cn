@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: faf53415b62550cb2091ffc9741ed2eeef60bbcc
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 9906e901d1d793e80a6e099b1f003659515bf6e3
+ms.sourcegitcommit: 1d44a5509772c3926f5ad13b1796485d6d8c441e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736873"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135963924"
 ---
 # <a name="warning-task"></a>Warning 任务
 
@@ -40,7 +40,8 @@ ms.locfileid: "126736873"
 |---------------| - |
 | `Code` | 可选 `String` 参数。<br /><br /> 与警告相关联的警告代码。 |
 | `File` | 可选 `String` 参数。<br /><br /> 指定相关文件（如果有）。 如果未提供任何文件，则使用包含 Warning 任务的文件。 |
-| `HelpKeyword` | 可选 `String` 参数。<br /><br /> 与警告关联的 Help 关键字。 |
+| `HelpKeyword` | 可选 `String` 参数。<br /><br /> 与警告关联的 Help 关键字。 仅限内部使用。 |
+| `HelpLink` | 可选 `String` 参数。<br/><br /> 指向有关警告详细信息的链接。 |
 | `Text` | 可选 `String` 参数。<br /><br /> 如果 `Condition` 参数计算结果为 `true`，则为 MSBuild 记录的警告文本。 |
 
 ## <a name="remarks"></a>注解
@@ -50,6 +51,8 @@ ms.locfileid: "126736873"
  当 `Warning` 任务的 `Condition` 参数的计算结果为 `true` 时，将记录 `Text` 参数的值，并继续执行生成操作。 如果 `Condition` 参数不存在，则记录警告文本。 有关日志记录的详细信息，请参阅[获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)。
 
  除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。
+
+`HelpKeyword`由 Visual Studio 用于支持 F1 (上下文) 。 可以使用 将 `HelpLink` 联机帮助页与错误消息关联。
 
 ## <a name="example"></a>示例
 

@@ -2,7 +2,7 @@
 title: 如何：配置目标和任务 | Microsoft Docs
 description: 了解如何将所选的 MSBuild 任务设置为在其目标环境中运行，而不考虑开发计算机的环境。
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 01/11/2022
 ms.topic: conceptual
 ms.assetid: 92814100-392a-471d-96fd-e26f637d6cc2
 author: ghogen
@@ -11,16 +11,16 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 724e187d00c977feada2412e9e3445f2c6db1ea6
-ms.sourcegitcommit: efe1d737fd660cc9183177914c18b0fd4e39ba8b
+ms.openlocfilehash: d83f9158729e2dffa15a314de69cb47bfc8809b2
+ms.sourcegitcommit: 1d44a5509772c3926f5ad13b1796485d6d8c441e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "130212208"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135963911"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>如何：配置目标和任务
 
-可将所选的 MSBuild 任务设置为在其目标环境中运行，而不考虑开发计算机的环境。 例如，当使用 64 位计算机生成面向 32 位体系结构的应用程序时，将在 32 位进程中运行所选的任务。
+当开发计算机支持目标环境时，所选 MSBuild 任务可以设置为在其目标环境中运行。 例如，当你使用64位 Windows 计算机来构建以32位 Windows 体系结构为目标的应用程序时，所选任务将在32位进程中运行。
 
 > [!NOTE]
 > 如果生成任务采用 .NET 语言（例如 Visual C# 或 Visual Basic）编写，并且不使用本机资源或工具，则该任务无需修改便可在任何目标上下文中运行。
