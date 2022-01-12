@@ -3,16 +3,17 @@ title: 设置多个启动项目
 description: 本文介绍如何设置多个要在运行或调试时启动的项目。
 author: jmatthiesen
 ms.author: jomatthi
+manager: dominicn
 ms.date: 11/09/2020
 ms.topic: how-to
 ms.prod: visual-studio-mac
 ms.assetid: fd354fff-ce6b-4505-a815-84a2311e39ba
-ms.openlocfilehash: df1e088a5e2d0f65d8b72dad0895f1edb1740f1f
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: d219d8aca5c9af49ff8f4f0e0490f0bd794b56d9
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641385"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135805502"
 ---
 # <a name="set-multiple-startup-projects"></a>设置多个启动项目
 

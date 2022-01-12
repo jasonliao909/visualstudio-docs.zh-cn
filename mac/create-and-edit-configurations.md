@@ -1,18 +1,19 @@
 ---
 title: 创建和编辑生成配置
 description: 本文介绍如何在 Visual Studio for Mac 中创建生成配置
-author: heiligerdankgesang
-ms.author: dominicn
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.date: 09/18/2019
 ms.assetid: CC1B72D6-12FF-4CCC-A9D4-00F2DC14589F
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: edd1a9710deb7336a5b9eabcebacbd352a38bbe1
-ms.sourcegitcommit: fc874be3fe4637a23997b4ef2d99a2ee9a499581
+ms.openlocfilehash: 3f6356703e59f17eb597fb7c13d93d7ecf9ab48d
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "135517241"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135804384"
 ---
 # <a name="creating-and-editing-build-configurations"></a>创建和编辑生成配置
 

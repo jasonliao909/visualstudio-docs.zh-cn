@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 新增功能文档
 description: Visual Studio 文档中的新增功能
-ms.date: 12/07/2021
+ms.date: 01/03/2022
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
@@ -14,16 +14,135 @@ ms.prod: visual-studio-windows
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d970efdbc81518c2dd4f4cb72dbe6b2541084b4
-ms.sourcegitcommit: 64d6c5cf93984bbb22812577af17128cd2239f79
+ms.openlocfilehash: 98c14de55ca3f38a5eb4838d190a4199a3732fd8
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "134366964"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135805065"
 ---
 # <a name="whats-new-in-visual-studio-docs"></a>Visual Studio 新增功能文档
 
 欢迎了解 Visual Studio 文档中的新增功能。以下部分提供了过去四个月的 Visual Studio 文档中的新增功能。
+
+## <a name="december-2021"></a>2021 年 12 月
+
+### <a name="data-tools"></a>数据工具
+
+**更新的文章**
+
+- [使用 ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md)创建简单的数据应用程序 - 数据工具：修复 Visual Studio 2022 的链接和更新
+- [演练：创建 N 层数据应用程序](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+  - 数据工具：修复 2022 Visual Studio的链接和更新
+  - 添加代码示例以修复问题 #7340
+- [创建数据库并添加](../data-tools/create-a-sql-database-by-using-a-designer.md)Visual Studio - 修复问题 #7161，为 & 2022 Visual Studio添加约束
+
+### <a name="debugger"></a>调试器
+
+**更新的文章**
+
+- 在 Visual Studio 调试器[ (C#、C++、Visual Basic、F#) ](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)中指定符号 (.pdb) 和源文件 - SEO 并编辑有关在调试器中指定符号文件的文章
+- [在 Visual Studio](../debugger/debug-using-the-just-in-time-debugger.md)中使用实时调试器进行调试 - 更新 JIT 调试器以及用于调试和发布的配置 - 项目设计器更新、刷新
+- [在中设置调试和发布Visual Studio](../debugger/how-to-set-debug-and-release-configurations.md) - 更新 JIT 调试器以及调试和发布配置 - 项目设计器更新、刷新
+- [使用调试器附加到正在运行的Visual Studio](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md) - 附加到进程更新 - 刷新屏幕截图
+- [使用 热重载 C#、Visual Studio (](../debugger/hot-reload.md) Visual Studio (、Visual Basic、C++) 编写和调试运行代码 - 对 热重载 文档进行了各种改进
+- [在调试器中Visual Studio断点](../debugger/using-breakpoints.md)- 配置运行设置、断点 - 刷新屏幕截图
+- [首先查看Visual Studio](../debugger/debugger-feature-tour.md) - 刷新远程调试器和其他调试主题
+
+### <a name="extensibility"></a>扩展性
+
+**新文章**
+
+Visual Studio Community Toolkit入门文章和其他内容：
+
+- [Visual Studio Community 工具包](../extensibility/vsix/visual-studio-community-toolkit.md)
+
+### <a name="get-started"></a>入门
+
+**更新的文章**
+
+- [教程：在 的第 2](../get-started/csharp/tutorial-console.md)部分的第 1 部分Visual Studio (一个简单的 C# 控制台) - 更新教程。NET6 C# 模板代码和更新 gif
+
+### <a name="ide"></a>IDE
+
+**更新的文章**
+
+- [登录到 Visual Studio Windows](./signing-in-to-visual-studio.md) - 登录更新
+- [如何：设置多个启动项目](./how-to-set-multiple-startup-projects.md)- 启动项目：Visual Studio 2022
+- [2022](./whats-new-visual-studio-2022.md)年 Visual Studio 中的新增功能 - 添加文档链接并删除一些预览提及
+- ["查找和替换"-"环境"-"选项](./reference/find-and-replace-environment-options-dialog-box.md) "对话框 - 更新"查找&替换 (选项") 页
+
+### <a name="install"></a>安装
+
+**更新的文章**
+
+- [创建、维护和部署 Visual Studio 网络安装](../install/create-a-network-installation-of-visual-studio.md)
+  - 替换重定向的链接
+  - 根据 TAM 反馈更新了与通道跳跃和布局相关的文档。
+- [为企业部署设置默认值Visual Studio](../install/set-defaults-for-enterprise-deployments.md) - 根据 TAM 反馈更新了与通道跳跃和布局相关的文档。
+
+### <a name="msbuild"></a>MSBuild
+
+**更新的文章**
+
+- [GenerateResource 任务](../msbuild/generateresource-task.md) - 添加 UsePreserializedResources
+- [项函数](../msbuild/item-functions.md) - 添加内部项函数
+- [自定义生成](../msbuild/customize-your-build.md) - 添加项目语言示例
+- [了解生成配置](./understanding-build-configurations.md)- 生成配置：Visual Studio 2022
+
+### <a name="profiling"></a>分析
+
+**更新的文章**
+
+- [首先查看分析工具](../profiling/profiling-feature-tour.md) - 更新分析功能教程，刷新屏幕截图
+
+### <a name="python"></a>Python
+
+**更新的文章**
+
+- [如何在](../python/installing-python-support-in-visual-studio.md)2022 年 1 月Visual Studio中安装 Python Windows - Visual Studio 文章
+- [如何在](../python/managing-python-environments-in-visual-studio.md)2022 年 Visual Studio 中创建和管理 Python 环境 - Visual Studio文章
+- [使用 requirements.txt](../python/managing-required-packages-with-requirements-txt.md)管理所需的包 - Visual Studio 2022 的刷新文章
+- 在 2022 [Visual Studio 中Windows](../python/overview-of-python-tools-for-visual-studio.md) Python - 刷新Visual Studio文章
+- [快速入门：在](../python/quickstart-03-python-in-visual-studio-project-from-repository.md)Visual Studio 中克隆 Python 代码存储库 - Visual Studio 2022 年
+- [步骤 5：在 Python 环境中安装包](../python/tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)- 刷新 2022 Visual Studio文章
+
+### <a name="test"></a>测试
+
+**更新的文章**
+
+- [单元测试基础知识](../test/unit-test-basics.md) - 更新单元测试基础知识一文，刷新屏幕截图
+- [使用测试资源管理器运行单元测试](../test/run-unit-tests-with-test-explorer.md) - 更新测试资源管理器文档
+- [单元测试入门](../test/getting-started-with-unit-testing.md) - 单元测试更新入门
+- [开始使用 Live Unit Testing](../test/live-unit-testing-start.md) - Visual Studio 2022 Live Unit Testing 更新
+- [如何配置和使用 Live Unit Testing](../test/live-unit-testing.md) - Visual Studio 2022 Live Unit Testing更新
+
+### <a name="version-control"></a>版本控制
+
+**更新的文章**
+
+- [Git 体验Visual Studio](../version-control/git-with-visual-studio.md) - 更新 Git 体验概述页
+
+### <a name="vsto"></a>VSTO
+
+**更新的文章**
+
+- [Office互操作程序集](../vsto/office-primary-interop-assemblies.md)- VM-1210221-PIA-for-1887259_2
+
+### <a name="xaml-tools"></a>XAML 工具
+
+**更新的文章**
+
+- [调试或禁用 XAML 设计器](../xaml-tools/debugging-or-disabling-project-code-in-xaml-designer.md) - 添加列出不同版本的进程名称的表
+- [故障排除XAML 热重载](../xaml-tools/xaml-hot-reload-troubleshooting.md) - 更新"验证XAML 热重载启用"部分
+
+### <a name="community-contributors"></a>社区参与者
+
+在此期间，以下人员为 Visual Studio 文档做出了贡献。 谢谢！ 请访问[登陆页面中的新增内容](index.yml)中“参与”下的链接，了解如何参与。
+
+- [GitHubPang](https://github.com/GitHubPang) (7) 
+- [jethas-bennettjones](https://github.com/jethas-bennettjones) - Shafiq Jetha (1)
+- [softwarebydave](https://github.com/softwarebydave) (1)  
 
 ## <a name="november-2021"></a>2021 年 11 月
 
@@ -31,7 +150,7 @@ ms.locfileid: "134366964"
 
 **新文章**
 
-- [从应用程序获取发布Azure 应用服务](../azure/how-to-get-publish-profile-from-azure-app-service.md)
+- [从文件获取发布Azure 应用服务](../azure/how-to-get-publish-profile-from-azure-app-service.md)
 - [使用 Azure 订阅登录](../azure/how-to-sign-in-with-azure-subscription.md)
 - [概述：Azure 集成](../azure/overview-azure-integration.md)
 - [概述：连接的服务](../azure/overview-connected-services.md)
@@ -39,7 +158,7 @@ ms.locfileid: "134366964"
 
 **更新的文章**
 
-- [使用Windows PowerShell脚本发布到开发和测试环境](../azure/vs-azure-tools-publishing-using-powershell-scripts.md)- 更新 Get-MSBuildCmd PowerShell 的脚本
+- [使用Windows PowerShell脚本发布到开发和测试环境](../azure/vs-azure-tools-publishing-using-powershell-scripts.md)- 更新 Get-MSBuildCmd PowerShell
 - [Azure 开发](../azure/index.yml) - 添加适用于 VS 2022 的 Azure 集成文章
 
 ### <a name="containers"></a>容器
@@ -47,10 +166,10 @@ ms.locfileid: "134366964"
 **更新的文章**
 
 - [快速入门：Visual Studio中的 Docker](../containers/container-tools.md) - 容器工具：VS 2022 的更新
-- [使用 ASP.NET Core 将 Azure 应用服务 容器](../containers/deploy-app-service.md)部署到 Visual Studio - 容器工具：VS 2022 的更新
+- [使用 ASP.NET Core 工具](../containers/deploy-app-service.md)将 Azure 应用服务 容器部署到 Visual Studio - 容器工具：VS 2022 的更新
 - [部署到 Docker Hub](../containers/deploy-docker-hub.md) - 容器工具：VS 2022 的更新
 - [使用 ASP.NET](../containers/hosting-web-apps-in-docker.md) - 容器工具：VS 2022 Visual Studio更新将容器部署到容器注册表
-- [Visual Studio Docker 的容器](../containers/overview.md)工具 - 容器工具：VS 2022 的更新
+- [Visual Studio Docker 容器工具](../containers/overview.md)- 容器工具：VS 2022 的更新
 - [使用"容器"窗口](../containers/view-and-diagnose-containers.md) - 容器工具：VS 2022 的更新
 
 ### <a name="data-tools"></a>数据工具
@@ -79,7 +198,7 @@ ms.locfileid: "134366964"
 
 **更新的文章**
 
-- [Visual Studio 安装程序调试器、部署的 .NET 6.0](../deployment/installer-projects-net-core.md)扩展和 .NET 6 更新
+- [Visual Studio 安装程序调试器、部署的 .NET 6.0](../deployment/installer-projects-net-core.md)和 .NET 6 更新
 
 ### <a name="extensibility"></a>扩展性
 
@@ -92,7 +211,7 @@ ms.locfileid: "134366964"
 **更新的文章**
 
 - [教程：从存储库打开项目](../get-started/tutorial-open-project-from-repo.md)- 修改Azure DevOps并添加"另请参阅链接"
-- [使用 C# 在](./create-csharp-winform-visual-studio.md)Windows 窗体应用中创建Visual Studio - 更新 VS 2022 的 C# 窗口窗体教程
+- [使用 C# 在](./create-csharp-winform-visual-studio.md)Windows 窗体应用中创建 Visual Studio - 更新 VS 2022 的 C# 窗口窗体教程
 
 ### <a name="ide"></a>IDE
 
@@ -106,7 +225,7 @@ ms.locfileid: "134366964"
 - [如何：个性化设置 Visual Studio IDE 和编辑器](./quickstart-personalize-the-ide.md)
   - 更新"个性化设置 IDE &编辑器"页
   - 添加初步 VS 2022 主题信息
-- [在 vs](./create-new-project.md) 2022 Visual Studio - 更新屏幕截图和名字对象
+- [在 vs](./create-new-project.md) 2022 Visual Studio中创建新项目 - 更新屏幕截图和名字对象
 - [管理扩展Visual Studio](./finding-and-using-visual-studio-extensions.md) - 添加"VS2022 中的扩展在哪里"博客文章链接
 - [选项，文本编辑器，C#，高级](./reference/options-text-editor-csharp-advanced.md) - 改进 XML 文档文档
 - [如何：在 Visual Studio 中更改字体、颜色和主题](./how-to-change-fonts-and-colors-in-visual-studio.md)
@@ -119,10 +238,10 @@ ms.locfileid: "134366964"
 - [如何：使用外接代码片段](./how-to-use-surround-with-code-snippets.md) - 删除环绕键盘快捷方式信息
 - [应用程序页，Project设计器 (C#) ](./reference/application-page-project-designer-csharp.md) - 更新 .NET Core 的应用程序框架屏幕截图
 - [管理项目和解决方案属性](./managing-project-and-solution-properties.md) - 使用 VS2022 屏幕截图 + 信息更新"管理&解决方案"页
-- ["选项"对话框：文本编辑器 \> 常规](./reference/options-text-editor-general.md) - 更新"选项"对话框：文本编辑器>"页
+- ["选项"对话框：文本编辑器 \> 常规](./reference/options-text-editor-general.md) - 更新"选项"对话框：文本编辑器>"常规"页
 - [如何：向项目添加类图](./class-designer/how-to-add-class-diagrams-to-projects.md) - 添加更新类设计器屏幕截图
 - [如何：更改编辑器的](./reference/how-to-change-fonts-and-colors-in-the-editor.md)字体和颜色Visual Studio - 更新"更改字体、颜色和主题"页
-- [2022](./whats-new-visual-studio-2022.md) Visual Studio - VS 2022 GA 更新中的新增功能
+- [2022](./whats-new-visual-studio-2022.md)年 Visual Studio - VS 2022 GA 更新中的新增功能
 
 ### <a name="install"></a>安装
 
@@ -130,7 +249,7 @@ ms.locfileid: "134366964"
 
 - [卸载Visual Studio](../install/uninstall-visual-studio.md) - VS 2022 的更新
 - [使用响应文件以编程方式配置默认设置](../install/automated-installation-with-response-file.md) - 布局和命令行更新
-- [用于安装 Visual Studio](../install/command-line-parameter-examples.md)的命令行参数示例 - 布局和命令行更新
+- [用于安装 Visual Studio的](../install/command-line-parameter-examples.md)命令行参数示例 - 布局和命令行更新
 - [创建、维护和部署](../install/create-a-network-installation-of-visual-studio.md)应用程序的网络Visual Studio - 布局和命令行更新
 - [为企业部署设置默认设置Visual Studio](../install/set-defaults-for-enterprise-deployments.md) - 布局和命令行更新
 - [更新Visual Studio布局安装的应用程序客户端](../install/update-a-network-installation-of-visual-studio.md)- 布局和命令行更新
@@ -174,15 +293,15 @@ ms.locfileid: "134366964"
 
 **更新的文章**
 
-- [标准和自定义工具集配置](../msbuild/standard-and-custom-toolset-configurations.md) -ToolsVersion 更新
+- [标准和自定义工具集配置](../msbuild/standard-and-custom-toolset-configurations.md) - ToolsVersion 的更新
 
 ### <a name="test"></a>测试
 
 **更新的文章**
 
-- [隔离受测代码与 Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) -用于调试器的 .net 6 更新、部署
-- 从代码更新 "创建单元测试方法存根" 文档[创建单元测试方法存根](../test/create-unit-tests-menu.md)，以使用 VS 2022 图片
-- [远程测试 (试验性预览) ](../test/remote-testing.md) -添加到了远程测试的先决条件和映像限制中。
+- [使用测试程序隔离Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) - 调试器、部署的 .NET 6 更新
+- [从代码创建单元测试方法](../test/create-unit-tests-menu.md) 存根 - 更新"创建单元测试方法存根"文档以使用 VS 2022 图片
+- [远程测试 (试验) ](../test/remote-testing.md) 预览版 - 添加了远程测试的先决条件和映像限制。
 
 ### <a name="version-control"></a>版本控制
 
@@ -434,78 +553,3 @@ ms.locfileid: "134366964"
 - [XAML 热重载：在 WPF 和 UWP 应用运行时编写和调试它们](../xaml-tools/xaml-hot-reload.md)
   - 更新元数据，并对文本进行少量编辑
   - 更新 XAML 热重载简介部分
-
-## <a name="august-2021"></a>2021 年 8 月
-
-### <a name="containers"></a>容器
-
-**更新的文章**
-
-- [如何配置 Visual Studio 容器工具](../containers/container-tools-configure.md) - 容器工具 8 月内容
-- [适用于 Docker 的 Visual Studio 容器工具](../containers/overview.md) - 容器工具 8 月内容
-- [使用“容器”窗口](../containers/view-and-diagnose-containers.md) - 容器工具 8 月内容
-
-### <a name="debugger"></a>调试器
-
-**更新的文章**
-
-- [远程调试远程 IIS 计算机上的 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md) - WS 2019 和 .NET 5 刷新
-- [远程调试 Visual Studio 中远程 IIS 计算机上的 ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) - WS 2019 和 .NET 5 刷新
-- [在 Visual Studio 中的 Azure 中远程调试 IIS 上的 ASP.NET Core](../debugger/remote-debugging-azure.md) - WS 2019 和 .NET 5 刷新
-- [附加到在 Docker 容器上运行的进程](../debugger/attach-to-process-running-in-docker-container.md) - Linux 附加到进程的方案更新
-- [使用 Visual Studio 在 WSL 中调试 .NET 应用](../debugger/debug-dotnet-core-in-wsl-2.md) - WSL 调试更新
-
-### <a name="deployment"></a>部署
-
-**更新的文章**
-
-- [通过在 Visual Studio 中导入发布设置将应用程序发布到 IIS](../deployment/tutorial-import-publish-settings-iis.md) - WS 2019 和 .NET 5 刷新
-
-### <a name="extensibility"></a>扩展性
-
-**更新的文章**
-
-- [添加语言服务器协议扩展](../extensibility/adding-an-lsp-extension.md) - 关于 LSP 扩展中的 MiddleLayer 文档的更新信息
-
-### <a name="ide"></a>IDE
-
-**新文章**
-
-- [注册 Dotfuscator Community](./dotfuscator/register.md) - 已创建新文章
-- [从 Dotfuscator Community 5 升级](./dotfuscator/upgrade-from-5.md) - 已创建新文章
-
-**更新的文章**
-- [如何：使用引用管理器添加或删除引用](./how-to-add-or-remove-references-by-using-the-reference-manager.md) - 更新“添加 > 引用”部分
-- [What's new in Visual Studio 2022（预览版）中的新增功能](./whats-new-visual-studio-2022.md) - Visual Studio 2022 预览版 3 中的新增功能更新
-- [第 6 步：使用 Git](../python/tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md) - 将已更新的 Git 源代码管理信息添加到 Python 教程
-- [教程：在 Visual Studio 中创建简单的 C# 控制台应用（第 1 部分/共 2 部分）](../get-started/csharp/tutorial-console.md) - 将 Git 源代码管理信息添加到 CSharp 控制台教程
-- [教程：Visual Studio 中的 Visual Basic 入门](../get-started/visual-basic/tutorial-console.md) - 将 Git 源代码管理信息添加到 VB 控制台教程
-- [在 C++ 中创建控制台计算器](/cpp/get-started/tutorial-console-cpp) - 将 Git 信息添加到 C++ 控制台计算器教程
-
-### <a name="install"></a>安装
-
-**更新的文章**
-
-- [在容器中安装生成工具](../install/build-tools-container.md) - Visual Studio 2022 更新
-
-### <a name="javascript"></a>JavaScript
-
-**新文章**
-
-- [教程：在 Visual Studio 中使用 Vue 创建 ASP.NET Core 应用](../javascript/tutorial-asp-net-core-with-vue.md) - 已创建新文章
-- [创建 Angular 应用](../javascript/tutorial-create-angular-app.md) - 已创建新文章
-- [创建 React 应用](../javascript/tutorial-create-react-app.md) - 已创建新文章
-- [创建 Vue.js 应用](../javascript/tutorial-create-vue-app.md) - 已创建新文章
-
-**更新的文章**
-- [需要 Visual Studio # 中的 JavaScript 和 TypeScript；搜索结果中显示页标题。包括品牌。小于 60 个字符。](../javascript/index.yml) - 用不同的链接更新索引页面
-
-### <a name="test"></a>测试
-
-**新文章**
-
-- [远程测试（试验性预览）](../test/remote-testing.md)- 已创建新文章
-
-**更新的文章**
-
-- [单元测试入门](../test/getting-started-with-unit-testing.md) - 在教程中添加 C++ 支持和单元测试改进

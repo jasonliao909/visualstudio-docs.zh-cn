@@ -1,17 +1,18 @@
 ---
 title: 显示导入项
 description: 使用“显示导入项”展开 Visual Studio for Mac 中的 IntelliSense。
-author: cobey
-ms.author: cobey
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.date: 03/29/2019
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
-ms.custom: video
-ms.openlocfilehash: 964fbbf2f46e2495184b01c47cba888a93f24ea8
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.topic: reference
+ms.openlocfilehash: 4b6f26f5ed96ded30c1598b653b8216907e4871f
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126644515"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135805034"
 ---
 # <a name="show-import-items"></a>显示导入项
 
@@ -25,7 +26,7 @@ Visual Studio for Mac 会在 IntelliSense 完成列表中显示所有可用类�
 
 ![“显示导入项”选项](media/show-import-items.png)
 
-## <a name="usage"></a>使用情况
+## <a name="usage"></a>用法
 
 一旦启用“显示导入项”，使用该功能导入项目的过程与 IntelliSense 内的正常操作类似。 键入代码时，有效项将填充完成列表。 这包括尚未导入的项。 未导入的项将在项右侧显示其完整的命名空间，从而使你能够查看要传入到项目中的导入。
 

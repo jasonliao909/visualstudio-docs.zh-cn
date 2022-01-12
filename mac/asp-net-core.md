@@ -3,6 +3,7 @@ title: ASP.NET Core 入门
 description: 本文介绍如何在 Visual Studio for Mac 中开始使用 ASP.NET，包括安装和创建新项目。
 author: jmatthiesen
 ms.author: jomatthi
+manager: dominicn
 ms.date: 11/06/2020
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
@@ -10,12 +11,12 @@ no-loc:
 - Blazor
 - Blazor WebAssembly
 ms.topic: how-to
-ms.openlocfilehash: d66824c80810b9bf8441bf6b6746623e6a940b7b
-ms.sourcegitcommit: fc874be3fe4637a23997b4ef2d99a2ee9a499581
+ms.openlocfilehash: 37cedf5a9f651258cf8956c87ea0cef5e70a126a
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "135517435"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135804319"
 ---
 # <a name="getting-started-with-aspnet-core"></a>ASP.NET Core 入门
 

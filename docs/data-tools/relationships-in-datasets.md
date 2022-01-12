@@ -6,7 +6,6 @@ ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
 - vbData.Microsoft.VSDesigner.DataSource.DesignRelation
-- vbdata.Microsoft.VSDesigner.DataSource.DesignRelation
 helpviewer_keywords:
 - relationships, about relationships
 - datasets [Visual Basic], relationships
@@ -18,12 +17,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 40a964f6b5d21f2e5a601cd81d33fafbdd030189
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 9752215dba24a68ba86830e0067032e2ae311567
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126601113"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135805359"
 ---
 # <a name="create-relationships-between-datasets"></a>创建数据集之间的关系
 包含相关数据表的数据集使用 <xref:System.Data.DataRelation> 对象来表示表之间的父/子关系，并相互返回相关记录。 使用数据源配置向导或数据集设计器将相关表添加到数据集，为你创建并配置 <xref:System.Data.DataRelation> 对象 。

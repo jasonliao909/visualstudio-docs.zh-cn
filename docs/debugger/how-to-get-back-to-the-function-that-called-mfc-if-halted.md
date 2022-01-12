@@ -3,8 +3,6 @@ title: 返回到在中断时调用了 MFC 的函数 | Microsoft Docs
 description: 了解如何在 Visual Studio 调试器中执行停止时返回到调用了 MFC 的函数。
 ms.date: 11/04/2016
 ms.topic: how-to
-f1_keywords:
-- vs.debug.mfc
 dev_langs:
 - CSharp
 - VB
@@ -25,12 +23,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cdb2ffd30b8fcf1a0dd8a9b1df8e2be21057db1
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: b069ef584724c0c4dbd592fb47268048c2ac6916
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129972539"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135803838"
 ---
 # <a name="how-to-get-back-to-the-function-that-called-mfc-if-halted"></a>如何：返回到在中断时调用了 MFC 的函数
 

@@ -1,17 +1,18 @@
 ---
 title: 编译和生成
 description: 本文介绍如何在 Visual Studio for Mac 中编译和生成项目和解决方案
-ms.topic: overview
-author: heiligerdankgesang
-ms.author: dominicn
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.date: 05/03/2021
+ms.topic: how-to
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
-ms.openlocfilehash: a24c57907afedb4f02068a071d2c9f81eb8962bb
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 93c6c1229908df3b3225a8d3b62df83eb31c7d59
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736763"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135804930"
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中编译和生成
 

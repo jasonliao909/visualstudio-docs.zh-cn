@@ -1,16 +1,18 @@
 ---
 title: Apple Silicon 计算机上的 Visual Studio for Mac 17.0 和 .NET
 description: 在 M1 计算机上使受支持的 .NET 版本在 2022 年正常工作的步骤。
-author: heiligerdankgesang
-ms.author: dominicn
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.date: 11/08/2021
+ms.topic: how-to
 ms.assetid: 18f722bc-3d9d-4c75-9e77-d66b64784c8d
-ms.openlocfilehash: 577a5e2ff83891557a5e731fa02d8a8d99064c48
-ms.sourcegitcommit: a1c18c491e310b00a43e76a911f778e643cd8f8d
+ms.openlocfilehash: 941169c00a16d9228cde128c59967c35fb1fdceb
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "132995551"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135804592"
 ---
 # <a name="visual-studio-for-mac-170-previews-and-net-on-apple-silicon-machines"></a>Apple Silicon 计算机上的 Visual Studio for Mac 17.0 预览版和 .NET
 

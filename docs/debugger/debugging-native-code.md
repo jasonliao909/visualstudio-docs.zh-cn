@@ -4,8 +4,6 @@ description: 了解 Visual Studio 中本机应用程序的常见调试问题和�
 ms.custom: SEO-VS-2020
 ms.date: 04/11/2017
 ms.topic: conceptual
-f1_keywords:
-- vs.debug
 dev_langs:
 - CSharp
 - VB
@@ -23,15 +21,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2fd32329e4bbde5c71b2f9f9bbb6abf3a93d8022
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 109a05d64d425473c84ffd8e6eb26d3cee3f8a42
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126737366"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135804813"
 ---
 # <a name="debugging-native-code"></a>调试本机代码
-本节讲述本机应用程序的一些常见调试问题和调试技术。 本节阐述的技术属于高级别技术。 有关使用 Visual Studio 调试器的方法，请参阅[初探调试器](../debugger/debugger-feature-tour.md)。
+本节讲述本机应用程序的一些常见调试问题和调试技术。 本节阐述的技术属于高级别技术。 有关使用 Visual Studio 调试器的机制，请参阅[第一次查看调试器](../debugger/debugger-feature-tour.md)。
 
 ## <a name="in-this-section"></a>本节内容
  [如何：调试优化的代码](../debugger/how-to-debug-optimized-code.md) 给出有关调试优化代码的提示，具体包括调试未优化版本的程序的理由，“调试”和“发布”配置的默认优化设置，以及有关如何查找仅出现在优化代码中的 bug 的提示（在“调试”生成配置中启用优化）。

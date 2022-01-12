@@ -1,16 +1,17 @@
 ---
 title: 自定义 IDE
 description: 可以通过多种方式自定义 Visual Studio for Mac，因此用户可以在满足效率和美观需求的环境中开发应用。 本文将探讨调整 Visual Studio for Mac 的各种方式以满足你的需要。
-author: heiligerdankgesang
-ms.author: dominicn
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.date: 11/06/2020
-ms.custom: video
-ms.openlocfilehash: 1f05471615285675d41c447315aa75aae203c515
-ms.sourcegitcommit: fc874be3fe4637a23997b4ef2d99a2ee9a499581
+ms.topic: how-to
+ms.openlocfilehash: ef2f5c7e783c3bc10ec11a9ba4bce824c45c52c1
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "135517571"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135803071"
 ---
 # <a name="customizing-the-ide"></a>自定义 IDE
 

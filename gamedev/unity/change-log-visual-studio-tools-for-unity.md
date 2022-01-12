@@ -11,16 +11,88 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: a3f61560c15e21c15ee9cfa6534a30639076bec0
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
-ms.translationtype: HT
+ms.openlocfilehash: c2fa91d8492de768d6f8d139fb4d5137fba6a23d
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129967829"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135804085"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>更改日志（Visual Studio Tools for Unity、Windows）
 
 Visual Studio Tools for Unity 更改日志。
+
+## <a name="17100"></a>17.1.0.0
+发布时间：2021 年 1 月 19 日
+
+### <a name="new-features"></a>新增功能
+
+- **集成：**
+
+  - 添加了 `CancelInvoke` 对 [`UNT0016`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0016.md) 诊断 (不安全方法的支持，用于获取方法) 。
+
+  - 向 `ScriptedImporter` 已知的 `AssetPostprocessor` Unity 消息容器添加了 和 类。
+
+  - 将 Unity 消息更新到 2020.3.20f1。
+
+### <a name="bug-fixes"></a>Bug 修复
+
+- **集成：**
+
+  - 修复了对话框窗口和按钮的深色主题问题。
+
+  - 使用选择加入诊断正确处理重写的消息 ([`UNT0021`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0021.md) Unity 消息应) 。
+
+## <a name="17040"></a>17.0.4.0
+发布时间：2022 年 1 月 5 日
+
+### <a name="bug-fixes"></a>Bug 修复
+
+- **集成：**
+
+  - 自动禁用大型 Unity 项目的资产索引。
+
+  - 引用 UnityEngine 项目时，不要针对兼容性问题发出警告。
+
+## <a name="17030"></a>17.0.3.0
+发布时间：2021 年 12 月 14 日
+
+### <a name="bug-fixes"></a>Bug 修复
+
+- **集成：**
+
+  - 减少了处理资产时的内存消耗。
+
+## <a name="17020"></a>17.0.2.0
+发布时间：2021 年 10 月 30 日
+
+### <a name="bug-fixes"></a>Bug 修复
+
+- **集成：**
+
+  - 缩短了轻型构建的时间，只是运行抑制器即可处理 CS 编译器警告。 所有其他分析器都将通过解决方案分析来运行。
+
+## <a name="17010"></a>17.0.1.0
+发布时间：2021 年 10 月 16 日
+
+### <a name="bug-fixes"></a>Bug 修复
+
+- **集成：**
+
+  - 减少了分析 yaml 资产时的内存消耗。
+
+## <a name="17000"></a>17.0.0.0
+发布时间：2021 年 10 月 8 日
+
+### <a name="new-features"></a>新增功能
+
+- **集成：**
+
+  - 添加了对 Visual Studio 2022 的支持。
+
+  - 我们弃用了 Unity 的旧项目生成器。 今后，请在项目[ (](https://docs.unity3d.com/Packages/com.unity.ide.visualstudio@2.0/changelog/CHANGELOG.html)) 中使用最新的 Visual Studio 编辑器包，并确保 `Unity > Window > Package Manager` 将 Visual Studio 2022 设置为首选代码编辑器 () 。 `Unity > Edit > Preferences > External Tools`
+
+  - 将 Unity 消息更新到 2020.3.9f1。
 
 ## <a name="41140"></a>4.11.4.0
 发布日期：2021 年 10 月 4 日
@@ -29,7 +101,7 @@ Visual Studio Tools for Unity 更改日志。
 
 - **集成：**
 
-  - 自动禁用大型 Unity 项目的资产索引。
+  - [Backported]自动禁用大型 Unity 项目的资产索引。
 
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -44,7 +116,7 @@ Visual Studio Tools for Unity 更改日志。
 
 - **集成：**
 
-  - 减少了处理资产时的内存消耗。
+  - [Backported]减少处理资产时的内存消耗。
 
   - 用 [`USP0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0008.md)、[`USP0009`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0009.md)、[`USP0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0010.md) 和 [`USP0011`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0011.md) 抑制器优化了分配。
 
@@ -57,7 +129,7 @@ Visual Studio Tools for Unity 更改日志。
 
 - **集成：**
 
-  - 缩短了轻型构建的时间，只是运行抑制器即可处理 CS 编译器警告。 所有其他分析器都将通过解决方案分析来运行。
+  - [Backported]通过仅运行能够处理 CS 编译器警告的抑制程序，改进了轻型生成时间。 所有其他分析器都将通过解决方案分析来运行。
 
 ## <a name="41110"></a>4.11.1.0
 发布日期：2021 年 6 月 15 日
@@ -66,7 +138,7 @@ Visual Studio Tools for Unity 更改日志。
 
 - **集成：**
 
-  - 减少了分析 yaml 资产时的内存消耗。
+  - [向后移植]减少了分析 yaml 资产时的内存消耗。
 
 ## <a name="41100"></a>4.11.0.0
 发布日期：2021 年 5 月 25 日
@@ -135,7 +207,7 @@ Visual Studio Tools for Unity 更改日志。
 
   - 添加了 [`UNT0019`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0019.md) 诊断。 不必要的间接调用 `GameObject.gameObject`。
 
-  - 添加了 [`UNT0020`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0020.md) 诊断。 在非静态方法中使用的 `MenuItem` 特性。
+  - 添加了 [`UNT0020`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0020.md) 诊断。 在非静态方法中使用的 `MenuItem` 属性。
 
   - 添加了 [`UNT0021`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0021.md) 诊断。 应保护 Unity 消息（选择加入）。
 

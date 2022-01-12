@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: d9fa7fd2c3d0a69f7a52fabc57fae54ee53ae688
-ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
+ms.openlocfilehash: c151d97fa1b578faac3e84ee1c3711e99b6c8883
+ms.sourcegitcommit: 52a425b5a541034cda26db8df9cd43281c007e80
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "129635563"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "135540687"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>零基础调试的方法
 
@@ -383,7 +383,7 @@ ms.locfileid: "129635563"
 
 1. 通过单击左边距中的断点圆（或右键单击并选择“断点” > “删除断点”）来删除断点，然后按 F5 以继续操作    。
 
-    该应用运行并显示输出。 它现在看起来很不错，但请注意一点；预期的小麦哲伦星系在控制台输出中显示为不规则星系，但它根本没有显示星系类型。
+    该应用运行并显示输出。 它现在看起来不错，但你会注意到一件事;你预期小 Magellanic Cloud galaxy 在控制台输出中将显示为不规则行星，但它显示没有任何行星类型。
 
     ```
     Tadpole  400,  Spiral

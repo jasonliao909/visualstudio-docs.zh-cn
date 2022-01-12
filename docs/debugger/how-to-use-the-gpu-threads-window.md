@@ -5,7 +5,6 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
-- vs.debug.gputthreads
 - vs.debug.gputhreads
 dev_langs:
 - CSharp
@@ -21,12 +20,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9be84a36c06da9fde107f5eaa9f1265985faa9db
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 7176b3a7108f27adac13f131ed3ab17703d2fbe0
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736325"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135804839"
 ---
 # <a name="how-to-use-the-gpu-threads-window-c"></a>如何：使用 GPU 线程窗口 (C++)
 在“GPU 线程”窗口中，可以检查和使用在要调试的应用程序中的 GPU 上运行的线程。 有关在 GPU 上运行的应用程序的详细信息，请参阅 [C++ AMP 概述](/cpp/parallel/amp/cpp-amp-overview)。

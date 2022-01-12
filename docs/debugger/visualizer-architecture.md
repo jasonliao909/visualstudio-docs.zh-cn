@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 3def27cc4960852bce00fdc65f575231c9be871f
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: e8e828505077e30b6c80b47bbdeb53fbb91ffb68
+ms.sourcegitcommit: 52a425b5a541034cda26db8df9cd43281c007e80
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126640897"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "135540531"
 ---
 # <a name="visualizer-architecture"></a>可视化工具体系结构
 调试器可视化工具的结构由两部分组成：
@@ -60,7 +60,7 @@ ms.locfileid: "126640897"
 |DialogDebuggerVisualizer 类<br /><br /> IDialogVisualizerService 界面|数据对象|
 |对象提供程序（实现 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider>）|对象源（从 <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> 派生）|
 
- 对象提供程序向可视化工具用户界面提供要可视化的对象数据。 这些数据对象是对象提供程序从对象源获得的。 对象提供程序和对象源提供 API，以便在调试器端和调试对象端之间传输对象数据。
+ 对象提供程序向可视化工具用户界面提供要可视化的对象数据。 这些数据对象是对象提供程序从对象源获得的。 对象提供程序和对象源提供 API，用于在调试器端和调试对象端之间通信对象数据。
 
  每个可视化工具都必须获得要可视化的数据对象。 下表给出了对象提供程序和对象源用于此目的的相应 API：
 

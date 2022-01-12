@@ -1,15 +1,17 @@
 ---
 title: 多个插入点编辑
 description: 在 Visual Studio for Mac 中编辑代码时，将文本插入多个位置。
-author: cobey
-ms.author: cobey
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.date: 08/19/2019
-ms.openlocfilehash: a21bebda057a772017fa1481e18f9801d1fbcbdf
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.topic: reference
+ms.openlocfilehash: 36852fe81906b49dd9eb174ffd89bc67630a9bb6
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126735819"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135805541"
 ---
 # <a name="multi-caret-editing"></a>多个插入点编辑
 

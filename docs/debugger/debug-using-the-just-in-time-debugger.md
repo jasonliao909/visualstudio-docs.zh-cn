@@ -2,7 +2,7 @@
 title: 使用实时调试器进行调试 | Microsoft Docs
 description: 在 Visual Studio 中使用实时调试器进行调试。 实时调试可以在应用发生错误或崩溃时自动启动 Visual Studio。
 ms.custom: SEO-VS-2020
-ms.date: 08/24/2021
+ms.date: 12/20/2021
 ms.topic: how-to
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 8be534863936f44ce5a43e08d317c8cdb6e96c38
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: b3930e0348f2cb671b7f9392af5ee0ef1e9b7a97
+ms.sourcegitcommit: 52a425b5a541034cda26db8df9cd43281c007e80
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126640733"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "135540630"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>在 Visual Studio 中使用实时调试器进行调试
 
@@ -56,23 +56,23 @@ ms.locfileid: "126640733"
 
 1. 从 Windows“开始”菜单，运行“注册表编辑器”(regedit.exe) 。
 
-2. 在“注册表编辑器”窗口中，找到并删除下列注册表项：
-
-    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\DbgManagedDebugger**
-
-    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
-
-    ![JIT 注册表项](../debugger/media/dbg-jit-registry.png "JIT 注册表项")
-
-3. 如果你的计算机运行的是 64 位操作系统，还请删除下列注册表项：
+2. 在64位计算机的 " **注册表编辑器** " 窗口中，找到并删除以下注册表项：
 
     - **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger**
 
     - **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
+    :::image type="content" source="../debugger/media/dbg-jit-registry.png" alt-text="JIT 注册表项" border="true":::
+
+3. 如果存在以下注册表项，或者您的计算机运行的是32位操作系统，请删除以下项：
+
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\DbgManagedDebugger**
+
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
+
     确保不要删除或更改任何其他注册表项。
 
-5. 关闭“注册表编辑器”窗口。
+4. 关闭“注册表编辑器”窗口。
 
 ## <a name="enable-just-in-time-debugging-of-a-windows-form"></a>启用 Windows 窗体的实时调试
 
@@ -99,6 +99,7 @@ ms.locfileid: "126640733"
    有关详细信息，请参阅 <xref:System.Diagnostics.DebuggableAttribute>。
 
 ## <a name="use-just-in-time-debugging"></a><a name="BKMK_Using_JIT"></a>使用实时调试
+
 此示例演示在应用引发错误时如何进行实时调试。
 
 - 必须安装 Visual Studio，才能按照以下步骤操作。 如果未安装 Visual Studio，则可以免费下载 [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15)。
@@ -131,7 +132,7 @@ ms.locfileid: "126640733"
 
    应看到以下命令窗口：
 
-   ![ThrowsNullException.exe 控制台的屏幕截图，其中引发了一个未处理的空引用异常 (System.NullReferenceException)。](../debugger/media/throwsnullexceptionconsole.png)
+   ![ThrowsNullException.exe 控制台的屏幕截图，其中引发了一个未处理的空引用异常 (System.NullReferenceException)。](../debugger/media/throws-null-exception-console.png)
 
 1. “选择实时调试器”对话框将打开。
 
@@ -143,7 +144,7 @@ ms.locfileid: "126640733"
 
    ThrowsNullException 项目会在 Visual Studio 的新实例中打开，并在引发异常的代码行处停止执行：
 
-   ![Visual Studio 中 ThrowsNullException 项目的屏幕截图，其中突出显示了引发异常的源代码行。](../debugger/media/nullreferencesecondinstance.png)
+   ![Visual Studio 中 ThrowsNullException 项目的屏幕截图，其中突出显示了引发异常的源代码行。](../debugger/media/null-reference-second-instance.png)
 
 可以从此时开始调试。 如果调试的是真实应用，则需要找出代码引发异常的原因。
 
@@ -158,9 +159,9 @@ ms.locfileid: "126640733"
 
   若要修复此问题，请使用注册表编辑器向以下注册表项添加值为“已禁用”的“DWORD 值”，以及值为“1”的“数值数据”   ：
 
-  - HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Windows Error Reporting
-
-  - （对于 64 位计算机）：HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows Error Reporting
+  - **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows Error Reporting**
+  
+  - 32位计算机的 () **HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Windows Error Reporting**
 
   有关详细信息，请参阅 [.WER 设置](/windows/desktop/wer/wer-settings)。
 
@@ -168,9 +169,9 @@ ms.locfileid: "126640733"
 
   修复方法是向以下注册表项添加值为“自动”的“DWORD 值”，以及值为“1”的“数值数据”   ：
 
-  - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug**
+  - **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug**
 
-  - （对于 64 位计算机）：HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug
+  - 32位计算机的 () **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug**
 
 你可能会在实时调试过程中遇到以下错误消息：
 

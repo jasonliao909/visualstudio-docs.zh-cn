@@ -5,8 +5,6 @@ description: 使用实时调试器调试在 Visual Studio 环境外发生的访�
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-f1_keywords:
-- vs.debug.access
 dev_langs:
 - CSharp
 - VB
@@ -22,12 +20,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ec9b41f45211294f0587d4e78fc879394e677e7f
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: ef9b645c22296aeaa9af3c08e3767e6c821c954b
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736350"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135804137"
 ---
 # <a name="how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger"></a>在调试器外部运行程序时如何调试访问冲突？
 

@@ -1,16 +1,18 @@
 ---
 title: 块选择
 description: 本文介绍如何使用 Visual Studio for Mac 中的块选择功能
-author: cobey
-ms.author: cobey
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.date: 11/06/2018
+ms.topic: reference
 ms.assetid: E8E0831E-E076-44B1-A82A-A325382916A6
-ms.openlocfilehash: be5a19b48355b871018684400f3f4a7b2e3135b6
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: e9093ef7debd279f725c89b7648ebafabc75bb14
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126644526"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135804423"
 ---
 # <a name="block-selection"></a>块选择
 

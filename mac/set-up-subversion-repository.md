@@ -3,15 +3,16 @@ title: 设置 Subversion 存储库
 description: 了解如何安装 Subversion 并将其设置为 Visual Studio for Mac 中的集中式版本控制系统。
 author: jmatthiesen
 ms.author: jomatthi
+manager: dominicn
 ms.date: 05/06/2018
 ms.assetid: 0D58FB37-530E-495B-BED6-FD499477A9B6
 ms.topic: how-to
-ms.openlocfilehash: b5230958fa1624acf7609d6cad7d885e43c013d0
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 43c77e2d97b2ec3b74d38eb6718840d99e632404
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126735820"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135804644"
 ---
 # <a name="set-up-a-subversion-repository"></a>设置 Subversion 存储库
 

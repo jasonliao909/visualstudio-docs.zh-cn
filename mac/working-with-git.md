@@ -3,15 +3,17 @@ title: 使用 Git
 description: 使用 Visual Studio for Mac 中的 Git。
 author: jmatthiesen
 ms.author: jomatthi
+manager: dominicn
 ms.date: 11/09/2020
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
-ms.openlocfilehash: 67dd3ead2e0f6b33f5260299e844c02b2756ddac
-ms.sourcegitcommit: fc874be3fe4637a23997b4ef2d99a2ee9a499581
+ms.topic: how-to
+ms.openlocfilehash: 8cbf1b4ebd2f37216f370d4e7b5ba225d34234a1
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "135516707"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135803916"
 ---
 # <a name="working-with-git"></a>使用 Git
 

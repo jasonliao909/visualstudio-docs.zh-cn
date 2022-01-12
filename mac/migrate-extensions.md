@@ -1,18 +1,19 @@
 ---
 title: 疑难解答：如何发布现有扩展的新版本？
 description: 有关通过发布工作流更新现有扩展的指南。
-author: heiligerdankgesang
-ms.author: dominicn
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.date: 12/14/2020
 ms.technology: vs-ide-general
 ms.assetid: 5DA76197-7859-421f-AC45-401F22F5D794
 ms.topic: troubleshooting
-ms.openlocfilehash: 862ae404571da44d9ca28db2c94d2ebeb39ce79f
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: f77d53ca5fec6aa38e78b45579b2f37af28582c5
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736746"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135805606"
 ---
 # <a name="troubleshooting-how-do-i-release-a-new-version-of-my-existing-extension"></a>疑难解答：如何发布现有扩展的新版本？
 

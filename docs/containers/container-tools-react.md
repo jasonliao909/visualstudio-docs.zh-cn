@@ -8,12 +8,12 @@ ms.author: ghogen
 ms.date: 10/25/2021
 ms.technology: vs-container-tools
 ms.topic: quickstart
-ms.openlocfilehash: 884024196a4b6d43ebc4d2c0a1d6e3c70259d649
-ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
-ms.translationtype: HT
+ms.openlocfilehash: d69d757b024aa4d5b27ce41965cc6ebbf1f4c95a
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "132001307"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135804215"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>快速入门：将 Docker 与 Visual Studio 中的 React 单页面应用结合使用
 
@@ -111,7 +111,7 @@ Dockerfile，用于创建最终 Docker 映像的方案，已在项目中创建�
 RUN apt-get update
 RUN apt-get install -y curl
 RUN apt-get install -y libpng-dev libjpeg-dev curl libxi6 build-essential libgl1-mesa-glx
-RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_lts.x | bash -
 RUN apt-get install -y nodejs
 ```
 
@@ -129,14 +129,14 @@ EXPOSE 443
 RUN apt-get update
 RUN apt-get install -y curl
 RUN apt-get install -y libpng-dev libjpeg-dev curl libxi6 build-essential libgl1-mesa-glx
-RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_lts.x | bash -
 RUN apt-get install -y nodejs
 
 FROM mcr.microsoft.com/dotnet/sdk:3.1 AS build
 RUN apt-get update
 RUN apt-get install -y curl
 RUN apt-get install -y libpng-dev libjpeg-dev curl libxi6 build-essential libgl1-mesa-glx
-RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_lts.x | bash -
 RUN apt-get install -y nodejs
 WORKDIR /src
 COPY ["ReactSPA/ReactSPA.csproj", "ReactSPA/"]
@@ -167,14 +167,14 @@ EXPOSE 443
 RUN apt-get update
 RUN apt-get install -y curl
 RUN apt-get install -y libpng-dev libjpeg-dev curl libxi6 build-essential libgl1-mesa-glx
-RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_lts.x | bash -
 RUN apt-get install -y nodejs
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 RUN apt-get update
 RUN apt-get install -y curl
 RUN apt-get install -y libpng-dev libjpeg-dev curl libxi6 build-essential libgl1-mesa-glx
-RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_lts.x | bash -
 RUN apt-get install -y nodejs
 WORKDIR /src
 COPY ["ReactSPA/ReactSPA.csproj", "ReactSPA/"]
@@ -328,7 +328,7 @@ ENTRYPOINT ["dotnet", "ReactSPA.dll"]
    ![正在运行的应用的屏幕截图。](media/container-tools-react/vs-2022/running-app.png)
    ::: moniker-end
 
-:::moniker range="<=vs-2019"
+:::moniker range="<=vs-2017"
 尝试导航到“计数器”页面，并单击“递增”按钮测试计数器的客户端代码。
 
 依次选择“工具”菜单 >“NuGet 包管理器”>“包管理器控制台”，打开包管理器控制台 (PMC)  。
@@ -353,7 +353,7 @@ CONTAINER ID        IMAGE                      COMMAND               CREATED    
 
 :::moniker-end
 
-:::moniker range=">=vs-2022"
+:::moniker range=">=vs-2019"
 
 打开“容器”工具窗口。 可以在“查看” > “其他 Windows” > “容器”下找到它，或按 Ctrl+Q 并开始在搜索框中键入 `containers`，然后从结果中选择“容器”窗口。 窗口打开时，将其停靠在编辑器窗格的底部。
 

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b0c724c226d516c3c27996844bd986b9f34eb59
-ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
-ms.translationtype: HT
+ms.openlocfilehash: 6bb6a500db4efdcbe030707c71297a87d8794c57
+ms.sourcegitcommit: 52a425b5a541034cda26db8df9cd43281c007e80
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "132001858"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "135540726"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>教程：了解如何使用 Visual Studio 调试 C++ 代码
 
@@ -94,7 +94,7 @@ ms.locfileid: "132001858"
 
    如果开始窗口未打开，请选择“文件”>“开始窗口”   。
 
-1. 在“开始”窗口上，选择“创建新项目”。
+1. 在“开始”窗口上，选择“创建新项目”  。
 
 1. 在“创建新项目”窗口的搜索框中输入或键入“控制台”   。 接下来，从“语言”列表中选择“C++”，然后从“平台”列表中选择“Windows”   。 
 
@@ -192,7 +192,7 @@ ms.locfileid: "132001858"
 
 大多数情况下，我们使用键盘快捷方式，因为这是在调试器中快速执行应用的好方法（括号中显示了等效的命令，如菜单命令）。
 
-1. 在 `main` 方法中的 `for` 循环中暂停时，按两次 F11（或选择“调试”>“单步执行”）前进到 `SendMessage` 方法调用。
+1. 在 `main` 方法中的 `for` 循环中暂停时，按两次 F11（或选择“调试”>“单步执行”）前进到 `SendMessage` 方法调用 。
 
      按两次 F11 后，应位于以下代码行：
 
