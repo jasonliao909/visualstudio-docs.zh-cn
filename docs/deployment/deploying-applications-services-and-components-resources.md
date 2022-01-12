@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 201a6f3d03c478fafd62c17b298d31e20de33ce1
-ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
+ms.openlocfilehash: 0a67d9754ddb86890af66f4ed4b578cd44baf3bf
+ms.sourcegitcommit: d38d1b083322019663fec7d1d85a4cda456aadca
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "131127060"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135534302"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>将应用部署到文件夹、IIS、Azure 或其他目标
 
@@ -100,8 +100,8 @@ ms.locfileid: "131127060"
 > 如果想在自己的数据中心或其他本地计算机中使用 Azure 应用服务，可以使用 [Azure 堆栈](https://azure.microsoft.com/overview/azure-stack/)来实现。
 
 有关发布到应用服务的详细信息，请参阅以下链接：
-- [快速入门 - 发布到 Azure 应用服务](quickstart-deploy-to-azure.md)
-- [快速入门 - 将 ASP.NET Core 发布到 Linux](quickstart-deploy-to-linux.md)。
+- [快速入门 - 发布到 Azure 应用服务](quickstart-deploy-aspnet-web-app.md)
+- [快速入门 - 将 ASP.NET Core 发布到 Linux](quickstart-deploy-aspnet-web-app.md)。
 - [将 ASP.NET Core 应用发布到 Azure 应用服务](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
 - [对 Azure 应用服务和 IIS 上的 ASP.NET Core 进行故障排除](/aspnet/core/test/troubleshoot-azure-iis)。
 
@@ -169,7 +169,7 @@ ms.locfileid: "131127060"
 - 仅需要本地测试部署。
 - 在将应用程序文件发送到另一个部署目标之前，想单独对文件进行检查并在必要时进行修改。
 
-有关详细信息，请参阅[快速入门 - 部署到本地文件夹](quickstart-deploy-to-local-folder.md)。
+有关详细信息，请参阅[快速入门 - 部署到本地文件夹](quickstart-deploy-aspnet-web-app.md)。
 ::: moniker range=">=vs-2019"
 有关使用 ClickOnce 部署 .NET Windows 应用程序的详细信息，请参阅[使用 ClickOnce 部署 .NET Windows 应用程序](quickstart-deploy-using-clickonce-folder.md)。
 ::: moniker-end
@@ -218,7 +218,7 @@ ms.locfileid: "131127060"
 - 希望用来进行部署的凭据不是在 Visual Studio 中所用的凭据或直接与 Azure 帐户相关联的凭据。
 - 希望在每次部署时从目标中删除文件。
 
-有关详细信息，请参阅[快速入门 - 部署到网站](quickstart-deploy-to-a-web-site.md)。
+有关详细信息，请参阅[快速入门 - 部署到网站](quickstart-deploy-aspnet-web-app.md)。
 
 有关排查 IIS 上的 ASP.NET Core 故障的帮助信息，请参阅[排查 Azure 应用服务和 IIS 上的 ASP.NET Core 故障](/aspnet/core/test/troubleshoot-azure-iis)。
 

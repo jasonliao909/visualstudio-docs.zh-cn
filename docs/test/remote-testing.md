@@ -10,12 +10,12 @@ ms.technology: vs-ide-test
 monikerRange: '>= vs-2022'
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b756ac42a7747d1d9011b5e3e84f75731b38a7e
-ms.sourcegitcommit: 263703af9c4840e0e0876aa99df6dd7455c43519
+ms.openlocfilehash: 5c435446a9ddae6d13ceaf6ca636a6e543668b35
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "133387476"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135805983"
 ---
 # <a name="remote-testing-experimental-preview"></a>远程测试（试验性预览）
 
@@ -24,7 +24,7 @@ ms.locfileid: "133387476"
 关于使用此试验版远程测试的要求：
 * Visual Studio 2022 Update 17.0 预览版 3 或更高版本
 * 仅适用于 .NET 测试。
-  * 如果你有兴趣了解对其他语言的远程测试支持，请[提交建议](/visualstudio/ide/suggest-a-feature)或投票支持现有建议。 [支持 C++ 远程测试](https://developercommunity.visualstudio.com/t/run-c-unit-tests-on-linux-with-visual-studio/1403357)。
+  * 如果你有兴趣了解对其他语言的远程测试支持，请[提交建议](../ide/suggest-a-feature.md)或投票支持现有建议。 [支持 C++ 远程测试](https://developercommunity.visualstudio.com/t/run-c-unit-tests-on-linux-with-visual-studio/1403357)。
 * 目前，我们只支持远程环境中的 Windows、Ubuntu 和 Debian 映像。 
 * 目前，环境的大部分预配由用户的规范决定。 用户必须在你的目标环境中安装必需的依赖项。 例如，如果测试面向 .NET 6.0，则需要确保容器已通过 Dockerfile 安装了 .NET 6.0。 可能会有提示在远程环境中安装 .NET Core，这是远程运行和发现测试所必需的。 
 * 通过“输出”>“测试”窗格，规划监视到远程环境的连接状态。 例如，如果已停止容器，“输出”>“测试”窗格中会显示一条消息。 我们可能不会检测到所有的情况，因此如果看起来像断开了连接，请计划检查你的输出。 特别是在“输出”窗格未设置为“测试”的情况下，你可能不会立即看到消息。 如果断开了连接，你可使用测试资源管理器中的环境下拉菜单将连接设置回本地环境，然后再次选择远程环境来重新启动连接。
@@ -41,6 +41,17 @@ ms.locfileid: "133387476"
     ]
 }
 ```
+#### <a name="properties-of-an-environment-in-testenvironmentsjson"></a>Testenvironments 中环境的属性 
+| 属性         | 类型 | 说明 |
+| ----------------- | ---- | -------------------------------- |
+| name | string | 在测试资源管理器中显示的用户友好环境名称。 它在 testEnvironments 文件中必须是唯一的。 |
+| localRoot | string | **[可选]** 本地计算机上的路径 (相对于解决方案目录的绝对路径或相对路径) ，该目录将投影到远程环境。 如果未指定此值，则默认为 git 存储库上下文内的存储库根 (Visual Studio 2022 17.1 版及更高版本) 。 在 git 存储库外部，这将默认为解决方案目录。 |
+| type | 枚举 | 指示远程环境的类型。 此值可以是 `docker` 、 `wsl` 或 `ssh` 。 |
+| dockerImage | string | 要在 Docker 环境中加载的 Docker 映像的名称。 <br/> 如果环境为，则这是必需的 `type` `docker` 。 必须指定 dockerImage 或 dockerFile，但不能同时指定两者。|
+| dockerFile | string | Docker 文件的路径，相对于解决方案目录，用于在 Docker 环境中生成映像和加载。 <br/> 如果环境为，则这是必需的 `type` `docker` 。 必须指定 dockerImage 或 dockerFile，但不能同时指定两者。 |
+| wslDistribution | string | 要在其中运行测试环境的本地 WSL 分布的名称。 <br/> 如果环境为，则这是必需的 `type` `wsl` 。 |
+| remoteUri | string | 指定与远程计算机的连接的 uri。 例如 ssh://user@hostname:22。 <br/> 如果环境为，则这是必需的 `type` `ssh` 。 |
+
 
 ### <a name="local-container-connections"></a>本地容器连接
 
@@ -50,7 +61,6 @@ ms.locfileid: "133387476"
 ```json
     {
     "name": "<name>",
-    "localRoot": "<path to local environment>", // optional
     "type": "docker",
     "dockerImage": "<docker image tag>",
     }

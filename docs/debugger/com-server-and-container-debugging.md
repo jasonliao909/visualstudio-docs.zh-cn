@@ -4,8 +4,6 @@ description: 了解有关 COM 服务器和容器调试的信息。 调试同一�
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
-f1_keywords:
-- vs.debug.com
 dev_langs:
 - CSharp
 - VB
@@ -24,12 +22,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 17ad04ea4e87a99d1f9e98cef197d986b5e31dc1
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 89613dbc80a4a83fe1cd6a8303b43f863daea272
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641250"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135803721"
 ---
 # <a name="com-server-and-container-debugging"></a>调试 COM 服务器和容器
 COM 应用程序执行程序员直接控制之外的许多任务。 DLL 之间的通信、对象的使用计数和剪贴板操作只是你可能会遇到意外行为的几个方面。 发生这种情况时，第一步是找到问题的根源。

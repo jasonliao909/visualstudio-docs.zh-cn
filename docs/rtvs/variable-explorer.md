@@ -4,18 +4,18 @@ description: Visual Studio 中的变量资源管理器显示当前 R 会话中�
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: ghogen
+ms.author: ghogen
 manager: jmartens
 ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: be6f619fc23db19b2342402a8b14fb190cbdc801
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 94d9e213a6cab8f27a2a5473601d62eaf71e7d07
+ms.sourcegitcommit: dcecc0ed37b5e976b5dc83c5128ba5ecc8bc04b1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126642249"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "135750856"
 ---
 # <a name="variable-explorer"></a>变量资源管理器
 

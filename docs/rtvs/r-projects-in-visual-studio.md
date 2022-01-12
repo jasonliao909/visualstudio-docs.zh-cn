@@ -4,18 +4,18 @@ description: 如何在 Visual Studio 中创建一个包含属性、项目命令�
 ms.date: 06/29/2017
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: ghogen
+ms.author: ghogen
 manager: jmartens
 ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: 4fd62b1641a9da10484d31e5f2eb212a09cbce12
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 3a961a6d0d7ce52f4c513f988f7537550006039c
+ms.sourcegitcommit: dcecc0ed37b5e976b5dc83c5128ba5ecc8bc04b1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126642256"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "135750477"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>在 Visual Studio 中创建 R 项目
 

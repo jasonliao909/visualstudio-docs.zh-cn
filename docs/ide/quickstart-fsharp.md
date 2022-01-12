@@ -13,12 +13,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 17d443c9dac7a37670c65c7fb9c8da8362aa4ab4
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: d404b4b4485145b0954f2709e86a668fbca74d47
+ms.sourcegitcommit: d38d1b083322019663fec7d1d85a4cda456aadca
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128427754"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135534364"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>快速入门：使用 Visual Studio 以 F\# 创建首个 ASP.NET Core Web 服务
 
@@ -148,6 +148,6 @@ Visual Studio 启动显示与前面添加的“Hello World”消息匹配的 JSO
 祝贺你完成此快速入门！ 希望你已对 F#、ASP.NET Core 和 Visual Studio IDE 有了一定了解。 若要查看公共服务器上运行的应用，请选择下面的按钮。
 
 > [!div class="nextstepaction"]
-> [将应用部署到 Azure 应用服务](../deployment/quickstart-deploy-to-azure.md)
+> [将应用部署到 Azure 应用服务](../deployment/quickstart-deploy-aspnet-web-app.md)
 
 若要了解有关 F# 的详细信息，请查看 [F# 指南](/dotnet/fsharp/index)。

@@ -3,16 +3,17 @@ title: 教程：Azure Functions
 description: 有关在 Visual Studio for Mac 中使用 Azure Functions 的详细演练。
 author: jmatthiesen
 ms.author: jomatthi
+manager: dominicn
 ms.date: 11/06/2020
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.topic: tutorial
-ms.openlocfilehash: 3fa653a1acaae0f9b58d17f86d6e2e0feeb027a6
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.topic: how-to
+ms.openlocfilehash: 054216fd074555957945e7d360b2e6e7196f2aac
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126644532"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135803422"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>教程：Azure Functions 入门
 

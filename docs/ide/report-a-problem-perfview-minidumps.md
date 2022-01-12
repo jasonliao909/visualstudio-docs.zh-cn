@@ -18,12 +18,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Collect ETL traces using perfview.exe and create minidumps to send to Microsoft, for troubleshooting issues with Visual Studio
-ms.openlocfilehash: 45260d0e265f1c1104dad872528a7489994964da
-ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
+ms.openlocfilehash: 2a5d6e01fa737ce44bff4307eacebc1b7dedc22f
+ms.sourcegitcommit: fc874be3fe4637a23997b4ef2d99a2ee9a499581
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "130010647"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135517731"
 ---
 # <a name="collect-an-etl-trace-with-perfview-and-create-minidumps-with-all-call-stacks"></a>使用 PerfView 收集 ETL 跟踪，以及创建用于所有调用堆栈的小型转储
 
@@ -48,8 +48,6 @@ PerfView 是一个基于 [Windows 事件跟踪](/windows/desktop/ETW/event-traci
 1. 要停止记录数据，请选择“停止收集”按钮。 PrefView.etl.zip 文件将被保存在指定的目录。
 
 PerfView 只能存储适合其缓冲区的最新数据。 因此，尝试在 Visual Studio 开始冻结或减速后尽快停止收集。 遇到问题后不要收集超过 30 秒。
-
-有关更多信息，请参阅 [Channel9 上的 PerfView 教程](https://channel9.msdn.com/Series/PerfView-Tutorial/PerfView-Tutorial-1-Collecting-data-with-the-Run-command)。
 
 ## <a name="create-minidumps-for-a-visual-studio-process-with-all-call-stacks"></a>使用所有调用堆栈为 Visual Studio 进程创建小型转储
 

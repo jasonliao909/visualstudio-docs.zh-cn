@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: dae657a35a2fffba23a353f20d2f36a9296fb3c1
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: e0ad4c47a2bab3c10e67c21ba4c78af83590663e
+ms.sourcegitcommit: dcecc0ed37b5e976b5dc83c5128ba5ecc8bc04b1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126665883"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "135750718"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>如何：将必备组件与 ClickOnce 应用程序包括在一起
 你必须先将必备软件的安装程序包下载到开发计算机上，然后才能使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序分发这些软件。 发布应用程序并选择“从与我的应用程序相同的位置下载系统必备组件”时，如果安装程序包不在“包”文件夹中，则将发生错误。
@@ -31,7 +31,7 @@ ms.locfileid: "126665883"
     默认情况下，路径为 `%ProgramFiles(x86)%\Microsoft SDKs\ClickOnce Bootstrapper\Packages\`。
 
 >[!NOTE]
-> 从 Visual Studio 2019 Update 7 版本开始，还可在路径 <VS Install Path>\MSBuild\Microsoft\VisualStudio\BootstrapperPackages 下找到引导程序包。
+> 从 Visual Studio 2019 Update 7 版本的引导程序包开始，还会在路径下发现 `<VS Install Path>\MSBuild\Microsoft\VisualStudio\BootstrapperPackages` 。
 
 2. 为要添加的系统必备组件打开文件夹，然后为已安装的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 版本打开语言文件夹（例如，“en”用于英语）。
 

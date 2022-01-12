@@ -1,16 +1,18 @@
 ---
 title: launchSettings.json 支持
 description: 本文档介绍了 Visual Studio for Mac 中对 launchSettings.json 的支持
-author: sayedihashimi
-ms.author: sayedha
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.date: 09/18/2019
+ms.topic: how-to
 ms.assetid: a556f9d7-86a8-408e-aa54-392584845889
-ms.openlocfilehash: df702b5d49e5204e65675c1c57d222e490a33824
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 2cdb8a6f28b10dc7c5a899d57c2bd9c084b10b32
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736389"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135806412"
 ---
 # <a name="launchsettingsjson"></a>launchSettings.json
 

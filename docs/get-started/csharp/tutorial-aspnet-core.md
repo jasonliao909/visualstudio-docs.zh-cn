@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 497012d04d0015d5b2006670475875240a6f5e83
-ms.sourcegitcommit: 215680b355cf613bfa125cf6b864c8bb5f2c71a5
-ms.translationtype: HT
+ms.openlocfilehash: 53da4978405d17305fa0d5bf730e720eba4bf01b
+ms.sourcegitcommit: d38d1b083322019663fec7d1d85a4cda456aadca
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "132453759"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135534198"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>教程：Visual Studio 中的 C# 和 ASP.NET Core 入门
 
@@ -48,7 +48,7 @@ ms.locfileid: "132453759"
 
 ## <a name="create-a-project"></a>创建项目
 
-首先，创建一个 ASP.NET Core 项目。 项目类型随附了构建功能完备的网站所需的全部模板文件，无需添加任何内容！
+首先，你将创建一个 ASP.NET Core项目。 项目类型随附了构建功能完备的网站所需的全部模板文件，无需添加任何内容！
 
 ::: moniker range="vs-2017"
 
@@ -526,4 +526,4 @@ Visual Studio 是适用于开发人员的生产力工具集成开发套件。 �
 
 ## <a name="see-also"></a>另请参阅
 
-[使用 Visual Studio 将 Web 应用发布到 Azure App Service](../../deployment/quickstart-deploy-to-azure.md)
+[使用 Visual Studio 将 Web 应用发布到 Azure App Service](../../deployment/quickstart-deploy-aspnet-web-app.md)

@@ -8,12 +8,12 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: 653e653a0574da52c0030b06c7a8c13b436ed686
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: da4efd9bcf57118451e20d3354750ddf1fc15bfd
+ms.sourcegitcommit: fc874be3fe4637a23997b4ef2d99a2ee9a499581
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736397"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135517666"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>安装 Visual Studio 2019 for Mac
 
@@ -29,7 +29,7 @@ ms.locfileid: "126736397"
 要为 iOS 或 macOS 构建 Xamarin 应用，还需要：
 
 - 与最新版本的 Xcode 兼容的 Mac。 请参阅 Apple 的[最低要求文档](https://developer.apple.com/support/xcode/)
-- 最新版本的 [Xcode](https://developer.apple.com/xcode)。 如果 Mac 与最新版本不兼容，则可以[使用旧版 Xcode](https://docs.microsoft.com/xamarin/ios/troubleshooting/questions/old-version-xcode)。
+- 最新版本的 [Xcode](https://developer.apple.com/xcode)。 如果 Mac 与最新版本不兼容，则可以[使用旧版 Xcode](/xamarin/ios/troubleshooting/questions/old-version-xcode)。
 - 一个 Apple ID。 如果没有 Apple ID，请在 https://appleid.apple.com 新建一个。 需要 Apple ID 才可安装和登录 Xcode。
 
 ## <a name="installation-instructions"></a>安装说明
@@ -97,21 +97,21 @@ ms.locfileid: "126736397"
 
 ### <a name="ios"></a>iOS
 
-1. [Hello，iOS](https://docs.microsoft.com//xamarin/ios/get-started/hello-ios/)
-2. [设备预配](https://docs.microsoft.com/xamarin/ios/get-started/installation/device-provisioning/)（以在设备上运行应用程序）。
+1. [Hello，iOS](/xamarin/ios/get-started/hello-ios/)
+2. [设备预配](/xamarin/ios/get-started/installation/device-provisioning/)（以在设备上运行应用程序）。
 
 ### <a name="android"></a>Android
 
-1. [了解 Android](https://docs.microsoft.com/xamarin/android/get-started/hello-android/)
-2. [使用 Xamarin Android SDK 管理器](https://docs.microsoft.com/xamarin/android/get-started/installation/android-sdk?tabs=macos)
-3. [Android SDK 仿真器](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/)
-4. [设置设备进行开发](https://docs.microsoft.com/xamarin/android/get-started/installation/set-up-device-for-development)
+1. [了解 Android](/xamarin/android/get-started/hello-android/)
+2. [使用 Xamarin Android SDK 管理器](/xamarin/android/get-started/installation/android-sdk?tabs=macos)
+3. [Android SDK 仿真器](/xamarin/android/get-started/installation/android-emulator/)
+4. [设置设备进行开发](/xamarin/android/get-started/installation/set-up-device-for-development)
 
 ### <a name="xamarinforms"></a>Xamarin.Forms
 
 使用 Xamarin.Forms 生成跨平台应用程序：
 
-1. [Xamarin.Forms 快速入门](https://docs.microsoft.com/xamarin/get-started/quickstarts/)
+1. [Xamarin.Forms 快速入门](/xamarin/get-started/quickstarts/)
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>.NET Core 应用、ASP.NET Core Web 应用、Unity 游戏开发
 
@@ -119,7 +119,7 @@ ms.locfileid: "126736397"
 
 ## <a name="related-video"></a>相关视频
 
-> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Acquisition/player]
+> [!Video https://docs.microsoft.com/shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Acquisition/player]
 
 ## <a name="see-also"></a>请参阅
 

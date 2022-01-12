@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: be5ce6757a5261d5ebde5676f2c82ae727b74ada
-ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
+ms.openlocfilehash: df4eebd88001593070f8fb88b84dabf7bde1c875
+ms.sourcegitcommit: d38d1b083322019663fec7d1d85a4cda456aadca
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "129430516"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135534250"
 ---
 # <a name="compile-typescript-code-nodejs"></a>编译 TypeScript 代码 (Node.js)
 
@@ -99,7 +99,7 @@ ms.locfileid: "129430516"
 
    有关将 webpack 与 React 和 webpack 配置文件结合使用的示例，请参阅[使用 Node.js 和 React 创建 Web 应用](../javascript/tutorial-nodejs-with-react-and-jsx.md)。
 
-   有关将 Vue.js 与 TypeScript 结合使用的示例，请参阅[创建 Vue.js 应用程序](/visualstudio/javascript/create-application-with-vuejs)。
+   有关将 Vue.js 与 TypeScript 结合使用的示例，请参阅[创建 Vue.js 应用程序](create-application-with-vuejs.md)。
 
 1. 如果需要配置选项（如启动页、Node.js 运行时路径、应用程序端口或运行时参数），请右键单击解决方案资源管理器中的项目节点，然后选择“属性”。
 

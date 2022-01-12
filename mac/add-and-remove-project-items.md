@@ -1,17 +1,18 @@
 ---
 title: 添加和移除项目项
 description: 本文介绍如何在 Visual Studio for Mac 中添加和删除项目项
-author: heiligerdankgesang
-ms.author: dominicn
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.date: 11/06/2020
 ms.assetid: 4071689D-1C21-42D7-8963-550E7BCB4B67
 ms.topic: how-to
-ms.openlocfilehash: 6df6fbf9d36f06c4cdeb1908b50173e2ffee136a
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 2eb087b15bfd2a9898b626d58d90a7835dc30aba
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126735622"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135803760"
 ---
 # <a name="adding-and-removing-project-items"></a>添加和移除项目项
 

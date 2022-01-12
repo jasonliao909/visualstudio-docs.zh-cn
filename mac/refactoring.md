@@ -6,12 +6,12 @@ ms.author: jomatthi
 ms.date: 07/03/2020
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
-ms.openlocfilehash: 3892117e5c84a71f258d4e019105fca0a8cf9c5b
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: af426ff3f5f9488cd15fdc2f1a239b1777d38656
+ms.sourcegitcommit: fc874be3fe4637a23997b4ef2d99a2ee9a499581
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126737200"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135517391"
 ---
 # <a name="refactoring"></a>Refactoring
 
@@ -91,7 +91,7 @@ Visual Studio for Mac 与 Roslyn（Microsoft 的开源 .NET 编译器平台）�
 
 ## <a name="related-video"></a>相关视频
 
-> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Refactoring-Code/player]
+> [!Video https://docs.microsoft.com/shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Refactoring-Code/player]
 
 ## <a name="see-also"></a>请参阅
 

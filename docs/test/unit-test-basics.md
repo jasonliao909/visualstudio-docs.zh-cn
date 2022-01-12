@@ -1,7 +1,7 @@
 ---
 title: 单元测试基础知识
 description: 了解 Visual Studio 测试资源管理器如何提供灵活而高效的方法来运行单元测试并查看其结果。
-ms.date: 07/26/2021
+ms.date: 12/28/2021
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: da403ab2aec782d65bf5699963848ce918afdf0e
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 7d36ff9219c3bcffafee8f742e454a8e78d63e6d
+ms.sourcegitcommit: 96b09d12bec776367737f91e56e46cec85ad3376
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736582"
+ms.lasthandoff: 01/01/2022
+ms.locfileid: "135700501"
 ---
 # <a name="unit-test-basics"></a>单元测试基础知识
 
@@ -45,8 +45,11 @@ ms.locfileid: "126736582"
 ::: moniker range="vs-2017"
 ![MyBank 解决方案](../test/media/ute_mybanksolution.png)
 ::: moniker-end
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 ![MyBank 解决方案 2019](../test/media/vs-2019/basics-mybank-solution.png)
+::: moniker-end
+::: moniker range=">=vs-2022"
+![MyBank 解决方案2022](../test/media/vs-2022/basics-mybank-solution.png)
 ::: moniker-end
 
 我们第一次尝试设计的 `MyBank` 应用程序包含表示个人帐户及其与银行交易的帐户组件，以及表示集合和管理单独帐户的功能的数据库组件。
@@ -97,8 +100,15 @@ public void Withdraw(double amount)
    > [!NOTE]
    > “创建单元测试”菜单命令仅适用于面向 .NET Framework（但不是 .NET Core）的托管代码。
    ::: moniker-end
-   ::: moniker range=">=vs-2019"
+   ::: moniker range="vs-2019"
    ![从编辑器窗口查看上下文菜单](../test/media/vs-2019/basics-create-unit-tests.png)
+
+   > [!NOTE]
+   > “创建单元测试”菜单命令仅适用于 C# 代码  。 若要将此方法与 .NET Core 或 .NET Standard 一起使用，需要 Visual Studio 2019。
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2022"
+   ![从编辑器窗口查看上下文菜单](../test/media/vs-2022/basics-create-unit-tests.png)
 
    > [!NOTE]
    > “创建单元测试”菜单命令仅适用于 C# 代码  。 若要将此方法与 .NET Core 或 .NET Standard 一起使用，需要 Visual Studio 2019。
@@ -106,15 +116,23 @@ public void Withdraw(double amount)
 
 2. 单击“确定”接受默认值以创建单元测试，或更改用于创建并命名单元测试项目和单元测试的值。 你可以选择默认添加到单元测试方法的代码。
 
+   ::: moniker range="<=vs-2019"
    ![在 Visual Studio 中创建“单元测试”对话框](../test/media/create-unit-tests.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2022"
+   ![在 Visual Studio 中创建“单元测试”对话框](../test/media/vs-2022/create-unit-tests.png)
+   ::: moniker-end
 
 3. 在类的所有方法的新单元测试项目中创建单元测试存根。
 
    ::: moniker range="vs-2017"
    ![已创建单元测试](../test/media/createunittestsstubs.png)
    ::: moniker-end
-   ::: moniker range=">=vs-2019"
+   ::: moniker range="vs-2019"
    ![已创建单元测试](../test/media/vs-2019/basics-test-stub.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2022"
+   ![已创建单元测试](../test/media/vs-2022/basics-test-stub.png)
    ::: moniker-end
 
 4. 现在继续了解如何[编写测试](#write-your-tests)，使你的单元测试有意义，以及任何你可能想要添加的额外单元测试，以全面测试你的代码。
@@ -239,8 +257,11 @@ public void My_Test ()
 ::: moniker range="vs-2017"
 ![单元测试资源管理器](../test/media/ute_failedpassednotrunsummary.png)
 ::: moniker-end
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 ![单元测试资源管理器](../test/media/vs-2019/basics-test-explorer.png)
+::: moniker-end
+::: moniker range=">=vs-2022"
+![单元测试资源管理器](../test/media/vs-2022/basics-test-explorer.png)
 ::: moniker-end
 
 运行、编写和重新运行测试时，“测试资源管理器”将在“失败的测试”、“通过的测试”、“跳过的测试”和“未运行的测试”组中显示结果。 可以在工具栏中选择其他分组依据选项。
@@ -254,8 +275,11 @@ public void My_Test ()
 ::: moniker range="vs-2017"
 ![从测试资源管理器工具栏运行测试](../test/media/ute_toolbar.png)
 ::: moniker-end
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 ![从测试资源管理器工具栏运行测试](../test/media/vs-2019/test-explorer-toolbar-diagram-16-2.png)
+::: moniker-end
+::: moniker range=">=vs-2022"
+![从测试资源管理器工具栏运行测试](../test/media/vs-2022/test-explorer-toolbar-diagram-17-0.png)
 ::: moniker-end
 
 你可以选择“运行全部”（或按 Ctrl  +  R，V）来运行所有测试，或选择“运行”（Ctrl  +  R，T）来选择要运行的测试的子集。 选择一个测试，在测试详细信息窗格中查看该测试的详细信息。 选择右键单击菜单中的“打开测试”（快捷键： **“F12”** ），显示所选测试的源代码。
@@ -298,8 +322,11 @@ public void My_Test ()
 ::: moniker range="vs-2017"
 ![搜索筛选器类别](../test/media/ute_searchfilter.png)
 ::: moniker-end
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 ![搜索筛选器类别](../test/media/vs-2019/test-explorer-search-filter-16-2.png)
+::: moniker-end
+::: moniker range=">=vs-2022"
+![搜索筛选器类别](../test/media/vs-2022/test-explorer-search-filter-17-0.png)
 ::: moniker-end
 
 |Button|描述|
@@ -330,8 +357,11 @@ public void My_Test ()
 ::: moniker range="vs-2017"
 ![生成方法存根快速操作菜单](../test/media/ute_generatemethodstubintellisense.png)
 ::: moniker-end
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 ![生成方法存根快速操作菜单](../test/media/vs-2019/basics-generate-method-tdd.png)
+::: moniker-end
+::: moniker range=">=vs-2022"
+![生成方法存根快速操作菜单](../test/media/vs-2022/basics-generate-method-tdd.png)
 ::: moniker-end
 
 **问：我是否可以创建将多个数据集作为输入来运行测试的单元测试？**
@@ -376,9 +406,14 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
 
 覆盖率结果将显示在“代码覆盖率结果”窗口中。
 
+::: moniker range="<=vs-2019"
 ![代码覆盖率结果](../test/media/ute_codecoverageresults.png)
+::: moniker-end
+::: moniker range=">=vs-2022"
+![代码覆盖率结果](../test/media/vs-2022/ute-code-coverage-results.png)
+::: moniker-end
 
-了解有关 [代码覆盖率](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) 的详细信息。
+详细了解代码 [覆盖率](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)。
 
 **问：能否在具有外部依赖项的代码中测试方法？**
 

@@ -6,12 +6,12 @@ ms.author: jomatthi
 ms.date: 11/09/2020
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: conceptual
-ms.openlocfilehash: 46ceb99617c6a0e9ba457fdb769c1162090d1d31
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 45e03bce293655aa4fd46eb4698726128a9d7227
+ms.sourcegitcommit: fc874be3fe4637a23997b4ef2d99a2ee9a499581
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736248"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135516811"
 ---
 # <a name="install-and-manage-nuget-packages-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中安装和管理 NuGet 包
 
@@ -150,7 +150,7 @@ NuGet 文档讨论了[在不将包提交到源控件的情况下使用 NuGet](/n
 
 ## <a name="related-video"></a>相关视频
 
-> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Using-NuGet/player]
+> [!Video https://docs.microsoft.com/shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Using-NuGet/player]
 
 ## <a name="see-also"></a>请参阅
 

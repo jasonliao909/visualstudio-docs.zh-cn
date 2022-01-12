@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 11/09/2020
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: a2caadd454564b389f48987e69e1bc08475affea
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: f102fe5fece877098c30c9183f36203568f368ef
+ms.sourcegitcommit: fc874be3fe4637a23997b4ef2d99a2ee9a499581
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736405"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135517793"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Visual Studio 2019 for Mac 导览
 
@@ -148,7 +148,7 @@ Visual Studio for Mac 与 Git 和 Subversion 源控件系统集成。 源控件�
 
 ## <a name="related-video"></a>相关视频
 
-> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Overview/player]
+> [!Video https://docs.microsoft.com/shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Overview/player]
 
 ## <a name="see-also"></a>请参阅
 

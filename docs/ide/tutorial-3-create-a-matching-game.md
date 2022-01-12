@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 56a6722c83678d5f767268619b1d9b8310a8111e
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 8d22d8600f3783ee14c260304135803aad4f149f
+ms.sourcegitcommit: fc874be3fe4637a23997b4ef2d99a2ee9a499581
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126642114"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135516538"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>教程 3：创建匹配游戏
 
@@ -54,8 +54,6 @@ ms.locfileid: "126642114"
 |[步骤 7：保持对可见](../ide/step-7-keep-pairs-visible.md)|保持图标对可见（如果选择了匹配的对）。|
 |[步骤 8：添加验证玩家是否获胜的方法](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)|添加 `CheckForWinner()` 方法以验证玩家是否获胜。|
 |[步骤 9：尝试其他功能](../ide/step-9-try-other-features.md)|尝试其他功能，例如更改图标和颜色、添加网格以及添加声音。 尝试使图板变大并调整计时器。|
-
-那里还有很好的免费视频学习资源供你使用。 要了解有关 C# 编程的详细信息，请参阅 [C# 基础知识：零基础开发](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)。 要了解有关 Visual Basic 编程的详细信息，请参阅 [Visual Basic 基础知识：零基础开发](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners)。
 
 ## <a name="next-steps"></a>后续步骤
 

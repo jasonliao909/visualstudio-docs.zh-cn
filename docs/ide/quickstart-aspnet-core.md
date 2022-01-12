@@ -13,12 +13,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: a4a763a221a6aba7ade463d27a608afcd8f406e0
-ms.sourcegitcommit: 215680b355cf613bfa125cf6b864c8bb5f2c71a5
-ms.translationtype: HT
+ms.openlocfilehash: 552630497554e66ae8dcf673f5c10cc695ea163c
+ms.sourcegitcommit: d38d1b083322019663fec7d1d85a4cda456aadca
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "132453642"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135534025"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>快速入门：使用 Visual Studio 创建首个 ASP.NET Core Web 应用
 
@@ -301,4 +301,4 @@ ms.locfileid: "132453642"
 
 ## <a name="see-also"></a>另请参阅
 
-[使用 Visual Studio 将 Web 应用发布到 Azure App Service](../deployment/quickstart-deploy-to-azure.md)
+[使用 Visual Studio 将 Web 应用发布到 Azure App Service](../deployment/quickstart-deploy-aspnet-web-app.md)

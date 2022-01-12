@@ -15,16 +15,16 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 69d32acfb5f21250ca0a4edc296bd0221da205cf
-ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
-ms.translationtype: HT
+ms.openlocfilehash: 1382fd249b04d75a50fd6bf0bf7c8fb6e759897e
+ms.sourcegitcommit: fc874be3fe4637a23997b4ef2d99a2ee9a499581
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "131127151"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135517142"
 ---
 # <a name="dependency-diagrams-guidelines"></a>依赖项关系图：指南
 
-通过在 Visual Studio 中创建依赖项关系图来概要说明应用的体系结构。 若要确保你的代码与此设计保持一致，请使用依赖项关系图验证代码。 还可以在生成过程中包括层验证。 请参阅[第 9 频道视频：使用依赖项关系图设计和验证体系结构](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture)。
+通过在 Visual Studio 中创建依赖项关系图来概要说明应用的体系结构。 若要确保你的代码与此设计保持一致，请使用依赖项关系图验证代码。 还可以在生成过程中包括层验证。
 
 若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/analyze-and-model-your-architecture.md#VersionSupport)。
 

@@ -11,12 +11,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 094469cdbd41d57e4742023e8b99cc2b5a7c5daf
-ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
-ms.translationtype: HT
+ms.openlocfilehash: b1ef2f5c9280f6c58f60f8ebdda0cd0de6b8a7d9
+ms.sourcegitcommit: d38d1b083322019663fec7d1d85a4cda456aadca
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "129431674"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135533891"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>面向 C# 开发人员的 Visual Studio 工作效率指南
 
@@ -140,7 +140,7 @@ Visual Studio 包含大量重构、代码生成操作和代码修补程序。 �
 
 有关详细信息，请参阅[代码生成功能](code-generation-in-visual-studio.md)。
 
-可以[安装 FxCop 分析器](../code-quality/install-fxcop-analyzers.md)来标记代码问题。 也可以使用 [Roslyn 分析器](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix.md)编写自己的重构或代码修补程序。
+可以[安装 FxCop 分析器](../code-quality/install-net-analyzers.md)来标记代码问题。 也可以使用 [Roslyn 分析器](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix.md)编写自己的重构或代码修补程序。
 
 有几个社区成员写了一些免费扩展，这些扩展添加了其他的代码检查：
 

@@ -2,17 +2,18 @@
 title: 扩展现有的 ASP.NET Core Web 应用
 description: 本文档包含的视频教程介绍如何扩展 eShopOnWeb 示例 ASP.NET Core 应用程序。
 ms.custom: SEO-VS-2020
-author: sayedihashimi
-ms.author: sayedha
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.date: 10/18/2019
 ms.assetid: 047f5e36-f38e-4bf6-a1c5-3fde32978b7d
-ms.topic: tutorial
-ms.openlocfilehash: d2813f70a497df9057f312f561504639b4e1afcd
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.topic: how-to
+ms.openlocfilehash: f9724488c1ab0916a15a5259e2994e16d4180e56
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126644495"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135806555"
 ---
 # <a name="tutorial-extending-an-existing-aspnet-core-web-application"></a>教程：扩展现有的 ASP.NET Core Web 应用程序
 

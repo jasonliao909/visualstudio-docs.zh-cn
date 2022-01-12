@@ -6,12 +6,12 @@ ms.author: jomatthi
 ms.date: 11/09/2020
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
-ms.openlocfilehash: dc865ec593f53149d9c004f252015def32325d18
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 67dd3ead2e0f6b33f5260299e844c02b2756ddac
+ms.sourcegitcommit: fc874be3fe4637a23997b4ef2d99a2ee9a499581
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126735817"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135516707"
 ---
 # <a name="working-with-git"></a>使用 Git
 
@@ -99,7 +99,7 @@ Git 是分布式版本控制系统，使团队可以同时在同一文档上工�
 
 ## <a name="related-video"></a>相关视频
 
-> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Manage-Projects-with-Git/player]
+> [!Video https://docs.microsoft.com/shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Manage-Projects-with-Git/player]
 
 ## <a name="see-also"></a>另请参阅
 

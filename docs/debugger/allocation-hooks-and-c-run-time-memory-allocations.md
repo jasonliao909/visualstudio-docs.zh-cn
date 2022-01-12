@@ -4,8 +4,6 @@ description: 了解 Visual Studio 调试中的分配挂钩和 C 运行时内存�
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
-f1_keywords:
-- vs.debug.hooks
 dev_langs:
 - CSharp
 - VB
@@ -23,12 +21,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a5e921b5bac52d74bd1b2358bfc3f302c4d96f3c
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 4dc339e50c59339b0ed042303a8e60b7cb6867ad
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641279"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135802993"
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>分配挂钩和 C 运行时内存分配
 对分配挂钩函数的一个很重要的限制是，该函数必须显式忽略 `_CRT_BLOCK` 块。 这些块是 C 运行时库函数在内部进行的内存分配的结果（前提是调用分配内部内存的 C 运行时库函数）。 将以下代码添加到分配挂钩函数开始处即可忽略 `_CRT_BLOCK` 块：

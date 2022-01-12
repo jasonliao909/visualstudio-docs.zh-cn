@@ -4,18 +4,18 @@ description: 如何设置远程 R 工作区并从 Visual Studio 连接到该工�
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: ghogen
+ms.author: ghogen
 manager: jmartens
 ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: 03065c6cc2b7c9bf65bde4c4d55250b28fe9213c
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 6f140381ee9dfa6c9ed58d7a5213f0c67f596a7e
+ms.sourcegitcommit: dcecc0ed37b5e976b5dc83c5128ba5ecc8bc04b1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126642250"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "135750558"
 ---
 # <a name="set-up-remote-workspaces"></a>设置远程工作区
 

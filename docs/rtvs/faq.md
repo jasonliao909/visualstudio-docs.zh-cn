@@ -4,18 +4,18 @@ description: 有关 Visual Studio 中的 R 的常见问题。
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
 ms.topic: reference
-author: kraigb
-ms.author: kraigb
+author: ghogen
+ms.author: ghogen
 manager: jmartens
 ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: 9d49c6b8d52fd047a109f2f470c97adafb457810
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: a4d1da80034faf5ba1cf67cf3994677f01bbf27c
+ms.sourcegitcommit: dcecc0ed37b5e976b5dc83c5128ba5ecc8bc04b1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641018"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "135750519"
 ---
 # <a name="frequently-asked-questions"></a>常见问题
 

@@ -1,16 +1,18 @@
 ---
 title: 代码格式设置
 description: 本文介绍可用于修改 Visual Studio for Mac 中的文本编辑器行为的各种选项
-author: cobey
-ms.author: cobey
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.date: 05/06/2018
+ms.topic: reference
 ms.assetid: 81EE4460-26EB-4BB0-9297-932E1F88E4B8
-ms.openlocfilehash: 20363d5497ea5897cb2685ca838da44b8c21d3df
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: ed82e0cf2e0ecb1694cffccde56d984ddd85bf8b
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736749"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135803643"
 ---
 # <a name="editor-behavior"></a>编辑器行为
 

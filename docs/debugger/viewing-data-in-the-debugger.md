@@ -4,8 +4,6 @@ description: 了解在 Visual Studio 调试器中检查和修改程序状态的�
 ms.custom: SEO-VS-2020
 ms.date: 01/09/2019
 ms.topic: conceptual
-f1_keywords:
-- vs.debug
 dev_langs:
 - CSharp
 - VB
@@ -22,12 +20,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cdce099df34fbf7937ed83d1adc70fe36c13176
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 2ef14445d3a4197a61abb1a7dc6df61bfdf277eb
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126735763"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135803058"
 ---
 # <a name="create-custom-views-of-data-in-the-visual-studio-debugger-c-visual-basic-c"></a>在 Visual Studio 调试器中创建数据的自定义视图（C#、Visual Basic、C++）
 

@@ -4,18 +4,18 @@ description: R 和 Visual Studio 入门示例集合的索引。
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: ghogen
+ms.author: ghogen
 manager: jmartens
 ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: b52d548f250df47c120d656f763f75e56d3ee742
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 03d03cc707689632f6d7dde29bd5833426045727
+ms.sourcegitcommit: dcecc0ed37b5e976b5dc83c5128ba5ecc8bc04b1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641012"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "135750553"
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>针对 Visual Studio 的 R 工具示例项目
 

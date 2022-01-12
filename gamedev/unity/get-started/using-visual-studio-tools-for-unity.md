@@ -1,7 +1,7 @@
 ---
 title: 使用 Visual Studio Tools for Unity | Microsoft Docs
 description: 了解如何使用 Visual Studio Tools for Unity 的集成和工作效率功能。 还可使用 Visual Studio 调试器进行 Unity 开发。
-ms.date: 07/03/2018
+ms.date: 12/10/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: how-to
@@ -12,12 +12,12 @@ manager: crdun
 ms.workload:
 - unity
 zone_pivot_groups: platform
-ms.openlocfilehash: 08ad9bb1161b12ecc5cb588e3e37d0b9d318cacd
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
-ms.translationtype: HT
+ms.openlocfilehash: 157972a9f32ffe362c706b8eddaac923abaf47a2
+ms.sourcegitcommit: 2a4744fb312396d36086dd59fd55ab741ae8e106
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129967686"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "135575955"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>使用 Visual Studio Tools for Unity
 
@@ -30,10 +30,10 @@ ms.locfileid: "129967686"
 或者，可以通过在 Unity 中选择“资产”>“打开 C# 项目”菜单打开 Visual Studio，而无需在源编辑器中打开任何脚本。
 
 :::zone pivot="windows"
-![在 Visual Studio 中打开 C# 项目](../media/vs/vstu-open-csharp-project.png)
+!["打开 C#"项目的屏幕截图Visual Studio。](../media/vs/vstu-open-csharp-project.png)
 :::zone-end
 :::zone pivot="macos"
-![在 Visual Studio for Mac 中打开 C# 项目](../media/vsm/vstu-open-csharp-project.png)
+!["打开 C#"项目的屏幕截图Visual Studio for Mac。](../media/vsm/vstu-open-csharp-project.png)
 :::zone-end
 
 ## <a name="unity-documentation-access"></a>Unity 文档访问
@@ -43,12 +43,14 @@ ms.locfileid: "129967686"
 :::zone pivot="windows"
 - 在 Visual Studio 中，将需要了解的 Unity API 突出显示或将光标置于其上，然后按 Ctrl+Alt+M、Ctrl+H    
 - 还可使用“帮助”>“Unity API 参考”菜单，而不是键绑定。
-![Visual Studio 中的 Unity API 参考菜单](../media/vs/help-unity-documentation.png)
+
+!["Unity API 参考"菜单的屏幕截图Visual Studio。](../media/vs/help-unity-documentation.png)
 :::zone-end
 :::zone pivot="macos"
 - 在 Visual Studio for Mac 中，突出显示或将光标放在要了解的 Unity API 上，然后按 Cmd+' 
 - 还可使用“帮助”>“Unity API 参考”菜单，而不是键绑定。
-![Visual Studio for Mac 中的 Unity API 参考菜单](../media/vsm/help-unity-documentation.png)
+
+!["Unity API 参考"菜单的屏幕截图Visual Studio for Mac。](../media/vsm/help-unity-documentation.png)
 :::zone-end
 
 ## <a name="intellisense-for-unity-api-messages"></a>针对 Unity API 消息的 Intellisense
@@ -63,7 +65,7 @@ Intellisense 代码完成简化了在 MonoBehaviour 脚本中实现 Unity API �
 
 :::zone pivot="windows"
 
-![使用 Visual Studio IntelliSense](../media/vs/intellisense-example.png)  
+![在 Visual Studio 中使用 IntelliSense 的屏幕截图。](../media/vs/intellisense-example.png)  
 
 :::zone-end
 
@@ -85,7 +87,7 @@ Intellisense 代码完成简化了在 MonoBehaviour 脚本中实现 Unity API �
 
 :::zone pivot="windows"
 
-![在 Visual Studio 中插入来自 IntelliSense 的 Unity 消息](../media/vs/vstu-intellisense2.png)
+!["从 IntelliSense 插入 Unity"消息的屏幕截图Visual Studio。](../media/vs/vstu-intellisense2.png)
 
 :::zone-end
 
@@ -109,19 +111,20 @@ MonoBehavior 向导可用于查看所有 Unity API 方法的列表，并快速�
 
 :::zone pivot="windows"
 
-![Visual Studio 中的 MonoBehavior 向导对话框。](../media/vs/vstu-monobehavior-wizard.png)
+![Visual Studio 中的 monobehavior 向导对话框的屏幕截图。](../media/vs/vstu-monobehavior-wizard.png)
 :::zone-end
 :::zone pivot="macos"
 
-![Visual Studio for Mac 中的 MonoBehavior 向导对话框。](../media/vsm/vstu-monobehavior-wizard.png)
+![Visual Studio for Mac 中的 monobehavior 向导对话框的屏幕截图。](../media/vsm/vstu-monobehavior-wizard.png)
 :::zone-end   
 
 ## <a name="unity-project-explorer"></a>Unity 项目资源管理器
 Unity 项目资源管理器会以与 Unity 编辑器相同的方式显示所有 Unity 项目文件和目录。 这是不同于使用普通 Visual Studio 解决方案资源管理器导航 Unity 脚本，后者将它们组织到项目和由 Visual Studio 生成的解决方案中。
 
 :::zone pivot="windows"
-- 在 Visual Studio 的主菜单上选择“视图”>“Unity 项目资源管理器”。 键盘快捷方式：Alt+Shift+E
-  ![查看 Unity 项目资源管理器窗口。](../media/vs/unity-project-explorer.png)
+- 在 Visual Studio 的主菜单上选择“视图”>“Unity 项目资源管理器”。 键盘快捷键：Alt+Shift+E  
+
+![Unity Project资源管理器"窗口的屏幕截图。](../media/vs/unity-project-explorer.png)
 :::zone-end
 :::zone pivot="macos"
 - 在 Visual Studio for Mac 中，当打开 Unity 项目时，Solution Pad 会自动表现如下。
@@ -136,22 +139,25 @@ Visual Studio Tools for Unity 让你可以使用 Visual Studio 功能强大的�
 :::zone pivot="windows"
 
 1. 若要将 Visual Studio 连接到 Unity，单击标记为“附加到 Unity”的“播放”按钮，或使用键盘快捷方式 F5。
-![在 Visual Studio 中单击“播放”](../media/vs/vstu-play-button.png)
+
+!["附加到 Unity"按钮的屏幕截图Visual Studio。](../media/vs/vstu-play-button.png)
 
 :::zone-end
 :::zone pivot="macos"
 
 1. 通过单击“Play”按钮、键入“Command + Return”或按“F5”将 Visual Studio 连接到 Unity    。
-![在 Visual Studio for Mac 中单击“播放”](../media/vsm/using-vsmac-tools-unity-image5.png)
+
+![屏幕中"播放"按钮的Visual Studio for Mac。](../media/vsm/using-vsmac-tools-unity-image5.png)
 
 :::zone-end
 
 2. 切换到 Unity 并单击“Play”按钮，在编辑器中运行游戏  。
+
 :::zone pivot="windows"
-![在 Windows 上的 Unity 中单击“播放”](../media/vs/vstu-unity-play-button.png)
+!["在 Unity 中播放"按钮的屏幕截图Windows。](../media/vs/vstu-unity-play-button.png)
 :::zone-end
 :::zone pivot="macos"
-![在 macOS 上的 Unity 中单击“播放”](../media/vsm/using-vsmac-tools-unity-image6.png)
+![macOS 上 Unity 中"播放"按钮的屏幕截图。](../media/vsm/using-vsmac-tools-unity-image6.png)
 :::zone-end
 
 3. 当游戏在连接到 Visual Studio 的情况下在 Unity 编辑器中运行时，遇到的任何断点都会中断游戏执行，并在 Visual Studio 中显示游戏遇到断点的代码行。
@@ -161,17 +167,19 @@ Visual Studio Tools for Unity 让你可以使用 Visual Studio 功能强大的�
 :::zone pivot="windows"
 
 单击 Visual Studio 中的“停止”按钮，或使用键盘快捷方式 Shift + F5。
-![在 Visual Studio 中单击“停止”](../media/vs/vstu-stop-debugger.png)
+
+!["停止"按钮的屏幕截图Visual Studio。](../media/vs/vstu-stop-debugger.png)
 
 :::zone-end
 :::zone pivot="macos"
 
 在 Visual Studio for Mac 中单击“停止”按钮，或按“Shift + Command + Return”。
-![在 Visual Studio for Mac 中单击“停止”](../media/vsm/using-vsmac-tools-unity-image7.png)
+
+!["停止"按钮的屏幕截图Visual Studio for Mac。](../media/vsm/using-vsmac-tools-unity-image7.png)
 
 :::zone-end
 
-若要了解有关 Visual Studio 调试的详细信息，请参阅[首先看一下 Visual Studio 调试器](/visualstudio/debugger/debugger-feature-tour)。
+若要详细了解如何Visual Studio，请参阅有关第一次查看调试器[Visual Studio文档](/visualstudio/debugger/debugger-feature-tour)。
 
 #### <a name="attach-to-unity-and-play"></a>附加到 Unity 并播放
 
@@ -181,7 +189,8 @@ Visual Studio Tools for Unity 让你可以使用 Visual Studio 功能强大的�
 
 1. 单击“附加到 Unity”按钮旁边的小型向下箭头。
 2. 从下拉菜单选择“附加到 Unity 并播放”。
-   ![在 Visual Studio 中附加和播放](../media/vs/vstu-attach-and-play.png)
+
+   !["附加和播放"按钮的屏幕截图Visual Studio。](../media/vs/vstu-attach-and-play.png)
 
 “播放”按钮标记将变为“附加到 Unity 并播放”。 单击此按钮或使用键盘快捷方式 F5，除了附加 Visual Studio 调试器，现在还会自动切换到 Unity 编辑器，并在编辑器中运行游戏。
 
@@ -189,7 +198,7 @@ Visual Studio Tools for Unity 让你可以使用 Visual Studio 功能强大的�
 :::zone pivot="macos"
 通过选择“附加到 Unity 并播放”配置，可通过一个步骤直接从 Visual Studio for Mac 完成启动调试和播放 Unity 编辑器。
 
-![在 Visual Studio for Mac 中选择“附加到 Unity 并播放”](../media/vsm/using-vsmac-tools-unity-image8.png)
+!["附加到 Unity"和"播放"按钮的屏幕截图Visual Studio for Mac。](../media/vsm/using-vsmac-tools-unity-image8.png)
 :::zone-end
 
 > [!NOTE]
@@ -204,7 +213,7 @@ Visual Studio Tools for Unity 让你可以使用 Visual Studio 功能强大的�
 1. 在 Unity 中，通过选择“文件”>“版本设置”打开“版本设置”。
 2. 在“版本设置”窗口中，标记“开发版本”和“脚本调试”复选框。
 
-   ![配置 Unity 生成设置以进行调试。](../media/vs/vstu-debugging-build-settings.png "vstu_debugging_build_settings")
+   ![用于调试的 Unity 生成设置的屏幕截图。](../media/vs/vstu-debugging-build-settings.png "vstu_debugging_build_settings")
 
 #### <a name="select-a-unity-instance-to-attach-the-debugger-to"></a>选择要附加调试器的 Unity 实例
 
@@ -212,24 +221,34 @@ Visual Studio Tools for Unity 让你可以使用 Visual Studio 功能强大的�
 
 - 在 Visual Studio 的主菜单上选择“调试”>“附加 Unity 调试器”。
 
-   ![附加 Unity 调试器。](../media/vs/vstu-debugging-attach-unity-debugger.png "vstu_debugging_attach_unity_debugger")
+   !["附加 Unity 调试"窗口的屏幕截图Visual Studio。](../media/vs/vstu-debugging-attach-unity-debugger.png "vstu_debugging_attach_unity_debugger")
 
    “选择 Unity 实例”对话框将显示有关每个可以连接的 Unity 实例的信息。
 
-   ![选择要连接的 Unity 实例。](../media/vs/vstu-attach-debugger.png "vstu_connection_to_unity")
+   !["选择要连接到的 Unity 实例"窗口的屏幕截图Visual Studio。](../media/vs/vstu-attach-debugger.png "vstu_connection_to_unity")
 
-   **Project**
-
-   在此 Unity 实例中运行的 Unity 项目的名称。
+   **Project** 在此 Unity 实例中运行的 Unity 项目的名称。
 
    **Machine** 运行此 Unity 实例的计算机或设备的名称。
 
-   **Type** 如果此 Unity 实例作为 Unity 编辑器的一部分运行，则为“编辑器”；如果此 Unity 实例是独立播放器，则为“播放器” 。
+   **类型** 如果此 Unity 实例作为 Unity 编辑器的一部分运行，则使用编辑器;如果此 Unity 实例是独立播放器，则播放器。
 
    **Port** 此 Unity 实例将用于通信的 UDP 套接字的端口号。
 
 > [!IMPORTANT]
 > 由于 Visual Studio Tools for Unity 和 Unity 实例正在通过 UDP 网络套接字进行通信，因而你的防火墙可能需要规则来允许它。 如果需要，你可能会看到一条提示，必须授权连接，以便 VSTU 和 Unity 可以进行通信。
+
+#### <a name="selecting-a-unity-instance-that-doesnt-appear-in-the-list"></a>选择未显示在列表中的 Unity 实例
+
+如果已知 Unity Player 未显示在列表中，可以使用"选择 Unity 实例"窗口中的"输入 **IP"** 按钮。 输入正在运行的 Unity Player 的 IP 地址和端口以连接调试器。
+
+若要更轻松地继续调试该播放器，而无需每次输入 IP 和端口，请启用"Tools >  **Options > Tools for Unity >"** 菜单中的"使用保存的调试目标"设置。
+
+!["使用已保存的调试目标"设置的屏幕截图。](../media/vs/visual-studio-tools-unity-use-saved-debug-targets.png)
+
+Visual Studio将保存的调试目标作为"附加到 Unity"按钮中的选项显示。
+
+!["保存的调试目标"设置的屏幕截图。](../media/vs/visual-studio-tools-unity-saved-target.png)
 
 :::zone-end
 :::zone pivot="macos"
@@ -253,7 +272,7 @@ Visual Studio Tools for Unity 让你可以使用 Visual Studio 功能强大的�
 
 1. 将现有的 DLL 项目添加到由 Visual Studio Tools for Unity 生成的 Visual Studio 解决方案中。 不太常见的情况是：你可能会启动一个新的托管 DLL 项目，以便在 Unity 项目中包含代码组件；如果是这种情况，则可将新的托管 DLL 项目添加到 Visual Studio 解决方案。
 
-   ![将现有 DLL 项目添加到解决方案。](../media/vs/vstu-debugging-dll-add-existing.png "vstu_debugging_dll_add_existing")
+   !["添加现有项>的屏幕截图。](../media/vs/vstu-debugging-dll-add-existing.png "vstu_debugging_dll_add_existing")
 
    在任一情况下，Visual Studio Tools for Unity 均将维护项目引用，即使不得不再次重新生成项目和解决方案文件，所以你只需要执行一次这些步骤。
 
@@ -262,7 +281,7 @@ Visual Studio Tools for Unity 让你可以使用 Visual Studio 功能强大的�
 > [!NOTE]
 > 仅当使用 Unity 的旧版运行时的情况下，才需要使用以下配置文件。 如果使用的是新版 Unity 运行时，则无需再使用这些专用 3.5 配置文件。 使用与 Unity 版本兼容的 .NET 4.x 配置文件。
 
-   ![将 DLL 的目标框架设置为 Unity 框架。](../media/vs/vstu-debugging-dll-target-framework.png "vstu_debugging_dll_target_framework")
+   ![选择项目中项目的目标框架的屏幕截图Visual Studio。](../media/vs/vstu-debugging-dll-target-framework.png "vstu_debugging_dll_target_framework")
 
 3. 将 DLL 复制到 Unity 项目的资产文件夹。 在 Unity 中，资产是与 Unity 应用一起打包和部署的文件，所以可以在运行时加载它们。 由于 DLL 在运行时链接，因而必须将 DLL 作为资产部署。 若要部署为资产，Unity 编辑器需要将 DLL 放置在 Unity 项目的“资产”文件夹中。 可以采用两种方法执行此操作：
 

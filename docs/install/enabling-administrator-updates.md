@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 7db34d7f43bc90bdd3e49e698d0eddab28646ed4
-ms.sourcegitcommit: 99e0146dfe742f6d1955b9415a89c3d1b8afe4e1
+ms.openlocfilehash: 0649ea754e53a2972f1329e06ac3316210a6aa22
+ms.sourcegitcommit: d38d1b083322019663fec7d1d85a4cda456aadca
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "134553877"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135534051"
 ---
 # <a name="enabling-administrator-updates-to-visual-studio-with-microsoft-endpoint-configuration-manager"></a>启用使用 Microsoft Endpoint Configuration Manager 的 Visual Studio 管理员更新
 
@@ -66,7 +66,7 @@ Microsoft Endpoint Configuration Manager (SCCM) 可使用软件更新管理工�
 
 必须使客户端计算机能够接收管理员更新。 此步骤是必需步骤，以确保不会无意或意外地将更新推送到毫无准备的客户端计算机。
 
-AdministratorUpdatesEnabled 项专为管理员而设计，用于对管理员意向进行编码 **** 。 此项可位于任何标准 Visual Studio 位置，如 [为 Visual Studio 企业部署设置默认值](/visualstudio/install/set-defaults-for-enterprise-deployments)文档中所述。 需要对客户端计算机具有管理员访问权限才能创建并设置此项的值。
+AdministratorUpdatesEnabled 项专为管理员而设计，用于对管理员意向进行编码 **** 。 此项可位于任何标准 Visual Studio 位置，如 [为 Visual Studio 企业部署设置默认值](set-defaults-for-enterprise-deployments.md)文档中所述。 需要对客户端计算机具有管理员访问权限才能创建并设置此项的值。
 
 * 若要将客户端计算机配置为接受管理员更新，请将 AdministratorUpdatesEnabled REG_DWORD 项设置为 1 ****  **** 。
 * 如果 AdministratorUpdatesEnabled REG_DWORD 项缺失或设置为 0，则将阻止管理员更新应用于客户端计算机 **** 。

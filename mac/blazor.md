@@ -1,8 +1,9 @@
 ---
 title: 创建 Blazor Web 应用
 description: 提供有关 Visual Studio for Mac 中 ASP.NET Core 应用的 Blazor 支持的信息。
-author: jongalloway
-ms.author: jogallow
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.date: 08/31/2020
 ms.technology: vs-ide-general
 ms.assetid: D2717D3A-9225-40A8-8155-7D0143B2CA60
@@ -10,12 +11,12 @@ no-loc:
 - Blazor
 - Blazor WebAssembly
 ms.topic: how-to
-ms.openlocfilehash: 30e9a62e8bf0364a76cbd43995cbb77c1a5bd0c4
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: d6214e67c924f66d3892d337ed9cc02df60d88ed
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126644528"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135806672"
 ---
 # <a name="create-blazor-web-apps"></a>创建 Blazor Web 应用
 

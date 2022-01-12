@@ -1,7 +1,7 @@
 ---
 title: 管理 npm 包
 description: Visual Studio 可帮助你使用 Node.js 包管理器 (npm) 来管理包
-ms.date: 10/1/2021
+ms.date: 12/20/2021
 ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 8669d048554f8d2e2bc8455cd1d7ff88dbeb1249
-ms.sourcegitcommit: ac681e983f3b217c3fd9d2a31e3a3ddcc4dd3546
-ms.translationtype: HT
+ms.openlocfilehash: 5f6c21f0ec4d972bf09c9c291e128c9517dbdfc1
+ms.sourcegitcommit: aa5e295b9e3fc8e287f3ae2b6224f41e7d4ee833
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "132041830"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "135437172"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>在 Visual Studio 中管理 npm 包
 
@@ -56,7 +56,8 @@ Visual Studio 与 npm 的集成因项目类型而异。
 
 ## <a name="nodejs-projects"></a>Node.js 项目
 
-对于 Node.js 项目，可以执行下列任务：
+对于 ( Node.js 项目) ，你可以执行以下任务：
+
 * [从解决方案资源管理器安装包](#npmInstallWindow)
 * [从解决方案资源管理器管理安装的包](#solutionExplorer)
 * [在 Node.js 交互式窗口中使用 `.npm` 命令](#interactive)
@@ -78,7 +79,7 @@ Visual Studio 与 npm 的集成因项目类型而异。
 
 在此窗口中可以搜索包、指定选项并安装。
 
-![“安装新 npm 包”对话框的屏幕截图。 已选择 azure 2.2.1-preview 包，并显示了该包的详细信息和选项。](../javascript/media/search-package.png)
+![“安装新 npm 包”对话框的屏幕截图。](../javascript/media/search-package.png)
 
 * 依赖项类型 - 在“标准”、“开发”和“可选”包间进行选择     。 “标准”指定包是一个运行时依赖项，而“开发”指定只在开发过程中需要包。
 * **添加到 package.json** - 建议。 此可配置选项已被弃用。
@@ -142,7 +143,7 @@ npm 包显示在解决方案资源管理器中。 “npm”节点下的条目模
  > [!Tip]
  > 如果项目不包含 package.json 文件，请使用 `.npm init -y` 创建含默认条目的新 package.json 文件。
 
- ## <a name="aspnet-core-projects"></a>ASP.NET Core 项目
+## <a name="aspnet-core-projects"></a>ASP.NET Core 项目
 
 对于 ASP.NET Core 项目之类的项目，可以在项目中集成 npm 支持，并使用 npm 安装包。
 * [向项目添加 npm 支持](#npmAdd)
@@ -159,7 +160,7 @@ npm 包显示在解决方案资源管理器中。 “npm”节点下的条目模
 
    npm 需要 Node.js。
 
-1. 若要添加 package.json 文件，请在“解决方案资源管理器”中右键单击项目，然后依次选择“添加” > “新项”（或按 Ctrl + Shift + A）。 选择“npm 配置文件”，使用默认名称，然后单击“添加”   。
+1. 若要添加 package.json 文件，请在“解决方案资源管理器”中右键单击项目，然后依次选择“添加” > “新项”（或按 Ctrl + Shift + A）。 使用搜索框查找 npm 文件，选择 **Npm 配置文件**，使用默认名称，然后单击 " **添加**"。
 
    ![将 package.json 添加到项目](../javascript/media/npm-add-package-json.png)
 
@@ -181,7 +182,7 @@ npm 包显示在解决方案资源管理器中。 “npm”节点下的条目模
 
 ### <a name="install-packages-using-packagejson-aspnet-core"></a><a name="npmInstallPackage"></a>使用 package.json 安装包 (ASP.NET Core)
 
-对于包含 npm 的项目，可以使用 `package.json` 配置 npm 包。 右键单击解决方案资源管理器中的 npm 节点，并选择“打开 package.json”  。
+对于包含 npm 的项目，可以使用 `package.json` 配置 npm 包。 直接打开 `package.json` ，或在解决方案资源管理器中右键单击 "npm" 节点，然后选择 " **打开 package. json**"。
 
 ![选中 npm 节点的解决方案资源管理器的屏幕截图。 已打开右键单击上下文菜单，并且已选中“打开 package.json”。](../javascript/media/npm-add-package.png)
 

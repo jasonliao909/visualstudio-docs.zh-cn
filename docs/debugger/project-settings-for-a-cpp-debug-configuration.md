@@ -55,7 +55,6 @@ f1_keywords:
 - VC.Project.VCDebugSettings.RemoteMachine
 - VC.Project.IVCGPUDebugPageObject.AdditionalFilesToDeploy
 - VC.Project.VCDebugSettings.WorkingDirectory
-- vs.debug.builds
 - VC.Project.VCDebugSettings.Attach
 - VC.Project.VCDebugSettings.HttpUrl
 - VC.Project.IVCClusterDebugPageObject.MPIAcceptMode
@@ -113,12 +112,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 18afa2696d911f8b967099a886f718456a20ae03
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: ae7a976ad66cddf9ad4ce2167570b429b1166055
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129972396"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135803240"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>C++ 调试配置的项目设置
 你可以在“属性页”对话框中更改 C 或 Visual C++ 调试配置的项目设置，相关讨论见[如何：设置调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)。 下表显示“属性页”对话框中与调试器有关的设置的位置。

@@ -4,19 +4,19 @@ description: 如何在 Visual Studio 2017 和 Visual Studio 2015 中安装 R 工
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: ghogen
+ms.author: ghogen
 manager: jmartens
 ms.technology: vs-rtvs
 ms.workload:
 - data-science
 monikerRange: vs-2017
-ms.openlocfilehash: 028746c19729395f36ae7035a34d82386f89af72
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 295843fecc0c03dbc95851983ee7af7b2001121b
+ms.sourcegitcommit: dcecc0ed37b5e976b5dc83c5128ba5ecc8bc04b1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126640506"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "135750469"
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>如何安装针对 Visual Studio 的 R 工具
 

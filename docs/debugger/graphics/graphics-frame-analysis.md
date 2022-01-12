@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 320db3d923aeaf3e192715807c09de89bbf9faca
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 07d6a29ea43798377dd69ae9151d11e8f390f855
+ms.sourcegitcommit: fc874be3fe4637a23997b4ef2d99a2ee9a499581
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126737352"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135517653"
 ---
 # <a name="graphics-frame-analysis"></a>图形帧分析
 使用 Visual Studio 图形分析器中的图形帧分析可分析并优化你的 Direct3D 游戏或应用的呈现性能。
@@ -34,8 +34,6 @@ ms.locfileid: "126737352"
   除了这些优点以外，帧分析还可以对播放期间帧得以呈现的方式作出更改，以便它可以显示这些更改可能如何影响应用的呈现性能的相关信息。 你可以使用这些信息在可能的优化策略中进行决策，而无需实施所有策略，然后捕获并比较所有结果。
 
   虽然帧分析主要用于帮助你获得更快的呈现性能，但是它同样可以帮助你使给定的性能目标获得更好的视觉质量，或者减少 GPU 耗电量。
-
-  若要观看帧分析可以为应用执行的操作的演示，可以观看 Channel 9 上的 [Visual Studio Graphics Frame Analysis](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool)（Visual Studio 图形帧分析）视频。
 
 ## <a name="using-frame-analysis"></a>使用帧分析
  在可以使用帧分析之前，你必须在应用运行时从应用中捕获图形信息，正如你在使用任何其他图形分析器工具时进行的操作。 然后，在图形日志文档 (.vsglog) 窗口中，选择“帧分析”选项卡。

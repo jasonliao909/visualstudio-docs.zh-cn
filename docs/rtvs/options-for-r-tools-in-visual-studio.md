@@ -9,18 +9,18 @@ f1_keywords:
 - vs.toolsoptionspages.r_tools
 - vs.toolsoptionspages.r_tools.advanced
 - vs.toolsoptionspages.r_tools.#150
-author: kraigb
-ms.author: kraigb
+author: ghogen
+ms.author: ghogen
 manager: jmartens
 ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: 76c6994546e380b9a599c9cdcbbc8a9392333007
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: f3476df66a9ddd11ef7cb7229db8b1f7f15a1a3b
+ms.sourcegitcommit: dcecc0ed37b5e976b5dc83c5128ba5ecc8bc04b1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126642267"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "135750835"
 ---
 # <a name="r-tools-for-visual-studio-options"></a>针对 Visual Studio 的 R 工具选项
 

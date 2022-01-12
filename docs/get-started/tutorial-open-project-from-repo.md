@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: e3bfa52a14eb58750ab31daaf6c694c3d3036df9
-ms.sourcegitcommit: 263703af9c4840e0e0876aa99df6dd7455c43519
+ms.openlocfilehash: 619a9cacfdf272bb6b76e0115b90edddf2c73180
+ms.sourcegitcommit: d38d1b083322019663fec7d1d85a4cda456aadca
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "133387261"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135534159"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>教程：打开存储库中的项目
 
@@ -134,7 +134,7 @@ ms.locfileid: "133387261"
 
 ## <a name="open-a-project-from-a-github-repo-with-visual-studio-2019"></a>使用 Visual Studio 2019 打开 GitHub 存储库中的项目
 
-使用 Visual Studio 打开 GitHub 存储库中的项目的方式取决于你的版本。 具体来说，如果你已安装 Visual Studio 2019 [版本 16.8](/visualstudio/releases/2019/release-notes-history) 或更高版本，则可使用 Visual Studio 中提供的一个更全面集成的全新 [Git 体验](../ide/git-with-visual-studio.md)。
+使用 Visual Studio 打开 GitHub 存储库中的项目的方式取决于你的版本。 具体来说，如果你已安装 Visual Studio 2019 [版本 16.8](/visualstudio/releases/2019/release-notes-history) 或更高版本，则可使用 Visual Studio 中提供的一个更全面集成的全新 [Git 体验](../version-control/git-with-visual-studio.md)。
 
 但无论安装的是哪个版本，你始终可以使用 Visual Studio 打开 GitHub 存储库中的项目。
 
@@ -229,7 +229,7 @@ ms.locfileid: "133387261"
 
 ## <a name="browse-to-an-azure-devops-repo-with-visual-studio-2019"></a>使用 Visual Studio 2019 浏览到 Azure DevOps 存储库
 
-使用 Visual Studio 2019 浏览到并克隆 Azure DevOps 存储库时看到的内容取决于你的版本。 具体来说，如果你已安装 [16.8 版本](/visualstudio/releases/2019/release-notes-history)或更高版本，我们已更改了 UI，以适应 Visual Studio 中更全面集成的全新 [Git 体验](../ide/git-with-visual-studio.md)。
+使用 Visual Studio 2019 浏览到并克隆 Azure DevOps 存储库时看到的内容取决于你的版本。 具体来说，如果你已安装 [16.8 版本](/visualstudio/releases/2019/release-notes-history)或更高版本，我们已更改了 UI，以适应 Visual Studio 中更全面集成的全新 [Git 体验](../version-control/git-with-visual-studio.md)。
 
 但无论安装的是哪个版本，你始终可以使用 Visual Studio 浏览到并克隆 Azure DevOps 存储库。
 
@@ -384,8 +384,8 @@ ms.locfileid: "133387261"
 
 ::: moniker range="<=vs-2019"
 
-- [Visual Studio 中的 Git 体验](../ide/git-with-visual-studio.md)
-- [并行比较 Git 和团队资源管理器](../ide/git-team-explorer-feature-comparison.md)
+- [Visual Studio 中的 Git 体验](../version-control/git-with-visual-studio.md)
+- [并行比较 Git 和团队资源管理器](../version-control/git-team-explorer-feature-comparison.md)
 - [Microsoft Learn：Visual Studio 中的 Git 和 GitHub 入门](/learn/modules/visual-studio-github-push/)
 - [Microsoft Learn：Azure DevOps 入门](/learn/modules/get-started-with-devops/)
 - [Azure DevOps Services：Azure Repos 和 Visual Studio 入门](/azure/devops/repos/git/gitquickstart/)

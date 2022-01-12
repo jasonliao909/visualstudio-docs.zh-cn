@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 4937ad4322d7aed06890c138d70c66a577540153
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 1e58bd037b699b4dcb4fc5eef15c11fa2567b7a6
+ms.sourcegitcommit: fc874be3fe4637a23997b4ef2d99a2ee9a499581
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126663886"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135517780"
 ---
 # <a name="structure-your-modeling-solution"></a>安排你的建模解决方案
 
@@ -104,10 +104,6 @@ ms.locfileid: "126663886"
    随后打开“将模板导出为 VSIX 向导”。
 
 4. 按照该向导中的说明，选择你想要包括在模板中的项目，提供模板的名称和说明，并指定输出位置。
-
-## <a name="watch-a-video"></a>观看视频
-
-[组织和管理模型](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-9-organizing-and-managing-your-models)
 
 ## <a name="see-also"></a>另请参阅
 

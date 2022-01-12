@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6e98285f50105ab49964bb1cc1b633cc505af7a1
-ms.sourcegitcommit: 2281b4f1f8737f263c0d7e55e00b5ec81517327d
+ms.openlocfilehash: 73783c0aae038b1c3ebeb3daef0b619ccf37834b
+ms.sourcegitcommit: d38d1b083322019663fec7d1d85a4cda456aadca
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "133108843"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135534277"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>使用命令行参数安装 Visual Studio
 
@@ -33,7 +33,7 @@ ms.locfileid: "133108843"
 
 大多数命令行选项与安装引导程序配合使用，安装引导程序是启动下载过程的小型 (~1 MB) 文件（例如 vs_enterprise.exe）。  下面列出的所有命令和参数都旨在与引导程序一起使用。 
 
-还可以使用管理员更新包（可从 [Microsoft 更新目录](https://catalog.update.microsoft.com)下载）以编程方式更新网络布局。 若要详细了解如何这样做，请参阅[更新或修改布局](/visualstudio/install/create-a-network-installation-of-visual-studio#update-the-layout-to-a-specific-version-of-the-product)文档。  
+还可以使用管理员更新包（可从 [Microsoft 更新目录](https://catalog.update.microsoft.com)下载）以编程方式更新网络布局。 若要详细了解如何这样做，请参阅[更新或修改布局](create-a-network-installation-of-visual-studio.md#update-the-layout-to-a-specific-version-of-the-product)文档。  
 
 ::: moniker range="vs-2017"
 
@@ -137,7 +137,7 @@ ms.locfileid: "133108843"
 
 ## <a name="layout-command-and-command-line-parameters"></a>布局命令和命令行参数
 
-所有布局管理操作都假定命令是默认的 Install（空白），而不考虑是要创建还是更新布局。 因此，所有布局管理操作都始于必需的初始 `--layout` 参数。 下表介绍了使用命令行[创建或更新布局](/visualstudio/install/create-a-network-installation-of-visual-studio)时可使用的其他参数。 
+所有布局管理操作都假定命令是默认的 Install（空白），而不考虑是要创建还是更新布局。 因此，所有布局管理操作都始于必需的初始 `--layout` 参数。 下表介绍了使用命令行[创建或更新布局](create-a-network-installation-of-visual-studio.md)时可使用的其他参数。 
 
 | **布局参数**                           | **说明**                                        |
 |-------------------------------------------------|----------------------------------------------------------------------|
@@ -147,7 +147,7 @@ ms.locfileid: "133108843"
 | `--includeRecommended`                          | **可选**：包含所有已安装工作负载的推荐组件，但不包含可选组件。 可使用 `--allWorkloads` 或 `--add` 指定工作负载。         |
 | `--includeOptional`                             | **可选**：添加布局中包含的任何工作负载的推荐 *和* 可选组件。 可使用 `--add` 指定工作负载。                        |
 | `--keepLayoutVersion`                           | **可选**：将更改应用到布局中，而不更新布局中包含的产品版本。   |
-| `--useLatestInstaller`         | **Optional**：如果存在，则最新版 Visual Studio 安装程序将包含在布局中，即使它属于较新版本的产品。 如果要利用最新安装程序中提供的新功能或 bug 修补程序，这非常有用。 有关详细信息，请参阅[配置布局以始终使用最新安装程序](/visualstudio/install/create-a-network-installation-of-visual-studio#configure-the-layout-to-always-use-the-latest-installer)文档。 |
+| `--useLatestInstaller`         | **Optional**：如果存在，则最新版 Visual Studio 安装程序将包含在布局中，即使它属于较新版本的产品。 如果要利用最新安装程序中提供的新功能或 bug 修补程序，这非常有用。 有关详细信息，请参阅[配置布局以始终使用最新安装程序](create-a-network-installation-of-visual-studio.md#configure-the-layout-to-always-include-and-provide-the-latest-installer)文档。 |
 | `--verify`                                      | **可选**：验证布局内容。 将列出所有损坏或缺失的文件。            |
 | `--fix`                                         | **可选**：验证布局内容。  如果任何文件损坏或缺失，将重新进行下载。 必须连接 Internet，才能修复布局。           |
 | `--clean <one or more paths to catalogs>`       | **可选**：从已更新到新版本的布局中删除旧版组件。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
@@ -155,7 +155,7 @@ ms.locfileid: "133108843"
 | **高级布局参数** | **说明**                                  |
 |--------------------------------|--------------------------------------------------|
 | `--channelId <id>`             | **可选**：要安装的实例的通道 ID。 如果指定了 `--installPath`，则此参数对于 install 命令是必需参数，对于其他命令则可忽略。        |
-| `--channelUri <uri>`           | **可选**：通道清单的 URI。 此值可控制[更新的源位置](/visualstudio/install/update-visual-studio#configure-source-location-of-updates-1)，初始值[在布局的 response.json 文件中配置](/visualstudio/install/create-a-network-installation-of-visual-studio#configure-initial-client-installation-defaults-for-this-layout)。  如果不需要更新，`--channelUri` 可指向不存在的文件（例如 --channelUri C:\doesntExist.chman）。 此参数可用于 install 命令；其他命令则可忽略。  |
+| `--channelUri <uri>`           | **可选**：通道清单的 URI。 此值可控制[更新的源位置](update-visual-studio.md#configure-source-location-of-updates-1)，初始值[在布局的 response.json 文件中配置](create-a-network-installation-of-visual-studio.md#configure-initial-client-installation-defaults-for-this-layout)。  如果不需要更新，`--channelUri` 可指向不存在的文件（例如 --channelUri C:\doesntExist.chman）。 此参数可用于 install 命令；其他命令则可忽略。  |
 | `--installChannelUri <uri>`    | **可选**：要用于安装的通道清单的 URI。  指定的 URI（指定 时必须指定）用于检测更新。 此参数可用于 install 命令；其他命令则可忽略。  |
 | `--installCatalogUri <uri>`    | **可选**：要用于安装的目录清单的 URI。 如果指定此选项，通道管理器会先尝试通过此 URI 下载目录清单，然后再在安装通道清单中使用 URI。 此参数用于支持脱机安装，安装期间会使用已下载的产品目录创建布局缓存。 此参数可用于 install 命令；其他命令则可忽略。    |
 | `--productId <id>`             | **可选**：将要安装的实例的产品 ID。 在正常安装条件下，这是预填充的。 `productID` 类似于“Microsoft.VisualStudio.Product.Enterprise”。 |

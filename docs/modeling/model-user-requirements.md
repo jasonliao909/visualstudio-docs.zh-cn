@@ -13,16 +13,16 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 29970ff3c50a0e28e35751e1c9807f201f48f51f
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 23de6705c5ae0956e18ebfc60cf1939d2ec9a741
+ms.sourcegitcommit: fc874be3fe4637a23997b4ef2d99a2ee9a499581
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126663949"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135516512"
 ---
 # <a name="model-user-requirements"></a>建立用户需求模型
 
-通过绘制有关用户的活动和你的系统在帮助他们实现自己目标上所起到的作用的关系图，Visual Studio 可帮助你了解你的用户，并与他们展开讨论、沟通其要求。 需求模型是一组这样的关系图，每一张图都将重点放在用户需求的不同方面。 有关视频演示，请参阅： [业务域建模](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)。
+通过绘制有关用户的活动和你的系统在帮助他们实现自己目标上所起到的作用的关系图，Visual Studio 可帮助你了解你的用户，并与他们展开讨论、沟通其要求。 需求模型是一组这样的关系图，每一张图都将重点放在用户需求的不同方面。
 
 若要查看支持每种类型的模型的 Visual Studio 版本，请参阅 [Version support for architecture and modeling tools](../modeling/analyze-and-model-your-architecture.md#VersionSupport)。
 

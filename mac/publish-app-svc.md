@@ -5,20 +5,20 @@ ms.date: 04/02/2019
 helpviewer_keywords:
 - deployment, website
 ms.assetid: 8524a4c5-97a9-41ac-a2a0-034efb9bfc57
-author: sayedihashimi
-ms.author: sayedha
-manager: unniravindranathan
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.prod: visual-studio-mac
 ms.custom: video
 ms.topic: how-to
 ms.workload:
 - azure
-ms.openlocfilehash: 054c5e7871daca0d349064f261e949dec7f738a5
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 79d6c9de13fe42b4f530a9b2c40081ff9f945431
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126644309"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135805762"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>使用 Visual Studio for Mac 将 Web 应用发布到 Azure 应用服务
 
@@ -72,4 +72,4 @@ ms.locfileid: "126644309"
 
 ## <a name="related-video"></a>相关视频
 
-> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Publish-to-Azure/player]
+> [!Video https://docs.microsoft.com/shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Publish-to-Azure/player]

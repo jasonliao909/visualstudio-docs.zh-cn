@@ -2,7 +2,7 @@
 title: 单元测试入门
 description: 使用 Visual Studio 定义和运行单元测试，使代码保持正常运行并在客户之前找到错误和缺陷。
 ms.custom: SEO-VS-2020
-ms.date: 08/10/2021
+ms.date: 12/16/2021
 ms.topic: tutorial
 helpviewer_keywords:
 - unit testing, create unit test plans
@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: 2465deef6d8b4c93b9e72d38bf548a001373f9e3
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 88bf2b8abe3356070550133ce788d4b9a339127f
+ms.sourcegitcommit: d3578c384959f1b76dd06fb4b5d075fb052f8c69
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126737267"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "135375046"
 ---
 # <a name="get-started-with-unit-testing"></a>单元测试入门
 
@@ -31,12 +31,12 @@ ms.locfileid: "126737267"
 
 1. 在 Visual Studio 中，打开要测试的项目。
 
-   出于演示示例单元测试的目的，本文测试一个简单的“Hello World”C# 或名为“Hello World”的 C++ 控制台项目（使用 C# 时名为“HelloWorldCore”） 。 此类项目的示例代码如下所示：
+   为了演示示例单元测试，本文测试了一个名为 **HelloWorld** 的简单的 "Hello World" c # 或 c + + 控制台项目。 此类项目的示例代码如下所示：
 
    ### <a name="net"></a>[.NET](#tab/dotnet)
    ```csharp
-   namespace HelloWorldCore
-
+   namespace HelloWorld
+   {
       public class Program
       {
          public static void Main()
@@ -44,6 +44,7 @@ ms.locfileid: "126737267"
             Console.WriteLine("Hello World!");
          }
       }
+   }
    ```
 
    ### <a name="c"></a>[C++](#tab/cpp)
@@ -62,7 +63,7 @@ ms.locfileid: "126737267"
 1. 在新项目对话框中，找到要使用的单元测试项目。
 
    ::: moniker range=">=vs-2019"
-   在搜索框中键入“测试”，找到要使用的测试框架的单元测试项目模板（例如 MSTest (C#) 或本机单元测试项目 (C++)），并选择它。
+   在搜索框中键入 " **测试** "，以查找要使用的测试框架的单元测试项目模板，如 **MSTest** (c # ) 或 **本机单元测试** 项目 (c + +) ，然后选择它。
    ::: moniker-end
    ::: moniker range="vs-2017"
    展开“已安装”节点，选择你要用于测试项目的语言，然后选择“测试” 。
@@ -75,7 +76,14 @@ ms.locfileid: "126737267"
 
    下图显示了 .NET 中支持的 MSTest 单元测试。
 
-   ::: moniker range=">=vs-2019"
+   ::: moniker range=">=vs-2022"
+
+   ![Visual Studio 2022 中的单元测试项目模板](media/vs-2022/add-new-test-project.png)
+
+   单击“下一步”，选择测试项目的名称，然后单击“创建”。
+
+   ::: moniker-end
+   ::: moniker range="vs-2019"
 
    ![Visual Studio 2019 中的单元测试项目模板](media/vs-2019/add-new-test-project.png)
 
@@ -85,7 +93,7 @@ ms.locfileid: "126737267"
 
    ::: moniker range="vs-2017"
 
-   ![Visual Studio 2019 中的单元测试项目模板](media/mstest-test-project-template.png)
+   ![Visual Studio 2017 中的单元测试项目模板](media/mstest-test-project-template.png)
 
    选择测试项目的名称（例如 HelloWorldTests），然后单击“确定”。
 
@@ -93,13 +101,23 @@ ms.locfileid: "126737267"
 
    项目将添加到解决方案中。
 
+   ::: moniker range=">=vs-2022"
+   ![解决方案资源管理器中的单元测试项目](media/vs-2022/solution-explorer.png)
+   ::: moniker-end
+   ::: moniker range="<=vs-2019"
    ![解决方案资源管理器中的单元测试项目](media/vs-2019/solution-explorer.png)
+   ::: moniker-end
 
 1. 在单元测试项目中，右键单击“引用”或“依赖项”，然后选择“添加引用”或“添加项目引用”，添加对要测试的项目的引用   。
 
 1. 选择包含待测试代码的项目，单击“确定”。
 
+   ::: moniker range=">=vs-2022"
+   ![在 Visual Studio 中添加项目引用](media/vs-2022/reference-manager.png)
+   ::: moniker-end
+   ::: moniker range="<=vs-2019"
    ![在 Visual Studio 中添加项目引用](media/vs-2019/reference-manager.png)
+   ::: moniker-end
 
 1. 向单元测试方法添加代码。
 
@@ -124,7 +142,7 @@ ms.locfileid: "126737267"
             using (var sw = new StringWriter())
             {
                Console.SetOut(sw);
-               HelloWorldCore.Program.Main();
+               HelloWorld.Program.Main();
 
                var result = sw.ToString().Trim();
                Assert.AreEqual(Expected, result);
@@ -157,7 +175,7 @@ ms.locfileid: "126737267"
             using (var sw = new StringWriter())
             {
                Console.SetOut(sw);
-               HelloWorldCore.Program.Main();
+               HelloWorld.Program.Main();
 
                var result = sw.ToString().Trim();
                Assert.AreEqual(Expected, result);
@@ -185,7 +203,7 @@ ms.locfileid: "126737267"
                 using (var sw = new StringWriter())
                 {
                     Console.SetOut(sw);
-                    HelloWorldCore.Program.Main();
+                    HelloWorld.Program.Main();
     
                     var result = sw.ToString().Trim();
                     Assert.Equal(Expected, result);
@@ -248,11 +266,21 @@ ms.locfileid: "126737267"
 
 1. 单击“全部运行”（或按 Ctrl  +  R，V），运行单元测试。
 
+   ::: moniker range=">=vs-2022"
+   ![在测试资源管理器中运行单元测试](media/vs-2022/test-explorer-run-all.png)
+   ::: moniker-end
+   ::: moniker range="<=vs-2019"
    ![在测试资源管理器中运行单元测试](media/vs-2019/test-explorer-run-all.png)
+   ::: moniker-end
 
    测试完成后，绿色复选标记表示测试通过。 红色“x”图标表示测试失败。
 
+   ::: moniker range=">=vs-2022"
+   ![在测试资源管理器中查看单元测试结果](media/vs-2022/unit-test-passed.png)
+   ::: moniker-end
+   ::: moniker range="<=vs-2019"
    ![在测试资源管理器中查看单元测试结果](media/vs-2019/unit-test-passed.png)
+   ::: moniker-end
 
 > [!TIP]
 > 可以使用[测试资源管理器](../test/run-unit-tests-with-test-explorer.md)从内置测试框架 (MSTest) 或第三方测试框架运行单元测试。 可以将测试分组为不同类别、筛选测试列表，以及创建、保存和运行测试播放列表。 你还可以调试测试并分析测试性能和代码覆盖率。
@@ -272,19 +300,35 @@ ms.locfileid: "126737267"
 
    ::: moniker-end
 
-   ::: moniker range=">=vs-2019"
+   ::: moniker range="vs-2019"
 
    ![在 Visual Studio 2019 中启用 Live Unit Testing](media/vs-2019/start-live-unit-testing.png)
 
    ::: moniker-end
 
+   ::: moniker range=">=vs-2022"
+
+   ![开始 Visual Studio 2022 中的实时单元测试](media/vs-2022/start-live-unit-testing.png)
+
+   ::: moniker-end
+
 1. 编写和编辑代码时，请在代码编辑器窗口中查看测试的结果。
 
+   ::: moniker range="<=vs-2019"
    ![查看测试的结果](media/vs-2019/live-unit-testing-results.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2022"
+   ![查看测试的结果](media/vs-2022/live-unit-testing-results.png)
+   ::: moniker-end
 
 1. 单击测试结果指示器查看详细信息，例如涵盖该方法的测试的名称。
 
+   ::: moniker range="<=vs-2019"
    ![选择测试结果指示符](media/vs-2019/live-unit-testing-details.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2022"
+   ![选择测试结果指示符](media/vs-2022/live-unit-testing-details.png)
+   ::: moniker-end
 
 有关 Live Unit Testing 的详细信息，请参阅 [Live Unit Testing](../test/live-unit-testing-intro.md)。
 
@@ -308,23 +352,28 @@ ms.locfileid: "126737267"
 
    在本例中，选择 [NUnit](https://nunit.org/)
 
-   ::: moniker range=">=vs-2019"
+   ::: moniker range=">=vs-2022"
+   ![Visual Studio 2022 中的 NUnit 测试项目模板](media/vs-2022/nunit-test-project-template.png)
+   ::: moniker-end
 
+   ::: moniker range="vs-2019"
    ![Visual Studio 2019 中的 NUnit 测试项目模板](media/vs-2019/nunit-test-project-template.png)
 
    单击“下一步”，为项目命名，然后单击“创建”。
-
    ::: moniker-end
 
    ::: moniker range="vs-2017"
-
    为项目命名，然后单击“确定”进行创建。
-
    ::: moniker-end
 
    项目模板包括对 NUnit 和 NUnit3TestAdapter 的 NuGet 引用。
 
+   ::: moniker range=">=vs-2022"
+   ![解决方案资源管理器中的 NUnit NuGet 依赖项](media/vs-2022/nunit-nuget-dependencies.png)
+   ::: moniker-end
+   ::: moniker range="<=vs-2019"
    ![解决方案资源管理器中的 NUnit NuGet 依赖项](media/vs-2019/nunit-nuget-dependencies.png)
+   ::: moniker-end
 
 4. 将测试项目中的引用添加到包含待测试代码的项目中。
 
@@ -332,7 +381,12 @@ ms.locfileid: "126737267"
 
 5. 将代码添加到测试方法。
 
+   ::: moniker range=">=vs-2022"
+   ![将代码添加到单元测试代码文件](media/vs-2022/unit-test-method.png)
+   ::: moniker-end
+   ::: moniker range="<=vs-2019"
    ![将代码添加到单元测试代码文件](media/vs-2019/unit-test-method.png)
+   ::: moniker-end
 
 6. 从测试资源管理器运行测试，或右键单击测试代码并选择“运行测试”（或 Ctrl   +  R，T）。
 

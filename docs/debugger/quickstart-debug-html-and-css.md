@@ -20,12 +20,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 32e12e8646b25adff81c217626de6cacee724600
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 6cccfa30b1f9bd076644cb6ef6ee17af42b7cfc6
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126640952"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135805840"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>在 Visual Studio 中调试 UWP 应用中的 HTML 和 CSS
 
@@ -207,7 +207,7 @@ DOM 资源管理器展示所呈现的页面的视图，还可使用 DOM 资源�
 
     - 255px（偏移量）和 255px（边距）或类似值，取决于设备分辨率。
 
-      下图显示了使用模拟器（具有 100px 的偏移量和边距）时“布局”选项卡的外观。
+      下图显示了在使用具有100px 偏移量和边距的模拟器时 " **布局** " 选项卡的外观。
 
       ![DOM 资源管理器的“布局”选项卡](../debugger/media/js_dom_explorer_layout.png "JS_DOM_Explorer_Layout")
 

@@ -2,16 +2,17 @@
 title: 具有 Docker Compose 的多容器应用
 description: 了解如何在 Visual Studio for Mac 中管理多个容器并在它们之间通信
 ms.custom: SEO-VS-2020
-author: heiligerdankgesang
-ms.author: dominicn
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.date: 07/03/2020
-ms.topic: tutorial
-ms.openlocfilehash: f2c5154e2f35c57b46817c36ea669c6a9d0f5797
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.topic: how-to
+ms.openlocfilehash: aa8281ee0798421ead7778fe4d7d2497279e595b
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736751"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135806113"
 ---
 # <a name="create-a-multi-container-app-with-docker-compose"></a>使用 Docker Compose 创建多容器应用
 

@@ -4,18 +4,18 @@ description: Visual Studio 为 R 提供完整的调试体验，包括断点、�
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: ghogen
+ms.author: ghogen
 manager: jmartens
 ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: 35762badb0c3c3bd86e84d2414d99a70d53b896e
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 2f86e91e56a2ec25d8fc655d13dc1028d2e3055b
+ms.sourcegitcommit: dcecc0ed37b5e976b5dc83c5128ba5ecc8bc04b1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126640505"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "135750800"
 ---
 # <a name="debug-r-in-visual-studio"></a>在 Visual Studio 中调试 R
 

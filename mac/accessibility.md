@@ -1,17 +1,18 @@
 ---
 title: 可访问性
 description: 介绍 Visual Studio for Mac 中的辅助功能及其启用方法。
-author: heiligerdankgesang
-ms.author: dominicn
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.date: 09/23/2019
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
 ms.topic: overview
-ms.openlocfilehash: 1da1fc5145e5fd4a2f271b30ac42204c2aa611e5
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: d007a1b8f82a6908d1ad70a686ce063e5d8d444c
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126652469"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135806685"
 ---
 # <a name="accessibility"></a>可访问性
 

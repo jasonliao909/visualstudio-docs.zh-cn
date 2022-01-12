@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a11c41b76bff61ed5af0916f0d43aa5739da78a
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: a5e4186af249d44f908d3af10c84e5eedabf5eb8
+ms.sourcegitcommit: fc874be3fe4637a23997b4ef2d99a2ee9a499581
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126665501"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135517404"
 ---
 # <a name="validate-your-system-during-development"></a>在开发过程中验证系统
 
@@ -36,10 +36,7 @@ Visual Studio 可帮助使你的软件与用户要求和系统的体系结构保
 
 ## <a name="external-resources"></a>外部资源
 
-|**类别**|**链接**|
-|-|-|
-|**视频**|![视频链接](../data-tools/media/playvideo.gif) [第 9 频道：Doug Seven：了解代码和使用 Visual Studio 2010 进行系统设计](https://channel9.msdn.com/shows/VS2010Launch/Doug-Seven-Code-Understanding-and-Systems-Design-with-Visual-Studio-2010)<br /><br /> ![视频链接](../data-tools/media/playvideo.gif) [第 9 频道：构建应用程序](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-5-architecting-an-application)|
-|**论坛**|- [Visual Studio 可视化和建模工具](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Visual Studio 扩展性](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)|
+**论坛**  - [Visual Studio 可视化 & 建模工具](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Visual Studio 扩展性](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)
 
 ## <a name="see-also"></a>另请参阅
 

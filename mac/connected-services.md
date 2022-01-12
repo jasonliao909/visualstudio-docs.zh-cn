@@ -2,16 +2,17 @@
 title: 连接的服务
 description: 了解如何从 Visual Studio for Mac 中将 Azure 数据存储、身份验证和推送通知添加到跨平台应用程序。
 ms.assetid: 41CB62FF-0F39-4CE8-8917-6A77F058719F
-author: sayedihashimi
-ms.author: sayedha
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.date: 11/06/2018
 ms.topic: how-to
-ms.openlocfilehash: f16702a31bd77f30c8fc909755ae85b0824743e7
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: a7fe22162901f60aff761c0678c96072296cbf98
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126735821"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135806269"
 ---
 # <a name="connected-services-walkthrough"></a>“连接的服务”演练
 

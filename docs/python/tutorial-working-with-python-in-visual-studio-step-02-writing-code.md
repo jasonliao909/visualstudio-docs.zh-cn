@@ -2,7 +2,8 @@
 title: Visual Studio 中的 Python 教程步骤 2，编写和运行代码
 titleSuffix: ''
 description: 在 Visual Studio 中使用 Python 功能的核心教程的第 2 步，包括编辑代码和运行项目。
-ms.date: 01/28/2019
+ms.custom: devdivchpfy22
+ms.date: 12/20/2021
 ms.topic: tutorial
 author: rjmolyneaux
 ms.author: rmolyneaux
@@ -11,22 +12,22 @@ ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5ff322fd80fd6d1b616e125ba4551b53abe28da1
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 7b0ca19485b297ae3e1b9733fb67939286bfc6c8
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129968052"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135805827"
 ---
 # <a name="step-2-write-and-run-code"></a>步骤 2：编写并运行代码
 
 **上一步：[创建新的 Python 项目](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
 
-虽然可以在解决方案资源管理器中管理项目文件，但处理文件内容（如源代码）通常还是在编辑器窗口进行。 编辑器根据上下文识别正在编辑的文件类型，其中包括编程语言（基于文件扩展名），并使用 IntelliSense 提供适合该语言的功能，比如语法着色和自动完成。
+虽然可以在解决方案资源管理器中管理项目文件，但处理文件内容（如源代码）通常还是在编辑器窗口进行。 编辑器根据上下文识别正在编辑的文件类型，包括基于文件扩展名) 的编程语言 (，并提供适用于该语言的功能，例如使用 IntelliSense 进行语法着色和自动完成。
 
 1. 创建新的“Python 应用程序”项目后，名为 PythonApplication1.py 的默认空文件将在 Visual Studio 编辑器中打开。
 
-1. 在编辑器中，开始键入 `print("Hello, Visual Studio")`，注意 Visual Studio IntelliSense 如何在此过程中显示自动完成选项。 下拉列表中加外边框的选项是按 Tab 键时使用的默认完成选项。 涉及到较长的语句或标识符时，最适合使用“完成”。
+1. 在编辑器中，开始键入，并Visual Studio `print("Hello, Visual Studio")` IntelliSense 如何显示自动完成选项。 下拉列表中加外边框的选项是按 Tab 键时使用的默认完成选项。 涉及到较长的语句或标识符时，最适合使用“完成”。
 
     ![IntelliSense 自动完成弹出窗口](media/vs-getting-started-python-04-IntelliSense1b.png)
 
@@ -49,7 +50,7 @@ ms.locfileid: "129968052"
 
 1. 按 Ctrl+F5 或选择“调试” > “开始执行(不调试)”菜单项，运行到目前为止编写的代码。 如果代码中仍然存在错误，Visual Studio 会发出警告。
 
-1. 运行程序时，会出现一个显示结果的控制台窗口，就像从命令行使用 PythonApplication1.py 运行 Python 解释器一样。 按键关闭窗口，返回到 Visual Studio 编辑器。
+1. 运行程序时，将显示控制台窗口以显示结果，就像在命令行中运行 Python 解释 PythonApplication1.py 一样。  按任意键关闭窗口并返回到Visual Studio编辑器。
 
     ![首次运行程序时的输出](media/vs-getting-started-python-07-output.png)
 
@@ -67,7 +68,7 @@ ms.locfileid: "129968052"
 
     ![显示模块成员的 IntellSense](media/vs-getting-started-python-10-import3.png)
 
-1. 通过导入 `sin`、`cos` 和 `radians` 成员完成，注意自动完成可用于每个成员。 完成后，代码应如下所示：
+1. 最后，导入 `sin` 、 `cos` 和 `radians` 成员，同时了解每个成员可用的自动完成。 完成后，代码应如下所示：
 
     ```python
     import sys

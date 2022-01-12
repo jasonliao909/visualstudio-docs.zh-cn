@@ -8,12 +8,12 @@ ms.author: tglee
 author: TerryGLee
 ms.manager: jmartens
 monikerRange: <=vs-2019
-ms.openlocfilehash: a318f033d010d50fb379e3d1ca8cec34d6cb2fbc
-ms.sourcegitcommit: 00451b7258ab86e259d0fe787669330b61efa8e5
-ms.translationtype: HT
+ms.openlocfilehash: ae62b14b49ae5a5d210d32355dc91d5d05e1139c
+ms.sourcegitcommit: d38d1b083322019663fec7d1d85a4cda456aadca
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "132364951"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135533999"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>连接到团队资源管理器中的项目
 
@@ -124,13 +124,13 @@ ms.locfileid: "132364951"
    ![连接到团队资源管理器中的项目](media/team-explorer/connect-project.png "Visual Studio 中的团队资源管理器“连接到项目”页面。")
 
 > [!TIP]
-> 如果要打开存储库中的项目，请参阅[打开存储库中的项目](../get-started/tutorial-open-project-from-repo-visual-studio-2017.md)。 如果要创建新项目或将用户添加到项目，请参阅[创建项目 (Azure DevOps)](/azure/devops/organizations/projects/create-project) 和[将用户添加到项目或团队 (Azure DevOps)](/azure/devops/organizations/security/add-users-team-project)。
+> 如果要打开存储库中的项目，请参阅[打开存储库中的项目](/visualstudio/get-started/tutorial-open-project-from-repo?view=vs-2017&preserve-view=true)。 如果要创建新项目或将用户添加到项目，请参阅[创建项目 (Azure DevOps)](/azure/devops/organizations/projects/create-project) 和[将用户添加到项目或团队 (Azure DevOps)](/azure/devops/organizations/security/add-users-team-project)。
 
 ::: moniker-end
 
 ## <a name="see-also"></a>请参阅
 
-- [并行比较 Git 和团队资源管理器](git-team-explorer-feature-comparison.md)
+- [并行比较 Git 和团队资源管理器](../version-control/git-team-explorer-feature-comparison.md)
 - [Visual Studio 版本控制文档](../version-control/index.yml)
 - [团队资源管理器参考](reference/team-explorer-reference.md)
 - [连接到项目 (Azure DevOps)](/azure/devops/organizations/projects/connect-to-projects)

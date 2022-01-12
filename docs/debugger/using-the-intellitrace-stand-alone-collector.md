@@ -15,18 +15,16 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f91f9692ab0cd6c9b8cc4cbaf9cdc44cd4d12ad5
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 52e47d27419c278256c873bf67f45db9fbe5e5a7
+ms.sourcegitcommit: fc874be3fe4637a23997b4ef2d99a2ee9a499581
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126644463"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135516551"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>使用 IntelliTrace 独立收集器（C#、Visual Basic）
 
 **IntelliTrace 独立收集器** 可让你收集生产服务器或其他环境中应用的 IntelliTrace 诊断数据，而无需在目标计算机上安装 Visual Studio 或更改目标系统环境。 IntelliTrace 独立收集器可用于 Web、SharePoint、WPF 和 Windows 窗体应用中。 数据收集完毕后，只需删除收集器以进行卸载。
-
- 在操作中观察 IntelliTrace：[收集并分析生成的 IntelliTrace 数据以便进行调试（第 9 频道视频）](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Collecting-and-analyzing-data-in-production)
 
 > [!NOTE]
 > 通过在 **跟踪** 模式下使用 **Microsoft 监视代理** ，你还可以收集远程计算机上运行的 Web 及 SharePoint 应用的相同 IntelliTrace 数据。
@@ -403,5 +401,3 @@ ms.locfileid: "126644463"
 ### <a name="forums"></a>论坛
  [Visual Studio 调试器](https://social.msdn.microsoft.com/Forums/en-US/home)
 
-### <a name="videos"></a>视频
- [第 9 频道视频：收集和分析 IntelliTrace 数据](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Collecting-and-analyzing-data-in-production)

@@ -10,12 +10,12 @@ no-loc:
 - Blazor
 - Blazor WebAssembly
 ms.topic: how-to
-ms.openlocfilehash: a2f45069967df412f9245f8044c53ef425a00fdf
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: d66824c80810b9bf8441bf6b6746623e6a940b7b
+ms.sourcegitcommit: fc874be3fe4637a23997b4ef2d99a2ee9a499581
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126644533"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135517435"
 ---
 # <a name="getting-started-with-aspnet-core"></a>ASP.NET Core 入门
 
@@ -248,4 +248,4 @@ ASP.NET Core 应用使用模型视图控制器 (MVC) 设计模式，来为应用
 
 ## <a name="related-video"></a>相关视频
 
-> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Build-Your-First-App/player]
+> [!Video https://docs.microsoft.com/shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Build-Your-First-App/player]

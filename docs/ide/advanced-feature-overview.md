@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e8284fdb084ea681afd1adc10e718c5096ce323
-ms.sourcegitcommit: aff49629012f4d5fa07c75ea0ca5bf53d28aa173
-ms.translationtype: HT
+ms.openlocfilehash: d0244789c56bedf24f3efaa20df5d2c41be9ae9d
+ms.sourcegitcommit: d38d1b083322019663fec7d1d85a4cda456aadca
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "131662693"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135534110"
 ---
 # <a name="features-of-visual-studio"></a>Visual Studio 的功能
 
@@ -170,7 +170,7 @@ Visual Studio 具有可用于通过 Microsoft Store、SharePoint 站点或者 In
 
 ::: moniker range="vs-2019"
 
-使用 Visual Studio 2019 打开 GitHub 存储库中的项目的方式取决于你拥有的版本。 具体来说，如果你已安装 [16.8 版本](/visualstudio/releases/2019/release-notes/)或更高版本，则 Visual Studio 中提供了一个更完全集成的新 [Git 体验](../ide/git-with-visual-studio.md)供你使用。 有关详细信息，请参阅 [Visual Studio 版本控制文档](../version-control/index.yml)页。
+使用 Visual Studio 2019 打开 GitHub 存储库中的项目的方式取决于你拥有的版本。 具体来说，如果你已安装 [16.8 版本](/visualstudio/releases/2019/release-notes/)或更高版本，则 Visual Studio 中提供了一个更完全集成的新 [Git 体验](../version-control/git-with-visual-studio.md)供你使用。 有关详细信息，请参阅 [Visual Studio 版本控制文档](../version-control/index.yml)页。
 
 另外，有关如何使用 Visual Studio 连接到 Git 或 Azure DevOps 存储库的分步教程，请参阅[从存储库打开项目](../get-started/tutorial-open-project-from-repo.md?view=vs-2019&preserve-view=true)页。
 

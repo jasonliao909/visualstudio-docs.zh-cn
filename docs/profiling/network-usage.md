@@ -11,12 +11,12 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: acd3bd7d11235f772768ae78e680638544f6cd19
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: a832dd16dc7fa735b481563016dd29ac765b7031
+ms.sourcegitcommit: fc874be3fe4637a23997b4ef2d99a2ee9a499581
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129967660"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135516733"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>分析 UWP 应用中的网络使用情况
 Visual Studio“网络”诊断工具用于收集有关使用 [Windows.Web.Http API](/uwp/api/windows.web.http) 执行的网络操作的数据。 分析数据可以帮助你解决问题（如访问和身份验证问题、不正确的缓存用法和不良的显示和下载性能）。
@@ -77,6 +77,5 @@ Visual Studio“网络”诊断工具用于收集有关使用 [Windows.Web.Http 
 
 - [运行带/不带调试器的分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
 - [Visual Studio 博客：Visual Studio 网络检查器简介](https://devblogs.microsoft.com/visualstudio/)
-- [第 9 频道视频：VS 诊断工具 - 新的网络探查器](https://channel9.msdn.com/Series/ConnectOn-Demand/206)
 - [使用 Visual Studio 分析](../profiling/index.yml)
 - [首先了解分析工具](../profiling/profiling-feature-tour.md)

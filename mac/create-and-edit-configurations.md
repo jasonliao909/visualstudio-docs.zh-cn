@@ -7,12 +7,12 @@ ms.date: 09/18/2019
 ms.assetid: CC1B72D6-12FF-4CCC-A9D4-00F2DC14589F
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: eb3ceed624e3bbba67564bb8f7c359841c0e496d
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: edd1a9710deb7336a5b9eabcebacbd352a38bbe1
+ms.sourcegitcommit: fc874be3fe4637a23997b4ef2d99a2ee9a499581
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126735621"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "135517241"
 ---
 # <a name="creating-and-editing-build-configurations"></a>创建和编辑生成配置
 
@@ -69,7 +69,7 @@ ms.locfileid: "126735621"
 
 ## <a name="related-video"></a>相关视频
 
-> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Launch-Multiple-Projects/player]
+> [!Video https://docs.microsoft.com/shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Launch-Multiple-Projects/player]
 
 ## <a name="see-also"></a>请参阅
 

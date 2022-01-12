@@ -4,8 +4,6 @@ description: 获取可帮助你测试和检查 COM 程序的调试工具（如 O
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
-f1_keywords:
-- vs.debug.com
 dev_langs:
 - CSharp
 - VB
@@ -24,12 +22,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: d4f35cc78c94db0925d3682a06cc27d30770f68a
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: aa158dcec5db39f7b4a98b3ccf31be610579b68d
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641251"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135803006"
 ---
 # <a name="com-debugging-tools"></a>COM 调试工具
 

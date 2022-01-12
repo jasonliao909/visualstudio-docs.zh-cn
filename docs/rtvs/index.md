@@ -4,18 +4,18 @@ description: 针对 Visual Studio 的 R 工具 2017 (RTVS) 是一个免费的开
 ms.date: 11/13/2017
 ms.prod: visual-studio-dev15
 ms.topic: overview
-author: kraigb
-ms.author: kraigb
+author: ghogen
+ms.author: ghogen
 manager: jmartens
 ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: 33502f988ca8e0db61337d2272c467be85201f06
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 5d96e6cad10fbd5f5c9b0ddff8e5399af1dd005f
+ms.sourcegitcommit: dcecc0ed37b5e976b5dc83c5128ba5ecc8bc04b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122075978"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "135751080"
 ---
 # <a name="work-with-r-in-visual-studio"></a>在 Visual Studio 中使用 R
 

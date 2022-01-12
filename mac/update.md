@@ -1,17 +1,19 @@
 ---
 title: 更新 Visual Studio for Mac
 description: 更新 Visual Studio for Mac 和访问预览版指南。
-author: heiligerdankgesang
-ms.author: dominicn
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.date: 09/18/2019
 ms.technology: vs-ide-install
+ms.topic: how-to
 ms.assetid: DB8DC9FE-FF21-4061-8A96-3F9FC08A4F8F
-ms.openlocfilehash: ccfcf04816727800501dada64e73d6ce35876674
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: cd80e07b928f5b3fb3b0e10f84d60d86521d32c2
+ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126644492"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135806568"
 ---
 # <a name="update-visual-studio-for-mac"></a>更新 Visual Studio for Mac
 
@@ -52,7 +54,7 @@ Visual Studio for Mac 提供两种获取最新版本的通道：
 
 根据需要安装的组件，可能需要接受额外的许可证或输入计算机管理员用户名和密码。
 
-## <a name="troubleshooting"></a>疑难解答
+## <a name="troubleshooting"></a>故障排除
 
 如果更新程序出现问题，请尝试执行[更新程序故障排除](updater-troubleshooting.md)指南中的以下步骤。
 

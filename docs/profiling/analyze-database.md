@@ -6,17 +6,17 @@ ms.date: 5/5/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - database, profiling
-author: esteban-herrera
-ms.author: esherrer
-manager: AndSter
+author: mikejo5000
+ms.author: mikejo
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 758fad160bad89b5e8a4305bf4757302b05732e1
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: adbab5bf4710716b43a86f50faedb281ee181ab8
+ms.sourcegitcommit: dcecc0ed37b5e976b5dc83c5128ba5ecc8bc04b1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126642432"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "135751104"
 ---
 # <a name="analyze-database-performance-using-the-database-tool"></a>使用数据库工具分析数据库性能
 
