@@ -10,19 +10,19 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 07128c06a7602685e4944cd0fd947886eb73c8f9
-ms.sourcegitcommit: 8b44ba7864f67afa476708d5092729345e689f93
-ms.translationtype: HT
+ms.openlocfilehash: f6ad22c1cffb04c73765a14b56b4c3f1801b0732
+ms.sourcegitcommit: 56ffe075ea321809a5b0e6bdc12cf3323b3482ba
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "132861661"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135958890"
 ---
 # <a name="walkthrough-build-an-application"></a>演练：生成应用程序
 在本文中，你会更熟悉使用 Visual Studio 生成应用程序时可配置的多个选项。 将为示例应用程序创建自定义生成配置、隐藏特定警告消息以及增加生成输出信息。
 
 ## <a name="install-the-sample-application"></a>安装示例应用程序
 
-下载 [Introduction to building WPF applications](https://code.msdn.microsoft.com/Introduction-to-Building-b8d16419)（生成 WPF 应用程序简介）示例。 选择 C# 或 Visual Basic。 下载 .zip 文件后，将它解压缩并使用 Visual Studio 打开 ExpenseItIntro.sln 文件   。
+下载 [Introduction to building WPF applications](https://github.com/microsoft/wpf-samples/tree/main/Getting%20Started/Concepts)（生成 WPF 应用程序简介）示例。 选择 C# 或 Visual Basic。 下载 .zip 文件后，将它解压缩并使用 Visual Studio 打开 ExpenseItIntro.sln 文件   。
 
 ## <a name="create-a-custom-build-configuration"></a>创建自定义生成配置
 
