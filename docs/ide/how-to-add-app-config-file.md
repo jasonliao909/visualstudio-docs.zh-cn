@@ -2,7 +2,7 @@
 title: 如何将 app.config 文件添加到项目
 description: 了解如何将 app.config 文件添加到 C# 项目中，以自定义公共语言运行时定位和加载程序集文件的方式。
 ms.custom: SEO-VS-2020
-ms.date: 11/20/2020
+ms.date: 01/12/2022
 ms.topic: how-to
 dev_langs:
 - CSharp
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6c063aa1dbea8a9953bc3c9e44cf72de5514e0f8
-ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
-ms.translationtype: HT
+ms.openlocfilehash: 426750ded6c14dfc2015bfc5ab1e8b73d92eaa88
+ms.sourcegitcommit: 9b1c1cceab4c59f0b91e19ae46a51969f72fcc34
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "129431622"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "136801222"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>如何：向 C# 项目添加应用程序配置文件
 
@@ -32,15 +32,35 @@ ms.locfileid: "129431622"
 
 ## <a name="to-add-an-application-configuration-file-to-a-c-project"></a>若要向 C# 项目添加应用程序配置文件
 
-1. 在菜单栏上，依次选择“项目” > “添加新项”。
+::: moniker range="vs-2017"
 
-     “添加新项”  对话框随即出现。
+1. 在菜单栏上，选择 " **Project** " > **添加新项**"。
 
-1. 展开“已安装” > “Visual C# 项”，然后选择“应用程序配置文件”模板。
+     此时会显示“添加新项”对话框。
+
+1. 展开 " **已安装** > 的 **Visual c # 项**"，然后选择 " **应用程序配置文件** " 模板。
 
 1. 在“名称”文本框中输入名称，然后选择“添加”按钮。
 
      项目中将添加名为 app.config 的文件。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. 在 **解决方案资源管理器** 中，右键单击项目节点，然后选择 " **添加** > **新项**"。
+
+     此时会显示“添加新项”对话框。
+
+1. 展开 " **已安装** > 的 **Visual c # 项**"。
+
+1. 在中间窗格中，选择 " **应用程序配置文件** " 模板。
+
+1. 选择“添加”按钮。
+
+     名为 *App.config* 的文件将添加到你的项目中。
+
+::: moniker-end
 
 ## <a name="see-also"></a>另请参阅
 
