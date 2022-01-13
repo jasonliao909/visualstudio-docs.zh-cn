@@ -2,7 +2,7 @@
 title: “在文件中查找”命令
 description: 了解 Find 命令，以及该命令如何使用“查找和替换”窗口的“在文件中查找”选项卡上提供的某些选项来搜索文件。
 ms.custom: SEO-VS-2020
-ms.date: 01/11/2022
+ms.date: 01/12/2022
 ms.topic: reference
 f1_keywords:
 - edit.findinfiles
@@ -17,15 +17,18 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: <=vs-2019
-ms.openlocfilehash: 8d419df0ddb35ffa83669c5ca597f762e04be76f
-ms.sourcegitcommit: 56ffe075ea321809a5b0e6bdc12cf3323b3482ba
+ms.openlocfilehash: 51e4fecb63462e4bbdf45e2aa4a995a09ebb8aad
+ms.sourcegitcommit: 9b1c1cceab4c59f0b91e19ae46a51969f72fcc34
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135958841"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "136801339"
 ---
 # <a name="find-in-files-command"></a>“在文件中查找”命令
 若要搜索文件，请使用“查找和替换”窗口的“在文件中查找”选项卡上的可用选项子集。
+
+> [!IMPORTANT]
+> 2019 年 16 月 5 日版本 16.5 中不再支持Visual Studio。 如果将此命令与更高版本一起使用，可能会看到一条错误消息，指出命令 *"Edit.FindinFiles"不接受参数或开关。*
 
 ## <a name="syntax"></a>语法
 
