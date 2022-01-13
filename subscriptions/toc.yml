@@ -62,6 +62,8 @@
       href: /azure/devtest/offer/
     - name: Azure 开发/测试套餐资格
       href: vs-azure-eligibility.md
+    - name: 维护 Azure 额度访问权限
+      href: azure-access.md
     - name: Azure DevOps
       href: vs-azure-devops.md
 - name: 其他优点

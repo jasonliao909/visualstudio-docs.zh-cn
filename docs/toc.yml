@@ -653,31 +653,12 @@
               items:
                 - name: 教程 1：创建图片查看器 (C#)
                   items:
-                    - name: 概述
-                      displayName: Tutorial 1 Picture viewer
-                      href: ide/tutorial-1-create-a-picture-viewer.md
-                    - name: 步骤 1：创建 Windows 窗体应用项目
-                      href: ide/step-1-create-a-windows-forms-application-project.md
-                    - name: 步骤 2：运行你的应用
-                      href: ide/step-2-run-your-program.md
-                    - name: 步骤 3：设置窗体属性
-                      href: ide/step-3-set-your-form-properties.md
-                    - name: 步骤 4：使用 TableLayoutPanel 控件设置窗体布局
-                      href: ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md
-                    - name: 步骤 5：向窗体添加控件
-                      href: ide/step-5-add-controls-to-your-form.md
-                    - name: 步骤 6：命名按钮控件
-                      href: ide/step-6-name-your-button-controls.md
-                    - name: 步骤 7：向窗体添加对话框组件
-                      href: ide/step-7-add-dialog-components-to-your-form.md
-                    - name: 步骤 8：为“显示图片”按钮事件处理程序编写代码
-                      href: ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md
-                    - name: 步骤 9：检查代码、为代码添加注释和测试代码
-                      href: ide/step-9-review-comment-and-test-your-code.md
-                    - name: 步骤 10：为其他按钮和复选框编写代码
-                      href: ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
-                    - name: 步骤 11：运行应用并尝试其他功能
-                      href: ide/step-11-run-your-program-and-try-other-features.md
+                    - name: 1. 创建图片查看器应用
+                      href: ide/tutorial-windows-forms-picture-viewer-layout.md
+                    - name: 2. 在应用中添加控件
+                      href: ide/tutorial-windows-forms-picture-viewer-controls.md
+                    - name: 3. 编写代码、测试和运行应用
+                      href: ide/tutorial-windows-forms-picture-viewer-code.md
                 - name: 教程 2：创建计时数学测验 (C#)
                   items:
                     - name: 概述
@@ -854,8 +835,6 @@
           href: ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md
         - name: 更改生成输出目录
           href: ide/how-to-change-the-build-output-directory.md
-        - name: 生成到公共输出目录
-          href: ide/how-to-build-to-a-common-output-directory.md
         - name: 指定自定义生成事件
           href: ide/specifying-custom-build-events-in-visual-studio.md
         - name: 设置多个启动项目
