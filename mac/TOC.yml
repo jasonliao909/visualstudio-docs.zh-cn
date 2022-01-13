@@ -1,6 +1,6 @@
 - name: Visual Studio for Mac
   href: index.yml
-- name: 入门
+- name: 概述
   items:
     - name: IDE 教程
       href: ide-tour.md
@@ -20,19 +20,23 @@
       href: update.md
     - name: 卸载
       href: uninstall.md
-- name: 用户帐户
+    - name: 可用工作负载
+      href: workloads.md
+- name: 个性化设置 Visual Studio for Mac
   items:
-    - name: 概述
-      href: user-accounts.md
-    - name: 登录
-      href: signing-in.md
-    - name: 启用订阅
-      href: enable-subscription.md
-- name: 自定义 IDE
-  items:
-    - name: 自定义 IDE 的外观
-      href: customizing-the-ide.md
-- name: 项目和解决方案
+    - name: 用户帐户
+      items:
+        - name: 概述
+          href: user-accounts.md
+        - name: 登录
+          href: signing-in.md
+        - name: 启用订阅
+          href: enable-subscription.md
+    - name: 自定义 IDE
+      items:
+        - name: 自定义 IDE 的外观
+          href: customizing-the-ide.md
+- name: 开发
   items:
     - name: 概述
       href: projects-and-solutions.md
@@ -54,34 +58,6 @@
       href: managing-app-resources.md
     - name: 如何：打开多个解决方案或实例
       href: open-multiple-solutions.md
-- name: 源编辑器
-  items:
-    - name: 编辑器功能
-      href: source-editor.md
-    - name: 重构
-      href: refactoring.md
-    - name: IntelliSense
-      href: intellisense.md
-    - name: 显示导入项
-      href: show-imports.md
-    - name: 多个插入点编辑
-      href: multi-caret-editing.md
-    - name: 注释
-      href: comments.md
-    - name: 编辑器行为
-      href: editor-behavior.md
-    - name: 任务注释
-      href: task-comments.md
-    - name: 代码片段
-      href: snippets.md
-    - name: 块选择
-      href: block-selection.md
-    - name: 编辑器主题
-      href: editor-themes.md
-    - name: EditorConfig
-      href: editorconfig.md
-    - name: 默认键盘快捷键
-      href: keyboard-shortcuts.md
 - name: 调试
   items:
     - name: 概述
@@ -90,11 +66,11 @@
       href: data-visualizations.md
     - name: 通过源链接调试 NuGet 包
       href: source-link.md
-- name: 正在测试
+- name: 测试
   items:
     - name: 概述
       href: testing.md
-- name: 编译和生成
+- name: 生成
   items:
     - name: 概述
       href: compiling-and-building.md
@@ -124,18 +100,16 @@
       href: set-up-subversion-repository.md
     - name: 使用 Subversion
       href: working-with-subversion.md
-- name: Web 应用部署
+- name: 教程
   items:
-    - name: 概述
-      href: web-app-deployment.md
-    - name: 发布到 Azure 应用服务
-      href: publish-app-svc.md
-    - name: 发布到文件夹
-      href: publish-folder.md
-- name: 工作负载
-  items:
-    - name: 可用工作负载
-      href: workloads.md
+    - name: Web 应用部署
+      items:
+        - name: 概述
+          href: web-app-deployment.md
+        - name: 发布到 Azure 应用服务
+          href: publish-app-svc.md
+        - name: 发布到文件夹
+          href: publish-folder.md
     - name: ASP.NET Core
       items:
         - name: .NET Core 支持
@@ -152,6 +126,12 @@
           href: javascript.md
         - name: launchSettings.json
           href: launch-settings.md
+        - name: 视频教程
+          items:
+            - name: 开始在 Visual Studio for Mac 中使用 ASP.NET Core
+              href: tutorial-aspnet-core-vsmac-getting-started.md
+            - name: 扩展现有的 ASP.NET Core Web 应用程序
+              href: tutorial-aspnet-core-vsmac-extending.md
     - name: Azure
       items:
         - name: 概述
@@ -186,34 +166,44 @@
           href: accessibility-keyboard.md
         - name: 使用 VoiceOver
           href: accessibility-voiceover.md
-- name: 视频教程
+- name: 参考
   items:
-    - name: 开始在 Visual Studio for Mac 中使用 ASP.NET Core
-      href: tutorial-aspnet-core-vsmac-getting-started.md
-    - name: 扩展现有的 ASP.NET Core Web 应用程序
-      href: tutorial-aspnet-core-vsmac-extending.md
-- name: 面向 Windows 用户的 Visual Studio for Mac
-  href: vsmac-for-windows-users.md
-- name: 疑难解答
+    - name: 源编辑器
+      items:
+        - name: 编辑器功能
+          href: source-editor.md
+        - name: 重构
+          href: refactoring.md
+        - name: IntelliSense
+          href: intellisense.md
+        - name: 显示导入项
+          href: show-imports.md
+        - name: 多个插入点编辑
+          href: multi-caret-editing.md
+        - name: 注释
+          href: comments.md
+        - name: 编辑器行为
+          href: editor-behavior.md
+        - name: 任务注释
+          href: task-comments.md
+        - name: 代码片段
+          href: snippets.md
+        - name: 块选择
+          href: block-selection.md
+        - name: 编辑器主题
+          href: editor-themes.md
+        - name: EditorConfig
+          href: editorconfig.md
+        - name: 默认键盘快捷键
+          href: keyboard-shortcuts.md
+    - name: 面向 Windows 用户的 Visual Studio for Mac
+      href: vsmac-for-windows-users.md
+- name: 资源
   items:
-    - name: 日志和异常
-      href: troubleshooting.md
-    - name: Visual Studio 客户体验改善计划
-      href: visual-studio-experience-improvement-program.md
-    - name: 报告问题
-      href: report-a-problem.md
-    - name: 疑难解答：如何发布现有扩展的新版本？
-      href: migrate-extensions.md
-    - name: 疑难解答：Visual Studio for Mac 是否支持 Team Foundation 版本控制？
-      href: tf-version-control.md
-    - name: 疑难解答：我为什么看不到部分模板？
-      href: troubleshooting-no-templates.md
-    - name: 疑难解答：更新程序在检索信息时发生错误
-      href: updater-troubleshooting.md
-- name: 发行说明
-  href: /visualstudio/releasenotes/vs2019-mac-relnotes
-- name: 预览发行说明
-  href: /visualstudio/releasenotes/vs2019-mac-preview-relnotes
+    - name: 发行说明
+      href: /visualstudio/releasenotes/vs2019-mac-relnotes
+    - name: 预览发行说明
+      href: /visualstudio/releasenotes/vs2019-mac-preview-relnotes
 - name: 示例
   items:
     - name: 特色示例
@@ -230,3 +220,19 @@
       href: /xamarin/android/samples/
     - name: 所有 Xamarin.Mac 示例
       href: /xamarin/mac/samples/
+- name: 发送反馈
+  items:
+    - name: 日志和异常
+      href: troubleshooting.md
+    - name: Visual Studio 客户体验改善计划
+      href: visual-studio-experience-improvement-program.md
+    - name: 报告问题
+      href: report-a-problem.md
+    - name: 疑难解答：如何发布现有扩展的新版本？
+      href: migrate-extensions.md
+    - name: 疑难解答：Visual Studio for Mac 是否支持 Team Foundation 版本控制？
+      href: tf-version-control.md
+    - name: 疑难解答：我为什么看不到部分模板？
+      href: troubleshooting-no-templates.md
+    - name: 疑难解答：更新程序在检索信息时发生错误
+      href: updater-troubleshooting.md

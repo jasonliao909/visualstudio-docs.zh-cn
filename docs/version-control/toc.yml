@@ -40,7 +40,7 @@
       href: git-team-explorer-feature-comparison.md
 - name: 新增功能
   items:
-    - name: Visual Studio 2022 中的多存储库支持
-      href: 'https://devblogs.microsoft.com/visualstudio/multi-repo-support-in-visual-studio/'
+    - name: Visual Studio 2022 预览版发行说明
+      href: /visualstudio/releases/2022/release-notes-preview
     - name: Visual Studio 2022 发行说明
       href: /visualstudio/releases/2022/release-notes
