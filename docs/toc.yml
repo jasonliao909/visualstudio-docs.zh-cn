@@ -682,27 +682,14 @@
                       href: ide/step-8-customize-the-quiz.md
                 - name: 教程 3：创建配对游戏 (C#)
                   items:
-                    - name: 概述
-                      displayName: Tutorial 3 Matching game
-                      href: ide/tutorial-3-create-a-matching-game.md
-                    - name: 步骤 1：创建项目并向窗体添加表
-                      href: ide/step-1-create-a-project-and-add-a-table-to-your-form.md
-                    - name: 步骤 2：添加 Random 对象和图标列表
-                      href: ide/step-2-add-a-random-object-and-a-list-of-icons.md
-                    - name: 步骤 3：向每个标签分配一个随机图标
-                      href: ide/step-3-assign-a-random-icon-to-each-label.md
-                    - name: 步骤 4：向每个标签添加一个 Click 事件处理程序
-                      href: ide/step-4-add-a-click-event-handler-to-each-label.md
-                    - name: 步骤 5：添加标签引用
-                      href: ide/step-5-add-label-references.md
-                    - name: 步骤 6：添加计时器
-                      href: ide/step-6-add-a-timer.md
-                    - name: 步骤 7：保持对可见
-                      href: ide/step-7-keep-pairs-visible.md
-                    - name: 步骤 8：添加验证玩家是否获胜的方法
-                      href: ide/step-8-add-a-method-to-verify-whether-the-player-won.md
-                    - name: 步骤 9：尝试其他功能
-                      href: ide/step-9-try-other-features.md
+                    - name: 1. 创建匹配游戏
+                      href: ide/tutorial-windows-forms-create-match-game.md
+                    - name: 2. 向匹配游戏添加图标
+                      href: ide/tutorial-windows-forms-match-game-icons.md
+                    - name: 3. 添加标签和计时器
+                      href: ide/tutorial-windows-forms-match-game-labels.md
+                    - name: 4. 玩匹配游戏
+                      href: ide/tutorial-windows-forms-match-game-play.md
         - name: F#
           items:
             - name: F# 开发
