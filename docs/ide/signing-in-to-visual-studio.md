@@ -11,76 +11,70 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c60186a4300e50781212384118dd29861ea0bec
-ms.sourcegitcommit: 0f2af2f1a8cf0a481fd8f673accf3aebf2e262c8
+ms.openlocfilehash: 412d226e2e4657b004d1c1d795e7f62ed4cb5e41
+ms.sourcegitcommit: 658edd3b0dc23fb20728dafc12734b22f8ed1a89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "134714462"
+ms.lasthandoff: 01/18/2022
+ms.locfileid: "136890681"
 ---
 # <a name="sign-in-to-visual-studio-on-windows"></a>在 Windows 上登录到 Visual Studio 
 
-虽然无需登录，但有 [很多优点](#benefits-to-signing-in) 。 本文还将介绍 [如何登录](#how-to-sign-in)、如何 [更新配置文件](#update-your-profile)，以及如何 [解决登录错误](#troubleshooting)。
-
-> [!NOTE]
-> 本主题适用于 Visual Studio  Windows 版。 对于 Visual Studio for Mac，请参阅[登录到 Visual Studio for Mac](/visualstudio/mac/signing-in)。
+本文内容：
++ [帐户登录的好处](#benefits)
++ 如何使用帐户[登录](#sign-in)
++ 如何 [更新配置文件](#update-your-profile)
 
 ::: moniker range="vs-2017"
 
 > [!WARNING]
-> 若要使用为条件访问配置的资源，请升级到 Visual Studio 2019 Update 16.6 或更高版本。 有关详细信息，请参阅[如何将 Visual Studio 与需要多重身份验证的帐户一起使用](work-with-multi-factor-authentication.md)。
-> 使用 Visual Studio 2017 访问为条件访问配置的资源时，可能会触发降级身份验证体验，进而在同一 Visual Studio 会话中多次提示重新进行身份验证。 
-> 
+> 若要使用配置为条件访问或多重身份验证的资源，需要 Visual Studio 2019 更新16.6 或更高版本。 早期版本可能会触发降级的身份验证体验，并在同一 Visual Studio 会话中多次重新进行身份验证。 
+
 ::: moniker-end
 
-## <a name="benefits-to-signing-in"></a>登录的好处
+<a name="benefits"></a>
+## <a name="benefits-why-sign-in"></a>优势：为何登录？ 
 
-以下是登录后可体验的内容及可执行的操作的完整列表：
+虽然无需登录，但登录有很多好处。   
 
 |好处|描述|
 |---|---|
-|延长 Visual Studio 试用期|可将 Visual Studio Professional 或 Visual Studio Enterprise 的使用期延长 90 天，而不是仅限于 30 天的试用期。 <br/>请参阅[扩展试用版或更新许可证](../ide/how-to-unlock-visual-studio.md)。|
-|解锁 Visual Studio（Visual Studio 订阅或 Azure DevOps 组织）|如果使用与 Microsoft Visual Studio 订阅或 Azure DevOps 组织相关联的帐户，解锁 Visual Studio。<br/>请参阅[扩展试用版或更新许可证](../ide/how-to-unlock-visual-studio.md)。|
-|同步 Visual Studio 设置|登录到任何设备上的 Visual Studio 时，将立即应用自定义设置（例如键绑定、窗口布局和颜色主题）。 <br/>请参阅 [Visual Studio 中的同步设置](../ide/synchronized-settings-in-visual-studio.md)。|
-|自动连接到服务|在 IDE 中连接到服务（如 Azure 和 Azure DevOps Services），而不会再次提示对同一帐户输入凭据。|
-|继续使用 Visual Studio Community 版本|如果安装 Community 版时提示你提供许可证，请登录 IDE 以继续免费使用 Visual Studio Community。 |
-|获取“Visual Studio Dev Essentials”|该计划包括免费软件产品/服务、培训、支持等。 <br/>请参阅 [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/)。|
+|[延长 Visual Studio 试用期](../ide/how-to-unlock-visual-studio.md)|可将 Visual Studio Professional 或 Visual Studio Enterprise 的使用期延长 90 天，而不是仅限于 30 天的试用期。|
+|[解锁 Visual Studio](../ide/how-to-unlock-visual-studio.md)|如果使用与[Visual Studio 订阅](/visualstudio/subscriptions/using-the-subscriber-portal)或 Azure DevOps 组织关联的帐户，则解除 Visual Studio 锁定。|
+|[同步](../ide/synchronized-settings-in-visual-studio.md) 设置|登录到任何设备上的 Visual Studio 时，将立即应用自定义设置（例如键绑定、窗口布局和颜色主题）。|
+|自动连接到 Azure 服务|在 IDE 中连接到服务（如 Azure 和 Azure DevOps Services），而不会再次提示对同一帐户输入凭据。|
+|继续使用我们的 Community 版本|如果安装提示你提供许可证，请登录到 IDE 以继续 **免费** 使用 Visual Studio Community。 |
+|[获取“Visual Studio Dev Essentials”](https://visualstudio.microsoft.com/dev-essentials/)|此计划包括免费软件、培训、支持等。|
 
-## <a name="how-to-sign-in"></a>登录方法 
+<a name="sign-in"></a>
+## <a name="sign-in-to-account"></a>登录帐户
 
 ::: moniker range="<=vs-2019"
 
-1. 启动 Visual Studio。
-
-   首次打开 Visual Studio 时，系统将要求登录并提供一些基本注册信息。
+1. 启动 Visual Studio。 首次打开 Visual Studio 时，系统将要求登录并提供一些基本注册信息。
 
    ![登录提示](../ide/media/vs2019_signinpopup.png)
+   
+   > [!NOTE]
+   > 如果你选择在首次打开 Visual Studio 时不登录，可以在以后轻松登录。 查找 Visual Studio 环境的右上角中的“登录”链接。
 
 ::: moniker-end
 
 ::: moniker range="vs-2022"
 
-1. 启动 Visual Studio。
-
-   首次打开 Visual Studio 时，系统将要求登录并提供一些基本注册信息。
+1. 启动 Visual Studio。  首次打开 Visual Studio 时，系统将要求登录并提供一些基本注册信息。
 
    ![登录提示](../ide/media/vs-2022/visual-studio-sign-in-pop-up.png)
 
 ::: moniker-end
 
-2. 选择最能够满足你需求的 Microsoft 帐户或工作/学校帐户。 
-   
-   如果你没有此类帐户，可以单击“登录”按钮下的链接，免费创建一个 Microsoft 帐户。 如果遇到问题，请参阅[如何注册 Microsoft 帐户？](https://support.microsoft.com/help/4026324/microsoft-account-how-to-create)
+2. 选择 Microsoft 帐户或工作或学校帐户。  如果没有，请选择 "**登录**" 按钮附近的链接，[免费创建一个 Microsoft 帐户](https://support.microsoft.com/help/4026324/microsoft-account-how-to-create)。 
 
-3. 选择要在 Visual Studio 中使用的 UI 设置和颜色主题。 
-   
-   Visual Studio 会记住这些设置并将其同步到登录到的所有 Visual Studio 环境。 有关已同步的设置列表，请参阅[已同步的设置](../ide/synchronized-settings-in-visual-studio.md)。 以后可以打开 Visual Studio 中的“工具” > “选项”菜单来更改设置 。
+3. 选择首选的颜色主题和其他 UI 设置。  Visual Studio 会[记住这些设置并](../ide/synchronized-settings-in-visual-studio.md)将其同步到登录到的所有 Visual Studio 环境中。 以后可以打开 Visual Studio 中的“工具” > “选项”菜单来更改设置 。
 
-   提供设置后，Visual Studio 将启动，然后你就会进行登录并准备好开始操作。 
+   你可以看到你已成功登录到 Visual Studio 环境的右上角。   除非注销，否则在启动 Visual Studio 时会自动登录，并自动应用于对同步设置所做的所有更改。
 
 ::: moniker range="<=vs-2019"
-
-4. 若要验证你是否已登录，请在 Visual Studio 环境的右上角查找名称。
 
    ![VS2019 中当前已登录的用户](../ide/media/vs2019_username.png)
 
@@ -88,48 +82,24 @@ ms.locfileid: "134714462"
 
 ::: moniker range="vs-2022"
 
-4. 若要验证你是否已登录，请在 Visual Studio 环境的右上角查找名称。
-
    ![VS2019 中当前已登录的用户](../ide/media/vs-2022/visual-studio-sign-in.png)
 
 ::: moniker-end
 
-除非注销，否则在启动 Visual Studio 时会自动登录，并自动应用于对同步设置所做的所有更改。
 
-若要注销，请单击 Visual Studio 环境右上角显示个人资料名称的图标，然后依次选择“帐户设置”命令和“注销”链接 。 若要再次登录，请选择 Visual Studio 环境的右上角中的 **“登录”** 命令。
+## <a name="sign-out-of-account"></a>注销帐户
 
-::: moniker range="<=vs-2019"
-
-> [!NOTE]
-> 如果你选择在首次打开 Visual Studio 时不登录，可以在以后轻松登录。 查找 Visual Studio 环境的右上角中的“登录”链接。
->
-> ![不是已登录用户](../ide/media/vs2019_usernotsignedin.png)
->
-
-::: moniker-end
-
-::: moniker range="vs-2022"
-
-> [!NOTE]
-> 如果你选择在首次打开 Visual Studio 时不登录，可以在以后轻松登录。 查找 Visual Studio 环境的右上角中的“登录”链接。
->
-> ![不是已登录用户](../ide/media/vs-2022/visual-studio-user-not-signed-in.png)
->
-
-::: moniker-end
+1. 在 Visual Studio 环境的右上角单击带有配置文件名称的图标
+2. 选择 " **帐户设置** " 命令。
+3. 选择 " **注销** " 链接。 
 
 ## <a name="update-your-profile"></a>更新配置文件
 
 1. 转到“文件” > “帐户设置”，然后选择“管理 Visual Studio 配置文件”链接  。
-
 1. 在浏览器窗口，选择“编辑配置文件”并更改所需的设置。
-
 1. 完成后，选择“保存更改”。
 
-## <a name="troubleshooting"></a>疑难解答
+## <a name="see-also"></a>请参阅
 
-请参阅[订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)页面以获取帮助。
-
-## <a name="see-also"></a>另请参阅
+- 故障排除： [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)
 - [Visual Studio 2022 版比较](https://visualstudio.microsoft.com/vs/compare/)
-- [订阅门户概述](/visualstudio/subscriptions/using-the-subscriber-portal)
