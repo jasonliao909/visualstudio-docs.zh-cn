@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: amast
 manager: shve
 ms.assetid: 80e3b300-f2fc-40d4-bbb2-c831a2fa5d34
-ms.date: 09/28/2021
+ms.date: 01/18/2022
 ms.topic: how-to
 description: 本文介绍管理员如何将分配的订阅从一个协议迁移到另一个协议。
-ms.openlocfilehash: ab5d73e76c9b05f702f844020532f7bac69dec39
-ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.openlocfilehash: 347d0115c11fa6b99d74335610ffac29c8954188
+ms.sourcegitcommit: ec474f32358861e1f62e92d8262051162f291edc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "133256498"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "136924081"
 ---
 # <a name="migrate-subscriptions-from-one-agreement-to-another"></a>将订阅从一个协议迁移到另一个协议
 如果你已将 Visual Studio 订阅作为协议的一部分分配给订阅者，并且你的公司购买了新协议，则你可能需要将订阅者从当前协议迁移到新协议。 本文介绍如何将分配的订阅移动到新协议。  
@@ -80,6 +80,8 @@ ms.locfileid: "133256498"
  
    用于将订阅上传到新协议的文件并不需要导出的 CSV 文件中的所有字段。 在上一列表中以粗体显示的字段将显示在用于上传列表的模板中。 
 
+
+
 2. 下载用于上传订阅的 Excel 模板。  
    1. 登录到[管理门户](https://manage.visualstudio.com)。
    1. 在“管理订阅者”选项卡上，从下拉列表中选择新协议：
@@ -110,8 +112,12 @@ ms.locfileid: "133256498"
    | 语言                   | 语言           |
    | 订阅 GUID          | 订阅 GUID  |
 
+   > [!IMPORTANT] 
+   > 不要将 " **订阅 GUID** " 列中的日期复制到大容量添加模板中。  包含 Guid 将导致上传失败。
+
    > [!TIP]
-   > 如果有许多订阅者，你可能会发现在复制和粘贴数据时使用键盘快捷方式会很有帮助。 要选择列（如订阅者名）中的所有条目，请选择列的第一个条目（而不是列标题），选择并按住 Ctrl+Shift，然后选择向下箭头键。 这将选择该列的所有数据。  
+   > 如果有许多订阅者，你可能会发现在复制和粘贴数据时使用键盘快捷方式会很有帮助。 要选择列（如订阅者名）中的所有条目，请选择列的第一个条目（而不是列标题），选择并按住 Ctrl+Shift，然后选择向下箭头键。 这将选择该列的所有数据。 
+
 
 4. 当所有数据都移动到批量添加模板时，请保存模板并将其关闭。 此列表是要上传到新协议的订阅列表。
 
@@ -123,8 +129,8 @@ ms.locfileid: "133256498"
  
    在管理门户中，你可能会短暂地看到一条状态消息，指出系统正在上传文件。 上传完成后，你会看到消息“订阅者已成功更新”。
 将订阅者从旧协议迁移到新协议已完成。  
-> [!NOTE]
-> 将订阅者添加到新协议后，你应将这些订阅者从旧协议中删除。 删除订阅者会阻止他们收到有关旧订阅的通知。
+  > [!NOTE]
+  > 将订阅者添加到新协议后，你应将这些订阅者从旧协议中删除。 删除订阅者会阻止他们收到有关旧订阅的通知。
 
 ## <a name="resources"></a>资源
 - 有关管理 Visual Studio 订阅的帮助，请参阅 [Visual Studio 订阅支持](https://aka.ms/vsadminhelp)。

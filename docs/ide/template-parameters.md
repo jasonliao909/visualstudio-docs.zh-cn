@@ -13,12 +13,12 @@ author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.technology: vs-ide-general
-ms.openlocfilehash: bd48e160b4134ff3439a1258386328b27f84b184
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: fdfc214b88604562d450026aa577765035d59182
+ms.sourcegitcommit: ec474f32358861e1f62e92d8262051162f291edc
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126642129"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "136924094"
 ---
 # <a name="template-parameters"></a>模板参数
 
@@ -42,9 +42,9 @@ ms.locfileid: "126642129"
 
 1. 在项目项的代码文件中，在适当位置上包括参数。 例如，以下参数指定安全项目名称用于文件中的命名空间：
 
-    ```csharp
-    namespace $safeprojectname$
-    ```
+   ```csharp
+   namespace $safeprojectname$
+   ```
 
 ## <a name="reserved-template-parameters"></a>保留的模板参数
 
@@ -53,13 +53,13 @@ ms.locfileid: "126642129"
 |参数|说明|
 |---------------|-----------------|
 |clrversion|公共语言运行时 (CLR) 的当前版本。|
-|ext_*|将 `ext_` 前缀添加到任何参数，以引用父模板的变量。 例如，`ext_safeprojectname`。|
+|ext_\*|将 `ext_` 前缀添加到任何参数，以引用父模板的变量。 例如，`ext_safeprojectname`。|
 |guid[1-10]|一个用于替换项目文件中的项目 GUID 的 GUID。 可指定最多 10 个唯一的 GUID（例如，`guid1`）。|
 |itemname|在其中使用参数的文件的名称。|
 |machinename|当前的计算机名称（例如，Computer01）。|
 |projectname|创建项目时由用户提供的名称。|
 |registeredorganization|来自 HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization 的注册表项值。|
-|rootnamespace|当前项目的根命名空间。 此参数仅适用于项模板。|
+|rootnamespace|当前项目的根命名空间，后跟当前项的子文件夹，斜杠替换为句点。 此参数仅适用于项模板。|
 |safeitemname|与 `itemname` 相同，但所有不安全字符和空格替换为了下划线。|
 |safeitemrootname|与 `safeitemname` 相同。|
 |safeprojectname|用户在创建项目时提供的名称，但名称中删除了所有不安全字符和空格。|

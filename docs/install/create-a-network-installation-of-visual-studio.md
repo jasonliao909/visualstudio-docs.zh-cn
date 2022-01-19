@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 71d9713f9f3253b326442804f4f53ff6fcae7b3f
-ms.sourcegitcommit: d38d1b083322019663fec7d1d85a4cda456aadca
+ms.openlocfilehash: 06ee527da845d9a0ecd400069d90cf94c1c9d1b1
+ms.sourcegitcommit: ec474f32358861e1f62e92d8262051162f291edc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "135534264"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "136924107"
 ---
 # <a name="create-maintain-and-deploy-a-network-installation-of-visual-studio"></a>创建、维护和部署 Visual Studio 网络安装
 
@@ -50,9 +50,9 @@ ms.locfileid: "135534264"
 - **针对更新进行规划：** 应该在进行初始客户端安装前决定客户端计算机应以何种方式接收产品更新。 要确保正确设置客户端的更新位置配置，这一点必不可少。 你的选择包括让客户端从网络布局位置或 Internet 上的 Microsoft 托管服务器获取更新。 
 
  > [!IMPORTANT]
- > 当你仅使用 Visual Studio 2019 功能时，布局管理存在以下限制：从布局安装客户端后，客户端的更新位置锁定且不可更改。 这意味着，如果你打算让客户端从布局接收更新，同时保留其修复和卸载功能，则必须将所有后续产品更新放在安装客户端的原始布局文件夹中。 换言之，基本的 Visual Studio 2019 功能不支持以下功能：从一个布局位置执行客户端原始安装，然后再让该客户端从其他布局位置接收产品更新。 
+ > 当你仅使用 Visual Studio 2019 功能时，布局管理存在以下限制：从布局安装客户端后，客户端的更新位置锁定且不可更改。 这意味着，如果你打算让客户端从布局接收更新，同时保留其修复和卸载功能，则必须将所有后续产品更新放在安装客户端的原始布局文件夹中。 换句话说，base Visual Studio 2019 功能 **不** 支持客户端从一个布局位置执行原始安装，然后让该客户端从不同的布局位置接收产品更新。 
  > 
- > 产品更新位置固定且产品更新须位于与原始安装布局所在的同一布局文件夹中这种限制在 Visual Studio 2022 中不存在。 在 Visual Studio 2022 中，可以轻松更改客户端的源位置来获取更新。 我们让你能够包括并使用最新的 (Visual Studio 2022) 安装程序（该安装程序可掌控 Visual Studio 产品系列的所有新式版本），以便管理 Visual Studio 2019 布局，并消除该产品 2019 版中的限制。 以下部分 [将布局配置为始终包含并提供最新的安装程序](#configure-the-layout-to-always-include-and-provide-the-latest-installer) ，介绍了如何启用此功能。
+ > 产品更新位置固定且产品更新须位于与原始安装布局所在的同一布局文件夹中这种限制在 Visual Studio 2022 中不存在。 在 Visual Studio 2022 中，可以轻松地更改客户端的源位置以获取更新。 我们让你能够包括并使用最新的 (Visual Studio 2022) 安装程序（该安装程序可掌控 Visual Studio 产品系列的所有新式版本），以便管理 Visual Studio 2019 布局，并消除该产品 2019 版中的限制。 以下部分 [配置布局以始终包含，并提供最新的安装程序](#configure-the-layout-to-always-include-and-provide-the-latest-installer) 来描述如何启用此布局。
  
 ::: moniker-end
 
@@ -222,11 +222,11 @@ xcopy /e c:\VSLayout \\server\share\layoutdirectory
 
 可以使用最新产品更新来更新 Visual Studio 的网络布局，以便可以将其用作客户端工作站的安装点和更新源，以接收最新版本的 Visual Studio。 最佳做法是定期更新布局，尤其是在希望客户端从布局接收更新的情况下。 本部分介绍最常见或有用的布局维护操作。
 
-如果在文件共享上托管布局，可能需要更新布局的专用副本 (例如 c：\VSLayout) ，然后在下载所有更新的内容后，将其复制到文件共享 (例如 \\ \server\products\VS) 。 如果不这样做，那么在更新布局时正好运行安装程序的任何用户，都更有可能从布局中获得不匹配的内容，因为布局并未完全更新。
+如果在文件共享上托管布局，你可能需要更新布局的私有副本 (例如 c:\VSLayout) ，然后在下载所有更新的内容后，将其复制到文件共享 (例如， \\ \server\products\VS) 。 如果不这样做，那么在更新布局时正好运行安装程序的任何用户，都更有可能从布局中获得不匹配的内容，因为布局并未完全更新。
 
 ### <a name="update-the-layout-to-the-most-current-version-of-the-product"></a>将布局更新为产品的最新版本
 
-Microsoft 经常发布产品的更新版本，以修复功能或安全问题。 建议一直使用最新版本的产品，保持布局更新，让新客户端安装始终获得最新优势。 如果客户端配置为从布局接收更新，保持布局更新也很重要。 
+Microsoft 经常发布产品的更新版本，以修复功能或安全问题。 建议你将布局更新为产品的最新版本，以便新的客户端安装始终获得最新的。 如果客户端配置为从布局接收更新，保持布局更新也很重要。 
 
 创建初始布局时，指定的选项（例如要包括在布局中的工作负载和语言）保存在布局的配置文件中。 稍后，当你想要将布局更新为较新版本的产品时，就不必重新指定初始布局创建期间使用的选项。 布局更新命令会自动使用保存的布局设置。 
 
@@ -308,16 +308,16 @@ vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.Net
 
 ::: moniker range=">=vs-2019"
 
-### <a name="configure-the-layout-to-always-include-and-provide-the-latest-installer"></a>将布局配置为始终包含并提供最新的安装程序
+### <a name="configure-the-layout-to-always-include-and-provide-the-latest-installer"></a>配置布局以始终包括并提供最新的安装程序
 
-可以将布局配置为 _始终_ 包含最新的安装程序，并为客户端提供最新安装程序，即使安装程序被视为最新版本的 Visual Studio。 因此，当客户端从此布局更新时，客户端将获取此布局包含和提供的最新安装程序。 好处是，在客户端上安装最新的安装程序后，客户端安装将能够利用 bug 修复和新功能，我们会继续将其添加到安装程序。 
+你可以配置布局以 _始终_ 包含和提供客户端的最新安装程序，即使该安装程序被视为 Visual Studio 的更新版本的一部分也是如此。 因此，当客户端更新此布局中的客户端时，客户端将获取此布局所包含和提供的最新安装程序。 优点是，在客户端上安装了最新的安装程序后，你的客户端安装将能够利用我们继续添加到安装程序的 bug 修复和新功能。 
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
 >[!TIP]
->如果要更改客户端[2019](update-visual-studio.md#configure-source-location-of-updates)Visual Studio安装查找更新的位置，则必须在客户端计算机上获取最新的 Visual Studio 2022 安装程序。  为此，一种方式是使用Visual Studio参数在 Visual Studio 2019 布局中包括 Visual Studio 2022 安装程序。 使用最新安装程序的功能仅适用于 2022 Visual Studio 2022 年 1 月Visual Studio的 2019 引导程序。 因此，以下示例中的 vs_enterprise.exe 必须是 2021 年 11 月 10 日后发布的版本。 
+>如果要 [更改客户端 Visual Studio 2019 安装查找更新的位置](update-visual-studio.md#configure-source-location-of-updates)，则 *必须* 在客户端计算机上获取最新的 Visual Studio 2022 安装程序。 实现此目的的一种方法是使用下面所述的参数将 Visual Studio 2022 安装程序包含在 Visual Studio 2019 布局中。 使用最新安装程序的功能仅适用于最初发运 Visual Studio 2022 后构建 Visual Studio 2019 引导程序。 因此，以下示例中的 vs_enterprise.exe 必须是 2021 年 11 月 10 日后发布的版本。 
 
 ::: moniker-end
 
@@ -418,7 +418,7 @@ c:\VSLayout\vs_enterprise.exe --layout c:\VSLayout --clean c:\VSLayout\Archive\1
 通过布局安装时，安装内容将默认为从布局中获取。 但是，如果你选择的组件不在布局中，并且[客户端已配置为查看 Microsoft 托管服务器以获取更新](automated-installation-with-response-file.md)，则安装程序也会尝试从 Internet 获取 Visual Studio 包。 若要阻止 Visual Studio 安装程序尝试从 Web 下载布局中缺少的任何内容，请使用 `--noWeb` 选项。 如果使用 `--noWeb`，但布局中缺少要安装的选定内容，那么安装将会失败。
 
 > [!IMPORTANT]
-> 如果客户端已配置为Visual Studio Microsoft 托管服务器来查找更新，则此选项不会阻止连接到 Internet 的客户端计算机上的客户端安装程序检查 `--noWeb` 更新。  相反 `--noWeb` ，只是阻止客户端下载产品包。 有关详细信息，请参阅从网络[布局Visual Studio客户端更新客户端](update-a-network-installation-of-visual-studio.md)。
+> `--noWeb`如果客户端已配置为查看 Microsoft 托管的服务器以查找更新，则该选项不会Visual Studio连接到Internet 的客户端计算机上的安装程序检查更新。 相反 `--noWeb` ，只是阻止客户端下载产品包。 有关详细信息，请参阅从网络[布局Visual Studio客户端更新客户端](update-a-network-installation-of-visual-studio.md)。
 
 ::: moniker range=">=vs-2019"
 
