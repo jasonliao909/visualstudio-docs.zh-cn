@@ -1,21 +1,20 @@
 ---
 title: Docker 教程 - 第 3 部分：更新应用
 description: 介绍如何更新 Docker 应用。
-ms.date: 08/06/2021
-author: nebuk89
-ms.author: ghogen
+ms.prod: vs-code
+ms.topic: tutorial
+ms.author: mikemort
+author: BigMorty
 manager: jmartens
-ms.technology: vs-docker
-ms.custom: contperf-fy22q1
-ms.topic: conceptual
-ms.workload:
-- azure
-ms.openlocfilehash: 71d478dcd7d6656fcd80af1c69bab25058872f8a
-ms.sourcegitcommit: 5f1e0171626e13bb2c5a6825e28dde48061208a4
+ms.reviewer: nebuk89, ghogen
+ms.custom: “docker-team-owned”
+ms.date: 08/06/2021
+ms.openlocfilehash: 6ef50b6d0b20e215a5f7bb1d6e6df42691b72001
+ms.sourcegitcommit: 2a8c7de72f952203289459736107c875837bb07e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "129704417"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "137110005"
 ---
 # <a name="update-the-app"></a>更新应用
 

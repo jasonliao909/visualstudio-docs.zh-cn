@@ -1,21 +1,20 @@
 ---
 title: Docker 教程 - 第 6 部分：使用绑定装载
 description: 介绍如何使用绑定装载来控制主机上的装载点。
-ms.date: 08/06/2021
-author: nebuk89
-ms.author: ghogen
+ms.prod: vs-code
+ms.topic: tutorial
+ms.author: mikemort
+author: BigMorty
 manager: jmartens
-ms.technology: vs-docker
-ms.custom: contperf-fy22q1
-ms.topic: conceptual
-ms.workload:
-- azure
-ms.openlocfilehash: 43343781f0fd88396fa301776b85ac00154ad6c3
-ms.sourcegitcommit: a149b3a034bb555ad217656c0ec8bc1672b1e215
+ms.reviewer: nebuk89, ghogen
+ms.custom: “docker-team-owned”
+ms.date: 08/06/2021
+ms.openlocfilehash: f37fa92c5e945413556f6c5621a8cd3382538318
+ms.sourcegitcommit: 2a8c7de72f952203289459736107c875837bb07e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "133514293"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "137109914"
 ---
 # <a name="use-bind-mounts"></a>使用绑定装载
 

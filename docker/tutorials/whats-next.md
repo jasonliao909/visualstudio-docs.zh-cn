@@ -1,21 +1,20 @@
 ---
 title: Docker 教程 - 后续内容
 description: 介绍使用云原生计算基础项目通过编排扩展 Docker 应用的选项。
-ms.date: 08/06/2021
-author: nebuk89
-ms.author: ghogen
+ms.prod: vs-code
+ms.topic: tutorial
+ms.author: mikemort
+author: BigMorty
 manager: jmartens
-ms.technology: vs-docker
-ms.custom: contperf-fy22q1
-ms.topic: conceptual
-ms.workload:
-- azure
-ms.openlocfilehash: 6ba31a6d250123d4d54fa1071e9ef662aea7dae8
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.reviewer: nebuk89, ghogen
+ms.custom: “docker-team-owned”
+ms.date: 08/06/2021
+ms.openlocfilehash: 2e1e5fc6df071a6e28d4bae426d7b43a19eda0ba
+ms.sourcegitcommit: 2a8c7de72f952203289459736107c875837bb07e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641358"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "137109979"
 ---
 # <a name="whats-next"></a>后续步骤
 

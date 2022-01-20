@@ -1,21 +1,20 @@
 ---
 title: Docker 教程 - 第 10 部分：部署到云
 description: 将 docker 应用部署到云服务中进行托管。
-ms.date: 08/06/2021
-author: nebuk89
-ms.author: ghogen
+ms.prod: vs-code
+ms.topic: tutorial
+ms.author: mikemort
+author: BigMorty
 manager: jmartens
-ms.technology: vs-docker
-ms.custom: contperf-fy22q1
-ms.topic: conceptual
-ms.workload:
-- azure
-ms.openlocfilehash: faa4fe632662a9e57ab6e39573a42ad4e3da4c97
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.reviewer: nebuk89, ghogen
+ms.custom: “docker-team-owned”
+ms.date: 08/06/2021
+ms.openlocfilehash: 0f00a0eed43f8d6df19536b381cdcdc4095e9768
+ms.sourcegitcommit: 2a8c7de72f952203289459736107c875837bb07e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641377"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "137110018"
 ---
 # <a name="deploy-to-the-cloud"></a>部署到云
 
