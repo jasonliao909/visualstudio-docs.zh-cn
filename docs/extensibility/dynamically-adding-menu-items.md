@@ -15,19 +15,19 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7875b939748ff5140d65a1b17ffe30c6ecfac88
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: d76682715b128a8935c6a35fde9fc65f67f16058
+ms.sourcegitcommit: 1c0eda2db1b1fff9595ca644503f467bf3e223e0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126665354"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "137095018"
 ---
 # <a name="dynamically-add-menu-items"></a>动态添加菜单项
-可以通过在 Visual Studio 命令表 `DynamicItemStart` (*.vsct*) 文件中指定占位符按钮定义上的命令标志，然后在代码中定义 () )  (以显示和处理命令的菜单项数，来添加菜单项。 加载 VSPackage 时，占位符将替换为动态菜单项。
+可以通过在 Visual Studio 命令表 `DynamicItemStart` (*.vsct*) 文件中指定占位符按钮定义上的命令标志，然后在代码中定义 () )  (显示和处理命令的菜单项数，来添加菜单项。 加载 VSPackage 时，占位符将替换为动态菜单项。
 
  Visual Studio使用"最近使用的 **(** MRU) "列表中的动态列表（显示最近打开的文档的名称）和 **Windows** 列表（显示当前打开的窗口的名称）。   `DynamicItemStart`命令定义上的 标志指定命令是占位符，直到 VSPackage 打开。 打开 VSPackage 时，占位符将替换为 0 个或多个命令，这些命令会运行时创建并添加到动态列表中。 在 VSPackage 打开之前，可能无法在菜单上看到动态列表出现的位置。  若要填充动态列表，Visual Studio VSPackage 查找 ID 为 的命令，该命令的第一个字符与占位符的 ID 相同。 当Visual Studio找到匹配的命令时，它会将命令的名称添加到动态列表中。 然后，它会递增 ID 并查找要添加到动态列表中的另一个匹配命令，直到没有更多的动态命令。
 
- 本演练演示如何使用 Visual Studio 工具栏上的 命令在 解决方案资源管理器 解决方案 **中设置** 启动项目。 它使用菜单控制器，该控制器具有活动解决方案中项目的动态下拉列表。 若要在未打开解决方案或打开的解决方案只有一个项目时显示此命令，只有在解决方案有多个项目时，才加载 VSPackage。
+ 本演练演示如何使用 Visual Studio 工具栏上的 命令在 解决方案资源管理器 **解决方案中** 设置启动项目。 它使用菜单控制器，该控制器具有活动解决方案中项目的动态下拉列表。 若要在未打开解决方案或打开的解决方案只有一个项目时显示此命令，只有在解决方案有多个项目时，才加载 VSPackage。
 
  有关 *.vsct* 文件的信息，请参阅 Visual Studio [命令表 (.vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。
 
@@ -131,9 +131,9 @@ ms.locfileid: "126665354"
     </Buttons>
     ```
 
-4. 将图标添加到"资源" (中的项目) ，然后在 *.vsct* 文件中添加对它的引用。 本演练使用项目模板中包含的箭头图标。
+4. 将图标添加到"资源 (中的项目) ，然后在 *.vsct* 文件中添加对它的引用。 本演练使用项目模板中包含的箭头图标。
 
-5. 在"命令"部分外部的"符号"部分之前添加 VisibilityConstraints 部分。  (如果在 Symbols.) 之后添加，则可能会收到警告。本部分确保菜单控制器仅在加载包含多个项目的解决方案时显示。
+5. 在"命令"部分外部的"符号"部分之前添加 VisibilityConstraints 部分。  (如果在 Symbols.) 之后添加它，可能会收到警告。本部分确保菜单控制器仅在加载包含多个项目的解决方案时显示。
 
     ```xml
     <VisibilityConstraints>
@@ -251,15 +251,18 @@ ms.locfileid: "126665354"
         if (commandService != null)
         {
             // Add the DynamicItemMenuCommand for the expansion of the root item into N items at run time.
-            CommandID dynamicItemRootId = new CommandID(new Guid(DynamicMenuPackageGuids.guidDynamicMenuPackageCmdSet), (int)DynamicMenuPackageGuids.cmdidMyCommand);
-            DynamicItemMenuCommand dynamicMenuCommand = new DynamicItemMenuCommand(dynamicItemRootId,
+            CommandID dynamicItemRootId = new CommandID(
+                new Guid(DynamicMenuPackageGuids.guidDynamicMenuPackageCmdSet),
+                (int)DynamicMenuPackageGuids.cmdidMyCommand);
+            DynamicItemMenuCommand dynamicMenuCommand = new DynamicItemMenuCommand(
+                dynamicItemRootId,
                 IsValidDynamicItem,
                 OnInvokedDynamicItem,
                 OnBeforeQueryStatusDynamicItem);
                 commandService.AddCommand(dynamicMenuCommand);
-                }
+        }
 
-        dte2 = (DTE2)this.ServiceProvider.GetService(typeof(DTE));
+        this.dte2 = (DTE2)this.ServiceProvider.GetService(typeof(DTE));
     }
     ```
 
@@ -321,7 +324,7 @@ ms.locfileid: "126665354"
 
 ## <a name="implement-the-command-id-match-predicate"></a>实现命令 ID 匹配谓词
 
-现在实现匹配谓词。 我们需要确定两点：首先，命令 ID 是否有效 (它是否大于或等于声明的命令 ID) ;第二，它是否指定了可能的项目 (它小于解决方案) 中的项目数。
+现在实现匹配谓词。 我们需要确定两项内容：第一，命令 ID 是否有效 (它是否大于或等于声明的命令 ID) ;其次，它是否指定了可能的项目 (它小于解决方案) 中的项目数。
 
 ```csharp
 private bool IsValidDynamicItem(int commandId)

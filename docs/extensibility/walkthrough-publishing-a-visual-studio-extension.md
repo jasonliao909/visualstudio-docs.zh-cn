@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53fa4543bd56bd85f58b5c4251af19300a12fecf
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 2f985201a31381b233a8e4c91af9fb62eb169f97
+ms.sourcegitcommit: 1c0eda2db1b1fff9595ca644503f467bf3e223e0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126602323"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "137095073"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>演练：发布 Visual Studio 扩展
 
@@ -71,7 +71,7 @@ ms.locfileid: "126602323"
 
 6. 选择要用于上传扩展的发布者。 可以通过单击左侧列出的发布者名称来更改发布者。 单击 "**新建扩展**"，然后选择 " **Visual Studio**"。
 
-7. 在 **1： Upload 扩展** 中，你可以选择将 VSIX 文件直接上传到 Visual Studio Marketplace，或者只是将链接添加到你自己的网站。 在此示例中，将上传 *TestPublish* 扩展名。 拖放扩展，或使用 **单击** 链接浏览文件。 在项目的 \bin\Release 文件夹中查找扩展。  单击 **“继续”** 。
+7. 在 **1： Upload 扩展** 中，你可以选择将 VSIX 文件直接上传到 Visual Studio Marketplace，或者只是将链接添加到你自己的网站。 在此示例中，将上传 *TestPublish* 扩展名。 拖放扩展，或使用 **单击** 链接浏览文件。 在项目的 \bin\Release 文件夹中查找扩展。  单击“继续” 。
 
 8. 在 **2：提供扩展详细信息** 时，某些字段是从你的扩展中的 *source.extension.vsixmanifest* 文件自动填充的。 查找以下各项的更多详细信息：
 
@@ -151,21 +151,21 @@ ms.locfileid: "126602323"
 
     - **VSIX ID** \*是扩展Visual Studio的唯一标识符。 如果希望自动更新扩展，则此标识符是必需的。 此标识符从 *source.extension.vsixmanifest* 文件中自动填充。
 
-    - **徽标** \*用于扩展的 。 如果提供，则从 *source.extension.vsixmanifest* 文件中自动填充此徽标。
+    - **标志** \*用于扩展的 。 如果提供，则从 *source.extension.vsixmanifest* 文件中自动填充此徽标。
 
     - **简短说明** \*扩展功能。 此说明从 *source.extension.vsixmanifest* 文件中自动填充。
 
     - **概述** 是一个不错的位置，可以包括有关扩展功能屏幕截图和详细信息。
 
-    - **支持Visual Studio版本** \*允许你选择扩展Visual Studio版本。 扩展仅安装到这些版本。
+    - **使用Visual Studio版本** \* ，可以选择扩展Visual Studio版本。 扩展仅安装到这些版本。
 
-    - **支持Visual Studio版本** \*允许你选择扩展Visual Studio版本。 扩展仅安装在这些版本上。
+    - **通过Visual Studio版本** \* ，可以选择扩展Visual Studio版本。 扩展仅安装在这些版本上。
 
     - **类型**。 最常见的扩展类型是"工具 **"。**
 
     - **类别**。 最多选择三个最适合你的扩展。
 
-    - **标记** 是可帮助用户查找扩展的关键字。 标记可帮助提高扩展在 Visual Studio 的相关性。
+    - **标记** 是可帮助用户查找扩展的关键字。 标记可帮助提高扩展在市场中的搜索Visual Studio相关性。
 
     - **定价** 类别是扩展的成本。
 
@@ -177,7 +177,7 @@ ms.locfileid: "126602323"
 
 1. 单击"**保存& Upload"。** 此选项将返回到发布者管理页。 扩展尚未发布。
 
-1. 若要发布扩展，请右键单击扩展并选择"**公开"。** 若要查看扩展在市场中的外观，Visual Studio"**查看扩展"。** 对于采购编号，请单击"报表 **"。** 若要对扩展进行更改，请单击"编辑 **"。**
+1. 若要发布扩展，请右键单击扩展并选择"**公开"。** 若要查看扩展在市场中的外观Visual Studio，请选择"查看 **扩展"。** 对于采购编号，请单击"报表 **"。** 若要对扩展进行更改，请单击"编辑 **"。**
 
 ## <a name="add-additional-users-to-manage-your-publisher-account"></a>添加其他用户以管理发布者帐户
 
@@ -199,6 +199,16 @@ Visual Studio市场支持向其他用户授予访问和管理发布者帐户的�
 
    * **所有者**：用户可以发布和管理扩展、编辑发布者设置以及管理访问权限。
 
+### <a name="troubleshoot-adding-a-user-to-the-publisher-account"></a>排查将用户添加到发布者帐户的问题
+
+使用用户的电子邮件地址将用户添加到发布者配置文件时，可能会看到错误 `TF14045: The identity could not be found` 。
+
+若要避免此错误，请使用用户的用户 ID 而不是电子邮件地址将用户添加到发布者帐户。 若要查找用户的用户 ID，Visual Studio市场中，将鼠标悬停在窗格顶部的用户名上。 选择复制图标以复制用户 ID。
+
+![显示市场中用户名和电子邮件地址旁边的用户 ID 的屏幕截图。](media/marketplace-user-id.png)
+
+然后， [可以使用新用户](#add-additional-users-to-manage-your-publisher-account) 的用户 ID 添加新用户。
+
 ## <a name="install-the-extension-from-visual-studio-marketplace"></a>从 Visual Studio Marketplace 安装扩展
 
 发布扩展后，请在 Visual Studio 中进行安装和测试。
@@ -207,7 +217,7 @@ Visual Studio市场支持向其他用户授予访问和管理发布者帐户的�
 
 2. 单击 **"联机**"，然后搜索 **"TestPublish"。**
 
-3. 单击“下载”。 然后计划安装扩展。
+3. 单击“下载”  。 然后计划安装扩展。
 
 4. 若要完成安装，请关闭 Visual Studio 的所有实例。
 
@@ -221,7 +231,7 @@ Visual Studio市场支持向其他用户授予访问和管理发布者帐户的�
 
 2. 在右上角，单击" **发布扩展** "。 选择用于发布 **TestPublish 的发布服务器**。 将显示 **TestPublish** 的列表。
 
-3. 右键单击扩展条目，然后单击"删除 **"。** 系统要求确认是否要删除扩展。 单击“确定”。
+3. 右键单击扩展条目，然后单击"删除 **"。** 系统要求确认是否要删除扩展。 单击 **“确定”** 。
 
 ### <a name="to-remove-the-extension-from-your-computer"></a>从计算机中删除扩展
 

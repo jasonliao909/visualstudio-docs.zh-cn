@@ -17,14 +17,14 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc023655c42ea63db5015d00a33ce140275f6ee0
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 59a2c541a4ba1869d0f08084de657a5ea0891cd3
+ms.sourcegitcommit: 1c0eda2db1b1fff9595ca644503f467bf3e223e0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126600766"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "137094877"
 ---
-# <a name="how-to-use-wizards-with-project-templates"></a>如何：将向导与项目模板结合使用
+# <a name="how-to-use-wizards-with-project-templates"></a>如何：使用向导来处理项目模板
 
 Visual Studio 提供了 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 接口，可实现该接口来在用户从模板创建项目时运行自定义代码。
 
@@ -49,7 +49,7 @@ Project 模板自定义项可用于显示自定义 UI，该 UI 可收集用户�
 
 5. 在清单编辑器中，选择窗口左侧的 " **资产** " 选项卡。
 
-6. 在 " **资产** " 选项卡中，选择 " **新建**"。 在 " **添加新资产** " 窗口中，为 "类型" 字段选择 " **VisualStudio**"。 在 " **源** " 字段中，选择 " **当前解决方案中的项目**"。 在 " **Project** " 字段中，选择 " **MyProjectTemplate**"。 。
+6. 在 " **资产** " 选项卡中，选择 " **新建**"。 在 " **添加新资产** " 窗口中，为 "类型" 字段选择 " **VisualStudio**"。 在 " **源** " 字段中，选择 " **当前解决方案中的项目**"。 在 " **Project** " 字段中，选择 " **MyProjectTemplate**"。 然后单击“确定”。
 
 7. 生成解决方案并启动调试。 将出现 Visual Studio 的第二个实例。 （这可能需要几分钟的时间。）
 
@@ -65,13 +65,13 @@ Project 模板自定义项可用于显示自定义 UI，该 UI 可收集用户�
 
    - **在 VSIX 容器中包含程序集**
 
-   - **在 VSIX 容器中包含调试符号**
-
    - **在本地 VSIX 部署中包含调试符号**
+
+   - **在 VSIX 容器中包含调试符号**
 
 3. 将程序集作为资产添加到 VSIX 项目。 打开 *source.extension.vsixmanifest* 文件，然后选择 "**资产**" 选项卡。在 "**添加新资产**" 窗口中，为 "**类型**" 选择 " **VisualStudio**"，对于 "源"，选择 "**当前解决方案中的项目**"， **Project** 并选择 " **MyProjectWizard**" 作为 "**源**"。
 
-4. 将以下引用添加到 VSIX 项目。  (在 **解决方案资源管理器** 的 "VSIX 项目" 节点下，选择 "**引用**"，右键单击，然后选择 "**添加引用**" ) 。在 "**添加引用**" 对话框的 "**框架**" 选项卡中，找到 " **Windows 窗体**" 程序集并选择它。 同时，查找并选择 " **系统** " 和 " **系统** " 程序集。 现在选择 " **扩展** " 选项卡。找到 **EnvDTE** 程序集并将其选中。 同时，查找 **TemplateWizardInterface** 程序集并将其选中。 单击“确定”。
+4. 将以下引用添加到 VSIX 项目。  (在 **解决方案资源管理器** 的 "VSIX 项目" 节点下，选择 "**引用**"，右键单击，然后选择 "**添加引用**" ) 。在 "**添加引用**" 对话框的 "**框架**" 选项卡中，找到 "**系统" WindowsForms** assembly 并选择它。 同时，查找并选择 " **系统** " 和 " **系统** " 程序集。 现在选择 " **扩展** " 选项卡。找到 **EnvDTE** 程序集并将其选中。 同时，查找 **TemplateWizardInterface** 程序集并将其选中。 单击 **“确定”** 。
 
 5. 将向导实现的类添加到 VSIX 项目。  (在 **解决方案资源管理器** 中，右键单击 VSIX 项目节点，然后依次选择 "**添加**"、"**新建项**" 和 ") **类**"，然后将 WizardImplementation 类命名为。
 
@@ -233,23 +233,23 @@ Project 模板自定义项可用于显示自定义 UI，该 UI 可收集用户�
 
      如果找不到该工具，请在命令窗口中尝试运行 **sn.exe** 。 记下该路径。
 
-10. 从 *key.snk 文件中提取* 公钥。 在命令窗口中，键入
+10. 从 *密钥 .snk* 文件中提取公钥。 在命令窗口中，键入
 
-     **\<location of sn.exe>\sn.exe -p key.snk outfile.key。**
+     **\<location of sn.exe>\sn.exe-p 密钥 .snk。密钥。**
 
-     如果目录名称中具有空格 *，sn.exe* 用引号括起来！
+     如果目录名称中有空格，请不要忘记用引号将 *sn.exe* 的路径括起来！
 
-11. 从 outfile 获取公钥令牌：
+11. 从 outfile 获取公钥标记：
 
-     **\<location of sn.exe>\sn.exe -t outfile.key。**
+     **\<location of sn.exe>\sn.exe。**
 
-     同样，不要忘记引号。 输出中应显示如下所示的行
+     同样，不要忘记引号。 输出中应会显示一行，如下所示
 
-     **公钥令牌为 \<token>**
+     **公钥标记为 \<token>**
 
      记下此值。
 
-12. 向项目模板的 *.vstemplate* 文件添加对自定义向导的引用。 在 **解决方案资源管理器中**，找到名为 *MyProjectTemplate.vstemplate* 的文件并打开它。 在 节的末尾 \<TemplateContent> ，添加以下部分：
+12. 将对自定义向导的引用添加到项目模板的 *.vstemplate* 文件中。 在 **解决方案资源管理器** 中，找到名为 *MyProjectTemplate* 的文件，然后将其打开。 在此部分结束后 \<TemplateContent> ，添加以下部分：
 
     ```xml
     <WizardExtension>
@@ -258,25 +258,25 @@ Project 模板自定义项可用于显示自定义 UI，该 UI 可收集用户�
     </WizardExtension>
     ```
 
-     其中 **MyProjectWizard** 是程序集的名称 **，token** 是在上一步中复制的令牌。
+     其中， **MyProjectWizard** 是程序集的名称，而 **标记** 是在上一步中复制的标记。
 
-13. 保存项目的所有文件并重新生成。
+13. 保存项目中的所有文件，然后重新生成。
 
 ## <a name="add-the-custom-parameter-to-the-template"></a>将自定义参数添加到模板
 
-此示例中，用作模板的项目显示自定义向导的用户输入形式中指定的消息。
+在此示例中，用作模板的项目显示在 "自定义向导" 的 "用户输入" 窗体中指定的消息。
 
-1. 在 **解决方案资源管理器** 中，转到 **MyProjectTemplate** 项目并打开 *Class1.cs*。
+1. 在 **解决方案资源管理器** 中，请切换到 **MyProjectTemplate** 项目并打开 *Class1*。
 
-2. 在 `Main` 应用程序的 方法中，添加以下代码行。
+2. 在 `Main` 应用程序的方法中，添加以下代码行。
 
    ```csharp
    Console.WriteLine("$custommessage$");
    ```
 
-    从模板创建项目时，参数将替换为在用户输入表单 `$custommessage$` 中输入的文本。
+    `$custommessage$`当从模板创建项目时，将参数替换为在用户输入窗体中输入的文本。
 
-下面是导出到模板之前的完整代码文件。
+下面是完整的代码文件，然后将其导出到模板。
 
 ```csharp
 using System;
@@ -298,27 +298,27 @@ namespace $safeprojectname$
 
 ## <a name="use-the-custom-wizard"></a>使用自定义向导
 
-现在，可以从模板创建项目并使用自定义向导。
+现在，可以从模板创建一个项目，并使用自定义向导。
 
-1. 重新生成解决方案并开始调试。 将显示 Visual Studio 的第二个实例。
+1. 重新生成解决方案并启动调试。 将显示 Visual Studio 的第二个实例。
 
-2. 创建新的 MyProjectTemplate 项目。  (  >  **文件新建**  >  **Project) 。**
+2. 创建新的 MyProjectTemplate 项目。 )  (**文件**  >    >  **Project** 。
 
-3. 在 **"新建Project"** 对话框中，搜索"myproject"以查找模板，键入名称，然后单击"确定 **"。**
+3. 在 "**新建 Project** " 对话框中，搜索 "myproject" 以查找模板，键入名称，然后单击 **"确定**"。
 
-     向导用户输入窗体随即打开。
+     此时将打开向导用户输入窗体。
 
-4. 键入自定义参数的值，然后单击按钮。
+4. 键入自定义参数的值，然后单击 "" 按钮。
 
-     向导用户输入窗体关闭，并且从模板创建项目。
+     向导用户输入窗体将关闭，并且将从该模板创建一个项目。
 
-5. 在 **解决方案资源管理器** 中，右键单击源代码文件，然后单击"**查看代码"。**
+5. 在 **解决方案资源管理器** 中，右键单击源代码文件，然后单击 " **查看代码**"。
 
-     请注意 `$custommessage$` ， 已替换为在向导用户输入表单中输入的文本。
+     请注意，已 `$custommessage$` 替换为在向导用户输入窗体中输入的文本。
 
 ## <a name="see-also"></a>请参阅
 
 - <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>
 - [自定义模板](../ide/customizing-project-and-item-templates.md)
-- [WizardExtension 元素 (Visual Studio模板) ](../extensibility/wizardextension-element-visual-studio-templates.md)
+- [WizardExtension 元素 (Visual Studio 模板) ](../extensibility/wizardextension-element-visual-studio-templates.md)
 - [Visual Studio 模板中的 NuGet 包](/nuget/visual-studio-extensibility/visual-studio-templates)

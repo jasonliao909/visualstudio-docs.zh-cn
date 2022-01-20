@@ -1,5 +1,5 @@
 ---
-title: Docker 教程 - 第 9 部分：映像分层
+title: Docker 教程-第9部分：图像分层/Yarn
 description: 如何检查和管理 Docker 映像中的映像层。
 ms.date: 08/06/2021
 author: nebuk89
@@ -10,14 +10,14 @@ ms.custom: contperf-fy22q1
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 495e1cedbcecef549102fd279ced077d096c2616
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: c90c4e66848d05e74ab9751abc9ac3a8d09c40be
+ms.sourcegitcommit: 1c0eda2db1b1fff9595ca644503f467bf3e223e0
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641372"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "137094958"
 ---
-# <a name="image-layering"></a>映像分层
+# <a name="image-layering--yarn"></a>& Yarn 的图像分层
 
 你是否知道你可以查看映像的组成部分？ 使用 `docker image history` 命令，可以查看用于创建映像的每个层的命令。
 

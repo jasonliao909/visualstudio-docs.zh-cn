@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: b99c219e3ca4da798b6e685f7ae5ae0ad2906ba8
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 79add0c27936b29d52f8fcbf903e62acfad6aa14
+ms.sourcegitcommit: 1c0eda2db1b1fff9595ca644503f467bf3e223e0
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126601255"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "137094888"
 ---
 # <a name="overview"></a>概述
 
@@ -38,6 +38,9 @@ ms.locfileid: "126601255"
 如果以 NuGet 包的形式[安装分析器](../code-quality/install-roslyn-analyzers.md)，可以配置分析器规则或诊断的严重性。 可以[从解决方案资源管理器](#set-rule-severity-from-solution-explorer)或[在规则集文件中](#set-rule-severity-in-the-rule-set-file)更改规则的严重性。
 
 ::: moniker-end
+
+> [!NOTE]
+> 错误会导致生成在 Visual Studio 中失败，但是，若要使[dotnet 生成](/dotnet/core/tools/dotnet-build)失败，则需要 `enforcecodestyleinbuild` `true` 在[项目属性页](/dotnet/core/project-sdk/msbuild-props#enforcecodestyleinbuild)中将设置为。
 
 下表显示了不同的严重性选项：
 
