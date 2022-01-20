@@ -1,23 +1,25 @@
 ---
-title: Kubernetes 桥接的工作原理
+title: 什么是Bridge to Kubernetes？
 ms.technology: bridge
 ms.custom: contperf-fy22q1
 ms.date: 11/19/2020
-ms.topic: conceptual
+ms.topic: overview
 description: 介绍如何使用 Bridge to Kubernetes 将开发计算机连接到 Kubernetes 群集
 keywords: Bridge to Kubernetes, Docker, Kubernetes, Azure, 容器
 manager: jmartens
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: 4b44c95a4c7567d3607ffb42201034b4917d0c6b
-ms.sourcegitcommit: 8671132ee0425b273b060fa35c75657e7ae02583
-ms.translationtype: HT
+ms.openlocfilehash: e9df0cb802a08a45fdceabffebda807709744400
+ms.sourcegitcommit: b43e499ba15be1d6eb7ff5973b990a03569d90b5
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "132924138"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "137032644"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Kubernetes 桥接的工作原理
 
+**Bridge to Kubernetes** 是一种迭代开发工具，适用于创作面向 Kubernetes 的微服务应用程序的开发人员。 Bridge to Kubernetes扩展可用于Visual Studio VS Code。  使用 Bridge to Kubernetes，在开发计算机上运行和调试唯一需要处理微服务和首选开发工具。
+ 
 通过 Bridge to Kubernetes，你可在开发计算机上运行和调试代码，而不中断 Kubernetes 群集与其余应用程序或服务的连接。 例如，如果你有一个包含许多相互依赖的服务和数据库的大型微服务体系结构，则在开发计算机上复制这些依赖项可能会很困难。 此外，在内部循环开发期间，针对每次代码更改生成代码并将其部署到 Kubernetes 群集可能会缓慢、耗时且难以与调试程序一起使用。
 
 Bridge to Kubernetes 可直接在开发计算机与群集之间创建连接，而无需生成代码并将其部署到群集。 通过在调试时将开发计算机连接到群集，可以在完整应用程序的上下文中快速测试和开发服务，而无需创建任何 Docker 或 Kubernetes 配置。
