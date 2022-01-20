@@ -1,7 +1,7 @@
 ---
 title: 启用和禁用“编辑并继续” | Microsoft Docs
 description: 了解如何在设计时在 Visual Studio 的“选项”中禁用和启用“编辑并继续”。 “编辑并继续”仅在调试版本中起作用。
-ms.date: 10/04/2018
+ms.date: 01/12/2022
 ms.topic: how-to
 dev_langs:
 - CSharp
@@ -27,12 +27,13 @@ ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: bbdf7536fa08ab10c841989572c919cfed591cc7
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.custom: devdivchpfy22
+ms.openlocfilehash: e281b53871536592c73fa3445a17ecb82cc30aa2
+ms.sourcegitcommit: 1c0eda2db1b1fff9595ca644503f467bf3e223e0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129968977"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "137095032"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>如何：启用和禁用“编辑并继续”（C#、VB、C++）
 
@@ -49,7 +50,7 @@ ms.locfileid: "129968977"
     > [!NOTE]
     > 如果启用了 IntelliTrace 并且收集 IntelliTrace 事件和调用信息，则会禁用“编辑并继续”。 有关详细信息，请参阅 [IntelliTrace](../debugger/intellitrace.md)。
 
-1. 对于 C++ 代码，请确保选择“启用本机‘编辑并继续’”，并设置其他选项：
+1. 对于 C++ 代码，请确保已 **选择"启用本机编辑并继续** "，并设置其他选项：
     - **继续应用更改（仅限本机）**
 
       如果选择，则在从中断状态继续调试时，Visual Studio 会自动编译并应用代码更改。 否则，可以选择使用“调试” > “应用代码更改”来应用更改。
@@ -58,4 +59,4 @@ ms.locfileid: "129968977"
 
       如果选择，则提供有关陈旧代码的警告。
 
-1. 单击 **“确定”** 。
+1. 选择“确定”。
