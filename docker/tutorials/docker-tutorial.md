@@ -1,22 +1,20 @@
 ---
 title: 教程：Windows 或 Mac 上的 Docker 和 Visual Studio Code 入门
 description: 一个多步骤教程，其中介绍了配合使用 Docker 与 Visual Studio Code 的基础知识。
-ms.date: 08/06/2021
-author: nebuk89
-ms.author: ghogen
-manager: jmartens
-ms.technology: vs-docker
-ms.custom: contperf-fy22q1
+ms.prod: vs-code
 ms.topic: tutorial
-ms.workload:
-- azure
-next_page: app.md
-ms.openlocfilehash: c4b1bd4a05c7c8a95a457c18be248cb40a0f94a2
-ms.sourcegitcommit: efe1d737fd660cc9183177914c18b0fd4e39ba8b
+ms.author: mikemort
+author: BigMorty
+manager: jmartens
+ms.reviewer: nebuk89, ghogen
+ms.custom: “docker-team-owned”
+ms.date: 08/06/2021
+ms.openlocfilehash: 0e6d40f743b9d7cc7a7b12c407d000c97a16e99e
+ms.sourcegitcommit: 2a8c7de72f952203289459736107c875837bb07e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "130211449"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "137110070"
 ---
 # <a name="tutorial-get-started-with-docker"></a>教程：Docker 入门
 

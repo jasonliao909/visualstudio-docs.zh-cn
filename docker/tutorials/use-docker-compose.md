@@ -1,21 +1,20 @@
 ---
 title: Docker 教程 - 第 8 部分：使用 Docker Compose
 description: 介绍如何安装和使用 Docker Compose。
-ms.date: 08/06/2021
-author: nebuk89
-ms.author: ghogen
+ms.prod: vs-code
+ms.topic: tutorial
+ms.author: mikemort
+author: BigMorty
 manager: jmartens
-ms.technology: vs-docker
-ms.custom: contperf-fy22q1
-ms.topic: conceptual
-ms.workload:
-- azure
-ms.openlocfilehash: 1609081f364a2a20f983f8d8acd55181a71de42f
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.reviewer: nebuk89, ghogen
+ms.custom: “docker-team-owned”
+ms.date: 08/06/2021
+ms.openlocfilehash: 0e3169cc59b9e2fa0e0b8cbbc55d63af412a69c6
+ms.sourcegitcommit: 2a8c7de72f952203289459736107c875837bb07e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641362"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "137109927"
 ---
 # <a name="use-docker-compose"></a>使用 Docker Compose
 

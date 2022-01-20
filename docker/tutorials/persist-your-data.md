@@ -1,21 +1,20 @@
 ---
 title: Docker 教程 - 第 5 部分：保留数据
 description: 了解如何在数据库中保留数据，以及如何通过装载卷将目录共享到容器中。
-ms.date: 08/06/2021
-author: nebuk89
-ms.author: ghogen
+ms.prod: vs-code
+ms.topic: tutorial
+ms.author: mikemort
+author: BigMorty
 manager: jmartens
-ms.technology: vs-docker
-ms.custom: contperf-fy22q1
-ms.topic: conceptual
-ms.workload:
-- azure
-ms.openlocfilehash: 36c7a2dbada3dd1f23b45019dc0690f3ba1ab5f1
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.reviewer: nebuk89, ghogen
+ms.custom: “docker-team-owned”
+ms.date: 08/06/2021
+ms.openlocfilehash: f41ffead61523332d7a2ca87d3151a26388bf7af
+ms.sourcegitcommit: 2a8c7de72f952203289459736107c875837bb07e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641369"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "137109953"
 ---
 # <a name="persist-your-data"></a> 保留数据
 
