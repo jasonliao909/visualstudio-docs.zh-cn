@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 757b8f8c01145d2ec8c0a71105d19e3e76549953
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: 1d1d5571e0f1c781e547203ce11dabbb9e1a4be8
+ms.sourcegitcommit: 7746657b87b22a7684e79e508af598b02dfe24b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135803851"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "137609620"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Visual Studio 安装和升级问题疑难解答
 
@@ -167,6 +167,18 @@ Visual Studio 安装程序引导程序是轻型的可执行文件，用于启动
 
 > [!NOTE]
 > 工具必须在安装失败时使用的同一用户帐户下运行。 若要从其他用户帐户运行工具，请设置 `–user:<name>` 选项，以指定安装失败时使用的用户帐户。 有关其他选项和使用情况信息，请通过管理员命令提示符运行 `Collect.exe -?`。
+
+## <a name="problems-installing-webview2"></a>安装 WebView2 时出现问题
+
+WebView2 是应用程序所需的Visual Studio，但组织的组策略可能会阻止安装此组件。 阻止安装 WebView2 将Visual Studio安装 WebView2。 
+
+两个策略控制安装 WebView2 的能力[：Microsoft Edge" (WebView) "](/deployedge/microsoft-edge-update-policies#install-webview)和[Microsoft Edge"InstallDefault"。](/deployedge/microsoft-edge-update-policies#installdefault)
+
+• 如果Microsoft Edge" (WebView) "策略，它将确定是否可以安装 WebView2。
+• 如果未Microsoft Edge"安装 (WebView) "策略，Microsoft Edge"InstallDefault"策略将确定是否可以安装 WebView2。
+
+> [!NOTE]
+> 如果未配置任何策略，则组织不允许安装 WebView2。
 
 ## <a name="live-help"></a>实时帮助
 

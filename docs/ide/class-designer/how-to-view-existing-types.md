@@ -4,8 +4,6 @@ description: 了解如何通过将现有类型的形状添加到类图来查看�
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-f1_keywords:
-- vs.classdesigner.CannotShowBaseType
 helpviewer_keywords:
 - types [Visual Studio], visualizing
 - types [Visual Studio], class diagrams
@@ -17,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 03bd0d6bc66e97c0449287823457c3af8eb0cc86
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 3d8b0ce1f042078c3d420a13fc931508ebd21486
+ms.sourcegitcommit: 7746657b87b22a7684e79e508af598b02dfe24b7
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126735560"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "137609607"
 ---
 # <a name="how-to-view-existing-types-in-class-designer"></a>如何：在类设计器中查看现有类型
 

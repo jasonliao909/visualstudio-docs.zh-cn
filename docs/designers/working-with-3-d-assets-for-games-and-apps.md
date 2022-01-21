@@ -4,8 +4,6 @@ description: 了解可用来为基于 DirectX 的游戏和应用创建或修改 
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
-f1_keywords:
-- vs.graphics
 ms.assetid: 910d673b-c884-4eeb-9928-0e89f3d38cb6
 author: TerryGLee
 ms.author: tglee
@@ -13,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f4332e8eefb4c1d8c2ea5ce8d1b25eab840fcdd
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: e245dea20d34c21264b456517211283a9ad7565c
+ms.sourcegitcommit: 7746657b87b22a7684e79e508af598b02dfe24b7
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126735759"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "137609555"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>处理游戏和应用的 3D 资产
 

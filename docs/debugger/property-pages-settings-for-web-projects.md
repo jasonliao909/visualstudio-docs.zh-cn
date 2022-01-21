@@ -1,7 +1,7 @@
 ---
 title: Web 项目的属性设置 | Microsoft Docs
 description: 了解如何在 Visual Studio 的“属性页”对话框中更改网站调试配置的属性设置。
-ms.date: 11/04/2016
+ms.date: 01/14/2022
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -22,15 +22,21 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: cd99b76882ee4407496475668193c7b5631af50d
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 4ada03c7a14868c0d72681f5fb622ae10e4b3ace
+ms.sourcegitcommit: 7746657b87b22a7684e79e508af598b02dfe24b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129973137"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "137609516"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Web 项目的属性页设置
+
 如[调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)中所述，可以在“属性页”对话框中更改网站调试配置的属性设置。 下表显示“属性页”对话框中与调试器有关的设置的位置。
+
+::: moniker range=">=vs-2022"
+>[!IMPORTANT]
+>其中一些设置不适用于 ASP.NET Core。 若要配置调试设置 ASP.NET Core，Project C# 调试配置（A0.NET [5 及以上版本，.NET Core) ）。 ](../debugger/project-settings-for-csharp-debug-configurations-dotnetcore.md)
+::: moniker-end
 
 ### <a name="start-options-category"></a>启动选项类别
 

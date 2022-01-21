@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.date: 01/07/2022
 ms.custom:
 - vs-acquisition
-ms.openlocfilehash: 2dce6ce403acec588968a12c6be6268d73bedba9
-ms.sourcegitcommit: 9b1c1cceab4c59f0b91e19ae46a51969f72fcc34
+ms.openlocfilehash: b4f4deb5dc01a98d81a518dc3d5aeb36ae780ab8
+ms.sourcegitcommit: 7746657b87b22a7684e79e508af598b02dfe24b7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "136806152"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "137609490"
 ---
 # <a name="tutorial-create-a-matching-game-winforms-app"></a>教程：创建匹配游戏 WinForms 应用
 
@@ -72,7 +72,7 @@ ms.locfileid: "136806152"
 
 1. 在“开始”窗口中，选择“创建新项目”。
 
-   ![屏幕截图显示 Visual Studio 的“开始”窗口中的“创建新项目”选项。](./media/tutorial-windows-forms-create-match-game/create-new-project-dark-theme.png)
+   ![截图显示 Visual Studio 的“开始”窗口中的“创建新项目”选项。](./media/tutorial-windows-forms-create-match-game/create-new-project-dark-theme.png)
 
 1. 在“创建新项目”窗口中，搜索“Windows 窗体”。 然后，从“所有项目类型”列表中选择“桌面” 。
 
@@ -96,7 +96,7 @@ ms.locfileid: "136806152"
 ::: moniker-end
 
 Visual Studio 将为你的应用创建解决方案。
-解决方案是你的应用所需的全部项目和文件的容器。
+解决方案是应用所需全部项目和文件的容器。
 
 此时，Visual Studio 在 Windows 窗体设计器中显示一个空窗体。
 
@@ -188,3 +188,4 @@ TableLayoutPanel 现在是一个 4x4 网格，包含 16 个大小相等的方块
 继续学习下一个教程，了解如何向每个标签分配随机图标，以及向标签添加事件处理程序。
 > [!div class="nextstepaction"]
 > [向匹配游戏添加图标](tutorial-windows-forms-match-game-icons.md)
+
