@@ -4,8 +4,6 @@ description: 了解如何在类设计器中的类图上查看基类型和派生�
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-f1_keywords:
-- vs.classdesigner.AssociationTypeNotFoundError
 helpviewer_keywords:
 - types [Visual Studio], inheritance
 - types [Visual Studio], base
@@ -17,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: ba469d7f4d9460b6c53ae37432d65a941e0d8fcb
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 0c2b3426381b910a3427c95e573119a201b3fca1
+ms.sourcegitcommit: 7746657b87b22a7684e79e508af598b02dfe24b7
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126735559"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "137609477"
 ---
 # <a name="how-to-view-inheritance-between-types-in-class-designer"></a>如何：在类设计器中查看类型之间的继承
 

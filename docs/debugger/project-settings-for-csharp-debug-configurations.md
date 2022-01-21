@@ -1,7 +1,7 @@
 ---
 title: C# 调试配置的项目设置 | Microsoft Docs
 description: 了解如何使用项目属性页面的“调试”选项卡和“生成”选项卡在 Visual Studio 中更改 C# 调试配置的项目设置。
-ms.date: 11/21/2018
+ms.date: 01/13/2022
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -22,14 +22,14 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2f06e853ec236c979e2881b8243363964cee53b7
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: a92d529f2e77f1ff2d4f40496316a8568d919ebc
+ms.sourcegitcommit: 7746657b87b22a7684e79e508af598b02dfe24b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129971709"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "137609529"
 ---
-# <a name="project-settings-for--c-debug-configurations"></a>C# 调试配置的项目设置
+# <a name="project-settings-for-c-debug-configurations"></a>Project C# 调试配置设置
 
 可在项目属性页的[“调试”选项卡](#debug-tab)和[“生成”选项卡](#build-tab)中更改 C# 项目调试设置。
 
@@ -37,8 +37,14 @@ ms.locfileid: "129971709"
 
 有关详细信息，请参见[调试和发布配置](how-to-set-debug-and-release-configurations.md)。
 
+::: moniker range=">=vs-2022"
+>[!IMPORTANT]
+>这些设置不适用于 .NET Core、ASP.NET 或 UWP 应用。 若要配置 .NET 5+ 和 .NET Core 的调试设置，请参阅 C# 调试配置的 Project 设置（A0.NET [5+、.NET Core) ）。 ](../debugger/project-settings-for-csharp-debug-configurations-dotnetcore.md)
+::: moniker-end
+::: moniker range="<=vs-2019"
 >[!IMPORTANT]
 >这些设置不适用于 .NET Core、ASP.NET 或 UWP 应用。 若要为 UWP 应用配置调试设置，请参阅[启动 UWP 应用的调试会话](start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)。
+::: moniker-end
 
 ## <a name="debug-tab"></a>“调试”选项卡
 

@@ -2,7 +2,7 @@
 title: 启用 ASP.NET 应用调试 | Microsoft Docs
 description: 了解如何在 Visual Studio 中启用对 ASP.NET 和 ASP.NET Core 应用的调试。 可以在 IIS Express 服务器或本地 IIS 服务器上运行该进程。
 ms.custom: SEO-VS-2020
-ms.date: 10/29/2020
+ms.date: 01/14/2022
 ms.topic: how-to
 dev_langs:
 - CSharp
@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - aspnet
-ms.openlocfilehash: f452ed79ce12e7f5e8e265bbb46a3a011bb10328
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: bc76e94a7769b52fabc8075ee27ec0dd667983c5
+ms.sourcegitcommit: 7746657b87b22a7684e79e508af598b02dfe24b7
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641985"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "137609648"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>在 Visual Studio 中调试 ASP.NET 或 ASP.NET Core 应用
 
@@ -35,6 +35,10 @@ ms.locfileid: "126641985"
 >以下步骤和设置仅适用于在本地服务器上调试应用。 在远程 IIS 服务器上调试应用使用“附加到进程”，并忽略这些设置。 有关在 IIS 上远程调试 ASP.NET 应用的详细信息和说明，请参阅[在 IIS 计算机上远程调试 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md) 或[在远程 IIS 计算机上远程调试 ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)。
 
 Visual Studio 中内置了 IIS Express 服务器。 IIS Express 是 ASP.NET 和 ASP.NET Core 项目的默认调试服务器，并且是预先配置的。 这是最简单的调试方法，也是初始调试和测试的理想选择。
+
+::: moniker range=">=vs-2022"
+对于 ASP.NET Core，还可以在 Kestrel Web 服务器上进行调试。
+::: moniker-end
 
 你还可以在配置为运行该应用的本地 IIS 服务器（8.0 或更高版本）上调试 ASP.NET 或 ASP.NET Core 应用。 要在本地 IIS 上调试，必须满足以下要求：
 
@@ -72,6 +76,43 @@ IIS Express 是默认选择，并且是预先配置的。 如果要在本地 IIS
 
 1. 要开始调试，请在工具栏中选择“IIS Express (\<Browser name>)”或“本地 IIS (\<Browser name>)”，从“调试”菜单中选择“启动调试”，或按 F5    。 调试器在断点处暂停。 如果调试器无法命中断点，请参阅[调试疑难解答](#troubleshoot-debugging)。
 
+::: moniker range=">=vs-2022"
+## <a name="debug-aspnet-core-apps"></a>调试 ASP.NET Core 应用
+
+IIS Express 是默认选择，并且是预先配置的。 如果要在本地 IIS（而不是 IIS Express）进行调试，请确保满足本地[IIS 调试 的要求](#iis)。 还会显示基于项目名称的默认配置文件，该配置文件针对 Kestrel Web 服务器进行配置。
+
+1. 在 Visual Studio“解决方案资源管理器”中，选择 ASP.NET Core 项目，然后单击“属性”图标，或按 Alt+Enter，或右键单击并选择“属性”。
+
+1. 选择" **调试"** 选项卡，然后单击链接以打开 **"打开调试启动配置文件"UI**。
+
+   呈现的 UI 对应于项目的 *launchSettings.json* 文件中的设置。 有关此文件的信息，请参阅在 中使用多个环境中的 Development and launchSettings.json [ASP.NET Core。](/aspnet/core/fundamentals/environments)
+
+1. 选择要配置的配置文件进行调试。
+
+   - 对于 IIS Express，请从下拉列表中选择 IIS Express。
+   - 对于 Kestrel，请选择以项目命名的配置文件。
+   - 对于本地 IIS，请选择 **"新建** "并创建新的 IIS 配置文件。
+
+1. 确保选中“启动浏览器”。
+
+1. 请确保 **URL、****应用 URL** 和 **应用 SSL URL** 正确。
+
+   **URL** 指定 .NET 或 .NET Core 的主机 URL 的位置。 对于以项目名称命名的 (，即 *launchSettings.json* 中的 commandName 属性为 Project) ，Kestrel 服务器侦听指定的端口。  对于 IIS 配置文件，此值通常与应用 **URL 相同**。 有关详细信息，请参阅配置项目 下的 IIS [启动配置文件部分](/aspnet/core/host-and-deploy/iis/development-time-iis-support#configure-the-project)。
+
+   **应用 URL** **和应用 SSL URL** 指定 (URL) 。 对于以项目命名的配置文件，此属性指定 Kestrel 服务器 URL，通常为 和 https://localhost:5001 http://localhost:5000 。 对于IIS Express，**应用 SSL URL** 通常为 http://localhost:44334 。
+
+1. 在“环境变量”下，确保 ASPNETCORE_ENVIRONMENT 显示了值“开发”  。 如果没有，请添加 变量。
+
+   ![ASP.NET Core 调试器设置](../debugger/media/vs-2022/dbg-asp-dotnet-enable-debugging-3.png "ASP.NET Core 调试器设置")
+
+   有关环境变量的信息，请参阅 [环境](/aspnet/core/fundamentals/environments#environments-1)。
+
+1. 要调试应用，请在项目中的某些代码上设置断点。 在Visual Studio工具栏中，确保将配置设置为"调试 **"。**
+
+1. 若要开始调试，请在工具栏中选择配置文件名称（如 、IIS Express），或在工具栏中，从"调试"菜单中选择"开始调试"，或 **\<project profile name>**  **\<IIS profile name>** 按 **F5**。  调试器在断点处暂停。 如果调试器无法命中断点，请参阅[调试疑难解答](#troubleshoot-debugging)。
+::: moniker-end
+
+::: moniker range="<=vs-2019"
 ## <a name="debug-aspnet-core-apps"></a>调试 ASP.NET Core 应用
 
 IIS Express 是默认选择，并且是预先配置的。 如果要在本地 IIS 上调试，请确保满足[本地 IIS 调试的要求](#iis)。
@@ -92,11 +133,12 @@ IIS Express 是默认选择，并且是预先配置的。 如果要在本地 IIS
 
    ![ASP.NET Core 调试器设置](../debugger/media/dbg-aspnet-enable-debugging3.png "ASP.NET Core 调试器设置")
 
-1. 使用“文件” > “保存选定项”或 Ctrl+S 来保存更改   。
+1. 使用 **"** > **文件保存选定项"** 或 **Ctrl** + **S** 保存任何更改。
 
 1. 要调试应用，请在项目中的某些代码上设置断点。 在 Visual Studio 工具栏中，确保将配置设置为“调试”，且 IIS Express 或新的 IIS 配置文件名称显示在模拟器字段中 。
 
 1. 要开始调试，请在工具栏中选择 IIS Express 或 \<IIS profile name>，从“调试”菜单中选择“启动调试”，或按 F5    。 调试器在断点处暂停。 如果调试器无法命中断点，请参阅[调试疑难解答](#troubleshoot-debugging)。
+::: moniker-end
 
 ## <a name="troubleshoot-debugging"></a>调试疑难解答
 
