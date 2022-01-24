@@ -2,7 +2,7 @@
 title: 使用 JSON 文件来自定义生成调试任务
 description: 了解如何自定义任务，以提供某些配置详细信息，从而运行和调试 Visual Studio 无法识别的代码库。
 ms.custom: SEO-VS-2020
-ms.date: 02/21/2018
+ms.date: 01/21/2022
 ms.topic: conceptual
 helpviewer_keywords:
 - NMAKE [Visual Studio]
@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: d05ffcc5140edcf04dd03b591df100831304fc6b
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 59f27edc76a0a7d42bf988961f90f8812c44b0c2
+ms.sourcegitcommit: 7d319435c35075d4cec021b7b667666a81c02435
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641200"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "137650394"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>自定义“打开文件夹”开发的生成和调试任务
 
@@ -36,7 +36,7 @@ Visual Studio 清楚如何运行多种语言和代码库，但它并不清楚如
 |tasks.vs.json|指定自定义生成命令和编译器开关，以及任意（与非生成相关）任务。<br>通过“解决方案资源管理器”右键单击菜单项“配置任务”进行访问。|
 |*launch.vs.json*|指定用于调试的命令行参数。<br>通过“解决方案资源管理器”右键单击菜单项“调试和启动设置”进行访问。|
 
-这些 .json 文件位于代码库根文件夹中一个名为 .vs 的隐藏文件夹中。 当你在“解决方案资源管理器”中的文件或文件夹上选择“配置任务”或“调试和启动设置”时，Visual Studio 会根据需要创建 tasks.vs.json 和 launch.vs.json 文件。 这些 json 文件通常处于隐藏状态，因为一般情况下用户不希望在源控件中打开这些文件。 但是如果要在源控件中打开这些文件，请将其拖入代码库的根目录，将在此处显示这些文件。
+这些 .json 文件位于代码库根文件夹中一个名为 .vs 的隐藏文件夹中。 当你在“解决方案资源管理器”中的文件或文件夹上选择“配置任务”或“调试和启动设置”时，Visual Studio 会根据需要创建 tasks.vs.json 和 launch.vs.json 文件。 这些 json 文件通常处于隐藏状态，因为一般情况下用户不希望在源控件中打开这些文件。 但是，如果您希望能够将其签入源代码管理，请将文件从文件系统或解决方案资源管理器拖动到代码库的根目录中，然后它们就会显示。
 
 > [!TIP]
 > 若要在 Visual Studio 中查看隐藏文件夹，请在“解决方案资源管理器”工具栏上选择“显示所有文件”按钮 。

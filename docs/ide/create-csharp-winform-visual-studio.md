@@ -13,12 +13,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d8c83d308d0d3f08c9469d45b725bb9fc8f34e9
-ms.sourcegitcommit: 5f60dd61e7f281db7892118dbed6387c4903701f
-ms.translationtype: HT
+ms.openlocfilehash: b323df635e3b338853ef5be2501466d68ba6168e
+ms.sourcegitcommit: 7d319435c35075d4cec021b7b667666a81c02435
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "132079665"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "137650460"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-c"></a>在 Visual Studio 中使用 C\# 创建 Windows 窗体应用
 
@@ -67,7 +67,7 @@ ms.locfileid: "132079665"
 
 1. 打开 Visual Studio。
 
-1. 在“开始”窗口上，选择“创建新项目”。
+1. 在“开始”窗口上，选择“创建新项目”  。
 
    ![查看“创建新项目”窗口](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
@@ -267,7 +267,7 @@ ms.locfileid: "132079665"
 要更加深入地了解，请继续学习下面的教程：
 
 > [!div class="nextstepaction"]
-> [教程：创建图片查看器](tutorial-1-create-a-picture-viewer.md)
+> [教程：创建图片查看器](tutorial-windows-forms-picture-viewer-layout.md)
 
 ## <a name="see-also"></a>请参阅
 

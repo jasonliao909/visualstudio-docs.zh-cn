@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 832d3938bee270511a23c73a2b8ee7195236c6cd
-ms.sourcegitcommit: 1d44a5509772c3926f5ad13b1796485d6d8c441e
+ms.openlocfilehash: 62ce3a0ae012a6d1dee5ae132ce3b51a1eb94452
+ms.sourcegitcommit: ba56ce62366f8c6fe2a7e38828fa79bc48801cae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135963939"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "136855143"
 ---
 # <a name="common-msbuild-project-properties"></a>常用的 MSBuild 项目属性
 
@@ -90,7 +90,7 @@ ms.locfileid: "135963939"
 | OptionStrict | Visual Basic | 一个布尔值，设置为 `true` 时，将使得生成任务强制使用严格类型语义来限制隐式类型转换。 此属性等效于 vbc.exe 编译器的 `/optionstrict` 开关。 |
 | OutDir | 全部 | 指示项目或解决方案的最终输出位置。 在生成解决方案时，可以使用 OutDir 将多个项目输出收集到一个位置。 此外，OutDir 包含在用于解析引用的 AssemblySearchPaths 中。 例如 bin\Debug。 |
 | OutputPath | 全部 | 相对于项目目录，例如 bin\Debug，指定输出目录的路径。 |
-| OutputType | 全部 |  指定输出文件的文件格式。 此参数可以具有下列值之一：<br /><br /> -   Library。 创建一个代码库。 （默认值）。<br />-   Exe。 创建控制台应用程序。<br />-   Module。 创建一个模块。<br />-   Winexe。 创建一个基于 Windows 的程序。<br /><br /> 对于 C# 和 Visual Basic，此属性等效于 `/target` 开关。 可以通过推断自动重写输出类型。 请参阅[WPF 和 WinForms 应用的 OutputType 设置为 WinExe。](/dotnet/core/compatibility/sdk/5.0/automatically-infer-winexe-output-type) 将 设置为 来禁用 `DisableWinExeOutputInference` 推断 `true` 。 |
+| OutputType | 全部 |  指定输出文件的文件格式。 此参数可以具有下列值之一：<br /><br /> -   Library。 创建一个代码库。 （默认值）。<br />-   Exe。 创建控制台应用程序。<br />-   Module。 创建一个模块。<br />-   Winexe。 创建一个基于 Windows 的程序。<br /><br /> 对于 C# 和 Visual Basic，此属性等效于 `/target` 开关。 推断可以自动重写输出类型。 [对于 WPF 和 WinForms 应用，请参阅 "OutputType 设置为 WinExe](/dotnet/core/compatibility/sdk/5.0/automatically-infer-winexe-output-type)"。 通过将设置 `DisableWinExeOutputInference` 为来禁用推断 `true` 。 |
 | OverwriteReadOnlyFiles | 全部 | 一个布尔值，指示要让生成覆盖只读文件还是触发错误。 |
 | PathMap | .NET | 指定如何将物理路径映射到编译器输出的源路径名称。 此属性等效于编译器的 `/pathmap` 开关。 |
 | PdbFile | .NET | 正在发出的 .pdb 文件的文件名。 此属性等效于 csc.exe 编译器的 `/pdb` 开关。 |
@@ -132,13 +132,13 @@ ms.locfileid: "135963939"
 | Utf8Output | .NET | 一个布尔型参数，如果设置为 `true`，则使用 UTF-8 编码记录编译器输出。 此参数等效于 `/utf8Output` 编译器开关。 |
 | VbcToolPath | Visual Basic | 一个可选路径，在当前版本的 vbc.exe 被重写时它可以指示 vbc.exe 的另一个位置 。 |
 | VbcVerbosity | Visual Basic | 指定 Visual Basic 编译器输出的详细程度。 有效值为“Quiet”、“Normal”（默认值）或“Verbose”。 |
-| VisualStudioVersion | 全部 | 指定运行此项目应考虑使用的 Visual Studio 的版本。 如果未指定该属性，则 MSBuild 将其设置为合理的默认值。<br /><br /> 此属性在多种项目类型中用于指定要生成的目标组。 如果将某个项目的 `ToolsVersion` 设置为 4.0 或更高版本，则 `VisualStudioVersion` 将用于指定要使用的子工具集。 有关详细信息，请参阅[工具集 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)。 |
+| VisualStudioVersion | 全部 | 指定运行此项目应考虑使用的 Visual Studio 的版本。 如果未指定此属性，MSBuild 会将其设置为默认值 `{VisualStudioMajorVersion}.0` ; 例如，它将 `17.0` 适用于所有版本的 Visual Studio 2022。<br /><br /> 此属性在多种项目类型中用于指定要生成的目标组。 如果将某个项目的 `ToolsVersion` 设置为 4.0 或更高版本，则 `VisualStudioVersion` 将用于指定要使用的子工具集。 有关详细信息，请参阅[工具集 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)。 |
 | WarningsAsErrors | .NET | 指定将被视为错误的警告的列表。 此参数等效于 `/warnaserror` 编译器开关。 |
 | WarningsNotAsErrors | .NET | 指定不被视为错误的警告的列表。 此参数等效于 `/warnaserror` 编译器开关。 |
 | Win32Manifest | .NET | 应嵌入最终程序集中的清单文件的名称。 此参数等效于 `/win32Manifest` 编译器开关。 |
 | Win32Resource | .NET | 要嵌入最终程序集中的 Win32 资源的文件名。 此参数等效于 `/win32resource` 编译器开关。 |
 
-特定于 .NET SDK 项目的属性（如 `TargetFramework` ）记录在 [框架属性 中](/dotnet/core/project-sdk/msbuild-props#framework-properties)。
+特定于 .NET SDK 项目的属性（如 `TargetFramework` ）在 [框架属性](/dotnet/core/project-sdk/msbuild-props#framework-properties)中进行了介绍。
 
 ## <a name="see-also"></a>请参阅
 

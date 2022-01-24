@@ -20,7 +20,6 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.General
 - VS.ToolsOptionsPages.Text_Editor.HTML_(Web_Forms).General
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.General
-- VS.ToolsOptionsPages.Text_Editor.TypeScript.General
 - VS.ToolsOptionsPages.Text_Editor.JSON.General
 - VS.ToolsOptionsPages.Text_Editor.LESS.General
 - VS.ToolsOptionsPages.Text_Editor.Plain_Text.General
@@ -45,12 +44,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: f581f48efb9fbba97aa65b9826f7114f7377e951
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 5816c775f3e2a677b400eddad6be029dc6c6aaa4
+ms.sourcegitcommit: 7d319435c35075d4cec021b7b667666a81c02435
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126640865"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "137650100"
 ---
 # <a name="options-dialog-box-text-editor--all-languages"></a>“选项”对话框：“文本编辑器”\>“所有语言”
 

@@ -10,12 +10,12 @@ author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.technology: vs-ide-designers
-ms.openlocfilehash: 6e43c010e84f31b39167baa60cef6cceb7b21c25
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 5ed70cd7dc19629bcf4cbcba3230a9de46e6121e
+ms.sourcegitcommit: 7d319435c35075d4cec021b7b667666a81c02435
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126652494"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "137650372"
 ---
 # <a name="tutorial-get-started-with-windows-forms-designer"></a>教程：Windows 窗体设计器入门
 
@@ -312,7 +312,7 @@ DemoCalculator 控件可在其他复合控件或窗体上使用。 以下过程�
 
 ## <a name="next-steps"></a>后续步骤
 
-本文演示了如何构造用于简单计算器的用户界面。 若要继续，可以通过实现计算器逻辑来扩展其功能，然后[使用 ClickOnce 发布应用](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。 或者，继续学习[使用 Windows 窗体创建图片查看器](../ide/tutorial-1-create-a-picture-viewer.md)的其他教程。
+本文演示了如何构造用于简单计算器的用户界面。 若要继续，可以通过实现计算器逻辑来扩展其功能，然后[使用 ClickOnce 发布应用](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。 或者，继续学习[使用 Windows 窗体创建图片查看器](../ide/tutorial-windows-forms-picture-viewer-layout.md)的其他教程。
 
 ## <a name="see-also"></a>请参阅
 

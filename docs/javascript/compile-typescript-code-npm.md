@@ -1,8 +1,9 @@
 ---
 title: 使用 npm 编译和生成 TypeScript 代码
 description: 了解如何使用节点包管理器 (npm) 向 Visual Studio 项目添加 TypeScript 支持。
-ms.date: 7/23/2020
+ms.date: 01/10/2022
 ms.topic: conceptual
+ms.custom: devdivchpfy22
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
@@ -11,18 +12,20 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: df4eebd88001593070f8fb88b84dabf7bde1c875
-ms.sourcegitcommit: d38d1b083322019663fec7d1d85a4cda456aadca
+ms.openlocfilehash: 7f1c0618967577dd8b4585b71c3c99c76324ebcf
+ms.sourcegitcommit: 7d319435c35075d4cec021b7b667666a81c02435
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "135534250"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "137650269"
 ---
 # <a name="compile-typescript-code-nodejs"></a>编译 TypeScript 代码 (Node.js)
 
-可使用 TypeScript SDK 将 TypeScript 支持添加到项目中，默认情况下，可在 Visual Studio 安装程序中使用，也可以使用 npm 提供。 对于在 Visual Studio 2019 中开发的项目，建议使用 TypeScript npm 包，以实现跨不同平台和环境的更高可移植性。
+可以使用 TypeScript SDK 或 npm 将 TypeScript 支持添加到项目。 默认情况下TypeScript SDK安装程序中提供Visual Studio选项。
 
-对于 ASP.NET Core 项目，建议改为使用 [NuGet 包](../javascript/compile-typescript-code-nuget.md)。
+对于在 Visual Studio 2019 中开发的项目，建议使用 TypeScript npm 包，以实现跨不同平台和环境的更高可移植性。
+
+对于 ASP.NET Core，建议改为使用 NuGet[包](../javascript/compile-typescript-code-nuget.md)。
 
 ## <a name="add-typescript-support-using-npm"></a>使用 npm 添加 TypeScript 支持
 
@@ -30,7 +33,7 @@ ms.locfileid: "135534250"
 
 1. [按照说明](../ide/quickstart-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json)安装 Node.js 开发工作负载和 Node.js 运行时。
 
-   若要与 Visual Studio 进行最简单的集成，请使用 Node.js TypeScript 模板之一（如 Blank Node.js Web 应用程序模板）创建项目。 否则，请使用 Visual Studio 随附的 Node.js JavaScript 模板并按照此处的说明进行操作，或使用[打开文件夹](../javascript/develop-javascript-code-without-solutions-projects.md)项目。
+   若要实现Visual Studio集成，请通过以下 TypeScript Node.js之一创建项目，例如"Node.js Web 应用程序"模板。 否则，请使用 Node.js中包含的 JavaScript 模板Visual Studio并按照此处的说明进行操作。 或者，使用" [打开文件夹"](../javascript/develop-javascript-code-without-solutions-projects.md) 项目。
 
 1. 如果你的项目尚未包含它，则安装 [TypeScript npm 包](https://www.npmjs.com/package/typescript)。
 
@@ -46,7 +49,7 @@ ms.locfileid: "135534250"
 
 1. 打开 tsconfig.json 并更新，以设置所需的编译器选项。
 
-   下面是一个简单的 tsconfig.json 文件示例。
+   以下是简单 *tsconfig.json 文件* 的示例。
 
    ```json
    {
@@ -73,7 +76,7 @@ ms.locfileid: "135534250"
 
 ## <a name="build-the-application"></a>生成应用程序
 
-1. 将 TypeScript (.ts) 或 TypeScript JSX (.tsx) 文件添加到项目，然后添加 TypeScript 代码。 有关 TypeScript 的简单示例，请使用以下内容：
+1. 将 TypeScript (.ts) 或 TypeScript JSX (.tsx) 文件添加到项目，然后添加 TypeScript 代码。 以下是 TypeScript 的简单示例：
 
    ```typescript
    let message: string = 'Hello World';
@@ -89,7 +92,7 @@ ms.locfileid: "135534250"
    },
    ```
 
-   如果需要使用第三方工具（如 webpack）进行生成，则可以将命令行生成脚本添加到 package.json 文件：
+   若要使用 webpack 等第三方工具进行生成，可以将命令行生成脚本添加到 *package.json* 文件：
 
    ```json
    "scripts": {
@@ -104,11 +107,11 @@ ms.locfileid: "135534250"
 1. 如果需要配置选项（如启动页、Node.js 运行时路径、应用程序端口或运行时参数），请右键单击解决方案资源管理器中的项目节点，然后选择“属性”。
 
    >[!NOTE]
-   > 配置第三方工具时，Node.js 项目不会使用“工具” > “选项” > “项目和解决方案” > “Web 包管理” > “外部 Web 工具”下配置的路径。 这些设置用于其他项目类型。
+   > 配置第三方工具时，Node.js项目不使用在"工具选项""项目和解决方案""Web 包管理  >    >    >  Web 工具 **"下**  >  **配置的路径**。 这些设置用于其他项目类型。
 
 1. 选择“生成”>“生成解决方案”。
 
-   尽管应用程序会在运行时自动生成，但我们想要查看在生成过程中发生的一些事情：
+   应用在运行时自动生成。 但是，在生成过程中可能会发生以下情况：
 
    如果生成了源映射，请打开在“outDir”选项中指定的文件夹，并找到生成的 \*.js 文件以及生成的 \*js.map 文件。
 

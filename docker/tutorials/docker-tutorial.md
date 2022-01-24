@@ -9,12 +9,12 @@ manager: jmartens
 ms.reviewer: nebuk89, ghogen
 ms.custom: “docker-team-owned”
 ms.date: 08/06/2021
-ms.openlocfilehash: 0e6d40f743b9d7cc7a7b12c407d000c97a16e99e
-ms.sourcegitcommit: 2a8c7de72f952203289459736107c875837bb07e
+ms.openlocfilehash: 7cfdbaf98c0f1465c31eb8c8e490fa24e00364a9
+ms.sourcegitcommit: 7d319435c35075d4cec021b7b667666a81c02435
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "137110070"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "137650113"
 ---
 # <a name="tutorial-get-started-with-docker"></a>教程：Docker 入门
 
@@ -81,3 +81,7 @@ docker run -d -p 80:80 docker/getting-started
 
 > [!div class="nextstepaction"]
 > [应用程序](your-application.md)
+
+某些源：
++ [Docker Cloud Integration](https://github.com/docker/compose-cli)
++ [示例](https://github.com/docker/awesome-compose)

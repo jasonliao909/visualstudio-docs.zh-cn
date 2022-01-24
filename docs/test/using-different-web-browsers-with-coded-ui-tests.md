@@ -10,12 +10,12 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 216046727e40d9e086ffe69e312ce22ccc6b6357
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: ac139f8faa8be4b57a7a9d3c841681a9817d5f88
+ms.sourcegitcommit: 7d319435c35075d4cec021b7b667666a81c02435
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126735427"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "137650481"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>对编码的 UI 测试使用不同的 Web 浏览器
 
@@ -93,7 +93,7 @@ ms.locfileid: "126735427"
 
     2. 对于“公共语言运行时异常”，请取消选中“用户未处理的”。
 
-如果在编码的 UI 测试中没有看到用于更改 `BrowserWindow.CurrentBrowser` 的选项，则使用的 Visual Studio 版本可能不支持使用各种 Web 浏览器的编码的 UI 测试。 若要使用此类编码的 UI 测试，必须使用 Visual Studio Enterprise 版本。
+如果在编码的 UI 测试中看不到要更改的选项，你可能使用的是不支持使用各种 Web 浏览器进行编码的 UI 测试的 `BrowserWindow.CurrentBrowser` Visual Studio 版本。 若要使用此类编码的 UI 测试，必须使用 Visual Studio Enterprise 版本。
 
 以下是应知道的其他事项：
 

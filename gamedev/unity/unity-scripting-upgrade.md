@@ -10,12 +10,12 @@ ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.workload:
 - unity
-ms.openlocfilehash: c1b745e4a1da85324b2dc73e30bebb873e2d0720
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: f15aa8326e98df08d9302782c7af739d4779236c
+ms.sourcegitcommit: 7d319435c35075d4cec021b7b667666a81c02435
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126665467"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "137650425"
 ---
 # <a name="using-net-4x-in-unity"></a>在 Unity 中使用 .NET 4.x
 
@@ -42,7 +42,7 @@ ms.locfileid: "126665467"
 
 一旦切换到 .NET 4.x 等效脚本运行时，可使用 PlayerSettings 中的下拉菜单指定“Api Compatibility Level”（“Edit > Project Settings > Player”）。 有两个选项：
 
-* **.NET Standard 2.0**。 此配置文件与 .NET Foundation 发布的 [.NET Standard 2.0 配置文件](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md)匹配。 Unity 建议新项目使用 .NET Standard 2.0。 它比 .NET 4.x 小，有利于尺寸受限的平台。 此外，Unity 承诺在 Unity 支持的所有平台上支持此配置文件。
+* **.NET Standard 2.0**。 此配置文件与 .NET Foundation 发布的 [.NET Standard 2.0 配置文件](https://github.com/dotnet/standard/blob/release/3.0/docs/versions/netstandard2.0.md)匹配。 Unity 建议新项目使用 .NET Standard 2.0。 它比 .NET 4.x 小，有利于尺寸受限的平台。 此外，Unity 承诺在 Unity 支持的所有平台上支持此配置文件。
 
 * **.NET 4.x**。 此配置文件提供对最新 .NET 4 API 的访问权限。 它包括 .NET Framework 类库中提供的所有代码，并且支持 .NET Standard 2.0 配置文件。 如果 .NET Standard 2.0 配置文件中未包含项目所需的部分 API，请使用 .NET 4.x 配置文件。 但此 API 的某些部分并非在所有 Unity 平台上均受支持。
 

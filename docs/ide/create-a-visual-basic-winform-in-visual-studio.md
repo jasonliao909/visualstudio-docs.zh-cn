@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.date: 01/07/2022
 ms.custom: vs-acquisition, get-started
-ms.openlocfilehash: a5fa899af5c15bca318e713722854aa163932448
-ms.sourcegitcommit: 9b1c1cceab4c59f0b91e19ae46a51969f72fcc34
+ms.openlocfilehash: 86c0f162662c98383ba849db4ae78313143f8480
+ms.sourcegitcommit: 7d319435c35075d4cec021b7b667666a81c02435
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "136801242"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "137650461"
 ---
 # <a name="tutorial-create-a-winforms-app-with-visual-basic"></a>教程：使用 Visual Basic 创建 WinForms 应用
 
@@ -27,27 +27,27 @@ Visual Studio 集成开发环境 (IDE) 包含创建 Windows 窗体应用所需�
 在本教程中，你将了解如何执行以下操作：
 
 > [!div class="checklist"]
-> - 创建一个项目
+> - 创建项目
 > - 向窗体添加按钮
 > - 添加标签和代码
 > - 运行应用程序
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 ::: moniker range="vs-2017"
-完成本教程需要 Visual Studio。
-有关免费版本，请访问[Visual Studio 下载 "页](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)。
+若要完成本教程，必须具有 Visual Studio。
+请访问 [Visual Studio 下载页](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)获取免费版本。
 ::: moniker-end
 ::: moniker range="vs-2019"
-完成本教程需要 Visual Studio。
-有关免费版本，请访问[Visual Studio 下载 "页](https://visualstudio.microsoft.com/vs/)。
+若要完成本教程，必须具有 Visual Studio。
+请访问 [Visual Studio 下载页](https://visualstudio.microsoft.com/vs/)获取免费版本。
 ::: moniker-end
 ::: moniker range=">=vs-2022"
-完成本教程需要 Visual Studio。
-有关免费版本，请访问[Visual Studio 下载 "页](https://visualstudio.microsoft.com/downloads)。
+若要完成本教程，必须具有 Visual Studio。
+请访问 [Visual Studio 下载页](https://visualstudio.microsoft.com/downloads)获取免费版本。
 ::: moniker-end
 
-## <a name="create-a-project"></a>创建一个项目
+## <a name="create-a-project"></a>创建项目
 
 创建 Visual Basic 应用程序项目。
 项目类型随附了所需的全部模板文件，无需添加任何内容。
@@ -95,7 +95,7 @@ Visual Studio 集成开发环境 (IDE) 包含创建 Windows 窗体应用所需�
    >
    > ![屏幕截图显示在 Visual Studio 安装程序中选择的 .net Core 工作负荷。](../ide/media/install-dot-net-desktop-env.png)
    >
-   > 然后，在 Visual Studio 安装程序中选择 "**修改**"。 系统可能会提示您保存您的工作。
+   > 然后，在 Visual Studio 安装程序中选择 "**修改**"。 系统可能会提示你保存工作内容。
 
 1. 在 "**配置新项目**" 窗口中，输入 " *HelloWorld* " 作为 **Project 名称**。 然后选择“创建”。
 
@@ -130,7 +130,7 @@ Visual Studio 集成开发环境 (IDE) 包含创建 Windows 窗体应用所需�
    >
    > ![屏幕截图显示在 Visual Studio 安装程序中选择的 .net Core 工作负荷。](../ide/media/install-dot-net-desktop-env.png)
    >
-   > 然后，在 Visual Studio 安装程序中选择 "**修改**"。 系统可能会提示您保存您的工作。
+   > 然后，在 Visual Studio 安装程序中选择 "**修改**"。 系统可能会提示你保存工作内容。
 
 1. 在 "**配置新项目**" 窗口中，输入 " *HelloWorld* " 作为 **Project 名称**。 然后选择“创建”。
 
@@ -146,7 +146,7 @@ Visual Studio 集成开发环境 (IDE) 包含创建 Windows 窗体应用所需�
 窗体就是 Windows 用户界面。
 您将通过向窗体添加控件来创建 "Hello World" 应用程序。
 
-1. 在 Visual Studio IDE 的左侧，选择 "**工具箱**" 选项卡。如果看不到它，请 > 从菜单栏或按 **Ctrl** + **Alt** + **X** 选择 "查看工具箱"。
+1. 在 Visual Studio IDE 的左侧，选择“工具箱”选项卡。如果没有看到，则从菜单栏中选择“查看”>“工具箱”或者按 Ctrl+Alt+X 键     。
 
    ![屏幕截图显示了打开工具箱窗口的 "工具箱" 选项卡。](media/create-a-visual-basic-winform-in-visual-studio/toolbox-tab.png)
 
@@ -212,7 +212,7 @@ Visual Studio 集成开发环境 (IDE) 包含创建 Windows 窗体应用所需�
 若要详细了解 Windows 窗体，请继续学习以下教程：
 
 > [!div class="nextstepaction"]
-> [教程：创建图片查看器](tutorial-1-create-a-picture-viewer.md)
+> [教程：创建图片查看器](tutorial-windows-forms-picture-viewer-layout.md)
 
 ## <a name="see-also"></a>请参阅
 

@@ -661,25 +661,14 @@
                       href: ide/tutorial-windows-forms-picture-viewer-code.md
                 - name: 教程 2：创建计时数学测验 (C#)
                   items:
-                    - name: 概述
-                      displayName: Tutorial 2 Timed math quiz
-                      href: ide/tutorial-2-create-a-timed-math-quiz.md
-                    - name: 步骤 1：创建项目并向窗体添加标签
-                      href: ide/step-1-create-a-project-and-add-labels-to-your-form.md
-                    - name: 步骤 2：创建随机加法问题
-                      href: ide/step-2-create-a-random-addition-problem.md
-                    - name: 步骤 3：添加倒计时计时器
-                      href: ide/step-3-add-a-countdown-timer.md
-                    - name: 步骤 4：添加 CheckTheAnswer() 方法
-                      href: ide/step-4-add-the-checktheanswer-parens-method.md
-                    - name: 步骤 5：为 NumericUpDown 控件添加 Enter 事件处理程序
-                      href: ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md
-                    - name: 步骤 6：添加减法问题
-                      href: ide/step-6-add-a-subtraction-problem.md
-                    - name: 步骤 7：添加乘法和除法问题
-                      href: ide/step-7-add-multiplication-and-division-problems.md
-                    - name: 步骤 8：自定义测验
-                      href: ide/step-8-customize-the-quiz.md
+                    - name: 1. 创建数学测验应用
+                      href: ide/tutorial-windows-forms-math-quiz-create-project-add-controls.md
+                    - name: 2. 向应用中添加数学问题
+                      href: ide/tutorial-windows-forms-math-quiz-add-math-problems.md
+                    - name: 3. 向应用中添加计时器
+                      href: ide/tutorial-windows-forms-math-quiz-add-timer.md
+                    - name: 4. 自定义应用
+                      href: ide/tutorial-windows-forms-math-quiz-customize-ui.md
                 - name: 教程 3：创建配对游戏 (C#)
                   items:
                     - name: 1. 创建匹配游戏
