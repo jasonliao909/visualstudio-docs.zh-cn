@@ -2,7 +2,7 @@
 title: 查找和替换文本以及多个插入点选择
 description: 了解“查找和替换”功能，并了解如何使用它查找和替换模式的实例。
 ms.custom: SEO-VS-2020
-ms.date: 11/17/2021
+ms.date: 01/21/2022
 ms.topic: conceptual
 f1_keywords:
 - vs.find
@@ -33,12 +33,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 01641d8c0680d2245b60c35710ddda42aa6f1ff9
-ms.sourcegitcommit: 76541583274c4af4218ac2a8ab4308077a7e340e
-ms.translationtype: HT
+ms.openlocfilehash: 37b7c9a395cd7273bf829beee44d150fe841aebd
+ms.sourcegitcommit: 7d319435c35075d4cec021b7b667666a81c02435
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "132733226"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "137650129"
 ---
 # <a name="find-and-replace-text"></a>查找和替换文本
 
@@ -94,11 +94,15 @@ ms.locfileid: "132733226"
 
 :::image type="content" source="media/vs-2022/find-files.png" alt-text="Visual Studio 2022 中“查找和替换”对话框的屏幕截图，其中打开了“在文件中查找”选项卡。":::
 
+有关详细信息，请参阅在文件中查找[和](find-in-files.md)[在文件中替换](replace-in-files.md)页。
+
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
 :::image type="content" source="media/find-files-vs2019.png" alt-text="Visual Studio 2019 中“查找和替换”对话框的屏幕截图，其中打开了“在文件中查找”选项卡。":::
+
+有关详细信息，请参阅在文件中查找[和](find-in-files.md)[在文件中替换](replace-in-files.md)页。
 
 > [!IMPORTANT]
 > 如果使用 Visual Studio 2019 [版本 16.6](/visualstudio/releases/2019/release-notes-v16.6/) 或更早的版本，则“查找和替换”对话框可能与此处显示的不同。 切换到本页的 [Visual Studio 2017](?view=vs-2017&preserve-view=true) 版本，查看与屏幕上显示的内容相匹配的说明。
@@ -108,6 +112,8 @@ ms.locfileid: "132733226"
 ::: moniker range="vs-2017"
 
 :::image type="content" source="media/find-files-vs2017.png" alt-text="Visual Studio 2017 中“查找和替换”对话框的屏幕截图，其中打开了“在文件中查找”选项卡。":::
+
+有关详细信息，请参阅在文件中查找[和](find-in-files.md)[在文件中替换](replace-in-files.md)页。
 
 ::: moniker-end
 

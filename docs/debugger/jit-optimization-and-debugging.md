@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e6dae429c3083188fa9d7fbc37a48dda5a98b18
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: be8a0b57bc009d776f20ca2bebae94627f4a4909
+ms.sourcegitcommit: 7d319435c35075d4cec021b7b667666a81c02435
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126735779"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "137650290"
 ---
 # <a name="jit-optimization-and-debugging"></a>JIT 优化和调试
 如果尝试调试代码，则在该代码未优化时更易调试。 优化代码时，编译器和运行时会对发出的 CPU 代码进行更改，使其运行速度更快，但与原始源代码的映射不太直接。 如果映射不太直接，则调试器通常无法告诉你局部变量的值，代码步进和断点也可能无法按预期要求工作。
@@ -58,15 +58,42 @@ ms.locfileid: "126735779"
 1. 在将调试器附加到已在运行的进程的情况下，此选项对附加调试器时已加载的模块无效。
 2. 此选项对已预编译（也称为 ngen'ed）为本机代码的 DLL 无效。 但是，可以通过以下方式禁用预编译的代码：通过将环境变量“COMPlus_ReadyToRun”设置为“0”来启动进程。 这将指示 .NET Core 运行时禁用预编译的映像，从而迫使运行时实时编译框架代码。 
 
-    > [!IMPORTANT]
-    > 如果目标是 .NET Framework 或较早版本的 .NET Core（2.x 或更低版本），则还需添加环境变量“COMPlus_ZapDisable”并将其设置为“1”
+   如果要将目标设置为 .NET Framework，请添加环境变量 **"COMPlus_ZapDisable"，** 将其设置为 **"1"。** 
+   
+通过将 `"COMPlus_ReadyToRun": "0"`  配置文件添加到 *Properties\launchSettings.json* 文件的每个配置文件进行设置：
 
-    **在 Visual Studio 中为 .NET Core 项目设置环境变量：**
-    1. 在“解决方案资源管理器”中，右键单击项目文件并选择“属性” 。
-    2. 导航到“调试”选项卡，在“环境变量”下，单击“添加”按钮。
-    3. 将名称（键）设置为“COMPlus_ReadyToRun”，并将值设置为“0”。
+```json
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:59694/",
+      "sslPort": 44320
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "COMPlus_ReadyToRun": "0"
+      }
+    },
+    "HttpLoggingSample": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "COMPlus_ReadyToRun": "0"
+      },
+      "applicationUrl": "https://localhost:5001;http://localhost:5000"
+    }
+  }
+}
+```
 
-    ![设置 COMPlus_ReadyToRun 环境变量](../debugger/media/environment-variables-debug-menu.png "设置 COMPlus_ReadyToRun 环境变量")
 
 ## <a name="see-also"></a>请参阅
 - [如何调试 .NET Framework 源代码](../debugger/how-to-debug-dotnet-framework-source.md)

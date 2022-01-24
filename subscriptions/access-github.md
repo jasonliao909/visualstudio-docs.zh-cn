@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: amast
 manager: shve
 ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
-ms.date: 10/08/2021
+ms.date: 01/14/2022
 ms.topic: conceptual
 description: 了解如何访问作为 Visual Studio 订阅的一部分的 GitHub Enterprise
-ms.openlocfilehash: 9f6cab69aa8458d1b05b8040e97ccfb7405fb353
-ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.openlocfilehash: 021815efd4adb22769da8b71b83cc0b5c5ff6622
+ms.sourcegitcommit: ba56ce62366f8c6fe2a7e38828fa79bc48801cae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "133255740"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "136855169"
 ---
 # <a name="visual-studio-subscriptions-with-github-enterprise"></a>带有 GitHub Enterprise 的 Visual Studio 订阅 
 
@@ -79,6 +79,9 @@ GitHub Enterprise 由 GitHub 管理员管理（独立于 Visual Studio 订阅）
 
 ### <a name="q-do-i-get-the-full-visual-studio-subscription-benefits"></a>问：我能否获得完整的 Visual Studio 订阅权益？
 答：与单独购买订阅时一样，带 GitHub Enterprise 的订阅仍提供标准 Visual Studio 订阅的各项权益，包括软件下载、云服务、技术支持以及合作伙伴权益。
+
+### <a name="q--is-github-enterprise-included-in-subscriptions-purchased-in-all-channels"></a>问：GitHub Enterprise所有渠道购买的订阅中是否包含这些订阅？
+不是。  GitHub Enterprise协议购买的组织目前Enterprise服务。  
 
 ## <a name="support-resources"></a>支持资源
 - 访问 [GitHub 文档](https://docs.github.com/en/enterprise-cloud@latest/billing/managing-licenses-for-visual-studio-subscriptions-with-github-enterprise/about-visual-studio-subscriptions-with-github-enterprise)，了解有关 GitHub 分配的详细信息

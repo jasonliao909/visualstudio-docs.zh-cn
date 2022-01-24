@@ -6,7 +6,6 @@ ms.date: 11/15/2021
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor
-- vs.toolsoptionspages.text_editor
 - VS.ToolsOptionsPages.Text_Editor.Advanced
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
@@ -37,12 +36,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 58b6a63d1dd668df5febd9372c8c2acd8b72d8c6
-ms.sourcegitcommit: bfae1f88c278835e26f3200cfced769be3191fc4
-ms.translationtype: HT
+ms.openlocfilehash: 32d55c85524fc895e8d6768597287730f61695f4
+ms.sourcegitcommit: 7d319435c35075d4cec021b7b667666a81c02435
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "132535043"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "137650380"
 ---
 # <a name="options-dialog-box-text-editor--general"></a>“选项”对话框：“文本编辑器”\>“常规”
 

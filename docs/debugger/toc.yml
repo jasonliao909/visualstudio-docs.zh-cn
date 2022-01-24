@@ -208,6 +208,8 @@
                   href: property-pages-settings-for-web-projects.md
                 - name: C# 调试配置的项目设置
                   href: project-settings-for-csharp-debug-configurations.md
+                - name: .NET C# 调试配置的项目设置
+                  href: project-settings-for-csharp-debug-configurations-dotnetcore.md
                 - name: Visual Basic 调试配置的项目设置
                   href: project-settings-for-a-visual-basic-debug-configuration.md
             - name: DLL 项目

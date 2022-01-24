@@ -58,6 +58,34 @@
       href: managing-app-resources.md
     - name: 如何：打开多个解决方案或实例
       href: open-multiple-solutions.md
+    - name: 编辑器
+      items:
+        - name: 编辑器功能
+          href: source-editor.md
+        - name: 重构
+          href: refactoring.md
+        - name: IntelliSense
+          href: intellisense.md
+        - name: 显示导入项
+          href: show-imports.md
+        - name: 多个插入点编辑
+          href: multi-caret-editing.md
+        - name: 注释
+          href: comments.md
+        - name: 编辑器行为
+          href: editor-behavior.md
+        - name: 任务注释
+          href: task-comments.md
+        - name: 代码片段
+          href: snippets.md
+        - name: 块选择
+          href: block-selection.md
+        - name: 编辑器主题
+          href: editor-themes.md
+        - name: EditorConfig
+          href: editorconfig.md
+        - name: 默认键盘快捷键
+          href: keyboard-shortcuts.md
 - name: 调试
   items:
     - name: 概述
@@ -110,22 +138,6 @@
           href: publish-app-svc.md
         - name: 发布到文件夹
           href: publish-folder.md
-    - name: ASP.NET Core
-      items:
-        - name: .NET Core 支持
-          href: net-core-support.md
-        - name: ASP.NET Core 入门
-          href: asp-net-core.md
-        - name: 在 Visual Studio for Mac 中生成 ASP.NET Core 应用程序
-          href: building-asp-net-core.md
-        - name: Razor
-          href: razor.md
-        - name: Blazor
-          href: blazor.md
-        - name: JavaScript 和 TypeScript
-          href: javascript.md
-        - name: launchSettings.json
-          href: launch-settings.md
         - name: 视频教程
           items:
             - name: 开始在 Visual Studio for Mac 中使用 ASP.NET Core
@@ -168,34 +180,22 @@
           href: accessibility-voiceover.md
 - name: 参考
   items:
-    - name: 源编辑器
+    - name: ASP.NET Core
       items:
-        - name: 编辑器功能
-          href: source-editor.md
-        - name: 重构
-          href: refactoring.md
-        - name: IntelliSense
-          href: intellisense.md
-        - name: 显示导入项
-          href: show-imports.md
-        - name: 多个插入点编辑
-          href: multi-caret-editing.md
-        - name: 注释
-          href: comments.md
-        - name: 编辑器行为
-          href: editor-behavior.md
-        - name: 任务注释
-          href: task-comments.md
-        - name: 代码片段
-          href: snippets.md
-        - name: 块选择
-          href: block-selection.md
-        - name: 编辑器主题
-          href: editor-themes.md
-        - name: EditorConfig
-          href: editorconfig.md
-        - name: 默认键盘快捷键
-          href: keyboard-shortcuts.md
+        - name: 支持的 .NET 版本
+          href: supported-versions-net.md
+        - name: ASP.NET Core 入门
+          href: asp-net-core.md
+        - name: 在 Visual Studio for Mac 中生成 ASP.NET Core 应用程序
+          href: building-asp-net-core.md
+        - name: Razor
+          href: razor.md
+        - name: Blazor
+          href: blazor.md
+        - name: JavaScript 和 TypeScript
+          href: javascript-and-typescript-support.md
+        - name: launchSettings.json
+          href: launch-settings.md
     - name: 面向 Windows 用户的 Visual Studio for Mac
       href: vsmac-for-windows-users.md
 - name: 资源

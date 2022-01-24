@@ -14,12 +14,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
-ms.openlocfilehash: d88014eb9b6141ccc06919aa6d869b364588feee
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: f88b8b45661e17d281f3e590f00f1f6189cf7866
+ms.sourcegitcommit: 7d319435c35075d4cec021b7b667666a81c02435
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736586"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "137650498"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>负载测试中测试控制器和测试代理的故障排除策略
 
@@ -73,7 +73,7 @@ ms.locfileid: "126736586"
 
 这适用于测试控制器、测试代理服务和测试代理进程。 诊断问题时，对所有三个进程都启用日志记录很有用。 对于所有三个进程，设置日志记录级别的过程是相同的，同上面对测试控制器所指定的过程。 若要设置测试代理服务和代理进程的日志记录级别，请使用以下配置文件：
 
-- QTController.exe.config 控制器服务
+- *QTController.exe.config* 控制器服务
 
 - QTAgentService.exe.config 代理服务
 
