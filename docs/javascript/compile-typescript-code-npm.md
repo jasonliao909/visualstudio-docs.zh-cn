@@ -12,16 +12,16 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7f1c0618967577dd8b4585b71c3c99c76324ebcf
-ms.sourcegitcommit: 7d319435c35075d4cec021b7b667666a81c02435
+ms.openlocfilehash: 4fa9b3e991a618e2cad1f0d32a9ab3b0fd1a4060
+ms.sourcegitcommit: 429b2378ee21b5f473b26f4b4ea0a70372a34ec2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "137650269"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "137733357"
 ---
 # <a name="compile-typescript-code-nodejs"></a>编译 TypeScript 代码 (Node.js)
 
-可以使用 TypeScript SDK 或 npm 将 TypeScript 支持添加到项目。 默认情况下TypeScript SDK安装程序中提供Visual Studio选项。
+可以使用 TypeScript SDK 或 npm 将 TypeScript 支持添加到项目。 默认情况下TypeScript SDK安装程序中提供Visual Studio。
 
 对于在 Visual Studio 2019 中开发的项目，建议使用 TypeScript npm 包，以实现跨不同平台和环境的更高可移植性。
 
@@ -43,7 +43,7 @@ ms.locfileid: "137650269"
 
    选中“输出”窗口中的“npm”选项，以查看包安装进度。 安装的包显示在解决方案资源管理器的“npm”节点下。
 
-1. 如果项目尚未包含它，请将 .tsconfig 文件添加到项目根目录。 若要添加文件，右键单击项目节点，然后选择“添加”>“新项”。 选择“TypeScript JSON 配置文件”，然后单击“添加”。
+1. 如果项目尚未包含该文件，请向项目根目录添加 *tsconfig.json* 文件。 若要添加文件，右键单击项目节点，然后选择“添加”>“新项”。 选择“TypeScript JSON 配置文件”，然后单击“添加”。
 
    Visual Studio 会将 tsconfig.json 文件添加到项目根目录中。 可以使用此文件为 TypeScript 编译器[配置选项](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)。
 
@@ -107,7 +107,7 @@ ms.locfileid: "137650269"
 1. 如果需要配置选项（如启动页、Node.js 运行时路径、应用程序端口或运行时参数），请右键单击解决方案资源管理器中的项目节点，然后选择“属性”。
 
    >[!NOTE]
-   > 配置第三方工具时，Node.js项目不使用在"工具选项""项目和解决方案""Web 包管理  >    >    >  Web 工具 **"下**  >  **配置的路径**。 这些设置用于其他项目类型。
+   > 配置第三方工具时，Node.js项目不使用在"工具选项""项目和解决方案""Web 包管理  >    >    >  Web 工具 **"下** 配置  >  **的路径**。 这些设置用于其他项目类型。
 
 1. 选择“生成”>“生成解决方案”。
 
