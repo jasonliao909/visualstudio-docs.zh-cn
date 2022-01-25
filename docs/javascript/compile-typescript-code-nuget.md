@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 1bf1deb271d7a20527f53260813e35e0de9daa19
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 85a61466bb60a9b0c1883daa754b963044519331
+ms.sourcegitcommit: 429b2378ee21b5f473b26f4b4ea0a70372a34ec2
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126640651"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "137733396"
 ---
 # <a name="compile-typescript-code-aspnet-core"></a>编译 TypeScript 代码 (ASP.NET Core)
 
@@ -95,10 +95,10 @@ ms.locfileid: "126640651"
 
    调试需要源映射文件。
 
-1. 如果要在每次保存项目时进行编译，请使用 *.tsconfig 中的“compileOnSave”选项。
+1. 如果要在每次保存项目时进行编译，请使用 *tsconfig.json* 中的 *compileOnSave* 选项。
 
    ```json
-   ```{
+   {
       "compileOnSave":  true,
       "compilerOptions": {
       }
