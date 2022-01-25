@@ -1,7 +1,8 @@
 ---
 title: 运行带或不带调试器的分析工具 | Microsoft Docs
 description: 了解可用于分析工具的不同模式之间的差异
-ms.date: 5/26/2020
+ms.custom: devdivchpfy22
+ms.date: 01/20/2022
 ms.topic: conceptual
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
 author: mikejo5000
@@ -10,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d697a96a0b91554342ba57a6265b4a087c8458a
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 40ebd618891f8166d2f704401e60fc1c331e2196
+ms.sourcegitcommit: f81a8f381bcdbac96d112f815737ba1df55d97a3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736850"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "137667442"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>运行带/不带调试器的分析工具
 
@@ -26,7 +27,7 @@ Visual Studio 提供了性能测量值和分析工具选择。 某些工具（�
 
 非调试器性能探查器和调试器集成诊断工具提供不同的信息和体验。 调试器集成工具显示变量值并允许使用断点。 非调试器工具提供更接近最终用户体验的结果。
 
-要帮助确定要使用的工具和结果，请考虑以下几点：
+若要确定要使用的工具和结果，请考虑以下选项：
 
 - 调试器集成工具与非调试器工具
   - 外部性能问题（如文件 I/O 或网络响应能力问题）在调试器或非调试器工具中看起来并没有太大差异。
@@ -85,7 +86,7 @@ Visual Studio 提供了性能测量值和分析工具选择。 某些工具（�
 
 1. 要启动诊断会话，请选择“开始”。
 
-   当会话正在运行时，某些工具会在“诊断工具”页上显示实时数据关系图，以及用于暂停和恢复数据收集的控件。
+   当会话正在运行时，某些工具将在 "诊断工具" 页上显示实时数据的图形，并显示用于暂停和恢复数据收集的控件。
 
     ![性能探查器上的数据收集屏幕截图](../profiling/media/diaghubcollectdata.png "中心收集数据")
 

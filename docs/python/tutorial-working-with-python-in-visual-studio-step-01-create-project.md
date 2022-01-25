@@ -2,7 +2,7 @@
 title: Visual Studio 中的 Python 教程步骤 1，创建项目
 titleSuffix: ''
 description: 在 Visual Studio 中使用 Python 功能的核心教程概述和第 1 步，包括系统必备组件和创建新的 Python 项目。
-ms.date: 09/14/2021
+ms.date: 01/15/2022
 ms.topic: tutorial
 author: rjmolyneaux
 ms.author: rmolyneaux
@@ -12,16 +12,16 @@ ms.custom: vs-acquisition
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2f26f10754de6addcab2815eecfffa394296e6bc
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 6734c7273ae53c707ce2be728f10564cc3c5202d
+ms.sourcegitcommit: f81a8f381bcdbac96d112f815737ba1df55d97a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129967608"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "137667455"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>教程：在 Visual Studio 中使用 Python
 
-Python 是一种流行的编程语言，它可靠、灵活、易于学习、可在所有操作系统上免费使用。 强大的开发人员社区和很多免费库都支持 Python。 该语言支持各种开发，包括 Web 应用程序、Web 服务、桌面应用、脚本编写和科学计算。 许多高校人员、科学家、业余开发人员和专业开发人员都在使用 Python。
+Python 是一种流行的编程语言，它可靠、灵活、易于学习、可在所有操作系统上免费使用。 强大的开发人员社区以及许多免费库都支持 Python。 该语言支持各种开发，包括 Web 应用程序、Web 服务、桌面应用、脚本编写和科学计算。 许多高校人员、科学家、业余开发人员和专业开发人员都在使用 Python。
 
 Visual Studio 为 Python 提供一级语言支持。 本教程将指导你完成以下步骤：
 
@@ -103,7 +103,7 @@ Visual Studio 为 Python 提供一级语言支持。 本教程将指导你完成
    
    - 使用你在“创建新项目”对话框中指定的名称的项目以粗体显示 (2) 。 在磁盘上，项目是项目文件夹中的一个 .pyproj 文件。
    
-   - 项目下方是源文件，在本例中只有一个 .py 文件 (3)。 选择文件时会在“属性”窗口中显示其属性。 双击文件会以任何适合该文件的方式打开该文件。
+   - 项目下是源文件，在这种情况下，只有一 *个 .py* 文件 (**3) 。** 选择文件时会在“属性”窗口中显示其属性。 双击文件会以任何适合该文件的方式打开该文件。
    
    - 项目下方还有“Python 环境”节点 (4) 。 展开该节点可显示可用的 Python 解释器。
    

@@ -1,7 +1,7 @@
 ---
 title: 选择并安装 Python 解释器
 description: Visual Studio 中支持的 Python 解释器的完整列表，并简要说明了可以在哪里找到它们的安装程序。
-ms.date: 07/28/2021
+ms.date: 01/15/2022
 ms.topic: how-to
 author: rjmolyneaux
 ms.author: rmolyneaux
@@ -10,12 +10,12 @@ ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ceebaea84f13bb5656162d350ef4bc0566954f6e
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: fb5074d5a1dc4f76eaaa814f1f730dae660cfa05
+ms.sourcegitcommit: f81a8f381bcdbac96d112f815737ba1df55d97a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129968652"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "137667351"
 ---
 # <a name="install-python-interpreters"></a>安装 Python 解释器
 
@@ -50,11 +50,11 @@ Visual Studio 在[Python 环境”](managing-python-environments-in-visual-studi
 
 | 解释器 | 说明 |
 | --- | --- |
-| [CPython](https://www.python.org/) | 最常用的“本机”解释器，32 位和 64 位版本可用（建议使用 32 位）。 包括最新的语言功能、最大的 Python 包兼容性、完整的调试支持以及与 [IPython](https://ipython.org/) 的互操作。 另请参阅：[Should I use Python 2 or Python 3?](https://wiki.python.org/moin/Python2orPython3)（应使用 Python 2 还是 Python 3？） 请注意，Visual Studio 2015 及更早版本不支持 Python 3.6+，并且会生成“不支持 Python 版本 3.6”之类的错误。 请改用 Python 3.5 或更早版本。 |
+| [CPython](https://www.python.org/) | 32位和64位版本中提供的 "本机" 和最常用解释器 (32 位建议) 。 包括最新的语言功能、最大的 Python 包兼容性、完整的调试支持以及与 [IPython](https://ipython.org/) 的互操作。 另请参阅：[Should I use Python 2 or Python 3?](https://wiki.python.org/moin/Python2orPython3)（应使用 Python 2 还是 Python 3？） Visual Studio 2015 及更早版本不支持 python 3.6 +，并可提供类似于 **不受支持的 python 版本 3.6** 的错误。 请改用 Python 3.5 或更早版本。 |
 | [IronPython](https://github.com/IronLanguages/ironpython2) | Python 的 .NET 实现，32 位和 64 位版本可用，提供 C#/F#/Visual Basic 互操作、对 .NET API 的访问、标准 Python 调试（但不是 C++ 混合模式调试）和混合 IronPython/C# 调试。 但 IronPython 不支持虚拟环境。 |
-| [Anaconda](https://anaconda.com) | Python 提供技术支持的开放式数据科学平台，包括最新版本的 CPython 和大部分难以安装的包。 如果你不能做出决定，我们建议使用它。 |
+| [Anaconda](https://anaconda.com) | Python 提供技术支持的开放式数据科学平台，包括最新版本的 CPython 和大部分难以安装的包。 如果无法确定，建议使用 Anaconda。 |
 | [PyPy](https://www.pypy.org/) | Python 的高性能跟踪 JIT 实现，适用于长时间运行的程序以及识别性能问题但找不到其他解决方法的情况。 可与 Visual Studio 配合使用，但对高级调试功能的支持有限。 |
-| [Jython](https://www.jython.org/) | Java 虚拟机 (JVM) 上 Python 的实现。 与 IronPython 类似，Jython 中运行的代码可与 Java 类和库交互，但可能无法使用许多适用于 CPython 的库。 可与 Visual Studio 配合使用，但对高级调试功能的支持有限。 |
+| [Jython](https://www.jython.org/) | Java 虚拟机 (JVM) 上 Python 的实现。 与 IronPython 类似，Jython 中运行的代码可与 Java 类和库交互。 但是，许多适用于 CPython 的库可能无法访问。 可与 Visual Studio 配合使用，但对高级调试功能的支持有限。 |
 
 对于想要提供新形式的 Python 环境检测的开发人员，请参阅 [PTVS 环境检测](https://github.com/Microsoft/PTVS/wiki/Extensibility-Environments) (github.com)。
 
@@ -68,8 +68,8 @@ Visual Studio 在[Python 环境”](managing-python-environments-in-visual-studi
 
   1. 将 Python 解释器还原到其原始位置。
   2. 使用其安装程序卸载解释器，这会清除注册表项。
-  3. 在所需位置重新安装解释器。
-  4. 重新启动 Visual Studio，它应该会自动检测新位置来代替原来的位置。
+  3. 在新位置重新安装解释器。
+  4. 重新启动 Visual Studio，它应自动检测新位置以替代旧位置。
 
 遵循此过程，确保标识解释器位置的注册表项正确更新，以供 Visual Studio 使用。 使用安装程序还可以处理可能存在的任何其他副作用。
 

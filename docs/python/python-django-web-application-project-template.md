@@ -1,7 +1,7 @@
 ---
 title: 适用于 Python 的 Django Web 项目模板
-description: Visual Studio 为使用 Python 快速创建 Django web 应用程序提供了全面的模板。
-ms.date: 11/12/2018
+description: Visual Studio提供了一个全面的模板，用于通过 Python 快速创建 Django Web 应用程序。
+ms.date: 01/19/2022
 ms.topic: conceptual
 author: rjmolyneaux
 ms.author: rmolyneaux
@@ -10,12 +10,12 @@ ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6df9a619e55be2cead9cc5cc98d8c1d852a97148
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: c7b626bfd9914f832a12ffac51e978b849ad1ae8
+ms.sourcegitcommit: f81a8f381bcdbac96d112f815737ba1df55d97a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129971109"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "137667377"
 ---
 # <a name="django-web-project-template"></a>Django Web 项目模板
 ::: moniker range="vs-2017"

@@ -1,7 +1,7 @@
 ---
 title: 调试 Python 代码
-description: Visual Studio 为 Python 代码提供丰富的调试，包括设置断点、单步执行、检查值、查看异常以及在交互窗口中进行调试。
-ms.date: 05/12/2020
+description: Visual Studio为 Python 代码提供丰富的调试，包括设置断点、单步执行、检查值、查看异常，以及交互式窗口中的调试。
+ms.date: 01/17/2022
 ms.topic: how-to
 author: rjmolyneaux
 ms.author: rmolyneaux
@@ -10,12 +10,12 @@ ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a0233c23973517203fd4a7af0e530c77fa2c1c38
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 0122508789a889955f4f55e42b5811bb889f05ea
+ms.sourcegitcommit: f81a8f381bcdbac96d112f815737ba1df55d97a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129971486"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "137667468"
 ---
 # <a name="debug-your-python-code"></a>调试 Python 代码
 
@@ -78,9 +78,9 @@ Visual Studio 提供全面的 Python 调试体验，包括附加到正在运行�
 
 ### <a name="inspect-and-modify-values"></a>检查和修改值
 
-在调试器中停止时，可检查和修改变量的值。 还可以使用监视窗口监视单个变量，以及自定义表达式。 （请参阅[检查变量](../debugger/debugger-feature-tour.md#inspect-variables-with-the-autos-and-locals-windows)，了解常规详细信息。）
+在调试器中停止时，可检查和修改变量的值。 还可使用"监视 **"** 窗口监视单个变量和自定义表达式。 （请参阅[检查变量](../debugger/debugger-feature-tour.md#inspect-variables-with-the-autos-and-locals-windows)，了解常规详细信息。）
 
-若要使用数据提示查看值，只需将鼠标悬停在编辑器中的任何变量上即可。 可以单击值进行更改：
+若要使用数据提示查看值，只需将鼠标悬停在编辑器中的任何变量上即可。 可以选择值以更改它：
 
 ![Visual Studio 调试器中显示的 DataTips](media/debugging-quick-tips.png)
 
@@ -100,7 +100,7 @@ Visual Studio 提供全面的 Python 调试体验，包括附加到正在运行�
 
 有关使用监视的详细信息，请参阅[使用监视窗口和快速监视窗口对变量设置监视](../debugger/watch-and-quickwatch-windows.md)。
 
-检查字符串值（`str`、`unicode`、`bytes` 和 `bytearray` 均被视为用于此目的字符串）时，该值的右侧将显示一个放大镜图标。 单击该图标将在弹出对话框中显示不带引号的字符串值，对话框具有换行和滚动功能，有助于显示长字符串。 此外，选择图标上的下拉箭头可选择纯文本、HTML、XML 和 JSON 可视化效果：
+检查字符串值（`str`、`unicode`、`bytes` 和 `bytearray` 均被视为用于此目的字符串）时，该值的右侧将显示一个放大镜图标。 选择图标会在弹出对话框中显示未引号的字符串值，并包含包装和滚动，这适用于长字符串。 此外，选择图标上的下拉箭头可选择纯文本、HTML、XML 和 JSON 可视化效果：
 
 ![Visual Studio 调试器中的字符串可视化工具](media/debugging-string-visualizers.png)
 
@@ -112,17 +112,17 @@ HTML、XML 和 JSON 可视化效果显示在单独的弹出窗口中，其中突
 
 ![Visual Studio 调试器中的异常弹出](media/debugging-exception-popup.png)
 
-此时，可以检查程序状态，包括调用堆栈。 但是，如果尝试逐句通过代码，将继续引发该异常，直到异常得以处理或程序退出为止。
+此时，可以检查程序状态，包括调用堆栈。 但是，如果尝试逐步执行代码，则异常将继续引发，直到处理或程序退出。
 
 “调试” > “窗口” > “异常设置”菜单命令将打开一个窗口，可在其中展开“Python 异常”   ：
 
 ![Visual Studio 调试器中的“异常”窗口](media/debugging-exception-settings.png)
 
-每个异常的复选框控制引发该异常时调试器是否 *始终* 中断。 若要针对特定异常更频繁地进行中断，请选中此框。
+每个异常的复选框控制调试器 *在* 引发时是否始终中断。 若要针对特定异常更频繁地进行中断，请选中此框。
 
 默认情况下，在源代码中找不到异常处理程序时，大多数异常将中断。 若要更改此行为，请右键单击任何异常并修改“在用户代码中未经处理时继续”选项。 如果想要针对某异常较少地进行中断，请清除此框。
 
-若要配置此列表中未出现的异常，请单击“添加”按钮进行添加。 名称必须与该异常的完整名称匹配。
+若要配置此列表中未出现的异常， **请选择"添加** "按钮进行添加。 名称必须与该异常的完整名称匹配。
 
 ## <a name="project-debugging-options"></a>项目调试选项
 
@@ -180,7 +180,7 @@ Python 调试交互窗口（“调试” > “窗口” > “Python 调试交互
 | `$up`, `$u` | | 在堆栈跟踪中将当前帧上移一级。 |
 | `$where`, `$w`, `$bt` | 列出当前线程的帧。 |
 
-请注意，标准调试器窗口（如进程、线程和调用堆栈）不与调试交互窗口同步   。 更改调试交互窗口中的活动进程、线程或帧不会影响其他调试器窗口。 同样，更改其他调试器窗口中的活动进程、线程或帧也不会影响调试交互窗口。
+标准调试器窗口（如 **进程**、 **线程** 和 **调用堆栈** ）不会与调试交互 **窗口** 同步。 在"调试交互"窗口中更改活动进程、线程或帧不会影响其他调试器窗口。 同样，更改其他调试器窗口中的活动进程、线程或帧不会影响调试 **交互** 窗口。
 
 <a name="use-the-experimental-debugger"></a>
 
@@ -190,7 +190,7 @@ Visual Studio 2017 版本 15.8 及更高版本使用基于 ptvsd 版本 4.1+ 的
 
 ![使用调试程序时，出现“调试程序不支持此 Python 环境”错误](media/debugging-experimental-incompatible-error.png)
 
-在这些情况下，必须使用较早的调试程序（Visual Studio 2017 版本 15.7 及更早版本中的默认调试程序）。 选择“工具” > “选项”菜单命令，导航到“Python” > “调试”，然后选择“使用旧版调试程序”选项    。
+在这些情况下，必须使用较旧的调试器 (这是 Visual Studio 2017 版本 15.7 及更早版本中的) 。 选择“工具” > “选项”菜单命令，导航到“Python” > “调试”，然后选择“使用旧版调试程序”选项    。
 
 如果已在当前环境中安装了旧版本的 ptvsd（例如早期的 4.0.x 版本或远程调试所需的 3.x 版本），则 Visual Studio 会显示错误或警告。
 
@@ -253,7 +253,7 @@ Visual Studio 2017 版本 15.8 及更高版本使用基于 ptvsd 版本 4.1+ 的
 
     ![“输出”窗口中的调试器日志记录输出](media/debugger-logging-output.png)
 
-1. 如果 Visual Studio 停止响应或你无法以其他方式访问“输出”窗口，请重启 Visual Studio、打开命令窗口，并输入以下命令：
+1. 如果 Visual Studio 停止响应或不能访问 "**输出**" 窗口，请重新启动 Visual Studio，打开命令窗口，然后输入以下命令：
 
     ```ps
     DebugAdapterHost.Logging /On
