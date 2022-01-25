@@ -1,8 +1,8 @@
 ---
 title: 禁止显示代码分析违规情况
-ms.date: 05/10/2021
+ms.date: 01/18/2022
 description: 了解如何在 Visual Studio 中禁止显示代码分析违规情况。 了解如何使用 SuppressMessageAttribute 特性进行源内禁止显示。
-ms.custom: SEO-VS-2020
+ms.custom: SEO-VS-2020, devdivchpfy22
 ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
@@ -17,16 +17,16 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: a509aa12f59298af97245647bd971a7272ffcaef
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
-ms.translationtype: HT
+ms.openlocfilehash: 1479ccadd85ecb45686810a896d2f07cf0796c30
+ms.sourcegitcommit: e469966b336e939c9271e10d187f1c3696b967d6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129968171"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "137749688"
 ---
 # <a name="suppress-code-analysis-violations"></a>禁止显示代码分析违规情况
 
-指示警告不适用通常很有用。 这向团队成员指示已评审代码，并且可以禁止显示警告。 本文介绍使用 Visual Studio IDE 禁止显示代码分析违规情况的不同方法。
+指示警告不适用通常很有用。 禁止代码分析冲突表示已检查了代码的团队成员，并且可以禁止显示该警告。 以下各节介绍使用 Visual Studio IDE 取消代码分析冲突的不同方法。
 
 ::: moniker range=">=vs-2019"
 
@@ -61,7 +61,7 @@ ms.locfileid: "129968171"
 
   选择要禁止显示的规则，然后右键单击并选择“禁止显示” > “在源中” 。
 
-  - 如果“在源中”禁止显示，将打开“预览更改”对话框，并显示添加到源代码中的 C# [#pragma warning](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) 或 Visual Basic [#Disable warning](/dotnet/visual-basic/language-reference/directives/directives) 指令的预览 。
+  - 如果在 "**源" 中** 取消，则会打开 "**预览更改**" 对话框，并显示 c # [#pragma 警告](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning)或 Visual Basic 添加到源代码中 [#Disable 警告](/dotnet/visual-basic/language-reference/directives/directives)指令的预览。
 
     ![在代码文件中添加 #pragma warning 的预览](media/pragma-warning-preview.png)
 
@@ -76,7 +76,7 @@ ms.locfileid: "129968171"
 
 [全局禁止显示文件](#global-level-suppressions)使用 [SuppressMessage 特性](#in-source-suppression-and-the-suppressmessage-attribute)。
 
-- 从“错误列表”中选择要禁止显示的规则，然后右键单击并选择“禁止显示” > “在禁止显示文件中”。 将打开“预览更改”对话框，并显示添加到全局禁止显示文件的 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 特性的预览。
+- 从“错误列表”中选择要禁止显示的规则，然后右键单击并选择“禁止显示” > “在禁止显示文件中”。 此时将打开 " **预览更改** " 对话框，并显示 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 添加到全局禁止显示文件的属性的预览。
 
   ![向禁止显示文件添加 SuppressMessage 属性的预览](media/preview-changes-in-suppression-file.png)
 
@@ -84,12 +84,12 @@ ms.locfileid: "129968171"
 
 ::: moniker range=">=vs-2019"
 
-- 从“分析”菜单中，在菜单栏上选择“分析” > “生成并禁止显示待处理的问题”，以禁止显示所有当前违规情况。 有时这称为“基线”。
+- 从“分析”菜单中，在菜单栏上选择“分析” > “生成并禁止显示待处理的问题”，以禁止显示所有当前违规情况。 禁止所有当前冲突有时称为 "基线"。
 
 ::: moniker-end
 ::: moniker range="vs-2017"
 
-- 从“分析”菜单中，在菜单栏上选择“分析” > “运行代码分析并禁止显示待处理的问题”，以禁止显示所有当前违规情况。 有时这称为“基线”。
+- 从“分析”菜单中，在菜单栏上选择“分析” > “运行代码分析并禁止显示待处理的问题”，以禁止显示所有当前违规情况。 禁止所有当前冲突有时称为 "基线"。
 ::: moniker-end
 
 ## <a name="suppress-violations-using-project-settings"></a>使用项目设置禁止显示违规情况
@@ -104,7 +104,7 @@ ms.locfileid: "129968171"
 
 源内禁止显示 (ISS) 使用 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 特性来禁止显示警告。 该特性可以放置在生成警告的代码段附近。 可以通过键入 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 特性将其添加到源文件，也可以使用“错误列表”中的警告上的快捷菜单自动添加它。
 
-<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 特性是一个条件特性，它包含在托管代码程序集的 IL 元数据中，CODE_ANALYSIS 编译符号在编译时定义。
+<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>特性是一个条件属性，包含在托管代码程序集的 IL 元数据中。 仅当在编译时定义了 CODE_ANALYSIS 编译符号时，才包括此特性。
 
 在 C++/CLI 中，在头文件中使用宏 CA\_SUPPRESS\_MESSAGE 或 CA\_GLOBAL\_SUPPRESS_MESSAGE 来添加特性。
 
@@ -155,11 +155,11 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 - **MessageId** - 每条消息的问题的唯一标识符。
 
-- **范围** - 要禁止显示警告的目标。 如果未指定目标，则设置为特性的目标。 支持的[范围](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope)包括以下内容：
+- **范围** - 要禁止显示警告的目标。 如果未指定目标，则设置为特性的目标。 支持的 [范围](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope) 包括：
 
   - [`module`](#module-suppression-scope) - 此范围禁止显示针对程序集的警告。 它是应用于整个项目的全局禁止显示。
 
-  - `resource` -（仅[旧版 FxCop](../code-quality/static-code-analysis-for-managed-code-overview.md)）此范围禁止显示在写入到属于模块（程序集）一部分的资源文件中的诊断信息的警告。 在仅分析源文件的 Roslyn 分析器诊断的 C#/VB 编译器中不读取/遵守此范围。
+  - `resource` -（仅[旧版 FxCop](../code-quality/static-code-analysis-for-managed-code-overview.md)）此范围禁止显示在写入到属于模块（程序集）一部分的资源文件中的诊断信息的警告。 对于 Roslyn 分析器诊断（仅分析源文件），不会在 c #/VB 编译器中读取或考虑此范围。
 
   - `type` - 此范围禁止显示针对类型的警告。
 
@@ -169,19 +169,19 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
   - `namespaceanddescendants`-（需要编译器版本 3.x 或更高版本以及 Visual Studio 2019）此范围禁止显示命名空间及其所有后代符号中的警告。 旧版分析将忽略 `namespaceanddescendants` 值。
 
-- **目标** - 一个标识符，用于指定要禁止显示警告的目标。 它必须包含完全限定的项名称。
+- **目标** - 一个标识符，用于指定要禁止显示警告的目标。 它必须包含完全限定的组件名称。
 
 在 Visual Studio 中看到警告时，可以通过[向全局禁止显示文件添加禁止显示](../code-quality/use-roslyn-analyzers.md#suppress-violations)来查看 `SuppressMessage` 的示例。 禁止显示特性及其必需属性显示在预览窗口中。
 
 ### <a name="suppressmessage-usage"></a>SuppressMessage 用法
 
-代码分析警告在应用 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 特性的级别禁止显示。 例如，可以在程序集、模块、类型、成员或参数级别应用该特性。 这样做的目的是将禁止显示信息与发生违规情况的代码紧密耦合。
+代码分析警告在应用 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 特性的级别禁止显示。 例如，可以在程序集、模块、类型、成员或参数级别应用该特性。 应用此属性的目的是将抑制信息紧密地耦合到发生冲突的代码中。
 
 禁止显示的一般形式包括规则类别和规则标识符，其中包含规则名称的可选人工可读取的表示形式。 例如：
 
 `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`
 
-如果出于严格的性能原因来最小化源内禁止显示元数据，可以省略规则名称。 规则类别及其规则 ID 共同构成了足够唯一的规则标识符。 例如：
+如果出于严格的性能原因来最小化源内禁止显示元数据，可以省略规则名称。 规则类别及其规则 ID 共同构成了一个足够唯一的规则标识符。 例如：
 
 `[SuppressMessage("Microsoft.Design", "CA1039")]`
 
@@ -189,9 +189,9 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 ### <a name="suppress-selective-violations-within-a-method-body"></a>禁止显示方法主体中的选择性违规情况
 
-禁止显示特性可以应用于方法，但不能嵌入在方法主体中。 这意味着，如果将 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 特性添加到方法，将禁止显示特定规则的所有违规情况。
+禁止显示特性可以应用于方法，但不能嵌入在方法主体中。 如果将特性添加到方法，则将禁止显示某个特定规则的所有冲突 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 。
 
-在某些情况下，你可能想要禁止显示特定违规情况的实例，例如，这样以后的代码不会自动从代码分析规则中免除。 某些代码分析规则允许通过使用 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 特性的 `MessageId` 属性来这样做。 通常，针对特定符号（局部变量或参数）的违规情况的旧规则遵守 `MessageId` 属性。 [CA1500:VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500.md) 就是此类规则的一个示例。 但是，针对可执行代码（非符号）的违规情况的旧规则不遵守 `MessageId` 属性。 此外，.NET Compiler Platform（“Roslyn”）分析器不遵守 `MessageId` 属性。
+在某些情况下，您可能需要取消特定的冲突实例。 请考虑这样一个示例：以后的代码不会自动从代码分析规则中免除。 某些代码分析规则允许您通过使用属性的属性禁止显示特定的冲突实例 `MessageId` <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 。 通常，针对特定符号（局部变量或参数）的违规情况的旧规则遵守 `MessageId` 属性。 [CA1500:VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500.md) 就是此类规则的一个示例。 但是，针对可执行代码（非符号）的违规情况的旧规则不遵守 `MessageId` 属性。 此外，.NET Compiler Platform（“Roslyn”）分析器不遵守 `MessageId` 属性。
 
 若要禁止规则的特定符号违规情况，请为 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 特性的 `MessageId` 属性指定符号名称。 以下示例显示了存在两次 [CA1500:VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500.md) 违规情况的代码 &mdash; 一次是针对 `name` 变量，另一次是针对 `age` 变量。 仅禁止显示 `age` 符号的违规情况。
 
@@ -237,7 +237,7 @@ public class Animal
 > [!NOTE]
 > 禁止显示具有 `namespace` 范围的警告时，会禁止显示针对命名空间本身的警告。 它不会禁止显示针对命名空间中的类型的警告。
 
-可以通过指定显式范围来表示任何禁止显示。 这些禁止显示必须位于全局级别。 不能通过修饰类型来指定成员级别的禁止显示。
+可以通过指定显式范围来表示任何禁止显示。 这些禁止显示必须位于全局级别。 不能通过修改类型来指定成员级禁止显示。
 
 全局级别的禁止显示是禁止显示引用编译器生成的代码的消息的唯一方法，这些代码未映射到显式提供的用户源。 例如，下面的代码将抑制针对编译器发出的构造函数的冲突：
 
@@ -248,7 +248,7 @@ public class Animal
 
 #### <a name="global-suppression-file"></a>全局禁止显示文件
 
-全局禁止显示文件保留全局级别的禁止显示或未指定目标的禁止显示。 例如，程序集级别的违规情况的禁止显示存储在此文件中。 此外，一些 ASP.NET 禁止显示存储在此文件中，因为项目级别的设置不适用于窗体后面的代码。 第一次在“错误列表”窗口中选择“禁止显示”命令的“在项目禁止显示文件中”选项时，会创建一个全局禁止显示文件并将其添加到你的项目中。
+全局禁止显示文件保留全局级别的禁止显示或未指定目标的禁止显示。 例如，程序集级别的违规情况的禁止显示存储在此文件中。 此外，一些 ASP.NET 禁止显示存储在此文件中，因为项目级别的设置不适用于窗体后面的代码。 第一次在 "**错误列表**" 窗口中的 "**禁止显示**" 命令 **Project 禁止显示文件选项中**，会创建一个全局禁止显示文件并将其添加到项目。
 
 #### <a name="module-suppression-scope"></a>模块禁止显示范围
 
@@ -260,7 +260,7 @@ public class Animal
 
 ### <a name="generated-code"></a>生成的代码
 
-托管代码编译器和某些第三方工具会生成代码，以便加快代码开发速度。 在源文件中出现的编译器生成的代码通常使用 `GeneratedCodeAttribute` 特性进行标记。
+托管代码编译器和一些第三方工具生成代码来帮助快速进行代码开发。 出现在源文件中的编译器生成的代码用 `GeneratedCodeAttribute` 特性标记。
 
 对于源代码分析，可以在 `.editorconfig` 文件中禁止显示生成的代码中的消息。 有关详细信息，请参阅[排除生成的代码](/dotnet/fundamentals/code-analysis/configuration-options#exclude-generated-code)。
 
