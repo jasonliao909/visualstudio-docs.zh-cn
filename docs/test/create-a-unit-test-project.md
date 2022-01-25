@@ -1,8 +1,8 @@
 ---
 title: 创建单元测试项目
 description: 了解如何创建单元测试项目。 测试项目可以与成品代码位于同一解决方案中，也可以位于单独的解决方案中。
-ms.custom: SEO-VS-2020
-ms.date: 01/29/2019
+ms.custom: SEO-VS-2020, devdivchpfy22
+ms.date: 01/13/2022
 ms.topic: how-to
 ms.author: mikejo
 manager: jmartens
@@ -10,23 +10,23 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: d7b5629cc50a2a9d08d00daabd2b4579e628a6cb
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 71f0a341c3ddd544fbf795755db4e3e52b380816
+ms.sourcegitcommit: f81a8f381bcdbac96d112f815737ba1df55d97a3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126640997"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "137667403"
 ---
 # <a name="create-a-unit-test-project"></a>创建单元测试项目
 
 单元测试往往反映被测代码的结构。 例如，系统会为项目中的每个代码项目创建一个单元测试项目。 测试项目可以与成品代码位于同一解决方案中，也可以位于单独的解决方案中。 解决方案中可以有多个单元测试项目。
 
 > [!NOTE]
-> 本机代码的单元测试位置和测试项目结构可能与本文中描述的结构不同。 有关详细信息，请参阅[编写 C/C++ 单元测试](writing-unit-tests-for-c-cpp.md)。
+> 本机代码的单元测试位置和测试项目结构可能不同于本文中所述的结构。 有关详细信息，请参阅[编写 C/C++ 单元测试](writing-unit-tests-for-c-cpp.md)。
 
 ## <a name="to-create-a-unit-test-project"></a>创建单元测试项目
 
-1. 在“文件”菜单上，选择“新建” > “项目”，或按 Ctrl+Shift+N。
+1. 在"**文件"** 菜单上 **，选择"** 新建  >  Project"，**或** 按 **Ctrl** + **Shift** + **N**。
 
 ::: moniker range="vs-2017"
 
@@ -40,11 +40,11 @@ ms.locfileid: "126640997"
 
 ::: moniker range=">=vs-2019"
 
-2. 在“创建新项目”页上，在搜索框中键入“单元测试”。 选择要使用的测试框架的项目模板（例如“MSTest 测试项目”或“NUnit 测试项目”），然后选择“下一步”。
+2. 在“创建新项目”页上，在搜索框中键入“单元测试”。 为想要使用的测试框架选择项目模板，例如 **"MSTest** Test Project 或 **NUnit Test Project"，** 然后选择"下一 **步"。**
 
    ![Visual Studio 2019 中的测试项目模板](media/vs-2019/test-project-templates.png)
 
-3. 在“配置新项目”页上，输入项目名称，然后选择“创建”。
+3. 在"**配置新项目"页上**，输入项目的名称，然后选择"创建 **"。**
 
 ::: moniker-end
 
@@ -52,7 +52,7 @@ ms.locfileid: "126640997"
 
    1. 在解决方案资源管理器中选择测试项目。
 
-   2. 在“项目”菜单上，选择“添加引用” 。
+   2. 在“项目”菜单中，选择“添加引用”。
 
    3. 在“引用管理器”中，选择“项目”下的“解决方案”节点。 选择要测试的代码项目，然后选择“确定”。
 

@@ -1,7 +1,7 @@
 ---
 title: 为 Python 项目定义自定义菜单命令
 description: 通过编辑项目和目标文件，可以将自定义命令添加到 Visual Studio 中的 Python 项目上下文菜单，用于调用可执行程序、脚本、模块、内联代码片段和 pip。
-ms.date: 11/12/2018
+ms.date: 01/18/2022
 ms.topic: how-to
 author: rjmolyneaux
 ms.author: rmolyneaux
@@ -10,12 +10,12 @@ ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 859741e98ce0350d6c2665cde5c9dd3e697affe7
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 9152b3683362a5c0ceab158bbac3a74a5bd494a5
+ms.sourcegitcommit: f81a8f381bcdbac96d112f815737ba1df55d97a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129968717"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "137667390"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>为 Python 项目定义自定义命令
 
@@ -146,9 +146,9 @@ Visual Studio 中的某些 Python 项目模板已使用其 .targets 文件添加
 | TargetType | 是 | 指定 Target 属性包含的内容以及如何将其与 Arguments 属性一并使用：<ul><li>**可执行文件：** 运行在 Target 中命名的可执行文件，附加 Arguments 的值，就如在命令行中直接输入一般。 值仅可包含项目名称且不可带有参数。</li><li>**脚本**：向 Target 中的文件名运行 python.exe，再执行 Arguments 中的值。</li><li>**模块**：在 Target 中运行后接模块名的 `python -m`，再运行 Arguments 中的值。</li><li>**代码**：运行 Target 中包含的内联代码。 这会忽略 Arguments 值。</li><li>**pip**：通过 Target 中的命令运行 `pip`，后接 Arguments；但如果 ExecuteIn 设置为“输出”，pip 则假定 `install` 命令并使用 Target 作为包名称。</li></ul> |
 | 目标 | 是 | 要使用的文件名、模块名、代码或 pip 命令（取决于 TargetType）。 |
 | 自变量 | 可选 | 指定要赋值给目标的参数字符串（若有）。 请注意，如果 TargetType 是 `script`，则向 Python 项目赋予参数，而不是 python.exe。 `code` TargetType 忽略此项。 |
-| ExecuteIn | 是 | 指定要运行命令的环境：<ul><li>**控制台**：（默认）如同直接在命令行上直接输入 Target 和 Arguments 一样运行它们。 这会在运行 Target 时显示命令窗口，该窗口随后自动关闭。</li><li>**consolepause**：与控制台相同，但必须按键才能关闭窗口。</li><li>**输出**：运行 Target 并在 Visual Studio 的“输出”窗口中显示其结果。 如果 TargetType 为“pip”，则 Visual Studio 使用 Target 作为包名称并附加 Arguments。</li><li>**repl**：在 [Python 交互式](python-interactive-repl-in-visual-studio.md)窗口中运行 Target；可选显示名称用作窗口的标题。</li><li>无：与控制台的行为相同。</li></ul>|
+| ExecuteIn | 是 | 指定要运行命令的环境：<ul><li>**控制台**： (默认) 运行目标和自变量，就像直接在命令行中输入一样。 这会在运行 Target 时显示命令窗口，该窗口随后自动关闭。</li><li>**consolepause**：与控制台相同，但必须按键才能关闭窗口。</li><li>**输出**：运行 Target 并在 Visual Studio 的“输出”窗口中显示其结果。 如果 TargetType 为“pip”，则 Visual Studio 使用 Target 作为包名称并附加 Arguments。</li><li>**repl**：在 [Python 交互式](python-interactive-repl-in-visual-studio.md)窗口中运行 Target；可选显示名称用作窗口的标题。</li><li>无：与控制台的行为相同。</li></ul>|
 | WorkingDirectory | 可选 | 要在其中运行命令的文件夹。 |
-| ErrorRegex<br>WarningRegEx | 可选 | 仅可在 ExecuteIn 为 `output` 时使用。 这两个值均指定一个正则表达式，Visual Studio 使用此表达式来分析命令输出，以在“错误列表”窗口中显示错误和警报。 若未指定，则命令不会影响“错误列表”窗口。 有关 Visual Studio 所需内容的详细信息，请参阅[命令的捕获组](#named-capture-groups-for-regular-expressions)。 |
+| ErrorRegex<br>WarningRegEx | 可选 | 仅可在 ExecuteIn 为 `output` 时使用。 这两个值均指定一个正则表达式，Visual Studio 使用此表达式来分析命令输出，以在“错误列表”窗口中显示错误和警报。 如果未指定，则该命令不会影响 **错误列表** 窗口。 有关 Visual Studio 所需内容的详细信息，请参阅[命令的捕获组](#named-capture-groups-for-regular-expressions)。 |
 | RequiredPackages | 可选 | 命令的包请求列表，其中命令的格式与 [requirements.txt](https://pip.pypa.io/en/stable/user_guide/#requirements-files) 相同 (pip.readthedocs.io)。 “运行 PyLint”命令，例如指定 `pylint>=1.0.0`。 运行命令之前，Visual Studio 会先检查是否已安装列表中的所有包。 Visual Studio 使用 pip 命令来安装缺少的包。 |
 | 环境 | 可选 | 运行命令前要定义的环境变量的字符串。 每个变量均使用 \<NAME>=\<VALUE> 形式，多个变量用分号隔开。 具有多个值的变量必须用单引号或双引号引起来，例如 'NAME=VALUE1;VALUE2' 形式。 |
 
@@ -361,7 +361,7 @@ C:  1, 0: Missing module docstring (missing-docstring)
 
 检查命令是否包含在 `<PythonCommands>` 属性组中，以及命令列表中的名称是否与 `<Target>` 元素中指定的元素相匹配。
 
-例如在下例中，属性组中的“Example”名称与目标中的“ExampleCommand”名称不匹配。 Visual Studio 未找到名为“Example”的命令，因此不显示任何命令。 请在命令列表中使用“ExampleCommand”，或只将目标的名称更改为“Example”。
+例如，在下面的元素中，属性组中的 "示例" 名称与目标中的名称 "ExampleCommand" 不匹配。 Visual Studio 找不到名为 "Example" 的命令，因此不会显示任何命令。 请在命令列表中使用“ExampleCommand”，或只将目标的名称更改为“Example”。
 
 ```xml
   <PropertyGroup>
