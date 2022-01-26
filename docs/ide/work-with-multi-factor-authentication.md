@@ -1,10 +1,10 @@
 ---
 title: Visual Studio 登录的多重身份验证
 titleSuffix: ''
-ms.date: 05/27/2020
-ms.custom: SEO-VS-2020
+ms.date: 01/24/2020
+ms.custom: SEO-VS-2022
 ms.topic: how-to
-description: 了解如何将 Visual Studio 与需要多重身份验证的帐户一起使用。
+description: 了解如何将 Visual Studio 用于需要多重身份验证 (MFA) 的帐户。
 author: anandmeg
 ms.author: meghaanand
 manager: jmartens
@@ -12,14 +12,18 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 9f67ee7b1c9237dd056a29abd2097d9b13eeeee7
-ms.sourcegitcommit: bfae1f88c278835e26f3200cfced769be3191fc4
-ms.translationtype: HT
+ms.openlocfilehash: 32ce99b4fa85a422b71e6e345611361d4e9afec0
+ms.sourcegitcommit: 5a48e8cfd442b8070eaf0bda3a5946681ea4cf97
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "132535108"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "137778866"
 ---
-# <a name="use-visual-studio-with-accounts-that-require-multi-factor-authentication-mfa"></a>将 Visual Studio 与需要多重身份验证 (MFA) 的帐户一起使用
+# <a name="work-with-accounts-that-require-multi-factor-authentication-mfa"></a>使用需要多重身份验证 (MFA 的帐户) 
+
+在本文中，你将了解如何将 Visual Studio 用于需要多重身份验证 (MFA) 的帐户。
+
+## <a name="why-enable-mfa-policies"></a>为什么要启用 MFA 策略？
 
 在与外部来宾用户协作时，最好使用条件访问 (CA) 策略（例如多重身份验证 (MFA)）来保护你的应用和数据 。  
 
@@ -28,7 +32,7 @@ ms.locfileid: "132535108"
 ## <a name="how-is-the-visual-studio-experience-affected-by-mfa-policies"></a>MFA 策略会对 Visual Studio 体验带来什么影响？
 与启用了 CA 策略（例如 MFA）并与两个或多个租户相关联的帐户一起使用时，Visual Studio 16.6 之前的版本可能会降低身份验证体验。
 
-这些问题可能会导致你的 Visual Studio 实例每天多次提示重新验证。 你可能必须重新输入之前已经过身份验证的租户的凭据，即使在同一个 Visual Studio 会话过程中也是如此。
+这些问题可能会导致你的 Visual Studio 实例每天多次提示重新验证。 您可能必须为之前经过身份验证的租户重新输入您的凭据，即使在同一 Visual Studio 会话过程中也是如此。
 
 ## <a name="using-visual-studio-with-mfa-policies"></a>搭配使用 Visual Studio 与 MFA 策略
 在 Visual Studio 2019 16.6 版本中，我们添加了新的功能，该功能简化了用户对受 CA 策略（如 MFA）保护资源的访问方式。 要使用此增强工作流，需要选择使用系统的默认 Web 浏览器作为添加并重新验证 Visual Studio 帐户的机制。  
@@ -43,52 +47,52 @@ ms.locfileid: "132535108"
 
 要启用此工作流，请转到 Visual Studio 的“选项”对话框（“工具”>“选项…”），选择“帐户”选项卡，然后在“使用以下方式添加并重新验证帐户:”下拉列表中选取“系统 Web 浏览器”   。 
 
-:::image type="content" source="media/select-system-web-browser.png" alt-text="从菜单中选择系统 Web 浏览器。":::
+:::image type="content" source="media/vs-2022/select-system-web-browser.png" alt-text="从菜单中选择系统 Web 浏览器。":::
 
 ### <a name="sign-into-additional-accounts-with-mfapolicies"></a>使用 MFA 策略登录其他帐户 
 启用系统 Web 浏览器工作流后，可以通过“帐户设置”对话框（“文件”>“帐户设置…”）按常规方式登录或向 Visual Studio 添加帐户。   
 </br>
-:::image type="content" source="media/add-personalization-account.png" alt-text="向 Visual Studio 添加新的个性化帐户。" border="false":::
+:::image type="content" source="media/vs-2022/add-personalization-account.png" alt-text="向 Visual Studio 添加新的个性化帐户。" border="false":::
 
 此操作将打开系统的默认 Web 浏览器，要求你登录帐户，并验证任何所需的 MFA 策略。
 
-在登录过程中，你可能会收到询问你是否保持登录状态的其他提示。 在第二次使用帐户登录时，可能会显示此提示。 为了最大限度地减少重新输入凭据的需要，建议选择“是”，因为这可确保在浏览器会话中保留凭据。
+在登录过程中，你可能会收到要求你保持登录状态的其他提示。 在第二次使用帐户登录时，可能会显示此提示。 为了最大限度地减少重新输入凭据的需要，建议选择“是”，因为这可确保在浏览器会话中保留凭据。
 
-:::image type="content" source="media/kmsi.png" alt-text="保持登录状态？":::
+:::image type="content" source="media/vs-2022/keep-me-signed-in.png" alt-text="保持登录状态？":::
 
-根据你的开发活动和资源配置，系统可能仍会提示你在会话期间重新输入凭据。 当你添加新资源或尝试访问资源时，如果之前未满足其 CA/MFA 授权要求，可能会发生这种情况。
+根据你的开发活动和资源配置，可能仍会在会话期间提示你重新输入凭据。 当你添加新资源或尝试访问资源时，如果之前未满足其 CA/MFA 授权要求，可能会发生这种情况。
 
-## <a name="reauthenticating-an-account"></a>重新验证帐户  
+## <a name="reauthenticating-an-account"></a>重新验证帐户
 如果你的帐户有问题，Visual Studio 可能会要求你重新输入帐户凭据。  
 
-:::image type="content" source="media/reauthenticate-account.png" alt-text="重新验证 Visual Studio 帐户。":::
+:::image type="content" source="media/vs-2022/reauthenticate-account.png" alt-text="重新验证 Visual Studio 帐户。":::
 
-单击“重新输入凭据”会打开系统的默认 Web 浏览器，并尝试自动刷新你的凭据。 如果失败，系统将要求登录你的帐户并验证任何所需的 CA/MFA 策略。
+单击 " **重新输入凭据** " 将打开系统的默认 web 浏览器，并尝试自动刷新凭据。 如果失败，系统将要求登录你的帐户并验证任何所需的 CA/MFA 策略。
 
 > [!NOTE] 
 > 为了获得最佳体验，请保持浏览器打开，直到为资源验证了所有 CA/MFA 策略。 关闭浏览器可能会导致以前生成的 MFA 状态丢失，并且可能会提示其他授权提示。
 
 ## <a name="how-to-opt-out-of-using-a-specific-azure-active-directory-tenant-in-visual-studio"></a>如何在 Visual Studio 中选择退出使用特定的 Azure Active Directory 租户
 
-Visual Studio 2019 16.6 版能够灵活地筛选掉租户（单独或全局），从而有效地对 Visual Studio 隐藏它们。 筛选出特定租户后，无需再向该租户进行身份验证，但这也意味着你将无法访问任何关联资源。
+Visual Studio 2019 版本16.6 及更高版本提供了对租户进行单独或全局筛选的灵活性，从而有效地将其从 Visual Studio 中隐藏。 筛选出特定租户后，无需再向该租户进行身份验证，但这也意味着你将无法访问任何关联资源。
 
 当你有多个租户并且想要通过面向特定的子集来优化开发环境时，此功能很有用。 在无法验证特定 CA/MFA 策略的情况下，此功能也很有用，因为你可以筛选出违规的租户。 
 
 ### <a name="how-to-filter-out-all-tenants"></a>如何筛选掉所有租户
-若要全局筛选掉所有租户，请打开“帐户设置”对话框（“文件”>“帐户设置”），然后取消选中“在所有 Azure Active Directory 中进行身份验证”复选框 。
+若要全局筛选出所有租户，请打开 "帐户设置" 对话框 **(文件 > 帐户设置 ... > 帐户选项**) 并取消选中 "**跨所有 Azure Active directory 进行身份验证**" 复选框。
 
 取消选中该选项可以确保只对帐户的默认租户进行身份验证。 这也意味着你无法访问任何与你的帐户在其中充当来宾的其他租户关联的任何资源。
 
 ### <a name="how-to-filter-out-individual-tenants"></a>如何筛选掉单个租户
-要筛选与你的 Visual Studio 帐户关联的租户，请打开“帐户设置”对话框（“文件”>“帐户设置…”）并单击“应用筛选器” 。 
+若要筛选与 Visual Studio 帐户关联的租户，请打开帐户设置对话框 **(文件 > 帐户设置 ... )** ，然后单击 "**应用筛选器**"。 
 </br>
 </br>
 
-:::image type="content" source="media/apply-filter.png" alt-text="应用筛选器。" border="false":::
+:::image type="content" source="media/vs-2022/apply-filter.png" alt-text="应用筛选器。" border="false":::
 
 此时将显示“筛选帐户”对话框，让你选择要与帐户一起使用的租户。 
 
-:::image type="content" source="media/select-filter-account.png" alt-text="选择要筛选的帐户。":::
+:::image type="content" source="media/vs-2022/select-filter-account.png" alt-text="选择要筛选的帐户。":::
 
 ## <a name="see-also"></a>请参阅
 

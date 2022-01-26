@@ -13,12 +13,12 @@ dev_langs:
 ms.workload:
 - nodejs
 monikerRange: '>= vs-2022'
-ms.openlocfilehash: d9de8cfcb3227c1ae60cda9df6c1f416a6bac3b5
-ms.sourcegitcommit: 8b44ba7864f67afa476708d5092729345e689f93
-ms.translationtype: HT
+ms.openlocfilehash: 8ff36ba20da98ca552c5bb49748d51481a24ec2d
+ms.sourcegitcommit: 5a48e8cfd442b8070eaf0bda3a5946681ea4cf97
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "132861635"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "137778811"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-react-in-visual-studio"></a>教程：在 Visual Studio 中使用 React 创建 ASP.NET Core 应用
 
@@ -40,7 +40,7 @@ ms.locfileid: "132861635"
 
 - 安装了 Visual Studio 2022 预览版 2 或更高版本，以及 ASP.NET 和 Web 开发工作负载。 请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/)页，进行免费安装。
   如果需要安装工作负载，但已安装 Visual Studio，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序。 选择“ASP.NET 和 web 开发”工作负载，然后选择“修改” 。
-- npm ([https://www.npmjs.com/](https://www.npmjs.com/)) 
+- npm ([https://www.npmjs.com/](https://www.npmjs.com/package/npm)) 
 - npx ([https://www.npmjs.com/package/npx](https://www.npmjs.com/package/npx))
 
 ## <a name="create-the-frontend-app"></a>创建前端应用
@@ -65,6 +65,10 @@ ms.locfileid: "132861635"
    - App.js (modified)
    - App.test.js (modified)
 
+1. 从"调试"工具栏中选择已安装的浏览器，例如 Chrome 或 Microsoft Edge。
+
+   如果尚未安装想要安装的浏览器，请首先安装浏览器，然后选择它。
+
 ## <a name="create-the-backend-app"></a>创建后端应用
 
 1. 在解决方案资源管理器中，右键单击解决方案名称，将鼠标悬停在“添加”上，然后选择“新建项目”。  
@@ -86,13 +90,13 @@ ms.locfileid: "132861635"
 1. 右键单击 ASP.NET Core 项目并选择“属性”。
 
    :::image type="content" source="media/vs-2022/asp-net-core-project-properties.png" alt-text="打开项目属性"::: 
- 
+
 1. 转到“调试”菜单，然后选择“打开调试启动配置文件 UI”选项。 取消选中“启动浏览器”选项。
 
    :::image type="content" source="media/vs-2022/asp-net-core-with-react-deselect-launch-browser.png" alt-text="打开调试启动配置文件 UI"::: 
 
 1. 接下来，右键单击 React 项目并选择“属性”菜单，然后转到“调试”部分。  将“调试器”更改为“launch.json”选项。
- 
+
    :::image type="content" source="media/vs-2022/asp-net-core-with-react-choose-debugger.png" alt-text="选择调试器 (launch.json)":::
 
 ## <a name="set-the-startup-project"></a>设置启动项目
