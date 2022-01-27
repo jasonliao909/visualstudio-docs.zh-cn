@@ -33,12 +33,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 37b7c9a395cd7273bf829beee44d150fe841aebd
-ms.sourcegitcommit: 7d319435c35075d4cec021b7b667666a81c02435
+ms.openlocfilehash: 2b66972a4f2982ee669c753de5ef6ead2916f05d
+ms.sourcegitcommit: ebd651e00fe3bae5914c211c4828219bf7d1fc70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "137650129"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "137798569"
 ---
 # <a name="find-and-replace-text"></a>查找和替换文本
 
@@ -170,10 +170,10 @@ ms.locfileid: "137650129"
 
 ![Visual Studio 中 XML 文件中的多个插入点选择](media/multi-caret-selection.png)
 
-要选择多个插入点，请像往常一样单击或进行第一个文本选择，然后在单击或选择其他位置的文本时按 Alt。 还可自动添加匹配的文本作为其他选择，或选择一个文本框以在每行上进行相同的编辑。
+若要选择多个点，请像往常一样单击或选择第一个文本，然后在单击或选择每个其他位置中的文本时按 **Ctrl** + **Alt。** 还可自动添加匹配的文本作为其他选择，或选择一个文本框以在每行上进行相同的编辑。
 
 > [!TIP]
-> 如果已选择 Alt 作为鼠标的修改键，请单击“工具” > “选项”中的“转到定义”，禁用多个插入点选择。
+> 如果已选择 **Alt** 作为工具选项文本编辑器"常规"中的"转到定义"中鼠标单击的修饰键，则禁用多  >    >    >  点式选择。 有关详细信息，请参阅选项 [对话框：文本编辑器 />常规](reference/options-text-editor-general.md)。
 
 ### <a name="commands"></a>命令
 

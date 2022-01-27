@@ -3,7 +3,7 @@ title: 在调试器中设置符号 (.pdb) 和源文件
 description: 了解如何配置和管理 Visual Studio 中的符号和源文件
 ms.date: 12/12/2021
 ms.custom: contperf-fy21q4
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.ToolsOptionsPages.Debugger.Native
 - VS.ToolsOptionsPages.Debugger.Symbols
@@ -30,12 +30,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: cbcd8b330baa076b5e13998102a227062704bcf9
-ms.sourcegitcommit: 52a425b5a541034cda26db8df9cd43281c007e80
+ms.openlocfilehash: 786e1216faab3da3701361ac7ecd1433211072ea
+ms.sourcegitcommit: ebd651e00fe3bae5914c211c4828219bf7d1fc70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/23/2021
-ms.locfileid: "135540739"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "137798582"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>在 Visual Studio 调试器（C#、C++、Visual Basic、F#）中指定符号 (.pdb) 和源文件
 

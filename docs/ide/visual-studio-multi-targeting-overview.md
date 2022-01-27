@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7e6dba5216784cf8db45f7063e88b2a000cdc527
-ms.sourcegitcommit: 8b44ba7864f67afa476708d5092729345e689f93
-ms.translationtype: HT
+ms.openlocfilehash: 306617c158f6bdfbcb8236dc1661a93f9e9c92e5
+ms.sourcegitcommit: ebd651e00fe3bae5914c211c4828219bf7d1fc70
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "132861598"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "137798543"
 ---
 # <a name="framework-targeting-overview"></a>框架定位概述
 
@@ -49,7 +49,7 @@ Visual Studio 解决方案可以包含针对不同 .NET 版本的项目。  但�
 
 - 它筛选“添加新项”  对话框、“添加新引用”  对话框和“添加服务引用”  对话框中的项，以忽略在目标版本中不可用的选项。
 
-- 在“工具箱”  中筛选自定义控件，以删除在目标版本中不可用的控件，并在多个控件可用时仅显示最新版本。
+- 它筛选 **工具箱** 中的自定义控件，以删除在目标版本中不可用的控件，并在多个控件可用时仅显示最新的控件。
 
 - 筛选 IntelliSense，忽略在目标版本中不可用的语言功能  。
 
