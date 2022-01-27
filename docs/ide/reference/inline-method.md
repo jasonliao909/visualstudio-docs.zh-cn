@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2c474c43451006121f940da5eed66dfb9277806a
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 5a1f72867dff23cdb39a789079e94576aa66dd01
+ms.sourcegitcommit: ebd651e00fe3bae5914c211c4828219bf7d1fc70
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126737416"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "137798556"
 ---
 # <a name="inline-method"></a>内联方法
 
@@ -43,11 +43,11 @@ ms.locfileid: "126737416"
     
    选择“内联 `<QualifiedMethodName>`”，删除内联方法声明：
 
-    ![Visual Studio 中“快速操作和重构”菜单的屏幕截图，其中选中了“转换‘内联 CreateWidget()’”，并显示了 C# 代码更改。](media/inline-method-remove-declaration.png)
+    !["快速操作和重构"菜单的屏幕截图，其中Visual Studio"转换内联 'CreateWidget () "，并显示了 C# 代码更改。](media/inline-method-remove-declaration.png)
 
    选择“内联并保留 `<QualifiedMethodName>`”，保留原始方法声明：
 
-    ![Visual Studio 中“快速操作和重构”菜单的屏幕截图，其中选中了“转换‘内联并保留 CreateWidget()’”，并显示了 C# 代码更改。](media/inline-method-preserve-declaration.png)
+    !["快速操作和重构"菜单的屏幕截图，其中Visual Studio"内联并保留选中"CreateWidget () "并显示 C# 代码更改。](media/inline-method-preserve-declaration.png)
 
 ## <a name="see-also"></a>另请参阅
 

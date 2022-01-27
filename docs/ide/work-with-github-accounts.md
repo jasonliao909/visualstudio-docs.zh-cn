@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: f03b494c688fa9ac232175366e59e1740258d37f
-ms.sourcegitcommit: 429b2378ee21b5f473b26f4b4ea0a70372a34ec2
+ms.openlocfilehash: 8b3dd9959e0972bcda095329c4e760374b08664d
+ms.sourcegitcommit: ebd651e00fe3bae5914c211c4828219bf7d1fc70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "137733372"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "137798608"
 ---
 # <a name="work-with-github-accounts-in-visual-studio"></a>在 Visual Studio 中使用 GitHub 帐户
 
@@ -42,32 +42,32 @@ ms.locfileid: "137733372"
 
     :::image type="content" source="../ide/media/show-both-accounts.png" alt-text="两个帐户同时显示":::
 
-如果你还没有使用其他帐户登录 Visual Studio，请选择 Visual Studio 环境右上角的“登录”链接。 也可以通过依次转到“文件” > “帐户设置”来打开“帐户设置”对话框。 然后，按照上面的说明操作来添加 GitHub 帐户。
+如果尚未使用其他帐户Visual Studio登录，请选择环境右上角的"登录Visual Studio链接。  也可以通过依次转到“文件” > “帐户设置”来打开“帐户设置”对话框。 然后，按照上面的说明操作来添加 GitHub 帐户。
 
 ![不是已登录用户](../ide/media/vs2019_usernotsignedin.png)
 
-## <a name="adding-github-enterprise-managed-user-emu-accounts"></a>将 GitHub Enterprise 托管用户 (EMU) 帐户添加
+## <a name="adding-github-enterprise-managed-user-emu-accounts"></a>添加GitHub Enterprise托管用户 (EMU) 帐户
 
-如果已使用 Microsoft 帐户或工作或学校帐户登录到 Visual Studio，则可以添加 GitHub EMU 帐户。
+如果已使用 GitHub 或工作或学校帐户登录到 Visual Studio，Microsoft 帐户 EMU 帐户。
 
-1. 在 Visual Studio 环境的右上角，选择包含首字母的图标。 然后，选择“帐户设置...”来管理帐户。 还可以通过转到 "**文件**  >  **帐户设置 ...**" 打开帐户设置对话框。
+1. 在 Visual Studio 环境的右上角，选择包含首字母的图标。 然后，选择“帐户设置...”来管理帐户。 也可通过进入"文件帐户"设置..."打开"帐户  >  **设置..."。**
 
-    :::image type="content" source="../ide/media/account-picker.png" alt-text="显示 &quot;帐户设置&quot; 对话框的屏幕截图":::
+    :::image type="content" source="../ide/media/account-picker.png" alt-text="显示&quot;帐户设置&quot;对话框的屏幕截图":::
 
-2. 从 "**所有帐户**" 子菜单中，选择 **+** 或 **添加** 下拉列表以添加帐户，然后选择 " **GitHub**"。
+2. 从"**所有帐户"** 子下拉菜单中选择 或"添加"下拉列表以 **+** **添加** 帐户，然后选择GitHub。 
 
-    :::image type="content" source="../ide/media/sign-in-add-github.png" alt-text="显示如何选择和添加 GitHub 帐户的屏幕截图":::
+    :::image type="content" source="../ide/media/sign-in-add-github.png" alt-text="显示如何选择和添加帐户的GitHub屏幕截图":::
 
-3. 你将被重定向到浏览器，你可以在其中用 GitHub 的 EMU 凭据登录。 
+3. 你将被重定向到浏览器，可以在其中使用 EMU GitHub登录。 
 
 > [!NOTE]
-> 确保输入 GitHub 的 EMU 帐户凭据 (用户名在此页上有一个下划线，后跟公司名称) 。
+> 确保输入 EMU GitHub凭据， (用户名后跟公司名称的下划线，) 此页上显示。
 
- :::image type="content" source="../ide/media/github-enterprise-managed-users-sign-in.png" alt-text="显示 GitHub Enterprise 托管用户帐户的 GitHub 登录体验的屏幕截图":::
+ :::image type="content" source="../ide/media/github-enterprise-managed-users-sign-in.png" alt-text="显示托管GitHub用户帐户的GitHub Enterprise登录体验的屏幕截图":::
 
 登录后，你将在浏览器中看到“成功”窗口，然后可以返回到 Visual Studio。
 
-:::image type="content" source="../ide/media/github-success-signin.png" alt-text="显示浏览器中 &quot;登录成功&quot; 窗口的屏幕截图":::
+:::image type="content" source="../ide/media/github-success-signin.png" alt-text="显示浏览器中登录成功窗口的屏幕截图":::
 
 ## <a name="adding-github-enterprise-accounts"></a>添加 GitHub Enterprise 帐户
 
