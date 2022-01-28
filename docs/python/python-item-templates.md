@@ -10,12 +10,12 @@ ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a2780d54d3c49c3255e877124627e09840d2b83b
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 71cfdded0d1778221ead1f9b59ba3530294fae36
+ms.sourcegitcommit: f303d052e451bcfd4722b99a9adbcb3f575d1678
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129971070"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "137816786"
 ---
 # <a name="python-item-templates"></a>Python 项模板
 
@@ -38,7 +38,6 @@ Python 项目中的项模板可通过“项目” > “添加新项”菜单命�
 | **样式表** | 包含 `body` 空样式的 .css 文件。 |
 | **文本文件** | 一个空的 .txt 文件。 |
 | **Django 1.9 应用**<br/>**Django 1.4 应用** | 一个使用应用名称的文件夹，它包含 Django 应用的核心文件，如 Django 1.9 [了解 Visual Studio 中的 Django，步骤 2-2](learn-django-in-visual-studio-step-02-create-an-app.md#step-2-1-create-an-app-with-a-default-structure)中所述。 对于 Django 1.4，不包括“迁移”文件夹、admin.py 文件和 apps.py 文件。 |
-| **IronPython WPF 窗口** | WPF 窗口包含两个并排显示的文件：使用空 `<Grid>` 元素定义 `<Window>` 的 .xaml 文件，和使用 `wpf` 库加载 XAML 文件的关联 .py 文件。 通常在使用某一 IronPython 项目模板创建的项目中使用。 请参阅[管理 Python 项目 - 项目模板](managing-python-projects-in-visual-studio.md#project-templates)。 |
 | **Web 角色支持文件** | 项目根目录中的 bin 文件夹（不考虑项目中所选的文件夹）。 文件夹包含默认部署脚本和 Azure 云服务 Web 角色的 web.config 文件。 模板还包含介绍了详细说明的 readme.html 文件。 |
 | **辅助角色支持文件** | 项目根目录中的 bin 文件夹（不考虑项目中所选的文件夹）。 该文件夹包含默认部署和启动脚本，以及针对 Azure 云服务辅助角色的 web.config 文件。 模板还包含介绍了详细说明的 readme.html 文件。 |
 | **Azure web.config (FastCGI)** | 包含应用条目的 web.config 文件，这些应用使用 [WSGI](https://wsgi.readthedocs.io/en/latest/) 对象来处理传入的连接。 此文件通常部署到运行 IIS 的 Web 服务器的根目录中。 有关详细信息，请参阅[为应用配置 IIS](configure-web-apps-for-iis-windows.md)。 |

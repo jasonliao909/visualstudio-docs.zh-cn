@@ -1,8 +1,8 @@
 ---
 title: 教程：在 Visual Studio 中打开存储库中的项目
-description: 了解如何使用 Visual Studio 打开 Git 或 Azure DevOps 存储库中的项目。
+description: 了解如何使用 Visual Studio 在 Git 或 Azure DevOps 存储库中打开项目。
 ms.custom: vs-acquisition, get-started
-ms.date: 11/11/2021
+ms.date: 01/27/2022
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -14,16 +14,16 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 619a9cacfdf272bb6b76e0115b90edddf2c73180
-ms.sourcegitcommit: d38d1b083322019663fec7d1d85a4cda456aadca
+ms.openlocfilehash: 9ef7cb2c9a96e8599941179c6aebbc836665a741
+ms.sourcegitcommit: f303d052e451bcfd4722b99a9adbcb3f575d1678
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "135534159"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "137816721"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>教程：打开存储库中的项目
 
-在本教程中，你将使用 Visual Studio 首次连接到存储库，然后打开其中的一个项目。
+在本教程中，你将使用 Visual Studio连接到存储库，克隆存储库，然后从该存储库打开项目。
 
 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads)页免费安装。
 
@@ -45,7 +45,7 @@ ms.locfileid: "135534159"
 
 1. 输入或键入存储库位置，然后选择“克隆”按钮。
 
-    :::image type="content" source="../ide/media/vs-2022/clone-repository-enter-location.png" alt-text="&quot;克隆存储库&quot; 对话框的屏幕截图，可在其中输入 Git 存储库 URL Visual Studio。":::
+    :::image type="content" source="../ide/media/vs-2022/clone-repository-enter-location.png" alt-text="&quot;克隆存储库&quot;对话框的屏幕截图Visual Studio输入 Git 存储库 URL 的位置。":::
 
 1. 系统可能会要求你在“Git 用户信息”对话框中提供用户登录信息。 可添加你的信息或编辑所提供的默认信息。
 
