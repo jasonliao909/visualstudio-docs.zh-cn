@@ -1,6 +1,7 @@
 ---
-title: 在调试器中设置符号 (.pdb) 和源文件
-description: 了解如何配置和管理 Visual Studio 中的符号和源文件
+title: Visual Studio 调试器中的符号/PDB 文件
+titleSuffix: ''
+description: 了解符号如何 & 源文件，以及如何在 Visual Studio 调试器中配置它们。
 ms.date: 12/12/2021
 ms.custom: contperf-fy21q4
 ms.topic: how-to
@@ -30,12 +31,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 786e1216faab3da3701361ac7ecd1433211072ea
-ms.sourcegitcommit: ebd651e00fe3bae5914c211c4828219bf7d1fc70
+ms.openlocfilehash: 942d53d65ba000f618580d1781ce8bfcaba368f6
+ms.sourcegitcommit: abd19232659447bc9bf946692a5de49130416bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "137798582"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "137831760"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>在 Visual Studio 调试器（C#、C++、Visual Basic、F#）中指定符号 (.pdb) 和源文件
 
@@ -188,7 +189,7 @@ ms.locfileid: "137798582"
 
 当你使用标准调试生成配置从 Visual Studio IDE 生成项目时，C++ 和托管编译器将为你的代码创建相应的符号文件。 你还可以在代码中设置编译器选项。
 
-若要在 Visual Studio 中为生成配置设置编译器选项，请参阅[设置调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)。
+若要在 Visual Studio 中设置生成配置的编译器选项，请参阅[设置调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)。
 
 ### <a name="net-options"></a>.NET 选项
 
