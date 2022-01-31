@@ -1,7 +1,7 @@
 ---
 title: 使用 Vue 创建 ASP.NET Core 应用
 description: 在本教程中，使用 ASP.NET Core 和 Vue 创建应用
-ms.date: 11/08/2021
+ms.date: 01/28/2022
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -13,12 +13,12 @@ dev_langs:
 ms.workload:
 - nodejs
 monikerRange: '>= vs-2022'
-ms.openlocfilehash: 05c47320efe74f186786954bc608b445255f150a
-ms.sourcegitcommit: 8b44ba7864f67afa476708d5092729345e689f93
-ms.translationtype: HT
+ms.openlocfilehash: bc758290ac8b82bf2658c5f45b7a68b9b324b532
+ms.sourcegitcommit: 20f9529648e69707063dccb2b15089bf4e9bf639
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "132861505"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "137886666"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-vue-in-visual-studio"></a>教程：在 Visual Studio 中使用 Vue 创建 ASP.NET Core 应用
 
@@ -40,7 +40,7 @@ ms.locfileid: "132861505"
 
 - 安装了 Visual Studio 2022 预览版 2 或更高版本，以及 ASP.NET 和 Web 开发工作负载。 请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/)页，进行免费安装。
   如果需要安装工作负载，但已安装 Visual Studio，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序。 选择“ASP.NET 和 web 开发”工作负载，然后选择“修改” 。
-- npm ([https://www.npmjs.com/](https://www.npmjs.com/)) 
+- npm ([https://www.npmjs.com/](https://www.npmjs.com/package/npm)) ，随附 Node.js
 - Vue CLI ([https://cli.vuejs.org/](https://cli.vuejs.org/))  
 
 ## <a name="create-the-frontend-app"></a>创建前端应用
@@ -121,14 +121,21 @@ ms.locfileid: "132861505"
 
 1. 启动项目之前，请确保端口号匹配。 转到 ASP.NET Core 项目中的 launchSettings.json 文件（在 Properties 文件夹中） 。 从 `applicationUrl` 属性获取端口号。
 
-   如果有多个 `applicationUrl` 属性，请使用 `https` 终结点查找一个。 它看起来应该类似于 `https://localhost:7049`。
+   如果有多个 `applicationUrl` 属性，请使用 `https` 终结点查找一个。 它看起来应该类似于 `https://localhost:5001`。
 
-1. 然后，转到 Vue 项目的 vue.config.js 文件。 更新目标属性，以匹配 launchSettings.json 中的 `applicationUrl` 属性。
+1. 然后，转到 Vue 项目的 vue.config.js 文件。 更新目标属性，以匹配 launchSettings.json 中的 `applicationUrl` 属性。 当你更新此值时，该值应类似于：
+
+   ```js
+   target: 'https://localhost:5001',
+   ```
 
 1. 若要启动项目，请按 F5 或选择窗口顶部的“开始”按钮 。 将显示两个命令提示符：
 
    - 正在运行的 ASP.NET Core API 项目
    - 运行 vue-cli-service serve 命令的 Vue CLI
+
+   >[!NOTE]
+   > 检查控制台输出中的消息，如消息，指导您更新 Node.js 的版本。
 
 应会显示一个 Vue 应用，该应用通过 API 填充。
 
@@ -141,3 +148,5 @@ ms.locfileid: "132861505"
 ```
 
 如果看到此问题，很可能前端在后端之前启动。 看到后端命令提示符启动并运行后，只需在浏览器中刷新 Vue 应用即可。
+
+否则，如果该端口正在使用中，请在 *launchsettings.json* 中尝试5002，并 *vue.config.js*。

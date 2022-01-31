@@ -2,7 +2,7 @@
 description: Visual Studio“集成开发环境”是面向 Python （和其他语言）的创新启动板，可用于编辑、调试并生成代码，然后发布应用。
 title: 面向 Python 开发人员的 Visual Studio 概述
 titleSuffix: ''
-ms.date: 03/13/2019
+ms.date: 01/26/2022
 ms.topic: overview
 author: rjmolyneaux
 ms.author: rmolyneaux
@@ -13,12 +13,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f58b8409e846521b2590720911047d0d6702c107
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 99ffbe74bf5026aa3ed7f827ded2b53391fee24d
+ms.sourcegitcommit: 20f9529648e69707063dccb2b15089bf4e9bf639
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129971369"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "137887042"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>欢迎使用 Visual Studio IDE | Python
 

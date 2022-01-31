@@ -2,7 +2,7 @@
 title: 学习 Visual Studio 中的 Django 教程的第 3 步，静态文件和页面
 titleSuffix: ''
 description: Visual Studio 项目上下文中 Django 基础知识的演练，具体演示了如何提供静态文件、将页面添加到应用，并使用模板继承
-ms.date: 11/19/2018
+ms.date: 01/25/2022
 ms.topic: tutorial
 author: rjmolyneaux
 ms.author: rmolyneaux
@@ -11,12 +11,12 @@ ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7b1a46d85ca320c8bc87a619e759d0b12bf24a80
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: edc624c2e862f18ade5889aa275874e946c5164a
+ms.sourcegitcommit: 20f9529648e69707063dccb2b15089bf4e9bf639
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129968613"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "137886483"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance-with-django-app"></a>步骤 3：通过 Django 应用提供静态文件、添加页面和使用模板继承
 
@@ -84,7 +84,7 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
     <html>
         <head>
             <title>{{ title }}</title>
-            {% load staticfiles %} <!-- Instruct Django to load static files -->
+            {% load static %} <!-- Instruct Django to load static files -->
             <link rel="stylesheet" type="text/css" href="{% static 'site.css' %}" />
         </head>
         <body>
@@ -95,15 +95,15 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 1. 运行项目以观察结果。 完成后停止服务器，根据需要将更改提交到源代码管理（如[步骤 2](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control) 中所述）。
 
-### <a name="question-what-is-the-purpose-of-the--load-staticfiles--tag"></a>问：{% load staticfiles %} 标记的用途是什么？
+### <a name="question-what-is-the-purpose-of-the--load-static--tag"></a>问：{% load static %} 标记的用途是什么？
 
-答：在指示像 `<head>` 和 `<body>` 这样的元素中的静态文件之前，需要使用 `{% load staticfiles %}` 行。 本节所示的示例中，“staticfiles”指的是自定义 Django 模板标记集，它允许使用 `{% static %}` 语法来引用静态文件。  如果没有 `{% load staticfiles %}`，那么在应用运行时，将看到异常。
+答：在指示像 `<head>` 和 `<body>` 这样的元素中的静态文件之前，需要使用 `{% load static %}` 行。 本节所示的示例中，“staticfiles”指的是自定义 Django 模板标记集，它允许使用 `{% static %}` 语法来引用静态文件。  如果没有 `{% load static %}`，那么在应用运行时，将看到异常。
 
 ### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>问：是否有组织静态文件的任何约定？
 
 答：可以在 static 文件夹中以所需的方式添加其他 CSS、JavaScript 和 HTML 文件。 组织静态文件的一种典型方法是创建名为 fonts、scripts 和 content 的子文件夹（用于样式表和任何其他文件）  。 在每一种情况下，请记住要将这些文件夹包含在指向 `{% static %}` 引用中文件的相对路径中。
 
-### <a name="question-can-i-complete-the-same-task-without-using-the--load-staticfiles--tag"></a>问：是否可以在不使用 {% load staticfiles %} 标记的情况下完成相同任务？
+### <a name="question-can-i-complete-the-same-task-without-using-the--load-static--tag"></a>问：是否无需使用 {% load static %} 标记即可完成同一任务？
 
 答：可以。
 
@@ -140,7 +140,7 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
     <html>
         <head>
             <title>{{ title }}</title>
-            {% load staticfiles %}
+            {% load static %}
             <link rel="stylesheet" type="text/css" href="{% static 'site.css' %}" />
         </head>
         <body>
@@ -210,7 +210,7 @@ Django 模板系统为实现跨多个模板重用特定元素提供了两种方�
     <head>
         <meta charset="utf-8" />
         <title>{{ title }}</title>
-        {% load staticfiles %}
+        {% load static %}
         <link rel="stylesheet" type="text/css" href="{% static 'site.css' %}" />
     </head>
 

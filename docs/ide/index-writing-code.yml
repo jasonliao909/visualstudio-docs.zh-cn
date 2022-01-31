@@ -10,12 +10,12 @@ metadata:
   author: terryglee
   ms.author: tglee
   ms.date: 10/15/2019
-  ms.openlocfilehash: 4c5fd5efd2c3473698c488357bbc512e8e43e993
-  ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-  ms.translationtype: HT
+  ms.openlocfilehash: 02449f4cd83aeba2e887f4037141e79bc3729535
+  ms.sourcegitcommit: 20f9529648e69707063dccb2b15089bf4e9bf639
+  ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/13/2021
-  ms.locfileid: "126737080"
+  ms.lasthandoff: 01/31/2022
+  ms.locfileid: "137886535"
 landingContent:
 - title: 打开或创建项目
   linkLists:
@@ -59,6 +59,8 @@ landingContent:
       url: /cpp/get-started/tutorial-console-cpp
     - text: Visual Studio 中的 Python 入门
       url: quickstart-python.md
+    - text: 使用 C 创建控制台应用#
+      url: ../get-started/csharp/tutorial-console.md
     - text: 使用 Visual Basic 创建控制台应用
       url: quickstart-visual-basic-console.md
     - text: 使用 Node.js 创建 Web 应用

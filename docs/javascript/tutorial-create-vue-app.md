@@ -1,7 +1,7 @@
 ---
 title: 创建 Vue.js 应用程序
 description: 本教程介绍如何在 Visual Studio 中创建简单的 Vue.js 应用程序。
-ms.date: 07/30/2021
+ms.date: 01/28/2022
 ms.custom: vs-acquisition
 ms.topic: tutorial
 ms.devlang: javascript
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - nodejs
 monikerRange: '>= vs-2022'
-ms.openlocfilehash: 926051ad98d43715a15a20091eb6a17c20f96758
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 3dc5470906bf189e11d9252b4a4177ffe485dba8
+ms.sourcegitcommit: 20f9529648e69707063dccb2b15089bf4e9bf639
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641562"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "137886640"
 ---
 # <a name="create-a-vuejs-app"></a>创建 Vue.js 应用程序
 
@@ -30,7 +30,7 @@ ms.locfileid: "126641562"
 确保已安装以下各项：
 
 - Visual Studio 2022 预览版 2 或更高版本。 请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/)页，进行免费安装。
-- npm ([https://www.npmjs.com/](https://www.npmjs.com/)) 
+- npm ([https://www.npmjs.com/](https://www.npmjs.com/package/npm)) ，随附 Node.js
 - Vue.js ([Installation | Vue.js (vuejs.org)](https://v3.vuejs.org/guide/installation.html#npm))
 - Vue.js CLI ([(Installation | Vue.js (vuejs.org)](https://v3.vuejs.org/guide/installation.html#cli))
 
@@ -60,8 +60,11 @@ ms.locfileid: "126641562"
 
 ## <a name="start-your-project"></a>启动项目
 
-按 F5 或选择窗口顶部的“开始”按钮。  此时会出现命令提示符：
+按 **F5** 或选择窗口顶部的 " **启动** " 按钮，此时将显示命令提示符：
 
 - npm 运行 vue-cli-service start 命令
+
+   >[!NOTE]
+   > 检查控制台输出中的消息，如消息，指导您更新 Node.js 的版本。
 
 接下来，你会看到基本 Vue.js 应用！

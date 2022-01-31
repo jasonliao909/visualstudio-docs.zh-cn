@@ -23,12 +23,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: f8bcaf1e13a9b6f26d3c838c8cbd739d91c99d62
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 3b57372fd69e8c8076a19a3904454ac623cbedb7
+ms.sourcegitcommit: 20f9529648e69707063dccb2b15089bf4e9bf639
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736061"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "137886444"
 ---
 # <a name="copy-task"></a>Copy 任务
 
@@ -104,11 +104,15 @@ ms.locfileid: "126736061"
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-    <ItemGroup>
-        <MySourceFiles Include="c:\MySourceTree\**\*.*"/>
-    </ItemGroup>
-
     <Target Name="CopyFiles">
+        <ItemGroup>
+            <!-- Because this ItemGroup is inside the target, this will enumerate
+                 all files just before calling Copy. If the ItemGroup were outside
+                 the target , it would enumerate the files during evaluation, before
+                 the build starts, which may miss files created during the build. -->
+            <MySourceFiles Include="c:\MySourceTree\**\*.*"/>
+        </ItemGroup>
+
         <Copy
             SourceFiles="@(MySourceFiles)"
             DestinationFiles="@(MySourceFiles->'c:\MyDestinationTree\%(RecursiveDir)%(Filename)%(Extension)')"

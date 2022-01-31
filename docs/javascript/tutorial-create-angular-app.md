@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - nodejs
 monikerRange: '>= vs-2022'
-ms.openlocfilehash: 1b40a03c63665be09ecea5c28fb8e82dcc69c7a7
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 90c80b955b2e3e4ed19e68c11a720b199c97bf7a
+ms.sourcegitcommit: 20f9529648e69707063dccb2b15089bf4e9bf639
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641564"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "137886743"
 ---
 # <a name="create-an-angular-app"></a>创建 Angular 应用
 
@@ -30,7 +30,7 @@ ms.locfileid: "126641564"
 确保已安装以下各项：
 
 - Visual Studio 2022 预览版 2 或更高版本。 请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/)页，进行免费安装。
-- npm ([https://www.npmjs.com/](https://www.npmjs.com/)) 
+- npm ([https://www.npmjs.com/](https://www.npmjs.com/package/npm)) ，包含在 Node.js
 - AngularCLI ([https://angular.io/cli](https://angular.io/cli)) 这可以是你选择的版本
 
 ## <a name="create-your-app"></a>创建应用
@@ -39,13 +39,13 @@ ms.locfileid: "126641564"
 
    :::image type="content" source="media/vs-2022/create-new-project.png" alt-text="创建新项目":::
 
-1. 在顶部的搜索栏中搜索“Angular”，然后选择“独立 Angular 模板”。
+1. 在顶部的Angular搜索栏中搜索"模板"，然后选择"独立 **TypeScript Angular模板"**。
 
    :::image type="content" source="media/vs-2022/angular-choose-template.png" alt-text="选择模板":::
 
-1. 为你的项目和解决方案命名。 
+1. 为你的项目和解决方案命名。
 
-   转到“其他信息”窗口时，请务必不要选中“为空的 ASP.NET Web API 项目添加集成”选项。 如果添加了 ASP.NET Core 项目，此选项将文件添加到 Angular 模板，以便稍后可以与 ASP.NET Core 项目挂钩。
+   到达"其他信息"窗口时，请务必不要选中"为空值添加集成 **ASP.NET Web API Project** 选项。 如果添加了 ASP.NET Core 项目，此选项将文件添加到 Angular 模板，以便稍后可以与 ASP.NET Core 项目挂钩。
 
    其他信息
 
@@ -65,8 +65,11 @@ ms.locfileid: "126641564"
 
 ## <a name="start-your-project"></a>启动项目
 
-按 F5 或选择窗口顶部的“开始”按钮。  此时会出现命令提示符：
+按 **F5** **或选择窗口** 顶部的"开始"按钮，你将看到命令提示符：
 
 - 运行 ng start 的 Angular CLI
 
-接下来，你会看到基本 Angular 应用！
+   >[!NOTE]
+   > 检查控制台输出中的消息，例如一条消息，指示你更新版本Node.js。
+
+接下来，应会看到基本Angular应用显示！

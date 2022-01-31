@@ -8,12 +8,12 @@ ms.date: 11/09/2020
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
 ms.topic: overview
-ms.openlocfilehash: 2e2a64051ecce8e7bff0cc4479e7d6167315a0b9
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: 1de953caf3fb21c0bd8ab73e17a2432d5bce24f0
+ms.sourcegitcommit: 20f9529648e69707063dccb2b15089bf4e9bf639
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135804280"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "137887172"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Visual Studio 2019 for Mac 导览
 
@@ -96,7 +96,7 @@ NuGet 是 .NET 开发最常用的程序包管理器。 通过 Visual Studio 的 
 
 ## <a name="source-editor"></a>源编辑器
 
-无论是采用 C#、XAML 还是 JavaScript 编写，该代码编辑器都与 Windows 上的 Visual Studio 具有相同的核心组件，具有完全本机的用户界面。
+无论你是使用 c #、XAML 还是 JavaScript 编写，代码编辑器都与具有完全本机用户界面的 Windows 上的 Visual Studio 共享同一核心组件。
 
 这会引入以下一些功能：
 
