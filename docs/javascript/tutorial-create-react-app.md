@@ -1,7 +1,7 @@
 ---
 title: 创建 React 应用
 description: 本教程介绍如何在 Visual Studio 中创建简单的 React 应用程序。
-ms.date: 07/30/2021
+ms.date: 01/28/2022
 ms.custom: vs-acquisition
 ms.topic: tutorial
 ms.devlang: javascript
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - nodejs
 monikerRange: '>= vs-2022'
-ms.openlocfilehash: fbf4b68c1f5f82af8af47cda7e21389b14c21bb2
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: bd9934e0170de110377c2e4880531f419fa0860a
+ms.sourcegitcommit: 20f9529648e69707063dccb2b15089bf4e9bf639
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641563"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "137886643"
 ---
 # <a name="create-a-react-app"></a>创建 React 应用
 
@@ -29,8 +29,8 @@ ms.locfileid: "126641563"
 
 确保已安装以下各项：
 
-- Visual Studio 2022 预览版 2 或更高版本。 请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/)页，进行免费安装。
-- npm ([https://www.npmjs.com/](https://www.npmjs.com/)) 
+- Visual Studio 2022 或更高版本。 请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/)页，进行免费安装。
+- npm ([https://www.npmjs.com/](https://www.npmjs.com/package/npm)) ，包含在 Node.js
 - npx ([https://www.npmjs.com/package/npx](https://www.npmjs.com/package/npx))
 
 ## <a name="create-your-app"></a>创建应用
@@ -65,8 +65,11 @@ ms.locfileid: "126641563"
 
 ## <a name="start-your-project"></a>启动项目
 
-按 F5 或选择窗口顶部的“开始”按钮。  此时会出现命令提示符：
+按 **F5** **或选择窗口** 顶部的"开始"按钮，你将看到命令提示符：
 
 - 运行 react-scripts start 命令的 npm
+
+>[!NOTE]
+> 检查控制台输出中的消息，例如一条消息，指示你更新版本Node.js。
 
 接下来，你会看到基本 React 应用！

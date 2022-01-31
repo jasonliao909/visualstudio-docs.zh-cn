@@ -1,7 +1,7 @@
 ---
 title: 使用 React 创建 ASP.NET Core 应用
 description: 在本教程中，使用 ASP.NET Core 和 React 创建应用
-ms.date: 11/08/2021
+ms.date: 01/28/2022
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -13,12 +13,12 @@ dev_langs:
 ms.workload:
 - nodejs
 monikerRange: '>= vs-2022'
-ms.openlocfilehash: 8ff36ba20da98ca552c5bb49748d51481a24ec2d
-ms.sourcegitcommit: 5a48e8cfd442b8070eaf0bda3a5946681ea4cf97
+ms.openlocfilehash: 683ea6e92afe2f0720c3feb21e391f6c83fd39db
+ms.sourcegitcommit: 20f9529648e69707063dccb2b15089bf4e9bf639
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "137778811"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "137886757"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-react-in-visual-studio"></a>教程：在 Visual Studio 中使用 React 创建 ASP.NET Core 应用
 
@@ -38,9 +38,9 @@ ms.locfileid: "137778811"
 
 确保已安装以下各项：
 
-- 安装了 Visual Studio 2022 预览版 2 或更高版本，以及 ASP.NET 和 Web 开发工作负载。 请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/)页，进行免费安装。
+- Visual Studio 2022 或更高版本，ASP.NET **和 Web 开发工作负载**。 请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/)页，进行免费安装。
   如果需要安装工作负载，但已安装 Visual Studio，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序。 选择“ASP.NET 和 web 开发”工作负载，然后选择“修改” 。
-- npm ([https://www.npmjs.com/](https://www.npmjs.com/package/npm)) 
+- npm ([https://www.npmjs.com/](https://www.npmjs.com/package/npm)) ，包含在 Node.js
 - npx ([https://www.npmjs.com/package/npx](https://www.npmjs.com/package/npx))
 
 ## <a name="create-the-frontend-app"></a>创建前端应用
@@ -113,12 +113,19 @@ ms.locfileid: "137778811"
 
    如果有多个 `applicationUrl` 属性，请使用 `https` 终结点查找一个。 它看起来应该类似于 `https://localhost:7049`。
 
-1. 然后，转到 React 项目的 setupProxy.js 文件（查看 src 文件夹） 。 更新目标属性，以匹配 launchSettings.json 中的 `applicationUrl` 属性。
+1. 然后，转到 React 项目的 setupProxy.js 文件（查看 src 文件夹） 。 更新目标属性，以匹配 launchSettings.json 中的 `applicationUrl` 属性。 更新它时，该值应类似于：
+
+   ```js
+   target: 'https://localhost:7049',
+   ```
 
 1. 若要启动项目，请按 F5 或选择窗口顶部的“开始”按钮 。 将显示两个命令提示符：
 
-- 正在运行的 ASP.NET Core API 项目
-- 运行 react-scripts start 命令的 npm
+   - 正在运行的 ASP.NET Core API 项目
+   - 运行 react-scripts start 命令的 npm
+
+   >[!NOTE]
+   > 检查控制台输出中的消息，例如一条消息，指示你更新Node.js。
 
 应会显示一个 React 应用，该应用通过 API 填充。
 

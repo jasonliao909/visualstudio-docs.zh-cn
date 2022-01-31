@@ -2,7 +2,7 @@
 title: 了解 Visual Studio 中的 Django 教程步骤 2，视图和页面模板
 titleSuffix: ''
 description: Visual Studio 项目上下文中 Django 基础知识的演练，具体介绍了创建应用以及使用视图和模板的步骤。
-ms.date: 11/19/2018
+ms.date: 01/25/2022
 ms.topic: tutorial
 author: rjmolyneaux
 ms.author: rmolyneaux
@@ -11,12 +11,12 @@ ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 669c3dfb552024002569a83460dda6877219da20
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 7a252facf681e408e6575b5f5e491142c9cb9f0e
+ms.sourcegitcommit: 20f9529648e69707063dccb2b15089bf4e9bf639
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129972227"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "137887198"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>步骤 2：使用视图和页面模板创建 Django 应用
 

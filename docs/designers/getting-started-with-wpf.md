@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: 09a57db0479a1e304bc365ebc7584bf9a9102c09
-ms.sourcegitcommit: a149b3a034bb555ad217656c0ec8bc1672b1e215
+ms.openlocfilehash: 19b794c616f8856e40641ebe57bb2b24ea526e79
+ms.sourcegitcommit: 20f9529648e69707063dccb2b15089bf4e9bf639
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "133514462"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "137886431"
 ---
 # <a name="what-is-windows-presentation-foundation-wpf"></a>WPF) Windows Presentation Foundation (是什么？
 
@@ -32,7 +32,7 @@ WPF 是 .net 的一部分，因此，如果以前使用 ASP.NET 或 Windows 窗�
 |-|-|
 |我希望直接开始使用...|[演练：我的第一个 WPF 桌面应用程序](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)|
 |我想比较 XAML 设计工具...|[在 Visual Studio 和 Blend for Visual Studio 中设计 XAML](../xaml-tools/designing-xaml-in-visual-studio.md)|
-|是否是初次使用 .NET？|[.NET 指南](/dotnet/standard/)<br /><br />[应用程序要点](/dotnet/standard/application-essentials)<br /><br />[Visual C# 入门](../ide/quickstart-csharp-console.md)|
+|是否是初次使用 .NET？|[.NET 指南](/dotnet/standard/)<br /><br />[应用程序要点](/dotnet/standard/application-essentials)<br /><br />[Visual C# 入门](../get-started/csharp/tutorial-console.md)|
 |有关 WPF 的详细信息...|[WPF 概述](/dotnet/framework/wpf/introduction-to-wpf)<br /><br />[XAML 概述 (WPF)](/dotnet/framework/wpf/advanced/xaml-overview-wpf)<br /><br />[控件](/dotnet/framework/wpf/controls/)<br /><br />[数据绑定概述](/dotnet/desktop-wpf/data/data-binding-overview)<br /><br />[使用 LINQ to XML 进行 WPF 数据绑定](/dotnet/framework/wpf/data/wpf-data-binding-with-linq-to-xml-overview)|
 |是否是 Windows 窗体开发人员？|[Windows 窗体控件和等效的 WPF 控件](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)<br /><br />[WPF 和 Windows 窗体互操作中受支持的方案](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)|
 

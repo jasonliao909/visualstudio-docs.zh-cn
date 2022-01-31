@@ -1,8 +1,7 @@
 ---
 title: 为 Python Web 应用配置 IIS
 description: 如何将 Python Web 应用配置为使用 Windows 虚拟机中的 Internet Information Services 运行。
-ms.custom: devdivchpfy22
-ms.date: 12/20/2021
+ms.date: 01/12/2022
 ms.topic: how-to
 author: rjmolyneaux
 ms.author: rmolyneaux
@@ -12,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 973842bc0a149a1a292fb66c67c7bf8b974668df
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: 74f1f1d5e7b762c597efa0c7842292ff0c6ae365
+ms.sourcegitcommit: 20f9529648e69707063dccb2b15089bf4e9bf639
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135803292"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "137887211"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>为 Python Web 应用配置 IIS
 
@@ -106,7 +105,7 @@ FastCGI 是在请求级别工作的接口。 IIS 接收传入的连接，并将�
 
 1. 设置 web.config 中的 `WSGI_HANDLER` 条目，以适合正在使用的框架：
 
-    - **Bottle：** 确保之后有括号 `app.wsgi_app` ，如下所示。 此操作是必需的，因为该对象是函数（请参阅 app.py)）而非变量：
+    - **容器**：请确保在后面 `app.wsgi_app` 加上括号，如下所示。 此操作是必需的，因为该对象是函数（请参阅 app.py)）而非变量：
 
         ```xml
         <!-- Bottle apps only -->
@@ -142,7 +141,7 @@ FastCGI 是在请求级别工作的接口。 IIS 接收传入的连接，并将�
 
     未能将 URL 添加到该阵列会导致出现错误“不允许的主机/无效的 HTTP_HOST 标头:‘\<site URL\>’。可能需要将‘\<site URL\>’添加到 ALLOWED_HOSTS。”
 
-    当数组为空时，Django 会自动允许"localhost"和"127.0.0.1"，但添加生产 URL 会删除这些功能。 出于此原因，你可能想要维护单独的 settings.py 和生产副本， *或者* 使用环境变量来控制运行时值。
+    当数组为空时，Django 会自动允许 "localhost" 和 "127.0.0.1"，但添加生产 URL 将删除这些功能。 出于此原因，你可能需要维护 *settings.py* 的单独开发和生产副本，或使用环境变量来控制运行时值。
 
 ## <a name="deploy-to-iis-or-a-windows-vm"></a>部署到 IIS 或 Windows VM
 

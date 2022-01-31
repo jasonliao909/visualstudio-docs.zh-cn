@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: c352fc371a8f49bd71cbab0a6ca8ece53605b062
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: a4c20f71b93f3c6a48a2956581487cd48470b248
+ms.sourcegitcommit: 20f9529648e69707063dccb2b15089bf4e9bf639
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135806009"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "137886873"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio-part-1-of-2"></a>教程：在 Visual Studio 中创建一个简单的 C# 控制台应用（第 1 部分，共 2 部分）
 
@@ -120,6 +120,9 @@ ms.locfileid: "135806009"
     :::image type="content" source="./media/vs-2019/csharp-target-framework.png" alt-text="显示确保在“其他信息”窗口中选择“.NET Core 3.1”的屏幕截图。":::
 
    Visual Studio 随即打开新项目，其中包含默认的“Hello World”代码。
+   如果要在编辑器中查看它，可以在“解决方案资源管理器”窗口中选择代码文件“Program.cs”，该窗口通常位于 Visual Studio 的右侧。
+
+   默认的"Hello World"代码调用 <xref:System.Console.WriteLine%2A> 方法来显示文本字符串"Hello， World！" 显示文本字符串“Hello World!”。 如果按 F5，可以在调试模式下运行默认程序。 在调试器中运行应用程序后，控制台窗口将保持打开状态。 按任意键关闭控制台窗口。
 
 ::: moniker-end
 ::: moniker range=">=vs-2022"
@@ -150,9 +153,13 @@ ms.locfileid: "135806009"
    ![显示在“其他信息”窗口中选择了“.NET 6.0”的屏幕截图。](media/vs-2022/csharp-target-framework.png)
 
    Visual Studio 随即打开新项目，其中包含默认的“Hello World”代码。
+
+   如果要在编辑器中查看它，可以在“解决方案资源管理器”窗口中选择代码文件“Program.cs”，该窗口通常位于 Visual Studio 的右侧。
+
+   单个代码语句调用 <xref:System.Console.WriteLine%2A> 方法显示文本字符串“Hello World!” 显示文本字符串“Hello World!”。 如果按 F5，可以在调试模式下运行默认程序。 在调试器中运行应用程序后，控制台窗口将保持打开状态。 按任意键关闭控制台窗口。
    
    > [!NOTE]
-   > 从 .NET 6 开始，使用控制台模板的新项目生成的代码与以前的版本不同。 若要了解详细信息，请参阅 [新的 c # 模板生成顶级语句](/dotnet/core/tutorials/top-level-templates) 页面。 
+   > 从 .NET 6 开始，使用控制台模板的新项目生成的代码与以前的版本不同。 若要了解有关详细信息，请参阅新的 [C# 模板生成顶级语句](/dotnet/core/tutorials/top-level-templates) 页。 
 
 ::: moniker-end
 

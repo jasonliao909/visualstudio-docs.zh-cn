@@ -1,7 +1,7 @@
 ---
 title: Python 的混合模式调试
 description: 在 Visual Studio 中同时调试 C++ 和 Python，包括在环境之间单步执行、查看值和计算表达式。
-ms.date: 11/12/2018
+ms.date: 01/26/2022
 ms.topic: how-to
 author: rjmolyneaux
 ms.author: rmolyneaux
@@ -10,12 +10,12 @@ ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 03f1ff325f89d62629eff1c82232458edc0017cf
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 5731506efd2e3eb2aac8cf978c3e4ef8a6ebfc3e
+ms.sourcegitcommit: 20f9529648e69707063dccb2b15089bf4e9bf639
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129971473"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "137886847"
 ---
 # <a name="debug-python-and-c-together"></a>一起调试 Python 和 C++
 
