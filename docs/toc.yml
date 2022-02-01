@@ -152,7 +152,7 @@
     - name: C#：创建 Web 应用
       href: ide/quickstart-aspnet-core.md
     - name: C#：创建控制台应用
-      href: ide/quickstart-csharp-console.md
+      href: get-started/csharp/tutorial-console.md
     - name: Visual Basic：创建控制台应用
       href: ide/quickstart-visual-basic-console.md
     - name: Node.js：创建 Web 应用
@@ -649,36 +649,6 @@
               items:
                 - name: System.Windows.Forms API >>
                   href: /dotnet/api/system.windows.forms
-            - name: 教程
-              items:
-                - name: 教程 1：创建图片查看器 (C#)
-                  items:
-                    - name: 1. 创建图片查看器应用
-                      href: ide/tutorial-windows-forms-picture-viewer-layout.md
-                    - name: 2. 在应用中添加控件
-                      href: ide/tutorial-windows-forms-picture-viewer-controls.md
-                    - name: 3. 编写代码、测试和运行应用
-                      href: ide/tutorial-windows-forms-picture-viewer-code.md
-                - name: 教程 2：创建计时数学测验 (C#)
-                  items:
-                    - name: 1. 创建数学测验应用
-                      href: ide/tutorial-windows-forms-math-quiz-create-project-add-controls.md
-                    - name: 2. 向应用中添加数学问题
-                      href: ide/tutorial-windows-forms-math-quiz-add-math-problems.md
-                    - name: 3. 向应用中添加计时器
-                      href: ide/tutorial-windows-forms-math-quiz-add-timer.md
-                    - name: 4. 自定义应用
-                      href: ide/tutorial-windows-forms-math-quiz-customize-ui.md
-                - name: 教程 3：创建配对游戏 (C#)
-                  items:
-                    - name: 1. 创建匹配游戏
-                      href: ide/tutorial-windows-forms-create-match-game.md
-                    - name: 2. 向匹配游戏添加图标
-                      href: ide/tutorial-windows-forms-match-game-icons.md
-                    - name: 3. 添加标签和计时器
-                      href: ide/tutorial-windows-forms-match-game-labels.md
-                    - name: 4. 玩匹配游戏
-                      href: ide/tutorial-windows-forms-match-game-play.md
         - name: F#
           items:
             - name: F# 开发
