@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9eacb91faa204f92b63ecf464c1ef418b387e38a
-ms.sourcegitcommit: 64d6c5cf93984bbb22812577af17128cd2239f79
+ms.openlocfilehash: fac1ae8069e88fcfa1ffb56dae5d2047beadded1
+ms.sourcegitcommit: 47ab08ca7a364bafb295d53b57f0e5b5e3413586
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "134366938"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "137894932"
 ---
 # <a name="remote-debugger-port-assignments"></a>远程调试器端口分配
 Visual Studio 远程调试器可作为应用程序或后台服务运行。 当它作为应用程序运行时，它将使用默认分配的端口，如下所示：
@@ -55,7 +55,7 @@ Visual Studio 远程调试器可作为应用程序或后台服务运行。 当�
 
 ## <a name="the-remote-debugger-port-on-64-bit-operating-systems"></a>64 位操作系统上的远程调试器端口
 ::: moniker range=">=vs-2022"
- 当启动 64 位版远程调试器时，它默认使用主端口 (4026)。  如果调试 32 位进程，则 64 位版远程调试器将在端口 4025 上启动 32 位版远程调试器。 如果你运行 32 位远程调试器，它使用 4026，而不是 4025。
+ 当启动 64 位版远程调试器时，它默认使用主端口 (4026)。  如果调试 32 位进程，则在大多数情况下，64 位版本的远程调试器在端口 4025 上启动 32 位版本的远程调试器。 如果你运行 32 位远程调试器，它使用 4026，而不是 4025。 如果安装了 Visual Studio 远程工具 2022 版本 17.2 或更高版本，并且使用远程调试器配置向导作为服务启动远程调试器，则默认的 32 位调试端口将是 4040 而不是 4025。
 ::: moniker-end
 ::: moniker range="vs-2019"
  当启动 64 位版远程调试器时，它默认使用主端口 (4024)。  如果调试 32 位进程，则 64 位版远程调试器会在端口 4025（主端口号加 1）上启动 32 位版远程调试器。 如果你运行 32 位远程调试器，它使用 4024，而不是 4025。
