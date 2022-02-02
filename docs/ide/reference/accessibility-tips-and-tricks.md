@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 的辅助功能提示和技巧
 description: 了解有关提示和技巧的详细信息，通过这些信息，每位用户（包括残疾人士）都可更加轻松地使用 Visual Studio 集成开发环境 (IDE)。
-ms.date: 11/03/2021
+ms.date: 02/01/2022
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: f9db3da41e1509d246bc51798f3e8751a3bcf569
-ms.sourcegitcommit: 7a300823cf1bd3355be03bde561cf2777bc09eae
+ms.openlocfilehash: e33525aafac7cbb9c98667a070af58f17c3916f8
+ms.sourcegitcommit: 3766c051f9a8b35106b16f751db7fecde0b92254
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "133977843"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "137951557"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Visual Studio 的辅助功能提示和技巧
 
@@ -92,16 +92,36 @@ Visual Studio 编辑器包括很多文本“修饰”，比如螺丝刀和灯泡
 
 1. 使用 Tab 键或箭头键选择通知。
 
-## <a name="use-the-sound-applet-to-set-build-and-breakpoint-cues"></a>使用声音小程序设置生成和断点提示
+## <a name="use-the-sound-dialog-box-to-set-build-and-breakpoint-cues"></a>使用 "声音" 对话框设置生成和断点提示
 
-可以使用 Windows 的声音小程序将声音分配给 Visual Studio 程序事件。 具体而言，可以将声音分配给以下程序事件：
+您可以使用 Windows 中的 "声音" 对话框为 Visual Studio 程序事件指定声音。 具体而言，可以将声音分配给以下程序事件：
 
 * 命中断点
 * 生成已取消
 * 生成失败
 * 生成成功
 
-以下是操作方法：
+下面介绍如何将声音添加到 Windows 11 或 Windows 10 中的程序事件。
+
+### <a name="windows-11"></a>Windows 11
+
+1. 选择运行 Windows 11 的计算机上的 "开始" 按钮，然后在 **搜索** 框中键入 "**更改系统声音**"。
+
+    :::image type="content" source="media/change-system-sounds-windows-11.png" alt-text="Windows 11 中的 &quot;搜索&quot; 框的屏幕截图。":::
+
+1. 从搜索结果中，选择 "控制面板" 选项 " **更改系统声音**"。  (或者，在搜索结果的右窗格中选择 " **打开** " 图标。 ) 
+
+    :::image type="content" source="media/select-change-system-sounds-windows-11.png" alt-text="Windows 11 中 &quot;更改系统声音&quot; 搜索结果的屏幕截图。":::
+
+1. 在“声音”对话框中，单击“声音”选项卡。
+
+1. 在“程序事件”中，滚动至“Microsoft Visual Studio”，然后选择想要应用到选中事件的声音。
+
+    :::image type="content" source="media/system-sounds-dialog-windows-11-.png" alt-text="Windows 11 中的 &quot;声音&quot; 对话框的 &quot;声音&quot; 选项卡的屏幕截图。":::
+
+1. 单击 **“确定”** 。
+
+### <a name="windows-10"></a>Windows 10
 
 1. 在运行 Windows 10 的计算机上的搜索框中，键入“更改系统声音”。
 
@@ -117,7 +137,7 @@ Visual Studio 编辑器包括很多文本“修饰”，比如螺丝刀和灯泡
 
 1. 在“程序事件”中，滚动至“Microsoft Visual Studio”，然后选择想要应用到选中事件的声音。
 
-   ![Windows 10 中声音小程序的“声音”选项卡](media/sound-applet.png "Windows 10 中声音小程序的“声音”选项卡")
+   ![Windows 10 中的 "声音" 对话框的 "声音" 选项卡](media/sound-applet.png "Windows 10 中的 &quot;声音&quot; 对话框的 &quot;声音&quot; 选项卡")
 
 1. 单击 **“确定”** 。
 

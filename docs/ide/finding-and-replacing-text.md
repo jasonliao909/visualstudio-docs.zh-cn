@@ -2,7 +2,7 @@
 title: 查找和替换文本以及多个插入点选择
 description: 了解“查找和替换”功能，并了解如何使用它查找和替换模式的实例。
 ms.custom: SEO-VS-2020
-ms.date: 01/21/2022
+ms.date: 02/01/2022
 ms.topic: conceptual
 f1_keywords:
 - vs.find
@@ -33,12 +33,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b66972a4f2982ee669c753de5ef6ead2916f05d
-ms.sourcegitcommit: ebd651e00fe3bae5914c211c4828219bf7d1fc70
+ms.openlocfilehash: 60a97bb589ce05ba95f1af4b2b92fc90dd1e9877
+ms.sourcegitcommit: 3766c051f9a8b35106b16f751db7fecde0b92254
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "137798569"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "137951697"
 ---
 # <a name="find-and-replace-text"></a>查找和替换文本
 
@@ -94,7 +94,7 @@ ms.locfileid: "137798569"
 
 :::image type="content" source="media/vs-2022/find-files.png" alt-text="Visual Studio 2022 中“查找和替换”对话框的屏幕截图，其中打开了“在文件中查找”选项卡。":::
 
-有关详细信息，请参阅在文件中查找[和](find-in-files.md)[在文件中替换](replace-in-files.md)页。
+有关更多详细信息，请参阅 " [在文件中查找](find-in-files.md) " 和 " [在文件中替换](replace-in-files.md) " 页。
 
 ::: moniker-end
 
@@ -102,7 +102,7 @@ ms.locfileid: "137798569"
 
 :::image type="content" source="media/find-files-vs2019.png" alt-text="Visual Studio 2019 中“查找和替换”对话框的屏幕截图，其中打开了“在文件中查找”选项卡。":::
 
-有关详细信息，请参阅在文件中查找[和](find-in-files.md)[在文件中替换](replace-in-files.md)页。
+有关更多详细信息，请参阅 " [在文件中查找](find-in-files.md) " 和 " [在文件中替换](replace-in-files.md) " 页。
 
 > [!IMPORTANT]
 > 如果使用 Visual Studio 2019 [版本 16.6](/visualstudio/releases/2019/release-notes-v16.6/) 或更早的版本，则“查找和替换”对话框可能与此处显示的不同。 切换到本页的 [Visual Studio 2017](?view=vs-2017&preserve-view=true) 版本，查看与屏幕上显示的内容相匹配的说明。
@@ -113,7 +113,7 @@ ms.locfileid: "137798569"
 
 :::image type="content" source="media/find-files-vs2017.png" alt-text="Visual Studio 2017 中“查找和替换”对话框的屏幕截图，其中打开了“在文件中查找”选项卡。":::
 
-有关详细信息，请参阅在文件中查找[和](find-in-files.md)[在文件中替换](replace-in-files.md)页。
+有关更多详细信息，请参阅 " [在文件中查找](find-in-files.md) " 和 " [在文件中替换](replace-in-files.md) " 页。
 
 ::: moniker-end
 
@@ -158,6 +158,16 @@ ms.locfileid: "137798569"
 > [!TIP]
 > 如果希望在展开多插入点选择时将框选择与 Alt+Shift+箭头键和 Alt+Shift+鼠标拖动一起使用，请转到“工具” > “选项” > “文本编辑器” > “高级”，然后选择“使用框选择”           。
 
+### <a name="commands"></a>命令
+
+以下键盘快捷键适用于特定于多插入点选择行为的操作。
+
+|快捷方式|操作|命令|
+|-|-|-|
+| **Alt** +**移位** +**.** | 使用多插入符号 | 编辑.插入下一个匹配的 Caret |
+| **Ctrl** +**移位** +**箭头键** | 展开选定内容 | 编辑. SizeControlUp、SizeControlDown、SizeControlRight、SizeControlLeft |
+| **Alt** +**移位** +**向上** 键 (或 **向下** 键) | 选择多个插入符号 | 编辑. LineUpExtendColumn、LineDownExtendColumn |
+
 你也可以通过选择“编辑”>“多个插入点”，然后选择所需的操作，从菜单栏中访问多插入点选择 。
 
 :::image type="content" source="media/vs-2022/edit-menu-multiple-carets-find-replace.png" alt-text="Visual Studio 2022 中的“多个插入点”飞出式菜单的屏幕截图。":::
@@ -170,10 +180,10 @@ ms.locfileid: "137798569"
 
 ![Visual Studio 中 XML 文件中的多个插入点选择](media/multi-caret-selection.png)
 
-若要选择多个点，请像往常一样单击或选择第一个文本，然后在单击或选择每个其他位置中的文本时按 **Ctrl** + **Alt。** 还可自动添加匹配的文本作为其他选择，或选择一个文本框以在每行上进行相同的编辑。
+若要选择多个插入符号，请像往常一样单击或进行第一次文本选择，然后在单击或选择其他位置中的文本时按 **Ctrl** + **Alt** 。 还可自动添加匹配的文本作为其他选择，或选择一个文本框以在每行上进行相同的编辑。
 
 > [!TIP]
-> 如果已选择 **Alt** 作为工具选项文本编辑器"常规"中的"转到定义"中鼠标单击的修饰键，则禁用多  >    >    >  点式选择。 有关详细信息，请参阅选项 [对话框：文本编辑器 />常规](reference/options-text-editor-general.md)。
+> 如果已在 "**工具**  >  " "**选项**  >   >  " "常规" "**常规**" 中，选择 " **Alt** " 作为 "从 有关详细信息，请参阅选项 [对话框：文本编辑器 />常规](reference/options-text-editor-general.md)。
 
 ### <a name="commands"></a>命令
 
