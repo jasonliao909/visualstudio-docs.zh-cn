@@ -1,8 +1,8 @@
 ---
 title: 用 Microsoft Fakes 隔离测试代码
 description: 了解 Microsoft Fakes 如何通过将应用程序的其余部分替换为存根或填充码来帮助隔离要测试的代码。
-ms.custom: SEO-VS-2020
-ms.date: 06/03/2020
+ms.custom: SEO-VS-2020, devdivchpfy22
+ms.date: 02/02/2022
 ms.topic: how-to
 ms.author: mikejo
 manager: jmartens
@@ -13,24 +13,24 @@ author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 127360e21e2973a9c19d8f52ff75e036877615fb
-ms.sourcegitcommit: 263703af9c4840e0e0876aa99df6dd7455c43519
+ms.openlocfilehash: 23940edd4bdcbc16a9318fd6020093ef58b10303
+ms.sourcegitcommit: 23b0ef3815833426933ff6491271034658683f9d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "133387170"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "137983801"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>用 Microsoft Fakes 隔离测试代码
 
-Microsoft Fakes 将应用的其余部分替换为存根或填充码，有助于隔离受测代码。 这些是受你的测试控制的小段代码。  这些是受你的测试控制的小段代码。 通过隔离接受测试的代码，你将会知道，如果测试失败，原因就在这里而不是其他地方。 即使应用程序的其他部分不起作用，存根和填充码也能让你测试代码。
+Microsoft Fakes将应用程序的其他部分替换为存根或填充码，帮助隔离 *要测试**的代码*。 存根和填充码是受测试控制的小段代码。 通过隔离接受测试的代码，你将会知道，如果测试失败，原因就在这里而不是其他地方。 存根和填充码还允许测试代码，即使应用程序的其他部分尚未工作。
 
 Fakes 有两种风格：
 
 - [存根](#get-started-with-stubs)将类替换为可实现同一接口的小型替代项。  若要使用存根，你在设计应用程序时必须让每个组件仅依赖接口，而不依赖其他组件。 （“组件”是指一个类或一起开发和更新的一组类，通常包含在一个程序集中。）
 
-- [填充码](#get-started-with-shims)在运行时修改应用的编译代码，这样就可以运行测试提供的填充码代码，而不用执行指定的方法调用。 填充码可用于替换对无法修改的程序集（如 .NET 程序集）的调用。
+- [填充](#get-started-with-shims)码在运行时修改应用程序的编译代码，以便运行测试提供的填充码代码，而不是进行指定的方法调用。 填充码可用于替换对无法修改的程序集（如 .NET 程序集）的调用。
 
-![Fakes 将替换其他组件](../test/media/fakes-2.png)
+    ![Fakes 将替换其他组件](../test/media/fakes-2.png)
 
 **要求**
 
@@ -41,18 +41,19 @@ Fakes 有两种风格：
 ::: moniker-end
 
 > [!NOTE]
-> - Visual Studio 分析不能用于使用 Microsoft Fakes 的测试。
+> 使用 Visual Studio 分析不适用于使用 Microsoft Fakes。
 
 ## <a name="choose-between-stub-and-shim-types"></a>在存根和填充码类型之间进行选择
+
 通常，你将 Visual Studio 项目视为一个组件，这是因为你同时开发和更新这些类。 对于该项目对你的解决方案中的其他项目所作的调用或对该项目引用的其他程序集所作的调用，应考虑使用存根和填充码。
 
-一般原则是，为在 Visual Studio 解决方案中进行的调用使用存根，并为对其他引用的程序集的调用使用填充码。 这是因为在你自己的解决方案中，通过按照存根要求的方式定义接口来分离组件是一个很好的做法。 但是，外部程序集（如 System.dll）通常没有单独的接口定义，因此必须改用填充码。
+可以将存根用于解决方案中的Visual Studio，并使用填充码来调用其他引用的程序集。 这是因为，在你自己的解决方案中，最佳做法是按存根所需的方式定义接口来分离组件。 但是，外部程序集 *System.dll* 通常未提供单独的接口定义，因此必须改为使用填充码。
 
 其他需要注意的事项还有：
 
-**性能。** 填充码运行较慢，因为它们在运行时会重新编写你的代码。 存根没有这项性能开销，与虚方法运行的速度一样快。
+**性能。** 填充码运行速度较慢，因为它们在运行时重写代码。 存根没有这种性能开销，并且速度与虚拟方法的速度一样快。
 
-**静态方法和密封类型方法。** 你只能使用存根实现接口。 因此，存根类型不能用于静态方法、非虚方法、密封虚方法、密封类型中的方法，等等。
+**静态方法和密封类型方法。** 你只能使用存根实现接口。 因此，存根类型不能用于静态方法、非虚拟方法、密封虚拟方法、密封类型中的方法等。
 
 **内部类型。** 存根和填充码都可用于可通过程序集特性 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 访问的内部类型。
 
@@ -60,18 +61,19 @@ Fakes 有两种风格：
 
 **接口和抽象方法。** 存根提供了可用于测试的接口和抽象方法的实现。 填充码无法检测接口和抽象方法，因为它们没有方法体。
 
-通常，我们建议使用存根类型来与基本代码中的依赖项隔离。 可以通过隐藏接口后面的组件执行此操作。 填充码类型可用于与不提供可测试的 API 的第三方组件隔离。
+建议使用存根类型来隔离代码库中的依赖项。 可以通过隐藏接口后面的组件执行此操作。 可以使用填充码类型与不提供可测试 API 的第三方组件隔离。
 
 ## <a name="get-started-with-stubs"></a>存根入门
+
 有关更详细的说明，请参阅[使用存根隔离应用的各个部分以供单元测试使用](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)。
 
 1. **注入接口**
 
-     若要使用存根，你在编写要测试的代码时不应明确提及应用程序的其他组件中的类。 “组件”是指一个类或一起开发和更新的多个类，通常包含在一个 Visual Studio 项目中。 应使用接口来声明变量和参数，并且应使用工厂来传入或创建其他组件的实例。 例如，如果 StockFeed 是应用程序的另一个组件中的类，则可以认为以下内容是错误的：
+     若要使用存根，必须编写要测试的代码，使代码不会显式提及应用程序的另一个组件中的类。 “组件”是指一个类或一起开发和更新的多个类，通常包含在一个 Visual Studio 项目中。 变量和参数应该通过使用接口进行声明，其他组件的实例应该通过工厂传入或创建。 例如，如果 StockFeed 是应用程序的另一个组件中的类，则这被视为错误：
 
      `return (new StockFeed()).GetSharePrice("COOO"); // Bad`
 
-     相反，应该定义可由另一个组件实现的接口以及可由存根出于测试目实现的接口：
+     相反，可以定义一个接口，该接口可通过其他组件实现，也可以由存根实现，以便进行测试：
 
     ```csharp
     public int GetContosoPrice(IStockFeed feed) => feed.GetSharePrice("COOO");
@@ -89,12 +91,12 @@ Fakes 有两种风格：
    1. 在“解决方案资源管理器”中： 
        - 对于旧版 .NET Framework 项目（非 SDK 样式），展开单元测试项目的“引用”节点。
        ::: moniker range=">=vs-2019"
-       - 对于面向 .NET Framework、.NET Core 或 .NET 5.0 或更高版本的 SDK 样式项目，请展开"依赖项"节点，在"程序集、项目"或"包"下找到要虚设的 **程序集**。 
+       - 对于面向 .NET Framework、.NET Core 或 .NET 5.0 或更高版本的 SDK 样式项目，请展开"依赖项"节点，在"程序集"、"项目"或"包"下找到要虚设的 **程序集**。 
        ::: moniker-end
        - 如果使用的是 Visual Basic，请选择“解决方案资源管理器”工具栏中的“显示所有文件”，以查看“引用”节点。
    2. 选择包含要为其创建填充码的类定义的程序集。 例如，如果要填充 DateTime，请选择 System.dll   。
 
-   3. 选择快捷菜单中的“添加 Fakes 程序集”  。
+   3. 在快捷菜单上，选择"**添加Fakes程序集"**。
 
 3. 在测试中，构建存根的实例并为存根的方法提供代码：
 
@@ -159,6 +161,7 @@ Fakes 有两种风格：
     另外，还会为属性的 getter 和 setter、事件和泛型方法生成存根。 有关详细信息，请参阅[使用存根隔离应用的各个部分以供单元测试使用](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)。
 
 ## <a name="get-started-with-shims"></a>填充码入门
+
 （有关更详细的说明，请参阅[使用填充码将应用与其他程序集相隔离以供单元测试使用](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)。）
 
 假定你的组件包含对 `DateTime.Now` 的调用：
@@ -173,13 +176,13 @@ Fakes 有两种风格：
 
 在测试过程中，你希望填充 `Now` 属性，因为每次调用时实际版本都会返回不同的值，从而造成了不便。
 
-若要使用填充码，无需修改应用程序代码，也无需以特定方式来编写代码。
+若要使用填充码，不必修改应用程序代码或以特定方式编写它。
 
 1. **添加 Fakes 程序集**
 
-     在解决方案资源管理器中，打开单元测试项目的引用，然后选择对包含要虚设的方法的程序集的引用。 在此示例中，`DateTime` 类位于 *System.dll* 中。  若要查看 Visual Basic 项目中的引用，请选择“显示所有文件”。
+     在解决方案资源管理器中，打开单元测试项目的引用，然后选择对包含要虚设的方法的程序集的引用。 在此示例中，`DateTime` 类位于 *System.dll* 中。  若要查看项目引用Visual Basic，请选择"**显示所有文件"**。
 
-     选择“添加 Fakes 程序集”。
+     选择 **"添加Fakes程序集"**。
 
 2. **在 ShimsContext 中插入填充码**
 
@@ -249,18 +252,19 @@ Fakes 有两种风格：
 System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 ```
 
-（没有要引用的“System.IO.Fakes”程序集。 命名空间由填充码创建过程生成。 但可按常规方式使用“using”或“Import”。）
+ (没有"System.IO。Fakes要引用的程序集。 命名空间由填充码创建过程生成。 但可按常规方式使用“using”或“Import”。）
 
 你还可以为特定实例、构造函数和属性创建填充码。 有关详细信息，请参阅[使用填充码将应用与其他程序集相隔离以供单元测试使用](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)。
 
 ## <a name="using-microsoft-fakes-in-the-ci"></a>在 CI 中使用 Microsoft Fakes
 
 ### <a name="microsoft-fakes-assembly-generation"></a>Microsoft Fakes 程序集生成
+
 由于 Microsoft Fakes 需要 Visual Studio Enterprise，因此 Fakes 程序集的生成需要使用 [Visual Studio 生成任务](/azure/devops/pipelines/tasks/build/visual-studio-build?view=azure-devops&preserve-view=true)来生成项目。
 
 ::: moniker range=">=vs-2019"
 > [!NOTE]
-> 另一种方法是将 Fakes 程序集签入 CI，并使用 [MSBuild 任务](../msbuild/msbuild-task.md?view=vs-2019&preserve-view=true)。 这样做时，你需要确保有对测试项目中生成的 Fakes 程序集的程序集引用，类似于下面的代码片段：
+> 另一种方法是将 Fakes 程序集签入 CI，并使用 [MSBuild 任务](../msbuild/msbuild-task.md?view=vs-2019&preserve-view=true)。 这样做时，需要确保具有对测试项目中生成的Fakes程序集的程序集引用，类似于以下代码片段：
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -270,28 +274,33 @@ System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 </Project>
 ```
 
-需要手动在 SDK 样式的项目（A0.NET Core、.NET 5.0 或更高版本）和 .NET Framework) 中添加此引用，因为我们已移动到向测试项目隐式添加程序集引用。 如果遵循这种方法，则需要确保在父程序集更改时更新 Fakes 程序集。
+需要手动添加此引用，特别是 SDK 样式项目（A0.NET Core、.NET 5.0 和 .NET Framework) ，因为我们已移动到向测试项目隐式添加程序集引用。 如果遵循此方法，则需要确保在父程序集更改时更新 fakes 程序集。
 ::: moniker-end
 
 ### <a name="running-microsoft-fakes-tests"></a>运行 Microsoft Fakes 测试
+
 只要在配置的 `FakesAssemblies` 目录（默认为 `$(ProjectDir)FakesAssemblies`）中有 Microsoft Fakes 程序集，就可以使用 [vstest 任务](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true)来运行测试。
 
 ::: moniker range=">=vs-2019"
-使用 Microsoft Fakes 的[vstest](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true)任务 .NET Core 和 .NET 5.0 或更高版本项目的分布式测试需要 Visual Studio 2019 Update 9 预览 `20201020-06` 版及更高版本。
+使用 Microsoft Fakes 的 [vstest](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true) 任务 .NET Core 和 .NET 5.0 或更高版本项目的分布式测试Visual Studio 2019 Update 9 预览`20201020-06`版及更高版本。
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-## <a name="transitioning-your-net-framework-test-projects-that-use-microsoft-fakes-to-sdk-style-net-framework-net-core-or-net-50-or-later-projects"></a>将使用 .NET Framework 的 Microsoft Fakes 测试项目转换为 SDK .NET Framework、.NET Core 或 .NET 5.0 或更高版本的项目
-对于要转换到 .NET Core .NET Framework .NET 5.0 或更高版本Microsoft Fakes，需要在设置中对应用程序进行少量的更改。 需要注意以下几种情况：
-- 如果使用的是自定义项目模板，则需要确保它是 SDK 样式的，并为兼容的目标框架生成。
-- 某些类型存在于 .NET Framework 和 .NET Core/.NET 5.0 或更高版本中的不同程序集中 (例如，存在于 .NET Framework 中，在 .NET Core 和 `System.DateTime` `System` / `mscorlib` `System.Runtime` .NET 5.0 或更高版本) 中，在这种情况下，需要更改正在伪造的程序集。
+
+## <a name="transitioning-your-net-framework-test-projects-that-use-microsoft-fakes-to-sdk-style-net-framework-net-core-or-net-50-projects-or-later-projects"></a>将使用 .NET Framework 的 Microsoft Fakes 测试项目转换为 SDK .NET Framework、.NET Core 或 .NET 5.0 项目或更高版本的项目
+
+对于要转换到 .NET Core 或 .NET 5.0 .NET Framework，Microsoft Fakes设置最少的更改。 需要注意以下几种情况：
+
+- 如果使用的是自定义项目模板，则需要确保它是 SDK 样式的，并针对兼容的目标框架进行生成。
+- 某些类型存在于 .NET Framework 和 .NET Core/.NET 5.0 中的不同程序集（例如，`System.DateTime` 存在于 .NET Framework 中的 `System`/`mscorlib`，并存在于 .NET Core 和 .NET 5.0 中的 `System.Runtime`）。在这种情况下，需要更改正在虚设的程序集。
 - 如果有对 Fakes 程序集和测试项目的程序集引用，则可能会看到有关缺少引用的生成警告，如下所示：
+
   ```
   (ResolveAssemblyReferences target) ->
   warning MSB3245: Could not resolve this reference. Could not locate the assembly "AssemblyName.Fakes". Check to make sure the assembly exists on disk.
   If this reference is required by your code, you may get compilation errors.
   ```
-  此警告是由于可以忽略 Fakes 生成中所做的必要更改所致。 可以通过从项目文件中删除程序集引用来避免此问题，因为我们现在是在生成过程中隐式地添加它们。
+  此警告是由于在生成Fakes必要的更改，因此可以忽略。 可以通过从项目文件中删除程序集引用来避免此问题，因为我们现在是在生成过程中隐式地添加它们。
 ::: moniker-end
 
 ## <a name="microsoft-fakes-support"></a>Microsoft Fakes 支持 
@@ -300,15 +309,16 @@ System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 - Microsoft Fakes 测试可以与所有可用的 Microsoft.TestPlatform NuGet 包一起运行。
 - 在 Visual Studio Enterprise 2015 及更高版本中，使用 Microsoft Fakes 的测试项目支持代码覆盖率。
 
-### <a name="microsoft-fakes-in-sdk-style-net-framework-net-core-and-net-50-or-later-projects"></a>Microsoft Fakes SDK 样式的 .NET Framework、.NET Core 和 .NET 5.0 或更高版本的项目
+### <a name="microsoft-fakes-in-sdk-style-net-framework-net-core-and-net-50-or-later-projects"></a>Microsoft Fakes SDK 样式的 .NET Framework、.NET Core 和 .NET 5.0 或更高版本项目中
 - Microsoft Fakes 程序集生成是在 Visual Studio Enterprise 2019 Update 6 中预览，并在 Update 8 中默认启用。
 - 定目标到 .NET Framework 的项目的 Microsoft Fakes 测试可以与所有可用的 Microsoft.TestPlatform NuGet 包一起运行。
-- Microsoft Fakes .NET Core 和 .NET 5.0 或更高版本的项目的 NuGet 测试可以使用[16.9.0-preview-20210106-01](https://www.nuget.org/packages/Microsoft.TestPlatform/16.9.0-preview-20210106-01)及更高版本的 Microsoft.TestPlatform NuGet 包运行。
+- Microsoft Fakes面向 .NET Core 和 .NET 5.0 或更高版本的项目的 Microsoft Fakes 测试可以使用 [16.9.0-preview-20210106-01](https://www.nuget.org/packages/Microsoft.TestPlatform/16.9.0-preview-20210106-01) 及更高版本的 Microsoft.TestPlatform NuGet 包运行。
 - 在 Visual Studio Enterprise 2015 及更高版本中，使用 Microsoft Fakes 且定目标到 .NET Framework 的测试项目支持代码覆盖率。
 - Visual Studio 2019 update 9 及更高版本中提供了对使用 Microsoft Fakes 面向 .NET Core 和 .NET 5.0 或更高版本的测试项目的代码覆盖率支持。
 
 
 ## <a name="in-this-section"></a>本节内容
+
 [使用存根针对单元测试隔离应用程序的各个部分](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)
 
 [使用填充码针对单元测试将应用程序与程序集隔离](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)
