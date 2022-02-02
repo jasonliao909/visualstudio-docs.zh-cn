@@ -7,15 +7,15 @@ author: evanwindom
 ms.author: amast
 ms.date: 09/17/2021
 user.type: subscriber
-tags: renewing
+tags: renewal
 subscription.type: cloud
 sap.id: b324c31f-5d44-4cc2-537a-9c354bc5fbfc
-ms.openlocfilehash: e3c783f7d1b1315d6ec8d16d7806091964a1887c
-ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.openlocfilehash: e5d71464546bf2df4c2ae17e72000ee1c29143de
+ms.sourcegitcommit: 47ab08ca7a364bafb295d53b57f0e5b5e3413586
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "133255313"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "137899444"
 ---
 ## <a name="renewing-subscriptions-through-visual-studio-marketplace"></a>通过 Visual Studio Marketplace 续订订阅 
 
