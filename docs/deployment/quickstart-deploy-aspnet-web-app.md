@@ -1,8 +1,9 @@
 ---
 title: 发布 ASP.NET Web 应用
 description: 了解如何使用“发布”工具将 ASP.NET 和 ASP.NET Core 从 Visual Studio 发布到网站。
-ms.date: 10/22/2021
+ms.date: 01/30/2022
 ms.topic: quickstart
+ms.custom: devdivchpfy22
 helpviewer_keywords:
 - deployment, web app
 author: mikejo5000
@@ -12,18 +13,18 @@ ms.technology: vs-ide-deployment
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: c829f0f4e2d0b541f84f7f0a4c2cc3e5204163b3
-ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
-ms.translationtype: HT
+ms.openlocfilehash: 4ad4c0a5b9c663f4daf02dbe8de8826ac31926dd
+ms.sourcegitcommit: 3766c051f9a8b35106b16f751db7fecde0b92254
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "131128700"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "137951608"
 ---
 # <a name="quickstart-publish-an-aspnet-web-app"></a>快速入门：发布 ASP.NET Web 应用
 
-在本文中，你将了解如何将第一个 ASP.NET Web 应用发布到各种位置，包括本地 Web 服务器（如 IIS）和远程云环境（如 Azure 应用服务）。
+在本文中，你将了解如何将第一个 ASP.NET web 应用发布到各种位置，包括诸如 IIS 和远程云环境（如 Azure App Service）的各种位置。
 
-本文中的步骤适用于 ASP.NET 和 ASP.NET Core。
+本文支持 ASP.NET 和 ASP.NET Core。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -40,7 +41,7 @@ ms.locfileid: "131128700"
 
 ![右键单击并发布](./media/right-click-publish.png)
 
-如果这是首次发布此 Web 应用，接下来会看到“发布”向导。
+如果是首次发布此 web 应用，请在下一步中看到发布向导。
 
 ![发布向导 - 发布目标](./media/publish-targets-general.png)
 
@@ -50,7 +51,7 @@ ms.locfileid: "131128700"
 ## <a name="azure"></a>[Azure](#tab/azure)
 ## <a name="publish-your-web-app-to-azure"></a>将 Web 应用发布到 Azure
 
-有关详细步骤，请参阅[快速入门：部署 ASP.NET Web 应用](/azure/app-service/quickstart-dotnetcore?tabs=netcore31&pivots=development-environment-vs#publish-your-web-app)。
+有关发布 web 应用的详细步骤，请参阅[快速入门：部署 ASP.NET 的 web 应用](/azure/app-service/quickstart-dotnetcore?tabs=netcore31&pivots=development-environment-vs#publish-your-web-app)。
 
 ## <a name="docker"></a>[Docker](#tab/docker)
 ## <a name="publish-your-web-app-to-docker-container-registry"></a>将 Web 应用发布到 Docker 容器注册表
@@ -116,7 +117,7 @@ ms.locfileid: "131128700"
 
 提供必要的连接详细信息，然后选择“完成”。
 
-![发布到 FTP 或 FTPS 服务器 - 详细信息](./media/publish-ftp-details.png)
+![发布到 FTP 或 FTPS 服务器 - 详细信息](./media/publish-ftp-details-latest.png)
 
 接下来，你将看到刚刚使用发布向导创建的新[发布配置文件](./publish-overview.md)的摘要页面。 单击“发布”，Visual Studio 会将 Web 应用部署到提供的 FTP 或 FTPS 服务器。
 
@@ -131,7 +132,7 @@ ms.locfileid: "131128700"
 
 ![发布到 IIS](./media/publish-iis.png)
 
-请选择所需部署模式（如果不确定，请使用默认值）。
+选取所需的部署模式 (如果不确定，请使用默认) 。
 
 ![发布到 IIS - 部署模式](./media/publish-iis-deployment-mode.png)
 
@@ -139,7 +140,7 @@ ms.locfileid: "131128700"
 
 提供必要的连接详细信息，然后选择“完成”。
 
-![发布到 IIS - Web 部署](./media/publish-iis-web-deploy.png)
+![发布到 IIS - Web 部署](./media/publish-iis-web-deploy-latest.png)
 
 ### <a name="web-deploy-package"></a>Web 部署包
 

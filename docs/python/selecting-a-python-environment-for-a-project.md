@@ -1,7 +1,7 @@
 ---
 title: 选择 Python 环境
 description: 可以专门选择 Python 环境（包括 Anaconda 和虚拟环境）以应用于特定项目。
-ms.date: 03/18/2019
+ms.date: 01/29/2022
 ms.topic: how-to
 author: rjmolyneaux
 ms.author: rmolyneaux
@@ -10,12 +10,12 @@ ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6a906a69d581b0632c35baed548a52f9a8f3eb77
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: e9c2e2f2c1696445cdb7448efa0be24f9a4b008b
+ms.sourcegitcommit: 3766c051f9a8b35106b16f751db7fecde0b92254
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135806308"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "137951515"
 ---
 # <a name="select-a-python-environment-for-a-project-in-visual-studio"></a>为项目中的项目选择 Python Visual Studio
 
@@ -41,18 +41,18 @@ Visual Studio 中所有新的 Python 项目最初都被配置为使用默认的�
 | 命令 | 描述 |
 | --- | --- |
 | **添加虚拟环境** | 首先在项目中新建一个虚拟环境。 详情请参阅[创建虚拟环境](#create-a-virtual-environment)。 |
-| **添加现有虚拟环境** | 系统提示你选择一个包含虚拟环境的文件夹并将其添加到“Python 环境”下的列表，但不进行激活。 请参阅[激活现有的虚拟环境](#activate-an-existing-virtual-environment)。 |
+| **添加现有虚拟环境** | 提示你选择包含虚拟环境的文件夹，并添加到 **"Python** 环境"下的列表中，但不激活它。 请参阅[激活现有的虚拟环境](#activate-an-existing-virtual-environment)。 |
 | **创建 Conda 环境** | 切换到“Python 环境”窗口，在此处输入环境的名称并指定其基础解释器。 请参阅 [Conda 环境](managing-python-environments-in-visual-studio.md#conda-environments)。 |
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 要更改项目环境，请右键单击“Python 环境”节点，然后选择“添加环境”。 还可以从 Python 工具栏中的“环境”下拉列表选择“添加环境”。
 
-在“添加环境”对话框中，选择“现有环境”选项卡，然后从“环境”下拉列表中选择新环境：
+进入" **添加环境"** 对话框后，选择" **现有** 环境"选项卡，然后从"环境" **下拉列表中选择一** 个新环境：
 
 ![在“添加环境”对话框中选择项目环境](media/environments/environments-project-2019.png)
 
-如果已向项目中添加除全局默认值以外的环境，则可能需要激活新添加的环境。 右键单击“Python 环境”节点下的该环境，然后选择“激活环境”。 若要从项目中删除环境，请选择“删除”。
+如果已向项目添加了全局默认值外的环境，可能需要激活新添加的环境。 右键单击“Python 环境”节点下的该环境，然后选择“激活环境”。 若要从项目中删除环境，请选择“删除”。
 
 ![激活并删除项目环境](media/environments/environments-project-add-remove-2019.png)
 ::: moniker-end
@@ -61,7 +61,7 @@ Visual Studio 中所有新的 Python 项目最初都被配置为使用默认的�
 
 虚拟环境是特定 Python 解释器和一组特定库的独特组合，它与其他全局环境以及 conda 环境不同。 虚拟环境特定于项目，但保留在项目文件夹中。 该文件夹包含环境中已安装的库，还有一个 pyvenv.cfg 文件用于指定到文件系统中其他位置的环境基础解释器的路径。 （即，虚拟环境中没有解释器副本，只有解释器链接。）
 
-使用虚拟环境的一项优势是，随着项目的开发，虚拟环境始终反映出项目的确切依赖项。 （另一方面，无论是否在项目中使用库，共享的全局环境中都包含任意数量的库。）随后即可通过虚拟环境轻松创建 requirements.txt 文件，此文件之后用于在另一台开发/生产计算机上重新安装上述依赖项。 有关详细信息，请参阅[使用 requirements.txt 管理所需的包](managing-required-packages-with-requirements-txt.md)。
+使用虚拟环境的好处是，随着时间的推移开发项目时，虚拟环境始终反映项目的确切依赖项。 （另一方面，无论是否在项目中使用库，共享的全局环境中都包含任意数量的库。）随后即可通过虚拟环境轻松创建 requirements.txt 文件，此文件之后用于在另一台开发/生产计算机上重新安装上述依赖项。 有关详细信息，请参阅[使用 requirements.txt 管理所需的包](managing-required-packages-with-requirements-txt.md)。
 
 在 Visual Studio 中打开包含 requirements.txt 文件的项目时，Visual Studio 自动显示用于重新创建虚拟环境的选项。 在未安装 Visual Studio 的计算机上，可运行 `pip install -r requirements.txt` 还原包。
 
@@ -149,7 +149,7 @@ Visual Studio 中所有新的 Python 项目最初都被配置为使用默认的�
 
 ## <a name="view-installed-packages"></a>查看已安装的包
 
-在“解决方案资源管理器”中，展开特定环境节点以快速查看在该环境中安装的包（也就是说，你可以激活环境时在代码中导入和使用这些包）：
+在 解决方案资源管理器 中，展开任何特定环境的 节点以快速查看该环境中安装的包 (也就是说，当环境处于活动状态时，可以在代码中导入和使用这些包) ：
 
 ![解决方案资源管理器中某环境的 Python 包](media/environments/environments-installed-packages.png)
 
@@ -162,11 +162,11 @@ Visual Studio 中所有新的 Python 项目最初都被配置为使用默认的�
 
 在 Visual Studio 中，已从[“Python 包索引 (PyPI)”](https://pypi.org)中下载适用于大多数环境的包（和依赖项），用户可以在其中搜索可用包。 Visual Studio 的状态栏和输出窗口显示有关安装的信息。 若要卸载包，请右键单击它，并选择“删除”。
 
-Conda 包管理器通常将 `https://repo.continuum.io/pkgs/` 用作默认通道，但也可以使用其他通道。 有关详细信息，请参阅[管理通道](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-channels.html) (docs.conda.io)。
+Conda 包管理器通常将 `https://repo.continuum.io/pkgs/` 用作默认通道，但也可以使用其他通道。 有关详细信息，请参阅 [管理频道](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-channels.html) (docs.conda.io) 。
 
 请注意，显示的项未必总准确，且安装和卸载可能不可靠或不可用。 Visual Studio 使用 pip 程序包管理器（如果可用），并且需要时会下载并安装它。 Visual Studio 还可以使用 easy_install 程序包管理器。 也会显示使用 `pip` 或 `easy_install` 从命令行安装的包。
 
-另请注意，Visual Studio 目前不支持使用 `conda` 将包安装到 conda 环境中。 而是使用命令行中的 `conda`。
+另请注意Visual Studio目前不支持使用 `conda` 将包安装到 conda 环境中。 而是使用命令行中的 `conda`。
 
 > [!Tip]
 > 当包中包含用于 .pyd *\** 文件中本机组件的源代码时，pip 无法安装包，这种情况很常见。 如果没有安装要求的 Visual Studio 版本，pip 无法编译这些组件。 在此情况下显示的错误消息是：“错误：找不到 vcvarsall.bat”。 `easy_install` 通常可下载预编译的二进制文件，且你可通过 [https://python.en.uptodown.com/windows/versions](https://python.en.uptodown.com/windows/versions) 下载适合旧版 Python 的编译器。 有关详细信息，请参阅 Python 工具团队博客上的[How to deal with the pain of "unable to find vcvarsallbat"](https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/)（如何处理“找不到 vcvarsallbat”问题）。

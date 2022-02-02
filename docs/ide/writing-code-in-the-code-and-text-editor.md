@@ -2,7 +2,7 @@
 title: 代码编辑器功能
 description: 了解 Visual Studio 中的代码编辑器提供的功能，通过这些功能，可以更轻松地编写和管理代码和文本。
 ms.custom: SEO-VS-2020
-ms.date: 02/23/2018
+ms.date: 01/31/2022
 ms.topic: conceptual
 helpviewer_keywords:
 - code, editing [Visual Studio]
@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e947606f13b986503e5af5cfc54c9e4ee758b79
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 979253347b6947121ae9de42b81e38375faa768d
+ms.sourcegitcommit: 3766c051f9a8b35106b16f751db7fecde0b92254
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126737285"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "137951466"
 ---
 # <a name="features-of-the-code-editor"></a>代码编辑器功能
 
@@ -80,6 +80,16 @@ Visual Studio 编辑器提供了许多功能，可方便你更加轻松地编写
 ## <a name="find-references-in-your-code-base"></a>在基本代码中查找引用
 
 要在整个代码库中查找引用特定代码元素的位置，可以使用“查找所有引用”命令或按 Shift+F12  。 此外，在单击类型或成员时，“引用突出显示”功能会自动突出显示该类型或成员的所有引用。 有关详细信息，请参阅[在代码中查找引用](finding-references.md)。
+
+## <a name="generate-fix-or-refactor-code"></a>生成、修复或重构代码
+
+Visual Studio 可通过诸多方式帮助你生成、修复和重构代码。
+
+- 可使用[代码片段](code-snippets.md)插入 [switch](/dotnet/csharp/language-reference/keywords/switch) 块或 [enum](/dotnet/csharp/language-reference/keywords/enum) 声明等模板。
+
+- 可使用[快速操作](quick-actions.md)来生成类和属性等代码，或引入局部变量。 还可使用“快速操作”[提升代码性能](common-quick-actions.md)，例如删除不必要的转换和未使用的变量，或在访问变量之前添加 null 检查。
+
+- 可[重构代码](refactoring-in-visual-studio.md)以重命名变量、重新排列方法参数或将类型与其文件名同步（仅举几例）。
 
 ## <a name="customize-the-editor"></a>自定义编辑器
 

@@ -2,7 +2,7 @@
 title: Windows 窗体设计器教程
 description: 了解如何使用 Windows 窗体设计器提供的各种工具来生成应用。 应用是使用许多可用的布局功能的自定义控件。
 ms.custom: SEO-VS-2020
-ms.date: 08/09/2019
+ms.date: 01/31/2022
 ms.topic: tutorial
 helpviewer_keywords:
 - Windows Forms Designer, get started
@@ -10,12 +10,12 @@ author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.technology: vs-ide-designers
-ms.openlocfilehash: 5ed70cd7dc19629bcf4cbcba3230a9de46e6121e
-ms.sourcegitcommit: 7d319435c35075d4cec021b7b667666a81c02435
+ms.openlocfilehash: c147a2f20932d8888b25c4b7aaaa0e9a33f7a5c9
+ms.sourcegitcommit: 3766c051f9a8b35106b16f751db7fecde0b92254
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "137650372"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "137951502"
 ---
 # <a name="tutorial-get-started-with-windows-forms-designer"></a>教程：Windows 窗体设计器入门
 
@@ -278,7 +278,9 @@ DemoCalculator 控件可在其他复合控件或窗体上使用。 以下过程�
 
 1. 创建新的“Windows 窗体应用程序”项目，并将其命名为“DemoCalculatorTest”。
 
-2. 在“解决方案资源管理器”中，右键单击“DemoCalculatorTest”项目，然后选择“添加引用”以打开“添加引用”对话框。
+2. 在 **解决方案资源管理器**，右键单击 **DemoCalculatorTest**  >  项目，然后选择"添加 **Project引用**"以打开"**引用管理器**"对话框。
+
+     (如果使用 2017 Visual Studio，请选择 **"添加** > ""引用"以打开"引用管理器")  
 
 3. 转到“项目”选项卡，然后选择 DemoCalculatorLib 项目以将引用添加到测试项目。
 

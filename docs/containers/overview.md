@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 10/27/2021
 ms.technology: vs-container-tools
-ms.openlocfilehash: dccb2e4aab4dff6af5b27404e91bca6124ed3785
-ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
-ms.translationtype: HT
+ms.openlocfilehash: fb6902e196143e54704ff669c3ef8cc01e8644b9
+ms.sourcegitcommit: 3766c051f9a8b35106b16f751db7fecde0b92254
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "132001359"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "137951541"
 ---
 # <a name="visual-studio-container-tools-for-docker"></a>Visual Studio Container Tools for Docker
 
@@ -56,7 +56,7 @@ Visual Studio 中的 Docker 支持因版本而异，以响应客户需求。 可
 借助 Visual Studio 2019，可以将 Docker Compose、Kubernetes 和 Service Fabric 用作容器业务流程服务。
 
 > [!NOTE]
-> 如果你使用完整的 .NET Framework 控制台项目模板，则在创建项目后，支持的选项是“添加容器业务流程协调程序支持”，它包括使用 Service Fabric 或 Docker Compose 的选项。 对于没有业务流程的单个项目，无法在项目创建时添加支持，也无法添加 Docker 支持。
+> 如果你使用的是完整 .NET Framework 控制台项目模板，则支持的选项是在创建项目后 **添加容器 Orchestrator 支持**，并使用 Service Fabric 或 Docker Compose 选项。 对于没有业务流程的单个项目，无法在项目创建时添加支持，也无法添加 Docker 支持。
 
 在 Visual Studio 2019 版本 16.4 及更高版本中，提供了“容器”窗口，你可用它来查看正在运行的容器，浏览可用的映像，查看环境变量、日志和端口映射，检查文件系统，附加调试器，或者在容器环境中打开终端窗口。 请参阅[使用“容器”窗口](view-and-diagnose-containers.md)。
 
@@ -177,7 +177,7 @@ ENTRYPOINT ["dotnet", "WebApplication-Docker.dll"]
 :::moniker-end
 ::: moniker range="vs-2017"
 > [!NOTE]
-> 当按以下屏幕截图所示在项目创建期间为 ASP.NET 项目（.NET Framework，而不是 .NET Core 项目）启用 Docker 支持时，还会添加容器业务流程支持。
+> 在项目创建期间启用 Docker 支持时， (.NET Framework，而不是 .net Core 项目) ，如以下屏幕截图中所示，还会添加容器 orchestrator 支持 ASP.NET。
 
 ![屏幕截图显示为 ASP.NET 项目启用 Docker Compose 支持。](media/overview/enable-docker-compose-support.png)
 ::: moniker-end
@@ -201,11 +201,11 @@ ENTRYPOINT ["dotnet", "WebApplication-Docker.dll"]
 
 ## <a name="docker-compose-support"></a>Docker Compose 支持
 
-当你想要使用 Docker Compose 撰写多容器解决方案时，请向项目添加容器业务流程支持。 这样就可以同时运行和调试一组容器（整个解决方案或项目组）（如果已在同一个 docker-compose.yml 文件中定义这些容器）。
+如果要使用 Docker Compose 撰写多容器解决方案，请将容器 orchestrator 支持添加到项目。 这样就可以同时运行和调试一组容器（整个解决方案或项目组）（如果已在同一个 docker-compose.yml 文件中定义这些容器）。
 
-若要使用 Docker Compose 添加容器业务流程支持，请右键单击“解决方案资源管理器”中的解决方案或项目节点，然后选择“添加”>“容器业务流程支持”。 然后，选择“Docker Compose”以管理容器。
+若要使用 Docker Compose 添加容器 orchestrator 支持，请右键单击 **解决方案资源管理器** 中的项目节点，然后选择 " **添加 > 容器 orchestrator 支持**"。 然后，选择“Docker Compose”以管理容器。
 
-向项目添加容器业务流程支持后，会看到添加到项目的 Dockerfile（如果尚无）以及添加到“解决方案资源管理器”中的某个解决方案的 docker-compose 文件夹，如下所示：
+向项目添加容器 orchestrator 支持后，会看到添加到项目的 *Dockerfile* ， (如果没有) 并在 **解决方案资源管理器** 中向解决方案添加了 **docker 组合** 文件夹，如下所示：
 
 :::moniker range="<=vs-2019"
 ![Visual Studio 解决方案资源管理器中的 Docker 文件的屏幕截图。](media/overview/docker-support-solution-explorer.png)
