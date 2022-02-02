@@ -1,8 +1,8 @@
-- name: Visual Studio for Mac
+- name: Visual Studio for Mac 文档
   href: index.yml
 - name: 概述
   items:
-    - name: IDE 教程
+    - name: IDE 导览
       href: ide-tour.md
     - name: 面向 Windows 用户的 Visual Studio for Mac
       href: vsmac-for-windows-users.md
@@ -10,7 +10,7 @@
       href: integrated-terminal.md
 - name: 安装
   items:
-    - name: 安装 Visual Studio 2019 for Mac
+    - name: 安装
       href: installation.md
     - name: 在防火墙或代理的保护下进行安装和使用
       href: install-behind-a-firewall-or-proxy-server.md
@@ -22,13 +22,13 @@
       href: uninstall.md
     - name: 可用工作负载
       href: workloads.md
-- name: 个性化设置 Visual Studio for Mac
+- name: 个性化设置
   items:
     - name: 用户帐户
       items:
         - name: 概述
           href: user-accounts.md
-        - name: 登录
+        - name: 登录帐户
           href: signing-in.md
         - name: 启用订阅
           href: enable-subscription.md
@@ -36,6 +36,22 @@
       items:
         - name: 自定义 IDE 的外观
           href: customizing-the-ide.md
+- name: 示例
+  items:
+    - name: 特色示例
+      href: samples/index.yml
+    - name: 所有 ASP.NET Core 示例
+      href: /samples/browse/?products=aspnet-core
+    - name: 所有 .NET Core 示例
+      href: /samples/browse/?products=dotnet-core
+    - name: 所有 Xamarin.Forms 示例
+      href: /xamarin/xamarin-forms/samples/
+    - name: 所有 Xamarin.iOS 示例
+      href: /xamarin/ios/samples/
+    - name: 所有 Xamarin.Android 示例
+      href: /xamarin/android/samples/
+    - name: 所有 Xamarin.Mac 示例
+      href: /xamarin/mac/samples/
 - name: 开发
   items:
     - name: 概述
@@ -140,15 +156,15 @@
           href: publish-folder.md
         - name: 视频教程
           items:
-            - name: 开始在 Visual Studio for Mac 中使用 ASP.NET Core
+            - name: 使用 Visual Studio for Mac 中的 ASP.NET Core
               href: tutorial-aspnet-core-vsmac-getting-started.md
-            - name: 扩展现有的 ASP.NET Core Web 应用程序
+            - name: 扩展现有 ASP.NET Core Web 应用
               href: tutorial-aspnet-core-vsmac-extending.md
     - name: Azure
       items:
         - name: 概述
           href: azure-workload.md
-        - name: Azure Functions 简介
+        - name: 关于 Azure Functions
           href: azure-functions.md
         - name: 教程：Azure Functions
           href: azure-functions-lab.md
@@ -164,20 +180,16 @@
       href: /visualstudio/gamedev/unity/get-started/visual-studio-tools-for-unity
     - name: 使用 Xamarin 的移动应用
       href: ./xamarin.md
-- name: 可访问性
+- name: 辅助功能工具和功能
   items:
     - name: 概述
       href: accessibility.md
     - name: 设置 IDE 辅助功能选项
       href: accessibility-ide-options.md
-    - name: macOS 辅助工具和功能
-      items:
-        - name: 使用 macOS 辅助工具
-          href: accessibility-macos.md
-        - name: 使用键盘导航
-          href: accessibility-keyboard.md
-        - name: 使用 VoiceOver
-          href: accessibility-voiceover.md
+    - name: 使用 macOS 辅助工具
+      href: accessibility-macos.md
+    - name: 使用键盘导航
+      href: accessibility-keyboard.md
 - name: 参考
   items:
     - name: ASP.NET Core
@@ -200,39 +212,23 @@
       href: vsmac-for-windows-users.md
 - name: 资源
   items:
-    - name: 发行说明
-      href: /visualstudio/releasenotes/vs2019-mac-relnotes
-    - name: 预览发行说明
-      href: /visualstudio/releasenotes/vs2019-mac-preview-relnotes
-- name: 示例
-  items:
-    - name: 特色示例
-      href: samples/index.yml
-    - name: 所有 ASP.NET Core 示例
-      href: /samples/browse/?products=aspnet-core
-    - name: 所有 .NET Core 示例
-      href: /samples/browse/?products=dotnet-core
-    - name: 所有 Xamarin.Forms 示例
-      href: /xamarin/xamarin-forms/samples/
-    - name: 所有 Xamarin.iOS 示例
-      href: /xamarin/ios/samples/
-    - name: 所有 Xamarin.Android 示例
-      href: /xamarin/android/samples/
-    - name: 所有 Xamarin.Mac 示例
-      href: /xamarin/mac/samples/
+    - name: 发行说明和路线图
+      href: /visualstudio/productinfo/mac-roadmap
+    - name: 疑难解答
+      items:
+        - name: 日志和异常
+          href: troubleshooting.md
+        - name: 发布现有扩展的新版本
+          href: migrate-extensions.md
+        - name: 支持 Team Foundation 版本控制
+          href: tf-version-control.md
+        - name: 疑难解答：我为什么看不到部分模板？
+          href: troubleshooting-no-templates.md
+        - name: 疑难解答：更新程序在检索信息时发生错误
+          href: updater-troubleshooting.md
 - name: 发送反馈
   items:
-    - name: 日志和异常
-      href: troubleshooting.md
     - name: Visual Studio 客户体验改善计划
       href: visual-studio-experience-improvement-program.md
     - name: 报告问题
       href: report-a-problem.md
-    - name: 疑难解答：如何发布现有扩展的新版本？
-      href: migrate-extensions.md
-    - name: 疑难解答：Visual Studio for Mac 是否支持 Team Foundation 版本控制？
-      href: tf-version-control.md
-    - name: 疑难解答：我为什么看不到部分模板？
-      href: troubleshooting-no-templates.md
-    - name: 疑难解答：更新程序在检索信息时发生错误
-      href: updater-troubleshooting.md
