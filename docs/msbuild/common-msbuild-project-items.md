@@ -5,25 +5,19 @@ ms.custom: SEO-VS-2020
 ms.date: 10/29/2020
 ms.topic: reference
 dev_langs:
-- VB
-- CSharp
-- C++
-- jsharp
+  - VB
+  - CSharp
+  - C++
+  - jsharp
 helpviewer_keywords:
-- MSBuild, common project items
+  - 'MSBuild, common project items'
 ms.assetid: 1eba3721-cc12-4b80-9987-84923ede5e2e
 author: ghogen
 ms.author: ghogen
 manager: jmartens
 ms.technology: msbuild
 ms.workload:
-- multiple
-ms.openlocfilehash: 49fd97e1d8e91cd6049bbe43f7fee9fb092e8f39
-ms.sourcegitcommit: efe1d737fd660cc9183177914c18b0fd4e39ba8b
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "130211956"
+  - multiple
 ---
 # <a name="common-msbuild-project-items"></a>常用的 MSBuild 项目项
 
@@ -51,7 +45,7 @@ ms.locfileid: "130211956"
 |项元数据名称|描述|
 |---------------|-----------------|
 |“属性”|可选的字符串。 组件的显示名称。|
-|GUID|必选字符串。 组件的 GUID，形式为 {12345678-1234-1234-1234-1234567891234}。|
+|GUID|必选字符串。 组件的 GUID，形式为 {12345678-1234-1234-1234-123456781234}。|
 |VersionMajor|必选字符串。 组件版本号的主要部分。 例如，如果完整版本号是“5.46”，则显示“5”。|
 |VersionMinor|必选字符串。 组件版本号的次要部分。 例如，如果完整版本号是“5.46”，则显示“46”。|
 |EmbedInteropTypes|可选的布尔值。 如果为 true，则将此引用中的互操作类型直接嵌入到程序集中，而不是生成互操作 DLL。|
@@ -84,7 +78,7 @@ ms.locfileid: "130211956"
 |---------------|-----------------|
 |“属性”|可选的字符串。 引用的显示名称。|
 |GlobalPropertiesToRemove|可选的 `string[]`。 在生成引用项目时要删除的属性的名称，例如 `RuntimeIdentifier;PackOnBuild`。 默认为空。|
-|项目|可选的字符串。 引用的 GUID，形式为 {12345678-1234-1234-1234-1234567891234}。|
+|项目|可选的字符串。 引用的 GUID，形式为 {12345678-1234-1234-1234-123456781234}。|
 |OutputItemType|可选的字符串。 要将目标输出发到的项类型。 默认为空。 如果“引用元数据”设置为“true”（默认），那么目标输出将成为编译器的引用。|
 |ReferenceOutputAssembly|可选的布尔值。 如果设置为 `false`，则不包括引用项目的输出作为此项目的[引用](#reference)，但仍可确保在此项目之前生成其他项目。 默认为 `true`。|
 |SetConfiguration|可选的字符串。 为引用的项目设置全局属性 `Configuration`，例如 `Configuration=Release`。|

@@ -5,26 +5,20 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
-- VB
-- CSharp
-- C++
-- jsharp
+  - VB
+  - CSharp
+  - C++
+  - jsharp
 helpviewer_keywords:
-- XmlPeek task [MSBuild]
-- MSBuild, XmlPeek task
+  - 'XmlPeek task [MSBuild]'
+  - 'MSBuild, XmlPeek task'
 ms.assetid: 19196031-a3bc-41b5-9c4a-f2572630e179
 author: ghogen
 ms.author: ghogen
 manager: jmartens
 ms.technology: msbuild
 ms.workload:
-- multiple
-ms.openlocfilehash: 8bf7e5548223733574b49322dfca21a51d758de5
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126642447"
+  - multiple
 ---
 # <a name="xmlpeek-task"></a>XmlPeek 任务
 
@@ -34,7 +28,7 @@ ms.locfileid: "126642447"
 
  下表描述了 `XmlPeek` 任务的参数。
 
-|参数|说明|
+|参数|描述|
 |---------------|-----------------|
 |`Namespaces`|可选 `String` 参数。<br /><br /> 指定 XPath 查询前缀的命名空间。|
 |`Query`|可选 `String` 参数。<br /><br /> 指定 XPath 查询。|
@@ -121,3 +115,4 @@ ms.locfileid: "126642447"
 - [任务](../msbuild/msbuild-tasks.md)
 - [任务参考](../msbuild/msbuild-task-reference.md)
 - [XPath 查询语法](https://wikipedia.org/wiki/XPath)
+- [XPath 查询和命名空间](/dotnet/standard/data/xml/xpath-queries-and-namespaces)

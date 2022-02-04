@@ -6,12 +6,6 @@ ms.author: ghogen
 ms.date: 08/15/2019
 ms.technology: vs-container-tools
 ms.topic: reference
-ms.openlocfilehash: beb07942f937fbbd12a167963d4608ceb2d9cdf0
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135804579"
 ---
 # <a name="container-tools-launch-settings"></a>容器工具启动设置
 
@@ -64,10 +58,11 @@ commandName 设置确定此部分是否适用于容器工具。 下表显示了�
 | 设置名         | 示例                                               | 描述                                                                                                             |
 | -------------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | commandLineArgs      | "commandLineArgs": "--mysetting myvalue"              | 在容器中启动项目时使用这些命令行参数来启动应用。                                     |
-|DockerfileRunArguments|"dockerfileRunArguments"： "-v $ (pwd) /host-folder：/container-folder：ro"|要传递给 [docker run](https://docs.docker.com/engine/reference/commandline/run/) 命令的其他参数。|
+|DockerfileRunArguments|"dockerfileRunArguments"：" -v $ (pwd) /host-folder：/container-folder：ro"|要传递给 [docker run 命令的其他](https://docs.docker.com/engine/reference/commandline/run/) 参数。|
 | environmentVariables | "environmentVariables": {<br/>   "ASPNETCORE_URLS": "https://+:443; http://+:80", <br/>   "ASPNETCORE_HTTPS_PORT":"44381" <br/> }                    | 在容器中启动时，这些环境变量值将传递给该过程。                       |
 | httpPort             | "httpPort":24051                                     | 启动容器时，主机上的此端口映射到容器的端口 80。 |
 | launchBrowser        | "launchBrowser": true                                 | 指示在成功启动项目后是否启动浏览器。                                       |
+| launchBrowserTimeout | "launchBrowserTimeout"： 1                             | 在启动浏览器 (应用) 等待应用准备就绪的最大时间量（以秒表示）。 |
 | launchUrl            | "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}" | 启动浏览器时使用该 URL。 此字符串支持的替换令牌为： <br/><br/> - {Scheme} - 替换为“http”或“https”，具体取决于是否使用 SSL。 <br/><br/> - {ServiceHost} - 通常替换为“localhost”。 <br/> 但是，面向使用 Windows 10 RS3 或更低版本的 Windows 容器时，将其替换为容器的 IP。 <br/><br/> - {ServicePort} - 通常替换为 sslPort 或 httpPort，具体取决于是否使用 SSL。 <br/> 但是，在面向使用 Windows 10 RS3 或更低版本的 Windows 容器时，根据是否使用 SSL 将其替换为“443”或“80”。 |
 | sslPort              | "sslPort":44381                                      | 启动容器时，主机上的此端口映射到容器的端口 443。 |
 | useSSL               | "useSSL": true                                        | 指示在启动项目时是否使用 SSL。 如果未指定 useSSL，则在 sslPort 大于 0 时使用 SSL。 |
