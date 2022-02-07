@@ -5,76 +5,66 @@ metadata:
   title: Visual Studio 中 Git 的版本控制和源代码管理
   description: 在 Visual Studio 中使用版本控制/源代码管理技术。 无需离开代码库，即可在 Git 和 GitHub共享、集成和管理代码版本。
   ms.topic: landing-page
-  ms.date: 12/14/2021
+  ms.date: 02/02/2022
   author: TerryGLee
   ms.author: tglee
   manager: jmartens
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
-  ms.openlocfilehash: ab45d46beae661ea1108d8eba14e846a017aceb7
-  ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
-  ms.translationtype: HT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 01/12/2022
-  ms.locfileid: "135805970"
 landingContent:
-- title: 概述
-  linkLists:
-  - linkListType: overview
-    links:
-    - text: Visual Studio 中的 Git 体验
-      url: git-with-visual-studio.md
-    - text: Visual Studio 和 GitHub：更好地协同工作
-      url: https://visualstudio.microsoft.com/vs/github/
-- title: 日常工作流
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: 创建新分支
-      url: git-create-branch.md
-    - text: 进行提交
-      url: git-make-commit.md
-    - text: 推送到远程
-      url: git-push-remote.md
-    - text: 提取、拉取和同步
-      url: git-fetch-pull-sync.md
-- title: 新增功能
-  linkLists:
-  - linkListType: whats-new
-    links:
-    - text: 介绍 Visual Studio 2022 预览版 17.1 中的新 Git 功能
-      url: https://devblogs.microsoft.com/visualstudio/introducing-new-git-features-to-visual-studio-2022/
-    - text: Visual Studio 2022 预览版发行说明
-      url: /visualstudio/releases/2022/release-notes-preview
-- title: 入门
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: 创建 GitHub 帐户
-      url: git-create-github-account.md
-    - text: 克隆存储库
-      url: git-clone-repository.md
-    - text: 新建存储库
-      url: git-create-repository.md
-- title: 存储库管理
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: 浏览存储库
-      url: git-browse-repository.md
-    - text: 管理存储库
-      url: git-manage-repository.md
-    - text: 解决合并冲突
-      url: git-resolve-conflicts.md
-- title: 参考
-  linkLists:
-  - linkListType: concept
-    links:
-    - text: Git 设置和首选项
-      url: git-settings.md
-    - text: Visual Studio 如何简化源代码管理
-      url: git-visual-studio-source-control.md
-    - text: 并行比较 Git 和团队资源管理器
-      url: git-team-explorer-feature-comparison.md
-    - text: 熟练掌握 Git 和开放源代码
-      url: https://devblogs.microsoft.com/visualstudio/become-a-master-at-git-and-open-source/
+  - title: 入门
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Visual Studio 中的 Git 体验
+            url: git-with-visual-studio.md
+          - text: Visual Studio 如何简化源代码管理
+            url: git-visual-studio-source-control.md
+      - linkListType: tutorial
+        links:
+          - text: 克隆存储库
+            url: git-clone-repository.md
+          - text: 新建存储库
+            url: git-create-repository.md
+  - title: 日常工作流
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: 创建新分支
+            url: git-create-branch.md
+          - text: 进行提交
+            url: git-make-commit.md
+          - text: 推送到远程
+            url: git-push-remote.md
+          - text: 提取、拉取和同步
+            url: git-fetch-pull-sync.md
+  - title: 资源
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: Visual Studio 2022 预览版 17.1 博客
+            url: 'https://devblogs.microsoft.com/visualstudio/introducing-new-git-features-to-visual-studio-2022/'
+          - text: Visual Studio 2022 发行说明
+            url: /visualstudio/releases/2022/release-notes-preview
+          - text: 视频等…
+            url: 'https://visualstudio.microsoft.com/vs/github/'
+  - title: 参考
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Gits 设置和首选项
+            url: git-settings.md
+          - text: 比较 Git 和团队资源管理器
+            url: git-team-explorer-feature-comparison.md
+          - text: 熟练掌握 Git 和开放源代码（博客）
+            url: 'https://devblogs.microsoft.com/visualstudio/become-a-master-at-git-and-open-source/'
+  - title: 存储库管理
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: 浏览存储库
+            url: git-browse-repository.md
+          - text: 管理存储库
+            url: git-manage-repository.md
+          - text: 解决合并冲突
+            url: git-resolve-conflicts.md
