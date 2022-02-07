@@ -1,6 +1,7 @@
-- name: 版本控制文档
+- name: Visual Studio 版本控制文档
   href: index.yml
 - name: 概述
+  expanded: true
   items:
     - name: Visual Studio 中的 Git 体验
       href: git-with-visual-studio.md
@@ -12,7 +13,7 @@
       href: git-clone-repository.md
     - name: 创建存储库
       href: git-create-repository.md
-- name: 日常工作流
+- name: Innerloop 工作流
   items:
     - name: 创建分支
       href: git-create-branch.md
@@ -30,7 +31,7 @@
       href: git-manage-repository.md
     - name: 解决合并冲突
       href: git-resolve-conflicts.md
-- name: 参考
+- name: 资源
   items:
     - name: Git 设置和首选项
       href: git-settings.md
@@ -38,9 +39,5 @@
       href: git-visual-studio-source-control.md
     - name: 并行比较 Git 和团队资源管理器
       href: git-team-explorer-feature-comparison.md
-- name: 新增功能
-  items:
-    - name: Visual Studio 2022 预览版发行说明
-      href: /visualstudio/releases/2022/release-notes-preview
-    - name: Visual Studio 2022 发行说明
+    - name: 发行说明
       href: /visualstudio/releases/2022/release-notes
