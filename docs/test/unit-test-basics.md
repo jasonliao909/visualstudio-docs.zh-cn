@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d36ff9219c3bcffafee8f742e454a8e78d63e6d
-ms.sourcegitcommit: 96b09d12bec776367737f91e56e46cec85ad3376
+ms.openlocfilehash: e85e71679b9002b926307fbc785ba90bca2c15ea
+ms.sourcegitcommit: 782992423db6e1cbbf206715c9b3b400c80052a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/01/2022
-ms.locfileid: "135700501"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "138101076"
 ---
 # <a name="unit-test-basics"></a>单元测试基础知识
 
@@ -49,7 +49,7 @@ ms.locfileid: "135700501"
 ![MyBank 解决方案 2019](../test/media/vs-2019/basics-mybank-solution.png)
 ::: moniker-end
 ::: moniker range=">=vs-2022"
-![MyBank 解决方案2022](../test/media/vs-2022/basics-mybank-solution.png)
+![MyBank Solution 2022](../test/media/vs-2022/basics-mybank-solution.png)
 ::: moniker-end
 
 我们第一次尝试设计的 `MyBank` 应用程序包含表示个人帐户及其与银行交易的帐户组件，以及表示集合和管理单独帐户的功能的数据库组件。
@@ -104,14 +104,14 @@ public void Withdraw(double amount)
    ![从编辑器窗口查看上下文菜单](../test/media/vs-2019/basics-create-unit-tests.png)
 
    > [!NOTE]
-   > “创建单元测试”菜单命令仅适用于 C# 代码  。 若要将此方法与 .NET Core 或 .NET Standard 一起使用，需要 Visual Studio 2019。
+   > “创建单元测试”菜单命令仅适用于 C# 代码  。 若要将此方法用于 .NET Core 或 .NET Standard，Visual Studio 2019 或更高版本。
    ::: moniker-end
 
    ::: moniker range=">=vs-2022"
    ![从编辑器窗口查看上下文菜单](../test/media/vs-2022/basics-create-unit-tests.png)
 
    > [!NOTE]
-   > “创建单元测试”菜单命令仅适用于 C# 代码  。 若要将此方法与 .NET Core 或 .NET Standard 一起使用，需要 Visual Studio 2019。
+   > “创建单元测试”菜单命令仅适用于 C# 代码  。 若要将此方法用于 .NET Core 或 .NET Standard，Visual Studio 2019 或更高版本。
    ::: moniker-end
 
 2. 单击“确定”接受默认值以创建单元测试，或更改用于创建并命名单元测试项目和单元测试的值。 你可以选择默认添加到单元测试方法的代码。

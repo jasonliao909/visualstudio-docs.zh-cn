@@ -1,6 +1,6 @@
 ---
 title: 卸载 Visual Studio for Mac
-description: 卸载 Visual Studio for Mac 和相关工具的说明。
+description: 删除Visual Studio for Mac和相关工具。
 author: jmatthiesen
 ms.author: jomatthi
 manager: dominicn
@@ -8,16 +8,18 @@ ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
 ms.topic: how-to
-ms.openlocfilehash: 24f3790a9363cd92243f6502bc53c6c8a5996ab3
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: 9e140a570a03dd34113d9b81eb536b9419519f11
+ms.sourcegitcommit: 782992423db6e1cbbf206715c9b3b400c80052a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135805489"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "138101089"
 ---
-# <a name="uninstalling-visual-studio-for-mac"></a>卸载 Visual Studio for Mac
+# <a name="uninstall-visual-studio-for-mac"></a>卸载 Visual Studio for Mac 
 
 可根据本指南导航到相关部分，单独卸载 Visual Studio for Mac 中的每个组件，或使用[卸载脚本](#uninstall-script)部分提供的脚本卸载所有内容。
+
+本文适用于Visual Studio。 如果要查找有关VS Code的信息，请参阅Visual Studio Code[设置](https://code.visualstudio.com/docs/setup/setup-overview)。
 
 > [!NOTE]
 > 我们想详细了解你为何要卸载 Visual Studio for Mac，便于我们进行改进。 请花几分钟的时间[分享你的反馈](https://aka.ms/vs/mac/uninstallsurvey)。 谢谢！

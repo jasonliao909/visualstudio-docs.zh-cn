@@ -1,5 +1,5 @@
 ---
-title: 连接的服务
+title: Visual Studio for Mac &连接的 Azure 服务
 description: 了解如何从 Visual Studio for Mac 中将 Azure 数据存储、身份验证和推送通知添加到跨平台应用程序。
 ms.assetid: 41CB62FF-0F39-4CE8-8917-6A77F058719F
 author: jmatthiesen
@@ -7,14 +7,14 @@ ms.author: jomatthi
 manager: dominicn
 ms.date: 11/06/2018
 ms.topic: how-to
-ms.openlocfilehash: a7fe22162901f60aff761c0678c96072296cbf98
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: e93d572ca753aa475216ba7a0e443cec7c9fe9a9
+ms.sourcegitcommit: 782992423db6e1cbbf206715c9b3b400c80052a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135806269"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "138101016"
 ---
-# <a name="connected-services-walkthrough"></a>“连接的服务”演练
+# <a name="connected-services-walkthrough-in-visual-studio-for-mac"></a>连接的服务演练Visual Studio for Mac
 
 连接的服务工作流将 Azure 门户工作流引入到 Visual Studio for Mac，因此不必离开项目即可添加服务。
 

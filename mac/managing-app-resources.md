@@ -1,5 +1,5 @@
 ---
-title: 管理应用资源
+title: 管理 Xamarin 应用资源
 description: 本文提供各种描述如何在 Visual Studio for Mac 中为各种平台管理应用资源的指南链接
 author: jmatthiesen
 ms.author: jomatthi
@@ -7,12 +7,12 @@ manager: dominicn
 ms.date: 05/06/2018
 ms.assetid: 61EAAB8F-3C32-4574-924F-CFC616604089
 ms.topic: overview
-ms.openlocfilehash: 2974133307ba4788b38cb16da4cc38543d10ac3e
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: e5b7a74ba6b40de726eae5a9614a188be8d2f010
+ms.sourcegitcommit: 782992423db6e1cbbf206715c9b3b400c80052a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135806074"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "138100899"
 ---
 # <a name="managing-app-resources"></a>管理应用资源
 
