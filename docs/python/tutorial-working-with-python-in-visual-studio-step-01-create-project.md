@@ -2,23 +2,18 @@
 title: Visual Studio 中的 Python 教程步骤 1，创建项目
 titleSuffix: ''
 description: 在 Visual Studio 中使用 Python 功能的核心教程概述和第 1 步，包括系统必备组件和创建新的 Python 项目。
-ms.date: 01/15/2022
+ms.date: 02/02/2022
 ms.topic: tutorial
 author: rjmolyneaux
 ms.author: rmolyneaux
 manager: jmartens
 ms.technology: vs-python
-ms.custom: vs-acquisition
+ms.custom: 'vs-acquisition, devdivchpfy22'
 ms.workload:
-- python
-- data-science
-ms.openlocfilehash: 6734c7273ae53c707ce2be728f10564cc3c5202d
-ms.sourcegitcommit: f81a8f381bcdbac96d112f815737ba1df55d97a3
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "137667455"
+  - python
+  - data-science
 ---
+
 # <a name="tutorial-work-with-python-in-visual-studio"></a>教程：在 Visual Studio 中使用 Python
 
 Python 是一种流行的编程语言，它可靠、灵活、易于学习、可在所有操作系统上免费使用。 强大的开发人员社区以及许多免费库都支持 Python。 该语言支持各种开发，包括 Web 应用程序、Web 服务、桌面应用、脚本编写和科学计算。 许多高校人员、科学家、业余开发人员和专业开发人员都在使用 Python。
@@ -37,7 +32,7 @@ Visual Studio 为 Python 提供一级语言支持。 本教程将指导你完成
 
 ## <a name="step-1-create-a-new-python-project"></a>步骤 1：创建新的 Python 项目
 
-项目是 Visual Studio 管理所有文件的一种方式，这些文件结合在一起可生成单个应用程序。 应用程序文件包括源代码、资源和配置。 项目将其所有文件之间的关系形式化并予以维护。 项目还可以管理在多个项目之间共享的外部资源。 项目使得应用程序能够毫不费力地扩展和增长。 使用项目比在临时文件夹、脚本、文本文件和内存中手动管理关系要容易得多。
+项目是 Visual Studio 管理所有文件的一种方式，这些文件结合在一起可生成单个应用程序。 应用程序文件包括源代码、资源和配置。 项目将其所有文件之间的关系形式化并予以维护。 项目还可以管理在多个项目之间共享的外部资源。 项目使得应用程序能够毫不费力地扩展和增长。 使用项目比手动管理计划外文件夹、脚本、文本文件和内存中的关系要容易得多。
 
 本教程将从一个包含单一空代码文件的简单项目开始。
 
@@ -68,12 +63,12 @@ Visual Studio 为 Python 提供一级语言支持。 本教程将指导你完成
 
     (4) 项目下方还有“Python 环境”节点。 展开后，可以看到可用的 Python 解释器。 展开解释器节点可查看安装到该环境 (5) 中的库。
 
-    右键单击“解决方案资源管理器”中的任意节点或项均可访问适用命令菜单。 例如，“重命名”命令可用于更改任何节点或项（包括项目和解决方案）的名称。
+    右键单击“解决方案资源管理器”中的任意节点或项均可访问适用命令菜单。 例如， **使用 Rename** 命令可以更改任何节点或项的名称，包括项目和解决方案。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2022"
-1. 在 Visual Studio 中，选择“文件” > “新建” > “项目”，或按 Ctrl+Shift+N     。 此时会显示“创建新项目”屏幕，可在其中搜索和浏览不同语言的模板。
+1. 在 Visual Studio 中，选择“文件” > “新建” > “项目”，或按 Ctrl+Shift+N     。 将显示 **"创建新项目"** 屏幕，可在其中搜索和浏览不同语言的模板。
    
 1. 若要查看 Python 模板，请搜索“python”。 如果忘记了模板在语言树中的位置，使用搜索是找到该模板的好方法。
    
@@ -99,11 +94,11 @@ Visual Studio 为 Python 提供一级语言支持。 本教程将指导你完成
    
    - 顶层是解决方案，默认情况下它与项目同名 (1)。
      
-     在磁盘上以 .sln 文件形式显示的解决方案是一个或多个相关项目的容器。 例如，如果你为 Python 应用程序编写 C++ 扩展，则该 C++ 项目可以位于同一解决方案中。 解决方案还可以包含 Web 服务的项目，以及专用测试程序的项目。
+     解决方案在磁盘上显示为 *.sln* 文件，是一个或多个相关项目的容器。 例如，如果你为 Python 应用程序编写 C++ 扩展，则该 C++ 项目可以位于同一解决方案中。 解决方案还可以包含 Web 服务的项目，以及专用测试程序的项目。
    
-   - 使用你在“创建新项目”对话框中指定的名称的项目以粗体显示 (2) 。 在磁盘上，项目是项目文件夹中的一个 .pyproj 文件。
+   - 项目在"创建新项目"对话框中提供的名称以粗体显示， (**2)**。 在磁盘上，项目是项目文件夹中的一个 .pyproj 文件。
    
-   - 项目下是源文件，在这种情况下，只有一 *个 .py* 文件 (**3) 。** 选择文件时会在“属性”窗口中显示其属性。 双击文件会以任何适合该文件的方式打开该文件。
+   - 项目下方是源文件，在本例中只有一个 .py 文件 (3)。 选择文件时会在“属性”窗口中显示其属性。 双击文件会以任何适合该文件的方式打开该文件。
    
    - 项目下方还有“Python 环境”节点 (4) 。 展开该节点可显示可用的 Python 解释器。
    
