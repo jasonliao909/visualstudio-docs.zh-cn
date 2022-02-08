@@ -159,8 +159,6 @@
       href: ide/quickstart-nodejs.md
     - name: Python：创建 Web 应用
       href: ide/quickstart-python.md
-    - name: F#：创建 Web 服务
-      href: ide/quickstart-fsharp.md
 - name: 教程
   expanded: true
   items:
@@ -651,6 +649,8 @@
           items:
             - name: F# 开发
               href: ide/fsharp-visual-studio.md
+            - name: 教程：在 F# 中创建 Web 服务
+              href: get-started/tutorial-fsharp-web-app.md
             - name: 面向 .NET 较旧版本
               href: ide/fsharp-target-older-dotnet-versions.md
         - name: Python >>
