@@ -14,12 +14,12 @@ ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4f878fa8dead7599f025c72b4000549e4ab89806
-ms.sourcegitcommit: bfae1f88c278835e26f3200cfced769be3191fc4
-ms.translationtype: HT
+ms.openlocfilehash: 179f55bf22fc3ad9b06e92c351acdf9de9b17349
+ms.sourcegitcommit: 782992423db6e1cbbf206715c9b3b400c80052a9
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "132535189"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "138101116"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>教程：使用 C\# 创建简单应用
 
@@ -138,19 +138,15 @@ Visual Studio 将创建 HelloWPFApp 项目和解决方案，“解决方案资�
 
 ::: moniker-end
 
-### <a name="change-the-name-of-mainwindowxaml"></a>更改 MainWindow.xaml 的名称
-
-为 MainWindow 指定更具体的名称。 在“解决方案资源管理器”中，右键单击“MainWindow.xaml”，然后选择“重命名”。 将该文件重命名为“Greetings.xaml”。
-
 ## <a name="design-the-user-interface-ui"></a>设计用户界面 (UI)
 
-如果设计器未打开，请选择“Greetings.xaml”，然后按“Shift+F7”打开设计器 。
+如果设计器未打开，请选择 *"MainWindow.xaml*"，然后按 **ShiftF7** + 打开设计器。
 
 我们会将三种类型的控件添加到此应用程序：一个 <xref:System.Windows.Controls.TextBlock> 控件、两个 <xref:System.Windows.Controls.RadioButton> 控件和一个 <xref:System.Windows.Controls.Button> 控件。
 
 ### <a name="add-a-textblock-control"></a>添加 TextBlock 控件
 
-::: moniker range="vs-2019"
+::: moniker range="<=vs-2019"
 
 1. 按“Ctrl+Q”激活搜索框，然后键入“工具箱”  。 从结果列表中选择“查看”>“工具箱”。
 
@@ -162,7 +158,7 @@ Visual Studio 将创建 HelloWPFApp 项目和解决方案，“解决方案资�
 
     你的窗口应与下图类似：
 
-    ![Greetings 窗体上的 TextBlock 控件](../media/exploreide-greetingswithtextblockonly.png "“Greetings”窗体设计图面上的 TextBlock 控件的屏幕截图。")
+    ![MainWindow 窗体上的 TextBlock 控件](media/explore-ide-window-with-textblock-only.png "MainWindow 窗体的设计图面上 TextBlock 控件的屏幕截图。")
 
    XAML 标记应如下面的示例所示：
 
@@ -216,7 +212,7 @@ Visual Studio 将创建 HelloWPFApp 项目和解决方案，“解决方案资�
 
 ### <a name="add-radio-buttons"></a>添加单选按钮
 
-::: moniker range="vs-2019"
+::: moniker range="<=vs-2019"
 
 1. 在“工具箱”中，查找“RadioButton”控件。
 
@@ -226,7 +222,7 @@ Visual Studio 将创建 HelloWPFApp 项目和解决方案，“解决方案资�
 
    你的窗口应如下所示：
 
-   ![包含 TextBlock 和两个单选按钮的“Greetings”窗体](../media/exploreide-greetingswithradiobuttons.png "Greetings.xaml 的“设计”窗口的屏幕截图，其中显示了位于设计图面上的一个 TextBlock 控件和两个 RadioButton 控件。")
+   ![具有 TextBlock 和两个单选按钮的 MainWindow 窗体](media/explore-ide-window-with-radio-buttons.png "MainWindow.xaml 的&quot;设计&quot;窗口的屏幕截图，其中显示了一个 TextBlock 控件和两个位于设计图面上的 RadioButton 控件。")
 
 1. 在左侧 RadioButton 控件的 **“属性”** 窗口中，将 **“名称”** 属性（位于 **“属性”** 窗口顶部）更改为 `HelloButton`。
 
@@ -294,7 +290,7 @@ Visual Studio 将创建 HelloWPFApp 项目和解决方案，“解决方案资�
 
 ### <a name="add-the-button-control"></a>添加按钮控件
 
-::: moniker range="vs-2019"
+::: moniker range="<=vs-2019"
 
 1. 在“工具箱”中，找到“按钮”控件，然后通过将控件拖到设计视图的窗体中，将其添加到 RadioButton 控件下方的设计界面中。 如果使用的是 Visual Studio 2019 或更高版本，则会出现一条红线，帮助你使控件居中。
 
@@ -302,7 +298,7 @@ Visual Studio 将创建 HelloWPFApp 项目和解决方案，“解决方案资�
 
      你的窗口应与下图类似。
 
-     ![包含控制标签的 Greetings 窗体](media/exploreide-greetingswithcontrollabels-cs.png "Greetings.xaml 的“设计”窗口的屏幕截图，其中显示了一个 TextBlock 控件、两个标有“Hello”和“Greeting”的 RadioButton 控件，以及一个标有“Display”的按钮。")
+     ![具有控件标签的 MainWindow 窗体](media/explore-ide-window-with-control-labels-cs.png "MainWindow.xaml 的&quot;设计&quot;窗口的屏幕截图，其中显示了一个 TextBlock 控件、两个标记为&quot;Hello&quot;和&quot;不问候&quot;的 RadioButton 控件，以及一个标记为&quot;Display&quot;的按钮。")
 
    XAML 标记现在应类似于以下示例：
 
@@ -342,7 +338,7 @@ Visual Studio 将创建 HelloWPFApp 项目和解决方案，“解决方案资�
 
 ### <a name="add-code-to-the-display-button"></a>向显示按钮添加代码
 
-::: moniker range="vs-2019"
+::: moniker range="<=vs-2019"
 
 此应用程序运行时，用户选择单选按钮，再选择“显示” 按钮之后，会显示一个消息框。 选择 Hello 将显示一个消息框，选择 Goodbye 将显示另一个。 若要创建此行为，请将代码添加到 Greetings.xaml.vb 中的 `Button_Click` 事件。
 
@@ -410,13 +406,16 @@ Visual Studio 将创建 HelloWPFApp 项目和解决方案，“解决方案资�
 
 接下来将调试应用程序，查找错误并测试两个消息框是否正确显示。 下面的说明介绍如何生成和启动调试器，但以后可以阅读[生成 WPF 应用程序 (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf) 和[调试 WPF](../../debugger/debugging-wpf.md) 获取有关详细信息。
 
+### <a name="change-the-name-of-mainwindowxaml"></a>更改 MainWindow.xaml 的名称
+为 MainWindow 指定更具体的名称。 在“解决方案资源管理器”中，右键单击“MainWindow.xaml”，然后选择“重命名”。 将该文件重命名为“Greetings.xaml”。
+
 ### <a name="find-and-fix-errors"></a>查找并修复错误
 
 在此步骤中，将遇到之前因更改 MainWindow.xaml 文件的名称而引起的错误。
 
 #### <a name="start-debugging-and-find-the-error"></a>开始调试和查找错误
 
-::: moniker range="vs-2019"
+::: moniker range="<=vs-2019"
 
 1. 通过按 F5或选择“调试”，然后选择“启动调试”，启动调试程序。
 
@@ -426,7 +425,7 @@ Visual Studio 将创建 HelloWPFApp 项目和解决方案，“解决方案资�
 
 1. 选择“调试”>“停止调试”以停止调试器 。
 
-开始学习本教程时，我们将 MainWindow.xaml 重命名为 Greetings.xaml，但是该代码仍然引用 MainWindow.xaml 作为应用程序的启动 URI，因此该项目无法启动。
+我们已将 *MainWindow.xaml* 重命名为 *Greetings.xaml*，但代码仍引用 *MainWindow.xaml* 作为应用程序的启动 URI，因此项目无法启动。
 
 ::: moniker-end
 
@@ -443,6 +442,7 @@ Visual Studio 将创建 HelloWPFApp 项目和解决方案，“解决方案资�
 开始学习本教程时，我们将 MainWindow.xaml 重命名为 Greetings.xaml，但是该代码仍然引用 MainWindow.xaml 作为应用程序的启动 URI，因此该项目无法启动。
 
 ::: moniker-end
+
 #### <a name="specify-greetingsxaml-as-the-startup-uri"></a>将 Greetings.xaml 指定为启动 URI
 
 1. 在“解决方案资源管理器”中，打开“App.xaml”文件。

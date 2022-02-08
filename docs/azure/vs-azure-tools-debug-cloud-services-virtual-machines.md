@@ -5,15 +5,15 @@ author: mikejo5000
 manager: jmartens
 ms.topic: how-to
 ms.workload: azure-vs
-ms.date: 11/11/2016
+ms.date: 1/24/2022
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 39d151528c5fda1bd4700fecd0d5c8843ced50a1
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: c507b8618f24eb76c6c7c3f2a75b85ac797efa35
+ms.sourcegitcommit: 782992423db6e1cbbf206715c9b3b400c80052a9
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126602144"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "138100942"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>在 Visual Studio 中调试云服务或虚拟机
 
@@ -96,6 +96,40 @@ Visual Studio 提供了不同的选项来调试 Azure 云服务和虚拟机。
   * 根据 .csdef 文件验证 .cscfg 文件时出错。
     角色 “role” 的终结点 Microsoft.WindowsAzure.Plugins.RemoteDebugger.Connector 的保留端口范围 “range” 与已定义的端口或范围重叠。
   * 分配失败。 请稍后重试，尝试减少 VM 大小或角色实例数目，或者尝试部署到其他区域。
+
+::: moniker range=">=vs-2022"
+
+## <a name="debugging-azure-app-services"></a>调试 Azure 应用 服务
+
+可以使用 Azure 应用 中的"附加到进程"对话框调试在 Visual Studio 中运行的程序。 
+
+> [!NOTE]
+> 这仅适用于 2022 Windows Azure 应用 2022 17.1 Visual Studio服务。 
+
+### <a name="to-debug-a-windows-azure-app-service"></a>调试Windows Azure 应用服务
+
+1. 在 **"调试"** 下， **选择"附加到进程"**。
+
+2. 将 **"连接类型**"**更改为Microsoft Azure"应用服务"**，然后选择"**查找"。。**
+
+3. 在打开的对话框中，选择"订阅 **名称"**。
+
+    ![选择Azure 应用服务对话框](./media/vs-azure-tools-debug-cloud-services-virtual-machines/select-app-service.png)
+
+> [!NOTE]
+> 需要登录到有权访问包含你的订阅的订阅的 Microsoft Azure 应用服务。
+
+4. 按资源组或资源类型筛选视图，或按名称搜索。
+
+5. 接下来，选择要调试的应用服务，然后选择"确定 **"**。
+
+    这将在应用服务上启用远程调试，并显示要附加到的可用进程的列表。 
+
+    ![进程列表](./media/vs-azure-tools-debug-cloud-services-virtual-machines/attach-to-process.png)
+
+6. 选择要附加到的进程，然后选择"附加"以开始调试。 
+
+::: moniker-end
 
 ## <a name="debugging-azure-virtual-machines"></a>调试 Azure 虚拟机
 

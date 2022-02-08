@@ -1,5 +1,5 @@
 ---
-title: 生成操作
+title: 设置生成操作
 description: 本文介绍可用于 C# 项目的各种生成操作
 author: jmatthiesen
 ms.author: jomatthi
@@ -7,16 +7,16 @@ manager: dominicn
 ms.date: 09/18/2019
 ms.topic: conceptual
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: 3df48f4e55bb8f8b145184278f113178ce0e5647
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: 219d16b4b9f383f771e67c2b1c737ca1830bea5a
+ms.sourcegitcommit: 782992423db6e1cbbf206715c9b3b400c80052a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135803747"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "138100925"
 ---
-# <a name="build-actions"></a>生成操作
+# <a name="configure-build-actions"></a>配置生成操作
 
-Visual Studio for Mac 项目中的所有文件都具有生成操作。 该生成操作控制生成期间文件会发生什么情况。 
+Visual Studio for Mac 项目中的所有文件都具有生成操作。 生成操作控制编译项目时文件发生的情况。 
 
 >[!NOTE]
 >本主题适用于 Visual Studio for Mac。 对于 Windows 上的 Visual Studio，请参阅[生成操作](/visualstudio/ide/build-actions)。
