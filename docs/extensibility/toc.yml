@@ -483,6 +483,18 @@
           href: how-to-provide-an-asynchronous-visual-studio-service.md
         - name: 服务疑难解答
           href: how-to-troubleshoot-services.md
+    - name: 使用和提供中转服务
+      items:
+        - name: 使用和提供中转服务
+          href: use-and-provide-brokered-services.md
+        - name: 使用中转服务
+          href: how-to-consume-brokered-service.md
+        - name: 提供中转服务
+          href: how-to-provide-brokered-service.md
+        - name: 设计中转服务的最佳做法
+          href: best-practices-design-brokered-service.md
+        - name: 保护中转服务
+          href: how-to-secure-brokered-service.md
     - name: 管理 VSPackage
       items:
         - name: 管理 VSPackage

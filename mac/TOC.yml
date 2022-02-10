@@ -118,13 +118,13 @@
   items:
     - name: 概述
       href: compiling-and-building.md
-    - name: 生成和清理项目和解决方案
+    - name: 生成并清理项目和解决方案
       href: building-and-cleaning-projects-and-solutions.md
     - name: 生成操作
       href: build-actions.md
-    - name: 如何：设置多个启动项目
+    - name: 设置多个启动项目
       href: set-startup-projects.md
-    - name: 自定义生成系统
+    - name: 自定义生成系统 (msbuild)
       href: customizing-build-system.md
     - name: 配置
       items:
