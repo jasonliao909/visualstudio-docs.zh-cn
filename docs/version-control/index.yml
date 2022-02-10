@@ -11,24 +11,22 @@ metadata:
   manager: jmartens
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
-  ms.openlocfilehash: 67a454ba6525503b6a4d647151a87bb9555fcd30
-  ms.sourcegitcommit: 628b7abd6677ae16698c406703ed4b9b646d5f3b
+  ms.openlocfilehash: 9d1a12546c7f31548c588092f400fddc5ba9b21e
+  ms.sourcegitcommit: 169b7b66d13b7e3c86097b42206dd33389cd9166
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 02/07/2022
-  ms.locfileid: "138099648"
+  ms.lasthandoff: 02/09/2022
+  ms.locfileid: "138149211"
 landingContent:
 - title: 入门
   linkLists:
   - linkListType: overview
     links:
-    - text: Visual Studio 中的 Git 体验
+    - text: 用于源代码管理的 Git 和 Visual Studio
       url: git-with-visual-studio.md
-    - text: Visual Studio 如何简化源代码管理
-      url: git-visual-studio-source-control.md
-  - linkListType: tutorial
+  - linkListType: how-to-guide
     links:
-    - text: 克隆存储库
+    - text: 克隆现有存储库
       url: git-clone-repository.md
     - text: 新建存储库
       url: git-create-repository.md

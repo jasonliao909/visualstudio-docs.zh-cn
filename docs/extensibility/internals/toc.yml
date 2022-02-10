@@ -440,6 +440,12 @@
       href: service-essentials.md
     - name: 可用服务的列表
       href: list-of-available-services.md
+- name: 中转服务基础知识
+  items:
+    - name: 服务基础知识
+      href: brokered-service-essentials.md
+    - name: 发现可用服务
+      href: discover-available-brokered-services.md
 - name: Visual Studio 调试器可扩展性
   href: ../debugger/toc.yml
 - name: 源代码管理
