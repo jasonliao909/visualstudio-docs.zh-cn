@@ -1,7 +1,7 @@
 ---
 title: 更新基于网络的安装
 description: 了解如何更新通过网络布局安装的 Visual Studio 客户端
-ms.date: 12/7/2021
+ms.date: 02/04/2022
 ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d9a36834b059da8ead4d3374d31072c0cd768503
-ms.sourcegitcommit: d38d1b083322019663fec7d1d85a4cda456aadca
+ms.openlocfilehash: b893309fb2bf8b4b77f32908d6cdbb4801ef4b01
+ms.sourcegitcommit: b9c5ca58f380ee102153b69656cb062b3d2dab8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "135533937"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "138427864"
 ---
 # <a name="update-a-visual-studio-client-that-was-installed-from-a-network-layout"></a>更新通过网络布局安装的 Visual Studio 客户端
 
@@ -28,7 +28,7 @@ ms.locfileid: "135533937"
 如果 Visual Studio 客户端最初通过网络布局安装，则很有可能客户端计算机属于“托管环境”的一部分，这意味着它由中心管理团队控制并且必须遵守组织策略。 若要更新托管环境中的客户端计算机，请考虑以下问题，问题答案将告知你应该如何处理更新过程。 
 
 -  更新来自何处：网络布局或 Microsoft 托管服务器？ 如果更新来自网络布局，是否已准备网络布局？
--  此更新是由用户启动，还是管理员启动的事件？ 请记住，执行更新的人员都必须具有管理员权限。
+-  此更新是由用户启动，还是管理员启动的事件？ 请记住，执行更新的人员必须在客户端计算机上具有管理员权限。
 
 ## <a name="prepare-the-update-source"></a>准备更新源
 
@@ -76,7 +76,7 @@ Visual Studio 一开始安装在客户端计算机上时，它会记录应在何
   * 启动 Visual Studio IDE 并响应通知标志或消息，或者选择“帮助”/“检查”获取更新。  
 
 ## <a name="programatically-update-the-client-machines"></a>以编程方式更新客户端计算机
-管理员可以通过向客户端安装程序发出Visual Studio或调用布局中的引导程序，以编程方式更新客户端的客户端安装。
+管理员可以通过将命令发送到客户端安装程序或在布局中调用引导程序，以编程方式更新 Visual Studio 的客户端安装。
 
 ### <a name="programatically-update-visual-studio-by-using-the-visual-studio-installer"></a>使用 Visual Studio 安装程序以编程方式更新 Visual Studio
 
@@ -136,7 +136,7 @@ c:\program files (x86)\microsoft\visual studio\installer\>setup.exe update --ins
 ```shell
    \\server\share\desiredupdatelayoutdir\vs_enterprise.exe update --installPath "C:\clientmachine\installpath" --quiet 
 ```
-无论布局的 response.json 文件中的 channelURI 值为何，都将成为客户端查找未来更新的位置。
+新布局的 channelURI 文件中的任何值都是客户端查找未来更新的位置。
 
 ::: moniker-end
 
@@ -155,7 +155,7 @@ c:\program files (x86)\microsoft\visual studio\installer\>setup.exe update --ins
 确保客户端从网络布局获取更新的另一种方法是在一条命令中将 `--noweb` 和 `--noUpdateInstaller` 选项传递给网络布局上的引导程序。 前者阻止从 Internet 下载更新的工作负载、组件，后者阻止安装程序进行自我更新。 此选项虽然可用，但通常不建议使用，因为应始终使用最新且最合适的安装程序。
 
 > [!IMPORTANT]
-> `--noWeb` 选项不会阻止已连接 Internet 的计算机上的 Visual Studio 安装程序检查更新。 而是会阻止客户端下载产品包。 有关详细信息，请参阅[控制对基于网络的 Visual Studio 部署的更新](controlling-updates-to-visual-studio-deployments.md)页。
+> `--noWeb` 选项不会阻止已连接 Internet 的计算机上的 Visual Studio 安装程序检查更新。 而是会阻止客户端下载产品包。 
 
 ## <a name="get-support-for-your-network-layout"></a>获取对网络布局的支持
 

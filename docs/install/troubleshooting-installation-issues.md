@@ -1,7 +1,7 @@
 ---
 title: 安装或升级问题疑难解答
 description: 有时，你难免遇到一些问题。 如果 Visual Studio 安装或升级失败，可在此页寻求帮助。
-ms.date: 09/14/2021
+ms.date: 2/4/2022
 ms.custom: vs-acquisition
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1d1d5571e0f1c781e547203ce11dabbb9e1a4be8
-ms.sourcegitcommit: 7746657b87b22a7684e79e508af598b02dfe24b7
+ms.openlocfilehash: 47a3dd32e92488f2f671dab57636d5d312ffb2cf
+ms.sourcegitcommit: b9c5ca58f380ee102153b69656cb062b3d2dab8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "137609620"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "138427734"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Visual Studio 安装和升级问题疑难解答
 
@@ -59,34 +59,25 @@ Visual Studio 安装程序存在一些已知问题，Microsoft 正在努力修�
 
 ### <a name="step-3---check-with-the-developer-community"></a>第 3 步 - 通过开发人员社区获取帮助
 
-在 [Visual Studio 开发者社区](https://aka.ms/feedback/suggest?space=8)渠道中搜索你看到的错误消息。 其他社区成员可能已经找到了你所遇到的问题的解决方法。
+在[Visual Studio 开发人员 Community](https://developercommunity.visualstudio.com/search?space=8)中搜索错误消息。 其他社区成员可能已经找到了你所遇到的问题的解决方法。
 
 ### <a name="step-4---delete-the-visual-studio-installer-folder-to-fix-upgrade-problems"></a>第 4 步 - 删除 Visual Studio 安装程序文件夹以修复升级问题
 
-Visual Studio 安装程序引导程序是轻型的可执行文件，用于启动 Visual Studio 安装程序的安装。 删除 Visual Studio 安装程序文件，然后重新运行引导程序即可解决一些更新失败问题。
+Visual Studio 引导程序是一种轻型可执行文件，用于启动 Visual Studio 安装程序和 Visual Studio 产品的安装。 删除 Visual Studio 安装程序文件，然后重新运行引导程序即可解决一些更新失败问题。
 
 > [!NOTE]
 > 执行以下操作将重新安装 Visual Studio 安装程序文件并重置安装元数据。
 
-::: moniker range="vs-2017"
+::: moniker range="<vs-2022"
 
 1. 关闭 Visual Studio 安装程序。
 1. 删除 Visual Studio 安装程序安装目录。 通常，该目录是 `C:\Program Files (x86)\Microsoft Visual Studio\Installer`。
-1. 运行 Visual Studio 安装程序引导程序。 引导程序位于“下载”文件夹中，文件名格式为 `vs_[Visual Studio edition]__*.exe`。 如果找不到此应用程序，可以转到 [Visual Studio 下载](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)页，然后单击你的 Visual Studio 版本所对应的“下载”，便可下载引导程序。 然后，运行此可执行文件，重置安装元数据。
-1. 尝试重新安装或更新 Visual Studio。 如果安装程序仍无法安装，请转到下一步。
+1. 运行 Visual Studio 引导程序。 引导程序位于“下载”文件夹中，文件名格式为 `vs_[Visual Studio edition]__*.exe`。 如果找不到该应用程序，可以转到 " [Visual Studio 较旧的下载" 页](https://visualstudio.microsoft.com/vs/older-downloads)，然后单击 "下载" 以 **下载** Visual Studio 版本。 然后，运行此可执行文件，重置安装元数据。
+1. 尝试重新安装或更新 Visual Studio。 如果安装程序继续失败，请转到 [报告问题](#step-5---report-a-problem) 步骤。
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
-
-1. 关闭 Visual Studio 安装程序。
-1. 删除 Visual Studio 安装程序目录。 通常，该目录是 `C:\Program Files (x86)\Microsoft Visual Studio\Installer`。
-1. 运行 Visual Studio 安装程序引导程序。 引导程序可能位于“下载”文件夹中，其文件名与 `vs_[Visual Studio edition]__*.exe` 模式匹配。 如果找不到此应用程序，可以转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads)页，然后单击你的 Visual Studio 版本所对应的“下载”，便可下载引导程序。 然后，运行此可执行文件，重置安装元数据。
-1. 尝试重新安装或更新 Visual Studio。 如果安装程序仍无法安装，请转到下一步。
-
-::: moniker-end
-
-::: moniker range=">=vs-2022"
+::: moniker range="=vs-2022"
 
 1. 关闭 Visual Studio 安装程序。
 1. 删除 Visual Studio 安装程序文件夹。 文件夹路径通常为 `C:\Program Files (x86)\Microsoft Visual Studio\Installer`。
@@ -152,6 +143,10 @@ Visual Studio 安装程序引导程序是轻型的可执行文件，用于启动
 
 若要解决[网络安装](create-a-network-installation-of-visual-studio.md)问题，请参阅[排查在安装或使用 Visual Studio 时出现的网络相关错误](troubleshooting-network-related-errors-in-visual-studio.md)。
 
+## <a name="administrator-updates"></a>管理员更新
+
+由于 vareity 的情况，管理员更新可能无法正确应用。 有关详细信息，请参阅 [管理员更新疑难解答错误代码](/visualstudio/install/applying-administrator-updates#verification-reports-and-troubleshooting-error-codes) 。
+
 ## <a name="installation-logs"></a>安装日志
 
 安装日志可帮助我们排查大部分安装问题。 使用 Visual Studio 安装程序中的[报告问题](../ide/how-to-report-a-problem-with-visual-studio.md)提交问题时，Visual Studio 安装程序的最新安装日志将自动添加到报告中。
@@ -168,17 +163,17 @@ Visual Studio 安装程序引导程序是轻型的可执行文件，用于启动
 > [!NOTE]
 > 工具必须在安装失败时使用的同一用户帐户下运行。 若要从其他用户帐户运行工具，请设置 `–user:<name>` 选项，以指定安装失败时使用的用户帐户。 有关其他选项和使用情况信息，请通过管理员命令提示符运行 `Collect.exe -?`。
 
-## <a name="problems-installing-webview2"></a>安装 WebView2 时出现问题
+## <a name="problems-installing-webview2"></a>安装 WebView2 时遇到问题
 
-WebView2 是应用程序所需的Visual Studio，但组织的组策略可能会阻止安装此组件。 阻止安装 WebView2 将Visual Studio安装 WebView2。 
+WebView2 是 Visual Studio 所需的组件，但可通过组织的组策略阻止安装此组件。 阻止安装 WebView2 将阻止安装 Visual Studio。 
 
-两个策略控制安装 WebView2 的能力[：Microsoft Edge" (WebView) "](/deployedge/microsoft-edge-update-policies#install-webview)和[Microsoft Edge"InstallDefault"。](/deployedge/microsoft-edge-update-policies#installdefault)
+以下两个策略控制安装 WebView2 的能力： [Microsoft Edge "install (web 视图) "](/deployedge/microsoft-edge-update-policies#install-webview)和[Microsoft Edge "InstallDefault"](/deployedge/microsoft-edge-update-policies#installdefault)。
 
-• 如果Microsoft Edge" (WebView) "策略，它将确定是否可以安装 WebView2。
-• 如果未Microsoft Edge"安装 (WebView) "策略，Microsoft Edge"InstallDefault"策略将确定是否可以安装 WebView2。
+•如果配置了 Microsoft Edge "安装 (web 视图) " 策略，它将确定是否可以安装 WebView2。
+•如果未配置 Microsoft Edge "安装 (web 视图) " 策略，则 Microsoft Edge "InstallDefault" 策略将确定是否可以安装 WebView2。
 
 > [!NOTE]
-> 如果未配置任何策略，则组织不允许安装 WebView2。
+> 如果两个策略均未配置，则组织允许安装 WebView2。
 
 ## <a name="live-help"></a>实时帮助
 

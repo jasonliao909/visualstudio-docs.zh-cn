@@ -2,7 +2,7 @@
 title: 应用使用 Microsoft Endpoint Configuration Manager 的 Visual Studio 管理员更新
 titleSuffix: ''
 description: 了解如何应用 Visual Studio 的管理员更新。
-ms.date: 04/16/2021
+ms.date: 02/04/2022
 ms.topic: overview
 ms.assetid: 9a3fdb28-db3d-4970-bc17-7417a985f0fb
 author: anandmeg
@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 755bfb09826ec168228fbea16db26abc2a232a8c
-ms.sourcegitcommit: 215680b355cf613bfa125cf6b864c8bb5f2c71a5
-ms.translationtype: HT
+ms.openlocfilehash: f81d8ad7bd8ade46ac0af190843ca107409f5834
+ms.sourcegitcommit: b9c5ca58f380ee102153b69656cb062b3d2dab8c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "132453357"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "138427760"
 ---
 # <a name="applying-administrator-updates-that-use-microsoft-endpoint-configuration-manager"></a>应用使用 Microsoft Endpoint Configuration Manager 的管理员更新
 
@@ -28,6 +28,9 @@ ms.locfileid: "132453357"
 发布到 Microsoft 更新以供 Microsoft 目录和 WSUS 使用的 Visual Studio 管理员更新包内含有 Configuration Manager 所需的使其能够下载 Visual Studio 更新并将其分发到客户端计算机的信息。 它还包含 IT 管理员所需的用于确定要在整个组织中分配哪些更新的信息。 使用它还能让网络布局的维护更便捷。 Visual Studio 管理员更新包中包含的信息不足以执行产品的全新安装，也不包含发布到内容分发网络的任何实际产品二进制文件。 Visual Studio 管理员更新是累积更新，就像常规 Visual Studio 更新一样。 你可以假设任何具有较高产品版本号和较晚发布日期的 Visual Studio 更新都是较旧、较低版本的超集。
 
 Visual Studio 管理员更新适用于受支持的 Visual Studio 服务版本。 若要详细了解在特定时间范围内仍处于支持状态的 Visual Studio 服务基线，请参阅 [Visual Studio 产品生命周期和服务](/visualstudio/productinfo/vs-servicing-vs)。 所有受支持的 Visual Studio 服务基线都将保持安全。  
+
+> [!NOTE]
+> Visual Studio管理员更新会导致客户端计算机从客户端配置为从 Internet 或网络布局下载更新的任何位置下载产品[](/visualstudio/install/update-visual-studio#configure-source-location-of-updates-1)文件。 因此，管理员更新可用于客户端未连接到 Internet 的情况。 例如，如果将客户端配置为从网络布局获取更新，则管理员更新可用于触发客户端自行更新。  
 
 ## <a name="types-and-characteristics-of-administrator-updates"></a>管理员更新的类型和特征
 
@@ -58,7 +61,12 @@ Visual Studio 管理员更新适用于受支持的 Visual Studio 服务版本。
 ::: moniker-end
 
 ::: moniker range=">=vs-2022"
+* **Visual Studio 2022 版本 17.0.3** 更新分类为"安全更新"，将应用于客户端上当前通道或 [17.0 LTSC](/visualstudio/install/update-visual-studio?view=vs-2022&preserve-view=true#configure-source-location-of-updates-1) 通道上的任何 Visual Studio 2022 版本，并更新到 17.0.3 版。  
+* **Visual Studio 2022 版本 17.1.0** 更新（分类为"功能包"）将应用于 Visual Studio 2022 版本，这些版本在当前通道上的客户端上获得企业使用许可，并更新到 17.1.0 版本。 
+* **Visual Studio 2022 版本 17.1.2** 更新仅归类为"更新"，将应用于在当前通道上的客户端上授予企业使用的 Visual Studio 2022 版本，并更新到 17.1.2 版本。 
+* **Visual Studio 2022 版本 17.2.7** 更新分类为"安全更新"，将应用于客户端上当前通道或 17.2 LTSC 通道上的任何 Visual Studio 2022 版本，并更新到 17.2.7 版。 
 
+如果客户端实例大于要应用的管理员更新版本，则管理员更新将不起作用。
 ::: moniker-end
 
 ## <a name="using-configuration-manager-to-deploy-visual-studio-updates"></a>使用 Configuration Manager 部署 Visual Studio 更新
@@ -76,7 +84,7 @@ Visual Studio 管理员更新适用于受支持的 Visual Studio 服务版本。
 
 ::: moniker range=">=vs-2019"
 
-* 服务基线粘性：如上所述，管理员功能更新会将 Visual Studio 安装提升到更新的产品次要版本。 但有时，Visual Studio 用户需要保持在稳定且安全的特定服务基线级别，并想控制其计算机何时提升到更新的次要版本。 若要将客户端计算机配置为保持在某个服务基线上，并忽略发送给它的不需要的管理员功能更新，则需要创建 BaselineStickinessVersions2019 Reg_SZ 数据值并将其设置为一个字符串，该字符串表示客户端计算机须对齐和保持的优选基线。 字符串可以包含允许的服务基线版本，如 16.7.0。  
+* 服务基线粘性：如上所述，管理员功能更新会将 Visual Studio 安装提升到更新的产品次要版本。 但有时，Visual Studio 用户需要保持在稳定且安全的特定服务基线级别，并想控制其计算机何时提升到更新的次要版本。 若要将客户端计算机配置为保持在某个服务基线上，并忽略发送给它的不需要的管理员功能更新，则需要创建 BaselineStickinessVersions2019 Reg_SZ 数据值并将其设置为一个字符串，该字符串表示客户端计算机须对齐和保持的优选基线。 字符串可以包含允许的服务基线版本，例如 **16.9.0**。  
      如果 `BaselineStickinessVersions2019` 注册表值的格式不正确，则将阻止在计算机上安装所有管理员功能更新。 请务必关注[支持的 Visual Studio 功能更新时间范围](/visualstudio/productinfo/vs-servicing-vs)。 另外，不管 `BaselineStickinessVersions2019` 键是否存在或值为多少，虽然从技术上讲是可以应用已达到生存期终点的功能更新，但不建议这样做，因为它们将不再受支持，可能不安全。
 
 ::: moniker-end
@@ -87,7 +95,7 @@ Visual Studio 管理员更新适用于受支持的 Visual Studio 服务版本。
 
 有三种主要方法可用于配置管理员更新：注册表项、客户端计算机上的配置文件或对 Configuration Manager 部署包本身的修改。   
 
-* 注册表项：管理员更新会在任何标准 Visual Studio 位置查找特定的注册表项，如[为企业部署设置默认值](../install/set-defaults-for-enterprise-deployments.md)中所述。 注册表项控制的选项有 AdministratorUpdatesOptOut Reg_DWORD、AdministratorUpdatesOptOut Reg_DWORD 和 BaselineStickinessVersions2019 Reg_SZ 等项  。 需要对客户端计算机具有管理员访问权限才能创建并设置注册表项的值。
+* 注册表项：管理员更新会在任何标准 Visual Studio 位置查找特定的注册表项，如[为企业部署设置默认值](../install/set-defaults-for-enterprise-deployments.md)中所述。 注册表项控制的选项包括 **AdministratorUpdatesEnabled** Reg_DWORD **AdministratorUpdatesOptOut**  Reg_DWORD。 需要对客户端计算机具有管理员访问权限才能创建并设置注册表项的值。
 
 * 配置文件：某些设置可保留在客户端计算机上的可选配置文件中，这样做的好处是只需设置该文件一次，就可以将它应用于以后的所有管理员更新。 配置文件方法的行为类似于注册表项，并且作用于计算机范围内，这意味着它将适用于客户端计算机上安装的所有 Visual Studio 安装。 配置文件的标准位置位于 `C:\ProgramData\Microsoft\VisualStudio\updates.config`。 但是，如果你想要使用另一个位置来存储该文件，则可创建一个名为 UpdateConfigurationFile 的 Reg_SZ 注册表项，并将此项的值设置为你的配置文件的路径。 此注册表项可放置在任何 Visual Studio 注册表位置中，如[为企业部署设置默认值](../install/set-defaults-for-enterprise-deployments.md)中所述。 如果你选择为自定义配置文件位置添加注册表值，则它将查找该文件；如果文件不存在，则会引发异常，并且更新将失败。
 
@@ -119,19 +127,21 @@ Visual Studio 管理员更新适用于受支持的 Visual Studio 服务版本。
 
 管理更新可能返回以下返回代码：  
 
-| 错误代码 | 定义                                                                                                                                                                                                  |
-|------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0          | 已成功安装管理更新。                                                                                                                                                       |
-| 1001       | Visual Studio 安装程序或相关安装过程正在运行。 未应用更新。                                                                                                                   |
-| 1002       | Visual Studio 安装程序已暂停。 未应用更新。                                                                                                                                               |
-| 1003       | Visual Studio 正在运行。 未应用更新。 使用 `--force` 标志可否决此条件。                                                                                              |
-| 1004       | 未检测到 Internet。更新无法与保存更新文件的 Internet 位置联系。 未应用更新。                                                                          |
-| 1005       | AdministratorUpdatesEnabled 注册表值设置为 0 或根本未设置 **** 。 未应用更新。                                                                                            |
-| 1006       | AdministratorUpdatesOptOut 注册表值设置为 1 **** 。 未应用更新。 此项适用于不应由管理员更新的客户端计算机。                     |
-| 1007       | 未安装 Visual Studio 安装程序。                                                                                                                                                               |
-| 1008       | BaselineStickinessVersions2019 注册表值的格式不可读。 注册表值必须包含“All”或生成号显式设置为 0 的有效版本（例如 X.Y.0）。 |
-| 3010       | 系统需要重启。更新可能已应用，也可能未应用。 重启计算机，然后重试更新。                                                                                |
-| 其他      | 尝试应用更新时出错。未应用更新。                                                                                                                                   |
+| 错误代码 | 定义                                                                                                    |
+|------------|---------------------------------------------------------------------------------------------------------------|
+| 0          | 已成功安装管理更新。                                                         |
+| 1001       | Visual Studio 安装程序或相关安装过程正在运行。 未应用更新。                     |
+| 1002       | Visual Studio 安装程序已暂停。 未应用更新。                                                 |
+| 1003       | Visual Studio 正在运行。 未应用更新。 使用 `--force` 标志可否决此条件。 |
+| 1004       | 未检测到 Internet。更新无法与保存更新文件的 Internet 位置联系。 未应用更新。 |
+| 1005       | AdministratorUpdatesEnabled 注册表值设置为 0 或根本未设置 **** 。 未应用更新。 |
+| 1006       | AdministratorUpdatesOptOut 注册表值设置为 1 **** 。 未应用更新。 此项适用于不应由管理员更新的客户端计算机。 |
+| 1007       | 未安装 Visual Studio 安装程序。                                                                 |
+| 1008       | BaselineStickinessVersions2019 注册表值的格式不可读。                            |
+| 1009       | 该Visual Studio实例配置为使用布局，但该布局缺少执行更新的包。 |
+| 3010       | 系统需要重启。更新可能已应用，也可能未应用。 重启计算机，然后重试更新。 |
+| 862968     | 更新成功，建议重启，但不要求重启。                                     |
+| 其他      | 尝试应用更新时出错。未应用更新。                                     |
 
 有关客户端错误代码的详尽列表，请参阅 [使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)。
 
