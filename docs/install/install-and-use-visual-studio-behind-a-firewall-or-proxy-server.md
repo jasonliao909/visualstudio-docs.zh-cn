@@ -1,7 +1,7 @@
 ---
 title: 在防火墙或代理服务器背后安装和使用
 description: 如果组织使用防火墙或代理服务器，请检查希望添加到允许列表或打开的域 URL、端口和协议
-ms.date: 05/07/2021
+ms.date: 02/04/2022
 ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 685433c7d9864803dbfc52254d07719158c21c33
-ms.sourcegitcommit: 215680b355cf613bfa125cf6b864c8bb5f2c71a5
-ms.translationtype: HT
+ms.openlocfilehash: 1435c2510ce9ed21faed1befe73745ab2a790259
+ms.sourcegitcommit: b9c5ca58f380ee102153b69656cb062b3d2dab8c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "132453590"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "138427799"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>在防火墙或代理服务器后面安装和使用 Visual Studio 和 Azure 服务
 
@@ -81,7 +81,7 @@ ms.locfileid: "132453590"
 | developer.apple.com               | Xamarin.iOS provisioning                                                                                                                    |
 | appstoreconnect.apple.com         | Xamarin.iOS provisioning                                                                                                                    |
 | idmsa.apple.com                   | Xamarin.iOS provisioning                                                                                                                    |
-| akamized.net                      | 内容交付网络 (Akamai Technologies)                                                                                              |
+| akamaized.net                      | 内容交付网络 (Akamai Technologies)                                                                                              |
 
 ## <a name="use-visual-studio-and-azure-services"></a>使用 Visual Studio 和 Azure 服务
 

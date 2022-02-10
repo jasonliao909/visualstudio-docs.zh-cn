@@ -1,101 +1,111 @@
 ---
 title: Visual Studio 中的 Git 体验
 titleSuffix: ''
-description: 了解 Visual Studio 中新的集成 Git 体验如何帮助提高工作效率。
-ms.date: 12/06/2021
+description: 了解 Git 如何使源代码管理 Visual Studio 提高工作效率。
+ms.date: 02/06/2022
 ms.topic: overview
 author: Taysser-Gherfal
 ms.author: tglee
 ms.manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 9ef19894ffd48b5cba05ce05754e7881745ed1be
-ms.sourcegitcommit: 64d6c5cf93984bbb22812577af17128cd2239f79
+ms.openlocfilehash: 41f4736d22f5e5674ccf65679dbfe7169d7d5690
+ms.sourcegitcommit: b9c5ca58f380ee102153b69656cb062b3d2dab8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "134366951"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "138427851"
 ---
-# <a name="git-experience-in-visual-studio"></a>Visual Studio 中的 Git 体验
+#  <a name="how-visual-studio-makes-version-control-easy-with-git"></a>Visual Studio 如何利用 Git 使版本控件更简单
+
+你是否曾经希望恢复到旧版本的能正常运行的代码？ 你是否将代码副本手动存储在不同位置作为备份？ 嗯，版本控制就是答案。  
+
+Git 是最广泛使用的新式版本控制系统。 通过 Git，你可以跟踪随时间推移而进行的代码更改，并可以还原到特定版本。  无论你是专业开发人员，还是想要了解如何编码，Visual Studio 的 Git 体验对你都非常有用。 
+
+>[!Tip]
+> 若要了解如何在 Visual Studio 中使用 git 和 GitHub，请在 Visual Studio 上注册 [git 学习系列](https://visualstudio.microsoft.com/vs/github/)，并在网页上 **更好地 GitHub** 。
 
 ::: moniker range=">=vs-2022"
 
-Git 现在是 Visual Studio 中的默认版本控制体验。 我们会继续构建功能集，并根据你的反馈对它进行迭代更新。 若要获取有关最新功能更新的详细信息以及可在其中共享反馈的调查的链接，请参阅 [Visual Studio 中的多存储库支持](https://devblogs.microsoft.com/visualstudio/multi-repo-support-in-visual-studio/)博客文章。
+## <a name="start-with-git--github-in-visual-studio"></a>从 Git 开始 & GitHub Visual Studio
 
-## <a name="learn-more-about-git"></a>了解有关 Git 的详细信息
+具有 Visual Studio 的版本控制可以通过 Git 轻松实现。  我们会与你见面。 你可以使用所选的 Git 提供程序远程工作，如 GitHub 或 Azure DevOps。 或者，你可以在本地工作，根本不使用任何提供程序。  
 
-Git 是使用最广泛的新式版本控制系统，因此，无论你是专业开发人员，还是正在学习编码的人员，Git 都非常有用。 如果你是刚刚接触 Git，可访问 [https://git-scm.com/](https://git-scm.com/) 网站开始了解。 若要了解如何将 Git 和 GitHub与Visual Studio项目一起使用，请注册 Visual Studio 上的 Git 学习系列，GitHub[更好地协作](https://visualstudio.microsoft.com/vs/github/)。
+开始将 Git 与 Visual Studio 配合使用：
 
-## <a name="start-with-git-in-visual-studio"></a>从 Git 开始Visual Studio
+- 如果在 GitHub 的 git 提供程序上承载了 git 存储库，请将[该存储库克隆](git-clone-repository.md)到本地计算机。 
 
-可以通过三种方式开始结合使用 Git 与 Visual Studio 来提高工作效率：
+- 否则，可以[使用创建新的存储库体验轻松地将代码添加到 Git 和 GitHub](git-create-repository.md)。
 
-- [创建新的 Git 存储库](git-create-repository.md)。 如果已有未与 Git 关联的代码，可以先创建新的 Git 存储库。
-- [克隆现有 Git 存储库](git-clone-repository.md)。 如果要处理的代码不在你的计算机上，可以克隆任何现有的远程存储库。
-- [打开现有存储库](git-clone-repository.md#open-an-existing-local-repository)。 如果计算机上已有代码，则可以使用“文件” > “打开” > “项目/解决方案”（或“文件夹”）打开代码，Visual Studio 会自动检测其是否具有已初始化的 Git 存储库   。
+如果还没有 Git 提供程序，我们建议你开始使用 GitHub 因为 Visual Studio 中的 Git 体验针对此提供程序进行了优化。 GitHub 提供免费且安全的云代码存储，你可以在其中存储代码并从任意位置使用任意设备访问它。   
 
-> [!NOTE]
-> Visual Studio 包含完全集成的 GitHub 帐户体验。 你不仅可将 GitHub 和 GitHub Enterprise 帐户添加到密钥链中，还可以像使用 Microsoft 帐户一样使用它们。 有关详细信息，请参阅[在 Visual Studio 中使用 GitHub 帐户](../ide/work-with-github-accounts.md)页面。
+您不仅可以将[GitHub 和 GitHub Enterprise 帐户添加到密钥链](../ide/work-with-github-accounts.md)中，还可以像使用 Microsoft 帐户一样使用它们。  如果没有 GitHub 帐户，请按照以下步骤[创建用于 Visual Studio 的 GitHub 帐户](git-create-github-account.md)。
 
-> [!TIP]
-> 如果没有帐户，可以GitHub创建帐户以用于 GitHub[页](git-create-github-account.md)中概述的步骤Visual Studio步骤。
+如果你是刚刚接触 Git，可访问 [https://git-scm.com/](https://git-scm.com/) 网站开始了解。 
+
+:::image type="content" source="media/git-source-control-create-repository.png" alt-text="Visual Studio 中“创建 Git 存储库”对话框。":::
 
 ## <a name="view-files-in-solution-explorer"></a>解决方案资源管理器中的的视图文件
 
-克隆存储库或打开本地存储库时，Visual Studio询问是否保存并关闭以前打开的任何解决方案和项目后，将切换到新的 Git 上下文。 解决方案资源管理器将在 Git 存储库的根目录中加载文件夹，并在目录树中扫描所有可查看文件。 其中包括 CMakeLists.txt 等文件或具有 .sln 文件扩展名的文件。
+克隆存储库或打开本地存储库时，在询问你是否要保存并关闭以前打开的任何解决方案和项目后，Visual Studio 切换到新的 Git 上下文。 解决方案资源管理器将在 Git 存储库的根目录中加载文件夹，并在目录树中扫描所有可查看文件。 其中包括 CMakeLists.txt 等文件或具有 .sln 文件扩展名的文件。
 
 有关详细信息，请参阅[打开存储库中的项目](../get-started/tutorial-open-project-from-repo.md)教程的[解决方案资源管理器中的视图文件](../get-started/tutorial-open-project-from-repo.md#view-files-in-solution-explorer)部分。
 
-## <a name="day-to-day-workflow"></a>日常工作流
+## <a name="intuitive-inner-loop-workflow"></a>直观的内部循环工作流
 
-Git 使用户能够执行多任务并通过分支试验其代码。 如果你或你的团队同时处理多个功能，或者你想在不影响工作代码的情况下探索想法，分支可能会非常有用。 建议的 Git 工作流将新分支用于你处理的每一项功能或修补程序。 若要详细了解如何在 Visual Studio 创建新分支，请参阅创建[分支](git-create-branch.md)页。
+对于日常 Git 工作流，Visual Studio 提供一种无缝的方式在编码时与 Git 交互，而无需离开代码。 
 
-创建新分支并切换到该分支后，我们可以通过更改现有文件或添加新文件，然后将工作提交到存储库来开始工作。 若要详细了解在 Git 中Visual Studio并更好地了解 Git 中的文件状态，请参阅[提交](git-make-commit.md)页。
+你可以通过分支执行多任务和试验。 如果你或你的团队同时处理多个功能，或者如果想要在不影响你的工作代码的情况下探究创意，则分支非常有用。 建议的 Git 工作流对你使用的每个功能或修复使用一个新分支。 了解如何从 Visual Studio[创建分支](git-create-branch.md)。
 
-Git 是分布式版本控制系统，这意味着到目前为止，我们进行的所有更改都只是本地更改。 若要将这些更改贡献到远程存储库，我们需要将本地提交 () 。 若要详细了解如何推送到远程Visual Studio，请参阅推送[到远程](git-push-remote.md)页。
+创建新分支并切换到该分支后，可以通过更改现有文件或通过添加新的文件，然后将其提交到存储库来开始工作。 若要详细了解如何在 Visual Studio 中进行提交并更好地了解 Git 中的文件状态，请参阅[生成提交](git-make-commit.md)页面。
 
-如果你在团队中工作，或者使用不同的计算机，则还需要在远程存储库上持续提取和拉取新更改。 若要详细了解如何管理 Visual Studio 中的 Git 网络操作，请参阅提取、拉取、[推送和同步](git-fetch-pull-sync.md)页。
+Git 是分布式版本控制系统，这意味着，到目前为止所做的所有更改都是仅本地更改。 若要将这些更改提交到远程存储库，必须将 [这些本地提交 () 推送到远程](git-push-remote.md)存储库。
 
-## <a name="browse-and-manage-git-repositories"></a>浏览和管理 Git 存储库
+如果你在团队中工作，或者如果你正在使用不同的计算机，则你还需要在远程存储库上持续提取并提取新的更改。 若要详细了解如何管理 Visual Studio 中的 Git 网络操作，请参阅[提取、请求、推送和同步](git-fetch-pull-sync.md)页。
 
-对于日常 Git 工作流，Visual Studio在编码时无缝地与 Git 交互，而无需你离开代码。 例如，可以在分支之间创建和切换，可以在处理代码时提交、保存和推送更改。 但是，有时将焦点放在 Git 存储库上会更有意义。 例如，你可能需要了解团队一直在处理什么，或者从另一个分支复制提交，或者只是清理传出提交。
+:::image type="content" source="media/git-source-control-inner-loop.png" alt-text="Visual Studio IDE，显示了解决方案资源管理器中的 Git 菜单和“Git 更改”选项卡。":::
 
-为了帮助你专注于 Git 存储库，Visual Studio Git 存储库窗口，该窗口是存储库中所有详细信息（包括本地和远程分支和提交历史记录）的合并视图。 可以从菜单栏上的“Git”或“视图”，或从状态栏直接访问此窗口 。
+## <a name="repository-management--collaboration"></a>& 协作的存储库管理
 
-若要详细了解如何使用"Git 存储库"窗口浏览和管理 Git 存储库，请参阅以下页面：
+但在某些情况下，将重点放在 Git 存储库上会更有意义。 例如，你可能需要更好地了解团队正在处理的内容，或从其他分支复制提交，或者只是清理传出提交。  Visual Studio 包含功能强大的[存储库浏览](git-browse-repository.md)和协作功能，无需使用其他工具。 
+
+为了帮助你专注于 git 存储库，Visual Studio 有一个 **Git 存储库** 窗口，它是存储库中所有详细信息的合并视图，包括本地和远程分支以及提交历史记录。 可以从菜单栏上的“Git”或“视图”，或从状态栏直接访问此窗口 。
+
+:::image type="content" source="media/git-source-control-repository-management.png" alt-text="Visual Studio IDE，突出显示了解决方案资源管理器中的 Git 菜单和“Git 更改”选项卡。":::
+
+### <a name="browse-and-manage-git-repositories"></a>浏览和管理 Git 存储库
+
+若要详细了解如何使用 Git 存储库窗口来浏览和管理 Git 存储库，请参阅以下页面：
 
 - [在 Visual Studio 中浏览存储库](git-browse-repository.md)
 - [在 Visual Studio 中管理存储库](git-manage-repository.md)
 
-## <a name="handle-merge-conflicts"></a>处理合并冲突
+### <a name="handle-merge-conflicts"></a>处理合并冲突
 
-如果两个开发人员修改了一个文件中相同的行，而 Git 不会自动知道哪一行是正确的，则合并期间可能会发生冲突。 Git 暂停合并，并通知你处于冲突状态。
+如果两个开发人员在文件中修改了相同的行，而 Git 不会自动知道哪一个是正确的，则可能会发生冲突。 Git 暂停合并，并通知你处于冲突状态。
 
 若要了解有关合并冲突以及如何处理它们的详细信息，请参阅[解决合并冲突](git-resolve-conflicts.md)页。
 
-## <a name="personalize-your-git-settings"></a>个性化设置 Git 设置
+### <a name="personalize-your-git-settings"></a>个性化设置 Git 设置
 
 若要在存储库级别和全局级别对 Git 设置进行个性化设置和自定义，请转到菜单栏上的“Git” > “设置”，或转到菜单栏上的“工具” > “选项” > “源代码管理”    。 然后选择所需的[选项](git-settings.md)。
 
 :::image type="content" source="media/git-options-settings.png" alt-text="Visual Studio IDE 中的“选项”对话框，可以在该对话框中选择个性化设置和自定义设置。":::
 
-## <a name="whats-next"></a>后续步骤
 
-我们将继续添加新功能，以增强 Visual Studio 中的 Git 体验。 有关最新功能更新以及可在其中分享反馈的调查链接，请参阅以下博客文章中的多存储库[Visual Studio支持。](https://devblogs.microsoft.com/visualstudio/multi-repo-support-in-visual-studio/) 如果要在预览版中查看 Git 体验的新更新，可以从 Visual Studio [2022 预览](https://visualstudio.microsoft.com/vs/preview/)版页下载并安装它。
+## <a name="enhanced-experience--feedback"></a>& 反馈的增强体验
 
-> [!IMPORTANT]
-> 如果你对我们有任何建议，请告诉我们！ 我们非常感激能够通过[开发人员社区](https://aka.ms/vs-suggest)门户与你交流设计决策。
+我们将继续添加新功能，以增强 Visual Studio 中的 Git 体验。 有关最新功能的详细信息以及可以共享反馈的调查，请参阅 Visual Studio 博客文章[中的多](https://devblogs.microsoft.com/visualstudio/multi-repo-support-in-visual-studio/)存储库支持。 
 
-## <a name="see-also"></a>另请参阅
+若要尝试更新预览版中的 Git 体验，请从[Visual Studio 2022 预览](https://visualstudio.microsoft.com/vs/preview/)页面下载和安装。 有关每个版本的详细信息，请阅读我们的[Visual Studio 2022 发行说明](/visualstudio/releases/2022/release-notes)。
 
-- [Visual Studio 和 GitHub：更好地协同工作](https://visualstudio.microsoft.com/vs/github/)
-- [Visual Studio 2022 发行说明](/visualstudio/releases/2022/release-notes)
+如果你对我们有任何建议，请告诉我们！ 我们非常感激能够通过[开发人员社区](https://aka.ms/vs-suggest)门户与你交流设计决策。
 
 ::: moniker-end
 
 ::: moniker range="<=vs-2019"
 
-Git 现在是 **2019** Visual Studio版本控制体验。 从[版本 16.6](/visualstudio/releases/2019/release-notes-v16.6) 开始，我们致力于构建功能集，并根据你的反馈对其进行迭代。 在 [16.8 版本](/visualstudio/releases/2019/release-notes-v16.8)中，它成为每个人的默认版本控制体验。
+Git 现在是 **Visual Studio 2019** 中的默认版本控制体验。 从[版本 16.6](/visualstudio/releases/2019/release-notes-v16.6) 开始，我们致力于构建功能集，并根据你的反馈对其进行迭代。 在 [16.8 版本](/visualstudio/releases/2019/release-notes-v16.8)中，它成为每个人的默认版本控制体验。
 
 > [!NOTE]
 > 我们也会继续在 [Visual Studio 2022](/visualstudio/releases/2022/release-notes-preview) 中构建 Git 功能集并进行迭代更新。 若要了解最新功能更新的详细信息，请参阅 [Visual Studio 中的多存储库支持](https://devblogs.microsoft.com/visualstudio/multi-repo-support-in-visual-studio/)博客文章。
@@ -104,7 +114,7 @@ Git 现在是 **2019** Visual Studio版本控制体验。 从[版本 16.6](/visu
 
 Git 是使用最广泛的新式版本控制系统，因此，无论你是专业开发人员，还是正在学习编码的人员，Git 都非常有用。 如果你是刚刚接触 Git，可访问 [https://git-scm.com/](https://git-scm.com/) 网站开始了解。 你可以从该网站找到速查表、畅销在线图书和 Git 基础知识视频。
 
-## <a name="start-with-git-in-visual-studio-2019"></a>从 2019 Visual Studio Git 开始
+## <a name="start-with-git-in-visual-studio-2019"></a>Visual Studio 2019 中的 Git 入门
 
 我们将引导你逐步使用 Visual Studio 中的新 Git 体验，但若要先进行快速导览，请观看以下视频： <br><br>*视频长度：* 5.27 分钟
 
@@ -112,17 +122,17 @@ Git 是使用最广泛的新式版本控制系统，因此，无论你是专业�
 
 可以通过三种方式开始结合使用 Git 与 Visual Studio 来提高工作效率：
 
-- [创建新的 Git 存储库](#create-a-new-git-repository-in-visual-studio-2019)。 如果已有未与 Git 关联的代码，可以先创建新的 Git 存储库。
-- [克隆现有 Git 存储库](#clone-an-existing-git-repository-in-visual-studio-2019)。 如果要处理的代码不在你的计算机上，可以克隆任何现有的远程存储库。
+- [创建新的 Git 存储库](#create-a-new-git-repository-in-visual-studio-2019)。 如果你已有不与 Git 关联的代码，则可以首先创建一个新的 Git 存储库。
+- [克隆现有 Git 存储库](#clone-an-existing-git-repository-in-visual-studio-2019)。 如果要处理的代码不在计算机上，可以克隆任何现有的远程存储库。
 - [打开现有 Git 存储库](#open-an-existing-local-repository-in-visual-studio-2019)。 如果计算机上已有代码，则可以使用“文件” > “打开” > “项目/解决方案”（或“文件夹”）打开代码，Visual Studio 会自动检测其是否具有已初始化的 Git 存储库   。
 
 > [!NOTE]
 > 自 [16.8 版本](/visualstudio/releases/2019/release-notes-v16.8)起，Visual Studio 2019 包含完全集成的 GitHub 帐户体验。 你现在可以将 GitHub 和 GitHub Enterprise 帐户都添加到密钥链中。 你可以添加并使用这些帐户，就像使用 Microsoft 帐户一样，也就是说，你将能够更轻松地跨 Visual Studio 访问 GitHub 资源。 有关详细信息，请参阅[在 Visual Studio 中使用 GitHub 帐户](../ide/work-with-github-accounts.md)页面。
 
 > [!TIP]
-> 如果没有帐户，可以GitHub创建帐户以用于 GitHub[页](git-create-github-account.md)中概述的步骤Visual Studio步骤。
+> 如果没有 GitHub 帐户，则可以按照[创建要用于 Visual Studio 的 GitHub 帐户](git-create-github-account.md)页中所述的步骤开始操作。
 
-## <a name="create-a-new-git-repository-in-visual-studio-2019"></a>在 2019 Visual Studio Git 存储库
+## <a name="create-a-new-git-repository-in-visual-studio-2019"></a>在 Visual Studio 2019 中创建新的 Git 存储库
 
 如果你的代码未与 Git 关联，则可以首先创建一个新的 Git 存储库。 为此，请从菜单栏中选择“Git” > “创建 Git 存储库” 。 然后，在“创建 Git 存储库”对话框中，输入你的信息。
 
@@ -282,14 +292,11 @@ Visual Studio 中的合并编辑器是一种三向合并工具，用于显示传
 
 :::image type="content" source="media/git-opt-new-user-experience.png" alt-text="Visual Studio 中“选项”对话框的“预览功能”部分 ":::
 
-## <a name="whats-next"></a>后续步骤
+## <a name="see-also"></a>请参阅
 
-如果你使用的是 Visual Studio 2019，但你想要在下一个版本中查看对 Git 体验的新更新，可以从[Visual Studio 2022 中的 "新增功能](../ide/whats-new-visual-studio-2022.md)" 页下载 & 安装。
-
-## <a name="see-also"></a>另请参阅
-
-- Microsoft Learn 上的 [Visual Studio 2019 中的 Git 和 GitHub 入门](/learn/modules/visual-studio-github-push/)教程
+- [Visual Studio 2019 中的 Git 新体验](git-with-visual-studio.md?view=vs-2019&preserve-view=true)
+- [在 Visual Studio 2019 中并行比较 Git 和团队资源管理器](git-team-explorer-feature-comparison.md?view=vs-2019&preserve-view=true)
 - [在 Visual Studio 中使用 GitHub 帐户](../ide/work-with-github-accounts.md)
 - [Visual Studio 2019 发行说明](/visualstudio/releases/2019/release-notes)
-
+- 若要详细了解如何在 Visual Studio 2019 中使用 Git 和 GitHub，请观看以下 YouTube 视频：[在 Visual studio 中开始使用 Git](https://www.youtube.com/watch?v=GCZ9x3yqkyc&list=PLReL099Y5nRc-zbaFbf0aNcIamBQujOxP)
 ::: moniker-end

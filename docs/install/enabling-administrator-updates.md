@@ -2,7 +2,7 @@
 title: 启用使用 Microsoft Endpoint Configuration Manager 的 Visual Studio 管理员更新
 titleSuffix: ''
 description: 详细了解如何部署 Visual Studio 的管理员更新。
-ms.date: 12/7/2021
+ms.date: 02/04/2022
 ms.topic: overview
 ms.assetid: 546fbad6-f12b-49cf-bccc-f2e63e051a18
 author: anandmeg
@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0649ea754e53a2972f1329e06ac3316210a6aa22
-ms.sourcegitcommit: d38d1b083322019663fec7d1d85a4cda456aadca
+ms.openlocfilehash: 32c6bed1fb8b039f76accb2a35f6406d24202ac3
+ms.sourcegitcommit: b9c5ca58f380ee102153b69656cb062b3d2dab8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "135534051"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "138427838"
 ---
 # <a name="enabling-administrator-updates-to-visual-studio-with-microsoft-endpoint-configuration-manager"></a>启用使用 Microsoft Endpoint Configuration Manager 的 Visual Studio 管理员更新
 
@@ -60,13 +60,13 @@ Microsoft Endpoint Configuration Manager (SCCM) 可使用软件更新管理工�
 
 ### <a name="visual-studio-client-detector-utility"></a>Visual Studio 客户端检测程序实用工具
 
-必须在客户端计算机上安装 [Visual Studio 客户端检测程序实用工具](https://support.microsoft.com/help/5001148)，才能正确识别和接收管理员更新。 此实用工具包含在 2020 年 5 月 12 日或之后发布的所有 Visual Studio 2017 和 Visual Studio 2019 产品更新中，它作为所有 Visual Studio 管理员更新的先决条件包含在内，并且它也可在[Microsoft 更新](https://catalog.update.microsoft.com)目录中独立安装。
+必须在客户端计算机上安装 [Visual Studio 客户端检测程序实用工具](https://support.microsoft.com/help/5001148)，才能正确识别和接收管理员更新。 此实用工具包含在 2020 年 5 月 12 日或之后发布的所有 Visual Studio 2017 和 Visual Studio 2019 产品更新中，它作为所有 Visual Studio 管理员更新的先决条件包含在内，并且它也可在 [Microsoft 更新](https://catalog.update.microsoft.com) 目录中独立安装。
 
 ### <a name="encoding-administrator-intent-on-the-client-machines"></a>在客户端计算机上对管理员意向进行编码
 
 必须使客户端计算机能够接收管理员更新。 此步骤是必需步骤，以确保不会无意或意外地将更新推送到毫无准备的客户端计算机。
 
-AdministratorUpdatesEnabled 项专为管理员而设计，用于对管理员意向进行编码 **** 。 此项可位于任何标准 Visual Studio 位置，如 [为 Visual Studio 企业部署设置默认值](set-defaults-for-enterprise-deployments.md)文档中所述。 需要对客户端计算机具有管理员访问权限才能创建并设置此项的值。
+AdministratorUpdatesEnabled 项专为管理员而设计，用于对管理员意向进行编码 **** 。 此密钥可以位于任何标准[注册表Visual Studio位置](set-defaults-for-enterprise-deployments.md)。 需要对客户端计算机具有管理员访问权限才能创建并设置此项的值。
 
 * 若要将客户端计算机配置为接受管理员更新，请将 AdministratorUpdatesEnabled REG_DWORD 项设置为 1 ****  **** 。
 * 如果 AdministratorUpdatesEnabled REG_DWORD 项缺失或设置为 0，则将阻止管理员更新应用于客户端计算机 **** 。
@@ -89,7 +89,6 @@ AdministratorUpdatesEnabled 项专为管理员而设计，用于对管理员�
 * [Visual Studio 管理员指南](../install/visual-studio-administrator-guide.md)
 * [Visual Studio 产品生命周期和维护](/visualstudio/productinfo/vs-servicing-vs)
 * [Visual Studio 2019 发行说明](/visualstudio/releases/2019/release-notes)
-* [Visual Studio 2017 发行说明](/visualstudio/releasenotes/vs2017-relnotes)
 * [安装 Visual Studio](../install/install-visual-studio.md)
 * [Microsoft 更新目录常见问题解答](https://www.catalog.update.microsoft.com/faq.aspx)
 * [Microsoft Endpoint Configuration Manager (SCCM) 文档](/mem/configmgr)

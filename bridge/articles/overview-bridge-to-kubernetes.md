@@ -9,118 +9,131 @@ keywords: Bridge to Kubernetes, Docker, Kubernetes, Azure, 容器
 manager: jmartens
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: e9df0cb802a08a45fdceabffebda807709744400
-ms.sourcegitcommit: b43e499ba15be1d6eb7ff5973b990a03569d90b5
+ms.openlocfilehash: bcc09886dc6daae1e777cf0687913ff1420e527b
+ms.sourcegitcommit: b9c5ca58f380ee102153b69656cb062b3d2dab8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "137032644"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "138427719"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Kubernetes 桥接的工作原理
 
-**Bridge to Kubernetes** 是一种迭代开发工具，适用于创作面向 Kubernetes 的微服务应用程序的开发人员。 Bridge to Kubernetes扩展可用于Visual Studio VS Code。  使用 Bridge to Kubernetes，在开发计算机上运行和调试唯一需要处理微服务和首选开发工具。
- 
-通过 Bridge to Kubernetes，你可在开发计算机上运行和调试代码，而不中断 Kubernetes 群集与其余应用程序或服务的连接。 例如，如果你有一个包含许多相互依赖的服务和数据库的大型微服务体系结构，则在开发计算机上复制这些依赖项可能会很困难。 此外，在内部循环开发期间，针对每次代码更改生成代码并将其部署到 Kubernetes 群集可能会缓慢、耗时且难以与调试程序一起使用。
+*Bridge to Kubernetes* 是一种迭代开发工具，用于创作面向 Kubernetes 的微服务应用程序。 Bridge to Kubernetes扩展可用于Visual Studio Visual Studio Code (VS Code) 。
 
-Bridge to Kubernetes 可直接在开发计算机与群集之间创建连接，而无需生成代码并将其部署到群集。 通过在调试时将开发计算机连接到群集，可以在完整应用程序的上下文中快速测试和开发服务，而无需创建任何 Docker 或 Kubernetes 配置。
+Bridge to Kubernetes允许在开发计算机上运行和调试代码。 该计算机仍使用应用程序或服务的其余部分连接到 Kubernetes 群集。 如果具有具有许多相互依赖的服务和数据库的大型微服务体系结构，则很难在开发计算机上复制这些依赖项。 每次代码更改时，生成代码并部署到 Kubernetes 群集可能会很慢、耗时且困难。
 
-Bridge to Kubernetes 可重定向已连接的 Kubernetes 群集与开发计算机之间的流量。 此流量重定向允许开发计算机上的代码与 Kubernetes 群集中运行的服务进行通信，就像它们位于同一个 Kubernetes 群集中一样。 Bridge to Kubernetes 还提供了一种方法来复制开发计算机中可用于 Kubernetes 群集中 pod 的环境变量和已装载的卷。 允许访问开发计算机上的环境变量和已装载卷，可以快速处理代码而无需手动复制这些依赖项。
+Bridge to Kubernetes在开发计算机和群集之间创建连接。 此方法可避免生成代码并部署到群集。 可以在连接到群集的上下文中测试和开发服务。 此方法允许你进行调试，而无需创建任何其他 Docker 或 Kubernetes 配置。
 
-在 Visual Studio Code 中，Bridge to Kubernetes 支持所有语言，只要可以在本地运行。 在 Visual Studio 中，Bridge to Kubernetes 支持 .NET Core，但不支持 .NET Framework，因为它需要 Windows 节点支持，而 Bridge to Kubernetes 没有。
+Bridge to Kubernetes 可重定向已连接的 Kubernetes 群集与开发计算机之间的流量。 Kubernetes 群集中的本地代码和服务可以像在同一 Kubernetes 群集中一样进行通信。
 
-> [!WARNING]
+Bridge to Kubernetes将 Kubernetes 群集中的环境变量和装载的卷复制到开发计算机。 通过访问环境变量和已装载的卷，无需复制这些依赖项即可处理代码。
+
+## <a name="requirements"></a>要求
+
+若要Bridge to Kubernetes，需要以下配置之一：
+
+- VS Code安装了 Bridge to Kubernetes [扩展。](https://aka.ms/bridge-to-k8s-vsc-extension)
+- [Visual Studio 2019][visual-studio] 版本 16.7 或更高版本，Windows 10或更高版本。 请确保已安装 *ASP.NET 和 Web 开发* 工作负载。 安装 [Bridge to Kubernetes 扩展][btk-extension]。
+
+可以使用 Bridge to Kubernetes 与 Kubernetes 群集建立连接。 此连接将群集中现有 Pod 的流量重定向到开发计算机。此连接将流量重定向到开发计算机。
+
+> [!NOTE]
+> 使用 Bridge to Kubernetes 时，系统将提示你输入要重定向到开发计算机的服务的名称。 使用此选项可以方便地识别用于重定向的 pod。 Kubernetes 群集与开发计算机之间的所有重定向都适用于 pod。 有关详细信息，请参阅 [使服务可用](configure-bridge-to-kubernetes.md#make-a-service-available)。
+
+在 VS Code中，Bridge to Kubernetes支持所有语言，只要可以在本地运行它们。 在 Visual Studio 中，Bridge to Kubernetes支持 .NET Core。 Bridge to Kubernetes不支持在 .NET Framework 中Visual Studio，因为它需要Windows节点支持。
+
+> [!CAUTION]
 > Bridge to Kubernetes 仅适用于开发和测试场景。 它不适合用于生产群集或正在使用的实时服务，也不支持这样做。
 
-有关当前支持的功能以及 Bridge to Kubernetes 的未来路线图，请访问 [Bridge to Kubernetes 路线图](https://github.com/microsoft/mindaro/projects/1)。
+有关当前功能和将来的计划，请参阅Bridge to Kubernetes [路线图](https://github.com/microsoft/mindaro/projects/1)。
+
+## <a name="establishing-a-connection"></a>建立连接
+
+当Bridge to Kubernetes与群集建立连接时，它会执行以下操作：
+
+- 提示你在群集上配置要替换的服务，在开发计算机上配置用于代码的端口，并将代码的启动任务配置为一次性操作。
+- 将群集上 pod 中的容器替换为远程代理容器，它会将流量重定向到开发计算机。
+- 在开发计算机上运行 [kubectl port-forward][kubectl-port-forward]，将流量从开发计算机转发到群集中运行的远程代理。
+- 使用远程代理从群集收集环境信息。 此环境信息包括环境变量、可见服务、卷装载和机密装载。
+- 在 Visual Studio 中设置环境，以便开发计算机上的服务可以访问相同变量，就像它在该群集上运行一样。
+- 更新 *主机文件* ，将群集上的服务映射到开发计算机上的本地 IP 地址。 *这些主机* 文件条目允许开发计算机上运行的代码向群集中运行的其他服务请求。 若要更新 *主机文件* ，Bridge to Kubernetes计算机上需要管理员访问权限。
+- 开始在开发计算机上运行和调试代码。 如有必要，Bridge to Kubernetes停止当前使用这些端口的服务或进程，释放开发计算机上所需的端口。
 
 ## <a name="using-bridge-to-kubernetes"></a>使用 Bridge to Kubernetes
 
-若要在 Visual Studio 中使用 Bridge to Kubernetes，你需要安装了 [Bridge to Kubernetes 扩展](https://aka.ms/bridge-to-k8s-vsc-extension)的 VS Code，或者在 Windows 10 上运行、安装了 ASP.NET 和 Web 开发工作负载及 [Bridge to Kubernetes 扩展][btk-extension]的 [Visual Studio 2019][visual-studio] 版本 16.7 预览版 4 或更高版本。 使用 Bridge to Kubernetes 建立与 Kubernetes 群集的连接时，可以选择将所有流量重定向到群集中的现有 pod，或将所有流量从群集中的现有 pod 重定向到开发计算机。
+与群集建立连接后，在计算机上以本机方式运行和调试代码，而无需容器化。 代码与群集交互。 远程代理接收的任何网络流量都重定向到连接期间指定的本地端口。 本机运行的代码可以接受并处理该流量。 群集中的环境变量、卷和机密可供开发计算机上运行的代码使用。
 
-> [!NOTE]
-> 使用 Bridge to Kubernetes 时，系统将提示你输入要重定向到开发计算机的服务的名称。 使用此选项可以方便地识别用于重定向的 pod。 Kubernetes 群集与开发计算机之间的所有重定向都适用于 pod。
-
-Bridge to Kubernetes 与群集建立连接时会执行以下操作：
-
-* 提示你在群集上配置要替换的服务，在开发计算机上配置用于代码的端口，并将代码的启动任务配置为一次性操作。
-* 将群集上 pod 中的容器替换为远程代理容器，它会将流量重定向到开发计算机。
-* 在开发计算机上运行 [kubectl port-forward][kubectl-port-forward]，将流量从开发计算机转发到群集中运行的远程代理。
-* 使用远程代理从群集收集环境信息。 此环境信息包括环境变量、可见服务、卷装载和机密装载。
-* 在 Visual Studio 中设置环境，以便开发计算机上的服务可以访问相同变量，就像它在该群集上运行一样。
-* 更新主机文件，以将群集上的服务映射到开发计算机上的本地 IP 地址。 这些主机文件条目允许开发计算机上运行的代码向群集中运行的其他服务发出请求。 为更新主机文件，Bridge to Kubernetes 将在连接到群集时请求对开发计算机的管理员访问权限。
-* 开始在开发计算机上运行和调试代码。 如有必要，Bridge to Kubernetes 将释放开发计算机上的所需端口，方法是停止当前正在使用这些端口的服务或进程。
-
-建立与群集的连接后，可以在计算机上本机运行和调试代码，而无需容器化，并且代码可以直接与群集的其余部分交互。 在连接期间，远程代理接收的任何网络流量都将重定向到指定的本地端口，让本机运行的代码可以接受和处理该流量。 群集中的环境变量、卷和机密可供开发计算机上运行的代码使用。 此外，由于 Bridge to Kubernetes 将主机文件条目和端口转发添加到了开发人员计算机，因此你的代码可以使用群集中的服务名称向群集上运行的服务发送网络流量，将该流量转发到群集中正在运行的服务。 在整个连接期间，流量在开发计算机和群集之间路由。
+Bridge to Kubernetes *主机文件* 条目和端口转发添加到开发人员计算机。 代码可以使用群集中的服务名称将网络流量发送到群集上运行的服务。 该流量将转发到群集中运行的服务。 在整个连接期间，流量在开发计算机和群集之间路由。
 
 此外，Bridge to Kubernetes 还提供了一种方法，通过 `KubernetesLocalProcessConfig.yaml` 文件复制开发计算机中可用于群集中 Pod 的环境变量和已装载的文件。 还可以使用此文件创建新的环境变量和卷装载。
 
 > [!NOTE]
-> 在连接到群集期间（加上额外的 15 分钟），Bridge to Kubernetes 将使用本地计算机上的管理员权限来运行名为 EndpointManager 的进程。
+> 在连接到群集期间加上 15 分钟，Bridge to Kubernetes在本地计算机上运行名为 *EndpointManager* 的进程。
 
-> [!NOTE]
-> 你可以对多个服务进行并行调试，但是需要启动与要调试的服务一样多的 Visual Studio 实例。 确保服务在本地侦听不同的端口，然后单独对其进行配置和调试。 此场景下不支持隔离。
+可以使用多个服务并行调试。 启动多个实例Visual Studio要调试的服务一样。 确保服务在本地侦听不同的端口。 单独配置和调试它们。 此方案不支持隔离。
 
-## <a name="additional-configuration-with-kuberneteslocalprocessconfigyaml"></a>KubernetesLocalProcessConfig.yaml 的其他配置
+### <a name="additional-configuration"></a>其他配置
 
-使用 `KubernetesLocalProcessConfig.yaml` 文件可以将环境变量和已装载文件复制到群集中的 Pod。 当使用 Visual Studio 进行 Bridge to Kubernetes 开发时，KubernetesLocalConfig.yaml 文件必须与要重定向的服务的项目文件位于同一目录中。 有关其他配置选项的详细信息，请参阅[配置 Bridge to Kubernetes][using-config-yaml]。
+*KubernetesLocalProcessConfig.yaml* 文件允许复制可用于群集中 Pod 的环境变量和已装载文件。 使用 Visual Studio时，*KubernetesLocalConfig.yaml* 文件必须与服务的项目文件位于同一目录中。 有关详细信息，请参阅[配置 Bridge to Kubernetes][using-config-yaml]。
 
-## <a name="using-routing-capabilities-for-developing-in-isolation"></a>使用路由功能进行独立开发
+### <a name="using-routing-capabilities-for-developing-in-isolation"></a>使用路由功能进行独立开发
 
-默认情况下，Bridge to Kubernetes 将单个服务的所有流量重定向到开发计算机。 你还可以选择使用路由功能，仅将从某个子域发起的针对某个服务的请求重定向到开发计算机。 通过这些路由功能，你可以使用 Bridge to Kubernetes 在隔离模式下进行开发，从而避免中断群集中的其他流量。
+默认情况下，Bridge to Kubernetes 将单个服务的所有流量重定向到开发计算机。 可以改为使用路由功能仅将请求从子域重定向到开发计算机。 通过这些路由功能，你可以使用 Bridge to Kubernetes 在隔离模式下进行开发，从而避免中断群集中的其他流量。
 
 以下动画显示了两个开发者独立处理同一群集：
 
-![演示独立处理的动画 GIF](media/bridge-to-kubernetes/btk-graphic-isolated.gif)
+![动画显示隔离，两个开发人员使用同一群集。](media/bridge-to-kubernetes/btk-graphic-isolated.gif)
 
-启用隔离工作模式后，除了连接到 Kubernetes 群集，Bridge to Kubernetes 还会执行以下操作：
+启用隔离工作时，Bridge to Kubernetes除了连接到 Kubernetes 群集外，还执行以下操作：
 
-* 验证 Kubernetes 群集是否未启用 Azure Dev Spaces。
-* 复制同一命名空间的群集中的所选服务，并添加 routing.visualstudio.io/route-from=SERVICE_NAME 标签和 routing.visualstudio.io/route-on-header=kubernetes-route-as=GENERATED_NAME 注释。 
-* 在 Kubernetes 群集上的同一命名空间中配置并启动路由管理器。 在命名空间中配置路由时，路由管理器使用标签选择器查找 routing.visualstudio.io/route-from=SERVICE_NAME 标签和 routing.visualstudio.io/route-on-header=kubernetes-route-as=GENERATED_NAME 注释。 
+- 验证 Kubernetes 群集是否未启用 Azure Dev Spaces。
+- 复制同一命名空间的群集中的所选服务，并添加 routing.visualstudio.io/route-from=SERVICE_NAME 标签和 routing.visualstudio.io/route-on-header=kubernetes-route-as=GENERATED_NAME 注释。 
+- 在 Kubernetes 群集上的同一命名空间中配置并启动路由管理器。 在命名空间中配置路由时，路由管理器 *routing.visualstudio.io/route-from=SERVICE_NAME 标签和* routing.visualstudio.io/route-on-header=kubernetes-route-as=GENERATED_NAME 批注。
 
-如果 Bridge to Kubernetes 检测到已在 Kubernetes 群集上启用 Azure Dev Spaces，系统将提示你禁用 Azure Dev Spaces，然后才能使用 Bridge to Kubernetes。
+> [!NOTE]
+> Bridge to Kubernetes检查Azure Dev Spaces Kubernetes 群集上是否启用了此配置。 它会提示你先禁用Azure Dev Spaces，然后才能使用Bridge to Kubernetes。
 
 路由管理器在启动时执行以下操作：
 
-* 使用子域的 GENERATED_NAME 复制在命名空间中找到的所有流入量（包括负载均衡器流入量）。
-* 使用 GENERATED_NAME 子域为与复制的流入量关联的每个服务创建 envoy pod。
-* 为正在独立使用的服务创建一个额外的 envoy pod。 这允许将包含子域的请求路由到开发计算机。
-* 为每个 envoy pod 配置传递规则，以处理包含子域的服务的路由。
+- 使用子域的 GENERATED_NAME 复制命名空间中发现的所有入口（ *包括负载均衡器* 入口）。
+- 使用 GENERATED_NAME 子域为与复制的流入量关联的每个服务创建 envoy pod。
+- 为正在独立处理的服务创建另一个 Envoy Pod。 此配置允许将子域的请求路由到开发计算机。
+- 为每个 envoy pod 配置传递规则，以处理包含子域的服务的路由。
 
 下图显示了在 Bridge to Kubernetes 连接到群集之前的 Kubernetes 群集：
 
-![没有 Bridge to Kubernetes 的群集的示意图](media/bridge-to-kubernetes/kubernetes-cluster.svg)
+![不带任何元素的Bridge to Kubernetes。](media/bridge-to-kubernetes/kubernetes-cluster.svg)
 
 下图显示了在隔离模式下启用 Bridge to Kubernetes 的同一集群。 从该图中，你可以看到复制服务和支持独立路由的 envoy pod。
 
-![启用了 Bridge to Kubernetes 的群集的示意图](media/bridge-to-kubernetes/kubernetes-cluster-dev-computer.svg)
+![已启用群集的Bridge to Kubernetes关系图。](media/bridge-to-kubernetes/kubernetes-cluster-dev-computer.svg)
 
-当群集上收到的请求包含 GENERATED_NAME 子域时，将向该请求中添加 kubernetes-route-as=GENERATED_NAME 标头 。 Envoy pod 负责将该请求路由到群集中的相应服务。 如果请求被路由到你正在独立使用的服务，则远程代理会将该请求重定向到开发计算机。
+当群集收到包含 GENERATED_NAME 域的请求时，它会将 *kubernetes-route-as=* GENERATED_NAME标头添加到该请求。 Envoy pod 负责将该请求路由到群集中的相应服务。 对于对独立处理的服务的请求，群集会将请求重定向到远程代理的开发计算机。
 
-如果群集上收到的请求不包含 GENERATED_NAME 子域，则不会向该请求中添加标头。 Envoy pod 负责将该请求路由到群集中的相应服务。 如果请求被路由到正被替换的服务，则该请求将被路由到原始服务而不是远程代理。
+当群集收到请求而不GENERATED_NAME域时，它不会向请求添加标头。 Envoy pod 负责将该请求路由到群集中的相应服务。 对于正在替换的服务的请求，该 pod 会将其路由到原始服务而不是远程代理。
 
 > [!IMPORTANT]
 > 发出额外请求时，群集上的每个服务都必须转发 kubernetes-route-as=GENERATED_NAME 标头。 例如，当 serviceA 收到请求时，它会先向 serviceB 发出请求，然后再返回响应 。 在此示例中，serviceA 需要将其请求中的 kubernetes-route-as=GENERATED_NAME 标头转发到 serviceB  。 某些语言（如 [ASP.NET][asp-net-header]）可能具有处理标头传播的方法。
 
-默认情况下，断开与群集的连接时，Bridge to Kubernetes 将删除所有 envoy pod 和复制的服务。
+断开与群集的连接时，默认情况下，桥接到 Kubernetes 会删除所有 envoy pod 和重复的服务。
 
 > [!NOTE]
-> 路由管理器部署和服务将仍在命名空间中保持运行状态。 要删除部署和服务，请对命名空间运行以下命令。
+> 路由管理器部署和服务在你的命名空间中保持运行。 要删除部署和服务，请对命名空间运行以下命令。
 >
 > ```azurecli
 > kubectl delete deployment routingmanager-deployment -n NAMESPACE
 > kubectl delete service routingmanager-service -n NAMESPACE
 > ```
 
-## <a name="diagnostics-and-logging"></a>诊断和日志记录
+### <a name="diagnostics-and-logging"></a>诊断和日志记录
 
-使用 Bridge to Kubernetes 连接到群集时，会将群集中的诊断日志记录到开发计算机的 Bridge to Kubernetes 文件夹中的 TEMP 目录 。
+使用 Bridge Kubernetes 连接到群集时，计算机将记录诊断。 它将其存储在你的开发计算机的 *TEMP* 目录中，并将其存储在 *Kubernetes* 文件夹中。
 
-## <a name="rbac-authorization"></a>RBAC 授权
+### <a name="kubernetes-rbac-authorization"></a>Kubernetes RBAC 授权
 
-Kubernetes 提供了基于角色的访问控制 (RBAC) 来管理用户和组的权限。 有关信息，请参阅 [Kubernetes 文档](https://kubernetes.io/docs/reference/access-authn-authz/rbac/) 可以通过创建 YAML 文件并使用 `kubectl` 将其应用到群集，来设置对启用了 RBAC 的群集的权限。 
+Kubernetes 提供了基于角色的访问控制 (RBAC) 来管理用户和组的权限。 有关信息，请参阅 [Kubernetes 文档](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)。 可以通过创建 YAML 文件并使用 `kubectl` 将其应用于群集，来设置启用了 RBAC 的群集的权限。
 
-若要设置对群集的权限，请将自己的命名空间用于 `<namespace>` 并使用需要访问权限的使用者（用户和组），创建或修改 YAML 文件（如下所示的 permissions.yml）。
+若要设置群集的权限，请创建或修改 YAML 文件，例如 *docker-compose.override.yml*。 将命名空间用于 `<namespace>` 和需要访问的用户和组。
 
 ```yml
 kind: RoleBinding
@@ -151,14 +164,10 @@ kubectl -n <namespace> apply -f <yaml file name>
 
 Bridge to Kubernetes 具有以下限制：
 
-* 要使 Bridge to Kubernetes 成功连接，一个 pod 只能有一个容器在该 pod 中运行。
-* 目前，Bridge to Kubernetes pod 必须是 Linux 容器。 不支持 Windows 容器。
-* Bridge to Kubernetes 需要提升的权限才能在开发计算机上运行，以便编辑主机文件。
-* Bridge to Kubernetes 不能用于已启用 Azure Dev Spaces 的群集。
-
-### <a name="bridge-to-kubernetes-and-clusters-with-azure-dev-spaces-enabled"></a>Bridge to Kubernetes 和已启用 Azure Dev Spaces 的群集
-
-不能在已启用 Azure Dev Spaces 的群集上使用 Bridge to Kubernetes。 如果要在已启用 Azure Dev Spaces 的群集上使用 Bridge to Kubernetes，则必须先禁用 Azure Dev Spaces，然后再连接群集。
+- 要使 Bridge to Kubernetes 成功连接，一个 pod 只能有一个容器在该 pod 中运行。
+- 目前，Bridge to Kubernetes pod 必须是 Linux 容器。 不支持 Windows 容器。
+- Bridge to Kubernetes 需要提升的权限才能在开发计算机上运行，以便编辑主机文件。
+- Bridge to Kubernetes 不能用于已启用 Azure Dev Spaces 的群集。
 
 ## <a name="next-steps"></a>后续步骤
 

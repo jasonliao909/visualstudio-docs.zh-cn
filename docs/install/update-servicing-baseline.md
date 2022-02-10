@@ -1,7 +1,7 @@
 ---
 title: 在维修基线上更新 Visual Studio
-description: 了解如何在维修基线上更新 Visual Studio。
-ms.date: 11/23/2021
+description: 了解如何配置和更新 Visual Studio 以保持在维护服务基线上。
+ms.date: 2/4/2022
 ms.topic: conceptual
 ms.assetid: ''
 author: anandmeg
@@ -12,51 +12,32 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 342da7abdf898f15216694dba4a200b9f0263556
-ms.sourcegitcommit: 2281b4f1f8737f263c0d7e55e00b5ec81517327d
-ms.translationtype: HT
+ms.openlocfilehash: 4005893e17dfd81db2fcc23b05e0a03ea02fae2f
+ms.sourcegitcommit: b9c5ca58f380ee102153b69656cb062b3d2dab8c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "133108636"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "138427877"
 ---
-# <a name="update-visual-studio-while-on-a-servicing-baseline"></a>在维修基线上更新 Visual Studio
+# <a name="visual-studio-and-servicing-baselines"></a>Visual Studio 和维护基线
 
-我们经常在 Visual Studio 的产品生命周期中更新它。 有两种类型的更新：
+在产品生命周期内经常更新 Visual Studio。 有两种主要类型的更新：功能更新和服务更新。 功能更新通过次版本号的更改来指示，如16.4 到16.5，它们包含重要的产品更新。 服务更新由重要的质量或安全修补程序组成，它们通过服务版本号的更改（例如16.7.8 到16.7.9）来表示。 
 
-* **次要版本更新**&mdash; 例如从 16.0 更新到 16.1&mdash;，其中包含新功能和组件。  
-* **服务更新** - 例如，从 16.0.4 更新到 16.0.5，仅包含针对关键问题的目标修复。
+维护基准（也称为 Long-Term 服务通道 (LTSC) 是受支持的特定次要版本，与其他次要版本相比，该版本的年份比其他次要版本长。 维护基准的目的是为 Enterprise 和 Professional 客户提供一种方式来采用和保持非常稳定的产品，并在安全的同时最大限度地降低兼容性风险。 有关支持安全基线的信息，请参阅[Visual Studio 支持生命周期](/visualstudio/productinfo/vs-servicing)文档。
 
-企业管理员可以选择将其客户端保管在维护基线上。 在发布下一个维护基线后的一年内将使用维护更新支持该维护基线。
+## <a name="how-to-configure-your-client-machine-to-stay-on-a-servicing-baseline"></a>如何将客户端计算机配置为保留在服务基线上
 
-维护基线选项使开发人员和管理员可以更灵活地采用新功能、bug 修补程序或新次要更新包含的组件。 首个维护基线为 16.0.x。 有关详细信息，请参阅[企业版和专业版客户的支持选项](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers)。
+在 Visual Studio 2019 中，保留服务基线是一项挑战。 必须使用[My.VisualStudio.Com](https://my.visualstudio.com/Downloads)或[Visual Studio 2019 发行历史记录页](/visualstudio/releases/2019/history)上提供的特定次要版本引导程序，以使用所需的特定版本更新客户端或布局。 有时还需要执行其他自定义来微调体验。  
 
-## <a name="how-to-get-onto-a-servicing-baseline"></a>如何访问维护基线
+在 Visual Studio 2022 中，我们大大提高了将客户端计算机配置为保持维护服务基准的体验。 你现在可以使用 Visual Studio 2022 安装程序，它也可以由较旧版本的 Visual Studio （如 Visual Studio 2019）使用，你现在可以使用 "**更新设置**" 对话框或 `modifySettings` 命令 [配置你的客户端将从何处获取其更新](/visualstudio/install/update-visual-studio?view=vs-2022&preserve-view=true#configure-source-location-of-updates-1)。 这些更新源位置被称为“通道“，你可以在[Visual Studio 发行节奏](/visualstudio/productinfo/release-rhythm)文档中找到更多关于通道目的和可用性的信息。 Microsoft 使当前用户和预览频道均可供所有人使用，Long-Term 维护渠道 (LTSCs) 可供 Enterprise 和 Professional 客户使用。 IT 管理员还可以配置网络布局作为客户端可以访问的有效更新源位置。 
 
-请从下面的网站下载 Visual Studio 安装程序引导程序的不可编辑的版本，以开始使用维护基线：[My.VisualStudio.com](https://my.visualstudio.com/Downloads?q=visual%20studio%202019%20version%2016.0)。 这些引导程序包含产品配置、工作负载和该特定版本组件的链接。
-
-> [!NOTE]
-> 请注意区分不可编辑版本的引导程序和标准引导程序。 标准引导程序已配置为使用 Visual Studio 的最新可用版本。 从 My.VisualStudio.com 下载标准引导程序后，它们的文件名包含编号（例如 vs_enterprise__123456789-123456789.exe）。
-
-安装时，企业管理员必须配置自己的客户端，以防止客户端更新到最新版本。 有若干方法可实现此操作：
-- [更改响应配置文件中的 `channelUri` 设置](update-servicing-baseline.md#install-a-servicing-baseline-on-a-network)，以在布局或本地文件夹中使用通道清单。
-- [通过命令行执行修改 channelUri](update-servicing-baseline.md#install-a-servicing-baseline-via-the-internet)，以使用不存在的文件。
-- [在客户端系统上设置策略来禁用更新](update-servicing-baseline.md#use-policy-settings-to-disable-clients-from-updating)，以防止客户端自更新。
-
-### <a name="install-a-servicing-baseline-on-a-network"></a>在网络上安装维护基线
-
-使用网络布局安装的管理员应修改布局中 response.json 文件的 `channelUri` 值，以使用同一个文件夹中的 channelmanifest.json 文件。 有关要执行的步骤，请参阅[控制对基于网络的 Visual Studio 部署的更新](controlling-updates-to-visual-studio-deployments.md)。 更改 `channelUri` 后，客户端即可从布局位置查找更新。
-
-### <a name="install-a-servicing-baseline-via-the-internet"></a>通过 Internet 安装维护基线
-
-对于基于 Internet 的安装，请将使用不存在的通道清单的 `--channelUri` 添加到用于启动安装的命令行。 这样 Visual Studio 将无法使用最新可用版本更新。 下面是一个示例：
-
+在这种情况下，"更新源位置" 和相应的 "通知" 标志由客户端的 `--channelUri` 值控制。 
+   - 对于附加到网络布局的客户端计算机，此值通常通过布局的自定义响应 json 文件中的 `channelUri` 值传入。 有关详细信息，请参阅 [从网络布局安装时配置客户端默认值](/visualstudio/install/create-a-network-installation-of-visual-studio?#configure-initial-client-installation-defaults-for-this-layout)。
+   - 对于使用 internet 上的引导程序安装了该产品的客户端计算机，你可以通过以下方式来禁用更新通知，以及从 internet 更新 Visual Studio 的功能，方法是在最初安装该产品时 (示例) 。 此方法将阻止你接收有关安全更新的通知，因此，在可能的情况下，我们不建议你这样做。
+   
 ```shell
 vs_enterprise.exe --channelUri c:\doesnotexist.chman
 ```
-
-### <a name="use-policy-settings-to-disable-clients-from-updating"></a>使用策略设置阻止客户端更新
-
-此外，还可以选择通过[关闭更新通知](controlling-updates-to-visual-studio-deployments.md)来控制客户端上的更新。 若未在安装过程中更改 channelUri 值，请使用此选项。 这样客户端将无法接收最新可用版本的链接。 若要在客户端上更新到特定版本，仍然需要不可编辑版本的引导程序。
 
 ## <a name="how-to-stay-on-a-servicing-baseline"></a>如何访问维护基线
 
