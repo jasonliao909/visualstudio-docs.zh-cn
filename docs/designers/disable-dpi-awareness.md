@@ -1,23 +1,23 @@
 ---
 title: 禁用 DPI 感知，以在窗体中进行缩放
 description: 解决 HDPI 监视器上 Windows 窗体设计器的缩放问题。
-ms.date: 01/27/2022
+ms.date: 02/10/2022
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.technology: vs-ide-designers
 ms.topic: how-to
 ms.custon: contperf-fy22q2
-ms.openlocfilehash: 3e20c70eb28b2e09cb1ac136879bba4c0eac569c
-ms.sourcegitcommit: abd19232659447bc9bf946692a5de49130416bad
+ms.openlocfilehash: 3bb7cff75fa16a51b3b0aaa5eb104963c6750b18
+ms.sourcegitcommit: a439b1878939b2364cee0d09b851c2a67c42e563
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "137831333"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "138567081"
 ---
 # <a name="disable-dpi-awareness-to-address-scaling-issues-with-windows-forms-designer-in-visual-studio"></a>禁用 DPI 感知，解决 Visual Studio 中 Windows 窗体设计器的缩放问题
 
-在本文中，你将了解 Windows 窗体设计器在 HDPI 监视器上的限制以及[如何以不识别 DPI 的进程的形式运行 Visual Studio](#resolve-hdpi-display-problems)。
+在本文中，你将了解 Windows 窗体设计器在 HDPI 监视器上的限制以及如何以不[识别 DPI 的进程的形式运行 Visual Studio](#resolve-hdpi-display-problems)。
 
 Visual Studio 是一个每英寸点数 (DPI) 感知应用程序，因此其显示可以自动缩放。 如果某个应用程序声明自己是非 DPI 感知应用程序，则操作系统作将该应用程序作为位图缩放。 此行为也称为 DPI 虚拟化。 应用程序仍会认为它以 100% 缩放比例（即 96 dpi）运行。
 
@@ -51,6 +51,9 @@ Visual Studio 中的 Windows 窗体设计器不支持缩放  。 因此，在高
 ::: moniker-end
 
 如果不在设计器中工作，并且无需调整窗体的布局，可以忽略该信息栏，在代码编辑器或其他类型的设计器中继续工作。 （还可以[禁用通知](#disable-notifications)，以便信息栏不会继续显示。）只有 Windows 窗体设计器才会受到影响  。
+
+> [!TIP]
+> 如果关闭了设计器顶部的信息栏，但仍希望复制链接的行为，该链接的 "**重新启动 Visual Studio 与100% 缩放**，则仍可。 从 Visual Studio 菜单栏中选择 "**工具**  >  " "**命令行**  >  "**开发人员命令提示**。 然后，输入 `devenv /noScale` 。
 
 如果确实需要在 Windows 窗体设计器中工作，下一部分将帮助你[解决问题](#resolve-hdpi-display-problems)  。
 

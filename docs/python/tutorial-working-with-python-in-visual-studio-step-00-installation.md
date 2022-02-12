@@ -8,18 +8,23 @@ author: rjmolyneaux
 ms.author: rmolyneaux
 manager: jmartens
 ms.technology: vs-python
-ms.custom: 'vs-acquisition, devdivchpfy22'
+ms.custom: vs-acquisition, devdivchpfy22
 ms.workload:
-  - python
-  - data-science
+- python
+- data-science
+ms.openlocfilehash: 2219cf744b04a7e23c0aea817fe3bb002ca392ec
+ms.sourcegitcommit: a439b1878939b2364cee0d09b851c2a67c42e563
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "138566449"
 ---
-
 # <a name="install-python-support-in-visual-studio"></a>在 Visual Studio 中安装 Python 支持
 
 > [!Note]
 > 目前仅在 Visual Studio for Windows 中提供 Python 支持。 在 Mac 和 Linux 上，可通过 [Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial) 获取 Python 支持。
 
-1. 下载并运行适用于 Windows 的最新 Visual Studio 安装程序。 15.2 及更高版本中提供了 Python 支持。 如果已安装 Visual Studio，请通过选择“工具” > “添加工具和功能”来打开 Visual Studio 并运行安装程序。
+1. 下载并运行适用于 Windows 的最新 Visual Studio 安装程序。 版本 15.2 及更高版本中提供 Python 支持。 如果已安装 Visual Studio，请通过选择“工具” > “添加工具和功能”来打开 Visual Studio 并运行安装程序。
 
     > [!div class="nextstepaction"]
     > [安装 Visual Studio Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)
