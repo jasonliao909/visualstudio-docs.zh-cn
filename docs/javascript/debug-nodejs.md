@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a2ca304803bdd5442ee1fae54ef3623e78f682dd
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: b77f4388e999c609b397a4e146b062624b4aec05
+ms.sourcegitcommit: a439b1878939b2364cee0d09b851c2a67c42e563
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126737005"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "138567215"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>在 Visual Studio 中调试 JavaScript 或 TypeScript 应用
 
@@ -46,6 +46,10 @@ ms.locfileid: "126737005"
 
 ::: moniker range=">=vs-2019"
 Visual Studio 仅为 Chrome 和 Microsoft Edge (Chromium) 提供客户端调试支持。 在某些情况下，调试器会自动命中 JavaScript 和 TypeScript 代码中以及 HTML 文件的嵌入脚本中的断点。 若要在 ASP.NET 应用中调试客户端脚本，请参阅博客文章[在 Microsoft Edge 中调试 JavaScript](https://devblogs.microsoft.com/visualstudio/debug-javascript-in-microsoft-edge-from-visual-studio/) 和 [Google Chrome 文章](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome)。 若要在 ASP.NET Core 中调试 TypeScript，另请参阅[使用 TypeScript 创建 ASP.NET Core 应用](tutorial-aspnet-with-typescript.md)。
+
+>[!NOTE]
+> 对于 ASP.NET 和 ASP.NET Core，不支持调试 CSHTML 文件中嵌入的脚本。 JavaScript 代码必须单独在文件中才能启用调试。
+
 ::: moniker-end
 ::: moniker range="vs-2017"
 Visual Studio 仅为 Chrome 和 Internet 资源管理器提供客户端调试支持。 在某些情况下，调试器会自动命中 JavaScript 和 TypeScript 代码中以及 HTML 文件的嵌入脚本中的断点。 若要在 ASP.NET 应用中调试客户端脚本，请参阅博客文章[在 Google Chrome中对 ASP.NET 项目进行客户端调试](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome/)。

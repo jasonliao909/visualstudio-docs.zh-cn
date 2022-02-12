@@ -2,7 +2,7 @@
 title: Visual Studio 概述
 titleSuffix: ''
 description: 了解 Visual Studio 集成开发环境。
-ms.date: 09/14/2021
+ms.date: 02/10/2022
 ms.technology: vs-ide-general
 ms.topic: overview
 ms.custom:
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 59c3cab4b51a2eb5b9abc4c74fc96f1d8df6a5f7
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 446d837f98f6bf9ae02a7ea5391f082252c151a9
+ms.sourcegitcommit: a439b1878939b2364cee0d09b851c2a67c42e563
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128432755"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "138567663"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>欢迎使用 Visual Studio IDE
 
@@ -31,6 +31,8 @@ ms.locfileid: "128432755"
 ## <a name="next-steps"></a>后续步骤
 
 查看下述一篇介绍性的文章，进一步了解 Visual Studio：
+
+- 介绍此 Learn 模块中的[基础知识：Visual Studio](/learn/modules/visual-studio-intro/)。
 
 - 在[学习使用代码编辑器](tutorial-editor.md)中熟悉代码编辑器。
 

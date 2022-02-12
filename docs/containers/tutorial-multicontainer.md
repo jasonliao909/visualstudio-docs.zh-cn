@@ -7,12 +7,12 @@ ms.author: ghogen
 ms.date: 10/08/2021
 ms.technology: vs-container-tools
 ms.topic: tutorial
-ms.openlocfilehash: 6959f7b913abc3a32c579ebe73454e78d97caeeb
-ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
-ms.translationtype: HT
+ms.openlocfilehash: 8202535db6c62a0796f3f26ee35ab5c95b13437d
+ms.sourcegitcommit: a439b1878939b2364cee0d09b851c2a67c42e563
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "132001959"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "138566098"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>教程：使用 Docker Compose 创建多容器应用
 
@@ -385,6 +385,7 @@ ms.locfileid: "132001959"
           // Call *mywebapi*, and display its response in the page
           var request = new System.Net.Http.HttpRequestMessage();
           request.RequestUri = new Uri("http://mywebapi/WeatherForecast");
+          var response = await client.SendAsync(request);
           ViewData["Message"] += " and " + await response.Content.ReadAsStringAsync();
        }
     }

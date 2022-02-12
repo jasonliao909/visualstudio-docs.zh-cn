@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: cad5a842a0a5da29cde8df75869677e406f17414
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 70deaeda8c83252f2ab4c9d2e8b1b40b637bfc66
+ms.sourcegitcommit: a439b1878939b2364cee0d09b851c2a67c42e563
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129970615"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "138566418"
 ---
 # <a name="learn-to-use-the-code-editor-with-visual-basic"></a>了解如何将代码编辑器用于 Visual Basic
 
@@ -39,7 +39,7 @@ ms.locfileid: "129970615"
 
 ::: moniker-end
 
-本文假定你已熟悉 Visual Basic。 如果不熟悉，建议先浏览 [Visual Studio 中的 Visual Basic 入门](../../get-started/visual-basic/tutorial-console.md)。
+本文假定你已熟悉 Visual Basic。 否则，建议你查看教程，如首先[创建一个简单的 Visual Basic (VB) 控制台应用](tutorial-console.md)。
 
 > [!TIP]
 > 若要继续执行本文中的操作，请确保为 Visual Studio 选择了 Visual Basic 设置。 有关为集成开发环境 (IDE) 选择设置的信息，请参阅[选择环境设置](visual-studio-ide.md#select-environment-settings)。

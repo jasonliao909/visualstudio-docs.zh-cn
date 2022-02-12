@@ -152,7 +152,7 @@
     - name: C#：创建控制台应用
       href: get-started/csharp/tutorial-console.md
     - name: Visual Basic：创建控制台应用
-      href: ide/quickstart-visual-basic-console.md
+      href: get-started/visual-basic/tutorial-console.md
     - name: Node.js：创建 Web 应用
       href: ide/quickstart-nodejs.md
     - name: Python：创建 Web 应用

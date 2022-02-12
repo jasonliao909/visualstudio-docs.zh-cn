@@ -1,7 +1,7 @@
 ---
 title: 管理 Python 应用程序项目
 description: Visual Studio 中的项目管理文件之间的依赖项和应用程序中的关系复杂性。
-ms.date: 03/18/2019
+ms.date: 02/10/2022
 ms.topic: conceptual
 author: rjmolyneaux
 ms.author: rmolyneaux
@@ -10,12 +10,12 @@ ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 77b67853fd673b8c97a18ab1906aa31a089ea6be
-ms.sourcegitcommit: f303d052e451bcfd4722b99a9adbcb3f575d1678
+ms.openlocfilehash: 6d54a519aa3b9075cf698d4ef1c3866cdb1037a3
+ms.sourcegitcommit: a439b1878939b2364cee0d09b851c2a67c42e563
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "137816812"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "138566405"
 ---
 # <a name="python-projects-in-visual-studio"></a>Visual Studio 中的 Python 项目
 
@@ -38,8 +38,6 @@ Visual Studio 提供多种 Python 项目模板用于快速设置多个应用程�
 > 即使没有项目，Visual Studio 的所有版本也能正常运行 Python 代码。 例如，可以单独打开 Python 文件并充分利用自动完成、IntelliSense 和调试功能（在编辑器中单击右键，并选择“启动调试”）  。 因为此类代码始终使用默认的全局环境，但是，如果代码针对其他环境，则可能出现不正确的完成或错误。 此外，Visual Studio 将分析打开的单个文件所在文件夹中的所有文件和包，这可能会占用相当多的 CPU 时间。
 >
 > 如[根据现有文件创建项目](#create-project-from-existing-files)中所述，根据现有代码创建 Visual Studio 项目非常简单。
-
-![视频摄影机图标](../install/media/video-icon.png "观看视频")[深入了解：将源代码管理用于 Python 项目](https://youtu.be/Aq8eqApnugM)（youtube.com，8 分 55 秒）。
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>添加文件、分配启动文件和设置环境
 

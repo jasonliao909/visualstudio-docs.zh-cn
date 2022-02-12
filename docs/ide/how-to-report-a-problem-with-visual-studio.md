@@ -1,5 +1,5 @@
 ---
-title: 如何报告 Visual Studio 的问题
+title: 报告 Visual Studio 的问题
 description: 了解如何报告 Visual Studio 的问题
 ms.date: 10/07/2021
 ms.topic: how-to
@@ -10,14 +10,14 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 35bf0e0ab52a1754308fdd36dd409424d062649f
-ms.sourcegitcommit: 5f1e0171626e13bb2c5a6825e28dde48061208a4
+ms.openlocfilehash: 2105002d56da13862e6e0d6646d602b43c331046
+ms.sourcegitcommit: a439b1878939b2364cee0d09b851c2a67c42e563
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "129704676"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "138567380"
 ---
-# <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>如何报告 Visual Studio 或 Visual Studio 安装程序的问题
+# <a name="report-a-problem-with-the-visual-studio-product-or-installer"></a>报告 Visual Studio 产品或安装程序的问题
 
 > [!NOTE]
 > 对于 Visual Studio for Mac，请参阅[如何报告 Visual Studio for Mac 的问题](/visualstudio/mac/report-a-problem)。
@@ -47,15 +47,13 @@ ms.locfileid: "129704676"
 
     ![为重复项投票](../ide/media/feedback-duplicate.png)
 
-2. 如果未找到任何重复项，则继续输入问题的说明。 尽可能清楚地说明问题，使我们更有可能重现 bug，这一点很重要。 请确保包含清晰的重现步骤。
+1. 如果未找到任何重复项，则继续输入问题的说明。 尽可能清楚地说明问题，使我们更有可能重现 bug，这一点很重要。 请确保包含清晰的重现步骤。
 
-3. 如果与 bug 报告相关，请通过选中“包括 Visual Studio 屏幕截图”复选框来抓取屏幕截图。
+1. 如果与 bug 报告相关，请通过选中“包括 Visual Studio 屏幕截图”复选框来抓取屏幕截图。  你甚至可以直接在浏览器中裁剪屏幕截图，以删除任何敏感或无关的部分。
 
     ![抓取屏幕截图](../ide/media/feedback-screenshot.png)仅 Microsoft 工程师可以查看此屏幕截图
 
-    你甚至可以直接在浏览器中裁剪屏幕截图，以删除任何敏感或无关的部分。
-
-4. 要帮助 Visual Studio 工程团队解决问题，最佳方法之一是提供跟踪和堆转储文件供其查看。 可以通过记录导致 bug 的步骤轻松执行此操作。
+1. <a name="trace"/>要帮助 Visual Studio 工程团队解决问题，最佳方法之一是提供跟踪和堆转储文件供其查看。 可以通过记录导致 bug 的步骤轻松执行此操作。
 
     ![记录你的操作](../ide/media/feedback-recording.png)仅 Microsoft 工程师可以查看该记录
 
