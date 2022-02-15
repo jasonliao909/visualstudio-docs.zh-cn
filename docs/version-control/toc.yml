@@ -7,8 +7,6 @@
       href: git-with-visual-studio.md
 - name: 入门
   items:
-    - name: 创建 GitHub 帐户
-      href: git-create-github-account.md
     - name: 克隆存储库
       href: git-clone-repository.md
     - name: 创建存储库
@@ -35,8 +33,8 @@
   items:
     - name: Git 设置和首选项
       href: git-settings.md
-    - name: Visual Studio 如何简化源代码管理
-      href: git-visual-studio-source-control.md
+    - name: 创建 GitHub 帐户
+      href: git-create-github-account.md
     - name: 并行比较 Git 和团队资源管理器
       href: git-team-explorer-feature-comparison.md
     - name: 发行说明
