@@ -5,7 +5,7 @@ description: Visual Studio 已发布的版本和生成号列表，按日期排�
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.date: 02/09/2022
+ms.date: 02/15/2022
 ms.custom: vs-acquisition
 ms.topic: reference
 ms.workload:
@@ -13,12 +13,12 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 500de2e6cd0a81634890afc816810d4156acb839
-ms.sourcegitcommit: b9c5ca58f380ee102153b69656cb062b3d2dab8c
+ms.openlocfilehash: 84b4f86e0d64326eda990ce8e5b8e4ee8e8b0967
+ms.sourcegitcommit: 2298e62bef4e90427161bfa2c540207957cdb3aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "138427813"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "138813052"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio 内部版本号和发布日期
 
@@ -30,6 +30,8 @@ ms.locfileid: "138427813"
 
 | **Version**| **频道** | **发布日期** | **内部版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 17.2.0 | 预览版 1 | 2022 年 2 月 15 日 | 17.2.32210.308 |
+| 17.1.0 | 发布 | 2022 年 2 月 15 日 | 17.1.32210.238 |
 | 17.1.0 | 预览版 6 | 2022 年 2 月 9 日 | 17.1.32203.90 |
 | 17.0.6 | 发布 | 2022 年 2 月 8 日  | 17.0.32126.317 |
 | 17.1.0 | 预览版 5 | 2022 年 2 月 1 日 | 17.1.32127.271 |
