@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bb6a500db4efdcbe030707c71297a87d8794c57
-ms.sourcegitcommit: 52a425b5a541034cda26db8df9cd43281c007e80
+ms.openlocfilehash: 839997ccb8f5bf36681191ec09d2760e176887a4
+ms.sourcegitcommit: b5bde335e79cfb214197b3cdf22b7215ccf0cb07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/23/2021
-ms.locfileid: "135540726"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "138765597"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>教程：了解如何使用 Visual Studio 调试 C++ 代码
 
@@ -37,26 +37,11 @@ ms.locfileid: "135540726"
 
 ## <a name="prerequisites"></a>先决条件
 
-::: moniker range=">=vs-2019"
+必须安装 Visual Studio 和 **使用 c + + 工作负荷进行桌面开发**。
 
-须安装 Visual Studio 2019 且具有“使用 C++ 的桌面开发”工作负载  。
+::: moniker range="<=vs-2019"
 
-::: moniker-end
-::: moniker range="vs-2017"
-
-须安装 Visual Studio 2017 且具有“C++ 桌面开发”工作负载  。
-
-::: moniker-end
-
-::: moniker range="vs-2017"
-
-如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)页免费安装。
-
-::: moniker-end
-
-::: moniker range=">=vs-2019"
-
-如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads)页免费安装。
+如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/vs/older-downloads)页免费安装。
 
 ::: moniker-end
 
@@ -90,11 +75,11 @@ ms.locfileid: "135540726"
 
 ::: moniker range=">=vs-2019"
 
-1. 打开 Visual Studio 2019。
+1. 打开 Visual Studio。
 
    如果开始窗口未打开，请选择“文件”>“开始窗口”   。
 
-1. 在“开始”窗口上，选择“创建新项目”  。
+1. 在“开始”窗口上，选择“创建新项目”。
 
 1. 在“创建新项目”窗口的搜索框中输入或键入“控制台”   。 接下来，从“语言”列表中选择“C++”，然后从“平台”列表中选择“Windows”   。 
 

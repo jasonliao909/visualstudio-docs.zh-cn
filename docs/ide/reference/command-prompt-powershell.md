@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 94fcf524-9045-4993-bfb2-e2d8bad44219
 no-loc: cmdlet
 monikerRange: vs-2019
-ms.openlocfilehash: f25786e33a13cc526480a76a53215562146c4116
-ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
+ms.openlocfilehash: 355a2251b3cd58971e61960dee65364121e2d909
+ms.sourcegitcommit: b5bde335e79cfb214197b3cdf22b7215ccf0cb07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "131126501"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "138765584"
 ---
 # <a name="visual-studio-developer-command-prompt-and-developer-powershell"></a>Visual Studio 开发人员命令提示和开发人员 PowerShell
 
@@ -131,6 +131,64 @@ Visual Studio 2019 包含两个开发人员命令行 shell：
 
 > [!TIP]
 > 必须设置[执行策略](/powershell/module/microsoft.powershell.core/about/about_execution_policies)才能运行 cmdlet。
+
+该`Launch-VsDevShell.ps1`脚本的工作方式是：在`Microsoft.VisualStudio.DevShell.dll`安装路径Visual Studio PowerShell 模块，加载该模块，然后调用 `Enter-VsDevShell` cmdlet。 已安装的快捷方式（如"开始"菜单中的快捷方式）加载模块并直接 cmdlet 调用 。 `Launch-VsDevShell.ps1` 是交互式初始化开发人员 PowerShell 或编写生成自动化脚本的建议方法。
+
+## <a name="command-line-arguments"></a>命令行参数
+
+### <a name="target-architecture-and-host-architecture"></a>目标体系结构和主机体系结构
+
+对于生成工具（如 C++ 编译器）创建面向特定 CPU 体系结构的输出，可以使用相应的命令行参数配置开发人员 shell。 也可使用命令行参数配置生成工具二进制文件的体系结构。 当生成计算机与目标体系结构不同时，这很有用。
+
+> [!TIP]
+> 从 Visual Studio 2022 开始， `msbuild` 默认为 64 msbuild.exe二进制文件，而不考虑主机体系结构。
+
+|Shell|参数|
+|--|--|
+|开发人员命令提示|-arch=&lt;目标体系结构&gt;|
+|开发人员命令提示|-host_arch=&lt;主机体系结构&gt;|
+|开发人员 PowerShell|-Arch &lt;目标体系结构&gt;|
+|开发人员 PowerShell|-HostArch &lt;主机体系结构&gt;|
+
+开发人员 PowerShell 参数 -Arch 和 -HostArch 仅从 Visual Studio 2022 Update 1 开始提供。
+
+下面列出了支持哪些体系结构，以及这些体系结构是否可用于目标体系结构或主机体系结构参数。
+
+|体系结构|目标体系结构|主机体系结构|
+|--|--|--|
+|x86|默认|默认|
+|amd64|是|是|
+|arm|是|否|
+|arm64|是|否|
+
+> [!TIP]
+> 如果仅设置了 Target Intrarnet，则 shell 将尝试使主机体系结构匹配。 这可能会导致在将目标体系结构仅设置为主机体系结构不支持的值时出现错误。
+
+#### <a name="examples"></a>示例
+
+开始开发人员命令提示64位计算机上的 Visual Studio 2019 Community Edition，并创建以64位为目标的生成输出：
+```cmd
+"%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Community\Common7\Tools\VsDevCmd.bat" -arch=amd64
+```
+
+开始开发人员命令提示64位计算机上的 Visual Studio 2019 Community Edition，创建面向 arm 的生成输出：
+```cmd
+"%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Community\Common7\Tools\VsDevCmd.bat" -arch=arm -host_arch=amd64
+```
+
+在64位计算机上启动开发人员 PowerShell for Visual Studio 2022 Update 1 Community 版本，创建面向 arm64 的生成输出：
+```powershell
+& 'C:\Program Files (x86)\Microsoft Visual Studio\2022\Community\Common7\Tools\Launch-VsDevShell.ps1' -Arch arm64 -HostArch amd64
+```
+
+### <a name="skipautomaticlocation"></a>SkipAutomaticLocation
+
+对于开发人员 PowerShell，shell 的起始目录是 Visual Studio Project 位置。 这会重写任何其他路径，如工作目录。 使用命令行参数 `-SkipAutomaticLocation` 可以关闭此行为。 例如，如果你希望 shell 在初始化后停留在当前目录中，则此方法非常有用。
+
+可以在 "工具"-"> 选项-> 项目 &amp; 解决方案-> Project 位置" 中调整 Project 位置。
+ 
+> [!TIP]
+> 脚本和 `Enter-VsDevShell` cmdlet 都支持 `Launch-VsDevShell.ps1` 命令行参数 `-Arch` 、 `-HostArch` 和 `-SkipAutomaticLocation` 。
 
 ## <a name="see-also"></a>另请参阅
 
