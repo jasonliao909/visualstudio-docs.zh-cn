@@ -16,6 +16,8 @@
       href: installing-python-interpreters.md
 - name: 快速入门
   items:
+    - name: Python：创建 Web 应用
+      href: ../ide/quickstart-python.md
     - name: 通过 Flask 创建 Web 应用
       href: ../ide/quickstart-python.md
       maintainContext: true
