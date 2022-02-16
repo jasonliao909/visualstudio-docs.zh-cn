@@ -2,7 +2,7 @@
 title: Visual Studio 2022 中的新增功能
 titleSuffix: ''
 description: 了解 Visual Studio 2022 中的新增功能。
-ms.date: 01/26/2022
+ms.date: 02/15/2022
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -14,16 +14,16 @@ ms.prod: visual-studio-dev17
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b5181f8cbc173a90146f38ecae1f22ff6bae76c
-ms.sourcegitcommit: ebd651e00fe3bae5914c211c4828219bf7d1fc70
+ms.openlocfilehash: 996b0b336f7ecae486f519d7d4c502b1b2ce3e3f
+ms.sourcegitcommit: b5bde335e79cfb214197b3cdf22b7215ccf0cb07
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "137798530"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "138765571"
 ---
 # <a name="whats-new-in-visual-studio-2022"></a>Visual Studio 2022 中的新增功能
 
-已针对 17.0 GA（正式发布）版进行了更新。 参阅[完整的发行说明](/visualstudio/releases/2022/release-notes) | 查看[产品路线图](/visualstudio/productinfo/vs-roadmap/)
+**为17.1 版本进行了更新。** 参阅[完整的发行说明](/visualstudio/releases/2022/release-notes) | 查看[产品路线图](/visualstudio/productinfo/vs-roadmap/)
 
 >[!div class="button"]
 >[下载 Visual Studio 2022](https://visualstudio.microsoft.com/downloads/)
@@ -31,7 +31,7 @@ ms.locfileid: "137798530"
 使用 [Visual Studio 2022](https://visualstudio.microsoft.com/vs/)，你将始终获得可供任何开发人员、应用和平台使用的一流工具和服务。 无论是首次使用 Visual Studio 还是已经使用多年，此最新版本都有很多让你惊艳的地方！
 
 > [!TIP]
-> 请在我们的 [YouTube 频道](https://www.youtube.com/visualstudio)上观看 [Visual Studio 2022 发布活动](https://www.youtube.com/watch?v=f8jXO946eDw)。 你也可以在我们的 [Twitch 频道](https://www.twitch.tv/visualstudio)上收看。
+> 请查看我们的 [YouTube 频道](https://www.youtube.com/visualstudio)上的 [**Visual Studio 2022 GA 发布活动**](https://www.youtube.com/watch?v=f8jXO946eDw)。 你也可以在我们的 [Twitch 频道](https://www.twitch.tv/visualstudio)上收看。
 
 ## <a name="performance-improvements"></a>性能改进
 
@@ -62,7 +62,7 @@ Windows 上的 Visual Studio 2022 现在是 64 位应用程序。 这意味着�
 
 ### <a name="updates-for-blazor--razor-editors--hot-reload-for-aspnet"></a>对 Blazor 和 Razor 编辑器 + 适用于 ASP.NET 的热重载的更新
 
-[Visual Studio 2022](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-preview-4-is-now-available/)包含 Blazor 和 [Razor](https://devblogs.microsoft.com/visualstudio/introducing-the-new-razor-editor-in-visual-studio-2022/)编辑器的重要更新，**并在 ASP.NET Core** 包括在 &mdash; 保存文件时或将更改应用到 CSS 文件时进行 **热** 重载这一新功能！
+[Visual Studio 2022](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-preview-4-is-now-available/)包含 Blazor 和 [Razor](https://devblogs.microsoft.com/visualstudio/introducing-the-new-razor-editor-in-visual-studio-2022/)编辑器的重要更新，**并在 ASP.NET Core** &mdash; 包括在保存文件时或将更改应用到 CSS 文件时进行 **热** 重载这一新功能！
 
 :::image type="content" source="media/vs-2022/hot-reload-blazor-css-live.gif" alt-text="Razor 和 Blazor 应用以及实时 CSS 文件中的热重载动画。":::
 
