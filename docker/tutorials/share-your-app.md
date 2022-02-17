@@ -1,5 +1,5 @@
 ---
-title: Docker 教程 - 第 2 部分：共享应用
+title: Docker 教程 - 第 4 部分：共享应用
 description: 介绍如何使用 Docker Hub 注册表共享 Docker 映像。
 ms.prod: vs-code
 ms.topic: tutorial
@@ -9,12 +9,12 @@ manager: jmartens
 ms.reviewer: nebuk89, ghogen
 ms.custom: “docker-team-owned”
 ms.date: 08/06/2021
-ms.openlocfilehash: 0b2c6379cb7f198d0f228f52839283657269c818
-ms.sourcegitcommit: 2a8c7de72f952203289459736107c875837bb07e
+ms.openlocfilehash: 488acf117ee259bea9a6a4db2a69f75655080e80
+ms.sourcegitcommit: 9ce3422c9f63b5eb4b246494fd5b10bfeeff9a8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "137109901"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "138876439"
 ---
 # <a name="share-your-app"></a>共享应用
 
