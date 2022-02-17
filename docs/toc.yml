@@ -145,8 +145,6 @@
     - name: Visual Studio 入门
       displayName: Feature tour
       href: ide/quickstart-ide-orientation.md
-    - name: C++：创建控制台应用
-      href: /cpp/get-started/tutorial-console-cpp
     - name: C#：创建 Web 应用
       href: ide/quickstart-aspnet-core.md
     - name: C#：创建控制台应用
@@ -155,8 +153,6 @@
       href: get-started/visual-basic/tutorial-console.md
     - name: Node.js：创建 Web 应用
       href: ide/quickstart-nodejs.md
-    - name: Python：创建 Web 应用
-      href: ide/quickstart-python.md
 - name: 教程
   expanded: true
   items:
