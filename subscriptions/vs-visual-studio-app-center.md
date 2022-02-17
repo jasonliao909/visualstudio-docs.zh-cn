@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: amast
 manager: cabushcl
 ms.assetid: badd1d4a-90a6-46de-a037-945a91e6019b
-ms.date: 10/18/2021
+ms.date: 02/17/2022
 ms.topic: how-to
 description: 了解有关 Visual Studio 订阅中包含的 Visual Studio App Center 权益。
-ms.openlocfilehash: e87ff009733dd4e050be87ebda5a518220991bd5
-ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.openlocfilehash: 9b3acec23a9236d6d2d6e6f67ed9e81d2c4ce6e6
+ms.sourcegitcommit: 663f5cea9bf1481ce276764c74711baedeefb552
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "133256082"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "139039374"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Visual Studio App Center
 App Center 是针对应用的任务控制。
@@ -41,9 +41,11 @@ Visual Studio App Center 入门十分简单。
 
 | 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise（标准、月度云）   | VL、Azure、零售、NFR<sup>1</sup> | Included       |  是          |
+| Visual Studio Enterprise（标准、年度云）   | VL、Azure、零售、NFR<sup>1</sup> | Included       |  是          |
+| Visual Studio Enterprise（月度云）   | Azure | 不可用       |  NA          |
 | 包含 GitHub Enterprise 的 Visual Studio Enterprise 订阅  | VL | Included       |  是          |
-| Visual Studio Professional（标准、月度云） | VL、Azure、零售                                       | Included                                                            |是 |
+| Visual Studio Professional（标准、年度云） | VL、Azure、零售                                       | Included                                                            |是 |
+| Visual Studio Professional (月度云)    | Azure | 不可用       |  NA          |
 | 包含 GitHub Enterprise 的 Visual Studio Professional 订阅 | VL                                      | Included                                                            |是 |
 | Visual Studio Test Professional（标准）                         | VL、零售                                              | Included                                                            |是 |
 | MSDN 平台（标准）                                          | VL、零售                                              | Included                                                            |是 |
