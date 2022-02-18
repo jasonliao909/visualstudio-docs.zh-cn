@@ -15,12 +15,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 078a5165fd14dfb508e839d6d2c00e3be8c6ebb4
-ms.sourcegitcommit: a439b1878939b2364cee0d09b851c2a67c42e563
+ms.openlocfilehash: 7192903eb02bbee7cd06fb9bd38bdfe6029f0629
+ms.sourcegitcommit: f73418b3e5624964327ecdcd9955b3670be5d332
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "138567125"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "139084405"
 ---
 # <a name="learn-to-use-the-code-editor"></a>了解如何使用代码编辑器
 
@@ -46,7 +46,7 @@ ms.locfileid: "138567125"
 
 ::: moniker-end
 
-本文假定你已熟悉编程语言。 如果不熟悉，则建议首先查看其中一个编程快速入门，如使用 [Python](../ide/quickstart-python.md) 或 [C#](../get-started/csharp/tutorial-aspnet-core.md) 创建 Web 应用，或使用 [Visual Basic](visual-basic/tutorial-console.md) 或 [C++](/cpp/get-started/tutorial-console-cpp.md) 创建控制台应用。
+本文假定你已熟悉编程语言。 如果不熟悉，则建议首先查看其中一个编程快速入门，如使用 [Python](../ide/quickstart-python.md) 或 [C#](../get-started/csharp/tutorial-aspnet-core.md) 创建 Web 应用，或使用 [Visual Basic](visual-basic/tutorial-console.md) 或 [C++](/cpp/get-started/tutorial-console-cpp) 创建控制台应用。
 
 ::: moniker range=">=vs-2022"
 

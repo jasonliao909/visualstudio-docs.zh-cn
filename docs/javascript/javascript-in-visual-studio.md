@@ -12,12 +12,12 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 8faf2d7eaba0196c1de61c8554a862d88a54545e
-ms.sourcegitcommit: abd19232659447bc9bf946692a5de49130416bad
+ms.openlocfilehash: 45b788dbc3cfdcf7421f85a46f2eb9bfe7752c6f
+ms.sourcegitcommit: 9ce3422c9f63b5eb4b246494fd5b10bfeeff9a8e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "137844518"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "138876452"
 ---
 # <a name="javascript-and-typescript-in-visual-studio"></a>Visual Studio 中的 JavaScript 和 TypeScript
 
