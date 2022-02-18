@@ -14,24 +14,24 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 25c3c8bbab99536e83741bd1461dac4643453a8e
-ms.sourcegitcommit: 7a300823cf1bd3355be03bde561cf2777bc09eae
+ms.openlocfilehash: 85364b550931b6c162084885eb96e4d3d8bcd716
+ms.sourcegitcommit: f73418b3e5624964327ecdcd9955b3670be5d332
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "133978273"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "139084392"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 创建简单的数据应用程序
 
 当你创建操作数据库中的数据的应用程序时，就执行了如定义连接字符串、插入数据以及运行存储过程等基本任务。 学习本主题后，你可以了解如何使用 Visual C# 或 Visual Basic 和 ADO.NET 从简单的 Windows 窗体“基于数据”应用程序中与数据库进行交互。  所有 .NET 数据技术（包括数据集、LINQ to SQL 和 实体框架）最终执行的步骤与本文中所示的步骤非常相似。
 
-本文演示了一种快速从数据库获取数据的简单方法。 如果应用程序需要以非普通方式修改数据并更新数据库，则应考虑使用“实体框架”以及使用数据绑定自动将用户界面控件与基础数据中的更改同步。
+本文介绍了快速从数据库中获取数据的简单方法。 如果应用程序需要以非普通方式修改数据并更新数据库，则应考虑使用“实体框架”以及使用数据绑定自动将用户界面控件与基础数据中的更改同步。
 
 > [!IMPORTANT]
 > 要使代码保持简单，请不要包括生产就绪的异常处理。
 
 > [!NOTE]
-> 可以在[C#](https://github.com/MicrosoftDocs/visualstudio-docs/tree/main/docs/data-tools/codesnippet/CSharp/SimpleDataApp)和 Visual Basic 中的 Visual Studio 文档GitHub本教程[的完整Visual Basic。](https://github.com/MicrosoftDocs/visualstudio-docs/tree/main/docs/data-tools/codesnippet/VisualBasic/SimpleDataApp)
+> 本教程的完整代码可在[c #](https://github.com/MicrosoftDocs/visualstudio-docs/tree/main/docs/data-tools/codesnippet/CSharp/SimpleDataApp)中的 Visual Studio 文档中访问 GitHub 存储库， [Visual Basic](https://github.com/MicrosoftDocs/visualstudio-docs/tree/main/docs/data-tools/codesnippet/VisualBasic/SimpleDataApp)。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -39,9 +39,9 @@ ms.locfileid: "133978273"
 
 - Visual Studio。
 
-- SQL Server Express LocalDB。 如果尚未安装SQL Server Express LocalDB，可以从下载页 SQL Server[它](https://www.microsoft.com/sql-server/sql-server-downloads)。
+- SQL Server Express LocalDB。 如果你没有 LocalDB SQL Server Express，则可以从[SQL Server 下载页](https://www.microsoft.com/sql-server/sql-server-downloads)安装它。
 
-本主题假定你已经熟悉 Visual Studio IDE 的基本功能，并能够创建 Windows 窗体应用程序，将窗体添加到项目，将按钮和其他控件安装到这些窗体上，为这些控件设置属性，以及对简单事件进行编码。 如果对这些任务不太熟悉，建议在开始本演练之前完成使用 Visual Basic 在[Visual Studio](../ide/create-a-visual-basic-winform-in-visual-studio.md)中创建 Windows Forms 应用教程或使用[C#](../ide/create-csharp-winform-visual-studio.md)在 Visual Studio 中创建 Windows 窗体应用教程。
+本主题假定你已经熟悉 Visual Studio IDE 的基本功能，并能够创建 Windows 窗体应用程序，将窗体添加到项目，将按钮和其他控件安装到这些窗体上，为这些控件设置属性，以及对简单事件进行编码。 如果你不熟悉这些任务，建议你在开始本演练之前，先完成[使用 Visual Basic 教程在 Visual Studio 中创建 Windows 窗体应用](../ide/create-a-visual-basic-winform-in-visual-studio.md)或使用[c # 创建 Windows 窗体 Visual Studio 应用](../ide/create-csharp-winform-visual-studio.md)教程。
 
 ## <a name="set-up-the-sample-database"></a>设置示例数据库
 

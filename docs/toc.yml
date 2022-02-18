@@ -145,8 +145,6 @@
     - name: Visual Studio 入门
       displayName: Feature tour
       href: ide/quickstart-ide-orientation.md
-    - name: C#：创建 Web 应用
-      href: ide/quickstart-aspnet-core.md
     - name: C#：创建控制台应用
       href: get-started/csharp/tutorial-console.md
     - name: Visual Basic：创建控制台应用
