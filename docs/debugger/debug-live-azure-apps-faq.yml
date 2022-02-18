@@ -4,7 +4,7 @@ metadata:
   description: 查看在 Visual Studio 中使用 Snapshot Debugger 调试实时 Azure 应用程序时可能出现的常见问题解答 (FAQ) 列表。
   ms.custom: SEO-VS-2020
   ms.date: 11/07/2017
-  ms.topic: reference
+  ms.topic: faq
   helpviewer_keywords:
   - debugger
   ms.assetid: 944f1eb0-a74b-4d28-ae2b-a370cd869add
@@ -13,12 +13,12 @@ metadata:
   manager: jmartens
   ms.workload:
   - multiple
-  ms.openlocfilehash: 530719aafeaf617aa92b09388768a46e2ccd5bf5
-  ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-  ms.translationtype: HT
+  ms.openlocfilehash: 7f73e8ed1c72d35cf2560b32c771b05791568ff0
+  ms.sourcegitcommit: 5d924362a4333821f9804f20e59d847afaea932f
+  ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/13/2021
-  ms.locfileid: "126640750"
+  ms.lasthandoff: 02/18/2022
+  ms.locfileid: "139087916"
 title: 在 Visual Studio 中进行快照调试的常见问答解答
 summary: 下面列出了在使用 Snapshot Debugger 调试实时 Azure 应用程序时可能出现的问题。
 sections:

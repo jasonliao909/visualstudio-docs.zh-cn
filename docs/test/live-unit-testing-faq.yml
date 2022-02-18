@@ -4,19 +4,19 @@ metadata:
   description: 查看这些 Live Unit Testing 常见问题解答，包括支持的框架、配置和自定义。
   ms.custom: SEO-VS-2020
   ms.date: 10/03/2017
-  ms.topic: conceptual
+  ms.topic: faq
   helpviewer_keywords:
   - Live Unit Testing FAQ
   author: mikejo5000
   ms.author: mikejo
   ms.workload:
   - dotnet
-  ms.openlocfilehash: 210885daff9f670910299e6cbefc174ca37a8847
-  ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-  ms.translationtype: HT
+  ms.openlocfilehash: 401636bf85a4f7419df1ddc262f0dfea3371ae23
+  ms.sourcegitcommit: 5d924362a4333821f9804f20e59d847afaea932f
+  ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/13/2021
-  ms.locfileid: "126737248"
+  ms.lasthandoff: 02/18/2022
+  ms.locfileid: "139087890"
 title: Live Unit Testing 常见问题解答
 summary: ''
 sections:
