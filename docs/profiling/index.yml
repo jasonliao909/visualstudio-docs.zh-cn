@@ -5,16 +5,17 @@ metadata:
   title: 在 Visual Studio 中度量性能
   description: 了解如何通过 Visual Studio 使用分析工具来度量性能。
   ms.topic: landing-page
+  ms.technology: vs-ide-debug
   author: mikejo5000
   ms.author: mikejo
   manager: jmartens
   ms.date: 06/03/2020
-  ms.openlocfilehash: b949bc5b95d961e39b198669aa111ccad96b4a6d
-  ms.sourcegitcommit: aef3e3f99e022675d339b7fe381cb37202be5be2
+  ms.openlocfilehash: c4a5f12f74ef029d42cc361fabec8433ee03a199
+  ms.sourcegitcommit: 2a3dc3ea8584c0e500c87c2c367a4719455b8dee
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/24/2021
-  ms.locfileid: "122785668"
+  ms.lasthandoff: 02/19/2022
+  ms.locfileid: "139128878"
 landingContent:
 - title: 入门
   linkLists:

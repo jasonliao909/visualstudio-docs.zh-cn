@@ -2,25 +2,31 @@
 title: 分析性能探查器中的内存使用情况
 description: 了解如何使用 Visual Studio 性能探查器中不含调试器的“内存使用情况”工具来监视应用的内存使用情况。
 ms.custom: devdivchpfy22
-ms.date: 01/27/2022
+ms.date: 02/18/2022
 ms.topic: how-to
 dev_langs:
-  - CSharp
-  - VB
-  - FSharp
-  - C++
+- CSharp
+- VB
+- FSharp
+- C++
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
-  - multiple
+- multiple
+ms.openlocfilehash: 7107648de1810d9b661a42f242a9dba2792a1cbf
+ms.sourcegitcommit: 2a3dc3ea8584c0e500c87c2c367a4719455b8dee
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/19/2022
+ms.locfileid: "139128982"
 ---
-# <a name="analyze-memory-usage-without-debugging-in-the-performance-profiler"></a>在进行调试的情况下分析性能探查器中的内存使用情况
+# <a name="analyze-memory-usage-without-debugging-in-the-performance-profiler-c-visual-basic-c-f"></a>在 C#、Visual Basic、C++、F# 性能探查器 (中分析内存使用情况，而无需) 
 
 “内存使用情况”工具监视应用的内存使用情况。 可以使用该工具来研究在 Visual Studio 中正在积极开发的场景的实时内存效果。 可以获取应用内存状态的详细情况快照，并比较快照以找出内存问题的根本原因。 “内存使用”工具支持在 .NET、ASP.NET、C++ 或混合模式（.NET 和本机）应用上使用。
 
-“内存使用情况”工具在[带或不带调试器](../profiling/running-profiling-tools-with-or-without-the-debugger.md)的情况下都可以运行。 本文介绍了如何使用 Visual Studio 性能探查器中不含调试器的内存使用工具，这是推荐用于“发布”版本的工具。
+“内存使用情况”工具在[带或不带调试器](../profiling/running-profiling-tools-with-or-without-the-debugger.md)的情况下都可以运行。 本文介绍了如何使用 Visual Studio 性能探查器中不含调试器的内存使用工具，这是推荐用于“发布”版本的工具。 有关根据需求选择最佳内存分析工具的信息，请参阅 [选择内存分析工具](../profiling/memory-usage.md)。
 
 ## <a name="memory-usage-diagnostic-sessions"></a>内存使用情况诊断会话
 
@@ -32,7 +38,7 @@ ms.workload:
 
 1. 在“调试”菜单中，将解决方案配置设置为“发布”，然后选择“本地 Windows 调试器”（或“本地计算机”）作为部署目标  。
 
-1. 在菜单栏上，  **选择"调试** > **性能探查器**"。
+1. 在菜单栏上，**选择"** 调试 > **性能探查器**" 。
 
 1. 在“可用工具”下，选择“内存使用情况”，然后选择“启动”  。
 
@@ -158,11 +164,11 @@ ms.workload:
  ![快照窗格中指向快照报表的链接](../profiling/media/memory-usage-snapshot-view-snapshot-details-links-vs-2022.png "快照窗格中指向快照报表的链接")
 ::: moniker-end
 
-这两个链接都会打开同一个报表。 唯一的区别是 **托管内存** 树的开始排序顺序。 大小链接按“非独占大小(字节)”列对报表进行排序。 对象链接按“计数”列对报表进行排序。 可以在报表打开后更改排序列或顺序。
+这两个链接都会打开同一个报表。 唯一的区别是托管内存树的开始 **排序** 顺序。 大小链接按“非独占大小(字节)”列对报表进行排序。 对象链接按“计数”列对报表进行排序。 可以在报表打开后更改排序列或顺序。
 
-### <a name="managed-memory-tree-snapshot-details-reports"></a><a name="BKMK_Managed_Memory_tree__Snapshot_details_"></a> 托管内存树 (快照详细信息报告) 
+### <a name="managed-memory-tree-snapshot-details-reports"></a><a name="BKMK_Managed_Memory_tree__Snapshot_details_"></a> 托管内存树 (快照详细信息报表) 
 
- **托管内存** 树列出内存中保留的对象的类型。 展开类型名称以查看该类型的10个最大实例，并按大小排序。 通过选择类型或实例，以显示选定项的“根的路径”和“引用对象”树 。
+ 托管 **内存** 树列出内存中包含的对象的类型。 展开类型名称以查看类型的最大 10 个实例（按大小排序）。 通过选择类型或实例，以显示选定项的“根的路径”和“引用对象”树 。
 
 ::: moniker range="<=vs-2019"
  ![托管堆树](../profiling/media/memory-usage-snapshot-details-managed-heap-tree.png "托管堆树")
@@ -172,13 +178,13 @@ ms.workload:
  ![托管内存树](../profiling/media/memory-usage-snapshot-details-managed-heap-tree-vs-2022.png "托管内存树")
 ::: moniker-end
 
-快照详细信息报表中的 **托管内存** 树包含以下列：
+快照 **详细信息** 报告中的托管内存树具有以下列：
 
-|名称|描述|
+|“属性”|描述|
 |-|-|
 |“对象类型”|类型或对象实例的名称。|
 |“计数”|类型的对象实例数。 对于实例，“计数”始终为 1。|
-|“大小(字节)”|对于类型，为快照中类型的所有实例的大小，不包括实例中包含的对象的大小。对于实例，则为对象的大小，不小于实例中包含的对象的大小。 |
+|“大小(字节)”|对于类型，快照中类型的所有实例的大小小于实例中包含的对象的大小。对于 实例，对象的大小小于 实例中包含的对象的大小。 |
 |“非独占大小(字节)”|类型实例的大小或单个实例的大小，其中包括所含对象的大小。|
 |**模块**|包含此对象的模块。|
 
@@ -208,9 +214,9 @@ ms.workload:
 ![实例的引用对象树](../profiling/media/memory-usage-snapshot-details-referenced-objects-instance-vs-2022.png "实例的引用对象树")
 ::: moniker-end
 
-“引用类型”树在快照详细信息报表中包含以下列： **引用的对象** 树没有 **引用计数** 列。
+“引用类型”树在快照详细信息报表中包含以下列： 引用 **的对象树** 没有"引用 **计数"** 列。
 
-|名称|描述|
+|“属性”|描述|
 |-|-|
 |“对象类型”或“实例” |类型或实例的名称。|
 |**引用计数**|对于类型，该类型的对象实例数。|
@@ -222,7 +228,7 @@ ms.workload:
 
 快照差异（差异）报表显示主快照和前一个快照之间的更改。 要打开差异报表，请在快照窗格中选择差异链接。
 
-这两个链接都会打开同一个报表。 唯一的区别是报表中 **托管内存** 树的开始排序顺序。 大小链接按“非独占大小差异(字节)”列对报表进行排序。 对象链接按“计数差异”列对报表进行排序。 可以在报表打开后更改排序列或顺序。
+这两个链接都会打开同一个报表。 唯一的区别是报告中 **托管内存树** 的开始排序顺序。 大小链接按“非独占大小差异(字节)”列对报表进行排序。 对象链接按“计数差异”列对报表进行排序。 可以在报表打开后更改排序列或顺序。
 
 ::: moniker range="<=vs-2019"
  ![快照窗格中指向差异报表的链接](../profiling/media/memory-usage-snapshot-view-snapshot-diff-links.png "快照窗格中指向差异报表的链接")
@@ -234,19 +240,19 @@ ms.workload:
 
 ### <a name="managed-memory-tree-snapshot-diff-reports"></a><a name="BKMK_Managed_Memory_tree__Snapshot_diff_"></a> 托管内存树 (快照差异报告) 
 
- **托管内存** 树列出内存中保留的对象的类型。 您可以展开类型名称以查看该类型的10个最大实例，并按大小排序。 通过选择类型或实例，以显示选定项的“根的路径”和“引用对象”树 。
+ 托管 **内存** 树列出内存中包含的对象的类型。 可以展开类型名称以查看类型的最大 10 个实例（按大小排序）。 通过选择类型或实例，以显示选定项的“根的路径”和“引用对象”树 。
 
 ::: moniker range="<=vs-2019"
  ![差异报表中类型的托管堆树](../profiling/media/memory-usage-snapshot-diff-type-heap.png "差异报表中类型的托管堆树")
 ::: moniker-end
 
 ::: moniker range="vs-2022"
- ![差异报表中类型的托管内存树](../profiling/media/memory-usage-snapshot-diff-type-heap-vs-2022.png "差异报告中类型的托管内存树")
+ ![差异报告中类型的托管内存树](../profiling/media/memory-usage-snapshot-diff-type-heap-vs-2022.png "差异报告中类型的托管内存树")
 ::: moniker-end
 
-快照差异报告中的 **托管内存** 树具有以下列：
+快照 **差异** 报告中的托管内存树具有以下列：
 
-|名称|描述|
+|“属性”|描述|
 |-|-|
 |“对象类型”|类型或对象实例的名称。|
 |“计数”|主要快照中的类型实例的数量。 对于实例，“计数”始终为 1。|

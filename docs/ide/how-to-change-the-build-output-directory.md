@@ -1,5 +1,5 @@
 ---
-title: 如何：更改生成输出目录
+title: 更改生成输出目录
 description: 了解如何在预配置的基础上指定项目生成的输出的位置（用于调试、发布或两者）。
 ms.custom: contperf-fy22q3
 ms.date: 01/15/2022
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a314b85998a76e238554ea7c8534594c438e633f
-ms.sourcegitcommit: b5bde335e79cfb214197b3cdf22b7215ccf0cb07
+ms.openlocfilehash: be2715f7ebce1080bcbc9a83b4c00baae65c5e8c
+ms.sourcegitcommit: 2a3dc3ea8584c0e500c87c2c367a4719455b8dee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "138765610"
+ms.lasthandoff: 02/19/2022
+ms.locfileid: "139128930"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>如何：更改生成输出目录
 
@@ -83,7 +83,7 @@ ms.locfileid: "138765610"
 
 3. 根据项目的类型，单击“编译”选项卡或“生成”选项卡，并将“输出路径”设置为适用于解决方案中所有项目的文件夹。
 
-4. 打开项目的项目文件，并将以下属性声明添加到第一个属性组。
+4. 打开项目的项目文件，将以下属性声明添加到第一个属性组。
 
    ```xml
    <PropertyGroup>
@@ -92,11 +92,11 @@ ms.locfileid: "138765610"
    </PropertyGroup>
    ```
 
-   设置 `UseCommonOutputDirectory` 以 `true` 告诉 Visual Studio 及其基础生成引擎 (MSBuild) 在同一文件夹中放置多个项目输出，因此 MSBuild 会省略当项目依赖于其他项目时通常会发生的复制步骤。
+   `UseCommonOutputDirectory` `true`将 Visual Studio 及其基础生成引擎 (MSBuild) 告知你正在将多个项目输出放在同一文件夹中，因此 MSBuild 省略了当项目依赖于其他项目时通常会发生的复制步骤。
 
-5. 对解决方案中的所有项目重复步骤1-4。 如果有一些不应使用通用输出目录的特殊项目，则可以跳过某些项目。
+5. 对解决方案中所有项目重复步骤 1-4。 如果某些异常项目不应使用公共输出目录，可以跳过某些项目。
 
-### <a name="to-set-the-intermediate-output-directory-for-a-project-net-projects"></a> ( .NET 项目设置项目的中间输出目录) 
+### <a name="to-set-the-intermediate-output-directory-for-a-project-net-projects"></a>若要为项目设置中间输出目录，A0.NET 项目) 
 
 1. 打开项目文件。
 
@@ -109,17 +109,17 @@ ms.locfileid: "138765610"
    <PropertyGroup>
    ```
 
-   该路径是相对于项目文件的路径，也可以使用绝对路径。 如果要将项目名称放在路径中，可以通过使用 MSBuild 属性 `$(MSBuildProjectName)` `$(MSBuildProjectDirectory)` 来引用它。 有关可以使用的更多属性，请参阅[MSBuild 保留的属性和已知的属性](../msbuild/msbuild-reserved-and-well-known-properties.md)。
+   路径相对于项目文件，或者可以使用绝对路径。 如果要将项目名称放在路径中，可以使用属性 MSBuild引用`$(MSBuildProjectName)`它`$(MSBuildProjectDirectory)`。 有关可以使用的更多属性，MSBuild[保留属性和已知属性](../msbuild/msbuild-reserved-and-well-known-properties.md)。
 
-1. 生成时，Visual Studio 仍会在项目文件夹下创建 obj 文件夹，但它是空的。 您可以在生成过程中将其删除。 执行此操作的一种方法是添加生成后事件以运行以下命令：
+1. Visual Studio项目文件夹下创建 obj 文件夹，但它为空。 可以在生成过程中将其删除。 为此，一种方式是添加生成后事件以运行以下命令：
 
    ```cmd
    rd "$(ProjectDir)obj" /s /q
    ```
 
-   请参见 [指定自定义生成事件](specifying-custom-build-events-in-visual-studio.md)。
+   请参阅 [指定自定义生成事件](specifying-custom-build-events-in-visual-studio.md)。
 
-   从 MSBuild 命令行进行生成时不会创建 obj 文件夹。
+   从 MSBuild 命令行生成时，不会创建 obj 文件夹。
 
 ## <a name="see-also"></a>另请参阅
 

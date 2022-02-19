@@ -11,14 +11,14 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e8db1683fa44ffa75ba6e0ac6aa1a5101c812c8
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: fd771a00c35ccb1429730b158d52e0d3a45c1b56
+ms.sourcegitcommit: 2a3dc3ea8584c0e500c87c2c367a4719455b8dee
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126735701"
+ms.lasthandoff: 02/19/2022
+ms.locfileid: "139128969"
 ---
-# <a name="analyze-cpu-usage-without-debugging-in-the-performance-profiler"></a>在不进行调试的情况下分析性能探查器中的 CPU 使用情况
+# <a name="analyze-cpu-usage-without-debugging-in-the-performance-profiler-c-visual-basic-c-f"></a>在 C#、Visual Basic、C++、F# 性能探查器 (中分析 CPU 使用情况，而无需) 
 
 开始调查应用中的性能问题的好方法之一是了解其 CPU 使用情况。 “CPU 使用情况”性能工具显示 C++、C#/Visual Basic 以及 JavaScript 应用中执行代码所花费的 CPU 时间和百分比。
 
