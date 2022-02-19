@@ -1,7 +1,7 @@
 ---
-title: 分析内存使用情况
+title: 选择内存分析工具
 description: 了解可用于查找内存泄露和内存低效使用情况的工具，例如内存使用情况工具和 .NET 对象分配工具。
-ms.date: 10/12/2020
+ms.date: 02/18/2022
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
@@ -9,14 +9,14 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 24cb23e359b3cf74e35c0a5428036e13ad4c3658
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 236468571e26a31a0eed5c0197ebea0bdf408620
+ms.sourcegitcommit: 2a3dc3ea8584c0e500c87c2c367a4719455b8dee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129973085"
+ms.lasthandoff: 02/19/2022
+ms.locfileid: "139129073"
 ---
-# <a name="analyze-memory-usage"></a>分析内存使用情况
+# <a name="choose-a-memory-analysis-tool-in-visual-studio-c-visual-basic-c-f"></a>使用 C#、Visual Studio (、Visual Basic、C++、F#) 
 
 可以使用多种工具查找内存泄漏和低效内存使用情况，例如集成了调试程序的“内存使用情况”诊断工具，或性能探查器中的工具（如 .NET 对象分配工具和事后分析“内存使用情况”工具）。
 

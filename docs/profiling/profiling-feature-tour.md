@@ -16,14 +16,14 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c27902bfe4d59667d1ea852589d07358ff16662
-ms.sourcegitcommit: ffd1bea76b51fd6b43d484a30bbd1e674f0ae49b
+ms.openlocfilehash: 3373225ed000c27fbe22aa217fbdbc242d0e559f
+ms.sourcegitcommit: 2a3dc3ea8584c0e500c87c2c367a4719455b8dee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2021
-ms.locfileid: "135563894"
+ms.lasthandoff: 02/19/2022
+ms.locfileid: "139129034"
 ---
-# <a name="first-look-at-profiling-tools"></a>首先了解分析工具
+# <a name="first-look-at-profiling-tools-c-visual-basic-c-f"></a>首先了解 C#、 (Visual Basic、C++、F#) 中的分析工具
 
 Visual Studio 提供了各种分析工具，可依据你的应用类型帮助你诊断不同种类的性能问题。 在本文中，我们将简要介绍最常见的分析工具。
 
@@ -128,7 +128,7 @@ CPU 使用率工具很适合用于开始分析应用的性能。 它将向你详
 使用该工具的一种方法是在代码中设置两个断点，一个在开头，一个在函数的末尾或想要分析的代码区域。 在第二个断点暂停时，请检查分析数据。
 
 ::: moniker range=">=vs-2022"
-"CPU **使用率** "视图显示按运行时间最长的排序的函数列表，运行时间最长的函数位于"Top **Functions"下的顶部**。 " **热路径** "部分显示 CPU 使用率最大的函数的调用堆栈。 这些列表可帮助你了解发生性能瓶颈的函数。
+" **CPU 使用率** "视图显示按运行时间最长的顺序排序的函数列表，运行时间最长的函数位于顶部"Top **Functions"下**。 " **热路径** "部分显示 CPU 使用率最大的函数的调用堆栈。 这些列表可帮助你了解发生性能瓶颈的函数。
 
 ![诊断工具“CPU 使用率”视图](../profiling/media/vs-2022/prof-tour-cpu-usage.png "诊断工具“CPU 使用率”")
 ::: moniker-end
@@ -140,7 +140,7 @@ CPU 使用率工具很适合用于开始分析应用的性能。 它将向你详
 ::: moniker-end
 
 ::: moniker range=">=vs-2022"
-双击感兴趣的函数，你将看到更详细的"调用树"视图，并突出显示所选函数。 该表显示包含数据（例如函数中花费的时间）的列（包括被调用的函数 (**CPU** 总) ）和另一列，该列显示函数中花费的时间（不包括称为函数 (**自 CPU**) ）。 此数据可以帮助评估函数本身是否属于性能瓶颈。
+双击感兴趣的函数，你将看到更详细的"调用树"视图，并突出显示所选函数。 该表显示包含数据（例如函数中花费的时间）的列，包括被调用的函数 (**CPU**) 总数，以及显示函数中花费的时间的第二列（不包括称为函数 (**自 CPU**) ）。 此数据可以帮助评估函数本身是否属于性能瓶颈。
 
 ![诊断工具调用方和被调用方“蝶形”视图](../profiling/media/vs-2022/prof-tour-call-tree-view.png "诊断工具“调用方和被调用方”视图")
 ::: moniker-end

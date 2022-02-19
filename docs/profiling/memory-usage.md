@@ -9,16 +9,16 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dd1ff6dd9234bf50f790d20dbcdabe2bdf1ce13
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: e9279cfe371cc3e5a4720d65c4b5759fafb203c6
+ms.sourcegitcommit: 2a3dc3ea8584c0e500c87c2c367a4719455b8dee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129970511"
+ms.lasthandoff: 02/19/2022
+ms.locfileid: "139128943"
 ---
-# <a name="measure-memory-usage-in-visual-studio"></a>在 Visual Studio 中衡量内存使用情况
+# <a name="measure-memory-usage-in-visual-studio-c-visual-basic-c-f"></a>使用 C#、Visual Basic、C++、F# Visual Studio (度量内存) 
 
-使用集成了调试器的内存使用情况  诊断工具在进行调试时查找内存泄漏和低效内存。 通过内存使用率工具可以拍摄托管和本机内存堆的一个或多个快照，帮助理解对象类型的内存使用率影响  。 还可以在没有附加调试器的情况下或以正在运行的应用为目标来分析内存使用情况。 有关详细信息，请参阅[运行带或不带调试器的分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。
+使用集成了调试器的内存使用情况  诊断工具在进行调试时查找内存泄漏和低效内存。 通过内存使用率工具可以拍摄托管和本机内存堆的一个或多个快照，帮助理解对象类型的内存使用率影响  。 还可以在没有附加调试器的情况下或以正在运行的应用为目标来分析内存使用情况。 有关详细信息，请参阅[运行带或不带调试器的分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。 有关根据需求选择最佳内存分析工具的信息，请参阅 [选择内存分析工具](../profiling/memory-usage.md)。
 
 虽然可以随时在 **内存使用率** 工具中收集内存快照，不过可以使用 Visual Studio 调试器在调查性能问题时控制应用程序的执行方式。 断点设置、步进、全部中断和其他调试器操作可以帮助将性能调查集中在最相关的代码路径上。 在应用运行期间执行这些操作可以消除无关紧要的代码带来的烦扰，并可以显著减少用于诊断问题所花费的时间。
 

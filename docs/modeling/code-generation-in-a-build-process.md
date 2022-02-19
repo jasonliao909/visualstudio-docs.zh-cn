@@ -16,12 +16,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bb628f967f9d56f954c2c639951f9317fa8efed9
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 5d40a3e4166df01b3bac9db7d4a6b089d3ad1fae
+ms.sourcegitcommit: 2a3dc3ea8584c0e500c87c2c367a4719455b8dee
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126600677"
+ms.lasthandoff: 02/19/2022
+ms.locfileid: "139128917"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>在生成过程中调用文本转换
 
@@ -74,7 +74,15 @@ ms.locfileid: "126600677"
 
 在该行之后插入文本模板化导入：
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=vs-2022"
+
+```xml
+<Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v17.0\TextTemplating\Microsoft.TextTemplating.targets" />
+```
+
+::: moniker-end
+
+::: moniker range="vs-2019"
 
 ```xml
 <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets" />

@@ -15,14 +15,14 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e5829dd05711599d5e9ec6e720539ddb79a3d95
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: 808bbfaf5def967ae34b3975e75a4544c3b5e47e
+ms.sourcegitcommit: 2a3dc3ea8584c0e500c87c2c367a4719455b8dee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135806152"
+ms.lasthandoff: 02/19/2022
+ms.locfileid: "139128956"
 ---
-# <a name="measure-application-performance-by-analyzing-cpu-usage"></a>通过分析 CPU 使用情况衡量应用程序性能
+# <a name="measure-application-performance-by-analyzing-cpu-usage-c-visual-basic-c-f"></a>通过分析 (c #、Visual Basic、c + +、F # ) 的 CPU 使用情况来度量应用程序性能
 
 使用集成了调试器的“CPU 使用率”诊断工具时，查找性能问题。  还可以在没有附加调试器的情况下或以正在运行的应用为目标来分析 CPU 使用情况。 有关详细信息，请参阅[运行带或不带调试器的分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。
 

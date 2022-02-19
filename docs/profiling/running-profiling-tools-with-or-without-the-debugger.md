@@ -11,14 +11,14 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 40ebd618891f8166d2f704401e60fc1c331e2196
-ms.sourcegitcommit: f81a8f381bcdbac96d112f815737ba1df55d97a3
+ms.openlocfilehash: 984bf537fe47fa0457c88dd8dde1ef28705a6e7e
+ms.sourcegitcommit: 2a3dc3ea8584c0e500c87c2c367a4719455b8dee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "137667442"
+ms.lasthandoff: 02/19/2022
+ms.locfileid: "139128904"
 ---
-# <a name="run-profiling-tools-with-or-without-the-debugger"></a>运行带/不带调试器的分析工具
+# <a name="run-profiling-tools-with-or-without-the-debugger-c-visual-basic-c-f"></a>运行带有或不带调试器的分析工具， (c #、Visual Basic、c + +、F # ) 
 
 Visual Studio 提供了性能测量值和分析工具选择。 某些工具（如“CPU 使用情况”和“内存使用情况”）可以在带或不带调试器的情况下运行，也可以在发布版本或调试版本配置上运行。 [“诊断工具”窗口](../profiling/profiling-feature-tour.md#measure-performance-while-debugging)中显示的工具仅在调试会话期间运行。 [性能探查器](../profiling/profiling-feature-tour.md#post_mortem)中显示的工具在没有调试器的情况下运行，并在选择停止和收集数据后分析结果（用于事后分析）。
 
