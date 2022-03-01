@@ -13,12 +13,12 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 987c9928fecb3ad752656c065bd369b9844da864
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 4f1aec397a930e6aeca95d9c8eb62ac04c0ca92c
+ms.sourcegitcommit: 169b7b66d13b7e3c86097b42206dd33389cd9166
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126735448"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "138148461"
 ---
 # <a name="first-look-at-testing-tools-in-visual-studio"></a>首先介绍 Visual Studio 中的测试工具
 
@@ -110,6 +110,5 @@ IntelliTest 会自动为托管代码生成单元测试和测试数据。 Intelli
 ## <a name="related-scenarios"></a>相关方案
 
 * [探索和手动测试 (Azure Test Plans)](/azure/devops/test/index?view=vsts&preserve-view=true)
-* [负载测试（Azure Test Plans）](/azure/devops/test/load-test/index?view=vsts&preserve-view=true)
-* [持续测试（Azure Test Plans）](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true)
+* [负载测试（Azure Test Plans）](/azure/load-testing/)
 * [代码分析工具](../code-quality/code-analysis-for-managed-code-overview.md)

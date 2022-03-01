@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: 88bf2b8abe3356070550133ce788d4b9a339127f
-ms.sourcegitcommit: d3578c384959f1b76dd06fb4b5d075fb052f8c69
+ms.openlocfilehash: 89bd2f908a0ff86e506ec84f0b0e1e5e5e04efed
+ms.sourcegitcommit: 169b7b66d13b7e3c86097b42206dd33389cd9166
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "135375046"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "138149172"
 ---
 # <a name="get-started-with-unit-testing"></a>单元测试入门
 
@@ -72,7 +72,7 @@ ms.locfileid: "135375046"
    从 Visual Studio 2017 14.8 版本开始，.NET 语言包括适用于 NUnit 和 xUnit 的内置模板。 对于 C++，在本示例中，选择“本机单元测试”项目，它使用 Microsoft 本机单元测试框架。 （若要使用其他 C++ 测试框架，请参阅[为 C/C++ 编写单元测试](../test/writing-unit-tests-for-c-cpp.md)）。 对于 Python，请参阅[在 Python 代码中设置单元测试](../python/unit-testing-python-in-visual-studio.md)以设置测试项目。
 
    > [!TIP]
-   > 仅对 C# 而言，可以使用更快的方法基于代码创建单元测试项目。 有关详细信息，请参阅[创建单元测试项目和测试方法](../test/unit-test-basics.md#create-unit-test-projects-and-test-methods-c)。 若要将此方法与 .NET Core 或 .NET Standard 一起使用，需要 Visual Studio 2019。
+   > 仅对 C# 而言，可以使用更快的方法基于代码创建单元测试项目。 有关详细信息，请参阅[创建单元测试项目和测试方法](../test/unit-test-basics.md#create-unit-test-projects-and-test-methods-c)。 若要将此方法与 .net Core 或 .NET Standard 一起使用，需要 Visual Studio 2019 或更高版本。
 
    下图显示了 .NET 中支持的 MSTest 单元测试。
 

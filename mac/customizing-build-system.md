@@ -1,5 +1,5 @@
 ---
-title: 自定义生成系统
+title: 自定义生成系统： Mac 上的 msbuild
 description: 本文简要介绍 Visual Studio for Mac 使用的 MSBuild 生成系统
 author: jmatthiesen
 ms.author: jomatthi
@@ -7,14 +7,14 @@ manager: dominicn
 ms.date: 09/19/2019
 ms.topic: conceptual
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: b8521a3f962950999c77301fe5034b21536696d3
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: 33023157f39d1dfc73581e8dc952393f13a1629b
+ms.sourcegitcommit: 169b7b66d13b7e3c86097b42206dd33389cd9166
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135803201"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "138148409"
 ---
-# <a name="customizing-the-build-system"></a>自定义生成系统
+# <a name="customize-the-msbuild-system-in-visual-studio-for-mac"></a>自定义 Visual Studio for Mac 中的 MSBuild 系统
 
 Microsoft 生成引擎是一个用于生成应用程序的平台。 该引擎（也称为 MSBuild）是由 Microsoft 开发的，可用于生成 .NET 应用程序。 Mono 框架也有自己的 Microsoft 生成引擎实现，被称为“xbuild”。 但目前 xbuild 已被淘汰，改而支持在所有操作系统上使用 MSBuild。
 

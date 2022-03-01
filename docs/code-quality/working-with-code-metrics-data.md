@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: 316f03d737f2e7d294eb5d743496652f8635d58d
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 6df7716aaf4eedcdb48031b95d8ff43006f83eba
+ms.sourcegitcommit: 169b7b66d13b7e3c86097b42206dd33389cd9166
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126601250"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "138148890"
 ---
 # <a name="use-the-code-metrics-results-window"></a>使用“代码度量结果”窗口
 
@@ -87,7 +87,7 @@ ms.locfileid: "126601250"
 
 可创建基于“代码度量结果”窗口中的结果的 [Azure Boards](/azure/devops/boards/index?view=vsts&preserve-view=true) 工作项。 创建工作项后，Visual Studio 会在“标题”字段中自动输入一个标题，在“历史记录”选项卡下自动输入代码度量数据 。
 
-有关 Azure Boards 工作项的详细信息，请参阅[工作项](/azure/devops/boards/work-items/index?view=vsts&preserve-view=true)。
+有关 Azure Boards 工作项的详细信息，请参阅[工作项](/azure/devops/boards/work-items/about-work-items)。
 
 ### <a name="to-create-a-work-item-based-on-a-result"></a>基于结果创建工作项
 

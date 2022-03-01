@@ -17,12 +17,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
-ms.openlocfilehash: 02e86eb41a05d880066be5aa102597b114d727d0
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: e3257e659f6e84f10a767a57e2f6e54a400c0b0b
+ms.sourcegitcommit: 169b7b66d13b7e3c86097b42206dd33389cd9166
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126735648"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "138149198"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>生成和运行编码的 Web 性能测试
 
@@ -32,7 +32,7 @@ ms.locfileid: "126735648"
 
 ## <a name="generate-a-coded-web-performance-test"></a>生成编码的 Web 性能测试
 
-1. 如果尚未创建 Web 性能测试，请参阅[记录 Web 性能测试](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project)。
+1. 如果尚未创建 Web 性能测试，请参阅[记录 Web 性能测试](/visualstudio/test/quickstart-create-a-load-test-project)。
 
 2. 生成编码的测试。
 

@@ -8,24 +8,24 @@ ms.author: tglee
 author: TerryGLee
 ms.manager: jmartens
 monikerRange: <=vs-2019
-ms.openlocfilehash: ae62b14b49ae5a5d210d32355dc91d5d05e1139c
-ms.sourcegitcommit: d38d1b083322019663fec7d1d85a4cda456aadca
+ms.openlocfilehash: b70b8ff9129530fd90c7542757b9abd3c1fd5bab
+ms.sourcegitcommit: 169b7b66d13b7e3c86097b42206dd33389cd9166
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "135533999"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "138148604"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>连接到团队资源管理器中的项目
 
 ::: moniker range="vs-2017"
 
-使用“团队资源管理器”工具窗口与其他团队成员协调代码工作，以开发项目，并管理分配给你、你的团队或项目的工作。 团队资源管理器将 Visual Studio 连接到 Git 和 GitHub 存储库、Team Foundation 版本控制 (TFVC) 存储库以及 [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops-services) 或本地 [Azure DevOps Server](/azure/devops/index-all)（以前称为 TFS）上托管的项目。 你可管理源代码、工作项和生成。
+使用“团队资源管理器”工具窗口与其他团队成员协调代码工作，以开发项目，并管理分配给你、你的团队或项目的工作。 团队资源管理器将 Visual Studio 连接到 Git 和 GitHub 存储库、Team Foundation 版本控制 (TFVC) 存储库以及 [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops) 或本地 [Azure DevOps Server](/azure/devops)（以前称为 TFS）上托管的项目。 你可管理源代码、工作项和生成。
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-团队资源管理器将 Visual Studio 2019 及早期版本连接到 Team Foundation 版本控制 (TFVC) 存储库以及 [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops-services) 或本地 [Azure DevOps Server](/azure/devops/user-guide/about-azure-devops-services-tfs?view=azure-devops&preserve-view=true)（以前称为 TFS）上托管的项目。 你可管理源代码、工作项和生成。
+团队资源管理器将 Visual Studio 2019 及早期版本连接到 Team Foundation 版本控制 (TFVC) 存储库以及 [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops) 或本地 [Azure DevOps Server](/azure/devops/user-guide/about-azure-devops-services-tfs?view=azure-devops&preserve-view=true)（以前称为 TFS）上托管的项目。 你可管理源代码、工作项和生成。
 
 > [!IMPORTANT]
 > 在 Visual Studio 2019 [版本 16.8](/visualstudio/releases/2019/release-notes-history) 中，默认启用 Git 版本控制体验。 若要详细了解它如何与团队资源管理器进行比较，请参阅 [Git 和团队资源管理器的并行比较](../version-control/git-team-explorer-feature-comparison.md)页。

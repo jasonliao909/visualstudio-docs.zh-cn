@@ -10,18 +10,18 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 5bc7610a65b2bc5b8f7194781fd05c04a26f0cb2
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: 4d1c16abbb7db57ea74b6033797a32c132c02181
+ms.sourcegitcommit: 169b7b66d13b7e3c86097b42206dd33389cd9166
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135805346"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "138149016"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 .runsettings 文件配置单元测试
 
 通过使用 .runsettings 文件，可配置 Visual Studio 中的单元测试。 例如，可更改正在运行测试的 .NET 版本、测试结果的目录，或者在测试运行期间收集的数据。 .runsettings 文件常见的用途是自定义[代码覆盖率分析](../test/customizing-code-coverage-analysis.md)。
 
-可以使用运行设置文件配置测试，这些测试可以从[命令行](vstest-console-options.md)IDE 运行，或者在使用 Azure Test Plans 或 Team Foundation Server (TFS) 的[生成工作流](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true)中运行。
+可以使用运行设置文件配置测试，这些测试可以从[命令行](vstest-console-options.md)IDE 运行，或者在使用 Azure Test Plans 或 Team Foundation Server (TFS) 的生成工作流中运行。
 
 运行设置文件是可选的。 如果不需要执行任何特殊配置，则无需 .runsettings 文件。
 
@@ -316,7 +316,7 @@ public void HomePageTest()
 |-|-|-|
 |**ForcedLegacyMode**|false|在 Visual Studio 2012 中，对 MSTest 适配器进行了优化，使其变得更快且更具可伸缩性。 某些行为（如测试的运行顺序）可能不与 Visual Studio 早期版本中的完全一致。 将此值设置为 true 可使用旧测试适配器。<br /><br />例如，如果为单元测试指定 app.config 文件，可能会用到此设置。<br /><br />我们建议你考虑重构测试以便可以使用较新的适配器。|
 |**IgnoreTestImpact**|false|当在 MSTest 中或从 Microsoft 测试管理器（在 Visual Studio 2017 中已弃用）运行时，测试影响功能会按这些测试受最新更改影响的程度对它们进行优先级排序。 此设置会停用该功能。 有关详细信息，请参阅[自上一个生成后应运行哪些测试？](/previous-versions/dd286589(v=vs.140))。|
-|**SettingsFile**||你可以指定测试设置文件以便与此处的 MSTest 适配器配合使用。 还可以[从设置菜单](#specify-a-run-settings-file-in-the-ide)指定测试设置文件。<br /><br />如果指定此值，则还必须将 **ForcedLegacyMode** 设置为 **true**。<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
+|**SettingsFile**||你可以指定测试设置文件以便与此处的 MSTest 适配器配合使用。 还可以[从设置菜单](#specify-a-run-settings-file-in-the-ide)指定测试设置文件。<br /><br />如果指定此值，还必须将 **ForcedLegacyMode 设置为** **true**。<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**KeepExecutorAliveAfterLegacyRun**|false|测试运行完成后，MSTest 将关闭。 测试中启动的任何进程也将终止。 如果希望测试执行程序保持活动状态，请将此值设为 true。 例如，可使用此设置让浏览器保持在编码的 UI 测试之间运行。|
 |**DeploymentEnabled**|true|如果将此值设置为 false，则不会将已在测试方法中指定的部署项目复制到部署目录中。|
 |**CaptureTraceOutput**|true|你可以使用 <xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=nameWithType> 从测试方法写入调试跟踪。|
