@@ -10,19 +10,19 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7c9a85e89e878076302796145c7669e8d5cdd83e
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: e2806629268337ea02da64e8fc958eae043b8d85
+ms.sourcegitcommit: 169b7b66d13b7e3c86097b42206dd33389cd9166
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736163"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "138148916"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>用于运行负载测试的测试代理和测试控制器的概述
 
 Visual Studio 可以使用物理计算机或虚拟机为应用生成模拟负载。 这些机器必须由一个测试控制器和一个或多个测试代理组成。 可以使用测试控制器和测试代理生成超出一台计算机单机生成能力的负载。
 
 > [!NOTE]
-> 还可以使用基于云的负载测试来提供同时生成访问网站的多个用户的负载的虚拟机。 但是，不支持在云托管的虚拟机上使用测试控制器/测试代理安装程序。 在[使用 Azure Test Plans 运行负载测试](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts&preserve-view=true)中详细了解基于云的负载测试。
+> 还可以使用基于云的负载测试来提供同时生成访问网站的多个用户的负载的虚拟机。 但是，不支持在云托管的虚拟机上使用测试控制器/测试代理安装程序。 在[使用 Azure Test Plans 运行负载测试](/azure/load-testing/quickstart-create-and-run-load-test)中详细了解基于云的负载测试。
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 

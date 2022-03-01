@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: 07c393bd9ff0a16bf2c2692a2b92425138af5554
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 7e9d1427042d8e977b2d1fbec1aaff8523fa9f4d
+ms.sourcegitcommit: 169b7b66d13b7e3c86097b42206dd33389cd9166
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126601290"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "138148591"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>实现托管代码的自定义代码分析签入策略
 
@@ -61,7 +61,7 @@ ms.locfileid: "126601290"
 
 1. 在“源代码管理器”中，右键单击“新建文件夹”，然后单击“将项添加到文件夹” 。
 
-     有关详细信息，请参阅 [Git 和 Azure Repos](/azure/devops/repos/git/overview?view=vsts&preserve-view=true)。
+     有关详细信息，请参阅 [Git 和 Azure Repos](/azure/devops/repos/git)。
 
 2. 单击创建的规则集文件，然后单击“完成”。
 

@@ -14,12 +14,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
-ms.openlocfilehash: f25c0b0e2ab80ac61b0256d1b4af2e95c02b2382
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 02266a14be0d1bb283723261b5d72e1e1ed6741b
+ms.sourcegitcommit: 169b7b66d13b7e3c86097b42206dd33389cd9166
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126640991"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "138148630"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>如何：收集 IntelliTrace 数据以帮助调试难题
 
@@ -130,6 +130,6 @@ IntelliTrace 文件中收集的数据可减少重现和诊断代码中的错误�
 ## <a name="see-also"></a>请参阅
 
 - [在测试时收集诊断数据 (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts&preserve-view=true)
-- [在手动测试中收集诊断数据 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true)
+- [在手动测试中收集诊断数据 (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data)
 - [使用测试设置收集诊断信息](../test/collect-diagnostic-information-using-test-settings.md)
 - [收集 IntelliTrace 数据](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)

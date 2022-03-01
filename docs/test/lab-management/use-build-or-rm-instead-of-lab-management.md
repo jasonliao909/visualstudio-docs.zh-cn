@@ -12,12 +12,12 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 23991ee72e6ce108048a644371f33a13e529eaff
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: fa996411b934083cb8f47f22105c3444359e9055
+ms.sourcegitcommit: 169b7b66d13b7e3c86097b42206dd33389cd9166
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736813"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "138148396"
 ---
 # <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>使用 Azure Test Plans 代替实验室管理工具版进行自动测试
 
@@ -49,7 +49,7 @@ Microsoft 测试管理器和实验室管理工具版依赖 XAML 生成定义来�
 
 ## <a name="self-service-management-of-scvmm-environments"></a>SCVMM 环境的自助式管理
 
-[Microsoft 测试管理器的测试中心](/azure/devops/test/mtm/guidance-mtm-usage?view=vsts&preserve-view=true)可以管理环境模板库，并使用 [SCVMM 服务器](/system-center/vmm/overview?view=sc-vmm-1801&preserve-view=true)根据需要配置环境。
+[Microsoft 测试管理器的测试中心](/azure/devops/test/reference-tcm)可以管理环境模板库，并使用 [SCVMM 服务器](/system-center/vmm/overview?view=sc-vmm-1801&preserve-view=true)根据需要配置环境。
 
 实验室中心的自助式预配功能有两个不同的目标：
 

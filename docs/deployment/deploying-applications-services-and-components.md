@@ -22,12 +22,12 @@ manager: jmartens
 ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a5d4a56bb65580b7a85d68b94ddb08bda3644d9
-ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
-ms.translationtype: HT
+ms.openlocfilehash: 899acd49674f012ec59101cf57f55f677b1a5245
+ms.sourcegitcommit: 169b7b66d13b7e3c86097b42206dd33389cd9166
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "131127034"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "138148617"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>先查看 Visual Studio 中的部署
 
@@ -53,7 +53,7 @@ ms.locfileid: "131127034"
 
 - **ASP.NET**、**ASP.NET Core**、**Python** 和 **Node.js**：使用以下任一方法发布到 Azure 应用服务或 Linux 上的 Azure 应用服务（使用容器）：
 
-  - 对于应用的连续（或自动）部署，请将 Azure DevOps 与 [Azure 管道](/azure/devops/pipelines/get-started-yaml?view=azdevops&preserve-view=true)结合使用。
+  - 对于应用的连续（或自动）部署，请将 Azure DevOps 与 Azure 管道结合使用。
   - 对于应用的一次性（或手动）部署，请使用 Visual Studio 中的“发布”工具。
   - 若要为 GitHub.com 上托管的 ASP.NET 和 Azure Function 项目创建 GitHub 操作工作流，请参阅[使用 GitHub Actions 部署到 Azure](../deployment/azure-deployment-using-github-actions.md)。
 
@@ -127,7 +127,7 @@ ms.locfileid: "131127034"
 
 ## <a name="continuous-deployment"></a>连续部署
 
-可以使用 Azure Pipelines 以实现应用的连续部署。 有关详细信息，请参阅 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true) 和[部署到 Azure](/azure/devops/deploy-azure/index?view=vsts&preserve-view=true)。
+可以使用 Azure Pipelines 以实现应用的连续部署。 有关详细信息，请参阅 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true) 和[部署到 Azure](/azure/devops/pipelines/overview-azure)。
 
 ## <a name="deploy-a-sql-database"></a>部署 SQL 数据库
 

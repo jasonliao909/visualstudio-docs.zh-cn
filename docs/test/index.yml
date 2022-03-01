@@ -10,12 +10,12 @@ metadata:
   ms.author: mikejo
   manager: jmartens
   ms.date: 08/19/2021
-  ms.openlocfilehash: 0d9adf972aacec0d59583a31027d73f1dcedd532
-  ms.sourcegitcommit: efe1d737fd660cc9183177914c18b0fd4e39ba8b
+  ms.openlocfilehash: 60dc6b123a82bc85035f1ae2c7cfad6088d019e2
+  ms.sourcegitcommit: 169b7b66d13b7e3c86097b42206dd33389cd9166
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 10/22/2021
-  ms.locfileid: "130211709"
+  ms.lasthandoff: 02/09/2022
+  ms.locfileid: "138148656"
 landingContent:
 - title: 关于测试工具
   linkLists:
@@ -70,7 +70,7 @@ landingContent:
     - text: 探索和手动测试 (Azure Test Plans)
       url: /azure/devops/test/overview?view=azure-devops&preserve-view=true
     - text: 负载测试 (Azure Test Plans)
-      url: /azure/devops/test/load-test/getting-started-with-performance-testing?view=azure-devops&preserve-view=true
+      url: /azure/load-testing/
     - text: 持续测试 (Azure Pipelines)
       url: /azure/devops/pipelines/?view=azure-devops&preserve-view=true
 - title: 更多测试工具

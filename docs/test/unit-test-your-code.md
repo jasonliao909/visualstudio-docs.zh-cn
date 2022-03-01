@@ -14,12 +14,12 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: bd506fe8c47050e936854c51f6e3c225210bcdff
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: e9767a790d3a5b4e6ef911170cda5a95dd0b7073
+ms.sourcegitcommit: 169b7b66d13b7e3c86097b42206dd33389cd9166
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736580"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "138148877"
 ---
 # <a name="unit-test-tools-and-tasks"></a>单元测试工具和任务
 
@@ -51,7 +51,7 @@ ms.locfileid: "126736580"
 |**对 C++ 代码进行单元测试**|- [编写适用于 C/C++ 的单元测试](../test/writing-unit-tests-for-c-cpp.md)<br />- [如何：将单元测试添加到 C++ 应用](../test/how-to-use-microsoft-test-framework-for-cpp.md)|
 |**使用代码覆盖率确定测试的项目代码的比例：** 了解 Visual Studio 测试工具的代码覆盖率功能。|- [使用代码覆盖率确定正在测试的代码量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
 |**隔离单元测试**|- [使用 Microsoft Fakes 隔离受测 .NET 代码](../test/isolating-code-under-test-with-microsoft-fakes.md)|
-|**使用负载测试执行压力和性能分析：** 了解如何创建负载测试，帮助隔离应用程序中的性能和压力问题（已弃用）。|- [快速入门：创建负载测试项目](../test/quickstart-create-a-load-test-project.md)<br />- [负载测试（Azure Test Plans 和 TFS）](/azure/devops/test/load-test/index?view=vsts&preserve-view=true)|
+|**使用负载测试执行压力和性能分析：** 了解如何创建负载测试，帮助隔离应用程序中的性能和压力问题（已弃用）。|- [快速入门：创建负载测试项目](../test/quickstart-create-a-load-test-project.md)<br />- [负载测试（Azure Test Plans 和 TFS）](/azure/load-testing/)|
 |**设置质量要求：** 了解如何创建质量要求以在签入或合并代码之前强制运行测试。|- [签入策略 (Azure Repos TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts&preserve-view=true)|
 |**设置测试选项：** 了解如何配置测试选项（如存储测试结果的位置）。|[使用 .runsettings 文件配置单元测试](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 

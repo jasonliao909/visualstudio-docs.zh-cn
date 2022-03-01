@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 192389c32a8ff5193b545a1a4159441bab298a8b
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: e811b76e0fa4498bf6f5672511a08ea4094fa7e4
+ms.sourcegitcommit: 169b7b66d13b7e3c86097b42206dd33389cd9166
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126644300"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "138148734"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>使用 IntelliTrace在部署后诊断问题（C#、Visual Basic）
 
@@ -52,7 +52,7 @@ Visual Studio 2017 及更高版本不包括 BuildInfo.config 文件，该文件�
 #### <a name="team-foundation-server-2013"></a><a name="TFS2013"></a> Team Foundation Server 2013
  设置生成管道以将源、生成和符号的位置添加到生成清单（BuildInfo.config 文件）。 Team Foundation Build 自动创建此文件并将其放置在项目的输出文件夹中。
 
-1. [编辑生成管道或创建新的生成管道。](/azure/devops/pipelines/get-started-designer?view=vsts&preserve-view=true)
+1. [编辑生成管道或创建新的生成管道。](/azure/devops/pipelines/customize-pipeline)
 
      ![在 TFS 2013 中查看生成管道](../debugger/media/ffr_tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
 

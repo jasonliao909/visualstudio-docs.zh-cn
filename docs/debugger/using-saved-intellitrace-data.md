@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a62e0714da65552eedc6ca989a5035cdcf655b8d
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 24346bd0a6fecf46ffc06245e8b345910e738ba0
+ms.sourcegitcommit: 169b7b66d13b7e3c86097b42206dd33389cd9166
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126640903"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "138148448"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>使用保存的 IntelliTrace 数据（C#、Visual Basic、C++）
 
@@ -262,7 +262,7 @@ ms.locfileid: "126640903"
 
  [IntelliTrace 功能](../debugger/intellitrace-features.md)
 
- [在手动测试中收集更多诊断数据](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true)
+ [在手动测试中收集更多诊断数据](/azure/devops/test/collect-diagnostic-data)
 
  [IntelliTrace](../debugger/intellitrace.md)
 

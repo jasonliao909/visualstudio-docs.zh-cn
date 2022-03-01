@@ -22,18 +22,18 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: da842df7f92bdcdbd5463755a9c56b5d42613778
-ms.sourcegitcommit: 4efdab6a579b31927c42531bb3f7fdd92890e4ac
+ms.openlocfilehash: 9ca8282f1753a98e4a4ec7e36e3667331835a8c6
+ms.sourcegitcommit: 169b7b66d13b7e3c86097b42206dd33389cd9166
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "130350802"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "138148422"
 ---
 # <a name="view-text-xml-html-json-strings-in-the-string-visualizer"></a>在字符串可视化工具中查看文本、XML、HTML、JSON 字符串
 
 在 Visual Studio 中进行调试时，可以使用内置字符串可视化工具查看字符串。 字符串可视化工具显示对于数据提示或调试器窗口而言过长的字符串。 它还可以帮助识别格式错误的字符串。
 
-内置的字符串可视化工具包括[文本](#text-string-data)、[XML](#xml-string-data)、[HTML](#html-string-data) 和 [JSON](#json-string-data) 选项。 也可以从“自动”或其他调试器窗口中打开一些其他类型的内置可视化工具，例如 [DataSet、DataTable 和 DataView](../debugger/dataset-visualizer-dialog-box.md) 对象。
+内置的字符串可视化工具包括 [文本](#text-string-data)、 [XML](#xml-string-data)、 [HTML](#html-string-data)和 [JSON](#json-string-data) 选项。 也可以从“自动”或其他调试器窗口中打开一些其他类型的内置可视化工具，例如 [DataSet、DataTable 和 DataView](../debugger/dataset-visualizer-dialog-box.md) 对象。
 
 > [!NOTE]
 > 如果需要在可视化工具中检查 XAML 或 WPF UI 元素，请参阅[在调试时检查 XAML 属性](../xaml-tools/inspect-xaml-properties-while-debugging.md)或[如何使用 WPF 树可视化工具](../debugger/how-to-use-the-wpf-tree-visualizer.md)。

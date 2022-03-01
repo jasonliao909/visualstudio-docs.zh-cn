@@ -11,12 +11,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3ccc9970c3e668a5242a5d409670da544d628992
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 1bf20fe0ffd01dabe7c5865b0a03da52c466ba12
+ms.sourcegitcommit: 169b7b66d13b7e3c86097b42206dd33389cd9166
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126640979"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "138149133"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>如何：使用测试设置在测试期间包括屏幕和语音录制
 
@@ -73,6 +73,6 @@ ms.locfileid: "126640979"
 ## <a name="see-also"></a>请参阅
 
 - [在测试时收集诊断数据 (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts&preserve-view=true)
-- [在手动测试中收集诊断数据 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true)
+- [在手动测试中收集诊断数据 (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data)
 - [使用测试设置收集诊断信息](../test/collect-diagnostic-information-using-test-settings.md)
 - [运行手动测试 (Azure Test Plans)](/azure/devops/test/run-manual-tests?view=vsts&preserve-view=true)

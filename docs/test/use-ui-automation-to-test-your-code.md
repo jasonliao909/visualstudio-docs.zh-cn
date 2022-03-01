@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: a908d28c6596e14adcdf17c17edab3c6167d8fc4
-ms.sourcegitcommit: 3cfe24a74b611440b831d9591e067874c51a3bfb
+ms.openlocfilehash: b3b7818d138eae0e0dd5de3820260d7066a0834e
+ms.sourcegitcommit: 169b7b66d13b7e3c86097b42206dd33389cd9166
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "130087405"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "138148964"
 ---
 # <a name="use-coded-ui-tests-to-test-your-code"></a>使用编码的 UI 测试来测试代码
 
@@ -450,8 +450,6 @@ myWinCheckBox.Checked = true;
 
 - [使用测试资源管理器运行单元测试](../test/run-unit-tests-with-test-explorer.md)
 
-- [在你的生成过程中运行测试](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true)
-
 - [如何：设置测试代理以运行与桌面交互的测试](/previous-versions/ee291332(v=vs.140))
 
 **添加对自定义控件的支持：** 编码的 UI 测试框架并非支持每个可能的 UI，可能不支持你要测试的 UI。 例如，不能立即创建 Microsoft Excel UI 的编码的 UI 测试。 然而，可以创建编码的 UI 测试框架的扩展来支持自定义控件。
@@ -464,7 +462,7 @@ myWinCheckBox.Checked = true;
 
 ## <a name="see-also"></a>请参阅
 
-- [录制和播放手动测试](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts&preserve-view=true)
+- [录制和播放手动测试](/previous-versions/azure/devops/test/mtm/record-play-back-manual-tests)
 - [Xamarin.UITest](/appcenter/test-cloud/uitest/)
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [演练：创建、编辑和维护编码的 UI 测试](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
