@@ -149,8 +149,6 @@
       href: get-started/csharp/tutorial-console.md
     - name: Visual Basic：创建控制台应用
       href: get-started/visual-basic/tutorial-console.md
-    - name: Node.js：创建 Web 应用
-      href: ide/quickstart-nodejs.md
 - name: 教程
   expanded: true
   items:
@@ -890,8 +888,6 @@
           href: ide/visual-studio-performance-tips-and-tricks.md
 - name: 可访问性
   items:
-    - name: 管理辅助功能
-      href: ide/reference/accessibility-features-of-visual-studio.md
     - name: 设置 IDE 辅助功能选项
       href: ide/reference/how-to-set-ide-accessibility-options.md
     - name: 辅助功能提示和技巧
