@@ -8,8 +8,6 @@
   items:
     - name: 初步了解 Visual Studio IDE
       href: quickstart-ide-orientation-js.md
-    - name: 创建 Node.js 项目
-      href: ../ide/quickstart-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json
     - name: 创建 Vue.js 项目
       href: quickstart-vuejs-with-nodejs.md
     - name: 创建 React 应用

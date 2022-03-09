@@ -127,11 +127,9 @@
           href: migrate-testsettings-to-runsettings.md
 - name: Live Unit Testing
   items:
-    - name: 介绍
+    - name: 简介
       displayName: Live Unit Testing introduction
       href: live-unit-testing-intro.md
-    - name: 新增功能
-      href: live-unit-testing-whats-new.md
     - name: 入门
       href: live-unit-testing-start.md
     - name: 配置并使用
@@ -334,8 +332,6 @@
               href: analyze-load-test-virtual-user-activity-in-the-details-view.md
             - name: 分析虚拟用户活动
               href: how-to-analyze-virtual-user-activity-during-a-load-test.md
-            - name: 演练：使用活动图表
-              href: walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md
         - name: 阈值规则冲突
           href: analyze-threshold-rule-violations-in-load-tests.md
         - name: 比较结果并分析趋势
