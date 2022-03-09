@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 10/27/2021
 ms.technology: vs-container-tools
-ms.openlocfilehash: 4bdaa209021e7db6d164790c6bc3e78fce7a210c
-ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
+ms.openlocfilehash: 4b46bdaf53f9f7070944ee5b97ec32e6eac6b97d
+ms.sourcegitcommit: f53c6f4e9f9de1e2aadf853b970c3654f0c193d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "139551659"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "139691675"
 ---
 # <a name="visual-studio-container-tools-for-docker"></a>Visual Studio Container Tools for Docker
 
@@ -23,7 +23,7 @@ Visual Studio 中用于使用 Docker 容器进行开发的工具易于使用，�
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * 安装了“Web 开发”、“Azure 工具”工作负载和/或“.NET Core 跨平台开发”工作负载的 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)  
-* 若要发布到 Azure 容器注册表，需要 Azure 订阅。 [注册免费试用版](https://azure.microsoft.com/offer/ms-azr-0044p/)。
+* 若要发布到 Azure 容器注册表，需要 Azure 订阅。 [注册免费试用版](https://azure.microsoft.com/offers/ms-azr-0044p/)。
 Visual Studio 中的 andDocker 支持
 
 Docker 支持可用于 ASP.NET 项目、ASP.NET Core 项目、Azure Functions、.net Core 控制台项目和 .NET Framework 控制台项目。
