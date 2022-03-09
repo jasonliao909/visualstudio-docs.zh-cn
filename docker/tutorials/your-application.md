@@ -10,11 +10,11 @@ ms.reviewer: nebuk89, ghogen
 ms.custom: “docker-team-owned”
 ms.date: 08/06/2021
 ms.openlocfilehash: f2a59399751a9fd51d6df9df3ce7abe04e6f9c73
-ms.sourcegitcommit: 2a8c7de72f952203289459736107c875837bb07e
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "137109966"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139554996"
 ---
 # <a name="build-and-run-the-todo-sample-app"></a>生成并运行待办事项示例应用
 

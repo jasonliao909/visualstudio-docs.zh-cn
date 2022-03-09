@@ -1,8 +1,8 @@
 ---
 title: 调试已安装的 UWP 应用包 | Microsoft Docs
-description: 在 Visual Studio 中调试 Windows 10 计算机、Xbox 和物联网 (IoT) 设备上已安装的通用 Windows 平台 (UWP) 应用包。
+description: 在 Windows 10 及更高版本的计算机、Xbox 和 物联网 (IoT) 设备上调试 Visual Studio 中已安装的通用 Windows Platform (UWP) 应用包。
 ms.custom: SEO-VS-2020
-ms.date: 11/07/2018
+ms.date: 02/22/2022
 ms.topic: how-to
 f1_keywords:
 - vs.debug.installedapppackagelauncher
@@ -22,16 +22,16 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: 3d398dd937bad3af548f1a32a4b9a5964ddb31fb
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: ab82aab5b323f0ae028a5b45e9ebf6c74b744b7f
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641218"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139550151"
 ---
 # <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>在 Visual Studio 中调试已安装的 UWP 应用包
 
-Visual Studio 可以调试 Windows 10 计算机以及 Xbox、HoloLens 和 IoT 设备上已安装的通用 Windows 平台 (UWP) 应用包。
+Visual Studio在 Windows 10 及更高版本的计算机以及 Xbox、HoloLens 和 IoT 设备上调试已安装的通用 Windows Platform (UWP) 应用包。
 
 >[!NOTE]
 >手机不支持 Visual Studio 调试已安装的 UWP 应用。
@@ -58,7 +58,7 @@ Visual Studio 可以调试 Windows 10 计算机以及 Xbox、HoloLens 和 IoT �
 
 ## <a name="debug-an-installed-uwp-app-on-a-remote-computer-or-device"></a><a name="remote"></a> 在远程计算机或设备上调试已安装的 UWP 应用
 
-Visual Studio 首次调试 Windows 10 设备或后创意者更新 Windows 10 远程计算机上已安装的 UWP 应用时，会在目标设备上安装远程调试工具。
+首次Visual Studio在 Windows 10 或更高版本的设备上或远程创意者更新 Windows 10 计算机上调试已安装的 UWP 应用时，它会在目标设备上安装远程调试工具。
 
 1. 在 Visual Studio 计算机和远程设备/计算机上[启用开发人员模式](/windows/uwp/get-started/enable-your-device-for-development)。
 
@@ -68,7 +68,7 @@ Visual Studio 首次调试 Windows 10 设备或后创意者更新 Windows 10 远
 
 1. 在“调试已安装的应用包”对话框的“连接类型”下，选择“远程计算机”或“设备”。
 
-   如果选择“设备”，则计算机必须以物理方式连接到 Windows 10 设备。
+   如果选择"**设备**"，计算机必须以物理方式连接到Windows 10或更新的设备。
 
    对于远程计算机，如果计算机地址未出现在“地址”旁，请选择“更改”。
 

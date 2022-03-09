@@ -3,7 +3,7 @@ title: 远程调试 C# 或 VB 项目 | Microsoft Docs
 description: 遵循以下分步说明，了解如何从远程计算机调试 Visual Studio C# 或 Visual Basic 应用程序。
 ms.custom:
 - remotedebugging"=
-ms.date: 08/14/2018
+ms.date: 02/23/2022
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3a4395e54b5bf9a1e10840266496922e432a0816
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 6910bea703edef126576e6f461e41920fbe3e650
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129970095"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139549868"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>在 Visual Studio 中远程调试 C# 或 Visual Basic 项目
 若要调试已部署到另一台计算机上的 Visual Studio 应用程序，请在部署了应用的计算机上安装并运行远程工具，将项目配置为从 Visual Studio 连接到远程计算机，然后运行应用。
@@ -68,7 +68,15 @@ Windows 7 和更高版本（非电话）以及从 Windows Server 2008 Service Pa
 
 4. 在“属性”页上，选择"调试"选项卡 。
 
-    ![Visual Studio 解决方案资源管理器的“属性”中“调试”选项卡的屏幕截图。 “使用远程计算机”属性设置为“MJO-DL:4022”。](../debugger/media/remotedebuggercsharp.png)
+    ::: moniker range="vs-2022"
+    对于面向 .net Core 或 .net 5 及更高版本的 c # 项目，从 Visual Studio 2022 开始，从 "**调试**" 选项卡中选择 "**调试" 启动配置文件 UI** ，以配置远程调试的设置。
+
+    ![c # 和 .net 的 Visual Studio Project 属性中的调试启动配置文件 UI 的屏幕截图。](../debugger/media/vs-2022/remote-debugger-csharp.png)
+
+    否则，可以直接在 " **调试** " 选项卡中更改远程调试设置。
+    ::: moniker-end
+
+    ![Visual Studio Project 属性中 "调试" 选项卡的屏幕截图。 “使用远程计算机”属性设置为“MJO-DL:4022”。](../debugger/media/remotedebuggercsharp.png)
 
 5. 请确保“工作目录”文本框为空。
 
@@ -76,7 +84,7 @@ Windows 7 和更高版本（非电话）以及从 Windows Server 2008 Service Pa
 
     在此示例中，使用：
     ::: moniker range="vs-2022"
-    Visual Studio 2019 上的 MJO-DL:4026
+    **MJO： 4026** Visual Studio 2022
     ::: moniker-end
     ::: moniker range="vs-2019"
     Visual Studio 2019 上的 MJO-DL:4024

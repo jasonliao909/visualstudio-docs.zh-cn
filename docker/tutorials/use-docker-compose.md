@@ -10,11 +10,11 @@ ms.reviewer: nebuk89, ghogen
 ms.custom: “docker-team-owned”
 ms.date: 08/06/2021
 ms.openlocfilehash: 0e3169cc59b9e2fa0e0b8cbbc55d63af412a69c6
-ms.sourcegitcommit: 2a8c7de72f952203289459736107c875837bb07e
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "137109927"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139554997"
 ---
 # <a name="use-docker-compose"></a>使用 Docker Compose
 

@@ -14,12 +14,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
-ms.openlocfilehash: 567d10de947cb02ea847f84861a384ae8785c08f
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 70715324682fd4526033c0cdacdf96ee6e37e52a
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641011"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139549527"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>在负载测试分析器的详细信息视图中分析负载测试虚拟用户活动
 
@@ -60,7 +60,6 @@ ms.locfileid: "126641011"
 |-|-|
 |运行负载测试：创建负载测试并将其配置为启用虚拟用户活动数据收集后，必须运行该测试，直到全部完成后才能查看其虚拟用户活动图。||
 |查看包含虚拟用户活动数据的负载测试结果：创建、配置并运行完负载测试后，可以使用虚拟用户活动图查看虚拟用户活动数据。|-   [分析负载测试结果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [如何：分析虚拟用户在负载测试期间的操作](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
-|**隔离负载测试中的性能问题：** 可以使用“虚拟用户活动图”来帮助隔离负载测试中的性能问题。|-   [演练：使用虚拟用户活动图隔离问题](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
 
 ## <a name="see-also"></a>请参阅
 

@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 775e461afd78c88e004d09ce2561dad716d3c032
-ms.sourcegitcommit: d63ba1eff845d41ca095efb14b499ea96c4b6eba
+ms.openlocfilehash: e2a748d932e94f4fdff2de302148bd7a594b32ce
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "129560953"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139550333"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>教程：在 Visual Studio 中创建 Node.js 和 React 应用
 
@@ -71,7 +71,7 @@ ms.locfileid: "129560953"
      
   1. 在 Visual Studio 安装程序中，选择“Node.js 开发”工作负载，然后选择“安装”。
      
-     ![显示 Visual Studio 安装程序中选择的 Node.js 工作负载的屏幕截图。](media/quickstart-nodejs-workload.png)
+     ![显示 Visual Studio 安装程序中选择的 Node.js 工作负载的屏幕截图。](media/tutorial-nodejs-workload.png)
   
   如果已安装 Visual Studio，但需要 Node.js 工作负载，请执行以下操作：
   

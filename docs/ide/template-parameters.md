@@ -13,12 +13,12 @@ author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.technology: vs-ide-general
-ms.openlocfilehash: fdfc214b88604562d450026aa577765035d59182
-ms.sourcegitcommit: ec474f32358861e1f62e92d8262051162f291edc
+ms.openlocfilehash: 4a8dbcce89e1a3ae64bc906e543bb9d318b575d0
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "136924094"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139550983"
 ---
 # <a name="template-parameters"></a>模板参数
 
@@ -60,6 +60,7 @@ ms.locfileid: "136924094"
 |projectname|创建项目时由用户提供的名称。|
 |registeredorganization|来自 HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization 的注册表项值。|
 |rootnamespace|当前项目的根命名空间，后跟当前项的子文件夹，斜杠替换为句点。 此参数仅适用于项模板。|
+|defaultnamespace|当前项目的根命名空间。 此参数仅适用于项模板。| 
 |safeitemname|与 `itemname` 相同，但所有不安全字符和空格替换为了下划线。|
 |safeitemrootname|与 `safeitemname` 相同。|
 |safeprojectname|用户在创建项目时提供的名称，但名称中删除了所有不安全字符和空格。|

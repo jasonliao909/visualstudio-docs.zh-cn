@@ -2,7 +2,7 @@
 title: 配置 Windows 防火墙以便进行远程调试 | Microsoft Docs
 description: 配置 Windows 防火墙以便进行远程调试。 配置用于远程调试的端口。 排查远程调试连接的问题。
 ms.custom: SEO-VS-2020
-ms.date: 09/10/2021
+ms.date: 02/22/2022
 ms.topic: how-to
 ms.assetid: 66e3230a-d195-4473-bbce-8ca198516014
 author: mikejo5000
@@ -11,21 +11,21 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: aa255a92d6f0cbe6aa5e9a39ab496415a4a72a46
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: facb74183e7377a5e276a60c387babbb73d6b46d
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128427299"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139551282"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>配置 Windows 防火墙以便进行远程调试
 
 在受 Windows 防火墙保护的网络上，必须将防火墙配置为允许远程调试。 Visual Studio 和远程调试工具会尝试在安装或启动期间打开正确的防火墙端口，但可能还需要手动打开端口或允许应用。
 
-本主题介绍如何在 Windows 10、8/8.1 和 7 以及 Windows Server 2012 R2、2012 和 2008 R2 计算机上配置 Windows 防火墙，以进行远程调试。 Visual Studio 和远程计算机不需要运行相同的操作系统。 例如，运行 Visual Studio 的计算机可以使用 Windows 10 ，而远程计算机可以运行 Windows Server 2012 R2。
+本主题介绍如何在 Windows 10、8/8.1 和 7 以及 Windows Server 2012 R2、2012 和 2008 R2 计算机上配置 Windows 防火墙，以进行远程调试。 Visual Studio 和远程计算机不需要运行相同的操作系统。 例如，Visual Studio 计算机可以运行 Windows 11，远程计算机可以运行 Windows Server 2012 R2。
 
 >[!NOTE]
->对于不同的操作系统和旧版 Windows，配置 Windows 防火墙的说明略有不同。 Windows 8/8.1、Windows 10 和 Windows Server 2012 设置使用“*应用*”一词，而 Windows 7 和 Windows Server 2008 使用“*程序*”一词。
+>对于不同的操作系统和旧版 Windows，配置 Windows 防火墙的说明略有不同。 Windows 8/8.1、Windows 10 和更新版本，Windows Server 2012 设置使用 word *应用*，而 Windows 7 和 Windows Server 2008 使用 word *程序*。
 
 ## <a name="configure-ports-for-remote-debugging"></a>配置用于远程调试的端口
 
@@ -33,7 +33,7 @@ Visual Studio 和远程调试器会尝试在安装或启动期间打开正确的
 
 **打开端口：**
 
-1. 在 Windows“开始”菜单中，搜索并打开“高级安全 Windows 防火墙”。 在 Windows 10 中，则是“高级安全性 Windows Defender 防火墙”。
+1. 在 Windows“开始”菜单中，搜索并打开“高级安全 Windows 防火墙”。 从 Windows 10 开始，这是 **具有高级安全性的 Windows Defender 防火墙**。
 
 1. 对于新的传入端口，选择“入站规则”，然后选择“新建规则”。  对于传出端口，则选择“出站规则”。
 

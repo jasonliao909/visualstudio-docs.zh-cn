@@ -2,7 +2,8 @@
 title: 了解 Visual Studio 中的 Flask 教程步骤 3，静态文件和页面
 titleSuffix: ''
 description: Visual Studio 项目上下文中 Flask 基础知识的演练，具体演示了如何提供静态文件、将页面添加到应用和使用模板继承
-ms.date: 01/26/2022
+ms.custom: devdivchpfy22
+ms.date: 02/07/2022
 ms.topic: tutorial
 author: rjmolyneaux
 ms.author: rmolyneaux
@@ -11,22 +12,23 @@ ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b326049887d4e1a8b92847cfc0aca0fb23bf609a
-ms.sourcegitcommit: 20f9529648e69707063dccb2b15089bf4e9bf639
+ms.openlocfilehash: 43f9368126c14359f8e4dea75b1c2d0bb9fa0074
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "137886782"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139551613"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance-with-flask-app"></a>步骤 3：通过 Flask 应用提供静态文件、添加页面和使用模板继承
 
 上一步：[使用视图和页面模板创建 Flask 应用](learn-flask-visual-studio-step-02-create-app.md)
 
-在本教程的前几个步骤中，你已了解如何通过单页自包含 HTML 创建最小的 Flask 应用。 然而，现代 Web 应用通常由许多页面组成，并利用 CSS、JavaScript 文件等共享资源来提供一致的样式和行为。
+在本教程的前几个步骤中，你已了解如何通过单页自包含 HTML 创建最小的 Flask 应用。 新式 Web 应用通常由许多页面组成，并使用 CSS 和 JavaScript 文件等共享资源来提供一致的样式和行为。
 
 在此步骤中，你将了解如何：
 
 > [!div class="checklist"]
+>
 > - 使用 Visual Studio 项模板快速添加具有方便样本代码的不同类型的新文件（步骤 3-1）
 > - 通过代码提供静态文件（步骤 3-2，可选）
 > - 向应用添加其他页（步骤 3-3）
@@ -34,11 +36,11 @@ ms.locfileid: "137886782"
 
 ## <a name="step-3-1-become-familiar-with-item-templates"></a>步骤 3-1：熟悉项模板
 
-开发 Flask 应用时，通常会添加多个 Python、HTML、CSS 和 JavaScript 文件。 对于每个文件类型（以及诸如 web.config 等其他需要部署的文件），Visual Studio 提供了方便的[项模板](python-item-templates.md)来帮助入门。
+开发 Flask 应用时，通常会添加多个 Python、HTML、CSS 和 JavaScript 文件。 对于每个文件类型 (以及部署web.config所需的其他文件，) Visual Studio ** 项模板来入门。[](python-item-templates.md)
 
 若要查看可用模板，请转到“解决方案资源管理器”，右键单击要在其中创建项的文件夹，选择“添加” > “新项”：
 
-![Visual Studio 中的“添加新项”对话框](media/flask/step03-add-new-item-dialog.png)
+![Visual Studio 中的“添加新项”对话框](media/flask/step-03-add-new-item-dialog.png)
 
 若要使用模板，选择所需的模板，为该文件指定一个名称，然后选择“确定”。 以这种方式添加项会自动将文件添加到 Visual Studio 项目中，并标记对源代码管理所做的更改。
 
@@ -48,7 +50,7 @@ ms.locfileid: "137886782"
 
 ## <a name="step-3-2-serve-static-files-from-your-app"></a>步骤 3-2：从应用中提供静态文件
 
-在使用 Python（借助任何框架）生成的 Web 应用中，Python 文件始终在 Web 主机的服务器上运行，并且永远不会传输到用户计算机。 然而，其他文件（如 CSS 和 JavaScript）都是由浏览器专用的，因此，主机服务器会在需要时按原样传递它们。 此类文件称为“静态”文件，可通过 Flask 自动交付，而无需编写任何代码。 例如，在 HTML 文件中，可以使用项目中的相对路径来引用静态文件。 本步骤的第一个部分将 CSS 文件添加到现有页面模板。
+在使用 Python（借助任何框架）生成的 Web 应用中，Python 文件始终在 Web 主机的服务器上运行，并且永远不会传输到用户计算机。 其他文件（如 CSS 和 JavaScript）仅由浏览器使用，因此主机服务器只需在请求它们时按要求传递它们。 此类文件称为“静态”文件，可通过 Flask 自动交付，而无需编写任何代码。 例如，在 HTML 文件中，可以使用项目中的相对路径引用静态文件。 本步骤的第一个部分将 CSS 文件添加到现有页面模板。
 
 当需要通过代码（例如通过 API 终结点实现）提供静态文件时，Flask 提供一种轻松方法，可使用名为 static 的文件夹（位于项目根目录）中的相对路径来引用文件  。 本步骤的第二个部分使用简单的静态数据文件演示该方法。
 
@@ -60,7 +62,7 @@ ms.locfileid: "137886782"
 
 1. 右键单击 static 文件夹，然后选择“添加” > “新项”。 在出现的对话框中，选择“样式表”模板，将文件命名为 `site.css`，然后选择“确定” 。 site.css 文件出现在项目中，并在编辑器中打开。 文件夹结构应类似于下图：
 
-    ![解决方案资源管理器中显示的静态文件结构](media/flask/step03-static-file-structure.png)
+    ![解决方案资源管理器中显示的静态文件结构](media/flask/step-03-static-file-structure.png)
 
 1. 将 site.css 的内容替换为以下代码并保存文件  ：
 
@@ -85,7 +87,7 @@ ms.locfileid: "137886782"
     </html>
     ```
 
-1. 运行项目以观察结果。 完成后停止应用，根据需要将更改提交到源代码管理（如[步骤 2](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control) 中所述）。
+1. 运行项目以观察结果。 完成后，停止应用，可以将更改提交到源代码管理 (步骤 [2](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control)) 。
 
 ### <a name="serve-a-static-file-from-code"></a>通过代码提供静态文件
 
@@ -111,7 +113,7 @@ Flask 提供一个名为 `serve_static_file` 的函数，可通过代码调用�
       return app.send_static_file('data.json')
     ```
 
-1. 运行该应用并导航到 /api/data 终结点来查看是否返回该静态文件。 完成后停止应用。
+1. 运行该应用并导航到 /api/data 终结点来查看是否返回该静态文件。 完成后，停止应用。
 
 ### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>问：是否有组织静态文件的任何约定？
 
@@ -168,7 +170,7 @@ Flask 提供一个名为 `serve_static_file` 的函数，可通过代码调用�
     <div><a href="about">About</a></div>
     ```
 
-1. 若要保存所有文件，请使用“文件” > “全部保存”菜单命令，或只需按 Ctrl+Shift+S。 （从技术上讲，不需要执行此步骤，因为在 Visual Studio 中运行项目会自动保存文件。 不过，可以了解一下这个命令！）
+1. 使用"文件""全部保存 > "菜单命令保存所有文件，或按 **CtrlShiftS**+。+  (不需要此步骤，因为运行 中的项目会自动Visual Studio保存文件。 不过，可以了解一下这个命令！）
 
 1. 运行项目并观察结果，并检查页面之间的导航。 完成后停止应用。
 
@@ -178,13 +180,13 @@ Flask 提供一个名为 `serve_static_file` 的函数，可通过代码调用�
 
 ## <a name="step-3-4-use-template-inheritance-to-create-a-header-and-nav-bar"></a>步骤 3-4：使用模板继承创建标头和导航栏
 
-与在每个页面上都有显式导航链接不同，现代 Web 应用通常使用品牌标头和提供最重要的页面链接、弹出菜单等内容的导航栏。 确保标头和导航栏在所有页面中都相同，但是你不希望在每个页面模板中重复相同的代码。 相反，你希望在一个位置定义所有页面的公共部分。
+与在每个页面上都有显式导航链接不同，现代 Web 应用通常使用品牌标头和提供最重要的页面链接、弹出菜单等内容的导航栏。 若要确保应用一致，标头和导航栏应在所有页面中都相同，而不要重复每个页面模板中的相同代码。 相反，你希望在一个位置定义所有页面的公共部分。
 
 Flask 模板系统（默认 Jinja）为实现跨多个模板重用特定元素提供了两种方法：包含和继承。
 
 - 包含  是可以使用语法 `{% include <template_path> %}` 在引用模板的特定位置插入的另一个页面模板。 如果想要在代码中动态更改路径，也可以使用一个变量。 包含通常用于页面主体，在页面特定位置拉入共享模板。
 
-- 继承使用页面模板开头的 `{% extends <template_path> %}` 来指定共享基本模板，然后会在此模板上生成引用模板。 继承通常用于为应用页面定义共享布局、导航栏和其他结构，这样一来，引用模板只需要添加或修改称为“块”的基本模板的特定区域。
+- 继承使用页面模板开头的 `{% extends <template_path> %}` 来指定共享基本模板，然后会在此模板上生成引用模板。 继承通常用于定义应用页面的共享布局、导航栏和其他结构，因此引用模板只需添加或修改称为块的基本模板的特定 *区域*。
 
 在这两种情况下，`<template_path>` 对应于应用的 templates 文件夹（还允许 `../` 或 `./`）。
 
@@ -222,7 +224,7 @@ Flask 模板系统（默认 Jinja）为实现跨多个模板重用特定元素�
     </html>
     ```
 
-1. 向应用的 static/site.css 文件添加以下样式（本教程不会尝试在此处演示响应式设计；这些样式仅仅是为了生成一个有趣的结果）  ：
+1. 将以下样式添加到应用的 *static/site.css* 文件 (本演练不会演示响应式设计。 但是，这些样式只会生成有趣的) ：
 
     ```css
     .navbar {
@@ -272,9 +274,9 @@ Flask 模板系统（默认 Jinja）为实现跨多个模板重用特定元素�
     {% endblock %}
     ```
 
-1. 运行服务器并观察结果。 完成时关闭服务器。
+1. 运行服务器并观察结果。 完成后，关闭服务器。
 
-    ![显示导航栏的正在运行的应用](media/flask/step03-nav-bar.png)
+    ![显示导航栏的正在运行的应用](media/flask/step-03-nav-bar.png)
 
 1. 因为已对应用进行大幅更改，所以现在是[将所做的更改提交到源代码管理](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control)的绝佳时机。
 

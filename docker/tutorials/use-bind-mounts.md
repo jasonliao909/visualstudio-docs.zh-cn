@@ -10,11 +10,11 @@ ms.reviewer: nebuk89, ghogen
 ms.custom: “docker-team-owned”
 ms.date: 08/06/2021
 ms.openlocfilehash: f37fa92c5e945413556f6c5621a8cd3382538318
-ms.sourcegitcommit: 2a8c7de72f952203289459736107c875837bb07e
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "137109914"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139555008"
 ---
 # <a name="use-bind-mounts"></a>使用绑定装载
 

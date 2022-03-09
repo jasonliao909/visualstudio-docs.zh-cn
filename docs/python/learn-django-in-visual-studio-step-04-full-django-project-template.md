@@ -2,7 +2,8 @@
 title: 学习 Visual Studio 中的 Django 教程的第 4 步，Web 项目模板
 titleSuffix: ''
 description: Visual Studio 项目上下文中 Django 基础知识的演练，具体介绍了 Django Web 项目模板提供的功能。
-ms.date: 01/25/2022
+ms.date: 02/16/2022
+ms.custom: devdivchpfy22
 ms.topic: tutorial
 author: rjmolyneaux
 ms.author: rmolyneaux
@@ -11,75 +12,75 @@ ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7a5c2803f099d25252a18a0e709335aa4c1d4af3
-ms.sourcegitcommit: 20f9529648e69707063dccb2b15089bf4e9bf639
+ms.openlocfilehash: 947dcde8868ace26accb37dbfbd45b8fbbe8a9ec
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "137886613"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139552195"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>步骤 4：使用完整的 Django Web 项目模板
 
 上一步：[为静态文件提供服务、添加页面和使用模板继承](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)
 
-通过在 Visual Studio 中的“空白 Django Web 项目”模板上生成应用，你已经了解了 Django 的基础知识，现在可以轻松地了解“Django Web 项目”模板生成的更完整的应用。
+现在，你已了解 Visual Studio 中的 Django 的基础知识，你可以轻松地了解 "Django Web Project" 模板引入的更完整应用。
 
-在此步骤中，将执行以下操作：
+在此步骤中，你现在可以：
 
 > [!div class="checklist"]
 > - 使用“Django Web 项目”模板创建一个更完整的 Django Web 应用并检查项目结构（步骤 4-1）
 > - 了解由项目模板创建的视图和页面模板，该模板由三个继承自基本页面模板的页面组成，并使用 jQuery 和 Bootstrap 等静态 JavaScript 库（步骤 4-2）
 > - 了解模板提供的 URL 路由（步骤 4-3）
 
-该模板还提供基本身份验证，详情请参见步骤 5。
+该模板还提供了基本身份验证，如 [步骤 5](learn-django-in-visual-studio-step-05-django-authentication.md)中所述。
 
 ## <a name="step-4-1-create-a-project-from-the-template"></a>步骤 4-1：通过模板创建项目
 
-1. 在 Visual Studio 中，转到解决方案资源管理器，右键单击在本教程前面创建的“LearningDjango”解决方案，并选择“添加” > “新项目”   。 （或者，如果想要使用新的解决方案，请改为选择“文件”   > “新建”   > “项目”  。）
+1. 在 Visual Studio 中，请跳到 **解决方案资源管理器**，右键单击本教程前面创建的 **LearningDjango** 解决方案。 然后，选择 "**添加**  >  **新 Project**"。  (如果要使用新的解决方案，请改为选择 "**文件**  >  " "**新建**  >  **Project** "。 ) 
 
-1. 在“新建项目”对话框中，搜索并选择“Django Web 项目”模板，调用项目“DjangoWeb”并选择“确定” 。
+1. 在 "**新建 Project** " 对话框中，搜索并选择 " **Django Web Project** " 模板。 调用 "DjangoWeb" 项目，然后选择 **"确定**"。
 
-1. 因为模板再次包含 requirements.txt 文件，Visual Studio 会询问在何处安装这些依赖项  。 选择“安装到虚拟环境”  选项，然后在“添加虚拟环境”  对话框中，选择“创建”  以接受默认设置。
+1. 模板包含 *requirements.txt* 文件时，Visual Studio 会提示安装依赖项的位置。 出现提示时，请选择 " **安装到虚拟环境** 中" 选项，然后在 " **添加虚拟环境** " 对话框中选择 " **创建** " 以接受默认值。
 
-1. 在 Visual Studio 完成设置虚拟环境后，按照 readme.html 中显示的说明创建 Django 超级用户（即管理员）。 只需右键单击 Visual Studio 项目并选择“Python” > “Django 创建超级用户”命令，然后按照提示进行操作。 请务必记录你的用户名和密码，因为在执行应用的身份验证功能时会用到。
+1. Visual Studio 完成虚拟环境的设置时，请按照 *readme.html* 文件中显示的说明创建一个 Django 超级用户 (即，管理员) 。 右键单击 Visual Studio 项目，然后选择 " **Python**  >  **Django Create 超级用户** 命令"，然后按照提示进行操作。 请确保在执行应用的身份验证功能时，记录用户名和密码。
 
-1. 若要将“DjangoWeb”项目设置为 Visual Studio 解决方案的默认值，可以在解决方案资源管理器中右键单击该项目，然后选择“设为启动项目”  。 启动项目（以粗体显示）会在启动调试器时运行。
+1. 通过右键单击 **解决方案资源管理器** 中的项目并选择 "**设为启动 Project**"，将 **DjangoWeb** 项目设置为 Visual Studio 解决方案的默认项目。 启动项目（以粗体显示）是启动调试器时运行的内容。
 
-    ![将 DjangoWeb 项目显示为启动项目的解决方案资源管理器](media/django/step04-second-project-in-solution-set-as-startup-project.png)
+    :::image type="content" source="media/django/step04-second-project-in-solution-set-as-startup-project.png" alt-text="解决方案资源管理器将 DjangoWeb 项目显示为启动项目。":::
 
-1. 选择“调试” > “启动调试”(F5) 或使用工具栏上的“Web 服务器”按钮运行服务器：
+1.  (**F5**) 选择 "**调试**  >  " "**开始调试**"，或使用工具栏上的 " **Web 服务器**" 按钮运行服务器。
 
-    ![Visual Studio 中的运行 Web 服务器工具栏按钮](media/django/run-web-server-toolbar-button.png)
+    :::image type="content" source="media/django/run-web-server-toolbar-button.png" alt-text="在 Visual Studio 中运行 web 服务器工具栏按钮。":::
 
-1. 该模板创建的应用有三个页面：“主页”、“关于”和“联系信息”，可以使用导航栏在其中进行导航。 花一到两分钟的时间检查应用的不同部分。 若要通过“登录”  命令对应用进行身份验证，请使用前面创建的超级用户凭据。
+1. 模板创建的应用有三个页面： "主页"、"关于" 和 "联系人"。 可以使用导航栏在页面之间导航。 花一到两分钟的时间检查应用的不同部分。 若要通过“登录”  命令对应用进行身份验证，请使用前面创建的超级用户凭据。
 
-    ![Django Web 项目应用的完整浏览器视图](media/django/step04-full-app-desktop-view.png)
+    :::image type="content" source="media/django/step04-full-app-desktop-view.png" alt-text="Django Web Project 应用的完整浏览器视图。":::
 
-1. 由“Django Web 项目”模板创建的应用将引导用于响应式布局，以适应移动设备外形规格。 要查看此响应能力，可以将浏览器调整为窄视图，使内容垂直显示，并使导航栏变为菜单图标：
+1. 由“Django Web 项目”模板创建的应用将引导用于响应式布局，以适应移动设备外形规格。 若要查看此响应能力，请将浏览器调整为窄视图，使内容垂直呈现，导航栏变为菜单图标。
 
-    ![Django Web 项目应用的移动（窄）视图](media/django/step04-full-app-mobile-view.png)
+    :::image type="content" source="media/django/step04-full-app-mobile-view.png" alt-text="Mobile (窄) Django Web Project 应用程序的视图。":::
 
 1. 可以在以下各节中使应用保持运行状态。
 
-    若要停止应用并[将更改提交到源代码管理](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control)，首先打开团队资源管理器中的“更改”页，右键单击虚拟环境的文件夹（可能是 env），然后选择“忽略这些本地项”     。
+    如果要停止应用并将 [更改提交到源代码管理](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control)，请打开 **团队资源管理器** 中的 "**更改**" 页，右键单击虚拟环境的文件夹 (可能是 **env**) ，然后选择 "**忽略这些本地项**"。
 
 ### <a name="examine-what-the-template-creates"></a>检查模板创建的内容
 
 在最广泛的层面上，“Django Web 项目”模板创建以下结构：
 
 - 项目根目录中的文件：
-  - manage.py，Django 管理实用工具。
-  - db.sqlite3，默认 SQLite 数据库。
-  - requirements.txt 包含了 Django 1.x 上的依赖项。
-  - readme.html，此文件在创建项目后显示在 Visual Studio 中。 如上一节所述，请按照此处的说明为应用创建一个超级用户（管理员）帐户。
-- app 文件夹包含所有应用文件，包括视图、模型、测试、窗体、模板和静态文件（请参阅步骤 4-2）。 通常会重命名此文件夹，使用一个更有特色的应用名称。
-- DjangoWeb （Django 项目）文件夹包含典型的 Django 项目文件：\_\_init\_\_.py、settings.py、urls.py 和 wsgi.py    。 通过使用项目模板，已经为应用和数据库文件配置了 settings.py，且为 urls.py 配置了到所有应用程序页（包括登录窗体）的路由。
+  - *manage.py*： Django 管理实用程序。
+  - *sqlite3*：默认的 SQLite 数据库。
+  - *requirements.txt*：在 Django 1.X 上包含依赖关系。
+  - *readme.html*：创建项目后 Visual Studio 中显示的文件。 如上一节所述，请按照此处的说明为应用创建一个超级用户（管理员）帐户。
+- app 文件夹包含所有应用文件，包括视图、模型、测试、窗体、模板和静态文件（请参阅步骤 4-2）。 通常会将此文件夹重命名为使用更具特色的应用名称。
+- DjangoWeb （Django 项目）文件夹包含典型的 Django 项目文件：\_\_init\_\_.py、settings.py、urls.py 和 wsgi.py    。 已使用项目模板为应用和数据库文件配置了 *settings.py* 文件。 *Urls.py* 文件还已设置到所有应用页的路由，包括登录窗体。
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>问：能否能在 Visual Studio 项目之间共享虚拟环境？
 
-答：可以，但在执行此操作时请注意，随着时间的推移，不同的项目可能会使用不同的包，因此共享的虚拟环境必须包含使用它的所有项目的所有包。
+答：是的，不过，这种情况下，不同的项目可能会在一段时间内使用不同的包。 因此，共享虚拟环境必须包含使用它的所有项目的所有包。
 
-不过，若要使用现有的虚拟环境，需执行以下操作：
+尽管如此，若要使用现有的虚拟环境，请执行以下步骤：
 
 1. 当系统提示在 Visual Studio 中安装依赖项时，请选择“我将自行安装”  选项。
 1. 在“解决方案资源管理器”  中，右键单击“Python 环境”  节点并选择“添加现有虚拟环境”  。
@@ -87,7 +88,7 @@ ms.locfileid: "137886613"
 
 ## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>步骤 4-2：了解通过项目模板创建的视图和页面模板
 
-正如你在运行项目时所观察到的，该应用包含三个视图：“主页”、“关于”和“联系信息”。 这些视图的代码位于 app/views 文件夹中。 每个视图函数都只是调用 `django.shortcuts.render`，其中包含通往模板和简单字典对象的路径。 例如，“关于”页面由 `about` 函数来处理：
+正如你在运行项目时所观察到的，该应用包含三个视图：“主页”、“关于”和“联系信息”。 这些视图的代码位于 app/views 文件夹中。 每个视图函数都使用模板的路径和一个简单的字典对象进行调用 `django.shortcuts.render` 。 例如，“关于”页面由 `about` 函数来处理：
 
 ```python
 def about(request):
@@ -104,7 +105,7 @@ def about(request):
     )
 ```
 
-模板位于应用的 templates/app 文件夹中（通常希望将 app 重命名为实际应用名称）。 基本模板 layout.html 的使用最为广泛  。 它指的是所有必需的静态文件（JavaScript 和 CSS），定义了其他页面覆盖的名为“内容”的块，并提供了另一个名为“脚本”的块。 以下来自 layout.html 的注释的摘录内容显示了这些特定区域  ：
+模板位于应用的 *模板/应用* 文件夹 (中，通常需要将 *应用* 重命名为实际应用) 的名称。 基本模板 layout.html 的使用最为广泛  。 *layout.html* 文件是指 JAVASCRIPT 和 CSS)  (所有必需的静态文件。 *layout.html* 文件还定义了一个名为 "content" 的块，而其他页将重写并提供名为 "scripts" 的另一个块。 以下 *layout.html* 文件中的批注摘录显示了这些特定区域：
 
 ```html
 <!DOCTYPE html>
@@ -144,7 +145,7 @@ def about(request):
 </html>
 ```
 
-每个单页模板 about.html、contact.html、index.html 均扩展了基本模板 layout.html     。 about.html 最简单，它显示 `{% extends %}` 和 `{% block content %}` 标记：
+每个单页模板 about.html、contact.html、index.html 均扩展了基本模板 layout.html     。 *about.html* 模板文件最简单，并显示 `{% extends %}` 和 `{% block content %}` 标记：
 
 ```html
 {% extends "app/layout.html" %}
@@ -159,13 +160,13 @@ def about(request):
 {% endblock %}
 ```
 
-index.html 和 contact.html 使用相同的结构，在“内容”块中提供更长的内容   。
+*index.html* 和 *contact.html* 模板文件使用相同的结构，并在 "content" 块中提供更长内容。
 
 templates / app 文件夹中还具有第 4 页 login.html，以及使用 `{% include %}` 引入 layout.html 的 loginpartial.html。 这些模板文件在有关身份验证的步骤 5 中进行了讨论。
 
 ### <a name="question-can--block--and--endblock--be-indented-in-the-django-page-template"></a>问：在 Django 页面模板中是否可以缩进 {% block %} 和 {% endblock %}？
 
-答：可以，如果缩进块标记，Django 页面模板操作正常，也许可以将它们对齐到适当的父元素中。 它们不会在 Visual Studio 项目模板生成的页面模板中缩进，这样就可以清楚地看到它们所在的位置。
+答：能。 如果缩进块标记，可能会使其在适当的父元素中对齐，则 Django 页模板可以正常工作。 若要清楚地查看块标记的放置位置，Visual Studio 页模板不会缩进块标记。
 
 ## <a name="step-4-3-understand-the-url-routing-created-by-the-template"></a>步骤 4-3：了解模板创建的 URL 路由
 
@@ -208,7 +209,7 @@ urlpatterns = [
 
 ### <a name="question-in-the-project-i-created-why-does-the-about-url-pattern-uses-about-instead-of-about-as-shown-here"></a>问：在我创建的项目中，为什么“about”URL 模式使用此处所示的“^about”而不是“^about$”？
 
-答：正则表达式中缺少尾随的“$”是许多版本的项目模板中的一个普遍疏忽。 URL 模式非常适用于名为“about”的页面，但如果没有尾随的“$”，URL 模式还会匹配诸如“about=django”、“about09876”、“aboutoflaughter”等 URL。 此处显示的尾随“$”用于创建 URL 模式，该模式只匹配“about”。
+答：正则表达式中缺少尾随的“$”是许多版本的项目模板中的一个普遍疏忽。 URL 模式适用于名为 "关于" 的页。 但是，如果没有尾随 "$"，URL 模式还会匹配 Url，如 "about = django"、"about09876"、"aboutoflaughter" 等。 此处所示的尾随 "$" 用于创建 *仅* 与 "about" 匹配的 URL 模式。
 
 ## <a name="next-steps"></a>后续步骤
 

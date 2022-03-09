@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 446d837f98f6bf9ae02a7ea5391f082252c151a9
-ms.sourcegitcommit: a439b1878939b2364cee0d09b851c2a67c42e563
+ms.openlocfilehash: 2879e85ce221c6df3edb851d5d23ee7e0b0cb35f
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "138567663"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139551009"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>欢迎使用 Visual Studio IDE
 
@@ -32,7 +32,7 @@ ms.locfileid: "138567663"
 
 查看下述一篇介绍性的文章，进一步了解 Visual Studio：
 
-- 介绍此 Learn 模块中的[基础知识：Visual Studio](/learn/modules/visual-studio-intro/)。
+- 涵盖此学习模块中的基础知识： [Visual Studio 简介](/learn/modules/visual-studio-intro/)。
 
 - 在[学习使用代码编辑器](tutorial-editor.md)中熟悉代码编辑器。
 
@@ -46,9 +46,11 @@ ms.locfileid: "138567663"
 
 - [使用 Visual Studio 创建第一个 F# Web 应用](../ide/quickstart-fsharp.md)
 
-- [使用 Visual Studio 创建第一个 Node.js 应用](../ide/quickstart-nodejs.md)
-
 - [使用 Visual Studio 创建第一个 C++ 控制台应用](/cpp/get-started/tutorial-console-cpp)
+
+另一种开始使用编码的好地方是教程：
+
+- [在 Visual Studio 中创建 Node.js 和 Express 应用](../javascript/tutorial-nodejs.md)
 
 ## <a name="see-also"></a>请参阅
 

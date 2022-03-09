@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 4fa9b3e991a618e2cad1f0d32a9ab3b0fd1a4060
-ms.sourcegitcommit: 429b2378ee21b5f473b26f4b4ea0a70372a34ec2
+ms.openlocfilehash: c556a8ad167a4e37508dea2864da17a6b785a519
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "137733357"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139549579"
 ---
 # <a name="compile-typescript-code-nodejs"></a>编译 TypeScript 代码 (Node.js)
 
@@ -25,13 +25,13 @@ ms.locfileid: "137733357"
 
 对于在 Visual Studio 2019 中开发的项目，建议使用 TypeScript npm 包，以实现跨不同平台和环境的更高可移植性。
 
-对于 ASP.NET Core，建议改为使用 NuGet[包](../javascript/compile-typescript-code-nuget.md)。
+对于 ASP.NET Core，建议改为使用 NuGet [包](../javascript/compile-typescript-code-nuget.md)。
 
 ## <a name="add-typescript-support-using-npm"></a>使用 npm 添加 TypeScript 支持
 
 [TypeScript npm 包](https://www.npmjs.com/package/typescript)添加 TypeScript 支持。 当 TypeScript 2.1 或更高版本的 npm 包安装到项目中时，将在编辑器中加载相应版本的 TypeScript 语言服务。
 
-1. [按照说明](../ide/quickstart-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json)安装 Node.js 开发工作负载和 Node.js 运行时。
+1. [按照说明](./tutorial-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json)安装 Node.js 开发工作负载和 Node.js 运行时。
 
    若要实现Visual Studio集成，请通过以下 TypeScript Node.js之一创建项目，例如"Node.js Web 应用程序"模板。 否则，请使用 Node.js中包含的 JavaScript 模板Visual Studio并按照此处的说明进行操作。 或者，使用" [打开文件夹"](../javascript/develop-javascript-code-without-solutions-projects.md) 项目。
 
@@ -107,7 +107,7 @@ ms.locfileid: "137733357"
 1. 如果需要配置选项（如启动页、Node.js 运行时路径、应用程序端口或运行时参数），请右键单击解决方案资源管理器中的项目节点，然后选择“属性”。
 
    >[!NOTE]
-   > 配置第三方工具时，Node.js项目不使用在"工具选项""项目和解决方案""Web 包管理  >    >    >  Web 工具 **"下** 配置  >  **的路径**。 这些设置用于其他项目类型。
+   > 配置第三方工具 > 时，Node.js项目不使用在"工具 **"** >  > "选项""项目和解决方案""Web 包管理""外部 **Web 工具"下配置** > **的路径**。 这些设置用于其他项目类型。
 
 1. 选择“生成”>“生成解决方案”。
 
@@ -119,7 +119,7 @@ ms.locfileid: "137733357"
 
 ### <a name="run-the-application"></a>运行应用程序
 
-有关在编译后运行应用程序的说明，请参阅[创建第一个 Node.js 应用](../ide/quickstart-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json#run-the-app)。
+有关编译应用后运行应用的说明，请参阅 [创建 Node.js 和 Express 应用](./tutorial-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json#run-the-app)。
 
 ## <a name="automate-build-tasks"></a>自动化生成任务
 

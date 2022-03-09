@@ -1,7 +1,7 @@
 ---
 title: 使用 Vue 创建 ASP.NET Core 应用
 description: 在本教程中，使用 ASP.NET Core 和 Vue 创建应用
-ms.date: 01/28/2022
+ms.date: 02/25/2022
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -13,12 +13,12 @@ dev_langs:
 ms.workload:
 - nodejs
 monikerRange: '>= vs-2022'
-ms.openlocfilehash: bc758290ac8b82bf2658c5f45b7a68b9b324b532
-ms.sourcegitcommit: 20f9529648e69707063dccb2b15089bf4e9bf639
+ms.openlocfilehash: e2a6f278b8542629a640082af9084e548556d429
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "137886666"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139549241"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-vue-in-visual-studio"></a>教程：在 Visual Studio 中使用 Vue 创建 ASP.NET Core 应用
 
@@ -141,6 +141,8 @@ ms.locfileid: "137886666"
 
 ## <a name="troubleshooting"></a>故障排除
 
+### <a name="proxy-error"></a>代理错误
+
 你可能会看到以下错误：
 
 ```
@@ -150,3 +152,20 @@ ms.locfileid: "137886666"
 如果看到此问题，很可能前端在后端之前启动。 看到后端命令提示符启动并运行后，只需在浏览器中刷新 Vue 应用即可。
 
 否则，如果该端口正在使用中，请在 *launchsettings.json* 中尝试5002，并 *vue.config.js*。
+
+### <a name="docker"></a>Docker
+
+如果在创建 web API 项目时启用 Docker 支持，则后端可以使用 Docker 配置文件启动，而不是在配置的端口5001上进行侦听。 若要解决问题，请执行以下操作：
+
+通过添加以下属性在 Launchsettings.json 中编辑 Docker 配置文件：
+
+```json
+"httpPort": 5003, 
+"sslPort": 5001  
+```
+
+或者，使用以下方法重置：
+
+1. 在解决方案属性中，将后端应用设置为启动项目。
+1. 在 "调试" 菜单中，使用 " **启动** " 按钮下拉菜单将配置文件切换到后端应用的配置文件。
+1. 接下来，在解决方案属性中重置为多个启动项目。

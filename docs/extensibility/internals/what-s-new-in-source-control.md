@@ -15,20 +15,20 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a2d24999f181edbbff3ed1a7a77eeaf5e0ff9cc
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: a289c15bd0e89b0d7106d2206a9858a8fe9a3763
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126665326"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139550697"
 ---
 # <a name="whats-new-in-source-control-for-the-visual-studio-2015-sdk"></a>Visual Studio 2015 SDK 的源代码管理的新增功能
 
-在中 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] ，可以通过实现源控件 VSPackage，提供深度集成的源代码管理解决方案。 本部分介绍源代码管理 Vspackage 的功能，并概述实现步骤。
+[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]在中，可以通过实现源控件 VSPackage，提供深度集成的源代码管理解决方案。 本部分介绍源代码管理 Vspackage 的功能，并概述实现步骤。
 
 ## <a name="the-source-control-vspackage"></a>源代码管理 VSPackage
 
-Visual Studio 支持两种类型的源代码管理解决方案。 在所有版本的 Visual Studio 中，仍可以集成源代码管理插件基于 API 的插件。 你还可以为源代码管理创建 VSPackage，它提供了一个 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 适用于需要高级别复杂和自治的源代码管理解决方案的深度集成。
+Visual Studio 支持两种类型的源代码管理解决方案。 在所有版本的 Visual Studio 中，仍可以集成源代码管理插件基于 API 的插件。 你还可以为源代码管理创建 VSPackage， [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 它提供了一个适用于需要高级别复杂和自治的源代码管理解决方案的深度集成。
 
 VSPackage 可以将几乎任何类型的功能添加到 Visual Studio。 源代码管理 VSPackage 为 Visual Studio 提供了一个完整的源代码管理功能，从向用户显示的 UI 到与源代码管理系统的后端通信。
 
@@ -44,9 +44,9 @@ VSPackage 可以将几乎任何类型的功能添加到 Visual Studio。 源代�
 
 4. 实现所有源代码管理 UI，包括菜单项、对话框、工具栏和上下文菜单。
 
-5. 当事件处于活动状态且必须由 VSPackage 处理时，所有与源代码管理相关的事件均会传递到源代码管理 VSackage。
+5. 当事件处于活动状态且必须由 VSPackage 处理时，所有与源代码管理相关的事件均会传递到源代码管理 VSPackage。
 
-6. 源代码管理 VSPackage 必须侦听事件（例如实现接口的事件），并 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> 跟踪 Project 文档 (TPD) 事件 (，如 <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> 接口) 实现并执行必要的操作。
+6. 源代码管理 VSPackage 必须侦听事件（例如实现 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> 接口的事件），并跟踪 Project 文档 (TPD) 事件 (，如接口) 实现 <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> 并执行必要的操作。
 
 ## <a name="see-also"></a>另请参阅
 

@@ -23,12 +23,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d195a89936254706f3a9b3bd065a1916cce23cf6
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: bf32da1f5f6e2166b36e1e368eabd8644c6753d5
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126737371"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139551901"
 ---
 # <a name="debugging-native-code-faqs"></a>调试本机代码常见问题
 下面的主题包含一些常见问题的答案：
@@ -46,10 +46,6 @@ ms.locfileid: "126737371"
 - [可以在哪里查阅 Win32 错误代码？](../debugger/where-can-i-look-up-win32-error-codes-q.md)
 
 - [如何在逐句通过程序时保持焦点？](../debugger/how-can-i-keep-focus-when-stepping-through-my-program-q.md)
-
-- [调试前台程序时如何使用调试器窗口？](../debugger/how-can-i-use-debugger-windows-while-debugging-a-foreground-program-q.md)
-
-- [如果在 MFC 中暂停，如何重新回到调用 MFC 的函数？](../debugger/how-to-get-back-to-the-function-that-called-mfc-if-halted.md)
 
 ## <a name="see-also"></a>请参阅
 - [调试器安全](../debugger/debugger-security.md)

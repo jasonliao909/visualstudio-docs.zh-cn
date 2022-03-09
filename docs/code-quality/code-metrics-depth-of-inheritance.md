@@ -9,12 +9,12 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: c08a35a622eeb30a51b4dea2ab4914b0105b01cd
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 7abe3c943a90a4e5b93be5a43615c0dec916ca78
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126601336"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139551776"
 ---
 # <a name="code-metrics---depth-of-inheritance-dit"></a>代码度量 - 继承深度 (DIT)
 
@@ -54,7 +54,7 @@ ms.locfileid: "126601336"
 
 ## <a name="code-analysis"></a>代码分析
 
-代码分析包括一系列可维护性规则。 有关详细信息，请参阅[可维护性规则](/dotnet/fundamentals/code-analysis/quality-rules/maintainability-warnings)。 使用旧式代码分析时，扩展设计指南规则集包含一个可维护性区域：
+代码分析包括可维护性规则的类别。 有关详细信息，请参阅[可维护性规则](/dotnet/fundamentals/code-analysis/quality-rules/maintainability-warnings)。 使用旧式代码分析时，扩展设计指南规则集包含一个可维护性区域：
 
 ![继承深度设计指南规则集](media/depth-of-inheritance-design-guidelines.png)
 
@@ -66,7 +66,7 @@ ms.locfileid: "126601336"
 
 ## <a name="putting-it-all-together"></a>总结
 
-DIT 的高值意味着错误率也更高，低值表示错误率也更低。 DIT 的高值表示通过继承重用代码的可能性更大，低值表示通过继承重用代码的可能性更低。 由于缺乏足够的数据，目前没有公认的 DIT 值标准。 即使是最近进行的研究，也没有找到足够的数据来确定可用作该度量标准数字的有效数字 [Shatnawi](#shatnawi)。 虽然没有实证为其佐证，但有一些资源表明 DIT 值的上限约为 5 或 6。 有关示例，请参阅 [http://www.devx.com/architect/Article/45611](http://www.devx.com/architect/Article/45611)。
+DIT 的高值意味着错误率也更高，低值表示错误率也更低。 DIT 的高值表示通过继承重用代码的可能性更大，低值表示通过继承重用代码的可能性更低。 由于缺乏足够的数据，目前没有公认的 DIT 值标准。 即使是最近进行的研究，也没有找到足够的数据来确定可用作该度量标准数字的有效数字 [Shatnawi](#shatnawi)。 虽然没有实证为其佐证，但有一些资源表明 DIT 值的上限约为 5 或 6。 有关示例，请参阅 [https://www.devx.com/architecture-zone/45611/](https://www.devx.com/architecture-zone/45611/)。
 
 ## <a name="citations"></a>引文
 

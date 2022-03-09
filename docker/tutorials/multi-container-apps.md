@@ -10,11 +10,11 @@ ms.reviewer: nebuk89, ghogen
 ms.custom: “docker-team-owned”
 ms.date: 08/06/2021
 ms.openlocfilehash: 48a22e3b44856f40815626e7f01f1f8dcfbe8d7b
-ms.sourcegitcommit: 2a8c7de72f952203289459736107c875837bb07e
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "137109940"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139555000"
 ---
 # <a name="multi-container-apps"></a>多容器应用
 

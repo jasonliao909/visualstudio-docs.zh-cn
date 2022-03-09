@@ -1,10 +1,10 @@
 ---
-title: 远程调试 | Microsoft Docs
+title: 远程调试
 description: 使用 Visual Studio 远程调试器来调试已部署到另一他计算机上的 Visual Studio 应用程序。
 ms.custom:
 - remotedebugging
 - SEO-VS-2020
-ms.date: 09/10/2021
+ms.date: 12/03/2021
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.remote.overview
@@ -23,14 +23,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ddae69c5261b63ef0e62fded1f94de448f82b984
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: caeab83729ebc14af83a8ababcbe8f052f42700d
+ms.sourcegitcommit: 7a300823cf1bd3355be03bde561cf2777bc09eae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129972383"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "139552403"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
+
 你可以调试已部署在另一台计算机的 Visual Studio 应用程序。 要进行此操作，可使用 Visual Studio 远程调试器。
 
 有关远程调试的深入说明，请参阅以下主题。
@@ -95,6 +96,7 @@ ms.locfileid: "129972383"
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
 ### <a name="configure-the-remote-debugger"></a><a name="configure_msvsmon"></a>配置远程调试器
+
 首次启动后，你可以更改远程调试器的部分配置。
 
 - 如果需要为其他用户添加权限以连接到远程调试器，请选择“工具”>“权限”。 你必须拥有管理员特权才能授予或拒绝权限。
@@ -112,6 +114,7 @@ ms.locfileid: "129972383"
      > 可以选择在“无身份验证”模式下运行远程工具，但强烈建议不要使用此模式。 在此模式下运行时，无法保证网络安全。 只有在确认网络不会遇到恶意通信的情况下，才可选择“无身份验证”模式。
 
 ## <a name="optional-configure-the-remote-debugger-as-a-service"></a><a name="bkmk_configureService"></a>（可选）将远程调试器配置为服务
+
 对于在 ASP.NET 和其他服务器环境中调试，你必须以管理员身份运行远程调试器；或者，如果你希望它始终运行，则将远程调试器作为服务运行。
 
  如果要将远程调试器配置为服务，请执行以下步骤。
@@ -120,7 +123,7 @@ ms.locfileid: "129972383"
 
 2. 开始运行配置向导。 当第一页出现时，单击“下一步” 。
 
-3. 勾选“将 Visual Studio 2015 远程调试器作为服务运行”  复选框。
+3. 选中 "将 **Visual Studio 远程调试器作为服务运行"** 复选框。
 
 4. 添加用户帐户的名称和密码。
 
@@ -132,7 +135,7 @@ ms.locfileid: "129972383"
 
 7. 单击 **“完成”** 。
 
-   此时，远程调试器正作为服务运行。 可以通过转到“控制面板”>“服务”并找到 “Visual Studio 2015 远程调试器”来对此进行验证 。
+   此时，远程调试器正作为服务运行。 可以通过转到 **"控制面板" "> 服务"** 并查找 **Visual Studio 远程调试器** 来对此进行验证。
 
    可以从“控制面板”>“服务”停止和启动远程调试器服务。
 

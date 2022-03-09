@@ -1,7 +1,7 @@
 ---
 title: 更改主题、字体、文本和对比度以提供辅助功能
 description: 了解如何更改 Visual Studio 颜色主题、字体颜色、文本大小和额外的对比度颜色，以提供辅助功能。
-ms.date: 11/24/2021
+ms.date: 02/28/2022
 ms.topic: how-to
 ms.custom: contperf-fy21q1
 helpviewer_keywords:
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: cc4aa4384b5be48d6456dccb38a6a92023b6ad04
-ms.sourcegitcommit: 2281b4f1f8737f263c0d7e55e00b5ec81517327d
+ms.openlocfilehash: a810d7cea8665e94c5d1bc6a91fb922b89c473a2
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "133108869"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139551204"
 ---
 # <a name="how-to-change-fonts-colors-and-themes-in-visual-studio"></a>如何：在 Visual Studio 中更改字体、颜色和主题
 
@@ -160,7 +160,7 @@ ms.locfileid: "133108869"
 
 ::: moniker-end
 
-有关详细信息，请参阅[更改编辑器的字体和颜色](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)页。
+若要详细了解如何在代码编辑器中更改字体和颜色，请参阅更改编辑器 [的字体和颜色](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md) 页。 有关 UI 的所有用户界面的详细信息 (用户界面) 更改字体和配色方案的元素，请参阅"字体和颜色，环境，选项" [对话框](../ide/reference/fonts-and-colors-environment-options-dialog-box.md) 页。
 
 ## <a name="accessibility-options"></a>辅助功能选项
 
@@ -220,17 +220,24 @@ ms.locfileid: "133108869"
 
 1. 在“颜色主题”下拉列表中，选择“蓝色(额外对比度)”主题，然后选择“确定”。
 
-若要详细了解可供使用的其他 Visual Studio 辅助功能选项，请参阅 [Visual Studio 的辅助功能](../ide/reference/accessibility-features-of-visual-studio.md)页。
-
 > [!TIP]
 > 如果有你认为可能有用但当前在 Visual Studio 中不可用的颜色或字体辅助功能选项，请通过选择 [Visual Studio 开发者社区](https://aka.ms/feedback/suggest?space=8)中的“建议功能”来告知我们。 有关此论坛及其工作原理的详细信息，请参阅[建议功能](../ide/suggest-a-feature.md)页。
 
-## <a name="next-steps"></a>后续步骤
+### <a name="more-accessibility-features-in-visual-studio"></a>更多辅助功能Visual Studio
 
-若要了解有关可更改字体和颜色方案的所有用户界面 (UI) 元素的详细信息，请参阅[字体和颜色、环境、选项对话框](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)页。
+除了字体和颜色辅助功能之外，下面还有一些使残障人士Visual Studio辅助功能的功能：
 
-## <a name="see-also"></a>请参阅
+- 键盘快捷方式控件和自定义项;请参阅[如何以独占方式使用键盘](reference/how-to-use-the-keyboard-exclusively.md)[和键盘](default-keyboard-shortcuts-in-visual-studio.md)Visual Studio。
 
-- [如何：在 Visual Studio 中更改编辑器中的字体和颜色](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+- 方法和参数的自动完成;请参阅[中的 IntelliSense](using-intellisense.md) Visual Studio。
+
+有关使残障人士更容易Windows功能、产品和服务的信息，请参阅 Microsoft 的辅助功能[产品和服务](reference/accessibility-products-and-services-from-microsoft.md)。 此外，若要详细了解如何获取 Microsoft 产品的更易于访问的文档格式，请参阅 Microsoft 中辅助功能产品和服务的备用[格式文档部分](reference/accessibility-products-and-services-from-microsoft.md)页。[](reference/accessibility-products-and-services-from-microsoft.md#documentation-in-alternative-formats)
+
+### <a name="accessibility-support"></a>辅助功能支持
+
+此页上包含的辅助功能信息可能仅适用于在 美国 中许可 Microsoft 产品的用户。 如果你在美国之外获得本产品，请访问 [Microsoft 辅助功能](https://www.microsoft.com/accessibility/)网站，以获取 Microsoft 支持服务电话号码和地址的列表。 你可以与当地的分公司联系，了解你所在的地区是否供应本页所描述的产品和服务类型。 有关辅助功能的信息还有其他语言版本。
+
+## <a name="see-also"></a>另请参阅
+
 - [Visual Studio 代码编辑器的功能](../ide/writing-code-in-the-code-and-text-editor.md)
 - [个性化设置 Visual Studio IDE 和编辑器](../ide/quickstart-personalize-the-ide.md)

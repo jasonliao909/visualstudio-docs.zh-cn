@@ -9,18 +9,18 @@ helpviewer_keywords:
 - Help Viewer, Viewer Options
 - Viewer Options [Help Viewer]
 ms.assetid: 9c0bc950-7323-4f0f-8de2-0b0af9a42b85
-author: ghogen
-ms.author: ghogen
+author: jasonchlus
+ms.author: jasonchlus
 manager: jmartens
 ms.technology: vs-help-viewer
 ms.workload:
 - multiple
-ms.openlocfilehash: e7f78e7210cc93cf1548f31671e41fda735ff1bb
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 295dcf67ca0aad084f67fe1be03ff13d71444153
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126663965"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139549787"
 ---
 # <a name="customize-the-help-viewer"></a>自定义 Help Viewer
 可以自定义 Help Viewer 窗口的布局以及其他选项，如字号、最大结果数以及是否包括英语内容。

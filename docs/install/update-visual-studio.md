@@ -2,7 +2,7 @@
 title: 更新 Visual Studio
 titleSuffix: ''
 description: 了解如何逐步将 Visual Studio 更新到最新版本。
-ms.date: 12/7/2021
+ms.date: 3/3/2022
 ms.custom: vs-acquisition
 ms.topic: how-to
 ms.prod: visual-studio-windows
@@ -17,26 +17,26 @@ ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e7ee455b3e59ca6fd4cb8dad8a5ddb4672336bc
-ms.sourcegitcommit: d38d1b083322019663fec7d1d85a4cda456aadca
+ms.openlocfilehash: c29b50ebc87e5afe581115c3434cc6f19512fd81
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "135534377"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139550907"
 ---
 # <a name="update-visual-studio"></a>更新 Visual Studio
 
-本主题讨论了如何更新 Visual Studio 的客户端安装。  如果你是 IT 管理员，并且想要将组织的客户端配置为从网络布局进行更新，请参阅 [Visual Studio 管理员指南](https://aka.ms/vs/admin/guide)，尤其是有关[管理和更新网络安装](../install/update-a-network-installation-of-visual-studio.md)的部分。
+本主题讨论如何在 Windows 上更新 Visual Studio 的客户端安装。 对于 Visual Studio for Mac，请参阅[更新 Visual Studio for Mac](/visualstudio/mac/update)。
 
-本主题适用于 Visual Studio  Windows 版。 对于 Visual Studio for Mac，请参阅[更新 Visual Studio for Mac](/visualstudio/mac/update)。 
+如果你是 IT 管理员，并且想要将组织的客户端配置为从网络布局进行更新，请参阅[Visual Studio 管理员指南](https://aka.ms/vs/admin/guide)，特别是有关[管理和更新网络安装](../install/update-a-network-installation-of-visual-studio.md)的部分。
 
 ## <a name="before-you-update"></a>更新之前
 
 为了安装、更新或修改 Visual Studio，必须使用具有管理权限的帐户登录计算机。 如果以典型用户身份登录并尝试执行其中一个命令，则你会收到用户帐户控制通知，提示你输入管理员凭据。 有关详细信息，请参阅[用户权限与 Visual Studio](../ide/user-permissions-and-visual-studio.md)。
 
-强烈建议在执行更新之前保存工作。
+执行更新之前，必须先关闭 Visual Studio。 强烈建议在执行更新之前保存工作。
 
-计算机上必须安装了 Visual Studio 才能进行更新。 若要从 Microsoft 托管的服务器安装最新版本的 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads)页。 如果当前正在使用 Visual Studio 的另一个实例，可以[将 Visual Studio 的新实例并行安装到现有安装中](../install/install-visual-studio-versions-side-by-side.md)，也可以在安装此新实例之前[卸载 Visual Studio 的上一个实例](../install/uninstall-visual-studio.md)。
+必须先在计算机上安装 Visual Studio，然后才能对其进行更新。 若要从 Microsoft 托管的服务器安装最新版本的 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads)页。 如果当前正在使用 Visual Studio 的另一个实例，可以[将 Visual Studio 的新实例并行安装到现有安装中](../install/install-visual-studio-versions-side-by-side.md)，也可以在安装此新实例之前[卸载 Visual Studio 的上一个实例](../install/uninstall-visual-studio.md)。
 
 ::: moniker range="vs-2017"
 
@@ -264,25 +264,25 @@ ms.locfileid: "135534377"
 
 1. 打开 Visual Studio 安装程序，选择要配置的实例，选择“更多”按钮，然后选择“更新设置”菜单选项 。 请参阅前面的说明，了解如何查找 Visual Studio 安装程序。
 
-    ![屏幕截图显示安装程序中的更新设置。](media/vs-2022/installer-update-settings-menu-option.png)
+  ![屏幕截图显示安装程序中的更新设置。](media/vs-2022/installer-update-settings-menu-option.png)
 
 2. 调用“更新设置”对话框的另一种方法是打开 Visual Studio IDE，打开“有可用更新”对话框（更新通知上的“查看详细信息”或“帮助”菜单上的“检查更新”），然后单击“更改更新设置”链接 。   
 
-    ![屏幕截图显示 IDE 中“有可用更新”对话框中的更新设置。](media/vs-2022/invoke-update-settings-in-the-IDE.png)
+  ![屏幕截图显示 IDE 中“有可用更新”对话框中的更新设置。](media/vs-2022/invoke-update-settings-in-the-ide.png)
     
-“更新设置”对话框将如下所示。
+" **更新设置** "对话框将如下所示。 此示例中，Visual Studio 实例使用 LTSC 17.0 通道。
 
    ![屏幕截图显示 Visual Studio 2022 IDE 中的“更新设置”对话框。](media/vs-2022/update-settings.png)
 
 通过在“更新通道”下拉菜单中选择正确的值，你可以控制这个 Visual Studio 实例未来更新的源位置。 其他需要记住的方面包括：
  * 预览版和最新版通道适用于所有版本的 Visual Studio，LTSC 通道仅适用于 Professional Enterprise 客户。 
- * 可以选择在配置更新通道位置后立即更新 Visual Studio 实例。 或者，可以将实际产品更新延迟到稍后的时间。 配置更新通道的行为和更新产品的行为是两个独立的事件。 
- * 更新到新通道时，将在该通道安装最新版本。 如果你是企业客户，并且想要在通道上安装特定版本，请按照前面所述的“运行特定引导程序说明”进行操作。 
+ * 可以选择在配置"更新通道Visual Studio立即更新实例。 或者，可以将实际产品更新延迟到稍后的时间。 配置更新通道的行为和更新产品的行为是两个独立的事件。 若要了解如何以编程方式控制更新通道，请参阅 [使用 modifySettings 命令](/visualstudio/install/use-command-line-parameters-to-install-visual-studio#configure-source-location-of-updates-command-and-command-line-parameters)。 
  * 只有当该通道提示提供的产品版本大于你所安装的版本时，你才能改变更新通道。 例如，始终可以从最新版通道转换到预览版通道，但无法从预览版通道转换到最新版通道，除非最新版通道的最新版本超过已安装的预览版。 
- * LTSC 通道都有到期日期。 LTSC 过期后，它将不能用作更新源，并且它将从此列表中消失。
+* 更新到新通道时，将安装该通道上的最新版。 如果你是企业客户，并且想要在通道中安装特定版本的产品，请按照前面所述的运行特定 [引导](#run-a-specific-bootstrapper-1) 程序说明进行操作。 
+ * LTSC 通道都有到期日期，如上图所示。 LTSC 过期后，它不能用作更新源，并且将从此列表消失。
  * 所有 Microsoft 通道都托管在 Microsoft 服务器上，需要访问 Internet。
  * 每个 Visual Studio 实例都能够独立配置其源进行更新。 因此，如果安装了两个 Visual Studio 2022 实例，则每个实例都可以从不同的通道进行更新。 
- * IT 管理员可以控制“更新通道”下拉菜单中的数值。 例如，他们可以将网络布局位置添加为更新源。 他们还可以禁止 Microsoft 托管位置作为更新源选项提供。 此功能还适用于 Visual Studio 2019 安装。 若要了解如何配置这些更新位置，请参阅 [Visual Studio 管理员指南](https://aka.ms/vs/admin/guide)
+ * IT 管理员可以控制"更新通道"下拉列表 **中的** 文本。 例如，他们可以将网络布局位置添加为更新源。 他们还可以禁止 Microsoft 托管位置作为更新源选项提供。 此功能还适用于 Visual Studio 2019 安装。 若要了解如何配置这些更新位置，请参阅设置企业 [部署的默认值](/visualstudio/install/set-defaults-for-enterprise-deployments?#configuring-source-location-for-updates) 页。
 
 ## <a name="update-on-close"></a>关闭时更新
 

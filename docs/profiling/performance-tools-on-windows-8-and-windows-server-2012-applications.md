@@ -11,12 +11,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8725d077b4baa90a3350d4e866cb06e432282773
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: e994b551d90b44242c15fbd5583ea9d878d35b05
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126735674"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139551594"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 和 Windows Server 2012 应用程序上的性能工具
 
@@ -74,9 +74,9 @@ Windows 8 和 Windows Server 2012 中新增的增强安全功能需要对 Visual
 
 这两个工具都随 Visual Studio 一起安装以用于本地计算机。
 
-若要分析未安装 Visual Studio 的设备上的应用程序，请执行以下操作之一：
+若要分析未安装Visual Studio应用程序：
 
-- 从 [MSDN 网站](https://visualstudio.microsoft.com/#downloads+d-additional-software)上下载这些工具作为 Visual Studio 远程工具的一部分。
+- 下载[特定于你](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)版本版本的远程Visual Studio。
 
 - 从你的 Visual Studio 计算机复制并运行独立探查器工具安装程序。 若要获取分析工具的路径，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 为远程计算机的操作系统 (x86/x64) 选择安装程序。
 

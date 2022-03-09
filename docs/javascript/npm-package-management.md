@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 80c0e5a44cd24abad2904be6000d0d51110c92dc
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: 3134e3e57a9fb6f853bb5344319f7101e65d343a
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135803279"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139550723"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>在 Visual Studio 中管理 npm 包
 
@@ -66,7 +66,7 @@ Visual Studio 与 npm 的集成因项目类型而异。
 
 ### <a name="prerequisites"></a>先决条件
 
-需要安装“Node.js 开发”工作负载和 Node.js 运行时，以便将 npm 支持添加到项目  。 有关详细步骤，请参阅[创建 Node.js 项目](../ide/quickstart-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json)。
+需要安装“Node.js 开发”工作负载和 Node.js 运行时，以便将 npm 支持添加到项目  。 有关详细步骤，请参阅 [创建 Node.js 和 Express 应用](./tutorial-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json)。
 
 > [!NOTE]
 > 对于现有的 Node.js 项目，请使用“基于现有 Node.js 代码”解决方案模板或 [Open folder (Node.js)](../javascript/develop-javascript-code-without-solutions-projects.md) 项目类型来在项目中启用 npm  。

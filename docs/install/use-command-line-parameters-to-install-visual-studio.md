@@ -2,7 +2,7 @@
 title: 使用命令行参数安装 Visual Studio
 titleSuffix: ''
 description: 了解如何使用命令行参数来控制或自定义 Visual Studio 安装。
-ms.date: 11/23/2021
+ms.date: 3/3/2022
 ms.topic: conceptual
 f1_keywords:
 - command-line parameters
@@ -16,24 +16,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 73783c0aae038b1c3ebeb3daef0b619ccf37834b
-ms.sourcegitcommit: d38d1b083322019663fec7d1d85a4cda456aadca
+ms.openlocfilehash: fd941f65dd5571f8c95e0900c9aecee2b8cecf09
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "135534277"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139551295"
 ---
-# <a name="use-command-line-parameters-to-install-visual-studio"></a>使用命令行参数安装 Visual Studio
+# <a name="use-command-line-parameters-to-install-update-and-manage-visual-studio"></a>使用命令行参数来安装、更新和管理 Visual Studio
 
 以编程方式或从命令提示符安装 Visual Studio 时，可以使用各种命令行参数来控制或自定义安装并执行以下操作：
 
 - 使用预先选择的特定选项和行为来启动客户端上的安装。
-- 自动执行安装过程。
+- 自动执行安装或更新过程。
 - 创建或维护产品文件的网络布局，以便安装或更新客户端计算机。
 
-大多数命令行选项与安装引导程序配合使用，安装引导程序是启动下载过程的小型 (~1 MB) 文件（例如 vs_enterprise.exe）。  下面列出的所有命令和参数都旨在与引导程序一起使用。 
+下面所述的命令行选项可以与安装引导程序结合使用，安装引导程序是小型 (~ 1 MB) 文件 (例如，vs_enterprise.exe) 启动下载过程，或与安装程序一起使用。 下面列出的所有命令和参数均用于处理引导程序，除非显式指定为仅安装程序。 请注意，如果通过布局安装 Visual Studio，则客户端计算机可能只有可用于编程执行的安装程序。 
 
-还可以使用管理员更新包（可从 [Microsoft 更新目录](https://catalog.update.microsoft.com)下载）以编程方式更新网络布局。 若要详细了解如何这样做，请参阅[更新或修改布局](create-a-network-installation-of-visual-studio.md#update-the-layout-to-a-specific-version-of-the-product)文档。  
+还可以使用可从 [Microsoft 更新目录](https://catalog.update.microsoft.com)下载的管理员更新包，以编程方式更新网络布局。 若要详细了解如何这样做，请参阅[更新或修改布局](create-a-network-installation-of-visual-studio.md#update-the-layout-to-a-specific-version-of-the-product)文档。  
 
 ::: moniker range="vs-2017"
 
@@ -93,9 +93,11 @@ ms.locfileid: "135534277"
 
 ::: moniker-end
 
-## <a name="bootstrapper-commands-and-command-line-parameters"></a>引导程序命令和命令行参数
+可在以下位置找到 Visual Studio 安装程序： `C:\Program Files (x86)\Microsoft Visual Studio\Installer\setup.exe` 。 请注意，不能以编程方式从安装程序所在的同一目录启动安装程序。   
 
-以编程方式调用 Visual Studio 引导程序以安装产品或维护布局时，第一个参数是描述要执行的操作的命令（谓词）。 后续的可选命令行参数带两个短划线 (--) 作为前缀，将进一步定义该操作的发生方式。 所有 Visual Studio 命令行参数均不区分大小写，可以在[命令行参数示例](command-line-parameter-examples.md)页上查看更多示例。
+## <a name="install-update-modify-repair-uninstall-and-export-commands-and-command-line-parameters"></a>安装、更新、修改、修复、卸载和导出命令以及命令行参数
+
+以编程方式调用 Visual Studio 引导程序或安装程序以安装产品或维护布局时，第一个参数是命令 (谓词) 描述要执行的操作。 后续的可选命令行参数带两个短划线 (--) 作为前缀，将进一步定义该操作的发生方式。 所有 Visual Studio 命令行参数均不区分大小写，可以在[命令行参数示例](command-line-parameter-examples.md)页上查看更多示例。
 
 语法示例：`vs_enterprise.exe [command] <optional parameters>...`
 
@@ -106,14 +108,14 @@ ms.locfileid: "135534277"
 | `update`    | 更新已安装的产品。                                                                                           |
 | `repair`    | 修复已安装的产品。                                                                                           |
 | `uninstall` | 卸载已安装的产品。                                                                                        |
-| `export`    | 将安装所选内容导出到安装配置文件。 **注**：仅能与 vs_installer.exe 一起使用。 |
+| `export`    | 将安装所选内容导出到安装配置文件。 **注意**：只能与 vs_installer.exe 或 setup.exe 一起使用。 |
 
 > [!IMPORTANT]
 > 当指定多种不同的工作负载、组件或语言时，必须对每项重复运行 `--add` 或 `--remove` 命令行开关。
 
 | **参数**                                     | **说明**                                                            |
 |----------------------------------------------------|----------------------------------------------------------------------|
-| `--installPath <dir>`                              | 对于默认安装命令，此参数是 **可选** 的，用于说明实例在客户端计算机上的安装位置。 对于其他命令，如 update 或 modify，此参数是 **必需** 的，用于指示实例在执行操作时使用的安装目录。                                                   |
+| `--installPath <dir>`                              | 对于默认安装命令，此参数是 **可选** 的，用于说明实例在客户端计算机上的安装位置。 对于其他命令，如 update 或 modify，此参数是 **必需** 的，用于指示实例在执行操作时使用的安装目录。  |
 | `--add <one or more workload or component IDs>`    | **可选**：在 install 或 modify 命令期间，这个可重复参数会指定要添加的一个或多个工作负载或组件 ID。 将安装项目的所需组件，而不是建议组件或可选组件。 可以使用 `--includeRecommended` 和/或 `--includeOptional` 参数来全局性地控制更多组件。 若要包括多个工作负荷或组件，请重复 `--add` 命令（例如，`--add Workload1 --add Workload2`）。 若要更精确地进行控制，可以将 `;includeRecommended` 或 `;includeOptional` 追加到 ID 中（例如，`--add Workload1;includeRecommended` 或 `--add Workload2;includeRecommended;includeOptional`）。 有关详细信息，请参阅[工作负载和组件 ID](workload-and-component-ids.md) 页。 |
 | `--remove <one or more workload or component IDs>` | **可选**：在 modify 命令期间，这个可重复参数会指定要删除的一个或多个工作负载或组件 ID。 该参数是 `--add` 参数的补充或与其行为相似。   |
 | `--addProductLang <language-locale>`               | **可选**：在 install 或 modify 命令期间，这个可重复参数会指定要随产品一起安装的用户界面语言包。 如果不存在，安装过程将使用对应于计算机区域设置的语言包。 有关详细信息，请参阅本页的[语言区域设置列表](#list-of-language-locales)部分。  |
@@ -127,17 +129,17 @@ ms.locfileid: "135534277"
 | `--passive, -p`                                    | **可选**：这个参数会导致用户界面以非交互式方式显示。 此参数与 `--quiet` 参数是互斥的，事实上还会替代后者。   |
 | `--norestart`                                      | **可选**：这个参数必须与 `--passive` 或 `--quiet` 参数配对使用。  在 install、update 或 modify 命令期间，如果添加 `--norestart` 参数，会延迟所有必要的重启行为。    |
 | `--force`                                          | **可选**：这个参数会强行关闭 Visual Studio，即使有正在使用的 Visual studio 进程也是如此。   |
-| `--installWhileDownloading`                        | **可选**：在 install、update 或 modify 命令期间，这个参数使 Visual Studio 能够同时下载和安装产品。 这是默认体验。   |
+| `--installWhileDownloading`                        | **可选**：在 install、update 或 modify 命令期间，这个参数使 Visual Studio 能够同时下载和安装产品。 这是默认体验。  |
 | `--downloadThenInstall`                            | **可选**：在 install、update 或 modify 命令期间，这个参数会强制性地让 Visual Studio 在安装所有文件之前先下载这些文件。 它与 `--installWhileDownloading` 参数互斥。   |
-| `--channelURI`                                     | **可选**：在更新命令期间，可以传递新的 channelURI 来更改更新设置位置。  建议与 --installPath 参数配对，以便非常明确地表明要配置的 Visual Studio 实例。 |
+| `--channelURI`                                     | **可选**：在更新命令期间，可以传递新的 channelURI 来更改更新设置位置。  建议与 --installPath 参数配对，以便非常明确地显示要配置的Visual Studio实例。 请参阅 [--channelURI 的语法示例](/visualstudio/install/command-line-parameter-examples#using---channelURI) |
 | `--nickname <name>`                                | **可选**：在 install 命令期间，这个参数会定义要分配给已安装的产品的昵称。 别名长度不能超过 10 个字符。 |
 | `--productKey`                                     | **可选**：在 install 命令期间，这个参数会定义要用于已安装的产品的产品密钥。 由 25 个字母数字字符组成，格式为 `xxxxxxxxxxxxxxxxxxxxxxxxx`。  |
 | `--help, --?, -h, -?`                              | 显示此页的脱机版本。     |
-| `--config <path>`                                  | **可选**：在安装或修改操作期间，这将根据以前保存的安装配置文件确定要添加的工作负载和组件。 此操作是附加的，如果文件中不存在任何工作负载或组件，也不会删除任何工作负载或组件。 此外，不会添加不适用于该产品的项目。 在导出操作期间，这将确定保存安装配置文件的位置。                                                                                                                                                                                                                                                                                                                                                  |
+| `--config <path>`                                  | **可选**：在安装或修改操作期间，这将根据以前保存的安装配置文件确定要添加的工作负载和组件。 此操作是附加的，如果文件中不存在任何工作负载或组件，也不会删除任何工作负载或组件。 此外，不会添加不适用于该产品的项目。 在导出操作期间，这将确定保存安装配置文件的位置。                           |
 
 ## <a name="layout-command-and-command-line-parameters"></a>布局命令和命令行参数
 
-所有布局管理操作都假定命令是默认的 Install（空白），而不考虑是要创建还是更新布局。 因此，所有布局管理操作都始于必需的初始 `--layout` 参数。 下表介绍了使用命令行[创建或更新布局](create-a-network-installation-of-visual-studio.md)时可使用的其他参数。 
+所有布局管理操作都是使用引导程序 exe 运行的，它们假定命令是默认的"安装" (空白) ，而不考虑是创建还是更新布局。 因此，所有布局管理操作都始于必需的初始 `--layout` 参数。 下表介绍了使用命令行[创建或更新布局](create-a-network-installation-of-visual-studio.md)时可使用的其他参数。 
 
 | **布局参数**                           | **说明**                                        |
 |-------------------------------------------------|----------------------------------------------------------------------|
@@ -150,12 +152,12 @@ ms.locfileid: "135534277"
 | `--useLatestInstaller`         | **Optional**：如果存在，则最新版 Visual Studio 安装程序将包含在布局中，即使它属于较新版本的产品。 如果要利用最新安装程序中提供的新功能或 bug 修补程序，这非常有用。 有关详细信息，请参阅[配置布局以始终使用最新安装程序](create-a-network-installation-of-visual-studio.md#configure-the-layout-to-always-include-and-provide-the-latest-installer)文档。 |
 | `--verify`                                      | **可选**：验证布局内容。 将列出所有损坏或缺失的文件。            |
 | `--fix`                                         | **可选**：验证布局内容。  如果任何文件损坏或缺失，将重新进行下载。 必须连接 Internet，才能修复布局。           |
-| `--clean <one or more paths to catalogs>`       | **可选**：从已更新到新版本的布局中删除旧版组件。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| `--clean <one or more paths to catalogs>`       | **可选**：从已更新到新版本的布局中删除旧版组件。    |
 
 | **高级布局参数** | **说明**                                  |
 |--------------------------------|--------------------------------------------------|
 | `--channelId <id>`             | **可选**：要安装的实例的通道 ID。 如果指定了 `--installPath`，则此参数对于 install 命令是必需参数，对于其他命令则可忽略。        |
-| `--channelUri <uri>`           | **可选**：通道清单的 URI。 此值可控制[更新的源位置](update-visual-studio.md#configure-source-location-of-updates-1)，初始值[在布局的 response.json 文件中配置](create-a-network-installation-of-visual-studio.md#configure-initial-client-installation-defaults-for-this-layout)。  如果不需要更新，`--channelUri` 可指向不存在的文件（例如 --channelUri C:\doesntExist.chman）。 此参数可用于 install 命令；其他命令则可忽略。  |
+| `--channelUri <uri>`           | **可选**：通道清单的 URI。 此值可控制[更新的源位置](update-visual-studio.md#configure-source-location-of-updates-1)，初始值[在布局的 response.json 文件中配置](create-a-network-installation-of-visual-studio.md#configure-initial-client-installation-defaults-for-this-layout)。 有关可能 [的值，请参阅 --channelURI](/visualstudio/install/command-line-parameter-examples#using---channelURI) 的语法示例。 如果不需要更新，`--channelUri` 可指向不存在的文件（例如 --channelUri C:\doesntExist.chman）。 此参数可用于 install 命令；其他命令则可忽略。  |
 | `--installChannelUri <uri>`    | **可选**：要用于安装的通道清单的 URI。  指定的 URI（指定 时必须指定）用于检测更新。 此参数可用于 install 命令；其他命令则可忽略。  |
 | `--installCatalogUri <uri>`    | **可选**：要用于安装的目录清单的 URI。 如果指定此选项，通道管理器会先尝试通过此 URI 下载目录清单，然后再在安装通道清单中使用 URI。 此参数用于支持脱机安装，安装期间会使用已下载的产品目录创建布局缓存。 此参数可用于 install 命令；其他命令则可忽略。    |
 | `--productId <id>`             | **可选**：将要安装的实例的产品 ID。 在正常安装条件下，这是预填充的。 `productID` 类似于“Microsoft.VisualStudio.Product.Enterprise”。 |
@@ -170,18 +172,39 @@ ms.locfileid: "135534277"
 | `--path shared=<path>`         | **可选**：包含用于并行 Visual Studio 安装的共享文件。 某些工具和 SDK 会安装到此驱动器上的某个位置，而其他一些工具可能会替代此设置并安装到另一个驱动器。 示例： `--path shared="C:\VS\shared"` <br/><br/>**重要说明**：只能在首次安装 Visual Studio 时对此设置一次。     |
 | `--path install=<path>`        | **可选**：等效于 `–-installPath`。 具体而言，`--installPath "C:\VS"` 与 `--path install="C:\VS"` 等效。 一次只能使用其中一个命令。     |
 
+## <a name="configure-source-location-of-updates-command-and-command-line-parameters"></a>配置 updates 命令和命令行参数的源位置
+可以通过在客户端计算机上使用安装程序或引导程序，并传递所需的更新通道，以编程方式配置给定 Visual Studio 实例的更新的源位置。  
+
+| **modifySettings 参数**                   | **说明**                                        |
+|-------------------------------------------------|----------------------------------------------------------------------|
+| `--installPath <dir>`                           | **建议使用** 来指定要Visual Studio实例。  |
+| `--newChannelUri`                               | **必需**：通道清单的 URI。 此值指定更新的下 [一个源位置](update-visual-studio.md#configure-source-location-of-updates-1) 。 有关可能 [的值，请参阅 --channelURI](/visualstudio/install/command-line-parameter-examples#using---channelURI) 的语法示例。 如果不需要更新，`--channelUri` 可指向不存在的文件（例如 --channelUri C:\doesntExist.chman）。 |
+| `--channelUri`                               | 旧通道清单的 URI。 如果 --installPath 未知，可以使用 。 必须与 productID 结合使用，以标识要处理正确的 实例。 |
+| `--productId <id>`                           | 如果指定了 --channelUri，则必须使用 ，并且用于标识要处理正确的 实例。 `productID` 类似于“Microsoft.VisualStudio.Product.Enterprise”。 |
+| `--quiet, -q`                                   | **可选**：此参数可防止在执行命令时显示任何用户界面。    |
+
+语法示例： 
+
+`C:\>"C:\Program Files (x86)\Microsoft Visual Studio\Installer\setup.exe" modifySettings --installPath "C:\Program Files\Microsoft\Visual Studio\2022\Enterprise" --newChannelURI https://aka.ms/vs/17/release.LTSC.17.0/channel`
+
+`C:\>"C:\Program Files\Microsoft\Visual Studio\2022\Enterprise\vs_enterprise.exe" modifySettings --channelURI https://aka.ms/vs/17/release.LTSC.17.0/channel --productID Microsoft.VisualStudio.Product.Enterprise --newChannelURI \\layoutserver\share\path\channelmanifest.json --quiet`
+
 ## <a name="administrator-update-command-and-command-line-parameters"></a>管理员更新命令和命令行参数
 
-如果将管理员更新从 [Microsoft 更新目录](https://catalog.update.microsoft.com)下载到客户端计算机上的安装目录中，只需双击该文件即可应用更新。 还可以打开命令窗口并传递下面的某些参数来更改默认行为。 
+可以从目录下载 **管理员** Microsoft 更新 [，](https://catalog.update.microsoft.com) 并使用它来更新客户端安装或布局。 
+
+如果要将布局更新到特定版本的 Visual Studio，只需将管理员更新下载到承载该布局的计算机，打开该计算机上的命令提示符并运行如下所示的命令：`visualstudioupdate-17.0.0to17.1.5.exe layout --layoutPath c:\VSLayout`
+
+在客户端上，如果将管理员更新下载到客户端计算机上的安装目录中，只需双击文件即可应用更新。 还可以打开命令窗口并传递下面的某些参数来更改默认行为。 
 
 如果要通过 Microsoft Endpoint Manager (SCCM) 部署管理员更新，可以使用以下参数来修改包以调整行为。 还可以通过客户端计算机上的配置文件来控制参数。 有关详细信息，请参阅[配置管理员更新的方法](../install/applying-administrator-updates.md#methods-for-configuring-an-administrator-update)
 
-请注意，所有管理员更新参数均在“更新”上下文中运行。
+请注意，除非指定了布局谓词，否则所有管理员更新参数默认在"更新"上下文中运行。
 
-| **管理员更新参数**           | **说明**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-|-----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **管理员更新参数**           | **说明**  |
+|-----------------------------------------------|------------------|
 | `--installerUpdateArgs [optional parameters]` | 此参数充当与管理员更新方案相关的特定参数的“直通数组”。 为此目的启用的可选参数包括： <br/><br/> `--quiet`：这是管理员更新的默认体验，此处出于完整性的目的列出了该体验。 <br/> `--passive`：此参数会替代 `--quiet` 参数。  这会导致用户界面以非交互式方式显示。 <br/>`--norestart`：此参数必须与 `--quiet` 或 `--passive` 一起使用，会导致任何必要的重启行为延迟。 <br/>`--noWeb`：此参数会阻止 Visual Studio 在 internet 上查找产品更新。 <br/>`--force`：此参数会强行关闭 Visual Studio，即使 Visual studio 正在使用中也是如此。 请谨慎使用此参数，因为有可能会导致工作丢失。 此参数必须在用户上下文中使用。 <br/>`--installWhileDownloading`：此参数使 Visual Studio 能够同时下载和安装产品。 这是管理员更新的默认体验，此处出于完整性的目的列出了该体验。 <br/>`--downloadThenInstall`：此参数强制 Visual Studio 在安装所有文件之前先下载文件。 它与 `--installWhileDownloading` 参数互斥。 |
-| `--checkPendingReboot`                        | 如果计算机上有挂起的重启，更新将中止，无论导致该更新的是哪个应用程序。 默认情况下，系统不检查是否有挂起的重启。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| `--checkPendingReboot`                        | 如果计算机上有挂起的重启，更新将中止，无论导致该更新的是哪个应用程序。 默认情况下，系统不检查是否有挂起的重启。    |
 
 语法示例：`visualstudioupdate-16.9.0to16.9.4.exe --installerUpdateArgs=--force,--noWeb --checkPendingReboot`
 

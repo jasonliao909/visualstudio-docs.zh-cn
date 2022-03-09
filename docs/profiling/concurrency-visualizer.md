@@ -18,18 +18,19 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 03e79801db056e5caf6d9e365015e619b12c6f9c
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 71d3e72519a0981bb71715f6ff92482dc3f85eae
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126735527"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139551438"
 ---
 # <a name="concurrency-visualizer"></a>并发可视化工具
 
 > [!NOTE]
 > 对于 Visual Studio，并发可视化工具是可选扩展。 从以下链接下载并发可视化工具和并发可视化工具收集工具：
 >
+> - 下载[Visual Studio 2022 扩展的并发可视化工具](https://marketplace.visualstudio.com/items?itemName=Diagnostics.DiagnosticsConcurrencyVisualizer2022#overview)。
 > - 下载 [Visual Studio 2019 的并发可视化工具](https://marketplace.visualstudio.com/items?itemName=Diagnostics.DiagnosticsConcurrencyVisualizer2019#overview)扩展。
 > - 下载 [Visual Studio 2017 的并发可视化工具](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ConcurrencyVisualizer2017#overview)扩展。
 > - 下载 [Visual Studio 2015 的并发可视化工具](https://marketplace.visualstudio.com/items?itemName=Diagnostics.ConcurrencyVisualizerforVisualStudio2015)扩展。

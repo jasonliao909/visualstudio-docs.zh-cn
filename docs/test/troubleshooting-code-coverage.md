@@ -2,7 +2,7 @@
 title: 代码覆盖率疑难解答
 description: 了解当你希望 Visual Studio 收集本机和托管程序集的数据时，如何解决错误的空结果消息问题。
 ms.custom: SEO-VS-2020
-ms.date: 03/31/2020
+ms.date: 02/23/2022
 ms.topic: troubleshooting
 ms.author: mikejo
 manager: jmartens
@@ -10,12 +10,12 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: ea2976e01f8f02b0d6ea858afceb43ecad7ef1c7
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: e77b5137f3d42a015648577d4c920152e03e58a5
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736584"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139550866"
 ---
 # <a name="troubleshoot-code-coverage"></a>代码覆盖率疑难解答
 
@@ -64,9 +64,15 @@ Visual Studio 中的代码覆盖率分析工具可收集本机和托管程序集
 
 .pdb 文件必须从与 .dll 或 .exe 文件相同的生成中产生    。
 
-解决方法 &mdash; 确保生成设置生成了 .pdb 文件  。 如果 .pdb 文件在项目生成时未更新，则打开项目属性，选择“生成”页，选择“高级”，然后查看“调试信息”     。
+解决方法 &mdash; 确保生成设置生成了 .pdb 文件  。
 
-对于 C++ 项目，请确保生成的 .pdb 文件包含完整的调试信息。 打开项目属性，确保“生成调试信息”（“链接器”   > “调试”   > “生成调试信息”  ）设置为“生成为共享和发布而优化的调试信息(/DEBUG:FULL)”  。
+- 如果 .pdb 文件在项目生成时未更新，则打开项目属性，选择“生成”页，选择“高级”，然后查看“调试信息”     。
+
+::: moniker range=">=vs-2022"
+- 对于面向 .NET Core 或 .NET 5+ 的 C# 项目，请打开项目属性，选择"生成 **"** 选项卡，选择"常规"，并检查 **"调试"符号**。
+::: moniker-end
+
+- 对于 C++ 项目，请确保生成的 .pdb 文件包含完整的调试信息。 打开项目属性，确保“生成调试信息”（“链接器”   > “调试”   > “生成调试信息”  ）设置为“生成为共享和发布而优化的调试信息(/DEBUG:FULL)”  。
 
 如果 .pdb 与 .dll 或 .exe 文件在不同的位置，请将 .pdb 文件复制到相同的目录     。 也可配置代码覆盖率引擎以在另一个位置搜索 .pdb 文件  。 有关详细信息，请参阅[自定义代码覆盖率分析](../test/customizing-code-coverage-analysis.md)。
 

@@ -14,71 +14,71 @@ manager: ansonh
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ff3769afa829fc5b5217984e555e1b223e91868
-ms.sourcegitcommit: 169b7b66d13b7e3c86097b42206dd33389cd9166
+ms.openlocfilehash: 7198d49ddd3e3225c9129daef166ccb8d77a8d41
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138153481"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139551542"
 ---
 # <a name="how-to-consume-a-brokered-service"></a>如何：使用中转服务
 
-本文档介绍与任何中转服务的获取、常规使用和处置相关的所有代码、模式和注意事项。
-若要了解如何 *使用* 特定的中转服务，请查看该中转服务的特定文档。
+本文档介绍与获取、常规使用和处置任何中转服务相关的所有代码、模式和注意事项。
+若要了解如何 *在* 获取后使用特定的中转服务，请查找该中转服务的特定文档。
 
-对于本文档中的所有代码，强烈建议激活 c # 的 [可为 null 的引用类型](/dotnet/csharp/nullable-references) 功能。
+对于本文档中所有代码，强烈建议激活 C# 的可 [为空](/dotnet/csharp/nullable-references) 引用类型功能。
 
 ## <a name="retrieving-an-iservicebroker"></a>检索 IServiceBroker
 
-若要获取中转服务，必须首先具有的 <xref:Microsoft.ServiceHub.Framework.IServiceBroker> 实例。
-当代码在 MEF 或 VS 包的上下文中运行时，通常需要全局 service broker。
+若要获取中转服务，必须先具有 的实例 <xref:Microsoft.ServiceHub.Framework.IServiceBroker>。
+当代码在 MEF 或 VS 包的上下文中运行时，通常需要全局 Service Broker。
 
-中转服务本身应使用 <xref:Microsoft.ServiceHub.Framework.IServiceBroker> 在调用其 [服务工厂](xref:Microsoft.VisualStudio.Shell.ServiceBroker.BrokeredServiceFactory) 时分配给它们的。
+中转服务本身应该使用 <xref:Microsoft.ServiceHub.Framework.IServiceBroker> 在调用其服务工厂时 [分配的](xref:Microsoft.VisualStudio.Shell.ServiceBroker.BrokeredServiceFactory) 。
 
-### <a name="the-global-service-broker"></a>全局 service broker
+### <a name="the-global-service-broker"></a>全局 Service Broker
 
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 提供了两种方法来获取全局 service broker。
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 提供了两种获取全局 Service Broker 的方法。
 
-改用 <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GlobalProvider%2A><xref:Microsoft.VisualStudio.Shell.ServiceExtensions.GetServiceAsync%2A> 请求 <xref:Microsoft.VisualStudio.Shell.ServiceBroker.SVsBrokeredServiceContainer> ：
+改用 <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GlobalProvider%2A><xref:Microsoft.VisualStudio.Shell.ServiceExtensions.GetServiceAsync%2A> <xref:Microsoft.VisualStudio.Shell.ServiceBroker.SVsBrokeredServiceContainer>请求 ：
 
 ```cs
 IBrokeredServiceContainer container = await AsyncServiceProvider.GlobalProvider.GetServiceAsync<SVsBrokeredServiceContainer, IBrokeredServiceContainer>();
 IServiceBroker serviceBroker = container.GetFullAccessServiceBroker();
 ```
 
-从 Visual Studio 2022 开始，在 MEF 激活的扩展中运行的代码可能会导入全局 service broker：
+从 2022 Visual Studio开始，在 MEF 激活的扩展中运行的代码可能会导入全局 Service Broker：
 
 ```cs
 [Import(typeof(SVsFullAccessServiceBroker))]
 IServiceBroker ServiceBroker { get; set; }
 ```
 
-`typeof`请注意导入属性的参数，此参数是必需的。
+`typeof`请注意 Import 属性的参数，这是必需的。
 
-针对全局 <xref:Microsoft.ServiceHub.Framework.IServiceBroker> 的每个请求都会生成一个对象的新实例，该实例用作全局中转服务容器的视图。
-Service broker 的这个唯一实例允许客户端接收 <xref:Microsoft.ServiceHub.Framework.IServiceBroker.AvailabilityChanged> 客户端使用的唯一事件。
-建议扩展中的每个客户端/类使用上述任一方法获取自己的 service broker，而不是获取一个实例并将其共享到整个扩展。
-此模式还鼓励安全编码模式，其中，中转服务 *不* 应使用全局 service broker。
+全局的每个请求都 <xref:Microsoft.ServiceHub.Framework.IServiceBroker> 生成对象的新实例，用作全局中转服务容器的视图。
+此唯一的 Service Broker 实例允许客户端接收 <xref:Microsoft.ServiceHub.Framework.IServiceBroker.AvailabilityChanged> 该客户端使用所特有的事件。
+我们建议扩展中的每个客户端/类使用上述任一方法获取其自己的 Service Broker，而不是获取一个实例并在整个扩展中共享它。
+此模式还鼓励安全编码模式，其中中转服务 *不应使用全局* Service Broker。
 
 > [!Important]
-> 的 <xref:Microsoft.ServiceHub.Framework.IServiceBroker> 实现通常不实现 <xref:System.IDisposable> ，但当处理程序存在时 <xref:Microsoft.ServiceHub.Framework.IServiceBroker.AvailabilityChanged> ，不能收集这些对象。
-请确保平衡事件处理程序的添加/删除，特别是在进程的生存期内，代码可能会放弃 service broker。
+> 的实现 <xref:Microsoft.ServiceHub.Framework.IServiceBroker> 通常不实现 <xref:System.IDisposable>，但在处理程序存在时无法收集 <xref:Microsoft.ServiceHub.Framework.IServiceBroker.AvailabilityChanged> 这些对象。
+请务必平衡事件处理程序的添加/删除，尤其是当代码可能在进程生存期内丢弃 Service Broker 时。
 
 ### <a name="context-specific-service-brokers"></a>上下文特定的服务代理
 
-使用适当的 service broker 是中转服务安全模型的重要要求，尤其是在 Live Share 会话的上下文中。
+使用适当的 Service Broker 是中转服务的安全模型的重要要求，尤其是在Live Share上下文中。
 
-中转服务会自行 <xref:Microsoft.ServiceHub.Framework.IServiceBroker> 激活，应该使用此实例来处理其自身的任何中转服务需求，包括与提供的 <xref:Microsoft.VisualStudio.Shell.ServiceBroker.IBrokeredServiceContainer.Proffer%2A> 服务。
-此类代码提供了一个 <xref:Microsoft.VisualStudio.Shell.ServiceBroker.BrokeredServiceFactory> ，用于接收实例化中转服务使用的 service broker。
+中转服务是使用自己的 <xref:Microsoft.ServiceHub.Framework.IServiceBroker> 激活的，并且应使用此实例满足其自己的任何中转服务需求，包括随 一起提供的服务 <xref:Microsoft.VisualStudio.Shell.ServiceBroker.IBrokeredServiceContainer.Proffer%2A>。
+此类代码提供 <xref:Microsoft.VisualStudio.Shell.ServiceBroker.BrokeredServiceFactory> 一个 ，它接收实例化中转服务使用的 Service Broker。
 
 ## <a name="retrieving-a-brokered-service-proxy"></a>检索中转服务代理
 
-通常使用 <xref:Microsoft.ServiceHub.Framework.IServiceBroker.GetProxyAsync%2A> 方法来检索中转服务。
+通常使用 方法检索中转服务 <xref:Microsoft.ServiceHub.Framework.IServiceBroker.GetProxyAsync%2A> 。
 
-<xref:Microsoft.ServiceHub.Framework.IServiceBroker.GetProxyAsync%2A>方法将需要 <xref:Microsoft.ServiceHub.Framework.ServiceRpcDescriptor> 和服务接口作为泛型类型参数。
-你请求的中转服务上的文档应指示获取描述符的位置以及要使用的接口。
-对于附带 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的中转服务，使用的接口应显示在描述符的 IntelliSense 文档中。
-了解如何在[发现可用中转服务](internals/discover-available-brokered-services.md)中查找中转服务的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 描述符。
+方法 <xref:Microsoft.ServiceHub.Framework.IServiceBroker.GetProxyAsync%2A> 需要 和 <xref:Microsoft.ServiceHub.Framework.ServiceRpcDescriptor> 服务接口作为泛型类型参数。
+有关所请求的中转服务的文档应指示在何处获取描述符以及要使用哪个接口。
+对于 随 一起包含 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]的中转服务，使用的接口应出现在描述符上的 IntelliSense 文档中。
+在发现可用的中转服务 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中了解如何查找中转 [服务的描述符](internals/discover-available-brokered-services.md)。
 
 ```csharp
 IServiceBroker broker; // Acquired as described earlier in this topic
@@ -90,28 +90,28 @@ using (myService as IDisposable)
 }
 ```
 
-与所有中转服务请求一样，以上代码将激活中转服务的新实例。
-使用服务后，上面的代码将代理作为执行退出 `using` 块。
+与所有中转服务请求一样，上述代码将激活中转服务的新实例。
+使用服务后，上述代码将释放代理，因为执行会退出 `using` 块。
 
 > [!IMPORTANT] 
-> *如果服务接口不是从 <xref:System.IDisposable> 派生* 的，则必须释放每个检索到的代理。
-> 处置非常重要，因为代理通常具有支持它的 i/o 资源，防止其被垃圾回收。
-> 处置终止了 i/o，允许对代理进行垃圾回收。
-> 将条件转换 <xref:System.IDisposable> 用于进行处置，并为强制转换做好准备，以避免在实际实现 <xref:System.IDisposable> 的代理或代理中出现异常 `null` 。
+> 必须释放检索到的每一个代理 *，即使服务接口不是从 派生的 <xref:System.IDisposable>*。
+> 处置非常重要，因为代理通常有 I/O 资源支持它，以防止其被垃圾回收。
+> 处置会终止 I/O，从而允许对代理进行垃圾回收。
+> 使用 的条件强制转换 <xref:System.IDisposable> 进行处置 `null` ，并准备好使强制转换失败，以避免实际未实现 的代理或代理出现异常 <xref:System.IDisposable>。
 
-请确保安装最新的 NuGet [servicehub.host.clr.](https://www.nuget.org/packages/Microsoft.ServiceHub.Analyzers)包，并保持启用 ISBxxxx 分析器规则以帮助防止此类泄漏。
+请务必安装最新的 [Microsoft.ServiceHub.Analyzers](https://www.nuget.org/packages/Microsoft.ServiceHub.Analyzers) NuGet并启用 ISBxxxx 分析器规则，以帮助防止此类泄漏。
 
-对代理的处置将导致处置专用于该客户端的中转服务。
+处置代理将导致处置专用于该客户端的中转服务。
 
-如果你的代码需要中转服务，并且在服务不可用时无法完成其工作，则在代码拥有用户体验而不是引发异常的情况下，你可能希望向用户显示错误对话框。
+如果代码需要中转服务，并且无法在服务不可用时完成其工作，则你可能希望向用户显示错误对话框（如果代码拥有用户体验，而不是引发异常）。
 
 ### <a name="client-rpc-targets"></a>客户端 RPC 目标
 
-某些中转服务接受或要求客户端 RPC 目标 "回调"。
+某些中转服务接受或要求客户端 RPC 目标用于"回调"。
 此类选项或要求应位于该特定中转服务的文档中。
-对于 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中转服务，此信息应包含在描述符的 IntelliSense 文档中。
+对于 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中转服务，此信息应包含在描述符上的 IntelliSense 文档中。
 
-在这种情况下，客户端可能会按如下所示使用 <xref:Microsoft.ServiceHub.Framework.ServiceActivationOptions.ClientRpcTarget?displayProperty=nameWithType> ：
+在这种情况下，客户端可能会使用 提供一个， <xref:Microsoft.ServiceHub.Framework.ServiceActivationOptions.ClientRpcTarget?displayProperty=nameWithType> 如下所示：
 
 ```csharp
 IMyService? myService = await broker.GetProxyAsync<IMyService>(
@@ -125,31 +125,31 @@ IMyService? myService = await broker.GetProxyAsync<IMyService>(
 
 ## <a name="invoking-the-client-proxy"></a>调用客户端代理
 
-请求中转服务的结果是由代理实现的服务接口的实例。
-此代理会在每个方向上转发调用和事件，在与直接调用服务时可能会出现的行为有一些重要差异。
+请求中转服务的结果是代理实现的服务接口的实例。
+此代理会转发每个方向的调用和事件，其行为与直接调用服务时的行为存在一些重要差异。
 
 ### <a name="observer-pattern"></a>观察者模式
 
-如果服务协定采用类型 <xref:System.IObserver%601> 为的参数，则可以在 [如何实现观察程序](/dotnet/standard/events/how-to-implement-an-observer)中了解有关如何构造此类类型的详细信息。
+如果服务协定采用 类型的 <xref:System.IObserver%601>参数，可以阅读如何实现观察器，详细了解 [如何构造此类类型](/dotnet/standard/events/how-to-implement-an-observer)。
 
-<xref:System.Threading.Tasks.Dataflow.ActionBlock%601>可以使用 <xref:System.Threading.Tasks.Dataflow.DataflowBlock.AsObserver%2A> 扩展方法来改编实现 <xref:System.IObserver%601> 。
-反应性框架中的 [system.web](/previous-versions/dotnet/reactive-extensions/hh229899(v=vs.103)) 类是自行实现接口的另一种替代方法。
+可以 <xref:System.Threading.Tasks.Dataflow.ActionBlock%601> 调整 以使用扩展 <xref:System.IObserver%601> 方法 <xref:System.Threading.Tasks.Dataflow.DataflowBlock.AsObserver%2A> 实现 。
+Reactive [框架中的 System.Reactive.Observer](/previous-versions/dotnet/reactive-extensions/hh229899(v=vs.103)) 类是自己实现接口的另一种替代方法。
 
-### <a name="exceptions-thrown-from-the-proxy"></a>代理引发的异常
+### <a name="exceptions-thrown-from-the-proxy"></a>从代理引发的异常
 
-- <xref:StreamJsonRpc.RemoteInvocationException>对于从中转服务引发的任何异常都应引发。 可以在中 <xref:System.Exception.InnerException%2A> 找到原始异常。
-这是远程托管服务的自然行为，因为它是来自 <xref:StreamJsonRpc.JsonRpc> 的行为。
-当服务为本地服务时，本地代理以相同方式包装所有异常，以便客户端代码只能有一个适用于本地和远程服务的异常路径。
-  - <xref:StreamJsonRpc.RemoteInvocationException.ErrorCode%2A>如果服务文档建议根据你可以对其进行分支的特定条件设置特定代码，请检查属性。
-  - 捕获 <xref:StreamJsonRpc.RemoteRpcException> 更广泛的错误，这是的基本类型 <xref:StreamJsonRpc.RemoteInvocationException> 。
-- 当与远程服务的连接断开或承载服务的进程崩溃时，预期 <xref:StreamJsonRpc.ConnectionLostException> 会从任何调用中引发。
-这主要是在可远程获取服务时要考虑的问题。
+- 对于 <xref:StreamJsonRpc.RemoteInvocationException> 从中转服务引发的任何异常，应引发 。 可以在 中找到原始异常 <xref:System.Exception.InnerException%2A>。
+这是远程托管服务的自然行为，因为它是 中的行为 <xref:StreamJsonRpc.JsonRpc>。
+当服务为本地时，本地代理以相同的方式包装所有异常，以便客户端代码只能有一个适用于本地和远程服务的异常路径。
+  - <xref:StreamJsonRpc.RemoteInvocationException.ErrorCode%2A>如果服务文档建议根据可分支的特定条件设置特定代码，请检查 属性。
+  - 通过捕获 （是 的 <xref:StreamJsonRpc.RemoteRpcException>基类型）来传达更广泛的错误集 <xref:StreamJsonRpc.RemoteInvocationException>。
+- 当 <xref:StreamJsonRpc.ConnectionLostException> 与远程服务的连接下降或承载服务的进程崩溃时，预期会从任何调用中引发。
+当可以远程获取服务时，这主要是一个问题。
 
-## <a name="caching-of-the-proxy"></a>代理 Caching
+## <a name="caching-of-the-proxy"></a>Caching代理的
 
-激活中转服务和关联的代理会有一定的费用，当服务来自远程进程时，尤其如此。
-当频繁使用中转服务来保证在多个调用中缓存代理时，可以将代理存储在该类的字段中。
-包含类在其 `Dispose` 方法中应该是可释放和处置代理。
+激活中转服务和关联的代理需要一些费用，尤其是在服务来自远程进程时。
+如果频繁使用中转服务需要跨多个对类的调用缓存代理，则代理可能存储在该类上的字段中。
+包含类应该是可释放的，并在其 方法内释放 `Dispose` 代理。
 请看以下示例：
 
 ```csharp
@@ -181,11 +181,11 @@ class MyExtension : IDisposable
 }
 ```
 
-上述代码大致正确，但它并不考虑与 `SayHiAsync` 之间 `Dispose` 的争用情况。
-此代码还不考虑 <xref:Microsoft.ServiceHub.Framework.IServiceBroker.AvailabilityChanged> 那些应该会导致以前获取的代理和下次需要代理的获取的事件。
+上述代码大致正确，但它未考虑 和 之间的竞争 `Dispose` 条件 `SayHiAsync`。
+该代码也不考虑 <xref:Microsoft.ServiceHub.Framework.IServiceBroker.AvailabilityChanged> 应导致处置以前获取的代理的事件，以及下次需要代理时重新获取代理的事件。
 
-<xref:Microsoft.ServiceHub.Framework.ServiceBrokerClient>类设计用于处理这些争用和失效条件，以帮助确保自己的代码简单。
-请考虑此已更新的示例，该示例使用此帮助器类来缓存代理：
+类 <xref:Microsoft.ServiceHub.Framework.ServiceBrokerClient> 旨在处理这些竞争和失效条件，以帮助保持自己的代码简单。
+请考虑这个更新后的示例，该示例使用此帮助程序类缓存代理：
 
 ```csharp
 class MyExtension : IDisposable
@@ -214,30 +214,30 @@ class MyExtension : IDisposable
 }
 ```
 
-上述代码仍负责处置 <xref:Microsoft.ServiceHub.Framework.ServiceBrokerClient> 和每个代理租用。
-处理和使用代理之间的争用条件是由 <xref:Microsoft.ServiceHub.Framework.ServiceBrokerClient> 对象处理的，该对象会在其自身处置时处置每个缓存的代理，或在该代理的最后一租赁发布后（以最后一个为准）。
+上述代码仍负责处置 <xref:Microsoft.ServiceHub.Framework.ServiceBrokerClient> 代理的 和每次租赁。
+处置和使用 <xref:Microsoft.ServiceHub.Framework.ServiceBrokerClient> 代理之间的竞争条件由 对象处理，该对象将在其自己的处置时或该代理的最后一次租赁释放时释放每个缓存代理，以最后一个为准。
 
 ### <a name="important-caveats-regarding-the-servicebrokerclient"></a>有关 `ServiceBrokerClient`
 
-- <xref:Microsoft.ServiceHub.Framework.ServiceBrokerClient> 仅基于 <xref:Microsoft.ServiceHub.Framework.ServiceMoniker> 唯一索引缓存的代理。
-如果传入 <xref:Microsoft.ServiceHub.Framework.ServiceActivationOptions> 了并且缓存的代理已可用，则将返回缓存的代理而不使用 <xref:Microsoft.ServiceHub.Framework.ServiceActivationOptions> ，这会导致服务产生意外行为。
-请考虑在这种情况下直接使用 <xref:Microsoft.ServiceHub.Framework.IServiceBroker> 。
+- <xref:Microsoft.ServiceHub.Framework.ServiceBrokerClient> 仅基于 对缓存的代理进行 <xref:Microsoft.ServiceHub.Framework.ServiceMoniker> 索引。
+如果已进行传递 <xref:Microsoft.ServiceHub.Framework.ServiceActivationOptions> 并且缓存的代理已可用 <xref:Microsoft.ServiceHub.Framework.ServiceActivationOptions>，则返回缓存的代理时不会使用 ，从而导致服务出现意外行为。
+在这种情况下， <xref:Microsoft.ServiceHub.Framework.IServiceBroker> 请考虑直接使用 。
 
-- 不要在字段中存储从 <xref:Microsoft.ServiceHub.Framework.ServiceBrokerClient.GetProxyAsync%2A?displayProperty=nameWithType> 获取的 <xref:Microsoft.ServiceHub.Framework.ServiceBrokerClient.Rental%601> 。
-代理已缓存在一个方法 <xref:Microsoft.ServiceHub.Framework.ServiceBrokerClient> 的范围之外。
-如果需要更好地控制代理的生存期（特别是由于 <xref:Microsoft.ServiceHub.Framework.IServiceBroker.AvailabilityChanged> 事件而获取），请直接使用 <xref:Microsoft.ServiceHub.Framework.IServiceBroker> 并将服务代理存储在字段中。
+- 不要将从 <xref:Microsoft.ServiceHub.Framework.ServiceBrokerClient.Rental%601> 获取的 <xref:Microsoft.ServiceHub.Framework.ServiceBrokerClient.GetProxyAsync%2A?displayProperty=nameWithType> 存储在 字段中。
+代理已被 缓存在一种方法的范围之外 <xref:Microsoft.ServiceHub.Framework.ServiceBrokerClient>。
+如果需要更好地控制代理<xref:Microsoft.ServiceHub.Framework.IServiceBroker.AvailabilityChanged><xref:Microsoft.ServiceHub.Framework.IServiceBroker>的生存期，尤其是由于事件而需要重新访问时，请直接使用 ，将服务代理存储在 字段中。
 
-- 创建并存储 <xref:Microsoft.ServiceHub.Framework.ServiceBrokerClient> 到字段而不是局部变量。 如果在方法中创建并将其用作本地变量，则它不会直接使用 <xref:Microsoft.ServiceHub.Framework.IServiceBroker> 添加任何值，但现在必须释放客户端和租赁)  (两个对象，而不是 (服务) 。
+- 创建并存储 <xref:Microsoft.ServiceHub.Framework.ServiceBrokerClient> 到字段而不是局部变量。 <xref:Microsoft.ServiceHub.Framework.IServiceBroker>如果在方法中创建并使用它作为局部变量，则它并不直接使用 来添加任何值，但现在必须释放两个对象 (客户端和租赁) 而不是服务)  (一个对象。
 
-### <a name="choosing-between-iservicebroker-and-servicebrokerclient"></a>在 IServiceBroker 和 ServiceBrokerClient 之间进行选择
+### <a name="choosing-between-iservicebroker-and-servicebrokerclient"></a>在 IServiceBroker 和 ServiceBrokerClient 之间选择
 
-两者都是用户友好的，默认值应该是 <xref:Microsoft.ServiceHub.Framework.IServiceBroker> 。
+这两者都是用户友好的，默认值应为 <xref:Microsoft.ServiceHub.Framework.IServiceBroker>。
 
 类别| <xref:Microsoft.ServiceHub.Framework.IServiceBroker> | <xref:Microsoft.ServiceHub.Framework.ServiceBrokerClient>
 --|--|--
 用户友好|是|是
 需要处置|否|是
-管理代理的生存期|不是。 所有者必须在使用代理时处置代理。|是的，只要它们有效，它们将保持活动状态并重复使用。
+管理代理的生存期|否。 所有者在使用代理后必须释放代理。|是的，只要它们有效，它们就保持活动状态并重复使用。
 适用于无状态服务|是|是
 适用于有状态服务|是|否
 在将事件处理程序添加到代理时适用|是|否
@@ -400,4 +400,5 @@ using (proxy as IDisposable)
 ## <a name="see-also"></a>另请参阅
 
 - [发现可用的中转服务](internals/discover-available-brokered-services.md)
-- [中转服务基础](internals/brokered-service-essentials.md)
+- [中转服务基础知识](internals/brokered-service-essentials.md)
+- [如何：对中转服务进行故障排除](how-to-troubleshoot-brokered-services.md)

@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 85a61466bb60a9b0c1883daa754b963044519331
-ms.sourcegitcommit: 429b2378ee21b5f473b26f4b4ea0a70372a34ec2
+ms.openlocfilehash: 8e6873691633e625c33836db26f143711eac1ec5
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "137733396"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139548881"
 ---
 # <a name="compile-typescript-code-aspnet-core"></a>编译 TypeScript 代码 (ASP.NET Core)
 
@@ -95,7 +95,7 @@ ms.locfileid: "137733396"
 
    调试需要源映射文件。
 
-1. 如果要在每次保存项目时进行编译，请使用 *tsconfig.json* 中的 *compileOnSave* 选项。
+1. 如果要每次保存项目时进行编译，请使用 *tsconfig.json* 中的 *compileOnSave* 选项。
 
    ```json
    {
@@ -111,7 +111,7 @@ ms.locfileid: "137733396"
 
 ### <a name="run-the-application"></a>运行应用程序
 
-有关在编译后运行应用程序的说明，请参阅[创建第一个 Node.js 应用](/visualstudio/ide/quickstart-nodejs?toc=%2Fvisualstudio%2Fjavascript%2Ftoc.json#run-the-application)。
+有关编译应用后运行应用的说明，请参阅 [创建 Node.js 和 Express 应用](./tutorial-nodejs.md?toc=%2Fvisualstudio%2Fjavascript%2Ftoc.json#run-the-app)。
 
 ### <a name="nuget-package-structure-details"></a>NuGet 包结构详细信息
 

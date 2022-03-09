@@ -2,7 +2,7 @@
 title: 选项，文本编辑器，常规
 description: 了解如何使用“常规”页面更改 Visual Studio Code 和文本编辑器的全局设置。
 ms.custom: SEO-VS-2020
-ms.date: 11/15/2021
+ms.date: 02/25/2022
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor
@@ -36,12 +36,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 32d55c85524fc895e8d6768597287730f61695f4
-ms.sourcegitcommit: 7d319435c35075d4cec021b7b667666a81c02435
+ms.openlocfilehash: c3023ae0587e50deb8eddb908ec1a4d2d72f4423
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "137650380"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139548897"
 ---
 # <a name="options-dialog-box-text-editor--general"></a>“选项”对话框：“文本编辑器”\>“常规”
 
@@ -107,13 +107,22 @@ ms.locfileid: "137650380"
 
 ## <a name="display"></a>显示
 
-“工具” > “选项”>“文本编辑器” > “常规”的“设置”部分包括以下选项   。
+"工具" > **"选项""文本编辑器** >  > **""一般"** 的"显示"部分包括以下选项。
 
 ::: moniker range=">=vs-2019"
 
 ### <a name="view-whitespace"></a>查看空白
 
 选中时，可将空格和制表符可视化。
+
+### <a name="show-bidirectional-text-control-characters"></a>显示双向文本控件字符
+
+选中后，所有双向文本控件字符将在代码编辑器中呈现为占位符。
+
+> [!CAUTION]
+> 默认情况下选择此选项以防止允许代码被篡改的潜在恶意攻击。
+>
+> 此选项[在 Visual Studio 2019 版本 16.11.8](/visualstudio/releases/2019/release-notes#release-notes-icon-visual-studio-2019-version-16118) 中首次引入，它确保 Visual Studio 编辑器不再允许双向文本控制字符在代码编辑器中操作字符顺序。 双向文本控制字符仍存在于代码中。
 
 ::: moniker-end
 

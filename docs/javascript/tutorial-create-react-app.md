@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - nodejs
 monikerRange: '>= vs-2022'
-ms.openlocfilehash: bd9934e0170de110377c2e4880531f419fa0860a
-ms.sourcegitcommit: 20f9529648e69707063dccb2b15089bf4e9bf639
+ms.openlocfilehash: b5ed1575427bbb89cd09e61b2156ab7ba69d463f
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "137886643"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139549186"
 ---
 # <a name="create-a-react-app"></a>创建 React 应用
 
@@ -30,7 +30,7 @@ ms.locfileid: "137886643"
 确保已安装以下各项：
 
 - Visual Studio 2022 或更高版本。 请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/)页，进行免费安装。
-- npm ([https://www.npmjs.com/](https://www.npmjs.com/package/npm)) ，包含在 Node.js
+- npm ([https://www.npmjs.com/](https://www.npmjs.com/package/npm)) ，随附 Node.js
 - npx ([https://www.npmjs.com/package/npx](https://www.npmjs.com/package/npx))
 
 ## <a name="create-your-app"></a>创建应用
@@ -65,11 +65,18 @@ ms.locfileid: "137886643"
 
 ## <a name="start-your-project"></a>启动项目
 
-按 **F5** **或选择窗口** 顶部的"开始"按钮，你将看到命令提示符：
+按 **F5** 或选择窗口顶部的 " **启动** " 按钮，此时将显示命令提示符：
 
 - 运行 react-scripts start 命令的 npm
 
 >[!NOTE]
-> 检查控制台输出中的消息，例如一条消息，指示你更新版本Node.js。
+> 检查控制台输出中的消息，如消息，指导您更新 Node.js 的版本。
 
 接下来，你会看到基本 React 应用！
+
+## <a name="next-steps"></a>后续步骤
+
+对于 ASP.NET Core 集成：
+
+> [!div class="nextstepaction"]
+> [使用 React 创建 ASP.NET Core 应用](tutorial-asp-net-core-with-react.md)

@@ -4,18 +4,18 @@ description: 阅读 Microsoft Help Viewer 管理员指南。 从 Internet 部署
 ms.date: 11/01/2017
 ms.topic: conceptual
 ms.assetid: 4340c69f-b96b-4932-bb82-38b16a5ab149
-author: ghogen
-ms.author: ghogen
+author: jasonchlus
+ms.author: jasonchlus
 manager: jmartens
 ms.technology: vs-help-viewer
 ms.workload:
 - multiple
-ms.openlocfilehash: f7f7256c806c0e7198569c2d323895d74f78ee03
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: c021240a88c149ded7431ea558e749e751ba418b
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126663971"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139552182"
 ---
 # <a name="help-viewer-administrator-guide"></a>Help Viewer 管理员指南
 

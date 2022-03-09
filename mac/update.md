@@ -4,20 +4,21 @@ description: 更新 Visual Studio for Mac 和访问预览版指南。
 author: jmatthiesen
 ms.author: jomatthi
 manager: dominicn
-ms.date: 09/18/2019
+ms.date: 03/03/2022
+ms.custom: devdivchpfy22
 ms.technology: vs-ide-install
 ms.topic: how-to
 ms.assetid: DB8DC9FE-FF21-4061-8A96-3F9FC08A4F8F
-ms.openlocfilehash: cd80e07b928f5b3fb3b0e10f84d60d86521d32c2
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: 8dd2ac8d8b7f5827d946a88606ea125f638aad77
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135806568"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139551451"
 ---
 # <a name="update-visual-studio-for-mac"></a>更新 Visual Studio for Mac
 
-Visual Studio for Mac 定期发布 IDE 和受支持框架的更新。 这些更新以新功能、改进和 bug 修复的形式提供。
+Visual Studio for Mac定期分发 IDE 和支持的框架的更新。 这些更新以新功能、改进和 bug 修复的形式提供。
 
 Visual Studio for Mac 提供两种获取最新版本的通道：
 
@@ -38,23 +39,23 @@ Visual Studio for Mac 提供两种获取最新版本的通道：
 
 ## <a name="changing-the-updater-channel"></a>更改更新程序通道
 
-若要更改通道，请在通道下拉列表中选中通道，然后按“切换通道”按钮：
+若要更改通道，请从通道下拉列表中选择它，然后按" **切换通道"按钮**：
 
-![更改通道下拉列表](media/update-image3.png)
+!["更改通道"下拉列表](media/update-image3.png)
 
 ## <a name="downloading-and-installing-updates"></a>下载和安装更新
 
 自动通道切换启动新更新的下载流程。
 
-如果选择了“自动检查”选项，在 Visual Studio for Mac 打开时将弹出更新程序框，提醒用户有可用的新更新。 出现此对话框时，新的下载将自动开始下载到计算机。
+如果已选择"自动检查"选项，则当更新程序打开Visual Studio for Mac将弹出更新程序框，告知你新更新可用。 出现此对话框时，新的下载将自动开始下载到计算机。
 
 若要开始安装更新，请选择“重启并安装更新”按钮：
 
 ![开始安装更新的按钮](media/update-image4.png)
 
-根据需要安装的组件，可能需要接受额外的许可证或输入计算机管理员用户名和密码。
+根据需要安装的组件，可能需要接受更多许可证或输入计算机管理员用户名和密码。
 
-## <a name="troubleshooting"></a>故障排除
+## <a name="troubleshooting"></a>疑难解答
 
 如果更新程序出现问题，请尝试执行[更新程序故障排除](updater-troubleshooting.md)指南中的以下步骤。
 

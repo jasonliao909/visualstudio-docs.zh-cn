@@ -7,18 +7,18 @@ helpviewer_keywords:
 - shortcut keys [Help Viewer]
 - Help Viewer, shortcut keys
 ms.assetid: ec14c85d-7efb-441c-a46b-bee34a227e39
-author: ghogen
-ms.author: ghogen
+author: jasonchlus
+ms.author: jasonchlus
 manager: jmartens
 ms.technology: vs-help-viewer
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bde8a8b4b68e7e40eaa25a0df044028dd641a85
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: f35c00a61880bb571dfaa863996684b3e990a5da
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126663954"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139550398"
 ---
 # <a name="shortcut-keys-in-help-viewer"></a>帮助查看器中的快捷键
 

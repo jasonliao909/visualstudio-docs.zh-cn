@@ -1,7 +1,7 @@
 ---
 title: 安装脱机安装所需的证书
 description: 了解如何安装 Visual Studio 脱机安装的证书。
-ms.date: 03/29/2021
+ms.date: 3/3/2022
 ms.topic: how-to
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f31ca4a18332f7d06dc24ea201b30926c32c6d9d
-ms.sourcegitcommit: d38d1b083322019663fec7d1d85a4cda456aadca
+ms.openlocfilehash: 8ee4fa7cc1a87211f1ca7a0d44e1ac0c6bdfb2ea
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "135533973"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139549514"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>安装 Visual Studio 脱机安装所需的证书
 
@@ -117,7 +117,7 @@ Visual Studio 安装程序只需要在系统上安装根证书。 未安装最�
 
 ## <a name="install-visual-studio"></a>安装 Visual Studio
 
-在客户端计算机上安装证书后，便可以[从本地缓存安装 Visual studio](../install/create-an-offline-installation-of-visual-studio.md#step-3---install-visual-studio-from-the-local-cache)，或[将 Visual Studio 从网络布局共享部署到客户端计算机](create-a-network-installation-of-visual-studio.md#install-visual-studio-onto-a-client-machine-from-a-network-installation)。
+在客户端计算机上安装证书后，即可从本地布局Visual Studio安装证书，[](../install/create-an-offline-installation-of-visual-studio.md#step-3---install-visual-studio-from-the-local-layout)或者将Visual Studio布局共享中的证书部署到客户端计算机。[](create-a-network-installation-of-visual-studio.md#install-visual-studio-onto-a-client-machine-from-a-network-installation)
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

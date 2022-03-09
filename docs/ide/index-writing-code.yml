@@ -10,12 +10,12 @@ metadata:
   author: terryglee
   ms.author: tglee
   ms.date: 10/15/2019
-  ms.openlocfilehash: 41f47ebf4ff97194101f841d07ad17105dc20494
-  ms.sourcegitcommit: a439b1878939b2364cee0d09b851c2a67c42e563
+  ms.openlocfilehash: f7beb4165b0bd5fff2c51a6d8d39623b90a5cca4
+  ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 02/12/2022
-  ms.locfileid: "138566227"
+  ms.lasthandoff: 03/08/2022
+  ms.locfileid: "139551139"
 landingContent:
 - title: 打开或创建项目
   linkLists:
@@ -63,5 +63,5 @@ landingContent:
       url: ../get-started/csharp/tutorial-console.md
     - text: 使用 Visual Basic 创建控制台应用
       url: ../get-started/visual-basic/tutorial-console.md
-    - text: 使用 Node.js 创建 Web 应用
-      url: quickstart-nodejs.md
+    - text: 创建 Node.js 和 Express 应用
+      url: ../javascript/tutorial-nodejs.md

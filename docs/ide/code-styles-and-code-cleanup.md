@@ -2,7 +2,7 @@
 title: 代码样式选项和代码清理
 description: 了解如何使用“代码清理”（Visual Studio 2019）和“设置文档格式”（Visual Studio 2017）命令将 Visual Studio 配置为应用代码样式首选项。
 ms.custom: SEO-VS-2020
-ms.date: 04/25/2019
+ms.date: 02/24/2022
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
@@ -13,12 +13,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 30bf4e72d4f8ce7ff431343b92dc29c081a51358
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: a24b523c206a0b1fe7de1feb1f24cfdf3c668a57
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126642211"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139550438"
 ---
 # <a name="code-style-preferences"></a>代码样式首选项
 
@@ -108,8 +108,12 @@ ms.locfileid: "126642211"
 
 ![在整个项目或解决方中运行代码清理功能](media/run-code-cleanup-project-solution.png)
 
+::: moniker-end
+::: moniker range=">=vs-2022"
+如果希望每次保存文件时应用 >  >代码样式设置，请转到"选项""文本编辑器代码清理"，然后选择"保存 **时运行代码清理配置文件"**。
+::: moniker-end
+::: moniker range="<=vs-2019"
 如果希望每次保存文件时都应用代码样式设置，则可能需要使用[保存时清理代码](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.CodeCleanupOnSave)扩展。
-
 ::: moniker-end
 
 ## <a name="see-also"></a>请参阅
