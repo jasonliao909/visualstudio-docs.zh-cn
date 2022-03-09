@@ -2,7 +2,7 @@
 title: Visual Studio 管理员指南
 titleSuffix: ''
 description: 详细了解如何在企业环境中部署 Visual Studio。
-ms.date: 02/04/2022
+ms.date: 3/3/2022
 ms.topic: overview
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 7d57fa0ca1693b2df96d18a89068d4dc60919f11
-ms.sourcegitcommit: b9c5ca58f380ee102153b69656cb062b3d2dab8c
+ms.openlocfilehash: ee2d852f1c4e45abe4af9d66a15431ab985b01f5
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "138427814"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139552377"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio 管理员指南
 
@@ -85,9 +85,9 @@ ms.locfileid: "138427814"
 
 - **[使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)** 。 使用多种参数以编程方式控制或自定义 Visual Studio 安装。 你可以构建自动执行安装过程的安装脚本。 有关详细信息，请参阅[命令行参数示例](command-line-parameter-examples.md)。
 
-- **[创建 Visual Studio 布局 (网络安装)](create-a-network-installation-of-visual-studio.md)**。 布局是网络上某个文件夹中 Visual Studio 文件的缓存，可用于初始安装和所有产品更新。 如果客户端计算机未连接到 internet，或者其 internet 连接受到限制，则可以使用布局。 决定是否使用 [响应文件](automated-installation-with-response-file.md)，这允许您在从布局进行安装时设置安装默认值。 创建布局后，可以[从网络布局将 Visual Studio 安装到客户端计算机上](create-a-network-installation-of-visual-studio.md#install-visual-studio-onto-a-client-machine-from-a-network-installation)。
+- **[创建 Visual Studio 布局 (网络安装)](create-a-network-installation-of-visual-studio.md)**。 布局是网络上某个文件夹中 Visual Studio 文件的缓存，可用于初始安装和所有产品更新。 如果客户端计算机的 internet 连接受到限制，则可以使用布局。 您可以使用 [响应文件](automated-installation-with-response-file.md)，这允许您在 [安装到客户端计算机](create-a-network-installation-of-visual-studio.md#install-visual-studio-onto-a-client-machine-from-a-network-installation)时设置默认值。 你还可以配置希望[布局在客户端更新设置对话框中的显示](/visualstudio/install/set-defaults-for-enterprise-deployments?#configuring-source-location-for-updates)方式。 创建布局后，应 [定期维护](create-a-network-installation-of-visual-studio.md#update-or-modify-your-layout)。 
 
-- [安装脱机安装所需的证书](/visualstudio/install/install-certificates-for-visual-studio-offline.md)。 如果客户端计算机已与 Internet 完全断开连接，则安装所需的证书。
+- [安装脱机安装所需的证书](/visualstudio/install/install-certificates-for-visual-studio-offline)。 如果客户端计算机已与 Internet 完全断开连接，则安装所需的证书。
 
 - **[部署 Visual Studio 时，自动应用产品或订阅密钥](automatically-apply-product-keys-when-deploying-visual-studio.md)**。 您可以以编程方式将订阅或产品密钥应用于用于自动部署 Visual Studio 的脚本的一部分，这样用户就不需要单独激活软件。 可以在安装 Visual Studio 期间或安装完成后设置此项。 
 

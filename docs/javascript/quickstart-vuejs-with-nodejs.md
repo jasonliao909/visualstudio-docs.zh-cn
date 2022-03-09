@@ -13,12 +13,12 @@ dev_langs:
 ms.workload:
 - nodejs
 monikerRange: <= vs-2019
-ms.openlocfilehash: 54752b44463b14ee0619300277bfc388abfd4203
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 3660d356eb21b2c46d674e48717c497ff386fe01
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129970849"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139549943"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>快速入门：使用 Visual Studio 创建第一个 Vue.js 应用
 
@@ -40,7 +40,7 @@ ms.locfileid: "129970849"
 
     如果需要安装工作负载但已有 Visual Studio，请转到“工具”   > “获取工具和功能...”  ，这会打开 Visual Studio 安装程序。 选择“Node.js 开发”工作负载，然后选择“修改”   。
 
-    ![VS 安装程序中的 Node.js 工作负载](../ide/media/quickstart-nodejs-workload.png)
+    ![VS 安装程序中的 Node.js 工作负载](./media/tutorial-nodejs-workload.png)
 
 * 须安装 Node.js 运行时。
 

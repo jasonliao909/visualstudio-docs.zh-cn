@@ -6,7 +6,7 @@ keywords: ''
 author: anandmeg
 ms.author: meghaanand
 manager: jmartens
-ms.date: 10/12/2021
+ms.date: 02/15/2022
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,12 +16,12 @@ ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 0a060a33f55f9248c71abe834a19789eca48b3b9
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 17cff5d5fa09923d9a1b6ea37553b9b4b8b672d6
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "134366887"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139550309"
 ---
 # <a name="visual-studio-build-tools-component-directory"></a>Visual Studio 生成工具组件目录
 

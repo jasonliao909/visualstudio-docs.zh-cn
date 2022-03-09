@@ -2,7 +2,8 @@
 title: Visual Studio 中的 Python 教程步骤 6，使用 Git
 titleSuffix: ''
 description: 在 Visual Studio 中使用 Python 的核心教程的第 6 步，介绍了 Visual Studio 的 Git 相关功能。
-ms.date: 08/16/2021
+ms.date: 02/28/2022
+ms.custom: devdivchpfy22
 ms.topic: tutorial
 author: rjmolyneaux
 ms.author: rmolyneaux
@@ -11,12 +12,12 @@ ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0ef8d79fff42a0800ff7a53a09a9c027613359c0
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: e9d601b04e468bcbac95854cf7d1a33bc553fa47
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129969302"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139551929"
 ---
 # <a name="step-6-work-with-git"></a>步骤 6：使用 Git
 
@@ -26,13 +27,13 @@ ms.locfileid: "129969302"
 
 ::: moniker range="vs-2017"
 
-Visual Studio 提供与本地 Git 存储库以及 GitHub 和 Azure Repos 等服务上的远程存储库的直接集成。 集成包括克隆存储库、提交更改和管理分支。
+Visual Studio提供与本地 Git 存储库和远程存储库的直接集成。 它可帮助你使用 GitHub 和 Azure Repos 等服务。 集成包括克隆存储库、提交更改和管理分支。
 
 本文简要概述了如何创建现有项目的本地 Git 存储库，并介绍 Visual Studio 的一些 Git 相关功能。
 
 1. 在 Visual Studio 中打开项目后，比如[上一步](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)中的项目，右键单击解决方案并选择“将解决方案添加到源代码管理”。 Visual Studio 将创建包含项目代码的本地 Git 存储库。
 
-1. Visual Studio 检测到项目托管在 Git 存储库中时，Visual Studio 窗口右下角会显示 Git 相关控件。 控件显示挂起的提交、更改、存储库名称和分支。 将鼠标悬停在控件上可查看附加信息。
+1. 当Visual Studio Git 存储库中管理项目时，将显示与 Git 相关的控件。 与 Git 相关的控件显示在"git"窗口右下角Visual Studio显示。 控件显示挂起的提交、更改、存储库名称和分支。 将鼠标悬停在控件上可查看附加信息。
 
     ![将鼠标悬停在 Visual Studio 窗口中的 Git 控件上时显示附加信息](media/working-with-git-01.png)
 
@@ -52,9 +53,9 @@ Visual Studio 提供与本地 Git 存储库以及 GitHub 和 Azure Repos 等服�
 
     ![Visual Studio 中显示分支的团队资源管理器](media/working-with-git-04.png)
 
-1. 选择带存储库名称的 Git 控件（上图中的“CosineWave”）之后，“团队资源管理器”将显示可用于迅速彻底切换到其他存储库的“连接”接口。
+1. 若要切换到另一个存储库，请在上一个映像) 中选择存储库名称为 (**CosineWave** 的 Git 控件，然后在 **团队资源管理器** 中，使用 连接 接口。
 
-1. 使用本地存储库时，提交的更改直接进入存储库。 如果已连接到远程存储库，则选择“团队资源管理器”中的下拉列表标题，再选择“同步”以切换到“同步”部分，然后处理此处显示的拉取和提取命令。
+1. 使用本地存储库时，已提交更改将直接进入存储库。 如果已连接到远程存储库，请选择 团队资源管理器 中的下拉 **标头，选择"同步"** 以切换到"同步"部分，然后使用显示在那里的"拉取"和"**提取"** 命令。
 
 ## <a name="go-deeper"></a>深入了解
 

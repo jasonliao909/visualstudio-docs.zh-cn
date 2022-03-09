@@ -2,7 +2,7 @@
 title: 设置调试和发布配置 | Microsoft Docs
 description: 在 Visual Studio 中设置调试和发布配置。 生成调试版本的目的是用于调试，而生成发布版本的目的是用于最终发布分发。
 ms.custom: SEO-VS-2020
-ms.date: 12/21/2021
+ms.date: 02/23/2022
 ms.topic: how-to
 f1_keywords:
 - vs.debug.builds
@@ -34,12 +34,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: c08015b138f273d0708bc897b8d719282115efc1
-ms.sourcegitcommit: 52a425b5a541034cda26db8df9cd43281c007e80
+ms.openlocfilehash: 911bcd2437d0adbf7725c0938464de422253257e
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/23/2021
-ms.locfileid: "135540562"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139552208"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>在 Visual Studio 中设置调试和发布配置
 
@@ -75,28 +75,29 @@ Visual Studio 项目具有针对你的程序的单独发布和调试配置。 �
 每个项目类型可能有不同的设置这些选项的方法。
 
 ::: moniker range=">=vs-2022"
-### <a name="generate-symbol-files-for-a-c-or-aspnet-core-project-net-only"></a>为 C# 或 ASP.NET Core 项目生成符号文件 A0.NET 仅) 
+### <a name="generate-symbol-files-for-a-c-or-aspnet-core-project-net-core-net-5-only"></a> ( .net Core 生成 c # 或 ASP.NET Core 项目的符号文件，仅限 .net 5 +) 
 
-有关 C# 中调试配置的项目设置的详细信息，请参阅Project [C# 调试配置 的一些设置](../debugger/project-settings-for-csharp-debug-configurations.md)。  (对于 Visual Basic 中的 .NET 项目，符号文件的配置方式与 .NET Framework.) 
+
+有关 c # 中调试配置的项目设置的详细信息，请参阅[c # 调试配置的 Project 设置](../debugger/project-settings-for-csharp-debug-configurations.md)。  (Visual Basic 中的 .net 项目，符号文件的配置方式与 .NET Framework 中的相同。 ) 
 
 1. 在“解决方案资源管理器”中，右键单击项目，然后选择“属性”。
 
-2. 在侧窗格中，选择"生成 **常规** > **"。**
+2. 在侧窗格中，选择 " **生成** > " " **常规**"。
 
-3. 在"**优化代码"部分中**，选择"**调试"或**"**发布"。**
+3. 在 " **优化代码** " 部分中，选择 " **调试** " 或 " **发布**"。
 
-4. 在"**调试符号"** 列表中，选择 **"PDB** 文件"、当前平台 **、PBD 文件、可移植** 或"嵌入 **"。**
+4. 在 **调试符号** 列表中，选择 " **PDB 文件"、"当前平台**"、" **PBD 文件"、"可移植**" 或 " **嵌入**"。
 
    可移植格式是 .NET Core 的最新跨平台格式。 如需详细了解各个选项，请参阅[“高级生成设置”对话框 (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md)。
 
-   ![为 .NET 中的生成生成 PDB](../debugger/media/vs-2022/dbg-project-properties-pdb-dotnet.png "GeneratePDBsForDotNet")
+   ![为 .NET 中的生成生成 Pdb](../debugger/media/vs-2022/dbg-project-properties-pdb-dotnet.png "GeneratePDBsForDotNet")
 
 5. 生成你的项目。
 
    编译器将在与可执行文件或主输出文件相同的文件夹中创建符号文件。
 ::: moniker-end
 
-### <a name="generate-symbol-files-for-a-c-aspnet-or-visual-basic-project-net-framework"></a>生成 C#、ASP.NET 或 Visual Basic 项目的符号 (.NET Framework) 
+### <a name="generate-symbol-files-for-a-c-aspnet-or-visual-basic-project-net-framework"></a>为 c #、ASP.NET 或 Visual Basic 项目 (.NET Framework 生成符号文件) 
 
 如需详细了解用 C# 或 Visual Basic 的调试配置的项目设置，请参阅 [C# 调试配置的项目设置](../debugger/project-settings-for-csharp-debug-configurations.md)或 [Visual Basic 调试配置的项目设置](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)。
 
@@ -104,7 +105,7 @@ Visual Studio 项目具有针对你的程序的单独发布和调试配置。 �
 
 2. 在侧窗格中，选择“生成”（或 Visual Basic 中的“编译”） 。
 
-3. 在顶部的 **"配置**"列表中，选择"**调试"或**"**发布"。**
+3. 在顶部的 " **配置** " 列表中，选择 " **调试** " 或 " **发布**"。
 
 4. 选择“高级”按钮（或 Visual Studio 中的“高级编译选项”按钮） 。
 
@@ -126,7 +127,7 @@ Visual Studio 项目具有针对你的程序的单独发布和调试配置。 �
 
 3. 在侧窗中，选择“链接器”>“调试”，然后选择“生成调用信息”的选项 。
 
-   在大多数 C++ 项目中，默认值为 "使用 **/DEBUG (生成调试) 。**
+   在大多数 c + + 项目中，默认值将 **(/debug) 生成调试信息**。
 
    如需详细了解 C++ 调试配置的项目设置，请参阅 [C++ 调试配置的项目设置](../debugger/project-settings-for-a-cpp-debug-configuration.md)。
 

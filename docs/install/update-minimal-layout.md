@@ -1,7 +1,7 @@
 ---
 title: 使用最小脱机布局更新 Visual Studio
 description: 了解如何使用最小脱机布局更新 Visual Studio。
-ms.date: 05/18/2021
+ms.date: 3/3/2022
 ms.topic: how-to
 ms.assetid: ''
 author: anandmeg
@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b91ac7e43eb28b4bacad9c88e308d01e25bac5ed
-ms.sourcegitcommit: 215680b355cf613bfa125cf6b864c8bb5f2c71a5
-ms.translationtype: HT
+ms.openlocfilehash: 72a9e23c742eed1cc6b8852d9b49eadf8fad5e85
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "132454005"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139548991"
 ---
 # <a name="update-visual-studio-using-a-minimal-offline-layout"></a>使用最小脱机布局更新 Visual Studio
 
@@ -129,7 +129,7 @@ ms.locfileid: "132454005"
 * 下面介绍如何使用现有响应文件再生成最小脱机布局。
 
   ```shell
-  MinimalLayout.exe regenerate -filepath c:\VSLayout\MinimalLayout.json
+  MinimalLayout.exe regenerate --filepath c:\VSLayout\MinimalLayout.json
   ```
 
 使用 generate 命令的一些其他示例：
@@ -171,7 +171,7 @@ ms.locfileid: "132454005"
 * 下面介绍如何使用现有响应文件再生成最小脱机布局。
 
   ```shell
-  MinimalLayout.exe regenerate -filepath c:\VSLayout\MinimalLayout.json
+  MinimalLayout.exe regenerate --filepath c:\VSLayout\MinimalLayout.json
   ```
 
 使用 generate 命令的一些其他示例：

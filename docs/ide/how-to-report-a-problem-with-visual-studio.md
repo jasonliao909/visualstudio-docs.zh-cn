@@ -10,14 +10,14 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 2105002d56da13862e6e0d6646d602b43c331046
-ms.sourcegitcommit: a439b1878939b2364cee0d09b851c2a67c42e563
+ms.openlocfilehash: 6536bada367dbd485b10498b1ae7ca8b60ce0e73
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "138567380"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139551321"
 ---
-# <a name="report-a-problem-with-the-visual-studio-product-or-installer"></a>报告 Visual Studio 产品或安装程序的问题
+# <a name="report-a-problem-with-the-visual-studio-product-or-installer"></a>报告产品或Visual Studio的问题
 
 > [!NOTE]
 > 对于 Visual Studio for Mac，请参阅[如何报告 Visual Studio for Mac 的问题](/visualstudio/mac/report-a-problem)。
@@ -80,6 +80,8 @@ ms.locfileid: "138567380"
    ![Visual Studio 反馈窗口的屏幕截图，其中显示 Microsoft 为解决问题而请求的信息。](../ide/media/feedback-need-more-info.png)
 
 1. 可以通过添加注释、附件或记录步骤来提供更多信息。 此体验类似于报告新问题或在对问题进行投票时提供其他信息。
+
+    !["开发人员Community"复选框的屏幕截图，其中选中了"附加系统日志和录制内容"复选框，其中显示了附加更多文件的选项。](https://user-images.githubusercontent.com/79461015/153265681-3696f046-b5c7-41c4-ad78-668951578bdd.png)
 
 1. 提供额外信息后，发出请求的 Microsoft 工程师会收到相关通知。 如果获取的信息足以开展调查，问题状态随即更改。 否则，工程师会要求提供更多信息。
 

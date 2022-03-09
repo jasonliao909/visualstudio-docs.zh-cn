@@ -1,7 +1,7 @@
 ---
 title: 部署 UWP 应用 | Microsoft Docs
 description: 从 Visual Studio 部署通用 Windows 平台 (UWP) 应用。 指定本地或远程目标设备以进行部署。 了解部署选项。
-ms.date: 01/16/2018
+ms.date: 02/22/2022
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: e8b785a71bc096a1bcb74f1be2a14cc2ba2c9f5d
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: c14e939ced83369430e20bfa878358ac911b2d82
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129969822"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139551914"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>从 Visual Studio 部署 UWP 应用
 
@@ -52,7 +52,7 @@ Visual Studio 部署功能在目标设备上构建并注册使用 Visual Studio 
 
 **系统必备**
 
-在 Windows 10 远程设备上，必须启用[开发人员模式](/windows/uwp/get-started/enable-your-device-for-development)。 在运行创建者更新或更高版本的 Windows 10 设备上，在部署应用时会自动安装远程工具。 有关详细信息，请参阅[调试安装的应用包](../debugger/debug-installed-app-package.md)。
+在 Windows 10 或更高版本的远程设备上，必须启用[开发人员模式](/windows/uwp/get-started/enable-your-device-for-development)。 在运行创建者更新或更高版本的 Windows 10 设备上，或 Windows 11 设备上，当你部署应用时，将自动安装远程工具。 有关详细信息，请参阅[调试安装的应用包](../debugger/debug-installed-app-package.md)。
 
 > [!NOTE]
 > 在 Windows 10 的预创建者更新版本中，必须在远程设备上安装 Visual Studio 远程工具，并且必须运行远程调试器。

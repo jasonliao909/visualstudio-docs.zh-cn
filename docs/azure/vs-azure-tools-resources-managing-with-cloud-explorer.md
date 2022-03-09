@@ -6,22 +6,24 @@ manager: jmartens
 ms.technology: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
-ms.date: 03/25/2017
+ms.date: 01/22/2022
 ms.author: ghogen
-ms.openlocfilehash: bd80d022a71e1c5a13d084c477458537bc2330b6
-ms.sourcegitcommit: 932cf0f653c6258b73f42102d134cbaf50b8f20c
-ms.translationtype: HT
+ms.openlocfilehash: 77d26b8587fdc6e4f2d4eec42fa4a691e311f6ae
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "132879807"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139550957"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>在 Visual Studio Cloud Explorer 中管理与 Azure 帐户关联的资源
 
 ::: moniker range=">=vs-2022"
 > [!Important]
 > Cloud Explorer 已在 Visual Studio 2022 中停用。 可以改为使用以下备选方案：
+> - 若要Azure 应用服务或 Azure Function 应用，可以使用连接的服务或发布所有项目可用的功能。 
+>   -  如果依赖于Visual Studio，则您可以在"托管"部分中的"其他选项"下访问此功能。 
+>   -  如果不使用发布功能，解决方案中每个 [Project 内的 连接的服务](overview-connected-services.md?view=vs-2022&preserve-view=true) 节点可帮助配置对 Azure 资源的访问权限，并调用各种操作，例如远程调试、远程分析、启动/停止应用程序、查看流式处理日志等。
 > - [Microsoft Azure 存储资源管理器](/azure/vs-azure-tools-storage-manage-with-storage-explorer)是 Microsoft 提供的免费独立应用。 可以通过它在 Windows、macOS 和 Linux 上直观地使用 Azure 存储数据。
-> - 你将能够使用所有项目上提供的连接服务或发布功能，以便调试 Azure 应用服务或 Azure Function 应用。 如果依靠 Visual Studio 进行发布，则此选项在“托管”部分的其他选项下可用。 如果不使用发布功能，则你将能够从“连接服务”选项卡连接到任何 Azure 应用服务或 Azure Function 应用，并调用各种操作，例如远程调试、远程配置文件、启动/停止站点、查看流式处理日志等。 
 > - 使用 [Kudu 控制台](https://github.com/projectkudu/kudu/wiki/Kudu-console)可直接以提升的命令行访问应用服务服务器及其文件系统。 这是一个重要的调试工具，同时也支持 CLI 操作（如安装包）。
 >
 > 如果需要，可以使用 Azure 门户或继续使用早期版本的 Visual Studio 中服务器资源管理器的 Azure 节点。

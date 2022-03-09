@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - nodejs
 monikerRange: '>= vs-2022'
-ms.openlocfilehash: 90c80b955b2e3e4ed19e68c11a720b199c97bf7a
-ms.sourcegitcommit: 20f9529648e69707063dccb2b15089bf4e9bf639
+ms.openlocfilehash: f71cfd879519d1f96ee4f5ec2ca852c2812d65f8
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "137886743"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139549293"
 ---
 # <a name="create-an-angular-app"></a>创建 Angular 应用
 
@@ -45,7 +45,7 @@ ms.locfileid: "137886743"
 
 1. 为你的项目和解决方案命名。
 
-   到达"其他信息"窗口时，请务必不要选中"为空值添加集成 **ASP.NET Web API Project** 选项。 如果添加了 ASP.NET Core 项目，此选项将文件添加到 Angular 模板，以便稍后可以与 ASP.NET Core 项目挂钩。
+   当进入"其他信息"窗口时，请务必不要选中"为空值添加集成 **ASP.NET Web API Project** 选项。 如果添加了 ASP.NET Core 项目，此选项将文件添加到 Angular 模板，以便稍后可以与 ASP.NET Core 项目挂钩。
 
    其他信息
 
@@ -70,6 +70,13 @@ ms.locfileid: "137886743"
 - 运行 ng start 的 Angular CLI
 
    >[!NOTE]
-   > 检查控制台输出中的消息，例如一条消息，指示你更新版本Node.js。
+   > 检查控制台输出中的消息，例如指示更新版本的消息Node.js。
 
 接下来，应会看到基本Angular应用显示！
+
+## <a name="next-steps"></a>后续步骤
+
+对于 ASP.NET Core集成：
+
+> [!div class="nextstepaction"]
+> [使用 Angular 创建 ASP.NET Core 应用](tutorial-asp-net-core-with-angular.md)

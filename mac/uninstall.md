@@ -1,29 +1,29 @@
 ---
 title: 卸载 Visual Studio for Mac
-description: 删除Visual Studio for Mac和相关工具。
+description: 了解如何卸载或删除Visual Studio for Mac工具。
 author: jmatthiesen
 ms.author: jomatthi
 manager: dominicn
-ms.date: 09/18/2019
+ms.date: 03/03/2022
+ms.custom: devdivchpfy22
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
 ms.topic: how-to
-ms.openlocfilehash: 9e140a570a03dd34113d9b81eb536b9419519f11
-ms.sourcegitcommit: 782992423db6e1cbbf206715c9b3b400c80052a9
+ms.openlocfilehash: aa10ab7bcb1d74b633e607bdb32951739cdf2654
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "138101089"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139552325"
 ---
 # <a name="uninstall-visual-studio-for-mac"></a>卸载 Visual Studio for Mac 
 
-可根据本指南导航到相关部分，单独卸载 Visual Studio for Mac 中的每个组件，或使用[卸载脚本](#uninstall-script)部分提供的脚本卸载所有内容。
+可以使用本指南通过导航到相关部分Visual Studio for Mac卸载每个组件。 还可使用"卸载脚本"部分提供的 [脚本](#uninstall-script) 来卸载所有内容。
 
 本文适用于Visual Studio。 如果要查找有关VS Code的信息，请参阅Visual Studio Code[设置](https://code.visualstudio.com/docs/setup/setup-overview)。
 
 > [!NOTE]
 > 我们想详细了解你为何要卸载 Visual Studio for Mac，便于我们进行改进。 请花几分钟的时间[分享你的反馈](https://aka.ms/vs/mac/uninstallsurvey)。 谢谢！
-
 
 ## <a name="uninstall-script"></a>卸载脚本
 
@@ -38,7 +38,7 @@ ms.locfileid: "138101089"
 
 可通过使用[卸载脚本](https://raw.githubusercontent.com/MicrosoftDocs/visualstudio-docs/master/mac/resources/uninstall-vsmac.sh)一次性卸载 Visual Studio 和 Xamarin 组件。
 
-卸载脚本中包含本文中出现的大部分命令。 由于可能存在外部依赖项，因此脚本中省略了三个主要部分。 若要将此删除，请跳转到下面的相关部分，并手动删除：
+卸载脚本包含本文中的大多数命令。 脚本有三个主要省略项，由于可能的外部依赖关系，未包括这些省略项。 若要删除，请跳转到下面的相关部分并手动删除它们：
 
 - **[卸载 Mono](#uninstall-mono-sdk-mdk)**
 - **[卸载 Android AVD](#uninstall-android-avd)**
@@ -53,7 +53,7 @@ ms.locfileid: "138101089"
     cd /location/of/file
     ```
 
-3. 使脚本可执行，并通过 **sudo** 运行它：
+3. 使脚本可执行，然后使用 **sudo 运行它**：
 
     ```bash
     chmod +x ./uninstall-vsmac.sh
@@ -107,7 +107,7 @@ rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
 rm -rf ~/Library/Application\ Support/VisualStudio/8.0/LocalInstall/Addins/
 ```
 
-可能还要删除以下包含各种 Xamarin 文件和文件夹的目录。 不过，这样做前，应注意此目录包含 Android 签名密钥。 有关详细信息，请参阅 **[卸载 Android SDK 和 Java SDK](#uninstall-android-sdk-and-java-sdk)** 部分：
+可能还需要删除包含各种 Xamarin 文件和文件夹的以下目录。 但是，此目录包含 Android 签名密钥。 有关详细信息，请参阅卸载 Android SDK **[和 Java SDK 部分](#uninstall-android-sdk-and-java-sdk)**：
 
 ```bash
 rm -rf ~/Library/Developer/Xamarin
@@ -131,7 +131,7 @@ sudo rm -rf /etc/paths.d/mono-commands
 
 ## <a name="uninstall-xamarinandroid"></a>卸载 Xamarin.Android
 
-安装和使用 Xamarin.Android 需要许多必备项，例如 Android SDK 和 Java SDK。
+安装和使用 Xamarin.Android 需要许多项，例如 Android SDK 和 Java SDK。
 
 使用以下命令删除 Xamarin.Android：
 
@@ -147,16 +147,16 @@ sudo rm -rf /Library/Frameworks/Xamarin.Android.framework
 开发 Android 应用程序需要 Android SDK。 要完全删除 Android SDK 的所有部分，请在 ~/Library/Developer/Xamarin/ 中找到相关文件，并将其移到回收站 。
 
 > [!WARNING]
-> 应注意，Visual Studio for Mac 生成的 Android 签名密钥位于 `~/Library/Developer/Xamarin/Keystore` 中。 请务必适当备份，或避免在要保留密钥存储时删除此目录。
+> 请注意，由 Visual Studio for Mac生成的 Android 签名密钥位于 中`~/Library/Developer/Xamarin/Keystore`。 请务必适当备份，或避免在要保留密钥存储时删除此目录。
 
-不必卸载 Java SDK (JDK)，因为它已预先打包为 Mac OS X/macOS 一部分。
+无需卸载 Java SDK (JDK) ，因为它已预打包为 Mac OS X/macOS 的一部分。
 
 ### <a name="uninstall-android-avd"></a>卸载 Android AVD
 
 > [!WARNING]
-> 除 Visual Studio for Mac 之外，还有其他应用程序使用 Android AVD 和这些附加 Android 组件，如 Android Studio。删除此目录可能导致 Android Studio 中的项目中断。
+> 除 Visual Studio for Mac 之外，还有其他应用程序使用 Android AVD 和这些附加 Android 组件，如 Android Studio。 删除此目录可能会导致项目中断Android Studio。
 
-要删除任何 Android AVD 和附加 Android 组件，请使用以下命令：
+若要删除任何 Android AVD 和其他 Android 组件，请使用以下命令：
 
 ```bash
 rm -rf ~/.android
@@ -185,7 +185,7 @@ sudo pkgutil --forget com.xamarin.xamarin.ios.pkg
 
 ## <a name="uninstall-xamarinmac"></a>卸载 Xamarin.Mac
 
-可使用以下两个命令分别彻底删除 Mac 上的产品和许可证，进而从计算机上删除 Xamarin.Mac：
+可以使用以下两个命令从计算机中删除 Xamarin.Mac，分别从 Mac 中删除产品和许可证：
 
 ```bash
 sudo rm -rf /Library/Frameworks/Xamarin.Mac.framework
@@ -227,22 +227,6 @@ rm -rf "~/Library/Preferences/Visual Studio/"
 ```
 
 * * *
-
-## <a name="uninstall-visual-studio-2019-for-mac-preview"></a>卸载 Visual Studio 2019 for Mac 预览版
-
-Visual Studio 2019 for Mac 预览版作为单独的预览版发布，可用于通过并排安装来继续使用 Visual Studio 2017 for Mac。
-
-现在，Visual Studio 2019 for Mac 已经发布，可以安全地删除 Visual Studio 2019 for Mac 预览版应用程序了。
-
-要卸载预览版应用程序包，请在 Applications 文件夹中选择“Visual Studio (预览版)”，然后单击“移到垃圾桶”，如下图所示  ：
-
-![在查找器中选择“移到垃圾桶”选项](media/uninstall-remove-vspreview.png)
-
-还可以使用以下命令删除预览版 plist 文件：
-
-```bash
-rm -rf ~/Library/Preferences/com.microsoft.visual-studio-preview.plist
-```
 
 ## <a name="see-also"></a>请参阅
 

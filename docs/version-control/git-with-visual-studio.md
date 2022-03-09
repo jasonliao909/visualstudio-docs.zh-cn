@@ -9,12 +9,12 @@ ms.author: tglee
 ms.manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 41f4736d22f5e5674ccf65679dbfe7169d7d5690
-ms.sourcegitcommit: b9c5ca58f380ee102153b69656cb062b3d2dab8c
+ms.openlocfilehash: 8acde56b91c04a4ee3127316aef4e36a77919d20
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "138427851"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139552533"
 ---
 #  <a name="how-visual-studio-makes-version-control-easy-with-git"></a>Visual Studio 如何利用 Git 使版本控件更简单
 
@@ -23,7 +23,7 @@ ms.locfileid: "138427851"
 Git 是最广泛使用的新式版本控制系统。 通过 Git，你可以跟踪随时间推移而进行的代码更改，并可以还原到特定版本。  无论你是专业开发人员，还是想要了解如何编码，Visual Studio 的 Git 体验对你都非常有用。 
 
 >[!Tip]
-> 若要了解如何在 Visual Studio 中使用 git 和 GitHub，请在 Visual Studio 上注册 [git 学习系列](https://visualstudio.microsoft.com/vs/github/)，并在网页上 **更好地 GitHub** 。
+> 若要了解如何在 Visual Studio 中使用 git 和 GitHub，请注册[Git 学习系列](https://visualstudio.microsoft.com/vs/github/)。
 
 ::: moniker range=">=vs-2022"
 
@@ -35,9 +35,7 @@ Git 是最广泛使用的新式版本控制系统。 通过 Git，你可以跟�
 
 - 如果在 GitHub 的 git 提供程序上承载了 git 存储库，请将[该存储库克隆](git-clone-repository.md)到本地计算机。 
 
-- 否则，可以[使用创建新的存储库体验轻松地将代码添加到 Git 和 GitHub](git-create-repository.md)。
-
-如果还没有 Git 提供程序，我们建议你开始使用 GitHub 因为 Visual Studio 中的 Git 体验针对此提供程序进行了优化。 GitHub 提供免费且安全的云代码存储，你可以在其中存储代码并从任意位置使用任意设备访问它。   
+- 否则，可以轻松 [创建新的 Git 存储库并添加代码](git-create-repository.md)。  如果还没有 Git 提供程序，我们建议你开始使用 GitHub 因为 Visual Studio 中的 Git 体验针对此提供程序进行了优化。 GitHub 提供免费且安全的云代码存储，你可以在其中存储代码并从任意位置使用任意设备访问它。   
 
 您不仅可以将[GitHub 和 GitHub Enterprise 帐户添加到密钥链](../ide/work-with-github-accounts.md)中，还可以像使用 Microsoft 帐户一样使用它们。  如果没有 GitHub 帐户，请按照以下步骤[创建用于 Visual Studio 的 GitHub 帐户](git-create-github-account.md)。
 
@@ -47,9 +45,7 @@ Git 是最广泛使用的新式版本控制系统。 通过 Git，你可以跟�
 
 ## <a name="view-files-in-solution-explorer"></a>解决方案资源管理器中的的视图文件
 
-克隆存储库或打开本地存储库时，在询问你是否要保存并关闭以前打开的任何解决方案和项目后，Visual Studio 切换到新的 Git 上下文。 解决方案资源管理器将在 Git 存储库的根目录中加载文件夹，并在目录树中扫描所有可查看文件。 其中包括 CMakeLists.txt 等文件或具有 .sln 文件扩展名的文件。
-
-有关详细信息，请参阅[打开存储库中的项目](../get-started/tutorial-open-project-from-repo.md)教程的[解决方案资源管理器中的视图文件](../get-started/tutorial-open-project-from-repo.md#view-files-in-solution-explorer)部分。
+克隆存储库或打开本地存储库时，Visual Studio 切换到 Git 上下文。 解决方案资源管理器将文件夹加载到 Git 存储库的根目录下，并在目录树中扫描任何可见文件（如 `CMakeLists.txt` 或文件扩展名为的 `.sln` 文件）。  有关详细信息，请参阅 [查看解决方案资源管理器中的文件](../get-started/tutorial-open-project-from-repo.md#view-files-in-solution-explorer)。
 
 ## <a name="intuitive-inner-loop-workflow"></a>直观的内部循环工作流
 
@@ -75,31 +71,29 @@ Git 是分布式版本控制系统，这意味着，到目前为止所做的所�
 
 ### <a name="browse-and-manage-git-repositories"></a>浏览和管理 Git 存储库
 
-若要详细了解如何使用 Git 存储库窗口来浏览和管理 Git 存储库，请参阅以下页面：
+若要详细了解如何使用 Visual Studio 中的 "git 存储库" 窗口来浏览和管理 git 存储库，请参阅以下页面：
 
-- [在 Visual Studio 中浏览存储库](git-browse-repository.md)
-- [在 Visual Studio 中管理存储库](git-manage-repository.md)
+- [浏览存储库](git-browse-repository.md)
+- [管理存储库](git-manage-repository.md)
 
 ### <a name="handle-merge-conflicts"></a>处理合并冲突
 
-如果两个开发人员在文件中修改了相同的行，而 Git 不会自动知道哪一个是正确的，则可能会发生冲突。 Git 暂停合并，并通知你处于冲突状态。
-
-若要了解有关合并冲突以及如何处理它们的详细信息，请参阅[解决合并冲突](git-resolve-conflicts.md)页。
+如果两个开发人员在文件中修改了相同的行，而 Git 不会自动知道哪一个是正确的，则可能会发生冲突。 Git 暂停合并，并通知你处于冲突状态。  有关详细信息，请参阅 [解决合并冲突](git-resolve-conflicts.md) 页。
 
 ### <a name="personalize-your-git-settings"></a>个性化设置 Git 设置
 
-若要在存储库级别和全局级别对 Git 设置进行个性化设置和自定义，请转到菜单栏上的“Git” > “设置”，或转到菜单栏上的“工具” > “选项” > “源代码管理”    。 然后选择所需的[选项](git-settings.md)。
+若要在存储库级别和全局级别个性化设置 Git 设置，请执行以下操作：
+1. 在菜单栏中转到 " **Git** > **设置**"
+2. 选择所需的 [选项](git-settings.md) 。
 
 :::image type="content" source="media/git-options-settings.png" alt-text="Visual Studio IDE 中的“选项”对话框，可以在该对话框中选择个性化设置和自定义设置。":::
 
 
 ## <a name="enhanced-experience--feedback"></a>& 反馈的增强体验
 
-我们将继续添加新功能，以增强 Visual Studio 中的 Git 体验。 有关最新功能的详细信息以及可以共享反馈的调查，请参阅 Visual Studio 博客文章[中的多](https://devblogs.microsoft.com/visualstudio/multi-repo-support-in-visual-studio/)存储库支持。 
+我们将继续添加新功能来增强 Git 体验。 有关最新功能和反馈调查的详细信息，请参阅[Visual Studio](https://devblogs.microsoft.com/visualstudio/multi-repo-support-in-visual-studio/)博客文章中的多存储库支持。 如果有建议，请告诉我们！ 我们非常感谢你在 [**开发人员 Community**](https://aka.ms/vs-suggest)中参与的机会。
 
-若要尝试更新预览版中的 Git 体验，请从[Visual Studio 2022 预览](https://visualstudio.microsoft.com/vs/preview/)页面下载和安装。 有关每个版本的详细信息，请阅读我们的[Visual Studio 2022 发行说明](/visualstudio/releases/2022/release-notes)。
-
-如果你对我们有任何建议，请告诉我们！ 我们非常感激能够通过[开发人员社区](https://aka.ms/vs-suggest)门户与你交流设计决策。
+若要尝试获得更多最新/预览版的 Git 体验更新，请从[Visual Studio 2022 预览](https://visualstudio.microsoft.com/vs/preview/)页面下载和安装。 有关每个版本的详细信息，请阅读我们的[Visual Studio 2022 发行说明](/visualstudio/releases/2022/release-notes)。
 
 ::: moniker-end
 
@@ -280,13 +274,13 @@ Visual Studio 中的合并编辑器是一种三向合并工具，用于显示传
 
 还可以使用切换来显示/隐藏差异、显示/隐藏单词差异，以及自定义布局。 每侧的顶部都有复选框，你可从任何一侧通过这些复选框来执行所有更改。 但若要进行单独的更改，可以单击任一侧的冲突行左侧的复选框。 最后，解决完冲突后，可以在合并编辑器中选择“接受合并”按钮。 然后，可以编写提交消息并提交更改以完成解决操作。
 
-## <a name="personalize-your-git-settings-in-visual-studio-2019"></a>在 Visual Studio 2019 中个性化设置 Git 设置
+## <a name="personalize-your-git-settings-in-visual-studio-2019"></a>个性化设置 2019 Visual Studio Git 设置
 
 若要在存储库级别和全局级别对 Git 设置进行个性化设置和自定义，请转到菜单栏上的“Git” > “设置”，或转到菜单栏上的“工具” > “选项” > “源代码管理”    。 然后选择所需的[选项](git-settings.md)。
 
 :::image type="content" source="media/git-options-settings.png" alt-text="Visual Studio IDE 中的“选项”对话框，可以在该对话框中选择个性化设置和自定义设置。":::
 
-## <a name="how-to-use-the-full-team-explorer-experience-in-visual-studio-2019"></a>如何在 Visual Studio 2019 中使用完全团队资源管理器体验
+## <a name="how-to-use-the-full-team-explorer-experience-in-visual-studio-2019"></a>如何使用 2019 团队资源管理器 中的完整Visual Studio体验
 
 从[版本 16.8](/visualstudio/releases/2019/release-notes/) 开始，新的 Git 体验是 Visual Studio 2019 中的默认版本控制系统。 但是，可以在需要时将它关闭。 转到“工具” > “选项” > “环境” > “预览功能”，然后切换“新的 Git 用户体验”复选框，这会使你切换回用于 Git 的团队资源管理器。
 

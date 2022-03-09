@@ -8,18 +8,18 @@ helpviewer_keywords:
 - Help Viewer, logical operators in search
 - logical operators in search [Help Viewer]
 ms.assetid: 0c38ae7d-3e20-4d47-a020-9677cd285916
-author: ghogen
-ms.author: ghogen
+author: jasonchlus
+ms.author: jasonchlus
 manager: jmartens
 ms.technology: vs-help-viewer
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a3580bdc4d91d2f09fc066919aa5bc66755f23c
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 594c1c365af400db23a3a1af923ad2885d532889
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126663956"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139550294"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>搜索表达式中的逻辑和高级运算符
 

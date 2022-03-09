@@ -2,7 +2,7 @@
 title: 编写 Python 的 C++ 扩展
 description: 本文分步介绍如何使用 Visual Studio、CPython 和 PyBind11（包括混合模式调试）创建适用于 Python 的 C++ 扩展。
 ms.custom: devdivchpfy22
-ms.date: 12/20/2021
+ms.date: 02/25/2022
 ms.topic: how-to
 author: rjmolyneaux
 ms.author: rmolyneaux
@@ -11,16 +11,16 @@ ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: aadcff465274916b7d872ab2a64116ab5bc3cf70
-ms.sourcegitcommit: f303d052e451bcfd4722b99a9adbcb3f575d1678
+ms.openlocfilehash: 0960b9bd49e4f3fb5e5a290725be06731a9cdd59
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "137816799"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139552559"
 ---
 # <a name="create-a-c-extension-for-python"></a>创建适用于 Python 的 C++ 扩展
 
-通常，使用 C++ (或 C) 模块来扩展 Python 解释器的功能。 还可使用它们来启用对低级别操作系统功能的访问。
+通常，使用 c + + 编写的模块 (或 C) 用于扩展 Python 解释器的功能。 你还可以使用它们来启用对低级操作系统功能的访问。
 
 主要有三种类型的模块：
 
@@ -33,7 +33,7 @@ ms.locfileid: "137816799"
 本文还演示了使 C++ 扩展可用于 Python 的两种方法：
 
 - 使用标准 `CPython` 扩展，如 [Python 文档](https://docs.python.org/3/c-api/)中所述。
-- 使用 [PyBind11](https://github.com/pybind/pybind11)，由于其简单易用，因此推荐用于 C++11。 为了确保兼容性，请确保使用较新版本的 Python 之一。 
+- 使用 [PyBind11](https://github.com/pybind/pybind11)，由于其简单易用，因此推荐用于 C++11。 若要确保兼容性，请确保使用的是最新版本的 Python。 
 
 可通过 [python-samples-vs-cpp-extension](https://github.com/Microsoft/python-sample-vs-cpp-extension)，在 GitHub 上获取本演练中的完整示例。
 
@@ -95,9 +95,9 @@ ms.locfileid: "137816799"
         test(lambda d: [tanh(x) for x in d], '[tanh(x) for x in d] (Python implementation)')
     ```
 
-1. 若要查看结果，请通过选择"调试开始而不调试"或按  >  **Ctrl+F5 运行程序**。
+1. 若要查看结果，请通过选择 "**调试**  >  **开始（不调试**）" 或选择 " **Ctrl + F5**" 来运行程序。
 
-   可以调整 `COUNT` 变量以更改基准测试的运行时间。 对于本演练，请设置计数，以便基准测试大约需要两秒。
+   可以调整 `COUNT` 变量来更改基准运行的时间长度。 对于本演练，请设置计数，以便基准测试大约要花两秒钟。
 
    > [!TIP]
    > 运行基准检验时，请始终使用“调试” > “启动但不调试” 。 这有助于避免在 Visual Studio 调试器中运行代码时产生开销。
@@ -122,7 +122,7 @@ ms.locfileid: "137816799"
     > [!Important]
     > 需要扩展名为 .cpp 的文件才能在随后步骤中打开 C++ 属性页。
 
-1. 在主工具栏上，使用下拉菜单选择以下配置之一：
+1. 在主工具栏上，使用下拉菜单选择下列配置之一：
 
    * 对于 64 位 Python 运行时，请激活 x64 配置。 
    * 对于 32 位 Python 运行时，请激活 Win32 配置。
@@ -142,7 +142,6 @@ ms.locfileid: "137816799"
     | Tab | Property | “值” |
     | --- | --- | --- |
     | **常规** | **目标名称** | 指定要在 `from...import` 语句中从 Python 引用的模块的名称。 定义 Python 的模块时，请在 C++ 代码中使用相同的名称。 若要将项目的名称用作模块名称，请保留默认值 $\<ProjectName>。  对于 `python_d.exe`，在名称末尾添加 `_d`。 |
-    | | **配置类型** | **动态库(.dll)** |
     | | “高级”>“目标文件扩展” | **.pyd** |
     | | 项目默认值 > 配置类型 | **动态库(.dll)** |
     | C/C++ > 常规 | **附加包含目录** | 根据相应的安装添加 Python“include” 文件夹（例如 `c:\Python36\include`）。  |
@@ -169,7 +168,7 @@ ms.locfileid: "137816799"
     ::: moniker-end
     
     > [!NOTE]
-    > 如果 " **c/c + +** " 选项卡未显示在项目属性中，则该项目不包含标识为 c/c + + 源文件的任何文件。 如果创建的源文件不含 .c 或 .cpp 文件扩展名，则可能出现这种情况 。 
+    > 如果项目属性中未显示 **C/C++** 选项卡，则项目不包含标识为 C/C++ 源文件的文件。 如果创建的源文件不含 .c 或 .cpp 文件扩展名，则可能出现这种情况 。 
     > 
     > 例如，如果在“新建项”对话框中不慎输入了“module.coo”（而不是“module.cpp”），Visual Studio 会创建该文件，但不会将文件类型设置为 C/C+ 代码，该文件类型能激活“C/C++ 属性”选项卡。即使将该文件重命名为带有 .cpp 文件扩展名，此标识错误仍会存在   。 
     > 
@@ -208,7 +207,7 @@ ms.locfileid: "137816799"
 
 ## <a name="convert-the-c-projects-to-extensions-for-python"></a>将 C++ 项目转换为适用于 Python 的扩展
 
-若要使 c + + DLL 成为 Python 的扩展，请首先修改导出的方法以与 Python 类型交互。 然后，添加一个用于导出模块的函数以及该模块的方法的定义。
+若要使 C++ DLL 成为 Python 的扩展，请首先修改导出的方法以与 Python 类型进行交互。 然后，添加一个导出模块的函数，以及模块方法的定义。
 
 以下各节介绍如何使用 CPython 扩展和 PyBind11 执行这些步骤。
 
@@ -274,7 +273,7 @@ ms.locfileid: "137816799"
 
 ### <a name="use-pybind11"></a>使用 PyBind11
 
-如果你已完成上一部分中的步骤，则可能已注意到，你使用了大量样板代码来为 c + + 代码创建必要的模块结构。 PyBind11 可通过 c + + 头文件中的宏简化此过程，该文件可实现相同的结果，但代码更少。 
+如果已完成上一部分中的步骤，你可能注意到你使用了大量样板代码来创建 C++ 代码所需的模块结构。 PyBind11 通过 C++ 头文件中实现相同结果的宏简化了该过程，但代码要少得多。 
 
 有关本部分中的代码的详细信息，请参阅 [PyBind11 基础知识](https://github.com/pybind/pybind11/blob/master/docs/basics.rst)。
 
@@ -284,7 +283,7 @@ ms.locfileid: "137816799"
 
 1. 在同一终端中，运行 `python -m pybind11 --includes` 或 `py -m pybind11 --includes`。 
 
-   此操作将打印路径列表，你应将这些路径添加到项目的 **c/c + +**"  >  **常规**  >  **附加包含目录**" 属性中。 请确保删除 `-I` 前缀（若有）。
+   此操作会打印应添加到项目的 **C/C++** > **"** > 常规""附加包含目录"属性 **的路径** 列表。 请确保删除 `-I` 前缀（若有）。
 
 1. 在全新的 module.cpp（不包括来自上一部分的任何更改）的顶部，添加 pybind11.h：
 
@@ -318,11 +317,11 @@ C++ 模块可能无法编译的原因如下：
 
 - 错误：找不到 Python（E1696：无法打开源文件“Python .h”和/或 C1083：无法打开 Include 文件：“Python .h”：没有此文件或目录 ） 
 
-  解决方案：验证 "项目属性" 中的 "路径 **c/c + +**  >  **常规**  >  **附加包含目录**" 是否指向 Python 安装的 *包含* 文件夹。 请参阅[创建核心 C++ 项目](#create-the-core-c-projects)中的步骤 6。
+  解决方案：验证项目属性中的 **路径 C/C++** >  > "常规""其他包含目录"是否指向 Python 安装的 *include* 文件夹。 请参阅[创建核心 C++ 项目](#create-the-core-c-projects)中的步骤 6。
 
 - 错误：无法找到 Python 库 
  
-   解决方案：验证 "项目属性" 中的路径：**链接器**  >  **常规**  >  **附加库目录** 是否指向 Python 安装的库文件夹。 请参阅[创建核心 C++ 项目](#create-the-core-c-projects)中的步骤 6。
+   解决方案：验证路径：项目属性中的 **"LinkerGeneral** >  > **""** 其他库目录"是否指向 Python 安装的 *libs* 文件夹。 请参阅[创建核心 C++ 项目](#create-the-core-c-projects)中的步骤 6。
 
 - 与目标体系结构相关的链接器错误
    
@@ -407,7 +406,7 @@ C++ 模块可能无法编译的原因如下：
         > [!Tip]
         > 如果已经安装了包，则会看到它在此处列出。 继续下一步之前，单击“X”将其卸载。
     
-    1. 在搜索框中，粘贴复制的路径，从末尾删除 *pyproject* ，然后按 **Enter** 从该目录中安装该模块。
+    1. 在搜索框中，粘贴复制的路径，从末尾删除 *pyproject.toml* ，然后选择 **Enter** 以从该目录中安装模块。
     
         > [!Tip]
         > 如果安装由于权限错误而失败，请将 --user 添加到末尾处，然后重试该命令。
@@ -449,7 +448,7 @@ C++ 模块可能无法编译的原因如下：
 
 在输出中，你可能会看到 PyBind11 扩展的速度不如 CPython 扩展快，尽管它应比纯 Python 实现更快。 这主要是因为使用了 `METH_O` 调用，它不支持多个参数、参数名称或关键字参数。 PyBind11 会生成稍微复杂一些的代码，以便为调用方提供更类似于 Python 的接口。 但是因为测试代码调用该函数 500,000 次，结果可能会大大增加开销！
 
-可以通过将 `for` 循环到本机代码中来进一步减少开销。 此方法涉及使用[函数参数的](https://docs.python.org/c-api/iter.html) (或 PyBind11 类型) `py::iterable` 处理每个元素。 [](https://pybind11.readthedocs.io/en/stable/advanced/functions.html#python-objects-as-args) 删除 Python 和 C++ 之间的重复转换是缩短处理序列所需时间的有效方法。
+可以通过将 `for` 循环到本机代码中来进一步减少开销。 此方法涉及使用函数参数[](https://docs.python.org/c-api/iter.html)的 (或 PyBind11 `py::iterable` 类型) 处理每个元素。[](https://pybind11.readthedocs.io/en/stable/advanced/functions.html#python-objects-as-args) 删除 Python 和 C++ 之间的重复转换是缩短处理序列所需时间的有效方法。
 
 ### <a name="troubleshoot-importing-errors"></a>关于导入错误的疑难解答
 
@@ -470,7 +469,7 @@ Visual Studio 支持一起调试 Python 和 C++ 代码。 本部分采用 superf
     > [!Tip]
     > 启用本机代码调试后，Python 输出窗口可能在程序完成后立即关闭，且不会出现通常的“按任何键以继续”暂停界面。 
     >
-    > 解决方案：若要在启用本机代码调试后强制暂停，请向"调试"选项卡上的"运行解释器 `-i`   >  **参数**"**字段添加** 选项。此参数在代码运行后将 Python 解释器置于交互模式，此时它将等待你选择 Ctrl+Z，然后按 Enter 关闭窗口。 
+    > 解决方案：若要在启用本机`-i`代码调试后强制暂停，请向"调试"选项卡上的 **"****RunInterpreter** >  参数"**字段添加** 选项。此参数在代码运行后将 Python 解释器置于交互模式，此时它将等待你选择 Ctrl+Z，然后按 Enter 关闭窗口。 
     >
     > 或者，如果不介意修改 Python 代码，则可在程序结束时添加 `import os` 和 `os.system("pause")` 语句。 此代码会复制初始的暂停提示符。
 

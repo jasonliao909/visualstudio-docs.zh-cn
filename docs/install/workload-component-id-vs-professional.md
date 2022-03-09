@@ -6,7 +6,7 @@ keywords: ''
 author: anandmeg
 ms.author: meghaanand
 manager: jmartens
-ms.date: 10/12/2021
+ms.date: 02/15/2022
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,12 +16,12 @@ ms.assetid: 5719032b-2c2e-416e-a281-a4573ec74e38
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: fa5c53090567403b22994327fa470b19b0369479
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: f373fb664d58e72ea0d3803f8dc9a43dadabff22
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "134366852"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139552509"
 ---
 # <a name="visual-studio-professional-component-directory"></a>Visual Studio Professional 组件目录
 

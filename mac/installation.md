@@ -4,17 +4,17 @@ description: 介绍如何安装 Visual Studio 2019 for Mac 以及跨平台开发
 author: jmatthiesen
 ms.author: jomatthi
 manager: dominicn
-ms.date: 03/04/2021
+ms.date: 03/03/2022
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.custom: video
+ms.custom: video, devdivchpfy22
 ms.topic: how-to
-ms.openlocfilehash: 1fdd54b2b74ff5f314df35a3c66edb260122f682
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: 8bedb80d2703262c7a225ee4fc9c7020cbb6bb2b
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135804917"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139549309"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>安装 Visual Studio 2019 for Mac
 
@@ -30,17 +30,17 @@ ms.locfileid: "135804917"
 要为 iOS 或 macOS 构建 Xamarin 应用，还需要：
 
 - 与最新版本的 Xcode 兼容的 Mac。 请参阅 Apple 的[最低要求文档](https://developer.apple.com/support/xcode/)
-- 最新版本的 [Xcode](https://developer.apple.com/xcode)。 如果 Mac 与最新版本不兼容，则可以[使用旧版 Xcode](/xamarin/ios/troubleshooting/questions/old-version-xcode)。
-- 一个 Apple ID。 如果没有 Apple ID，请在 https://appleid.apple.com 新建一个。 需要 Apple ID 才可安装和登录 Xcode。
+- 最新版本的 [Xcode](https://developer.apple.com/xcode)。 如果 Mac 与最新版本不兼容，可以使用 [较旧版本的 Xcode](/xamarin/ios/troubleshooting/questions/old-version-xcode) 。
+- 一个 Apple ID。 如果还没有 Apple ID，可以在 创建一个新 ID https://appleid.apple.com。 需要 Apple ID 才可安装和登录 Xcode。
 
 ## <a name="installation-instructions"></a>安装说明
 
 1. 从 [Visual Studio for Mac 下载页面](https://visualstudio.microsoft.com/vs/mac/)下载安装程序。
-2. 下载完成后，单击 VisualStudioforMacInstaller.dmg 以装载安装程序，然后双击箭头徽标运行它：
+2. 下载完成后，选择 **VisualStudioforMacInstaller.dmg** 装载安装程序，然后双击箭头徽标来运行它：
 
-    [![单击大箭头开始安装](media/install-installer-sml.png)](media/install-installer.png#lightbox)
+    [![选择大箭头开始安装](media/install-installer-sml.png)](media/install-installer.png#lightbox)
 
-3. 可能会收到有关从 Internet 下载应用程序的警告。 单击“打开”。
+3. 可能会收到有关从 Internet 下载应用程序的警告。 选择“打开”。
 4. 安装程序检查系统时，请耐心等待：
 
     [![安装程序会检查系统中是否有已安装的组件](media/install-checking-sml.png)](media/install-checking.png#lightbox)
@@ -53,25 +53,25 @@ ms.locfileid: "135804917"
 
     [![Visual Studio Mac 安装程序中的“你想要安装什么?”屏幕截图，其中显示了可供安装的组件的列表。](media/install-selection.png)](media/install-selection.png#lightbox)
 
-   如果不希望安装所有平台，请参阅以下指南，它们有助于确定要安装的平台：
+   如果不想安装所有平台，请使用以下指南来帮助确定要安装的平台：
 
    |应用类型  |目标  |选择  |说明  |
    |---------|---------|---------|---------|
-   |**使用 Xamarin 的应用**| Xamarin.Forms|选择“Android”和“iOS”平台  |你需要安装 [Xcode](https://developer.apple.com/xcode/) |
-   ||仅限 iOS|选择“iOS”平台|你需要安装 [Xcode](https://developer.apple.com/xcode/)|
-   ||仅限 Android|选择“Android”平台|请注意，还应选择相关的依赖项|
-   ||仅限 Mac|选择“macOS (Cocoa)”平台|你需要安装 [Xcode](https://developer.apple.com/xcode/)|
+   |**使用 Xamarin 的应用**| Xamarin.Forms|选择“Android”和“iOS”平台  |需要安装 [**Xcode**](https://developer.apple.com/xcode/) |
+   ||仅限 iOS|选择“iOS”平台|需要安装 [**Xcode**](https://developer.apple.com/xcode/)|
+   ||仅限 Android|选择“Android”平台|还应选择相关的依赖项|
+   ||仅限 Mac|选择“macOS (Cocoa)”平台|需要安装 [**Xcode**](https://developer.apple.com/xcode/)|
    |**.NET Core 应用程序**|         |选择“.NET Core”平台。|         |
    |**ASP.NET Core Web 应用程序**|         |选择“.NET Core”平台。|         |
    |**Azure Functions**|         |选择“.NET Core”平台。|         |
-   |**跨平台 Unity 游戏开发**|         |除了 Visual Studio for Mac 之外，无需安装任何其他平台。| 若要详细了解如何安装 Unity 扩展，请参阅 [Unity 安装指南](./setup-vsmac-tools-unity.md)。|
+   |**跨平台 Unity 游戏开发**|         |除了其他平台之外，无需安装其他Visual Studio for Mac。| 有关安装 Unity 扩展的信息，请参阅 [Unity 安装指南](./setup-vsmac-tools-unity.md)。|
 
-7. 完成选择后，按下“安装”按钮。
-8. 安装程序将在下载并安装 Visual Studio for Mac 和所选工作负载时显示进度。 系统将提示输入密码以授予安装所需的权限。
+7. 选择后，按"安装 **"** 按钮。
+8. 安装程序将在下载并安装 Visual Studio for Mac 和所选工作负载时显示进度。 系统会提示输入密码，以授予安装所需的权限。
 
     [![Visual Studio Mac 安装程序中的屏幕截图，其中显示了适用于 Mac 的 .NET 开发人员工具包的安装进度屏幕。](media/installation-progress.png)](media/installation-progress.png#lightbox)
 
-9. 安装完成后，Visual Studio for Mac 会提示你通过登录并选择要使用的键绑定来个性化安装：
+9. 安装后Visual Studio for Mac，系统会提示你通过登录并选择要使用的关键绑定来个性化安装：
 
     [![登录到 IDE](media/ide-tour-2019-start-signin.png)](media/ide-tour-2019-start-signin.png#lightbox)
 

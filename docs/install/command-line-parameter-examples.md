@@ -1,7 +1,7 @@
 ---
 title: 安装的命令行参数示例
 description: 自定义这些示例，以创建自己的 Visual Studio 命令行安装。
-ms.date: 11/23/2021
+ms.date: 3/3/2022
 ms.topic: conceptual
 ms.assetid: 837F31AA-F121-46e9-9996-F8BCE768E579
 author: anandmeg
@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3935ad632f186af6274118b4e1116b7a6d53c0df
-ms.sourcegitcommit: 2281b4f1f8737f263c0d7e55e00b5ec81517327d
+ms.openlocfilehash: a818ed7c2d87db4ebece647724683356a4f49cd8
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "133108713"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139551529"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-installation"></a>Visual Studio 安装的命令行参数示例
 
@@ -125,6 +125,22 @@ ms.locfileid: "133108713"
    vs_professional.exe --installPath C:\VSforNode ^
    --add Microsoft.VisualStudio.Workload.Node --includeRecommended --nickname VSforNode
   ```
+
+## <a name="using---channeluri"></a>使用 --channelURI
+使用 Visual Studio 2022 或更高版本的安装程序，可以配置Visual Studio[查找更新的地方](/visualstudio/install/update-visual-studio?view=vs-2022&preserve-view=true#configure-source-location-of-updates-1)。 这也称为更新通道或更新的源位置。 下表提供了 channelURI 的示例值及其含义。
+
+| **通道名称** | **--channelURI** |
+|------------------|------------------|
+| Visual Studio 2022 当前通道 | `https://aka.ms/vs/17/release/channel` |
+| Visual Studio 2022 17.0 LTSC 通道 | `https://aka.ms/vs/17/release.LTSC.17.0/channel` |
+| Visual Studio 2022 预览频道 | `https://aka.ms/vs/17/pre/channel` |
+| Visual Studio 2019 发布通道 | `https://aka.ms/vs/16/release/channel` |
+| Visual Studio 2017 发布通道 | `https://aka.ms/vs/15/release/channel` |
+| 自定义布局 - 专用通道 | `\\layoutserver\share\path\channelmanifest.json` |
+
+如果选择使用自定义布局作为更新通道，请注意以下事项：
+  * --channelURI 必须指向自定义布局中的"channelmanifest.json"文件。 
+  * 管理员可以配置自定义布局"专用通道"在更新设置 UI 中的显示方式，只需配置客户端的[注册表设置。](/visualstudio/install/set-defaults-for-enterprise-deployments#configuring-source-location-for-updates) 
 
 ## <a name="using---remove"></a>Using --remove
 

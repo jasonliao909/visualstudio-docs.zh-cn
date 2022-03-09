@@ -4,18 +4,18 @@ description: 了解如何在 Microsoft Help Viewer 中搜索主题。 使用通�
 ms.date: 11/02/2017
 ms.topic: how-to
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
-author: ghogen
-ms.author: ghogen
+author: jasonchlus
+ms.author: jasonchlus
 manager: jmartens
 ms.technology: vs-help-viewer
 ms.workload:
 - multiple
-ms.openlocfilehash: 7605c4b35828cc5e54d04e0b36361d7280b60847
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: e07433c605a7e9883f02f2ed923d959547aa12fd
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126663960"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139551992"
 ---
 # <a name="how-to-search-for-topics"></a>如何：搜索主题
 

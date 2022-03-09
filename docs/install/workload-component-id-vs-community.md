@@ -6,7 +6,7 @@ keywords: ''
 author: anandmeg
 ms.author: meghaanand
 manager: jmartens
-ms.date: 10/12/2021
+ms.date: 02/15/2022
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,12 +16,12 @@ ms.assetid: 58494fc3-12de-4761-bd4a-74b54f72bfb3
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: f665e67de204897a9ad8af02eef7907d2c38134b
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: ad9be7c303c94348a06d68d5ff10e57ee325f110
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "134366691"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139551804"
 ---
 # <a name="visual-studio-community-component-directory"></a>Visual Studio Community 组件目录
 

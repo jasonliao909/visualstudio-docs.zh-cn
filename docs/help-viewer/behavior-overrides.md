@@ -4,18 +4,18 @@ description: 了解 Help Content Manager 重写，它们可以更改 Visual Stud
 ms.date: 11/01/2017
 ms.topic: conceptual
 ms.assetid: 95fe6396-276b-4ee5-b03d-faacec42765f
-author: ghogen
-ms.author: ghogen
+author: jasonchlus
+ms.author: jasonchlus
 manager: jmartens
 ms.technology: vs-help-viewer
 ms.workload:
 - multiple
-ms.openlocfilehash: 16bd273925ec3fc01dddecf3b9d7d2f0a0dcf2d3
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: d7412b9ed0c2ce5036ec4dbfe2914aae6d478962
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126663970"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139550554"
 ---
 # <a name="help-content-manager-overrides"></a>Help Content Manager 重写
 

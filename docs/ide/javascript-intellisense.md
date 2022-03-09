@@ -2,7 +2,7 @@
 title: JavaScript IntelliSense
 description: 了解 Visual Studio 如何提供功能更丰富的 IntelliSense、现代 JavaScript 功能支持以及改进的工作效率功能。
 ms.custom: SEO-VS-2020
-ms.date: 06/28/2017
+ms.date: 02/25/2022
 ms.topic: conceptual
 ms.technology: vs-javascript
 helpviewer_keywords:
@@ -27,12 +27,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ba9392c05938247d9a33268565893448342ec44c
-ms.sourcegitcommit: 7a300823cf1bd3355be03bde561cf2777bc09eae
+ms.openlocfilehash: 8d3bd7fd334db09ac2dc08a18fba0f4afc9f300f
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "133977830"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139550372"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 
@@ -140,8 +140,6 @@ function Foo(param1) {
 > 如果使用的是 tsconfig.json 配置文件，此功能在默认情况下为“禁用”，但可将其设置为“启用”，如下所述。
 
 目前，自动检测适用于从 npm（通过读取 package.json 文件）、Bower（通过读取 bower.json 文件）下载的依赖项，以及项目中与大致前 400 个最常用的 JavaScript 库的列表匹配的松散文件。 例如，如果项目中有 jquery-1.10.min.js，将提取并加载 jquery.d.ts 文件，从而提供更好的编辑体验。 .d.ts 文件不会对项目产生任何影响。
-
-如果不想使用自动获取，可通过添加配置文件来禁用它，如下所述。 仍可直接在项目中手动放置要使用的定义文件。
 
 ## <a name="see-also"></a>另请参阅
 

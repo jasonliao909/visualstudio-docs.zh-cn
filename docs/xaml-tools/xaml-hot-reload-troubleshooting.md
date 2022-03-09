@@ -1,7 +1,7 @@
 ---
 title: 排查 XAML 热重载问题
 description: 修复在使用 XAML 热重载时可能遇到的问题。
-ms.date: 12/17/2021
+ms.date: 03/02/2022
 ms.topic: troubleshooting
 helpviewer_keywords:
 - xaml edit and continue, troubleshooting
@@ -13,12 +13,12 @@ ms.technology: vs-xaml-tools
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 9beb77799ad45300f582f53e901b777d8aa5cb0e
-ms.sourcegitcommit: d3578c384959f1b76dd06fb4b5d075fb052f8c69
+ms.openlocfilehash: 0794c21c33d05e87b67dca401f259f0b9366ff30
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "135374858"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139550385"
 ---
 # <a name="troubleshooting-xaml-hot-reload"></a>排查 XAML 热重载问题
 
@@ -34,23 +34,23 @@ WPF 和 UWP 应用支持 XAML 热重载。 有关操作系统和工具要求的�
 
 ::: moniker range="vs-2019"
 
-默认情况下，此功能在 Visual Studio 2019 及更高版本中启用。 开始调试应用时，请确保看到应用内工具栏，它确认 XAML 热重载可用：
+此功能在 2019 Visual Studio版本中默认启用。 开始调试应用时，请确保看到应用内工具栏，它确认 XAML 热重载可用：
 
-![Visual Studio 2019 中 "XAML 热重载可用" 工具栏的屏幕截图](../debugger/media/xaml-hot-reload-available.png)
+![2019 年 1 月中"XAML 热重载可用"Visual Studio屏幕截图](../debugger/media/xaml-hot-reload-available.png)
 
 ::: moniker-end
 
 ::: moniker range="vs-2022"
 
-默认情况下，此功能在 Visual Studio 2022 及更高版本中启用。 开始调试应用时，请确保看到应用内工具栏，它确认 XAML 热重载可用：
+在 2022 和更高版本Visual Studio中默认启用此功能。 开始调试应用时，请确保看到应用内工具栏，它确认 XAML 热重载可用：
 
-![Visual Studio 2022 中 "XAML 热重载可用" 工具栏的屏幕截图](../debugger/media/vs-2022/xaml-hot-reload-available.png)
+![Visual Studio 2022 中的"XAML 热重载可用"工具栏的屏幕截图](../debugger/media/vs-2022/xaml-hot-reload-available.png)
 
 ::: moniker-end
 
-如果看不到应用内工具栏，请  >    >  从 Visual Studio 菜单栏中选择 "调试" "选项" "**XAML 热重载**"。 接下来，在 " **选项** " 对话框中，确保已选中 " **启用 XAML 热重载** " 选项。
+如果未看到应用内工具栏，请从菜单栏中 >  > 选择"调试 **XAML 热重载"Visual Studio** 选项"。 接下来，在" **选项"** 对话框中，确保选中" **启用** XAML 热重载选项。
 
-!["Visual Studio 调试选项" 窗口的屏幕截图，其中突出显示了 "启用 XAML 热重载" 选项。](../debugger/media/vs-2022/xaml-hot-reload-enable.png)
+!["调试Visual Studio窗口的屏幕截图，其中突出显示了"启用XAML 热重载选项。](../debugger/media/vs-2022/xaml-hot-reload-enable.png)
 
 ### <a name="verify-that-you-use-start-debugging-rather-than-attach-to-process"></a>验证是否使用“开始调试”而不是“附加到进程”
 
@@ -83,15 +83,16 @@ UWP：
 
 以下是 XAML 热重载的已知限制。 若要处理你遇到的任何限制，只需停止调试程序，然后完成操作。
 
-|限制|WPF|UWP|备注|
+|限制|WPF|UWP|说明|
 |-|-|-|-|
 |在应用运行时将事件与控件连接|不支持|不支持|请参阅错误：确保事件失败。 在 WPF 中，可以引用现有的事件处理程序。 在 UWP 应用中，不支持引用现有的事件处理程序。|
 |在资源字典（如应用页面/窗口或 App.xaml 中的资源字典）中创建资源对象|从 Visual Studio 2019 [版本 16.2](/visualstudio/releases/2019/release-notes-v16.2) 及更高版本开始受支持|支持|示例： <br>- 将 `SolidColorBrush` 添加到资源字典中，以用作 `StaticResource`。</br>注意：在使用 XAML 热重载时，可以应用/使用写入资源字典的静态资源、样式转换器和其他元素。 不支持仅创建资源。</br> - 更改资源字典的 `Source` 属性。|
 |在应用运行时向项目添加新控件、类、窗口或其他文件|不支持|不支持|无|
 |管理 NuGet 包（添加/删除/更新包）|不支持|不支持|无|
-|更改使用 {x:Bind} 标记扩展的数据绑定|不可用|从 Visual Studio 2019 开始受支持|这需要 Windows 10 版本 1809（内部版本 10.0.17763）及更高版本。 在 Visual Studio 2017 或更低版本中不受支持。|
+|更改使用 {x:Bind} 标记扩展的数据绑定|空值|从 Visual Studio 2019 开始受支持|这需要 Windows 10 版本 1809（内部版本 10.0.17763）及更高版本。 在 Visual Studio 2017 或更低版本中不受支持。|
 |不支持更改 x:Uid 指令|N/A|不支持|无|
 |使用多个进程 | 支持 | 支持 | 在 Visual Studio 2019 [版本 16.6](/visualstudio/releases/2019/release-notes-v16.6) 以及更高版本中受支持。 |
+|编辑 themes\generic.xaml 中的样式 |不支持| 不支持| XAML 热重载创建新样式;原始对象是密封的。 平台在将样式应用于控件后从 generic.xaml 缓存样式，这使得它们不可替换。 |
 
 ## <a name="error-messages"></a>错误消息
 

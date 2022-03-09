@@ -1,17 +1,17 @@
 ---
-ms.date: 08/30/2021
+ms.date: 02/11/2022
 ms.technology: vs-ide-general
-ms.custom: vs-get-started
+ms.custom: vs-get-started, devdivchpfy22
 ms.author: tglee
 author: TerryGLee
 manager: jmartens
 ms.topic: include
-ms.openlocfilehash: ab0912e0bca1d6537706fee9f9c9928df8192b75
-ms.sourcegitcommit: a439b1878939b2364cee0d09b851c2a67c42e563
+ms.openlocfilehash: 2d410283c0721c7637693f793b4d5f3e699f8289
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "138566532"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139551928"
 ---
 ::: moniker range=">=vs-2019"
 

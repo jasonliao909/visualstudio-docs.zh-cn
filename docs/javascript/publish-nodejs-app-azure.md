@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 397374c1df912707d308acdf5df9fcdbc9d5221b
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: e055cbf14983d0135d50c1027cf730665b77219d
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126640650"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139550684"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>将 Node.js 应用程序发布到 Azure（Linux 应用服务）
 
@@ -50,7 +50,7 @@ Linux 应用服务部署 Linux Docker 容器来运行 Node.js 应用程序（不
 
     如果需要安装工作负载但已有 Visual Studio，请转到“工具”   > “获取工具和功能...”  ，这会打开 Visual Studio 安装程序。 选择“Node.js 开发”工作负载，然后选择“修改”   。
 
-    ![VS 安装程序中的 Node.js 工作负载](../ide/media/quickstart-nodejs-workload.png)
+    ![VS 安装程序中的 Node.js 工作负载](./media/tutorial-nodejs-workload.png)
 
 * 须安装 Node.js 运行时。
 

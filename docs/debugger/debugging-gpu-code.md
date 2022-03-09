@@ -2,7 +2,7 @@
 title: 调试 GPU 代码 | Microsoft Docs
 description: 了解如何在 Visual Studio 中调试运行在图形处理单元 (GPU) 上的 C++ 代码。
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 02/22/2022
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -16,18 +16,18 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 86e7593ff4df88efb24592fcd758156575eb9fd4
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: d89fb6717371c3cb8baa2f20c86e2a13b1f8b0df
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126644299"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139550203"
 ---
 # <a name="debugging-gpu-code"></a>调试 GPU 代码
 可以调试在图形处理单元 (GPU) 上运行的 C++ 代码。 Visual Studio 中的 GPU 调试支持包括争用检测、启动进程并附加到进程以及与调试窗口集成。
 
 ## <a name="supported-platforms"></a>支持的平台
- [!INCLUDE[win7](../debugger/includes/win7_md.md)]、[!INCLUDE[win8](../debugger/includes/win8_md.md)]、Windows 10、[!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)]、[!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)] 和 Windows Server 2016 支持调试。 若要在软件仿真器上进行调试，需要使用 [!INCLUDE[win8](../debugger/includes/win8_md.md)]、Windows 10 或 [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)]、Windows Server 2016。 对于在硬件上进行的调试，您必须为图形卡安装驱动程序。 并非所有硬件供应商都实现所有调试器功能。 有关限制，请参阅供应商文档。
+ 、、、Windows 10、Windows 11[!INCLUDE[win7](../debugger/includes/win7_md.md)][!INCLUDE[win8](../debugger/includes/win8_md.md)]、 [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)]和 Windows Server 2016 [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)] 支持调试。 对于软件模拟器 、[!INCLUDE[win8](../debugger/includes/win8_md.md)]Windows 10、Windows 11 或 [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)]进行Windows Server 2016是必需的。 对于在硬件上进行的调试，您必须为图形卡安装驱动程序。 并非所有硬件供应商都实现所有调试器功能。 有关限制，请参阅供应商文档。
 
 > [!NOTE]
 > 希望在 Visual Studio 中支持 GPU 调试的独立硬件供应商必须创建一个 DLL, 该 DLL 实现 VSD3DDebug 接口并面向其自己的驱动程序。

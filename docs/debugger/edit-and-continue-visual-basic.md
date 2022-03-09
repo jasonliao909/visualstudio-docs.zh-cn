@@ -2,7 +2,7 @@
 title: 编辑并继续 (Visual Basic) | Microsoft Docs
 description: Visual Basic 项目可使用“编辑并继续”。 了解支持哪些编辑，以及如何控制是否应用编辑和何时应用编辑。
 ms.custom: SEO-VS-2020
-ms.date: 10/11/2017
+ms.date: 02/22/2022
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -22,12 +22,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a0d4206dba5991ccebd2747370c5143430cfd73e
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: bca64c86f1823654bbcddb3230f10eeb89b7a3c2
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126642039"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139551880"
 ---
 # <a name="edit-and-continue-visual-basic"></a>编辑并继续 (Visual Basic)
 “编辑并继续”是 [!INCLUDE [vbprvb](../code-quality/includes/vbprvb_md.md)] 调试中的一项功能，可让你在中断模式下在代码运行时更改代码。 在应用代码编辑后，可以继续执行新编辑过的代码并观察效果。
@@ -38,7 +38,7 @@ ms.locfileid: "126642039"
 
  如果进行了未经授权的编辑，则所做更改会被加上紫色波浪下划线标记，并且会在任务列表中显示一个任务。 如果要继续使用“编辑并继续”功能，必须撤消未经授权的编辑。 在“编辑并继续”之外，可能允许执行某些未经授权的编辑。 如果要保留这种未经授权的编辑的结果，必须停止调试并重新启动应用程序。
 
- 适用于 Windows 10 的 UWP 应用以及面向 .NET Framework 4.6 桌面版或更高版本的 x86 和 x64 应用（.NET Framework 仅为桌面版本）均支持“编辑并继续”。
+ Windows 10 或更高版本的 UWP 应用以及面向 .NET Framework 4.6 桌面版或更高版本的 x86 和 x64 应用支持编辑并继续 (.NET Framework 是仅桌面版) 。
 
  > [!NOTE]
  > 不受支持的应用和平台包括 ASP.NET 5、Silverlight 5 和 Windows 8.1。

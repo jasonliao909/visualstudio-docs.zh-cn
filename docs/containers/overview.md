@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 10/27/2021
 ms.technology: vs-container-tools
-ms.openlocfilehash: fb6902e196143e54704ff669c3ef8cc01e8644b9
-ms.sourcegitcommit: 3766c051f9a8b35106b16f751db7fecde0b92254
+ms.openlocfilehash: 4bdaa209021e7db6d164790c6bc3e78fce7a210c
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "137951541"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139551659"
 ---
 # <a name="visual-studio-container-tools-for-docker"></a>Visual Studio Container Tools for Docker
 
@@ -23,11 +23,10 @@ Visual Studio 中用于使用 Docker 容器进行开发的工具易于使用，�
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * 安装了“Web 开发”、“Azure 工具”工作负载和/或“.NET Core 跨平台开发”工作负载的 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)  
-* 若要发布到 Azure 容器注册表，需要 Azure 订阅。 [注册免费试用版](https://azure.microsoft.com/offers/ms-azr-0044p/)。
+* 若要发布到 Azure 容器注册表，需要 Azure 订阅。 [注册免费试用版](https://azure.microsoft.com/offer/ms-azr-0044p/)。
+Visual Studio 中的 andDocker 支持
 
-## <a name="docker-support-in-visual-studio"></a>Visual Studio 中的 Docker 支持
-
-Docker 支持适用于 ASP.NET 项目、ASP.NET Core 项目、Azure Functions，以及 .NET Core 和 .NET Framework 控制台项目。
+Docker 支持可用于 ASP.NET 项目、ASP.NET Core 项目、Azure Functions、.net Core 控制台项目和 .NET Framework 控制台项目。
 
 Visual Studio 中的 Docker 支持因版本而异，以响应客户需求。 可以向项目添加两个级别的 Docker 支持，并且受支持的选项因项目类型和 Visual Studio 版本而异。 借助某些受支持的项目类型，如果只想将容器用于单个项目，而不使用业务流程，则可以通过添加 Docker 支持来完成。  下一级别是容器业务流程支持，该支持可为所选的特定业务流程协调程序添加相应的支持文件。
 
@@ -56,7 +55,7 @@ Visual Studio 中的 Docker 支持因版本而异，以响应客户需求。 可
 借助 Visual Studio 2019，可以将 Docker Compose、Kubernetes 和 Service Fabric 用作容器业务流程服务。
 
 > [!NOTE]
-> 如果你使用的是完整 .NET Framework 控制台项目模板，则支持的选项是在创建项目后 **添加容器 Orchestrator 支持**，并使用 Service Fabric 或 Docker Compose 选项。 对于没有业务流程的单个项目，无法在项目创建时添加支持，也无法添加 Docker 支持。
+> 创建 .NET Framework 或 .net Core 控制台项目时，没有 **添加 Docker 支持** 的选项。 创建 .NET Core 控制台应用程序项目后，可以使用 " **添加 Docker 支持** " 选项。 创建项目后，.net Framework 控制台应用程序项目不支持 " **添加 Docker 支持** " 选项。 创建后 .NET Framework 或 .net Core 控制台项目都支持使用 Service Fabric 或 Docker Compose **添加容器 Orchestrator 支持** 选项。
 
 在 Visual Studio 2019 版本 16.4 及更高版本中，提供了“容器”窗口，你可用它来查看正在运行的容器，浏览可用的映像，查看环境变量、日志和端口映射，检查文件系统，附加调试器，或者在容器环境中打开终端窗口。 请参阅[使用“容器”窗口](view-and-diagnose-containers.md)。
 

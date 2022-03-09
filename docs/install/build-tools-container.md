@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1dc974ec108aac9e93b26dbdf38dd2ba641264f3
-ms.sourcegitcommit: bfae1f88c278835e26f3200cfced769be3191fc4
-ms.translationtype: HT
+ms.openlocfilehash: 8daaedf7bf34820e490f52055189363e0d23350f
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "132535069"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139552005"
 ---
 # <a name="install-build-tools-into-a-container"></a>将生成工具安装到容器
 
@@ -117,7 +117,7 @@ ms.locfileid: "132535069"
        curl -SL --output vs_buildtools.exe https://aka.ms/vs/16/release/vs_buildtools.exe `
        `
        # Install Build Tools with the Microsoft.VisualStudio.Workload.AzureBuildTools workload, excluding workloads and components with known issues.
-       && (start /w vs_buildtools.exe --quiet --wait --norestart --nocache modify `
+       && (start /w vs_buildtools.exe --quiet --wait --norestart --nocache `
            --installPath "%ProgramFiles(x86)%\Microsoft Visual Studio\2019\BuildTools" `
            --add Microsoft.VisualStudio.Workload.AzureBuildTools `
            --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
@@ -161,7 +161,7 @@ ms.locfileid: "132535069"
        curl -SL --output vs_buildtools.exe https://aka.ms/vs/17/release/vs_buildtools.exe `
        `
        # Install Build Tools with the Microsoft.VisualStudio.Workload.AzureBuildTools workload, excluding workloads and components with known issues.
-       && (start /w vs_buildtools.exe --quiet --wait --norestart --nocache modify `
+       && (start /w vs_buildtools.exe --quiet --wait --norestart --nocache `
            --installPath "%ProgramFiles(x86)%\Microsoft Visual Studio\2022\BuildTools" `
            --add Microsoft.VisualStudio.Workload.AzureBuildTools `
            --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `

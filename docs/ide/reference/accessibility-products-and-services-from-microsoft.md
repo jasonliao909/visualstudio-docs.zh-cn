@@ -1,7 +1,7 @@
 ---
 title: Microsoft 提供的辅助功能产品和服务
 description: 详细了解 Microsoft 提供的产品和服务，这些产品和服务有助于使我们的操作系统、程序和应用程序更易于包括残障人士在内的所有人使用。
-ms.date: 08/23/2019
+ms.date: 02/28/2022
 ms.topic: conceptual
 helpviewer_keywords:
 - TTY/TDD services
@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 103956108f8ec30fe259cae7d5ecf10b345799de
-ms.sourcegitcommit: 7a300823cf1bd3355be03bde561cf2777bc09eae
+ms.openlocfilehash: b684552b04f23b297c62e7aa2df044b4301687e1
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "133978064"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139552156"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Microsoft 提供的辅助功能产品和服务
 
@@ -34,7 +34,7 @@ Microsoft 致力于使其产品和服务更便于每个人使用。 本页提供
 > [!IMPORTANT]
 > 本页的信息可能仅适用于美国境内获得 Microsoft 产品许可证的用户。 如果你在美国之外获得本产品，请访问 [Microsoft 辅助功能](https://www.microsoft.com/accessibility/)网站，以获取 Microsoft 支持服务电话号码和地址的列表。 你可以与当地的分公司联系，了解你所在的地区是否供应本页所描述的产品和服务类型。 有关辅助功能的信息有其他语言版本。
 
-## <a name="accessibility-features-of-windows"></a><a name="windows"></a> Windows 辅助功能
+## <a name="accessibility-features-of-windows"></a>Windows 辅助功能
 
 Windows 操作系统具备许多内置辅助功能，这些功能适用于不便打字或使用鼠标、失明或视力较差，或者失聪或具有听力障碍的人群。 安装时将安装这些功能。 有关这些功能的详细信息，请参阅 Windows 中的“帮助”和 [Microsoft 辅助功能](https://www.microsoft.com/accessibility/)网站。
 
@@ -50,7 +50,7 @@ Microsoft 提供了一系列分步教程，这些教程提供了有关如何调�
 
 如果使用辅助技术，请务必在升级软件或硬件之前与辅助技术供应商联系，以检查是否存在可能的兼容性问题。
 
-## <a name="documentation-in-alternative-formats"></a><a name="altfortmats"></a> 替代格式的文档
+## <a name="documentation-in-alternative-formats"></a>替代格式的文档
 
 如果你有阅读困难或难以处理印刷材料，可以获取许多 Microsoft 产品的更易于访问的格式的文档。 可以在 [Microsoft 辅助功能](https://www.microsoft.com/accessibility/)网站上查看可访问产品文档的索引。
 
@@ -61,7 +61,7 @@ Microsoft 提供了一系列分步教程，这些教程提供了有关如何调�
 
 Web 地址可能会有所更改，因此你可能无法连接此处提及的网站或站点。
 
-## <a name="customer-service-for-people-with-hearing-impairments"></a><a name="hearing"></a> 针对有听力障碍人士的客户服务
+## <a name="customer-service-for-people-with-hearing-impairments"></a>针对有听力障碍人士的客户服务
 
 如果你有听力障碍，可以通过文本电话 (TTY/TDD) 服务来了解 Microsoft 产品和客户服务：
 
@@ -71,7 +71,7 @@ Web 地址可能会有所更改，因此你可能无法连接此处提及的网�
 
 Microsoft 支持服务受使用服务时实施的价格、条款和条件约束。
 
-## <a name="for-more-information"></a><a name="moreinfo"></a> 有关详细信息
+## <a name="for-more-information"></a>更多信息
 
 有关计算机可访问技术如何帮助改善残障人士生活的更多信息，请访问 [Microsoft 辅助功能](https://www.microsoft.com/accessibility/)网站。
 

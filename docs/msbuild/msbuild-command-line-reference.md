@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f1b874554b7fd8b6359d91209474bfd81a15ebe
-ms.sourcegitcommit: a1c18c491e310b00a43e76a911f778e643cd8f8d
+ms.openlocfilehash: eb0a2d4e856053f513216206b99e4d9b3370fe6f
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "132994978"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139552130"
 ---
 # <a name="msbuild-command-line-reference"></a>MSBuild 命令行参考
 
@@ -73,6 +73,7 @@ MSBuild.exe [Switches] [ProjectFile]
 |-version|-ver|仅显示版本信息。 不生成项目。|
 |@`file`||从文本文件插入命令行开关。 如果具有多个文件，可单独指定它们。 有关详细信息，请参阅[响应文件](../msbuild/msbuild-response-files.md)。|
 |-warnAsError[:`code`[`;code2`]|-err[`:code`[`;code2`]|要视为错误的警告代码的列表。  使用分号或逗号分隔多个警告代码。 若要将所有警告视为错误，请使用不带任何值的开关。 如果警告被视为错误，则目标将像对待警告一样继续执行，但总体生成会失败。<br/><br/>示例：`-err:MSB4130`|
+|-warnNotAsError[：`code`[`;code2`]|-noerr[`:code`[`;code2`]|不应提升为错误的警告代码列表。 具体而言，如果将 warnAsError 开关设置为将所有警告提升为错误，则不提升使用 warnNotAsError 指定的错误代码。 如果未将 warnAsError 设置为将所有警告提升为错误，则此操作不起作用。 使用分号或逗号分隔多个警告代码。 <br/><br/>示例：`-noerr:MSB4130`|
 |-warnAsMessage[:`code`[`;code2`]|-noWarn[:`code`[`;code2`]|要视为低重要性消息的警告代码的列表。  使用分号或逗号分隔多个警告代码。<br/><br/>示例：`-noWarn:MSB3026`|
 
 ### <a name="switches-for-loggers"></a>记录器的开关

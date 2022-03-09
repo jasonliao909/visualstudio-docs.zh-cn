@@ -2,7 +2,8 @@
 title: 了解 Visual Studio 中的 Flask 教程步骤 1，Flask 基础知识
 titleSuffix: ''
 description: Visual Studio 项目上下文中的 Flask 基础知识演练，包括先决条件、Git 和虚拟环境。
-ms.date: 01/07/2019
+ms.custom: devdivchpfy22
+ms.date: 02/01/2022
 ms.topic: tutorial
 author: rjmolyneaux
 ms.author: rmolyneaux
@@ -11,26 +12,27 @@ ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8c4a7839805ffa0d3421cac692ef92f067cce3e0
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 88144eb724eb3d835adeba9270813acfd002ab59
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129968457"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139549361"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>教程：在 Visual Studio 中开始使用 Flask Web 框架
 
 [Flask](https://palletsprojects.com/p/flask/) 是一种轻量级 Web 应用程序 Python 框架，为 URL 路由和页面呈现提供基础知识。
 
-Flask 被称为“微”框架，因为它不直接提供窗体验证、数据库抽象、身份验证等功能。 此类功能改为由名为 Flask 扩展的特殊 Python 包提供  。 这些扩展无缝集成 Flask，所以看起来就像 Flask 本身的一部分。 例如，Flask 本身不提供页模板引擎。 Jinja、Jade 等扩展提供模板化，如本教程所示。
+Flask 被称为“微”框架，因为它不直接提供窗体验证、数据库抽象、身份验证等功能。 此类功能改为由名为 Flask 扩展的特殊 Python 包提供  。 这些扩展与 Flask 无缝集成，使其看起来就像是 Flask 自身的一部分。 例如，Flask 本身不提供页模板引擎。 Jinja、Jade 等扩展提供模板化，如本教程所示。
 
 ::: moniker range="vs-2017"
 在本教程中，你将了解：
-- 使用“空白 Flask Web 项目”模板在 Git 存储库中创建一个基本 Flask 项目（步骤 1）
-- 使用模板创建一个单页 Flask 应用，并呈现该页面（步骤 2）
-- 为静态文件提供服务、添加页面和使用模板继承（步骤 3）
-- 使用 Flask Web 项目模板创建包含多个页面和响应式设计的应用（步骤 4）
-- 使用“投票 Flask Web 项目”模板创建使用多种存储选项（Azure 存储、MongoDB 或内存）的投票应用。
+
+- 在 Git 存储库中使用 "空白 Flask Web Project" 模板创建一个基本的 Flask 项目， (步骤 1) 。
+- 创建一个包含一页的 Flask 应用，并使用 (步骤 2) 的模板来呈现该页。
+- 在步骤 3)  (提供静态文件、添加页和使用模板继承。
+- 使用 Flask Web Project 模板创建具有多个页面的应用，并 (步骤 4) 创建响应式设计。
+- 使用 "轮询 Flask Web Project" 模板来创建使用各种存储选项 (Azure 存储、MongoDB 或内存) 的轮询应用。
 
 在这些步骤的过程中，将创建一个包含三个单独项目的 Visual Studio 解决方案。 使用 Visual Studio 中包含的不同 Flask 项目模板创建项目。 通过将项目保留在同一解决方案中，可以轻松地在不同文件之间来回切换以进行比较。
 ::: moniker-end
@@ -38,10 +40,11 @@ Flask 被称为“微”框架，因为它不直接提供窗体验证、数据�
 ::: moniker range=">=vs-2019"
 
 在本教程中，你将了解：
-- 使用“空白 Flask Web 项目”模板在 Git 存储库中创建一个基本 Flask 项目（步骤 1）
-- 使用模板创建一个单页 Flask 应用，并呈现该页面（步骤 2）
-- 为静态文件提供服务、添加页面和使用模板继承（步骤 3）
-- 使用 Flask Web 项目模板创建包含多个页面和响应式设计的应用（步骤 4）
+
+- 在 Git 存储库中使用 "空白 Flask Web Project" 模板创建一个基本的 Flask 项目， (步骤 1) 。
+- 创建一个包含一页的 Flask 应用，并使用 (步骤 2) 的模板来呈现该页。
+- 在步骤 3)  (提供静态文件、添加页和使用模板继承。
+- 使用 Flask Web Project 模板创建具有多个页面的应用，并 (步骤 4) 创建响应式设计。
 
 在这些步骤的过程中，将创建一个包含两个个单独项目的 Visual Studio 解决方案。 使用 Visual Studio 中包含的不同 Flask 项目模板创建项目。 通过将项目保留在同一解决方案中，可以轻松地在不同文件之间来回切换以进行比较。
 ::: moniker-end
@@ -51,15 +54,27 @@ Flask 被称为“微”框架，因为它不直接提供窗体验证、数据�
 
 ## <a name="prerequisites"></a>系统必备
 
+::: moniker range="<=vs-2019"
+
 - Windows 版 Visual Studio 2017 及以上版本，且具有以下选项：
   - “Python 开发”工作负载（安装程序中的“工作负载”选项卡）   。 有关说明，请参阅[在 Visual Studio 中安装 Python 支持](installing-python-support-in-visual-studio.md)。
   - “代码工具”下“单个组件”选项卡上的“适用于 Windows 的 Git”和“适用于 Visual Studio 的 GitHub 扩展”     。
+::: moniker-end
 
-针对 Visual Studio 的 Python 工具的所有早期版本都附带 Flask 项目模板，虽然详细信息可能与本教程提供的信息有所出入。
+::: moniker range="vs-2022"
 
-Visual Studio for Mac 当前不支持 Python 开发。 在 Mac 和 Linux 上，使用 [Visual Studio Code 中的 Python 扩展](https://code.visualstudio.com/docs/python/python-tutorial)。
+- 具有以下选项的 Windows 上的 Visual Studio 2022：
+  - “Python 开发”工作负载（安装程序中的“工作负载”选项卡）   。 有关说明，请参阅[在 Visual Studio 中安装 Python 支持](installing-python-support-in-visual-studio.md)。
+  - **Git for Windows** 在 "**代码工具**" 下的 "**单个组件**" 选项卡上。
+::: moniker-end
+
+针对 Visual Studio 的 Python 工具的所有早期版本都附带了 Flask 项目模板，但详细信息可能与本教程中讨论的内容有所不同。
+
+Visual Studio for Mac 目前尚不支持 Python 开发。 在 Mac 和 Linux 上，使用[Visual Studio Code 教程中的 Python 扩展](https://code.visualstudio.com/docs/python/python-tutorial)。
 
 ## <a name="step-1-1-create-a-visual-studio-project-and-solution"></a>步骤 1-1：创建 Visual Studio 项目和解决方案
+
+::: moniker range="<=vs-2019"
 
 1. 在 Visual Studio 中，选择“文件” > “新建” > “项目”，搜索“Flask”，然后选择“空白 Flask Web 项目”模板。 （还可以在左侧列表的“Python”   > “Web”  中找到模板。）
 
@@ -78,9 +93,22 @@ Visual Studio for Mac 当前不支持 Python 开发。 在 Mac 和 Linux 上，�
     ![指示项目需要外部包的提示](media/tutorials-common/step01-requirements-prompt-install-myself.png)
 
 1. 选择选项“我将自行安装”  。 立即创建虚拟环境，确保它会从源代码管理中排除。 （始终可从 requirements.txt 创建该环境  。）
+::: moniker-end
+::: moniker range="vs-2022"
+1. 在 Visual Studio 中，选择 "**文件**  >  " "**新建**  >  **Project** "，然后搜索 "Flask"。 然后，选择 **空白的 Flask Web Project** 模板，然后选择 "**下一步**"。
+
+    ![Visual Studio 中“空白 Flask Web 项目”的新建项目对话框](media/flask/step-01-new-blank-project-vs-2022.png)
+
+1. 通过输入以下信息来配置新项目，然后选择 " **创建**"：
+
+    - **名称**：将 Visual Studio 项目的名称设置为“BasicProject”  。 此名称还用于 Flask 项目。
+    -  位置：指定要在其中创建 Visual Studio 解决方案和项目的位置。
+    - **解决方案名称**：设置为“LearningFlask”，适用于本教程中作为多个项目的容器的解决方案  。
+::: moniker-end
 
 ## <a name="step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository"></a>步骤 1-2：检查 Git 控件并发布到远程存储库
 
+::: moniker range="<=vs-2019"
 由于选择了“新建项目”对话框中的“创建新的 Git 存储库”，在创建过程完成后，项目就已经提交到本地源代码管理。 在此步骤中，你将熟悉 Visual Studio 的 Git 控件和在其中使用源代码管理的“团队资源管理器”  窗口。
 
 1. 在 Visual Studio 主窗口下角处检查 Git 控件。 这些控件从左到右依次显示未推送的提交、未提交的更改、存储库的名称以及当前分支：
@@ -100,7 +128,7 @@ Visual Studio for Mac 当前不支持 Python 开发。 在 Mac 和 Linux 上，�
 
     ![显示面向源代码管理的可用 Git 存储库选项的“团队资源管理器”窗口](media/flask/step01-team-explorer.png)
 
-    可以为自己的项目选择任何所需的服务。 本教程演示了如何使用 GitHub，其中本教程已完成的示例代码保存在 [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask) 存储库中。
+    您可以为自己的项目选择所需的任何服务。 本教程演示了如何使用 GitHub，其中本教程已完成的示例代码保存在 [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask) 存储库中。
 
 1. 选择任一“发布”  控件时，“团队资源管理器”  都将提示你输入详细信息。 例如，在发布本教程的示例时，必须首先创建存储库本身，在这种情况下，“推送到远程存储库”  选项将与存储库的 URL 结合使用。
 
@@ -112,10 +140,45 @@ Visual Studio for Mac 当前不支持 Python 开发。 在 Mac 和 Linux 上，�
 
 > [!Tip]
 > 要在团队资源管理器中快速导航，请选择标头（上图中显示为“更改”或“推送”）来查看可用页面的弹出菜单    。
+::: moniker-end
+
+::: moniker range="vs-2022"
+在此步骤中，你将熟悉 Visual Studio 的 Git 控件和在其中使用源代码管理的“团队资源管理器”  窗口。
+
+1. 若要将项目提交到本地源代码管理，请选择 Visual Studio 主窗口底部的 "**添加到源代码管理**" 命令，然后选择 "Git" 选项。 此操作会将你转到 "创建 Git 存储库" 窗口，你可以在其中创建并推送新的存储库。
+
+    ![创建 Git 存储库](media/django/step01-git-add-to-source-control.png)
+
+1. 创建存储库后，会在底部显示一组新的 Git 控件。 从左到右，这些控件显示个未推送提交、未提交的更改、当前分支以及存储库的名称：
+
+    ![Visual Studio 窗口中的 Git 控件](media/flask/step-01-git-controls.png)
+
+1. 选择 "git 更改" 按钮，Visual Studio 将在 " **git 更改**" 页上打开其 **团队资源管理器** 窗口。 由于新创建的项目已经自动提交给源代码管理，因此，看不到任何挂起的更改。
+
+    !["Git 更改" 页上的团队资源管理器窗口](media/flask/step-01-team-explorer-changes.png)
+
+1. 在 Visual Studio 状态栏中，选择“未推送的提交”按钮（标有“2”的向上箭头）以打开团队资源管理器中的“同步”页    。 由于你只有一个本地存储库，页面将提供简单的选项将存储库发布到不同的远程存储库。
+
+    ![显示面向源代码管理的可用 Git 存储库选项的“团队资源管理器”窗口](media/flask/step-01-team-explorer.png)
+
+    您可以为自己的项目选择所需的任何服务。 本教程演示了如何使用 GitHub，其中本教程已完成的示例代码保存在 [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django) 存储库中。
+
+1. 选择任一“发布”  控件时，“团队资源管理器”  都将提示你输入详细信息。 例如，在发布本教程中的示例时，必须先创建存储库本身。 在这种情况下，" **推送到远程存储库** " 选项与存储库的 URL 一起使用。
+
+    ![用于推送到现有远程存储库的团队资源管理器窗口](media/flask/step-01-push-to-github.png)
+
+    如果没有现有存储库，可通过“发布到 GitHub”  和“推送到 Azure DevOps”  选项直接从 Visual Studio 创建一个存储库。
+
+1. 按照本教程执行操作时，请养成定期在 Visual Studio 中使用控件提交和推送更改的习惯。 本教程会提醒你。
+
+> [!Tip]
+> 要在团队资源管理器中快速导航，请选择标头（上图中显示为“更改”或“推送”）来查看可用页面的弹出菜单    。
+
+::: moniker-end
 
 ### <a name="question-what-are-some-advantages-of-using-source-control-from-the-beginning-of-a-project"></a>问：从项目一开始就使用源代码管理有什么好处？
 
-答：首先，从一开始就使用源代码管理，特别是如果同时还使用远程存储库，就可以提供项目的常规异地备份。 与在本地文件系统上维护项目不同，源代码管理还提供了完整的更改历史记录，用户可以轻松地将单个文件或整个项目还原到以前的状态。 此更改历史记录有助于确定回归的原因（测试失败）。 此外，如果多个人员执行一个项目，则源代码管理必不可少，因为它管理重写并提供冲突解决方案。 最后，源代码管理从根本上来说是一种自动化形式，它为自动化构建、测试和发布管理提供充分准备。 这实际上是将 DevOps 用于项目的第一步，而且由于入门门槛非常低，因此没有理由不从一开始就使用源代码管理。
+答：从开始使用源代码管理，特别是在使用远程存储库时，会提供项目的定期非现场备份。 与在本地文件系统上维护项目不同，源代码管理还提供了完整的更改历史记录，用户可以轻松地将单个文件或整个项目还原到以前的状态。 此更改历史记录有助于确定回归的原因（测试失败）。 如果多个用户正在处理某个项目，则源代码管理至关重要，因为它管理覆盖并提供冲突解决。 源代码管理是一种自动化的形式，它为自动生成、测试和发布管理提供了很好的设置。 这是使用项目 DevOps 的第一步，由于进入障碍非常低，因此没有理由从头开始使用源代码管理。
 
 关于自动化形式的源代码管理的进一步讨论，请参阅 [The Source of Truth: The Role of Repositories in DevOps](/archive/msdn-magazine/2016/september/mobile-devops-the-source-of-truth-the-role-of-repositories-in-devops)（真相之源：DevOps 中的存储库角色），这是 MSDN Magazine 上专为移动应用编写的一篇文章，同样适用于 Web 应用。
 
@@ -126,6 +189,8 @@ Visual Studio for Mac 当前不支持 Python 开发。 在 Mac 和 Linux 上，�
 ## <a name="step-1-3-create-the-virtual-environment-and-exclude-it-from-source-control"></a>步骤 1-3：创建虚拟环境并从源代码管理中将其排除
 
 你已为项目配置源代码管理，现在可以创建包含项目必需 Flask 包的虚拟环境。 然后，可以使用“团队资源管理器”  从源代码管理中排除环境文件夹。
+
+::: moniker range="<=vs-2019"
 
 1. 在“解决方案资源管理器”  中，右键单击“Python 环境”  节点并选择“添加虚拟环境”  。
 
@@ -151,6 +216,34 @@ Visual Studio for Mac 当前不支持 Python 开发。 在 Mac 和 Linux 上，�
 
 1. 输入提交消息，然后选择“全部提交”  按钮，根据需要将提交推送到远程存储库。
 
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+1. 在 **解决方案资源管理器** 中，右键单击 " **Python 环境** " 节点，然后选择 " **添加环境**"。
+
+    ![解决方案资源管理器中的“添加虚拟环境”命令](media/flask/step-01-add-virtual-environment-command.png)
+
+
+1. 在 "添加虚拟环境" 对话框中选择 " **创建** " 以接受默认值。 （如果你愿意，可以更改虚拟环境名称，这只会更改其子文件夹的名称，但 `env` 是标准约定。）
+
+    ![包含 requirements.txt 消息的“添加虚拟环境”对话框](media/tutorials-common/step-01-add-virtual-environment-found-requirements.png)
+
+1. 如果系统提示，同意管理员权限，请等待几分钟，Visual Studio 下载和安装包。 在此期间，会将几个文件传输到任意数量的子文件夹！ 可以在 Visual Studio“输出”  窗口中查看进度。 在等待时，仔细考虑下面的“问题”部分。
+
+1. 在 Visual Studio Git 控件（位于状态栏上）上，选择更改指示器（显示“99&#42;”），这将打开团队资源管理器中的“更改”页    。
+
+    创建虚拟环境带来了数千项更改，但不需要在源代码管理中包含其中任何一项，因为你（或克隆项目的任何人员）始终可从 requirements.txt 重新创建环境。
+
+    要排除虚拟环境，请右键单击 env 文件夹，然后选择“忽略这些本地项”   。
+
+    ![忽略源代码管理更改中的虚拟环境](media/flask/step-01-ignore-local-items.png)
+
+1. 排除虚拟环境后，剩下的唯一更改是针对项目文件和 .gitignore  。 .gitignore 文件包含虚拟环境文件夹的附加条目  。 可以双击文件查看差异。
+
+1. 输入提交消息，选择 " **全部提交** " 按钮，然后将提交推送到远程存储库。
+::: moniker-end
+
 ### <a name="question-why-do-i-want-to-create-a-virtual-environment"></a>问：为什么需要创建虚拟环境？
 
 答：虚拟环境是隔离应用确切依赖项的好办法。 此类隔离避免了全局 Python 环境中的冲突，有助于进行测试和协作。 随着时间的推移，在开发应用时，总是会引入许多有用的 Python 包。 通过将包保存在特定于项目的虚拟环境中，可以轻松更新项目中介绍该环境的 requirements.txt 文件，该文件包含在源代码管理中  。 如果项目被复制到任何其他计算机（包括生成服务器、部署服务器和其他开发计算机），仅使用 requirements.txt 即可轻松重新创建环境（这就是为什么环境不需要包含在源代码管理中）  。 有关详细信息，请参阅[使用虚拟环境](selecting-a-python-environment-for-a-project.md#use-virtual-environments)。
@@ -169,7 +262,7 @@ Visual Studio for Mac 当前不支持 Python 开发。 在 Mac 和 Linux 上，�
 
 1. 如前文所述，requirements.txt 文件指定 Flask 包依赖项  。 该文件旨在邀请你在第一次创建项目时创建虚拟环境。
 
-1. 一个 app.py 文件包含三个部分  。 第一部分是 Flask `import` 语句，其作用是创建 `Flask` 类实例（分配给变量 `app`），然后分配 `wsgi_app` 变量（部署到 Web 主机时非常有用，但是现阶段暂不使用）：
+1. 一个 app.py 文件包含三个部分  。 首先是 Flask 的一个 `import` 语句，创建类的一个实例，该实例 `Flask` 分配给变量 `app` ，然后分配一个 `wsgi_app` 变量 (这在部署到 web 主机时非常有用，但不用于 now) ：
 
     ```python
     from flask import Flask
@@ -239,13 +332,13 @@ def hello(name):
 
 ## <a name="step-1-5-run-the-project"></a>步骤 1-5：运行项目
 
-1. 在 Visual Studio 中，选择“调试” > “启动调试”(F5) 或使用工具栏上的“Web 服务器”按钮（所看到的浏览器可能会有所不同）：
+1. 在Visual Studio > 中，选择"调试""开始 **调试" (** **F5**) 或使用工具栏上的"**Web 服务器**"按钮 (显示的浏览器可能会) ：
 
     ![Visual Studio 中的运行 Web 服务器工具栏按钮](media/tutorials-common/run-web-server-toolbar-button.png)
 
 1. 任何一个命令将随机端口号分配到 PORT 环境变量，然后运行 `python app.py`。 代码使用 Flask 开发服务器中的端口启动应用。 如果 Visual Studio 显示“启动调试器失败”并显示无启动文件的相关消息，右键单击解决方案资源管理器中的 app.py 并选择“设为启动文件”     。
 
-1. 服务器启动时，会打开一个控制台窗口，其中显示服务器日志。 然后，Visual Studio 自动将浏览器打开到 `http://localhost:<port>`，其中应该看到 `hello` 函数呈现的消息：
+1. 服务器启动时，会看到一个控制台窗口打开，显示服务器日志。 然后，Visual Studio 自动将浏览器打开到 `http://localhost:<port>`，其中应该看到 `hello` 函数呈现的消息：
 
     ![Flask 项目默认视图](media/flask/step01-first-run-success.png)
 
@@ -253,7 +346,7 @@ def hello(name):
 
 ### <a name="question-whats-the-difference-between-using-the-debug-menu-commands-and-the-server-commands-on-the-projects-python-submenu"></a>问：在项目 Python 子菜单中使用“调试”菜单命令和服务器命令有何区别？
 
-答：除了“调试”  菜单命令和工具栏按钮之外，还可以使用项目上下文菜单上的“Python”   > “运行服务器”  或“Python”   > “运行调试服务器”  命令来启动服务器。 这两个命令都会打开一个控制台窗口，可以在其中看到运行服务器的本地 URL (localhost:port)。 但是，必须使用该 URL 手动打开浏览器，并且运行调试服务器不会自动启动 Visual Studio 调试器。 如果需要，稍后可以使用“调试”   > “附加到进程”  命令，将调试器附加到正在运行的进程。
+答：除了“调试”  菜单命令和工具栏按钮之外，还可以使用项目上下文菜单上的“Python”   > “运行服务器”  或“Python”   > “运行调试服务器”  命令来启动服务器。 这两个命令都会打开一个控制台窗口，可以在其中看到运行服务器的本地 URL (localhost:port)。 但是，必须使用该 URL 手动打开浏览器，并且运行调试服务器不会自动启动Visual Studio器。 如果需要，稍后可以使用“调试”   > “附加到进程”  命令，将调试器附加到正在运行的进程。
 
 ## <a name="next-steps"></a>后续步骤
 

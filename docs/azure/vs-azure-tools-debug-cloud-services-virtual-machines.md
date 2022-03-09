@@ -5,15 +5,15 @@ author: mikejo5000
 manager: jmartens
 ms.topic: how-to
 ms.workload: azure-vs
-ms.date: 1/24/2022
+ms.date: 2/8/2022
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: c507b8618f24eb76c6c7c3f2a75b85ac797efa35
-ms.sourcegitcommit: 782992423db6e1cbbf206715c9b3b400c80052a9
+ms.openlocfilehash: d75b33a510ff23e5a65404aa178be688b1459c3e
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "138100942"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139550359"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>在 Visual Studio 中调试云服务或虚拟机
 
@@ -104,17 +104,17 @@ Visual Studio 提供了不同的选项来调试 Azure 云服务和虚拟机。
 可以使用 Azure 应用 中的"附加到进程"对话框调试在 Visual Studio 中运行的程序。 
 
 > [!NOTE]
-> 这仅适用于 2022 Windows Azure 应用 2022 17.1 Visual Studio服务。 
+> 这仅适用于从 2022 Windows Azure 应用 17.1 开始Visual Studio服务。 
 
 ### <a name="to-debug-a-windows-azure-app-service"></a>调试Windows Azure 应用服务
 
 1. 在 **"调试"** 下， **选择"附加到进程"**。
 
-2. 将 **"连接类型**"**更改为Microsoft Azure"应用服务"**，然后选择"**查找"。。**
+2. 将 **"连接类型**"**更改为Microsoft Azure"应用服务"**，然后选择"**查找..."**。
 
 3. 在打开的对话框中，选择"订阅 **名称"**。
 
-    ![选择Azure 应用服务对话框](./media/vs-azure-tools-debug-cloud-services-virtual-machines/select-app-service.png)
+    !["选择Azure 应用服务对话框"的屏幕截图，其中显示了要选择的应用服务列表。](./media/vs-azure-tools-debug-cloud-services-virtual-machines/select-app-service.png)
 
 > [!NOTE]
 > 需要登录到有权访问包含你的订阅的订阅的 Microsoft Azure 应用服务。
@@ -125,7 +125,7 @@ Visual Studio 提供了不同的选项来调试 Azure 云服务和虚拟机。
 
     这将在应用服务上启用远程调试，并显示要附加到的可用进程的列表。 
 
-    ![进程列表](./media/vs-azure-tools-debug-cloud-services-virtual-machines/attach-to-process.png)
+    !["附加到进程"窗口的屏幕截图，其中显示了所选应用服务上运行的进程。](./media/vs-azure-tools-debug-cloud-services-virtual-machines/attach-to-process.png)
 
 6. 选择要附加到的进程，然后选择"附加"以开始调试。 
 
