@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: a4c20f71b93f3c6a48a2956581487cd48470b248
-ms.sourcegitcommit: 20f9529648e69707063dccb2b15089bf4e9bf639
+ms.openlocfilehash: 4d5b8a70132e3ca13cded7b3f11c557566c0cd6b
+ms.sourcegitcommit: b0ec2d8b7e32a9a6b50e462d588c64d471665533
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "137886873"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "139704098"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio-part-1-of-2"></a>教程：在 Visual Studio 中创建一个简单的 C# 控制台应用（第 1 部分，共 2 部分）
 
@@ -195,9 +195,6 @@ ms.locfileid: "137886873"
 
     请注意，执行此操作时，Visual Studio 中的 IntelliSense 功能会提供自动完成该项的选项。
 
-    > [!NOTE]
-    > 以下动画并非旨在复制前面的代码。 它仅用于显示自动完成功能的工作方式。
-
     ![显示 Visual Studio IDE 中 IntelliSense 自动完成功能的整数数学运算代码动画。](./media/integer-math-intellisense.gif)
 
 1. 选择“计算器”旁的绿色“开始”按钮以生成并运行程序，或按“F5”。
@@ -231,9 +228,6 @@ ms.locfileid: "137886873"
    ```
 
     如果你键入代码，则 Visual Studio IntelliSense 功能将提供用于自动完成输入的选项。
-
-    > [!NOTE]
-    > 以下动画并非旨在演示前面的代码，而只是演示 IntelliSense 的工作原理。
 
     ![显示 Visual Studio IDE 中 IntelliSense 自动完成功能的整数数学运算代码动画。](media/vs-2022/integer-math-intellisense.gif)
 

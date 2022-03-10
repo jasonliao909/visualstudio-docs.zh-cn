@@ -23,12 +23,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b57372fd69e8c8076a19a3904454ac623cbedb7
-ms.sourcegitcommit: 20f9529648e69707063dccb2b15089bf4e9bf639
+ms.openlocfilehash: 331d4088ba78bc043b24cb3fc1c2a10e82a31b83
+ms.sourcegitcommit: b0ec2d8b7e32a9a6b50e462d588c64d471665533
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "137886444"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "139704046"
 ---
 # <a name="copy-task"></a>Copy 任务
 
@@ -115,7 +115,7 @@ ms.locfileid: "137886444"
 
         <Copy
             SourceFiles="@(MySourceFiles)"
-            DestinationFiles="@(MySourceFiles->'c:\MyDestinationTree\%(RecursiveDir)%(Filename)%(Extension)')"
+            DestinationFiles="c:\MyDestinationTree\%(RecursiveDir)%(Filename)%(Extension)"
         />
     </Target>
 
