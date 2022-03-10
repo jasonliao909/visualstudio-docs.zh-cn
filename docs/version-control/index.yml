@@ -5,18 +5,18 @@ metadata:
   title: 使用 Git 文档进行版本控制和源代码管理
   description: 在 Visual Studio 中使用版本控制/源代码管理技术。 无需离开代码库，即可在 Git 和 GitHub共享、集成和管理代码版本。
   ms.topic: landing-page
-  ms.date: 02/02/2022
+  ms.date: 02/18/2022
   author: TerryGLee
   ms.author: tglee
   manager: jmartens
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
-  ms.openlocfilehash: 9d1a12546c7f31548c588092f400fddc5ba9b21e
-  ms.sourcegitcommit: 169b7b66d13b7e3c86097b42206dd33389cd9166
+  ms.openlocfilehash: 9de9576fce5f0621f04f5bb4fa5a81d0c5fe3897
+  ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 02/09/2022
-  ms.locfileid: "138149211"
+  ms.lasthandoff: 03/08/2022
+  ms.locfileid: "139550645"
 landingContent:
 - title: 入门
   linkLists:
@@ -56,8 +56,8 @@ landingContent:
   linkLists:
   - linkListType: whats-new
     links:
-    - text: Visual Studio 2022 预览版 17.1 博客
-      url: https://devblogs.microsoft.com/visualstudio/introducing-new-git-features-to-visual-studio-2022/
+    - text: Visual Studio 2022 预览版 17.2 博客
+      url: https://devblogs.microsoft.com/visualstudio/line-staging-interactive-staging/
     - text: Visual Studio 2022 发行说明
       url: /visualstudio/releases/2022/release-notes-preview
     - text: 视频等…
