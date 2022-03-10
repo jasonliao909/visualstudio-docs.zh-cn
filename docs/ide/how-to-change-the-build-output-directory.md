@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: be2715f7ebce1080bcbc9a83b4c00baae65c5e8c
-ms.sourcegitcommit: 2a3dc3ea8584c0e500c87c2c367a4719455b8dee
+ms.openlocfilehash: 3b22539cd001c410a03edbe8d973dd676a7010b7
+ms.sourcegitcommit: b0ec2d8b7e32a9a6b50e462d588c64d471665533
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2022
-ms.locfileid: "139128930"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "139704074"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>如何：更改生成输出目录
 
@@ -65,10 +65,10 @@ ms.locfileid: "139128930"
 > 如果系统未将输出生成到指定位置，请在 Visual Studio 的菜单栏上选择该位置，确保构建相应的配置（例如“调试”或“发布”）。
 >
 > ::: moniker range="<=vs-2019"
-> ![在 Visual Studio 2019 中生成配置选取器](media/build-configuration-chooser.png)
+> ![2019 年 1 月Visual Studio配置选取器。](media/build-configuration-chooser.png)
 > ::: moniker-end
 > ::: moniker range=">=vs-2022"
-> ![在 Visual Studio 2019 中生成配置选取器](media/vs-2022/build-configuration-chooser.png)
+> ![2022 年 1 月Visual Studio配置选取器。](media/vs-2022/build-configuration-chooser.png)
 > ::: moniker-end
 
 ## <a name="build-to-a-common-output-directory"></a>生成到公共输出目录
@@ -92,11 +92,11 @@ ms.locfileid: "139128930"
    </PropertyGroup>
    ```
 
-   `UseCommonOutputDirectory` `true`将 Visual Studio 及其基础生成引擎 (MSBuild) 告知你正在将多个项目输出放在同一文件夹中，因此 MSBuild 省略了当项目依赖于其他项目时通常会发生的复制步骤。
+   `UseCommonOutputDirectory` `true`设置为 Visual Studio 会告知 (MSBuild) 及其基础生成引擎将多个项目输出放在同一文件夹中，因此 MSBuild 省略了当项目依赖于其他项目时通常会发生的复制步骤。
 
 5. 对解决方案中所有项目重复步骤 1-4。 如果某些异常项目不应使用公共输出目录，可以跳过某些项目。
 
-### <a name="to-set-the-intermediate-output-directory-for-a-project-net-projects"></a>若要为项目设置中间输出目录，A0.NET 项目) 
+### <a name="to-set-the-intermediate-output-directory-for-a-project-net-projects"></a>为项目 ( 项目设置中间 A0.NET 目录) 
 
 1. 打开项目文件。
 
