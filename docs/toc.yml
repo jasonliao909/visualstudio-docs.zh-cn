@@ -140,18 +140,12 @@
           href: install/build-tools-container-issues.md
     - name: 安装 Help Viewer
       href: help-viewer/installation.md
-- name: 快速入门
-  items:
-    - name: Visual Studio 入门
-      displayName: Feature tour
-      href: ide/quickstart-ide-orientation.md
-    - name: C#：创建控制台应用
-      href: get-started/csharp/tutorial-console.md
-    - name: Visual Basic：创建控制台应用
-      href: get-started/visual-basic/tutorial-console.md
 - name: 教程
   expanded: true
   items:
+    - name: Visual Studio IDE
+      displayName: Feature tour
+      href: ide/quickstart-ide-orientation.md
     - name: C++ >>
       href: /cpp/get-started/tutorial-console-cpp
     - name: C#  >>

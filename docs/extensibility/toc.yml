@@ -25,6 +25,8 @@
           href: migration/removed-api-list.md
         - name: 已迁移的 PIA
           href: migration/migrated-assemblies.md
+        - name: VS SDK 消息
+          href: vssdk-messages/index.md
     - name: Visual Studio 2019 SDK 的新增功能
       items:
         - name: Visual Studio 2019 SDK 的新增功能
@@ -495,6 +497,8 @@
           href: best-practices-design-brokered-service.md
         - name: 保护中转服务
           href: how-to-secure-brokered-service.md
+        - name: 排查中转服务问题
+          href: how-to-troubleshoot-brokered-services.md
     - name: 管理 VSPackage
       items:
         - name: 管理 VSPackage

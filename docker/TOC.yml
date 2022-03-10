@@ -1,25 +1,11 @@
 - name: 适用于 VS Code 用户的 Docker 教程
   expanded: true
   items:
-    - name: 第 1 部分：入门
+    - name: 1. 使用 Docker 和 VS Code 创建容器应用
       href: tutorials/docker-tutorial.md
-    - name: 第 2 部分：应用程序
-      href: tutorials/your-application.md
-    - name: 第 3 部分：更新应用
-      href: tutorials/update-your-app.md
-    - name: 第 4 部分：共享应用
-      href: tutorials/share-your-app.md
-    - name: 第 5 部分：保留数据库
-      href: tutorials/persist-your-data.md
-    - name: 第 6 部分：使用绑定装载
-      href: tutorials/use-bind-mounts.md
-    - name: 第 7 部分：多容器应用
-      href: tutorials/multi-container-apps.md
-    - name: 第 8 部分：使用 Docker Compose
-      href: tutorials/use-docker-compose.md
-    - name: 第 9 部分：映像构建最佳做法
-      href: tutorials/image-building-best-practices.md
-    - name: 第 10 部分：部署到云
-      href: tutorials/deploy-to-cloud.md
-    - name: 下一步操作
-      href: tutorials/whats-next.md
+    - name: 2. 使用 VS Code 在容器应用中保存数据
+      href: tutorials/tutorial-persist-data-layer-docker-app-with-vscode.md
+    - name: 3. 将 Docker 应用部署到 Azure
+      href: tutorials/tutorial-deploy-docker-app-azure.md
+    - name: 教程：创建多容器应用
+      href: tutorials/tutorial-multi-container-app-mysql.md

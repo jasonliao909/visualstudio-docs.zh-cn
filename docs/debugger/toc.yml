@@ -474,8 +474,6 @@
               href: quickstart-debug-javascript-using-the-console.md
             - name: 如何触发暂停、继续和后台事件
               href: how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md
-            - name: 预提取 Microsoft Store 应用的内容
-              href: prefetch-content-for-windows-store-apps.md
         - name: 托管代码（C#、Visual Basic、F#）
           items:
             - name: 调试托管代码
@@ -586,12 +584,8 @@
                   href: where-can-i-look-up-win32-error-codes-q.md
                 - name: 如何在逐句通过程序时保持焦点？
                   href: how-can-i-keep-focus-when-stepping-through-my-program-q.md
-                - name: 调试前台程序时如何使用调试器窗口？
-                  href: how-can-i-use-debugger-windows-while-debugging-a-foreground-program-q.md
                 - name: 如何调试 Windows API 函数？
                   href: how-can-i-debug-windows-api-functions-q.md
-                - name: 返回到在中断时调用了 MFC 的函数
-                  href: how-to-get-back-to-the-function-that-called-mfc-if-halted.md
             - name: COM 和 ActiveX
               items:
                 - name: 调试 COM 和 ActiveX
@@ -612,8 +606,12 @@
               href: how-to-debug-injected-code.md
         - name: GPU 代码
           href: debugging-gpu-code.md
-        - name: 图形诊断
-          href: graphics/toc.yml
+        - name: 图形调试工具
+          items:
+            - name: 图形诊断
+              href: graphics/toc.yml
+            - name: 图像监视 >>
+              href: /previous-versions/visualstudio/visual-studio-2015/debugger/image-watch/image-watch
         - name: ASP.NET
           items:
             - name: 调试 ASP.NET 应用程序
@@ -954,5 +952,3 @@
   items:
     - name: 常见问题解答 - 查找调试功能
       href: find-your-debugging-task.yml
-    - name: Visual Studio 中调试器的新增功能
-      href: what-s-new-for-the-debugger-in-visual-studio.md

@@ -1,0 +1,8 @@
+items:
+  - name: VS SDK 消息
+    href: index.md
+  - name: 错误消息
+    expanded: true
+    items:
+      - name: VsixCompatibility1001
+        href: vsixcompatibility1001.md
