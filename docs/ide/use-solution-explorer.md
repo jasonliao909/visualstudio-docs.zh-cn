@@ -1,11 +1,9 @@
 ---
 title: 了解解决方案资源管理器
 description: 了解如何在 Visual Studio 中使用解决方案资源管理器工具窗口创建和管理文件、项目以及解决方案。
-ms.date: 09/30/2021
+ms.date: 03/10/2022
 ms.topic: conceptual
 ms.custom: contperf-fy22q1
-f1_keywords:
-- vs.addnewitem
 helpviewer_keywords:
 - solution explorer [Visual Studio]
 author: TerryGLee
@@ -14,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 11cc124fa3f8601ffb6d3ea621ab9bb709b60246
-ms.sourcegitcommit: 64d6c5cf93984bbb22812577af17128cd2239f79
+ms.openlocfilehash: f64a06a0c3f920cafcf850e40866922d0eb2038f
+ms.sourcegitcommit: 7b33355b17a520d1fefdc5833a608a96aa17f08b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "134366925"
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139713918"
 ---
 # <a name="learn-about-solution-explorer"></a>了解解决方案资源管理器
 
@@ -80,7 +78,7 @@ ms.locfileid: "134366925"
 
 ## <a name="add-menu"></a>添加菜单
 
-在解决方案资源管理器上下文菜单中，最有用的选项之一是“添加”弹出菜单。 从这里，可向解决方案[添加其他项目](../get-started/csharp/tutorial-console-part-2.md#add-another-project)。 还可向项目[添加项](reference/add-new-item-command.md)等。
+在解决方案资源管理器上下文菜单中，最有用的选项之一是“添加”弹出菜单。 从这里，可向解决方案[添加其他项目](../get-started/csharp/tutorial-console-part-2.md#add-another-project)。 还可向项目添加项等。
 
 :::image type="content" source="media/solution-explorer-context-menu-add-flyout.png" alt-text="解决方案资源管理器中右键单击上下文菜单中的“添加”弹出菜单屏幕截图。":::
 
