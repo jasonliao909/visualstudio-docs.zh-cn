@@ -2,7 +2,7 @@
 title: 命令
 description: 了解你在 Visual Studio 中可以访问的各种命令。
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 03/10/2022
 ms.topic: reference
 helpviewer_keywords:
 - Visual Studio, commands
@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 180852e2895318f1ffc2fbf411c3945373b5ab4c
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 09b33ee1c9e9e806c9936cb00777847b0445ae16
+ms.sourcegitcommit: 7b33355b17a520d1fefdc5833a608a96aa17f08b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641118"
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139714009"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio 命令
 
@@ -50,7 +50,6 @@ Visual Studio 命令的转义字符是一个插入符号 (^)。 转义字符表�
 | - | - |
 | [添加现有项](../../ide/reference/add-existing-item-command.md) | 将现有文件添加到当前解决方案中并打开它。 |
 | [添加现有项目](../../ide/reference/add-existing-project-command.md) | 将现有项目添加到当前解决方案中。 |
-| [添加新项](../../ide/reference/add-new-item-command.md) | 将新的解决方案项，如.htm、.css、.txt 或框架集添加到当前解决方案中并打开它。 |
 | [Alias](../../ide/reference/alias-command.md) | 为完整命令、完整命令和参数、甚至另一个别名创建新别名。 |
 | [计算语句](../../ide/reference/evaluate-statement-command.md) | 计算并显示给定的语句。 |
 | [查找](../../ide/reference/find-command.md) | 使用“查找和替换”  控件上可用的选项子集搜索文件。 |
