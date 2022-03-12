@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 登录的多重身份验证
 titleSuffix: ''
-ms.date: 01/24/2020
+ms.date: 01/25/2022
 ms.custom: SEO-VS-2022
 ms.topic: how-to
 description: 了解如何将 Visual Studio 用于需要多重身份验证 (MFA) 的帐户。
@@ -12,12 +12,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 32ce99b4fa85a422b71e6e345611361d4e9afec0
-ms.sourcegitcommit: 5a48e8cfd442b8070eaf0bda3a5946681ea4cf97
+ms.openlocfilehash: 9cf1ab979475094ae7e23c36865c9a7bbdc481c2
+ms.sourcegitcommit: 596b3ec674f5848fe0711da5ccc23c01b58e508c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "137778866"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "139793191"
 ---
 # <a name="work-with-accounts-that-require-multi-factor-authentication-mfa"></a>使用需要多重身份验证 (MFA 的帐户) 
 

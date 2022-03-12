@@ -2,7 +2,7 @@
 title: VSTest.Console.exe 命令行选项
 description: 了解用于运行测试的 VSTest.Console.exe 命令行工具。 本文涵盖了常规命令行选项。
 ms.custom: SEO-VS-2020
-ms.date: 07/17/2020
+ms.date: 03/11/2022
 ms.topic: reference
 helpviewer_keywords:
 - vstest.console.exe
@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: 9af275fe53925c2814c1c43a72ec4512d1e2c1b2
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 9a1d096b691cffc83a21c473d76b9fa7e6dc4b3e
+ms.sourcegitcommit: 596b3ec674f5848fe0711da5ccc23c01b58e508c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641413"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "139793178"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe 命令行选项
 
@@ -71,6 +71,8 @@ VSTest.Console.exe 是用于运行测试的命令行工具。 可在命令行上
 
 `vstest.console.exe [TestFileNames] [Options]`
 
+如果此命令成功，则返回 `true` 。
+
 以下命令针对测试库 myTestProject.dll 运行 vstest.console.exe ：
 
 ```cmd
@@ -107,4 +109,12 @@ vstest.console.exe myTestFile.dll /blame
   <Test Name="TestProject.UnitTest1.TestMethodB" Source="D:\repos\TestProject\TestProject\bin\Debug\TestProject.dll" />
   <Test Name="TestProject.UnitTest1.TestMethodA" Source="D:\repos\TestProject\TestProject\bin\Debug\TestProject.dll" />
 </TestSequence>
+```
+
+## <a name="uwp-example"></a>UWP 示例
+
+对于 UWP，必须引用 .appxrecipe 文件而不是 DLL。
+
+```cmd
+vstest.console.exe /Logger:trx /Platform:x64 /framework:frameworkuap10 UnitTestsUWP\bin\x64\Release\UnitTestsUWP.build.appxrecipe
 ```

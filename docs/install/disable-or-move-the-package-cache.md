@@ -1,7 +1,7 @@
 ---
 title: 禁用或移动包缓存
 description: 了解如何禁用、启用或移动部署 Visual Studio 时使用的包缓存。
-ms.date: 04/14/2017
+ms.date: 06/11/2021
 ms.topic: conceptual
 f1_keywords:
 - cache
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5a32d27cda2b414a8b62357db03efe2980dd98e7
-ms.sourcegitcommit: 215680b355cf613bfa125cf6b864c8bb5f2c71a5
-ms.translationtype: HT
+ms.openlocfilehash: a495a4c3d7558f309649c98b070172756b394b36
+ms.sourcegitcommit: 596b3ec674f5848fe0711da5ccc23c01b58e508c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "132453955"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "139793210"
 ---
 # <a name="disable-or-move-the-package-cache"></a>禁用或移动包缓存
 

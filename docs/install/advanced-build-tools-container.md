@@ -2,7 +2,7 @@
 title: 容器的高级示例
 description: 了解 Docker 容器的高级示例。 此示例 Dockerfile 使用 microsoft/dotnet-framework 映像的特定版本标记。
 ms.custom: SEO-VS-2020
-ms.date: 09/21/2021
+ms.date: 01/11/2022
 ms.topic: conceptual
 ms.assetid: e03835db-a616-41e6-b339-92b41d0cfc70
 author: anandmeg
@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0584944c49fa143803f463f49d8f6381a4f04bfa
-ms.sourcegitcommit: 932cf0f653c6258b73f42102d134cbaf50b8f20c
-ms.translationtype: HT
+ms.openlocfilehash: 25594f469cf23ecec3c4cef100b319c5e15c6afb
+ms.sourcegitcommit: 596b3ec674f5848fe0711da5ccc23c01b58e508c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "132880076"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "139793209"
 ---
 # <a name="advanced-example-for-containers"></a>容器的高级示例
 
@@ -100,8 +100,8 @@ RUN `
         --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
         --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
         --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
-        --remove Microsoft.VisualStudio.Component.Windows81SDK)
-    
+        --remove Microsoft.VisualStudio.Component.Windows81SDK) `
+    `
     # Cleanup
     && del /q vs_buildtools.exe
 
@@ -153,8 +153,8 @@ RUN `
         --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
         --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
         --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
-        --remove Microsoft.VisualStudio.Component.Windows81SDK)
-    
+        --remove Microsoft.VisualStudio.Component.Windows81SDK) `
+    `
     # Cleanup
     && del /q vs_buildtools.exe
 
@@ -185,12 +185,12 @@ COPY Install.cmd C:\TEMP\
 ADD https://aka.ms/vscollect.exe C:\TEMP\collect.exe
 
 # Use the latest release channel. For more control, specify the location of an internal layout.
-ARG CHANNEL_URL=https://aka.ms/vs/17/preview/channel
+ARG CHANNEL_URL=https://aka.ms/vs/17/release/channel
 ADD ${CHANNEL_URL} C:\TEMP\VisualStudio.chman
 
 RUN `
     # Download the Build Tools bootstrapper.
-    curl -SL --output vs_buildtools.exe https://aka.ms/vs/17/pre/vs_buildtools.exe `
+    curl -SL --output vs_buildtools.exe https://aka.ms/vs/17/release/vs_buildtools.exe `
     `
     # Install Build Tools with the Microsoft.VisualStudio.Workload.AzureBuildTools workload, excluding workloads and components with known issues.
     && (start /w C:\TEMP\Install.cmd vs_buildtools.exe --quiet --wait --norestart --nocache modify `
@@ -201,8 +201,8 @@ RUN `
         --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
         --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
         --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
-        --remove Microsoft.VisualStudio.Component.Windows81SDK)
-    
+        --remove Microsoft.VisualStudio.Component.Windows81SDK) `
+    `
     # Cleanup
     && del /q vs_buildtools.exe
 
