@@ -904,8 +904,6 @@
           href: ide/reference/add-existing-item-command.md
         - name: “添加现有项目”命令
           href: ide/reference/add-existing-project-command.md
-        - name: “添加新项”命令
-          href: ide/reference/add-new-item-command.md
         - name: “别名”命令
           href: ide/reference/alias-command.md
         - name: “计算语句”命令
