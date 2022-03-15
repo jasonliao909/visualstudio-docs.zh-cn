@@ -4,23 +4,23 @@ description: Visual Studio for Mac 提供用于在 macOS 上生成 .NET 应用�
 author: jmatthiesen
 ms.author: jomatthi
 manager: dominicn
-ms.date: 11/09/2020
+ms.date: 03/03/2022
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.custom: video
+ms.custom: video, devdivchpfy22
 ms.topic: overview
-ms.openlocfilehash: 1de953caf3fb21c0bd8ab73e17a2432d5bce24f0
-ms.sourcegitcommit: 20f9529648e69707063dccb2b15089bf4e9bf639
+ms.openlocfilehash: 89153f30ceff2913a0e49943df0ebc840d56cfd2
+ms.sourcegitcommit: 5b2c3a2c5f22e0cd6d35aab6049c1f61c4916e74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "137887172"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "139852199"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Visual Studio 2019 for Mac 导览
 
-Visual Studio for Mac 是 Mac 上的 .NET 集成开发环境，可用于编辑、调试和生成代码，然后发布应用。 除了代码编辑器和调试程序外，Visual Studio for Mac 还包括编译器、代码完成工具、图形设计器和源代码管理功能，以简化软件开发过程。
+Visual Studio for Mac是 Mac 上的 _.NET 集成_ 开发环境。 它可用于编辑、调试和生成代码，然后发布应用。 除了代码编辑器和调试程序外，Visual Studio for Mac 还包括编译器、代码完成工具、图形设计器和源代码管理功能，以简化软件开发过程。
 
 Visual Studio for Mac 支持许多与其 Windows 对应的文件类型相同的文件类型（例如 `.csproj`、`.fsproj` 或 `.sln`文件），并且支持 EditorConfig 等功能，这意味着可以使用最适合自己的 IDE。
-对于之前使用过 Windows 上的 Visual Studio 人的任何人来说，在创建、打开和开发应用时将不会觉得陌生。 此外，Visual Studio for Mac 采用许多强大的工具，将它的 Windows 对应产品打造成十分强大的 IDE。 Roslyn 编译器平台用于重构和 IntelliSense。 它的项目系统和生成引擎使用 MSBuild，它的源编辑器使用与 Windows 上的 Visual Studio 相同的基础。 对于 Xamarin 和 .NET Core 应用，使用的是相同的调试器引擎，对于 Xamarin.iOS 和 Xamarin.Android 使用的是相同的设计器。
+创建、打开和开发应用是以前使用过应用Visual Studio的Windows。 此外，Visual Studio for Mac采用许多功能强大的工具，使 Windows IDE 成为一个如此强大的 IDE。 Roslyn 编译器平台用于重构和 IntelliSense。 它的项目系统和生成引擎使用 MSBuild，它的源编辑器使用与 Windows 上的 Visual Studio 相同的基础。 对于 Xamarin 和 .NET Core 应用，使用的是相同的调试器引擎，对于 Xamarin.iOS 和 Xamarin.Android 使用的是相同的设计器。
 
 ## <a name="what-can-i-do-in-visual-studio-for-mac"></a>可以在 Visual Studio for Mac 中执行的操作
 
@@ -32,7 +32,7 @@ Visual Studio for Mac 支持以下类型的开发：
 - 使用 C# 或 F# 和 XAML 的 Xamarin 中的 Android、iOS、tvOS 和 watchOS 应用程序
 - 使用 C# 或 F# 的 Cocoa 桌面应用
 
-本文探讨了 Visual Studio for Mac 的各个部分，并简要介绍了使其成为一款用于创建这些应用程序的强大工具的部分功能。
+本文探讨本文的不同Visual Studio for Mac，并介绍一些功能，这些功能使它成为创建这些应用程序的强大工具。
 
 ## <a name="ide-tour"></a>IDE 导览
 
@@ -40,7 +40,7 @@ Visual Studio for Mac 分为多个部分，用于管理应用程序文件和设�
 
 ## <a name="getting-started"></a>入门
 
-首次启动 Visual Studio 2019 for Mac 后，新用户可看到登录窗口。 使用 Microsoft 帐户登录以激活付费许可证（如果有）或链接到 Azure 订阅。 可以按下“我稍后再执行此操作”，然后通过“Visual Studio”>“登录”菜单项登录：
+首次启动 Visual Studio 2019 for Mac 后，新用户可看到登录窗口。 如果有一个 azure Microsoft 帐户或链接到 Azure 订阅 (，) 帐户登录以激活付费许可证。 可以按下“我稍后再执行此操作”，然后通过“Visual Studio”>“登录”菜单项登录：
 
 ![登录 Microsoft 帐户](media/ide-tour-2019-start-signin.png)
 
@@ -48,7 +48,7 @@ Visual Studio for Mac 分为多个部分，用于管理应用程序文件和设�
 
 ![选择你最喜爱的键盘快捷方式](media/ide-tour-2019-keyboard-shortcut.png)
 
-在此次初始设置体验后，只要打开 Visual Studio 2019 for Mac 就会看到启动窗口，其中显示了最近使用的项目的列表，以及用于打开现有项目或创建新项目的按钮：
+完成此初始设置体验后，每当打开适用于 Mac  的 2019 Visual Studio都会看到启动窗口。 它显示最近项目和按钮的列表，用于打开现有项目或创建新项目：
 
 ![从最近的项目中选择，或创建新项目](media/ide-tour-2019-start-projects.png)
 
@@ -66,7 +66,7 @@ Visual Studio for Mac 分为多个部分，用于管理应用程序文件和设�
 
 ![在解决方案窗口中组织的项目](media/ide-tour-image18.png)
 
-在此位置，源代码、资源、用户界面和依赖关系的文件被组织到特定于平台的项目中。
+"解决方案窗口"是源代码、资源、用户界面和依赖项的文件组织到特定于平台的项目的位置。
 
 有关在 Visual Studio for Mac 中使用项目和解决方案的详细信息，请参阅[项目和解决方案](./projects-and-solutions.md)一文。
 
@@ -76,7 +76,7 @@ Visual Studio for Mac 分为多个部分，用于管理应用程序文件和设�
 
 ![解决方案窗口中的“引用”文件夹](media/ide-tour-image19.png)
 
-使用“编辑引用”对话框添加其他引用，双击“引用”文件夹或在其上下文菜单操作中选择“编辑引用”便可显示该对话框：
+更多引用是使用"编辑引用"对话框添加的，该对话框通过双击"引用"文件夹或在其上下文菜单操作中选择"编辑引用"来显示：
 
 ![“编辑引用”对话框](media/ide-tour-image20.png)
 
@@ -84,7 +84,7 @@ Visual Studio for Mac 分为多个部分，用于管理应用程序文件和设�
 
 ## <a name="dependencies--packages"></a>依赖项/包
 
-在应用中使用的所有外部依赖关系存储在“依赖关系”或“包”文件夹中，具体取决于所在的项目是 .NET Core 还是 Xamarin.iOS/Xamarin.Android 项目。 通常以 NuGet 的形式提供这些内容。
+在应用中使用的所有外部依赖关系存储在“依赖关系”或“包”文件夹中，具体取决于所在的项目是 .NET Core 还是 Xamarin.iOS/Xamarin.Android 项目。 它们以格式提供NuGet。
 
 NuGet 是 .NET 开发最常用的程序包管理器。 通过 Visual Studio 的 NuGet 支持，可以轻松地搜索包并将其添加到项目，再添加到应用程序。
 
@@ -96,9 +96,9 @@ NuGet 是 .NET 开发最常用的程序包管理器。 通过 Visual Studio 的 
 
 ## <a name="source-editor"></a>源编辑器
 
-无论你是使用 c #、XAML 还是 JavaScript 编写，代码编辑器都与具有完全本机用户界面的 Windows 上的 Visual Studio 共享同一核心组件。
+无论你是使用 C#、XAML 还是 JavaScript 编写，代码编辑器都会与 Windows 上的 Visual Studio 共享相同的核心组件，具有完全本机的用户界面。
 
-这会引入以下一些功能：
+源编辑器提供以下一些功能：
 
 * 本机 macOS（基于 Cocoa）用户界面（工具提示、编辑器外观、边距修饰、文本渲染、IntelliSense）
 * IntelliSense 类型筛选以及“显示导入项”
@@ -115,7 +115,7 @@ NuGet 是 .NET 开发最常用的程序包管理器。 通过 Visual Studio 的 
 
 有关在 Visual Studio for Mac 中使用源编辑器的详细信息，请参阅[源编辑器](./source-editor.md)文档。
 
-若要始终显示选项卡，可以固定这些选项卡。 这可确保每次启动项目时，都将始终显示需要的选项卡。 若要固定选项卡，请将鼠标悬停在该选项卡上，并单击固定图标：
+若要始终显示选项卡，可以利用固定选项卡。 这可确保每次启动项目时，都将始终显示需要的选项卡。 若要固定选项卡，请将鼠标悬停在选项卡上，然后选择 _固定_ 图标：
 
 ![固定选项卡](media/ide-tour-tabpin.png)
 
@@ -125,9 +125,9 @@ Visual Studio for Mac 提供用于重构代码的两种有用途径：上下文�
 
 ## <a name="debugging"></a>调试
 
-Visual Studio for Mac 提供支持 .Net Core、.NET Framework、Unity 和 Xamarin 项目的调试器。 Visual Studio for Mac 使用 .NET Core 调试器和 Mono 软调试器，以便 IDE 跨所有平台调试托管代码。 有关调试的其他信息，请访问[调试](./debugging.md)一文。
+Visual Studio for Mac 提供支持 .Net Core、.NET Framework、Unity 和 Xamarin 项目的调试器。 Visual Studio for Mac 使用 .NET Core 调试器和 Mono 软调试器，以便 IDE 跨所有平台调试托管代码。 有关调试详细信息，请访问 [调试一](./debugging.md) 文。
 
-调试器包含丰富的可视化工具，可用于字符串、颜色、URL、大小、坐标和贝塞尔曲线等特殊类型。
+调试器包含适用于特殊类型（如字符串、颜色、URL、大小、坐标和贝塞尔曲线）的丰富可视化工具。
 
 有关调试器的数据可视化效果的详细信息，请访问[数据可视化效果](./data-visualizations.md)一文。
 
@@ -137,7 +137,7 @@ Visual Studio for Mac 与 Git 和 Subversion 源控件系统集成。 源控件�
 
 ![分支名称用来表示源控件下的项目](media/ide-tour-image22.png)
 
-如果文件有未提交的更改，文件在解决方案窗口中的图标上就会有注释，如下图所示：
+未提交更改的文件在解决方案窗口中的图标上具有批注，如下图所示：
 
 ![解决方案窗口中的未提交文件](media/ide-tour-image23.png)
 

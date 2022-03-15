@@ -4,16 +4,16 @@ description: 本文介绍如何在 Visual Studio for Mac 中创建生成配置
 author: jmatthiesen
 ms.author: jomatthi
 manager: dominicn
-ms.date: 09/18/2019
+ms.date: 03/03/2022
 ms.assetid: CC1B72D6-12FF-4CCC-A9D4-00F2DC14589F
-ms.custom: video
+ms.custom: video, devdivchpfy22
 ms.topic: how-to
-ms.openlocfilehash: 3f6356703e59f17eb597fb7c13d93d7ecf9ab48d
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: cc61b912cb2123a2121e4dab953c15f5649773b3
+ms.sourcegitcommit: 5b2c3a2c5f22e0cd6d35aab6049c1f61c4916e74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135804384"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "139852145"
 ---
 # <a name="creating-and-editing-build-configurations"></a>创建和编辑生成配置
 
@@ -66,7 +66,7 @@ ms.locfileid: "135804384"
 
 ![“重命名”对话框](media/create-and-edit-configurations-image5.png)
 
-然后单击“确定”以确认。
+然后选择 **"确定"** 进行确认。
 
 ## <a name="related-video"></a>相关视频
 

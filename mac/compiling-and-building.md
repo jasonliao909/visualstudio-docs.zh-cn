@@ -4,15 +4,16 @@ description: 本文介绍如何在 Visual Studio for Mac 中编译和生成项�
 author: jmatthiesen
 ms.author: jomatthi
 manager: dominicn
-ms.date: 05/03/2021
+ms.date: 03/03/2022
+ms.custom: devdivchpfy22
 ms.topic: how-to
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
-ms.openlocfilehash: 93c6c1229908df3b3225a8d3b62df83eb31c7d59
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: d96294e6f412ee18e1b3c6eb310593f412bcd5a1
+ms.sourcegitcommit: 5b2c3a2c5f22e0cd6d35aab6049c1f61c4916e74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135804930"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "139852495"
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中编译和生成
 
@@ -22,11 +23,12 @@ Visual Studio for Mac 可用于在项目开发过程中生成应用程序和创�
 
 在 Mac 上，可以使用以下任一方法来生成应用程序：Visual Studio for Mac、MSBuild 命令行工具，或 Azure Pipelines。
 
-| 生成方法 | 优点 |
-| --- |--- | --- |
-| Visual Studio for Mac |- 立即创建生成并在调试程序中对其进行测试。<br />- 运行 C# 项目的多处理器生成。<br />- 自定义生成系统的不同方面。 |
-| MSBuild 命令行| - 在无需安装 Visual Studio for Mac 的情况下生成项目。<br />- 运行所有项目类型的多处理器生成。<br />- 自定义生成系统的大多数区域。|
-| Azure Pipelines | - 自动执行生成过程作为持续集成/持续交付管道的一部分。<br />- 将自动测试应用于每个生成。<br />- 为生成过程采用几乎无限的基于云的资源。<br />- 修改生成工作流，并创建生成活动以执行深层的自定义任务。|
+
+|生成方法  |优点  |
+|---------|---------|
+|Visual Studio for Mac     |  - 立即创建生成并在调试程序中对其进行测试。<br />- 运行 C# 项目的多处理器生成。<br />- 自定义生成系统的不同方面。        |
+|MSBuild 命令行     |   -生成项目而不安装 Visual Studio for Mac。<br />-运行所有项目类型的多处理器生成。<br />-自定义生成系统的大多数区域。  |
+|Azure Pipelines     |   -将生成过程作为持续集成/持续交付管道的一部分自动执行。<br />- 将自动测试应用于每个生成。 <br />- 为生成过程采用几乎无限的基于云的资源。<br />- 修改生成工作流，并创建生成活动以执行深层的自定义任务。 |
 
 本节中的文档将详细介绍基于 IDE 的生成过程。 若要在不安装 Visual Studio for Mac 的情况下通过命令行生成应用程序，则可以安装最新的 [.NET Core SDK](https://dotnet.microsoft.com/download)。 有关通过命令行生成应用程序的详细信息，请参阅 [MSBuild](/visualstudio/msbuild/msbuild)。 有关使用 Azure Pipelines 生成应用程序的详细信息，请参阅 [Azure Pipelines](/azure/devops/pipelines)。
 
@@ -41,9 +43,9 @@ Visual Studio for Mac 可用于在项目开发过程中生成应用程序和创�
 
 有关如何在 IDE 中生成项目和解决方案的详细信息，请参阅[生成和清理项目和解决方案](building-and-cleaning-projects-and-solutions.md)指南。
 
-Visual Studio for Mac 还可用于执行以下操作：
+Visual Studio for Mac 还可用于：
 
-* 更改输出路径。 可在项目选项中进行编辑：
+* 通过编辑 Project 的选项来更改输出路径：
 
     ![更改输出路径](media/compiling-and-building-image4.png)
 
