@@ -1,7 +1,7 @@
 ---
 title: .NET C# 调试配置的项目设置 | Microsoft Docs
 description: 了解如何使用项目属性页面的“调试”选项卡和“生成”选项卡在 Visual Studio 中更改 C# .NET 5+ 或 .NET Core 调试配置的项目设置。
-ms.date: 01/13/2022
+ms.date: 02/22/2022
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -22,14 +22,14 @@ ms.technology: vs-ide-debug
 monikerRange: '>= vs-2022'
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0efe8836d44f45af8e119eba865fd014977680cf
-ms.sourcegitcommit: 7746657b87b22a7684e79e508af598b02dfe24b7
+ms.openlocfilehash: 1eb007fed1d237aaa00c8bf9e040f57b7c8113bb
+ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "137609679"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "139552364"
 ---
-# <a name="project-settings-for-c-debug-configurations-net-5-net-core-and-aspnet-core"></a>C# 调试配置（.NET 5+、.NET Core 和 ASP.NET Core）的项目设置
+# <a name="project-settings-for-c-debug-configurations-net-core-net-5-and-aspnet-core"></a>C# 调试配置（.NET Core、.NET 5+ 和 ASP.NET Core）的项目设置
 
 可在项目属性页的[“调试”选项卡](#debug-tab)和[“生成”选项卡](#build-tab)中更改 C# 项目调试设置。
 
@@ -44,7 +44,7 @@ ms.locfileid: "137609679"
 
 从 Visual Studio 2022 开始，选择“调试”选项卡中的“打开调试启动配置文件 UI”可打开启动配置文件 UI 和更改调试设置。
 
-## <a name="launch-profile-net-5-net-core"></a>启动配置文件（.NET 5+、.NET Core）
+## <a name="launch-profile-net-core-net-5"></a>启动配置文件（.NET Core、.NET 5+）
 
 |设置|说明|
 |-------------------------------------| - |
@@ -58,7 +58,7 @@ ms.locfileid: "137609679"
 
 ## <a name="launch-profile-aspnet-core"></a>启动配置文件 (ASP.NET Core)
 
-除了 .NET 的属性之外，ASP.NET Core 启动配置文件还包括不同 ASP.NET Core 配置文件的若干其他属性。 这些设置为项目的 launchSettings.json 文件提供了一个简单的 UI。 有关此文件的详细信息，请参阅[在 ASP.NET Core 中使用多个环境](/aspnet/core/fundamentals/environments)中的“开发”和 launchSettings.json 部分。
+除了 .NET 5+ 的属性之外，ASP.NET Core 启动配置文件还包括不同 ASP.NET Core 配置文件的若干其他属性。 这些设置为项目的 launchSettings.json 文件提供了一个简单的 UI。 有关此文件的详细信息，请参阅[在 ASP.NET Core 中使用多个环境](/aspnet/core/fundamentals/environments)中的“开发”和 launchSettings.json 部分。
 
 启动配置文件 UI 中提供的设置包括以下内容。
 
