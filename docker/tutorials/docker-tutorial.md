@@ -6,13 +6,15 @@ ms.author: uchen
 ms.prod: vs-code
 ms.topic: tutorial
 ms.date: 03/04/2022
-ms.custom: template-tutorial
-ms.openlocfilehash: db7e0e5add9f98c4b51d7835236c4deb3001165e
-ms.sourcegitcommit: 71f68518d53d29e892934863ce10ceaa7613a966
+ms.custom:
+- template-tutorial
+- contperf-fy22q3
+ms.openlocfilehash: f6017ea8221954527fab6eb6b845a350072ef33f
+ms.sourcegitcommit: 5b2c3a2c5f22e0cd6d35aab6049c1f61c4916e74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "139608425"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "139852173"
 ---
 # <a name="tutorial-create-and-share-a-docker-app-with-visual-studio-code"></a>教程：使用 Visual Studio Code 创建和共享 Docker 应用
 
@@ -30,7 +32,7 @@ Docker Desktop 在您的计算机上运行，并管理您的本地容器。
 开发工具（如 Visual Studio 和 VS Code 提供可让你使用本地 Docker 桌面服务的扩展。
 可以创建容器化应用，将应用部署到容器，并调试容器上运行的应用。
 
-在本教程中，你将了解如何执行以下操作：
+本教程介绍如何执行下列操作：
 
 > [!div class="checklist"]
 > - 创建容器。

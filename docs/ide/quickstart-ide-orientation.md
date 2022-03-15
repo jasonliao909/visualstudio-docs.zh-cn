@@ -1,5 +1,5 @@
 ---
-title: 快速入门：Visual Studio IDE 教程
+title: 教程：IDE Visual Studio教程
 description: 了解 Visual Studio 集成开发环境 (IDE) 的一些窗口、菜单和其他 UI 功能。
 ms.custom: vs-acquisition
 titleSuffix: ''
@@ -11,14 +11,14 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 36d37966a30efdcf6a3d30eaaa824addbaa108c1
-ms.sourcegitcommit: 932cf0f653c6258b73f42102d134cbaf50b8f20c
-ms.translationtype: HT
+ms.openlocfilehash: cbc802600be4a528ca10bf3bcfa95a0bd6d9bae1
+ms.sourcegitcommit: 5b2c3a2c5f22e0cd6d35aab6049c1f61c4916e74
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "132880092"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "139852662"
 ---
-# <a name="quickstart-first-look-at-the-visual-studio-ide"></a>快速入门：初步了解 Visual Studio IDE
+# <a name="tutorial-first-look-at-the-visual-studio-ide"></a>教程：首先查看 Visual Studio IDE
 
 在这个 5-10 分钟的 Visual Studio 集成开发环境 (IDE) 简介中，我们将介绍一些窗口、菜单和其他 UI 功能。
 

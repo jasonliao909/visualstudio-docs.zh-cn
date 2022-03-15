@@ -17,12 +17,12 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: d7bcea924cd571e24003bcb66373862fdd0c7ef1
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 0ea6bc60def00f78c31c21c6164b6dcfdf0f9a20
+ms.sourcegitcommit: 5b2c3a2c5f22e0cd6d35aab6049c1f61c4916e74
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736597"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "139852724"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>操作说明：创建数据驱动的单元测试
 
@@ -173,6 +173,22 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 如果在我们的示例中运行 `AddIntegers_FromDataSourceTest` 方法，则结果栏变为红色，且测试方法移动到“失败的测试”。 如果数据源中任一循环访问的方法失败，则数据驱动测试失败。 在测试资源管理器窗口中选择失败的数据驱动测试时，细节窗格将显示由数据行索引标识的每个迭代的结果。 在本示例中 `AddIntegers` 算法好像没有正确处理负值。
 
 当更正了要测试的方法，并重新运行测试，则结果栏变为绿色，并且测试方法移动到“通过的测试”组中。
+
+## <a name="run-an-inline-data-driven-test"></a>运行内联数据驱动测试
+
+对于内联测试，MSTest `DataRow` 使用 从数据源检索值。 此示例中的测试将针对每个数据行连续运行。
+
+```csharp
+[DataTestMethod]
+[DataRow(1, 1, 2)]
+[DataRow(2, 2, 4)]
+[DataRow(3, 3, 6)]
+[DataRow(0, 0, 1)] // The test run with this row fails
+public void AddTests(int x, int y, int expected)
+{
+  Assert.AreEqual(expected, x + y);
+}
+```
 
 ## <a name="see-also"></a>请参阅
 

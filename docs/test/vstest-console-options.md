@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a1d096b691cffc83a21c473d76b9fa7e6dc4b3e
-ms.sourcegitcommit: 596b3ec674f5848fe0711da5ccc23c01b58e508c
+ms.openlocfilehash: 68a9fabd6ad8510fc7ace52f51f3a28f13235b05
+ms.sourcegitcommit: 5b2c3a2c5f22e0cd6d35aab6049c1f61c4916e74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "139793178"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "139852478"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe 命令行选项
 
@@ -46,6 +46,7 @@ VSTest.Console.exe 是用于运行测试的命令行工具。 可在命令行上
 |**/UseVsixExtensions**|此选项使 vstest.console.exe 进程使用或跳过在测试运行中安装的 VSIX 扩展（如果有）。<br />此选项已弃用。 从 Visual Studio 的下一个主版本开始，此选项可能会删除。 转为作为 NuGet 包提供的使用扩展。<br />示例：`/UseVsixExtensions:true`|
 |**/TestAdapterPath:[路径]**|强制 vstest.console.exe 进程使用测试运行中指定路径（如果有）内的自定义测试适配器。<br />示例：`/TestAdapterPath:[pathToCustomAdapters]`|
 |**/Platform:[平台类型]**|强制使用给定的平台，而不是根据当前运行时确定的平台。 在 Windows 上，此选项强制只能使用 x86 和 x64 平台。 ARM 选项会中断，并将导致大多数系统上使用 x64。<br />若要在有效值（例如 ARM64）的列表中未列出的运行时上运行，请勿指定此选项。<br />有效值为 x86、x64 和 ARM。<br /> 
+|**/FailWhenNoTestsFound： [*boolean*]**|设置为 true 时，如果未发现任何测试，则返回非零值。|
 |**/Framework: [Framework 版本]**|要用于执行测试的目标 .NET 版本。<br />示例值有 `Framework35`、`Framework40`、`Framework45`、`FrameworkUap10`、`.NETCoreApp,Version=v1.1`。<br />TargetFrameworkAttribute 用于从程序集中自动检测此选项，并在属性不存在时默认为 `Framework40`。 如果从 .NET Core 程序集删除 [TargetFrameworkAttribute](/dotnet/api/system.runtime.versioning.targetframeworkattribute)，则必须显式指定此选项。<br />如果将目标框架指定为 Framework35，则测试在 CLR 4.0“兼容模式”下运行。<br />示例：`/Framework:framework40`|
 |**/TestCaseFilter:[表达式]**|运行与给定表达式匹配的测试。<br /><Expression\> 的格式为 <property\>=<value\>[\|<Expression\>]。<br />示例：`/TestCaseFilter:"Priority=1"`<br />示例：`/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />/TestCaseFilter 命令行选项不能与 /Tests 命令行选项一起使用 。 <br />有关创建和使用表达式的信息，请参阅 [TestCase 筛选](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md)。|
 |**/?**|显示使用情况信息。|
@@ -71,7 +72,7 @@ VSTest.Console.exe 是用于运行测试的命令行工具。 可在命令行上
 
 `vstest.console.exe [TestFileNames] [Options]`
 
-如果此命令成功，则返回 `true` 。
+默认情况下，该命令在正常退出时返回0，即使未发现任何测试也是如此。 如果要在未发现测试的情况下返回非零值，请使用/FailWhenNoTestsFound。
 
 以下命令针对测试库 myTestProject.dll 运行 vstest.console.exe ：
 
