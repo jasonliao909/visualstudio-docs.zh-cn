@@ -6,13 +6,15 @@ ms.author: uchen
 ms.prod: vs-code
 ms.topic: tutorial
 ms.date: 03/04/2022
-ms.custom: template-tutorial
-ms.openlocfilehash: ebc91fdab09873c9ff9e4507f2e8ccbf47ed4c76
-ms.sourcegitcommit: 71f68518d53d29e892934863ce10ceaa7613a966
+ms.custom:
+- template-tutorial
+- contperf-fy22q3
+ms.openlocfilehash: 004e26bc87106bcfd6899ca06acf5975f6469cda
+ms.sourcegitcommit: 5b2c3a2c5f22e0cd6d35aab6049c1f61c4916e74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "139608508"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "139852186"
 ---
 # <a name="tutorial-persist-data-in-a-container-app-using-volumes-in-vs-code"></a>教程：在 VS Code 中使用卷在容器应用中永久保存数据
 
@@ -27,7 +29,7 @@ ms.locfileid: "139608508"
 
 本教程还介绍了映像分层、层缓存和多阶段生成。
 
-在本教程中，你将了解如何执行以下操作：
+本教程介绍如何执行下列操作：
 
 > [!div class="checklist"]
 > - 了解容器中的数据。

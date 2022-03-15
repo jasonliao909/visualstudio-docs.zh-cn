@@ -6,20 +6,22 @@ ms.author: uchen
 ms.prod: vs-code
 ms.topic: tutorial
 ms.date: 03/04/2022
-ms.custom: template-tutorial
-ms.openlocfilehash: 4201c0226b90dd59f2725ee38b0d9c7742f4593b
-ms.sourcegitcommit: 71f68518d53d29e892934863ce10ceaa7613a966
+ms.custom:
+- template-tutorial
+- contperf-fy22q3
+ms.openlocfilehash: 508593b37e2f2b5db22565796e77b1e4ceabeb5f
+ms.sourcegitcommit: 5b2c3a2c5f22e0cd6d35aab6049c1f61c4916e74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "139608517"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "139852212"
 ---
 # <a name="tutorial-deploy-your-docker-app-to-azure"></a>教程：将 Docker 应用部署到 Azure
 
 在本教程中，你将学习如何在云中运行容器化应用程序。
 其他人可以访问并利用它。
 
-在本教程中，你将了解如何执行以下操作：
+本教程介绍如何执行下列操作：
 
 > [!div class="checklist"]
 > - 创建云上下文。

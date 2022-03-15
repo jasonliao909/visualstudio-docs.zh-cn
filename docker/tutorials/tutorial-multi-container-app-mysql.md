@@ -6,13 +6,15 @@ ms.author: uchen
 ms.prod: vs-code
 ms.topic: tutorial
 ms.date: 03/04/2022
-ms.custom: template-tutorial
-ms.openlocfilehash: fd71143bac47f70a2192c9add5559fd4b12e87bb
-ms.sourcegitcommit: 71f68518d53d29e892934863ce10ceaa7613a966
+ms.custom:
+- template-tutorial
+- contperf-fy22q3
+ms.openlocfilehash: dc63c205d7cdd0b7da9de991348c1c9b8faa86a3
+ms.sourcegitcommit: 5b2c3a2c5f22e0cd6d35aab6049c1f61c4916e74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "139608507"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "139852116"
 ---
 # <a name="tutorial-create-multi-container-apps-with-mysql-and-docker-compose"></a>教程：创建具有 MySQL 和 Docker Compose 的多容器应用
 
@@ -31,7 +33,7 @@ ms.locfileid: "139608507"
 
 ![图中显示了用一条线连接的两个标记为 Todo App 和 MySQL 的容器。](media/multi-app-architecture.png)
 
-在本教程中，你将了解如何执行以下操作：
+本教程介绍如何执行下列操作：
 
 > [!div class="checklist"]
 > - 启动 MySQL。
