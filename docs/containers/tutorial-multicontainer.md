@@ -7,12 +7,12 @@ ms.author: ghogen
 ms.date: 10/08/2021
 ms.technology: vs-container-tools
 ms.topic: tutorial
-ms.openlocfilehash: 8202535db6c62a0796f3f26ee35ab5c95b13437d
-ms.sourcegitcommit: a439b1878939b2364cee0d09b851c2a67c42e563
+ms.openlocfilehash: 1e12e07d4dfa021c81f52adc9ac23994f54ab76a
+ms.sourcegitcommit: 0bb6b0f1023cf20c39f7d0f9888ec71b82b80448
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "138566098"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "140652785"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>教程：使用 Docker Compose 创建多容器应用
 
@@ -62,6 +62,9 @@ ms.locfileid: "138566098"
 
 ::: moniker-end
 ::: moniker range=">=vs-2022"
+
+> [!NOTE]
+> 在 Visual Studio 2022 17.2 预览版2及更高版本中，可以改为对此项目使用 Azure Functions。
 
 ![显示“创建 ASP.NET Core Web 项目”的屏幕截图。](./media/tutorial-multicontainer/vs-2022/create-web-project.png)
 
