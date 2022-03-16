@@ -9,19 +9,25 @@ ms.topic: how-to
 ms.workload: multiple
 ms.date: 10/27/2021
 ms.technology: vs-container-tools
-ms.openlocfilehash: 44d74c9ae684a5578f302f6333985c0372c9ff7c
-ms.sourcegitcommit: 67dc39e93c86ba50eb5ca877b0471fb8ab8475ac
-ms.translationtype: HT
+ms.openlocfilehash: 6be90f6f2181cf3414e13b7219840a188b1e4edb
+ms.sourcegitcommit: 0bb6b0f1023cf20c39f7d0f9888ec71b82b80448
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "132001985"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "140652772"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>在本地 Docker 容器中调试应用
 
 Visual Studio 提供了一种一致方法来开发 Docker 容器，并在本地验证应用程序。
 可以在安装了 Docker 的本地 Windows 桌面上运行的 Linux 或 Windows 容器中运行和调试应用，且每次更改代码时都无需重新启动容器。
 
+:::moniker range="vs-2017"
 本文介绍了如何使用 Visual Studio 在本地 Docker 容器中启动应用、进行更改，并刷新浏览器以查看所做的更改。 本文还介绍了如何为容器化的应用设置用于调试的断点。 支持的项目类型包括 .NET Framework 和 .NET Core Web 及控制台应用。 本文使用 ASP.NET Core Web 应用和 .NET Framework 控制台应用。
+:::moniker-end
+
+:::moniker range=">=vs-2019"
+本文介绍了如何使用 Visual Studio 在本地 Docker 容器中启动应用、进行更改，并刷新浏览器以查看所做的更改。 本文还介绍了如何为容器化的应用设置用于调试的断点。 支持的项目类型包括 .NET Framework、.net Core web 和控制台应用程序以及 Azure Functions。 本文使用 ASP.NET Core Web 应用和 .NET Framework 控制台应用。
+:::moniker-end
 
 如果你具有支持类型的项目，则 Visual Studio 可以创建 Dockerfile 并将项目配置为在容器中运行。 请参阅 [Visual Studio 中的容器工具](overview.md)。
 

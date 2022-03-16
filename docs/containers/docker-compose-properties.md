@@ -7,12 +7,12 @@ ms.author: ghogen
 ms.date: 04/06/2021
 ms.technology: vs-container-tools
 ms.topic: reference
-ms.openlocfilehash: b541568567d7af7002ecf576700099fec1aeb2d7
-ms.sourcegitcommit: ff81d69902e869b227d9ceb6e95023d1c63425b1
+ms.openlocfilehash: fc18dbfe6e09c3d0cc087d13b2fe30c58cc44029
+ms.sourcegitcommit: 0bb6b0f1023cf20c39f7d0f9888ec71b82b80448
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "129595126"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "140652681"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose 生成属性
 
@@ -114,12 +114,25 @@ services:
 
 如前面的示例所示，用双引号将这些值括起来，并在路径中使用反斜杠作为转义字符。
 
+:::moniker range="<=vs-2019"
 |标签名称|描述|
 |----------|-----------|
-|com.microsoft.visualstudio.debuggee.arguments|开始调试时传递给程序的参数。 对于 .NET Core 应用，这些参数通常是 NuGet 包的其他搜索路径，后面是指向项目输出程序集的路径。|
 |com.microsoft.visualstudio.debuggee.program|启动调试时启动的程序。 对于 .Net Core 应用，此设置通常为“dotnet”  。|
+|com.microsoft.visualstudio.debuggee.arguments|开始调试时传递给程序的参数。 对于 .NET Core 应用，这些参数通常是 NuGet 包的其他搜索路径，后面是指向项目输出程序集的路径。|
 |com.microsoft.visualstudio.debuggee.workingdirectory|开始调试时用作起始目录的目录。 对于 Linux 容器，此设置通常为 /app；对于 Windows 容器，此设置通常为 C:\app   。|
 |com.microsoft.visualstudio.debuggee.killprogram|此命令用于停止在容器中运行的调试对象程序（如有必要）。|
+:::moniker-end
+
+:::moniker range=">=vs-2022"
+|标签名称|描述|
+|----------|-----------|
+|com.microsoft.visualstudio.debuggee.program|启动调试时启动的程序。 对于 .Net Core 应用，此设置通常为“dotnet”  。|
+|com.microsoft.visualstudio.debuggee.arguments|开始调试时传递给程序的参数。 对于 .NET Core 应用，这些参数通常是 NuGet 包的其他搜索路径，后面是指向项目输出程序集的路径。|
+|com.microsoft.visualstudio.debuggee.workingdirectory|开始调试时用作起始目录的目录。 对于 Linux 容器，此设置通常为 /app；对于 Windows 容器，此设置通常为 C:\app   。|
+|com.microsoft.visualstudio.debuggee.killprogram|此命令用于停止在容器中运行的调试对象程序（如有必要）。|
+|com.microsoft.visualstudio.debuggee.noattach.program|在独立进程中运行的 Azure Functions项目中， (**CtrlF**+) **5** Azure Functions启动 [程序](/azure/azure-functions/dotnet-isolated-process-guide)。 通常 **，F5** 和 **CtrlF5**+ 使用相同的程序，但如果独立进程中的任何项目类型（如 Azure Functions）需要与 **F5** 不同的程序，则使用此程序。|
+|com.microsoft.visualstudio.debuggee.noattach.arguments|使用"启动但不调试"时传递给程序的参数 (**CtrlF5**+) 在Azure Functions进程中运行的一个项目中。|
+:::moniker-end
 
 ### <a name="customize-the-docker-build-process"></a>自定义 Docker 生成过程
 
