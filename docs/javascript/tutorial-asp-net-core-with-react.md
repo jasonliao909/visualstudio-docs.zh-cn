@@ -1,7 +1,7 @@
 ---
 title: 使用 React 创建 ASP.NET Core 应用
 description: 在本教程中，使用 ASP.NET Core 和 React 创建应用
-ms.date: 01/28/2022
+ms.date: 03/15/2022
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -13,12 +13,12 @@ dev_langs:
 ms.workload:
 - nodejs
 monikerRange: '>= vs-2022'
-ms.openlocfilehash: 683ea6e92afe2f0720c3feb21e391f6c83fd39db
-ms.sourcegitcommit: 20f9529648e69707063dccb2b15089bf4e9bf639
+ms.openlocfilehash: 9e1a25cb2dcb3c2cd16924a71ce310eb7106d6a2
+ms.sourcegitcommit: 0bb6b0f1023cf20c39f7d0f9888ec71b82b80448
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "137886757"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "140652668"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-react-in-visual-studio"></a>教程：在 Visual Studio 中使用 React 创建 ASP.NET Core 应用
 
@@ -38,9 +38,9 @@ ms.locfileid: "137886757"
 
 确保已安装以下各项：
 
-- Visual Studio 2022 或更高版本，ASP.NET **和 Web 开发工作负载**。 请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/)页，进行免费安装。
+- Visual Studio 2022 或更高版本，并且安装了 **ASP.NET 和 web 开发** 工作负荷。 请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/)页，进行免费安装。
   如果需要安装工作负载，但已安装 Visual Studio，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序。 选择“ASP.NET 和 web 开发”工作负载，然后选择“修改” 。
-- npm ([https://www.npmjs.com/](https://www.npmjs.com/package/npm)) ，包含在 Node.js
+- npm ([https://www.npmjs.com/](https://www.npmjs.com/package/npm)) ，随附 Node.js
 - npx ([https://www.npmjs.com/package/npx](https://www.npmjs.com/package/npx))
 
 ## <a name="create-the-frontend-app"></a>创建前端应用
@@ -65,9 +65,9 @@ ms.locfileid: "137886757"
    - App.js (modified)
    - App.test.js (modified)
 
-1. 从"调试"工具栏中选择已安装的浏览器，例如 Chrome 或 Microsoft Edge。
+1. 从 "调试" 工具栏中选择一个已安装的浏览器，例如 Chrome 或 Microsoft Edge。
 
-   如果尚未安装想要安装的浏览器，请首先安装浏览器，然后选择它。
+   如果尚未安装所需浏览器，请先安装浏览器，然后选择它。
 
 ## <a name="create-the-backend-app"></a>创建后端应用
 
@@ -99,6 +99,9 @@ ms.locfileid: "137886757"
 
    :::image type="content" source="media/vs-2022/asp-net-core-with-react-choose-debugger.png" alt-text="选择调试器 (launch.json)":::
 
+   >[!NOTE]
+   > 此设置设置启动的位置 *。* *启动* 的默认路径是 *vscode/。* 因此，如果您使用的是默认路径，则通常可以跳过此步骤。
+
 ## <a name="set-the-startup-project"></a>设置启动项目
 
 1. 右键单击解决方案并选择“设置启动项目”。 将启动项目从“单个启动项目”更改为“多个启动项目”。 为每个项目的操作选择“启动”。
@@ -113,7 +116,7 @@ ms.locfileid: "137886757"
 
    如果有多个 `applicationUrl` 属性，请使用 `https` 终结点查找一个。 它看起来应该类似于 `https://localhost:7049`。
 
-1. 然后，转到 React 项目的 setupProxy.js 文件（查看 src 文件夹） 。 更新目标属性，以匹配 launchSettings.json 中的 `applicationUrl` 属性。 更新它时，该值应类似于：
+1. 然后，转到 React 项目的 setupProxy.js 文件（查看 src 文件夹） 。 更新目标属性，以匹配 launchSettings.json 中的 `applicationUrl` 属性。 当你更新此值时，该值应类似于：
 
    ```js
    target: 'https://localhost:7049',
@@ -125,7 +128,7 @@ ms.locfileid: "137886757"
    - 运行 react-scripts start 命令的 npm
 
    >[!NOTE]
-   > 检查控制台输出中的消息，例如一条消息，指示你更新Node.js。
+   > 检查控制台输出中的消息，如消息，指导您更新 Node.js 的版本。
 
 应会显示一个 React 应用，该应用通过 API 填充。
 

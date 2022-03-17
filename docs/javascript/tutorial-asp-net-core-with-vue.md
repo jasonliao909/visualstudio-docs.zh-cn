@@ -1,7 +1,7 @@
 ---
 title: 使用 Vue 创建 ASP.NET Core 应用
 description: 在本教程中，使用 ASP.NET Core 和 Vue 创建应用
-ms.date: 02/25/2022
+ms.date: 03/15/2022
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -13,12 +13,12 @@ dev_langs:
 ms.workload:
 - nodejs
 monikerRange: '>= vs-2022'
-ms.openlocfilehash: e2a6f278b8542629a640082af9084e548556d429
-ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
+ms.openlocfilehash: 3369bdf89019bc08dd16890fac136c94e1457f21
+ms.sourcegitcommit: 0bb6b0f1023cf20c39f7d0f9888ec71b82b80448
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "139549241"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "140652643"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-vue-in-visual-studio"></a>教程：在 Visual Studio 中使用 Vue 创建 ASP.NET Core 应用
 
@@ -108,6 +108,9 @@ ms.locfileid: "139549241"
 1. 接下来，右键单击 Vue 项目并选择“属性”菜单，然后转到“调试”部分。  将“调试器”更改为“launch.json”选项。
  
    :::image type="content" source="media/vs-2022/asp-net-core-with-vue-choose-debugger.png" alt-text="选择调试器 (launch.json)":::
+
+   >[!NOTE]
+   > 此设置设置启动的位置 *。* *启动* 的默认路径是 *vscode/。* 因此，如果您使用的是默认路径，则通常可以跳过此步骤。
 
 ## <a name="set-the-startup-project"></a>设置启动项目
 
