@@ -1,7 +1,7 @@
 ---
 title: 使用 Angular 创建 ASP.NET Core 应用
 description: 在本教程中，使用 ASP.NET Core 和 Angular 创建应用
-ms.date: 01/28/2022
+ms.date: 03/15/2022
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -13,12 +13,12 @@ dev_langs:
 ms.workload:
 - nodejs
 monikerRange: '>= vs-2022'
-ms.openlocfilehash: 55245b11de769371349da0a8d560b56effccca39
-ms.sourcegitcommit: 20f9529648e69707063dccb2b15089bf4e9bf639
+ms.openlocfilehash: f36dc609b80c10604d1223b22d30f41034d4842b
+ms.sourcegitcommit: 0bb6b0f1023cf20c39f7d0f9888ec71b82b80448
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "137886758"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "140652644"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-angular-in-visual-studio"></a>教程：在 Visual Studio 中使用 Angular 创建 ASP.NET Core 应用
 
@@ -40,7 +40,7 @@ ms.locfileid: "137886758"
 
 - 安装了 Visual Studio 2022 预览版 2 或更高版本，以及 ASP.NET 和 Web 开发工作负载。 请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/)页，进行免费安装。
   如果需要安装工作负载，但已安装 Visual Studio，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序。 选择“ASP.NET 和 web 开发”工作负载，然后选择“修改” 。
-- npm ([https://www.npmjs.com/](https://www.npmjs.com/package/npm)) ，随附 Node.js
+- npm ([https://www.npmjs.com/](https://www.npmjs.com/package/npm)) ，包含在 Node.js
 - AngularCLI ([https://angular.io/cli](https://angular.io/cli)) 这可以是你选择的版本
 
 ## <a name="create-the-frontend-app"></a>创建前端应用
@@ -49,7 +49,7 @@ ms.locfileid: "137886758"
 
    :::image type="content" source="media/vs-2022/create-new-project.png" alt-text="创建新项目":::
 
-1. 在顶部搜索栏中搜索 "Angular"，然后选择 "**独立 TypeScript Angular 模板**"。
+1. 在顶部的Angular搜索栏中搜索"模板"，然后选择"独立 **TypeScript Angular模板"**。
 
    :::image type="content" source="media/vs-2022/angular-choose-template.png" alt-text="选择模板":::
 
@@ -93,8 +93,11 @@ ms.locfileid: "137886758"
    :::image type="content" source="media/vs-2022/asp-net-core-with-angular-deselect-launch-browser.png" alt-text="打开调试启动配置文件 UI"::: 
 
 1. 接下来，右键单击 Angular 项目并选择“属性”菜单，然后转到“调试”部分。  将“调试器”更改为“launch.json”选项。
- 
+
    :::image type="content" source="media/vs-2022/asp-net-core-with-angular-choose-debugger.png" alt-text="选择调试器 (launch.json)":::
+
+   >[!NOTE]
+   > 此设置设置 *launch.json 的位置*。 *launch.json* 的默认路径位于 *.vscode/launch.json* 下，因此，如果使用默认路径，通常可以跳过此步骤。
 
 ## <a name="set-the-startup-project"></a>设置启动项目
 
@@ -114,7 +117,7 @@ ms.locfileid: "137886758"
 
    如果有多个 `applicationUrl` 属性，请使用 `https` 终结点查找一个。 它看起来应该类似于 `https://localhost:7049`。
 
-1. 然后，转到 Angular 项目的 proxy.conf.js 文件（查看 src 文件夹） 。 更新目标属性，以匹配 launchSettings.json 中的 `applicationUrl` 属性。 当你更新此值时，该值应类似于：
+1. 然后，转到 Angular 项目的 proxy.conf.js 文件（查看 src 文件夹） 。 更新目标属性，以匹配 launchSettings.json 中的 `applicationUrl` 属性。 更新它时，该值应类似于：
 
    ```js
    target: 'https://localhost:7049',
@@ -126,7 +129,7 @@ ms.locfileid: "137886758"
    - 运行 ng start 的 Angular CLI
 
    >[!NOTE]
-   > 检查控制台输出中的消息，如消息，指导您更新 Node.js 的版本。
+   > 检查控制台输出中的消息，例如指示更新版本的消息Node.js。
 
 应会显示一个 Angular 应用，该应用通过 API 填充。
 

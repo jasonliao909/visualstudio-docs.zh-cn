@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: amast
 manager: shve
 ms.assetid: c4b13464-76be-40f1-ad60-ed79ee264b12
-ms.date: 10/18/2021
+ms.date: 03/15/2022
 ms.topic: how-to
 description: 了解如何下载并安装包含在 Visual Studio 订阅中的 Visual Studio IDE
-ms.openlocfilehash: 38e9ddce7b645802d969f09b0f4ea5dd1ced3720
-ms.sourcegitcommit: dcecc0ed37b5e976b5dc83c5128ba5ecc8bc04b1
+ms.openlocfilehash: bda8f549f2f72e1cd0ed176ff7102a86fd3f0667
+ms.sourcegitcommit: 0bb6b0f1023cf20c39f7d0f9888ec71b82b80448
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2022
-ms.locfileid: "135750983"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "140652699"
 ---
 # <a name="the-visual-studio-ide"></a>Visual Studio IDE
 作为 Visual Studio 订阅者，你可以访问 Visual Studio IDE。  具体版本将取决于你的订阅级别。  在订阅者门户的[权益](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)页上，该权益将以磁贴形式显示在“工具”类别中。
@@ -24,7 +24,7 @@ ms.locfileid: "135750983"
 1. 登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 2. 在“工具”部分中找到“Visual Studio IDE”磁贴，然后单击“权益”磁贴底部的“下载”  链接。  也可从[下载](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)页下载。
    > [!div class="mx-imgBorder"]
-   > ![Visual Studio Enterprise 磁贴](_img/vs-ide-experience/vs-ide-tile.png "单击磁贴上的&quot;下载Visual Studio&quot;以安装Visual Studio。")
+   > ![Visual Studio Enterprise 磁贴](_img/vs-ide-experience/vs-ide-tile.png "单击 &quot;Visual Studio&quot; 磁贴上的 &quot;下载&quot; 以安装 Visual Studio。")
 
 3. 你将被重定向到 Visual Studio 的“下载结果”页，可在此处下载 IDE 并获取产品密钥以激活产品。 也可通过单击蓝色的“获取密钥”链接索取产品密钥，或稍后在[产品密钥](https://my.visualstudio.com/productkeys)页上索取产品密钥  。
 4. 在“下载结果”页的“详细信息”选项卡上：

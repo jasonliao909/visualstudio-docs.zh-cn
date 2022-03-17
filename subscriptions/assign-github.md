@@ -7,12 +7,12 @@ ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
 ms.date: 03/10/2022
 ms.topic: conceptual
 description: 管理带有 GitHub Enterprise 的 Visual Studio 订阅中的订阅
-ms.openlocfilehash: d61e9122d6899a2ec446102175065e64a2cab026
-ms.sourcegitcommit: 7b33355b17a520d1fefdc5833a608a96aa17f08b
+ms.openlocfilehash: 954e9f26d65d18e6f540fc3737434225eea0992a
+ms.sourcegitcommit: 0bb6b0f1023cf20c39f7d0f9888ec71b82b80448
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2022
-ms.locfileid: "139713939"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "140652759"
 ---
 # <a name="set-up-github-enterprise-licenses-with-visual-studio-subscriptions"></a>使用 GitHub Enterprise 订阅设置Visual Studio许可证
 与 Microsoft Enterprise EA (协议) 客户有资格购买将标准订阅和Visual Studio结合起来的订阅GitHub Enterprise。 这是 Visual Studio 订阅者获取 GitHub Enterprise 的一种简单而实惠的方式。 
@@ -42,12 +42,12 @@ ms.locfileid: "139713939"
 ## <a name="assign-visual-studio-subscriptions-to-organization-members"></a>将Visual Studio分配给组织成员
 在 Visual Studio 订阅管理门户中，Visual Studio订阅管理员可以将订阅分配给用户。 如果对订阅管理Visual Studio，应已收到订阅管理门户Visual Studio 订阅开始分配订阅的邀请。 单击该链接以登录到管理门户后，[](https://manage.visualstudio.com)可以使用"添加"下拉列表单独添加 Visual Studio 订阅者，或者使用 Microsoft Excel 或 Azure Active Directory 组批量添加订阅者。 只需按照提示添加订阅者，确保使用可接收电子邮件的电子邮件域，并选择包含订阅GitHub Enterprise。
 
-> [!NOTE]
-> 如果没有要移动的现有订阅者，你仍然需要邀请订阅者加入GitHub组织。  有关详细信息 [，请参阅邀请订阅者](#invite-subscribers-to-your-organization) 加入组织。
-
 有关分配订阅的信息，请参阅包含以下特定步骤的文章：
 - [添加单用户](assign-license.md)
 - [添加多个用户](assign-license-bulk.md)
+
+> [!NOTE]
+> 如果没有要移动的现有订阅者，你仍然需要邀请订阅者加入GitHub组织。  有关详细信息 [，请参阅邀请订阅者](#invite-subscribers-to-your-organization) 加入组织。
 
 ## <a name="move-existing-subscribers-to-subscriptions-with-github"></a>将现有订阅者移到具有订阅GitHub
 对于从常规 Visual Studio 订阅续订到具有 GitHub Enterprise 的 Visual Studio 订阅的用户，需要将订阅者移到新级别，以便他们有资格使用 GitHub。 
