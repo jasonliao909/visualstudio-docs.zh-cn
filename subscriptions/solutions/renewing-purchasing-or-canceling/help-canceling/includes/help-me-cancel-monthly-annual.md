@@ -3,19 +3,19 @@ title: 帮助我取消月度或年度订阅
 description: 帮助我从 marketplace.visualstudio.com 取消 Visual Studio 订阅
 ms.topic: include
 ms.assetid: 99f61e19-8251-4f91-b496-3faba77cad4e
-author: caitycherniak
+author: evanwindom
 ms.author: amast
 ms.date: 09/29/2021
 user.type: subscriber
 tags: canceling
 subscription.type: cloud
 sap.id: cf10d424-47bb-7ca2-7d89-113949101f6f
-ms.openlocfilehash: 84b24fa49fd9f1d3ae74485d9c31841971236d55
-ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.openlocfilehash: 03baf09ec31b08cea8390bda562f28a343d4ef6f
+ms.sourcegitcommit: 0bb6b0f1023cf20c39f7d0f9888ec71b82b80448
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "133255309"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "140686869"
 ---
 ## <a name="canceling-monthly-and-annual-subscriptions"></a>取消月度和年度订阅
 

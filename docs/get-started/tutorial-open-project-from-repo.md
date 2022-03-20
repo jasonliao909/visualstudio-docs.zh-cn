@@ -1,29 +1,29 @@
 ---
 title: 教程：在 Visual Studio 中打开存储库中的项目
-description: 了解如何使用 Visual Studio 在已克隆的 Git 或 Azure DevOps 存储库中打开项目。
+description: 了解如何在 Git 或 Azure DevOps存储库中打开项目，该存储库中已使用 Visual Studio。
 ms.custom: vs-acquisition, get-started
 ms.date: 01/31/2022
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
-author: TerryGLee
-ms.author: tglee
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: eac23743e69f9f5fc0df3ba4e46437f2536abe7f
-ms.sourcegitcommit: 3766c051f9a8b35106b16f751db7fecde0b92254
+ms.openlocfilehash: 22cbe299e4531ea7acf7c1484d5bb4b596f51620
+ms.sourcegitcommit: 028cbbd92ae71ca6d17e5813b530d773a907100d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "137951658"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "140684237"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>教程：打开存储库中的项目
 
-在本教程中，你将使用 Visual Studio 首次连接到存储库，将其克隆，然后从中打开项目。
+在本教程中，你将使用 Visual Studio连接到存储库，克隆存储库，然后从该存储库打开项目。
 
 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads)页免费安装。
 
@@ -45,13 +45,13 @@ ms.locfileid: "137951658"
 
 1. 输入或键入存储库位置，然后选择“克隆”按钮。
 
-    :::image type="content" source="../ide/media/vs-2022/clone-repository-enter-location.png" alt-text="&quot;克隆存储库&quot; 对话框的屏幕截图，可在其中输入 Git 存储库 URL Visual Studio。":::
+    :::image type="content" source="../ide/media/vs-2022/clone-repository-enter-location.png" alt-text="&quot;克隆存储库&quot;对话框的屏幕截图Visual Studio输入 Git 存储库 URL 的位置。":::
 
 1. 系统可能会要求你在“Git 用户信息”对话框中提供用户登录信息。 可添加你的信息或编辑所提供的默认信息。
 
     :::image type="content" source="../ide/media/vs-2022/git-user-information-dialog.png" alt-text="Visual Studio 2022 中的“Git 用户信息”对话框（在其中输入或编辑帐户信息）的屏幕截图。":::
 
-    选择“保存”，将信息添加到全局 .gitconfig 文件。  (或者，如果想要稍后添加信息，可以选择 " **取消** "。 ) 
+    选择“保存”，将信息添加到全局 .gitconfig 文件。  (或，如果希望稍后 **添加信息，** 可以选择"取消"。) 
 
     > [!TIP]
     > 有关登录 Visual Studio 的详细信息，请参阅[登录 Visual Studio](../ide/signing-in-to-visual-studio.md?view=vs-2022&preserve-view=true) 页。 有关如何使用 GitHub 帐户进行登录的具体信息，请参阅[在 Visual Studio 中使用 GitHub 帐户](../ide/work-with-github-accounts.md?view=vs-2022&preserve-view=true)页。 如果你收到信任通知，想要了解有关它的详细信息，请参阅[配置文件和文件夹的信任设置](../ide/reference/trust-settings.md?view=vs-2022&preserve-view=true)页。
@@ -96,7 +96,7 @@ ms.locfileid: "137951658"
 
 1. 在 Visual Studio IDE 中选择“Git”菜单，然后选择“克隆存储库”。
 
-    :::image type="content" source="../ide/media/vs-2022/git-menu-clone-repository.png" alt-text="Visual Studio 2022 中的 Git 菜单的屏幕截图，并选择克隆存储库。":::
+    :::image type="content" source="../ide/media/vs-2022/git-menu-clone-repository.png" alt-text="2022 年 1 月中&quot;Git&quot;Visual Studio的屏幕截图，其中选择了&quot;克隆存储库&quot;。":::
 
 1. 按照提示连接到包含要查找的文件的 Git 存储库。
 
@@ -104,7 +104,7 @@ ms.locfileid: "137951658"
 
 1. 在 Visual Studio IDE 中依次选择“Git”菜单、“本地存储库”、“打开本地存储库”  。
 
-    :::image type="content" source="../ide/media/vs-2022/git-menu-local-repositories.png" alt-text="Visual Studio 2022 中的 Git 菜单的屏幕截图，其中显示了本地存储库和打开的本地存储库。":::
+    :::image type="content" source="../ide/media/vs-2022/git-menu-local-repositories.png" alt-text="2022 年 2 月 Visual Studio Git 菜单的屏幕截图，其中显示了&quot;本地存储库&quot;和&quot;打开本地存储库&quot;。":::
 
     也可从“解决方案资源管理器”执行同一任务。 为此，请依次选择“选择存储库”控件、“筛选存储库”框旁边的省略号图标、“打开本地存储库”。   
 
@@ -158,7 +158,7 @@ ms.locfileid: "137951658"
 
    ![Visual Studio 2019 版本 16.8 及更高版本中“Git 用户信息”对话框（你在其中输入或编辑帐户信息）的屏幕截图。](../ide/media/vs-2019/git-user-information-dialog.png)
 
-    选择“保存”，将信息添加到全局 .gitconfig 文件。  (或者，如果想要稍后保存信息，可以选择 " **取消** "。 ) 
+    选择“保存”，将信息添加到全局 .gitconfig 文件。  (或者，如果希望稍后 **保存信息，** 可以选择"取消"。) 
 
     > [!TIP]
     > 有关登录 Visual Studio 的详细信息，请参阅[登录 Visual Studio](../ide/signing-in-to-visual-studio.md?view=vs-2019&preserve-view=true) 页面。 有关如何使用 GitHub 帐户登录的特定信息，请参阅[在 Visual Studio 中使用 GitHub 帐户](../ide/work-with-github-accounts.md?view=vs-2019&preserve-view=true)页面。
@@ -167,7 +167,7 @@ ms.locfileid: "137951658"
 
    ![已在 Visual Studio 2019 版本 16.8 及更高版本中的解决方案资源管理器内打开的 Git 中的一个项目的屏幕截图。](../ide/media/vs-2019/git-solution-explorer.png )
 
-1. 如果你的存储库包含多个解决方案，解决方案资源管理器会显示这些解决方案。 对于解决方案的列表视图，请在解决方案资源管理器中选择 " **切换视图** " 按钮。
+1. 如果存储库包含多个解决方案，解决方案资源管理器显示它们。 对于解决方案的列表视图，请选择"切换 **视图** "按钮解决方案资源管理器。
 
    ![已在 Visual Studio 2019 版本 16.8 及更高版本中的解决方案资源管理器内打开的 Git 中的一个项目的屏幕截图，其中突出显示了“切换视图”按钮。](../ide/media/vs-2019/git-solution-explorer-switch-views.png)
 
@@ -219,7 +219,7 @@ ms.locfileid: "137951658"
 
    Visual Studio 从存储库打开项目。
 
-1. 如果有可用的解决方案文件，它将显示在 "解决方案和文件夹" 飞出菜单中。 选择它后，Visual Studio 将打开你的解决方案。
+1. 如果有可用的解决方案文件，它将显示在"解决方案和文件夹"弹出菜单中。 选择它后，Visual Studio 将打开你的解决方案。
 
    ![Visual Studio 2019 版本 16.7 及更低版本中“解决方案资源管理器”下拉列表的屏幕截图。](./media/open-proj-repo-github-solutions-folders-picker.png)
 
@@ -315,17 +315,17 @@ ms.locfileid: "137951658"
 
     ![从“本地 Git 存储库”部分中选择“克隆”](./media/open-proj-repo-local-git-repo-clone.png)
 
-1. 在“输入要克隆的 Git 存储库的 URL”框中，键入或粘贴存储库的 URL，然后按 Enter__***。  (你可能会收到登录到 GitHub 的提示。 ) 
+1. 在“输入要克隆的 Git 存储库的 URL”框中，键入或粘贴存储库的 URL，然后按 Enter__***。  (系统可能会提示登录到 GitHub.) 
 
-   Visual Studio 克隆存储库后，团队资源管理器将关闭，解决方案资源管理器将打开。 此时将显示一条消息，提示您 **单击上述解决方案和文件夹以查看解决方案 _ 列表**。 选择 "解决方案和文件夹" * *。
+   Visual Studio 克隆存储库后，团队资源管理器将关闭，解决方案资源管理器将打开。 将出现一条消息，显示"**单击上面的解决方案和文件夹以查看解决方案列表**"。 选择"解决方案和文件夹"。
 
    ![从解决方案资源管理器中选择“解决方案和文件夹”](./media/open-proj-repo-github-solutions-folders.png)
 
-1. 如果有可用的解决方案文件，它将显示在 "解决方案和文件夹" 飞出菜单中。 选择它后，Visual Studio 将打开你的解决方案。
+1. 如果有可用的解决方案文件，它将显示在"解决方案和文件夹"弹出菜单中。 选择它后，Visual Studio 将打开你的解决方案。
 
    ![选择想要从“解决方案资源管理器”下拉列表中打开的内容。](./media/open-proj-repo-github-solutions-folders-picker.png)
 
-   如果没有解决方案文件 (具体说来，在存储库中) .sln 文件，则弹出菜单显示 "找不到解决方案"。 但是，可以双击文件夹菜单中的任意文件，以便在 Visual Studio 代码编辑器中将其打开。
+   如果没有解决方案文件， (存储库) .sln 文件，则弹出菜单显示"找不到解决方案"。 但是，可以双击文件夹菜单中的任意文件，以便在 Visual Studio 代码编辑器中将其打开。
 
 ### <a name="review-your-work"></a>检查工作
 
@@ -364,9 +364,9 @@ ms.locfileid: "137951658"
 
       ![Visual Studio 的团队资源管理器中的“解决方案和文件夹”通知。](./media/open-proj-repo-solutions-folders.png)
 
-   解决方案文件 (具体而言，即 .sln 文件) 出现在 "解决方案和文件夹" 弹出菜单中。 选择它后，Visual Studio 将打开你的解决方案。
+   解决方案文件 (一个 .sln 文件) 显示在"解决方案和文件夹"弹出菜单中。 选择它后，Visual Studio 将打开你的解决方案。
 
-   如果存储库中没有解决方案文件，则弹出菜单显示 "找不到解决方案"。 但是，可以双击文件夹菜单中的任意文件，以便在 Visual Studio 代码编辑器中将其打开。
+   如果存储库没有解决方案文件，则弹出菜单显示"找不到解决方案"。 但是，可以双击文件夹菜单中的任意文件，以便在 Visual Studio 代码编辑器中将其打开。
 
 ::: moniker-end
 

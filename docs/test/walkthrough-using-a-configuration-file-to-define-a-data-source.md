@@ -2,7 +2,7 @@
 title: 使用配置文件来定义数据源
 description: 了解如何使用 app.config 文件中定义的数据源进行单元测试，此过程从创建一个定义数据源的 app.config 文件开始。
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 03/18/2022
 ms.topic: conceptual
 helpviewer_keywords:
 - configuration files [Visual Studio ALM], defining data sources
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: 82a711e21d75486fb7217d1f831831fd3476b06b
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 8f7856e02a7a5013247f064818e5e35c04edcfaa
+ms.sourcegitcommit: df2cd7ec7bef2626f1c2d01284d408f21aabb9e6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736261"
+ms.lasthandoff: 03/19/2022
+ms.locfileid: "140741436"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>演练：使用配置文件定义数据源
 
@@ -34,6 +34,9 @@ ms.locfileid: "126736261"
 - 定义数据源。
 
 - 使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 类访问数据源。
+
+>[!NOTE]
+> DataSourceAttribute 目前仅在 .NET Framework。
 
 ## <a name="prerequisites"></a>先决条件
 
