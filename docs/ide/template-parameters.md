@@ -2,7 +2,7 @@
 title: 项目和项模板参数
 description: 了解在实例化模板时如何使用模板参数替换模板中的值。
 ms.custom: SEO-VS-2020
-ms.date: 01/02/2018
+ms.date: 03/18/2022
 ms.topic: reference
 helpviewer_keywords:
 - Visual Studio templates, parameters
@@ -13,12 +13,12 @@ author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.technology: vs-ide-general
-ms.openlocfilehash: 4a8dbcce89e1a3ae64bc906e543bb9d318b575d0
-ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
+ms.openlocfilehash: 868536f54191b9714ea3b5719824bf97820cc96e
+ms.sourcegitcommit: df2cd7ec7bef2626f1c2d01284d408f21aabb9e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "139550983"
+ms.lasthandoff: 03/19/2022
+ms.locfileid: "140741501"
 ---
 # <a name="template-parameters"></a>模板参数
 
@@ -59,12 +59,12 @@ ms.locfileid: "139550983"
 |machinename|当前的计算机名称（例如，Computer01）。|
 |projectname|创建项目时由用户提供的名称。|
 |registeredorganization|来自 HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization 的注册表项值。|
-|rootnamespace|当前项目的根命名空间，后跟当前项的子文件夹，斜杠替换为句点。 此参数仅适用于项模板。|
-|defaultnamespace|当前项目的根命名空间。 此参数仅适用于项模板。| 
+|rootnamespace|当前项目的根命名空间，后跟当前项的子文件夹，斜杠被句点替换。 此参数仅适用于项模板。|
+|defaultnamespace|当前项目的根命名空间。 此参数仅适用于项模板。|
 |safeitemname|与 `itemname` 相同，但所有不安全字符和空格替换为了下划线。|
 |safeitemrootname|与 `safeitemname` 相同。|
 |safeprojectname|用户在创建项目时提供的名称，但名称中删除了所有不安全字符和空格。|
-|time|以 DD/MM/YYYY 00:00:00 格式表示的当前时间。|
+|time|基于 Windows 用户设置的格式的当前时间。 时间格式的一个示例为 DD/MM/YYYY 00:00:00。 |
 |specifiedsolutionname|解决方案的名称。 在选中“创建解决方案目录”时，`specifiedsolutionname` 具有解决方案名称。 在未选中“创建解决方案目录”时，`specifiedsolutionname` 为空。|
 |userdomain|当前的用户域。|
 |username|当前的用户名称。|

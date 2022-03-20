@@ -2,21 +2,18 @@
 title: 如何将备用标识添加到订阅中？这对我的 Azure 额度和 Azure DevOps 有何影响？
 description: 在 Visual Studio 订阅中添加备用帐户后，可使用与订阅分配到的标识不同的标识...
 ms.topic: include
-ms.prod: ''
 ms.assetid: c41fbf02-a623-43b4-9aa7-0c1c51fbda2a
-ms.technology: ''
 author: evanwindom
 ms.author: amast
-manager: ''
-robots: ''
-ms.date: 04/20/2020
+manager: shve
+ms.date: 03/15/2022
 ms.faqid: q1_5
-ms.openlocfilehash: 4b753d58225066d39173984c895ab382546d9a02
-ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.openlocfilehash: 5c4a43cbd0fb28ee6f227ed8bc75c1016fbefa39
+ms.sourcegitcommit: 0bb6b0f1023cf20c39f7d0f9888ec71b82b80448
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "133257625"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "140687051"
 ---
 ## <a name="how-do-i-add-alternate-identities-to-my-subscription-and-how-does-this-impact-my-azure-credits-and-azure-devops"></a>如何将备用标识添加到订阅中？这对我的 Azure 额度和 Azure DevOps 有何影响？
 

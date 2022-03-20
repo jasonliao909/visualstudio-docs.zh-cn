@@ -2,7 +2,7 @@
 title: 单元测试工具
 description: 了解 Visual Studio 测试工具如何帮助你和你的团队达到并保持高标准的代码卓越性。
 ms.custom: SEO-VS-2020
-ms.date: 08/19/2021
+ms.date: 03/18/2022
 ms.topic: conceptual
 helpviewer_keywords:
 - testing tools [Visual Studio]
@@ -13,12 +13,12 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 4f1aec397a930e6aeca95d9c8eb62ac04c0ca92c
-ms.sourcegitcommit: 169b7b66d13b7e3c86097b42206dd33389cd9166
+ms.openlocfilehash: 91696512e7c54574f7f283c4e6ca221ab1b67778
+ms.sourcegitcommit: df2cd7ec7bef2626f1c2d01284d408f21aabb9e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138148461"
+ms.lasthandoff: 03/19/2022
+ms.locfileid: "140741514"
 ---
 # <a name="first-look-at-testing-tools-in-visual-studio"></a>首先介绍 Visual Studio 中的测试工具
 
@@ -91,6 +91,14 @@ IntelliTest 会自动为托管代码生成单元测试和测试数据。 Intelli
 > [!NOTE]
 > Microsoft Fakes 仅在企业版中提供，并且仅支持 .NET 代码。
 
+::: moniker range=">=vs-2022"
+## <a name="user-interface-testing-with-playwright"></a>通过 Playwright 进行用户界面测试
+
+对于基于浏览器的通用 UI 测试，建议使用[Playwright](https://playwright.dev/) 。
+
+::: moniker-end
+
+::: moniker range="<=vs-2019"
 ## <a name="user-interface-testing-with-coded-ui-and-selenium"></a>通过编码的 UI 和 Selenium 进行用户界面测试
 
 编码的 UI 测试提供了一种方法来创建完全自动化的测试，用来验证应用程序用户界面的功能和行为。 它们可在各种技术（包括基于 XAML 的 UWP 应用、浏览器应用和 SharePoint 应用）中自动进行 UI 测试。
@@ -98,14 +106,13 @@ IntelliTest 会自动为托管代码生成单元测试和测试数据。 Intelli
 > [!NOTE]
 > 编码的 UI 是已弃用的功能。
 
-无论选择最适用的编码 UI 测试还是使用 Selenium 进行的基于泛型浏览器的 UI 测试，Visual Studio 均提供所有所需的工具。
-
-![使用编码的 UI 进行 UI 测试](media/devtest-codeduitest.png)
+无论是选择最佳编码 ui 测试，还是选择[Playwright](https://playwright.dev/)的基于浏览器的通用 ui 测试，Visual Studio 都可以提供所需的所有工具。
 
 * [使用 UI 自动化来测试代码](use-ui-automation-to-test-your-code.md)
 * [创建、编辑和维护编码的 UI 测试入门](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 * [使用编码的 UI 测试来测试 UWP 应用](test-uwp-app-with-coded-ui-test.md)
 * [使用 Visual Studio Enterprise（实验室）进行编码的 UI 测试简介](https://azuredevopslabs.com/labs/tfs/codedui)
+::: moniker-end
 
 ## <a name="related-scenarios"></a>相关方案
 

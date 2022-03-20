@@ -1,22 +1,22 @@
 ---
-title: 教程：IDE Visual Studio教程
+title: 教程： Visual Studio IDE 教程
 description: 了解 Visual Studio 集成开发环境 (IDE) 的一些窗口、菜单和其他 UI 功能。
 ms.custom: vs-acquisition
 titleSuffix: ''
 ms.date: 09/14/2021
-ms.topic: quickstart
-author: TerryGLee
-ms.author: tglee
+ms.topic: tutorial
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: cbc802600be4a528ca10bf3bcfa95a0bd6d9bae1
-ms.sourcegitcommit: 5b2c3a2c5f22e0cd6d35aab6049c1f61c4916e74
+ms.openlocfilehash: 31ffaad33900ebeec0518fc571d80f5dfae1fa82
+ms.sourcegitcommit: 028cbbd92ae71ca6d17e5813b530d773a907100d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "139852662"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "140684224"
 ---
 # <a name="tutorial-first-look-at-the-visual-studio-ide"></a>教程：首先查看 Visual Studio IDE
 
@@ -340,7 +340,7 @@ Visual Studio 顶部的菜单栏将命令分组成不同的类别。 例如，�
 > [!div class="nextstepaction"]
 > [了解项目和解决方案](../get-started/tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Visual Studio IDE 概述](../get-started/visual-studio-ide.md)
 - [Visual Studio 的更多功能](../ide/advanced-feature-overview.md)
