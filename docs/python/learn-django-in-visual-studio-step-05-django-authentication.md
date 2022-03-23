@@ -12,12 +12,12 @@ ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5a659d95495126e6dcf583a7a3089372b6ac6754
-ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
+ms.openlocfilehash: 3eb7f5bd91041329d9689e1b008e0897429e1831
+ms.sourcegitcommit: 00af065ac27d41339b31d96a630705509b70b6fa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "139552091"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "140764292"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>步骤 5：在 Django 中对用户进行身份验证
 
@@ -228,8 +228,6 @@ ms.locfileid: "139552091"
 现在，你已了解 Visual Studio 中“空白 Django Web 项目”和“Django Web 项目”模板的全部内容。 你已经了解了 Django 的所有基本知识，例如使用视图和模板。 还介绍了路由、身份验证和使用的数据库模型。 现在应能够使用任何所需的视图和模型来创建你自己的 Web 应用。
 
 在开发计算机上运行 Web 应用只是使应用可供客户使用的一个步骤。 后续步骤可能包括以下任务：
-
-- 将 Web 应用部署到生产服务器，如 Azure 应用服务。 请参阅[发布到 Azure 应用服务](publishing-python-web-applications-to-azure-from-visual-studio.md)。
 
 - 通过创建一个名为 templates/404.html 的模板来自定义 404 页。 如果存在该模板，Django 会使用此模板而不是其默认模板。 有关详细信息，请参阅 Django 文档中的[错误视图](https://docs.djangoproject.com/en/2.0/ref/views/#error-views)。
 

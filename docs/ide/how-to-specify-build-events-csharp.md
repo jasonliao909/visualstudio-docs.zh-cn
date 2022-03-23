@@ -2,7 +2,7 @@
 title: 如何：指定生成事件 (C#)
 description: 了解如何使用生成事件指定生成开始之前或生成完成之后运行的命令。
 ms.custom: SEO-VS-2020
-ms.date: 03/21/2019
+ms.date: 03/04/2022
 ms.technology: vs-ide-compile
 ms.topic: how-to
 helpviewer_keywords:
@@ -17,20 +17,22 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: e1ea031391b93d571b9f34ad820f1a6957dab242
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 07fd6b6beac58dada1227f79a4217029195a0179
+ms.sourcegitcommit: 00af065ac27d41339b31d96a630705509b70b6fa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641190"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "140764319"
 ---
 # <a name="how-to-specify-build-events-c"></a>如何：指定生成事件 (C#)
 
-使用生成事件，可以指定生成开始之前或生成完成之后运行的命令。 仅当生成成功到达生成过程中的这些点时，才会执行生成事件。
+使用生成事件，可以指定生成开始之前或生成完成之后运行的命令。
 
 项目生成时，生成前事件将被添加到名为 PreBuildEvent.bat 的文件，而生成后事件将被添加到名为 PostBuildEvent.bat 的文件。 若要确保错误检查，请向生成步骤中添加自己的错误检查命令。
 
 ## <a name="specify-a-build-event"></a>指定生成事件
+
+:::moniker range="<=vs-2019"
 
 1. 在“解决方案资源管理器”中，选择要为其指定生成事件的项目  。
 
@@ -52,6 +54,31 @@ ms.locfileid: "126641190"
 
    > [!NOTE]
    > 若要添加长语法，或从[预先生成事件/生成后事件命令行对话框](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)中选择任何生成宏，请单击省略号按钮 (…) 以显示编辑框。
+
+:::moniker-end
+:::moniker range=">=vs-2022"
+
+1. 在“解决方案资源管理器”中，选择要为其指定生成事件的项目  。
+
+2. 在 **"Project**"菜单上，**单击"属性**" (，或者从解决方案资源管理器，按 **AltEnter** +) 。
+
+3. 选择 **"生成>事件"**。
+
+   ![显示"生成事件"设置的屏幕截图。](media/vs-2022/build-events.png)
+
+4. 在 **"预生成事件** "部分中，指定生成事件的语法。
+
+   > [!NOTE]
+   > 如果项目是最新的且没有触发任何生成，则不会运行预生成事件。
+
+5. 在 **"生成后事件** "部分中，指定生成事件的语法。
+
+   > [!NOTE]
+   > 在运行 .bat 文件的所有生成后命令之前添加 `call` 语句。 例如，`call C:\MyFile.bat` 或 `call C:\MyFile.bat call C:\MyFile2.bat`。
+
+6. 在 **"何时运行生成后事件** "部分中，指定在什么条件下运行生成后事件。
+
+:::moniker-end
 
    生成事件语法可以包含命令提示符处或 .bat 文件中有效的任何命令。 批处理文件名的前面应带有 `call`，以确保执行后面的所有命令。
 
@@ -158,9 +185,9 @@ ms.locfileid: "126641190"
    <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
    ```
 
-5. 在“项目设计器”中，单击“生成事件”选项卡，然后单击“编辑生成后事件”。
+5. 返回到"Project **设计器"，** 单击"**生成事件"** 选项卡。
 
-6. 在“生成后事件命令行”框中，输入以下命令：
+6. 在" **生成后事件"** 部分中，输入以下命令：
 
    `C:\TEMP\ChangeOSVersionCS.exe "$(TargetPath).manifest" 5.1.2600.0`
 
@@ -175,6 +202,9 @@ ms.locfileid: "126641190"
    ```xml
    <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
    ```
+
+> [!NOTE]
+> 某些方案可能需要比生成事件能够更智能的生成操作。 例如，对于许多常见的代码生成方案，需要处理清理和重新生成操作，并且可能需要为代码生成步骤启用增量生成，以便仅在输出与输入有关过期时运行该步骤。 对于[](../msbuild/target-build-order.md)此类方案`AfterTargets``BeforeTargets`，请考虑创建一个自定义目标，该目标指定 或 在生成过程中的特定点运行，对于高级方案中的进一步控制，请考虑创建自定义[任务](../msbuild/task-writing.md)。
 
 ## <a name="see-also"></a>另请参阅
 

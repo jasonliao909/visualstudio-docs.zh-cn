@@ -11,19 +11,19 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 74f1f1d5e7b762c597efa0c7842292ff0c6ae365
-ms.sourcegitcommit: 20f9529648e69707063dccb2b15089bf4e9bf639
+ms.openlocfilehash: dc2f944a23120ac51ec5e9e3c97235ebb6b3df5b
+ms.sourcegitcommit: 00af065ac27d41339b31d96a630705509b70b6fa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "137887211"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "140764071"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>为 Python Web 应用配置 IIS
 
 如果将 Internet Information Services (IIS) 用作 Windows 计算机（包括 [Azure 上的 Windows 虚拟机](/azure/architecture/reference-architectures/n-tier/windows-vm)）中的 Web 服务器，必须在 Python 应用的 web.config 文件中添加特定设置，这样 IIS 才能正确处理 Python 代码。 计算机自身也必须安装 Python，以及 Web 应用需要的任何包。
 
 > [!Note]
-> 本文之前介绍了如何对 Windows 上的 Azure 应用服务配置 Python。 此方案使用的 Python 扩展和 Windows 主机已遭弃用，改用 Linux 上的 Azure 应用服务。 有关详细信息，请参阅[将 Python 应用发布到 Azure 应用服务 (Linux)](publishing-python-web-applications-to-azure-from-visual-studio.md)。 不过，仍可从[管理 Windows 上包含 Python 扩展的应用服务](managing-python-on-azure-app-service.md)中获取旧文章。
+> 前一篇文章仍可用于[使用 Python 扩展在 Windows 上管理应用服务](managing-python-on-azure-app-service.md)。
 
 ## <a name="install-python-on-windows"></a>在 Windows 上安装 Python
 

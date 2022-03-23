@@ -10,20 +10,18 @@ ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 781bd02c562eab13609aec3d0bbe11065a7984c5
-ms.sourcegitcommit: 20f9529648e69707063dccb2b15089bf4e9bf639
+ms.openlocfilehash: 2101d1214e62245f6aba6241514a7c2478535ac6
+ms.sourcegitcommit: 00af065ac27d41339b31d96a630705509b70b6fa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "137887107"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "140764084"
 ---
 # <a name="python-web-application-project-templates"></a>Python Web 应用程序项目模板
 
 Visual Studio 中的 Python 支持在 Bottle、Flask 和 Django 框架中通过项目模板和可配置为处理不同框架的调试启动程序开发 Web 项目。 这些模板包括 requirements.txt 文件来声明必需的依赖项  。 基于其中一个模板创建项目时，Visual Studio 会提示安装这些包（请参阅本文后面的[安装项目要求](#install-project-requirements)）。
 
 也可以使用其他框架（如 Pyramid）的通用“Web 项目”  模板。 在这种情况下，不会随模板一起安装框架。 而是将必要的包安装到用于项目的环境中（请参阅 [Python 环境窗口 - 包选项卡](python-environments-window-tab-reference.md#packages-tab)）。
-
-有关将 Python Web 应用部署到 Azure 的信息，请参阅[发布到 Azure 应用服务](publishing-python-web-applications-to-azure-from-visual-studio.md)。
 
 ## <a name="use-a-project-template"></a>使用项目模板
 
@@ -151,4 +149,3 @@ Pyramid 应用当前最好使用 `pcreate` 命令行工具进行创建。 创建
 ## <a name="see-also"></a>请参阅
 
 - [Python 项模板引用](python-item-templates.md)
-- [发布到 Azure 应用服务](publishing-python-web-applications-to-azure-from-visual-studio.md)

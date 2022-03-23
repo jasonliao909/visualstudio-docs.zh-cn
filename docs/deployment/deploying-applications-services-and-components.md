@@ -22,12 +22,12 @@ manager: jmartens
 ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 899acd49674f012ec59101cf57f55f677b1a5245
-ms.sourcegitcommit: 169b7b66d13b7e3c86097b42206dd33389cd9166
+ms.openlocfilehash: a9e9811763c04fe2b469162843a4f241cffad59f
+ms.sourcegitcommit: 00af065ac27d41339b31d96a630705509b70b6fa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138148617"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "140764422"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>先查看 Visual Studio 中的部署
 
@@ -64,8 +64,6 @@ ms.locfileid: "138148617"
   ![显示选择“Azure 应用服务”的屏幕截图。](../deployment/media/quickstart-publish-azure-new.png "选择 Azure 应用服务")
 
   自 Visual Studio 2017 版本 15.7 开始，可将 ASP.NET Core 应用部署到 Linux 上的应用服务。
-
-  对于 Python 应用，另请参阅 [Python - 发布到 Azure 应用服务](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)。
 
   有关快速介绍，请参阅[发布 ASP.NET 应用](quickstart-deploy-aspnet-web-app.md?tabs=folder)。 另请参阅[部署 ASP.NET Web 应用](/azure/app-service/quickstart-dotnetcore?tabs=netcore31&pivots=development-environment-vs#publish-your-web-app)。 有关使用 Git 进行部署的信息，请参阅[使用 Git 将 ASP.NET Core 持续部署到 Azure](/azure/app-service/deploy-continuous-deployment)。
 

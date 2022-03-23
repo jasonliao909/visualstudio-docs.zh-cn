@@ -11,18 +11,16 @@ manager: jmartens
 ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ec58b2523aa0a8d46be16a3ba42625b578b6488
-ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
-ms.translationtype: HT
+ms.openlocfilehash: 76df2e06ec5919a58aef3521c2a30d32a125bec5
+ms.sourcegitcommit: 00af065ac27d41339b31d96a630705509b70b6fa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "131127996"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "140764097"
 ---
 # <a name="get-publish-settings-from-azure-and-import-into-visual-studio"></a>从 Azure 获取发布设置，并将其导入 Visual Studio
 
-可使用“发布”工具导入发布设置，然后部署应用。 本文使用 Azure 应用服务的发布设置。
-
-这些步骤适用于 ASP.NET 和 ASP.NET Core Web 应用。 也可以为 [Python](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) 应用导入发布设置。
+可使用“发布”工具导入发布设置，然后部署应用。 本文使用 Azure 应用服务的发布设置。 这些步骤适用于 ASP.NET 和 ASP.NET Core Web 应用。 
 
 > [!NOTE]
 > 发布设置文件 (\*.publishsettings) 与在 Visual Studio 中创建的发布配置文件 (\*.pubxml) 不同 。 发布设置文件由 Azure 应用服务创建，然后可将其导入 Visual Studio。

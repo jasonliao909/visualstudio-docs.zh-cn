@@ -16,8 +16,6 @@
       href: installing-python-interpreters.md
 - name: 快速入门
   items:
-    - name: Python：创建 Web 应用
-      href: ../ide/quickstart-python.md
     - name: 通过 Flask 创建 Web 应用
       href: ../ide/quickstart-python.md
       maintainContext: true
@@ -123,8 +121,6 @@
           href: debugging-python-in-visual-studio.md
         - name: 在远程 Linux 计算机上调试代码
           href: debugging-python-code-on-remote-linux-machines.md
-    - name: 在 Linux 上发布到 Azure 应用服务
-      href: publishing-python-web-applications-to-azure-from-visual-studio.md
     - name: 与 C++ 交互
       items:
         - name: 创建适用于 Python 的 C++ 扩展

@@ -12,12 +12,12 @@ ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: db7e9d307ffb90ad1fa55dd8cb34ce9f587a33b5
-ms.sourcegitcommit: 169b7b66d13b7e3c86097b42206dd33389cd9166
+ms.openlocfilehash: 45d4354373954cb88cb163329df2abc0c436685f
+ms.sourcegitcommit: 00af065ac27d41339b31d96a630705509b70b6fa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138148675"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "140764123"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance-with-django-app"></a>步骤 3：通过 Django 应用提供静态文件、添加页面和使用模板继承
 
@@ -306,7 +306,6 @@ Django 的模板系统提供两种方法，用于跨多个模板重复使用特�
 
 ## <a name="go-deeper"></a>深入了解
 
-- [将 Web 应用部署到 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - [编写你的第一个 Django 应用，第 3 部分（视图）](https://docs.djangoproject.com/en/2.0/intro/tutorial03/) (docs.djangoproject.com)
 - 有关 Django 模板的更多功能（如控制流），请参阅 [Django 模板语言](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (docs.djangoproject.com)
 - 有关使用 `{% url %}` 标记的完整详细信息，请参阅 [Django 模板的内置模板标记和筛选器参考](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/)中的 [URL](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/#url) (docs.djangoproject.com)

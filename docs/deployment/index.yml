@@ -10,12 +10,12 @@ metadata:
   ms.author: mikejo
   manager: jmartens
   ms.date: 09/17/2019
-  ms.openlocfilehash: 2d326eef85ab2ebdfe274941f945de118480d1f7
-  ms.sourcegitcommit: 7a820b7698a8dcf076eb36e3d766fb0751f56bb1
+  ms.openlocfilehash: c389c510e4953c9a230e500464dfc91f3616b786
+  ms.sourcegitcommit: 00af065ac27d41339b31d96a630705509b70b6fa
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/02/2021
-  ms.locfileid: "131127242"
+  ms.lasthandoff: 03/22/2022
+  ms.locfileid: "140764344"
 landingContent:
 - title: 关于部署
   linkLists:
@@ -67,8 +67,6 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Python 应用到 Linux 应用程序
-      url: ../python/publishing-python-web-applications-to-azure-from-visual-studio.md
     - text: Node.js 应用到 Linux 应用程序
       url: ../javascript/publish-nodejs-app-azure.md
     - text: 部署容器化应用

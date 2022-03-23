@@ -10,12 +10,12 @@ ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 71cfdded0d1778221ead1f9b59ba3530294fae36
-ms.sourcegitcommit: f303d052e451bcfd4722b99a9adbcb3f575d1678
+ms.openlocfilehash: fa85ab1f3a1b8575f186148320afc56927fc48b0
+ms.sourcegitcommit: 00af065ac27d41339b31d96a630705509b70b6fa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "137816786"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "140764409"
 ---
 # <a name="python-item-templates"></a>Python 项模板
 
@@ -49,4 +49,3 @@ Python 项目中的项模板可通过“项目” > “添加新项”菜单命�
 
 - [管理 Python 项目 - 项目模板](managing-python-projects-in-visual-studio.md#project-templates)
 - [Python Web 项目模板](python-web-application-project-templates.md)
-- [发布到 Azure 应用服务](publishing-python-web-applications-to-azure-from-visual-studio.md)

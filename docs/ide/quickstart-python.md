@@ -13,12 +13,12 @@ ms.custom:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: beb86c395735c2015eae64866aaf36aefbf9a507
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: a2d314ad596e57147aa6d7b117e9bd2feed75b52
+ms.sourcegitcommit: 00af065ac27d41339b31d96a630705509b70b6fa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129971616"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "140764396"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>快速入门：使用 Visual Studio 创建第一个 Python Web 应用
 
@@ -287,7 +287,6 @@ Python 中的 Web 应用几乎总是使用众多可用 Python 库中的一个来
 祝贺你从 Visual Studio 运行了第一个 Python 应用。 你已初步了解如何将 Visual Studio 用作 Python IDE！
 
 > [!div class="nextstepaction"]
-> [将应用部署到 Azure 应用服务](../python/publishing-python-web-applications-to-azure-from-visual-studio.md)
 
 此快速入门中的步骤比较笼统，你可能已猜到它们可以且应当自动执行。 此类自动化由 Visual Studio 项目模板执行。 浏览[快速入门 - 使用模板创建 Python 项目](../python/quickstart-02-python-in-visual-studio-project-from-template.md)，通过更少的步骤创建一个与本文中的 Web 应用类似的 Web 应用。
 

@@ -11,17 +11,14 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 6da297d68792f3ef615de3321ec89f2dd25571ef
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: e03e0a611e05b5dc76a21d89822e19a98046e57a
+ms.sourcegitcommit: 00af065ac27d41339b31d96a630705509b70b6fa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129968366"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "140764448"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>发布到 Windows 上的 Azure 应用服务
-
-> [!Note]
-> 虽然此内容及所述功能已遭弃用，但仍继续有效。 建议 Python 开发人员尽可能迁移到 [Linux 上的应用服务](publishing-python-web-applications-to-azure-from-visual-studio.md)。
 
 使用 Visual Studio，可直接将 Python Web 应用发布到 Windows 上的 Azure 应用服务。 发布到 Windows 上的 Azure 应用服务意味着，将所需文件复制到服务器，并设置相应的 `web.config` 文件来指示 Web 服务器如何启动应用。
 
@@ -202,7 +199,7 @@ Visual Studio 2017 及更高版本与 Visual Studio 2015 的发布过程有所�
 
 1. 根据需要选择“下一步 >”，查看其他设置。
 
-1. 选择“发布”。 应用程序部署到 Azure 后，会在该站点上打开默认浏览器。
+1. 选择“发布”  。 应用程序部署到 Azure 后，会在该站点上打开默认浏览器。
 
 在此过程中，Visual Studio 还执行以下步骤：
 
