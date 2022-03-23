@@ -12,18 +12,18 @@ ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 43f9368126c14359f8e4dea75b1c2d0bb9fa0074
-ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
+ms.openlocfilehash: 504491a19ddfd93faa91150dc4caf1fa2b8fd99f
+ms.sourcegitcommit: 00af065ac27d41339b31d96a630705509b70b6fa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "139551613"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "140764110"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance-with-flask-app"></a>步骤 3：通过 Flask 应用提供静态文件、添加页面和使用模板继承
 
 上一步：[使用视图和页面模板创建 Flask 应用](learn-flask-visual-studio-step-02-create-app.md)
 
-在本教程的前几个步骤中，你已了解如何通过单页自包含 HTML 创建最小的 Flask 应用。 新式 Web 应用通常由许多页面组成，并使用 CSS 和 JavaScript 文件等共享资源来提供一致的样式和行为。
+在本教程的前几个步骤中，你已了解如何通过单页自包含 HTML 创建最小的 Flask 应用。 新式 web 应用通常由许多页面组成，并使用 CSS 和 JavaScript 文件等共享资源提供一致的样式和行为。
 
 在此步骤中，你将了解如何：
 
@@ -36,7 +36,7 @@ ms.locfileid: "139551613"
 
 ## <a name="step-3-1-become-familiar-with-item-templates"></a>步骤 3-1：熟悉项模板
 
-开发 Flask 应用时，通常会添加多个 Python、HTML、CSS 和 JavaScript 文件。 对于每个文件类型 (以及部署web.config所需的其他文件，) Visual Studio ** 项模板来入门。[](python-item-templates.md)
+开发 Flask 应用时，通常会添加多个 Python、HTML、CSS 和 JavaScript 文件。 对于每个文件类型 (和其他文件（如部署) 所需的 *web.config* ），Visual Studio 提供便利的 [项模板](python-item-templates.md)以帮助你入门。
 
 若要查看可用模板，请转到“解决方案资源管理器”，右键单击要在其中创建项的文件夹，选择“添加” > “新项”：
 
@@ -50,7 +50,7 @@ ms.locfileid: "139551613"
 
 ## <a name="step-3-2-serve-static-files-from-your-app"></a>步骤 3-2：从应用中提供静态文件
 
-在使用 Python（借助任何框架）生成的 Web 应用中，Python 文件始终在 Web 主机的服务器上运行，并且永远不会传输到用户计算机。 其他文件（如 CSS 和 JavaScript）仅由浏览器使用，因此主机服务器只需在请求它们时按要求传递它们。 此类文件称为“静态”文件，可通过 Flask 自动交付，而无需编写任何代码。 例如，在 HTML 文件中，可以使用项目中的相对路径引用静态文件。 本步骤的第一个部分将 CSS 文件添加到现有页面模板。
+在使用 Python（借助任何框架）生成的 Web 应用中，Python 文件始终在 Web 主机的服务器上运行，并且永远不会传输到用户计算机。 其他文件（如 CSS 和 JavaScript）仅由浏览器使用，因此，只要请求，主机服务器就会按原样传递它们。 此类文件称为“静态”文件，可通过 Flask 自动交付，而无需编写任何代码。 例如，在 HTML 文件中，可以使用项目中的相对路径引用静态文件。 本步骤的第一个部分将 CSS 文件添加到现有页面模板。
 
 当需要通过代码（例如通过 API 终结点实现）提供静态文件时，Flask 提供一种轻松方法，可使用名为 static 的文件夹（位于项目根目录）中的相对路径来引用文件  。 本步骤的第二个部分使用简单的静态数据文件演示该方法。
 
@@ -87,7 +87,7 @@ ms.locfileid: "139551613"
     </html>
     ```
 
-1. 运行项目以观察结果。 完成后，停止应用，可以将更改提交到源代码管理 (步骤 [2](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control)) 。
+1. 运行项目以观察结果。 完成后，停止应用程序，你可以将所做的更改提交到源代码管理 (如 [步骤 2](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control)) 中所述。
 
 ### <a name="serve-a-static-file-from-code"></a>通过代码提供静态文件
 
@@ -113,7 +113,7 @@ Flask 提供一个名为 `serve_static_file` 的函数，可通过代码调用�
       return app.send_static_file('data.json')
     ```
 
-1. 运行该应用并导航到 /api/data 终结点来查看是否返回该静态文件。 完成后，停止应用。
+1. 运行该应用并导航到 /api/data 终结点来查看是否返回该静态文件。 完成后，请停止该应用。
 
 ### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>问：是否有组织静态文件的任何约定？
 
@@ -170,7 +170,7 @@ Flask 提供一个名为 `serve_static_file` 的函数，可通过代码调用�
     <div><a href="about">About</a></div>
     ```
 
-1. 使用"文件""全部保存 > "菜单命令保存所有文件，或按 **CtrlShiftS**+。+  (不需要此步骤，因为运行 中的项目会自动Visual Studio保存文件。 不过，可以了解一下这个命令！）
+1. 使用 "  >  **保存所有****文件" 菜单** 命令保存所有文件，或按 **Ctrl** + **Shift** + **键。**  (不需要执行此步骤，Visual Studio 会自动保存文件。 不过，可以了解一下这个命令！）
 
 1. 运行项目并观察结果，并检查页面之间的导航。 完成后停止应用。
 
@@ -180,13 +180,13 @@ Flask 提供一个名为 `serve_static_file` 的函数，可通过代码调用�
 
 ## <a name="step-3-4-use-template-inheritance-to-create-a-header-and-nav-bar"></a>步骤 3-4：使用模板继承创建标头和导航栏
 
-与在每个页面上都有显式导航链接不同，现代 Web 应用通常使用品牌标头和提供最重要的页面链接、弹出菜单等内容的导航栏。 若要确保应用一致，标头和导航栏应在所有页面中都相同，而不要重复每个页面模板中的相同代码。 相反，你希望在一个位置定义所有页面的公共部分。
+与在每个页面上都有显式导航链接不同，现代 Web 应用通常使用品牌标头和提供最重要的页面链接、弹出菜单等内容的导航栏。 若要确保应用程序的一致性，请确保所有页面的页眉和导航栏相同，而不是在每个页面模板中重复相同的代码。 相反，你希望在一个位置定义所有页面的公共部分。
 
 Flask 模板系统（默认 Jinja）为实现跨多个模板重用特定元素提供了两种方法：包含和继承。
 
 - 包含  是可以使用语法 `{% include <template_path> %}` 在引用模板的特定位置插入的另一个页面模板。 如果想要在代码中动态更改路径，也可以使用一个变量。 包含通常用于页面主体，在页面特定位置拉入共享模板。
 
-- 继承使用页面模板开头的 `{% extends <template_path> %}` 来指定共享基本模板，然后会在此模板上生成引用模板。 继承通常用于定义应用页面的共享布局、导航栏和其他结构，因此引用模板只需添加或修改称为块的基本模板的特定 *区域*。
+- 继承使用页面模板开头的 `{% extends <template_path> %}` 来指定共享基本模板，然后会在此模板上生成引用模板。 继承通常用于定义应用页面的共享布局、导航栏和其他结构，以便引用模板只需添加或修改称为 " *块*" 的基本模板的特定区域。
 
 在这两种情况下，`<template_path>` 对应于应用的 templates 文件夹（还允许 `../` 或 `./`）。
 
@@ -224,7 +224,7 @@ Flask 模板系统（默认 Jinja）为实现跨多个模板重用特定元素�
     </html>
     ```
 
-1. 将以下样式添加到应用的 *static/site.css* 文件 (本演练不会演示响应式设计。 但是，这些样式只会生成有趣的) ：
+1. 将以下样式添加到应用的 *静态/站点 .css* 文件 (本演练不演示响应式设计。 但是，这些样式仅生成一个有趣的结果) ：
 
     ```css
     .navbar {
@@ -284,7 +284,6 @@ Flask 模板系统（默认 Jinja）为实现跨多个模板重用特定元素�
 
 可以利用以下资源进行深入了解：
 
-- [将 Web 应用部署到 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - 有关 Jinja 模板的更多功能（如控制流），请参阅 [Jinja 模板设计器文档](http://jinja.palletsprojects.com/en/2.10.x/templates/) (jinja.pocoo.org)
 - 有关使用 `url_for` 的详细信息，请参阅 Flask 应用程序对象文档中的 [url_for](https://flask.palletsprojects.com/en/1.0.x/api/#flask.url_for) (flask.pocoo.org)
 - GitHub 上的教程源代码：[Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

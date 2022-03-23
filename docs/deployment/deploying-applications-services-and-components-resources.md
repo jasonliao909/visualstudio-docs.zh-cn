@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a67d9754ddb86890af66f4ed4b578cd44baf3bf
-ms.sourcegitcommit: d38d1b083322019663fec7d1d85a4cda456aadca
+ms.openlocfilehash: b67613e457e86e1ce71317e4b4c2042f24978d50
+ms.sourcegitcommit: 00af065ac27d41339b31d96a630705509b70b6fa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "135534302"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "140764357"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>将应用部署到文件夹、IIS、Azure 或其他目标
 
@@ -255,4 +255,3 @@ ms.locfileid: "135534302"
 - [Visual C++ 中的部署](/cpp/windows/deployment-in-visual-cpp)
 - [部署 UWP 应用](/windows/uwp/packaging/packaging-uwp-apps?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [使用 Web 部署将 Node.js 应用发布到 Azure](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
-- [将 Python 应用发布到 Azure 应用服务](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)

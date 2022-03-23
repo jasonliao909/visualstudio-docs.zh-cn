@@ -11,17 +11,14 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 82397b67177fd3366ed7dc81fa592b75c4ff650d
-ms.sourcegitcommit: 20f9529648e69707063dccb2b15089bf4e9bf639
+ms.openlocfilehash: 970569dfea2923817d7894e7865819c941cc6e37
+ms.sourcegitcommit: 00af065ac27d41339b31d96a630705509b70b6fa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "137886496"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "140764136"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>如何在 Azure 应用服务 (Windows) 上设置 Python 环境
-
-> [!Important]
-> 如本文所述，Microsoft 已弃用 Windows 上的应用服务适用的 Python 扩展，改为支持直接部署到 [Linux 上的应用服务](publishing-python-web-applications-to-azure-from-visual-studio.md)。
 
 [Azure App Service](https://azure.microsoft.com/services/app-service/) 是适用于 Web 应用的平台即服务产品/服务，这些应用包括通过浏览器访问的站点、用户自己的客户端使用的 REST API 或事件触发的处理过程。 应用服务完全支持使用 Python 实现应用。
 

@@ -13,18 +13,18 @@ monikerRange: vs-2017
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d2917866fcf589f763b42538df6c23e74940eaff
-ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
+ms.openlocfilehash: 68b4c2b0c454d8ef3d339b1c9b5aa88cee3e77a5
+ms.sourcegitcommit: 00af065ac27d41339b31d96a630705509b70b6fa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "139551360"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "140764370"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>步骤 6：使用投票 Django Web 项目模板
 
 上一步：[在 Django 中对用户进行身份验证](learn-django-in-visual-studio-step-05-django-authentication.md)
 
-了解Visual Studio"Django Web Project"模板后，现在可以查看第三个 Django 模板"投票 Django Web Project"。 投票 Django Web Project模板基于相同的基本代码生成，并演示如何使用数据库。
+了解 Visual Studio 的 "Django Web Project" 模板之后，你现在可以查看第三个 Django 模板 "投票 Django Web Project"。 轮询 Django Web Project 模板基于相同的代码库生成，并演示了如何使用数据库。
 
 在此步骤中，你将了解如何：
 
@@ -35,51 +35,51 @@ ms.locfileid: "139551360"
 > - 了解由项目模板创建的视图和页面模板（步骤 6-4）
 > - 创建自定义管理界面（步骤 6-5）
 
-使用此模板创建的项目类似于按照 Django 文档编写第一个 [Django](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) 应用教程获得的项目。Web 应用包含一个公共站点，可让用户查看投票并投票。 若要管理投票，你还具有自定义管理界面。 接口使用与"Django Web Project"模板相同的身份验证系统。 它还通过实现 Django 模型来利用数据库，如以下部分所述。
+使用此模板创建的项目与你在 Django 文档中 [编写第一个 Django 应用](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) 教程教程中所获得的内容类似。Web 应用包含一个公共网站，使用户可以在其中查看轮询和投票。 若要管理轮询，还可以使用自定义管理接口。 接口使用与 "Django Web Project" 模板相同的身份验证系统。 它还通过实现 Django 模型来利用数据库，如以下部分所述。
 
 ## <a name="step-6-1-create-the-project-and-initialize-the-database"></a>步骤 6-1：创建项目并初始化数据库
 
-1. 在Visual Studio，转到解决方案资源管理器，右键单击本教程前面创建的 **LearningDjango** 解决方案。 选择 **"添加** > **""Project**"。  (如果要使用新 >  > 解决方案，请改为选择"文件"**"新建Project**.) 
+1. 在 Visual Studio 中，请跳到 **解决方案资源管理器**，右键单击本教程前面创建的 **LearningDjango** 解决方案。 选择 "**添加**  >  **新 Project**"。  (如果要使用新的解决方案，请改为选择 "**文件**  >  " "**新建**  >  **Project** "。 ) 
 
-1. 在"**新建Project**"对话框中，搜索并选择"投票 **Django Web Project** 模板。 将项目称为"DjangoPolls"，然后选择"确定 **"**。
+1. 在 "**新建 Project** " 对话框中，搜索并选择 "**轮询 Django Web Project** " 模板。 将项目调用为 "DjangoPolls"，并选择 **"确定**"。
 
-1. 与 Visual Studio 中的其他项目模板一样，"投票 Django Web Project"模板 *包含一requirements.txt* 文件。 Visual Studio会提示安装依赖项的位置。 出现提示时，选择"安装到 **虚拟环境中**"选项，在"添加 **虚拟** 环境"对话框中选择"创建"以接受默认值。
+1. 与 Visual Studio 中的其他项目模板一样，"轮询 Django Web Project" 模板还包括一个 *requirements.txt* 文件。 Visual Studio 提示安装依赖项的位置。 出现提示时，请选择 " **安装到虚拟环境** 中" 选项，然后在 " **添加虚拟环境** " 对话框中选择 " **创建** " 以接受默认值。
 
-1. Python 完成虚拟环境的设置后，请按照显示的 *readme.html。* 这些说明将帮助你初始化数据库并创建 Django 超级用户 (管理员角色) 。 步骤是首先右键单击 解决方案资源管理器 中的 **DjangoPolls** **项目，然后选择** **PythonDjango**  >  Migrate 命令。 然后，再次右键单击项目，选择 **"Python** > **""Django 创建超级用户"** 命令，然后按照提示操作。  (如果首先尝试创建超级用户，则会看到错误，因为数据库尚未初始化。) 
+1. 当 Python 完成虚拟环境的设置时，请按照显示的 *readme.html* 中的说明进行操作。 这些说明将帮助你初始化数据库，并创建 Django 超级用户 (，这是管理员) 。 步骤首先右键单击 **解决方案资源管理器** 中的 **DjangoPolls** 项目，然后选择 " **Python**  >  Django" "**迁移**" 命令。 然后，再次右键单击该项目，选择 " **Python**  >  **Django Create 超级用户**" 命令，然后按照提示进行操作。  (如果您首先尝试创建超级用户，则会看到错误，因为数据库尚未初始化。 ) 
 
-1. 右键单击 Visual Studio 中的项目并选择"设置为启动"解决方案资源管理器，将 **DjangoPolls** 项目设置为 **Project。** 启动调试器时将运行的启动项目以粗体显示。
+1. 右键单击 **解决方案资源管理器** 中的项目，然后选择 "**设为启动 Project**"，将 **DjangoPolls** 项目设置为 Visual Studio 解决方案的默认项目。 启动项目（以粗体显示）是启动调试器时将运行的内容。
 
-1. 选择 **"调试** > ""**开始** (**F5**) 或使用工具栏上的 **"Web 服务器**"按钮运行服务器。
+1.  (**F5**) 选择 "**调试**  >  " "**开始调试**"，或使用工具栏上的 " **Web 服务器**" 按钮运行服务器。
 
-    :::image type="content" source="media/django/run-web-server-toolbar-button.png" alt-text="运行 web 服务器工具栏按钮Visual Studio。":::
+    :::image type="content" source="media/django/run-web-server-toolbar-button.png" alt-text="在 Visual Studio 中运行 web 服务器工具栏按钮。":::
 
-1. 模板创建的应用有三个页面，即"主页"、"关于"和"联系人"，你将使用顶部导航栏在页面间导航。 几分钟检查应用的不同部分。  ("关于"和"联系人"页类似于"Django Web Project"，不会进一步讨论。) 
+1. 模板创建的应用包含三个页面： "主页"、"关于" 和 "联系人"，将在顶部导航栏之间导航。 在几分钟内检查应用程序的不同部分。 "关于" 和 "联系人" 页 (类似于 "Django Web Project"，不再进行进一步讨论。 ) 
 
-    :::image type="content" source="media/django/step06-full-app-view.png" alt-text="投票 Django Web 应用的完整浏览器Project视图。":::
+    :::image type="content" source="media/django/step06-full-app-view.png" alt-text="轮询 Django Web Project 应用的完整浏览器视图。":::
 
-1. 此外，在导航 **栏中** 选择"管理"链接。 " **管理** "链接显示登录屏幕，以演示仅向经过身份验证的管理员授权管理界面。 使用超级用户凭据，你被路由到"/admin"页面。 使用项目模板时，页面默认启用。
+1. 同时，在导航栏中选择 " **管理** " 链接。 " **管理** " 链接在屏幕上显示一个日志，用于说明管理界面仅授权给经过身份验证的管理员。 使用超级用户凭据，并路由到 "/admin" 页。 默认情况下，在使用项目模板时，会启用此页。
 
-    :::image type="content" source="media/django/step06-polls-administrative-interface.png" alt-text="投票 Django Web 应用管理Project视图。":::
+    :::image type="content" source="media/django/step06-polls-administrative-interface.png" alt-text="轮询 Django Web Project 应用的管理视图。":::
 
 1. 可以在以下各节中使应用保持运行状态。
 
-    如果要停止应用并提交对源代码管理所做的更改 [，](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control)请首先打开"更改"**页团队资源管理器。** 右键单击虚拟环境文件夹 **(环境)** ，然后选择"忽略 **这些本地项"**。
+    如果要停止应用并将 [更改提交到源代码管理](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control)，请先打开 **团队资源管理器** 中的 "**更改**" 页。 右键单击虚拟环境的文件夹 (可能是 **env**) ，然后选择 " **忽略这些本地项**"。
 
 ### <a name="examine-the-project-contents"></a>检查项目内容
 
-从"投票 Django Web Project"模板创建的项目应熟悉项目中的其他项目Visual Studio。 本文的其他步骤汇总了重大更改和新增功能，即数据模型和其他视图。
+从 "轮询 Django Web Project" 模板创建的项目应熟悉 Visual Studio 中的其他项目模板。 本文中的其他步骤汇总了重大更改和添加，即数据模型和其他视图。
 
 ### <a name="question-what-does-the-django-migrate-command-do"></a>问：Django 迁移命令的作用是什么？
 
-答： **Django Migrate** 命令专门 `manage.py migrate` 运行 命令，该命令运行 *app/migrations* 文件夹中以前未运行的任何脚本。 在这种情况下，此命令运行文件夹中的 0001_initial.py 脚本，以便在数据库中设置必要的架构。
+答： **Django "迁移** " 命令专门运行 `manage.py migrate` 命令，该命令运行以前未运行过的 " *应用/迁移* " 文件夹中的所有脚本。 在这种情况下，此命令运行文件夹中的 0001_initial.py 脚本，以便在数据库中设置必要的架构。
 
-迁移脚本本身由 命令 `manage.py makemigrations` 创建。 迁移脚本扫描应用的 models.py 文件，将其与数据库的当前状态进行比较，然后生成必要的脚本来迁移数据库架构以匹配当前模型。 在一段时间更新和修改模型时，Django 的此功能非常强大。 通过生成和运行迁移，可以轻松地使模型和数据库保持同步。
+迁移脚本本身由 `manage.py makemigrations` 命令创建。 迁移脚本会扫描应用的 *models.py* 文件，将其与数据库的当前状态进行比较，然后生成必要的脚本，以迁移数据库架构以匹配当前模型。 随着时间的推移更新和修改模型，Django 的这项功能功能非常强大。 通过生成和运行迁移，可以轻松地使模型和数据库保持同步。
 
-本文稍后将介绍步骤 6-3 中的迁移。
+在本文的后面部分中，你将在步骤6-3 中使用迁移。
 
 ## <a name="step-6-2-understand-data-models"></a>步骤 6-2：了解数据模型
 
-app/models.py 中定义了名为“投票”和“选择”的应用模型。 每个模型都是派生自 的 Python 类 `django.db.models.Model`。 为了定义模型中的字段并映射到数据库列，模型使用 `models` 类的方法，如 和 `CharField` `IntegerField`。
+app/models.py 中定义了名为“投票”和“选择”的应用模型。 每个模型都是派生自 `django.db.models.Model` 的 Python 类。 若要在模型中定义字段并将其映射到数据库列，模型将使用类的 `models` 方法，如 `CharField` 和 `IntegerField` 。
 
 ```python
 from django.db import models
@@ -116,19 +116,19 @@ class Choice(models.Model):
 
 如你所见，“投票”保留其 `text` 字段中的说明和 `pub_date` 中的发布日期。 这些字段是数据库中投票所有的唯一字段；`total_votes` 字段在运行时进行计算。
 
-“选择”与通过 `poll` 字段实现的“投票”相关，在 `text` 中包含说明，并在 `votes` 中保留该选择的计数。 该字段 `votes_percentage` 是运行时计算的，在数据库中找不到。
+“选择”与通过 `poll` 字段实现的“投票”相关，在 `text` 中包含说明，并在 `votes` 中保留该选择的计数。 此 `votes_percentage` 字段在运行时计算，在数据库中找不到。
 
-字段类型的完整列表包括 `CharField`（受限文本）、`TextField`（不受限制的文本）、`EmailField`、`URLField`、`DateTimeField`、`IntegerField`、`DecimalField`、`BooleanField`、`ForeignKey`，和 `ManyToMany`。 每个字段都采用一些属性，如 `max_length`。 `blank=True` 属性表示字段是可选的；`null=true` 表示值是可选的。 还有一个 `choices` 属性，该属性将值限制于数据值/显示值元组数组中的值。 （请参阅 Django 文档中的[模型字段引用](https://docs.djangoproject.com/en/2.0/ref/models/fields/)。）
+字段类型的完整列表包括 `CharField`（受限文本）、`TextField`（不受限制的文本）、`EmailField`、`URLField`、`DateTimeField`、`IntegerField`、`DecimalField`、`BooleanField`、`ForeignKey`，和 `ManyToMany`。 每个字段都采用一些属性，如 `max_length`。 `blank=True` 属性表示字段是可选的；`null=true` 表示值是可选的。 还有一个 `choices` 用于将值限制为数据值/显示值元组的数组中值的属性。 （请参阅 Django 文档中的[模型字段引用](https://docs.djangoproject.com/en/2.0/ref/models/fields/)。）
 
-可以通过检查项目中的 *db.sqlite3* 文件来确认数据库中存储的内容。 若要检查文件，可以使用 [SQLite 浏览器等工具](https://sqlitebrowser.org/)。 在数据库中，会看到“选择”模型中像 `poll` 这样的外键字段存储为 `poll_id`；Django 会自动处理映射。
+通过检查项目中的 *sqlite3* 文件，可以确认数据库中存储的内容。 若要检查文件，可使用类似于 [SQLite 浏览器](https://sqlitebrowser.org/)的工具。 在数据库中，会看到“选择”模型中像 `poll` 这样的外键字段存储为 `poll_id`；Django 会自动处理映射。
 
 一般来说，在 Django 中使用数据库意味着可以以独占方式通过模型进行工作，使 Django 可以代表你管理基础数据库。
 
 ### <a name="seed-the-database-from-samplesjson"></a>从 samples.json 设定数据库种子
 
-最初，数据库不包含任何投票。 可以使用"/admin"URL 中的管理界面手动添加投票。 还可以访问正在运行的站点上的"/seed"页，使用应用的 *samples.json* 文件中定义的投票来添加数据库种子。
+最初，数据库不包含任何投票。 您可以使用 "/admin" URL 中的管理界面手动添加轮询。 你还可以访问正在运行的站点上的 "/seed" 页，以添加在应用的 *示例 json* 文件中定义了轮询的数据库的种子。
 
-Django *项目的 urls.py 文件* 具有一个添加的 URL 模式 `url(r'^seed$', app.views.seed, name='seed'),`。 app/views.py 中的 `seed` 视图加载 samples.json 文件并创建必要的模型对象。 Django 随后会在基础数据库中自动创建匹配记录。
+Django 项目的 *urls.py* 文件具有添加的 URL 模式 `url(r'^seed$', app.views.seed, name='seed'),` 。 app/views.py 中的 `seed` 视图加载 samples.json 文件并创建必要的模型对象。 Django 随后会在基础数据库中自动创建匹配记录。
 
 请注意使用 `@login_required` 修饰器来指示视图的授权级别。
 
@@ -156,23 +156,23 @@ def seed(request):
     return HttpResponseRedirect(reverse('app:home'))
 ```
 
-若要查看效果，请首先运行应用，以查看不存在投票。 然后访问“/seed”URL，当应用返回到主页时，应会看到投票已变得可用。 同样，可以随时使用 [SQLite 浏览器](https://sqlitebrowser.org/)之类的工具检查原始 db.sqlite3 文件。
+若要查看效果，请先运行应用程序，看看尚无轮询。 然后访问“/seed”URL，当应用返回到主页时，应会看到投票已变得可用。 同样，可以随时使用 [SQLite 浏览器](https://sqlitebrowser.org/)之类的工具检查原始 db.sqlite3 文件。
 
-:::image type="content" source="media/django/step06-app-with-seeded-database.png" alt-text="使用种子数据库Project Django Web 应用。":::
+:::image type="content" source="media/django/step06-app-with-seeded-database.png" alt-text="使用种子数据库轮询 Django Web Project 应用。":::
 
 ### <a name="question-is-it-possible-to-initialize-the-database-using-the-django-administrative-utility"></a>问：是否可以使用 Django 管理实用工具初始化数据库？
 
-答：是的，可以使用 [django-admin loaddata 命令](https://docs.djangoproject.com/en/2.0/ref/django-admin/#loaddata)来完成与应用中的种子设定页相同的任务。 处理完整的 Web 应用时，可以使用这两种方法的组合。 从命令行初始化数据库，然后将此处的种子页转换为 API。 然后，可以发送任何其他任意 JSON，而不是依赖于硬编码文件。
+答：是的，可以使用 [django-admin loaddata 命令](https://docs.djangoproject.com/en/2.0/ref/django-admin/#loaddata)来完成与应用中的种子设定页相同的任务。 当处理完整的 web 应用时，可以结合使用这两种方法。 从命令行初始化数据库，然后将 seed 页面转换为 API。 然后，可以发送任何其他任意 JSON，而不是依赖硬编码文件。
 
 ## <a name="step-6-3-use-migrations"></a>步骤 6-3：使用迁移
 
-创建项目`manage.py makemigrations` (使用 Visual Studio) 菜单中的上下文菜单运行命令时，Django 创建了 *app/migrations/0001_initial.py* 文件。 此文件包含用于创建初始数据库表的脚本。
+在创建项目后使用 Visual Studio) 中的上下文菜单 (运行 `manage.py makemigrations` 命令时，Django 创建了 *应用/迁移 0001_initial/py* 文件。 此文件包含用于创建初始数据库表的脚本。
 
-随着时间的推移，你一定会对模型进行更改，Django 使基础数据库架构与模型保持最新变得简单。 一般工作流如下：
+由于您将不可避免地在一段时间内对模型进行更改，因此 Django 使基础数据库架构与模型保持最新。 一般工作流如下：
 
 1. 对 models.py 文件中的模型进行更改。
 1. 在 Visual Studio 中，右键单击“解决方案资源管理器”中的项目，并选择“Python” > “Django 迁移”命令。 如前面所描述，此命令在 app/migrations 中生成脚本，将数据库从当前状态迁移到新状态。
-1. 若要将脚本应用到实际数据库，请再次右键单击该项目，然后选择 **"Python** > **""Django Migrate"**。
+1. 若要将脚本应用于实际数据库，请再次右键单击该项目，然后选择 " **Python**  >  **Django 迁移**"。
 
 Django 跟踪已应用于任何给定数据库的迁移。 因此，在运行 "迁移" 命令时，Django 会应用所需的任何迁移。 例如，如果创建一个新的空数据库，则运行 "迁移" 命令将通过应用每个迁移脚本来提供最新的当前模型。 同样，如果在一台开发计算机上更改多个模型并生成迁移，可以通过在生产服务器上运行迁移命令将累积迁移应用到生产数据库。 Django 只会再次应用那些自从生产数据库的最后一次迁移以来生成的迁移脚本。
 
@@ -369,8 +369,6 @@ admin.site.register(Poll, PollAdmin)
 你现在已在 Visual Studio 中探讨了 "空白 Django web Project"、"Django web Project" 和 "轮询 Django web Project" 模板。 你已经了解了 Django 的所有基本知识，例如使用视图和模板。 还介绍了路由、身份验证和使用的数据库模型。 现在应能够使用任何所需的视图和模型来创建你自己的 Web 应用。
 
 在开发计算机上运行 Web 应用只是使应用可供客户使用的一个步骤。 后续步骤可能包括以下任务：
-
-- 将 Web 应用部署到生产服务器，如 Azure 应用服务。 请参阅[发布到 Azure 应用服务](publishing-python-web-applications-to-azure-from-visual-studio.md)。
 
 - 通过创建一个名为 templates/404.html 的模板来自定义 404 页。 如果存在该模板，Django 会使用此模板而不是其默认模板。 有关详细信息，请参阅 Django 文档中的[错误视图](https://docs.djangoproject.com/en/2.0/ref/views/#error-views)。
 

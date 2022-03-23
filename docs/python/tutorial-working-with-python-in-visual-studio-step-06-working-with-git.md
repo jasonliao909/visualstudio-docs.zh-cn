@@ -12,12 +12,12 @@ ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e9d601b04e468bcbac95854cf7d1a33bc553fa47
-ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
+ms.openlocfilehash: 4b0eecc2e81e968d3b719dab325de5671b554c3e
+ms.sourcegitcommit: 00af065ac27d41339b31d96a630705509b70b6fa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "139551929"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "140764240"
 ---
 # <a name="step-6-work-with-git"></a>步骤 6：使用 Git
 
@@ -79,6 +79,5 @@ Visual Studio提供与本地 Git 存储库和远程存储库的直接集成。 �
 在此处了解概念和操作说明指南，其中包括下文：
 
 - [创建适用于 Python 的 C++ 扩展](working-with-c-cpp-python-in-visual-studio.md)
-- [发布到 Azure 应用服务](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - [分析](profiling-python-code-in-visual-studio.md)
 - [单元测试](unit-testing-python-in-visual-studio.md)

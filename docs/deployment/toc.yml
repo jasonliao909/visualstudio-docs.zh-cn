@@ -49,9 +49,7 @@
         - name: 发布到 Linux 应用服务 >>
           href: ../javascript/publish-nodejs-app-azure.md
     - name: Python
-      items:
-        - name: 发布到 Azure 应用服务 >>
-          href: ../python/publishing-python-web-applications-to-azure-from-visual-studio.md
+      items: null
 - name: 操作指南
   items:
     - name: GitHub Actions CI/CD 发布

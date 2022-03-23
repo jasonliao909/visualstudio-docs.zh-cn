@@ -12,12 +12,12 @@ ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 947dcde8868ace26accb37dbfbd45b8fbbe8a9ec
-ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
+ms.openlocfilehash: e17f25bd6fc030b13ddd95953380f23613e93586
+ms.sourcegitcommit: 00af065ac27d41339b31d96a630705509b70b6fa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "139552195"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "140764153"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>步骤 4：使用完整的 Django Web 项目模板
 
@@ -218,6 +218,5 @@ urlpatterns = [
 
 ## <a name="go-deeper"></a>深入了解
 
-- [将 Web 应用部署到 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - [编写你的第一个 Django 应用，第 4 部分 - 窗体和通用视图](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) (docs.djangoproject.com)
 - GitHub 上的教程源代码：[Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)
