@@ -1,7 +1,7 @@
 ---
 title: .NET 目标框架
 description: 了解如何指定希望项目所面向的 .NET Framework 版本，以便应用程序只能使用指定版本中可用的功能。
-ms.date: 11/19/2021
+ms.date: 03/23/2022
 ms.topic: overview
 helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 306617c158f6bdfbcb8236dc1661a93f9e9c92e5
-ms.sourcegitcommit: ebd651e00fe3bae5914c211c4828219bf7d1fc70
+ms.openlocfilehash: e35991d21d62ca52fc88f7d9f3892756cea10136
+ms.sourcegitcommit: 914b920daae61d1ac82cd271cd402e507e77a8ee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "137798543"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "140804529"
 ---
 # <a name="framework-targeting-overview"></a>框架定位概述
 
@@ -81,7 +81,19 @@ Visual Studio 解决方案可以包含针对不同 .NET 版本的项目。  但�
 
 ::: moniker range="vs-2022"
 
+如果选择创建 .NET Framework 项目，则会看到类似于以下屏幕截图的接口：
+
 :::image type="content" source="media/vs-2022/configure-new-project-framework.png" alt-text="Visual Studio 2022 中框架下拉列表的屏幕截图。":::
+
+如果选择创建 .NET 项目，则会看到用户界面 (UI) ，这类似于以下两个屏幕截图。
+
+你将看到的第一个屏幕是 " **配置新项目** " 对话框。
+
+:::image type="content" source="media/vs-2022/configure-your-new-project.png" alt-text="Visual Studio 2022 中 &quot;配置新项目&quot; 对话框的屏幕截图。":::
+
+您将看到的第二个屏幕是 " **其他选项** " 对话框。
+
+:::image type="content" source="media/vs-2022/configure-new-project-additional-info.png" alt-text="Visual Studio 2022 中的 &quot;其他选项&quot; 对话框的屏幕截图。":::
 
 ::: moniker-end
 
@@ -90,6 +102,7 @@ Visual Studio 解决方案可以包含针对不同 .NET 版本的项目。  但�
 对于现有的 Visual Basic、C# 或 F# 项目，可在项目属性对话框中更改目标 .NET 版本。 有关如何更改 C++ 项目目标版本的信息，请改为参阅[如何修改目标框架和平台工具集](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)。
 
 ::: moniker range="<=vs-2019"
+
 1. 在“解决方案资源管理器”中，打开要更改的项目的右键单击上下文菜单，然后选择“属性” 。
 
 1. 在“属性”窗口的左列中，选择“应用程序”选项卡   。
@@ -104,9 +117,11 @@ Visual Studio 解决方案可以包含针对不同 .NET 版本的项目。  但�
 1. 在显示的“验证”对话框中，选择“是”  按钮。
 
    项目将卸载。 项目重载时，将面向刚选择的 .NET 版本。
+
 ::: moniker-end
 
 ::: moniker range="vs-2022"
+
 1. 在“解决方案资源管理器”中，打开要更改的项目的右键单击上下文菜单，然后选择“属性” 。
 
 1. 在“属性”窗口的左列中，选择“应用程序”选项卡   。
@@ -116,11 +131,18 @@ Visual Studio 解决方案可以包含针对不同 .NET 版本的项目。  但�
 
 1. 在“目标框架”  列表中，选择所需版本。
 
+    对于 .NET Framework 项目，你看到的对话框可能类似于以下屏幕截图：
+
    :::image type="content" source="media/vs-2022/project-properties-application-tab-framework.png" alt-text="“项目属性”对话框的屏幕截图，其中突出显示了“.NET Framework”选项。":::
 
-1. 在显示的“验证”对话框中，选择“是”  按钮。
+   对于 .NET 项目，对话框可能类似于以下屏幕截图：
+
+   :::image type="content" source="media/vs-2022/project-properties-target-framework.png" alt-text="&quot;Project 属性&quot; 对话框中的 &quot;常规&quot; 选项卡的屏幕截图，其中显示了 &quot;目标框架&quot; 选择。":::
+
+1. 如果出现验证对话框，请选择 " **是"** 按钮。
 
    项目将卸载。 项目重载时，将面向刚选择的 .NET 版本。
+
 ::: moniker-end
 
 > [!NOTE]

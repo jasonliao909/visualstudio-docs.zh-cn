@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: afa6bd926490a34f0878a50f4d9108e5a3fceb0e
-ms.sourcegitcommit: aff49629012f4d5fa07c75ea0ca5bf53d28aa173
-ms.translationtype: HT
+ms.openlocfilehash: 053fd7e5607103a9a3b0ece521556bcbe34bb446
+ms.sourcegitcommit: 11a02f6a01fe73349084663a0b39909969ce6931
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "131662521"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "140812378"
 ---
 # <a name="work-with-data-in-visual-studio"></a>在 Visual Studio 中处理数据
 
@@ -32,7 +32,7 @@ ms.locfileid: "131662521"
 以下列表仅显示了可从 Visual Studio 中使用的多个数据库和存储系统的一小部分。 [Microsoft Azure](https://azure.microsoft.com/) 产品/服务是数据服务，其中包括对基础数据存储的所有预配和管理。 利用 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 中的 Azure 开发工作负载，你可以直接从 Visual Studio 使用 Azure 数据存储。
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-以下列表仅显示了可从 Visual Studio 中使用的多个数据库和存储系统的一小部分。 [Microsoft Azure](https://azure.microsoft.com/) 产品/服务是数据服务，其中包括对基础数据存储的所有预配和管理。 利用 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) 中的 Azure 开发工作负载，你可以直接从 Visual Studio 使用 Azure 数据存储。
+以下列表仅显示了可从 Visual Studio 中使用的多个数据库和存储系统的一小部分。 [Microsoft Azure](https://azure.microsoft.com/) 产品/服务是数据服务，其中包括对基础数据存储的所有预配和管理。 使用 **Visual Studio** 中的 Azure [开发工作负载，](https://visualstudio.microsoft.com/downloads)可以直接从 Visual Studio。
 ::: moniker-end
 
 ![Azure 开发工作负载](media/azure-development-workload.png)
