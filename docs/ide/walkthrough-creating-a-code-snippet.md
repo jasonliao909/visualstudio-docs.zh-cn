@@ -2,7 +2,7 @@
 title: 演练：创建代码片段
 description: 了解如何通过三个步骤创建代码片段：创建 XML 文件，填写适当的元素，然后向其添加代码。
 ms.custom: SEO-VS-2020
-ms.date: 03/31/2020
+ms.date: 03/24/2022
 ms.topic: how-to
 helpviewer_keywords:
 - code snippets, creating
@@ -20,12 +20,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 866f4880caf90977e3da809e63def40932c8f024
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: b028c0f9b9fd6cca10c161944abd1845079b0047
+ms.sourcegitcommit: c0e2425e846bda55fcdb76447265177ba62c3a6e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641572"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "141141154"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>演练：创建代码片段
 
@@ -99,15 +99,15 @@ ms.locfileid: "126641572"
 
    ::: moniker range="vs-2017"
 
-   %USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual C#\My Code Snippets  
-   %USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippets
+   *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual C#\My Code Snippets*
+    *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippets*
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   %USERPROFILE%\Documents\Visual Studio 2019\Code Snippets\Visual C#\My Code Snippets  
-   *%USERPROFILE%\Documents\Visual Studio 2019\Code Snippets\Visual Basic\My Code Snippets*
+   *%USERPROFILE%\Documents\Visual Studio 2019\Code Snippets\Visual C#\My Code Snippets*
+    *%USERPROFILE%\Documents\Visual Studio 2019\Code Snippets\Visual Basic\My Code Snippets*
 
    ::: moniker-end
 
@@ -201,7 +201,7 @@ ms.locfileid: "126641572"
    ![Visual Studio 中的代码片段替换参数工具提示](media/snippet-replacement-parameter-tooltip.png)
 
    > [!TIP]
-   > 如果片段中有多个可替换的参数，可按 Tab，从一个参数导航到另一个参数，以更改值  。
+   > 如果代码段中有多个可替换参数，可以按 **tab** 键导航，以更改这些值。
 
 ## <a name="import-a-namespace"></a>导入命名空间
 
