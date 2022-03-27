@@ -10,12 +10,12 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 4d1c16abbb7db57ea74b6033797a32c132c02181
-ms.sourcegitcommit: 169b7b66d13b7e3c86097b42206dd33389cd9166
+ms.openlocfilehash: d386bb4826f284645ec2221c7e0488d5ad1cc1af
+ms.sourcegitcommit: 49ec137372d875dfcb37c1ad1a5e773ad9d0a9c7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138149016"
+ms.lasthandoff: 03/26/2022
+ms.locfileid: "141158051"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 .runsettings 文件配置单元测试
 
@@ -92,11 +92,11 @@ ms.locfileid: "138149016"
 
 - 选择“工具”>“选项”>“测试”>“自动检测 runsettings 文件”   
 
-   ![Visual Studio 中的自动检测 .runsettings 文件选项](media/auto-detect-runsettings-tools-window.png)
+   ![自动检测 Visual Studio 中的 runsettings 文件选项](media/auto-detect-runsettings-tools-window.png)
 
 - 选择“测试”>“配置运行设置”>“自动检测 runsettings 文件”  
 
-   ![Visual Studio 中的 "自动检测 .runsettings 文件" 菜单](media/auto-detect-runsettings-menu.png)
+   ![自动检测 Visual Studio 中的 runsettings 文件菜单](media/auto-detect-runsettings-menu.png)
 
 #### <a name="manually-select-the-run-settings-file"></a>手动选择运行设置文件
 
@@ -105,7 +105,7 @@ ms.locfileid: "138149016"
 - 此文件替代解决方案根目录下的 .runsettings 文件（如果存在），并应用于所有测试运行。
 - 此文件选择仅在本地保留。
 
-![在 Visual Studio 中选择 "测试解决方案范围内的 .runsettings 文件" 菜单](media/select-solution-settings-file.png)
+![选择"测试解决方案范围内的 runsettings 文件"菜单Visual Studio](media/select-solution-settings-file.png)
 
 #### <a name="set-a-build-property"></a>设置生成属性
 
@@ -175,7 +175,7 @@ ms.locfileid: "138149016"
     <MaxCpuCount>1</MaxCpuCount>
     <ResultsDirectory>.\TestResults</ResultsDirectory>
     <TargetPlatform>x86</TargetPlatform>
-    <TargetFrameworkVersion>Framework40</TargetFrameworkVersion>
+    <TargetFrameworkVersion>net6.0</TargetFrameworkVersion>
     <TestAdaptersPaths>%SystemDrive%\Temp\foo;%SystemDrive%\Temp\bar</TestAdaptersPaths>
     <TestSessionTimeout>10000</TestSessionTimeout>
     <TreatNoTestsAsError>true</TreatNoTestsAsError>
@@ -186,10 +186,10 @@ RunConfiguration 元素可以包含下列元素：
 
 |节点|默认|值|
 |-|-|-|
-|**MaxCpuCount**|1|此设置利用计算机上的可用内核，在运行单元测试时控制并行测试执行的程度。 测试执行引擎在每个可用内核上作为单独的进程启动，并为每个内核提供包含要运行的测试的容器。 容器可以是程序集、DLL 或相关项目。 测试容器即计划单位。 在每个容器中，测试将根据测试框架进行执行。 如果存在多个容器，进程在容器内完成测试执行时，系统会向它们提供下一个可用容器。<br /><br />MaxCpuCount 可以是：<br /><br />n，其中 1 <= n <= 内核数：最多启动 n 个进程<br /><br />n，其中 n = 任何其他值：启动的进程数最多可达可用内核数。 例如，设置 n = 0 可使平台根据环境自动决定要启动的最佳进程数。|
+|**MaxCpuCount**|1|**选项名称区分大小写，很容易误选为 MaxCPUCount**。<br /><br />此设置控制进程级别的并行级别。 使用 0 启用最大进程级并行。<br /><br />此设置确定可以并行运行的测试 DLL 或其他测试容器的最大数目。 每个 DLL 都将在其自己的 testhost 进程中运行，并且将在进程级别与其他测试 DLL 中的测试隔离。 此设置不会强制每个测试 DLL 中的测试并行运行。 在线程级别控制 DLL (并行执行) 由测试框架（如 MSTest、XUnit 或 NUnit）控制。<br /><br />默认值为 `1`，这意味着只有一个 testhost 同时运行。 `0`对于具有 6 个物理内核（没有多线程）的计算机，特殊值允许与逻辑处理器数一样多的 testho (st（例如 6）（例如 6）（对于具有 6 个物理内核且具有多线程) 的计算机）。<br /><br />要启动的实际 testhost 数取决于运行中不同 DLL 的数量。|
 |**ResultsDirectory**||在其中放置测试结果的目录。 该路径相对于包含 .runsettings 文件的目录。|
-|**TargetFrameworkVersion**|Framework40|适用于 .NET Core 源的 `FrameworkCore10`、适用于基于 UWP 源的 `FrameworkUap10`、适用于 .NET Framework 4.5 及更高版本的 `Framework45`、适用于 .NET Framework 4.0 的 `Framework40` 以及适用于 .NET Framework 3.5 的 `Framework35`。<br /><br />此设置指定使用哪一版本的单元测试框架来查找并执行测试。 它可能与你在单元测试项目的生成属性中指定的 .NET 平台的版本不同。<br /><br />如果省略 .runsettings 文件中的 `TargetFrameworkVersion` 元素，平台会基于生成的二进制文件自动确定框架版本。|
-|**TargetPlatform**|x86|x86、x64|
+|**TargetFrameworkVersion**| net40 或 netcoreapp1.0 |**省略此整个标记以自动检测。**<br /><br />此设置定义用于运行测试的框架版本或框架系列。<br /><br />接受的值是任何框架名字对象，例如 `net48`、 `netcoreapp3.1``net6.0``net472``net5.0`或任何`uap10.0`有效的完整框架名称，例如`.NETFramework,Version=v4.7.2` 或 。`.NETCoreApp,Version=v6.0.0` 为了向后兼容`Framework35`，接受 、`Framework40`、`Framework45`、 `FrameworkCore10`和 `FrameworkUap10` `net35`， (、`net40`、 `net45``netcoreapp1.0` `uap10.0` 和 分别) 。 所有值均不区分大小写。<br /><br />提供的值用于确定要使用的测试运行时提供程序。 每个测试运行时提供程序都必须遵守要使用的框架系列，但可能不遵守确切的框架版本：<br /><br />对于 .NET Framework 4.5.1-4.8，使用指定的准确版本生成的 testhost。 对于超出该范围的值，将使用 .NET Framework 4.5.1 testhost。<br /><br />对于 .NET，实际版本由测试项目的 `<TargetFramework>` (或更精确 `runtimeconfig.json`) 确定。<br /><br />对于 UWP，测试项目应用程序是 testhost 的，并确定所使用的 UWP 的实际版本。<br /><br />省略 *.runsettings* 文件中的 `TargetFrameworkVersion` 元素，以自动从生成的二进制文件中确定 framework 版本。<br /><br />自动检测时，所有目标框架都将统一为一个通用框架。 找到同一目标 framework 系列中的不同版本时，将 (中选择较新的版本，例如 net452、net472、net48 = net48) 。<br /><br />对于 Visual Studio 中的 .NET Framework 运行程序 (或开发人员命令行中的 vstest.console.exe) 常见的目标框架是 net40。 对于 .NET 运行程序 (dotnet test + Dll) ，common target framework 设置为 netcoreapp 1.0。|
+|**TargetPlatform**|x86|**省略此整个标记以自动检测。**<br /><br />此设置定义用于运行测试的体系结构。 可能的值为 `x86` 、 `ARM` `x64` `ARM64` 、、和。 `S390x`<br /><br />自动检测时，AnyCPU Dll 的体系结构可能因运行程序而异。 对于 Visual Studio 中的 .NET Framework 运行程序 (或开发人员命令行) 中的 vstest.console.exe，默认值为 "x86"。 对于 .NET 运行程序 (dotnet 测试) ，默认值是当前进程的体系结构。<br /><br />|
 |**TreatTestAdapterErrorsAsWarnings**|false|false、true|
 |**TestAdaptersPaths**||TestAdapters 所在目录的一个或多个路径|
 |**TestSessionTimeout**||当测试会话超过给定时间，允许用户终止测试会话。 设置超时可确保资源被充分利用，并且测试会话被限制在一个设定时间内。 Visual Studio 2017 版本 15.5 及更高版本中提供了此设置。|
@@ -316,7 +316,7 @@ public void HomePageTest()
 |-|-|-|
 |**ForcedLegacyMode**|false|在 Visual Studio 2012 中，对 MSTest 适配器进行了优化，使其变得更快且更具可伸缩性。 某些行为（如测试的运行顺序）可能不与 Visual Studio 早期版本中的完全一致。 将此值设置为 true 可使用旧测试适配器。<br /><br />例如，如果为单元测试指定 app.config 文件，可能会用到此设置。<br /><br />我们建议你考虑重构测试以便可以使用较新的适配器。|
 |**IgnoreTestImpact**|false|当在 MSTest 中或从 Microsoft 测试管理器（在 Visual Studio 2017 中已弃用）运行时，测试影响功能会按这些测试受最新更改影响的程度对它们进行优先级排序。 此设置会停用该功能。 有关详细信息，请参阅[自上一个生成后应运行哪些测试？](/previous-versions/dd286589(v=vs.140))。|
-|**SettingsFile**||你可以指定测试设置文件以便与此处的 MSTest 适配器配合使用。 还可以[从设置菜单](#specify-a-run-settings-file-in-the-ide)指定测试设置文件。<br /><br />如果指定此值，还必须将 **ForcedLegacyMode 设置为** **true**。<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
+|**SettingsFile**||你可以指定测试设置文件以便与此处的 MSTest 适配器配合使用。 还可以[从设置菜单](#specify-a-run-settings-file-in-the-ide)指定测试设置文件。<br /><br />如果指定此值，则还必须将 **ForcedLegacyMode** 设置为 **true**。<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**KeepExecutorAliveAfterLegacyRun**|false|测试运行完成后，MSTest 将关闭。 测试中启动的任何进程也将终止。 如果希望测试执行程序保持活动状态，请将此值设为 true。 例如，可使用此设置让浏览器保持在编码的 UI 测试之间运行。|
 |**DeploymentEnabled**|true|如果将此值设置为 false，则不会将已在测试方法中指定的部署项目复制到部署目录中。|
 |**CaptureTraceOutput**|true|你可以使用 <xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=nameWithType> 从测试方法写入调试跟踪。|
@@ -336,16 +336,19 @@ public void HomePageTest()
 <RunSettings>
   <!-- Configurations that affect the Test Framework -->
   <RunConfiguration>
+    <!-- Use 0 for maximum process-level parallelization. This does not force parallelization within the test DLL (on the thread-level). You can also change it from the Test menu; choose "Run tests in parallel". Unchecked = 1 (only 1), checked = 0 (max). -->
     <MaxCpuCount>1</MaxCpuCount>
     <!-- Path relative to directory that contains .runsettings file-->
     <ResultsDirectory>.\TestResults</ResultsDirectory>
 
-    <!-- x86 or x64 -->
+    <!-- Omit the whole tag for auto-detection. -->
+    <!-- [x86] or x64, ARM, ARM64, s390x  -->
     <!-- You can also change it from the Test menu; choose "Processor Architecture for AnyCPU Projects" -->
     <TargetPlatform>x86</TargetPlatform>
 
-    <!-- Framework35 | [Framework40] | Framework45 -->
-    <TargetFrameworkVersion>Framework40</TargetFrameworkVersion>
+    <!-- Any TargetFramework moniker or omit the whole tag for auto-detection. -->
+    <!-- net48, [net40], net6.0, net5.0, netcoreapp3.1, uap10.0 etc. -->
+    <TargetFrameworkVersion>net40</TargetFrameworkVersion>
 
     <!-- Path to Test Adapters -->
     <TestAdaptersPaths>%SystemDrive%\Temp\foo;%SystemDrive%\Temp\bar</TestAdaptersPaths>
