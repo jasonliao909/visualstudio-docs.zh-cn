@@ -6,14 +6,6 @@
       href: profiling-feature-tour.md
     - name: 运行带/不带调试器的分析工具
       href: running-profiling-tools-with-or-without-the-debugger.md
-- name: 快速入门
-  items:
-    - name: 分析 CPU 使用情况（托管）
-      href: quickstart-cpu-usage-managed.md
-    - name: 分析 CPU 使用情况（本机）
-      href: quickstart-cpu-usage-native.md
-    - name: 分析 CPU 使用情况 (ASP.NET Core)
-      href: quickstart-cpu-usage-aspnet.md
 - name: 教程
   items:
     - name: 在 Visual Studio 中衡量应用程序性能

@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 92fc0cc683c770198741071f19fe2154f9d1c043
-ms.sourcegitcommit: 52a425b5a541034cda26db8df9cd43281c007e80
+ms.openlocfilehash: 8a94e57bc7a807cb947c63600a33d1dad86459d2
+ms.sourcegitcommit: ef734f0bf02732a6d37b41640ba64d8075e1dd29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/23/2021
-ms.locfileid: "135540700"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "141185155"
 ---
 # <a name="navigate-through-code-by-using-the-visual-studio-debugger"></a>使用 Visual Studio 调试程序在代码中导航
 
@@ -153,6 +153,7 @@ Visual Studio 中的断点提供了一组丰富的功能，例如条件断点和
 > [!NOTE]
 > 从 [!include[vs_dev17](../misc/includes/vs_dev17_md.md)] 开始，“强制运行到单击处”可用。
 ::: moniker-end
+
 ### <a name="manually-break-into-code"></a>手动中断代码
 
 若要在正在运行的应用中的下一可用代码行处中断，请选择“调试” > “全部中断”，或选择 Ctrl+Alt+Break    。

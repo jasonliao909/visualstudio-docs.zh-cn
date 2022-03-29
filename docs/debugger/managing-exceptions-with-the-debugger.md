@@ -1,7 +1,7 @@
 ---
 title: 使用调试器管理异常 | Microsoft Docs
 description: 了解如何指定调试器中断的异常、希望调试器在何时中断以及如何处理中断。
-ms.date: 10/09/2018
+ms.date: 03/25/2022
 ms.topic: how-to
 f1_keywords:
 - vs.debug.exceptions
@@ -34,12 +34,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 806c597a3112352d89ef2abd22de34414bb91a04
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 06f11ec14242c58d1d8c5e79360e4e401be3eb7b
+ms.sourcegitcommit: 4e0efca10b152418a4c924dbf2462e3da6094597
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129970225"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "141252518"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>在 Visual Studio 中使用调试器管理异常
 
@@ -67,7 +67,17 @@ ms.locfileid: "129970225"
 
 在“异常设置”窗口中（“调试”>“Windows”>“异常设置”），展开一个异常类别的节点，例如“公共语言运行时异常”    。 然后选中该类别中特定异常的复选框，如 System.AccessViolationException  。 还可以选择整个类别的异常。
 
-![已选中 AccessViolationException](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")
+::: moniker range="<=vs-2019"
+
+![异常设置复选框的屏幕截图。](../debugger/media/vs-2019/exception-settings-check-access.png "Exception-设置-Check-Access")
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+![异常设置复选框的屏幕截图。](../debugger/media/vs-2022/exception-settings-check-access.png "Exception-设置-Check-Access")
+
+::: moniker-end
 
 > [!TIP]
 > 可以使用“异常设置”工具栏中的“搜索”窗口查找特定异常，也可以使用搜索筛选特定命名空间（例如 System.IO）    。
@@ -140,7 +150,17 @@ ms.locfileid: "129970225"
 
 要将异常设置还原为默认值，请选择“将列表还原为默认设置”按钮  ：
 
-![还原“异常设置”中的默认值](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")
+::: moniker range="<=vs-2019"
+
+![异常设置中的还原默认值的屏幕截图。](../debugger/media/vs-2019/restore-default-exceptions.png "Restore-Default-Exceptions")
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+![异常设置中的还原默认值的屏幕截图。](../debugger/media/vs-2022/restore-default-exceptions.png "Restore-Default-Exceptions")
+
+::: moniker-end
 
 ## <a name="tell-the-debugger-to-continue-on-user-unhandled-exceptions"></a><a name="BKMK_UserUnhandled"></a>告知调试器在遇到用户未处理的异常时继续执行
 
@@ -148,13 +168,33 @@ ms.locfileid: "129970225"
 
 1. 在“异常设置”窗口中，右键单击列标签打开快捷菜单，然后选择“显示列”>“其他操作”   。 （如果已禁用“仅我的代码”，将看不到此命令。  ）将显示名为“其他操作”的第三列  。
 
-   ![“其他操作”列](../debugger/media/additionalactionscolumn.png "AdditionalActionsColumn")
+   ::: moniker range="<=vs-2019"
+   
+   ![其他操作列的屏幕截图。](../debugger/media/vs-2019/additional-actions-column.png "Additional-Actions-Column")
+
+   ::: moniker-end
+   
+   ::: moniker range=">=vs-2022"
+   
+   ![其他操作列的屏幕截图。](../debugger/media/vs-2022/additional-actions-column.png "Additional-Actions-Column")
+
+   ::: moniker-end
 
    对于在此列中显示“在遇到未在用户代码中进行处理的异常时继续执行”的异常，如果调试器遇到未在用户代码中进行处理但在其他地方进行了处理的异常，则将继续执行  。
 
 2. 要更改特定异常的此设置，请选择异常，右键单击以显示快捷菜单，然后选择“在遇到未在用户代码中进行处理的异常时继续执行”  。 你还可以更改整个异常类别的设置，如整个“公共语言运行时”异常。
 
-   ![“在遇到未在用户代码中进行处理的异常时继续执行”设置](../debugger/media/continuewhenunhandledinusercodesetting.png "ContinueWhenUnhandledInUserCodeSetting")
+   ::: moniker range="<=vs-2019"
+
+   ![在用户代码中未经处理时继续 * * 设置的屏幕截图。](../debugger/media/vs-2019/continue-when-unhandled-in-user-code-setting.png "Continue-when-unhandled-in-User-Code-setting")
+
+   ::: moniker-end
+   
+   ::: moniker range=">=vs-2022"
+
+   ![在用户代码中未经处理时继续 * * 设置的屏幕截图。](../debugger/media/vs-2022/continue-when-unhandled-in-user-code-setting.png "Continue-when-unhandled-in-User-Code-setting")
+
+   ::: moniker-end
 
 例如，ASP.NET Web 应用程序通过将异常转换为 HTTP 500 状态代码来处理异常（[ASP.NET Web API 中的异常处理](/aspnet/web-api/overview/error-handling/exception-handling)），该方法可能无法帮助你确定异常的来源。 在下面的示例中，用户代码对引发 `String.Format()` 的 <xref:System.FormatException>进行调用。 异常中断如下所示：
 
@@ -170,11 +210,31 @@ ms.locfileid: "129970225"
 
 2. 选择“向所选类别添加异常”按钮（加号）  。
 
-   ![“向所选类别添加异常”按钮](../debugger/media/addanexceptiontotheselectedcategorybutton.png "AddAnExceptionToTheSelectedCategoryButton")
+   ::: moniker range="<=vs-2019"
+
+   ![* * 的屏幕截图：向所选类别添加例外 * * 按钮。](../debugger/media/vs-2019/add-exception-to-selected-category-button.png "Add-Exception-to-Selected-Category-Button")
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2022"
+
+   ![* * 的屏幕截图：向所选类别添加例外 * * 按钮。](../debugger/media/vs-2022/add-exception-to-selected-category-button.png "Add-Exception-to-Selected-Category-Button")
+
+   ::: moniker-end
 
 3. 键入异常的名称（例如 System.UriTemplateMatchException  ）。
 
-   ![键入异常名称](../debugger/media/typetheexceptionname.png "TypeTheExceptionName")
+   ::: moniker range="<=vs-2019"
+
+   ![* * 类型异常名称 * * 的屏幕截图。](../debugger/media/vs-2019/type-the-exception-name.png "Type-the-Exception-Name")
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2022"
+
+   ![* * 类型异常名称 * * 的屏幕截图。](../debugger/media/vs-2022/type-the-exception-name.png "Type-the-Exception-Name")
+
+   ::: moniker-end
 
    异常随即添加到列表（按字母顺序），并自动选中。
 
@@ -198,7 +258,17 @@ public class GenericException<T> : Exception
 
 则可以按照上一个过程将异常添加到“异常设置”窗口  ：
 
-![添加常见异常](../debugger/media/addgenericexception.png "AddGenericException")
+::: moniker range="<=vs-2019"
+
+![* * 添加一般异常的屏幕截图 * *。](../debugger/media/vs-2019/add-generic-exception.png "Add-Generic-Exception")
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+![* * 添加一般异常的屏幕截图 * *。](../debugger/media/vs-2022/add-generic-exception.png "Add-Generic-Exception")
+
+::: moniker-end
 
 ## <a name="add-conditions-to-an-exception"></a>向异常添加条件
 
@@ -211,11 +281,11 @@ public class GenericException<T> : Exception
 
 1. 在“异常设置”窗口中选择“编辑条件”按钮，或右键单击异常并选择“编辑条件”   。
 
-   ![异常的条件](../debugger/media/dbg-conditional-exception.png "DbgConditionalException")
+   ![异常情况的屏幕截图。](../debugger/media/dbg-conditional-exception.png "Dbg-Conditional-Exception")
 
 2. 要向异常添加额外的所需条件，请为每个新条件选择“添加条件”  。 将显示其他条件行。
 
-   ![异常的额外条件](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
+   ![异常的额外条件的屏幕截图。](../debugger/media/extraconditionsforanexception.png "Extra-Conditions-for-an-exception")
 
 3. 对于每个条件行，键入模块的名称，然后将比较运算符列表更改为“等于”或“不等于”   。 你可以在名称中指定通配符 (\\\*)，以指定多个模块  。
 
