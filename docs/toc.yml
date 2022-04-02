@@ -1051,6 +1051,8 @@
               items:
                 - name: 常规
                   href: ide/reference/options-text-editor-general.md
+                - name: 高级
+                  href: ide/reference/options-text-editor-advanced.md
                 - name: 文件扩展名
                   href: ide/reference/options-text-editor-file-extension.md
                 - name: 所有语言

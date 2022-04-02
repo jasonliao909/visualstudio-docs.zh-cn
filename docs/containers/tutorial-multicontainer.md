@@ -7,12 +7,12 @@ ms.author: ghogen
 ms.date: 10/08/2021
 ms.technology: vs-container-tools
 ms.topic: tutorial
-ms.openlocfilehash: 1e12e07d4dfa021c81f52adc9ac23994f54ab76a
-ms.sourcegitcommit: 0bb6b0f1023cf20c39f7d0f9888ec71b82b80448
+ms.openlocfilehash: 4727d17e3e056c6e0d8b308e3c3e596a6460128f
+ms.sourcegitcommit: 515498e5cb4a732caf85ba441b479440a1fc88c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "140652785"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "141333177"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>教程：使用 Docker Compose 创建多容器应用
 
@@ -64,7 +64,7 @@ ms.locfileid: "140652785"
 ::: moniker range=">=vs-2022"
 
 > [!NOTE]
-> 在 Visual Studio 2022 17.2 预览版2及更高版本中，可以改为对此项目使用 Azure Functions。
+> 在 Visual Studio 2022 17.2 预览版 2 及更高版本中，可以Azure Functions此项目。
 
 ![显示“创建 ASP.NET Core Web 项目”的屏幕截图。](./media/tutorial-multicontainer/vs-2022/create-web-project.png)
 
@@ -200,17 +200,17 @@ ms.locfileid: "140652785"
           dockerfile: MyWebAPI/Dockerfile
     ```
 
-1. 若要在本地运行站点，必须使用不同的 URL 来请求 Web API 服务，因为 docker compose 在其自己的网络中设置主机名，以便 `mywebapi` 作为主机名显示给其他服务。 若要在本地运行，请先将 Index.cshtml.cs 中 `OnGet` 方法中的 `mywebapi` 替换为 localhost 和端口语法。 你可以从启动 webapi 项目自行获得端口号，或者从“项目属性”的“调试”部分中的“应用 URL”设置中获取端口号 (Alt+Enter)。
+1. 若要正常运行站点 (而不是使用 Docker Compose) ，必须使用不同的 URL 来请求 Web API 服务，因为 Docker Compose `mywebapi` 在其自己的网络中设置了主机名，以便其他服务以主机名显示。 若要在 Docker Compose 之外运行，`mywebapi``OnGet`请首先将 *Index.cshtml.cs* 中的 方法中的 替换为 localhost 和 port 语法。 你可以从启动 webapi 项目自行获得端口号，或者从“项目属性”的“调试”部分中的“应用 URL”设置中获取端口号 (Alt+Enter)。
 
    ```csharp
    request.RequestUri = new Uri("http://localhost:{port}/WeatherForecast");
    ```
 
-1. 立即在本地运行站点，验证站点是否按预期方式工作。 右键单击 Web API 项目，选择“设为启动项目”，然后选择“调试” > “在不调试的情况下启动”。 然后，右键单击 WebFrontEnd 项目节点，选择“设为启动项目”，并按 F5 开始调试。
+1. 通常运行站点 (不Docker Compose) ，以验证其是否正常工作。 右键单击 Web API 项目，选择“设为启动项目”，然后选择“调试” > “在不调试的情况下启动”。 然后，右键单击 WebFrontEnd 项目节点，选择“设为启动项目”，并按 F5 开始调试。
 
    如果 .NET Core 2.x 版本中的所有内容配置正确，你将看到消息“来自 webfrontend 和 webapi 的问候(值为 1)。”  通过 .NET Core 3，可以看到天气预测数据。
 
-   验证其在本地运行后，请在 Index.cshtml.cs 中将 `OnGet` 中的 URL 更改回引用 mywebapi，以准备在 Docker Compose 中运行。 如果要对 Docker 和非容器运行和调试配置使用相同代码，可能需要使用配置文件来获取 URL。
+   验证其在 Docker Compose 之外正常工作后，将 *Index.cshtml.cs* 中的 URL `OnGet` 更改回引用 mywebapi，以准备在 Docker Compose。 如果要对 Docker 和非容器运行和调试配置使用相同代码，可能需要使用配置文件来获取 URL。
 
 1. 添加容器业务流程时使用的第一个项目设置为在运行或调试时启动。 可以在 docker-compose 项目的“项目属性”中配置启动操作。  在 docker-compose 项目节点上，右键单击以打开上下文菜单，然后选择“属性”，或使用 Alt+Enter。  以下屏幕截图显示需要解决方案在此使用的属性。  例如，可以通过自定义“服务 URL”属性来更改已加载的页面。
 
@@ -334,17 +334,17 @@ ms.locfileid: "140652785"
           dockerfile: MyWebAPI/Dockerfile
     ```
 
-1. 若要在本地运行站点，必须使用不同的 URL 来请求 Web API 服务，因为 docker compose 在其自己的网络中设置主机名，以便 `mywebapi` 作为主机名显示给其他服务。 若要在本地运行，请先将 Index.cshtml.cs 中 `OnGet` 方法中的 `mywebapi` 替换为 localhost 和端口语法。 你可以从启动 webapi 项目自行获得端口号，或者从“项目属性”的“调试”部分中的“应用 URL”设置中获取端口号 (Alt+Enter)。
+1. 若要 (Docker Compose) 的情况下正常运行该站点，必须对 Web API 服务使用不同的 URL，因为 Docker 撰写会在其自己的网络中设置主机名，以便 `mywebapi` 作为主机名对其他服务可见。 若要在没有 Docker Compose 的情况下运行，请先将 *方法中的* `OnGet` 方法替换 `mywebapi` 为 localhost 和端口语法。 你可以从启动 webapi 项目自行获得端口号，或者从“项目属性”的“调试”部分中的“应用 URL”设置中获取端口号 (Alt+Enter)。
 
    ```csharp
    request.RequestUri = new Uri("http://localhost:{port}/WeatherForecast");
    ```
 
-1. 立即在本地运行站点，验证站点是否按预期方式工作。 右键单击 Web API 项目，选择“设为启动项目”，然后选择“调试” > “在不调试的情况下启动”。 然后，右键单击 WebFrontEnd 项目节点，选择“设为启动项目”，并按 F5 开始调试。
+1. 立即在 Docker Compose 之外运行该站点，以验证它是否按预期方式工作。 右键单击 Web API 项目，选择“设为启动项目”，然后选择“调试” > “在不调试的情况下启动”。 然后，右键单击 WebFrontEnd 项目节点，选择“设为启动项目”，并按 F5 开始调试。
 
    如果 .NET Core 2.x 版本中的所有内容配置正确，你将看到消息“来自 webfrontend 和 webapi 的问候(值为 1)。”  通过 .NET Core 3，可以看到天气预测数据。
 
-   验证其在本地运行后，请在 Index.cshtml.cs 中将 `OnGet` 中的 URL 更改回引用 mywebapi，以准备在 Docker Compose 中运行。 如果要对 Docker 和非容器运行和调试配置使用相同代码，可能需要使用配置文件来获取 URL。
+   验证其在没有 Docker Compose 的情况下工作后，请将 mywebapi 中的 URL `OnGet` *更改回引用* ，以便准备在 Docker Compose 中运行。 如果要对 Docker 和非容器运行和调试配置使用相同代码，可能需要使用配置文件来获取 URL。
 
 1. 添加容器业务流程时使用的第一个项目设置为在运行或调试时启动。 可以在 docker-compose 项目的“项目属性”中配置启动操作。  在 docker-compose 项目节点上，右键单击以打开上下文菜单，然后选择“属性”，或使用 Alt+Enter。  以下屏幕截图显示需要解决方案在此使用的属性。  例如，可以通过自定义“服务 URL”属性来更改已加载的页面。
 
@@ -472,15 +472,15 @@ ms.locfileid: "140652785"
           dockerfile: MyWebAPI/Dockerfile
     ```
 
-1. 若要在本地运行站点，必须使用不同的 URL 来请求 Web API 服务，因为 docker compose 在其自己的网络中设置主机名，以便 `mywebapi` 作为主机名显示给其他服务。 若要在本地运行，请先将 Index.cshtml.cs 中 `OnGet` 方法中的 `mywebapi` 替换为 localhost 和端口语法。 可以获取端口号，只需自行启动 webapi 项目，也可以在“调试”部分的“项目属性”中找到它，选择“打开调试启动配置文件 UI”，然后选择“IIS Express”，并查找“应用 URL”设置。
+1. 若要 (Docker Compose) 的情况下正常运行该站点，必须对 Web API 服务使用不同的 URL，因为 Docker 撰写会在其自己的网络中设置主机名，以便 `mywebapi` 作为主机名对其他服务可见。 若要在 Docker Compose 之外运行，请先将 *方法中的* `OnGet` 方法替换 `mywebapi` 为 localhost 和端口语法。 可以获取端口号，只需自行启动 webapi 项目，也可以在“调试”部分的“项目属性”中找到它，选择“打开调试启动配置文件 UI”，然后选择“IIS Express”，并查找“应用 URL”设置。
 
    ```csharp
    request.RequestUri = new Uri("http://localhost:{port}/WeatherForecast");
    ```
 
-   立即在 IIS Express 中本地运行该站点，验证它是否按预期方式工作：右键单击 Web API 项目，然后选择“调试” > “在不调试的情况下启动”。 然后，右键单击 WebFrontEnd 项目节点，选择“设为启动项目”，并按 F5 开始调试。 如果一切配置正确，则会看到天气预报数据。
+   立即在 IIS Express 中的 Docker Compose 运行该网站，以验证它是否按预期方式工作：右键单击 Web API 项目，然后选择 "**调试**  >  " "**启动（不调试**）"。 然后，右键单击 WebFrontEnd 项目节点，选择“设为启动项目”，并按 F5 开始调试。 如果一切配置正确，则会看到天气预报数据。
 
-   验证其在本地运行后，请在 Index.cshtml.cs 中将 `OnGet` 中的 URL 更改回引用 mywebapi，以准备在 Docker Compose 中运行。 如果要对 Docker 和非容器运行和调试配置使用相同代码，可能需要使用配置文件来获取 URL。
+   验证其在 Docker Compose 之外工作后，请将 mywebapi 中的 URL `OnGet` *更改回 reference* ，以准备在 Docker Compose 中运行。 如果要对 Docker 和非容器运行和调试配置使用相同代码，可能需要使用配置文件来获取 URL。
 
 1. 添加容器业务流程时使用的第一个项目设置为在运行或调试时启动。 可以在 docker-compose 项目的“项目属性”中配置启动操作。  在 docker-compose 项目节点上，右键单击以打开上下文菜单，然后选择“属性”，或使用 Alt+Enter。  以下屏幕截图显示需要解决方案在此使用的属性。  例如，可以通过自定义“服务 URL”属性来更改已加载的页面。
 

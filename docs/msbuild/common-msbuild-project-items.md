@@ -5,19 +5,25 @@ ms.custom: SEO-VS-2020
 ms.date: 10/29/2020
 ms.topic: reference
 dev_langs:
-  - VB
-  - CSharp
-  - C++
-  - jsharp
+- VB
+- CSharp
+- C++
+- jsharp
 helpviewer_keywords:
-  - 'MSBuild, common project items'
+- MSBuild, common project items
 ms.assetid: 1eba3721-cc12-4b80-9987-84923ede5e2e
 author: ghogen
 ms.author: ghogen
 manager: jmartens
 ms.technology: msbuild
 ms.workload:
-  - multiple
+- multiple
+ms.openlocfilehash: 6a07b5402825696e32d2cd2d3486a97112857351
+ms.sourcegitcommit: 1ed233bb3afc5ae1f52aff8e41f7e650342033ad
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "141274162"
 ---
 # <a name="common-msbuild-project-items"></a>常用的 MSBuild 项目项
 
@@ -49,7 +55,7 @@ ms.workload:
 |VersionMajor|必选字符串。 组件版本号的主要部分。 例如，如果完整版本号是“5.46”，则显示“5”。|
 |VersionMinor|必选字符串。 组件版本号的次要部分。 例如，如果完整版本号是“5.46”，则显示“46”。|
 |EmbedInteropTypes|可选的布尔值。 如果为 true，则将此引用中的互操作类型直接嵌入到程序集中，而不是生成互操作 DLL。|
-|LCID|可选的字符串。 组件的 LocaleID。|
+|Lcid|可选的字符串。 组件的 LocaleID。|
 |WrapperTool|可选的字符串。 对组件使用的包装器的名称。 值为：<br /><br />1.  primary<br />2.  tlbimp<br />3.  primaryortlbimp<br />4.  aximp|
 |Isolated|可选的布尔值。 指定组件是否为免注册组件。|
 

@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: 3440e7e2f8f6b164a9383d61868b4bcdd3afebb8
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 7a7a1953cd79c03fdcb78b14c0b403a7bd56453a
+ms.sourcegitcommit: 1ed233bb3afc5ae1f52aff8e41f7e650342033ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129968104"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "141274288"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>分析资源消耗情况和 UI 线程活动 (XAML)
 
@@ -27,9 +27,9 @@ ms.locfileid: "129968104"
 
 可在以下平台上使用此工具：
 
-- 通用 Windows 应用（在 Windows 10 上）
+- 通用Windows应用 (Windows 10及更高版本) 
 - Windows 8.1
-- Windows Presentation Foundation（.Net 4.0 及以上版本）
+- Windows Presentation Foundation (.NET 4.0 及) 
 - Windows 7
 
 > [!NOTE]

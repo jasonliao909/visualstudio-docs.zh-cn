@@ -1,7 +1,7 @@
 ---
 title: 创建数据库并添加表
 description: 本教程介绍如何使用 Visual Studio 中的表设计器将表和外键添加到数据库。 还介绍了如何通过图形界面添加数据。
-ms.date: 10/15/2021
+ms.date: 03/30/2022
 ms.topic: conceptual
 helpviewer_keywords:
 - database tables, creating
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: fc0557ae483456d1df4252e57558561b6583bb94
-ms.sourcegitcommit: 7a300823cf1bd3355be03bde561cf2777bc09eae
+ms.openlocfilehash: 40de1804c9086a201456dd2a38f0b83cc00ee006
+ms.sourcegitcommit: 1ed233bb3afc5ae1f52aff8e41f7e650342033ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "133978336"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "141274745"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>在 Visual Studio 中创建一个数据库并添加表
 
@@ -118,7 +118,7 @@ ms.locfileid: "133978336"
    CREATE TABLE [dbo].[Customers]
    ```
 
-7. 将索引约束添加到 Customers 表。 在行的末尾添加一个逗号 `Phone` ，然后在右括号前面添加以下示例：
+7. 将索引约束添加到 Customers 表。 在行的末尾 `Phone` 添加一个逗号，然后在右括号前面添加以下示例：
 
    ```sql
    CONSTRAINT [PK_Customers] PRIMARY KEY ([CustomerID])
@@ -158,7 +158,7 @@ ms.locfileid: "133978336"
    CREATE TABLE [dbo].[Orders]
    ```
 
-4. 将索引约束添加到 Customers 表。 在行的末尾添加一个逗号 `OrderQuantity` ，然后在右括号前面添加以下示例：
+4. 将索引约束添加到 Customers 表。 在行的末尾 `OrderQuantity` 添加一个逗号，然后在右括号前面添加以下示例：
 
    ```sql
    CONSTRAINT [PK_Orders] PRIMARY KEY ([OrderId])
@@ -210,13 +210,13 @@ ms.locfileid: "133978336"
 
 2. 打开“表”节点的快捷菜单，选择“刷新”，然后展开“表”节点。  
 
-3. 打开 Customers 表的快捷菜单，然后选择“查看数据”。
+3. 打开 "Customers" 表的快捷菜单，然后选择 " **显示表数据** " 或 " **查看数据**"。
 
 4. 为一些客户添加任何所需数据。
 
     你可以指定任意五个字符作为客户 ID，但至少选择一个能记住的以便稍后在此过程中使用。
 
-5. 打开 Orders 表的快捷菜单，然后选择“显示表数据”。
+5. 打开 Orders 表的快捷菜单，然后选择 " **显示表数据** " 或 " **查看数据**"。
 
 6. 为一些订单添加数据。 输入每一行时，该行将保存在数据库中。
 

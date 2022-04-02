@@ -19,18 +19,22 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7ccb7f38e3d459a445b7bb7712e705d1af6f3ada
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 8cea3f2394fb50a0022860ae67cbd6612f19da99
+ms.sourcegitcommit: 1ed233bb3afc5ae1f52aff8e41f7e650342033ad
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126601058"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "141275296"
 ---
 # <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>演练：在 Windows 窗体中创建简单的 WCF 服务
 
-本演练演示如何创建一个简单的 Windows Communication Foundation (WCF) 服务，对其进行测试，然后从 Windows 窗体应用程序访问该服务。
+本演练演示如何创建简单的 Windows Communication Foundation (WCF) 服务，进行测试，然后从 .NET Framework Windows 窗体 应用程序访问它。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
+
+## <a name="prerequisites"></a>先决条件
+
+WCF 工具未随 .NET 工作负载一起安装;使用 Visual Studio 安装程序 修改安装。 在安装程序中，选择"**Windows组件"下的"Communication Foundation**"。 请参阅[修改 Visual Studio](../install/modify-visual-studio.md)。
 
 ## <a name="create-a-service"></a>创建服务
 
@@ -54,7 +58,7 @@ ms.locfileid: "126601058"
 
 3. 在“创建新项目”页面的搜索框中，键入“wcf 服务库” 。 为 WCF 服务库选择 C# 或 Visual Basic 模板，然后单击“下一步” 。
 
-   ![在 Visual Studio 2019 中创建新的 WCF 服务库项目](media/vs-2019/create-new-wcf-service-library.png)
+   ![在 Visual Studio 中创建新的 WCF 服务库项目](media/vs-2019/create-new-wcf-service-library.png)
 
    > [!TIP]
    > 如果看不到任何模板，可能需要安装 Visual Studio 的 Windows Communication Foundation 组件。 选择“安装更多工具和功能”以打开 Visual Studio 安装程序。 选择“单个组件”选项卡，向下滚动到“开发活动”，然后选择 Windows Communication Foundation  。 单击“修改”。
@@ -80,7 +84,7 @@ ms.locfileid: "126601058"
    :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/iservice1.cs" id="Snippet1":::
    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/iservice1.vb" id="Snippet1":::
 
-   在上面的代码中，请注意`<OperationContract()>`或`[OperationContract]`属性。 这些属性是由服务公开的任何方法所必需的。
+   在以上代码中，记下 属性 `OperationContract` 。 此服务公开的任何方法都需要此属性。
 
 6. 在解决方案资源管理器中，双击 Service1.vb 或 Service1.cs  。
 

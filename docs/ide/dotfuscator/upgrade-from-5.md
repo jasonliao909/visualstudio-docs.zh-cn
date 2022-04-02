@@ -23,12 +23,12 @@ description: 了解如何升级 Visual Studio 中包含的免费 Dotfuscator Com
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: c1a6375a26325ca6f297b78a3024117e6e39132f
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: defb9966cf3400f3100b664e9350ac15e7e9ffaa
+ms.sourcegitcommit: 515498e5cb4a732caf85ba441b479440a1fc88c1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126642192"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "141333112"
 ---
 # <a name="upgrade-from-dotfuscator-community-5"></a>从 Dotfuscator Community 5 进行升级
 
@@ -45,7 +45,7 @@ ms.locfileid: "126642192"
 * 通过转到 Visual Studio 的“工具”菜单并选择“PreEmptive Protection - Dotfuscator Community”启动 Dotfuscator Community [图形用户界面][gui] (GUI) 。
 
   从 Dotfuscator GUI，打开“帮助”菜单，并选择“关于...”以显示“关于”屏幕 。
-  
+
   此屏幕将列出 Dotfuscator 的版本。
 
 * 如果[命令行接口][cli]（如 [Xamarin][xamarin] 应用中的）的生成中集成了 Dotfuscator，则还可以查看行的生成日志，如下示例所示：
@@ -114,7 +114,7 @@ DotfuscatorXamarinCliPath ('[...]\DotfuscatorCE\dotfuscatorCLI.exe') must exist.
 若要更新生成以使用正确的 CLI 路径：
 
 1. 通过转到 Visual Studio 的“工具”菜单并选择“PreEmptive Protection - Dotfuscator Community”，启动 Dotfuscator Community [GUI][gui] 。
-   
+
 2. 在 Dotfuscator Community GUI，转到“工具”菜单，并选择“Dotfuscator 命令提示符” 。
 
 3. 在打开的命令提示符中键入 `where dotfuscator.exe`。
@@ -123,7 +123,7 @@ DotfuscatorXamarinCliPath ('[...]\DotfuscatorCE\dotfuscatorCLI.exe') must exist.
 4. 根据生成系统情况打开项目或生成配置。
 
     * 对于 Visual Studio 项目，将需要以纯文本形式打开项目文件（`.csproj`、`.vbproj` 或 `.fsproj`）。 在 Visual Studio 中[打开项目](../solutions-and-projects-in-visual-studio.md#project-file)。
-    
+
     * 如果之前使用 Dotfuscator Community 的 [Xamarin][xamarin] 集成保护 Xamarin 应用，请回想一下，Dotfuscator 分别集成到了每个应用项目（如 `MyProject.Android.csproj` 和 `MyProject.iOS.csproj`）中，而不是集成到共享库项目中。
       需要更新当前使用 Dotfuscator 的所有应用项目。
 
@@ -133,7 +133,7 @@ DotfuscatorXamarinCliPath ('[...]\DotfuscatorCE\dotfuscatorCLI.exe') must exist.
     * 使用 Dotfuscator Community 的 [Xamarin][xamarin] 集成更新项目时，旧路径将位于 `<DotfuscatorXamarinCliPath>` 和 `</DotfuscatorXamarinCliPath>` 标记之间。
 
 6. 将步骤 5 中的旧路径替换为在步骤 3 中记下的新路径。
-   
+
    如果其中一个旧路径不是绝对路径，则应根据上下文适当调整新路径。
    在下面的示例中，旧路径中使用了 `VSInstallDir` 环境变量，因此相应的新路径也应如此。
 

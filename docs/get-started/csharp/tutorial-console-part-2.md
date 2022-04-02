@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 2fe1d32542c10a324f3c258e0fb1a8070d15015d
-ms.sourcegitcommit: aa5e295b9e3fc8e287f3ae2b6224f41e7d4ee833
+ms.openlocfilehash: 15d75130603d8f96711e1ce8bde37546d45494e2
+ms.sourcegitcommit: 515498e5cb4a732caf85ba441b479440a1fc88c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "135437285"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "141333190"
 ---
 # <a name="tutorial-extend-c-console-app-and-debug-in-visual-studio-part-2-of-2"></a>教程：扩展 C# 控制台应用并在 Visual Studio 中调试（第 2 部分，共 2 部分）
 
@@ -249,7 +249,7 @@ ms.locfileid: "135437285"
 
 ## <a name="reference-net-libraries-write-to-a-log"></a>引用 .NET 库：写入日志
 
-你可以使用 .NET `Trace` 类添加所有操作日志，并将其写入文本文件。 `Trace` 类对于基本的打印调试技术也很有用。 `Trace` 类位于 `System.Diagnostics` 中，并使用 `System.IO` 类（如 `StreamWriter`）。
+可以使用 .NET [Trace](xref:System.Diagnostics.Trace) 类添加所有操作日志，并写入文本文件。 `Trace` 类对于基本的打印调试技术也很有用。 `Trace` 类位于 `System.Diagnostics` 中，并使用 `System.IO` 类（如 `StreamWriter`）。
 
 1. 首先，在 CalculatorLibrary.cs 的顶部添加 `using` 指令：
 
@@ -914,3 +914,4 @@ namespace CalculatorProgram
 - [运行 C# 程序](run-program.md)。
 - [了解 C# IntelliSense](../../ide/visual-csharp-intellisense.md)。
 - [继续学习 Visual Studio IDE 概述](visual-studio-ide.md)。
+- [日志记录和跟踪](/dotnet/core/diagnostics/logging-tracing)

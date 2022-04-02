@@ -13,16 +13,18 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: cd7b9ac5959cdd03b2e2bef576ddc10b402ae12b6dc8aad3ded9fe49ed3bd019
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e9de868029f2cea6444fa1aa6d36ea1441c303a6
+ms.sourcegitcommit: 1ed233bb3afc5ae1f52aff8e41f7e650342033ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "122058259"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "141332761"
 ---
 ### <a name="supported-operating-systems"></a>Supported Operating Systems  
 
-远程计算机运行的是下列操作系统之一：  
+远程计算机运行的是下列操作系统之一： 
+
+- Windows 11
   
 - Windows 10（非手机版）
   
@@ -53,4 +55,4 @@ ms.locfileid: "122058259"
   
 ### <a name="network-configuration"></a>网络配置  
 
-远程计算机与 Visual Studio 计算机必须通过网络、工作组、家庭组或其他通过以太网电缆直接连接的方式连接在一起。 不支持在通过代理连接的两台计算机之间进行调试。 不建议通过高延迟或低带宽连接（如拨号 Internet）或跨国家/地区的 Internet 进行调试，否则可能会导致调试失败或速度过慢。
+远程计算机与 Visual Studio 计算机必须通过网络、工作组、家庭组或其他通过以太网电缆直接连接的方式连接在一起。 不支持在通过代理连接的两台计算机之间进行调试。 不建议在高延迟或低带宽连接（如拨号 Internet）或跨国家/地区跨 Internet 进行调试。

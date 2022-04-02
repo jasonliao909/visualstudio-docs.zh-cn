@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c699b82de822a8498bc8267015a474ac548fe158
-ms.sourcegitcommit: 7a300823cf1bd3355be03bde561cf2777bc09eae
+ms.openlocfilehash: 64ec7297e55e390a5dc7aa62f52e69b1916c6b71
+ms.sourcegitcommit: 1ed233bb3afc5ae1f52aff8e41f7e650342033ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "133977648"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "141275080"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>演练：使用 WPF 和 Entity Framework 创建 WCF Data Service
 本演练演示如何创建一个承载于 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序中的简单 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]，然后从 Windows 窗体应用程序中访问它。
@@ -44,6 +44,9 @@ ms.locfileid: "133977648"
 - 可以选择向应用程序添加筛选功能。
 
 ## <a name="prerequisites"></a>先决条件
+
+WCF 工具不随 .NET 工作负荷一起安装;使用 Visual Studio 安装程序修改安装。 在安装程序中，选择 "单个组件" 下的 **Windows Communication Foundation** 。 请参阅[修改 Visual Studio](../install/modify-visual-studio.md)。
+
 本演练使用 SQL Server Express LocalDB 和 Northwind 示例数据库。
 
 1. 如果尚未安装 SQL Server Express LocalDB，可以从 [SQL Server Express 下载页](https://www.microsoft.com/sql-server/sql-server-editions-express)或通过 Visual Studio 安装程序安装。 在 Visual Studio 安装程序中，可以将 SQL Server Express LocalDB 作为数据存储和处理工作负载的一部分或作为单个组件进行安装 。

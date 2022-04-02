@@ -14,14 +14,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-debug
+monikerRange: <= vs-2019
 ms.workload:
 - uwp
-ms.openlocfilehash: 29de5f0ff7d0ae040923bd24f1db712f39e15cf6
-ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
+ms.openlocfilehash: bd9f889ef1b983c71706130acce37c1acf6870ed
+ms.sourcegitcommit: 1ed233bb3afc5ae1f52aff8e41f7e650342033ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "130010738"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "141274732"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>在模拟器中运行 UWP 应用
 

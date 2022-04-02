@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d14362f62a6ea8698054961043e8b3ccba1e8d4
-ms.sourcegitcommit: 215680b355cf613bfa125cf6b864c8bb5f2c71a5
-ms.translationtype: HT
+ms.openlocfilehash: 34848eb9101029a9fe1fc30f088535b7f54e5ce5
+ms.sourcegitcommit: 1ed233bb3afc5ae1f52aff8e41f7e650342033ad
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "132453992"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "141274619"
 ---
 # <a name="keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的键盘快捷方式
 

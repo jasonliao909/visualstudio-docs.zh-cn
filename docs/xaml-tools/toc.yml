@@ -60,6 +60,8 @@
           href: xaml-hot-reload.md
         - name: 疑难解答
           href: xaml-hot-reload-troubleshooting.md
+    - name: XAML 数据绑定诊断
+      href: xaml-data-binding-diagnostics.md
     - name: XAML 实时预览
       href: xaml-live-preview.md
     - name: 在 Blend 中调试 XAML

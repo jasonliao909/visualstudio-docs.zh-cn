@@ -1,7 +1,7 @@
 ---
 title: XAML 数据绑定诊断
 description: 使用 Visual Studio 中的新工具来检测和解决 XAML 项目中的数据绑定错误。
-ms.date: 03/24/2022
+ms.date: 03/28/2022
 ms.topic: conceptual
 helpviewer_keywords:
 - xaml data binding
@@ -13,12 +13,12 @@ ms.technology: vs-xaml-tools
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 5558f8e5938248f6849367edf7b1a785d342e731
-ms.sourcegitcommit: 4e0efca10b152418a4c924dbf2462e3da6094597
+ms.openlocfilehash: 615e3d64625c3a67cb0e5ed1ab785688ee9ca5ff
+ms.sourcegitcommit: 1ed233bb3afc5ae1f52aff8e41f7e650342033ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "141255772"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "141274188"
 ---
 # <a name="xaml-data-binding-diagnostics"></a>XAML 数据绑定诊断
 
@@ -112,20 +112,20 @@ ms.locfileid: "141255772"
 |**WinUI3 桌面**|是|否|
 |**MAUI (多平台应用 UI)**|是|否|
 |**Xamarin 4.5.0.266-pre3 +**|是|是|
-|**4.5.0.266 之前的 Xamarin-pre3**|否|否|
+|**Xamarin 4.5.0.266-pre3 之前**|否|否|
 
-必须在 Visual Studio 中启用 XAML 热重载选项，以便导航到源以进行工作。 此选项位于 "**工具**  >  **选项**  >  " "**调试" 对话框** 中：
+必须在 热重载 中启用 XAML Visual Studio选项，以导航到源以正常工作。 此选项位于"工具 > **""选项** > **""删除"对话框中**：
 
-:::image type="content" source="media/xaml-binding-failures-hot-reload-option.png" alt-text="XAML 热重载选项 &quot;对话框的屏幕截图。":::
+:::image type="content" source="media/xaml-binding-failures-hot-reload-option.png" alt-text="XAML 选项对话框热重载屏幕截图。":::
 
-导航到源仅适用于 XAML 源文件中定义的绑定，而不是通过代码创建的。 您可以清楚地看到哪些行支持导航到源。 如果第二列中没有尖括号图标，则不支持导航到源，如以下屏幕截图中突出显示的行所示：
+导航到源仅适用于 XAML 源文件中定义的绑定，而不是通过代码创建的绑定。 可以清楚地了解哪些行支持导航到源。 如果第二列中没有尖括号图标，则不支持导航到源，如以下屏幕截图中突出显示的行：
 
-:::image type="content" source="media/xaml-binding-failures-no-go-to-code.png" alt-text="显示 XAML 绑定失败且没有源位置的屏幕截图。":::
+:::image type="content" source="media/xaml-binding-failures-no-go-to-code.png" alt-text="显示没有源位置的 XAML 绑定失败的屏幕截图。":::
 
-在 .NET Framework 中，WPF 的调试输出中必须显示数据绑定失败，才能检测并显示它们。 此选项的选项位于 "**工具**  >  " "**选项**  >  " "**调试**  >  **输出窗口**  >  "**WPF 跟踪设置**"对话框中。 如果设置为 " **关** " 或 " **严重**"，则不会将数据绑定错误写入调试输出，也无法检测到。 在 .NET 5、.NET 6 和更高版本中，WPF 的数据绑定输出设置不会影响故障列表。
+对于 .NET Framework 中的 WPF，数据绑定失败必须显示在"XAML 绑定失败"窗格的调试输出中，以检测和显示它们。 此选项位于"工具""选项"" >  >  >  > 跟踪输出窗口 **WPF 跟踪设置** 对话框中。 如果设置为"关闭"或"严重"，则数据绑定错误不会写入调试输出，并且无法检测到。 使用 .NET 5、.NET 6 及更高版本中的 WPF 时，数据绑定输出设置不会影响失败列表。
 
 :::image type="content" source="media/xaml-binding-failures-wpf-output-options.png" alt-text="WPF 输出选项的屏幕截图。":::
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 * [XAML 热重载](xaml-hot-reload.md)

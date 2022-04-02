@@ -1,6 +1,6 @@
 ---
-title: 如何：连接到服务中的数据
-description: 运行数据源配置向导，然后在“选择数据源类型”页上选择“服务”，将应用连接到从服务返回的数据。
+title: 如何：连接 WCF 服务中的数据
+description: 通过运行 "数据源配置向导" 并在 "选择数据源类型" 页上选择 "服务"，将应用程序连接 Windows Communication Foundation 从 (WCF) 服务返回的数据。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -19,16 +19,16 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6854b1cd7647f6bc4ac7ca92c920f7454b7ab1fe
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 6a480224e8e27c8997f98bbb434a7ce404e6bb5a
+ms.sourcegitcommit: 1ed233bb3afc5ae1f52aff8e41f7e650342033ad
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126601143"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "141275182"
 ---
-# <a name="how-to-connect-to-data-in-a-service"></a>如何：连接到服务中的数据
+# <a name="how-to-connect-to-data-in-a-wcf-service"></a>如何：连接 WCF 服务中的数据
 
-运行[数据源配置向导](../data-tools/media/data-source-configuration-wizard.png)，然后在“选择数据源类型”页上选择“服务”，将应用程序连接到从服务返回的数据 。
+通过运行 "[数据源配置向导](../data-tools/media/data-source-configuration-wizard.png)" 并在 "**选择数据源类型**" 页上选择 "**服务**"，将 .NET Framework 应用程序连接到 Windows Communication Foundation (WCF) 服务返回的数据。
 
 完成向导后，服务引用将添加到项目，并立即出现在[“数据源”窗口](add-new-data-sources.md#data-sources-window)中。
 
@@ -36,6 +36,10 @@ ms.locfileid: "126601143"
 > “数据源”窗口中显示的项取决于该服务返回的信息。 某些服务可能没有为“数据源配置”向导创建可绑定的对象提供足够的信息。 例如，如果该服务返回一个非类型化数据集，则在完成该向导时“数据源”窗口中不会显示任何项。 这是因为非类型化数据集不提供架构，因此向导没有足够的信息来创建数据源。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
+
+## <a name="prerequisites"></a>先决条件
+
+WCF 工具不随 .NET 工作负荷一起安装;使用 Visual Studio 安装程序修改安装。 在安装程序中，选择 "单个组件" 下的 **Windows Communication Foundation** 。 请参阅[修改 Visual Studio](../install/modify-visual-studio.md)。
 
 ## <a name="to-connect-your-application-to-a-service"></a>将应用程序连接到服务
 

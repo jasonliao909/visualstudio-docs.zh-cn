@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.workload: multiple
 ms.date: 10/27/2021
 ms.technology: vs-container-tools
-ms.openlocfilehash: 6be90f6f2181cf3414e13b7219840a188b1e4edb
-ms.sourcegitcommit: 0bb6b0f1023cf20c39f7d0f9888ec71b82b80448
+ms.openlocfilehash: facc4cc696cd42672bec49f8df2e2907e9e9aadf
+ms.sourcegitcommit: 1ed233bb3afc5ae1f52aff8e41f7e650342033ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "140652772"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "141274758"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>在本地 Docker 容器中调试应用
 
@@ -26,7 +26,7 @@ Visual Studio 提供了一种一致方法来开发 Docker 容器，并在本地�
 :::moniker-end
 
 :::moniker range=">=vs-2019"
-本文介绍了如何使用 Visual Studio 在本地 Docker 容器中启动应用、进行更改，并刷新浏览器以查看所做的更改。 本文还介绍了如何为容器化的应用设置用于调试的断点。 支持的项目类型包括 .NET Framework、.net Core web 和控制台应用程序以及 Azure Functions。 本文使用 ASP.NET Core Web 应用和 .NET Framework 控制台应用。
+本文介绍了如何使用 Visual Studio 在本地 Docker 容器中启动应用、进行更改，并刷新浏览器以查看所做的更改。 本文还介绍了如何为容器化的应用设置用于调试的断点。 支持的项目类型包括 .NET Framework、.NET Core Web 和控制台应用以及 Azure Functions。 本文使用 ASP.NET Core Web 应用和 .NET Framework 控制台应用。
 :::moniker-end
 
 如果你具有支持类型的项目，则 Visual Studio 可以创建 Dockerfile 并将项目配置为在容器中运行。 请参阅 [Visual Studio 中的容器工具](overview.md)。
@@ -71,9 +71,9 @@ Docker 容器可用于 .NET Framework 和 .NET Core 项目。 请看以下两个
 [!INCLUDE [create-aspnet5-app-2022](../azure/includes/vs-2022/create-aspnet5-app-2022.md)]
 ::: moniker-end
 
-### <a name="edit-your-code-and-refresh"></a>编辑代码并刷新
+### <a name="edit-your-razor-pages-and-refresh"></a>编辑 Razor 页面并刷新
 
-若要快速循环访问所做的更改，可以在容器中启动应用程序。 然后，继续进行更改，就像查看 IIS Express 一样查看这些更改。
+若要在 Razor 页中快速访问更改，可以在容器中启动应用程序。 然后，继续进行更改，就像查看 IIS Express 一样查看这些更改。 
 
 1. 请确保 Docker 设置为使用你所使用的容器类型（Linux 或 Windows）。 右键单击任务栏上的 Docker 图标，然后选择相应的“切换到 Linux 容器”或“切换到 Windows 容器”。
 

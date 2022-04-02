@@ -11,12 +11,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: b1ef2f5c9280f6c58f60f8ebdda0cd0de6b8a7d9
-ms.sourcegitcommit: d38d1b083322019663fec7d1d85a4cda456aadca
+ms.openlocfilehash: 1d2fe72bfbe98ece64df5cca6c76190fd318dc7f
+ms.sourcegitcommit: 1ed233bb3afc5ae1f52aff8e41f7e650342033ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "135533891"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "141275221"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>面向 C# 开发人员的 Visual Studio 工作效率指南
 
@@ -110,11 +110,11 @@ Visual Studio 有一种名为“转到全部”(Ctrl+T) 的功能。 通过“�
 
 Visual Studio 通过“代码清理”功能按需设置代码文件的格式，其中包括代码样式首选项。 若要运行代码清理功能，请单击编辑器底部的扫把图标，或者按“Ctrl+K，Ctrl+E”   。
 
-![Visual Studio 2019 中的“代码清理”按钮](media/execute-code-cleanup.png)
+!["代码清理"按钮的屏幕截图。](media/vs-2019/execute-code-cleanup.png)
 
 此外，还可以在整个项目或解决方中运行代码清理功能。 在“解决方案资源管理器”中右键单击项目或解决方案名称，选择“分析和代码清理”，然后选择“运行代码清理”。
 
-![在整个项目或解决方中运行代码清理功能](media/run-code-cleanup-project-solution.png)
+![在整个项目或解决方中运行代码清理功能](media/vs-2019/run-code-cleanup-project-solution.png)
 
 代码清理不仅可以设置文件的空格、缩进等格式，还可以应用选定的代码样式。 将从 [EditorConfig 文件](code-styles-and-code-cleanup.md#code-styles-in-editorconfig-files)（若项目有此文件）或从“选项”对话框的[代码样式设置](code-styles-and-code-cleanup.md#code-styles-in-the-options-dialog-box)中读取对各个代码样式的偏好设置。
 

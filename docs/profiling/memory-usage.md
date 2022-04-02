@@ -1,7 +1,7 @@
 ---
 title: 衡量应用中的内存使用情况
 description: 在使用集成了调试器的诊断工具进行调试时，查找内存泄漏和低效内存。
-ms.date: 04/25/2018
+ms.date: 03/29/2022
 ms.topic: tutorial
 author: mikejo5000
 ms.author: mikejo
@@ -9,12 +9,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: e9279cfe371cc3e5a4720d65c4b5759fafb203c6
-ms.sourcegitcommit: 2a3dc3ea8584c0e500c87c2c367a4719455b8dee
+ms.openlocfilehash: f3cffb5c6365c44ea2f0c0fa7b2436231634832d
+ms.sourcegitcommit: 864b18011ff12d880584173c86dccfdcc425808f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2022
-ms.locfileid: "139128943"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "141347822"
 ---
 # <a name="measure-memory-usage-in-visual-studio-c-visual-basic-c-f"></a>使用 C#、Visual Basic、C++、F# Visual Studio (度量内存) 
 
@@ -53,24 +53,61 @@ ms.locfileid: "139128943"
 
 4. 使用工具栏上的“选择工具”  设置选择“内存使用率”  。
 
-     ![显示诊断工具](../profiling/media/diag-tools-select-tool-2.png "DiagToolsSelectTool")
+     ::: moniker range="<=vs-2019"
+
+     ![诊断工具的屏幕截图。](../profiling/media/vs-2019/diag-tools-select-tool-2.png)
+
+     ::: moniker-end
+
+     ::: moniker range=">=vs-2022"
+
+     ![诊断工具的屏幕截图。](../profiling/media/vs-2022/diag-tools-select-tool-2.png)
+
+     ::: moniker-end
 
 5. 依次单击“调试”、“启动调试”  或单击工具栏上的“启动”  或按 **F5**。
 
      当应用完成加载后，将显示诊断工具的“摘要”视图。
 
-     ![诊断工具“摘要”选项卡](../profiling/media/diag-tools-summary-tab-2.png "DiagToolsSummaryTab")
+     ::: moniker range="<=vs-2019"
+     
+     !["诊断工具摘要"选项卡的屏幕截图。](../profiling/media/vs-2019/diag-tools-summary-tab-2.png)
 
      > [!NOTE]
      > 因为收集内存数据可能会影响本机或混合模式应用的调试性能，所以内存快照在默认情况下处于禁用状态。 若要对本机或混合模式应用启用快照，请启动调试会话（快捷键：F5  ）。 当“诊断工具”窗口出现时，选择“内存使用情况”选项卡，然后选择“堆分析”    。
      >
-     >  ![启用快照](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")
+     >  !["启用快照"的屏幕截图。](../profiling/media/vs-2019/dbgdiag-mem-mixed-toolbar-enable-snapshot.png)
      >
      >  停止（快捷键：Shift+F5）并重启调试   。
 
+     ::: moniker-end
+
+     ::: moniker range=">=vs-2022"
+
+     !["诊断工具摘要"选项卡的屏幕截图。](../profiling/media/vs-2022/diag-tools-summary-tab-2.png)
+
+     > [!NOTE]
+     > 因为收集内存数据可能会影响本机或混合模式应用的调试性能，所以内存快照在默认情况下处于禁用状态。 若要对本机或混合模式应用启用快照，请启动调试会话（快捷键：F5  ）。 当“诊断工具”窗口出现时，选择“内存使用情况”选项卡，然后选择“堆分析”    。
+     >
+     >  !["启用快照"的屏幕截图。](../profiling/media/vs-2022/dbgdiag-mem-mixed-toolbar-enable-snapshot.png)
+     >
+     >  停止（快捷键：Shift+F5）并重启调试   。
+
+     ::: moniker-end
+
 6. 若要在调试会话开始时拍摄快照，请选择“内存使用率”  摘要工具栏上的“拍摄快照”  。 （在此处设置断点可能也会有所帮助。）
 
-    ![获取快照](../profiling/media/dbgdiag_mem_mixedtoolbar_takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot")
+     ::: moniker range="<=vs-2019"
+     
+     !["拍摄快照"按钮的屏幕截图。](../profiling/media/vs-2019/dbgdiag-mem-mixed-toolbar-take-snapshot.png)
+
+     ::: moniker-end
+
+     ::: moniker range=">=vs-2022"
+
+     !["拍摄快照"按钮的屏幕截图。](../profiling/media/vs-2022/dbgdiag-mem-mixed-toolbar-take-snapshot.png)
+
+     ::: moniker-end
 
      > [!TIP]
      > 若要为进行内存比较而创建基线，请考虑在调试会话开始时拍摄快照。
@@ -88,7 +125,17 @@ ms.locfileid: "139128943"
 ## <a name="analyze-memory-usage-data"></a>分析内存使用率数据
 “内存使用率”摘要表中的行会列出在调试会话期间拍摄的快照，并提供指向更详细视图的链接。
 
-![内存摘要表](../profiling/media/dbgdiag_mem_summarytable.png "DBGDIAG_MEM_SummaryTable")
+::: moniker range="<=vs-2019"
+     
+![内存使用情况表的屏幕截图。](../profiling/media/vs-2019/dbgdiag-mem-summary-table.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+![内存使用情况表的屏幕截图。](../profiling/media/vs-2022/dbgdiag-mem-summary-table.png)
+
+::: moniker-end
 
  列的名称取决于在项目属性中选择的调试模式：.NET、本机或混合（.NET 和本机）。
 
@@ -100,7 +147,7 @@ ms.locfileid: "139128943"
 
 若要分析内存使用率，请单击其中一个链接，打开内存使用率详细报表：
 
-- 若要查看当前快照与前一个快照之间的差异的详细信息，请选择箭头左侧的更改链接 (![内存使用率增加](../profiling/media/prof-tour-mem-usage-up-arrow.png "内存使用量增加"))。 红色箭头表示内存使用率增加，绿色箭头表示减少。
+- 若要查看当前快照与前一个快照之间的差异的详细信息，请选择箭头左侧的更改链接 (![内存使用率增加](../profiling/media/prof-tour-mem-usage-up-arrow.png "内存使用量增加"))。 红色箭头指示内存使用量增加，绿色箭头表示减少。
 
 > [!TIP]
 > 为了帮助更快地识别内存问题，差异报告按照总体数量增加最多（单击“对象(差异)”  列中的更改链接）的对象类型或整体堆大小增加最多（单击“堆大小(差异)”  列中的更改链接）的对象类型进行排序。
@@ -112,52 +159,150 @@ ms.locfileid: "139128943"
 ### <a name="managed-types-reports"></a>托管类型报告
  在内存使用率摘要表中，选择“对象(差异)”或“分配(差异)”单元格的当前链接 。
 
- ![调试器托管类型报表 &#45; 根路径](../profiling/media/dbgdiag_mem_managedtypesreport_pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")
+ ::: moniker range="<=vs-2019"
+
+ ![托管类型报表的屏幕截图。](../profiling/media/vs-2019/dbgdiag-mem-managed-types-report-paths-to-root.png)
+
+ ::: moniker-end
+
+ ::: moniker range=">=vs-2022"
+
+ ![托管类型报表的屏幕截图。](../profiling/media/vs-2022/dbgdiag-mem-managed-types-report-paths-to-root.png)
+
+ ::: moniker-end
 
  顶部窗格会显示快照中类型的计数和大小，包括由类型引用的所有对象的大小（ **“非独占大小”** ）。
 
  底部窗格中的 **“根的路径”** 树显示引用上部窗格中选择的类型的对象。 仅当引用某个对象的最后一个类型已释放时，.NET 垃圾回收器才清理该对象的内存。
 
+ ::: moniker range="<=vs-2019"
+
  “引用的对象”树显示上部中选择的类型所持有的引用  。
 
- ![托管引用对象报表视图](../profiling/media/dbgdiag_mem_managedtypesreport_referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")
+ !["引用的对象"报表的屏幕截图。](../profiling/media/vs-2019/dbgdiag-mem-managed-types-report-referenced-types.png)
 
- 若要显示上部窗格中所选类型的实例，请选择 ![实例图标](../profiling/media/dbgdiag_mem_instanceicon.png "DBGDIAG_MEM_InstanceIcon") 图标。
+ ::: moniker-end
 
- ![Visual Studio 内存使用情况工具中“实例”视图的屏幕截图，其中显示“实例”窗格以及“根路径”和“引用的对象”窗格。](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")
+ **“引用的类型”** 树显示上部窗格中选择的类型所持有的引用。
+
+ ::: moniker range=">=vs-2022"
+
+ !["引用的对象"报表的屏幕截图。](../profiling/media/vs-2022/dbgdiag-mem-managed-types-report-referenced-types.png)
+
+ ::: moniker-end
+
+ 若要在上部窗格中显示所选类型的实例，请单击对象类型旁边的"查看实例"。
+
+ ::: moniker range="<=vs-2019"
+
+ !["内存使用情况"工具中"实例"视图的屏幕截图。](../profiling/media/vs-2019/dbgdiag-mem-managed-types-report-instances.png)
+
+ ::: moniker-end
+
+ ::: moniker range=">=vs-2022"
+
+ !["内存使用情况"工具中"实例"视图的屏幕截图。](../profiling/media/vs-2022/dbgdiag-mem-managed-types-report-instances.png)
+
+ ::: moniker-end
 
  **“实例”** 视图显示上部窗格的快照中所选对象的实例。 “根的路径”和“引用的对象”窗格显示引用所选实例的对象以及所选实例引用的类型   。 当调试器在拍摄快照的点停止时，可将鼠标悬停在“值”单元格上方，从而在工具提示中显示对象的值  。
 
 ### <a name="native-type-reports"></a>本机类型报告
  在“诊断工具”窗口的内存使用率摘要表中，选择“分配(差异)”或“堆大小(差异)”单元格的当前链接  。
 
- ![本机类型视图](../profiling/media/dbgdiag_mem_native_typesview.png "DBGDIAG_MEM_Native_TypesView")
+ ::: moniker range="<=vs-2019"
+
+ ![本机类型视图的屏幕截图。](../profiling/media/vs-2019/dbgdiag-mem-native-types-view.png)
+
+ ::: moniker-end
+
+ ::: moniker range=">=vs-2022"
+
+ ![本机类型视图的屏幕截图。](../profiling/media/vs-2022/dbgdiag-mem-native-types-view.png)
+
+ ::: moniker-end
 
  **“类型视图”** 显示快照中类型的数量和大小。
 
-- 选择所选类型的实例图标 (![“对象类型”列中的实例图标](../profiling/media/dbg_mma_instancesicon.png "DBG_MMA_InstancesIcon")) 可显示快照中所选类型的对象的相关信息。
+::: moniker range="<=vs-2019"
+
+- 选择所选类型的实例图标 (![“对象类型”列中的实例图标](../profiling/media/dbg-mma-instances-icon.png "DBG_MMA_InstancesIcon")) 可显示快照中所选类型的对象的相关信息。
 
      **“实例”** 视图显示所选类型的每个实例。 选择实例可显示导致在 **“分配调用堆栈”** 窗格中创建实例的调用堆栈。
 
-     ![Visual Studio 内存使用情况工具中“实例”视图的屏幕截图，其中显示“实例”窗格和“分配调用堆栈”窗格。](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")
+     !["实例"视图和"分配调用堆栈"窗格的屏幕截图。](../profiling/media/vs-2019/dbgdiag-mem-native-instances.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+- 选择 **所选类型** 旁边的"查看实例"，以显示有关快照中所选类型的对象的信息。
+
+     **“实例”** 视图显示所选类型的每个实例。 选择实例可显示导致在 **“分配调用堆栈”** 窗格中创建实例的调用堆栈。
+
+     !["实例"视图和"分配调用堆栈"窗格的屏幕截图。](../profiling/media/vs-2022/dbgdiag-mem-native-instances.png)
+
+::: moniker-end
+
+::: moniker range="<=vs-2019"
 
 - 在 **“视图模式”** 列表中选择 **“堆栈视图”** 可查看所选类型的分配堆栈。
 
-     ![堆栈视图](../profiling/media/dbgdiag_mem_native_stacksview.png "DBGDIAG_MEM_Native_StacksView")
+     ![堆栈视图的屏幕截图。](../profiling/media/vs-2019/dbgdiag-mem-native-stacks-view.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+- 选择 " **堆栈** " 可查看所选类型的分配堆栈。
+
+     ![堆栈视图的屏幕截图。](../profiling/media/vs-2022/dbgdiag-mem-native-stacks-view.png)
+
+::: moniker-end
 
 ### <a name="change-diff-reports"></a>更改（差异）报告
 
 - 在 **“诊断工具”** 窗口上的 **“内存使用率”** 选项卡的摘要表单元格中选择更改链接。
 
-   ![选择一个更改（差异）报表](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")
+   ::: moniker range="<=vs-2019"
+
+   ![选择单元中的 "更改" 链接的屏幕截图。](../profiling/media/vs-2019/dbgdiag-mem-choose-diff-report.png)
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2022"
+
+   ![选择单元中的 "更改" 链接的屏幕截图。](../profiling/media/vs-2022/dbgdiag-mem-choose-diff-report.png)
+
+   ::: moniker-end
 
 - 在托管或本机报告的 **“与之比较的对象”** 列表中选择快照。
 
-   ![从“比较对象”列表中选择一个快照](../profiling/media/dbgdiag_mem_choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")
+   ::: moniker range="<=vs-2019"
+
+   ![从 "比较对象" 列表中选择快照的屏幕截图。](../profiling/media/vs-2019/dbgdiag-mem-choose-compare-to.png)
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2022"
+
+   ![从 "比较方式" 列表中选择快照的屏幕截图。](../profiling/media/vs-2022/dbgdiag-mem-choose-compare-to.png)
+
+   ::: moniker-end
 
 更改报告会向基本报告添加一些列（使用 **“(差异)”** 进行标记），这些列显示基本快照值与比较快照之间的差异。 下面是本机类型视图差异报告可能会采用的外观：
 
-![本机类型差异视图](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")
+::: moniker range="<=vs-2019"
+
+![本机类型差异视图的屏幕截图。](../profiling/media/vs-2019/dbgdiag-mem-native-types-view-diff.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+![本机类型差异视图的屏幕截图。](../profiling/media/vs-2022/dbgdiag-mem-native-types-view-diff.png)
+
+::: moniker-end
 
 ## <a name="blogs-and-videos"></a>博客和视频
 
