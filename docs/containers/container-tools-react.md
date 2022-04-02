@@ -8,12 +8,12 @@ ms.author: ghogen
 ms.date: 10/25/2021
 ms.technology: vs-container-tools
 ms.topic: quickstart
-ms.openlocfilehash: d69d757b024aa4d5b27ce41965cc6ebbf1f4c95a
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: de68fd78f75eacdaa116daa927cd8265735127f6
+ms.sourcegitcommit: 1ed233bb3afc5ae1f52aff8e41f7e650342033ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135804215"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "141274648"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>快速入门：将 Docker 与 Visual Studio 中的 React 单页面应用结合使用
 
@@ -309,10 +309,61 @@ ENTRYPOINT ["dotnet", "ReactSPA.dll"]
 ## <a name="debug"></a>调试
 
 :::moniker range=">=vs-2022"
-设置用于调试的默认 URL。 可以使用“开始”按钮旁的下拉菜单，并选择“调试属性”。 在出现的“启动配置文件”对话框中，选择“Docker”并编辑 URL，以将 `/weatherforecast` 追加到已有内容。
+设置用于调试的启动属性。 可以使用“开始”按钮旁的下拉菜单，并选择“调试属性”。 在" **启动配置文件"** 对话框中，选择" **Docker"**。
+
+将 **"环境变量"** 设置为以下内容。 SSL 端口号应匹配"容器 **"窗口的** " **端口"选项卡** 中的 HTTPS **主机** 端口。
+
+   ```
+   ASPNETCORE_ENVIRONMENT=Development,ASPNETCORE_HOSTINGSTARTUPASSEMBLIES=Microsoft.AspNetCore.SpaProxy,ASPNETCORE_HTTPS_PORT=<your SSL port>,ASPNETCORE_URLS=https:////+:443;http:////+:80
+   ```
+
+此操作会更改 *launchSettings.json 文件中 Docker* 条目，使 SPA 代理能够正常工作。 在"*属性"下的"解决方案资源管理器找到 launchSettings.json* **文件**。 应会看到如下所示，但应用分配的端口号为：
+
+```json
+    "Docker": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "environmentVariables": {
+        "ASPNETCORE_URLS": "https://+:443;http://+:80",
+        "ASPNETCORE_HTTPS_PORT": "7136",
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.AspNetCore.SpaProxy"
+      },
+      "publishAllPorts": true,
+      "useSSL": true,
+      "httpPort": 5136,
+      "sslPort":  7136
+    }
+```
 :::moniker-end
 
 在工具栏的调试下拉列表中选择“Docker”，然后开始调试应用。 你可能会看到提示信任证书的消息；选择信任证书以继续。  第一次生成时，docker 会下载基础映像，因此可能需要更长的时间。
+
+:::moniker range=">=vs-2022"
+项目使用 SPA 代理。 如果浏览器在代理准备就绪之前加载了前页，你可能会看到一个页面，指出代理准备就绪时会自动重定向。
+
+如果页面从未重定向，请检查你能否运行代理。 打开Visual Studio命令提示符，转到项目中的 ClientApp 文件夹，然后提供命令 `npm run start`。 你应看到与下面类似的内容：
+
+```
+> projectspa1@0.1.0 prestart
+> node aspnetcore-https && node aspnetcore-react
+
+
+> projectspa1@0.1.0 start
+> rimraf ./build && react-scripts start
+
+[HPM] Proxy created: [ '/weatherforecast' ]  ->  http://localhost:30449
+i ｢wds｣: Project is running at https://0.0.0.0:44445/
+i ｢wds｣: webpack output is served from
+i ｢wds｣: Content not from webpack is served from c:\Users\ghogen\source\repos\ProjectSpa1\ProjectSpa1\ClientApp\public
+i ｢wds｣: 404s will fallback to /
+Starting the development server...
+Compiled successfully!
+```
+
+如果成功，请尝试在浏览器中再次启动应用。 如果未成功，请再次检查 *launchSettings.json* 文件中是否一切正确。
+:::moniker-end
 
 “输出”窗口中的“容器工具”选项显示正在进行的操作。 你将看到与 npm.exe 关联的安装步骤。
 
@@ -325,7 +376,7 @@ ENTRYPOINT ["dotnet", "ReactSPA.dll"]
    ![正在运行的应用的屏幕截图。](media/container-tools-react/vs-2019/running-app.png)
    ::: moniker-end
    ::: moniker range=">=vs-2022"
-   ![正在运行的应用的屏幕截图。](media/container-tools-react/vs-2022/running-app.png)
+   ![正在运行的应用的屏幕截图。](media/container-tools-react/vs-2022/client-app-page.png)
    ::: moniker-end
 
 :::moniker range="<=vs-2017"

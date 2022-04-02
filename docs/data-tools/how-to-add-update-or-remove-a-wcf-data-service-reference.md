@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 662e93d7796ac9d611c274ace1f419a4f61e6111
-ms.sourcegitcommit: 8671132ee0425b273b060fa35c75657e7ae02583
-ms.translationtype: HT
+ms.openlocfilehash: 91181a67a0607bfc78c6a74166600410e9c77a73
+ms.sourcegitcommit: 1ed233bb3afc5ae1f52aff8e41f7e650342033ad
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "132924246"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "141275398"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>如何：添加、更新或删除 WCF 数据服务引用
 
@@ -34,6 +34,10 @@ ms.locfileid: "132924246"
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
+## <a name="prerequisites"></a>先决条件
+
+WCF 工具不随 .NET 工作负荷一起安装;使用 Visual Studio 安装程序修改安装。 在安装程序中，选择 "单个组件" 下的 **Windows Communication Foundation** 。 请参阅[修改 Visual Studio](../install/modify-visual-studio.md)。
+
 ## <a name="add-a-wcf-service-reference"></a>添加 WCF 服务引用
 
 ### <a name="to-add-a-reference-to-an-external-service-net-framework-projects"></a>若要添加对外部服务的引用（.NET Framework 项目）
@@ -42,7 +46,7 @@ ms.locfileid: "132924246"
 
    此时将出现“添加服务引用”对话框。
 
-1. 在“地址”框中，输入服务的 URL，然后单击“转到”以搜索服务 。 如果服务实施用户名和密码安全性，将提示你输入用户名和密码。
+1. 在“地址”框中，输入服务的 URL，然后单击“转到”以搜索服务 。 如果服务实施用户名和密码安全性，将提示你输入用户名和密码。 你还可以在自己的解决方案中选择一个服务。 选择 " **发现** " 按钮，然后选择 " **解决方案中的服务**"。
 
     > [!NOTE]
     > 应仅从受信任源引用服务。 从不受信任的源添加引用可能会危及安全性。
@@ -140,9 +144,16 @@ ms.locfileid: "132924246"
 
 ### <a name="to-update-a-service-reference"></a>更新服务引用
 
+:::moniker range="<=vs-2019"
 - 在解决方案资源管理器中，右键单击服务引用，然后单击“更新服务引用” 。
 
      从引用的初始位置对其进行更新时会显示一个进度对话框，并且会重新生成服务客户端以显示元数据中的所有更改。
+:::moniker-end
+:::moniker range=">=vs-2022"
+- 在 **解决方案资源管理器** 中，展开 "**连接的服务**" 节点，右键单击服务引用，然后单击 "**更新服务引用**"。
+
+     从引用的初始位置对其进行更新时会显示一个进度对话框，并且会重新生成服务客户端以显示元数据中的所有更改。
+:::moniker-end
 
 ## <a name="remove-a-service-reference"></a>删除服务引用
 

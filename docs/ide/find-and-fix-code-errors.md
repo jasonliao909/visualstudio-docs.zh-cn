@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: ba92c8142104f8d31be22f1699b0a395da46a715
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 2d631397b662ee680f995fb6acedfd884c323b84
+ms.sourcegitcommit: 1ed233bb3afc5ae1f52aff8e41f7e650342033ad
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126642185"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "141275257"
 ---
 # <a name="make-code-work-in-visual-studio"></a>确保代码在 Visual Studio 中正常运行
 
@@ -107,7 +107,7 @@ Visual Studio 包括一系列内置的 [.NET Compiler Platform 分析器](../cod
 
 通过编辑器底部的“代码清理”按钮，Visual Studio 提供[按需格式化 C# 代码文件](code-styles-and-code-cleanup.md#apply-code-styles)的功能，包括代码风格首选项。
 
-![Visual Studio 2019 中的“代码清理”按钮](media/execute-code-cleanup.png)
+!["代码清理"按钮的屏幕截图。](media/vs-2019/execute-code-cleanup.png)
 
 “代码清理”不仅可以设置文件的空格、缩进等格式，还可以应用一套定义的代码样式约定。 将从 [EditorConfig 文件](code-styles-and-code-cleanup.md#code-styles-in-editorconfig-files)（若项目有此文件）或从“选项”对话框的[代码样式设置](code-styles-and-code-cleanup.md#code-styles-in-the-options-dialog-box)中读取对各个代码样式的偏好设置。
 

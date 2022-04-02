@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5340cacf63f2371134641cfa09f873528e11fd94
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 3b6a09b7e10b7a9597030a137686ac40de1606f3
+ms.sourcegitcommit: 515498e5cb4a732caf85ba441b479440a1fc88c1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736327"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "141333125"
 ---
 # <a name="how-to-debug-net-framework-source"></a>如何：调试 .NET Framework 源代码
 
@@ -69,3 +69,4 @@ ms.locfileid: "126736327"
 ### <a name="see-also"></a>请参阅
 - [调试托管代码](../debugger/debugging-managed-code.md)
 - [指定符号 (.pdb) 文件和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+- [使用 Visual Studio 调试 .NET 和 ASP.NET Core 源代码](/aspnet/core/test/debug-aspnetcore-source)

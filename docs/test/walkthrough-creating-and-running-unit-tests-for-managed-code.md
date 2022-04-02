@@ -16,12 +16,12 @@ ms.technology: vs-ide-test
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 3c44819e9c56a9f3fc68ebb3fc0e179a128fc208
-ms.sourcegitcommit: a149b3a034bb555ad217656c0ec8bc1672b1e215
+ms.openlocfilehash: 85c237afc34007aeb1d8e23b321f0a832233ab7a
+ms.sourcegitcommit: 1ed233bb3afc5ae1f52aff8e41f7e650342033ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "133514658"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "141275411"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>演练：创建并运行托管代码的单元测试
 
@@ -167,10 +167,10 @@ ms.locfileid: "133514658"
 
 ::: moniker range=">=vs-2019"
 
-2. 在 **搜索** 框中键入"测试"，选择 **"C#"** 作为语言，然后选择"C# MSTest 单元测试 **Project (.NET Core)** for .NET Core"模板，然后单击"下一步 **"。**
+2. 在 "搜索" 框中键入 **test** ，选择 **c #** 作为语言，然后选择 "c # **MSTest 单元测试 Project" (** .net core) for .net core 模板 "，然后单击"**下一步**"。
 
    > [!NOTE]
-   > 在 Visual Studio 2019 版本 16.9 中，MSTest 项目模板是单元测试 **Project。**
+   > 在 Visual Studio 2019 版本16.9 中，MSTest 项目模板是 **单元测试 Project**。
 
 3. 将项目命名为“BankTests”，然后单击“下一步” 。
 
@@ -182,7 +182,7 @@ ms.locfileid: "133514658"
 
 5. 在“BankTests”  项目中，添加对“Bank”  项目的引用。
 
-   在 **解决方案资源管理器** 中，选择 **BankTests** 项目下的"依赖项"，然后从右键单击菜单中 ("添加引用Project") "添加引用"。 
+   在 **解决方案资源管理器** 中，选择 " **banktests"** "项目下的"**依赖关系**"，然后选择"**添加引用**" (或从右键单击菜单中 **添加 Project 引用**") "。
 
 6. 在“引用管理器”对话框中，展开“项目”，选择“解决方案”，然后选中“Bank”项     。
 
@@ -378,7 +378,7 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
 
 3. 将 `debitAmount` 设置为比余额大的一个数字。
 
-运行两个测试，并验证是否已通过这两个测试。
+运行这两个测试，并验证它们是否通过。
 
 ### <a name="continue-the-analysis"></a>继续分析
 

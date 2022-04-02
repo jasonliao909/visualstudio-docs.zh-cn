@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 57ad43fbe06a93108afc254efeca1dc2615df5c3
-ms.sourcegitcommit: 7a300823cf1bd3355be03bde561cf2777bc09eae
+ms.openlocfilehash: 81c4f8de119fe000e52a9b1df10ec0d94945a2bc
+ms.sourcegitcommit: 1ed233bb3afc5ae1f52aff8e41f7e650342033ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "133978207"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "141275424"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>使用 WPF 和 Entity Framework 6 创建简单的数据应用程序
 
@@ -89,7 +89,7 @@ ms.locfileid: "133978207"
 
    - 将 <xref:System.Collections.Generic> 的唯一匹配项（在第 431 行左右）替换为 <xref:System.Collections.ObjectModel>。
 
-7. 按 Ctrl+Shift+B 生成项目。 生成完成后，模型类对数据源向导可见。
+7. 按 **f5** 或 **Ctrl** + **f5** 生成并运行项目。 当应用程序首次运行时，这些模型类对于 "数据源向导" 可见。
 
 现在，你已准备好将此模型挂接到 XAML 页面，以便查看、导航和修改数据。
 
@@ -144,7 +144,6 @@ ms.locfileid: "133978207"
      现在，向下滚动并找到 `Window_Loaded` 事件处理程序。 请注意，Visual Studio 已添加 CollectionViewSource 对象。 这表示你在创建模型时选择的 NorthwindEntities 对象。 你已经添加了它，因此在这里不需要重复操作。 让我们替换 `Window_Loaded` 中的代码，使得方法现在如下所示：
 
      :::code language="csharp" source="../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs" id="Snippet2":::
-
 
 8. 按 **F5**。 应会看到检索到 CollectionViewSource 中的第一个客户的详细信息。 还应在数据网格中看到其订单。 格式设置不是很好，让我们来解决这个问题。 你还可以创造一种方法来查看其他记录并执行基本的 CRUD 操作。
 

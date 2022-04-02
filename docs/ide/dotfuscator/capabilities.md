@@ -1,6 +1,6 @@
 ---
 title: Dotfuscator 的功能
-ms.date: 03/28/2019
+ms.date: 12/01/2021
 ms.devlang: dotnet
 ms.topic: conceptual
 keywords: Dotfuscator, Dotfuscator Community, Dotfuscator CE, PreEmptive, PreEmptive Solutions, PreEmptive Protection, 保护, 社区版, 模糊处理, .NET, 免费, Visual Studio 2017, Visual Studio 2019, Visual Studio
@@ -18,12 +18,12 @@ author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.technology: vs-ide-general
-ms.openlocfilehash: 484c05c988351d729be1e4d37763b62e99794ed5
-ms.sourcegitcommit: 485f0f6f578568ee31b2ac093e32a6d01dc9c1c5
+ms.openlocfilehash: 541f34be860c51d6a96d3300d9cf909409642ddd
+ms.sourcegitcommit: 515498e5cb4a732caf85ba441b479440a1fc88c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "130015986"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "141333138"
 ---
 # <a name="capabilities-of-dotfuscator"></a>Dotfuscator 的功能
 

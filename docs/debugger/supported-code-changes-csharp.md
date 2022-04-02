@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
-ms.openlocfilehash: 48822bf0836c9a55cbde7e7fecc437e71c850466
-ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
+ms.openlocfilehash: a5137363ff6ee186a095521b7c756bcdc04d0536
+ms.sourcegitcommit: 1ed233bb3afc5ae1f52aff8e41f7e650342033ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "139550138"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "141274590"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>支持的代码更改（C# 和 Visual Basic）
 “编辑并继续”处理方法体内的大多数类型的代码更改。 但是，方法体外的大多数更改以及方法体内的小部分更改在调试期间不能应用。 若要应用这些不受支持的更改，您必须停止调试，重新开始新版本的代码。
@@ -86,10 +86,10 @@ ms.locfileid: "139550138"
 
 ## <a name="unsupported-app-scenarios"></a>不支持的应用方案
 
-不受支持的应用和平台包括 Silverlight 5 和 Windows 8.1。 ASP.NET 和 ASP.NET Core 中不受支持的场景包括：编辑 .aspx、.ascx、.cshtml 和 .razor 文件。 .NET 6 及更高版本的应用程序支持编辑 _._# 和 _razor_ 文件。
+不受支持的应用和平台包括 Silverlight 5 和 Windows 8.1。 ASP.NET 和 ASP.NET Core 中不受支持的场景包括：编辑 .aspx、.ascx、.cshtml 和 .razor 文件。 .NET 6 及更高版本的应用支持编辑 . _cshtml_ 和 _.razor_ 文件。
 
 > [!NOTE]
-> 支持的应用包括 Windows 10 中的 UWP，以及面向 .NET Framework 4.6 桌面版或更高版本的 x86 和 x64 应用（.NET Framework 仅为桌面版本）。
+> 支持的应用包括 Windows 10 或 Windows 11 中的 UWP，以及面向 .NET Framework 4.6 桌面版或更高版本的 x86 和 x64 应用 (.NET Framework 是仅桌面版) 。
 
 ## <a name="unsupported-scenarios"></a>不支持的方案
  在以下调试方案中，“编辑并继续”不可用：

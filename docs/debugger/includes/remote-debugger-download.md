@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 11/11/2021
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: e0b410b915062f24de516b6b550b96f6df617ed0
-ms.sourcegitcommit: 4e0efca10b152418a4c924dbf2462e3da6094597
+ms.openlocfilehash: 9f592a1e72ff9e911ddf363a87ad57911023d0fe
+ms.sourcegitcommit: 1ed233bb3afc5ae1f52aff8e41f7e650342033ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "141256259"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "141332739"
 ---
 在要调试的远程设备或服务器上（而不是 Visual Studio 计算机上），请从下表中的链接下载并安装正确的远程工具版本。
 
@@ -58,5 +58,5 @@ ms.locfileid: "141256259"
 可以通过将 msvsmon.exe 复制到远程计算机，而不是安装远程工具来运行远程调试器。 但是，远程调试器配置向导 (rdbgwiz.exe) 仅在安装远程工具时才可用。 如果要将远程调试器作为服务运行，则可能需要使用向导进行配置。 有关详细信息，请参阅[（可选）将远程调试器配置为服务](../../debugger/remote-debugging.md#bkmk_configureService)。
 
 >[!NOTE]
->- 若要在 ARM 设备上调试 Windows 10 应用，请使用 ARM64，它可用于最新版本的远程工具。
+>- 若要调试 ARM 设备上 Windows 10 或更高版本的应用，请使用最新版本的远程工具提供的 ARM64。
 >- 若要在 Windows RT 设备上调试 Windows 10 应用，请使用 ARM，它仅在 Visual Studio 2015 远程工具下载中可用。

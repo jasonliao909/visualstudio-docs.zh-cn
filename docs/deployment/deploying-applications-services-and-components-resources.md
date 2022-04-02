@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: b67613e457e86e1ce71317e4b4c2042f24978d50
-ms.sourcegitcommit: 00af065ac27d41339b31d96a630705509b70b6fa
+ms.openlocfilehash: 9458beca58615450977e3f601bfa78d44c68891c
+ms.sourcegitcommit: 1ed233bb3afc5ae1f52aff8e41f7e650342033ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "140764357"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "141274230"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>将应用部署到文件夹、IIS、Azure 或其他目标
 
@@ -36,11 +36,20 @@ ms.locfileid: "140764357"
 - 不确定要选择哪个部署选项？ 请参阅[哪些发布选项适合我？](#what-publishing-options-are-right-for-me)
 - 有关 Azure 应用服务或 IIS 的部署问题的帮助，请参阅[对 Azure 应用服务和 IIS 上的 ASP.NET Core 进行故障排除](/aspnet/core/test/troubleshoot-azure-iis)。
 - 有关配置 .NET 部署设置的帮助，请参阅[配置 .NET 部署设置](#configure-net-deployment-settings)。
+::: moniker range="<=vs-2019"
 - 若要部署到新目标，如果之前创建了发布配置文件，请从已配置的配置文件的“发布”窗口中选择“新建”。
 
-   ![创建新的发布配置文件](../deployment/media/create-a-new-publish-profile.png)
+   ![创建新的发布配置文件的屏幕截图。](../deployment/media/create-a-new-publish-profile.png)
 
    然后，在“发布”工具中选择部署选项。 有关发布选项的详细信息，请参阅以下部分。
+::: moniker-end
+::: moniker range=">=vs-2022"
+- 若要部署到新的目标，如果你以前创建了发布配置文件，请从配置的配置文件的 "**生成**" 菜单中选择 "**发布所选内容**"。
+
+   ![创建新的发布配置文件的屏幕截图。](../deployment/media/vs-2022/create-a-new-publish-profile.png)
+
+   然后，在“发布”工具中选择部署选项。 有关发布选项的详细信息，请参阅以下部分。
+::: moniker-end
 
 ## <a name="what-publishing-options-are-right-for-me"></a>哪些发布选项适合我？
 
@@ -65,11 +74,14 @@ ms.locfileid: "140764357"
 
 创建新的发布配置文件时，将显示上述选项，如下图所示。
 
-::: moniker range=">=vs-2019"
-![选择发布选项](../deployment/media/quickstart-publish-dialog.png)
+::: moniker range=">=vs-2022"
+![选择发布选项的屏幕截图。](../deployment/media/vs-2022/quickstart-publish-dialog.png)
+::: moniker-end
+::: moniker range="vs-2019"
+![选择发布选项的屏幕截图。](../deployment/media/quickstart-publish-dialog.png)
 ::: moniker-end
 ::: moniker range="vs-2017"
-![选择发布选项](../deployment/media/quickstart-publish-dialog-vs-2017.png)
+![选择发布选项的屏幕截图。](../deployment/media/quickstart-publish-dialog-vs-2017.png)
 ::: moniker-end
 
 若要快速浏览更常见的应用程序部署选项，请参阅[初探部署](../deployment/deploying-applications-services-and-components.md)。
@@ -82,7 +94,17 @@ ms.locfileid: "140764357"
 - 部署到 [Azure 容器注册表](#azure-container-registry)的 Docker 映像
 - [Azure 虚拟机](#azure-virtual-machine)
 
-![选择一项 Azure 服务](../deployment/media/quickstart-choose-azure-service.png)
+::: moniker range="<=vs-2019"
+
+![选择 Azure 服务的屏幕截图。](../deployment/media/quickstart-choose-azure-service.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+![选择 Azure 服务的屏幕截图。](../deployment/media/vs-2022/quickstart-choose-azure-service.png)
+
+::: moniker-end
 
 ### <a name="azure-app-service"></a>Azure 应用服务
 

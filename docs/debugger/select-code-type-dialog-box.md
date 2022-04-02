@@ -26,12 +26,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ecffb2bb8a6cf616b75386cac5823763534bb30
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 6d3360fe57ec0fc419913c093d91f12f16007ca8
+ms.sourcegitcommit: 1ed233bb3afc5ae1f52aff8e41f7e650342033ad
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641628"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "141274606"
 ---
 # <a name="select-code-type-dialog-box"></a>“选择代码类型”对话框
 
@@ -45,7 +45,7 @@ ms.locfileid: "126641628"
 - Blazor WebAssembly - 客户端 Blazor WebAssembly
 - GPU - 软件模拟器 - 在 GPU 软件模拟器上运行的 C++ 代码
 - JavaScript (Chrome) - 在 Chrome 中运行的 JavaScript
-- JavaScript (Microsoft Edge - Chromium) - 在基于 Chromium 的 Microsoft Edge for Windows 10 上运行的 JavaScript
+- javascript (Microsoft Edge Chromium) -在 Chromium 或更高版本的基于 Microsoft Edge 的 Windows 10 中运行的 javascript
 - JavaScript CDP (V3) 调试程序 - Chrome DevTools 协议版本 3，用于在 CDP 客户端中进行调试
 - 托管 (CoreCLR) - .NET Core
 - 托管（本机编译）- C++/CLR 代码

@@ -12,12 +12,12 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: b65d5a3f761f0e10eb95fef0122730a72978aa3a
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: ffb5510ae93484cf650d62a9675fcbff4d22ab28
+ms.sourcegitcommit: 1ed233bb3afc5ae1f52aff8e41f7e650342033ad
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126735440"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "141274634"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>支持编码的 UI 测试和操作录制的配置和平台
 
@@ -36,7 +36,7 @@ ms.locfileid: "126735440"
 
 | 配置 | 支持 |
 |-| - |
-| 操作系统 | [!INCLUDE[win7](../debugger/includes/win7_md.md)]<br /><br /> [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)]<br /><br /> [!INCLUDE[win8](../debugger/includes/win8_md.md)]<br /><br /> Windows 10 |
+| 操作系统 | [!INCLUDE[win7](../debugger/includes/win7_md.md)]<br /><br /> [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)]<br /><br /> [!INCLUDE[win8](../debugger/includes/win8_md.md)]<br /><br /> Windows 10<br /><br /> Windows 11 |
 | 32 位/64 位支持 | 运行 32 位 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 的 32 位 Windows 可测试 32 位应用程序。<br /><br /> 运行 32 位 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 的 64 位 Windows 可测试具有 UI 同步的 32 位 WOW 应用程序。<br /><br /> 运行 32 位 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 的 64 位 Windows 可测试不具有 UI 同步的 64 位 Windows 窗体和 WPF 应用程序。 |
 | 体系结构 | x86 和 x64 **注意：** 除非在 [!INCLUDE[win8](../debugger/includes/win8_md.md)] 或更高版本下运行，否则 Internet Explorer 在 64 位模式下不受支持。 |
 | .NET | .NET 2.0、3.0、3.5、4 和 4.5。 **注意：**  [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 和 Visual Studio 都需要 .NET 4 才能运行。 但是，支持使用列出的 .NET 版本开发的应用程序。 |
@@ -57,7 +57,7 @@ ms.locfileid: "126735440"
 | Internet Explorer 6<br /><br /> Internet Explorer 7 | 不支持。 |
 | Chrome<br /><br /> Firefox | 不支持操作步骤的录制。 利用 Visual Studio 2012 Update 4 或更高版本，编码的 UI 测试可在 Chrome 和 Firefox 浏览器中播放。 有关更多详细信息，请转到 [此处](using-different-web-browsers-with-coded-ui-tests.md) 。 |
 | Opera<br /><br /> Safari | 不支持。 |
-| Silverlight | 不支持。<br /><br /> 对于 Visual Studo 2013，可从 Visual Studio 库下载[用于 Silverlight 的 Microsoft Visual Studio 2013 编码的 UI 测试插件](https://marketplace.visualstudio.com/items?itemName=PrachiBoraMSFT.MicrosoftVisualStudio2013CodedUITestPluginforSilve)。 |
+| Silverlight | 不支持。<br /><br /> 不过，对于 Visual Studio 2013，可以从 Visual Studio 库下载[用于 Silverlight 的 Microsoft Visual Studio 2013 编码的 UI 测试插件](https://marketplace.visualstudio.com/items?itemName=PrachiBoraMSFT.MicrosoftVisualStudio2013CodedUITestPluginforSilve)。 |
 | Flash/Java | 不支持。 |
 | Windows 窗体 2.0 及更高版本 | 完全支持。 **注意：** NetFx 控件完全受支持，但并非所有第三方控件都受支持。 |
 | WPF 3.5 及更高版本 | 完全支持。<br /><br /> **注意** NetFx 控件完全受支持，但并非所有第三方控件都受支持。 |

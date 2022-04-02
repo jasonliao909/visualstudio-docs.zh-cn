@@ -36,12 +36,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: 7f9efc6ca37d391ff14be044db37af6117cbe943
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 1356fa9346f4db874ec9394e1f812f4b32afbc68
+ms.sourcegitcommit: 1ed233bb3afc5ae1f52aff8e41f7e650342033ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129969705"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "141275447"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>启动 UWP 应用的调试会话
 
@@ -141,7 +141,7 @@ ms.locfileid: "129969705"
 
 默认情况下，在选择“远程计算机”作为部署目标时，必须提供 Windows 凭据才能运行远程调试器。 可以更改身份验证要求。
 
-“通用(未加密协议)”通用身份验证模式适用于 IoT、Xbox 和 HoloLens 设备，以及创建者的更新或更高版本的 Windows 10 电脑。
+通用 **(未加密协议)** 身份验证模式适用于 IoT、Xbox 和 HoloLens 设备、Windows 11 电脑和创意者更新或Windows 10电脑。
 
 若要更改身份验证方法，请执行以下操作：
 

@@ -9,12 +9,12 @@ manager: jmartens
 ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ba7d81c3d408ade040dc5c763d7e07c3c0e1f73
-ms.sourcegitcommit: d3578c384959f1b76dd06fb4b5d075fb052f8c69
+ms.openlocfilehash: b7d7a6abc8698f6db3f96d6abc84d002109e8844
+ms.sourcegitcommit: 1ed233bb3afc5ae1f52aff8e41f7e650342033ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "135375215"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "141274340"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用测试资源管理器运行单元测试
 
@@ -474,7 +474,7 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 1. 打开默认 Windows 11 声音对话框。
 2. 导航到“声音”选项卡。
 3. 找到“Microsoft Visual Studio”类别。 选择“测试运行成功”或“测试运行失败”声音，以选择预设声音或浏览到自己的音频文件 。  
-![Windows 10 声音对话框](../test/media/default-windows-11-sound-dialog.png)
+![Windows 11 声音对话框](../test/media/default-windows-11-sound-dialog.png)
 
 ::: moniker-end
 ## <a name="see-also"></a>请参阅

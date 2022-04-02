@@ -2,7 +2,7 @@
 title: “选项”对话框 ->“环境”->“常规”
 description: 了解如何通过“环境”部分的“常规”页来更改 IDE 的颜色主题、状态栏设置、文件扩展名关联等内容。
 ms.custom: SEO-VS-2020
-ms.date: 11/29/2021
+ms.date: 03/30/2022
 ms.topic: reference
 f1_keywords:
 - VS.Environment.General
@@ -23,12 +23,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 19c96e580a55c6b6a5deaf307fbe9e0653c7b0da
-ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.openlocfilehash: 33f9b711ae5d5b2007c17dac884eb89511276d64
+ms.sourcegitcommit: 1ed233bb3afc5ae1f52aff8e41f7e650342033ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "133256966"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "141274175"
 ---
 # <a name="options-dialog-box-environment--general"></a>“选项”对话框：环境 \> 常规
 
@@ -38,7 +38,7 @@ ms.locfileid: "133256966"
 
 颜色主题
 
-为 IDE 选择“蓝色”、“浅色”、“深色”，或者“蓝色(额外对比度)”颜色主题。
+为 **IDE 选择 (****蓝色****) 、深色** 或浅色主题。
 
 ::: moniker range="vs-2022"
 
@@ -46,7 +46,7 @@ ms.locfileid: "133256966"
 
 ::: moniker-end
 
-可以通过下载并安装当前使用的版本的 Visual Studio 颜色主题设计器来安装其他预定义主题并创建自定义主题，如下所示：
+可以通过下载并安装当前使用的版本的Visual Studio颜色主题设计器来安装其他预定义主题并创建自定义主题，如下所示：
 
 - [2022 年Visual Studio主题设计器](https://marketplace.visualstudio.com/items?itemName=idex.colorthemedesigner2022)
 - [Visual Studio 2019 的颜色主题设计器](https://marketplace.visualstudio.com/items?itemName=ms-madsk.ColorThemeDesigner)。
@@ -72,8 +72,8 @@ ms.locfileid: "133256966"
 此选项启用或禁用每监视器每英寸点数 (DPI) 识别功能（或 PMA）。 启用 PMA 后，Visual Studio 用户界面在任何监视器显示比例因子和 DPI 配置（包括跨多个监视器）中都清晰显示。 若要启用 PMA，需要 Windows 10 2018 年 4 月更新或更高版本以及 .NET Framework 4.8 或更高版本。 （如果不满足这两个系统必备项，此选项将显示为灰色。）
 
 > [!TIP]
-> - Windows 10 包含设置，指示“让 Windows 尝试修复应用，以便它们不再模糊”。 如果选中了“使用不同像素密度优化屏幕呈现”选项，则启用该 Windows 设置的效果可以忽略不计。
-> - Windows 10 还包括“程序兼容性疑难解答”。 不建议尝试使用该疑难解答修复 Visual Studio 外观。
+> - Windows 10 包含设置，指示“让 Windows 尝试修复应用，以便它们不再模糊”。 如果选中了“使用不同像素密度优化屏幕呈现”选项，则启用该 Windows 设置的效果可以忽略不计。  (此设置在 Windows 11 中不可用。 有关此Windows 11，请参阅 Windows 11 [overview](/windows/whats-new/windows-11-overview).) 
+> - Windows 10 还包括“程序兼容性疑难解答”。 不建议尝试使用该疑难解答修复 Visual Studio 外观。  (此功能在 Windows 11 中不可用。 有关此Windows 11，请参阅 Windows 11 [overview](/windows/whats-new/windows-11-overview).) 
 
 ::: moniker-end
 

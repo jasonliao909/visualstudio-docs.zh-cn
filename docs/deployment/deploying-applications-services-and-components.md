@@ -1,7 +1,7 @@
 ---
 title: 初探部署
 description: 了解从 Visual Studio 部署应用的选项。
-ms.date: 10/29/2021
+ms.date: 03/28/2022
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -22,12 +22,12 @@ manager: jmartens
 ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: a9e9811763c04fe2b469162843a4f241cffad59f
-ms.sourcegitcommit: 00af065ac27d41339b31d96a630705509b70b6fa
+ms.openlocfilehash: 7a348d1553475afb60c494dca4dfbabc02921de7
+ms.sourcegitcommit: 1ed233bb3afc5ae1f52aff8e41f7e650342033ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "140764422"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "141274201"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>先查看 Visual Studio 中的部署
 
@@ -47,25 +47,21 @@ ms.locfileid: "140764422"
 
   - [使用 ClickOnce 部署 .NET Windows 桌面应用](quickstart-deploy-using-clickonce-folder.md)
   - [使用 ClickOnce 部署 .NET Framework Windows 桌面应用。](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
-  - 请参阅[使用 ClickOnce 部署 C++/CLR 应用](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)，对于 C/C++，请参阅[使用安装项目部署本机应用](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)。
+  -  (C++/CLR) [使用 C++/CLR 应用部署ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)
+  -  (C/C++) [使用安装程序项目部署本机应用](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)
 
 ## <a name="publish-to-azure"></a>发布到 Azure
 
-- **ASP.NET**、**ASP.NET Core**、**Python** 和 **Node.js**：使用以下任一方法发布到 Azure 应用服务或 Linux 上的 Azure 应用服务（使用容器）：
+- **ASP.NET**、**ASP.NET Core**、**Python****和Node.js**：使用下列方法Azure 应用服务 Linux 上的 Azure 应用服务 或 Azure 应用服务：
 
-  - 对于应用的连续（或自动）部署，请将 Azure DevOps 与 Azure 管道结合使用。
-  - 对于应用的一次性（或手动）部署，请使用 Visual Studio 中的“发布”工具。
+  - 对于应用的连续（或自动）部署，请将 Azure DevOps 与 [Azure 管道](/azure/devops/pipelines/tasks/build/visual-studio-build)结合使用。
+  - 对于应用的一次性（或手动）部署，请使用 Visual Studio 中的“发布”工具。 请参阅[部署 ASP.NET Web 应用](/azure/app-service/quickstart-dotnetcore)。
   - 若要为 GitHub.com 上托管的 ASP.NET 和 Azure Function 项目创建 GitHub 操作工作流，请参阅[使用 GitHub Actions 部署到 Azure](../deployment/azure-deployment-using-github-actions.md)。
+  - 有关使用 Git 进行部署的信息，请参阅[使用 Git 将 ASP.NET Core 持续部署到 Azure](/azure/app-service/deploy-continuous-deployment)。
 
-  对于可提供自定义程度更高的服务器配置的部署，还可以使用“发布”工具将应用部署到 Azure 虚拟机。
-
-  要使用“发布”工具，请右键单击“解决方案资源管理器”中的项目，然后选择“发布”。 （如果之前尚未配置任何发布配置文件，必须选择“新建配置文件”。）在“发布”对话框中，选择“应用服务”或“Azure 虚拟机”，然后按照配置步骤操作。
+  要使用“发布”工具，请右键单击“解决方案资源管理器”中的项目，然后选择“发布”。  (如果以前配置过任何发布配置文件，则必须选择"创建新 **配置文件"。**) 在"发布"对话框中，选择 **"App 服务"**;或者，如果自定义自己的服务器 **，请选择"Azure 虚拟机"**，然后执行配置步骤。
 
   ![显示选择“Azure 应用服务”的屏幕截图。](../deployment/media/quickstart-publish-azure-new.png "选择 Azure 应用服务")
-
-  自 Visual Studio 2017 版本 15.7 开始，可将 ASP.NET Core 应用部署到 Linux 上的应用服务。
-
-  有关快速介绍，请参阅[发布 ASP.NET 应用](quickstart-deploy-aspnet-web-app.md?tabs=folder)。 另请参阅[部署 ASP.NET Web 应用](/azure/app-service/quickstart-dotnetcore?tabs=netcore31&pivots=development-environment-vs#publish-your-web-app)。 有关使用 Git 进行部署的信息，请参阅[使用 Git 将 ASP.NET Core 持续部署到 Azure](/azure/app-service/deploy-continuous-deployment)。
 
   > [!NOTE]
   > 如果没有 Azure 帐户，可以[在此注册](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio)。
