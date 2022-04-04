@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: 5d96e6cad10fbd5f5c9b0ddff8e5399af1dd005f
-ms.sourcegitcommit: dcecc0ed37b5e976b5dc83c5128ba5ecc8bc04b1
+ms.openlocfilehash: 08e36aec73b6eae5140ad6b349e7b467b7f82bfe
+ms.sourcegitcommit: 1ed233bb3afc5ae1f52aff8e41f7e650342033ad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2022
-ms.locfileid: "135751080"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "141275355"
 ---
 # <a name="work-with-r-in-visual-studio"></a>在 Visual Studio 中使用 R
 
@@ -47,9 +47,9 @@ R 是用于统计计算和图形的高度可扩展语言和环境。 它是使�
 
 另请参阅[常见问题](faq.md)。
 
-![视频的影片摄像机图标](../install/media/video-icon.png "观看视频") [观看视频 (youtube.com)](https://www.youtube.com/watch?v=dll3IS1bfWQ)，简要了解用于 Visual Studio 的 R 工具（12 分钟 36 秒）。 另请参阅[更多 R 工具视频](https://www.youtube.com/results?search_query=R+Tools+for+visual+studio)。
+有关如何在 Visual Studio 使用 R 工具的视频，请参阅 [R 工具视频](https://www.youtube.com/results?search_query=R+Tools+for+visual+studio)。
 
-## <a name="send-us-your-feedback"></a>向我们发送反馈！
+## <a name="send-us-your-feedback"></a>向我们发送反馈
 
 1. GitHub 问题：联系 RTVS 团队的最佳方式是[在 GitHub 中上报问题](https://github.com/Microsoft/RTVS/issues)或使用“R 工具” > “反馈”菜单。
 
