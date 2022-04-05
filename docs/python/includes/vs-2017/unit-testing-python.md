@@ -1,22 +1,17 @@
 ---
 title: 单元测试 Python 代码
 description: 在 Visual Studio 中为 Python 代码设置单元测试，以充分利用测试资源管理器功能来发现、运行和调试测试。
-ms.date: 09/18/2019
+ms.date: 04/01/2022
 ms.topic: how-to
 author: rjmolyneaux
 ms.author: rmolyneaux
 manager: jmartens
 ms.technology: vs-python
 ms.workload:
-- python
-- data-science
-ms.openlocfilehash: a85d1b483fc94372daece567eff1a9dda8692418
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129968304"
+  - python
+  - data-science
 ---
+
 ## <a name="discover-and-view-tests"></a>发现和查看测试
 
 根据惯例，Visual Studio 将测试标识为名称以“`test`”开头的方法。 若要查看此行为，请执行以下操作：
@@ -49,7 +44,7 @@ ms.locfileid: "129968304"
 
 1. 还可以在“搜索”字段中输入文本以按名称筛选测试。
 
-有关 `unittest` 模块和编写测试的详细信息，请参阅 [Python 2.7 文档](https://docs.python.org/2/library/unittest.html)或 [Python 3.7 文档](https://docs.python.org/3/library/unittest.html) (python.org)。
+有关模块和编写测试的详细信息 `unittest` ，请参阅 [Python 3.10 文档](https://docs.python.org/3.10/library/unittest.html)。
 
 ## <a name="run-tests"></a>运行测试
 

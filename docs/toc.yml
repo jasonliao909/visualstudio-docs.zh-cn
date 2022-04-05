@@ -493,7 +493,7 @@
             - name: 管理编辑器窗口
               href: ide/how-to-manage-editor-windows.md
             - name: 更改字体和颜色
-              href: ide/reference/how-to-change-fonts-and-colors-in-the-editor.md
+              href: ide/how-to-change-fonts-and-colors-in-visual-studio.md
             - name: 更改自动换行
               href: ide/reference/how-to-manage-word-wrap-in-the-editor.md
             - name: 显示行号
@@ -882,8 +882,6 @@
           href: ide/visual-studio-performance-tips-and-tricks.md
 - name: 可访问性
   items:
-    - name: 设置 IDE 辅助功能选项
-      href: ide/reference/how-to-set-ide-accessibility-options.md
     - name: 辅助功能提示和技巧
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: Microsoft 提供的辅助功能产品和服务

@@ -5,22 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
-- MSBuild, writing tasks
-- tasks, creating for MSBuild
-- MSBuild, creating tasks
+  - 'MSBuild, writing tasks'
+  - 'tasks, creating for MSBuild'
+  - 'MSBuild, creating tasks'
 ms.assetid: 3ebc5f87-8f00-46fc-82a1-228f35a6823b
 author: ghogen
 ms.author: ghogen
 manager: jmartens
 ms.technology: msbuild
 ms.workload:
-- multiple
-ms.openlocfilehash: da50fb9934439d309235a5230cf2e60fba08ad1d
-ms.sourcegitcommit: efe1d737fd660cc9183177914c18b0fd4e39ba8b
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "130211436"
+  - multiple
 ---
 # <a name="task-writing"></a>任务写入
 
@@ -267,4 +261,6 @@ namespace SimpleTask2
 
 ## <a name="see-also"></a>另请参阅
 
+- [创建自定义任务](tutorial-custom-task-code-generation.md)
+- [使用 MSBuild 创建 REST API 客户端](tutorial-rest-api-client-msbuild.md)
 - [任务参考](../msbuild/msbuild-task-reference.md)

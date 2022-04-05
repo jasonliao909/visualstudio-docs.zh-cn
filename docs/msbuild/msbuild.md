@@ -5,21 +5,15 @@ ms.custom: SEO-VS-2020
 ms.date: 08/11/2021
 ms.topic: conceptual
 helpviewer_keywords:
-- MSBuild, about MSBuild
-- MSBuild, overview
+  - 'MSBuild, about MSBuild'
+  - 'MSBuild, overview'
 ms.assetid: e39f13f7-1e1d-4435-95ca-0c222bca071c
 author: ghogen
 ms.author: ghogen
 manager: jmartens
 ms.technology: msbuild
 ms.workload:
-- multiple
-ms.openlocfilehash: 1703f915203a7e91176117571442b2d1b171d76e
-ms.sourcegitcommit: 3cfe24a74b611440b831d9591e067874c51a3bfb
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "130087379"
+  - multiple
 ---
 # <a name="msbuild"></a>MSBuild
 
@@ -198,6 +192,8 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 | [高级概念](../msbuild/msbuild-advanced-concepts.md) | 演示批处理、执行转换、多目标和其他高级技术。 |
 | [MSBuild 中的日志记录](../msbuild/logging-in-msbuild.md) | 介绍如何记录生成事件、消息和错误。 |
 | [MSBuild 如何生成项目](build-process-overview.md) | 描述 MSBuild 中使用的内部生成过程 |
+| [创建用于代码生成的自定义任务](tutorial-custom-task-code-generation.md) | 演示如何使用代码示例创建自定义任务。 |
+| [使用 MSBuild 生成 REST API 客户端](tutorial-rest-api-client-msbuild.md) | 演示如何使用代码示例来扩展生成以处理 REST API 客户端生成。 |
 | [其他资源](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild) | 列出社区和支持资源，用于了解有关 MSBuild 的更多信息。 |
 
 ## <a name="reference"></a>参考
