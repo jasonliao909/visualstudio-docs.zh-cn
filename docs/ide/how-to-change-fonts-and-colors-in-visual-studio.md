@@ -1,25 +1,20 @@
 ---
 title: 更改主题、字体、文本和对比度以提供辅助功能
-description: 了解如何更改 Visual Studio 颜色主题、字体颜色、文本大小和额外的对比度颜色，以提供辅助功能。
-ms.date: 02/28/2022
+description: 了解如何更改Visual Studio主题、字体颜色、文本大小、超对比度颜色等内容，以便于使用和辅助功能。
+titleSuffix: ''
+ms.date: 04/04/2022
 ms.topic: how-to
 ms.custom: contperf-fy21q1
 helpviewer_keywords:
-- Visual Studio, color themes
-- color themes, Visual Studio
+  - 'Visual Studio, color themes'
+  - 'color themes, Visual Studio'
 ms.assetid: 60d91ba1-244b-4c43-847f-60b744f1352a
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
-- multiple
-ms.openlocfilehash: a810d7cea8665e94c5d1bc6a91fb922b89c473a2
-ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "139551204"
+  - multiple
 ---
 # <a name="how-to-change-fonts-colors-and-themes-in-visual-studio"></a>如何：在 Visual Studio 中更改字体、颜色和主题
 
@@ -28,7 +23,7 @@ ms.locfileid: "139551204"
 可以通过多种方式在 Visual Studio 中更改字体和颜色。 例如，你可以将默认的深色主题（也称为“深色模式”）更改为浅色主题、蓝色主题、额外对比度主题或与系统设置相匹配的主题。 另外，还可以在 IDE 和代码编辑器中更改默认字体和文本大小。
 
 > [!TIP]
-> 请参阅[我们在 Visual Studio 2022 中升级了 UI](https://devblogs.microsoft.com/visualstudio/weve-upgraded-the-ui-in-visual-studio-2022/) 博客文章，详细了解我们对颜色对比度作出的细微调整和添加的新 Cascadia Code 字体，以便每个人都能更轻松地使用 Visual Studio。
+> 请参阅 [**我们在 Visual Studio 2022 年升级了 UI 博客文章**](https://devblogs.microsoft.com/visualstudio/weve-upgraded-the-ui-in-visual-studio-2022/)，详细了解细微的颜色对比度调整和新增的 [Cascadia Code](#use-the-cascadia-code-font) 字体，使Visual Studio更易于访问。
 
 ::: moniker-end
 
@@ -160,9 +155,9 @@ ms.locfileid: "139551204"
 
 ::: moniker-end
 
-若要详细了解如何在代码编辑器中更改字体和颜色，请参阅更改编辑器 [的字体和颜色](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md) 页。 有关 UI 的所有用户界面的详细信息 (用户界面) 更改字体和配色方案的元素，请参阅"字体和颜色，环境，选项" [对话框](../ide/reference/fonts-and-colors-environment-options-dialog-box.md) 页。
+若要详细了解如何更改辅助功能的字体和颜色，请参阅此页的"设置 [辅助功能](#set-accessibility-options) 选项"部分。 有关 UI 的所有用户界面的详细信息 (用户界面) 更改字体和配色方案的元素，请参阅"字体和颜色，环境，选项" [对话框](../ide/reference/fonts-and-colors-environment-options-dialog-box.md) 页。
 
-## <a name="accessibility-options"></a>辅助功能选项
+## <a name="set-accessibility-options"></a>设置辅助功能选项
 
 ::: moniker range="vs-2022"
 
@@ -225,17 +220,123 @@ ms.locfileid: "139551204"
 
 ### <a name="more-accessibility-features-in-visual-studio"></a>更多辅助功能Visual Studio
 
-除了字体和颜色辅助功能之外，下面还有一些使残障人士Visual Studio辅助功能的功能：
+Visual Studio还包括一些功能，可帮助具有有限写入能力的人。 例如，Visual Studio Dvorak 键盘布局，使最常用类型字符更易于访问。
 
-- 键盘快捷方式控件和自定义项;请参阅[如何以独占方式使用键盘](reference/how-to-use-the-keyboard-exclusively.md)[和键盘](default-keyboard-shortcuts-in-visual-studio.md)Visual Studio。
+还可以自定义 Visual Studio 可用的默认键盘快捷键。 有关详细信息，请参阅以下页面：
 
-- 方法和参数的自动完成;请参阅[中的 IntelliSense](using-intellisense.md) Visual Studio。
+- [标识并自定义键盘快捷方式](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
+- [如何以独占方式使用键盘](reference/how-to-use-the-keyboard-exclusively.md)
+- [Visual Studio 中的键盘快捷方式](default-keyboard-shortcuts-in-visual-studio.md)
 
-有关使残障人士更容易Windows功能、产品和服务的信息，请参阅 Microsoft 的辅助功能[产品和服务](reference/accessibility-products-and-services-from-microsoft.md)。 此外，若要详细了解如何获取 Microsoft 产品的更易于访问的文档格式，请参阅 Microsoft 中辅助功能产品和服务的备用[格式文档部分](reference/accessibility-products-and-services-from-microsoft.md)页。[](reference/accessibility-products-and-services-from-microsoft.md#documentation-in-alternative-formats)
+Visual Studio 还包括方法和参数的自动完成功能; 有关详细信息，请参阅[Visual Studio 中的 IntelliSense](using-intellisense.md)。
+
+::: moniker range="vs-2017"
+
+> [!TIP]
+> 若要详细了解最新的辅助功能更新，请参阅博文 [Visual Studio 2017 版本 15.3 中的辅助功能改进](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/)。
+
+::: moniker-end
+
+还有更多方法可用于自定义 Visual Studio 以便更易于访问。 例如，您可以更改弹出窗口、基于文本的工具窗口、工具栏按钮、边距指示器等的行为。
+
+> [!NOTE]
+> 显示的对话框和菜单命令可能与此处的描述不同，具体取决于你的当前设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅[重置设置](environment-settings.md#reset-settings)。
+
+#### <a name="change-the-behavior-of-pop-up-windows"></a>更改弹出窗口的行为
+
+Visual Studio 在编辑器中显示弹出窗口。 这些弹出窗口包含使编码更容易的信息，如用于完成函数或语句的参数。 如果键入时遇到困难，弹出窗口也会有所帮助。 但是，某些用户可能会发现它们会干扰代码编辑器中的焦点，这可能会导致问题。
+
+下面介绍如何关闭弹出窗口：
+
+1. 从“工具”菜单中选择“选项”。
+
+1. 依次选择“文本编辑器” > “所有语言” > “常规”  。
+
+1. 清除“自动列出成员”和“参数信息”复选框。
+
+可以在集成开发环境 (IDE) 中重新排列窗口，以最适合的方式开展工作。 可以停靠、浮动、隐藏或自动隐藏每个工具窗口。 有关如何更改窗口布局的详细信息，请参阅[自定义窗口布局](customizing-window-layouts-in-visual-studio.md)。
+
+#### <a name="change-the-settings-of-text-based-tool-windows"></a>更改基于文本的工具窗口的设置
+
+可以更改基于文本的工具窗口的设置，例如“命令”窗口、“即时”窗口和“输出”窗口，方法是使用“工具” > “选项” > “环境” > “字体和颜色”。
+
+在“显示以下内容的设置”下拉列表中选中“[全部文本工具窗口]”时，默认设置会在“项前景”和“项背景”下拉列表中作为“默认值”列出。 选择“自定义”按钮可以更改这些设置。
+
+还可以更改编辑器中文本显示方式的设置。 操作方法如下。
+
+1. 从“工具”菜单中选择“选项”。
+
+1. 选择“环境” > “字体和颜色” 。
+
+1. 在“显示其设置”下拉菜单中选择一个选项。
+
+    若要更改编辑器中文本的字号，请选择“文本编辑器”。
+
+    若要更改基于文本的工具窗口中文本的字号，请选择“[全部文本工具窗口]”。
+
+    若要更改编辑器中工具提示文本的字号，请选择“编辑器工具提示”。
+
+    若要更改语句完成弹出消息中文本的字号，请选择“语句完成”。
+
+1. 从“显示项”中选择“纯文本”。
+
+1. 在“字体”中选择一个新的字体类型。
+
+1. 在“大小”中选择一个新的字号。
+
+    > [!TIP]
+    > 若要重置基于文本的工具窗口和编辑器的文本大小，请选择“使用默认值”。
+
+7. 选择 **“确定”** 。
+
+#### <a name="change-the-colors-for-text-margin-indicators-white-space-and-code-elements"></a>更改文本、边距指示器、空格和代码元素的颜色
+
+可以选择更改编辑器中文本、边距指示器、空格和码位元素的默认颜色。 操作方法如下。
+
+1. 从“工具”菜单中选择“选项”。
+
+1. 在“环境”文件夹中选择“字体和颜色”。
+
+1. 在“显示其设置”中选择“文本编辑器”。
+
+1. 从“显示项”中选择要更改其显示方式的项，例如“纯文本”、“指示器边距”、“可见空白”、“HTML 特性名”或“XML 特性”。
+
+1. 从下列选项中选择显示设置：“项前景”、“项背景”和“粗体”。
+
+1. 选择 **“确定”** 。
+
+> [!TIP]
+> 若要对操作系统上的所有应用程序窗口使用高对比度的颜色，请按左 Alt + 左 Shift + PrtScn  。 如果 Visual Studio 处于打开状态，请关闭并重新打开它以完全实现高对比度的颜色。
+
+#### <a name="add-text-to-toolbar-buttons-or-modify-the-text"></a>向工具栏按钮添加文本或修改文本
+
+为了提高工具栏的可用性和易用性，可以向工具栏按钮添加文本。
+
+###### <a name="to-assign-text-to-toolbar-buttons"></a>为工具栏按钮指定文本
+
+1. 在“工具”菜单中选择“自定义”。
+
+1. 在“自定义”对话框中选择“命令”选项卡。
+
+1. 选择“工具栏”，然后选择包含要显示其文本的按钮的工具栏名称。
+
+1. 在列表中，选择要更改的命令。
+
+1. 选择“修改所选内容”。
+
+1. 选择“图像和文本”。
+
+###### <a name="to-modify-the-displayed-text-in-a-button"></a>修改按钮中的显示文本
+
+1. 重新选择“修改所选内容”。
+
+1. 在“名称”旁边为选定的按钮插入一个新标题。
 
 ### <a name="accessibility-support"></a>辅助功能支持
 
-此页上包含的辅助功能信息可能仅适用于在 美国 中许可 Microsoft 产品的用户。 如果你在美国之外获得本产品，请访问 [Microsoft 辅助功能](https://www.microsoft.com/accessibility/)网站，以获取 Microsoft 支持服务电话号码和地址的列表。 你可以与当地的分公司联系，了解你所在的地区是否供应本页所描述的产品和服务类型。 有关辅助功能的信息还有其他语言版本。
+有关使残障人士更易于访问 Windows 功能、产品和服务的详细信息，请参阅 Microsoft 提供的[辅助功能产品和服务](reference/accessibility-products-and-services-from-microsoft.md)。 此外，有关如何获取 Microsoft 产品的更易于访问的文档格式的详细信息，请参阅[Microsoft 辅助功能产品和服务](reference/accessibility-products-and-services-from-microsoft.md)的[其他格式部分中的文档](reference/accessibility-products-and-services-from-microsoft.md#documentation-in-alternative-formats)。
+
+此页中包含的辅助功能信息可能仅适用于在美国中获得 Microsoft 产品许可的用户。 如果你在美国之外获得本产品，请访问 [Microsoft 辅助功能](https://www.microsoft.com/accessibility/)网站，以获取 Microsoft 支持服务电话号码和地址的列表。 你可以与当地的分公司联系，了解你所在的地区是否供应本页所描述的产品和服务类型。 有关辅助功能的信息还有其他语言版本。
 
 ## <a name="see-also"></a>另请参阅
 

@@ -5,23 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 09/23/2021
 ms.topic: how-to
 f1_keywords:
-- vs.debug.execution
+  - vs.debug.execution
 helpviewer_keywords:
-- stepping
-- debugging [Visual Studio], execution control
-- execution, controlling in debugger
+  - stepping
+  - 'debugging [Visual Studio], execution control'
+  - 'execution, controlling in debugger'
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
-- multiple
-ms.openlocfilehash: 8a94e57bc7a807cb947c63600a33d1dad86459d2
-ms.sourcegitcommit: ef734f0bf02732a6d37b41640ba64d8075e1dd29
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "141185155"
+  - multiple
 ---
 # <a name="navigate-through-code-by-using-the-visual-studio-debugger"></a>使用 Visual Studio 调试程序在代码中导航
 
@@ -40,7 +34,17 @@ Visual Studio 调试器可帮助你浏览代码，以检查应用的状态并显
 
    例如，在 Visual Studio 的代码编辑器中，可以使用“运行到光标处”命令启动应用，附加调试程序并进入中断模式，然后选择 F11 在代码中导航 ：
 
-   ![显示依次选择“运行到光标处”和 F11 的动画。](../debugger/media/navigate-code-code-stepping.gif)
+   ::: moniker range="<=vs-2019"
+
+   ![显示依次选择“运行到光标处”和 F11 的动画。](../debugger/media/vs-2019/navigate-code-code-stepping.gif)
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2022"
+
+   ![显示依次选择“运行到光标处”和 F11 的动画。](../debugger/media/vs-2022/navigate-code-code-stepping.gif)
+
+   ::: moniker-end
 
 进入中断模式后，可以使用各种命令在代码中导航。 你可以检查变量的值，以查找冲突或 bug。 对于某些项目类型，还可以在中断模式下对应用进行调整。
 
@@ -95,7 +99,17 @@ Visual Studio 调试器可帮助你浏览代码，以检查应用的状态并显
 
 若要在代码中设置简单的断点，请选择要挂起执行的代码行的最左侧边距。 你还可以选择该行，然后选择 F9，选择“调试” > “切换断点”，或者右键单击并选择“断点” > “插入断点”    。 断点显示为代码行左边距中的一个红点。 调试程序在行运行之前挂起执行。
 
-![显示如何设置断点的屏幕截图。](../debugger/media/dbg_basics_setbreakpoint.png)
+::: moniker range="<=vs-2019"
+
+![显示如何设置断点的屏幕截图。](../debugger/media/vs-2019/dbg-basics-set-breakpoint.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+![显示如何设置断点的屏幕截图。](../debugger/media/vs-2022/dbg-basics-set-breakpoint.png)
+
+::: moniker-end
 
 Visual Studio 中的断点提供了一组丰富的功能，例如条件断点和跟踪点。 有关详细信息，请参阅[使用断点](../debugger/using-breakpoints.md)。
 
@@ -109,13 +123,34 @@ Visual Studio 中的断点提供了一组丰富的功能，例如条件断点和
 
 1. 在“新建函数断点”对话框中，输入函数名称并选择其语言：
 
-   ![显示“新建函数断点”对话框的屏幕截图。](../debugger/media/dbg_execution_newbreakpoint.png)
+   ::: moniker range="<=vs-2019"
+
+   ![显示“新建函数断点”对话框的屏幕截图。](../debugger/media/vs-2019/dbg-execution-new-breakpoint.png)
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2022"
+
+   ![显示“新建函数断点”对话框的屏幕截图。](../debugger/media/vs-2022/dbg-execution-new-breakpoint.png)
+
+   ::: moniker-end
+
 
 1. 选择“确定”。
 
 如果函数已重载或位于多个命名空间中，则可以在“断点”窗口中选择所需的断点：
 
-![显示重载的函数断点的屏幕截图。](../debugger/media/dbg_execution_overloadedbreakpoints.png)
+::: moniker range="<=vs-2019"
+
+![显示断点窗口的屏幕截图。](../debugger/media/vs-2019/dbg-execution-overloaded-breakpoints.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+![显示断点窗口的屏幕截图。](../debugger/media/vs-2022/dbg-execution-overloaded-breakpoints.png)
+
+::: moniker-end
 
 **从调用堆栈中选择函数断点**
 
@@ -148,7 +183,7 @@ Visual Studio 中的断点提供了一组丰富的功能，例如条件断点和
 
 在调试程序暂停时，可将鼠标悬停在源代码中的某个语句上，同时按住 Shift 键，并选择“强制执行运行到此处”（绿色双箭头） 。 如果选择此选项，则应用程序会附加 Visual Studio 调试程序，并在光标位置处暂停。 在执行期间发现的任何断点和首次异常将被暂时禁用。
 
-![显示“强制运行到单击处”的屏幕截图。](../debugger/media/dbg_force-run-to-cursor.png)
+![显示“强制运行到单击处”的屏幕截图。](../debugger/media/dbg-force-run-to-cursor.png)
 
 > [!NOTE]
 > 从 [!include[vs_dev17](../misc/includes/vs_dev17_md.md)] 开始，“强制运行到单击处”可用。
@@ -162,7 +197,18 @@ Visual Studio 中的断点提供了一组丰富的功能，例如条件断点和
 
 调试程序暂停时，源代码或“反汇编”窗口边距处的黄色箭头标记要运行的下一条语句的位置。 你可以通过移动此箭头来更改要运行的下一条语句。 你可以跳过代码，或者返回上一行。 在某些情况下移动指针很有用，例如，跳过包含已知 bug 的代码。
 
- ![显示如何移动指针的动画。](../debugger/media/dbg_basics_example3.gif)
+ ::: moniker range="<=vs-2019"
+
+ ![显示如何移动指针的动画。](../debugger/media/vs-2019/dbg-basics-example3.gif)
+
+ ::: moniker-end
+
+ ::: moniker range=">=vs-2022"
+
+ ![显示如何移动指针的动画。](../debugger/media/vs-2022/dbg-basics-example3.gif)
+
+ ::: moniker-end
+
 
 如果要更改将运行的下一条语句，调试程序必须处于中断模式。 在源代码或“反汇编”窗口中，将黄色箭头拖动到另一行，或右键单击接下来要运行的行并选择“设置下一语句” 。
 

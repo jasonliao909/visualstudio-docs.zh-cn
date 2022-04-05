@@ -2,7 +2,7 @@
 title: 使用“仅我的代码”调试用户代码 | Microsoft Docs
 description: “仅我的代码”是一项调试功能，可自动单步跳过非用户代码调用。 了解如何启用、禁用和使用此功能。
 ms.custom: SEO-VS-2020
-ms.date: 02/13/2019
+ms.date: 04/01/2022
 ms.topic: how-to
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
 author: mikejo5000
@@ -10,13 +10,7 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
-- multiple
-ms.openlocfilehash: 0ecdb99b23c47a237995be1179c3bf26258c3ea6
-ms.sourcegitcommit: 52a425b5a541034cda26db8df9cd43281c007e80
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 12/23/2021
-ms.locfileid: "135540627"
+  - multiple
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>使用“仅我的代码”仅调试用户代码
 
@@ -30,7 +24,17 @@ ms.locfileid: "135540627"
 
 - 要在 Visual Studio 中启用或禁用“仅我的代码”，请在“工具” > “选项”（或“调试” > “选项”）>“调试” > “常规”下，选择和取消选择“启用‘仅我的代码’”      。
 
-![“选项”对话框中的“启用‘仅我的代码’”](../debugger/media/dbg_justmycode_options.png "启用“仅我的代码”")
+::: moniker range="<=vs-2019"
+
+!["选项" 对话框中的 "启用仅我的代码的屏幕截图。](../debugger/media/vs-2019/dbg-just-my-code-options.png "启用“仅我的代码”")
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+!["选项" 对话框中的 "启用仅我的代码的屏幕截图。](../debugger/media/vs-2022/dbg-just-my-code-options.png "启用“仅我的代码”")
+
+::: moniker-end
 
 > [!NOTE]
 > “启用‘仅我的代码’”是全局设置，会应用于所有语言的全部 Visual Studio 项目。
@@ -39,18 +43,48 @@ ms.locfileid: "135540627"
 
 在调试会话期间，“模块”窗口会显示调试器将哪些代码模块视为“我的代码”（用户代码），以及其符号加载状态。 有关详细信息，请参阅[熟悉调试器如何附加到应用](../debugger/debugger-tips-and-tricks.md#modules_window)。
 
-![“模块”窗口中的用户代码](../debugger/media/dbg_justmycode_module.png "“模块”窗口中的用户代码")
+::: moniker range="<=vs-2019"
+
+!["模块" 窗口中的用户代码屏幕截图。](../debugger/media/vs-2019/dbg-just-my-code-module.png "“模块”窗口中的用户代码")
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+!["模块" 窗口中的用户代码屏幕截图。](../debugger/media/vs-2022/dbg-just-my-code-module.png "“模块”窗口中的用户代码")
+
+::: moniker-end
 
 在“调用堆栈”或“任务”窗口中，“仅我的代码”将非用户代码折叠到标签为 `[External Code]` 的灰色带批注代码帧 。
 
-![“调用堆栈”窗口中的 External Code 帧](../debugger/media/dbg_justmycode_externalcode.png "External Code 帧")
+::: moniker range="<=vs-2019"
+
+!["调用堆栈" 窗口中外部代码的屏幕截图。](../debugger/media/vs-2019/dbg-just-my-code-external-code.png "External Code 帧")
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+!["调用堆栈" 窗口中外部代码的屏幕截图。](../debugger/media/vs-2022/dbg-just-my-code-external-code.png "External Code 帧")
+
+::: moniker-end
 
 >[!TIP]
 >必须处于调试会话才能打开“模块”、“调用堆栈”、“任务”或大多数其他调试窗口  。 调试时，在“调试” > “窗口”下，选择要打开的窗口 。
 
 <a name="BKMK_Override_call_stack_filtering"></a> 要查看折叠的 [External Code] 帧中的代码，请在“调用堆栈”或“任务”窗口中右键单击，然后从上下文菜单中选择“显示外部代码”   。 展开的外部代码行将替换 [External Code] 帧。
 
-![在“调用堆栈”窗口中显示外部代码](../debugger/media/dbg_justmycode_showexternalcode.png "显示外部代码")
+::: moniker range="<=vs-2019"
+
+!["调用堆栈" 窗口中显示外部代码的屏幕截图。](../debugger/media/vs-2019/dbg-just-my-code-show-external-code.png "显示外部代码")
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+!["调用堆栈" 窗口中显示外部代码的屏幕截图。](../debugger/media/vs-2022/dbg-just-my-code-show-external-code.png "显示外部代码")
+
+::: moniker-end
 
 > [!NOTE]
 > “显示外部代码”是当前用户探查器设置，会应用于用户打开的所有语言的全部项目。
@@ -96,11 +130,11 @@ ms.locfileid: "135540627"
 
 对于代码单步执行行为，C++ 中的“仅我的代码”仅将以下函数视为非用户代码：
 
-- 未在调试器中加载相应 PDB 文件的函数。
+- 未在调试器中加载相应的 PDB 文件的函数。
 - %VsInstallDirectory%\Common7\Packages\Debugger\Visualizers 文件夹下 \*.natjmc 文件中指定的函数 。
 
 > [!NOTE]
-> 为了在“仅我的代码”中支持代码单步执行，必须在 Visual Studio 15.8 预览版 3 或更高版本中使用 MSVC 编译器来编译 C++ 代码，并且必须启用 /JMC 编译器开关（默认启用）。 有关更多详细信息，请参阅 [自定义 C++ 调用堆栈和代码单步执行行为](#BKMK_CPP_Customize_call_stack_behavior) 以及 [此博客文章](https://devblogs.microsoft.com/cppblog/announcing-jmc-stepping-in-visual-studio/)。 对于使用较旧编译器编译的代码，.natstepfilter 文件是独立于“仅我的代码”设置自定义代码单步执行的唯一方法。 请参阅[自定义 C++ 单步执行行为](#BKMK_CPP_Customize_stepping_behavior)。
+> 为了在“仅我的代码”中支持代码单步执行，必须在 Visual Studio 15.8 预览版 3 或更高版本中使用 MSVC 编译器来编译 C++ 代码，并且必须启用 /JMC 编译器开关（默认启用）。 有关更多详细信息，请参阅 [自定义 c + + 调用堆栈和代码单步执行行为](#BKMK_CPP_Customize_call_stack_behavior) 和此 [博客文章](https://devblogs.microsoft.com/cppblog/announcing-jmc-stepping-in-visual-studio/)。 对于使用较旧编译器编译的代码，.natstepfilter 文件是独立于“仅我的代码”设置自定义代码单步执行的唯一方法。 请参阅[自定义 C++ 单步执行行为](#BKMK_CPP_Customize_stepping_behavior)。
 
 <a name="BKMK_CPP_Stepping_behavior"></a> 在 C++ 调试期间：
 
