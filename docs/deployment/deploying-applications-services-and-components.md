@@ -22,12 +22,12 @@ manager: jmartens
 ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a348d1553475afb60c494dca4dfbabc02921de7
-ms.sourcegitcommit: 1ed233bb3afc5ae1f52aff8e41f7e650342033ad
+ms.openlocfilehash: af554e531e24b784947fde52dddc9955b46c8e4e
+ms.sourcegitcommit: 9bac2e4017d909e6823c09a0ce59513b0f8bbb54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "141274201"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "141483571"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>先查看 Visual Studio 中的部署
 
@@ -47,19 +47,19 @@ ms.locfileid: "141274201"
 
   - [使用 ClickOnce 部署 .NET Windows 桌面应用](quickstart-deploy-using-clickonce-folder.md)
   - [使用 ClickOnce 部署 .NET Framework Windows 桌面应用。](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
-  -  (C++/CLR) [使用 C++/CLR 应用部署ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)
-  -  (C/C++) [使用安装程序项目部署本机应用](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)
+  -  (C++/CLR) [使用 ClickOnce 部署 C++/CLR 应用](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)
+  -  (C/C++) [使用安装项目部署本机应用](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)
 
 ## <a name="publish-to-azure"></a>发布到 Azure
 
-- **ASP.NET**、**ASP.NET Core**、**Python****和Node.js**：使用下列方法Azure 应用服务 Linux 上的 Azure 应用服务 或 Azure 应用服务：
+- **ASP.NET**、**ASP.NET Core**、**Python** 和 **Node.js**：使用以下方法之一发布到 Linux 上的Azure 应用服务或Azure 应用服务：
 
   - 对于应用的连续（或自动）部署，请将 Azure DevOps 与 [Azure 管道](/azure/devops/pipelines/tasks/build/visual-studio-build)结合使用。
   - 对于应用的一次性（或手动）部署，请使用 Visual Studio 中的“发布”工具。 请参阅[部署 ASP.NET Web 应用](/azure/app-service/quickstart-dotnetcore)。
   - 若要为 GitHub.com 上托管的 ASP.NET 和 Azure Function 项目创建 GitHub 操作工作流，请参阅[使用 GitHub Actions 部署到 Azure](../deployment/azure-deployment-using-github-actions.md)。
   - 有关使用 Git 进行部署的信息，请参阅[使用 Git 将 ASP.NET Core 持续部署到 Azure](/azure/app-service/deploy-continuous-deployment)。
 
-  要使用“发布”工具，请右键单击“解决方案资源管理器”中的项目，然后选择“发布”。  (如果以前配置过任何发布配置文件，则必须选择"创建新 **配置文件"。**) 在"发布"对话框中，选择 **"App 服务"**;或者，如果自定义自己的服务器 **，请选择"Azure 虚拟机"**，然后执行配置步骤。
+  要使用“发布”工具，请右键单击“解决方案资源管理器”中的项目，然后选择“发布”。  (如果以前配置了任何发布配置文件，则必须在 **"发布**"对话框中选择"**创建新 profile**.) "，选择 **App 服务**，或者，如果自定义自己的服务器 **Azure 虚拟机**，然后执行配置步骤。
 
   ![显示选择“Azure 应用服务”的屏幕截图。](../deployment/media/quickstart-publish-azure-new.png "选择 Azure 应用服务")
 
@@ -95,7 +95,7 @@ ms.locfileid: "141274201"
 - 可以使用 Flexera Software 中的 [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) 创建 MSI 或 EXE 安装程序包。 InstallShield 可与 Visual Studio 2017 及更高版本一起使用。 不支持 Community Edition。
 
   > [!NOTE]
-  > InstallShield Limited Edition 不再包含在 Visual Studio 中，且不受 Visual Studio 2017 及更高版本支持。 请查看 [Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio)，了解其未来的可用性。
+  > InstallShield Limited Edition 不再包含在 Visual Studio 中，且不受 Visual Studio 2017 及更高版本支持。 请查看 Flexera Software，了解其未来的可用性。
 
 - 还可以通过配置通用安装程序（称为引导程序）来安装桌面应用程序的必备组件。 有关详细信息，请参阅[应用程序部署必备](../deployment/application-deployment-prerequisites.md)。
 

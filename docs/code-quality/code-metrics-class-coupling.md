@@ -9,12 +9,12 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c9ff474cfdc8c572143145c642bc42e899b6516
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: d655878ac1a2630d0670c56c4d0122917b8374d9
+ms.sourcegitcommit: 9bac2e4017d909e6823c09a0ce59513b0f8bbb54
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126601338"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "141483558"
 ---
 # <a name="code-metrics---class-coupling"></a>代码度量 - 类耦合
 
@@ -62,7 +62,7 @@ ms.locfileid: "126601338"
 
 ## <a name="code-analysis"></a>代码分析
 
-代码分析包括一系列可维护性规则。 有关详细信息，请参阅[可维护性规则](/dotnet/fundamentals/code-analysis/quality-rules/maintainability-warnings)。 使用旧式代码分析时，扩展设计指南规则集包含一个可维护性区域：
+代码分析包括可维护性规则的类别。 有关详细信息，请参阅[可维护性规则](/dotnet/fundamentals/code-analysis/quality-rules/maintainability-warnings)。 使用旧式代码分析时，扩展设计指南规则集包含一个可维护性区域：
 
 ![类耦合扩展设计指南规则](media/class-coupling-extended-design-guideline-rules.png)
 
@@ -84,7 +84,7 @@ Kabaili, H.、Keller, R.、Lustman, F. 和 Saint-Denis, G. (2000)。 类内聚�
 
 ### <a name="sk2003"></a>SK2003
 
-Subramanyam, R. 和 Krishnan, M. S. (2003). 面向对象设计复杂度的 CK 度量的实证分析：软件缺陷的影响（《IEEE 软件工程汇刊》，第 29 卷， 第 4 期）。 于 2011 年 5 月 14 日检索自马萨诸塞大学达特茅斯分校网站 [http://moosehead.cis.umassd.edu/cis580/readings/OO_Design_Complexity_Metrics.pdf](http://moosehead.cis.umassd.edu/cis580/readings/OO_Design_Complexity_Metrics.pdf)
+Subramanyam, R. 和 Krishnan, M. S. (2003). 面向对象设计复杂度的 CK 度量的实证分析：软件缺陷的影响（《IEEE 软件工程汇刊》，第 29 卷， 第 4 期）。
 
 ### <a name="s2010"></a>S2010
 
