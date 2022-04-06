@@ -1,18 +1,18 @@
 ---
 title: 自定义 IDE
-description: 可以通过不同的方式自定义 Visual Studio for Mac，使用户能够在满足其效率和美观需求的环境中开发应用。 本文将探讨可根据需要调整 Visual Studio for Mac 的不同方式。
+description: Visual Studio for Mac可以采用不同的方式进行自定义，允许用户在满足其效率和美学需求的环境中开发应用。 本文探讨了Visual Studio for Mac可以适应需求的不同方式。
 author: jmatthiesen
 ms.author: jomatthi
 manager: dominicn
 ms.date: 03/03/2022
 ms.custom: devdivchpfy22
 ms.topic: how-to
-ms.openlocfilehash: b17434b495c83d66c44d9dad8a2a757c11563e5a
-ms.sourcegitcommit: 5b2c3a2c5f22e0cd6d35aab6049c1f61c4916e74
+ms.openlocfilehash: a1c3afa48d7ab813153961f8e62d9f336ec230a7
+ms.sourcegitcommit: d9cab667735450e735622f8b93266f07b8046f3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "139852563"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "141402458"
 ---
 # <a name="customizing-the-ide"></a>自定义 IDE
 
@@ -38,7 +38,7 @@ Visual Studio for Mac 已采用以下 14 种语言进行本地化，便于更多
 * 英语
 * 意大利语
 * 日语
-* 韩语
+* 朝鲜语
 * 波兰语
 * 葡萄牙语 - 巴西
 * 俄语
@@ -51,7 +51,7 @@ Visual Studio for Mac 已采用以下 14 种语言进行本地化，便于更多
 
 ## <a name="author-information"></a>创建者信息
 
-使用作者信息面板，您可以添加自己的相关信息，例如你的姓名、电子邮件地址、你的工作、公司和商标的版权所有者：
+通过作者信息面板，可以添加有关自己的相关信息，例如你的姓名、电子邮件地址、作品的版权所有者、你的公司和商标：
 
 ![“编辑创建者信息”部分](media/customizing-the-ide-image9a.png)
 
@@ -77,7 +77,7 @@ Visual Studio for Mac 已采用以下 14 种语言进行本地化，便于更多
 
 ## <a name="workspace-layout"></a>工作区布局
 
-Visual Studio for Mac 的工作区由主要文档区域（通常是编辑器、设计器图面或选项文件）组成，周围是包含用于访问和管理应用程序文件、测试和调试的有用信息的免费工具窗口。
+Visual Studio for Mac工作区由主文档区域组成， (通常由编辑器、设计器图面或选项文件) 组成，其中包含用于访问和管理应用程序文件、测试和调试的有用信息的工具 *窗口*。
 
  ![工作区布局](media/customizing-the-ide-image1a.png)
 
@@ -91,9 +91,9 @@ Visual Studio for Mac 提供包含其他信息、工具和导航帮助的工具�
 
 ![选择新工具窗口](media/customizing-the-ide-image3a.png)
 
-工具 Windows 也可能由不同的命令自动打开，如 "**在文件中查找**" (Shift + Cmd + F) "命令，该命令将打开一个已分离的搜索结果窗口。
+工具Windows也可以由不同的命令自动打开，例如"**在文件中查找**" (Shift + Cmd + F) 命令，这会打开一个分离的搜索结果窗口。
 
-可以最有用的任何方式在工作流中移动和排列工具窗口。 例如，可以将它们停靠在文档编辑器的任何一侧、其他工具窗口的旁边或其他窗口的上方，或作为一组选项卡式窗口，使您能够在它们之间快速切换。
+可以最有用的任何方式在工作流中移动和排列工具窗口。 例如，它们可以停靠在文档编辑器的任何一侧、另一个工具窗口上方或下方，或者作为一组选项卡式窗口，使你能够在它们之间快速切换。
 
 对于频繁使用的工具窗口，也可以将其从 Visual Studio for Mac 窗口完全拆离，并纳入到其自己的新窗口中。
 
@@ -101,17 +101,17 @@ Visual Studio for Mac 提供包含其他信息、工具和导航帮助的工具�
 
 :::image type="content" source="media/customizing-the-ide-image5a.png" alt-text="使用控件固定或关闭工具窗口":::
 
-固定的窗口会停靠在工作区侧面，并保持打开状态，以便在需要时可更快地进行访问。 取消固定的窗口将停靠但不会显示，直到你将鼠标悬停在窗口的选项卡上，并将鼠标指针悬停在键盘上。 当鼠标和键盘焦点离开它们时，它们可以隐藏。
+固定的窗口会停靠在工作区侧面，并保持打开状态，以便在需要时可更快地进行访问。 未固定的窗口停靠，但直到将鼠标或焦点悬停在具有键盘的窗口的选项卡上之前，才会显示。 当鼠标和键盘焦点离开它们时，可以隐藏它们。
 
 ### <a name="organizing-layouts"></a>组织布局
 
-随时都可以显示的工具窗口依赖于当前的上下文。 例如，使用可视化设计器时，"工具箱" 和 "属性网格" 窗口是最重要的。 调试时，使调试器窗口能够查看堆栈和局部变量非常有用。
+随时都可以显示的工具窗口依赖于当前的上下文。 例如，使用可视化设计器时，工具箱和属性网格窗口最为重要。 调试时，让调试器窗口查看堆栈和局部变量很有用。
 
-打开工具窗口的状态由“布局”表示。 可以通过 "视图" 菜单手动切换布局，如下图所示。 当您执行操作（如调试或打开情节提要）时，它也会自动切换：
+打开工具窗口的状态由“布局”表示。 可以通过"视图"菜单手动切换布局，如下图所示。 执行操作（如调试或打开 Storyboard）时，它还会自动切换：
 
 ![选择新的布局](media/customizing-the-ide-image6b.png)
 
-可以通过使用 **视图 > 布局 > 保存当前布局 ...** "菜单项来创建新的布局。 此命令会将当前布局添加到菜单，以供随时选择：
+可以使用 **视图>布局>"保存当前布局..."** 菜单项创建新布局。 此命令会将当前布局添加到菜单，以供随时选择：
 
 ![保存当前布局](media/customizing-the-ide-image6a.png)
 

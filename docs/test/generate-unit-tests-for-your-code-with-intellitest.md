@@ -2,7 +2,7 @@
 title: 使用 IntelliTest 为你的代码生成单元测试
 description: IntelliTest 浏览你的 .NET 代码，以生成测试数据和单元测试套件。 了解如何运行 IntelliTest 来生成包含所有逻辑分支的智能模糊测试，查看哪些测试失败并修复它们。
 ms.custom: SEO-VS-2020
-ms.date: 10/05/2015
+ms.date: 04/04/2022
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateIntelliTest
@@ -12,12 +12,12 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 317cd50c9c6854ea683e7b40d55821ac2a197054
-ms.sourcegitcommit: 4efdab6a579b31927c42531bb3f7fdd92890e4ac
-ms.translationtype: HT
+ms.openlocfilehash: 9bc1e9d814eae78ae060e83cc55bcf6a0c7cef5c
+ms.sourcegitcommit: d9cab667735450e735622f8b93266f07b8046f3e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "130351504"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "141402542"
 ---
 # <a name="generate-unit-tests-for-fuzz-testing-by-using-intellitest"></a>使用 IntelliTest 生成用于模糊测试的单元测试
 
@@ -45,15 +45,45 @@ IntelliTest 浏览你的 .NET 代码，以生成测试数据和单元测试套�
 
 2. 右键单击一个方法并选择“运行 IntelliTest”，为方法中的代码生成单元测试。
 
-   ![在方法中右键单击以生成单元测试](../test/media/runpex.png)
+   ::: moniker range="<=vs-2019"
+
+   ![右键单击用于生成单元测试的方法的屏幕截图。](../test/media/vs-2019/run-pex.png)
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2022"
+
+   ![右键单击用于生成单元测试的方法的屏幕截图。](../test/media/vs-2022/run-pex.png)
+
+   ::: moniker-end
 
    IntelliTest 使用不同的输入多次运行你的代码。 每次运行都会在表中表示出来，显示输入测试数据以及产生的输出或异常。
 
-   ![将显示浏览结果窗口，其中列出测试](../test/media/pexexplorationresults.png)
+   ::: moniker range="<=vs-2019"
+
+   !["浏览结果"窗口的屏幕截图。](../test/media/vs-2019/pex-exploration-results.png)
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2022"
+
+   !["浏览结果"窗口的屏幕截图。](../test/media/vs-2022/pex-exploration-results.png)
+
+   ::: moniker-end
 
 要为一个类中的所有公共方法生成单元测试，只需右键单击类而不是特定的方法，然后选择“运行 IntelliTest”。 使用“浏览结果”窗口中的下拉列表，显示类中每个方法的单元测试和输入数据。
 
-![选择测试结果以从列表中查看](../test/media/selectpextest.png)
+::: moniker range="<=vs-2019"
+
+![要从列表中查看的测试结果的屏幕截图。](../test/media/vs-2019/select-pex-test.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+![要从列表中查看的测试结果的屏幕截图。](../test/media/vs-2022/select-pex-test.png)
+
+::: moniker-end
 
 对于通过的测试，检查结果列中报告的结果是否与你对代码的预期要求匹配。 对于失败的测试，根据需要修复你的代码。 然后重新运行 IntelliTest 来验证修复。
 
@@ -61,11 +91,31 @@ IntelliTest 浏览你的 .NET 代码，以生成测试数据和单元测试套�
 
 1. 选择你要与参数化单元测试一同保存到测试项目中的数据行。
 
-     ![选择测试，右键单击并选择“保存”](../test/media/savepextests.png)
+     ::: moniker range="<=vs-2019"
+
+     ![保存测试结果的屏幕截图。](../test/media/vs-2019/save-pex-tests.png)
+
+     ::: moniker-end
+
+     ::: moniker range=">=vs-2022"
+
+     ![保存测试结果的屏幕截图。](../test/media/vs-2022/save-pex-tests.png)
+
+     ::: moniker-end
 
      你可以查看已创建的测试项目和参数化单元测试，单个单元测试（对应于每个行）保存在测试项目的 .g.cs 文件中，参数化单元测试保存在其对应的 .cs 文件中。 可以从测试资源管理器运行这些单元测试并查看结果，正如手动创建的任何单元测试一样。
 
-     ![在测试方法中打开类文件以查看单元测试](../test/media/testmethodpex.png)
+     ::: moniker range="<=vs-2019"
+
+     ![解决方案资源管理器中保存的测试的屏幕截图。](../test/media/vs-2019/test-method-pex.png)
+
+     ::: moniker-end
+
+     ::: moniker range=">=vs-2022"
+
+     ![解决方案资源管理器中保存的测试的屏幕截图。](../test/media/vs-2022/test-method-pex.png)
+
+     ::: moniker-end
 
      此外，还向测试项目添加了必要的引用。
 
@@ -77,11 +127,31 @@ IntelliTest 浏览你的 .NET 代码，以生成测试数据和单元测试套�
 
      查看警告，确定后续操作。
 
-     ![查看警告](../test/media/pexviewwarning.png)
+     ::: moniker range="<=vs-2019"
+
+     ![查看警告的屏幕截图。](../test/media/vs-2019/pex-view-warning.png)
+
+     ::: moniker-end
+
+     ::: moniker range=">=vs-2022"
+
+     ![查看警告的屏幕截图。](../test/media/vs-2022/pex-view-warning.png)
+
+     ::: moniker-end
 
 2. 调查代码并了解要测试的内容后，可修复警告，以选择要用于测试该接口的类。
 
-     ![右键单击警告，然后选择“修复”](../test/media/pexfixwarning.png)
+     ::: moniker range="<=vs-2019"
+
+     ![修复警告的屏幕截图。](../test/media/vs-2019/pex-fix-warning.png)
+
+     ::: moniker-end
+
+     ::: moniker range=">=vs-2022"
+
+     ![修复警告的屏幕截图。](../test/media/vs-2022/pex-fix-warning.png)
+
+     ::: moniker-end
 
      此选择会添加到 PexAssemblyInfo.cs 文件中。
 
@@ -89,7 +159,17 @@ IntelliTest 浏览你的 .NET 代码，以生成测试数据和单元测试套�
 
 3. 现在，你可重新运行 IntelliTest，以生成参数化单元测试并使用已修复的类测试数据。
 
-     ![重新运行 IntelliTest 来生成测试数据](../test/media/pexwarningsfixed.png)
+     ::: moniker range="<=vs-2019"
+
+     ![修复后重新运行 IntelliTest 的屏幕截图。](../test/media/vs-2019/pex-warnings-fixed.png)
+
+     ::: moniker-end
+
+     ::: moniker range=">=vs-2022"
+
+     ![修复后重新运行 IntelliTest 的屏幕截图。](../test/media/vs-2022/pex-warnings-fixed.png)
+
+     ::: moniker-end
 
 ## <a name="specify-use-intellitest-to-validate-correctness-properties-that-you-specify-in-code"></a>指定：使用 IntelliTest 来验证在代码中指定的正确性属性
 
@@ -135,11 +215,31 @@ IntelliTest 浏览你的 .NET 代码，以生成测试数据和单元测试套�
 
 **答：** 可以，在类或方法中单击右键，然后选择 **创建 IntelliTest**。
 
-![右键单击编辑器，选择“创建 IntelliTest”](../test/media/pexcreateintellitest.png)
+::: moniker range="<=vs-2019"
+
+![创建 IntelliTest 的屏幕截图。](../test/media/vs-2019/pex-create-intellitest.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+![创建 IntelliTest 的屏幕截图。](../test/media/vs-2022/pex-create-intellitest.png)
+
+::: moniker-end
 
 接受默认格式以生成测试，或更改项目和测试的命名方式。 你可以创建新的测试项目或将你的测试保存到现有项目。
 
-![使用默认的 MSTest 创建 IntelliTest](../test/media/pexcreateintellitestmstest.png)
+::: moniker range="<=vs-2019"
+
+![使用 MSTest 默认值创建 IntelliTest 的屏幕截图。](../test/media/vs-2019/pex-create-intellitest-mstest.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+![使用 MSTest 默认值创建 IntelliTest 的屏幕截图。](../test/media/vs-2022/pex-create-intellitest-mstest.png)
+
+::: moniker-end
 
 <a name="extend-framework"></a>
 ### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>问：是否可以将其他单元测试框架用于 IntelliTest？
@@ -149,7 +249,17 @@ Visual Studio Marketplace 中也提供了测试框架扩展，例如 [NUnit T测
 
 重新启动 Visual Studio 并重新打开你的解决方案后，在类或方法中单击右键，然后选择 **创建 IntelliTest**。 请在此处选择已安装的框架：
 
-![选择 IntelliTest 的其他单元测试框架](../test/media/pexcreateintellitestextensions.png)
+::: moniker range="<=vs-2019"
+
+![选择 IntelliTest 的其他单元测试框架的屏幕截图。](../test/media/vs-2019/pex-create-intellitest-extensions.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+![选择 IntelliTest 的其他单元测试框架的屏幕截图。](../test/media/vs-2022/pex-create-intellitest-extensions.png)
+
+::: moniker-end
 
 然后，运行 IntelliTest 以在其相应的 .g.cs 文件中生成单个单元测试。
 
