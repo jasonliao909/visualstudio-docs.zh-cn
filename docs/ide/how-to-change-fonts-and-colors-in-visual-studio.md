@@ -1,20 +1,26 @@
 ---
 title: 更改主题、字体、文本和对比度以提供辅助功能
-description: 了解如何更改Visual Studio主题、字体颜色、文本大小、超对比度颜色等内容，以便于使用和辅助功能。
+description: 了解如何更改Visual Studio颜色主题、字体颜色、文本大小、额外对比度颜色等，以便轻松使用和辅助功能问题。
 titleSuffix: ''
 ms.date: 04/04/2022
 ms.topic: how-to
-ms.custom: contperf-fy21q1
+ms.custom: contperf-fy22q3
 helpviewer_keywords:
-  - 'Visual Studio, color themes'
-  - 'color themes, Visual Studio'
+- Visual Studio, color themes
+- color themes, Visual Studio
 ms.assetid: 60d91ba1-244b-4c43-847f-60b744f1352a
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
-  - multiple
+- multiple
+ms.openlocfilehash: 86089af5cdb35c674c6de1a59dd33a9182c06348
+ms.sourcegitcommit: d9cab667735450e735622f8b93266f07b8046f3e
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "141402267"
 ---
 # <a name="how-to-change-fonts-colors-and-themes-in-visual-studio"></a>如何：在 Visual Studio 中更改字体、颜色和主题
 
@@ -23,7 +29,7 @@ ms.workload:
 可以通过多种方式在 Visual Studio 中更改字体和颜色。 例如，你可以将默认的深色主题（也称为“深色模式”）更改为浅色主题、蓝色主题、额外对比度主题或与系统设置相匹配的主题。 另外，还可以在 IDE 和代码编辑器中更改默认字体和文本大小。
 
 > [!TIP]
-> 请参阅 [**我们在 Visual Studio 2022 年升级了 UI 博客文章**](https://devblogs.microsoft.com/visualstudio/weve-upgraded-the-ui-in-visual-studio-2022/)，详细了解细微的颜色对比度调整和新增的 [Cascadia Code](#use-the-cascadia-code-font) 字体，使Visual Studio更易于访问。
+> 请参阅 [**2022 年 Visual Studio 博客文章中的"我们升级了 UI**](https://devblogs.microsoft.com/visualstudio/weve-upgraded-the-ui-in-visual-studio-2022/)"，详细了解微妙的颜色对比度调整以及我们添加的新 [Cascadia Code](#use-the-cascadia-code-font) 字体，以便Visual Studio每个人都更易于访问。
 
 ::: moniker-end
 
@@ -155,7 +161,7 @@ ms.workload:
 
 ::: moniker-end
 
-若要详细了解如何更改辅助功能的字体和颜色，请参阅此页的"设置 [辅助功能](#set-accessibility-options) 选项"部分。 有关 UI 的所有用户界面的详细信息 (用户界面) 更改字体和配色方案的元素，请参阅"字体和颜色，环境，选项" [对话框](../ide/reference/fonts-and-colors-environment-options-dialog-box.md) 页。
+有关如何更改辅助功能字体和颜色的详细信息，请参阅此页面的 ["设置辅助功能选项](#set-accessibility-options) "部分。 有关所有用户界面的详细信息， (UI) 元素，可在其中更改字体和配色方案，请参阅 ["字体和颜色"、"环境、选项"对话框](../ide/reference/fonts-and-colors-environment-options-dialog-box.md) 页。
 
 ## <a name="set-accessibility-options"></a>设置辅助功能选项
 
@@ -218,9 +224,9 @@ ms.workload:
 > [!TIP]
 > 如果有你认为可能有用但当前在 Visual Studio 中不可用的颜色或字体辅助功能选项，请通过选择 [Visual Studio 开发者社区](https://aka.ms/feedback/suggest?space=8)中的“建议功能”来告知我们。 有关此论坛及其工作原理的详细信息，请参阅[建议功能](../ide/suggest-a-feature.md)页。
 
-### <a name="more-accessibility-features-in-visual-studio"></a>更多辅助功能Visual Studio
+### <a name="more-accessibility-features-in-visual-studio"></a>Visual Studio中的更多辅助功能
 
-Visual Studio还包括一些功能，可帮助具有有限写入能力的人。 例如，Visual Studio Dvorak 键盘布局，使最常用类型字符更易于访问。
+Visual Studio还包括帮助具有有限敏捷性的人员编写的功能。 例如，Visual Studio支持 Dvorak 键盘布局，这使得最常键入的字符更易于访问。
 
 还可以自定义 Visual Studio 可用的默认键盘快捷键。 有关详细信息，请参阅以下页面：
 
@@ -228,7 +234,7 @@ Visual Studio还包括一些功能，可帮助具有有限写入能力的人。 
 - [如何以独占方式使用键盘](reference/how-to-use-the-keyboard-exclusively.md)
 - [Visual Studio 中的键盘快捷方式](default-keyboard-shortcuts-in-visual-studio.md)
 
-Visual Studio 还包括方法和参数的自动完成功能; 有关详细信息，请参阅[Visual Studio 中的 IntelliSense](using-intellisense.md)。
+Visual Studio还包括方法和参数的自动完成;有关详细信息，请参阅 [Visual Studio 中的 IntelliSense](using-intellisense.md)。
 
 ::: moniker range="vs-2017"
 
@@ -237,14 +243,14 @@ Visual Studio 还包括方法和参数的自动完成功能; 有关详细信息�
 
 ::: moniker-end
 
-还有更多方法可用于自定义 Visual Studio 以便更易于访问。 例如，您可以更改弹出窗口、基于文本的工具窗口、工具栏按钮、边距指示器等的行为。
+可以通过更多方法自定义Visual Studio，使你更易于访问。 例如，可以更改弹出窗口、基于文本的工具窗口、工具栏按钮、边距指示器等的行为。
 
 > [!NOTE]
 > 显示的对话框和菜单命令可能与此处的描述不同，具体取决于你的当前设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅[重置设置](environment-settings.md#reset-settings)。
 
 #### <a name="change-the-behavior-of-pop-up-windows"></a>更改弹出窗口的行为
 
-Visual Studio 在编辑器中显示弹出窗口。 这些弹出窗口包含使编码更容易的信息，如用于完成函数或语句的参数。 如果键入时遇到困难，弹出窗口也会有所帮助。 但是，某些用户可能会发现它们会干扰代码编辑器中的焦点，这可能会导致问题。
+Visual Studio在编辑器中显示弹出窗口。 这些弹出窗口包括使编码更容易的信息，例如用于完成函数或语句的参数。 如果键入困难，弹出窗口也很有用。 但是，某些用户可能会发现它们干扰代码编辑器中的焦点，这可能会造成问题。
 
 下面介绍如何关闭弹出窗口：
 
@@ -334,9 +340,9 @@ Visual Studio 在编辑器中显示弹出窗口。 这些弹出窗口包含使�
 
 ### <a name="accessibility-support"></a>辅助功能支持
 
-有关使残障人士更易于访问 Windows 功能、产品和服务的详细信息，请参阅 Microsoft 提供的[辅助功能产品和服务](reference/accessibility-products-and-services-from-microsoft.md)。 此外，有关如何获取 Microsoft 产品的更易于访问的文档格式的详细信息，请参阅[Microsoft 辅助功能产品和服务](reference/accessibility-products-and-services-from-microsoft.md)的[其他格式部分中的文档](reference/accessibility-products-and-services-from-microsoft.md#documentation-in-alternative-formats)。
+有关使残障人士Windows更易于访问的功能、产品和服务的详细信息，请参阅 [Microsoft 提供的辅助功能产品和服务](reference/accessibility-products-and-services-from-microsoft.md)。 有关如何获取 Microsoft 产品的更易于访问的文档格式的详细信息，请参阅 [Microsoft 页面辅助功能产品和服务](reference/accessibility-products-and-services-from-microsoft.md)的["替代格式](reference/accessibility-products-and-services-from-microsoft.md#documentation-in-alternative-formats)"部分的文档。
 
-此页中包含的辅助功能信息可能仅适用于在美国中获得 Microsoft 产品许可的用户。 如果你在美国之外获得本产品，请访问 [Microsoft 辅助功能](https://www.microsoft.com/accessibility/)网站，以获取 Microsoft 支持服务电话号码和地址的列表。 你可以与当地的分公司联系，了解你所在的地区是否供应本页所描述的产品和服务类型。 有关辅助功能的信息还有其他语言版本。
+此页面中包含的辅助功能信息可能仅适用于在美国中许可 Microsoft 产品的用户。 如果你在美国之外获得本产品，请访问 [Microsoft 辅助功能](https://www.microsoft.com/accessibility/)网站，以获取 Microsoft 支持服务电话号码和地址的列表。 你可以与当地的分公司联系，了解你所在的地区是否供应本页所描述的产品和服务类型。 有关辅助功能的信息还有其他语言版本。
 
 ## <a name="see-also"></a>另请参阅
 

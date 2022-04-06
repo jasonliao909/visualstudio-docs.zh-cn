@@ -2,7 +2,7 @@
 title: 对变量设置监视 | Microsoft Docs
 description: 调试时，查看“监视”和“快速监视”中的变量和表达式。 “监视”可以显示若干变量，“快速监视”仅显示一个变量，并且仅在中断时才显示。
 ms.custom: SEO-VS-2020
-ms.date: 09/10/2021
+ms.date: 04/04/2022
 ms.topic: how-to
 f1_keywords:
 - vs.debug.quickwatch
@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f0de0163b157afb6216ff407cc33d949735aada
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: a22eed7a542806695cb55722d63e21756c030bde
+ms.sourcegitcommit: d9cab667735450e735622f8b93266f07b8046f3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129972436"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "141402334"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>使用“监视”和“快速监视”窗口监视变量
 
@@ -71,7 +71,17 @@ int main()
 
 1. 在“监视”窗口中，选择一个空行，然后键入变量 `a`。 对 `b` 和 `c` 执行相同的操作。
 
-   ![监视变量](../debugger/media/watchvariables.png "监视变量")
+   ::: moniker range="<=vs-2019"
+
+   ![监视变量的屏幕截图。](../debugger/media/vs-2019/watch-variable.png)
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2022"
+
+   ![监视变量的屏幕截图。](../debugger/media/vs-2022/watch-variable.png)
+
+   ::: moniker-end
 
 1. 根据需要，选择“调试” > “单步调试”或按 F11 来继续调试  。 在遍历 `for` 循环时，“监视”窗口中的变量值随之更改。
 
@@ -87,22 +97,43 @@ int main()
 
 例如，对于上一部分的代码，可以通过在“监视”窗口输入 `(a + b + c) / 3` 来获得这三个值的平均值：
 
-![监视表达式](../debugger/media/watchexpression.png "监视表达式")
+::: moniker range="<=vs-2019"
+
+![监视表达式的屏幕截图。](../debugger/media/vs-2019/watch-expression.png "监视表达式")
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+![监视表达式的屏幕截图。](../debugger/media/vs-2022/watch-expression.png "监视表达式")
+
+::: moniker-end
 
 “监视”窗口中的表达式求值规则通常与代码语言中表达式的求值规则相同。 如果表达式存在语法错误，则在代码编辑器中将会出现相同的编译器错误。 例如，上一个表达式中的拼写错误会在“监视”窗口中生成此错误：
 
-![监视表达式错误](../debugger/media/watchexpressionerror.png "监视表达式错误")
+::: moniker range="<=vs-2019"
+
+![监视表达式错误的屏幕截图。](../debugger/media/vs-2019/watch-expression-error.png "监视表达式错误")
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+![监视表达式错误的屏幕截图。](../debugger/media/vs-2022/watch-expression-error.png "监视表达式错误")
+
+::: moniker-end
 
 “监视”窗口中可能会出现带有双波浪线图标的圆圈。 此图标表示由于潜在的跨线程依赖关系，调试器不会对表达式求值。 对代码求值需要应用中的其他线程暂时运行，但由于处于中断模式，应用中的所有线程通常都会停止。 允许其他线程暂时运行可能会对应用状态产生意外影响，并且调试器可能会忽略断点和这些线程上的异常等事件。
 
 ::: moniker range=">= vs-2019" 
+
 ## <a name="search-in-the-watch-window"></a>在“监视”窗口中搜索
 
 你可以使用每个窗口上方的搜索栏，在“监视”窗口的“名称”、“值”和“类型”列中搜索关键字。 点击 Enter 或选择其中一个箭头执行搜索。 要取消正在进行的搜索，请选择搜索栏中的“x”图标。
 
 使用左右箭头（分别为 Shift+F3 和 F3）浏览找到的匹配项。
 
-![在“监视”窗口中搜索](../debugger/media/ee-search-watch.png "在“监视”窗口中搜索")
+!["监视"窗口中搜索的屏幕截图。](../debugger/media/ee-search-watch.png "在“监视”窗口中搜索")
 
 要使搜索更加彻底，请使用“监视”窗口顶部的“深入搜索”下拉列表，选择要在嵌套对象中搜索的深度级别 。 
 
@@ -113,7 +144,7 @@ int main()
 
 使用可固定属性工具，可以快速检查“监视”窗口中对象的属性。  要使用此工具，请将鼠标悬停在某个属性上，并选择出现的固定图标，或右键单击并选择所显示上下文菜单中的“将成员固定到收藏夹”选项。  这会将该属性以气泡形式显示到该对象的属性列表顶部，并且属性名称和值会显示在“值”列中。  要取消固定属性，请再次选择固定图标，或在上下文菜单中选择“取消将成员固定到收藏夹”选项。
 
-![在“监视”窗口中固定属性](../debugger/media/basic-pin-watch.gif "在“监视”窗口中固定属性")
+!["监视"窗口中固定属性的屏幕截图。](../debugger/media/basic-pin-watch.gif "在“监视”窗口中固定属性")
 
 在“监视”窗口中查看对象的属性列表时，还可以切换属性名称并筛选出非固定属性。  你可以通过在“监视”窗口上方的工具栏中选择按钮来访问这两个选项。
 
@@ -152,7 +183,17 @@ int main()
 
 1. 开始调试。 “监视”窗口显示类似于以下消息的内容：
 
-   ![刷新监视](../debugger/media/refreshwatch.png "刷新监视")
+   ::: moniker range="<=vs-2019"
+
+   ![刷新监视的屏幕截图。](../debugger/media/vs-2019/refresh-watch.png "刷新监视")
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2022"
+
+   ![刷新监视的屏幕截图。](../debugger/media/vs-2022/refresh-watch.png "刷新监视")
+
+   ::: moniker-end
 
 1. 要刷新值，请选择刷新图标或按空格键。 调试器会对表达式重新求值。
 
@@ -293,11 +334,31 @@ static void Main(string[] args)
 
    此时将显示“快速监视”对话框。 `a` 变量位于“表达式”框中，值为 1  。
 
-   ![快速监视变量](../debugger/media/quickwatchvariable.png "快速监视变量")
+   ::: moniker range="<=vs-2019"
+
+   ![QuickWatch 变量的屏幕截图。](../debugger/media/vs-2019/quickwatch-variable.png "快速监视变量")
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2022"
+
+   ![QuickWatch 变量的屏幕截图。](../debugger/media/vs-2022/quickwatch-variable.png "快速监视变量")
+
+   ::: moniker-end
 
 1. 要使用变量对表达式求值，请在“表达式”框中键入表达式（如 `a + b`），然后选择“重新求值” 。
 
-   ![快速监视表达式](../debugger/media/quickwatchexpression.png "快速监视表达式")
+   ::: moniker range="<=vs-2019"
+
+   ![QuickWatch 表达式的屏幕截图。](../debugger/media/vs-2019/quickwatch-expression.png "快速监视表达式")
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2022"
+
+   ![QuickWatch 表达式的屏幕截图。](../debugger/media/vs-2022/quickwatch-expression.png "快速监视表达式")
+
+   ::: moniker-end
 
 1. 要将“快速监视”中的变量或表达式添加到“监视”窗口，请选择“添加监视”  。
 

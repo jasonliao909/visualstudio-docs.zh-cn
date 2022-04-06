@@ -19,16 +19,16 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: cfc29cf8b28e4a963efb251dcba560fe7fe07412
-ms.sourcegitcommit: 76541583274c4af4218ac2a8ab4308077a7e340e
-ms.translationtype: HT
+ms.openlocfilehash: 4b448d83e102f5092367098b4cc56622a61561a7
+ms.sourcegitcommit: d9cab667735450e735622f8b93266f07b8046f3e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "132733148"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "141402114"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>MSBuild 常见的项元数据
 
-项元数据是附加到项的值。 有些是由 MSBuild 在创建项时分配给项的，但你也可以定义所需的任何元数据。 一些用户定义的元数据值对于 MSBuild、特定任务或 SDK（如 .NET SDK）具有意义。
+项元数据是附加到项的值。 某些项由创建项时MSBuild分配给项，但也可以定义所需的任何元数据。 一些用户定义的元数据值对于 MSBuild、特定任务或 SDK（如 .NET SDK）具有意义。
 
 本文的第一个表格介绍了创建每个项时分配给该项的元数据。 下表显示了一些对于 MSBuild 有意义的可选元数据，你可以定义这些元数据来控制生成行为。 在每个示例中，以下项声明用于将文件 C:\MyProject\Source\Program.cs 包含在项目中。
 
