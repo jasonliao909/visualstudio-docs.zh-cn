@@ -1,7 +1,7 @@
 ---
 title: 对 using 排序
 description: 如何对文件顶部的 `using` 指令排序，来让它们按字母顺序排序。
-ms.date: 03/10/2020
+ms.date: 04/05/2022
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 262c4276395f2de71d8720dcd9a26839ef4cac51
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 3d4000809f5645cfcc21d925e33ce081efd6b411
+ms.sourcegitcommit: 8623082339d642f30efe98e4a759b8f023a210cc
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736117"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "141489108"
 ---
 # <a name="sort-usings"></a>对 using 排序
 
@@ -40,6 +40,10 @@ ms.locfileid: "126736117"
 
    ![对 using 排序](media/sort-usings.png)
 
-## <a name="see-also"></a>请参阅
+3. 还可以为 `using`**ToolsOptionsText** >  >  **EditorC** > **#** > **Advanced** 中的指令配置不同的设置。
+
+   ![使用配置选项排序](media/sort-usings-configuration-options.png)
+
+## <a name="see-also"></a>另请参阅
 
 - [重构](../refactoring-in-visual-studio.md)

@@ -2,7 +2,7 @@
 title: 将匿名类型转换为元组
 description: 了解如何在 Visual Studio 中使用“快速操作和重构”菜单将匿名类型转换为元组。
 ms.custom: SEO-VS-2020
-ms.date: 01/28/2022
+ms.date: 04/05/2022
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9936076f292c8465f7856daf00e19476b9f47eff
-ms.sourcegitcommit: 20f9529648e69707063dccb2b15089bf4e9bf639
+ms.openlocfilehash: 17e692da97281a4df0ae73899b94bc3637189a55
+ms.sourcegitcommit: 8623082339d642f30efe98e4a759b8f023a210cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "137886551"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "141489134"
 ---
 # <a name="convert-anonymous-type-to-tuple"></a>将匿名类型转换为元组
 
