@@ -4,19 +4,25 @@ description: 了解如何使用“高级”对话框更改 Visual Studio 文本�
 ms.date: 03/29/2022
 ms.topic: reference
 f1_keywords:
-  - VS.ToolsOptionsPages.Text_Editor.Advanced
+- VS.ToolsOptionsPages.Text_Editor.Advanced
 helpviewer_keywords:
-  - Text Editor Options dialog box
-  - Code Editor
-  - 'Text Editor [Visual Studio]'
-  - 'editors, global settings'
+- Text Editor Options dialog box
+- Code Editor
+- Text Editor [Visual Studio]
+- editors, global settings
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
-  - multiple
+- multiple
 monikerRange: '>=vs-2019'
+ms.openlocfilehash: f0e9aaeb780ad2d52e3a21542c485534a87b8969
+ms.sourcegitcommit: 864b18011ff12d880584173c86dccfdcc425808f
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "141347748"
 ---
 # <a name="options-dialog-box-text-editor--advanced"></a>“选项”对话框：“文本编辑器”\>“高级”
 
@@ -68,7 +74,7 @@ Visual Studio 使用 [TextMate 语法](https://macromates.com/manual/en/language
 
 ## <a name="allow-codelens-to-displace-the-caret-line"></a>允许 CodeLens 替换脱字号行
 
-默认情况下，[CodeLens](../find-code-changes-and-other-history-with-codelens.md) 信息显示在代码行上方。 切换以直接在当前脱字号位置的代码行中显示 CodeLens 信息。
+默认情况下，[CodeLens](../find-code-changes-and-other-history-with-codelens.md) 信息显示在代码行上方。 切换以改为直接在当前脱字号位置的代码行中显示 CodeLens 信息。
 
 ::: moniker range="vs-2022"
 
