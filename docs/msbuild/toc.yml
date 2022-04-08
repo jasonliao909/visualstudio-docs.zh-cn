@@ -73,6 +73,12 @@ items:
                 href: how-to-ignore-errors-in-tasks.md
               - name: 生成具有资源的项目
                 href: how-to-build-a-project-that-has-resources.md
+              - name: 创建用于代码生成的自定义任务
+                href: tutorial-custom-task-code-generation.md
+              - name: 在生成中创建 REST API 客户端
+                href: tutorial-rest-api-client-msbuild.md
+              - name: 测试自定义任务
+                href: tutorial-test-custom-task.md
               - name: 内联任务
                 items:
                   - name: MSBuild 内联任务
