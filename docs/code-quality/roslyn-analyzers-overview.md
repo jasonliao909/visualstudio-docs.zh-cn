@@ -15,24 +15,24 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: 99a27cb15629b70cfcdd2d6f436abd213cbb300b
-ms.sourcegitcommit: 20f9529648e69707063dccb2b15089bf4e9bf639
+ms.openlocfilehash: 542b900fecdcd1296db1ce37e553a4a7eb35b098
+ms.sourcegitcommit: 015d0bf8295f48d687c91aacc4ec2747063fe9ca
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "137886960"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "141533288"
 ---
 # <a name="overview-of-source-code-analysis"></a>源代码分析概述
 
-.NET Compiler Platform (Roslyn) 分析器检查 C# 或 Visual Basic 代码的样式、质量、可维护性、设计及其他问题。 此检查或分析发生在所有打开的文件的设计期间。
+.NET Compiler Platform (Roslyn) 分析器检查 C# 或 Visual Basic 代码的样式、质量、可维护性、设计及其他问题。 此检查或分析在所有打开的文件的设计期间发生。
 
 分析器分为以下组：
 
-- [代码样式](/dotnet/fundamentals/code-analysis/code-style-rule-options?preserve-view=true&view=vs-2019#convention-categories)分析器内置于Visual Studio。 分析器诊断 ID 或代码格式为 IDExxxx，例如 IDE0067。 可以在[文本编辑器选项页](../ide/code-styles-and-code-cleanup.md)上或在 [EditorConfig 文件](/dotnet/fundamentals/code-analysis/code-style-rule-options)中配置首选项。 从 .NET 5.0 开始，代码样式分析器包含在 .NET SDK 中，并且可以作为生成警告或错误严格地强制实施。 有关详细信息，请参阅 [.NET 源代码分析概述](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis)。
+- [代码样式](/dotnet/fundamentals/code-analysis/code-style-rule-options?preserve-view=true&view=vs-2019#convention-categories)分析器内置于Visual Studio中。 分析器的诊断 ID 或代码格式为 IDExxxx，例如 IDE0067。 可以在[文本编辑器选项页](../ide/code-styles-and-code-cleanup.md)上或在 [EditorConfig 文件](/dotnet/fundamentals/code-analysis/code-style-rule-options)中配置首选项。 从 .NET 5.0 开始，代码样式分析器包含在 .NET SDK 中，并且可以作为生成警告或错误严格地强制实施。 有关详细信息，请参阅 [.NET 源代码分析概述](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis)。
 
-- 现在，[代码质量](/dotnet/fundamentals/code-analysis/quality-rules/index)分析器包含在 .NET 5 SDK 中并且在默认情况下已启用。 分析器诊断 ID 或代码格式为 CAxxxx，例如 CA1822。 有关详细信息，请参阅 [.NET 代码质量分析概述](/dotnet/fundamentals/productivity/code-analysis#code-quality-analysis)。
+- 现在，[代码质量](/dotnet/fundamentals/code-analysis/quality-rules/index)分析器包含在 .NET 5 SDK 中并且在默认情况下已启用。 分析器的诊断 ID 或代码格式为 CAxxxx，例如 CA1822。 有关详细信息，请参阅 [.NET 代码质量分析概述](/dotnet/fundamentals/productivity/code-analysis#code-quality-analysis)。
 
-- 可以将外部分析器（如 [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/)、[Roslynator](https://www.nuget.org/packages/Roslynator.Analyzers/)、[XUnit 分析](https://www.nuget.org/packages/xunit.analyzers/)器和 [Sonar 分析](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)器）安装为 NuGet 包或 Visual Studio扩展。
+- 可以将外部分析器（如 [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/)、[Roslynator](https://www.nuget.org/packages/Roslynator.Analyzers/)、[XUnit Analyzers](https://www.nuget.org/packages/xunit.analyzers/) 和 [Sonar Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)）安装为NuGet包或Visual Studio扩展。
 
 ## <a name="severity-levels-of-analyzers"></a>分析器的严重性级别
 
@@ -40,14 +40,14 @@ ms.locfileid: "137886960"
 
 | 严重性（解决方案资源管理器） | 严重性（EditorConfig 文件） | 生成时行为 | 编辑器行为 |
 |-|-|-|
-| 错误 | `error` | 此类冲突在错误列表和命令行生成输出中显示为“错误”，并导致生成失败。| 有问题的代码带有红色长线下划线，滚动条中用红色小框标记。 |
-| 警告 | `warning` | 冲突在错误 *列表* 和命令行生成输出中显示为"警告"，但不会导致生成失败。 | 有问题的代码带有绿色长线下划线，滚动条中用小绿色框标记。 |
-| 信息 | `suggestion` | 此类冲突在错误列表中显示为“消息”，而不会在命令行生成输出中显示。 | 有问题的代码带有灰色的滚动条下划线，在滚动条中用小灰色框标记。 |
+| 错误 | `error` | 此类冲突在错误列表和命令行生成输出中显示为“错误”，并导致生成失败。| 冒犯代码用红色波浪线下划线，并用滚动条中的小红色框标记。 |
+| 警告 | `warning` | 冲突在错误列表和命令行生成输出中显示为 *警告* ，但不会导致生成失败。 | 冒犯代码用绿色波浪线下划线，并用滚动条中的小绿色框标记。 |
+| 信息 | `suggestion` | 此类冲突在错误列表中显示为“消息”，而不会在命令行生成输出中显示。 | 冒犯代码用灰色波浪线下划线，并用滚动条中的小灰色框标记。 |
 | Hidden | `silent` | 对用户不可见。 | 对用户不可见。 但是，诊断会报告给 IDE 诊断引擎。 |
 | 无 | `none` | 完全禁止显示。 | 完全禁止显示。 |
 | 默认 | `default` | 对应于规则的默认严重性。 若要确定规则的默认值，请查看“属性”窗口。 | 对应于规则的默认严重性。 |
 
-如果分析器发现规则冲突，这些冲突在代码编辑器中报告为有问题的代码下的和在"错误列表"窗口中的一个死锁。
+如果分析器发现规则冲突，则会在代码编辑器中报告这些冲突，在冒犯代码和错误列表窗口中将其报告为 *波浪* 线。
 
 ![“错误列表”窗口中的分析器冲突](../code-quality/media/code-analysis-error-list.png)
 
@@ -70,17 +70,20 @@ ms.locfileid: "137886960"
 
 ## <a name="nuget-package-versus-vsix-extension"></a>NuGet 包与 VSIX 扩展
 
-可以通过包安装每个项目的外部NuGet分析器。 其中一些还用作Visual Studio扩展，在这种情况下，它们适用于在 Visual Studio 中打开的任何解决方案。 这两种[安装分析器](../code-quality/install-roslyn-analyzers.md)方法之间存在一些关键行为差异。
+可以通过NuGet包为每个项目安装外部分析器。 有些还可用作Visual Studio扩展，在这种情况下，它们适用于在Visual Studio中打开的任何解决方案。 这两种[安装分析器](../code-quality/install-roslyn-analyzers.md)方法之间存在一些关键行为差异。
 
 ### <a name="scope"></a>范围
 
 如果将分析器安装为 Visual Studio 扩展，则它们将在解决方案级别应用于 Visual Studio 的所有实例。 如果将分析器安装为 NuGet 包（这是首选方法），它们仅适用于安装了 NuGet 软件包的项目。 在团队环境中，作为 NuGet 包安装的分析器适用于处理该项目的所有开发人员。
 
+> [!NOTE]
+> 第一方分析器还会在 .NET SDK 内部提供。 建议尽可能从 .NET SDK 启用这些分析器，而不是安装`Microsoft.CodeAnalysis.NetAnalyzers`[NuGet包](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers)。 从 .NET SDK 启用分析器可以确保在更新 SDK 后，立即自动获取分析器 bug 修复和新分析器。 有关更多详细信息 [，请参阅"启用或安装第一方 .NET 分析器](install-net-analyzers.md) "。
+
 ### <a name="build-errors"></a>生成错误
 
-若要在生成时强制执行规则（包括通过命令行执行）或作为 CI (集成) 的一部分，请选择以下选项之一：
+若要在生成时强制实施规则，包括通过命令行或作为持续集成 (CI) 生成的一部分，请选择以下选项之一：
 
-- 创建 .NET 5.0 或更高版本项目，其中默认在 .NET SDK 中包含分析器。 代码分析功能针对面向 .NET 5.0 或更高版本的项目默认启用。 可通过将 [EnableNETAnalyzers](/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) 属性设置为 true，在面向 .NET 早期版本的项目上启用代码分析。
+- 创建一个 .NET 5.0 或更高版本的项目，该项目默认在 .NET SDK 中包含分析器。 代码分析功能针对面向 .NET 5.0 或更高版本的项目默认启用。 可通过将 [EnableNETAnalyzers](/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) 属性设置为 true，在面向 .NET 早期版本的项目上启用代码分析。
 
 - 将分析器安装为 NuGet 包。 如果将分析器作为扩展安装，则分析器警告和错误不会显示在生成报告中。
 
@@ -90,7 +93,7 @@ ms.locfileid: "137886960"
 
 ### <a name="rule-severity"></a>规则严重性
 
-无法从作为扩展插件安装的分析器配置规则Visual Studio严重性。 若要配置[规则严重性](../code-quality/use-roslyn-analyzers.md#configure-severity-levels)，则应将分析器安装为 NuGet 包。
+无法从作为Visual Studio扩展安装的分析器配置规则的严重性。 若要配置[规则严重性](../code-quality/use-roslyn-analyzers.md#configure-severity-levels)，则应将分析器安装为 NuGet 包。
 
 ## <a name="next-steps"></a>后续步骤
 

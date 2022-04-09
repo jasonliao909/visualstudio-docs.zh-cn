@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: amast
 manager: shve
 ms.assetid: d2ab13ed-ef79-4ef0-8736-eccd04bc6020
-ms.date: 10/18/2021
+ms.date: 04/07/2022
 ms.topic: conceptual
 description: 有关云解决方案提供商如何为客户购买和管理 Visual Studio 云订阅的信息。
-ms.openlocfilehash: 2b0ffcb64ece7ed3a467dd875b62f1691c02993d
-ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.openlocfilehash: 8cd37ef876cf50397971304086fd79f6189d78c2
+ms.sourcegitcommit: 790b3e4a58d05a5486c68655dc963099513b0e37
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "133254964"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "141569313"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>为客户购买和管理 Visual Studio 云订阅
 [云解决方案提供商 (CSP)](https://partner.microsoft.com/cloud-solution-provider) 计划中的合作伙伴可为其客户购买 Visual Studio Enterprise 和 Visual Studio Professional 云订阅。
@@ -36,7 +36,7 @@ ms.locfileid: "133254964"
 0. 选择“客户”，并选择要为其购买的客户  。
 0. 选择“服务管理”  。
 0. 选择“Visual Studio Marketplace”  。
-0. 确保客户名位于右上角。
+0. 请确保客户的姓名位于右上角。
 0. 选择“订阅”  。
 0. 选择“Visual Studio Enterprise”或“Visual Studio Professional”。
 0. 选择“购买”  。
