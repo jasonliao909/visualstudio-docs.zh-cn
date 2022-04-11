@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 268c0b2030b39ff512aa74fc7ea84c185331e0a2
-ms.sourcegitcommit: 4efdab6a579b31927c42531bb3f7fdd92890e4ac
+ms.openlocfilehash: 15cae2d4b3cd5d0a365d904d1b1745a2e4609cf5
+ms.sourcegitcommit: 850a5d0b3568d6f6c52d0572439fa890fb25b5d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "130350685"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "141605607"
 ---
 # <a name="property-functions"></a>属性函数
 
@@ -249,7 +249,7 @@ MSBuild `GetPathOfFileAbove` 属性函数向上搜索包含指定文件的目录
 此属性函数具有以下语法：
 
 ```
-$([MSBuild]::GetDirectoryNameOfFileAbove(string file, [string startingDirectory]))
+$([MSBuild]::GetPathOfFileAbove(string file, [string startingDirectory]))
 ```
 
 其中，`file` 是要搜索的文件的名称，`startingDirectory` 是开始搜索的可选目录。 默认情况下，搜索将在当前文件自身的目录中开始。
