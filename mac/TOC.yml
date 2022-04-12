@@ -6,8 +6,6 @@
       href: ide-tour.md
     - name: 面向 Windows 用户的 Visual Studio for Mac
       href: vsmac-for-windows-users.md
-    - name: 集成终端
-      href: integrated-terminal.md
 - name: 安装
   items:
     - name: 安装
@@ -64,6 +62,8 @@
       href: managing-solutions-and-project-properties.md
     - name: 多目标
       href: project-multitargeting.md
+    - name: 集成终端
+      href: integrated-terminal.md
     - name: 管理项目中的引用
       items:
         - name: 概述
@@ -184,10 +184,6 @@
   items:
     - name: 概述
       href: accessibility.md
-    - name: 设置 IDE 辅助功能选项
-      href: accessibility-ide-options.md
-    - name: 使用 macOS 辅助工具
-      href: accessibility-macos.md
     - name: 使用键盘导航
       href: accessibility-keyboard.md
 - name: 参考

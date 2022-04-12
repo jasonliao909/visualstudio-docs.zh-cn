@@ -2,7 +2,7 @@
 title: 有关提高性能的提示
 description: 了解如何优化某些可能没有使用的 Visual Studio 功能，从而帮助提高性能。
 ms.custom: SEO-VS-2020
-ms.date: 10/01/2021
+ms.date: 04/11/2022
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: fd712091bc494d651cb4cd334325c83378048ae1
-ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
+ms.openlocfilehash: e65f2b51a3861974487acf21dd631d37b18a8b54
+ms.sourcegitcommit: 657d234320227136f6dab420b4a9b17a5f86b2b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "129431336"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "141618460"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 性能提示和技巧
 
@@ -90,11 +90,15 @@ Visual Studio 会自动重新打开上一个会话中处于打开状态的文档
 
 有关 .NET Compiler Platform（“Roslyn”）性能注意事项的详细信息，请参阅 [Performance considerations for large solutions](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Performance-considerations-for-large-solutions.md)（大型解决方案的性能注意事项）。
 
+::: moniker range="vs-2017"
+
 - **禁用完整解决方案分析**
 
     Visual Studio 对整个解决方案执行分析，以在调用生成前提供关于错误的丰富体验。 此功能可用于尽快速识别错误。 但是，对于大型解决方案，这一功能可能会占用大量内存资源。 如果遇到内存不足或类似问题，可以禁用此体验并释放这些资源。 默认情况下，Visual Basic 启用此选项，而 C# 禁用此选项。
 
     若要禁用“完整解决方案分析”，请选择“工具” > “选项” > “文本编辑器”，替换选择“Visual Basic”或“C#”。 选择“高级”，并取消选中“启用完整解决方案分析”   。
+
+::: moniker-end
 
 - **禁用 CodeLens**
 
