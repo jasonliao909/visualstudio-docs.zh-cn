@@ -2,7 +2,7 @@
 title: 添加新数据源
 description: 在 Visual Studio 中添加新数据源。 数据源是 .NET 对象，它连接到数据存储，使数据可供 .NET 应用程序使用。
 ms.custom: SEO-VS-2020
-ms.date: 11/21/2018
+ms.date: 04/12/2022
 ms.topic: how-to
 f1_keywords:
 - vs.datasource.datasourcefieldspicker
@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: a0d93a2c80afe7863490f0af5578684d699a5980
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: a994bb24c058552b19eddec341b739a2349b9690
+ms.sourcegitcommit: 987ed8aacf9ce064e7951d5b6bb0df694771e96b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126601234"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "141666155"
 ---
 # <a name="add-new-data-sources"></a>添加新数据源
 
@@ -56,11 +56,16 @@ ms.locfileid: "126601234"
 > [!TIP]
 > 若要打开“数据源”窗口，请确保项目已打开，然后按  Shift+Alt+ D 或选择“查看” > “其他窗口” > “数据源”。
 
-可以将数据源从“数据源”窗口拖动到窗体设计图面或控件上。 这将导致生成样板代码，用于显示数据存储中的数据。
+在面向.NET Framework (而不是 .NET Core 或 .NET 5 或更高版本) 的Windows 窗体项目中，可以将数据源从 **“数据源**”窗口拖到窗体设计图面或控件上。 如果拖动表，则获取表的 [BindingNavigator](/dotnet/desktop/winforms/controls/bindingnavigator-control-overview-windows-forms) 和 [DataGridView](/dotnet/desktop/winforms/controls/datagridview-control-windows-forms) 。 如果拖动单个列，则会收到一个 BindingNavigator 和一个 [标签](/dotnet/desktop/winforms/controls/label-control-windows-forms) 和该列的 [TextBox](/dotnet/desktop/winforms/controls/textbox-control-windows-forms) 。 拖动列以获取表的完整数据查看窗体。 这些操作会导致生成样本代码，用于显示数据存储中的数据。
 
 下图显示了放到 Windows 窗体上的数据集。 如果在应用程序上选择 F5，则基础数据库中的数据将显示在窗体的控件中。
 
-![数据源拖动操作](../data-tools/media/raddata-data-source-drag-operation.png)
+:::moniker range="<=vs-2019"
+![显示数据源拖动操作的屏幕截图。](../data-tools/media/raddata-data-source-drag-operation.png)
+:::moniker-end
+:::moniker range=">=vs-2022"
+![显示数据源拖动操作的屏幕截图。](../data-tools/media/vs-2022/data-sources-drag-operation.png)
+:::moniker-end
 
 ## <a name="data-source-for-a-database-or-a-database-file"></a>数据库或数据库文件的数据源
 
@@ -88,7 +93,7 @@ ms.locfileid: "126601234"
 
 ## <a name="data-source-for-a-service"></a>服务的数据源
 
-若要从服务创建数据源，请运行数据源配置向导并选择“服务”数据源类型。  这只是打开“添加服务引用”对话框的快捷方式，也可通过在解决方案资源管理器中右键单击项目并选择“添加服务引用”来访问该对话框。  
+若要从服务创建数据源，请运行数据源配置向导并选择“服务”数据源类型。  此操作只是 **“添加服务引用**”对话框的快捷方式，也可以通过右键单击 **解决方案资源管理器** 中的项目并选择 **“添加服务引用**”来访问该对话框。
 
 从服务创建数据源时，Visual Studio 向项目添加服务引用。 Visual Studio 还会创建与服务返回的对象对应的代理对象。 例如，返回数据集的服务在项目中表示为数据集；返回特定类型的服务在项目中表示为返回的类型。
 
@@ -119,7 +124,7 @@ ms.locfileid: "126601234"
 
 ## <a name="data-source-for-a-sharepoint-list"></a>SharePoint 列表的数据源
 
-可以通过运行数据源配置向导并选择“SharePoint”数据源类型，从 SharePoint 列表创建数据源。  SharePoint 通过 WCF Data Services 公开数据，因此创建 SharePoint 数据源与从服务创建数据源相同。 在数据源配置向导中选择“SharePoint”项会打开“应用服务引用”对话框，可以在其中通过指向 SharePoint 连接到 SharePoint 数据服务。   这需要 SharePoint SDK。
+可以通过运行数据源配置向导并选择“SharePoint”数据源类型，从 SharePoint 列表创建数据源。  SharePoint 通过 WCF Data Services 公开数据，因此创建 SharePoint 数据源与从服务创建数据源相同。 在数据源配置向导中选择“SharePoint”项会打开“应用服务引用”对话框，可以在其中通过指向 SharePoint 连接到 SharePoint 数据服务。   此操作需要SharePoint SDK。
 
 ## <a name="see-also"></a>请参阅
 

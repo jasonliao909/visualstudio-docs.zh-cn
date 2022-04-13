@@ -2,7 +2,7 @@
 title: 查找模板
 description: 了解如何查找和整理项目和项模板。
 ms.custom: SEO-VS-2020
-ms.date: 01/02/2018
+ms.date: 04/12/2022
 ms.topic: how-to
 helpviewer_keywords:
 - project templates [Visual Studio], locations
@@ -12,12 +12,12 @@ author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.technology: vs-ide-general
-ms.openlocfilehash: 52851b97716d6b32cc4087f19f87d060e1c608c0
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 521ce978ebe7c31ba74b23cbc4692102327c11fb
+ms.sourcegitcommit: 987ed8aacf9ce064e7951d5b6bb0df694771e96b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126644260"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "141666140"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>如何：查找和组织项目和项模板
 
@@ -49,7 +49,7 @@ C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\Common7\\IDE\
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 
 - %ProgramFiles(x86)%\\Microsoft Visual Studio\\2019\\\<edition>\\Common7\IDE\ProjectTemplates\\<Language\>\\<Locale ID\>
 
@@ -58,6 +58,18 @@ C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\Common7\\IDE\
 例如，以下目录包含以英语 (LCID 1033) 表示的 Visual Basic 项模板：
 
 C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\ItemTemplates\\VisualBasic\\1033
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+- *%ProgramFiles%\\Microsoft Visual Studio\\ 2022Common7\\\\\<edition>\IDE\ProjectTemplates\\<语言\>\\<区域设置 ID\>*
+
+- *%ProgramFiles%\\Microsoft Visual Studio\\ 2022\<edition>\\\Common7\IDE\ItemTemplates\\<语言\>\\<区域设置 ID\>*
+
+例如，以下目录包含以英语 (LCID 1033) 表示的 Visual Basic 项模板：
+
+*C：\\Program Files\\ Microsoft Visual Studio\\ 2022\\ Community\\ Common7IDEItemTemplatesVisualBasic1033\\\\\\\\*
 
 ::: moniker-end
 
@@ -77,7 +89,7 @@ C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 
 - *%USERPROFILE%\Documents\Visual Studio 2019\Templates\ProjectTemplates*
 
@@ -86,6 +98,18 @@ C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\
 例如，以下目录包含用于 C# 的用户项目模板：
 
 - *C:\Users\UserName\Documents\Visual Studio 2019\Templates\ProjectTemplates\Visual C#*
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+- *%USERPROFILE%\Documents\Visual Studio 2022\Templates\ProjectTemplates*
+
+- *%USERPROFILE%\Documents\Visual Studio 2022\Templates\ItemTemplates*
+
+例如，以下目录包含用于 C# 的用户项目模板：
+
+- *C：\Users\UserName\Documents\Visual Studio 2022\Templates\ProjectTemplates\Visual C#*
 
 ::: moniker-end
 
