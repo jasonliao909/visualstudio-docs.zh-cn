@@ -1,5 +1,5 @@
 ---
-title: 教程：具有 MySQL 和 Docker Compose 的多容器应用
+title: 创建具有 MySQL 和 Docker Compose 的多容器应用
 description: 在本教程中，了解如何创建具有 MySQL 和 Docker Compose 的多容器应用。 使用多个容器缩放项目。
 author: ucheNkadiCode
 ms.author: uchen
@@ -9,37 +9,34 @@ ms.date: 03/04/2022
 ms.custom:
 - template-tutorial
 - contperf-fy22q3
-ms.openlocfilehash: dc63c205d7cdd0b7da9de991348c1c9b8faa86a3
-ms.sourcegitcommit: 5b2c3a2c5f22e0cd6d35aab6049c1f61c4916e74
+ms.openlocfilehash: ea368f86909a0dce854e3735d749b382c2a8be34
+ms.sourcegitcommit: 1b979c3b2e73712ccbfb5fdf1490f3b47d0cf5b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "139852116"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "141371966"
 ---
 # <a name="tutorial-create-multi-container-apps-with-mysql-and-docker-compose"></a>教程：创建具有 MySQL 和 Docker Compose 的多容器应用
 
-本教程中，你将学习多容器应用。
-通过使用多个容器，可以将容器专用于不同的任务。
-每个容器都应执行一项任务，而且应完成得很好。
-
-下面是你可能想要使用多容器应用的一些原因：
-
-- 利用单独的容器，你能够以不同于数据库的方式管理 API 和前端。
-- 借助容器，你可使版本和更新版本相互隔离。
-- 虽然你可在本地对数据库使用容器，但在生产环境中，你可能需要对数据库使用托管服务。
-- 运行多个进程会要求使用进程管理器，这会让容器启动/关闭更加复杂。
-
-你将更新应用程序以使其按图中所述的方式工作。
-
-![图中显示了用一条线连接的两个标记为 Todo App 和 MySQL 的容器。](media/multi-app-architecture.png)
-
-本教程介绍如何执行下列操作：
-
+在本教程中，你将了解如何创建多容器应用。 本教程以入门教程（即[使用 Visual Studio Code 创建和共享 Docker 应用](docker-tutorial.md)）为基础。  在本高级教程中，你将更新应用程序以使其按图中所述的方式工作，并了解如何：
 > [!div class="checklist"]
 > - 启动 MySQL。
 > - 使用 MySQL 运行应用。
 > - 创建 Compose 文件。
 > - 运行应用程序堆栈。
+
+![图中显示了用一条线连接的两个标记为 Todo App 和 MySQL 的容器。](media/multi-app-architecture.png)
+
+通过使用多个容器，可以将容器专用于专业任务。  每个容器都应执行一项任务，而且应完成得很好。
+
+下面是你可能想要使用多容器应用的一些原因：
+- 利用单独的容器，你能够以不同于数据库的方式管理 API 和前端。
+- 借助容器，你可使版本和更新版本相互隔离。
+- 虽然你可在本地对数据库使用容器，但在生产环境中，你可能需要对数据库使用托管服务。
+- 运行多个进程会要求使用进程管理器，这会让容器启动/关闭更加复杂。
+
+
+
 
 ## <a name="prerequisites"></a>先决条件
 
