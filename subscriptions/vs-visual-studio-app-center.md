@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: amast
 manager: cabushcl
 ms.assetid: badd1d4a-90a6-46de-a037-945a91e6019b
-ms.date: 02/17/2022
+ms.date: 04/13/2022
 ms.topic: how-to
 description: 了解有关 Visual Studio 订阅中包含的 Visual Studio App Center 权益。
-ms.openlocfilehash: 9b3acec23a9236d6d2d6e6f67ed9e81d2c4ce6e6
-ms.sourcegitcommit: 663f5cea9bf1481ce276764c74711baedeefb552
+ms.openlocfilehash: d9777ae001320c6d556ce2ab0ef8873d203eac4e
+ms.sourcegitcommit: 58418568b824313986dde8dd279486db3fcce5e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "139039374"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142085711"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Visual Studio App Center
 App Center 是针对应用的任务控制。
@@ -21,7 +21,7 @@ App Center 是针对应用的任务控制。
 - 收集故障报告和用户分析，包括自定义事件。
 - 在数分钟内将推送通知添加到你的应用
 
-## <a name="activation-steps"></a>激活步骤
+## <a name="get-started-with-visual-studio-app-center"></a>使用 Visual Studio App Center 开始
 Visual Studio App Center 入门十分简单。
 1. 登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
@@ -39,13 +39,13 @@ Visual Studio App Center 入门十分简单。
 
 ## <a name="eligibility"></a>资格
 
-| 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
-|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| 订阅级别    |  信道 | 好处   | 是否续订？    |
+|-----------------------|-----------|-----------|---------------|
 | Visual Studio Enterprise（标准、年度云）   | VL、Azure、零售、NFR<sup>1</sup> | Included       |  是          |
 | Visual Studio Enterprise（月度云）   | Azure | 不可用       |  NA          |
 | 包含 GitHub Enterprise 的 Visual Studio Enterprise 订阅  | VL | Included       |  是          |
 | Visual Studio Professional（标准、年度云） | VL、Azure、零售                                       | Included                                                            |是 |
-| Visual Studio Professional (月度云)    | Azure | 不可用       |  NA          |
+| Visual Studio Professional (每月云)    | Azure | 不可用       |  NA          |
 | 包含 GitHub Enterprise 的 Visual Studio Professional 订阅 | VL                                      | Included                                                            |是 |
 | Visual Studio Test Professional（标准）                         | VL、零售                                              | Included                                                            |是 |
 | MSDN 平台（标准）                                          | VL、零售                                              | Included                                                            |是 |
