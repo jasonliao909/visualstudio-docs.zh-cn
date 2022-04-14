@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: amast
 manager: shve
 ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
-ms.date: 03/17/2021
+ms.date: 04/13/2022
 ms.topic: how-to
 description: 了解如何激活 Visual Studio 订阅中包含的技术支持权益。
-ms.openlocfilehash: 8bc9775e1427cd9994778fbad94eef02a04b8a77
-ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.openlocfilehash: 873b74167ff482e3f4a4489117c1e476c0d3bef7
+ms.sourcegitcommit: 58418568b824313986dde8dd279486db3fcce5e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "133256927"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142085755"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>激活并使用 Visual Studio 订阅中的技术支持权益
 Visual Studio 订阅中的技术支持权益用于解决仍处于[支持生命周期](https://support.microsoft.com/lifecycle/search)的主流支持阶段产品的“非生产环境”中的中断修复问题。 Visual Studio Enterprise 标准版和年度云订阅接收四个事件，但 Visual Studio Professional 标准版和年度云订阅接收两个事件，从权益激活开始最多一年。 权益激活必须在订阅为最新状态时进行。
@@ -22,8 +22,6 @@ Visual Studio 订阅中的技术支持权益用于解决仍处于[支持生命�
 
 > [!NOTE]
 > 并非所有给定级别的订阅都符合接收支持事件的条件。 通过 FTE、NFR、MPN、MCT 和其他程序获得的订阅不会收到支持事件。 如果订阅不符合接收技术支持事件的条件，则可用权益中不会显示“技术支持”磁贴。
-
-要使用权益提交支持请求，必须先激活该权益 **。** 按照下一节中的步骤完成激活操作。
 
 ## <a name="supported-products"></a>支持的产品 
 通过 Visual Studio 订阅，Visual Studio IDE 和 Azure DevOps Server 等开发人员工具可获得主流支持和扩展支持。
@@ -63,7 +61,9 @@ Visual Studio 订阅中的技术支持权益用于解决仍处于[支持生命�
 4. 完成此过程后，你将收到一封电子邮件，其中包含在创建支持事件时将使用的“合同 ID”和“访问 ID” 。  它还将提供使用新的访问 ID 和合同 ID 提交支持事件的说明。 
 
 ## <a name="how-to-submit-an-incident-using-your-benefit"></a>如何使用权益提交事件
-设置了“合同 ID”和“访问 ID”后，可以使用它提交技术支持事件 。 
+**若要使用权益提交支持请求，必须先激活它。 按照上一部分中的步骤完成激活。**
+
+设置 **合同 ID** 和 **访问 ID** 后，可以使用它提交技术支持事件。 
 
 可以联机、通过电话或是从 Azure 门户提交事件。 
 
@@ -104,9 +104,8 @@ Visual Studio 订阅中的技术支持权益用于解决仍处于[支持生命�
 0. 单击“支持”下的“新建支持请求”
 
 ## <a name="eligibility"></a>资格
-
-| 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
-|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| 订阅级别 |     信道  | 好处 | 是否续订？    |
+|--------------------|---------------|---------|---------------|
 | Visual Studio Enterprise（标准）   | VL、Azure、零售、所选 NFR<sup>1</sup> | 4 个事件       |  是|
 | 包含 GitHub Enterprise 的 Visual Studio Enterprise 订阅 | VL | 4 个事件       |  是|
 | Visual Studio Professional（标准） | VL、Azure、零售、所选 NFR<sup>2</sup>                                        | 2 个事件                                                          |是         |
@@ -124,7 +123,7 @@ Visual Studio 订阅中的技术支持权益用于解决仍处于[支持生命�
 
 ## <a name="support-resources"></a>支持资源
 - 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请联系 [Visual Studio 订阅支持](https://my.visualstudio.com/gethelp)。
-- 
+
 ## <a name="see-also"></a>另请参阅
 - [Visual Studio 文档](/visualstudio/)
 - [Azure DevOps 文档](/azure/devops/)

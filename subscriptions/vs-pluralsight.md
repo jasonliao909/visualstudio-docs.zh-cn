@@ -4,24 +4,24 @@ author: evanwindom
 ms.author: amast
 manager: shve
 ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
-ms.date: 4/11/2022
+ms.date: 4/13/2022
 ms.topic: how-to
 description: 了解有关所选的 Visual Studio 订阅中随附的 Pluralsight 培训订阅。
-ms.openlocfilehash: bda77f9773c171b08c8aa1d479dfef8e40c2ecde
-ms.sourcegitcommit: 390f2e76b6214d62eaab8259820200dd4f5e9b3f
+ms.openlocfilehash: 4f839467dadba224968b2ce936582912a6a14eb9
+ms.sourcegitcommit: 58418568b824313986dde8dd279486db3fcce5e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "141615744"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142085724"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Pluralsight 培训权益
-通过专家创作的课程、学习路径、适应技能水平测量等内容提升你的技能！  通过长达六个月的 Pluralsight 技术技能平台，将学习提升到下一个水平。 掌握 Azure、C#、Angular、ASP.NET Core 和其他趋势技术，通过行业专家的学习评估技能并缩小任何差距。
+通过专家创作的课程、学习路径、适应技能水平测量等内容提升你的技能！  通过长达六个月的 Pluralsight 技术技能平台，将学习提升到下一个水平。 掌握 Azure、C#、Angular、ASP.NET Core和其他趋势技术，通过行业专家学习来评估技能并关闭任何差距。
 
 下表详细介绍了每种 Visual Studio 订阅类型可以使用的 Pluralsight 订阅权益。  一些订阅者在完整目录访问订阅到期后仍将能够利用有限数目的课程进行学习。 完整目录订阅到期时，Pluralsight 会指导你完成该过程。
 
-并非所有以前使用过 Visual Studio 订阅提供的 Pluralsight 订阅的订阅者都可以兑换新的 Pluralsight 权益套餐。 如果你没有资格兑换更多 Pluralsight 培训权益，当你尝试在 Pluralsight 网站上激活权益时，你将收到通知。
+并非所有以前使用过通过Visual Studio订阅提供的 Pluralsight 订阅的订阅者都可以兑换新的 Pluralsight 权益套餐。 如果你没有资格兑换更多 Pluralsight 培训权益，则尝试在 Pluralsight 网站上激活权益时，将收到通知。
 
-## <a name="activation-steps"></a>激活步骤
+## <a name="activate-your-pluralsight-subscription"></a>激活 Pluralsight 订阅
 1. 要激活订阅，请连接到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)，然后单击 Pluralsight 权益磁贴上的“激活”链接。  若要缩小显示的磁贴列表，可以选择组筛选器。  Pluralsight 位于“专业开发”权益组中。
    > [!div class="mx-imgBorder"]
    > ![Pluralsight 权益磁贴](_img/vs-pluralsight/vs-pluralsight-tile.png "单击“激活”以声明权益")
@@ -52,7 +52,7 @@ ms.locfileid: "141615744"
 激活 Pluralsight 权益后，Visual Studio订阅门户中磁贴的外观将显示订阅的状态。  
 
 ### <a name="while-your-subscription-is-active"></a>当订阅处于活动状态时
-现在，你将看到一个小型圆形按钮，将直接转到 Pluralsight 门户，以便登录并继续进行培训，而不是“激活”按钮。  
+现在，你将看到一个小圆形按钮，该按钮将直接转到 Pluralsight 门户，以便登录并继续训练。  
 
 在磁贴顶部的 Pluralsight 标题下，你会看到显示 Pluralsight 订阅剩余多少时间的文本。  如果订阅在 60 天内过期，则文本将切换为显示剩余天数（而不是月数）。  
 
@@ -91,7 +91,6 @@ ms.locfileid: "141615744"
 无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。
 
 ## <a name="frequently-asked-questions"></a>常见问题
-
 ### <a name="q-i-have-a-visual-studio-enterprise-subscription-but-i-dont-see-the-pluralsight-tile-on-the-benefits-page-whats-wrong"></a>问：我拥有 Visual Studio Enterprise 订阅，但在“权益”页上看不到 Pluralsight 磁贴。 为什么会这样？
 答：并非所有 Visual Studio Enterprise 订阅都包含 Pluralsight 权益。  请检查[资格表](#eligibility)，查看订阅是否符合条件。
 

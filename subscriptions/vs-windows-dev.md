@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: amast
 manager: shve
 ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
-ms.date: 10/18/2021
+ms.date: 04/13/2022
 ms.topic: how-to
 description: 了解有关 Visual Studio 订阅中包含的 Windows 开发者帐户。
-ms.openlocfilehash: 2a19eb80cbd1458c120c90a4ba897bf5a271d16f
-ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.openlocfilehash: 8e14b415c73a0146d60e485f2d531e3305d974f3
+ms.sourcegitcommit: 58418568b824313986dde8dd279486db3fcce5e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "133254886"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142085698"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Windows 开发者帐户
 通过所选 Visual Studio 订阅包含的 Windows 开发者帐户，可以将免费和付费的 Windows 应用提交到 Windows 应用商店。
@@ -44,8 +44,8 @@ ms.locfileid: "133254886"
 12. 单击“转到仪表板”，开始使用你的 Windows 开发者帐户  ！
 
 ## <a name="eligibility"></a>资格
-| 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
-|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| 订阅级别 | 信道 | 好处 | 是否续订？    |
+|--------------------|----------|---------|---------------|
 | Visual Studio Enterprise（标准）   | VL、Azure、零售、所选 NFR<sup>1</sup> | Included       |  是|
 | 包含 GitHub Enterprise 的 Visual Studio Enterprise 订阅   | VL  | Included       |  是|
 | Visual Studio Professional（标准） | VL、Azure、零售                                       | Included                                                            |是|
