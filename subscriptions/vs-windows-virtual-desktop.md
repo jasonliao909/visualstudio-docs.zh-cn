@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: amast
 manager: shve
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 10/18/2021
+ms.date: 04/13/2022
 ms.topic: conceptual
 description: 了解如何通过 Visual Studio 订阅利用 Microsoft Windows 虚拟桌面
-ms.openlocfilehash: 918e36930f1b42963c87a790f24b4f67bb379a5d
-ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.openlocfilehash: 8d5c5f8a84b6426cb5ab757c192a86dac00c7340
+ms.sourcegitcommit: 58418568b824313986dde8dd279486db3fcce5e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "133257811"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142085667"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>在订阅中访问 Windows 虚拟桌面 
 Visual Studio 订阅者现在可以将其 Azure 开发/测试个人额度用于 Microsoft Windows 虚拟桌面服务。  
@@ -46,8 +46,8 @@ Windows 虚拟桌面需要 Azure Active Directory (Azure AD)，VM 将加入到�
 - [管理 Windows 虚拟桌面的应用组](/azure/virtual-desktop/manage-app-groups)
 
 ## <a name="eligibility"></a>资格
-| 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
-|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| 订阅级别 | 信道 | 好处  | 是否续订？    |
+|--------------------|----------|----------|---------------|
 | Visual Studio Enterprise（标准）   | VL、Azure、零售、 | 可用|  是          |
 | 包含 GitHub Enterprise 的 Visual Studio Enterprise 订阅  | VL | 可用|  是          |
 | Visual Studio Professional（标准） | VL、Azure、零售                                       | 可用                                                             |  是             |
