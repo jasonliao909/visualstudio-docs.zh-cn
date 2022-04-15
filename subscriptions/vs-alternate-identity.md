@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: amast
 manager: shve
 ms.assetid: 86f2856c-8adf-4085-9962-f4136679e5ed
-ms.date: 10/14/2021
+ms.date: 04/14/2022
 ms.topic: conceptual
-description: 如何为 Visual Studio 订阅添加用于登录 Azure DevOps 和 Azure 的备用标识
-ms.openlocfilehash: 6964c5c2b6e1c63e067958bbeb1c05ce5ca7573d
-ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+description: 了解如何为Visual Studio订阅添加备用标识以用于Azure DevOps和 Azure
+ms.openlocfilehash: 1e11f5ac1e48ec13cd95b7cd59908084916bc79b
+ms.sourcegitcommit: 3bb62c9d6e4e1b71d70848fef01b33e4d2050577
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "133256134"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "142637780"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Visual Studio 订阅者标识
 激活 Visual Studio 订阅时，我们会将用户激活期间使用的标识（或登录名）与 Visual Studio 订阅关联起来。 这样，我们便能在 [Visual Studio 订阅者门户](https://my.visualstudio.com?wt.mc_id=o~msft~docs)、Azure DevOps 和 Azure 中识别你。
@@ -45,16 +45,11 @@ ms.locfileid: "133256134"
 此时，备用帐户已添加到 Visual Studio 订阅中，可使用两个标识享受需要使用备用帐户登录的订阅权益（IDE、Azure DevOps 和 Azure）。
 
 ## <a name="faq"></a>FAQ
-
 ### <a name="q--why-doesnt-azure-devops-recognize-me-as-a-visual-studio-subscriber"></a>问：为什么 Azure DevOps 未将我识别为 Visual Studio 订阅者？
-
 答：如果你使用主要标识或备用标识登录，Azure DevOps 应该会自动识别你的订阅。 如果没有，可尝试以下操作：
-
-* 检查是否拥有包含 [Azure DevOps 权益](vs-azure-devops.md#eligibility)的有效 Visual Studio 订阅。
-
-* 确认使用的登录名/标识是 Visual Studio 订阅的主要或备用标识。  例如，许多人还会有一个与其他登录 ID 相关联的 Visual Studio Dev Essentials 成员身份。  尝试登录到具有该 ID 的其他订阅将失败，除非这些订阅与该电子邮件地址相关联。
-
-* 登录 Azure DevOps 前，至少先访问一次 [Visual Studio 订阅者门户](https://my.visualstudio.com?wt.mc_id=o~msft~docs)。
+- 检查是否拥有包含 [Azure DevOps 权益](vs-azure-devops.md#eligibility)的有效 Visual Studio 订阅。
+- 确认使用的登录名/标识是 Visual Studio 订阅的主要或备用标识。  例如，许多人还会有一个与其他登录 ID 相关联的 Visual Studio Dev Essentials 成员身份。  尝试登录到具有该 ID 的其他订阅将失败，除非这些订阅与该电子邮件地址相关联。
+- 登录 Azure DevOps 前，至少先访问一次 [Visual Studio 订阅者门户](https://my.visualstudio.com?wt.mc_id=o~msft~docs)。
 
 如果 Azure DevOps 仍无法识别你的订阅，请联系 [Azure DevOps 支持](https://azure.microsoft.com/support/devops/)。
 

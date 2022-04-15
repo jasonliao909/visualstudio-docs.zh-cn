@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: amast
 manager: shve
 ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
-ms.date: 10/18/2021
+ms.date: 04/14/2022
 ms.topic: overview
 description: 按月或按年租赁 Visual Studio Professional 或 Visual Studio Enterprise，无需任何长期协定。
-ms.openlocfilehash: 77878547a55ae2a0eebf88895c8255307d6de056
-ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.openlocfilehash: 9002516c60dcb016ad259ce6b31e1321fd2d086f
+ms.sourcegitcommit: 3bb62c9d6e4e1b71d70848fef01b33e4d2050577
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "133257967"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "142637832"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>购买 Visual Studio Professional 和 Visual Studio Enterprise 云订阅
 可从 [Visual Studio Marketplace](https://marketplace.visualstudio.com) 购买 [Visual Studio Professional 和 Visual Studio Enterprise 订阅](https://visualstudio.microsoft.com/subscriptions/)。 这些称为“云订阅”。
@@ -29,7 +29,6 @@ ms.locfileid: "133257967"
 你需要是为你的 EA 订阅创建的 Azure 订阅的参与者或更高级别的角色才能购买云订阅。
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>如何购买云订阅
-
 1. 登录到[“Visual Studio Marketplace”&gt;“订阅”](https://marketplace.visualstudio.com/subscriptions)。
 
 2. 选择要购买的订阅，如“Visual Studio Professional - 每月订阅”。

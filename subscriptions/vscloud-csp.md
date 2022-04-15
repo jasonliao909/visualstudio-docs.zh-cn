@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: amast
 manager: shve
 ms.assetid: d2ab13ed-ef79-4ef0-8736-eccd04bc6020
-ms.date: 04/11/2022
+ms.date: 04/14/2022
 ms.topic: conceptual
 description: 有关云解决方案提供商如何为客户购买和管理 Visual Studio 云订阅的信息。
-ms.openlocfilehash: e632e41dc10118343a99c72f17883c81b4895faa
-ms.sourcegitcommit: 850a5d0b3568d6f6c52d0572439fa890fb25b5d5
+ms.openlocfilehash: 956f1af70841c421fb35be8368cdbf91d83e5c78
+ms.sourcegitcommit: 3bb62c9d6e4e1b71d70848fef01b33e4d2050577
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "141605594"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "142637793"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>为客户购买和管理 Visual Studio 云订阅
 [云解决方案提供商 (CSP)](https://partner.microsoft.com/cloud-solution-provider) 计划中的合作伙伴可为其客户购买 Visual Studio Enterprise 和 Visual Studio Professional 云订阅。
@@ -20,7 +20,7 @@ ms.locfileid: "141605594"
 [比较云订阅选项](https://visualstudio.microsoft.com/vs/pricing)
 
 > [!NOTE]
-> Microsoft 不再在云订阅中提供Visual Studio Professional **年** 订阅和Visual Studio Enterprise **年** 订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 建议新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)，查看各 Visual Studio 购买选项。  每月订阅仍可用。  
+> Microsoft 不再在云订阅中提供Visual Studio Professional **年度** 订阅和Visual Studio Enterprise **年** 订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 建议新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)，查看各 Visual Studio 购买选项。  每月订阅仍可用。  
 
 ## <a name="prerequisites"></a>先决条件
 必须先在合作伙伴中心设置客户租户，并为此租户创建 Azure 订阅。
@@ -35,7 +35,7 @@ ms.locfileid: "141605594"
 0. 选择“客户”，并选择要为其购买的客户  。
 0. 选择“服务管理”  。
 0. 选择“Visual Studio Marketplace”  。
-0. 请确保客户的姓名位于右上角。
+0. 确保客户的姓名位于右上角。
 0. 选择“订阅”  。
 0. 选择“Visual Studio Enterprise”或“Visual Studio Professional”。
 0. 选择“购买”  。
@@ -68,10 +68,10 @@ ms.locfileid: "141605594"
 
 下面解释了在此电子表格中看到的内容：
 
-| 计量类别    |   “属性”                 |  单位                                |           这是什么                          |
-|-------------------|------------------------|---------------------------------------|-------------------------------------------------|
-| Visual Studio     | 企业             |  订阅                         | Visual Studio Enterprise 月度订阅   |
-| Visual Studio     | Professional           |  订阅                         | Visual Studio Professional 月度订阅 |
+| 计量类别    |   “属性”         |  单位         |           这是什么                          |
+|-------------------|----------------|----------------|-------------------------------------------------|
+| Visual Studio     | 企业     |  订阅  | Visual Studio Enterprise 月度订阅   |
+| Visual Studio     | Professional   |  订阅  | Visual Studio Professional 月度订阅 |
 
 我们为每月（为给定客户）购买的每种 Visual Studio 订阅的第 6 个单位提供 5% 的折扣。 因此，每个订阅会显示两行选项。 一行显示“最小值”为 0，应该将其理解为第 1 至 5 个单位的基准价格。 另一行显示“最小值”为 5，这是适用于第 6 个及以上单位的 5% 折扣价格。
 

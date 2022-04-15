@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: amast
 manager: shve
 ms.assetid: 92e8957f-c690-46bd-a812-3efd06a2bc6b
-ms.date: 10/18/2021
+ms.date: 04/14/2022
 ms.topic: how-to
 description: 了解有关所选 Visual Studio 订阅中包含的可用 CAST Highlight 权益
-ms.openlocfilehash: cbda0023c3ea77fdfcfd19c9a1b23a608ed44d04
-ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.openlocfilehash: 7a7041e17f1ad8f8e89d504f8ceaacbdbd85813a
+ms.sourcegitcommit: 3bb62c9d6e4e1b71d70848fef01b33e4d2050577
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "133254405"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "142637819"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 CAST Highlight 权益
 迁移到云时，开发者需要对其软件具有深入的了解。 借助 CAST Highlight，Visual Studio 订阅者可以快速扫描其应用程序源代码，以确定其应用程序的云就绪状态，以便迁移到 Azure 并在迁移期间和迁移后监控其应用的进度。
@@ -75,18 +75,18 @@ ms.locfileid: "133254405"
    > 请务必单击你收到的电子邮件中的激活链接。  否则，你将无法访问 CAST Highlight 订阅。 如果未在收件箱中看到电子邮件，请务必检查垃圾邮件文件夹。
 
 ## <a name="eligibility"></a>资格
-| 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
-|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| 订阅级别 |  信道  | 好处 | 是否续订？    |
+|--------------------|------------|---------|---------------|
 | Visual Studio Enterprise（标准）   | VL、Azure、零售、 | 3 个月内评估 5 个应用|  不是。  仅对新订阅者可用          |
 | 包含 GitHub Enterprise 的 Visual Studio Enterprise 订阅  | VL | 3 个月内评估 5 个应用|  不是。  仅对新订阅者可用          |
 | Visual Studio Professional（标准） | VL、Azure、零售                                       | 3 个月内评估 1 个应用                                                             |  不是。  仅对新订阅者可用                  |
 | 包含 GitHub Enterprise 的 Visual Studio Professional 订阅 | VL                                       | 3 个月内评估 1 个应用                                                            |  不是。  仅对新订阅者可用                  |
 | Visual Studio Test Professional（标准）                         | VL、零售                                              | 不可用                                             |  不可用           |
 | MSDN 平台（标准）                                          | VL、零售                                              | 不可用                                              |  不可用          |
-| Visual Studio Enterprise（标准）  | NFR<sup>1</sup> |不可用  | 不可用 |
+| Visual Studio Enterprise（标准）  | NFR* |不可用  | 不可用 |
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure | 不可用 | 不可用 |
 
-<sup>1</sup>  *包括：  不得转售 (NFR)、FTE、最有价值专家 (MVP)、区域总监 (RD)、Microsoft 合作伙伴网络 (MPN)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 认证培训师、BizSpark、Imagine、NFR Basic*
+\**包括：不适用于转售 (NFR) 、FTE、最有价值的Professional (MVP) 、区域总监 (RD) 、Microsoft 合作伙伴网络 (MPN) 、Visual Studio 行业合作伙伴 (VSIP) 、Microsoft 认证培训师、BizSpark、Imagine、NFR Basic*
 
 > [!NOTE]
 > Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 建议新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)，查看各 Visual Studio 购买选项。
