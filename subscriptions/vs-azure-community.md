@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: amast
 manager: shve
 ms.assetid: c15f7e18-b280-4902-a60d-2c2598653207
-ms.date: 10/14/2021
+ms.date: 04/14/2022
 ms.topic: conceptual
 description: 了解有关所选 Visual Studio 订阅中包含的 Azure 社区支持权益。
-ms.openlocfilehash: a1ce1af145dde040f3f87dd03b1c4544903bc300
-ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.openlocfilehash: 67778d23a0effd60dd58141c3ca5f5275fe7b36c
+ms.sourcegitcommit: 3bb62c9d6e4e1b71d70848fef01b33e4d2050577
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "133256914"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "142637806"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Azure 社区支持论坛
 在选定的支持论坛中通过 Azure 社区直接从 Azure 团队获得帮助。  Azure 社区权益提供访问专注于 Azure 相关主题的一系列论坛的权限。
@@ -57,7 +57,7 @@ Azure 社区入门很简单。
     > [!div class="mx-imgBorder"]
     >![“Azure 社区”磁贴](_img/vs-azure-community/vs-azure-community-tile.png "单击“Azure 社区”磁贴上的“获取帮助”按钮即可开始使用。")
 
-3. 你将看到可用的论坛列表。  只需单击你选择的论坛。
+3. 你将看到可用的论坛列表。  单击所选的论坛。
     > [!div class="mx-imgBorder"]
     > ![Azure 社区论坛](_img/vs-azure-community/vs-azure-community-forums.png "在“Azure 社区支持”页上，选择你所选的论坛。")
 

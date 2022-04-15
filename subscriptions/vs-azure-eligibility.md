@@ -7,12 +7,12 @@ ms.assetid: 3a8f9439-90e7-4a8a-a5a1-d0d6dcd1ba49
 ms.date: 11/11/2021
 ms.topic: conceptual
 description: 了解 Visual Studio 订阅是否包括 Azure 开发/测试额度
-ms.openlocfilehash: f36d3498ae60ebc4ffb05076078bf842f77b25c6
-ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.openlocfilehash: 85078a2506699b7353868fccdd9c79ec0c594755
+ms.sourcegitcommit: 3bb62c9d6e4e1b71d70848fef01b33e4d2050577
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "133256641"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "142637754"
 ---
 # <a name="azure-devtest-credits-for-visual-studio-subscribers"></a>Visual Studio 订户的 Azure 开发/测试额度
 许多 Visual Studio 订阅都包含 Azure 个人开发/测试额度。  利用这些额度，你可以免费探索和尝试各种 Azure 服务。 信用额度因订阅级别而异。  本文介绍每个订阅级别的额度分配。  
@@ -20,27 +20,27 @@ ms.locfileid: "133256641"
 若要开始使用订阅中包含的 Azure 开发/测试额度，请参阅 Azure 文档中的[如何开始使用你的个人 Azure 额度订阅](https://docs.microsoft.com/azure/devtest/offer/quickstart-individual-credit)一文。  
 
 ## <a name="eligibility"></a>资格
-|                 订阅级别/计划                 |           好处           |                         是否续订？                          |
-|--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
-|              Visual Studio Enterprise Standard               |     150 美元月信用额度     |                             是                             |
-|              包含 GitHub Enterprise 的 Visual Studio Enterprise 订阅               |     150 美元月信用额度     |                             是                             |
-|               Visual Studio Enterprise 月度               |        不可用        |                                                             |
-|             Visual Studio Professional Standard              |     50 美元月信用额度      |                             是
-|              包含 GitHub Enterprise 的 Visual Studio Professional 订阅              |     50 美元月信用额度     |                             是                             |
-|              Visual Studio Professional 月度              |        不可用        |                                                             |
-|                    Visual Studio Test Pro                    |     50 美元月信用额度      |                             是                             |
-|                        MSDN 平台                        |     100 美元月信用额度     |                             是                             |
-|               Visual Studio Enterprise - NFR<sup>1</sup>                 |     150 美元月信用额度     |                             是                             |
-|                Visual Studio Enterprise - FTE                |     150 美元月信用额度     |                             是                             |
-|     Visual Studio Enterprise - Microsoft 合作伙伴网络     |     150 美元月信用额度     |                             是                             |
-|    Visual Studio Professional - Microsoft 合作伙伴网络    |        不可用        |                                                             |
-|        Visual Studio Enterprise – Imagine（标准）         |        不可用        |                                                             |
-|         Visual Studio Enterprise – Imagine（高级）         |        不可用        |                                                             |
-|             Visual Studio Enterprise – BizSpark              |     150 美元月信用额度     |                             是                             |
-|      Visual Studio Enterprise – MCT 软件和服务      |     100 美元月信用额度     |                             是                             |
-| Visual Studio Enterprise – MCT 软件和服务开发人员 |     150 美元月信用额度     |                             是                             |
+|  订阅级别/计划  | 好处 | 是否续订？ |
+|--------------------------------|---------|------------|
+|              Visual Studio Enterprise Standard               |     150 美元月信用额度     | 是  |
+|              包含 GitHub Enterprise 的 Visual Studio Enterprise 订阅               |     150 美元月信用额度     | 是 |
+|               Visual Studio Enterprise 月度               |        不可用     |    |
+|             Visual Studio Professional Standard              |     50 美元月信用额度   | 是  |
+|              包含 GitHub Enterprise 的 Visual Studio Professional 订阅 |     50 美元月信用额度     | 是 |
+|              Visual Studio Professional 月度              |        不可用        |  |
+|                    Visual Studio Test Pro                    |     50 美元月信用额度      |  是 |
+|                        MSDN 平台                        |     100 美元月信用额度     |  是 |
+|               Visual Studio Enterprise - NFR*                |     150 美元月信用额度     | 是 |
+|                Visual Studio Enterprise - FTE                |     150 美元月信用额度     |  是 |
+|     Visual Studio Enterprise - Microsoft 合作伙伴网络     |     150 美元月信用额度     |  是 |
+|    Visual Studio Professional - Microsoft 合作伙伴网络    |        不可用        |      |
+|        Visual Studio Enterprise – Imagine（标准）         |        不可用        |      |
+|         Visual Studio Enterprise – Imagine（高级）         |        不可用        |      |
+|             Visual Studio Enterprise – BizSpark              |     150 美元月信用额度     |  是 |
+|      Visual Studio Enterprise – MCT 软件和服务      |     100 美元月信用额度     |  是 |
+| Visual Studio Enterprise – MCT 软件和服务开发人员 |     150 美元月信用额度     |  是 |
 
-<sup>1</sup>  *包括：不得转售 (NFR)、最有价值专家 (MVP)、区域总监 (RD)、Visual Studio 行业合作伙伴 (VSIP) 不包括：  NFR Basic*
+\**包括：不用于转售 (NFR) 、最有价值的Professional (MVP) 、区域总监 (RD) ，Visual Studio行业合作伙伴 (VSIP) 排除：NFR Basic*
 
 > [!NOTE]
 > Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 建议新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)，查看各 Visual Studio 购买选项。
