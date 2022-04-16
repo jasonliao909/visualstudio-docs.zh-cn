@@ -25,7 +25,7 @@ ms.sourcegitcommit: 02b5dbdec3ae86c3dfb8c15344a2c195db7b424a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2022
-ms.locfileid: "142645918"
+ms.locfileid: "142649397"
 ---
 # <a name="insert-new-records-into-a-database"></a>将新记录插入数据库
 

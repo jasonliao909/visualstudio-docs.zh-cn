@@ -1,6 +1,6 @@
 ---
 title: 更改主题、字体、文本和对比度以提供辅助功能
-description: 了解如何更改Visual Studio颜色主题、字体颜色、文本大小、额外对比度颜色等，以便轻松使用和辅助功能问题。
+description: 了解如何更改Visual Studio颜色主题、字体颜色、文本大小、超对比度颜色等，以便于使用和辅助功能问题。
 titleSuffix: ''
 ms.date: 04/15/2022
 ms.topic: how-to
@@ -20,7 +20,7 @@ ms.sourcegitcommit: 02b5dbdec3ae86c3dfb8c15344a2c195db7b424a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2022
-ms.locfileid: "142645957"
+ms.locfileid: "142649475"
 ---
 # <a name="how-to-change-fonts-colors-and-themes-in-visual-studio"></a>如何：在 Visual Studio 中更改字体、颜色和主题
 
@@ -29,7 +29,7 @@ ms.locfileid: "142645957"
 可以通过多种方式在 Visual Studio 中更改字体和颜色。 例如，你可以将默认的深色主题（也称为“深色模式”）更改为浅色主题、蓝色主题、额外对比度主题或与系统设置相匹配的主题。 另外，还可以在 IDE 和代码编辑器中更改默认字体和文本大小。
 
 > [!TIP]
-> 请参阅 [**2022 年 Visual Studio 博客文章中的“我们升级了 UI**](https://devblogs.microsoft.com/visualstudio/weve-upgraded-the-ui-in-visual-studio-2022/)”，详细了解微妙的颜色对比度调整以及我们添加的新 [Cascadia Code](#use-the-cascadia-code-font) 字体，以便Visual Studio每个人都更易于访问。
+> 请参阅 [**2022 年 Visual Studio 2022 年博客文章中的“我们升级了 UI**](https://devblogs.microsoft.com/visualstudio/weve-upgraded-the-ui-in-visual-studio-2022/)”，详细了解细微的颜色对比度调整和我们添加的新 [Cascadia Code](#use-the-cascadia-code-font) 字体，使Visual Studio更易于所有人访问。
 
 ::: moniker-end
 
@@ -161,11 +161,11 @@ ms.locfileid: "142645957"
 
 ::: moniker-end
 
-有关如何更改辅助功能字体和颜色的详细信息，请参阅此页面的 [“设置辅助功能选项](#set-accessibility-options) ”部分。 有关所有用户界面的详细信息， (UI) 元素，可在其中更改字体和配色方案，请参阅 [“字体和颜色”、“环境、选项”对话框](../ide/reference/fonts-and-colors-environment-options-dialog-box.md) 页。
+有关如何更改辅助功能字体和颜色的详细信息，请参阅此页面的 [“设置辅助功能选项”](#set-accessibility-options) 部分。 有关所有用户界面的详细信息 (UI) 元素，可在其中更改字体和配色方案，请参阅 [“字体和颜色”、“环境、选项”对话框](../ide/reference/fonts-and-colors-environment-options-dialog-box.md) 页。
 
 ## <a name="set-language-specific-editor-options"></a>设置语言特定的编辑器选项
 
-你可以对代码编辑器进行各种更改，以满足所选编程语言。 例如，可以在 C# 中更改 [大括号格式](reference/options-text-editor-csharp-formatting.md#new-lines-page) 以内联显示或出现在新行上，等等。 若要了解如何自定义代码编辑器，请参阅 [设置特定于语言的编辑器选项](reference/setting-language-specific-editor-options.md)。
+你可以对代码编辑器进行各种更改，以满足所选编程语言。 例如，可以更改 C# 中的 [大括号格式](reference/options-text-editor-csharp-formatting.md#new-lines-page) 以内联显示或换行等。 若要了解如何自定义代码编辑器，请参阅 [设置特定于语言的编辑器选项](reference/setting-language-specific-editor-options.md)。
 
 ## <a name="set-accessibility-options"></a>设置辅助功能选项
 

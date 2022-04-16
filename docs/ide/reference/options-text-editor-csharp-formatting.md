@@ -26,7 +26,7 @@ ms.sourcegitcommit: 02b5dbdec3ae86c3dfb8c15344a2c195db7b424a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2022
-ms.locfileid: "142645932"
+ms.locfileid: "142649412"
 ---
 # <a name="options-dialog-box-text-editor--c--code-style--formatting"></a>“选项”对话框：文本编辑器 \> C# \> 代码样式 \> 格式设置
 
@@ -99,12 +99,12 @@ ms.locfileid: "142645932"
 
 ## <a name="new-lines-page"></a>“新建行”页
 
-使用此页面上的新行选项来控制是要在代码编辑器中的新行上显示大括号、关键字还是表达式。
+使用此页面上的新行选项可控制是要在代码编辑器中的新行上显示大括号、关键字还是表达式。
 
 > [!IMPORTANT]
 > 此页上的设置可由 .editorconfig 文件重写。 若要了解详细信息，请参阅 [使用 EditorConfig 创建可移植的自定义编辑器设置](../create-portable-custom-editor-options.md)。
 
-:::image type="content" source="media/csharp-new-lines-options.png" alt-text="Visual Studio 中的 C# 新行选项的屏幕截图。":::
+:::image type="content" source="media/csharp-new-lines-options.png" alt-text="Visual Studio中的 C# 新行选项的屏幕截图。":::
 
 ## <a name="see-also"></a>请参阅
 
