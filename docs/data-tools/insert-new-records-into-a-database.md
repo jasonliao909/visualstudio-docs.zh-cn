@@ -2,7 +2,7 @@
 title: 将新记录插入数据库
 description: 使用 TableAdapter.Update 方法、TableAdapter 的 DBDirect 方法之一或命令对象将新记录插入到数据库中。
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 04/12/2022
 ms.topic: how-to
 dev_langs:
 - VB
@@ -20,16 +20,16 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7b3fbea039c82210c135b26c918ca18c757816b5
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 06ef7371a0da841a148eb417abb32daac07b1805
+ms.sourcegitcommit: 02b5dbdec3ae86c3dfb8c15344a2c195db7b424a
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126601129"
+ms.lasthandoff: 04/16/2022
+ms.locfileid: "142645918"
 ---
 # <a name="insert-new-records-into-a-database"></a>将新记录插入数据库
 
-若要将新记录插入数据库，可以使用 `TableAdapter.Update` 方法或 TableAdapter 的 DBDirect 方法之一（特别是 `TableAdapter.Insert` 方法）。 有关详细信息，请参阅 [TableAdapter](../data-tools/create-and-configure-tableadapters.md)。
+若要在.NET Framework项目中将新记录插入 [ADO.NET](/dotnet/framework/data/adonet/) 的数据库，可以使用该方法`TableAdapter.Update`或 TableAdapter 的 DBDirect 方法之一，具体`TableAdapter.Insert` (该方法) 。 有关详细信息，请参阅 [TableAdapter](../data-tools/create-and-configure-tableadapters.md)。
 
 如果应用程序不使用 TableAdapters，你可以使用命令对象（例如 <xref:System.Data.SqlClient.SqlCommand>）将新记录插入数据库。
 
@@ -38,6 +38,9 @@ ms.locfileid: "126601129"
 如果应用程序使用对象来存储数据，或者你想要更精细地控制如何在数据库中新建记录，请使用 `TableAdapter.Insert` 方法。
 
 如果 TableAdapter 没有 `Insert` 方法，则意味着 TableAdapter 配置为使用存储过程或其 `GenerateDBDirectMethods` 属性设置为 `false`。 尝试在数据集设计器中将 TableAdapter 的 `GenerateDBDirectMethods` 属性设置为 `true`，然后保存数据集。 这将重新生成 TableAdapter。 如果 TableAdapter 仍然没有 `Insert` 方法，则表可能没有提供足够的架构信息来区分各个行（例如，表上可能没有设置主键）。
+
+> [!NOTE]
+> 本文适用于 ADO.NET 和.NET Framework开发。 有关 Entity Framework 6 的相同任务，请参阅 [向上下文添加新实体](/ef/ef6/saving/change-tracking/entity-state#adding-a-new-entity-to-the-context)。 有关 Entity Framework Core，请参阅 [添加数据](/ef/core/saving/basic#adding-data)。
 
 ## <a name="insert-new-records-by-using-tableadapters"></a>使用 TableAdapters 插入新记录
 

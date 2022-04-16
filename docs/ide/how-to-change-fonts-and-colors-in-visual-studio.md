@@ -2,7 +2,7 @@
 title: 更改主题、字体、文本和对比度以提供辅助功能
 description: 了解如何更改Visual Studio颜色主题、字体颜色、文本大小、额外对比度颜色等，以便轻松使用和辅助功能问题。
 titleSuffix: ''
-ms.date: 04/04/2022
+ms.date: 04/15/2022
 ms.topic: how-to
 ms.custom: contperf-fy22q3
 helpviewer_keywords:
@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 86089af5cdb35c674c6de1a59dd33a9182c06348
-ms.sourcegitcommit: d9cab667735450e735622f8b93266f07b8046f3e
+ms.openlocfilehash: 81b4459ef0f9312753d82ddccab81c200b3b606b
+ms.sourcegitcommit: 02b5dbdec3ae86c3dfb8c15344a2c195db7b424a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "141402267"
+ms.lasthandoff: 04/16/2022
+ms.locfileid: "142645957"
 ---
 # <a name="how-to-change-fonts-colors-and-themes-in-visual-studio"></a>如何：在 Visual Studio 中更改字体、颜色和主题
 
@@ -29,7 +29,7 @@ ms.locfileid: "141402267"
 可以通过多种方式在 Visual Studio 中更改字体和颜色。 例如，你可以将默认的深色主题（也称为“深色模式”）更改为浅色主题、蓝色主题、额外对比度主题或与系统设置相匹配的主题。 另外，还可以在 IDE 和代码编辑器中更改默认字体和文本大小。
 
 > [!TIP]
-> 请参阅 [**2022 年 Visual Studio 博客文章中的"我们升级了 UI**](https://devblogs.microsoft.com/visualstudio/weve-upgraded-the-ui-in-visual-studio-2022/)"，详细了解微妙的颜色对比度调整以及我们添加的新 [Cascadia Code](#use-the-cascadia-code-font) 字体，以便Visual Studio每个人都更易于访问。
+> 请参阅 [**2022 年 Visual Studio 博客文章中的“我们升级了 UI**](https://devblogs.microsoft.com/visualstudio/weve-upgraded-the-ui-in-visual-studio-2022/)”，详细了解微妙的颜色对比度调整以及我们添加的新 [Cascadia Code](#use-the-cascadia-code-font) 字体，以便Visual Studio每个人都更易于访问。
 
 ::: moniker-end
 
@@ -161,7 +161,11 @@ ms.locfileid: "141402267"
 
 ::: moniker-end
 
-有关如何更改辅助功能字体和颜色的详细信息，请参阅此页面的 ["设置辅助功能选项](#set-accessibility-options) "部分。 有关所有用户界面的详细信息， (UI) 元素，可在其中更改字体和配色方案，请参阅 ["字体和颜色"、"环境、选项"对话框](../ide/reference/fonts-and-colors-environment-options-dialog-box.md) 页。
+有关如何更改辅助功能字体和颜色的详细信息，请参阅此页面的 [“设置辅助功能选项](#set-accessibility-options) ”部分。 有关所有用户界面的详细信息， (UI) 元素，可在其中更改字体和配色方案，请参阅 [“字体和颜色”、“环境、选项”对话框](../ide/reference/fonts-and-colors-environment-options-dialog-box.md) 页。
+
+## <a name="set-language-specific-editor-options"></a>设置语言特定的编辑器选项
+
+你可以对代码编辑器进行各种更改，以满足所选编程语言。 例如，可以在 C# 中更改 [大括号格式](reference/options-text-editor-csharp-formatting.md#new-lines-page) 以内联显示或出现在新行上，等等。 若要了解如何自定义代码编辑器，请参阅 [设置特定于语言的编辑器选项](reference/setting-language-specific-editor-options.md)。
 
 ## <a name="set-accessibility-options"></a>设置辅助功能选项
 
@@ -226,7 +230,7 @@ ms.locfileid: "141402267"
 
 ### <a name="more-accessibility-features-in-visual-studio"></a>Visual Studio中的更多辅助功能
 
-Visual Studio还包括帮助具有有限敏捷性的人员编写的功能。 例如，Visual Studio支持 Dvorak 键盘布局，这使得最常键入的字符更易于访问。
+Visual Studio还包括帮助具有有限敏捷性的人编写的功能。 例如，Visual Studio支持 Dvorak 键盘布局，这使得最常键入的字符更易于访问。
 
 还可以自定义 Visual Studio 可用的默认键盘快捷键。 有关详细信息，请参阅以下页面：
 
@@ -340,7 +344,7 @@ Visual Studio在编辑器中显示弹出窗口。 这些弹出窗口包括使编
 
 ### <a name="accessibility-support"></a>辅助功能支持
 
-有关使残障人士Windows更易于访问的功能、产品和服务的详细信息，请参阅 [Microsoft 提供的辅助功能产品和服务](reference/accessibility-products-and-services-from-microsoft.md)。 有关如何获取 Microsoft 产品的更易于访问的文档格式的详细信息，请参阅 [Microsoft 页面辅助功能产品和服务](reference/accessibility-products-and-services-from-microsoft.md)的["替代格式](reference/accessibility-products-and-services-from-microsoft.md#documentation-in-alternative-formats)"部分的文档。
+有关使残障人士Windows更易于访问的功能、产品和服务的详细信息，请参阅 [Microsoft 提供的辅助功能产品和服务](reference/accessibility-products-and-services-from-microsoft.md)。 有关如何获取 Microsoft 产品的更易于访问的文档格式的详细信息，请参阅 [Microsoft 页面辅助功能产品和服务](reference/accessibility-products-and-services-from-microsoft.md)的[“替代格式](reference/accessibility-products-and-services-from-microsoft.md#documentation-in-alternative-formats)”部分的文档。
 
 此页面中包含的辅助功能信息可能仅适用于在美国中许可 Microsoft 产品的用户。 如果你在美国之外获得本产品，请访问 [Microsoft 辅助功能](https://www.microsoft.com/accessibility/)网站，以获取 Microsoft 支持服务电话号码和地址的列表。 你可以与当地的分公司联系，了解你所在的地区是否供应本页所描述的产品和服务类型。 有关辅助功能的信息还有其他语言版本。
 
