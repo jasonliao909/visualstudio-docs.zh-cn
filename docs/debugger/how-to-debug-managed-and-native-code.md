@@ -1,7 +1,7 @@
 ---
 title: 教程：调试 C# 和 C++ 代码（混合模式）
 description: 了解如何使用混合模式调试来调试 .NET Core 或 .NET Framework 应用中的本机 DLL
-ms.date: 11/02/2018
+ms.date: 04/15/2022
 ms.topic: tutorial
 dev_langs:
 - CSharp
@@ -15,12 +15,12 @@ ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: ceeee6374a2d82b70d6aa9b8fe936c0434e36e12
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: f4c6613c77843ab15f19948f1cc8dc5ae5de57ef
+ms.sourcegitcommit: 2828730cd0e3a4b9f5935858ec2453837fed3211
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129971746"
+ms.lasthandoff: 04/16/2022
+ms.locfileid: "142649623"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>教程：在同一个调试会话中调试 C# 和 C++
 
@@ -40,9 +40,18 @@ Visual Studio 允许你在调试会话中启用多个调试器类型，这名为
 
 ## <a name="prerequisites"></a>先决条件
 
+::: moniker range=">=vs-2022"
 必须安装 Visual Studio 并具有下列工作负荷：
-- 使用 C++ 的桌面开发
-- .NET 桌面开发或 .NET Core 跨平台开发，具体取决于你想要创建哪种应用类型。
+
+* 使用 C++ 的桌面开发
+* **.NET 桌面开发**
+::: moniker-end
+::: moniker range="<=vs-2019"
+必须安装 Visual Studio 并具有下列工作负荷：
+
+* 使用 C++ 的桌面开发
+* **.NET 桌面开发** 或 **.NET Core 跨平台开发**，具体取决于要创建的应用类型。
+::: moniker-end
 
 如果未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/)页面，进行免费安装。
 
@@ -138,7 +147,7 @@ Visual Studio 允许你在调试会话中启用多个调试器类型，这名为
     然后，键入名称（如“Mixed_Mode_Calling_App”）并单击“确定” 。
     ::: moniker-end
 
-    如果没有看到正确的项目模板，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序 。 选择“.NET Core 跨平台开发”或“.NET 桌面开发”工作负载（具体取决于你的目标框架），然后选择“修改”  。
+    如果没有看到正确的项目模板，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序 。 根据先决条件所述选择正确的 .NET 工作负荷，然后选择 **“修改**”。
 
     > [!NOTE]
     > 还可以将新的托管项目添加到现有 C++ 解决方案。 我们将在新的解决方案中创建项目，以提高混合模式调试任务的难度。
@@ -181,9 +190,19 @@ Visual Studio 允许你在调试会话中启用多个调试器类型，这名为
 
 1. 在“解决方案资源管理器”中，选择“Mixed_Mode_Calling_App”项目节点并选择“属性”图标，或右键单击项目节点并选择“属性”   。
 
-1. 选择左窗格中的“调试”，再选中“启用本机代码调试”复选框，然后关闭属性页以保存更改 。
+1. 在属性中启用本机代码调试。
+
+    ::: moniker range=">=vs-2022"
+    在左窗格中选择 **“调试”** ，选择 **“打开调试启动配置文件 UI**”，然后选择“ **启用本机代码调试** ”复选框，然后关闭属性页以保存更改。
+    ![启用混合模式调试](../debugger/media/vs-2022/mixed-mode-enable-native-code-debugging.png)
+    ::: moniker-end
+    ::: moniker range="<=vs-2019"
+    选择左窗格中的“调试”，再选中“启用本机代码调试”复选框，然后关闭属性页以保存更改 。
 
     ![启用混合模式调试](../debugger/media/mixed-mode-enable-native-code-debugging.png)
+    ::: moniker-end
+
+1. 如果要从.NET Framework应用定位 x64 DLL，请将平台目标从 **任何 CPU** 更改为 x64。 为此，可能需要从“调试”工具栏的解决方案平台下拉列表中选择 **Configuration Manager**。 然后，如果无法直接切换到 x64，请创建面向 x64 **的新** 配置。
 
 ## <a name="set-a-breakpoint-and-start-debugging"></a>设置断点并开始调试
 
@@ -205,7 +224,12 @@ Visual Studio 允许你在调试会话中启用多个调试器类型，这名为
 
    “Mixed_Mode.h”本机头文件打开，在调试器暂停位置看到黄色箭头。
 
+   ::: moniker range=">=vs-2022"
+   ![单步执行本机代码](../debugger/media/vs-2022/mixed-mode-step-into-native-code.png)
+   ::: moniker-end
+   ::: moniker range="<=vs-2019"
    ![单步执行本机代码](../debugger/media/mixed-mode-step-into-native-code.png)
+   ::: moniker-end
 
 1. 现在，可以设置并命中断点以及检查本机代码或托管代码中的变量。
 

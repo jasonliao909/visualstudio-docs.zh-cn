@@ -1,8 +1,7 @@
 ---
 title: 调试混合模式应用程序 | Microsoft Docs
 description: 在 Visual Studio 中调试混合模式应用程序，该应用程序是一个组合了本机代码与托管代码（在公共语言运行时上运行）的应用。
-ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 04/15/2022
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -24,14 +23,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 13eff8e5d1d078c838d0b193dc5fe7b88a23f56b
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: bcfccce3fa0db99523732ee79ca21a6fe4e5d01e
+ms.sourcegitcommit: 2828730cd0e3a4b9f5935858ec2453837fed3211
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126737372"
+ms.lasthandoff: 04/16/2022
+ms.locfileid: "142649647"
 ---
 # <a name="debugging-mixed-mode-applications"></a>调试混合模式应用程序
+
 混合模式应用程序是任何组合了本机代码 (C++) 与托管代码（在公共语言运行时上运行的 Visual Basic、Visual C# 或 C++）的应用程序。 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中调试混合模式应用程序基本上是透明的；它与调试单模式应用程序没有太大区别。 但有几个特殊的注意事项。
 
 ## <a name="enable-c-edit-and-continue-in-mixed-mode-debugging"></a>在混合模式调试下启用 C++“编辑并继续”
@@ -42,7 +42,8 @@ ms.locfileid: "126737372"
 > 若要使用 Visual Studio 2013 中的 C++“编辑并继续”功能，你必须还原为旧调试引擎。 请参阅“Microsoft 应用程序生命周期管理”博客上的 [Switching to Managed Compatibility Mode in Visual Studio 2013](https://devblogs.microsoft.com/devops/switching-to-managed-compatibility-mode-in-visual-studio-2013/)（切换为 Visual Studio 2013 中的托管兼容性模式）。
 
 ## <a name="property-evaluation-in-mixed-mode-applications"></a>混合模式应用程序中的属性求值
- 在混合模式应用程序中，调试器执行的属性求值是一个资源消耗很大的操作。 因此，调试操作（如单步执行）可能会很慢。 有关详细信息，请参阅[单步执行](/previous-versions/visualstudio/visual-studio-2010/ek13f001(v=vs.100))。 如果混合模式调试的性能很低，你可能希望在调试器窗口中关闭属性求值。
+
+ 在混合模式应用程序中，调试器执行的属性求值是一个资源消耗很大的操作。 因此，调试操作（如单步执行）可能会很慢。 有关详细信息，请参阅 [调试器中的导航代码](../debugger/navigating-through-code-with-the-debugger.md)。 如果混合模式调试的性能很低，你可能希望在调试器窗口中关闭属性求值。
 
 > [!NOTE]
 > 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅[重置设置](../ide/environment-settings.md#reset-settings)。
