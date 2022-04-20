@@ -35,12 +35,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c6848272f2e1d0ffa3a3dcf5937f5a271cfe3fc
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: f978010159a2a46702a4649c45730d2a4cd41a24
+ms.sourcegitcommit: 381947871144d93cac4940045c893eaaf8f16eb1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135804072"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "143971307"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中使用断点
 
@@ -66,12 +66,15 @@ ms.locfileid: "135804072"
 
 调试时，在执行断点所在行上的代码之前，执行会在断点处暂停。 断点符号显示黄色箭头。
 
-在以下示例中的断点处，`testInt` 的值仍然为 1。 也就是说，从变量初始化（设置为值 1）以来，该值没有更改，因为尚未执行黄色的语句。
-
 ::: moniker range=">= vs-2022"
+在以下示例中的断点处，值 `testInt` 仍为 3。 因此，由于变量已初始化 (设置为值 3) ，因此该值尚未更改，因为黄色语句尚未执行。
+
 ![断点执行已停止](../debugger/media/vs-2022/breakpoint-execution.png "断点执行")
 ::: moniker-end
+
 ::: moniker range="<= vs-2019"
+在以下示例中的断点处，`testInt` 的值仍然为 1。 也就是说，从变量初始化（设置为值 1）以来，该值没有更改，因为尚未执行黄色的语句。
+
 ![断点执行已停止](../debugger/media/breakpointexecution.png "断点执行")
 ::: moniker-end
 
@@ -144,7 +147,7 @@ ms.locfileid: "135804072"
 >[!NOTE]
 > 对于“更改时”字段，调试器不会将条件的第一次计算视为更改，所以第一次计算时不会命中断点。
 
-### <a name="use-object-ids-in-conditional-expressions-c-and-f-only"></a><a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a> 使用条件表达式中的对象 Id (c # 和 F # 仅) 
+### <a name="use-object-ids-in-conditional-expressions-c-and-f-only"></a><a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>) 仅在 C# 和 F# (条件表达式中使用对象 ID
 
  有时，你想要观察特定对象的行为。 例如，你可能想要找出对象多次插入到集合中的原因。 在 C# 和 F# 中，可以创建[引用类型](/dotnet/csharp/language-reference/keywords/reference-types)的特定实例的对象 ID，并在断点条件下使用它们。 对象 ID 由公共语言运行时 (CLR) 调试服务生成并与该对象关联。
 
@@ -250,7 +253,7 @@ ms.locfileid: "135804072"
 
 ::: moniker range=">= vs-2019"
 
-## <a name="set-data-breakpoints-net-core-3x-or-net-5"></a><a name="BKMK_set_a_data_breakpoint_managed"></a>设置数据断点 ( .NET Core 2.x 或 .NET 5 +) 
+## <a name="set-data-breakpoints-net-core-3x-or-net-5"></a><a name="BKMK_set_a_data_breakpoint_managed"></a>设置数据断点 (.NET Core 3.x 或 .NET 5+) 
 
 当特定对象的属性更改时，数据断点中断执行。
 
