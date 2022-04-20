@@ -23,12 +23,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b38af7e21d6aab6def7858bc251e5886a40bd57
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: d5d05d7b8a4c968cbbbb9dd1550ea032eb999715
+ms.sourcegitcommit: fbc77679b01f98af570310f009f910dd4f96d7d7
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126665028"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "143909427"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Customize code maps by editing the DGML files
 
@@ -289,29 +289,31 @@ ms.locfileid: "126665028"
 
     此表达式使用以下 Backus-Naur 形式 (BNF) 语法：
 
-    \<Expression> ::= \<BinaryExpression> &#124; \<UnaryExpression> &#124; "("\<Expression>")" &#124; \<MemberBindings> &#124; \<Literal> &#124; \<Number>
+    ```
+    <Expression> ::= <BinaryExpression> | \<UnaryExpression> | "("<Expression>")" | <MemberBindings> | <Literal> | \<Number>
 
-    \<BinaryExpression> ::= \<Expression> \<Operator> \<Expression>
+    <BinaryExpression> ::= <Expression> <Operator> <Expression>
 
-    \<UnaryExpression> ::= "!" \<Expression> &#124; "+" \<Expression> &#124; "-" \<Expression>
+    <UnaryExpression> ::= "!" <Expression> | "+" <Expression> | "-" <Expression>
 
-    \<Operator> ::= "<" &#124; "\<=" &#124; "=" &#124; ">=" &#124; ">" &#124; "!=" &#124; "or" &#124; "and" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
+    <Operator> ::= "<" | "<=" | "=" | ">=" | ">" | "!=" | "or" | "and" | "+" | "*" | "/" | "-"
 
-    \<MemberBindings> ::= \<MemberBindings> &#124; \<MemberBinding> "." \<MemberBinding>
+    <MemberBindings> ::= <MemberBindings> | <MemberBinding> "." <MemberBinding>
 
-    \<MemberBinding> ::= \<MethodCall> &#124; \<PropertyGet>
+    <MemberBinding> ::= <MethodCall> | <PropertyGet>
 
-    \<MethodCall> ::= \<Identifier> "(" \<MethodArgs> ")"
+    <MethodCall> ::= <Identifier> "(" <MethodArgs> ")"
 
-    \<PropertyGet> ::= Identifier
+    <PropertyGet> ::= <Identifier>
 
-    \<MethodArgs> ::= \<Expression> &#124; \<Expression> "," \<MethodArgs> &#124; \<empty>
+    <MethodArgs> ::= <Expression> | <Expression> "," <MethodArgs> | <empty>
 
-    \<Identifier> ::= [^. ]*
+    <Identifier> ::= [^. ]*
 
-    \<Literal> ::= 单引号或双引号括起来的文本
+    <Literal> ::= single or double-quoted string literal
 
-    \<Number> ::= 可带小数点的数字字符串
+    <Number> ::= string of digits with optional decimal point
+    ```
 
     你可以指定多个 `<Condition/>` 元素，这些元素必须均为 true 才能应用样式。
 

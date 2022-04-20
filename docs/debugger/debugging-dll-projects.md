@@ -2,7 +2,7 @@
 title: 调试 DLL 项目 | Microsoft Docs
 description: 在 Visual Studio 中调试动态链接库 (DLL) 文件。 使用 Visual Studio 创建、构建、配置和调试 DLL。
 ms.custom: SEO-VS-2020
-ms.date: 11/06/2018
+ms.date: 04/18/2022
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ba25ff92131f9f044e0b81d25cf49e865563161b
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: b1bb9ac7e78229be65b5b40557a4abf927c0ce7b
+ms.sourcegitcommit: 35045c249e619401c19dff14b966caf1d7907e6c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126737186"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "143612561"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>在 Visual Studio 中调试 DLL 项目（C#、C++、Visual Basic、F#）
 
@@ -51,6 +51,7 @@ DLL （动态链接库） 是包含可被多个程序使用的代码和数据的
 使用 Visual Studio 项目模板创建应用时，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 会自动为调试和发布生成配置创建所需设置。 如果需要，可以更改这些设置。 有关详细信息，请参阅以下文章：
 
 - [C++ 调试配置的项目设置](../debugger/project-settings-for-a-cpp-debug-configuration.md)
+- [.NET C# 调试配置的项目设置](../debugger/project-settings-for-csharp-debug-configurations-dotnetcore.md)
 - [C# 调试配置的项目设置](../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Visual Basic 调试配置的项目设置](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
 - [如何：设置调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)
@@ -168,6 +169,7 @@ DLL （动态链接库） 是包含可被多个程序使用的代码和数据的
 - [准备调试 C++ 项目](../debugger/debugging-preparation-visual-cpp-project-types.md)
 - [C#、F# 和 Visual Basic 项目类型](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
 - [C++ 调试配置的项目设置](../debugger/project-settings-for-a-cpp-debug-configuration.md)
+- [.NET C# 调试配置的项目设置](../debugger/project-settings-for-csharp-debug-configurations-dotnetcore.md)
 - [C# 调试配置的项目设置](../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Visual Basic 调试配置的项目设置](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
 - [调试器安全](../debugger/debugger-security.md)
