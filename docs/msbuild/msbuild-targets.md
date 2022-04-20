@@ -2,7 +2,7 @@
 title: MSBuild 目标 | Microsoft Docs
 description: 了解 MSBuild 如何使用目标将任务分组到一起，并允许将生成过程分解成更小的单元。
 ms.custom: SEO-VS-2020
-ms.date: 09/21/2021
+ms.date: 04/18/2022
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, targets
@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 96e9ee12fbe3777e99ca5e4a256c655fda11900e
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: afe15835a7720858b893ddc84e134e72c32112b9
+ms.sourcegitcommit: 8b9d8bb2467442b4acbfd2f3af13f6b0dae2a092
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128427580"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "143612044"
 ---
 # <a name="msbuild-targets"></a>MSBuild 目标
 
@@ -119,7 +119,7 @@ Reference: 4.0
 
 ## <a name="default-build-targets"></a>默认生成目标
 
-下面列出了 Microsoft.Common.CurrentVersion.Targets 中的公共目标。
+下面列出了 Microsoft.Common.CurrentVersion.Targets 中的公共目标。 若要获取可用于项目文件的所有目标，请使用 `-targets` 或 `-ts` 命令行选项。 请参阅 [MSBuild 命令行参考](msbuild-command-line-reference.md)。
 
 ```xml
 ===================================================

@@ -6,12 +6,12 @@ ms.author: jomatthi
 manager: dominicn
 ms.date: 08/19/2019
 ms.topic: reference
-ms.openlocfilehash: 36852fe81906b49dd9eb174ffd89bc67630a9bb6
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: d37c2432983f398f6da3802dfcd181e47f41b2ee
+ms.sourcegitcommit: fbc77679b01f98af570310f009f910dd4f96d7d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135805541"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "143909440"
 ---
 # <a name="multi-caret-editing"></a>多个插入点编辑
 
@@ -38,7 +38,7 @@ ms.locfileid: "135805541"
 
 通过使用光标，可以为多个插入点自由选择特定插入点。 将键盘快捷键绑定到匹配字符串时，可以使用光标在文档中的任何位置手动插入插入点。 设置插入点后，每个插入点都将回显你在键盘上键入的键项。
 
-若要使用鼠标插入多个插入点，必须按住 ⌘⌥，并单击要输入插入点的位置。 只要按住 ⌘⌥ 键，就会处于插入模式。 如果在不正确的位置插入插入点，则可以通过继续按住 ⌘⌥ 并再次单击同一区域来删除插入点。 将所有插入点定位到所需位置之后，停止按 ⌘⌥ 键并开始键入。 以下 GIF 演示了如何选择一组插入点以及删除错误设置的点。
+若要使用鼠标插入多个插入点，必须按住 Control 键和 Option 键，然后单击要输入插入点的位置。 只要保留“控件”和“选项”键，你就会处于插入模式。 如果在不正确的位置插入插入插入点，可以继续按住 Control 键和 Option 键并再次单击同一区域来删除插入点。 获得所需的所有插入点后，请停止按“控件”和“选项”键，然后开始键入。 以下 GIF 演示了如何选择一组插入点以及删除错误设置的点。
 
 ![多个插入点鼠标](media/multi-caret-mouse.gif)
 

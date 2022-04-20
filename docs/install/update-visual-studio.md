@@ -17,12 +17,12 @@ ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b0da7611e5703505fc443b974ea3c78fe99e4a6
-ms.sourcegitcommit: 015d0bf8295f48d687c91aacc4ec2747063fe9ca
+ms.openlocfilehash: 2b3e10841f3699e8cfc6dbb5064e0832f481fe81
+ms.sourcegitcommit: fbc77679b01f98af570310f009f910dd4f96d7d7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "141533314"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "143909466"
 ---
 # <a name="update-visual-studio"></a>更新 Visual Studio
 
@@ -270,19 +270,19 @@ ms.locfileid: "141533314"
 
   ![屏幕截图显示 IDE 中“有可用更新”对话框中的更新设置。](media/vs-2022/invoke-update-settings-in-the-ide.png)
     
-" **更新设置** "对话框将如下所示。 在此示例中，Visual Studio 实例使用 LTSC 17.0 通道。
+“ **更新设置** ”对话框如下所示。 在此示例中，Visual Studio 实例使用的是 LTSC 17.0 通道。
 
    ![屏幕截图显示 Visual Studio 2022 IDE 中的“更新设置”对话框。](media/vs-2022/update-settings.png)
 
 通过在“更新通道”下拉菜单中选择正确的值，你可以控制这个 Visual Studio 实例未来更新的源位置。 其他需要记住的方面包括：
  * 预览版和最新版通道适用于所有版本的 Visual Studio，LTSC 通道仅适用于 Professional Enterprise 客户。 
- * 在配置 **更新通道** 位置后，可以选择立即更新Visual Studio实例。 或者，可以将实际产品更新延迟到稍后的时间。 配置更新通道的行为和更新产品的行为是两个独立的事件。 有关如何以编程方式控制更新通道的信息，请参阅 [使用 modifySettings 命令](/visualstudio/install/use-command-line-parameters-to-install-visual-studio#configure-source-location-of-updates-command-and-command-line-parameters)。 
+ * 配置 **更新通道** 位置后，可以选择立即更新Visual Studio实例。 或者，可以将实际产品更新延迟到稍后的时间。 配置更新通道的行为和更新产品的行为是两个独立的事件。 有关如何以编程方式控制更新通道的信息，请参阅 [使用 modifySettings 命令](/visualstudio/install/use-command-line-parameters-to-install-visual-studio#configure-source-location-of-updates-command-and-command-line-parameters)。 
  * 只有当该通道提示提供的产品版本大于你所安装的版本时，你才能改变更新通道。 例如，始终可以从最新版通道转换到预览版通道，但无法从预览版通道转换到最新版通道，除非最新版通道的最新版本超过已安装的预览版。 
-* 更新到新频道时，你将在该频道上安装最新版本。 如果你是企业客户，并且想要在该频道上安装特定版本的产品，请按照前面所述的 [运行特定引导程序说明进行操作](#run-a-specific-bootstrapper-1) 。 
- * LTSC 通道都具有到期日期，如上图所示。 LTSC 过期后，它不能用作更新源，并且会从此列表中消失。
+* 更新到新频道时，你将在该频道上安装最新版本。 如果你是企业客户，并且想要在该频道上安装特定版本的产品，请按照前面所述的 [运行特定引导程序说明](#run-a-specific-bootstrapper-1) 进行操作。 
+ * LTSC 通道都具有到期日期，如下图所示。 LTSC 过期后，它不能用作更新源，并且会从此列表中消失。
  * 所有 Microsoft 通道都托管在 Microsoft 服务器上，需要访问 Internet。
  * 每个 Visual Studio 实例都能够独立配置其源进行更新。 因此，如果安装了两个 Visual Studio 2022 实例，则每个实例都可以从不同的通道进行更新。 
- * IT 管理员可以控制 **"更新通道** "下拉列表中的文本。 例如，他们可以将网络布局位置添加为更新源。 他们还可以禁止 Microsoft 托管位置作为更新源选项提供。 此功能还适用于 Visual Studio 2019 安装。 有关如何配置这些更新位置的信息，请参阅 ["为企业部署设置默认值](/visualstudio/install/set-defaults-for-enterprise-deployments?#configuring-source-location-for-updates) "页。
+ * IT 管理员可以控制 **“更新通道** ”下拉列表中的文本。 例如，他们可以将网络布局位置添加为更新源。 他们还可以禁止 Microsoft 托管位置作为更新源选项提供。 此功能还适用于 Visual Studio 2019 安装。 有关如何配置这些更新位置的信息，请参阅 [“为企业部署设置默认值](/visualstudio/install/set-defaults-for-enterprise-deployments?#configuring-source-location-for-updates) ”页。
 
 ## <a name="update-on-close"></a>关闭时更新
 
@@ -302,7 +302,7 @@ ms.locfileid: "141533314"
 
 * [并行安装 Visual Studio 版本](install-visual-studio-versions-side-by-side.md)
 * [更新基于网络的 Visual Studio 安装](update-a-network-installation-of-visual-studio.md)
-* [Visual Studio Enterprise 指南](visual-studio-enterprise-guide.md)
+* [Visual Studio 管理员指南](visual-studio-administrator-guide.md)
 * [在维修基线上更新 Visual Studio](update-servicing-baseline.md)
 * [控制对基于网络的 Visual Studio 部署的更新](controlling-updates-to-visual-studio-deployments.md)
 * [修改 Visual Studio](modify-visual-studio.md)

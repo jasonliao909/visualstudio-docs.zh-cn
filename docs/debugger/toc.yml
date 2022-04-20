@@ -74,6 +74,8 @@
           href: view-data-values-in-data-tips-in-the-code-editor.md
         - name: 在可视化工具中查看字符串值
           href: view-strings-visualizer.md
+        - name: 在表可视化工具中查看集合
+          href: view-data-ienumerable-table-visualizer.md
         - name: 反汇编代码
           items:
             - name: 查看反汇编代码
