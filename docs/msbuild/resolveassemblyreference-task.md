@@ -24,12 +24,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: d180c8cea42076e2ca4a39a57dbabe6ebbf4b1c4
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 53ab74d58e5d74882654db3bbeea2e4818d60aa8
+ms.sourcegitcommit: 179339f6d4420e80b5a57696a5f2c4e2e84fcb3f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126640588"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "143976881"
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference 任务
 
@@ -60,6 +60,7 @@ ms.locfileid: "126640588"
 |`FullTargetFrameworkSubsetNames`|可选 `String[]` 参数。<br /><br /> 包含目标框架子集名称的列表。 如果列表中的子集名称匹配 `TargetFrameworkSubset` 名称属性中的一个名称，则系统将排除生成时的特定目标框架子集。|
 |`IgnoreDefaultInstalledAssemblyTables`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则该任务搜索并使用位于 `TargetFrameworkDirectories` 下 \RedistList 目录中的其他已安装程序集表（或“Redist 列表”）。  默认值为 `false.`|
 |`IgnoreDefaultInstalledAssemblySubsetTables`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则该任务搜索并使用位于 `TargetFrameworkDirectories` 下 \SubsetList 目录中的其他已安装程序集子集表（或“子集列表”）。  默认值为 `false.`|
+ |`IgnoreTargetFrameworkAttributeVersionMismatch `|可选 `Boolean` 参数。<br /><br /> 如果 `true`，则任务将解析面向比当前项目更高的 .NET Framework 版本的程序集。 默认值为 `false`，将跳过这些引用。|
 |`InstalledAssemblySubsetTables`|可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 包含 XML 文件的列表，该文件指定应位于目标子集中的程序集。<br /><br /> 根据需要，此列表中的项可指定“FrameworkDirectory”元数据以关联 `InstalledAssemblySubsetTable`<br /><br /> 与特定的框架目录。<br /><br /> 如果只有一个 `TargetFrameworkDirectories` 元素，则对于此列表中缺少“FrameworkDirectory”元数据的任何项，我们将其视为好像它们被设置为传递到 `TargetFrameworkDirectories`的唯一值。|
 |`InstalledAssemblyTables`|可选 `String` 参数。<br /><br /> 包含 XML 文件的列表，该文件指定应安装到目标计算机上的程序集。<br /><br /> 当设置了 `InstalledAssemblyTables` 时，列表中早期版本的程序集将合并到 XML 中所列的较新版本。 此外，具有 InGAC='true' 设置的程序集被视为先决条件，且将设置为 CopyLocal='false'（除非显式重写）。<br /><br /> 根据需要，此列表中的项可指定“FrameworkDirectory”元数据以关联 `InstalledAssemblyTable` 与特定的框架目录。  但将忽略此设置，除非 Redist 名称以<br /><br /> “Microsoft-Windows-CLRCoreComp”开头。<br /><br /> 如果只有一个 `TargetFrameworkDirectories` 元素，则对于此列表中缺少“FrameworkDirectory”元数据的任何项，我们将其视为好像它们被设置为传递到<br /><br /> `TargetFrameworkDirectories`的唯一值。|
 |`LatestTargetFrameworkDirectories`|可选 `String[]` 参数。<br /><br /> 指定目录列表，其中包含该计算机上可将其作为目标的最新框架的 redist 列表。 如果未设置此项，则使用安装在给定目标框架标识符的计算机上的最高框架。|

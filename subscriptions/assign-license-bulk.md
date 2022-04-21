@@ -3,20 +3,20 @@ title: 将 Visual Studio 订阅分配给多个用户 | Microsoft Docs
 author: evanwindom
 ms.author: amast
 manager: shve
-ms.date: 10/21/2021
+ms.date: 04/18/2022
 ms.topic: conceptual
 description: 了解管理员如何一次分配多个订阅。
-ms.openlocfilehash: de94a3990a69e4ca99b2d55243faad3ae842d45d
-ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.openlocfilehash: c1f8129d2c5b9417369fe25d6c8bb44b13cfb5b6
+ms.sourcegitcommit: 179339f6d4420e80b5a57696a5f2c4e2e84fcb3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "133257993"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "143976907"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>将订阅分配给多个用户
 你可以在订阅管理门户中一次添加一个多个用户，也可以采用大用户组形式添加。  要添加各个用户，请参阅[添加单个用户](assign-license.md)。
 
-若要添加大批量用户，可以使用批量添加功能，或者，如果你的组织使用的是 Microsoft Azure Active Directory (Azure AD)，则可以使用 Azure AD 组。 本文将介绍这两种方法的具体过程。  观看此视频或继续阅读，了解有关批量添加功能的详细信息。 
+若要添加大量用户，可以使用批量添加功能，或者组织使用的是 Microsoft Azure Active Directory (Azure AD) **且组织具有受信任的协议**，则可以使用 Azure AD 组。 本文将介绍这两种方法的具体过程。  观看此视频或继续阅读，了解有关批量添加功能的详细信息。 
 
 <br>
 
@@ -42,8 +42,8 @@ ms.locfileid: "133257993"
    为顺利地完成上传，请查看以下最佳做法：
 
     - 确保所有表单域均不含逗号。
-    - 删除表单域前后的空格。
-    - 确保用户名在名字和姓氏两部分之间不含额外空格（例如，用户姓名为两部分的“Maggie May”，则应输成“MaggieMay”，因为系统不会删减额外空格）。
+    - 删除窗体字段中值前后的空格。
+    - 请确保用户名不包含两部分名字或姓氏之间的额外空格。 例如，如果某个人具有两部分名字（如“Maggie May”），则应将其键入为“MaggieMay”，因为系统不会剪裁额外的空间。
     - 确保填写所有必填字段。 
     - 检查“错误消息”列。  如果列出了任何错误，请先修复这些错误，然后再尝试上传文件。 
 
@@ -57,11 +57,11 @@ ms.locfileid: "133257993"
 
     将显示上传进度对话框。
 
-    如果模板中存在错误，则无法上传。系统会显示该错误，你可以更正模板，然后再次尝试批量上传。
+    如果模板包含错误，上传将失败。  将显示错误，以便更正模板并再次尝试批量上传。
    > [!div class="mx-imgBorder"]
    > ![如果上传多个订阅者失败，将显示错误消息](_img/assign-license-bulk/bulk-add-upload-failure.png "如果上传的文件包含错误，则将显示此消息。解决错误，然后再次执行批量添加过程。")
 
-   如果失败，请按照以下步骤操作：
+   如果遇到故障，请执行以下步骤：
    1. 打开你创建的 Excel 文件、更正问题，然后保存文件。
    0. 返回到管理门户并关闭错误消息。
    0. 选择“添加”。
@@ -75,7 +75,7 @@ ms.locfileid: "133257993"
    > ![如果上传多个订阅者成功，将显示确认消息](_img/assign-license-bulk/bulk-add-upload-success.png "上传成功完成后，你将收到一条确认消息。")
 
 ## <a name="use-azure-active-directory-groups-to-assign-subscriptions"></a>使用 Azure Active Directory 组分配订阅 
-使用此功能可以轻松地控制订阅分配。 可以在订阅管理门户中添加 Azure Active Directory 安全组，这将确保为组中的每个成员都分配一个订阅。 为了便于操作，当有成员离开你的组织并且从 Azure Active Directory 中删除时，他们对订阅的访问权限也会相应地删除。 
+使用此功能可以轻松地控制订阅分配。 在订阅管理门户中添加 Azure Active Directory 安全组，以确保为组中的所有人分配订阅。 成员离开组织并从 Azure Active Directory 中删除时，会自动删除对订阅的访问权限。 
 
 
 > [!IMPORTANT]
@@ -102,7 +102,7 @@ ms.locfileid: "133257993"
    > [!div class="mx-imgBorder"]
    > ![使用 Azure AD 选择批量添加](_img/assign-license-bulk/bulk-add-aad.png "选择“使用 Azure AD 功能批量添加”以从 Azure Active Directory 组拉取订阅者。")
 
-4. 右侧将显示一个浮出控件窗口。  开始输入要添加到表单域的 Azure AD 组的名称。 这将搜索组织内可用的 Azure AD 组。 
+4. 右侧将显示一个浮出控件窗口。  开始输入要添加到表单域的 Azure AD 组的名称。 系统会在组织中搜索可用的 Azure AD 组以获取匹配项。 
 
 5. 选择组后，该字段将自动填充组名。 在添加用户之前，可以选择查看该组中的用户。 接下来，可以选择组的订阅级别、下载权限和通信首选项。 可以根据需要在引用字段中添加详细信息。 
 
@@ -113,7 +113,7 @@ ms.locfileid: "133257993"
 
 7. 若要查看添加的组，请滚动到用户列表的底部。  
 
-8. 选择“查看订阅者”以显示组的成员。 可以查看有关组中订阅者的详细信息，但不能对订阅者或对分配给他们的订阅进行任何编辑。    
+8. 选择“查看订阅者”以显示组的成员。 可以查看组中订阅者的详细信息。  但是，无法对订阅者或分配给订阅者的订阅进行任何编辑。    
 
 > [!NOTE]
 > 如果已单独为用户（这些用户随后将作为 Azure AD 组的一部分进行添加）分配了订阅，则这些用户将添加到组中，并且不再单独列出。 但是，如果单个订阅对应于不同的订阅级别，则他们将拥有两个订阅。  示例：如果用户有一个单独的 Visual Studio Professional 订阅，并且他们是组的成员，该组已分配有 Visual Studio Enterprise 订阅，则他们将同时拥有这两个订阅。  
@@ -130,16 +130,16 @@ ms.locfileid: "133257993"
    > ![单击“详细信息”按钮](_img/assign-license-bulk/bulk-add-agreement.png "单击“详细信息”按钮以查看你拥有的协议类型")
 
 ### <a name="q-i-added-users-to-my-azure-active-directory-group-but-they-dont-have-subscriptions-yet-why"></a>问：我向我的 Azure Active Directory 组添加了用户，但这些用户还没有订阅。 为什么？ 
-答：如果更改是直接在 Azure Active Directory 中进行的，则应该会非常快速地分配订阅，但如果更改是在本地 Active Directory 中进行的，则首先需要将其同步到 Azure Active Directory。 更改可能需要长达 24 小时才能反映出来，具体取决于本地 Active Directory 的配置。 如果时间已超过 24 小时，我们的[支持团队可以帮助排查任何问题](https://aka.ms/vsadminhelp)。 
+答：如果直接在 Azure Active Directory 中进行了更改，则应快速分配订阅。  如果在本地 Active Directory 中进行了更改，则首先需要同步到 Azure Active Directory。 根据本地 Active Directory 的配置方式，更改最多可能需要 24 小时才能反映。 如果时间超过 24 小时，我们的 [支持团队可以帮助排查任何问题](https://aka.ms/vsadminhelp)。 
 
 ### <a name="q-can-i-choose-multiple-subscription-levels-to-be-assigned-within-an-azure-active-directory-group"></a>问：能否选择多个要在 Azure Active Directory 组内分配的订阅级别？
-答：不能。组中的每个人都会收到相同的订阅级别。
+答：否 - 组中的每个人都会收到相同的订阅级别。
 
 ### <a name="q-can-i-edit-subscriber-details-of-individuals-added-in-an-azure-active-directory-group"></a>问：能否编辑在 Azure Active Directory 组中添加的成员的订阅者详细信息？
-答：不能。若要修改单个订阅者的信息，需要将其从 Azure Active Directory 安全组中删除，并单独为其分配订阅。
+答：否 - 若要修改单个订阅者的信息，请将其从 Azure Active Directory 安全组中删除，并单独为其分配订阅。
 
 ### <a name="q-can-i-add-separate-notification-email-addresses-for-members-of-an-azure-active-directory-group"></a>问：能否为 Azure Active Directory 组的成员添加单独的通知电子邮件地址？
-答：不能。对于使用 Azure Active Directory 组添加的订阅，目前不支持对通知使用不同的电子邮件地址。 所有电子邮件都会发送到主电子邮件（用户主体名称）。
+答：否 - 目前不支持使用 Azure Active Directory 组添加的订阅使用通知的单独电子邮件地址。 所有电子邮件都将发送到主电子邮件 (用户主体名称) 。
 
 ## <a name="resources"></a>资源
 - [Visual Studio 管理和订阅支持](https://aka.ms/vsadminhelp)
