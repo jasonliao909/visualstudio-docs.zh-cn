@@ -14,12 +14,12 @@ ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 179f55bf22fc3ad9b06e92c351acdf9de9b17349
-ms.sourcegitcommit: 782992423db6e1cbbf206715c9b3b400c80052a9
+ms.openlocfilehash: 984018c26ad3bb6684c99f88dc59a89c9e856c51
+ms.sourcegitcommit: 179339f6d4420e80b5a57696a5f2c4e2e84fcb3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "138101116"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "143976920"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>教程：使用 C\# 创建简单应用
 
@@ -140,7 +140,7 @@ Visual Studio 将创建 HelloWPFApp 项目和解决方案，“解决方案资�
 
 ## <a name="design-the-user-interface-ui"></a>设计用户界面 (UI)
 
-如果设计器未打开，请选择 *"MainWindow.xaml*"，然后按 **ShiftF7** + 打开设计器。
+如果设计器未打开，请选择 *MainWindow.xaml*，然后按 **ShiftF7** + 打开设计器。
 
 我们会将三种类型的控件添加到此应用程序：一个 <xref:System.Windows.Controls.TextBlock> 控件、两个 <xref:System.Windows.Controls.RadioButton> 控件和一个 <xref:System.Windows.Controls.Button> 控件。
 
@@ -158,7 +158,7 @@ Visual Studio 将创建 HelloWPFApp 项目和解决方案，“解决方案资�
 
     你的窗口应与下图类似：
 
-    ![MainWindow 窗体上的 TextBlock 控件](media/explore-ide-window-with-textblock-only.png "MainWindow 窗体的设计图面上 TextBlock 控件的屏幕截图。")
+    ![MainWindow 窗体上的 TextBlock 控件](media/explore-ide-window-with-textblock-only.png "MainWindow 窗体设计图面上的 TextBlock 控件的屏幕截图。")
 
    XAML 标记应如下面的示例所示：
 
@@ -222,7 +222,7 @@ Visual Studio 将创建 HelloWPFApp 项目和解决方案，“解决方案资�
 
    你的窗口应如下所示：
 
-   ![具有 TextBlock 和两个单选按钮的 MainWindow 窗体](media/explore-ide-window-with-radio-buttons.png "MainWindow.xaml 的&quot;设计&quot;窗口的屏幕截图，其中显示了一个 TextBlock 控件和两个位于设计图面上的 RadioButton 控件。")
+   ![包含 TextBlock 和两个单选按钮的 MainWindow 窗体](media/explore-ide-window-with-radio-buttons.png "MainWindow.xaml 的设计窗口的屏幕截图，其中显示了 TextBlock 控件和位于设计图面上的两个 RadioButton 控件。")
 
 1. 在左侧 RadioButton 控件的 **“属性”** 窗口中，将 **“名称”** 属性（位于 **“属性”** 窗口顶部）更改为 `HelloButton`。
 
@@ -298,7 +298,7 @@ Visual Studio 将创建 HelloWPFApp 项目和解决方案，“解决方案资�
 
      你的窗口应与下图类似。
 
-     ![具有控件标签的 MainWindow 窗体](media/explore-ide-window-with-control-labels-cs.png "MainWindow.xaml 的&quot;设计&quot;窗口的屏幕截图，其中显示了一个 TextBlock 控件、两个标记为&quot;Hello&quot;和&quot;不问候&quot;的 RadioButton 控件，以及一个标记为&quot;Display&quot;的按钮。")
+     ![包含控件标签的 MainWindow 窗体](media/explore-ide-window-with-control-labels-cs.png "MainWindow.xaml 设计窗口的屏幕截图，其中显示了 TextBlock 控件、标记为“Hello”和“Goodbye”的两个 RadioButton 控件，以及标记为“显示”的按钮。")
 
    XAML 标记现在应类似于以下示例：
 
@@ -340,11 +340,11 @@ Visual Studio 将创建 HelloWPFApp 项目和解决方案，“解决方案资�
 
 ::: moniker range="<=vs-2019"
 
-此应用程序运行时，用户选择单选按钮，再选择“显示” 按钮之后，会显示一个消息框。 选择 Hello 将显示一个消息框，选择 Goodbye 将显示另一个。 若要创建此行为，请将代码添加到 Greetings.xaml.vb 中的 `Button_Click` 事件。
+此应用程序运行时，用户选择单选按钮，再选择“显示” 按钮之后，会显示一个消息框。 选择 Hello 将显示一个消息框，选择 Goodbye 将显示另一个。 若要创建此行为，需将代码添加到 `Button_Click` *MainWindow.xaml.cs* 中的事件。
 
 1. 在设计图面上，双击 **“显示”** 按钮。
 
-     此时，“Greetings.xaml.cs”打开，光标位于 `Button_Click` 事件上。
+     *MainWindow.xaml.cs* 随即打开，其中游标位于 `Button_Click` 事件中。
 
     ```csharp
     private void Button_Click(object sender, RoutedEventArgs e)
@@ -372,11 +372,11 @@ Visual Studio 将创建 HelloWPFApp 项目和解决方案，“解决方案资�
 
 ::: moniker range=">=vs-2022"
 
-此应用程序运行时，用户选择单选按钮，再选择“显示” 按钮之后，会显示一个消息框。 选择 Hello 将显示一个消息框，选择 Goodbye 将显示另一个。 若要创建此行为，请将代码添加到 Greetings.xaml.vb 中的 `Button_Click` 事件。
+此应用程序运行时，用户选择单选按钮，再选择“显示” 按钮之后，会显示一个消息框。 选择 Hello 将显示一个消息框，选择 Goodbye 将显示另一个。 若要创建此行为，需将代码添加到 `Button_Click` *MainWindow.xaml.cs* 中的事件。
 
 1. 在设计图面上，双击 **“显示”** 按钮。
 
-     此时，“Greetings.xaml.cs”打开，光标位于 `Button_Click` 事件上。
+     *MainWindow.xaml.cs* 随即打开，其中游标位于 `Button_Click` 事件中。
 
     ```csharp
     private void Button_Click(object sender, RoutedEventArgs e)

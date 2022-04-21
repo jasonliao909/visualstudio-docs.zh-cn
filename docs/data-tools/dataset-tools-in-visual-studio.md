@@ -50,14 +50,14 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1e021a8ab30829aedd0a695a53993998e312ff81
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 18ca3eae4510fd2cb0e7a104359a8545e5011824
+ms.sourcegitcommit: 179339f6d4420e80b5a57696a5f2c4e2e84fcb3f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126601170"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "143976894"
 ---
-# <a name="dataset-tools-in-visual-studio"></a>Visual Studio 中的数据集工具
+# <a name="dataset-tools-in-visual-studio"></a>Visual Studio 中的 DataSet 工具
 
 > [!NOTE]
 > 数据集和相关类是 21 世纪初的旧版 .NET 技术，使应用程序能够在应用程序与数据库断开时处理内存中的数据。 它们对于使用户能够修改数据并持续更改回数据库的应用程序特别有用。 虽然数据集已被证明是一项非常成功的技术，但我们建议新的 .NET 应用程序使用实体框架。 实体框架提供了一种更自然的方式来将表格数据作为对象模型，并且具有更简单的编程接口。
