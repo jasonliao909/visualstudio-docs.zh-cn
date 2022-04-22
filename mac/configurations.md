@@ -7,12 +7,12 @@ manager: dominicn
 ms.date: 09/18/2019
 ms.topic: conceptual
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: 9ec6564b667938a6a803ac2c05eff817d03df704
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: ab7ca84c9ae6d7d3050e23a2ef3643f6fb8ee218
+ms.sourcegitcommit: 8abe4a92b9d45e653c895787c69215c50a534529
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135804241"
+ms.lasthandoff: 04/22/2022
+ms.locfileid: "143998143"
 ---
 # <a name="understanding-build-configurations"></a>了解生成配置
 
@@ -28,8 +28,6 @@ ms.locfileid: "135804241"
 解决方案配置用于指定解决方案中所有项目的配置。 通过使用“生成”>“配置”项下的“配置映射”选项卡，可以为打开的解决方案中的每一项分配一个目标配置。 下图对此进行了演示：
 
 ![配置映射选项](media/projects-and-solutions-image3.png)
-
-有关配置的详细信息，请参阅 James Montemagno 的[配置管理器](https://www.youtube.com/watch?v=tjSdkqYh5Vg)视频。
 
 ## <a name="project-build-configurations"></a>项目生成配置
 

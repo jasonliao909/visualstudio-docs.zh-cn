@@ -16,12 +16,12 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 024d202122452c21594ed04dbf9c96256e73ca6f
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: d68b9ea9a9344d684de57d3ce7a12556def28654
+ms.sourcegitcommit: 8abe4a92b9d45e653c895787c69215c50a534529
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126737354"
+ms.lasthandoff: 04/22/2022
+ms.locfileid: "143998156"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>在调试时从 .NET 程序集生成源代码
 
@@ -70,9 +70,11 @@ ms.locfileid: "126737354"
 
 ## <a name="known-limitations"></a>已知限制
 
+::: moniker range="<= vs-2019"
 ### <a name="requires-break-mode"></a>需要中断模式
 
 仅当调试器处于中断模式并且应用程序暂停时，才可以使用反向编译功能生成源代码。 例如，Visual Studio 遇到断点或异常时会进入中断模式。 通过使用“全部中断”命令（![全部中断图标](media/decompilation-break-all.png)），可以轻松触发 Visual Studio 在下次运行代码时中断。
+::: moniker-end
 
 ### <a name="decompilation-limitations"></a>反向编译的限制
 
