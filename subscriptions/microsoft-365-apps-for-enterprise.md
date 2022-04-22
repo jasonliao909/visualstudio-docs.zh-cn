@@ -7,12 +7,12 @@ ms.assetid: d1257931-392a-4a65-bf26-177737505122
 ms.date: 03/21/2021
 ms.topic: how-to
 description: 了解和安装 Microsoft 365 应用企业版
-ms.openlocfilehash: 1364f3f42b6dbcd45313ec13e7a9a148845dad26
-ms.sourcegitcommit: 99e0146dfe742f6d1955b9415a89c3d1b8afe4e1
+ms.openlocfilehash: 0ebe6ccfd79d98864f2de26a594bd9599a330ae0
+ms.sourcegitcommit: 8abe4a92b9d45e653c895787c69215c50a534529
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "134553916"
+ms.lasthandoff: 04/22/2022
+ms.locfileid: "143998130"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Microsoft 365 应用企业版
 Microsoft 365 应用企业版（旧称 Office 365 Pro Plus）在选定的 Visual Studio 订阅中提供。 
@@ -26,7 +26,7 @@ Microsoft 365 应用企业版（旧称 Office 365 Pro Plus）在选定的 Visual
 激活 Microsoft 365 应用企业版订阅的流程很简单。  按以下步骤激活订阅并安装应用程序：
 
 1. 通过 [https://my.visualstudio.com](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) 登录到 Visual Studio 订阅
-1. 找到"Microsoft 365应用"磁贴，然后选择"**获取代码"。**
+1. 找到适用于企业磁贴的Microsoft 365应用，然后选择 **“获取代码**”。
 1. 单击“激活”  。
    > [!div class="mx-imgBorder"]
    > ![Microsoft 365 应用企业版磁贴](_img/microsoft-365-apps-for-enterprise/tile-activate.png "选择“激活”开始使用订阅。")
@@ -56,8 +56,8 @@ Microsoft 365 应用企业版（旧称 Office 365 Pro Plus）在选定的 Visual
 
 | 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise（标准）   | VL、Azure、零售| 12 个月试用版       |  否          |
-| 包含 GitHub Enterprise 的 Visual Studio Enterprise 订阅  | VL | 12 个月试用版       |  否          |
+| Visual Studio Enterprise（标准）   | VL、Azure、零售| 12 个月的试用期       |  否          |
+| 包含 GitHub Enterprise 的 Visual Studio Enterprise 订阅  | VL | 12 个月的试用期       |  否          |
 | Visual Studio Enterprise（标准）   | NFR<sup>1</sup> | 不可用       |  不可用          |
 | Visual Studio Professional（标准） | VL、Azure、零售                                       | 不可用                                                            |  不可用          |
 | 包含 GitHub Enterprise 的 Visual Studio Professional 订阅 | VL | 不可用         |  不可用          |
@@ -71,10 +71,10 @@ Microsoft 365 应用企业版（旧称 Office 365 Pro Plus）在选定的 Visual
 > [!NOTE]
 > Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 建议新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)，查看各 Visual Studio 购买选项。
 
-无法确定正在使用哪些订阅？  连接 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) ，以查看分配给登录电子邮件地址的所有订阅。 如果未看到所有订阅，可能会将一个或多个订阅分配给其他登录电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。
+无法确定正在使用哪些订阅？  连接以查看[https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)分配给登录电子邮件地址的所有订阅。 如果看不到所有订阅，则可能已将一个或多个订阅分配给其他登录电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。
 
 ## <a name="support-resources"></a>支持资源
-- 有关对 Microsoft 365 应用企业版的任何组件的技术支持，请访问 https://support.microsoft.com/allproducts ，然后选择产品。
+- 有关对 Microsoft 365 应用企业版的任何组件的技术支持，请访问 https://support.microsoft.com/all-products ，然后选择产品。
 - 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://aka.ms/vssubscriberhelp)联系。
 - 对 Visual Studio IDE、Azure DevOps 或其他 Visual Studio 产品/服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
 
