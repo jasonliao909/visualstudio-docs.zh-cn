@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dc1c499080fdffc1b18f9b863b1beb8fed7a927
-ms.sourcegitcommit: 906f8b07e57d2369f64ec42f467f379081f8c5c8
+ms.openlocfilehash: 1d599b3856158f8f46e9a3448f21ddb49f66f7e9
+ms.sourcegitcommit: 8abe4a92b9d45e653c895787c69215c50a534529
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "141357254"
+ms.lasthandoff: 04/22/2022
+ms.locfileid: "143998117"
 ---
 # <a name="tutorial-create-a-custom-task-for-code-generation"></a>教程：创建用于代码生成的自定义任务
 
@@ -62,93 +62,93 @@ propertyName:type:defaultValue
 
 1. 添加三个属性。 这些属性定义用户在客户端项目中使用该任务时设置的参数：
 
-   ```csharp
-        //The name of the class which is going to be generated
-        [Required]
-        public string SettingClassName { get; set; }
+    ```csharp
+    //The name of the class which is going to be generated
+    [Required]
+    public string SettingClassName { get; set; }
 
-        //The name of the namespace where the class is going to be generated
-        [Required]
-        public string SettingNamespaceName { get; set; }
+    //The name of the namespace where the class is going to be generated
+    [Required]
+    public string SettingNamespaceName { get; set; }
 
-        //List of files which we need to read with the defined format: 'propertyName:type:defaultValue' per line
-        [Required]
-        public ITaskItem[] SettingFiles { get; set; }
-   ```
+    //List of files which we need to read with the defined format: 'propertyName:type:defaultValue' per line
+    [Required]
+    public ITaskItem[] SettingFiles { get; set; }
+    ```
 
-   该任务处理 SettingFiles 并生成类 `SettingNamespaceName.SettingClassName`。 生成的类将具有一组基于文本文件内容的常量。
+    该任务处理 SettingFiles 并生成类 `SettingNamespaceName.SettingClassName`。 生成的类将具有一组基于文本文件内容的常量。
 
-   任务输出应为一个字符串，该字符串提供生成的代码的文件名：
+    任务输出应为一个字符串，该字符串提供生成的代码的文件名：
 
-   ```csharp
-        // The filename where the class was generated
-        [Output]
-        public string ClassNameFile { get; set; }
-   ```
+    ```csharp
+    // The filename where the class was generated
+    [Output]
+    public string ClassNameFile { get; set; }
+    ```
 
 1. 创建自定义任务时，继承自 <xref:Microsoft.Build.Utilities.Task?displayProperty=fullName>。 若要实现任务，请重写 <xref:Microsoft.Build.Utilities.Task.Execute> 方法。 如果任务成功，则 `Execute` 方法返回 `true`，否则返回 `false`。 `Task` 实现 <xref:Microsoft.Build.Framework.ITask?displayProperty=nameWithType>，并提供了一些 `ITask` 成员的默认实现，此外还提供了一些日志记录功能。 必须将状态输出到日志以诊断和排查任务问题，尤其是在出现问题且任务必须返回错误结果 (`false`) 时。 出错时，类通过调用 <xref:Microsoft.Build.Utilities.TaskLoggingHelper.LogError%2A?displayProperty=nameWithType> 来发出错误信号。
 
-   ```csharp
-        public override bool Execute()
+    ```csharp
+    public override bool Execute()
+    {
+        //Read the input files and return a IDictionary<string, object> with the properties to be created. 
+        //Any format error it will return false and log an error
+        var (success, settings) = ReadProjectSettingFiles();
+        if (!success)
         {
-            //Read the input files and return a IDictionary<string, object> with the properties to be created. 
-            //Any format error it will return false and log an error
-            var (success, settings) = ReadProjectSettingFiles();
-            if (!success)
-            {
                 return !Log.HasLoggedErrors;
-            }
-            //Create the class based on the Dictionary
-            success = CreateSettingClass(settings);
-
-            return !Log.HasLoggedErrors;
         }
-   ```
+        //Create the class based on the Dictionary
+        success = CreateSettingClass(settings);
 
-   任务 API 允许返回 false，指示失败，而不向用户指示错误。 最好返回 `!Log.HasLoggedErrors` 而不是布尔代码，并在出错时记录错误。
+        return !Log.HasLoggedErrors;
+    }
+    ```
 
-### <a name="logging-errors"></a>记录错误
+    任务 API 允许返回 false，指示失败，而不向用户指示错误。 最好返回 `!Log.HasLoggedErrors` 而不是布尔代码，并在出错时记录错误。
 
-最佳做法是在记录错误时提供详细信息（例如行号和不同的错误代码）。 以下代码分析文本输入文件，并结合使用 <xref:Microsoft.Build.Utilities.TaskLoggingHelper.LogError%2A?displayProperty=nameWithType> 方法和文本文件中生成错误的行号。
+### <a name="log-errors"></a>日志错误
+
+记录错误时的最佳做法是在记录错误时提供详细信息（例如行号和不同的错误代码）。 以下代码分析文本输入文件，并结合使用 <xref:Microsoft.Build.Utilities.TaskLoggingHelper.LogError%2A?displayProperty=nameWithType> 方法和文本文件中生成错误的行号。
 
 ```csharp
 private (bool, IDictionary<string, object>) ReadProjectSettingFiles()
+{
+    var values = new Dictionary<string, object>();
+    foreach (var item in SettingFiles)
+    {
+        int lineNumber = 0;
+
+        var settingFile = item.GetMetadata("FullPath");
+        foreach (string line in File.ReadLines(settingFile))
         {
-            var values = new Dictionary<string, object>();
-            foreach (var item in SettingFiles)
+            lineNumber++;
+
+            var lineParse = line.Split(':');
+            if (lineParse.Length != 3)
             {
-                int lineNumber = 0;
-
-                var settingFile = item.GetMetadata("FullPath");
-                foreach (string line in File.ReadLines(settingFile))
-                {
-                    lineNumber++;
-
-                    var lineParse = line.Split(':');
-                    if (lineParse.Length != 3)
-                    {
-                        Log.LogError(subcategory: null,
-                                     errorCode: "APPS0001",
-                                     helpKeyword: null,
-                                     file: settingFile,
-                                     lineNumber: lineNumber,
-                                     columnNumber: 0,
-                                     endLineNumber: 0,
-                                     endColumnNumber: 0,
-                                     message: "Incorrect line format. Valid format prop:type:defaultvalue");
-                        return (false, null);
-                    }
-                    var value = GetValue(lineParse[1], lineParse[2]);
-                    if (!value.Item1)
-                    {
-                        return (value.Item1, null);
-                    }
-
-                    values[lineParse[0]] = value.Item2;
-                }
+                Log.LogError(subcategory: null,
+                             errorCode: "APPS0001",
+                             helpKeyword: null,
+                             file: settingFile,
+                             lineNumber: lineNumber,
+                             columnNumber: 0,
+                             endLineNumber: 0,
+                             endColumnNumber: 0,
+                             message: "Incorrect line format. Valid format prop:type:defaultvalue");
+                             return (false, null);
             }
-            return (true, values);
+            var value = GetValue(lineParse[1], lineParse[2]);
+            if (!value.Item1)
+            {
+                return (value.Item1, null);
+            }
+
+            values[lineParse[0]] = value.Item2;
         }
+    }
+    return (true, values);
+}
 ```
 
 使用前面代码中所示的技术，文本输入文件的语法中的错误显示为生成错误，并包含有用的诊断信息：
@@ -169,20 +169,20 @@ Build FAILED.
 (generateSettingClass target) ->
   S:\work\msbuild-examples\custom-task-code-generation\AppSettingStronglyTyped\AppSettingStronglyTyped.Test\bin\Debug\net6.0\Resources\error-prop.setting(1): error APPS0001: Incorrect line format. Valid format prop:type:defaultvalue [S:\work\msbuild-examples\custom-task-code-generation\AppSettingStronglyTyped\AppSettingStronglyTyped.Test\bin\Debug\net6.0\Resources\testscript-fail.msbuild]
 
-    0 Warning(s)
-    1 Error(s)
+     0 Warning(s)
+     1 Error(s)
 ```
 
 捕获任务中的异常时，请使用 <xref:Microsoft.Build.Utilities.TaskLoggingHelper.LogErrorFromException%2A?displayProperty=nameWithType> 方法。 这将改进错误输出，例如通过获取引发异常的调用堆栈。
 
 ```csharp
-            catch (Exception ex)
-            {
-                // This logging helper method is designed to capture and display information
-                // from arbitrary exceptions in a standard way.
-                Log.LogErrorFromException(ex, showStackTrace: true);
-                return false;
-            }
+    catch (Exception ex)
+    {
+        // This logging helper method is designed to capture and display information
+        // from arbitrary exceptions in a standard way.
+        Log.LogErrorFromException(ex, showStackTrace: true);
+        return false;
+    }
 ```
 
 此处未显示使用这些输入为已生成的代码文件生成文本的其他方法的实现；请参阅示例存储库中的 [AppSettingStronglyTyped.cs](https://github.com/v-fearam/msbuild-examples/blob/main/custom-task-code-generation/AppSettingStronglyTyped/AppSettingStronglyTyped/AppSettingStronglyTyped.cs)。
@@ -198,84 +198,84 @@ Build FAILED.
 
 1. 在新的 Visual Studio 解决方案中创建 .NET 控制台项目 MSBuildConsoleExample。
 
-   分发任务的正常方式是通过 NuGet 包，但在开发和调试期间，你可以直接在应用程序的项目文件中包括有关 `.props` 和 `.targets` 的所有信息，然后在将任务分发给其他人时转为 NuGet 格式。
+    分发任务的正常方式是通过 NuGet 包，但在开发和调试期间，你可以直接在应用程序的项目文件中包括有关 `.props` 和 `.targets` 的所有信息，然后在将任务分发给其他人时转为 NuGet 格式。
 
 1. 修改项目文件以使用代码生成任务。 本部分中的代码列表显示引用任务、设置任务的输入参数以及编写用于处理清理和重新生成操作的目标后修改的项目文件，以便按预期删除生成的代码文件。
 
-   任务是使用 [UsingTask 元素 (MSBuild)](usingtask-element-msbuild.md) 注册的。  `UsingTask` 元素注册任务；它告知 MSBuild 任务的名称以及如何查找和运行包含任务类的程序集。 程序集路径是项目文件的相对路径。  
+    任务是使用 [UsingTask 元素 (MSBuild)](usingtask-element-msbuild.md) 注册的。  `UsingTask` 元素注册任务；它告知 MSBuild 任务的名称以及如何查找和运行包含任务类的程序集。 程序集路径是项目文件的相对路径。  
 
-   `PropertyGroup` 包含与任务中定义的属性相对应的属性定义。 这些属性是使用特性设置的，并且任务名称用作元素名称。
+    `PropertyGroup` 包含与任务中定义的属性相对应的属性定义。 这些属性是使用特性设置的，并且任务名称用作元素名称。
 
-   `TaskName` 是要从程序集中引用的任务的名称。 此特性应始终使用完全指定的命名空间。 `AssemblyFile` 是程序集的文件路径。
+    `TaskName` 是要从程序集中引用的任务的名称。 此特性应始终使用完全指定的命名空间。 `AssemblyFile` 是程序集的文件路径。
 
-   若要调用任务，请将任务添加到相应的目标（本例中为 `GenerateSetting`）。
+    若要调用任务，请将任务添加到相应的目标（本例中为 `GenerateSetting`）。
 
-   目标 `ForceGenerateOnRebuild` 通过删除生成的文件来处理清理和重新生成操作。 它设置为通过将 `AfterTargets` 特性设置为 `CoreClean` 在 `CoreClean` 目标后运行。
+    目标 `ForceGenerateOnRebuild` 通过删除生成的文件来处理清理和重新生成操作。 它设置为通过将 `AfterTargets` 特性设置为 `CoreClean` 在 `CoreClean` 目标后运行。
 
-   ```xml
-   <Project Sdk="Microsoft.NET.Sdk">
-      <UsingTask TaskName="AppSettingStronglyTyped.AppSettingStronglyTyped" AssemblyFile="..\.   .\AppSettingStronglyTyped\AppSettingStronglyTyped\bin\Debug\netstandard2.0\AppSettingStronglyTyped.dll"/>
+    ```xml
+    <Project Sdk="Microsoft.NET.Sdk">
+        <UsingTask TaskName="AppSettingStronglyTyped.AppSettingStronglyTyped" AssemblyFile="..\.   .\AppSettingStronglyTyped\AppSettingStronglyTyped\bin\Debug\netstandard2.0\AppSettingStronglyTyped.dll"/>
 
-      <PropertyGroup>
-         <OutputType>Exe</OutputType>
-         <TargetFramework>net6.0</TargetFramework>
-         <RootFolder>$(MSBuildProjectDirectory)</RootFolder>
-         <SettingClass>MySetting</SettingClass>
-         <SettingNamespace>MSBuildConsoleExample</SettingNamespace>
-         <SettingExtensionFile>mysettings</SettingExtensionFile>
-    </PropertyGroup>
+        <PropertyGroup>
+            <OutputType>Exe</OutputType>
+            <TargetFramework>net6.0</TargetFramework>
+            <RootFolder>$(MSBuildProjectDirectory)</RootFolder>
+            <SettingClass>MySetting</SettingClass>
+            <SettingNamespace>MSBuildConsoleExample</SettingNamespace>
+            <SettingExtensionFile>mysettings</SettingExtensionFile>
+     </PropertyGroup>
 
-    <ItemGroup>
-       <SettingFiles Include="$(RootFolder)\*.mysettings" />
-    </ItemGroup>`
+     <ItemGroup>
+         <SettingFiles Include="$(RootFolder)\*.mysettings" />
+     </ItemGroup>`
 
-    <Target Name="GenerateSetting" BeforeTargets="CoreCompile" Inputs="@(SettingFiles)" Outputs="$(RootFolder)\$(SettingClass).generated.cs">
-       <AppSettingStronglyTyped SettingClassName="$(SettingClass)" SettingNamespaceName="$(SettingNamespace)" SettingFiles="@(SettingFiles)">
-          <Output TaskParameter="ClassNameFile" PropertyName="SettingClassFileName" />
-       </AppSettingStronglyTyped>
-       <ItemGroup>
-          <Compile Remove="$(SettingClassFileName)" />
-          <Compile Include="$(SettingClassFileName)" />
-       </ItemGroup>
-    </Target>
+     <Target Name="GenerateSetting" BeforeTargets="CoreCompile" Inputs="@(SettingFiles)" Outputs="$(RootFolder)\$(SettingClass).generated.cs">
+         <AppSettingStronglyTyped SettingClassName="$(SettingClass)" SettingNamespaceName="$(SettingNamespace)" SettingFiles="@(SettingFiles)">
+             <Output TaskParameter="ClassNameFile" PropertyName="SettingClassFileName" />
+         </AppSettingStronglyTyped>
+         <ItemGroup>
+             <Compile Remove="$(SettingClassFileName)" />
+             <Compile Include="$(SettingClassFileName)" />
+         </ItemGroup>
+     </Target>
 
-    <Target Name="ForceReGenerateOnRebuild" AfterTargets="CoreClean">
-       <Delete Files="$(RootFolder)\$(SettingClass).generated.cs" />
-    </Target>
-   </Project>
-   ```
+     <Target Name="ForceReGenerateOnRebuild" AfterTargets="CoreClean">
+         <Delete Files="$(RootFolder)\$(SettingClass).generated.cs" />
+     </Target>
+    </Project>
+    ```
 
-   > [!NOTE]
-   > 此代码使用对目标[（BeforeTarget 和 AfterTarget）](target-build-order.md#beforetargets-and-aftertargets)进行排序的另一种方法，而不是重写目标（如 `CoreClean`）。 SDK 样式的项目在项目文件的最后一行后会隐式导入目标；这意味着无法重写默认目标，除非手动指定导入。 请参阅[重写预定义目标](how-to-extend-the-visual-studio-build-process.md#override-predefined-targets)。
+    > [!NOTE]
+    > 此代码使用对目标[（BeforeTarget 和 AfterTarget）](target-build-order.md#beforetargets-and-aftertargets)进行排序的另一种方法，而不是重写目标（如 `CoreClean`）。 SDK 样式的项目在项目文件的最后一行后会隐式导入目标；这意味着无法重写默认目标，除非手动指定导入。 请参阅[重写预定义目标](how-to-extend-the-visual-studio-build-process.md#override-predefined-targets)。
 
-   `Inputs` 和 `Outputs` 特性提供增量生成的信息，从而帮助 MSBuild 提高效率。 输入的日期与输出进行比较，以查看是否需要运行目标，或者是否可以重复使用上一个生成的输出。
+    `Inputs` 和 `Outputs` 特性提供增量生成的信息，从而帮助 MSBuild 提高效率。 输入的日期与输出进行比较，以查看是否需要运行目标，或者是否可以重复使用上一个生成的输出。
 
 1. 使用定义为已发现的扩展名创建输入文本文件。 使用默认扩展名，在根目录上创建 `MyValues.mysettings`，其中包含以下内容：
 
-   ```
-   Greeting:string:Hello World!
-   ```
+    ```
+    Greeting:string:Hello World!
+    ```
 
 1. 再次生成，应创建并生成已生成的文件。 检查 MySetting.generated.cs 文件的项目文件夹。
 
 1. 类 MySetting 位于错误的命名空间中，因此现在更改为使用应用命名空间。 打开项目文件并添加以下代码：
 
-   ```xml
-   <PropertyGroup>
-      <SettingNamespace>MSBuildConsoleExample</SettingNamespace>
-   </PropertyGroup>
-   ```
+    ```xml
+    <PropertyGroup>
+        <SettingNamespace>MSBuildConsoleExample</SettingNamespace>
+    </PropertyGroup>
+    ```
 
 1. 再次重新生成，并观察类是否位于 `MSBuildConsoleExample` 命名空间中。 通过这种方式，可以根据你的喜好重新定义生成的类名 (`SettingClass`)、要用作输入的文本扩展文件 (`SettingExtensionFile`) 及其位置 (`RootFolder`)。
 
 1. 打开 Program.cs 并将硬编码的“Hello World!!” 更改为用户定义的常量：
 
-   ```csharp
-        static void Main(string[] args)
-        {
-            Console.WriteLine(MySetting.Greeting);
-        }
-   ```
+    ```csharp
+          static void Main(string[] args)
+          {
+                Console.WriteLine(MySetting.Greeting);
+          }
+    ```
 
 执行程序；将打印生成的类中的问候语。
 
@@ -299,79 +299,159 @@ msbuild -bl
 
 如果只需在几个项目或单个解决方案中使用自定义任务，则只需将该任务用作原始程序集，但准备任务以将其用于其他位置或与他人共享的最佳方法就是作为 NuGet 包。
 
-1. 若要准备生成 NuGet 包，请对项目文件进行一些更改，以指定描述包的详细信息。 你创建的初始项目文件类似于以下代码：
+MSBuild 任务包与库 NuGet 包的一些主要区别如下：
 
-   ```xml
-   <Project Sdk="Microsoft.NET.Sdk">
+- 它们必须捆绑自己的程序集依赖项，而不是将这些依赖项向使用的项目公开
+- 它们不会将任何必需的程序集打包到 `lib/<target framework>` 文件夹中，因为这会导致 NuGet 将程序集包含在使用任务的任何包中
+- 它们只需要针对 Microsoft.Build 程序集进行编译 - 在运行时，这些程序集将由实际的 MSBuild 引擎提供，因此无需包含在包中
+- 它们会生成一个特殊的 `.deps.json` 文件，用于帮助 MSBuild 以一致的方式加载任务依赖项（尤其是本机依赖项）
 
-      <PropertyGroup>
-         <TargetFramework>netstandard2.0</TargetFramework>
-      </PropertyGroup>
+若要实现所有这些目标，必须对上述和超出可能熟悉领域的标准项目文件进行一些更改。
 
-      <ItemGroup>
-         <PackageReference Include="Microsoft.Build.Utilities.Core" Version="17.0.0" />
-      </ItemGroup>
+### <a name="create-a-nuget-package"></a>创建 NuGet 包
 
-   </Project>
-   ```
+推荐采用创建 NuGet 包这种方式将自定义任务分发给其他人。
 
-1. 若要生成 NuGet 包，请添加以下代码以设置包的属性：
+#### <a name="prepare-to-generate-the-package"></a>准备生成包
 
-   ```xml
-   <Project Sdk="Microsoft.NET.Sdk">
+若要准备生成 NuGet 包，请对项目文件进行一些更改，以指定描述包的详细信息。 你创建的初始项目文件类似于以下代码：
 
-      <PropertyGroup>
-         <TargetFramework>netstandard2.0</TargetFramework>
-           <version>1.0.0</version>
-           <title>AppSettingStronglyTyped</title>
-           <authors>Your author name</authors>
-           <description>Generates a strongly typed setting class base on a text file.</description>
-           <tags>MyTags</tags>
-           <copyright>Copyright ©Contoso 2022</copyright>
-       </PropertyGroup>
-
-     <ItemGroup>
-       <PackageReference Include="Microsoft.Build.Utilities.Core" Version="17.0.0" />
-     </ItemGroup>
-
-   </Project>
-   ```
-
-1. MSBuild 任务的依赖项必须打包在包内；不能将其表示为普通 PackageReferences。 包不会向外部用户公开任何常规依赖项。 这不是当前示例所必需的，因为没有任何额外的依赖项，但对于具有依赖项的实际项目，必须包括此步骤。
-
-   ```xml
-   <Project Sdk="Microsoft.NET.Sdk">
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
-        <version>1.0.0</version>
-        <title>AppSettingStronglyTyped</title>
-        <authors>John Doe</authors>
-        <description>Generates a strongly typed setting class base on a txt file</description>
-        <tags>MyTags</tags>
-        <copyright>Copyright ©Microsoft Company 2022</copyright>
-        <!-- we need the assemblies bundled, so set this so we don't expose any dependencies to the outside world -->
-        <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
-        <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
-        <DebugType>embedded</DebugType>
-        <IsPackable>true</IsPackable>
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="Microsoft.Build.Utilities.Core" Version="17.0.0" />
     </ItemGroup>
 
-    <Target Name="CopyProjectReferencesToPackage" DependsOnTargets="ResolveReferences">
-        <ItemGroup>
-            <!-- the dependencies of your MSBuild task must be packaged inside the package, they cannot be expressed as normal PackageReferences -->
+</Project>
+```
 
-            <!--example: <BuildOutputInPackage Include="$(PkgFParsec)/lib/netstandard2.0/FParsecCS.dll" />-->
-        </ItemGroup>
-    </Target>
+若要生成 NuGet 包，请添加以下代码以设置包的属性。 可以在[包文档](/nuget/reference/msbuild-targets#pack-target)中查看受支持的 MSBuild 属性的完整列表：
 
-   </Project>
+```xml
+<PropertyGroup>
+    ... 
+    <IsPackable>true</IsPackable>
+    <Version>1.0.0</Version>
+    <Title>AppSettingStronglyTyped</Title>
+    <Authors>Your author name</Authors>
+    <Description>Generates a strongly typed setting class base on a text file.</Description>
+    <PackageTags>MyTags</PackageTags>
+    <Copyright>Copyright ©Contoso 2022</Copyright>
+    ...
+</PropertyGroup>
+```
 
-   ```
+#### <a name="mark-dependencies-as-private"></a>将依赖项标记为专用
+
+MSBuild 任务的依赖项必须打包在包内；不能将其表示为普通的包引用。 包不会向外部用户公开任何常规依赖项。 这需要执行两个步骤来完成：将程序集标记为私有程序集，并将其实际嵌入到生成的包中。 对于此示例，我们将假设你的任务依赖于 `Microsoft.Extensions.DependencyInjection` 才能工作，因此请在版本 `6.0.0` 中将 `PackageReference` 添加到 `Microsoft.Extensions.DependencyInjection`。
+
+```xml
+<ItemGroup>
+    <PackageReference 
+        Include="Microsoft.Build.Utilities.Core"
+        Version="17.0.0" />
+    <PackageReference
+        Include="Microsoft.Extensions.DependencyInjection"
+        Version="6.0.0" />
+</ItemGroup>
+```
+
+现在，请标记此任务项目的每个依赖项，`PackageReference` 和 `ProjectReference` 均标有 `PrivateAssets="all"` 特性。 这会告知 NuGet 完全不向使用的项目公开这些依赖项。 有关控制依赖项资产的详细信息，请参阅 [NuGet 文档](/nuget/consume-packages/package-references-in-project-files#controlling-dependency-assets)。
+
+```xml
+<ItemGroup>
+    <PackageReference 
+        Include="Microsoft.Build.Utilities.Core"
+        Version="17.0.0"
+        PrivateAssets="all"
+    />
+    <PackageReference
+        Include="Microsoft.Extensions.DependencyInjection"
+        Version="6.0.0"
+        PrivateAssets="all"
+    />
+</ItemGroup>
+```
+
+#### <a name="bundle-dependencies-into-the-package"></a>将依赖项捆绑到包中
+
+还必须将依赖项的运行时资产嵌入到任务包中。 这分为两个部分：一个 MSBuild 目标（用于将依赖项添加到 `BuildOutputInPackage` ItemGroup）和几个属性（用于控制这些 `BuildOutputInPackage` 项的布局）。 [NuGet 文档](/nuget/reference/msbuild-targets#targetsfortfmspecificbuildoutput)对此过程进行了详细介绍。
+
+```xml
+<PropertyGroup>
+    ...
+    <!-- This target will run when MSBuild is collecting the files to be packaged, and we'll implement it below. This property controls the dependency list for this packaging process, so by adding our custom property we hook ourselves into the process in a supported way. -->
+    <TargetsForTfmSpecificBuildOutput>
+        $(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage
+    </TargetsForTfmSpecificBuildOutput>
+    <!-- This property tells MSBuild where the root folder of the package's build assets should be. Because we are not a library package, we should not pack to 'lib'. Instead, we choose 'tasks' by convention. -->
+    <BuildOutputTargetFolder>tasks</BuildOutputTargetFolder>
+    <!-- NuGet does validation that libraries in a package are exposed as dependencies, but we _explicitly_ do not want that behavior for MSBuild tasks. They are isolated by design. Therefore we ignore this specific warning. -->
+    <NoWarn>NU5100</NoWarn>
+    ...
+</PropertyGroup>
+
+...
+<!-- This is the target we defined above. It's purpose is to add all of our PackageReference and ProjectReference's runtime assets to our package output.  -->
+<Target
+    Name="CopyProjectReferencesToPackage"
+    DependsOnTargets="ResolveReferences">
+    <ItemGroup>
+        <!-- The TargetPath is the path inside the package that the source file will be placed. This is already precomputed in the ReferenceCopyLocalPaths items' DestinationSubPath, so reuse it here. -->
+        <BuildOutputInPackage
+            Include="@(ReferenceCopyLocalPaths)"
+            TargetPath="%(ReferenceCopyLocalPaths.DestinationSubPath)" />
+    </ItemGroup>
+</Target>
+```
+
+#### <a name="dont-bundle-the-microsoftbuildutilitiescore-assembly"></a>不要捆绑 Microsoft.Build.Utilities.Core 程序集
+
+如上所述，此依赖项将在运行时由 MSBuild 本身提供，因此我们不需要将其捆绑到包中。 为此，请将 `ExcludeAssets="Runtime"` 特性添加到它的 `PackageReference`
+
+```xml
+...
+<PackageReference 
+    Include="Microsoft.Build.Utilities.Core"
+    Version="17.0.0"
+    PrivateAssets="all"
+    ExcludeAssets="Runtime"
+/>
+...
+```
+
+#### <a name="generate-and-embed-a-depsjson-file"></a>生成并嵌入 deps.json 文件
+
+deps.json 文件可由 MSBuild 使用，以确保加载正确的依赖项版本。 需要添加一些 MSBuild 属性，以便生成文件，因为默认情况下不会为库生成该文件。 然后，添加一个目标以将其包含在包输出中，这与对包依赖项所执行的操作类似。
+
+```xml
+<PropertyGroup>
+    ...
+    <!-- Tell the SDK to generate a deps.json file -->
+    <GenerateDependencyFile>true</GenerateDependencyFile>
+    ...
+</PropertyGroup>
+
+...
+<!-- This target adds the generated deps.json file to our package output -->
+<Target
+        Name="AddBuildDependencyFileToBuiltProjectOutputGroupOutput"
+        BeforeTargets="BuiltProjectOutputGroup"
+        Condition=" '$(GenerateDependencyFile)' == 'true'">
+
+     <ItemGroup>
+        <BuiltProjectOutputGroupOutput
+            Include="$(ProjectDepsFilePath)"
+            TargetPath="$(ProjectDepsFileName)"
+            FinalOutputPath="$(ProjectDepsFilePath)" />
+    </ItemGroup>
+</Target>
+```
 
 ### <a name="include-msbuild-properties-and-targets-in-a-package"></a>将 MSBuild 属性和目标包含到包中
 
@@ -385,25 +465,25 @@ msbuild -bl
 
 1. 在任务的项目文件 AppSettingStronglyTyped.csproj 中，添加以下代码：
 
-   ```xml
+    ```xml
     <ItemGroup>
         <!-- these lines pack the build props/targets files to the `build` folder in the generated package.
-         by convention, the .NET SDK will look for build\<Package Id>.props and build\<Package Id>.targets
-         for automatic inclusion in the build. -->
+            by convention, the .NET SDK will look for build\<Package Id>.props and build\<Package Id>.targets
+            for automatic inclusion in the build. -->
         <Content Include="build\AppSettingStronglyTyped.props" PackagePath="build\" />
         <Content Include="build\AppSettingStronglyTyped.targets" PackagePath="build\" />
     </ItemGroup>
-   ```
+    ```
 
 1. 创建 build 文件夹，在该文件夹中，添加两个文本文件：AppSettingStronglyTyped.props 和 AppSettingStronglyTyped.targets。 AppSettingStronglyTyped.props 很早便已导入 Microsoft.Common.props，因此它无法使用后来定义的属性。 因此，请避免引用尚未定义的属性；否则计算结果将为空。
 
-   从 NuGet 包导入 `.targets` 文件后，会从 Microsoft.Common.targets 导入 Directory.Build.targets。 因此，它可以覆盖大多数生成逻辑中定义的属性和目标，或者为所有项目设置属性，而不考虑各个项目的设置。 请参阅[导入顺序](customize-your-build.md#import-order)。
+    从 NuGet 包导入 `.targets` 文件后，会从 Microsoft.Common.targets 导入 Directory.Build.targets。 因此，它可以覆盖大多数生成逻辑中定义的属性和目标，或者为所有项目设置属性，而不考虑各个项目的设置。 请参阅[导入顺序](customize-your-build.md#import-order)。
 
-   AppSettingStronglyTyped.props 包含任务并定义一些具有默认值的属性：
+    AppSettingStronglyTyped.props 包含任务并定义一些具有默认值的属性：
 
-   ```xml
-   <?xml version="1.0" encoding="utf-8" ?>
-   <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    ```xml
+    <?xml version="1.0" encoding="utf-8" ?>
+    <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <!--defining properties interesting for my task-->
     <PropertyGroup>
         <!--default directory where the .dll was publich inside a nuget package-->
@@ -425,14 +505,14 @@ msbuild -bl
         <SettingNamespace Condition="'$(SettingNamespace)' == ''">example</SettingNamespace>
         <SettingExtensionFile Condition="'$(SettingExtensionFile)' == ''">mysettings</SettingExtensionFile>
     </PropertyGroup>
-   </Project>
-   ```
+    </Project>
+    ```
 
 1. 安装包时，将自动包含 AppSettingStronglyTyped.props 文件。 然后，客户端具有可用的任务和一些默认值。 但从未使用过。 为了使此代码处于活动状态，请在 AppSettingStronglyTyped.targets 文件中定义一些目标，安装包时也会自动包含这些目标：
 
-   ```xml
-   <?xml version="1.0" encoding="utf-8" ?>
-   <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    ```xml
+    <?xml version="1.0" encoding="utf-8" ?>
+    <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
     <!--Defining all the text files input parameters-->
     <ItemGroup>
@@ -456,16 +536,16 @@ msbuild -bl
     <Target Name="AfterClean">
         <Delete Files="$(RootFolder)\$(SettingClass).generated.cs" />
     </Target>
-   </Project>
-   ```
+    </Project>
+    ```
 
-   第一步是创建 [InputGroup](msbuild-items.md)，它表示要读取的文本文件（可以是多个），并且它将是我们的一些任务参数。 查找位置和扩展名存在默认值，但可以在客户端 MSBuild 项目文件中重写定义属性的值。
+    第一步是创建 [InputGroup](msbuild-items.md)，它表示要读取的文本文件（可以是多个），并且它将是我们的一些任务参数。 查找位置和扩展名存在默认值，但可以在客户端 MSBuild 项目文件中重写定义属性的值。
 
-   然后，定义两个 [MSBuild 目标](msbuild-targets.md)。 我们将[扩展 MSBuild 过程](how-to-extend-the-visual-studio-build-process.md)，从而重写预定义的目标：
+    然后，定义两个 [MSBuild 目标](msbuild-targets.md)。 我们将[扩展 MSBuild 过程](how-to-extend-the-visual-studio-build-process.md)，从而重写预定义的目标：
 
-   - `BeforeCompile`：目标是调用自定义任务来生成类并包含要编译的类。 在完成核心编译之前，将插入此目标中的任务。 输入和输出字段与[增量生成](incremental-builds.md)相关。 如果所有输出项均为最新，MSBuild 就跳过目标。 目标的这种增量生成可以显著提高生成的性能。 如果某项的输出文件的时间戳与该项的一个或多个输入文件相同，或与之相比较新，则将该项视为最新。
+    - `BeforeCompile`：目标是调用自定义任务来生成类并包含要编译的类。 在完成核心编译之前，将插入此目标中的任务。 输入和输出字段与[增量生成](incremental-builds.md)相关。 如果所有输出项均为最新，MSBuild 就跳过目标。 目标的这种增量生成可以显著提高生成的性能。 如果某项的输出文件的时间戳与该项的一个或多个输入文件相同，或与之相比较新，则将该项视为最新。
 
-   - `AfterClean`：目标是在发生常规清理之后删除生成的类文件。 调用核心清理功能后，将插入此目标中的任务。 在重新生成目标执行时强制重复执行代码生成步骤。
+    - `AfterClean`：目标是在发生常规清理之后删除生成的类文件。 调用核心清理功能后，将插入此目标中的任务。 在重新生成目标执行时强制重复执行代码生成步骤。
 
 ### <a name="generate-the-nuget-package"></a>生成 NuGet 包
 
