@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: amast
 manager: shve
 ms.assetid: da8df006-4896-4ff9-b487-698d78deabc3
-ms.date: 10/13/2021
+ms.date: 04/27/2022
 ms.topic: conceptual
 description: 了解如何在 Visual Studio 订阅中查找、声明和导出产品密钥
-ms.openlocfilehash: 14136866cc4f1997d512e16aa20daeb8a0132d19
-ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.openlocfilehash: 4ea850fdddbdb4e340dfa2ce12135cc7084d10cd
+ms.sourcegitcommit: f0010a70e1f7f1302bd322b779ac5614ebc0f4d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "133256342"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "144390787"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>在 Visual Studio 订阅中查找和声明产品密钥
 本文介绍如何从 https://my.visualstudio.com/productkeys 中查找、声明和导出产品密钥。  有关使用密钥激活产品、密钥的零售和批量许可版本以及每日产品密钥索取上限的详细信息，请访问[产品密钥概述](product-keys.md)。
@@ -29,18 +29,18 @@ ms.locfileid: "133256342"
 
 ### <a name="product-key-types"></a>产品密钥类型
 
-|    键类型           |    描述                                                                                                                                                                                                           |
-|-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    不适用                    |    安装此产品不需要密钥。                                                       |
-|    零售                     |    零售密钥允许多次激活，适用于产品的零售版本。 在许多情况下，每个密钥允许激活 10 次，不过在同一台计算机中通常允许激活更多次。                                                       |
-|    多次激活        |    多次激活密钥 (MAK) 允许使用同一密钥多次安装某产品。 MAK 适用于批量许可版本的产品。 通常情况下，一次订阅仅提供一个 MAK 密钥。    |
-|    静态激活密钥    |    静态激活密钥提供给不需要激活的产品。 它们可在无限次安装中使用。                                                                                                                  |
-|    自定义密钥                 |    自定义密钥提供特殊操作或信息来激活或安装产品。                                                                                                                                                                |
-|    VA 1.0                     |    多次激活密钥，与 MAK 类似。                                                                                                                                                                                                 |
-|    OEM 密钥                    |    允许多次激活的原始设备制造商密钥。                                                                                                                                                                       |
-|    DreamSpark 零售密钥    |    DreamSpark 的零售密钥，允许一次激活。 DreamSpark 零售密钥按批次签发，主要面向学生消费。                                                                                     |
-|    DreamSpark 实验室密钥         |    DreamSpark 计划的实验室用途的密钥，允许多次激活。 DreamSpark 实验室密钥供高校计算机实验室方案使用。                                                                                       |
-|    DreamSpark MAK 密钥         |    面向 DreamSpark 计划客户的 MAK 密钥。                                                                                                                                                                                                  |
+|  键类型   |  描述 |
+|-------------|--------------|
+|    不适用  | 安装此产品不需要密钥。 |
+|    零售 | 零售密钥允许多次激活，并用于产品的零售版本。 在许多情况下，每个密钥允许 10 次激活，但通常在同一台计算机上允许更多激活。 |
+|    多次激活 | 使用 MAK) 多个激活密钥 (，可以使用同一密钥激活产品的多个安装。 MAK 与产品的批量许可版本一起使用。 通常，每个订阅只提供一个 MAK 密钥。 |
+|    静态激活密钥 | 为不需要激活的产品提供静态激活密钥。 它们可用于任意数量的安装。 |
+|    自定义密钥 | 自定义密钥提供用于激活或安装产品的特殊操作或信息。 |
+|    VA 1.0  |  多个激活密钥，类似于 MAK。 |
+|    OEM 密钥 |  允许多次激活的原始设备制造商密钥。 |
+|    DreamSpark Retail Key  | DreamSpark 的零售密钥，允许一次激活。 DreamSpark Retail 密钥按批颁发，主要用于学生消费。 |
+|    DreamSpark 实验室密钥 | 实验室使用允许多个激活的 DreamSpark 程序的密钥。 DreamSpark 实验室密钥适用于大学计算机实验室方案。 |
+|    DreamSpark MAK 密钥 | DreamSpark 计划客户的 MAK 密钥。 |
 |
 
 可从产品的下载页索取密钥，或者在“[产品密钥](https://my.visualstudio.com/productkeys)”页上搜索所需的密钥。
@@ -56,7 +56,9 @@ ms.locfileid: "133256342"
 > ![搜索产品密钥](_img/product-keys/search-keys.png "滚动到所需的产品，或使用搜索框快速查找任何产品。")
    
 在此示例中，我们使用了搜索栏查找 Visual Studio Enterprise 2019 的产品密钥。
-正如你所见，这里列出了几个版本。  已为 Visual Studio Enterprise 2019 版本 16.0 和 16.1 各声明了一个密钥。  对于这两个版本，仍然可以使用不同类型的附加密钥。 注意，你可以在“注释”列记录有关已索取的密钥的简短说明。  可以将其与“已索取”列中的日期一起使用，以跟踪你索取的密钥。  例如，可以在使用密钥激活产品的安装时进行记录。
+正如你所见，这里列出了几个版本。  已为 Visual Studio Enterprise 2019 版本 16.0 和 16.1 各声明了一个密钥。  对于这两个版本，仍然可以使用不同类型的附加密钥。 
+
+注意，你可以在“注释”列记录有关已索取的密钥的简短说明。  可以将其与“已索取”列中的日期一起使用，以跟踪你索取的密钥。  例如，可以在使用密钥激活产品的安装时进行记录。
 
 ### <a name="exporting-your-claimed-keys"></a>导出已索取的密钥
 可以导出已索取的密钥列表。  这包括众多自动标记为“已索取”的所选静态密钥和其他密钥。
@@ -64,16 +66,16 @@ ms.locfileid: "133256342"
 > [!IMPORTANT]
 > 如果订阅到期，则无法索取新的密钥或导出已索取的密钥。
 
-若要导出密钥，请选择“产品密钥”页面最右侧的“导出所有密钥”链接。  此时将创建名为 KeysExport.xml 的 .xml 文件，你可选择打开或保存该文件。  你需要使用能够处理 .xml 文件的应用程序来打开此文件。  例如，可以将该文件作为 Excel 中的只读工作簿打开。
+若要导出密钥，请选择“产品密钥”页面最右侧的“导出所有密钥”链接。  将创建一个有权KeysExport.xml的.xml文件。   可以选择打开或保存文件。  你需要使用能够处理 .xml 文件的应用程序来打开此文件。  例如，可以在Microsoft Excel中以只读工作簿的形式打开该文件。
 
 ## <a name="resources"></a>资源
-- [Visual Studio 订阅支持](https://aka.ms/vssubscriberhelp)
+[Visual Studio 订阅支持](https://aka.ms/vssubscriberhelp)
 
 ## <a name="see-also"></a>另请参阅
-- [Visual Studio 文档](/visualstudio/)
-- [Azure DevOps 文档](/azure/devops/)
-- [Azure 文档](/azure/)
-- [Microsoft 365 文档](/microsoft-365/)
++ [Visual Studio 文档](/visualstudio/)
++ [Azure DevOps 文档](/azure/devops/)
++ [Azure 文档](/azure/)
++ [Microsoft 365 文档](/microsoft-365/)
 
 ## <a name="next-steps"></a>后续步骤
 当你准备好下载软件并使用密钥时，请访问 https://my.visualstudio.com/downloads 。  有关下载软件的详细信息，请参阅[下载概述](download-software.md)。

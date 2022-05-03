@@ -8,14 +8,16 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
 ms.topic: reference
-ms.openlocfilehash: f4dc3ad88ebbc5d9ec5879a4bb06dd7c611aa59c
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: a51e704165626a794628d64e0a4a21a8661fd6dc
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135806126"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144522811"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>创建并编辑自定义 EditorConfig 文件
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 在 Visual Studio for Mac 中，可以向项目或解决方案添加 [EditorConfig](https://editorconfig.org/) 文件，强制对使用该基本代码的所有人实施一致的编码样式。 EditorConfig 文件中声明的设置优先于全局 Visual Studio for Mac 文本编辑器设置。 在项目或基本代码中使用 EditorConfig 文件可为项目设置编码样式、首选项和警告。 由于该文件是基本代码的一部分，因此无论使用何种 IDE 或代码编辑器，它都使用户更容易遵守项目的编码操作。
 

@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 6460df49b8d4588d7dd2204ea85846ebfecf0c86
-ms.sourcegitcommit: efe1d737fd660cc9183177914c18b0fd4e39ba8b
+ms.openlocfilehash: df07b09a9682fd593af7d5f31c6d3859d3151fdb
+ms.sourcegitcommit: 1b33c046206c9b4750a9c0bdc5af164424ca5ee2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "130212204"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144472779"
 ---
 # <a name="msbuild-properties"></a>MSBuild 属性
 
@@ -33,6 +33,8 @@ ms.locfileid: "130212204"
     <BuildDir>Build</BuildDir>
 </PropertyGroup>
 ```
+
+有效属性名称以大写或小写字母或下划线开头 (`_`) ;有效的后续字符包括字母数字字符 (字母或数字) 、下划线和连字符 (`-`) 。
 
  在整个项目文件中，可使用语法 $(\<PropertyName>) 来引用各个属性。 例如，上一示例中的属性是使用 $(BuildDir) 引用的。
 

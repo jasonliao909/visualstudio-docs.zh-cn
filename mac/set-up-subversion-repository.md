@@ -7,14 +7,16 @@ manager: dominicn
 ms.date: 05/06/2018
 ms.assetid: 0D58FB37-530E-495B-BED6-FD499477A9B6
 ms.topic: how-to
-ms.openlocfilehash: 43c77e2d97b2ec3b74d38eb6718840d99e632404
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: 02ae62bb3d37196442b6084e87c5f3b8c8a70e77
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135804644"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144474582"
 ---
 # <a name="set-up-a-subversion-repository"></a>设置 Subversion 存储库
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 Subversion 是一个集中式版本控制系统  ，这表示，存在一个服务器包含所有文件和修订，用户可从中签出任何文件的任何版本。 从远程 Subversion 存储库中签出文件时，用户将收到该时间点的存储库快照。
 

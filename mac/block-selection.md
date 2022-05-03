@@ -7,14 +7,16 @@ manager: dominicn
 ms.date: 11/06/2018
 ms.topic: reference
 ms.assetid: E8E0831E-E076-44B1-A82A-A325382916A6
-ms.openlocfilehash: e9093ef7debd279f725c89b7648ebafabc75bb14
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: 6e4c563f5075218a46d4fd30c74ad30a34df58e6
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135804423"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144502895"
 ---
 # <a name="block-selection"></a>块选择
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 通过 Visual Studio for Mac，可以轻松地选择、剪切、复制和粘贴选定部分的代码。 可以使用代码块上的“选项 + 拖动”命令突出显示和选择矩形代码块。 粘贴块时会保留此块选择部分的格式。
 

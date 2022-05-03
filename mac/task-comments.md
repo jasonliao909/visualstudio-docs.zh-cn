@@ -7,14 +7,16 @@ manager: dominicn
 ms.date: 11/09/2020
 ms.topic: reference
 ms.assetid: 562DCB46-D8FA-4DC4-AAEA-F274448C4CD2
-ms.openlocfilehash: aaa1c68e1089e3ff1df131df2fac84ecbf426551
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: c696aa991592118caf70ddcd7e5226d59d6fc755
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135805814"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144524071"
 ---
 # <a name="task-comments"></a>任务注释
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 编写代码时，标准做法是显式注释未完成代码、可疑代码或带有警告的快速解决方法。 Visual Studio for Mac 提供的默认信号令牌包括 TODO、HACK、FIXME 和 UNDONE。 可以在“Visual Studio”>“首选项”>“环境”>“任务”下定义个性化令牌，如下图所示  ：
 

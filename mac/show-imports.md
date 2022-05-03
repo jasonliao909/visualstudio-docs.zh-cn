@@ -7,14 +7,16 @@ manager: dominicn
 ms.date: 03/29/2019
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.topic: reference
-ms.openlocfilehash: 4b6f26f5ed96ded30c1598b653b8216907e4871f
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: ff153a1bed30ff8beb94ace6c337e39ce303464f
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135805034"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144474564"
 ---
 # <a name="show-import-items"></a>显示导入项
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 Visual Studio for Mac 会在 IntelliSense 完成列表中显示所有可用类型，即使它们未导入到项目中也是如此。 通过选择未导入的项，将向源文件添加正确的 `using` 语句。
 
@@ -26,7 +28,7 @@ Visual Studio for Mac 会在 IntelliSense 完成列表中显示所有可用类�
 
 ![“显示导入项”选项](media/show-import-items.png)
 
-## <a name="usage"></a>用法
+## <a name="usage"></a>使用情况
 
 一旦启用“显示导入项”，使用该功能导入项目的过程与 IntelliSense 内的正常操作类似。 键入代码时，有效项将填充完成列表。 这包括尚未导入的项。 未导入的项将在项右侧显示其完整的命名空间，从而使你能够查看要传入到项目中的导入。
 

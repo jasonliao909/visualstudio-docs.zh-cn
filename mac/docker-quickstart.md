@@ -6,14 +6,16 @@ ms.author: jomatthi
 manager: dominicn
 ms.date: 11/09/2020
 ms.topic: how-to
-ms.openlocfilehash: 6174cea678ad9f4f2f7285e1b4469ee811c182fc
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: 97062d26bff561df204c86c013c12b0e6796c702
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135804397"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144528696"
 ---
 # <a name="get-started-with-docker-in-visual-studio-for-mac"></a>Visual Studio for Mac 中的 Docker 入门
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 使用 Visual Studio for Mac，可以轻松地生成、调试和运行容器化 ASP.NET Core 应用并将其发布到 Azure。
 

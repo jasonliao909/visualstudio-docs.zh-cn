@@ -7,14 +7,16 @@ ms.author: jomatthi
 manager: dominicn
 ms.topic: reference
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 835c7e256cd0ea1fd55ccde55fc63fc895df2ad8
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: 53ee1db7654cbbe979baababb631f23301c8dd44
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135804202"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144497658"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Visual Studio for Mac 中的默认键盘快捷键
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 有关键盘辅助功能的信息，请参阅[如何：使用键盘导航](~/accessibility-keyboard.md)。
 

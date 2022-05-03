@@ -1,7 +1,7 @@
 ---
 title: 扩展试用版或更新许可证
 description: 了解如何扩展免费试用版 Visual Studio，使用联机订阅或产品密钥解锁 Visual Studio，以及更新过时或过期的许可证。
-ms.date: 12/18/2019
+ms.date: 04/28/2022
 ms.topic: how-to
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 author: anandmeg
@@ -10,22 +10,24 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d3eb53ec6fc73cb72d31d1dfd31f9ed1fc6e906
-ms.sourcegitcommit: bfae1f88c278835e26f3200cfced769be3191fc4
-ms.translationtype: HT
+ms.openlocfilehash: 9e7702dccc1c47174e6febcf508fdf4afb121b62
+ms.sourcegitcommit: 3034382894e610b55f3ad07e737fa59b91680869
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "132535056"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "144548327"
 ---
 # <a name="extend-a-trial-version-or-update-a-license"></a>扩展试用版或更新许可证
 
-可以在 30 天内评估 [Visual Studio Professional 或 Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/compare/) 的免费试用版。 登录时，可以将试用期延长至 90 天。 （Visual Studio Community 是免费的，没有试用期。 但是，必须定期[登录](signing-in-to-visual-studio.md)，以使[许可证保持最新](#update-a-stale-license)。）
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
+
+可以在 30 天内评估 [Visual Studio Professional 或 Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/compare/) 的免费试用版。 登录时，可以将试用期延长至 90 天。  (Visual Studio Community不需要登录。 但是，如果安装提示你定期登录，[请登录](signing-in-to-visual-studio.md)以继续使用Visual Studio Community而不中断。) 
 
 若要在试用期结束后继续使用 Visual Studio，请使用[在线订阅](#use-an-online-subscription)或[产品密钥](#enter-a-product-key)进行解锁。
 
 ## <a name="use-an-online-subscription"></a>使用在线订阅
 
-1. 选择 IDE 右上角的“登录”按钮（或转到“文件” > “帐户设置”，打开“帐户设置”对话框，然后选择“登录”按钮）。
+1. 选择 IDE (右上角的 **“登录**”按钮，或转到 **FileAccount** >  **设置...** 打开 **“帐户设置**”对话框，然后选择 **“登录**”按钮) 。
 
 1. 对 Microsoft 帐户、工作或学校帐户输入凭据。 Visual Studio 将查找与帐户相关联的 Visual Studio 订阅或 Azure DevOps 组织。
 

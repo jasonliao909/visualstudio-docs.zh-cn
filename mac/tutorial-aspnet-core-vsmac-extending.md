@@ -8,14 +8,16 @@ manager: dominicn
 ms.date: 10/18/2019
 ms.assetid: 047f5e36-f38e-4bf6-a1c5-3fde32978b7d
 ms.topic: how-to
-ms.openlocfilehash: f9724488c1ab0916a15a5259e2994e16d4180e56
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: 0c863c4c3292830e7daf73f8405eb9f91c9f3758
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135806555"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144537488"
 ---
 # <a name="tutorial-extending-an-existing-aspnet-core-web-application"></a>教程：扩展现有的 ASP.NET Core Web 应用程序
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 在这些教程中，你将使用 [eShopOnWeb 引用应用](https://github.com/dotnet-architecture/eShopOnWeb)。 每个步骤都包含一个视频和一个教程文档。
 

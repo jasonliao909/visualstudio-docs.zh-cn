@@ -7,14 +7,16 @@ manager: dominicn
 ms.date: 02/23/2022
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
 ms.topic: overview
-ms.openlocfilehash: fd4cb46b7a65f76d6296fa934ea683ff46bc8837
-ms.sourcegitcommit: 390f2e76b6214d62eaab8259820200dd4f5e9b3f
+ms.openlocfilehash: 872d1f24a89c29f8599b410350fb97d9bfda4c54
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "141615804"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144516305"
 ---
 # <a name="accessibility"></a>可访问性
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 macOS 中内置了许多可在你使用 Visual Studio for Mac 时提供帮助的辅助工具和功能。 这些功能包括高对比度模式、键盘导航和 VoiceOver（macOS 屏幕读取器）。
 

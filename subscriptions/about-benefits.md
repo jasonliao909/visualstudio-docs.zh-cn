@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: amast
 manager: shve
 ms.assetid: 0a02232c-437f-4c48-85c1-93ca7887236b
-ms.date: 12/02/2021
+ms.date: 04/25/2022
 ms.topic: how-to
 description: 了解订阅中包含哪些权益，以及如何激活这些权益。
-ms.openlocfilehash: d4d4989a307a1194687cffcb7952ead9e90e36f9
-ms.sourcegitcommit: 7a300823cf1bd3355be03bde561cf2777bc09eae
+ms.openlocfilehash: a96fb1c3976ea39707b700a60a573081b2b5e4c7
+ms.sourcegitcommit: 9ee1cebba305cf47e5fc977bae2110b48c8855d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "133977908"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "144103173"
 ---
 # <a name="about-your-subscription-benefits"></a>关于订阅权益
 作为 Visual Studio 订阅者，你有权访问各种权益，具体取决于你的订阅级别。 权益有几个需要注意的重要事项。
@@ -24,9 +24,9 @@ ms.locfileid: "133977908"
 
 ## <a name="use-categories-to-help-find-benefits"></a>使用类别帮助查找权益
 为了方便找到最感兴趣的权益，我们已将它们分为三个类别： 
-- 工具
-- 专业开发
-- 支持
++ 工具
++ 专业开发
++ 支持
 
 默认情况下，当你访问 <https://my.visualstudio.com/benefits> 时，将显示你的所有权益。 但是，你可以通过选择三个类别中的任何一个来筛选列表。
 
@@ -35,23 +35,23 @@ ms.locfileid: "133977908"
 
 ## <a name="benefits-and-offers-provided-by-partners"></a>合作伙伴提供的权益和产品/服务
 Visual Studio 订阅中包含的一些权益（包括培训和工具等一些常用权益）由我们的合作伙伴提供。 这些产品/服务的详细信息由合作伙伴决定。 例如：
-- 权益的持续时间可能与 Visual Studio 订阅的持续时间不匹配。 例如，你的 Visual Studio 订阅可能持续 12 个月，而合作伙伴提供的许多权益可能持续较短，如三个月或六个月。
-- 合作伙伴还提供了可用于这些权益或产品/服务的任何支持。
-- 续订 Visual Studio 订阅后，也会续订一些权益。 在其他情况下，合作伙伴产品/服务是“一生一次”，不会续订。 有关各个权益的详细信息，请查看目录中的相应文章。
-- 合作伙伴可以选择停止使用产品/服务。 
++ 权益的持续时间可能与 Visual Studio 订阅的持续时间不匹配。 例如，你的 Visual Studio 订阅可能持续 12 个月，而合作伙伴提供的许多权益可能持续较短，如三个月或六个月。
++ 合作伙伴还提供了可用于这些权益或产品/服务的任何支持。
++ 续订 Visual Studio 订阅后，也会续订一些权益。 在其他情况下，合作伙伴产品/服务是“一生一次”，不会续订。 有关各个权益的详细信息，请查看目录中的相应文章。
++ 合作伙伴可以选择停止使用产品/服务。 
 
 ## <a name="benefits-that-become-temporarily-unavailable"></a>暂时不可用的权益
 尽管很少出现这种情况，但有时技术问题会使权益在短时间内不可用。 在这些情况下，我们将更改 [Visual Studio 订阅门户](https://my.visualstudio.com/benefits)中的“权益”磁贴，以指示在问题得以解决之前权益“暂时不可用”，我们恢复该磁贴后，权益将再次可用。
 
 ## <a name="support-resources"></a>支持资源
-- 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请联系 [Visual Studio 订阅支持](https://aka.ms/vssubscriberhelp)。
+有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请联系 [Visual Studio 订阅支持](https://aka.ms/vssubscriberhelp)。
 
 ## <a name="see-also"></a>另请参阅
-- [Visual Studio 文档](/visualstudio/)
-- [Azure DevOps 文档](/azure/devops/)
-- [Azure 文档](/azure/)
-- [Microsoft 365 文档](/microsoft-365/)
++ [Visual Studio 文档](/visualstudio/)
++ [Azure DevOps 文档](/azure/devops/)
++ [Azure 文档](/azure/)
++ [Microsoft 365 文档](/microsoft-365/)
 
 ## <a name="next-steps"></a>后续步骤
-- 如果你正在考虑购买订阅，请查看我们的定价页，以获取每个订阅中包含的权益的详细列表。 还可以使用 [Visual Studio 订阅权益页面](https://visualstudio.microsoft.com/vs/benefits/)来查看更多详细信息。
-- 是否已有订阅？  请查看我们文档中的文章以了解每个权益，查看所提供的内容、激活方式以及在遇到问题时如何获取帮助。 
++ 如果你正在考虑购买订阅，请查看我们的定价页，以获取每个订阅中包含的权益的详细列表。 还可以使用 [Visual Studio 订阅权益页面](https://visualstudio.microsoft.com/vs/benefits/)来查看更多详细信息。
++ 是否已有订阅？  请查看我们文档中的文章以了解每个权益，查看所提供的内容、激活方式以及在遇到问题时如何获取帮助。 

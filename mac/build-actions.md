@@ -7,14 +7,16 @@ manager: dominicn
 ms.date: 09/18/2019
 ms.topic: conceptual
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: 219d16b4b9f383f771e67c2b1c737ca1830bea5a
-ms.sourcegitcommit: 782992423db6e1cbbf206715c9b3b400c80052a9
+ms.openlocfilehash: 2c301dd017910f552aa792aa5a9eae7b9cc704f6
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "138100925"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144520674"
 ---
 # <a name="configure-build-actions"></a>配置生成操作
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 Visual Studio for Mac 项目中的所有文件都具有生成操作。 生成操作控制编译项目时文件发生的情况。 
 

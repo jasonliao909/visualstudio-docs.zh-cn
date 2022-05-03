@@ -4,21 +4,21 @@ author: evanwindom
 ms.author: amast
 manager: shve
 ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
-ms.date: 03/21/2021
+ms.date: 04/27/2022
 ms.topic: how-to
 description: 了解管理员如何编辑订阅分配。
-ms.openlocfilehash: 21f586e7aacc4f991b6bec096b51888c91d3621d
-ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.openlocfilehash: 7a9c383b415cff6c360219f508b784c230147c41
+ms.sourcegitcommit: f0010a70e1f7f1302bd322b779ac5614ebc0f4d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "133257070"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "144390800"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>编辑 Visual Studio 订阅分配
-作为订阅管理员，可以更改分配给组织内个人的订阅。  本文讨论可以进行更改的类型并提供必要的步骤。
+作为订阅管理员，可以更改分配给组织成员的订阅。  本文讨论可以进行更改的类型并提供必要的步骤。
 
    > [!NOTE]
-   > 如果需要更改通过 Azure Active Directory 组分配的订阅者的订阅详细信息，则需要将其从组中删除，并将他们分别添加到管理门户。  
+   > 如果需要更改通过Azure Active Directory组分配的订阅者的某些订阅详细信息，则需要从组中删除订阅者并将其分别添加到管理门户中。  应在Azure AD组中更改其电子邮件地址、姓名拼写等。  但是，如果需要更改订阅级别或下载权限，则需要从组中删除这些级别，并将其直接添加到管理门户中。 
 
 ## <a name="change-subscriber-information"></a>更改订阅者信息
 可以编辑订阅者的信息来更正错误或更新信息。
@@ -56,15 +56,15 @@ ms.locfileid: "133257070"
 5. 文件上传后，将看到上传成功的通知。 此时，编辑将反映到订阅者信息当中。
 
 ## <a name="resources"></a>资源
-- [订阅支持](https://aka.ms/vsadminhelp)
+[订阅支持](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>另请参阅
-- [Visual Studio 文档](/visualstudio/)
-- [Azure DevOps 文档](/azure/devops/)
-- [Azure 文档](/azure/)
-- [Microsoft 365 文档](/microsoft-365/)
++ [Visual Studio 文档](/visualstudio/)
++ [Azure DevOps 文档](/azure/devops/)
++ [Azure 文档](/azure/)
++ [Microsoft 365 文档](/microsoft-365/)
 
 ## <a name="next-steps"></a>后续步骤
-- 是否需要分配特定订阅 ID？ 请查看分配订阅 ID。 
-- 有关查找特定订阅的帮助，请查阅[搜索订阅](search-license.md)。
-- 需要创建所有订阅的列表？  请查阅[导出订阅](exporting-subscriptions.md)。
++ 是否需要分配特定订阅 ID？ 请查看分配订阅 ID。 
++ 有关查找特定订阅的帮助，请查阅[搜索订阅](search-license.md)。
++ 需要创建所有订阅的列表？  请查阅[导出订阅](exporting-subscriptions.md)。

@@ -1,7 +1,7 @@
 ---
 title: 了解解决方案资源管理器
 description: 了解如何在 Visual Studio 中使用解决方案资源管理器工具窗口创建和管理文件、项目以及解决方案。
-ms.date: 03/10/2022
+ms.date: 05/02/2022
 ms.topic: conceptual
 ms.custom: contperf-fy22q1
 helpviewer_keywords:
@@ -12,14 +12,16 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: f64a06a0c3f920cafcf850e40866922d0eb2038f
-ms.sourcegitcommit: 7b33355b17a520d1fefdc5833a608a96aa17f08b
+ms.openlocfilehash: c131e86d8afb721499f2dbf8beee51f6ef5c0330
+ms.sourcegitcommit: 3034382894e610b55f3ad07e737fa59b91680869
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2022
-ms.locfileid: "139713918"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "144548379"
 ---
 # <a name="learn-about-solution-explorer"></a>了解解决方案资源管理器
+
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 可以使用解决方案资源管理器工具窗口来创建解决方案和项目并对其进行管理，以及查看代码并与之交互。 在本文中，我们将详细介绍可帮助执行此类操作的用户界面 (UI) 选项。
 
@@ -37,8 +39,8 @@ ms.locfileid: "139713918"
 - 菜单栏 - 用于控制文件显示方式
 - 搜索栏 - 用于搜索特定文件和文件类型
 - 主窗口 - 用于查看和管理文件、项目以及解决方案
-- 解决方案节点 - 用于管理解决方案
-- 项目节点 - 用于管理项目
+- **[解决方案节点](#solution-node-context-menu-options)**，可在其中管理解决方案 () 
+- **[Project节点](#project-node-context-menu-options)**，可在其中管理项目 () 
 - 依赖项节点 - 用于管理解决方案和项目依赖项
 - 程序节点 - 用于查看、编辑和管理程序或应用程序（应用）
 - [“Git 更改”选项卡](../version-control/git-with-visual-studio.md?view=vs-2019&preserve-view=true#git-changes-window-in-visual-studio-2019) - 可用于使用 Visual Studio 中的 Git 和 GitHub 与团队协作处理项目
@@ -68,15 +70,29 @@ ms.locfileid: "139713918"
 
 ## <a name="context-menu"></a>上下文菜单
 
-在解决方案资源管理器中，可使用上下文菜单与很多选项进行交互。 C# 应用的下列屏幕截图显示了上下文菜单选项，会在你右键单击“解决方案”节点时出现。
+在解决方案资源管理器中，可以使用右键单击上下文菜单与多个选项进行交互。 显示的特定于上下文的选项取决于是选择 **解决方案** 节点还是 **Project** 节点。
 
-:::image type="content" source="media/solution-explorer-context-menu.png" alt-text="解决方案资源管理器中的右键单击上下文菜单屏幕截图。":::
+### <a name="solution-node-context-menu-options"></a>解决方案节点上下文菜单选项
+
+C# 控制台应用的以下屏幕截图显示了右键单击 **解决方案** 节点时显示的上下文菜单选项。
+
+:::image type="content" source="media/solution-node-context-menu-sml.png" alt-text="解决方案资源管理器中解决方案节点右键单击上下文菜单的屏幕截图。" lightbox="media/solution-node-context-menu-lrg.png":::
 
 “解决方案”节点的上下文菜单中显示的内容还取决于你的项目类型、编程语言或平台。 以下屏幕截图突出显示了 C# 应用的下列额外选项：“项目依赖项”、“项目生成顺序”、“设置启动项目”和“Git”弹出菜单   。 通常，在向解决方案添加其他项目，然后将其添加到存储库中时，会显示这些额外选项。
 
-:::image type="content" source="media/solution-explorer-context-menu-extra-items.png" alt-text="解决方案资源管理器中的右键单击上下文菜单屏幕截图，其中有额外选项。":::
+:::image type="content" source="media/solution-node-context-menu-extra-items-sml.png" alt-text="解决方案资源管理器解决方案节点中右键单击上下文菜单的屏幕截图，其中显示了其他选项。" lightbox="media/solution-node-context-menu-extra-items-lrg.png":::
 
-## <a name="add-menu"></a>添加菜单
+### <a name="project-node-context-menu-options"></a>Project节点上下文菜单选项
+
+C# 控制台应用的以下屏幕截图显示了右键单击 **Project** 节点时显示的上下文菜单选项。
+
+:::image type="content" source="media/project-node-context-menu-sml.png" alt-text="解决方案资源管理器中项目节点右键单击上下文菜单的屏幕截图。" lightbox="media/project-node-context-menu-lrg.png":::
+
+在 **Project** 节点的上下文菜单中看到的内容也取决于项目类型、编程语言或平台。 以下屏幕截图突出显示了 C# 应用的以下额外选项： **生成依赖项** 浮出菜单。 将另一个项目添加到解决方案，然后将其添加到存储库时，通常会显示其他选项。
+
+:::image type="content" source="media/project-node-context-menu-extra-items-sml.png" alt-text="解决方案资源管理器中项目节点右键单击上下文菜单的屏幕截图，其中显示了一个额外的选项。" lightbox="media/project-node-context-menu-extra-items-lrg.png":::
+
+## <a name="the-add-context-menu-fly-out"></a>“添加上下文”菜单浮出控件
 
 在解决方案资源管理器上下文菜单中，最有用的选项之一是“添加”弹出菜单。 从这里，可向解决方案[添加其他项目](../get-started/csharp/tutorial-console-part-2.md#add-another-project)。 还可向项目添加项等。
 
@@ -89,4 +105,5 @@ ms.locfileid: "139713918"
 ## <a name="see-also"></a>另请参阅
 
 - [Visual Studio 中有哪些解决方案和项目？](solutions-and-projects-in-visual-studio.md)
+- [什么是Project设计器？](reference/project-properties-reference.md)
 - [在 Visual Studio 中自定义窗口布局](customizing-window-layouts-in-visual-studio.md)

@@ -5,14 +5,14 @@ ms.faqid: group2_3
 ms.topic: include
 ms.assetid: ee7e5ba2-a4b5-4db0-bd05-583dca51c75e
 author: evanwindom
-ms.author: cabuschl
+ms.author: amast
 ms.date: 11/10/2020
-ms.openlocfilehash: 1737f289958cffd46ad2da17ce0047c70b0c5de6
-ms.sourcegitcommit: f915322d60182143da7036893d2941bc200cf439
+ms.openlocfilehash: 4d22f1bf3d6ab405e8dfcc4a0e2601d861c46814
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94575478"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "144103201"
 ---
 ## <a name="how-do-my-developers-download-visual-studio"></a>我的开发人员如何下载 Visual Studio？
 分配给开发人员的订阅级别决定了他们有权访问的 Visual Studio IDE 级别。 例如，Visual Studio Professional 订阅无权访问 Visual Studio Enterprise。 请确保分配了正确的级别。 

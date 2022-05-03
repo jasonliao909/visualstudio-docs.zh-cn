@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: amast
 manager: shve
 ms.assetid: e5768153-2758-46d3-a323-3272def213ee
-ms.date: 10/18/2021
+ms.date: 04/22/2022
 ms.topic: how-to
 description: 了解有关 Visual Studio 订阅中包含的 CODE 杂志权益。
-ms.openlocfilehash: 44fee28a47613bdbb09a6a05a4020d57927d02b6
-ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.openlocfilehash: 9202a0eaac39fafb58211ebf7ef0f87c0b3d8933
+ms.sourcegitcommit: 9ee1cebba305cf47e5fc977bae2110b48c8855d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "133257031"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "144102991"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 CODE 杂志权益
 
@@ -47,18 +47,18 @@ CODE 杂志是领先的独立软件开发人员杂志，涵盖所有平台中的
 完成订阅订单后，系统会显示一个确认页，其中包含可用于查看已收到的问题的链接： https://codemag.com/my/fulfillment 。 
 
 ## <a name="eligibility"></a>资格
-| 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
-|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise（标准）   | VL、Azure、零售| 可用       |  否          |
-| 包含 GitHub Enterprise 的 Visual Studio Enterprise 订阅   | VL| 可用       |  否          |
-| Visual Studio Professional（标准） | VL、Azure、零售                                       | 可用                                                            |  否          |
-| 包含 GitHub Enterprise 的 Visual Studio Professional 订阅 | VL                                      | 可用                                                            |  否          |
-| Visual Studio Test Professional（标准）                         | VL、零售                                              | 可用                                             |  否          |
-| MSDN 平台（标准）                                          | VL、零售                                              | 可用                                              |  否          |
+| 订阅级别  |  信道  | 好处  | 是否续订？    |
+|---------------------|------------|----------|---------------|
+| Visual Studio Enterprise（标准）   | VL、Azure、零售| 可用       |  否  |
+| 包含 GitHub Enterprise 的 Visual Studio Enterprise 订阅   | VL| 可用       |  否  |
+| Visual Studio Professional（标准） | VL、Azure、零售      | 可用 |  否  |
+| 包含 GitHub Enterprise 的 Visual Studio Professional 订阅 | VL| 可用  |  否  |
+| Visual Studio Test Professional（标准）                         | VL、零售 | 可用  |  否  |
+| MSDN 平台（标准）                                          | VL、零售 | 可用  |  否  |
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure | 不可用 | 不可用 |
-| Visual Studio Enterprise NFR<sup>1</sup> | NFR | 不可用 | 不可用 |
+| Visual Studio Enterprise NFR\* | NFR | 不可用 | 不可用 |
 
-<sup>1</sup>  *包括：不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、FTE、BizSpark、Imagine、Imagine Premium、Microsoft 合作伙伴网络 (MPN)、最有价值专家 (MVP)、区域总监 (RD)、MCT 软件和服务开发人员、MCT 软件和服务。  
+\**包括：不适用于转售 (NFR) ，Visual Studio行业合作伙伴 (VSIP) 、FTE、BizSpark、Imagine、Imagine 高级版、Microsoft 合作伙伴网络 (MPN) 、最有价值的Professional (MVP) 、区域总监 (RD) 、MCT 软件&服务开发人员 MCT 软件&服务。*
 
 > [!NOTE]
 > Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 建议新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)，查看各 Visual Studio 购买选项。

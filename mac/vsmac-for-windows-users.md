@@ -7,14 +7,16 @@ manager: dominicn
 ms.date: 11/09/2021
 ms.topic: reference
 ms.assetid: 61CB6883-08CE-470F-8599-6F7570DB756E
-ms.openlocfilehash: fd91724081594c2c88a9ad5d104bd3ebd8ba60f6
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: 2a3a638caa56c39b2664b7683ca8edb1fad2ea13
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135806542"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144488322"
 ---
 # <a name="visual-studio-for-mac-for-windows-users"></a>面向 Windows 用户的 Visual Studio for Mac
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 从一个操作系统迁移到另一个操作系统可能会很困难。 从用户界面到菜单项分类，跨平台应用程序中通常存在细微差异。 在这里，你将了解 Visual Studio for Mac 和 Visual Studio for Windows 之间的最常见区别。 你还将了解 macOS 与 Windows 之间的几个不同约定。
 

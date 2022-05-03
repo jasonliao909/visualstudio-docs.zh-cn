@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: amast
 manager: shve
 ms.assetid: 1c5ede60-cb5a-4d5f-a6a2-a1f536f6c4ad
-ms.date: 10/13/2021
+ms.date: 05/02/2022
 ms.topic: conceptual
 description: 了解如何使用产品密钥通过终端服务支持 Internet 演示并启用 RDS 访问
-ms.openlocfilehash: 131ad91a64fe862a4ee8ca934bfb610396918198
-ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.openlocfilehash: 918cbcd73f52ae3c258b0b55aeedcd7cb0815b51
+ms.sourcegitcommit: 3034382894e610b55f3ad07e737fa59b91680869
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "133257408"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "144547781"
 ---
 # <a name="internet-demonstrations-via-terminal-services"></a>通过终端服务访问 Internet 演示
 凭借 Visual Studio 订阅，可允许最终用户使用终端服务（Windows Server 2003 或 Windows Server 2008）或远程桌面服务（Windows Server 2008 R2 或更高版本）访问你的程序的 Internet 演示。 使用这种方式，多达 200 位匿名用户可同时访问你的演示。 你的演示不得使用生产数据。 Visual Studio 订阅者可以向最终用户演示其应用程序。 在软件是通过 Visual Studio 订阅授权的情况下，未购买 Visual Studio 订阅的最终用户只能通过使用终端服务 (TS) 或远程桌面服务 (RDS) 的此 Internet 与演示应用程序交互。
@@ -30,20 +30,20 @@ Visual Studio 订阅者可以输入[订阅门户](https://my.visualstudio.com?wt
 4. 完成向导中的步骤。  如果选择的是协议类型，请选择“许可证包(零售购买)”，然后输入从我的门户获得的产品密钥。
 
 如果满足以下条件，最终用户可以通过 RDS 进行连接以访问应用程序：
-- 用户必须为匿名（处于未经身份验证状态）。
-- 必须使用 Internet 连接。
-- 若要进行应用程序演示，最多可以使用 200 个并发用户连接。
-- Visual Studio 订阅者必须获得启用用户连接所需的产品密钥。
++ 用户必须为匿名（处于未经身份验证状态）。
++ 必须使用 Internet 连接。
++ 若要进行应用程序演示，最多可以使用 200 个并发用户连接。
++ Visual Studio 订阅者必须获得启用用户连接所需的产品密钥。
 
 ## <a name="support-resources"></a>支持资源
-- 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请联系 [Visual Studio 订阅支持](https://aka.ms/vssubscriberhelp)。
+有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请联系 [Visual Studio 订阅支持](https://aka.ms/vssubscriberhelp)。
 
 ## <a name="see-also"></a>另请参阅
-- [Windows Server 文档](/windows-server/)
-- [Visual Studio 文档](/visualstudio/)
-- [Azure DevOps 文档](/azure/devops/)
-- [Azure 文档](/azure/)
-- [Microsoft 365 文档](/microsoft-365/)
++ [Windows Server 文档](/windows-server/)
++ [Visual Studio 文档](/visualstudio/)
++ [Azure DevOps 文档](/azure/devops/)
++ [Azure 文档](/azure/)
++ [Microsoft 365 文档](/microsoft-365/)
 
 ## <a name="next-steps"></a>后续步骤
 如果需要有关部署 RDS 的指南，请查看位于 https://techcommunity.microsoft.com/t5/Ask-The-Performance-Team/bg-p/AskPerf 的远程桌面服务 (RDS) 2012 会话部署的多部分博客系列  。 

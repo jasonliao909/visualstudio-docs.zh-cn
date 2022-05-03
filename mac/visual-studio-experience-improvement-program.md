@@ -7,14 +7,16 @@ manager: dominicn
 ms.date: 11/05/2020
 ms.topic: conceptual
 ms.assetid: 6F2ECF5A-E195-4890-8399-12A88C7D62FD
-ms.openlocfilehash: 0462d63ef49396d906d636bf9cbf93c665671677
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: b2442e42749c2fa186316b52a9b72e6eab0665ad
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135803513"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144504253"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio 客户体验改善计划
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 Visual Studio 客户体验改善计划 (VSCEIP) 旨在随着时间推移帮助 Microsoft 改进 Visual Studio for Mac。 此程序收集有关计算机硬件以及 Visual Studio for Mac 的使用方式，而不中断用户在计算机中的任务。 收集的信息可帮助 Microsoft 确定要改善的功能。 本文介绍如何选择加入或退出 VSCEIP。
 

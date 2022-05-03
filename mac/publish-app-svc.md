@@ -5,22 +5,24 @@ ms.date: 04/02/2019
 helpviewer_keywords:
 - deployment, website
 ms.assetid: 8524a4c5-97a9-41ac-a2a0-034efb9bfc57
-author: sayedihashimi
-ms.author: sayedha
-manager: unniravindranathan
+author: jmatthiesen
+ms.author: jomatthi
+manager: dominicn
 ms.prod: visual-studio-mac
 ms.custom: video
 ms.topic: how-to
 ms.workload:
 - azure
-ms.openlocfilehash: 65bcdfd7226d3e0141e98e7a524d6ffa7fde0c39
-ms.sourcegitcommit: fc874be3fe4637a23997b4ef2d99a2ee9a499581
+ms.openlocfilehash: b8ff2acae979015395bd306b45e2c3b91e5fee40
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "135516694"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144513489"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>使用 Visual Studio for Mac 将 Web 应用发布到 Azure 应用服务
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 可使用“发布”工具将 ASP.NET Core 应用发布到 Azure 应用服务。
 

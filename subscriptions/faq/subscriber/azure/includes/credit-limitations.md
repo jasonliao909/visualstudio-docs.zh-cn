@@ -3,16 +3,16 @@ title: 是否还有其他限制需要注意？
 description: Visual Studio 订阅者的每月 Azure 额度仅用于开发和测试，不附带具有资金支持的 SLA…
 ms.topic: include
 ms.assetid: db54fb12-254d-47f0-82ff-40aeda8f8c10
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 4/3/2020
 ms.faqid: q5_8
-ms.openlocfilehash: ba477ecb7e204a395cbe4b2e550beb82ec208479
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: a97bc1485da9764f623fc91b13f89b441bfacf7a
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "91838322"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "144103209"
 ---
 ## <a name="are-there-any-other-limitations-i-should-be-aware-of"></a>是否还有其他限制需要注意？
 

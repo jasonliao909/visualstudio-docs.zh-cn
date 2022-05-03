@@ -7,14 +7,16 @@ author: jmatthiesen
 ms.author: jomatthi
 manager: dominicn
 ms.date: 05/06/2018
-ms.openlocfilehash: d876fe1b8d7026443a689963b0e12c7250adb14d
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: ee7c8e6fc8f59d67d528eb82288e8124ebf3730c
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135804995"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144477397"
 ---
 # <a name="azure"></a>Azure
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 Visual Studio for Mac 允许以各种不同的方式连接到 Visual Studio for Mac：
 

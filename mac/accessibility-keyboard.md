@@ -7,14 +7,16 @@ manager: dominicn
 ms.date: 09/23/2019
 ms.assetid: EF574E49-0465-4973-BE67-286DA20B8836
 ms.topic: how-to
-ms.openlocfilehash: 24bc5001b22201089cdfb4099b00d879130d9b56
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: 1cefa80110bb6252142db45dd52d481b1630c35b
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135804462"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144519402"
 ---
 # <a name="keyboard-navigation-in-visual-studio-for-mac"></a>Visual Studio for Mac 中的键盘导航
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 使用最常见的 macOS 键盘快捷方式以及特定于 Visual Studio for Mac 的大量键盘快捷方式，键盘用户可以访问 Visual Studio for Mac。 在这里，你将了解有关这两项的一些基本键盘命令，以及如何设置 Visual Studio for Mac 键盘快捷方式。
 

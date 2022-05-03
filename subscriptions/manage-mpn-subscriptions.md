@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: amast
 manager: shve
 ms.assetid: 83efe4ee-9a9d-4776-b27c-852d89dadafd
-ms.date: 10/28/2020
+ms.date: 05/02/2022
 ms.topic: how-to
-description: 对于 MPN 合作伙伴而言，如何将 Visual Studio 订阅分配到最终用户。
-ms.openlocfilehash: 3624f4737f5c624feb59cecbedc9d02df496cd5e
-ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+description: MPN 合作伙伴如何将Visual Studio订阅分配给最终用户。
+ms.openlocfilehash: 203829603b0bab20f46f9f2dea53bc2db823f472
+ms.sourcegitcommit: 3034382894e610b55f3ad07e737fa59b91680869
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "133257005"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "144548301"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>管理通过 Microsoft 合作伙伴网络 (MPN) 提供的 Visual Studio 订阅
 具备相应资格或在 MPN 中购买了Action Pack 的合作伙伴可以使用 Visual Studio 订阅。 这些订阅按用户授权，并且仅在分配给为合作伙伴公司工作的特定命名用户时才有效。
@@ -33,9 +33,9 @@ Microsoft Action Pack 订阅者和 Visual Studio 订阅
 10. 个人将收到一封电子邮件
 11. 指定个人可访问 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 进行登录
 12. 可能会显示 Visual Studio 个人资料页，包括以下内容：
-    - 名字
-    - 姓氏
-    - 联系人电子邮件
+    + 名字
+    + 姓氏
+    + 联系人电子邮件
 13. 登录现已完成，订阅者应可以访问权益
 
 ## <a name="competency-partners"></a>能力合作伙伴
@@ -47,24 +47,24 @@ Microsoft Action Pack 订阅者和 Visual Studio 订阅
 6. 个人将收到一封电子邮件
 7. 指定个人可访问 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 进行登录
 8. 可能会显示 Visual Studio 个人资料页
-    - 名字
-    - 姓氏
-    - 联系人电子邮件
+    + 名字
+    + 姓氏
+    + 联系人电子邮件
 9. 登录现已完成，订阅者应可以访问权益
 
 ## <a name="resources-and-references"></a>资源和参考
-- 与 Microsoft 合作伙伴网络 [Visual Studio 订阅](https://partner.microsoft.com/membership/msdn-subscriptions)有关的详细信息
-- Microsoft 合作伙伴网络[计划管理员软件与联机服务权益指南](https://assetsprod.microsoft.com/mpn/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits)
-  - 第 6 页 - 为 Action Pack 分配联系人角色和 Visual Studio 订阅
++ 与 Microsoft 合作伙伴网络 [Visual Studio 订阅](https://partner.microsoft.com/membership/msdn-subscriptions)有关的详细信息
++ Microsoft 合作伙伴网络[计划管理员软件与联机服务权益指南](https://assetsprod.microsoft.com/mpn/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits)
+  + 第 6 页 - 为 Action Pack 分配联系人角色和 Visual Studio 订阅
   > [!NOTE]
   > Visual Studio 订阅需要技术联系人角色
-  - 第 8 页 - 为能力合作伙伴分配 Visual Studio 订阅
+  + 第 8 页 - 为能力合作伙伴分配 Visual Studio 订阅
 
 ## <a name="see-also"></a>另请参阅
-- [Visual Studio 文档](/visualstudio/)
-- [Azure DevOps 文档](/azure/devops/)
-- [Azure 文档](/azure/)
-- [Microsoft 365 文档](/microsoft-365/)
++ [Visual Studio 文档](/visualstudio/)
++ [Azure DevOps 文档](/azure/devops/)
++ [Azure 文档](/azure/)
++ [Microsoft 365 文档](/microsoft-365/)
 
 ## <a name="next-steps"></a>后续步骤
 订阅者和计划管理员应直接与 Microsoft 合作伙伴网络支持团队协作，以解决在订阅者访问订阅时出现的任何问题。 请访问[“支持合作伙伴”](https://partner.microsoft.com/support)页寻求帮助。 （需要提供 MPN 登录凭据。）

@@ -7,14 +7,16 @@ ms.author: jomatthi
 manager: dominicn
 ms.date: 06/18/2019
 ms.assetid: CE860D79-E29E-4B93-B094-BE74B35FC1C2
-ms.openlocfilehash: df6d28dbe97f9aff93a152ef97cbdbf83f1f026d
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: f54400ed9772434525d167c98ea617a8060efc81
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135806582"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144534257"
 ---
 # <a name="troubleshooting"></a>故障排除
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 ## <a name="viewing-logs-in-visual-studio-for-mac"></a>查看 Visual Studio for Mac 中的日志
 

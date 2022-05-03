@@ -8,14 +8,16 @@ ms.date: 04/02/2021
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
-ms.openlocfilehash: d65f38b2c025222d409ed51a52cbbf634d3a0886
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: 61471bfc4ac2d2dd130aced3899bf80a8b629180
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135806282"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144507807"
 ---
 # <a name="introduction-to-azure-functions"></a>Azure Functions 简介
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 Azure Functions 是一种在云中创建和运行事件驱动的代码片段（即函数）的方法，而无需显式预配或管理基础结构。 有关 Azure Functions 的详细信息，请参阅 [Azure Functions 文档](/azure/azure-functions/)。
 

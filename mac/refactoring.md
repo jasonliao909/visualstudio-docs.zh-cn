@@ -7,14 +7,16 @@ manager: dominicn
 ms.date: 07/03/2020
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.topic: reference
-ms.openlocfilehash: e197f7d8e7ed7e0c2dd9a5466837bea4d11953ef
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: 399a83a2c5ee3fb06b2c0f82143fa69787f75b31
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135806633"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144484607"
 ---
 # <a name="refactoring"></a>Refactoring
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 重构代码方法可重新排列、重构和阐明现有代码，同时确保代码总体行为保持不变。
 

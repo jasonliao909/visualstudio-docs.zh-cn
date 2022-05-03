@@ -7,14 +7,16 @@ manager: dominicn
 ms.date: 06/18/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
 ms.topic: how-to
-ms.openlocfilehash: 739536f6f632450fec722a38556897bf48baf722
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: cbbcd2b7a94b76df4aa00b4955d2303513cf1e52
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135805294"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144522759"
 ---
 # <a name="xamarin-mobile-app-development"></a>Xamarin 移动应用开发
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 通过对 [Xamarin](/xamarin) 的卓越支持，可以开发适用于 Android、macOS、iOS、tvOS 和 watchOS 的丰富本机体验。 使用 Xamarin.Forms 跨平台应用程序可以在 Android、iOS 和 macOS 之间共享基于 XAML 的 UI 代码，而不会限制对本机功能的访问。
 

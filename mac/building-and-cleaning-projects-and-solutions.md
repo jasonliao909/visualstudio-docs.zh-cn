@@ -8,14 +8,16 @@ ms.date: 02/28/2022
 ms.custom: devdivchpfy22
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
 ms.topic: how-to
-ms.openlocfilehash: 1086066e02146a3bd7b9ee38d755ea014f6746e8
-ms.sourcegitcommit: 5b2c3a2c5f22e0cd6d35aab6049c1f61c4916e74
+ms.openlocfilehash: 75a09a9a3961162ebfe5affa1ca613b60b66d4bb
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "139852523"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144502908"
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>生成和清理项目和解决方案
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 按照本文的步骤了解如何生成、重新生成或清理解决方案中所有或部分项目。
 

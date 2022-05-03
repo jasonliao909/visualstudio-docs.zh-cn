@@ -8,14 +8,16 @@ ms.date: 11/18/2021
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.topic: troubleshooting
-ms.openlocfilehash: 68c72b4d564abab6f42fa0e49fc56d6a5c9861d2
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: c9b67a17f4b626577a6c05f00022794e5b3262b3
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135806607"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144534270"
 ---
 # <a name="does-visual-studio-for-mac-support-team-foundation-version-control"></a>Visual Studio for Mac 是否支持 Team Foundation 版本控制？
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 > [!CAUTION]
 > Visual Studio for Mac 的 TFVC 扩展的预览版本在 Visual Studio 2019 for Mac 中已不再受支持。

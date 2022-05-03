@@ -9,14 +9,16 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video, devdivchpfy22
 ms.topic: how-to
-ms.openlocfilehash: fd60c985b6d4c6555cac3421feabd07a8900e531
-ms.sourcegitcommit: 390f2e76b6214d62eaab8259820200dd4f5e9b3f
+ms.openlocfilehash: c7d880a95d5ec0da8159a16c3a4903bae25b7e64
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "141615989"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144516282"
 ---
 # <a name="install-visual-studio-for-mac"></a>安装 Visual Studio for Mac
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 若要开始在 macOS 上开发本机跨平台 .NET 应用，请按照以下步骤安装Visual Studio for Mac。
 
@@ -67,7 +69,7 @@ ms.locfileid: "141615989"
 
     [![选择大箭头以开始安装](media/install-installer-sml.png)](media/install-installer.png#lightbox)
 
-3. 可能会收到有关从 Internet 下载应用程序的警告。 选择“打开”  。
+3. 可能会收到有关从 Internet 下载应用程序的警告。 选择“打开”。
 4. 安装程序检查系统时，请耐心等待：
 
     [![安装程序会检查系统中是否有已安装的组件](media/install-checking-sml.png)](media/install-checking.png#lightbox)
@@ -113,7 +115,7 @@ ms.locfileid: "141615989"
 
     [![单击大箭头开始安装](media/vsmac-2022/install-installer-sml.png)](media/vsmac-2022/install-installer.png#lightbox)
 
-1. 可能会收到有关从 Internet 下载应用程序的警告。 选择“打开”  。
+1. 可能会收到有关从 Internet 下载应用程序的警告。 选择“打开”。
 
     [![有关从 Internet 下载应用的警告](media/vsmac-2022/installer-internet-warning-sml.png)](media/vsmac-2022/installer-internet-warning.png#lightbox)
 

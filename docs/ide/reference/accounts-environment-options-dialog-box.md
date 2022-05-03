@@ -13,14 +13,16 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fb7def00f37a8f396de37d644ab826a412250ed
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: df9e175e7064758dcad03278f47520a30c3900fc
+ms.sourcegitcommit: 3034382894e610b55f3ad07e737fa59b91680869
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126737072"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "144547832"
 ---
 # <a name="accounts-environment-options-dialog-box"></a>“帐户”、“环境”、“选项”对话框
+
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 使用此页面设置与用于登录 Visual Studio 的帐户相关的各种选项。
 
@@ -32,7 +34,7 @@ ms.locfileid: "126737072"
 
 ### <a name="enable-device-code-flow"></a>启用设备代码流
 
-选中此选项后，当在“文件” > “帐户设置”页上选择“添加帐户”时，Visual Studio 的行为将发生变化。 会改为显示对话框，而不是“登录到帐户”页面，该对话框提供 URL 和代码，用于粘贴到 Web 浏览器中进行登录。 如果不能以常规方式登录到 Visual Studio（例如，如果使用的是较低版本的 Internet Explorer，或者防火墙限制访问），这个选项会非常有用。 有关详细信息，请参阅[使用多个用户帐户](../work-with-multiple-user-accounts.md#add-an-account-using-device-code-flow)。
+选中此选项后，当在“文件” > “帐户设置”页上选择“添加帐户”时，Visual Studio 的行为将发生变化。 会改为显示对话框，而不是“登录到帐户”页面，该对话框提供 URL 和代码，用于粘贴到 Web 浏览器中进行登录。 如果不能以常规方式登录到 Visual Studio（例如，如果使用的是较低版本的 Internet Explorer，或者防火墙限制访问），这个选项会非常有用。 有关详细信息，请参阅[登录Visual Studio](../signing-in-to-visual-studio.md#add-an-account-using-device-code-flow)。
 
 ## <a name="registered-azure-clouds"></a>注册的 Azure 云
 

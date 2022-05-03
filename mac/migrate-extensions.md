@@ -8,14 +8,16 @@ ms.date: 12/14/2020
 ms.technology: vs-ide-general
 ms.assetid: 5DA76197-7859-421f-AC45-401F22F5D794
 ms.topic: troubleshooting
-ms.openlocfilehash: f77d53ca5fec6aa38e78b45579b2f37af28582c5
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: b919b40e9964d96de5460300652c1662e6b46f38
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135805606"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144483292"
 ---
 # <a name="troubleshooting-how-do-i-release-a-new-version-of-my-existing-extension"></a>疑难解答：如何发布现有扩展的新版本？
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 > [!IMPORTANT]
 > 目前，Visual Studio 2019 for Mac 尚不支持创建新扩展。

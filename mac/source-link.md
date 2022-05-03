@@ -7,14 +7,16 @@ manager: dominicn
 ms.date: 12/16/2019
 ms.topic: conceptual
 ms.assetid: 4bcb8acf-db50-4bd8-a48e-86248f00c90b
-ms.openlocfilehash: a5cecf4d3065a889e9ab48b9fc94e91341f778e7
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: 8d3dd373599a882f108823efd2e58458d2d79c0d
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135804605"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144479146"
 ---
 # <a name="debugging-into-nuget-packages-with-source-link"></a>通过源链接调试 NuGet 包
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 源链接是一种可以从 NuGet 对 .NET 程序集进行源代码调试的技术，从而将带有源链接的 .PDB 发送给源文件。 源链接在开发人员创建 NuGet 包时执行，然后将源代码管理元数据嵌入在程序集和包中。 如果在 Visual Studio for Mac 中启用源链接，IDE 将检测源文件是否适用于已安装的包。 然后，Visual Studio for Mac 将提供下载，你可以单步执行包代码。 源链接也适用于 Xamarin 项目的 Mono 基类库代码，使你也可以单步执行 .NET Framework 代码。 源链接提供源代码管理元数据来创造出色的调试体验。
 

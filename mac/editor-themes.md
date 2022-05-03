@@ -7,14 +7,16 @@ manager: dominicn
 ms.date: 11/06/2018
 ms.assetid: 4C1B7952-CD45-4132-AD6B-01CF993D83F8
 ms.topic: reference
-ms.openlocfilehash: 070463bf0ad0def259c397c262f6b8090db0fecb
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: 6df6da2f1800cb3364ab2313a58b44265a25c798
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135806100"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144481920"
 ---
 # <a name="editor-themes"></a>编辑器主题
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 可通过“Visual Studio”>“首选项”>“文本编辑器”>“颜色主题”菜单选项，将编辑器主题更改为 Visual Studio for Mac 中默认提供的 10 种颜色主题之一：
 

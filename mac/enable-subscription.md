@@ -7,14 +7,16 @@ manager: dominicn
 ms.date: 01/21/2020
 ms.topic: how-to
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: 509941453dc1f061968027cf80cb1415947ff6da
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: 6f6c9f3b9fe68afa378ab6909f760a1d888bdff4
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135806087"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144522772"
 ---
 # <a name="enable-subscription"></a>启用订阅
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 Visual Studio for Mac 有三种不同的订阅级别可供选择，一次下载后便可访问所有级别：
 

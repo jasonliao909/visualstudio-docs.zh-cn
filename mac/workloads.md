@@ -7,14 +7,16 @@ ms.author: jomatthi
 manager: dominicn
 ms.date: 06/18/2019
 ms.assetid: DDC39599-8C5D-4CB9-8DA5-229E085384CA
-ms.openlocfilehash: 47a47a70e9a38fdcb12b49837f9686f09c24613c
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: 75423ff7df53d55b59595e0063c481e0fbda3254
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135806503"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144481809"
 ---
 # <a name="visual-studio-for-mac-workloads"></a>Visual Studio for Mac 工作负载
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 Visual Studio for Mac 预安装有用于开发以下类型应用的工作负荷：
 

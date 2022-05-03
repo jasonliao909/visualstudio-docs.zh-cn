@@ -8,14 +8,16 @@ ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.topic: how-to
 ms.assetid: 61432695-5B12-4257-B250-48D37EED106D
-ms.openlocfilehash: bea3a53913bf9e96a14ad18d80d817a1ffafda2f
-ms.sourcegitcommit: 1c0eda2db1b1fff9595ca644503f467bf3e223e0
+ms.openlocfilehash: c737742e2fed8e3ce53b3839171ca1f1f5215393
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "137095895"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144539852"
 ---
 # <a name="javascript-and-typescript-support"></a>JavaScript 和 TypeScript 支持
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 Visual Studio for Mac 通过语法突出显示、代码格式设置和 IntelliSense 提供对 JavaScript 和 TypeScript 的支持。
 

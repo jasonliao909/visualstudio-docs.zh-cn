@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: amast
 manager: shve
 ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
-ms.date: 10/08/2021
+ms.date: 04/25/2022
 ms.topic: conceptual
 description: 了解如何在管理门户中设置语言、联系人、订阅级别等的首选项
-ms.openlocfilehash: 80f6630d66cedcfe98f6915dc466176ef02b9faf
-ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.openlocfilehash: cd1cbcd46700cd6a5b284c47cdc024222c0dd341
+ms.sourcegitcommit: 9ee1cebba305cf47e5fc977bae2110b48c8855d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "133255965"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "144102705"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-admin-portal"></a>在管理门户中设置协议的首选项
 超级管理员可以在管理门户中设置某些首选项，这些首选项将全局应用于每个协议。  这些首选项将在管理员添加订阅者时为管理员自动填充订阅详细信息，并且只能由超级管理员进行全局修改。  
@@ -59,7 +59,7 @@ ms.locfileid: "133255965"
 启用此设置（默认情况下处于启用状态）将使订阅者能够在管理员创建新订阅时访问下载。  管理员仍可基于单个订阅禁用下载。  如果禁用对下载的访问权限，则还会禁用对产品密钥的访问权限。  
 
 ### <a name="overallocation-notification"></a>超额分配通知 
-选择在协议分配变成超额分配时接收电子邮件。 此电子邮件通知将发送到[联系人电子邮件地址](admin-preferences.md#contact-email-address)；如果没有联系人电子邮件地址，则会发送给协议上的所有管理员。 使用下拉菜单配置要发送通知的阈值。 
+选择在分配协议时收到电子邮件。 此电子邮件通知将发送到[联系人电子邮件地址](admin-preferences.md#contact-email-address)；如果没有联系人电子邮件地址，则会发送给协议上的所有管理员。 使用下拉菜单配置要通知的阈值。 
 
  
 ## <a name="frequently-asked-questions"></a>常见问题
@@ -76,17 +76,17 @@ ms.locfileid: "133255965"
 答：如果在“联系人电子邮件地址”首选项中没有设置特定的电子邮件地址，协议上的所有管理员都将收到请求。 
 
 ## <a name="resources"></a>资源
-- [Visual Studio 管理和订阅支持](https://aka.ms/vsadminhelp)
+[Visual Studio 管理和订阅支持](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>请参阅
-- [Visual Studio 文档](/visualstudio/)
-- [Azure DevOps 文档](/azure/devops/)
-- [Azure 文档](/azure/)
-- [Microsoft 365 文档](/microsoft-365/)
++ [Visual Studio 文档](/visualstudio/)
++ [Azure DevOps 文档](/azure/devops/)
++ [Azure 文档](/azure/)
++ [Microsoft 365 文档](/microsoft-365/)
 
 ## <a name="next-steps"></a>后续步骤
 了解有关管理 Visual Studio 订阅的详细信息。
-- [分配单个订阅](assign-license.md)
-- [分配多个订阅](assign-license-bulk.md)
-- [编辑订阅](edit-license.md)
-- [确定最大使用量](maximum-usage.md)
++ [分配单个订阅](assign-license.md)
++ [分配多个订阅](assign-license-bulk.md)
++ [编辑订阅](edit-license.md)
++ [确定最大使用量](maximum-usage.md)

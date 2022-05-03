@@ -7,14 +7,16 @@ ms.author: jomatthi
 manager: dominicn
 ms.date: 09/18/2019
 ms.assetid: 17AB4F31-4921-4B4E-8D9D-95FB84294521
-ms.openlocfilehash: 5f51259daf585b8d5f4b7dc4d17fff68ed780428
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: 9c4456da9e020c939942803cecb95eb58e50f326
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135805710"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144481791"
 ---
 # <a name="user-accounts"></a>用户帐户
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 下载和安装 Visual Studio for Mac 后，必须登录以激活订阅，从而获得对 Visual Studio for mac 所有功能的访问权限。
 

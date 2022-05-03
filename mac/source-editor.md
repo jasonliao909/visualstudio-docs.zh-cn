@@ -7,14 +7,16 @@ manager: dominicn
 ms.date: 05/06/2018
 ms.topic: reference
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
-ms.openlocfilehash: 8c4ea988af9768795603850897f9f36a8908ac40
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: fa762dcf9a4269bdb6d4abf1dd9a79a3b282da5c
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135805625"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144479193"
 ---
 # <a name="source-editor"></a>源编辑器
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 可靠的源编辑器对简单高效地编写代码至关重要。 Visual Studio for Mac 提供了成熟的源编辑器，它是与 IDE 进行的交互的中心。 源编辑器提供了轻松工作所需的功能：从语法突出显示、代码片段和代码折叠等基础功能，到其 Roslyn 编译集成（如全功能 IntelliSense 代码完成）带来的优势，功能全面。
 

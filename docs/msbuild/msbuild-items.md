@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 11da7d47cf4d654564f5015afabfd842ce1f8d91
-ms.sourcegitcommit: a149b3a034bb555ad217656c0ec8bc1672b1e215
+ms.openlocfilehash: ad62ac49c8f19a26a743731de0ed2176a999283a
+ms.sourcegitcommit: 1b33c046206c9b4750a9c0bdc5af164424ca5ee2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "133514514"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144472774"
 ---
 # <a name="msbuild-items"></a>MSBuild 项
 
@@ -27,7 +27,7 @@ MSBuild 项是生成系统的输入，通常表示文件（文件在 `Include` �
 
 ## <a name="create-items-in-a-project-file"></a>在项目文件中创建项
 
- 声明项目文件中的项为 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 元素的子元素。 子元素的名称是项的类型。 该元素的 `Include` 属性指定该项类型要包含的项（文件）。 例如，下面的 XML 会创建一个名为 `Compile` 的项类型，其中包括两个文件。
+ 声明项目文件中的项为 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 元素的子元素。 有效项名称以大写或小写字母或下划线开头 (`_`) ;有效的后续字符包括字母数字字符 (字母或数字) 、下划线和连字符 () `-` 。 子元素的名称是项的类型。 该元素的 `Include` 属性指定该项类型要包含的项（文件）。 例如，下面的 XML 会创建一个名为 `Compile` 的项类型，其中包括两个文件。
 
 ```xml
 <ItemGroup>
@@ -166,7 +166,7 @@ MSBuild 项是生成系统的输入，通常表示文件（文件在 `Include` �
 </Target>
 ```
 
-有关项的更多操作，请参阅MSBuild[函数和](item-functions.md)[转换](../msbuild/msbuild-transforms.md)。
+有关项的更多操作，请参阅[MSBuild项函数](item-functions.md)和[转换](../msbuild/msbuild-transforms.md)。
 
 ## <a name="item-definitions"></a>项定义
 
@@ -354,7 +354,7 @@ Output:
 -->
 ```
 
-有关项的更多操作，请参阅[MSBuild 项函数](item-functions.md)。
+有关项的更多操作，请参阅[MSBuild项函数](item-functions.md)。
 
 ### <a name="keepduplicates-attribute"></a><a name="BKMK_KeepDuplicates"></a>KeepDuplicates 属性
 

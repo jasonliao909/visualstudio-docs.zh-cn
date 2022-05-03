@@ -3,19 +3,18 @@ title: 向 Visual Studio 订阅者分配特定 GUID | Microsoft Docs
 author: evanwindom
 ms.author: amast
 manager: shve
-ms.date: 03/19/2021
+ms.date: 04/26/2022
 ms.topic: conceptual
 ms.assetid: f9c82d7d-55bd-4e41-a170-6077b28ba5af
 description: 了解管理员如何将特定订阅 GUID 分配给订阅者
-ms.openlocfilehash: ac93ce09f049d96d9e23455dd77f667c396648ab
-ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.openlocfilehash: f60362fa6f9a12842884e0f8bbb502c8fc3835e7
+ms.sourcegitcommit: 9e9f4cf4b34735fffa376b203ccaa74cb705ffe2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "133257018"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "144334500"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>在 Visual Studio 订阅管理门户中分配特定订阅
-
 管理员现可使用 Visual Studio 订阅管理门户为个人用户分配订阅。  在组织具有需要短期访问订阅的临时员工或供应商的情况下，这非常有用。  管理员可以分配已部分使用的订阅，让其新订阅的使用时间更长一点。  
 
 观看视频或继续阅读，了解如何将特定订阅 GUID 分配给用户。 
@@ -26,11 +25,12 @@ ms.locfileid: "133257018"
 
 
 ## <a name="assign-specific-subscription-guids-to-users"></a>向用户分配特定的订阅 GUID
-
-向个人分配特定订阅的过程涉及利用两个现有的管理流程将特定订阅全局唯一标识符 (GUID) 分配给单个用户。  这一过程包括以下三步：首先导出当前订阅和分配的列表，然后使用该列表标识要分配的特定 GUID，最后使用批量添加过程上传新分配。
+向个人分配特定订阅使用两个现有管理员进程将特定订阅全局唯一标识符 (GUID) 分配给单个用户。  此过程有三个步骤：
+1. 导出当前订阅和分配的列表
+0. 使用该列表标识要分配的特定 GUID
+0. 使用“批量添加”上传新分配。
 
 ### <a name="export-your-subscriptions-information"></a>导出订阅信息
-
 要执行导出，请按照以下步骤操作：
 1. 登录[管理门户](https://manage.visualstudio.com)。
 2. 选择“导出”选项卡，文件将下载到本地计算机  。 该文件将包含用户订阅所在的协议名称以及导出日期。
@@ -38,20 +38,18 @@ ms.locfileid: "133257018"
 > ![导出订阅者](_img/exporting-subscriptions/exporting-subscriptions.png "单击“导出”以保存包含订阅者信息的已分配订阅的列表。")
 
 ### <a name="identify-the-guids-you-want-to-assign"></a>确定要分配的 GUID
+如果之前已使用导出工具，你会注意到电子表格中有新字段。  此信息将帮助你确定要分配给用户的哪些用户。  
 
-如果以前使用过“导出”工具，你就会发现新字段已添加到生成的电子表格中。  这些字段将有助于你确定每个订阅的状态以及要分配给用户的订阅的状态。  
-
-- **订阅状态**：此字段将指示“已分配”或“未分配”。  如果订阅的状态为“已分配”，则该订阅还将具有与其关联的用户信息，如姓名、电子邮件等。 
-- **使用状态**：使用状态将指示“新”和“已使用”，前者指示它从未分配给用户，后者指示它已在某个时间点分配给了用户。  
++ **订阅状态**：此字段将指示“已分配”或“未分配”。  如果订阅的状态为“已分配”，则该订阅还将具有与其关联的用户信息，如姓名、电子邮件等。 
++ **使用状态**：使用状态将指示“新”和“已使用”，前者指示它从未分配给用户，后者指示它已在某个时间点分配给了用户。  
 
 你可以使用这些字段中的值以及电子表格中的其他信息来确定要分配给单个用户的订阅。 可以在 Excel 中应用筛选器，以帮助按状态、订阅级别、到期日期等缩小列表范围。 
 
 ### <a name="upload-your-new-assignments"></a>上传新分配
-
-最后一步是下载 **批量添加** 模板，填写要分配的订阅所需的信息，然后上传模板。  有关该过程的完整说明，请参阅[添加多个用户](assign-license-bulk.md)一文。  
+最后一步是下载 **批量添加** 模板，填写要分配的订阅所需的信息，然后上传模板。  有关该过程的完整说明，请参阅“ [添加多个用户](assign-license-bulk.md) ”一文。  
 
 > [!IMPORTANT]
-> 为确保成功上传，请确保：
+> 若要确保上传成功，请确保：
 > - 在选择“批量添加”时使用对话框中链接的模板  。  请勿使用本地存储的模板副本，因为它可能未包含所有必填字段。  使用旧模板会导致上传失败。 
 > - 模板中所有显示为“必填”的字段都已填充  。
 > - “错误消息”列中未列出任何错误  。
@@ -61,21 +59,21 @@ ms.locfileid: "133257018"
 
 ## <a name="frequently-asked-questions"></a>常见问题
 ### <a name="q-how-do-i-change-which-subscription-is-currently-assigned-to-an-individual-user"></a>问：如何更改当前分配给单个用户的订阅？
-答：如果要更改分配给用户的 GUID，必须首先删除该用户的订阅。  有关详细信息，请参阅[删除订阅](delete-license.md)一文。  删除该用户的订阅后，请使用上述过程导出列表并上传新的订阅信息。  
+答：如果要更改分配给用户的 GUID，必须首先删除该用户的订阅。  有关详细信息，请参阅 [“删除订阅](delete-license.md) ”一文。  删除该用户的订阅后，请使用上述过程导出列表并上传新的订阅信息。  
 
 ## <a name="resources"></a>资源
-- [订阅支持](https://aka.ms/vsadminhelp)
+[订阅支持](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>另请参阅
-- [Visual Studio 文档](/visualstudio/)
-- [Azure DevOps 文档](/azure/devops/)
-- [Azure 文档](/azure/)
-- [Microsoft 365 文档](/microsoft-365/)
++ [Visual Studio 文档](/visualstudio/)
++ [Azure DevOps 文档](/azure/devops/)
++ [Azure 文档](/azure/)
++ [Microsoft 365 文档](/microsoft-365/)
 
 ## <a name="next-steps"></a>后续步骤
 现在，你已为用户分配了订阅，接下来了解如何执行其他管理任务。
-- [分配单个订阅](assign-license.md)
-- [分配多个订阅](assign-license-bulk.md)
-- [编辑订阅](edit-license.md)
-- [删除订阅](delete-license.md)
-- [确定最大使用量](maximum-usage.md)
++ [分配单个订阅](assign-license.md)
++ [分配多个订阅](assign-license-bulk.md)
++ [编辑订阅](edit-license.md)
++ [删除订阅](delete-license.md)
++ [确定最大使用量](maximum-usage.md)

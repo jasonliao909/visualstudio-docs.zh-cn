@@ -3,16 +3,16 @@ title: 是否有任何地域或服务限制会影响此权益？
 description: 通过 Visual Studio 订阅权益创建的 Azure 订阅可能会受到…
 ms.topic: include
 ms.assetid: 09dac7bc-fe92-424e-bf3c-c58637799027
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 4/3/2020
 ms.faqid: q5_6
-ms.openlocfilehash: a0bb8bc6be00398118588a9b1113bcfed50e1a41
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 8ad5590ce785eb139622f00de6ed6c0cdc1f87d3
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "81386286"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "144103210"
 ---
 ## <a name="are-there-any-geographic-or-service-restrictions-impacting-this-benefit"></a>是否有任何地域或服务限制会影响此权益？
 

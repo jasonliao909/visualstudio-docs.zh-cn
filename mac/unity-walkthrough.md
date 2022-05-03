@@ -9,14 +9,16 @@ ms.custom: devdivchpfy22
 ms.technology: vs-ide-general
 ms.assetid: D07FA43B-9D18-4DFA-8343-CD538FAD84DB
 ms.topic: how-to
-ms.openlocfilehash: c90c83619b6702833acb23aa8d47c5bf51782916
-ms.sourcegitcommit: 5b2c3a2c5f22e0cd6d35aab6049c1f61c4916e74
+ms.openlocfilehash: 46f31873485c9347be27a1679ff63ff202865914
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "139852635"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144495802"
 ---
 # <a name="getting-started-building-games-with-unity-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中开始使用 Unity 生成游戏
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 Unity 是一款可让你在 C# 中开发游戏的游戏引擎。 本演练演示如何使用 Visual Studio for Mac 和 Visual Studio for Mac Tools for Unity 扩展及 Unity 环境开始开发和调试 Unity 游戏。
 
@@ -34,7 +36,7 @@ Visual Studio for Mac Tools for Unity 是免费扩展，随 Visual Studio for Ma
 
 ## <a name="intended-audience"></a>目标受众
 
-此实验适用于熟悉 c # 的开发人员，但不需要深入体验。
+此实验室适用于熟悉 C# 的开发人员，尽管不需要深度体验。
 
 ## <a name="task-1-creating-a-basic-unity-project"></a>任务 1：创建基本 Unity 项目
 
@@ -48,7 +50,7 @@ Visual Studio for Mac Tools for Unity 是免费扩展，随 Visual Studio for Ma
 
     ![创建新的项目屏幕](media/unity-image2.png)
 
-4. 你现在看到的是默认 Unity 界面。 它的场景层次结构位于左侧，其中包含游戏对象、中间显示的空白场景的3D 视图、底部的 "项目文件" 窗格和右侧的 " **检查器** " 和 " **服务** "。 它比这要多得多，但这是更重要的组件。
+4. 你现在看到的是默认 Unity 界面。 它具有具有左侧游戏对象的场景层次结构、中间显示的空白场景的 3D 视图、底部的项目文件窗格以及右侧 **的检查器和****服务**。 这比这要多得多，但这些组件很少是更重要的组件。
 
     ![空白 Unity 界面](media/unity-image3.png)
 
@@ -72,11 +74,11 @@ Visual Studio for Mac Tools for Unity 是免费扩展，随 Visual Studio for Ma
 
     ![在“检查器”窗格中查看属性](media/unity-image7.png)
 
-11. 务必指出 Unity 中的项目与 Visual Studio for Mac 对应项稍有不同。 在底部的“项目”选项卡中，右键单击“资产”文件夹，然后选择“在查找器中展现”    。
+11. 必须指出 Unity 中的项目与Visual Studio for Mac对应项目略有不同。 在底部的“项目”选项卡中，右键单击“资产”文件夹，然后选择“在查找器中展现”    。
 
     ![在查找器中展现上下文操作](media/unity-image8.png)
 
-12. 如你所见，项目包含“资产”、“库”、“ProjectSettings”和“Temp”文件夹     。 但是，唯一在界面中显示的文件夹是“资产”文件夹  。 “库”文件夹是导入资产的本地缓存；它为资产保留所有元数据  。 “ProjectSettings”文件夹存储可配置的设置  。 “Temp”文件夹用于生成过程中来自 Mono 和 Unity 的临时文件  。 还有一个解决方案文件，您可以在此处 Visual Studio for Mac (**UnityLab** 中打开) 。
+12. 如你所见，项目包含“资产”、“库”、“ProjectSettings”和“Temp”文件夹     。 但是，唯一在界面中显示的文件夹是“资产”文件夹  。 “库”文件夹是导入资产的本地缓存；它为资产保留所有元数据  。 “ProjectSettings”文件夹存储可配置的设置  。 “Temp”文件夹用于生成过程中来自 Mono 和 Unity 的临时文件  。 还有一个解决方案文件，你可以在Visual Studio for Mac (**UnityLab.sln** 中打开) 。
 
     ![查找器中的资产](media/unity-image9.png)
 
@@ -188,21 +190,21 @@ Visual Studio for Mac Tools for Unity 是免费扩展，随 Visual Studio for Ma
     }
     ```
 
-8. 快速浏览此处定义的简单敌人行为。 在 **Start** 方法中，我们按其标记 (及其转换) 播放器对象 **的引用**。 在每帧调用的 Update 方法中，敌人将向玩家对象移动  。 关键字和名称使用颜色编码，这样可更容易理解 Visual Studio for Mac 中的代码库。
+8. 快速浏览此处定义的简单敌人行为。 在 **Start** 方法中，我们将通过其标记) 及其 **转换** (获取对播放器对象的引用。 在每帧调用的 Update 方法中，敌人将向玩家对象移动  。 关键字和名称使用颜色编码，这样可更容易理解 Visual Studio for Mac 中的代码库。
 
 9. 将更改保存到 Visual Studio for Mac 中的敌人脚本  。
 
 ## <a name="task-3-debugging-the-unity-project"></a>任务 3：调试 Unity 项目
 
-1. 在 Start 方法的第一行代码上设置断点  。 可以单击目标行的编辑器边距或将光标置于该行上，然后按 **F9**。
+1. 在 Start 方法的第一行代码上设置断点  。 可以在目标行的编辑器边距中单击或将光标置于行上，然后按 **F9**。
 
     ![在 Visual Studio for Mac 中设置断点](media/unity-image25.png)
 
-2. 选择" **开始调试"按钮** 或按 **F5**。 此操作将生成项目并将其附加到 Unity 进行调试。
+2. 选择 **“开始调试** ”按钮或按 **F5**。 此操作将生成项目并将其附加到 Unity 进行调试。
 
     ![Visual Studio for Mac 中的“开始”按钮](media/unity-image26.png)
 
-3. 返回到 **Unity** 并选择"运行 **"** 按钮以开始游戏。
+3. 返回到 **Unity** ，然后选择“ **运行** ”按钮以启动游戏。
 
     ![Unity 中的“运行”按钮](media/unity-image27.png)
 
@@ -214,9 +216,9 @@ Visual Studio for Mac Tools for Unity 是免费扩展，随 Visual Studio for Ma
 
     ![Visual Studio for Mac 中的“局部变量”窗口](media/unity-image29.png)
 
-6. 从 Start 方法中删除断点的方式与添加断点的方式相同，方法是在编辑器边距中选择断点，或者选择行，然后按 **F9**。
+6. 通过选择编辑器边距或选择行，然后按 **F9**，从 **Start** 方法中删除断点的方式相同。
 
-    ![通过选择断点Visual Studio for Mac断点](media/unity-image30.png)
+    ![通过选择断点删除Visual Studio for Mac中的断点](media/unity-image30.png)
 
 7. 按 F10 跳过使用标记作为参数查找“玩家”游戏对象的第一行代码   。
 

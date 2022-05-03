@@ -9,14 +9,16 @@ manager: dominicn
 ms.date: 10/18/2019
 ms.assetid: 591b21ee-8c3f-446b-9505-7d41bfc86701
 ms.topic: how-to
-ms.openlocfilehash: 035c25d5c3cbb6eef06c39534dd38c6025eb0de1
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: 26238666c9c24d326bb5628c75b34809f872a1f9
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135803565"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144505050"
 ---
 # <a name="tutorial-getting-started-with-aspnet-core-in-visual-studio-for-mac"></a>教程：开始在 Visual Studio for Mac 中使用 ASP.NET Core
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 本教程包括两个步骤：安装 Visual Studio for Mac 并构建你的第一个 ASP.NET Core Web 应用。
 

@@ -7,14 +7,16 @@ manager: dominicn
 ms.date: 11/09/2020
 ms.topic: how-to
 ms.assetid: 75247EB8-323A-4AFD-A451-6703A03D5D1F
-ms.openlocfilehash: 0c2edd3679f61e796b61f47eac1f5897ec7b16cf
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: 358fa60201f410de64871ab4f7ff2f3fc9d84b7c
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135804371"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144513515"
 ---
 # <a name="managing-project-and-solution-properties"></a>管理项目和解决方案属性
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 ## <a name="project-options"></a>项目选项
 

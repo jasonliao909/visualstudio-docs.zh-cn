@@ -1,5 +1,5 @@
 ---
-title: 教程： Azure Functions & Visual Studio for Mac
+title: 教程：Azure Functions & Visual Studio for Mac
 description: 有关在 Visual Studio for Mac 中使用 Azure Functions 的详细演练。
 author: jmatthiesen
 ms.author: jomatthi
@@ -8,14 +8,16 @@ ms.date: 11/06/2020
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
 ms.topic: how-to
-ms.openlocfilehash: ffa775a8df2411a1d620ff10a47562ccf7954d06
-ms.sourcegitcommit: 782992423db6e1cbbf206715c9b3b400c80052a9
+ms.openlocfilehash: 5f56c8755a53f4ee4833e1e14506724ed5c7e470
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "138101063"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144539969"
 ---
-# <a name="tutorial-getting-started-with-azure-functions--visual-studio-for-mac"></a>教程： Azure Functions & 入门 Visual Studio for Mac
+# <a name="tutorial-getting-started-with-azure-functions--visual-studio-for-mac"></a>教程：Azure Functions & Visual Studio for Mac入门
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 在本实验室中，了解如何使用 Visual Studio for Mac 开始生成 Azure Functions。 还将与 Azure 存储表集成，该存储表表示可供 Azure Functions 开发人员使用的众多绑定和触发器之一。
 
