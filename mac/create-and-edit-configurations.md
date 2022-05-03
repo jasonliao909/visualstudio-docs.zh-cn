@@ -8,14 +8,16 @@ ms.date: 03/03/2022
 ms.assetid: CC1B72D6-12FF-4CCC-A9D4-00F2DC14589F
 ms.custom: video, devdivchpfy22
 ms.topic: how-to
-ms.openlocfilehash: cc61b912cb2123a2121e4dab953c15f5649773b3
-ms.sourcegitcommit: 5b2c3a2c5f22e0cd6d35aab6049c1f61c4916e74
+ms.openlocfilehash: 386f545f401596558c35e42fafd01f7113ce205f
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "139852145"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144486253"
 ---
 # <a name="creating-and-editing-build-configurations"></a>创建和编辑生成配置
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 通过使用生成配置可以精确地控制生成，从而创建配置以满足不同的测试和分发情况。 可以为单个项目创建生成配置，也可创建适用于整个解决方案的生成配置。
 
@@ -66,7 +68,7 @@ ms.locfileid: "139852145"
 
 ![“重命名”对话框](media/create-and-edit-configurations-image5.png)
 
-然后选择 **"确定"** 进行确认。
+然后选择“ **确定** ”以确认。
 
 ## <a name="related-video"></a>相关视频
 

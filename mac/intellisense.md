@@ -6,14 +6,16 @@ ms.author: jomatthi
 manager: dominicn
 ms.date: 08/16/2019
 ms.topic: reference
-ms.openlocfilehash: 4d33a75eb2f6e45d5768f3b1820c4de70146734e
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: cee69cca8e7aff216fc9cd3045e77d97fd71f2f0
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135804878"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144494723"
 ---
 # <a name="intellisense"></a>IntelliSense
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 IntelliSense 提供了多种功能，有助于增强编写和编辑代码的体验。 例如，除代码完成之外，IntelliSense 引擎还提供成员列表、参数信息和快速信息。
 
@@ -32,7 +34,7 @@ IntelliSense 提供了多种功能，有助于增强编写和编辑代码的体�
 | ![委托图标](media/delegate-icon.png) | delegate      | `delegate` |  ⌥D
 | ![枚举图标](media/enums-icon.png)    | enum          | `enum`     |  ⌥E
 | ![事件图标](media/event-icon.png)    | event         |            |  ⌥V
-| ![“字段”图标](media/fields-icon.png)   | field         |            |  ⌥F
+| ![“字段”图标](media/fields-icon.png)   | 字段         |            |  ⌥F
 | ![接口图标](media/interface-icon.png)| 接口     | `interface`|  ⌥I
 | ![关键字图标](media/keyword-icon.png)  | 关键字 (keyword)       |            |  ⌥K
 | ![方法图标](media/method-icon.png)   | method        |            |  ⌥M

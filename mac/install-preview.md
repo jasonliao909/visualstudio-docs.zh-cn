@@ -9,16 +9,18 @@ ms.custom: devdivchpfy22
 ms.technology: vs-ide-install
 ms.assetid: 0E1EF257-9DE4-4653-9DF4-805CE007A1A1
 ms.topic: how-to
-ms.openlocfilehash: f4d4a02cb9190f7696d6ecada9774c4e354f3bda
-ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
+ms.openlocfilehash: 1739c75926a1f887b78528c1d8509a1c7a51ebce
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "139548933"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144496798"
 ---
 # <a name="install-a-preview-version-of-visual-studio-for-mac"></a>安装 Visual Studio for Mac 的预览版本
 
-新版 Visual Studio for Mac 在正式发布前是作为预览版提供。 预览版本可让你在将新功能完全融入产品之前，先尝试新功能并获取最新的 bug 修复。
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
+
+新版 Visual Studio for Mac 在正式发布前是作为预览版提供。 预览版让你有机会试用新功能，并获取最新的 bug 修复，然后再将其完全合并到产品中。
 
 Visual Studio for Mac 的预览版是作为更新发布的，而不是通过单独下载发布。 如[更新](update.md)一文中所述，Visual Studio for Mac 有两个更新程序通道：“稳定”和“预览” 。
 

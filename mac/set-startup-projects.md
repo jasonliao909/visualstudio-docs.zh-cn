@@ -8,14 +8,16 @@ ms.date: 11/09/2020
 ms.topic: how-to
 ms.prod: visual-studio-mac
 ms.assetid: fd354fff-ce6b-4505-a815-84a2311e39ba
-ms.openlocfilehash: d219d8aca5c9af49ff8f4f0e0490f0bd794b56d9
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: dbeae7e53d2351f94154998158e27845bf2dcd00
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135805502"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144530969"
 ---
 # <a name="set-multiple-startup-projects"></a>设置多个启动项目
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 通过 Visual Studio for Mac 可指定在调试或运行解决方案时应启动多个项目。
 

@@ -7,14 +7,16 @@ manager: dominicn
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
 ms.topic: how-to
-ms.openlocfilehash: 1f7a84ef1414ee17d563011cb5b1399a7e02cccb
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: 4d43a0c263c5a6ff0a54b5be08be77dc2e5d2082
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135803799"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144512017"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中生成 ASP.NET Core 应用程序
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 ASP.NET Core 是开放源跨平台框架，用于生成基于新式云的 Internet 连接应用程序，例如 Web 应用和服务、IoT 应用以及移动后端。 ASP.NET Core 应用可以在 [.NET Core](https://www.microsoft.com/net/core/platform) 或 .NET Framework 运行时上运行。 其设计目标是为部署到云或在本地运行的应用提供优化的开发框架。 该应用由模块化组件组成，开销最小，因此你可以在构造解决方案时保持灵活性。 可以在 Windows、Mac 和 Linux 上跨平台开发和运行 ASP.NET Core 应用。 ASP.NET Core 在 [GitHub](https://github.com/aspnet/home) 为开放源。
 

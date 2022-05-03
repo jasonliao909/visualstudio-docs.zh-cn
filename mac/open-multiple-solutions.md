@@ -8,16 +8,18 @@ ms.date: 02/28/2022
 ms.custom: video,devdivchpfy22
 ms.assetid: 592BA4E3-8DEF-4FCD-8BA0-519A4CEEE03E
 ms.topic: how-to
-ms.openlocfilehash: ecc6745d3659baa0e68790b0660335390289b248
-ms.sourcegitcommit: 5b2c3a2c5f22e0cd6d35aab6049c1f61c4916e74
+ms.openlocfilehash: 7372fcc0694047ecde883dbcdd5d9186926517c4
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "139852688"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144495854"
 ---
 # <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>打开 Visual Studio for Mac 的多个解决方案或实例
 
-默认情况下，Mac 上的所有应用程序（包括 Visual Studio for Mac）都是单实例应用。 如果你要使用的应用程序已打开 (在停靠) 中的图标下的点进行了说明，则再次选择该图标会打开正在运行的实例，而不是新的实例。 如果需要更多的应用程序实例，可以提示系统为您打开该应用程序，如下一 [节](#open-a-second-instance-of-visual-studio-for-mac)中所述。
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
+
+默认情况下，Mac 上的所有应用程序（包括 Visual Studio for Mac）都是单实例应用。 如果要使用的应用程序已经打开 (由停靠) 图标下的点演示，则再次选择该图标将打开正在运行的实例，而不是一个新实例。 如果需要更多应用程序实例，可以提示系统打开该应用程序，如 [下一部分](#open-a-second-instance-of-visual-studio-for-mac)所述。
 
 此外，打开解决方案时，默认行为是在新工作区中打开解决方案并关闭当前工作区（如有必要）。 可通过保持当前工作区打开来替代此默认行为，如[打开第二个解决方案](#open-a-second-solution-inside-a-single-instance)部分中所述。
 

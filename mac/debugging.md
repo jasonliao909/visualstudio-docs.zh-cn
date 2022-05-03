@@ -9,14 +9,16 @@ ms.custom: devdivchpfy22
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
 ms.topic: conceptual
-ms.openlocfilehash: cce94fdc77f1ba8db91391ae06a10fb1a80b499a
-ms.sourcegitcommit: 5b2c3a2c5f22e0cd6d35aab6049c1f61c4916e74
+ms.openlocfilehash: 2f33d0e2b03f749a7e92a502e7f3c161a72ab5cd
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "139852458"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144504292"
 ---
 # <a name="debugging-with-visual-studio-for-mac"></a>使用 Visual Studio for Mac 调试
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 Visual Studio for Mac 提供支持 .NET Core、.NET Framework、Unity 和 Xamarin 应用程序的调试器。
 
@@ -24,9 +26,9 @@ Visual Studio for Mac 使用 [Mono 软调试器](https://www.mono-project.com/do
 
 ## <a name="the-debugger"></a>调试器
 
-Visual Studio for Mac 使用 Mono 软调试器来调试所有 Xamarin 应用程序中的托管（C# 或 F#）代码。 Mono 软调试器不同于常规调试器，因为它是内置于调试器中的协作调试Mono 运行时;生成的代码Mono 运行时与 IDE 协作以提供调试体验。 Mono 运行时通过网络协议公开调试功能，可以阅读 [Mono 文档](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/)，了解详细信息。
+Visual Studio for Mac 使用 Mono 软调试器来调试所有 Xamarin 应用程序中的托管（C# 或 F#）代码。 Mono Soft Debugger 不同于常规调试器，因为它是内置于 Mono 运行时中的协作调试器;生成的代码和 Mono 运行时配合 IDE 提供调试体验。 Mono 运行时通过网络协议公开调试功能，可以阅读 [Mono 文档](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/)，了解详细信息。
 
-硬调试器（如 [LLDB]( http://lldb.llvm.org/index.html) 或 [GDB]( https://www.gnu.org/software/gdb/)）在未获得调试程序的知识或协作的情况下控制程序。 如果需要调试本机 iOS 或 Android 代码，在调试 Xamarin 应用程序时，它仍然很有用。
+硬调试器（如 [LLDB]( http://lldb.llvm.org/index.html) 或 [GDB]( https://www.gnu.org/software/gdb/)）无需从调试的程序中获取知识或合作即可控制程序。 如果需要调试本机 iOS 或 Android 代码，调试 Xamarin 应用程序时，它仍然很有用。
 
 对于 .NET Core 和 ASP.NET Core 应用程序，Visual Studio for Mac 使用 .NET Core 调试器。 此调试器也是协作式调试器，适用于 .NET 运行时。
 
@@ -63,7 +65,7 @@ Visual Studio for Mac 使用 Mono 软调试器来调试所有 Xamarin 应用程�
 
 ## <a name="conditional-breakpoints"></a>条件断点
 
-还可以设置规则，规定应发生断点的情况。 这称为添加条件 *断点*。 若要设置条件断点，请访问"断点  **属性** "窗口，可通过两种方式完成：
+还可以设置规则来听写断点的情况。 这称为添加 *条件断点*。 若要设置条件断点，请访问  **“断点属性** ”窗口，可通过以下两种方式完成：
 
 * 若要添加新的条件断点，请右键单击编辑器边缘（即要设置断点的代码行号左侧），再选择“新建断点”：
 
@@ -79,7 +81,7 @@ Visual Studio for Mac 使用 Mono 软调试器来调试所有 Xamarin 应用程�
 
 ## <a name="stepping-through-code"></a>逐句通过代码
 
-到达断点时，调试工具使用户能够控制该程序的执行。 Visual Studio for Mac 将显示四个按钮，使用户能够逐行运行代码。 在Visual Studio for Mac中，它们如下所示：
+到达断点时，调试工具使用户能够控制该程序的执行。 Visual Studio for Mac 将显示四个按钮，使用户能够逐行运行代码。 在Visual Studio for Mac中，它们将如下所示：
 
  ![用于逐行执行代码的按钮](media/debugging-image7.png)
 
@@ -87,12 +89,12 @@ Visual Studio for Mac 使用 Mono 软调试器来调试所有 Xamarin 应用程�
 
 * 播放 - 此按钮开始执行代码，直至下一个断点处。
 * 单步跳过 - 此按钮执行下一行代码。 如果下一行是函数调用，“单步跳过”将执行该函数，并在该函数后的下一行代码停止。
-* 单步执行 - 此按钮也执行下一行代码。 如果下一行是函数调用，“单步执行”将在该函数的第一行停止，允许继续进行函数的逐行调试。 如果下一行不是函数，则其行为与"逐过程"相同。
+* 单步执行 - 此按钮也执行下一行代码。 如果下一行是函数调用，“单步执行”将在该函数的第一行停止，允许继续进行函数的逐行调试。 如果下一行不是函数，它将的行为与“单步执行”相同。
 * 跳出 - 此按钮返回到调用当前函数的代码行。
 
 ## <a name="change-which-statement-is-executed-next"></a>更改要执行的下一条语句
 
-调试器暂停时，边距中的箭头会显示下一条要执行的代码行。 可以选择箭头并将其拖动到其他代码行，以更改将执行的语句。 还可以通过右键单击代码行，然后从上下文菜单中选择“设置下一条语句”来实现同一操作。
+调试器暂停时，边距中的箭头会显示下一条要执行的代码行。 可以选择箭头并将其拖动到其他代码行，以更改将执行哪个语句。 还可以通过右键单击代码行，然后从上下文菜单中选择“设置下一条语句”来实现同一操作。
 
 ![拖放箭头以设置下一条语句](media/debugger-drag-setnextstatement.gif)
 
@@ -103,7 +105,7 @@ Visual Studio for Mac 使用 Mono 软调试器来调试所有 Xamarin 应用程�
 
 Xamarin 产品随附用于 Mono 类库的源代码，可使用此代码在调试器中单步执行，查看内部工作原理。
 
-由于此功能在调试期间占用的内存更多，因此默认情况下会关闭。
+由于此功能在调试期间消耗更多内存，因此默认关闭此功能。
 
 若要启用此功能，请浏览到“Visual Studio for Mac”>“首选项”>“调试器”，并确保“单步执行外部代码”为“选中”状态，如下所示：
 

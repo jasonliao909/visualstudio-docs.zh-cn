@@ -8,14 +8,16 @@ ms.date: 3/20/2022
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video, devdivchpfy22
 ms.topic: overview
-ms.openlocfilehash: 2a59ab3958ed61dad0c16fd216b4ba58fcc355e9
-ms.sourcegitcommit: 390f2e76b6214d62eaab8259820200dd4f5e9b3f
+ms.openlocfilehash: 584501e37fb9026ba5a787f20774c4ffa1ee47d9
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "141615835"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144505466"
 ---
 # <a name="visual-studio-for-mac-ide-tour"></a>Visual Studio for Mac IDE 教程
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 ::: moniker range="vsmac-2022"
 
@@ -33,7 +35,7 @@ Visual Studio for Mac 是 Mac 上的 .NET 集成开发环境，可用于编辑�
 
 如果首次使用 Visual Studio，最近的项目列表将为空。
 
-## <a name="create-a-project"></a>创建项目
+## <a name="create-a-project"></a>创建一个项目
 
 若要继续探索功能，让我们创建一个新项目。
 
@@ -49,7 +51,7 @@ Visual Studio for Mac 是 Mac 上的 .NET 集成开发环境，可用于编辑�
 
 1. 在 **“配置新的控制台应用程序** ”窗口中，确保 **.NET 6.0** 显示在 **“目标框架** ”下拉列表中，然后选择“ **下一步**”。
 
-   ![目标框架](media/vsmac-2022/ide-tour-target-framework.png)
+   ![目标 Framework](media/vsmac-2022/ide-tour-target-framework.png)
 
 1. 在 **“配置新的控制台应用程序**”窗口中，添加 **Project名称**、**解决方案名称和****位置**，然后选择“**创建**”。
 
@@ -98,7 +100,7 @@ Visual Studio for Mac命令顶部的菜单栏分为类别。 例如，“项目�
 ## <a name="send-feedback"></a>发送反馈
 如果在使用Visual Studio for Mac时遇到问题，或者有有关如何改进产品的建议，可以告知我们。 为此，请从 **“帮助**”菜单中选择“**报告问题**”或 **“提供建议**”。
 
-## <a name="learn-more"></a>了解详细信息
+## <a name="learn-more"></a>了解更多
 
 我们只了解了一些Visual Studio功能来熟悉用户界面。 
 进一步探索：
@@ -171,7 +173,7 @@ Visual Studio for Mac 分为多个部分，用于管理应用程序文件和设�
 
 ![解决方案窗口中的“引用”文件夹](media/ide-tour-image19.png)
 
-使用“编辑引用”对话框添加更多引用，该对话框通过双击 **“引用** ”文件夹或在其上下文菜单操作上选择 **“编辑引用** ”来显示：
+使用 **“编辑引用** ”对话框添加更多引用，该对话框通过双击“引用”文件夹或在其上下文菜单操作上选择 **“编辑引用** ”来显示：
 
 ![“编辑引用”对话框](media/ide-tour-image20.png)
 
@@ -179,7 +181,7 @@ Visual Studio for Mac 分为多个部分，用于管理应用程序文件和设�
 
 ## <a name="dependencies--packages"></a>依赖项/包
 
-在应用中使用的所有外部依赖关系存储在“依赖关系”或“包”文件夹中，具体取决于所在的项目是 .NET Core 还是 Xamarin.iOS/Xamarin.Android 项目。 这些以NuGet的形式提供。
+在应用中使用的所有外部依赖关系存储在“依赖关系”或“包”文件夹中，具体取决于所在的项目是 .NET Core 还是 Xamarin.iOS/Xamarin.Android 项目。 这些内容以NuGet的形式提供。
 
 NuGet 是 .NET 开发最常用的程序包管理器。 通过 Visual Studio 的 NuGet 支持，可以轻松地搜索包并将其添加到项目，再添加到应用程序。
 
@@ -210,7 +212,7 @@ NuGet 是 .NET 开发最常用的程序包管理器。 通过 Visual Studio 的 
 
 有关在 Visual Studio for Mac 中使用源编辑器的详细信息，请参阅[源编辑器](./source-editor.md)文档。
 
-若要始终保持选项卡可见，可以利用固定选项卡。 这可确保每次启动项目时，都将始终显示需要的选项卡。 若要固定选项卡，请将鼠标悬停在选项卡上，然后选择 _固定_ 图标：
+若要使选项卡始终可见，可以利用固定选项卡。 这可确保每次启动项目时，都将始终显示需要的选项卡。 若要固定选项卡，请将鼠标悬停在选项卡上，然后选择 _固定_ 图标：
 
 ![固定选项卡](media/ide-tour-tabpin.png)
 
@@ -232,7 +234,7 @@ Visual Studio for Mac 与 Git 和 Subversion 源控件系统集成。 源控件�
 
 ![分支名称用来表示源控件下的项目](media/ide-tour-image22.png)
 
-未提交的更改的文件在解决方案窗口中的图标上具有批注，如下图所示：
+未提交的更改的文件在解决方案窗口中的图标上有注释，如下图所示：
 
 ![解决方案窗口中的未提交文件](media/ide-tour-image23.png)
 

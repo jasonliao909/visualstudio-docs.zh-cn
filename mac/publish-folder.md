@@ -10,14 +10,16 @@ ms.author: jomatthi
 manager: dominicn
 ms.prod: visual-studio-mac
 ms.topic: how-to
-ms.openlocfilehash: c8da51de58abeb070e327aab7c4b7612891c1075
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: 5cb321d90bde34a53fffb9bacbf125eab15a4253
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135803656"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144480140"
 ---
 # <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>使用 Visual Studio for Mac 发布到文件夹
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 可使用“发布”工具将 .NET Core 控制台或 ASP.NET Core 应用发布到文件夹。
 

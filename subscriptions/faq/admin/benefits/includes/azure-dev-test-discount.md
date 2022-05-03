@@ -4,15 +4,15 @@ description: 如果你的组织拥有针对 Azure 的企业协议，则开发人
 ms.faqid: group2_5
 ms.topic: include
 ms.assetid: 86308cf3-909b-47a0-9230-5d1a93a2f87a
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 05/03/2021
-ms.openlocfilehash: 9ffd0ce86cb975e878daf53c529cd254132f6d85
-ms.sourcegitcommit: dd2fc6e03a789c044f8438096b8f112e4dba5557
+ms.openlocfilehash: 12a6951b4c086523e17c2c4d5c59bf1b9c1515ce
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "108793413"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "144103200"
 ---
 ## <a name="how-do-my-developers-get-50-off-azure-devtest-workloads"></a>我的开发人员如何获得 Azure 开发/测试工作负载五折优惠？
 

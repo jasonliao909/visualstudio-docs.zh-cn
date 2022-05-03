@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 62ce3a0ae012a6d1dee5ae132ce3b51a1eb94452
-ms.sourcegitcommit: ba56ce62366f8c6fe2a7e38828fa79bc48801cae
+ms.openlocfilehash: 9cea168b50e9a366ee749adab82dd8e98e6d0aa6
+ms.sourcegitcommit: 1b33c046206c9b4750a9c0bdc5af164424ca5ee2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "136855143"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144472799"
 ---
 # <a name="common-msbuild-project-properties"></a>常用的 MSBuild 项目属性
 
@@ -41,9 +41,9 @@ ms.locfileid: "136855143"
 | AdditionalLibPaths | .NET | 指定其他文件夹，编译器将在这些文件夹中查找引用程序集。 |
 | AddModules | .NET | 使编译器让指定文件中的所有类型信息可供正在编译的项目使用。 此属性等效于 `/addModules` 编译器开关。 |
 | ALToolPath | .NET | 可以找到 AL.exe 的路径。 此属性将替代 AL.exe 的当前版本，从而允许使用其他版本。 |
-| ApplicationIcon | .NET | 要传递给编译器以作为 Win32 图标嵌入的 .ico 图标文件。 该属性等效于 `/win32icon` 编译器开关。 |
+| ApplicationIcon | .NET | `.ico`要传递给编译器以嵌入为 Win32 图标的图标文件。 该属性等效于 `/win32icon` 编译器开关。 |
 | ApplicationManifest | 全部 | 指定用于生成外部用户帐户控制 (UAC) 清单信息的文件的路径。 仅适用于面向 Windows Vista 的 Visual Studio 项目。<br /><br /> 在大多数情况，该清单是嵌入的。 但如果使用免注册的 COM 或 ClickOnce 部署，则该清单可以是随应用程序程序集一起安装的外部文件。 有关更多信息，请参见本主题中的 NoWin32Manifest 属性。 |
-| AssemblyOriginatorKeyFile | .NET | 指定用于为程序集（.snk 或 .pfx）签名并传递给 [ResolveKeySource 任务](../msbuild/resolvekeysource-task.md)的文件，以便生成用于对程序集签名的实际密钥 。 |
+| AssemblyOriginatorKeyFile | .NET | 指定用于对程序集进行签名 (`.snk` 或 `.pfx`) 的文件，并传递给 [ResolveKeySource 任务](../msbuild/resolvekeysource-task.md) 以生成用于对程序集进行签名的实际密钥。 |
 | AssemblySearchPaths | .NET | 要在生成时引用程序集解析期间搜索的位置列表。 路径在此列表中的出现顺序是有含义的，因为先列出的路径优先于后列出的条目。 |
 | AssemblyName | .NET | 生成项目后的最终输出程序集的名称。 |
 | BaseAddress | .NET | 指定主输出程序集的基址。 此属性等效于 `/baseaddress` 编译器开关。 |
@@ -78,6 +78,9 @@ ms.locfileid: "136855143"
 | KeyOriginatorFile | 全部 | 强名称密钥文件的名称。 |
 | ModuleAssemblyName | .NET | 要将编译好的模块并入其中的程序集的名称。 该属性等效于 `/moduleassemblyname` 编译器开关。 |
 | MSBuildProjectExtensionsPath | 全部 | 指定项目扩展所在的路径。 默认情况下，该路径与 `BaseIntermediateOutputPath` 具有相同值。 |
+| MSBuildTreatWarningsAsErrors | All | 一个布尔值，指示MSBuild将所有警告视为错误，除非它们被抑制。 |
+| MSBuildWarningsAsErrors | 全部 | 指定要被视为错误的警告代码的列表。 按分号分隔多个警告。 If you are using the .NET SDK property `WarningsAsErrors`, `MSBuildWarningsAsErrors` will default to the value of `WarningsAsErrors`.|
+| MSBuildWarningsAsMessages | All | 指定要通过将其视为低重要性消息来抑制的警告代码列表。 按分号分隔多个警告。 请注意，无法使用此属性禁止MSBuild发出的一些警告;若要禁止显示这些警告，请使用命令行开关`-warnAsMessage`。 If you are using the .NET SDK property `NoWarn`, `MSBuildWarningsAsMessages` will default to the value of `NoWarn`.|
 | NoLogo | 全部 | 一个指示是否关闭编译器徽标的布尔值。 此属性等效于 `/nologo` 编译器开关。 |
 | NoStdLib | .NET | 一个指示是否避免引用标准库 (mscorlib.dll) 的布尔值。 默认值为 `false`。 |
 | NoVBRuntimeReference | Visual Basic | 一个布尔值，指示是否应包括 Visual Basic 运行时 (Microsoft.VisualBasic.dll) 作为项目中的引用。 |
@@ -90,7 +93,7 @@ ms.locfileid: "136855143"
 | OptionStrict | Visual Basic | 一个布尔值，设置为 `true` 时，将使得生成任务强制使用严格类型语义来限制隐式类型转换。 此属性等效于 vbc.exe 编译器的 `/optionstrict` 开关。 |
 | OutDir | 全部 | 指示项目或解决方案的最终输出位置。 在生成解决方案时，可以使用 OutDir 将多个项目输出收集到一个位置。 此外，OutDir 包含在用于解析引用的 AssemblySearchPaths 中。 例如 bin\Debug。 |
 | OutputPath | 全部 | 相对于项目目录，例如 bin\Debug，指定输出目录的路径。 |
-| OutputType | 全部 |  指定输出文件的文件格式。 此参数可以具有下列值之一：<br /><br /> -   Library。 创建一个代码库。 （默认值）。<br />-   Exe。 创建控制台应用程序。<br />-   Module。 创建一个模块。<br />-   Winexe。 创建一个基于 Windows 的程序。<br /><br /> 对于 C# 和 Visual Basic，此属性等效于 `/target` 开关。 推断可以自动重写输出类型。 [对于 WPF 和 WinForms 应用，请参阅 "OutputType 设置为 WinExe](/dotnet/core/compatibility/sdk/5.0/automatically-infer-winexe-output-type)"。 通过将设置 `DisableWinExeOutputInference` 为来禁用推断 `true` 。 |
+| OutputType | 全部 |  指定输出文件的文件格式。 此参数可以具有下列值之一：<br /><br /> -   Library。 创建一个代码库。 （默认值）。<br />-   Exe。 创建控制台应用程序。<br />-   Module。 创建一个模块。<br />-   Winexe。 创建一个基于 Windows 的程序。<br /><br /> 对于 C# 和 Visual Basic，此属性等效于 `/target` 开关。 可以通过推理自动重写输出类型。 请参阅 [OutputType 设置为 WinExe for WPF 和 WinForms 应用](/dotnet/core/compatibility/sdk/5.0/automatically-infer-winexe-output-type)。 通过设置为 .`DisableWinExeOutputInference``true`禁用推理。 |
 | OverwriteReadOnlyFiles | 全部 | 一个布尔值，指示要让生成覆盖只读文件还是触发错误。 |
 | PathMap | .NET | 指定如何将物理路径映射到编译器输出的源路径名称。 此属性等效于编译器的 `/pathmap` 开关。 |
 | PdbFile | .NET | 正在发出的 .pdb 文件的文件名。 此属性等效于 csc.exe 编译器的 `/pdb` 开关。 |
@@ -127,18 +130,19 @@ ms.locfileid: "136855143"
 | TargetCompactFramework | .NET | 运行你所生成的应用程序所需要的 .NET Compact Framework 的版本。 通过指定此属性，你可以引用否则将无法引用的某些 Framework 程序集。 |
 | TargetFrameworkVersion | .NET | 运行你生成的应用程序所需要的 .NET Framework 版本。 通过指定此属性，你可以引用否则将无法引用的某些 Framework 程序集。 |
 | TreatWarningsAsErrors | .NET | 一个布尔型参数，如果设置为 `true`，则会导致将所有警告都视为错误。 此参数等效于 `/nowarn` 编译器开关。 |
-| UseCommonOutputDirectory | .NET | 一个布尔值属性， `true` 当你希望解决方案中的所有生成输出都使用相同的输出目录时，可以将其设置为。 如果为 `true` ，则不会将引用项目的输出复制到使用这些依赖项的项目，这种情况通常在此设置为时 `false` 。 如果将此参数设置为，则 `true` 不会更改任何项目的实际输出目录; 你仍需要将输出目录设置为需要它的每个项目所需的通用输出目录。|
+| UseCommonOutputDirectory | .NET | 如果希望解决方案中的所有生成输出都使用相同的输出目录，则可以设置为 `true` 布尔属性。 如果 `true`引用的项目的输出未复制到使用这些依赖项的项目，就像此设置 `false`的情况一样。 将此参数设置为 `true` 不更改任何项目的实际输出目录;仍需将输出目录设置为所需的每个项目所需的常见输出目录。|
 | UseHostCompilerIfAvailable | .NET | 一个布尔型参数，如果设置为 `true`，则会使得生成任务使用进程内编译器对象（如果可用）。 此参数仅供 Visual Studio 使用。 |
 | Utf8Output | .NET | 一个布尔型参数，如果设置为 `true`，则使用 UTF-8 编码记录编译器输出。 此参数等效于 `/utf8Output` 编译器开关。 |
 | VbcToolPath | Visual Basic | 一个可选路径，在当前版本的 vbc.exe 被重写时它可以指示 vbc.exe 的另一个位置 。 |
 | VbcVerbosity | Visual Basic | 指定 Visual Basic 编译器输出的详细程度。 有效值为“Quiet”、“Normal”（默认值）或“Verbose”。 |
-| VisualStudioVersion | 全部 | 指定运行此项目应考虑使用的 Visual Studio 的版本。 如果未指定此属性，MSBuild 会将其设置为默认值 `{VisualStudioMajorVersion}.0` ; 例如，它将 `17.0` 适用于所有版本的 Visual Studio 2022。<br /><br /> 此属性在多种项目类型中用于指定要生成的目标组。 如果将某个项目的 `ToolsVersion` 设置为 4.0 或更高版本，则 `VisualStudioVersion` 将用于指定要使用的子工具集。 有关详细信息，请参阅[工具集 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)。 |
+| VisualStudioVersion | 全部 | 指定运行此项目应考虑使用的 Visual Studio 的版本。 如果未指定此属性，MSBuild将其设置为默认值`{VisualStudioMajorVersion}.0`;例如，它将`17.0`用于 2022 Visual Studio的所有版本。<br /><br /> 此属性在多种项目类型中用于指定要生成的目标组。 如果将某个项目的 `ToolsVersion` 设置为 4.0 或更高版本，则 `VisualStudioVersion` 将用于指定要使用的子工具集。 有关详细信息，请参阅[工具集 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)。 |
 | WarningsAsErrors | .NET | 指定将被视为错误的警告的列表。 此参数等效于 `/warnaserror` 编译器开关。 |
+| WarningLevel | 全部 | 指定要传递给编译器的警告级别，以获取编译器发出的警告。 此设置不会影响MSBuild警告，这些警告没有级别指定。 请参阅 C# 编译器文档中的 [警告级别](/dotnet/csharp/language-reference/compiler-options/errors-warnings#warninglevel) 和 [/W (C++ 编译器文档中的警告级别) ](/cpp/build/reference/compiler-option-warning-level) 。 |
 | WarningsNotAsErrors | .NET | 指定不被视为错误的警告的列表。 此参数等效于 `/warnaserror` 编译器开关。 |
 | Win32Manifest | .NET | 应嵌入最终程序集中的清单文件的名称。 此参数等效于 `/win32Manifest` 编译器开关。 |
 | Win32Resource | .NET | 要嵌入最终程序集中的 Win32 资源的文件名。 此参数等效于 `/win32resource` 编译器开关。 |
 
-特定于 .NET SDK 项目的属性（如 `TargetFramework` ）在 [框架属性](/dotnet/core/project-sdk/msbuild-props#framework-properties)中进行了介绍。
+特定于 .NET SDK 项目（例如 `TargetFramework`）的属性记录在 [Framework 属性](/dotnet/core/project-sdk/msbuild-props#framework-properties)中。
 
 ## <a name="see-also"></a>请参阅
 

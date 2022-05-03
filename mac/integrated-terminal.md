@@ -7,14 +7,17 @@ manager: dominicn
 ms.date: 05/14/2020
 ms.topic: how-to
 ms.assetid: EFD53CE9-8174-4FE4-8863-2984D22FD921
-ms.openlocfilehash: c75c00a91ef826ef6000d5cd30f9740bda846030
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: fa274291232585f6ad1a0de7fd52c5eac4d1175d
+ms.sourcegitcommit: 3034382894e610b55f3ad07e737fa59b91680869
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135804267"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "144548496"
 ---
 # <a name="integrated-terminal"></a>集成终端
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
+
 在 Visual Studio for Mac 中，可以打开一个集成终端窗口，该终端最初从解决方案的根目录启动。 终端适用于不同类型的情况，包括运行前端任务（例如：npm、ng 或 vue）、管理容器、运行高级 git 命令、执行实体框架命令、查看 dotnet CLI 输出、添加 NuGet 包等。 
 
 打开终端：
@@ -41,8 +44,8 @@ ms.locfileid: "135804267"
 |向上滚动页面|PgUp|
 |向下滚动页面|PgDn|
 |浏览之前使用的命令|**↑**、**↓**|
-|增大字号|**⌘ +**|
-|减小字号|**⌘**|
+|增大字号|**⌘+**|
+|减小字号|**⌘-**|
 
 ## <a name="multiple-instances"></a>多个实例
 可能会随时运行多个终端实例。 你可以使用 Ctrl+' 键盘快捷方式创建新的实例。 可以切换实例，操作方法是：单击每个实例的选项卡，或者使用 Ctrl+tab 快捷方式打开窗口选取器对话框。

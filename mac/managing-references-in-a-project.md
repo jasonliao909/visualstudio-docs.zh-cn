@@ -7,14 +7,16 @@ manager: dominicn
 ms.date: 11/09/2020
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
 ms.topic: overview
-ms.openlocfilehash: 4977fcf4947db8838e8a6e4e4ba573121efba93e
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: 007cb532c7d2910416b151b622cac43c7f7dcd14
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135804818"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144481862"
 ---
 # <a name="managing-references-in-a-project"></a>管理项目中的引用
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 Visual Studio for Mac 提供了两种将其他引用添加到项目的方法：
 

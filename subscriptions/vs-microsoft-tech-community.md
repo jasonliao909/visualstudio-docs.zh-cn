@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: amast
 manager: shve
 ms.assetid: 8fccb5f6-ff61-488f-a91e-447faeda798d
-ms.date: 10/21/2021
+ms.date: 05/02/2022
 ms.topic: conceptual
 description: 了解所选 Visual Studio 订阅中包含的 Microsoft 技术社区论坛支持权益。
-ms.openlocfilehash: 61d884ff1d7c9b62ffbe514e298331a4cebf8f87
-ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.openlocfilehash: 9cb7dcedac9fac7d47ee9fb469c7a51891384fb8
+ms.sourcegitcommit: 3034382894e610b55f3ad07e737fa59b91680869
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "133257057"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "144548275"
 ---
 # <a name="microsoft-tech-community-forum-support-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Microsoft 技术社区论坛支持
 与其他用户和 Microsoft 技术专家建立联系并交流互动，了解最佳实践、设计体系结构和最新更新。
@@ -28,11 +28,10 @@ ms.locfileid: "133257057"
 
 0. 如果之前未曾注册社区，则单击“开始使用”
 0. 在“第 1 步:**设置你的配置文件”** 部分中：
-   - 选择首选语言
-   - 输入你的工作电子邮件地址
-   - 创建你的配置文件名称 
-0. 在标题为“第 2 步:**选择要加入的社区”** 的部分中，可以通过单击每个社区的信息卡上列出的“加入”按钮来选择多个社区。  你还可以使用最右侧的搜索框来筛选可用社区的列表。  若要查看 90 个社区的完整列表，请单击信息卡下面的“查看全部(90 个)”链接。 
-0. 在“第 3 步:**行为准则”中**，请阅读“行为准则”，然后单击复选框以表示你接受“行为准则”和“服务条款”。
+   + 选择首选语言
+   + 输入你的工作电子邮件地址
+   + 创建你的配置文件名称 
+0. 对于 **步骤 2：行为准则**，请阅读《行为准则》，然后单击复选框以指示你接受行为准则和服务条款。
 0. 单击“注册”完成设置配置文件。
 
 就这么简单。  你现在就可以使用社区门户了。  主页包含了关于社区的新闻。  单击主页顶部的“社区中心”下拉列表，选择列表中的社区，即可查看特定于所加入社区的内容。  单击“浏览所有社区中心”，单击所选中心，然后单击“加入”按钮，这样可随时向该列表添加社区。 
@@ -41,18 +40,18 @@ ms.locfileid: "133257057"
 Microsoft 技术社区可免费使用。  不需要订阅。 
 
 ## <a name="support-resources"></a>支持资源
-- 需要有关 Visual Studio 订阅的销售、订阅、帐户和计费方面的帮助？  请联系 [Visual Studio 订阅支持](https://my.visualstudio.com/gethelp)。
-- 对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
++ 需要有关 Visual Studio 订阅的销售、订阅、帐户和计费方面的帮助？  请联系 [Visual Studio 订阅支持](https://my.visualstudio.com/gethelp)。
++ 对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
 
 ## <a name="see-also"></a>请参阅
-- [Visual Studio 文档](/visualstudio/)
-- [Azure DevOps 文档](/azure/devops/)
-- [Azure 文档](/azure/)
-- [Microsoft 365 文档](/microsoft-365/)
++ [Visual Studio 文档](/visualstudio/)
++ [Azure DevOps 文档](/azure/devops/)
++ [Azure 文档](/azure/)
++ [Microsoft 365 文档](/microsoft-365/)
 
 ## <a name="next-steps"></a>后续步骤
 查看其他可用的支持资源，例如：
-- [接待聊天室](vs-concierge-chat.md)
-- [开发人员社区](vs-developer-community.md)
-- [Microsoft Q&A](vs-microsoft-qa.md)
-- [Azure 社区](vs-azure-community.md)
++ [接待聊天室](vs-concierge-chat.md)
++ [开发人员社区](vs-developer-community.md)
++ [Microsoft Q&A](vs-microsoft-qa.md)
++ [Azure 社区](vs-azure-community.md)

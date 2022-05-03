@@ -11,14 +11,16 @@ no-loc:
 - Blazor
 - Blazor WebAssembly
 ms.topic: how-to
-ms.openlocfilehash: d6214e67c924f66d3892d337ed9cc02df60d88ed
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: d7a1b44ef4a29eaee3aacfec98c7ef5b515072a7
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135806672"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144516329"
 ---
 # <a name="create-blazor-web-apps"></a>创建 Blazor Web 应用
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 本指南介绍如何创建你的第一个 Blazor Web 应用。 若需要更深入的指导，请参阅 [ASP.NET Core Blazor 简介](/aspnet/core/blazor/index)。
 

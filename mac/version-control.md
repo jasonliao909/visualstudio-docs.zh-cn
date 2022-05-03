@@ -7,14 +7,16 @@ ms.author: jomatthi
 manager: dominicn
 ms.date: 05/06/2018
 ms.assetid: 49917483-28AA-4598-A847-71F1F2E0DCB5
-ms.openlocfilehash: 2ae148de845e916542c4b1c43a177e23104fb8af
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: 3fb6855e3d954cb615e23959573c9b7bec19cb09
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135805008"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144477408"
 ---
 # <a name="version-control"></a>版本控制
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 版本控制系统用于管理各种不同版本中的文件，在软件开发中常常由多位开发者贡献。 任何版本控制系统 (VCS) 的主要目的都是找出一种解决方案，使所有用户都可同时对基本代码进行操作。
 

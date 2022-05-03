@@ -4,17 +4,17 @@ author: evanwindom
 ms.author: amast
 manager: shve
 ms.assetid: a747100c-6f08-41a4-aaad-05099741742b
-ms.date: 05/18/2021
+ms.date: 05/02/2022
 ms.topic: conceptual
 description: 了解管理员可如何解决订阅超额分配的问题
-ms.openlocfilehash: 98ef73fb62a91893436d7ecfddf77b75cb32753a
-ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.openlocfilehash: ac8f97a4f895e73c1e9d022842ad18d2b38d7e49
+ms.sourcegitcommit: 3034382894e610b55f3ad07e737fa59b91680869
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "133257604"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "144548340"
 ---
-# <a name="over-allocated-subscriptions"></a>超额分配的订阅
+# <a name="how-to-handle-over-allocated-subscriptions"></a>如何处理过度分配的订阅
 有时，添加订阅者后，订单发生变化，这可能会导致已分配的订阅数量超过公司拥有的许可证数量。 这称为“超额分配”。  
 
 要查看你的订阅分配情况，请单击左侧的顶部图标，打开“分配”窗格。  
@@ -32,20 +32,20 @@ ms.locfileid: "133257604"
 
 ## <a name="resolve-over-allocated-subscriptions"></a>解决超额分配的订阅
 下面是解决超额分配问题的几种方式：
-- 请与经销商联系以购买其他订阅。
-- 等到你的年度校正期并在此时为超额分配的订阅付款。 
-- 删除某些订阅分配。  （这仍需要在年度校正期付款，因为校正基于一年中任何时间分配的最大订阅数。）
++ 请与经销商联系以购买其他订阅。
++ 等到你的年度校正期并在此时为超额分配的订阅付款。 
++ 删除某些订阅分配。  （这仍需要在年度校正期付款，因为校正基于一年中任何时间分配的最大订阅数。）
 
 ## <a name="billing-and-true-up"></a>计费和校正
 如果你的组织具有企业协议 (EA)，则管理员无需购买订阅即可分配它们，稍后再通过被称作“校正”的对帐过程支付相关费用。  如果超额分配，则在“校正”期间，将按分配给用户的最大订阅数向你的组织计费。  即使在校正发生期间你分配的订阅数不再达到上限，也是如此。  要详细了解如何监视你的最大用量，请访问[最大用量](maximum-usage.md)主题。
 
 
 ## <a name="see-also"></a>另请参阅
-- [Visual Studio 文档](/visualstudio/)
-- [Azure DevOps 文档](/azure/devops/)
-- [Azure 文档](/azure/)
-- [Microsoft 365 文档](/microsoft-365/)
++ [Visual Studio 文档](/visualstudio/)
++ [Azure DevOps 文档](/azure/devops/)
++ [Azure 文档](/azure/)
++ [Microsoft 365 文档](/microsoft-365/)
 
 ## <a name="next-steps"></a>后续步骤
-- 详细了解如何管理[带有 GitHub Enterprise 的 Visual Studio 订阅](assign-github.md)。
-- 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://aka.ms/vsadminhelp)联系。
++ 详细了解如何管理[带有 GitHub Enterprise 的 Visual Studio 订阅](assign-github.md)。
++ 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://aka.ms/vsadminhelp)联系。

@@ -7,14 +7,16 @@ ms.author: jomatthi
 manager: dominicn
 ms.date: 11/06/2018
 ms.topic: how-to
-ms.openlocfilehash: e93d572ca753aa475216ba7a0e443cec7c9fe9a9
-ms.sourcegitcommit: 782992423db6e1cbbf206715c9b3b400c80052a9
+ms.openlocfilehash: e77ac5202fd02c014fe402dd5844ff247bae51ee
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "138101016"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144476074"
 ---
-# <a name="connected-services-walkthrough-in-visual-studio-for-mac"></a>连接的服务演练Visual Studio for Mac
+# <a name="connected-services-walkthrough-in-visual-studio-for-mac"></a>Visual Studio for Mac 中的连接服务演练
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 连接的服务工作流将 Azure 门户工作流引入到 Visual Studio for Mac，因此不必离开项目即可添加服务。
 

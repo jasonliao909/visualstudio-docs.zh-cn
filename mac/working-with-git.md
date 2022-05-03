@@ -8,14 +8,16 @@ ms.date: 11/09/2020
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: 8cbf1b4ebd2f37216f370d4e7b5ba225d34234a1
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: eb3e83e4c17d3b5d55d52121843b63c42b9d6be2
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135803916"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144497554"
 ---
 # <a name="working-with-git"></a>使用 Git
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 Git 是分布式版本控制系统，使团队可以同时在同一文档上工作。 这意味着有一个中央服务器包含所有文件，但从此中央源中签出存储库时，整个存储库都会被克隆到本地计算机。
 

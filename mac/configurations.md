@@ -7,14 +7,16 @@ manager: dominicn
 ms.date: 09/18/2019
 ms.topic: conceptual
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: ab7ca84c9ae6d7d3050e23a2ef3643f6fb8ee218
-ms.sourcegitcommit: 8abe4a92b9d45e653c895787c69215c50a534529
+ms.openlocfilehash: 37c316385c0c5bc22eae415a2e7f76d01f33320d
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2022
-ms.locfileid: "143998143"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144533204"
 ---
 # <a name="understanding-build-configurations"></a>了解生成配置
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 在开发过程中，可以存储不同的解决方案配置和项目属性以便在各种生成中使用。 由 Visual Studio for Mac 使用模板创建的项目通常包括“调试”和“发布”配置，分别支持应用的调试和部署。 
 

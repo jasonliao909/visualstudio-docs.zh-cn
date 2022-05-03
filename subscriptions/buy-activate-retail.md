@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: amast
 manager: shve
 ms.assetid: 76654645-08ee-445d-b9ee-123126d1f0fb
-ms.date: 10/11/2021
+ms.date: 04/26/2022
 ms.topic: how-to
 description: 了解如何在 Microsoft Store 中购买 Visual Studio 订阅，以及如何在 Visual Studio 订阅门户中激活该订阅。
-ms.openlocfilehash: 54cd15289136be5489affafc749c6324ba9e1a61
-ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.openlocfilehash: 8783c569dba133ae7c1ed677dd885fec0167ed20
+ms.sourcegitcommit: 9e9f4cf4b34735fffa376b203ccaa74cb705ffe2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "133256045"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "144334162"
 ---
 # <a name="visual-studio-subscriptions-are-available-through-the-microsoft-store"></a>Visual Studio 订阅可通过 Microsoft Store 获得
 Visual Studio 订阅可通过各种通道获得。 从[批量许可](https://www.microsoft.com/licensing/default)、云解决方案提供商、[Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions)和 Microsoft Store 中进行选择。  本文将探讨如何通过 [Microsoft Store](https://www.microsoft.com/store/collections/visualstudio) 购买和激活订阅。  
@@ -21,9 +21,9 @@ Visual Studio 订阅可通过各种通道获得。 从[批量许可](https://www
 需要帮助确定哪种订阅适合你？  请查看我们的[订阅权益页面](https://visualstudio.microsoft.com/vs/benefits/)。  
 
 通过 Microsoft Store 获得的 Visual Studio 订阅包括：
-- [Visual Studio Enterprise](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab)
-- [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)
-- [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab)
++ [Visual Studio Enterprise](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab)
++ [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)
++ [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab)
 
 其中每个订阅都提供了首次购买或续订现有订阅的选项。  续订定价（反映重要折扣）仅适用于现有订阅。 
 
@@ -48,15 +48,15 @@ Visual Studio 订阅可通过各种通道获得。 从[批量许可](https://www
 如果你对通过 Microsoft Store 进行购买有任何疑问，请向我们寻求帮助。  请联系 [Microsoft Store 支持部门](https://support.microsoft.com/help/28808/microsoft-store-contact-support?ocid=MSCOMStoreFooter-ContactUs)。
 
 ## <a name="resources"></a>资源 
-- [Visual Studio 订阅支持](https://my.visualstudio.com/gethelp)
+[Visual Studio 订阅支持](https://my.visualstudio.com/gethelp)
 
 ## <a name="see-also"></a>另请参阅
-- [Visual Studio 文档](/visualstudio/)
-- [Azure DevOps 文档](/azure/devops/)
-- [Azure 文档](/azure/)
-- [Microsoft 365 文档](/microsoft-365/)
++ [Visual Studio 文档](/visualstudio/)
++ [Azure DevOps 文档](/azure/devops/)
++ [Azure 文档](/azure/)
++ [Microsoft 365 文档](/microsoft-365/)
 
 ## <a name="next-steps"></a>后续步骤
 激活订阅后，请访问[权益](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)页面，查看订阅中包含的所有工具、服务、培训和支持权益。  建议设置以下权益来开始：
-- [Visual Studio](vs-ide-benefit.md)
-- [Azure DevOps](vs-azure-devops.md)
++ [Visual Studio](vs-ide-benefit.md)
++ [Azure DevOps](vs-azure-devops.md)

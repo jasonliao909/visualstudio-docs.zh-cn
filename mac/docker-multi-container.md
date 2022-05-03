@@ -1,5 +1,5 @@
 ---
-title: VS for Mac：多容器应用Docker Compose
+title: VS for Mac：使用 Docker Compose 的多容器应用
 description: 了解如何在 Visual Studio for Mac 中管理多个容器并在它们之间通信
 ms.custom: SEO-VS-2020
 author: jmatthiesen
@@ -7,18 +7,20 @@ ms.author: jomatthi
 manager: dominicn
 ms.date: 07/03/2020
 ms.topic: how-to
-ms.openlocfilehash: b3e00a9091c436877dcd4cf4adb7ed1e4dba3e12
-ms.sourcegitcommit: 782992423db6e1cbbf206715c9b3b400c80052a9
+ms.openlocfilehash: cc33b83a3459125959a3580349a85f495c2bbce4
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "138101029"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144473186"
 ---
-# <a name="create-a-multi-container-app-with-docker-compose-for-visual-studio-for-mac"></a>使用适用于 Docker Compose 的 Visual Studio for Mac 创建多容器应用
+# <a name="create-a-multi-container-app-with-docker-compose-for-visual-studio-for-mac"></a>使用 Docker Compose 为 Visual Studio for Mac 创建多容器应用
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 在本教程中，你将了解如何在 Visual Studio for Mac 中使用 Docker Compose 管理多个容器并在它们之间通信。
 
-有关 Windows 版本Visual Studio，请阅读教程：使用 Docker Compose 创建多容器Visual Studio [Visual Studio for Windows](/visualstudio/containers/tutorial-multicontainer)。
+若要查找有关Visual Studio Windows版本的步骤，请阅读[教程：使用 docker Compose 创建包含 Visual Studio Windows 的多容器应用](/visualstudio/containers/tutorial-multicontainer)。
 
 ## <a name="prerequisites"></a>先决条件
 

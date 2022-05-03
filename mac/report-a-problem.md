@@ -1,20 +1,22 @@
 ---
-title: Visual Studio for Mac： & bug 报告问题
-description: 了解如何在使用 Visual Studio for Mac 时提出建议或报告问题。
+title: Visual Studio for Mac：报告& bug 的问题
+description: 了解如何在使用Visual Studio for Mac时提出建议或报告问题。
 ms.topic: troubleshooting
 author: jmatthiesen
 ms.author: jomatthi
 manager: dominicn
 ms.date: 06/18/2019
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
-ms.openlocfilehash: c8e378d140423fd8d45f038c38c5aeebf2f49264
-ms.sourcegitcommit: 782992423db6e1cbbf206715c9b3b400c80052a9
+ms.openlocfilehash: 1c666ccdab7753bde1d7fd766dfa72bd7effb540
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "138100912"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144530982"
 ---
-# <a name="report-a-problem-or-suggestions-for-visual-studio-for-mac"></a>报告 Visual Studio for Mac 的问题或建议
+# <a name="report-a-problem-or-suggestions-for-visual-studio-for-mac"></a>报告Visual Studio for Mac的问题或建议
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 如果无法使用 Visual Studio for Mac，请告诉我们你遇到的问题。 下面介绍如何将问题报告给[开发人员社区](https://aka.ms/feedback/report?space=41)，以便我们诊断并修复该问题。
 

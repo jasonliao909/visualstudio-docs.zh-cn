@@ -7,14 +7,16 @@ manager: dominicn
 ms.date: 05/06/2018
 ms.topic: how-to
 ms.assetid: 2400ED9C-6236-4C0A-A3AB-9D7CBE1F0CF4
-ms.openlocfilehash: 55018e3203d1f0d7d74f0fbc12f0666a729c8313
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: 1afc1dd756fd38e08cfedf402e79a114e40ef90c
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135803487"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144488335"
 ---
 # <a name="working-with-subversion"></a>使用 Subversion
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 Subversion 是集中式版本控制系统，可让用户签出集中式数据的一个主控副本。 与 Git 不同，签出 Subversion 存储库不会克隆整个存储库，它仅拍摄该时间点的快照。
 

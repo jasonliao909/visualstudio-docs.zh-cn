@@ -7,14 +7,16 @@ ms.author: jomatthi
 manager: dominicn
 ms.date: 03/09/2021
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
-ms.openlocfilehash: 441b4778ac98e66ba69b8983cac00a5d4425b347
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: bdfe50bbf5c61e245eda8010bef79672aaef8aa3
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135803929"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144495815"
 ---
 # <a name="projects-and-solutions-in-visual-studio-for-mac"></a>Visual Studio for Mac 中的项目和解决方案
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 本文概述 Visual Studio for Mac 中的项目和解决方案概念 。
 

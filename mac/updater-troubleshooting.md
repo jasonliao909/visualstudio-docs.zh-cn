@@ -8,14 +8,16 @@ manager: dominicn
 ms.date: 04/13/2019
 ms.technology: vs-ide-install
 ms.assetid: 31AF914A-C66B-4CD3-9429-39695E0E94AE
-ms.openlocfilehash: 2ea9e2bdbbde5691c20d7063732b042253690b22
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: b5ed79431d453556cade13111be68173fa6e486a
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135805268"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144507776"
 ---
 # <a name="troubleshooting-updater-has-errors-retrieving-information"></a>疑难解答：更新程序在检索信息时发生错误
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 在极少数情况下，可能会看到尝试[更新 Visual Studio for Mac](update.md) 时显示的错误消息“检索更新信息时出错”。 如果发生这种情况，请尝试执行以下步骤来修复此错误：
 

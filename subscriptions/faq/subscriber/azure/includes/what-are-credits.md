@@ -3,16 +3,16 @@ title: 每月有多少 Azure 额度？
 description: 月度和年度云订阅都是自动续订的，除非你取消，否则无需采取任何操作进行续订…
 ms.topic: include
 ms.assetid: 5de7f746-1856-457a-8241-8ac3a4540490
-author: CaityBuschlen
-ms.author: cabuschl
+author: evanwindom
+ms.author: amast
 ms.date: 10/07/2020
 ms.faqid: q5_1
-ms.openlocfilehash: 3c08eb06541484342410c1c8830bbebaee978bb1
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: e76728347cfa7631a5f80b02a3b661e873ba5c28
+ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "91828859"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "144103199"
 ---
 ## <a name="what-are-the-monthly-azure-credits"></a>每月有多少 Azure 额度？
 

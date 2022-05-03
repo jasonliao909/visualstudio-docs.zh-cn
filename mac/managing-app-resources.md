@@ -7,14 +7,16 @@ manager: dominicn
 ms.date: 05/06/2018
 ms.assetid: 61EAAB8F-3C32-4574-924F-CFC616604089
 ms.topic: overview
-ms.openlocfilehash: e5b7a74ba6b40de726eae5a9614a188be8d2f010
-ms.sourcegitcommit: 782992423db6e1cbbf206715c9b3b400c80052a9
+ms.openlocfilehash: d1e2e24d87acea7ec94d5b25b35a8229db347e29
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "138100899"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144516218"
 ---
 # <a name="managing-app-resources"></a>管理应用资源
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 应用资源文件（如图像、文本文件和音频文件）对你的应用程序是必要的，但它们不使用应用程序进行编译。 Visual Studio for Mac 支持的每个平台以不同的方式处理这些资源，如以下指南中所述：
 

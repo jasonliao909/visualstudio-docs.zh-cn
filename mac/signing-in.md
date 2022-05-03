@@ -8,24 +8,26 @@ ms.date: 03/03/2022
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
 ms.custom: devdivchpfy22
 ms.topic: how-to
-ms.openlocfilehash: eedf490218ee0a8132d7f35c5de8397f0994b6fa
-ms.sourcegitcommit: 5b2c3a2c5f22e0cd6d35aab6049c1f61c4916e74
+ms.openlocfilehash: 6dea97a22926f1d8b344d98b156d2882c3962fb9
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "139852102"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144507253"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>登录 Visual Studio for Mac
 
-登录到 Visual Studio for Mac 是[激活订阅](enable-subscription.md)的过程。 下载 Visual Studio for Mac 时，默认情况下，将始终获取社区版。 如果你有一个[Professional或Enterprise](https://visualstudio.microsoft.com/vs/compare/)许可证，应在首次运行时登录以解锁任何其他功能。 此外，还可以获得以下功能：
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
+
+登录到 Visual Studio for Mac 是[激活订阅](enable-subscription.md)的过程。 下载 Visual Studio for Mac 时，默认情况下，将始终获取社区版。 如果你有[Professional或Enterprise许可证](https://visualstudio.microsoft.com/vs/compare/)，则应首次登录以解锁任何其他功能。 此外，还可以获得以下功能：
 
 * 访问 Visual Studio Dev Essentials 程序的权限 - 此程序包括免费软件产品/服务、培训、支持等。 请参阅 [Visual Studio Dev Essential](https://visualstudio.microsoft.com/dev-essentials/) 了解详细信息。
 
 * 在 IDE 中自动连接到 Azure，而不会再次提示对同一帐户输入凭据。
 
-首次Visual Studio for Mac时，系统会提示使用 Microsoft 帐户。 使用已连接到要使用的许可证的 Microsoft 帐户。 如果没有帐户，请参阅Microsoft 帐户注册如何实现 [帐户](https://support.microsoft.com/account-billing/how-to-create-a-new-microsoft-account-a84675c3-3e9e-17cf-2911-3d56b15c0aaf)。
+首次启动Visual Studio for Mac时，系统会提示你使用 Microsoft 帐户登录。 使用已连接到要使用的许可证的 Microsoft 帐户。 如果没有 Microsoft 帐户，请参阅[如何实现注册帐户](https://support.microsoft.com/account-billing/how-to-create-a-new-microsoft-account-a84675c3-3e9e-17cf-2911-3d56b15c0aaf)。
 
-如果不立即登录，可使用评估副本 30 天。 30 天后，必须登录才能继续使用Visual Studio for Mac。
+如果不立即登录，可使用评估副本 30 天。 30 天后，必须登录才能继续使用Visual Studio for Mac的副本。
 
 ## <a name="how-to-sign-in-to-visual-studio-for-mac"></a>如何登录 Visual Studio for Mac
 
@@ -34,7 +36,7 @@ ms.locfileid: "139852102"
 
 要在第一次启动时登录 Visual Studio for Mac，请执行以下步骤：
 
-1. 选择 **Microsoft 登录窗口中** 的"登录"按钮：
+1. 在登录窗口中选择“ **使用 Microsoft 登录** ”按钮：
 
     ![Visual Studio for Mac 中的“帐户”对话框](media/ide-tour-2019-start-signin.png)
 
@@ -53,9 +55,9 @@ ms.locfileid: "139852102"
 
 ## <a name="adding-multiple-user-accounts"></a>添加多个用户帐户
 
-Visual Studio for Mac 支持向个性化帐户添加多个帐户。 这些帐户允许你从任何添加的帐户访问资源，例如 Azure。
+Visual Studio for Mac 支持向个性化帐户添加多个帐户。 这些帐户允许从任何添加的帐户访问资源，例如 Azure。
 
-要添加其他用户帐户，请在 Visual Studio for Mac 中选择“Visual Studio”>“帐户...”菜单。 选择" **添加...** "按钮以输入其他帐户凭据。
+要添加其他用户帐户，请在 Visual Studio for Mac 中选择“Visual Studio”>“帐户...”菜单。 选择 **“添加...”** 按钮以输入其他帐户凭据。
 
 ![管理帐户](media/user-accounts-login.png)
 

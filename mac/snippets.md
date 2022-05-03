@@ -7,14 +7,16 @@ manager: dominicn
 ms.date: 11/09/2020
 ms.topic: reference
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.openlocfilehash: 413c5b0a637c2d3d4dfd9fe0f2c07a5d865153d3
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: d7ed265a4ce9fbbd64a34f408f96202a1657cfb0
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135803591"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144497619"
 ---
 # <a name="code-snippets"></a>代码片段
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 代码片段通常被称为“代码模板”，对高效编程很有帮助，因为它们支持插入和编辑预编写的代码块。 使用代码片段，可以方便地快速添加常用模式，甚至还可在使用不熟悉的语法进行开发时非常方便地学习新模式。 针对 C#、F#、HTML、XML、Python 和 Razor 提供了模板。
 

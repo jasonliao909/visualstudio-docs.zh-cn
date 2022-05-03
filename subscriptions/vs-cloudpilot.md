@@ -4,18 +4,18 @@ author: evanwindom
 ms.author: amast
 manager: shve
 ms.assetid: 6255b6a3-f101-4b2c-b7fa-851eccc944b2
-ms.date: 10/18/2021
+ms.date: 04/22/2022
 ms.topic: conceptual
 description: 了解有关所选 Visual Studio 订阅中包含的可用 CloudPilot 权益
-ms.openlocfilehash: 4871cb892971f2722af2c668bbcf6f67d5f6a182
-ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.openlocfilehash: 54ab61ac612aa6d2b83082c583e5ca34fbb84c37
+ms.sourcegitcommit: 9ee1cebba305cf47e5fc977bae2110b48c8855d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "133257278"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "144102679"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 CloudPilot 权益
-将应用移至 Microsoft Azure 只需几个简单的步骤。 在几分钟内即可标识所有必需的代码更改（细至代码行），以便成功迁移到：容器、VM、应用服务、SQL Azure 和/或 SQL MI。 然后，通过使用 ASR、DMA 和 DMS 的向导将应用迁移到 Azure。
+将应用移至 Microsoft Azure 只需几个简单的步骤。 在几分钟内即可标识所有必需的代码更改（细至代码行），以便成功迁移到：容器、VM、应用服务、SQL Azure 和/或 SQL MI。 然后，使用利用 Azure Site Recovery、DMA 和 DMS 的向导将应用迁移到 Azure。
 
 ## <a name="overview"></a>概述
 由 UnifyCloud 开发的 CloudPilot 旨在帮助开发者快速、轻松地将应用程序迁移到 Azure。  只需花费手动评估时间的一小部分，CloudPilot 即可准确地确定 Azure PaaS 和 IaaS 迁移成本，并提供细至代码行有关应用程序在云中运行所需的代码更改的详细建议。 CloudPilot 通过为云提供详细的代码级更改以及针对企业技术控制和策略的最终测试，帮助初始评估云迁移工作和重构过程的开发计划。
@@ -57,18 +57,18 @@ ms.locfileid: "133257278"
 
 ## <a name="eligibility"></a>资格
 
-| 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
-|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise（标准）   | VL、Azure、零售、 | 2 个许可证、90 天、无限制扫描       |  不是。  仅对新订阅者可用          |
-| 包含 GitHub Enterprise 的 Visual Studio Enterprise 订阅   | VL | 2 个许可证、90 天、无限制扫描       |  不是。  仅对新订阅者可用          |
-| Visual Studio Professional（标准） | VL、Azure、零售                                       | 1 个许可证、30 天、一次扫描                                                            |  不是。  仅对新订阅者可用           |
-| 包含 GitHub Enterprise 的 Visual Studio Professional 订阅 | VL | 1 个许可证、30 天、一次扫描                                                            |  不是。  仅对新订阅者可用           |
-| Visual Studio Test Professional（标准）                         | VL、零售                                              | 不可用                                             |  不可用           |
-| MSDN 平台（标准）                                          | VL、零售                                              | 不可用                                              |  不可用          |
-| Visual Studio Enterprise（标准）  | NFR<sup>1</sup> |不可用  | 不可用 |
+| 订阅级别  |  信道  | 好处  | 是否续订？    |
+|---------------------|------------|----------|---------------|
+| Visual Studio Enterprise（标准）   | VL、Azure、零售、 | 2 个许可证、90 天、无限制扫描       |  不是。  仅对新订阅者可用  |
+| 包含 GitHub Enterprise 的 Visual Studio Enterprise 订阅   | VL | 2 个许可证、90 天、无限制扫描       |  不是。  仅对新订阅者可用 |
+| Visual Studio Professional（标准） | VL、Azure、零售  | 1 个许可证、30 天、一次扫描  |  不是。  仅对新订阅者可用 |
+| 包含 GitHub Enterprise 的 Visual Studio Professional 订阅 | VL | 1 个许可证、30 天、一次扫描 |  不是。  仅对新订阅者可用 |
+| Visual Studio Test Professional（标准） | VL、零售 | 不可用 |  不可用 |
+| MSDN 平台（标准） | VL、零售 | 不可用 |  不可用  |
+| Visual Studio Enterprise（标准）  | NFR\* |不可用  | 不可用 |
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure | 不可用 | 不可用 |
 
-<sup>1</sup>  *包括：  不得转售 (NFR)、FTE、最有价值专家 (MVP)、区域总监 (RD)、Microsoft 合作伙伴网络 (MPN)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 认证培训师、BizSpark、Imagine、NFR Basic*
+\*  *包括：不用于转售 (NFR) 、FTE、最有价值的Professional (MVP) 、区域总监 (RD) 、Microsoft 合作伙伴网络 (MPN) 、Visual Studio行业合作伙伴 (VSIP) 、Microsoft 认证培训师、BizSpark、Imagine、NFR Basic*
 
 > [!NOTE]
 > Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 建议新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)，查看各 Visual Studio 购买选项。

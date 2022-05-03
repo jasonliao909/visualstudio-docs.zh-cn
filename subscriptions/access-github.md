@@ -4,30 +4,30 @@ author: evanwindom
 ms.author: amast
 manager: shve
 ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
-ms.date: 01/14/2022
+ms.date: 04/25/2022
 ms.topic: conceptual
 description: 了解如何访问作为 Visual Studio 订阅的一部分的 GitHub Enterprise
-ms.openlocfilehash: 021815efd4adb22769da8b71b83cc0b5c5ff6622
-ms.sourcegitcommit: ba56ce62366f8c6fe2a7e38828fa79bc48801cae
+ms.openlocfilehash: 524365b7537a8bc972a096817d07719327be44f3
+ms.sourcegitcommit: 9ee1cebba305cf47e5fc977bae2110b48c8855d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "136855169"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "144102848"
 ---
 # <a name="visual-studio-subscriptions-with-github-enterprise"></a>带有 GitHub Enterprise 的 Visual Studio 订阅 
 
 与 Microsoft 签订了企业协议 (EA) 的客户有资格购买新的订阅套餐，该套餐将 Visual Studio 标准订阅和 GitHub Enterprise 结合在了一起。 这是 Visual Studio 订阅者获取 GitHub Enterprise 的一种简单而实惠的方式。 
 
-- Visual Studio 和 GitHub 将开源代码、社区和最佳做法引入到你的 IDE 和工作流中，让你能够进行大规模创新。
-- 使用一流的开发工具和服务，它们向开发人员提供了一组超全面的资源来创建、部署和管理卓越的应用程序。 
-- 可进行协作、在 GitHub Enterprise 上管理拉取请求，还可在源代码编写的位置（即编辑器中）查看这些代码。 
++ Visual Studio 和 GitHub 将开源代码、社区和最佳做法引入到你的 IDE 和工作流中，让你能够进行大规模创新。
++ 使用一流的开发工具和服务，它们向开发人员提供了一组超全面的资源来创建、部署和管理卓越的应用程序。 
++ 可进行协作、在 GitHub Enterprise 上管理拉取请求，还可在源代码编写的位置（即编辑器中）查看这些代码。 
 
 ## <a name="whats-available"></a>提供了哪些选项？ 
 
 提供了以下选项：
 
-- 带有 GitHub Enterprise 的 Visual Studio Enterprise
-- 带有 GitHub Enterprise 的 Visual Studio Professional
++ 带有 GitHub Enterprise 的 Visual Studio Enterprise
++ 带有 GitHub Enterprise 的 Visual Studio Professional
 
 Visual Studio Enterprise、Visual Studio Professional 和 GitHub Enterprise 仍将继续单独提供。 
 
@@ -65,11 +65,11 @@ GitHub Enterprise 由 GitHub 管理员管理（独立于 Visual Studio 订阅）
 
 | Subject                                  | GitHub 帮助主题                                     |
 |------------------------------------------|-------------------------------------------------------|
-| 一般性问题/信息          | [GitHub 帮助](https://help.github.com)             |
-| GitHub 是什么？  如何深入了解？  | [关于 GitHub](https://help.github.com/categories/about-github)                                       |
-| 如何开始使用 GitHub？     | [Bootcamp](https://help.github.com/categories/bootcamp)                                              |
-| 如何管理用户帐户和个人资料？       | [设置和管理 GitHub 用户帐户](https://help.github.com/categories/setting-up-and-managing-your-github-user-account)    |
-| 如何管理对 GitHub 的访问？   | [向 GitHub 进行身份验证](https://help.github.com/categories/authenticating-to-github)                           |
+| 一般性问题/信息          | [GitHub 帮助](https://help.github.com) |
+| GitHub 是什么？  如何深入了解？  | [关于 GitHub](https://help.github.com/categories/about-github) |
+| 如何开始使用 GitHub？     | [Bootcamp](https://help.github.com/categories/bootcamp) |
+| 如何管理用户帐户和个人资料？       | [设置和管理 GitHub 用户帐户](https://help.github.com/categories/setting-up-and-managing-your-github-user-account) |
+| 如何管理对 GitHub 的访问？   | [向 GitHub 进行身份验证](https://help.github.com/categories/authenticating-to-github) |
 | GitHub 如何使用和保护我的数据？ | [了解 GitHub 如何使用和保护你的数据](https://help.github.com/categories/understanding-how-github-uses-and-protects-your-data)|
 
 ## <a name="frequently-asked-questions"></a>常见问题
@@ -80,23 +80,23 @@ GitHub Enterprise 由 GitHub 管理员管理（独立于 Visual Studio 订阅）
 ### <a name="q-do-i-get-the-full-visual-studio-subscription-benefits"></a>问：我能否获得完整的 Visual Studio 订阅权益？
 答：与单独购买订阅时一样，带 GitHub Enterprise 的订阅仍提供标准 Visual Studio 订阅的各项权益，包括软件下载、云服务、技术支持以及合作伙伴权益。
 
-### <a name="q--is-github-enterprise-included-in-subscriptions-purchased-in-all-channels"></a>问：GitHub Enterprise所有渠道购买的订阅中是否包含这些订阅？
-不是。  GitHub Enterprise协议购买的组织目前Enterprise服务。  
+### <a name="q--is-github-enterprise-included-in-subscriptions-purchased-in-all-channels"></a>问：GitHub Enterprise是否包含在所有频道中购买的订阅中？
+不是。  GitHub Enterprise目前可用于使用Enterprise协议购买的组织。  
 
 ## <a name="support-resources"></a>支持资源
-- 访问 [GitHub 文档](https://docs.github.com/en/enterprise-cloud@latest/billing/managing-licenses-for-visual-studio-subscriptions-with-github-enterprise/about-visual-studio-subscriptions-with-github-enterprise)，了解有关 GitHub 分配的详细信息
-- 有关各种 GitHub 主题的问题解答，请查看 [GitHub 帮助](https://help.github.com)。
-- 需要更多帮助？  请联系 [GitHub 支持人员](https://support.github.com/)
-- 在 [GitHub 社区论坛](https://github.community/)获取其他 GitHub 用户的帮助。
-- 有关 Visual Studio 订阅的销售、订阅、帐户和计费方面的帮助，请访问[获取帮助](https://aka.ms/vssubscriberhelp)页面。
-- 对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
-- 获取 GitHub Enterprise 的[技术支持](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24)。   
++ 访问 [GitHub 文档](https://docs.github.com/en/enterprise-cloud@latest/billing/managing-licenses-for-visual-studio-subscriptions-with-github-enterprise/about-visual-studio-subscriptions-with-github-enterprise)，了解有关 GitHub 分配的详细信息
++ 有关各种 GitHub 主题的问题解答，请查看 [GitHub 帮助](https://help.github.com)。
++ 需要更多帮助？  请联系 [GitHub 支持人员](https://support.github.com/)
++ 在 [GitHub 社区论坛](https://github.community/)获取其他 GitHub 用户的帮助。
++ 有关 Visual Studio 订阅的销售、订阅、帐户和计费方面的帮助，请访问[获取帮助](https://aka.ms/vssubscriberhelp)页面。
++ 对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
++ 获取 GitHub Enterprise 的[技术支持](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24)。   
 
 ## <a name="see-also"></a>请参阅
-- [Visual Studio 文档](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 文档](https://docs.microsoft.com/azure/devops/)
-- [Azure 文档](https://docs.microsoft.com/azure/)
-- [Microsoft 365 文档](https://docs.microsoft.com/microsoft-365/)
++ [Visual Studio 文档](https://docs.microsoft.com/visualstudio/)
++ [Azure DevOps 文档](https://docs.microsoft.com/azure/devops/)
++ [Azure 文档](https://docs.microsoft.com/azure/)
++ [Microsoft 365 文档](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>后续步骤
 如果你刚接触 GitHub，请查看 [GitHub 学习实验室](https://lab.github.com/)，它将带你了解一系列有趣又实用的项目，在整个过程中还会分享有用的反馈。

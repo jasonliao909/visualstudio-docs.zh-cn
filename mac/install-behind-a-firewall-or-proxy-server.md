@@ -8,14 +8,16 @@ ms.author: jomatthi
 manager: dominicn
 ms.topic: reference
 ms.date: 01/10/2022
-ms.openlocfilehash: 6581503dce2be5d96f389d7f061d05c2e4ed5a4d
-ms.sourcegitcommit: 20f9529648e69707063dccb2b15089bf4e9bf639
+ms.openlocfilehash: 561a89a10b0fa2ba457cd32d66a5133ac0625721
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "137887120"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144538904"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>在防火墙或代理服务器后面安装和使用 Visual Studio for Mac
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 如果你或贵组织使用防火墙或代理服务器等安全措施，则会有可能需要将其添加到“允许列表”的域，以及可能需要打开的端口和协议，以便在安装和使用 Visual Studio for Mac 以及 Azure 服务时获得最佳体验。
 
@@ -25,7 +27,7 @@ ms.locfileid: "137887120"
 
 ## <a name="install-visual-studio-for-mac"></a>安装 Visual Studio for Mac
 
-由于Visual Studio for Mac安装程序从各种域和下载服务器下载，因此下面是你可能想要在配置中添加为受信任的域和 URL。
+由于Visual Studio for Mac安装程序会从各种域下载和下载服务器，因此你可能希望在配置中添加为受信任的域和 URL。
 
 ### <a name="microsoft-domains"></a>Microsoft 域
 

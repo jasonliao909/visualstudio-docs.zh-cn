@@ -6,14 +6,16 @@ ms.author: jomatthi
 manager: dominicn
 ms.date: 08/19/2019
 ms.topic: reference
-ms.openlocfilehash: d37c2432983f398f6da3802dfcd181e47f41b2ee
-ms.sourcegitcommit: fbc77679b01f98af570310f009f910dd4f96d7d7
+ms.openlocfilehash: 404511bf27ebdc6d43d9c8dba9711a64fa80765b
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "143909440"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144524097"
 ---
 # <a name="multi-caret-editing"></a>多个插入点编辑
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 多个插入点编辑允许一次添加 n 个插入点数。 在多个插入点模式下，你可以通过单击鼠标或通过键盘命令将其他插入点添加到文档中。 主插入点由红色光标表示，辅助插入点则显示为浅蓝色。 可以通过 `ESC` 键禁用多个插入点编辑模式。
 

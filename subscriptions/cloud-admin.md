@@ -4,22 +4,20 @@ author: evanwindom
 ms.author: amast
 manager: shve
 ms.assetid: 8b30e2bc-2ac3-4fcc-b296-128731471032
-ms.date: 03/21/2021
+ms.date: 04/26/2022
 ms.topic: how-to
 description: 设置月度订阅的管理员
-ms.openlocfilehash: cce8753392e52523f7125d6a4943b757adf94e57
-ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.openlocfilehash: 31357388760bed5d6188ba2819f16704ee8de70a
+ms.sourcegitcommit: 9e9f4cf4b34735fffa376b203ccaa74cb705ffe2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "133256316"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "144334474"
 ---
 # <a name="set-up-admins-for-visual-studio-monthly-subscriptions"></a>设置 Visual Studio 月度订阅的管理员
-
 Visual Studio 月度订阅由管理员进行管理。 管理员可以分配订阅、编辑分配、添加或删除订阅以及执行其他的订阅管理工作。
 
 ## <a name="the-azure-subscription-owner-is-the-first-admin"></a>Azure 订阅所有者是第一个管理员
-
 购买 Visual Studio 月度订阅后，如果你是购买时所用的 Azure 订阅的所有者，系统会自动将你设置为这些订阅的管理员。
 
 可通过 [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions) 或联系云解决方案提供商购买月度订阅。 如果通过 Visual Studio Marketplace 购买，在购买过程的最后，你将获得管理用户的机会。 选择该选项后将转到 Visual Studio 订阅管理门户 - [https://manage.visualstudio.com](https://manage.visualstudio.com)。
@@ -29,8 +27,7 @@ Visual Studio 月度订阅由管理员进行管理。 管理员可以分配订�
 如果你是购买月度订阅所用的 Azure 订阅的所有者，那么你还可分配其他管理员。
 
 ## <a name="add-admins"></a>添加管理员
-
-若要添加管理员：
+若要为订阅添加管理员，请执行以下操作：
 
 1. 通过 [portal.azure.com](https://portal.azure.com) 连接到 Azure 门户。
 2. 使用购买 Visual Studio 月度订阅时所用的帐户登录。
@@ -60,17 +57,17 @@ Visual Studio 月度订阅由管理员进行管理。 管理员可以分配订�
 有关 Visual Studio 月度订阅的信息，请参阅“购买订阅”下的[概述](vscloud-overview.md)。 要购买 Visual Studio 月度订阅，请访问 Visual Studio Marketplace：[https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription)。
 
 ## <a name="resources"></a>资源
-- [订阅支持](https://aka.ms/vsadminhelp)
+[订阅支持](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>另请参阅
-- [Visual Studio 文档](/visualstudio/)
-- [Azure DevOps 文档](/azure/devops/)
-- [Azure 文档](/azure/)
-- [Microsoft 365 文档](/microsoft-365/)
++ [Visual Studio 文档](/visualstudio/)
++ [Azure DevOps 文档](/azure/devops/)
++ [Azure 文档](/azure/)
++ [Microsoft 365 文档](/microsoft-365/)
 
 ## <a name="next-steps"></a>后续步骤
 了解有关管理 Visual Studio 订阅的详细信息。
-- [分配单个订阅](assign-license.md)
-- [分配多个订阅](assign-license-bulk.md)
-- [编辑订阅](edit-license.md)
-- [确定最大使用量](maximum-usage.md)
++ [分配单个订阅](assign-license.md)
++ [分配多个订阅](assign-license-bulk.md)
++ [编辑订阅](edit-license.md)
++ [确定最大使用量](maximum-usage.md)

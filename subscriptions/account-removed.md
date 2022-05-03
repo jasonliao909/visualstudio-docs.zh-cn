@@ -4,17 +4,17 @@ author: evanwindom
 ms.author: amast
 manager: shve
 ms.assetid: f853ed9d-3543-4f5f-a754-92381ee03523
-ms.date: 09/30/2021
+ms.date: 04/26/2022
 ms.topic: how-to
 description: 了解当你看到关于 Microsoft 已删除某个订阅的通知时意味着什么。
-ms.openlocfilehash: 7d8a0d44f147f3490afd85de28173839ee222629
-ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.openlocfilehash: 94ed788a30d83bf97a66db0eccb66dae11639c47
+ms.sourcegitcommit: 9ee1cebba305cf47e5fc977bae2110b48c8855d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "133257876"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "144103004"
 ---
-# <a name="why-does-my-dashboard-shows-microsoft-removed-a-subscriber"></a>为什么我的仪表板显示 Microsoft 删除了订阅者？ 
+# <a name="why-does-my-dashboard-show-microsoft-removed-a-subscriber"></a>为什么我的仪表板显示 Microsoft 删除了订阅者？ 
 在[管理门户](https://manage.visualstudio.com)上的仪表板的“最近的更改”部分，你可能会看到订阅已删除，原因显示为“帐户已关闭”。  出现这种情况的原因有两个。  
 
 ## <a name="subscribers-request-closure-of-their-microsoft-accounts"></a>订阅者请求关闭其 Microsoft 帐户
@@ -29,17 +29,17 @@ ms.locfileid: "133257876"
 如果删除订阅，订阅者会立即失去对订阅的访问权限。  如果从 Azure AD 组中删除订阅者，则其订阅信息会在 180 天内永久删除。  如果订阅者关闭其 MSA，则会立即删除其信息。  
 
 ## <a name="resources"></a>资源
-- 针对管理员的[订阅支持](https://aka.ms/vsadminhelp)
+针对管理员的[订阅支持](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>另请参阅
-- [Visual Studio 文档](/visualstudio/)
-- [Azure DevOps 文档](/azure/devops/)
-- [Azure 文档](/azure/)
-- [Microsoft 365 文档](/microsoft-365/)
++ [Visual Studio 文档](/visualstudio/)
++ [Azure DevOps 文档](/azure/devops/)
++ [Azure 文档](/azure/)
++ [Microsoft 365 文档](/microsoft-365/)
 
 ## <a name="next-steps"></a>后续步骤
-- 需要更改订阅而不删除它？  了解如何[编辑订阅](edit-license.md)。
-- 若要查找特定订阅，请查阅[搜索订阅](search-license.md)。
-- 需要创建所有订阅的列表？  请参阅[导出订阅](exporting-subscriptions.md)。
-- 了解如何[删除订阅](delete-license.md)。 
++ 需要更改订阅而不删除它？  了解如何[编辑订阅](edit-license.md)。
++ 若要查找特定订阅，请查阅[搜索订阅](search-license.md)。
++ 需要创建所有订阅的列表？  请参阅[导出订阅](exporting-subscriptions.md)。
++ 了解如何[删除订阅](delete-license.md)。 
 

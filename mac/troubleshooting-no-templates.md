@@ -7,14 +7,16 @@ ms.author: jomatthi
 manager: dominicn
 ms.date: 04/02/2019
 ms.assetid: 297D9094-B40F-4C1A-BF19-B14CB735003A
-ms.openlocfilehash: f85ba19cb9663562f2644431feb3f875b63867c7
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: 94f94cfe1d677e6cbf4384f60207fcb13252d44c
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135805593"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "144484522"
 ---
 # <a name="troubleshooting-why-can-i-not-see-all-available-templates"></a>疑难解答：我为什么看不到部分可用模板？
+
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
 在“新建项目”对话框中，只能看到已安装的组件模板。 如果缺少任何以下组件，请确保安装了正确的组件，如下所述：
 

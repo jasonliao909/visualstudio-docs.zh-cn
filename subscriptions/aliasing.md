@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: amast
 manager: shve
 ms.assetid: 97bf7474-c6c2-49b3-b2c9-f1b2808eed1a
-ms.date: 03/19/2021
+ms.date: 04/26/2022
 ms.topic: conceptual
 description: 如果别名或友好名称已被使用，登录可能会失败
-ms.openlocfilehash: 418969a73200f9f5c6fb3e9536b27182efd7b034
-ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.openlocfilehash: 7192293c7cae84f5468c0e36c82a6f4c181501fc
+ms.sourcegitcommit: 9e9f4cf4b34735fffa376b203ccaa74cb705ffe2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "133256277"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "144334266"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>使用别名登录 Visual Studio 订阅可能会失败
 根据用于登录的帐户类型，登录 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 时，可用订阅可能无法正确显示。 一个潜在的原因是使用了“别名”或“友好名称”来代替订阅所分配到的登录标识。 这就是所谓的“别名”。
@@ -23,7 +23,6 @@ ms.locfileid: "133256277"
 当公司为其目录登录（例如“JohnD@contoso.com”）提供 Microsoft Online Service 时，可能会遇到别名，但用户使用别名或友好名称（例如“John.Doe@contoso.com”）访问其电子邮件帐户。 请确保用户使用管理门户中列出的”登录电子邮件地址”(https://manage.visualstudio.com ) 访问其订阅。 
 
 ## <a name="what-are-the-potential-issues"></a>潜在问题是什么？
-
 根据订阅者的帐户类型，他们可能会遇到以下两个问题之一。 
 
 ### <a name="work-or-school-account-upn-mismatch-issue"></a>工作或学校帐户 UPN 不匹配问题 
@@ -78,8 +77,8 @@ Visual Studio 平台会排定主要别名的优先级，以显示订阅详细信
 ## <a name="preventing-aliasing-issues"></a>防止出现别名问题
 
 作为管理员，可选择两种方式来确保你的订阅者在 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 上成功登录。
-- 第一种选择（推荐）是将目录帐户用作 Visual Studio 订阅门户 (https://my.visualstudio.com ) 的登录名。  
-- 第二种选择（较不安全）是允许订阅者使用目录电子邮件地址以外的电子邮件地址登录。
++ 第一种选择（推荐）是将目录帐户用作 Visual Studio 订阅门户 (https://my.visualstudio.com ) 的登录名。  
++ 第二种选择（较不安全）是允许订阅者使用目录电子邮件地址以外的电子邮件地址登录。
 
 通过完成以下步骤，可以在管理门户中配置这两个选项：  
 1. 登录 [https://manage.visualstudio.com](https://manage.visualstudio.com) 
@@ -92,17 +91,17 @@ Visual Studio 平台会排定主要别名的优先级，以显示订阅详细信
 > 不管是使用单独更改还是批量更改，订阅者都会收到一封电子邮件，其中说明已更改其登录电子邮件地址，并提示他们需要使用更新后的电子邮件地址登录。 另请注意，如果订阅者以前通过其他登录地址激活了权益，则需要继续使用该登录地址来访问权益。  
 
 ## <a name="support-resources"></a>支持资源
-- 如需有关管理 Visual Studio 订阅的帮助，请联系 [Visual studio 订阅支持](https://aka.ms/vsadminhelp)。
+如需有关管理 Visual Studio 订阅的帮助，请联系 [Visual studio 订阅支持](https://aka.ms/vsadminhelp)。
 
 ## <a name="see-also"></a>另请参阅
-- [Visual Studio 文档](/visualstudio/)
-- [Azure DevOps 文档](/azure/devops/)
-- [Azure 文档](/azure/)
-- [Microsoft 365 文档](/microsoft-365/)
++ [Visual Studio 文档](/visualstudio/)
++ [Azure DevOps 文档](/azure/devops/)
++ [Azure 文档](/azure/)
++ [Microsoft 365 文档](/microsoft-365/)
 
 ## <a name="next-steps"></a>后续步骤
 了解有关管理 Visual Studio 订阅的详细信息。
-- [分配单个订阅](assign-license.md)
-- [分配多个订阅](assign-license-bulk.md)
-- [编辑订阅](edit-license.md)
-- [确定最大使用量](maximum-usage.md)
++ [分配单个订阅](assign-license.md)
++ [分配多个订阅](assign-license-bulk.md)
++ [编辑订阅](edit-license.md)
++ [确定最大使用量](maximum-usage.md)

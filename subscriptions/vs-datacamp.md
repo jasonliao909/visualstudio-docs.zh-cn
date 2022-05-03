@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: amast
 manager: shve
 ms.assetid: fc33d419-78cf-485e-b558-5b7efa900f14
-ms.date: 10/18/2021
+ms.date: 04/22/2022
 ms.topic: how-to
 description: 了解有关所选 Visual Studio 订阅中随附的 DataCamp 培训订阅。
-ms.openlocfilehash: b47a238eb270ee260c6dd27f9e93bc5199b579ad
-ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.openlocfilehash: fbcb6b6d562d1bd9e401da18e3be5c3cfa01208d
+ms.sourcegitcommit: 9ee1cebba305cf47e5fc977bae2110b48c8855d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "133257460"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "144103186"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 DataCamp 培训权益
 符合条件的 Visual Studio 订阅包括 DataCamp 订阅。  借助 DataCamp，可以通过浏览器舒适地学习需要的所有数据科学技能。 可以选择学习的时间和内容。 无需安装任何软件并且没有任何特殊硬件要求，学习数据科学比以往更加简单。
@@ -24,12 +24,12 @@ ms.locfileid: "133257460"
    > [!div class="mx-imgBorder"]
    > ![DataCamp 权益磁贴](_img/vs-datacamp/vs-datacamp-tile-2.png "单击“激活”即可开始使用。")
 
-3. 在 DataCamp 页面上，可以创建新帐户。  可以选择输入电子邮件地址和密码，或使用来自 Facebook、LinkedIn 或 Google 的现有帐户登录。  提供了登录信息之后，单击“开始”  。
+3. 在 DataCamp 页面上，可以创建新帐户。  可以选择输入电子邮件地址和密码，或使用来自 Facebook、LinkedIn 或 Google 的现有帐户登录。  提供登录信息，然后单击 **入门**。
 
    > [!NOTE]
    > 开始创建帐户时，可能会收到以下错误消息：“抱歉！  促销代码无效或已过期。”  发生这种情况是因为促销代码创建后会在几分钟后过期。  如果收到此消息，只需返回到 [“权益”](https://my.visualstudio.com/benefits)页，然后单击“DataCamp 权益”磁贴上的 **“激活”** 链接。
 
-4. 创建了帐户之后，你便可以选择学习路径。  选项包括：
+4. 创建帐户后，可以选择学习路径。  选项包括：
     - 学习适用于数据科学的 R
     - 开始学习适用于数据科学的 Python
     - 发展数据科学技能组合
@@ -57,18 +57,18 @@ ms.locfileid: "133257460"
 > ![DataCamp 继续培训](_img/vs-datacamp/vs-datacamp-continue-training.png "单击“继续跟踪”以随时恢复培训。")
 
 ## <a name="eligibility"></a>资格
-| 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
-|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise（标准）   | VL、Azure、零售、 | 3 个月       |  不是。  仅对新订阅者可用          |
-| 包含 GitHub Enterprise 的 Visual Studio Enterprise 订阅   | VL | 3 个月       |  不是。  仅对新订阅者可用          |
-| Visual Studio Professional（标准） | VL、Azure、零售                                       | 3 个月                                                            |  不是。  仅对新订阅者可用           |
-| 包含 GitHub Enterprise 的 Visual Studio Professional 订阅| VL | 3 个月                                                            |  不是。  仅对新订阅者可用           |
-| Visual Studio Test Professional（标准）                         | VL、零售                                              | 3 个月                                             |  不是。  仅对新订阅者可用           |
-| MSDN 平台（标准）                                          | VL、零售                                              | 3 个月                                              |  不是。  仅对新订阅者可用           |
-| Visual Studio Enterprise（标准）  | NFR<sup>1</sup> |不可用  | 不可用 |
+| 订阅级别 | 信道 | 好处 | 是否续订？ |
+|--------------------|----------|---------|------------|
+| Visual Studio Enterprise（标准）   | VL、Azure、零售、 | 3 个月 |  不是。  仅对新订阅者可用 |
+| 包含 GitHub Enterprise 的 Visual Studio Enterprise 订阅   | VL | 3 个月 |  不是。  仅对新订阅者可用 |
+| Visual Studio Professional（标准） | VL、Azure、零售  | 3 个月 |  不是。  仅对新订阅者可用 |
+| 包含 GitHub Enterprise 的 Visual Studio Professional 订阅| VL | 3 个月 |  不是。  仅对新订阅者可用 |
+| Visual Studio Test Professional（标准） | VL、零售 | 3 个月 |  不是。  仅对新订阅者可用 |
+| MSDN 平台（标准） | VL、零售 | 3 个月 |  不是。  仅对新订阅者可用 |
+| Visual Studio Enterprise（标准）  | NFR\* |不可用  | 不可用 |
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure | 不可用 | 不可用 |
 
-<sup>1</sup>  *包括：  不得转售 (NFR)、FTE、最有价值专家 (MVP)、区域总监 (RD)、Microsoft 合作伙伴网络 (MPN)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 认证培训师、BizSpark、Imagine。不包括：NFR Basic*
+\*  *包括：不适用于转售 (NFR) 、FTE、最 Professional (有价值的 MVP) 、区域总监 (RD) 、Microsoft 合作伙伴网络 (MPN) 、Visual Studio行业合作伙伴 (VSIP) 、Microsoft 认证培训师、BizSpark、Imagine。 排除：NFR 基本*
 
 > [!NOTE]
 > Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 建议新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)，查看各 Visual Studio 购买选项。
