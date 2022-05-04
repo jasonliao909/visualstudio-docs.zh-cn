@@ -5,7 +5,7 @@ description: Visual Studio 已发布的版本和生成号列表，按日期排�
 author: rjmolyneaux
 ms.author: rmolyneaux
 manager: jmartens
-ms.date: 04/19/2022
+ms.date: 05/03/2022
 ms.custom: vs-acquisition
 ms.topic: reference
 ms.workload:
@@ -13,14 +13,16 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 52f859275cbdd65746adad369bcf76fe15469d43
-ms.sourcegitcommit: fbc77679b01f98af570310f009f910dd4f96d7d7
+ms.openlocfilehash: c0edb0235bc681e0946df76d8d24843dd7c55e39
+ms.sourcegitcommit: fc3e3869ad1955c2e0160a576238c6d348606d22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "143909453"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "144761810"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio 内部版本号和发布日期
+
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 ::: moniker range="vs-2022"
 
@@ -30,6 +32,9 @@ ms.locfileid: "143909453"
 
 | **Version**| **频道** | **发布日期** | **内部版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 17.2.0 | 预览版 6 | 2022 年 5 月 3 日 | 17.2.32427.441 |
+| 17.2.0 | 预览版 5 | 2022 年 4 月 26 日 | 17.2.32422.2 |
+| 17.1.6 | 发布 | 2022 年 4 月 26 日 | 17.1.32421.90 |
 | 17.2.0 | 预览版 4 | 2022 年 4 月 19 日 | 17.2.32414.248 |
 | 17.1.5 | 发布 | 2022 年 4 月 19 日 | 17.1.32414.318 |
 | 17.0.9 | 发布 | 2022 年 4 月 19 日 | 17.0.32417.34 |
