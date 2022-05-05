@@ -5,13 +5,13 @@ groups:
   prompt: 选择开发环境
   pivots:
   - id: windows
-    title: Visual Studio 2019
+    title: Visual Studio
   - id: macos
     title: Visual Studio for Mac
 metadata:
-  ms.openlocfilehash: 31b055eea3f6204e097d7bc15141798057d80ec1f8d351276a05899357cec6bc
-  ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
-  ms.translationtype: HT
+  ms.openlocfilehash: 579d54205f1a7132e659f2cee839c88f1222a611
+  ms.sourcegitcommit: 91ff043a0814d87ad4a05b847eac3802239d9d0d
+  ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/12/2021
-  ms.locfileid: "121423223"
+  ms.lasthandoff: 05/05/2022
+  ms.locfileid: "144776136"
