@@ -1,32 +1,34 @@
 ---
-title: 支持的 .NET 版本
+title: .NET Core 支持
 description: 本文档介绍了 Visual Studio for Mac 中的 .NET Core 版本支持
 author: jmatthiesen
 ms.author: jomatthi
 manager: dominicn
-ms.date: 01/08/2020
-ms.topic: how-to
+ms.date: 05/02/2022
+ms.custom: devdivchpfy22
 ms.assetid: 8B8CEBE8-00DA-4AD1-8193-77F58B57F244
-ms.openlocfilehash: 49996593118d388f11153a3b2cfc3dd33ebcf17b
-ms.sourcegitcommit: 1c0eda2db1b1fff9595ca644503f467bf3e223e0
+ms.openlocfilehash: 7900505772a5e10666db48237e5a24a321349530
+ms.sourcegitcommit: 3034382894e610b55f3ad07e737fa59b91680869
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "137095896"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "144547807"
 ---
 # <a name="supported-versions-of-net"></a>支持的 .NET 版本
 
+ [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
+
 下表说明了 Visual Studio for Mac 稳定版和预览版支持的 .NET Core 版本：
 
-| .NET Core SDK 版本 |Visual Studio for Mac 8.1 | Visual Studio for Mac 8.2 | Visual Studio for Mac 8.3 | Visual Studio for Mac 8.4 | Visual Studio for Mac 8.5 | Visual Studio for Mac 8.6 |
-|---------|---------|---------|---------|---------|---------|---------|
-|v2.1.0 - v2.1.5xx | | | | | | |
-|v2.1.600 + |✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|
-|v2.2.1 - v2.2.1xx | | | | | | |
-|v2.2.200 + |✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|
-|v3.0 | | |✔︎|✔︎|✔︎|✔︎|
-|v3.1 | | | |✔︎|✔︎|✔︎|
-|v5.0 | | | | | |✔︎|
+| .NET Core SDK 版本 |Visual Studio for Mac 8.1 | Visual Studio for Mac 8.2 | Visual Studio for Mac 8.3 | Visual Studio for Mac 8.4 | Visual Studio for Mac 8.5 | Visual Studio for Mac 8.6 | Visual Studio for Mac 8.7 | Visual Studio for Mac 8.8 | Visual Studio for Mac 8.9 | Visual Studio for Mac 8.10 |
+|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|
+|v2.1.0 - v2.1.5xx | | | | | | | | | | |
+|v2.1.600 + |✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|
+|v2.2.1 - v2.2.1xx | | | | | | | | | | |
+|v2.2.200 + |✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|
+|v3.0 | | |✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|
+|v3.1 | | | |✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|
+|v5.0 | | | | | |✔︎|✔︎|✔︎|✔︎|✔︎|
 
 > [!IMPORTANT]
 > 不支持 .NET Core SDK 的预览版；请更新到已发布版本。 安装 Visual Studio for Mac 8.4 时，将安装 .NET Core v3.1 的已发布版本。
