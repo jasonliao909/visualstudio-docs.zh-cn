@@ -18,14 +18,16 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: a87ca5252e51262cdc70835e910ca67f6fedcb10
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 3485ee080df61e188e4fc0995d0249c72d36a4ca
+ms.sourcegitcommit: 91ff043a0814d87ad4a05b847eac3802239d9d0d
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126642110"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "144776149"
 ---
 # <a name="intellisense-in-visual-studio"></a>Visual Studio 中的 IntelliSense
+
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 IntelliSense 是一种代码补全辅助工具，它包含许多功能：成员列表、参数信息、快速信息和完成单词。 使用这些功能，可以详细了解使用的代码、跟踪键入的参数，还可通过轻敲几个按键来添加属性和方法调用。
 
