@@ -2,7 +2,7 @@
 title: 使用 CodeLens 查找代码更改和其他历史记录
 description: 了解 CodeLens 并了解如何在不离开编辑器的情况下使用它来浏览代码历史记录。
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 05/05/2022
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.CodeLens
@@ -12,14 +12,16 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 54054e39a9211bf63d6c187a250a47dcb1ed751c
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 191418e44e87801c92d5005ff3092e25d63d37a4
+ms.sourcegitcommit: f14166a09e3fb108e120c961ad5ea6eb67a2ef79
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126640693"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "144795542"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>使用 CodeLens 查找代码更改和其他历史记录
+
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 通过 CodeLens，你可以在专注于工作的同时了解代码所发生的情况 &ndash; 而无需离开编辑器。 可以查找代码引用、代码更改、关联的 Bug、工作项、代码评审和单元测试。
 
@@ -80,7 +82,7 @@ ms.locfileid: "126640693"
 
 - Azure DevOps Services、Team Foundation Server 2013 或更高版本或 Git
 
-- [Skype for Business](/skypeforbusiness/)，可从代码编辑器联系团队
+- [从](/MicrosoftTeams/)代码编辑器Microsoft Teams或[Skype for Business](/skypeforbusiness/)联系团队
 
 对于随 Team Foundation 版本控制 (TFVC) 或 Git 一起存储的 C# 或 Visual Basic 代码，可以获取类和方法级别上的 CodeLens 详细信息（码位元素级别指示器）。 如果你的 Git 存储库托管在 TfGit 中，则还可以获取指向 TFS 工作项的链接。
 
@@ -121,7 +123,7 @@ ms.locfileid: "126640693"
 > [!NOTE]
 > 文件级别指示器不可用于 C# 和 Visual Basic 文件。
 
-若要获得有关更改的详细信息，请右键单击该项。 根据使用的是 TFVC 还是 Git，可使用一些选项来比较文件的版本、查看详细信息和跟踪变更集、获取文件的所选版本并向进行该更改的作者发送电子邮件。 某些详细信息会在“团队资源管理器”中显示。
+若要获得有关更改的详细信息，请右键单击该项。 根据使用的是 TFVC 还是 Git，可使用一些选项来比较文件的版本、查看详细信息和跟踪变更集、获取文件的所选版本并向进行该更改的作者发送电子邮件。 其中一些详细信息显示在 Visual Studio 2019 2019 [版本 16.7](/visualstudio/releases/2019/release-notes-v16.7#whats-new-in-visual-studio-2019-version-167/) 及更早版本中 **的团队资源管理器** 中。 在 Visual Studio 2019 2019 [版本 16.8](/visualstudio/releases/2019/release-notes-v16.8#whats-new-in-visual-studio-2019-version-168/) 及更高版本中，这些详细信息将显示在 **Git 更改** 中。
 
 还可以查看在某段时间内更改代码的人员。 这可以帮助发现团队更改中的模式并评估它们的影响。
 
@@ -210,7 +212,7 @@ ms.locfileid: "126640693"
 
 ![联系项的所有者](../ide/media/codelens-contact-item-owner.png)
 
-打开一个项的快捷菜单来查看联系人选项。 如果安装了 Lync 或 Skype for Business，则会看到以下选项：
+打开一个项的快捷菜单来查看联系人选项。 如果已安装 Lync、Skype for Business或Teams，则会看到类似于以下屏幕截图中的选项：
 
 ![项的联系人选项](../ide/media/codelens-item-contact-menu.png)
 
@@ -293,6 +295,8 @@ ms.locfileid: "126640693"
 
 **问：** 可能是因为 CodeLens 无法查找到 Azure Boards 或 TFS 中的工作项。 检查是否连接到具有这些工作项的项目，以及你是否有权限查看这些工作项。 如果提交说明中关于 Azure Boards 或 TFS 中工作项 ID 的信息有误，工作项详细信息可能也不会显示。
 
+::: moniker range="<=vs-2019"
+
 ### <a name="q-why-dont-i-see-the-skype-indicators"></a>问：为什么没有看见 Skype 指示器？
 
 **答：** 如果未登录或未安装 Skype for Business，或者没有支持的配置，则不会显示 Skype 指示器。 但是仍可以发送电子邮件：
@@ -306,6 +310,8 @@ ms.locfileid: "126640693"
 - 仅 Lync 2010 或更高版本（32 位或 64 位），但不是使用 Windows 8.1 的 Lync Basic 2013
 
 CodeLens 不支持安装不同版本的 Lync 或 Skype。 可能不会针对所有本地化版本的 Visual Studio 本地化 Lync 或 Skype。
+
+::: moniker-end
 
 ### <a name="q-how-do-i-change-the-font-and-color-for-codelens"></a>问：如何更改 CodeLens 的字体和颜色？
 
