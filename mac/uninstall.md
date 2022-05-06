@@ -4,17 +4,17 @@ description: 了解如何卸载或删除Visual Studio for Mac和相关工具。
 author: jmatthiesen
 ms.author: jomatthi
 manager: dominicn
-ms.date: 03/03/2022
+ms.date: 04/27/2022
 ms.custom: devdivchpfy22
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
 ms.topic: how-to
-ms.openlocfilehash: d7ed0e9525cddb0f1e3ab9bc50e8a5b52e1c82de
-ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
+ms.openlocfilehash: 4f0cebcdef70e6ec48c7114d9be82d695fbd4758
+ms.sourcegitcommit: 1d5bf3876e092416b8735b3ba7788966b9502979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "144497541"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "144810178"
 ---
 # <a name="uninstall-visual-studio-for-mac"></a>卸载 Visual Studio for Mac 
 
@@ -22,14 +22,73 @@ ms.locfileid: "144497541"
 
 可以通过导航到相关部分，使用本指南单独卸载Visual Studio for Mac中的每个组件。 还可以使用 [“卸载脚本](#uninstall-script) ”部分中提供的脚本来卸载所有内容。
 
-本文适用于Visual Studio。 如果要查找有关VS Code的信息，请参阅[Visual Studio Code设置](https://code.visualstudio.com/docs/setup/setup-overview)。
+本文适用于Visual Studio for Mac。 如果要查找有关VS Code的信息，请参阅[Visual Studio Code设置](https://code.visualstudio.com/docs/setup/setup-overview)。
 
 > [!NOTE]
 > 我们想详细了解你为何要卸载 Visual Studio for Mac，便于我们进行改进。 请花几分钟的时间[分享你的反馈](https://aka.ms/vs/mac/uninstallsurvey)。 谢谢！
 
+## <a name="uninstall-application"></a>卸载应用程序
+
+从 Mac 卸载Visual Studio的第一步是在 **应用程序** 目录中找到 **Visual Studio** 应用，并将其拖到 **垃圾桶**。 或者，单击控件并选择“ **移动到回收站** ”，如下图所示：
+
+::: moniker range="vsmac-2019"
+
+![将 Visual Studio 应用程序移动到回收站](media/uninstall-image1.png)
+
+::: moniker-end
+
+::: moniker range="vsmac-2022"
+
+:::image type="content" source="media/vsmac-2022/move-vsmac-application-to-trash.png" alt-text="显示如何卸载Visual Studio for Mac应用程序的屏幕截图。":::
+
+::: moniker-end
+
+删除此应用包会一并删除 Visual Studio for Mac，但文件系统上仍可能存在其他与 Xamarin 相关的文件。
+
+要删除 Visual Studio for Mac 的所有痕迹，请在终端运行以下命令：
+
+::: moniker range="vsmac-2019"
+
+```bash
+sudo rm -rf "/Applications/Visual Studio.app"
+rm -rf ~/Library/Caches/VisualStudio
+rm -rf ~/Library/Preferences/VisualStudio
+rm -rf ~/Library/Preferences/Visual\ Studio
+rm -rf ~/Library/Logs/VisualStudio
+rm -rf ~/Library/VisualStudio
+rm -rf ~/Library/Preferences/Xamarin/
+rm -rf ~/Library/Application\ Support/VisualStudio
+rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
+rm -rf ~/Library/Application\ Support/VisualStudio/8.0/LocalInstall/Addins/
+```
+
+::: moniker-end
+
+::: moniker range="vsmac-2022"
+
+```bash
+sudo rm -rf "/Applications/Visual Studio.app"
+rm -rf ~/Library/Caches/VisualStudio
+rm -rf ~/Library/Preferences/VisualStudio
+rm -rf ~/Library/Preferences/Visual\ Studio
+rm -rf ~/Library/Logs/VisualStudio
+rm -rf ~/Library/VisualStudio
+rm -rf ~/Library/Preferences/Xamarin/
+rm -rf ~/Library/Application\ Support/VisualStudio
+rm -rf ~/Library/Application\ Support/VisualStudio/17.0/LocalInstall/Addins/
+```
+
+::: moniker-end
+
+你可能还想要删除包含各种 Xamarin 文件和文件夹的以下目录。 但是，此目录包含 Android 签名密钥。 有关详细信息，请参阅 **[卸载 Android SDK 和 Java SDK](#uninstall-android-sdk-and-java-sdk)** 部分：
+
+```bash
+rm -rf ~/Library/Developer/Xamarin
+```
+
 ## <a name="uninstall-script"></a>卸载脚本
 
-可使用两个脚本来卸载计算机上的 Visual Studio for Mac 以及所有组件：
+有两个脚本可用于从计算机中卸载Visual Studio for Mac和所有组件：
 
 - [Visual Studio 和 Xamarin 脚本](#visual-studio-for-mac-and-xamarin-script)
 - [.NET Core 脚本](#net-core-script)
@@ -40,7 +99,7 @@ ms.locfileid: "144497541"
 
 可通过使用[卸载脚本](https://raw.githubusercontent.com/MicrosoftDocs/visualstudio-docs/master/mac/resources/uninstall-vsmac.sh)一次性卸载 Visual Studio 和 Xamarin 组件。
 
-卸载脚本包含本文中找到的大部分命令。 脚本中有三个主要的遗漏，并且由于可能的外部依赖项而不包含。 若要删除，请跳转到下面的相关部分并手动删除它们：
+卸载脚本包含本文中找到的大部分命令。 脚本中有三个主要遗漏，由于可能的外部依赖项，不包括这些遗漏。 若要删除，请跳转到下面的相关部分并手动删除它们：
 
 - **[卸载 Mono](#uninstall-mono-sdk-mdk)**
 - **[卸载 Android AVD](#uninstall-android-avd)**
@@ -77,7 +136,7 @@ ms.locfileid: "144497541"
     cd /location/of/file
     ```
 
-3. 使脚本可执行，并通过 **sudo** 运行它：
+3. 使脚本可执行，并通过 sudo 运行：
 
     ```bash
     chmod +x ./dotnet-uninstall-pkgs.sh
@@ -85,35 +144,6 @@ ms.locfileid: "144497541"
     ```
 
 4. 最后，删除 .NET Core 卸载脚本。
-
-## <a name="uninstall-visual-studio-for-mac"></a>卸载 Visual Studio for Mac
-
-从 Mac 中卸载 Visual Studio 的第一步是在 /Applications 目录中找到 Visual Studio.app，并将其拖动到回收站  。 或者，单击右键并选择“移到回收站”，如下图所示：
-
-![将 Visual Studio 应用程序移动到回收站](media/uninstall-image1.png)
-
-删除此应用包会一并删除 Visual Studio for Mac，但文件系统上仍可能存在其他与 Xamarin 相关的文件。
-
-要删除 Visual Studio for Mac 的所有痕迹，请在终端运行以下命令：
-
-```bash
-sudo rm -rf "/Applications/Visual Studio.app"
-rm -rf ~/Library/Caches/VisualStudio
-rm -rf ~/Library/Preferences/VisualStudio
-rm -rf ~/Library/Preferences/Visual\ Studio
-rm -rf ~/Library/Logs/VisualStudio
-rm -rf ~/Library/VisualStudio
-rm -rf ~/Library/Preferences/Xamarin/
-rm -rf ~/Library/Application\ Support/VisualStudio
-rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
-rm -rf ~/Library/Application\ Support/VisualStudio/8.0/LocalInstall/Addins/
-```
-
-你可能还想要删除包含各种 Xamarin 文件和文件夹的以下目录。 但是，此目录包含 Android 签名密钥。 有关详细信息，请参阅 **[卸载 Android SDK 和 Java SDK](#uninstall-android-sdk-and-java-sdk)** 部分：
-
-```bash
-rm -rf ~/Library/Developer/Xamarin
-```
 
 ## <a name="uninstall-mono-sdk-mdk"></a>卸载 Mono SDK (MDK)
 
@@ -149,9 +179,9 @@ sudo rm -rf /Library/Frameworks/Xamarin.Android.framework
 开发 Android 应用程序需要 Android SDK。 要完全删除 Android SDK 的所有部分，请在 ~/Library/Developer/Xamarin/ 中找到相关文件，并将其移到回收站 。
 
 > [!WARNING]
-> 请注意，由Visual Studio for Mac生成的 Android 签名密钥位于`~/Library/Developer/Xamarin/Keystore`其中。 请务必适当备份，或避免在要保留密钥存储时删除此目录。
+> 请注意，由Visual Studio for Mac生成的 Android 签名密钥位于 `~/Library/Developer/Xamarin/Keystore`。 请务必适当备份，或避免在要保留密钥存储时删除此目录。
 
-Java SDK (JDK) 不需要卸载，因为它已预打包为 Mac OS X/macOS 的一部分。
+无需卸载 Java SDK (JDK) ，因为它已预打包为 Mac OS X/macOS 的一部分。
 
 ### <a name="uninstall-android-avd"></a>卸载 Android AVD
 
@@ -196,7 +226,7 @@ rm -rf ~/Library/Xamarin.Mac
 
 ## <a name="uninstall-workbooks-and-inspector"></a>卸载工作簿和检查器
 
-从 1.2.2 开始，可通过运行以下命令从终端卸载 Xamarin Workbooks 和 Xamarin Inspector：
+从 1.2.2 开始，可以通过在终端中运行以下命令卸载Xamarin Workbooks &检查器：
 
 ```bash
 sudo /Library/Frameworks/Xamarin.Interactive.framework/Versions/Current/uninstall
