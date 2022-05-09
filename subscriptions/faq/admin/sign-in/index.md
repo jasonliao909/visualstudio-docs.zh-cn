@@ -1,18 +1,19 @@
 ---
 title: Visual Studio 订阅登录
-description: 登录常见问题解答列表。
+description: 登录 Visual Studio 订阅的 FAQ 列表。 此 FAQ 解决了管理员的问题，例如帐户类型和备用标识。
 ms.faqid: Section3
-ms.topic: conceptual
+ms.topic: troubleshooting
+ms.custom: kr2b-contr-experiment
 ms.assetid: e4573b81-b40c-4008-9c33-9e7437cb5796
 author: evanwindom
 ms.author: amast
 ms.date: 12/01/2020
-ms.openlocfilehash: dbcacdfb56219d24368db518e320ff7919fde8a1
-ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.openlocfilehash: b2fa72d6de76970e8141d70220438285894e0944
+ms.sourcegitcommit: e90dd66e2736d888cdec868e8790a4ba3fc28e46
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "133257712"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "144791579"
 ---
 # <a name="signing-in"></a>登录
 
