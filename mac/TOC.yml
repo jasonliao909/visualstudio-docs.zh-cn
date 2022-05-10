@@ -4,8 +4,6 @@
   items:
     - name: IDE 导览
       href: ide-tour.md
-    - name: 面向 Windows 用户的 Visual Studio for Mac
-      href: vsmac-for-windows-users.md
 - name: 安装
   items:
     - name: 安装
@@ -24,8 +22,6 @@
   items:
     - name: 用户帐户
       items:
-        - name: 概述
-          href: user-accounts.md
         - name: 登录帐户
           href: signing-in.md
         - name: 启用订阅
@@ -210,6 +206,8 @@
   items:
     - name: 发行说明和路线图
       href: /visualstudio/productinfo/mac-roadmap
+    - name: 面向 Windows 用户的 Visual Studio for Mac 备忘单
+      href: vsmac-for-windows-users.md
     - name: 疑难解答
       items:
         - name: 日志和异常
