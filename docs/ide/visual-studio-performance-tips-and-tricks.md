@@ -2,7 +2,7 @@
 title: 有关提高性能的提示
 description: 了解如何优化某些可能没有使用的 Visual Studio 功能，从而帮助提高性能。
 ms.custom: SEO-VS-2020
-ms.date: 04/14/2022
+ms.date: 05/10/2022
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
@@ -10,14 +10,16 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: d46c6f8a79b4fd7afe71d84f3f5a90be846c7615
-ms.sourcegitcommit: a5a802653d47349c11355961da675a4cb37bdb5c
+ms.openlocfilehash: a575234a4469199a127712d889db55cf9d0d33cb
+ms.sourcegitcommit: ffde8e1b7a5f0b14026b82aef2ce0c8fc19fb7b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "142614103"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "144845764"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 性能提示和技巧
+
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Visual Studio 性能建议适用于内存不足的情况，这种情况极少出现。 出现这种情况时，可优化某些未使用的 Visual Studio 功能。 以下提示不作为一般性建议。
 
@@ -155,9 +157,9 @@ Visual Studio 会自动重新打开上一个会话中处于打开状态的文档
 
     在将你新文件添加到存储库时，Visual Studio 对未跟踪的文件运行 Git 命令 `git status`，以提供无缝体验。 如果有大量未跟踪的文件，`git status` 会消耗额外的内存。 若要忽略这些文件并改善 `git status` 的性能，可以将这些文件或文件夹添加到你的本地 .gitignore 文件中。 若要访问该文件，请转到“Git” > “设置” >  “Git 存储库设置”  。 然后，在“Git 文件”部分中，单击“添加”以创建 .gitignore 文件，或者如果已有文件，则单击“编辑”。
 
-- **在仅预览版) 的 Git (工具中启用提交图**
+- **在 Git 工具中启用提交图**
 
-    [Visual Studio 2022 预览版中的新增](/visualstudio/releases/2022/release-notes-preview)功能：如果在Visual Studio中查看 Git 存储库或分支历史记录时遇到延迟，我们集成了一项可帮助的“提交图”功能。 若要使用提交图，[请下载 Visual Studio 2022 预览版](https://aka.ms/vs2022preview)。 若要了解有关提交图的详细信息，请参阅Visual Studio博客文章[中的 Git 体验超级充电](https://devblogs.microsoft.com/visualstudio/supercharge-your-git-experience-in-vs/)。
+    [Visual Studio 2022 版本 17.2 中的新增](https://aka.ms/vs-2022-17-2-release)功能：如果在Visual Studio中查看 Git 存储库或分支历史记录时遇到延迟，我们集成了一项可帮助实现的“提交图”功能。 若要使用提交图，请确保[下载并安装 Visual Studio 2022](https://visualstudio.microsoft.com/downloads/)。 若要了解有关提交图的详细信息，请参阅Visual Studio博客文章[中的 Git 体验超级充电](https://devblogs.microsoft.com/visualstudio/supercharge-your-git-experience-in-vs/)。
 
 ## <a name="force-a-garbage-collection"></a>强制垃圾回收
 

@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ca4d29e280524338ef37822c672598ccd1b088c
-ms.sourcegitcommit: 3034382894e610b55f3ad07e737fa59b91680869
+ms.openlocfilehash: 58377b4a628ba525a68ea1ba576a37d229670297
+ms.sourcegitcommit: ffde8e1b7a5f0b14026b82aef2ce0c8fc19fb7b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "144547950"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "144845777"
 ---
 # <a name="sign-in-to-visual-studio-on-windows"></a>在 Windows 上登录到 Visual Studio 
 
@@ -28,17 +28,17 @@ ms.locfileid: "144547950"
 + 如何 [添加和切换](#add-and-switch) 用户帐户
 + 如何 [访问](#access) 多个用户帐户
 + 如何 [注销](#sign-out-of-account) 帐户
-+ 如何 [更新](#update-your-account-profile) 个人资料
++ 如何 [更新](#update-your-account-profile) 配置文件
 
 ::: moniker range="vs-2017"
 
 > [!WARNING]
-> 若要使用配置为条件访问或多重身份验证的资源，需要Visual Studio 2019 Update 16.6 或更高版本。 早期版本可能会触发降级的身份验证体验，在同一个Visual Studio会话中多次提示重新进行身份验证。 
+> 若要处理为条件访问或多重身份验证配置的资源，需要Visual Studio 2019 Update 16.6 或更高版本。 早期版本可能会触发降级的身份验证体验，在同一Visual Studio会话中多次提示重新进行身份验证。 
 
 ::: moniker-end
 
 <a name="benefits"></a>
-## <a name="benefits-why-sign-in"></a>优点：为什么登录？ 
+## <a name="benefits-why-sign-in"></a>权益：为什么登录？ 
 
 虽然无需登录，但登录有很多好处。   
 
@@ -48,7 +48,7 @@ ms.locfileid: "144547950"
 |[解锁 Visual Studio](../ide/how-to-unlock-visual-studio.md)|如果使用与[Visual Studio订阅或Azure DevOps](/visualstudio/subscriptions/using-the-subscriber-portal)组织关联的帐户，请解锁Visual Studio。|
 |[同步](../ide/synchronized-settings-in-visual-studio.md) 设置|登录到任何设备上的 Visual Studio 时，将立即应用自定义设置（例如键绑定、窗口布局和颜色主题）。|
 |自动连接到 Azure 服务|在 IDE 中连接到服务（如 Azure 和 Azure DevOps Services），而不会再次提示对同一帐户输入凭据。|
-|继续使用我们的 Community 版本，而不会中断|如果安装提示你定期登录，请登录到 IDE 以继续使用Visual Studio Community而不中断。|
+|继续使用Community版本而不中断|如果安装提示你定期登录，请登录到 IDE 以继续使用Visual Studio Community而不中断。|
 |[获取“Visual Studio Dev Essentials”](https://visualstudio.microsoft.com/dev-essentials/)|此计划包括免费软件、培训、支持等。|
 
 <a name="sign-in"></a>
@@ -75,7 +75,7 @@ ms.locfileid: "144547950"
 
 2. 选择 Microsoft 帐户或工作或学校帐户。  如果没有帐户，请通过选择 **“登录**”按钮附近的链接 [免费创建 Microsoft 帐户](https://support.microsoft.com/help/4026324/microsoft-account-how-to-create)。 
 
-3. 选择首选的颜色主题和其他 UI 设置。  Visual Studio[记住这些设置，并在](../ide/synchronized-settings-in-visual-studio.md)已登录的所有Visual Studio环境中同步这些设置。 以后可以打开 Visual Studio 中的“工具” > “选项”菜单来更改设置 。
+3. 选择首选颜色主题和其他 UI 设置。  Visual Studio[记住这些设置，并在](../ide/synchronized-settings-in-visual-studio.md)已登录的所有Visual Studio环境中同步这些设置。 以后可以打开 Visual Studio 中的“工具” > “选项”菜单来更改设置 。
 
    可以看到已成功登录到Visual Studio环境的右上角。   除非注销，否则在启动 Visual Studio 时会自动登录，并自动应用于对同步设置所做的所有更改。
 
@@ -107,13 +107,13 @@ ms.locfileid: "144547950"
 
 若要将其他帐户添加到 Visual Studio：
 
-1. 选择 **文件** > **帐户设置**。
+1. 选择 **“文件** > **帐户”设置**。
 
-1. 从 **“所有帐户**”中，使用 **+** “ **添加** ”下拉列表选择帐户。
+1. 从 **“所有帐户**”中，使用 **+** “ **添加”** 下拉列表选择帐户。
 
 1. 在“登录到你的帐户”页面上，选择该帐户或选择“使用另一个帐户”   。 按照提示输入新的帐户凭据。
 
-（可选）现在可以转到“服务器资源管理器”，并查看与刚添加的帐户相关联的 Azure 服务  。 在“服务器资源管理器”中，右键单击“Azure”节点并选择“管理和筛选订阅”    。 通过单击当前帐户旁的下拉箭头选择新的帐户，然后选择想要在“服务器资源管理器”中显示的订阅  。 应可以看到与指定订阅关联的所有服务。 即使当前未使用第二个帐户登录到 Visual Studio，也可登录到该帐户的服务和资源。 Project  > **Add Connected Service** 也是如此。
+（可选）现在可以转到“服务器资源管理器”，并查看与刚添加的帐户相关联的 Azure 服务  。 在“服务器资源管理器”中，右键单击“Azure”节点并选择“管理和筛选订阅”    。 通过单击当前帐户旁的下拉箭头选择新的帐户，然后选择想要在“服务器资源管理器”中显示的订阅  。 应可以看到与指定订阅关联的所有服务。 即使当前未使用第二个帐户登录到 Visual Studio，也可登录到该帐户的服务和资源。 Project **Add Connected Service** 也是如此 > 。
 ::: moniker-end
 
 ::: moniker range="vs-2017"
@@ -121,7 +121,7 @@ ms.locfileid: "144547950"
 
 若要将其他帐户添加到 Visual Studio：
 
-1. 选择 **文件** > **帐户设置**。
+1. 选择 **“文件** > **帐户”设置**。
 
 1. 在“所有帐户”下，选择“添加帐户”   。
 
@@ -173,7 +173,7 @@ ms.locfileid: "144547950"
 
 有关详细说明，请参阅[在 Visual Studio 中使用 GitHub 帐户](work-with-github-accounts.md)。
 
-### <a name="add-a-multi-factor-authentication-mfa-enabled-account-to-visual-studio"></a>将启用了 MFA) 的多重身份验证 (帐户添加到Visual Studio
+### <a name="add-a-multi-factor-authentication-mfa-enabled-account-to-visual-studio"></a> (启用了 MFA) 的帐户添加多重身份验证，以Visual Studio
 
 在 Visual Studio 2019 16.6 版本中，我们添加了新的功能，该功能简化了用户对受 CA 策略（如 MFA）保护资源的访问方式。 要使用此增强工作流，需要选择使用系统的默认 Web 浏览器作为添加并重新验证 Visual Studio 帐户的机制。
 
@@ -184,7 +184,7 @@ ms.locfileid: "144547950"
 <a name="access"></a>
 ## <a name="access-multiple-accounts-associated-with-the-visual-studio-sign-in-account"></a>访问与Visual Studio登录帐户关联的多个帐户
 
-使用 Microsoft 或组织帐户登录Visual Studio后，可以在 **“添加连接服务**”对话框、**服务器资源管理器** 和 **团队资源管理器** 等位置查看帐户访问的资源。
+使用 Microsoft 或组织帐户登录Visual Studio后，可以在“**添加连接服务**”对话框、**服务器资源管理器** 和 **团队资源管理器** 等位置查看可从帐户访问的资源。
 
 Azure、Application Insights、Azure DevOps 和 Microsoft 365 服务都支持简化的登录体验。
 
@@ -220,7 +220,7 @@ Azure、Application Insights、Azure DevOps 和 Microsoft 365 服务都支持简
 
 ### <a name="access-azure-active-directory-in-a-web-project"></a>在 Web 项目中访问 Azure Active Directory
 
-Azure Active Directory (Azure AD) 支持最终用户单一登录 ASP.NET Web API 服务中的 MVC Web 应用或 AD 身份验证。 域身份验证与单个用户帐户身份验证不同。 有权访问 Active Directory 域的用户可以使用其现有的Azure AD帐户连接到 Web 应用程序。 Microsoft 365 应用还可以使用域身份验证。
+Azure Active Directory (Azure AD) 支持最终用户单一登录，ASP.NET Web API 服务中的 MVC Web 应用或 AD 身份验证。 域身份验证与单个用户帐户身份验证不同。 有权访问 Active Directory 域的用户可以使用其现有的Azure AD帐户连接到 Web 应用程序。 Microsoft 365 应用还可以使用域身份验证。
 
 ::: moniker range="vs-2017"
 
@@ -242,13 +242,22 @@ Azure Active Directory (Azure AD) 支持最终用户单一登录 ASP.NET Web API
 
 ::: moniker range="vs-2019"
 
-要了解此操作，请创建一个新的“ASP.NET Core Web 应用”项目。 在 **“其他信息**”页上，从 **“目标框架**”下拉列表中选择 **.NET Core 3.1 () 长期支持**，然后从 **“身份验证类型**”下拉列表中选择身份验证类型。
+要了解此操作，请创建一个新的“ASP.NET Core Web 应用”项目。 在 **“其他信息**”页上，从 **目标框架** 下拉列表中选择 **.NET Core 3.1 (长期支持)**，然后从 **“身份验证类型**”下拉列表中选择身份验证类型。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2022"
 
 要了解此操作，请创建一个新的“ASP.NET Core Web 应用”项目。 在 **“其他信息**”页上，从 **“目标框架**”下拉列表中选择 **.NET Core 6 (长期支持)**，然后从 **“身份验证类型**”下拉列表中选择身份验证类型。
+
+### <a name="identity-proxy-support-for-azure-active-directory-backed-accounts"></a>标识：Azure Active Directory支持的帐户的代理支持
+
+现在，Visual Studio可以检测用户何时在代理后面，并在将 MICROSOFT 帐户 (MSA) 或工作或学校帐户 (WSA) 添加到Visual Studio时主动提示输入代理凭据。 
+
+代理凭据存储在Windows凭据管理器中，并根据需要用于完成标识相关操作。
+
+> [!NOTE]
+> 如果代理服务器在打开Visual Studio后启动或更改，则 **帐户设置** 对话框将显示警告，但需要重启Visual Studio以获取代理凭据提示。
 
 ::: moniker-end
 
@@ -261,7 +270,7 @@ Azure Active Directory (Azure AD) 支持最终用户单一登录 ASP.NET Web API
 ## <a name="update-your-account-profile"></a>更新帐户配置文件
 
 1. 转到 **“文件>帐户设置...”**，然后选择 **“管理Visual Studio配置文件**”链接。
-1. 在浏览器窗口中，选择 **“编辑配置文件** ”并更改所需的设置。
+1. 在浏览器窗口中，选择“ **编辑配置文件** ”并更改所需的设置。
 1. 完成操作后，选择“保存更改”。
 
 ## <a name="see-also"></a>另请参阅
