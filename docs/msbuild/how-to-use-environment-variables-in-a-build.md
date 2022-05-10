@@ -2,7 +2,7 @@
 title: 如何：在生成中使用环境变量 | Microsoft Docs
 description: 了解如何在 MSBuild 项目文件中访问环境变量，并使用环境变量设置生成选项，而无需修改项目文件。
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 05/09/2022
 ms.topic: conceptual
 helpviewer_keywords:
 - environment variables, referencing
@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a56d81586fa855552eb5d400c43ddd03e39098b
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: b65ef23ad583ca9e6fcd9559429564204c3c1f1a
+ms.sourcegitcommit: 2d45e5df52cec5dc1c3051e7d7cc4978daeb232c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126640621"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "144841064"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>如何：在生成中使用环境变量
 
