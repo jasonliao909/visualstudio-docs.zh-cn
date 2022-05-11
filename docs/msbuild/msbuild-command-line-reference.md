@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: eb0a2d4e856053f513216206b99e4d9b3370fe6f
-ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
+ms.openlocfilehash: b25ff854daba6f1691b74e570d0075cf8beeb844
+ms.sourcegitcommit: 719357a69d6d2e1ddb7c0f3569f7cfcdfb34fe23
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "139552130"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "144935372"
 ---
 # <a name="msbuild-command-line-reference"></a>MSBuild 命令行参考
 
@@ -73,7 +73,7 @@ MSBuild.exe [Switches] [ProjectFile]
 |-version|-ver|仅显示版本信息。 不生成项目。|
 |@`file`||从文本文件插入命令行开关。 如果具有多个文件，可单独指定它们。 有关详细信息，请参阅[响应文件](../msbuild/msbuild-response-files.md)。|
 |-warnAsError[:`code`[`;code2`]|-err[`:code`[`;code2`]|要视为错误的警告代码的列表。  使用分号或逗号分隔多个警告代码。 若要将所有警告视为错误，请使用不带任何值的开关。 如果警告被视为错误，则目标将像对待警告一样继续执行，但总体生成会失败。<br/><br/>示例：`-err:MSB4130`|
-|-warnNotAsError[：`code`[`;code2`]|-noerr[`:code`[`;code2`]|不应提升为错误的警告代码列表。 具体而言，如果将 warnAsError 开关设置为将所有警告提升为错误，则不提升使用 warnNotAsError 指定的错误代码。 如果未将 warnAsError 设置为将所有警告提升为错误，则此操作不起作用。 使用分号或逗号分隔多个警告代码。 <br/><br/>示例：`-noerr:MSB4130`|
+|-warnNotAsError[：`code`[`;code2`]|-noerr[`:code`[`;code2`]|不应提升为错误的警告代码列表。 具体而言，如果将 warnAsError 开关设置为将所有警告提升为错误，则不会升级使用 warnNotAsError 指定的错误代码。 如果 warnAsError 未设置为将所有警告提升为错误，则这不起作用。 使用分号或逗号分隔多个警告代码。 <br/><br/>示例：`-noerr:MSB4130`|
 |-warnAsMessage[:`code`[`;code2`]|-noWarn[:`code`[`;code2`]|要视为低重要性消息的警告代码的列表。  使用分号或逗号分隔多个警告代码。<br/><br/>示例：`-noWarn:MSB3026`|
 
 ### <a name="switches-for-loggers"></a>记录器的开关
@@ -83,7 +83,7 @@ MSBuild.exe [Switches] [ProjectFile]
 |-binaryLogger[:[LogFile=]`output.binlog`<br/>[;ProjectImports=[None,Embed,ZipFile]]]|-bl|将所有生成事件串行化为压缩的二进制文件。 默认情况下，该文件位于当前目录中，名称为 msbuild.binlog。 二进制日志是对生成过程的详细描述，可在将来用于重建文本日志，或由其它分析工具使用。 二进制日志的大小通常只有最详细文本诊断级日志的 1/10 到 1/20，但却能包含更多信息。<br /><br />二进制记录器默认收集项目文件的源文本，包括所有导入的项目，以及在生成期间所遇到的目标文件。 可选的 `ProjectImports` 开关控制此行为：<br /><br /> -   ProjectImports=None。 不收集项目导入。<br /> -   ProjectImports=Embed。 在日志文件中嵌入项目导入（默认）。<br /> -   ProjectImports=ZipFile。 将项目文件保存至 \<output>.projectimports.zip，其中 \<output> 的名称与二进制日志文件的名称相同。<br /><br />ProjectImports 的默认设置为“嵌入”。<br />请注意：记录器不收集 .cs、.cpp 等非 MSBuild 源文件 。<br />将 .binlog 文件作为参数而非项目/解决方案传递给 msbuild.exe 可“播放”该文件 。 其他记录器将接收日志文件中包含的信息，就像原始生成发生时那样。 若要详细了解二进制日志及其使用情况，可访问 https://github.com/dotnet/msbuild/blob/main/documentation/wiki/Binary-Log.md <br /><br />示例：<br /> -   `-bl`<br /> -    `-bl:output.binlog`<br /> -   `-bl:output.binlog;ProjectImports=None`<br /> -   `-bl:output.binlog;ProjectImports=ZipFile`<br /> -   `-bl:..\..\custom.binlog`<br /> -   `-binaryLogger`|
 |-consoleLoggerParameters:<br /><br /> `parameters`|-clp:`parameters`|将指定的参数传递到控制台记录器，后者会在控制台窗口中显示生成信息。 可以指定以下参数：<br /><br /> -   **PerformanceSummary**。 显示在任务、目标和项目中所花费的时间。<br />-   **Summary**。 在末尾显示错误和警告摘要。<br />-   **NoSummary**。 不在末尾显示错误和警告摘要。<br />-   **ErrorsOnly**。 仅显示错误。<br />-   **WarningsOnly**。 仅显示警告。<br />-   **NoItemAndPropertyList**。 如果详细级别设置为 `diagnostic`，则不在每个项目生成开头显示项和属性的列表。<br />-   **ShowCommandLine**。 显示 `TaskCommandLineEvent` 消息。<br />-   **ShowTimestamp**。 将时间戳显示为任何消息的前缀。<br />-   **ShowEventId**。 显示每个已启动事件、已完成事件和消息的事件 ID。<br />-   **ForceNoAlign**。 不将文本与控制台缓冲区大小对齐。<br />-   **DisableConsoleColor**。 将默认控制台颜色用于所有日志记录消息。<br />-   **DisableMPLogging**。 在非多处理器模式下运行时，禁用输出的多处理器日志记录样式。<br />-   **EnableMPLogging**。 启用多处理器日志记录样式（即使在非多处理器模式下运行）。 默认情况下，此日志记录样式处于启用状态。<br />-   **Verbosity**。 重写此记录器的 -verbosity 设置。<br /><br /> 使用分号分隔多个参数，如以下示例所示：<br /><br /> `-consoleloggerparameters:PerformanceSummary;NoSummary -verbosity:minimal`<br/><br/> 默认控制台记录器的详细级别为 normal，并包括 `Summary`。|
 |-distributedFileLogger|-dfl|将每个 MSBuild 节点的生成输出记录到其自己的文件。 这些文件的初始位置是当前目录。 默认情况下，这些文件命名为 MSBuild\<NodeId>.log。 可使用 -fileLoggerParameters 开关指定文件位置和 fileLogger 的其他参数。<br /><br /> 如果你使用 -fileLoggerParameters 开关命名日志文件，分布式记录器会在为每个节点创建日志文件时，将相应名称用作模板，并将节点 ID 追加到相应名称中。|
-|-distributedLogger:<br /><br /> `central logger`*<br /><br /> `forwarding logger`|-dl:`central logger`*`forwarding logger`|记录 MSBuild 中的事件，将不同记录器实例附加到每个节点。 若要指定多个记录器，请分别指定每个记录器。<br /><br /> 使用记录器语法指定记录器。 有关记录器语法，请参阅下面的 logger 开关。<br /><br /> 下面的示例演示如何使用此开关：<br /><br /> `-dl:XMLLogger,MyLogger,Version=1.0.2,Culture=neutral`<br /><br /> `-dl:MyLogger,C:\My.dll*ForwardingLogger,C:\Logger.dll`|
+|-distributedLogger:<br /><br /> `central logger`<br /><br /> `forwarding logger`|-dl:`central logger` `forwarding logger`|记录 MSBuild 中的事件，将不同记录器实例附加到每个节点。 若要指定多个记录器，请分别指定每个记录器。<br /><br /> 使用记录器语法指定记录器。 有关记录器语法，请参阅下面的 logger 开关。<br /><br /> 下面的示例演示如何使用此开关：<br /><br /> `-dl:XMLLogger,MyLogger,Version=1.0.2,Culture=neutral`<br /><br /> `-dl:MyLogger,C:\My.dll*ForwardingLogger,C:\Logger.dll`|
 |-fileLogger<br /><br /> *[number]*|-fl[`number`]|将生成输出记录到当前目录中的单个文件。 如果没有指定 `number`，输出文件名为 msbuild.log。 如果指定 `number`，则输出文件名为 msbuild\<n>.log，其中 \<n> 是 `number`。 `Number` 可以是 1 到 9 的数字。<br /><br /> 可使用 -fileLoggerParameters 开关指定文件位置和 fileLogger 的其他参数。|
 |-fileLoggerParameters[number]:<br /><br /> `parameters`|-flp[ `number`]: `parameters`|为文件记录器和分布式文件记录器指定任何额外参数。 若有此开关，表明存在对应的 -filelogger[`number`] 开关。 `Number` 可以是 1 到 9 的数字。<br /><br /> 可使用针对 -consoleloggerparameters 列出的所有参数。 还可以使用以下一个或多个参数：<br /><br /> -   **LogFile**。 写入生成日志的日志文件的路径。 分布式文件记录器将此路径用作其日志文件的名称的前缀。<br />-   **Append**。 确定是将生成日志追加到日志文件还是覆盖它。 设置该开关时，生成日志将追加到日志文件。 此开关不存在时，将覆盖现有日志文件的内容。<br />     示例：`msbuild myfile.proj -flp:FileLogger,Microsoft.Build;logfile=MyLog.log;append`<br />     如果包含显式 `true` 或 `false` 设置，则无论设置如何，都将追加日志。 如果不包含追加开关，则会覆盖日志。<br />     在此例中会覆盖文件：`msbuild myfile.proj -flp:FileLogger,Microsoft.Build;logfile=MyLog.log`<br />     在此例中会追加文件：`msbuild myfile.proj -flp:FileLogger,Microsoft.Build;logfile=MyLog.log;append=true`<br />     在此例中会追加文件：`msbuild myfile.proj -flp:FileLogger,Microsoft.Build;logfile=MyLog.log;append=false`<br />-   **Encoding**。 指定文件的编码（例如，UTF-8、Unicode 或 ASCII）。<br /><br /> 下面的示例为警告和错误生成单独的日志文件：<br /><br /> `-flp1:logfile=errors.txt;errorsonly -flp2:logfile=warnings.txt;warningsonly`<br /><br /> 下面的示例演示其他可能性：<br /><br /> `-fileLoggerParameters:LogFile=MyLog.log;Append; Verbosity=diagnostic;Encoding=UTF-8`<br /><br /> `-flp:Summary;Verbosity=minimal;LogFile=msbuild.sum`<br /><br /> `-flp1:warningsonly;logfile=msbuild.wrn`<br /><br /> `-flp2:errorsonly;logfile=msbuild.err`|
 |-logger:<br /><br /> `logger`|-l:`logger`|指定要用于记录 MSBuild 中的事件的记录器。 若要指定多个记录器，请分别指定每个记录器。<br /><br /> 将以下语法用于 `logger`: `[``LoggerClass``,]``LoggerAssembly``[;``LoggerParameters``]`<br /><br /> 将以下语法用于 `LoggerClass`: `[``PartialOrFullNamespace``.]``LoggerClassName`<br /><br /> 如果程序集恰好包含一个记录器，则不必指定记录器类。<br /><br /> 将以下语法用于 `LoggerAssembly`：`{``AssemblyName``[,``StrongName``] &#124;` `AssemblyFile``}`<br /><br /> 记录器参数是可选的，传递给记录器时与输入时完全一致。<br /><br /> 下面的示例使用 -logger 开关。<br /><br /> `-logger:XMLLogger,MyLogger,Version=1.0.2,Culture=neutral`<br /><br /> `-logger:XMLLogger,C:\Loggers\MyLogger.dll;OutputAsHTML`|
