@@ -6,7 +6,7 @@ keywords: ''
 author: anandmeg
 ms.author: meghaanand
 manager: jmartens
-ms.date: 02/15/2022
+ms.date: 05/10/2022
 ms.custom: vs-acquisition
 ms.topic: reference
 helpviewer_keywords:
@@ -17,14 +17,16 @@ ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 26d97d732d50240510c2f72b94e738368f093e2d
-ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
+ms.openlocfilehash: a317bf77c6719b67c1d3293b77c19cdc209b0d91
+ms.sourcegitcommit: 7b04a4062108f714bdbf294ced79034e2797e372
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "139550840"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "144948363"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>Visual Studio 工作负荷和组件 ID
+
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 单击下表中的版本名称，查看使用命令行安装 Visual Studio 或指定为 VSIX 清单中的依赖项所需的工作负载和组件 ID。
 
@@ -72,7 +74,7 @@ ms.locfileid: "139550840"
 
 ::: moniker range=">=vs-2022"
 
-**已针对 [17.1 版](/visualstudio/releases/2022/release-notes/)进行更新**
+**已针对 [17.2 版本](/visualstudio/releases/2022/release-notes/)进行了更新**
 
 | **版本** | **ID** | **说明** |
 | ----------- | ------ | --------------- |

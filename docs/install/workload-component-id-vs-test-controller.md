@@ -6,7 +6,7 @@ keywords: ''
 author: anandmeg
 ms.author: meghaanand
 manager: jmartens
-ms.date: 02/15/2022
+ms.date: 05/10/2022
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,14 +16,16 @@ ms.assetid: fbbda9c8-d2c6-474d-b52d-a95227d52fe7
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: a08310139023c788ee5155c406c1e714e2d321a6
-ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
+ms.openlocfilehash: 3dae02fc3e07dad4b86950301ba3fb63ac7eecc2
+ms.sourcegitcommit: 7b04a4062108f714bdbf294ced79034e2797e372
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "139550881"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "144948378"
 ---
 # <a name="visual-studio-test-controller-component-directory"></a>Visual Studio Test Controller 组件目录
+
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 [!INCLUDE[workloads-components-universal-header_md](includes/workloads-components-universal-header_md.md)]
 

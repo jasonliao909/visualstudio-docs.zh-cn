@@ -6,16 +6,16 @@ keywords: ''
 author: anandmeg
 ms.author: meghaanand
 manager: jmartens
-ms.date: 02/15/2022
+ms.date: 05/10/2022
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: ad32472bf418f5f22debbf72ab1fae913775f51d
-ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
+ms.openlocfilehash: 7215f8c499068a6667269ba9024dbbbdf7339fb5
+ms.sourcegitcommit: 7b04a4062108f714bdbf294ced79034e2797e372
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "139550880"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "144948377"
 ---
 ## <a name="test-controller"></a>测试控制器
 
@@ -27,7 +27,7 @@ ms.locfileid: "139550880"
 
 组件 ID | “属性” | Version | 依赖项类型
 --- | --- | --- | ---
-Microsoft.VisualStudio.ComponentGroup.TestTools.TestController | 测试控制器核心功能 | 17.1.32112.364 | 必需
+Microsoft.VisualStudio.ComponentGroup.TestTools.TestController | 测试控制器核心功能 | 17.2.32408.312 | 必需
 
 ## <a name="unaffiliated-components"></a>独立组件
 
