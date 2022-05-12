@@ -34,6 +34,8 @@
       href: events-viewer.md
     - name: CPU 使用率
       href: cpu-usage.md
+    - name: 文件 IO
+      href: use-file-io.md
     - name: 内存使用率
       items:
         - name: 选择内存分析工具
