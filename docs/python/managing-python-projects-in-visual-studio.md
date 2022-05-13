@@ -10,14 +10,16 @@ ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6d54a519aa3b9075cf698d4ef1c3866cdb1037a3
-ms.sourcegitcommit: a439b1878939b2364cee0d09b851c2a67c42e563
+ms.openlocfilehash: 8e496f7d2b5b684818119d9cbcd3712ded17e18f
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "138566405"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "145017851"
 ---
 # <a name="python-projects-in-visual-studio"></a>Visual Studio 中的 Python 项目
+
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 通常仅使用文件夹和文件定义 Python 应用程序，但如果程序变大，并且可能会涉及自动生成文件、适用于 Web 应用程序的 JavaScript 等，这种结构就会变得复杂。 Visual Studio 项目帮助管理复杂性问题。 该项目（  .pyproj 文件）标识与项目关联的所有源文件和内容文件，包含每个文件的生成信息，维护这些信息并与源代码管理系统集成，并帮助你将应用程序组织为逻辑组件。
 

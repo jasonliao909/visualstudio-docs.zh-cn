@@ -2,7 +2,7 @@
 description: 销毁 span 对象并释放其资源。
 title: span::~span 析构函数 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::span::~span
 helpviewer_keywords:
@@ -14,14 +14,16 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 383a48256c7bb56c14892e10d92e3963ec533fd0
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 91ba7fc5a3189eb50e99e1e4e8dbeaa1366326ba
+ms.sourcegitcommit: caf5ca17efde4dc4de8b1bdfbe7770f6d705024d
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126642288"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "145017629"
 ---
 # <a name="spanspan-destructor"></a>span::~span 析构函数
+
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 销毁 `span` 对象并释放其资源。
 

@@ -2,7 +2,7 @@
 description: 初始化 span 类的新实例。
 title: span::span 构造函数 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::span::span
 helpviewer_keywords:
@@ -14,14 +14,16 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a1f3a073caa56dba1bc680a1e2205a7be0448f44
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 2aabbb6716f0044b7ab1da4529adbc26df4a622d
+ms.sourcegitcommit: caf5ca17efde4dc4de8b1bdfbe7770f6d705024d
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736273"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "145017824"
 ---
 # <a name="spanspan-constructor"></a>span::span 构造函数
+
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 初始化 `span` 类的新实例。
 

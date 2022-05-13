@@ -1,10 +1,25 @@
 ---
-title: 并发可视化工具中的线程视图 | Microsoft Docs
+title: 并发可视化工具中的线程视图
 description: 了解在“线程”视图中，你可以确定哪些线程在执行段期间执行代码。
-ms.date: 11/04/2018
+ms.date: 05/06/2022
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.threadblocking
+- vs.cv.threads.timeline.channelnames
+- vs.cv.threads.selection.copy
+- vs.cv.threads.reportnav.current
+- vs.cv.threads.timeline.empty
+- vs.cv.threads.export
+- vs.cv.threads.jmc
+- vs.cv.threads.tools.managechannels
+- vs.cv.threads.tools.measure
+- vs.cv.threads.filter
+- vs.cv.threads.reportnav.profile
+- vs.cv.threads.timeline.threadready
+- vs.cv.threads.timeline.caret
+- vs.cv.threads.reportnav.unblockedby
+- vs.cv.threads.activelegend
+- vs.cv.threads.tools.zoom
 helpviewer_keywords:
 - Concurrency Visualizer, Threads View (Parallel Performance)
 ms.assetid: 2e441103-a266-407b-88c3-fb58716257a3
@@ -14,14 +29,16 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c715267fe002b136ee07e2a925b979437fe97b0
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 61a2cf8cef8493a3407a4018a02812d98d3731ce
+ms.sourcegitcommit: caf5ca17efde4dc4de8b1bdfbe7770f6d705024d
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126642276"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "145017616"
 ---
 # <a name="threads-view-in-the-concurrency-visualizer"></a>并发可视化工具中的线程视图
+
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 “线程”视图在并发可视化工具中最详细且功能最丰富的视图。 在“线程”视图中，可识别在执行段期间执行代码的线程，并分析线程是否正在执行或由于同步、I/O 或其他原因而阻塞。 “线程”视图报告还分析调用堆栈树的执行和取消阻塞线程。
 
@@ -114,25 +131,25 @@ ms.locfileid: "126642276"
 
 - **执行**“执行”报表显示应用程序在执行过程所用的时间的明细。
 
-  若要查找在其中花费执行时间的代码行，请展开调用关系树，然后在调用树条目快捷菜单上，选择“查看源”或“查看调用站点”。 “查看源”会查找执行的代码行。 “查看调用站点”会查找调用执行的代码行。 如果只有一个调用站点行存在，则会突出显示其代码。 如果存在多个调用站点，请在对话框中选择所需的调用站点，然后选择“转至源”。 在查找具有最多实例和/或最大时间的调用站点时，这往往最为有用。 有关详细信息，请参阅[执行分析报告](../profiling/execution-profile-report.md)。
+  若要查找在其中花费执行时间的代码行，请展开调用关系树，然后在调用树条目快捷菜单上，选择“查看源”或“查看调用站点”。 “查看源”会查找执行的代码行。 “查看调用站点”会查找调用执行的代码行。 如果只有一个调用站点行存在，则会突出显示其代码。 如果存在多个调用站点，请在对话框中选择所需的调用站点，然后选择“转至源”。 在查找具有最多实例和/或最大时间的调用站点时，这往往最为有用。 有关详细信息，请参阅[执行分析报告](../profiling/threads-view-timeline-reports.md#execution-time-threads-view)。
 
-- **同步**“同步”报表显示对同步块负责的调用，以及每个调用堆栈的总阻塞时间。 有关详细信息，请参阅[同步时间](../profiling/synchronization-time.md)。
+- **同步**“同步”报表显示对同步块负责的调用，以及每个调用堆栈的总阻塞时间。 有关详细信息，请参阅[同步时间](../profiling/threads-view-timeline-reports.md#synchronization-time)。
 
-- **I/O**“I/O”报表显示对 I/O 块负责的调用，以及每个调用堆栈的总阻塞时间。 有关详细信息，请参阅 [I/O 时间（线程视图）](../profiling/i-o-time-threads-view.md)。
+- **I/O**“I/O”报表显示对 I/O 块负责的调用，以及每个调用堆栈的总阻塞时间。 有关详细信息，请参阅 [I/O 时间（线程视图）](../profiling/threads-view-timeline-reports.md#io-time-threads-view)。
 
-- **休眠**“休眠”报表显示对休眠块负责的调用，以及每个调用堆栈的总阻塞时间。 有关详细信息，请参阅[睡眠时间](../profiling/sleep-time.md)。
+- **休眠**“休眠”报表显示对休眠块负责的调用，以及每个调用堆栈的总阻塞时间。 有关详细信息，请参阅[睡眠时间](../profiling/threads-view-timeline-reports.md#sleep-time)。
 
-- **内存管理**“内存管理”报表显示出现内存管理块的调用，以及每个调用堆栈的总阻塞时间。 使用此信息可以确定具有过多分页或垃圾回收问题的区域。  有关详细信息，请参阅[内存管理时间](../profiling/memory-management-time.md)。
+- **内存管理**“内存管理”报表显示出现内存管理块的调用，以及每个调用堆栈的总阻塞时间。 使用此信息可以确定具有过多分页或垃圾回收问题的区域。  有关详细信息，请参阅[内存管理时间](../profiling/threads-view-timeline-reports.md#memory-management-time)。
 
-- **抢占**“抢占”报表显示其中的系统上进程抢占当前进程以及替换了当前进程中的线程的各个线程。 可以使用此信息确定对抢占负有最多责任的进程和线程。 有关详细信息，请参阅[抢占时间](../profiling/preemption-time.md)。
+- **抢占**“抢占”报表显示其中的系统上进程抢占当前进程以及替换了当前进程中的线程的各个线程。 可以使用此信息确定对抢占负有最多责任的进程和线程。 有关详细信息，请参阅[抢占时间](../profiling/threads-view-timeline-reports.md#preemption-time)。
 
-- **UI 处理**“UI 处理”报表显示对 UI 处理块负责的调用，以及每个调用堆栈的总阻塞时间。 有关详细信息，请参阅 [UI 处理时间](../profiling/ui-processing-time.md)。
+- **UI 处理**“UI 处理”报表显示对 UI 处理块负责的调用，以及每个调用堆栈的总阻塞时间。 有关详细信息，请参阅 [UI 处理时间](../profiling/threads-view-timeline-reports.md#ui-processing-time)。
 
 - **每线程摘要** 选择“每线程摘要”会显示一个图表，该图表显示当前所选时间间隔的线程状态。 此彩色编码列显示每个线程在运行、阻塞、I/O 和其他状态下所用的总时间。 线程在底部进行标记。 调整时间线关系图中的缩放级别时，此图会自动更新。
 
-  在某些缩放级别，某些线程可能不会在图中显示。 发生这种情况时，省略号 (**...**) 会出现在右侧。 如果所需线程未出现，则可以隐藏其他线程。 有关详细信息，请参阅[“每线程摘要”报告](../profiling/per-thread-summary-report.md)。
+  在某些缩放级别，某些线程可能不会在图中显示。 发生这种情况时，省略号 (**...**) 会出现在右侧。 如果所需线程未出现，则可以隐藏其他线程。 有关详细信息，请参阅[“每线程摘要”报告](../profiling/threads-view-reports.md#per-thread-summary-report)。
 
-- **Disk 操作** 选择“Disk 操作”，可显示当前进程的磁盘 I/O 中涉及的进程和线程、它们使用的文件（例如，已加载的 DLL）、读取的字节数以及其他信息。 可以使用此报告评估在执行过程中用于访问文件的时间（尤其是在进程似乎受到 I/O 限制时）。 有关详细信息，请参阅[“磁盘操作”报告](../profiling/disk-operations-report-threads-view.md)。
+- **Disk 操作** 选择“Disk 操作”，可显示当前进程的磁盘 I/O 中涉及的进程和线程、它们使用的文件（例如，已加载的 DLL）、读取的字节数以及其他信息。 可以使用此报告评估在执行过程中用于访问文件的时间（尤其是在进程似乎受到 I/O 限制时）。 有关详细信息，请参阅[“磁盘操作”报告](../profiling/threads-view-reports.md#disk-operations-report-threads-view)。
 
 ### <a name="current-tab"></a>“当前”选项卡
 此选项卡显示时间线关系图中某个线程段上的所选点的调用堆栈。 调用堆栈会进行修整以显示与应用相关的活动。
@@ -140,5 +157,151 @@ ms.locfileid: "126642276"
 ### <a name="unblocking-stack-tab"></a>“取消阻塞堆栈”选项卡
 此选项卡显示取消阻塞所选线程的线程以及取消阻塞调用堆栈。
 
+## <a name="channels-threads-view"></a>通道（线程视图）
+
+并发可视化工具显示四类通道：线程通道、磁盘通道、标记通道和 GPU 通道。
+
+### <a name="thread-channels"></a>线程通道
+ 线程通道通过颜色显示一个线程的状态。 停在通道名称处时，将显示给定线程的开始函数。 并发可视化工具可检测到多种线程。 下表列出了最常用的线程类型。
+
+|线程|描述|
+|-|-|
+|主线程|启动应用的线程。|
+|工作线程|由应用程序主线程创建的线程。|
+|CLR 工作线程|由公共语言运行时 (CLR) 创建的工作线程。|
+|调试器帮助程序|由 Visual Studio 调试器创建的工作线程。|
+|ConcRT 线程|由 Microsoft 并发运行时创建的线程。|
+|GDI 线程|由 GDIPlus 创建的线程。|
+|OLE/RPC 线程|作为 RPC 工作线程创建的线程。|
+|RPC 线程|作为 RPC 线程创建的线程。|
+|Winsock 线程|作为 Winsock 线程创建的线程。|
+|线程池|由 CLR 线程池创建的线程。|
+
+### <a name="disk-channels"></a>磁盘通道
+ 磁盘通道对应于计算机中的物理驱动器。 由于系统上的每个物理驱动器均存在单独读取和编写操作通道，因此每个驱动器均有两个通道。 磁盘数量对应于内核设备名称。 只有在磁盘上有活动时才显示磁盘通道。
+
+### <a name="marker-channels"></a>标记通道
+ 标记通道对应于由应用及其所使用的库生成的事件。 例如，任务并行库、并行模式库和 C++ AMP 生成显示为标记的事件。 每个标记通道关联一个线程 ID，在通道的说明旁边显示。 此 ID 用于标识生成事件的线程。 通道的说明包括生成事件的 Windows 事件跟踪 (ETW) 提供程序的名称。 如果通道显示来自[并发可视化工具 SDK](../profiling/concurrency-visualizer-sdk.md) 的事件，则还会显示该系列的名称。
+
+### <a name="gpu-channels"></a>GPU 通道
+ GPU 通道显示系统上有关 DirectX 11 活动的信息。  每个与图形卡关联的 DirectX 引擎都有一个单独的通道。  单独的段表示处理 DMA 数据包所花费的时间。
+
+## <a name="copy-selection"></a>复制选择
+
+若要从“报告”选项卡复制整个调用堆栈，请单击“复制”。 然后，可以在任何支持该操作的程序中粘贴该调用堆栈。
+
+## <a name="current-tab"></a>“当前”选项卡
+
+如果选择一个 CPU 线程段，则通过单击“当前”选项卡，可以查看时间线中最接近当前选择点的调用堆栈（如果有）。  在这种情况下，选择点由时间线上方的黑色箭头或插入符号来表示。 选择阻塞段时，将不显示插入符号，因为没有任何执行操作。 但是，仍会突出显示该段，并显示调用堆栈。
+
+ “当前”选项卡还显示有关 DirectX 活动段、标记和 I/O 访问的信息。  对于 DirectX 活动段，将会显示有关硬件队列如何处理 DMA 数据包的信息。  对于标记，将会显示有关说明和标记类型的信息。  对于 I/O 访问，将会显示有关文件和读取或写入字节数的信息。
+
+## <a name="empty-timeline-segment"></a>空时间线分段
+
+在并发可视化工具中，时间线部分为空（具有白色背景）的原因取决于通道的种类。
+
+- 对于 CPU 线程通道，这意味着在时间线的这一部分，线程不存在。 如果您需要查看线程，则可以使用缩放控件或通过水平滚动来查找其执行部分。
+
+- 对于 I/O 通道，这意味着在该时间点未代表目标进程发生磁盘访问。
+
+- 对于 DirectX 通道，这意味着在时间线的这一部分，未代表目标进程执行任何 GPU 工作。
+
+- 对于标记通道，这意味着未生成任何标记。
+
+## <a name="export-button-concurrency-visualizer"></a>“导出”按钮（并发可视化工具）
+
+通过“导出”按钮，可以将调用堆栈作为 .csv 文件导出，以用于自己的记录或与其他工具（如 Microsoft Excel）一起使用。
+
+## <a name="just-my-code-threads-view"></a>仅我的代码（线程视图）
+
+如果选择此选项，将筛选调用堆栈，仅显示你的代码和一级被调用的函数。
+
+ 通过激活此选项，可极大地降低调用堆栈的复杂性，还可以简化对特定问题的诊断。
+
+ 在某些情况下，选择此选项可以筛选出阻止的调用。 如果需要完整的调用堆栈详细信息以便作决定，请清除此选项，公开完整的调用堆栈。
+
+## <a name="manage-channels"></a>管理通道
+
+在并发可视化工具的“线程视图”中，可以整理进程的各个通道，以便查看特定模式。 您可以将通道排序、上下移动，以及隐藏或显示这些通道。
+
+### <a name="sort-by"></a>排序依据
+ 基于当前的缩放级别，您可以使用“排序依据”控件按不同的条件对线程排序。 在查找特定模式时，这特别有用。 您可以按照以下条件排序：
+
+|条件|定义|
+|--------------|----------------|
+|开始时间|按线程的开始时间排序。 这是默认的排序顺序。|
+|结束时间|按线程的结束时间排序。|
+|执行|按执行所用的时间百分比对线程排序。|
+|同步|按同步所用的时间百分比对线程排序。|
+|I/O|按 I/O（读取和写入数据）所用的时间百分比对线程排序。|
+|睡眠状态|按休眠所用的时间百分比对线程排序。|
+|Paging|按分页所用的时间百分比对线程排序。|
+|优先|按抢占所用的时间百分比对线程排序。|
+|UI 处理|按用户界面处理所用的时间百分比对线程排序。|
+
+### <a name="move-selected-channel-up-or-down"></a>上移或下移选定的通道
+ 可以使用这些控件向上或向下移动列表中的通道。 例如，您可以将彼此相关的通道放在一起，以便帮助您检查特定的模式或跨线程关系。
+
+### <a name="move-selected-channel-to-top-or-bottom"></a>将选定的通道移动到顶部或底部
+ 您可以将选定的通道移动到列表的顶部或底部，以便检查特定的模式，或在检查某些通道时移开其他的通道。
+
+### <a name="hide-selected-channels"></a>隐藏选定的通道
+ 如果要隐藏通道，请选择此控件。 例如，如果一个线程在您托管进程的生存期内 100% 同步，则可以在分析其他线程时隐藏该线程。
+
+> [!NOTE]
+> 隐藏某个线程时，还会将其从计算时间中移除，计算时间显示在活动图例和分析报告中。
+
+### <a name="show-all-channels"></a>显示所有通道
+ 当一个或多个通道被隐藏时，此控件处于活动状态。 如果选择此控件，将显示所有隐藏的元素并将其全部添加回时间计算。
+
+### <a name="move-markers-to-top"></a>将标记移到顶部
+ 如果跟踪包含标记事件，则可以使用此命令将标记通道移动到时间线的顶部。 它们的相对顺序将被保留。
+
+### <a name="group-markers-by-thread"></a>按线程对标记进行分组
+ 如果跟踪包含标记事件，则可以使用此命令，按照生成标记事件的线程对标记通道进行分组。  磁盘通道将被移动到列表的顶部，而 GPU 通道将被移动到底部。
+
+## <a name="measure-mode-onoff"></a>打开/关闭度量模式
+
+通过使用此工具，可以精确地测量时间线中的时间长度。 若要启用度量模式，请单击“度量”按钮（它具有一个标尺图标），然后在时间线中拖动。 注意在拖动时，指针下面的区域会用黄色突出显示，度量的时间显示在工具栏中该按钮的右侧。 拖动时动态计算此值，以便能够立即看到特定事件占用的时间。 释放鼠标按钮后，时间值保持可见。
+
+ 可以重复执行度量过程，但只显示最新的度量操作。 再次单击“度量”按钮即可关闭度量模式。
+
+## <a name="noise-reduction-percentage"></a>降噪百分比
+
+默认情况下，降噪百分比设置的值为 2。 调用树中只显示非独占时间百分比大于或等于此设置的项。 通过更改此设置，可以控制在调用树中显示的项数。 例如，如果将此值更改为 10，将只显示非独占时间百分比大于或等于 10% 的调用树项。 通过增大此设置的值，可以关注对进程性能影响较大的项。
+
+## <a name="report-based-on-visible-time-range"></a>基于可见时间范围的报表
+
+“分析”视图显示基于当前可见的时间范围和通道的报表。 若要查看不同数据子集的详细信息，请单击图例中的相应项。
+
+ 可以在 [“线程视图”报表](../profiling/threads-view-reports.md)中找到有关数据的详细信息。
+
+## <a name="thread-ready-connector"></a>线程就绪连接器
+
+单击阻止段以查看调用堆栈及其解除阻止的堆栈时，还可能会显示线程就绪连接器。 如果解除阻止的事件在当前进程中的另一个线程上发生，则线程就绪连接器可直观地标识允许阻止的线程继续执行的线程和执行段。
+
+## <a name="timeline-caret"></a>时间线插入符号
+
+当在执行线程段的时间线上选择一个点时，它的上方将显示时间线插入符号。 在当前堆栈选项卡上显示的调用堆栈是在时间上与单击段的位置最接近的调用堆栈。 此插入符号用于将调用堆栈（显示在“当前”选项卡下方）与其采样时刻相关联。 插入符号显示调用堆栈的确切位置，即距离用户选择的位置最近的调用堆栈。
+
+## <a name="unblock-stack"></a>取消阻塞堆栈
+
+如果当前选定的线程元素表示一个受阻片段，且该片段在被当前进程中的另一个线程取消阻塞后再开始执行，则此选项卡上将显示执行取消阻塞操作的线程的调用堆栈。
+
+## <a name="visible-timeline-profile"></a>可见时间线分析
+
+线程阻塞视图的可见时间线分析提供统计信息和报告的链接。 当进行放大、缩小、水平滚动屏幕、隐藏色条，或显示色条时，活动图例中的数字随之更改以反映当前视图中的内容。 若要查看有关图例中某个项的报告，请单击此项。
+
+## <a name="zoom-control-threads-view"></a>缩放控件（线程视图）
+
+缩放控件是一个滑块，用于在时间线上进行放大和缩小操作，以便于你关注特定的感兴趣的区域。 因为此控件放大时间线视图的中心位置，所以在放大之前将感兴趣的区域移到中心位置。
+
+### <a name="zoom-in-by-dragging-in-the-timeline-view"></a>在时间线视图中通过拖动进行放大
+ 在时间线视图中通过拖动进行放大可以创建以黄色突出显示的区域。 释放鼠标按钮后，时间线视图会放大选定的范围。
+
+### <a name="zoom-in-and-out-by-using-the-mouse-wheel"></a>通过使用鼠标滚轮来放大和缩小
+ 单击时间线上的任意点（以确保具有鼠标焦点），然后按 Ctrl 并滚动鼠标滚轮（向前滚为放大；向后滚为缩小）。
+
 ## <a name="see-also"></a>另请参阅
+
 - [并发可视化工具](../profiling/concurrency-visualizer.md)

@@ -13,14 +13,16 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: c7abfac75a1df3ca2acd38013a552266bce4b6d5
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 3063c80137c7ab84426ab3c16a740171d3bb5658
+ms.sourcegitcommit: caf5ca17efde4dc4de8b1bdfbe7770f6d705024d
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126642433"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "145017837"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>“高级设置”对话框（并发可视化工具）
+
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 通过使用并发可视化工具中的“高级设置”对话框，可以控制如何收集跟踪。  对话框中有符号、仅我的代码、缓冲、筛选、CLR 事件、标记、提供程序和文件的选项卡。
 
 ## <a name="symbols"></a>符号
@@ -87,5 +89,5 @@ ms.locfileid: "126642433"
   两个 ETL 文件用于存储原始跟踪数据，而两个并发可视化工具文件用于存储处理后的数据。  处理跟踪后，通常不使用原始 ETL 文件。  选择“在分析后删除事件跟踪日志(ETL)文件”复选框后，将减少磁盘上存储的跟踪数据量。
 
 ## <a name="see-also"></a>另请参阅
-- [仅我的代码](../profiling/just-my-code-threads-view.md)
+- [仅我的代码](../profiling/threads-view-parallel-performance.md#just-my-code-threads-view)
 - [并发可视化工具标记](../profiling/concurrency-visualizer-markers.md)
