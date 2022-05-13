@@ -2,7 +2,7 @@
 title: 不显示线程活动（线程视图）| Microsoft Docs
 description: 了解“线程”视图，其中当前可见时间范围内没有要显示的活动。
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: error-reference
 f1_keywords:
 - vs.cv.threads.nothreadreport
 helpviewer_keywords:
@@ -14,14 +14,16 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bfb26f6f632d62eceea3f897297ff338f3fe978
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: fd9b61d908ac44e9cf57a47f36661bb5431f4a18
+ms.sourcegitcommit: caf5ca17efde4dc4de8b1bdfbe7770f6d705024d
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126644383"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "145017603"
 ---
 # <a name="no-thread-activity-to-show-threads-view"></a>没有要显示的线程活动（线程视图）
+
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 此区域显示有关当前可见时间范围内的非隐藏线程的数据。
 
  如果信息不可见，请检查以下设置：

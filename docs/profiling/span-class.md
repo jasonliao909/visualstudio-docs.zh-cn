@@ -2,7 +2,7 @@
 title: span 类 | Microsoft Docs
 description: 了解 span 类及其如何定义应用程序阶段。 还将了解 span 类公共构造函数和继承层次结构。
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::span
 helpviewer_keywords:
@@ -14,14 +14,16 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 635904a3e506db18d0a161eeb7fdf1474e0b7d23
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 8eba44f0858afb7a37874ffc8d9c544f86c7e4e5
+ms.sourcegitcommit: caf5ca17efde4dc4de8b1bdfbe7770f6d705024d
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126642292"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "145017733"
 ---
 # <a name="span-class"></a>span 类
+
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 定义应用程序的一个阶段。
 
 ## <a name="syntax"></a>语法

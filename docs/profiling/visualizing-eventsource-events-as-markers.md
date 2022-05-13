@@ -10,17 +10,20 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a779f752a67853c620b3ce9da11ea9438d0d543
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: d0b242ea6d2a371ffedf6a78b3a13555a412db21
+ms.sourcegitcommit: caf5ca17efde4dc4de8b1bdfbe7770f6d705024d
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126644345"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "145017551"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>将 EventSource 事件作为标记可视化
-并发可视化工具可以将 EventSource 事件显示为标记，并且可以控制标记的显示方式。 若要查看 EventSource 标记，请使用[高级设置](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)对话框注册 ETW 提供程序 GUID。 并发可视化工具具有将 EventSource 事件表示为[标志标记](../profiling/flag-markers.md)、[范围标记](../profiling/span-markers.md)和[消息标记](../profiling/message-markers.md)的默认约定。 可以通过向事件添加自定义字段自定义 EventSource 事件的显示方式。 有关标记的详细信息，请参阅[并发可视化工具标记](../profiling/concurrency-visualizer-markers.md)。 有关 EventSource 事件的详细信息，请参阅 <xref:System.Diagnostics.Tracing>。
+
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
+并发可视化工具可以将 EventSource 事件显示为标记，并且可以控制标记的显示方式。 若要查看 EventSource 标记，请使用[高级设置](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)对话框注册 ETW 提供程序 GUID。 并发可视化工具具有将 EventSource 事件表示为[标志标记](../profiling/concurrency-visualizer-markers.md#flag-markers)、[范围标记](../profiling/concurrency-visualizer-markers.md#span-markers)和[消息标记](../profiling/concurrency-visualizer-markers.md#message-markers)的默认约定。 可以通过向事件添加自定义字段自定义 EventSource 事件的显示方式。 有关标记的详细信息，请参阅[并发可视化工具标记](../profiling/concurrency-visualizer-markers.md)。 有关 EventSource 事件的详细信息，请参阅 <xref:System.Diagnostics.Tracing>。
 
 ## <a name="default-visualization-of-eventsource-events"></a>EventSource 事件的默认可视化效果
+
  默认情况下，并发可视化工具使用以下约定来表示 EventSource 事件。
 
 ### <a name="marker-type"></a>标记类型
