@@ -1,7 +1,7 @@
 ---
 title: 在 Azure 应用服务 (Windows) 上配置 Python
 description: 如何在 Azure 应用服务上安装 Python 解释器和库，并配置 Web 应用程序，以正确引用该解释器。
-ms.date: 01/25/2022
+ms.date: 05/09/2022
 ms.topic: how-to
 author: rjmolyneaux
 ms.author: rmolyneaux
@@ -11,14 +11,16 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 970569dfea2923817d7894e7865819c941cc6e37
-ms.sourcegitcommit: 00af065ac27d41339b31d96a630705509b70b6fa
+ms.openlocfilehash: c3572a3126f4198a51bec85e6182228b3fb8a765
+ms.sourcegitcommit: 2566cd77785d8ed5bb2bdd71c637542f346b4a56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "140764136"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "145031857"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>如何在 Azure 应用服务 (Windows) 上设置 Python 环境
+
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 [Azure App Service](https://azure.microsoft.com/services/app-service/) 是适用于 Web 应用的平台即服务产品/服务，这些应用包括通过浏览器访问的站点、用户自己的客户端使用的 REST API 或事件触发的处理过程。 应用服务完全支持使用 Python 实现应用。
 
@@ -75,7 +77,7 @@ Azure 应用服务的可自定义 Python 支持作为一组应用服务站点扩
 
 ## <a name="set-webconfig-to-point-to-the-python-interpreter"></a>将 web.config 设置为指向 Python 解释器
 
-（通过门户或 Azure 资源管理器模板）安装站点扩展后，接下来将应用的 web.config 文件指向 Python 解释器。 web.config 文件指示在应用服务上运行的 IIS (7+) Web 服务器如何通过 HttpPlatform（推荐）或 FastCGI 处理 Python 请求。
+（通过门户或 Azure 资源管理器模板）安装站点扩展后，接下来将应用的 web.config 文件指向 Python 解释器。 *web.config* 文件指示 IIS (7+) web 服务器在App 服务上运行，了解如何通过 HttpPlatform 处理 Python 请求。
 
 首先找到站点扩展程序 python.exe 的完整路径，然后创建并修改相应的 web.config 文件。
 
@@ -123,37 +125,6 @@ HttpPlatform 模块将套接字连接直接传递到独立的 Python 进程。 �
 ```
 
 此处显示的 `HTTP_PLATFORM_PORT` 环境变量包含端口，本地服务器使用该端口侦听来自 localhost 的连接。 此示例还演示如何根据需要创建其他环境变量，本示例中为 `SERVER_PORT`。
-
-### <a name="configure-the-fastcgi-handler"></a>配置 FastCGI 处理程序
-
-FastCGI 是在请求级别工作的接口。 IIS 接收传入的连接，并将每个请求转发到在一个或多个持久 Python 进程中运行的 WSGI 应用。 [Wfastcgi 包](https://pypi.io/project/wfastcgi)是使用每个 Python 站点扩展进行预安装和配置的，因此可通过在 web.config 中包含该代码轻松启用此包，正如下面针对基于 Bottle 框架的 Web 应用所示。 请注意，python.exe 和 wfastcgi.py 的完整路径位于 `PythonHandler` 键中：
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<configuration>
-  <appSettings>
-    <add key="PYTHONPATH" value="D:\home\site\wwwroot"/>
-    <!-- The handler here is specific to Bottle; other frameworks vary. -->
-    <add key="WSGI_HANDLER" value="app.wsgi_app()"/>
-    <add key="WSGI_LOG" value="D:\home\LogFiles\wfastcgi.log"/>
-  </appSettings>
-  <system.webServer>
-    <handlers>
-      <add name="PythonHandler" path="*" verb="*" modules="FastCgiModule"
-           scriptProcessor="D:\home\Python361x64\python.exe|D:\home\Python361x64\wfastcgi.py"
-           resourceType="Unspecified" requireAccess="Script"/>
-    </handlers>
-  </system.webServer>
-</configuration>
-```
-
-此处定义的 `<appSettings>` 可作为环境变量供应用使用：
-
-- `PYTHONPATH` 的值可以自由扩展，但必须包括你的应用的根目录。
-- `WSGI_HANDLER` 必须指向可从你的应用导入的 WSGI 应用。
-- `WSGI_LOG` 为可选，但建议在调试应用时使用。
-
-有关 Bottle、Flask 和 Django Web 应用的 web.config 内容的更多详细信息，请参阅[发布到 Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)。
 
 ## <a name="install-packages"></a>安装包
 
