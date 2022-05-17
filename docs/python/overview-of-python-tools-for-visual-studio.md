@@ -12,20 +12,22 @@ ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 99572fab435639bb233d494aca21a2ece50a9ebf
-ms.sourcegitcommit: 04fb8ba0f7ea73ba17baa88f10563c8600e7fd7b
+ms.openlocfilehash: d65eb98f6b2ecc7350ce94e16dd3f88221c1be7d
+ms.sourcegitcommit: 8e829a5358a0ce32a81a0f97060237be3c9ab074
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "135121540"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "145045231"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>在 Windows 上的 Visual Studio 中使用 Python
 
-Python 是一种受欢迎的编程语言，它可靠、灵活、易于学习、可在所有操作系统上免费使用，并且强大的开发人员社区和很多免费库都支持它。 Python 支持所有开发方式，包括 Web 应用程序、Web 服务、桌面应用、脚本编写和科学计算。 科学家、非正式开发人员、专业开发人员和许多大学都使用 Python 进行编程。 可以在 [python.org](https://www.python.org) 和 [Python for Beginners](https://www.python.org/about/gettingstarted/)（面向初学者的 Python）中了解有关该语言的详细信息。
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
+
+Python 是一种受欢迎的编程语言，它可靠、灵活、易于学习、可在所有操作系统上免费使用，并且强大的开发人员社区和很多免费库都支持它。 Python 支持各种开发方式，包括 Web 应用程序、Web 服务、桌面应用、脚本和科学计算。 科学家、休闲开发人员、专业开发人员和许多大学都使用 Python 进行编程。 可以在 [python.org](https://www.python.org) 和 [Python for Beginners](https://www.python.org/about/gettingstarted/)（面向初学者的 Python）中了解有关该语言的详细信息。
 
 Visual Studio 是 Windows 上功能强大的 Python IDE。 Visual Studio 通过 Python 开发和数据科学工作负载（Visual Studio 2017 及更高版本）和免费的针对 Visual Studio 的 Python 工具扩展（Visual Studio 2015 及更早版本），为 Python 语言提供[开源代码](https://github.com/Microsoft/ptvs)支持。
 
-Visual Studio Mac 上现在不支持 Python。 但它在 Mac 和 Linux 上通过 Visual Studio Code。  ([问题与解答) 。](#questions-and-answers)
+Visual Studio现在不支持 Mac 上的 Python。 但它通过 Visual Studio Code 在 Mac 和 Linux 上可用。  (查看) [的问题和答案](#questions-and-answers) 。
 
 开始操作：
 
@@ -37,7 +39,7 @@ Visual Studio Mac 上现在不支持 Python。 但它在 Mac 和 Linux 上通过
 ::: moniker range="<=vs-2017"
 
 > [!Note]
-> Visual Studio 支持 Python 版本 2.7 以及版本 3.5 到 3.7。 尽管可以使用 Visual Studio编辑用其他 Python 版本编写的代码，但正式不支持这些版本，IntelliSense 和调试等功能可能不起作用。 对 Python 版本 3.8 的支持仍在开发中，可在 [GitHub 上的这一跟踪问题](https://github.com/microsoft/PTVS/issues/5822)页面查看有关支持的特定详细信息。
+> Visual Studio 支持 Python 版本 2.7 以及版本 3.5 到 3.7。 虽然可以使用Visual Studio编辑在其他版本的 Python 中编写的代码，但这些版本不受正式支持，IntelliSense和调试等功能可能无法正常工作。 对 Python 版本 3.8 的支持仍在开发中，可在 [GitHub 上的这一跟踪问题](https://github.com/microsoft/PTVS/issues/5822)页面查看有关支持的特定详细信息。
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
@@ -58,7 +60,7 @@ Visual Studio 的“Python 环境”窗口（下方为其扩展后的加宽视�
 
 ::: moniker range="vs-2019"
 
-   ![Python 环境窗口的展开视图-2019](media/environments/environments-expanded-view-2019.png)
+   ![Python 环境窗口-2019 的展开视图](media/environments/environments-expanded-view-2019.png)
 ::: moniker-end
 
 :::moniker range=">=vs-2022"
@@ -75,7 +77,7 @@ Visual Studio 的“Python 环境”窗口（下方为其扩展后的加宽视�
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>多种多样的编辑、IntelliSense 和代码理解
 
-Visual Studio一流的 Python 编辑器，包括语法着色、跨所有代码和库自动完成、代码格式设置、签名帮助、重构、linting 和类型提示。 Visual Studio 还提供一些独一无二的功能，如类视图、转到定义、查找所有引用和代码片段。 与[交互窗口](#interactive-window)直接集成有助于快速开发已保存在文件中的 Python 代码。
+Visual Studio提供了一流的 Python 编辑器，包括语法着色、跨所有代码和库自动完成、代码格式设置、签名帮助、重构、linting 和类型提示。 Visual Studio 还提供一些独一无二的功能，如类视图、转到定义、查找所有引用和代码片段。 与[交互窗口](#interactive-window)直接集成有助于快速开发已保存在文件中的 Python 代码。
 
    ![Visual Studio 中 Python 代码的代码补全](media/code-editing-completions-simple.png)
 
@@ -92,11 +94,11 @@ Visual Studio一流的 Python 编辑器，包括语法着色、跨所有代码�
 对于 Visual Studio 已知的每个 Python 环境，用户都可以直接在 Visual Studio 中轻松打开 Python 解释器的相同交互 (REPL) 环境，而无需使用单独的命令提示符。 也可以轻松地切换环境。 （若要打开单独的命令提示符，请在“Python环境”窗口中选择所需的环境，然后如之前的[对多个解释器的支持](#support-for-multiple-interpreters)下所述，选择“在 PowerShell 中打开”命令）。
 
 :::moniker range="<=vs-2019"
-   ![Visual Studio-2019 中的 Python 交互窗口](media/interactive-window.png)
+   ![Visual Studio-2019 中的 Python 交互式窗口](media/interactive-window.png)
 :::moniker-end
 
 :::moniker range=">=vs-2022"
-   ![Visual Studio-2022 中的 Python 交互窗口](media/interactive-window-2022.png)
+   ![Visual Studio-2022 中的 Python 交互式窗口](media/interactive-window-2022.png)
 :::moniker-end
 
 Visual Studio 还紧密集成了 Python 代码编辑器和交互窗口。 使用 Ctrl+Enter 键盘快捷方式可将编辑器中的当前代码行（或代码块）发送给交互窗口，然后移至下一行（或块），非常方便。 使用 +Enter 无需运行调试程序即可轻松浏览代码。 还可以使用相同的键盘快捷方式将选定代码发送给交互窗口，并轻松地将交互 窗口中的代码粘贴到编辑器中。 将这些功能结合使用可以在交互窗口中找出代码段的详细信息，并将结果轻松保存到编辑器的文件中。
@@ -117,7 +119,7 @@ Visual Studio 还支持 REPL 中的 IPython/Jupyter，包括内联图、.NET 和
 
 ::: moniker range="vs-2022"
 > [!Note]
-> Visual Studio 2022 支持打开包含 Python 代码的文件夹并运行该代码，Visual Studio项目和解决方案文件。 有关详细信息，请参阅[快速入门：打开并运行文件夹中的 Python 代码](quickstart-05-python-visual-studio-open-folder.md)。 但是，使用项目文件会获得本部分所述的优势。
+> Visual Studio 2022 支持打开包含 Python 代码的文件夹，并在不创建Visual Studio项目和解决方案文件的情况下运行该代码。 有关详细信息，请参阅[快速入门：打开并运行文件夹中的 Python 代码](quickstart-05-python-visual-studio-open-folder.md)。 但是，使用项目文件会获得本部分所述的优势。
 ::: moniker-end
 
 Visual Studio 可帮助管理项目随时间增加的复杂性。 Visual Studio 项目不仅仅是一个文件夹结构：它包括理解不同文件的使用方式以及文件之间的关系。 Visual Studio 可帮助用户区分应用代码、测试代码、网页、JavaScript 和生成脚本等，从而启用文件对应的功能。 此外，Visual Studio 解决方案还可以帮助用户管理多个相关的项目，例如 Python 项目和 C++ 扩展项目。
@@ -145,12 +147,12 @@ Visual Studio 可帮助管理项目随时间增加的复杂性。 Visual Studio 
 
 ::: moniker range="vs-2019"
 
-在 Visual Studio 2019 中，可以在不使用 Visual Studio 项目文件的情况下运行和调试代码。 有关示例，请参阅快速入门：在 [folder-2019](quickstart-05-python-visual-studio-open-folder.md) 中打开并运行 Python 代码。
+在 Visual Studio 2019 中，可以在不使用 Visual Studio 项目文件的情况下运行和调试代码。 有关示例 [，请参阅快速入门：在文件夹 2019 中打开并运行 Python 代码](quickstart-05-python-visual-studio-open-folder.md) 。
 ::: moniker-end
 
 ::: moniker range=">=vs-2022"
 
-在 Visual Studio 2022 中，可以运行和调试代码，而无需Visual Studio文件。 有关示例，请参阅快速入门：在 [folder-2022](quickstart-05-python-visual-studio-open-folder.md) 中打开并运行 Python 代码。
+在 Visual Studio 2022 中，无需Visual Studio项目文件即可运行和调试代码。 有关示例 [，请参阅快速入门：在文件夹 2022 中打开并运行 Python 代码](quickstart-05-python-visual-studio-open-folder.md) 。
 ::: moniker-end
 
 参考信息：
@@ -184,9 +186,9 @@ Visual Studio 可帮助管理项目随时间增加的复杂性。 Visual Studio 
 
 ## <a name="azure-sdk-for-python"></a>用于 Python 的 Azure SDK
 
-用于 Python 的 azure 库简化了从 Windows、macOS X 和 Linux 应用使用 azure 服务的情况。 你可以使用它们来创建和管理 Azure 资源，以及连接到 Azure 服务。
+用于 Python 的 Azure 库简化了从 Windows、macOS X 和 Linux 应用使用 Azure 服务的过程。 可以使用它们来创建和管理 Azure 资源，以及连接到 Azure 服务。
 
-有关详细信息，请参阅 [Azure SDK for Python](/azure/python/) 和[用于 Python 的 Azure 库](/azure/python/python-sdk-azure-overview)。
+有关详细信息，请参阅 [Azure SDK for Python](/azure/python/) 和[用于 Python 的 Azure 库](/azure/developer/python/sdk/azure-sdk-overview)。
 
 ## <a name="questions-and-answers"></a>问题与解答
 
@@ -196,11 +198,11 @@ A. 目前不行，但你可以在[开发者社区](https://developercommunity.vi
 
 构建 Python UI 可以使用什么工具？
 
-A. 该领域的主要产品是 [Qt 项目](https://www.qt.io/qt-for-application-development/)，其中与 Python 的绑定称为 [PySide（官方绑定）](https://wiki.qt.io/PySide)（另请参阅 [PySide 下载](https://download.qt.io/official_releases/pyside/.)）和 [PyQt](https://wiki.python.org/moin/PyQt)。 Visual Studio 中的 Python 支持不包括任何特定于 UI 开发的工具。
+A. 该领域的主要产品是 [Qt 项目](https://www.qt.io/qt-for-application-development/)，其中与 Python 的绑定称为 [PySide（官方绑定）](https://wiki.qt.io/PySide)（另请参阅 [PySide 下载](https://download.qt.io/official_releases/pyside/.)）和 [PyQt](https://wiki.python.org/moin/PyQt)。 Visual Studio中的 Python 支持不包括任何用于 UI 开发的特定工具。
 
 Python 项目是否可以生成独立的可执行文件？
 
-A. Python 通常是一种解释型语言，其代码在适合 Python 功能的环境（如 Visual Studio 和 Web 服务器）中按需运行。 Visual Studio 本身目前并不提供创建独立可执行文件的方法，这实际上是指具有嵌入的 Python 解释器的程序。 但是，如 [StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency) 所述，Python 社区提供了不同的方法来创建可执行文件。 如博客文章[使用 CPython 可嵌入 zip 文件](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/)中所述，CPython 还支持嵌入到本机应用程序中。
+A. Python 通常是一种解释型语言，其代码在适合 Python 功能的环境（如 Visual Studio 和 Web 服务器）中按需运行。 Visual Studio本身现在不提供创建独立可执行文件的方法，这实质上意味着具有嵌入式 Python 解释器的程序。 但是，如 [StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency) 所述，Python 社区提供了不同的方法来创建可执行文件。 如博客文章[使用 CPython 可嵌入 zip 文件](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/)中所述，CPython 还支持嵌入到本机应用程序中。
 
 ::: moniker range="<=vs-2017"
 
@@ -222,7 +224,7 @@ A. Python 通常是一种解释型语言，其代码在适合 Python 功能的�
 Visual Studio 2015 及更早版本可在 [visualstudio.microsoft.com/vs/older-downloads/](https://visualstudio.microsoft.com/vs/older-downloads/) 处获取。
 
 > [!Important]
-> 仅针对 Visual Studio 的最新版完全支持和维护这些功能。 功能在旧版本中可用，但不会主动维护。
+> 仅针对 Visual Studio 的最新版完全支持和维护这些功能。 功能在较旧版本中可用，但不会主动维护。
 
 |          Python 支持          |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |----------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
@@ -312,7 +314,7 @@ Visual Studio 2015 及更早版本可在 [visualstudio.microsoft.com/vs/older-do
 |         不含项目进行调试         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 |        调试 - 附加到编辑        | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10007; | &#10004;  | &#10004;  |   &#10004;    |
 |            混合模式调试             | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10007;    |
-| 远程调试 (Windows，macOS X，Linux)  | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10007; | &#10004;  | &#10004;  |   &#10004;    |
+| 远程调试 (Windows、macOS X、Linux)  | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10007; | &#10004;  | &#10004;  |   &#10004;    |
 |          调试交互窗口           | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 
 <br/>

@@ -2,7 +2,7 @@
 title: 如何：增量生成 | Microsoft Docs
 description: 了解如何使用 MSBuild 增量生成，因此，不会重新生成以前生成过但仍然为最新状态的组件。
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 05/16/2022
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, incremental builds
@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 41e4ae9e1c174f95c36c05c50d3d7e88e2bd369f
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: fab848c1841ac15a087045da14b412abe3f06672
+ms.sourcegitcommit: 8e829a5358a0ce32a81a0f97060237be3c9ab074
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126735885"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "145045477"
 ---
 # <a name="how-to-build-incrementally"></a>如何：增量生成
 
@@ -73,7 +73,7 @@ MSBuild 可将输入文件的时间戳和输出文件的时间戳进行比较，
 此项目文件包含 `Convert` 和 `Build` 目标。 `GenerateContentFiles` 和 `BuildHelp` 任务分别位于 `Convert` 和 `Build` 目标中，以便可以增量生成每个目标。 通过使用 `Output` 元素，将 `GenerateContentFiles` 任务的输出放入 `ContentFile` 项列表中，这样，就可以将这些输出用作 `BuildHelp` 任务的输入。 通过按此方法使用 `Output` 元素，可自动将一个任务的输出作为另一个任务的输入，这样就不必在每个任务中手动列出各个项或项列表。
 
 > [!NOTE]
-> 尽管可增量生成 `GenerateContentFiles` 目标，但该目标的所有输出始终都需要作为 `BuildHelp` 目标的输入。 使用 `Output` 元素时，MSBuild 会自动将一个目标中的所有输出作为另一个目标的输入提供。
+> 尽管可增量生成 `Convert` 目标，但该目标的所有输出始终都需要作为 `Build` 目标的输入。 使用 `Output` 元素时，MSBuild 会自动将一个目标中的所有输出作为另一个目标的输入提供。
 
 ```xml
 <Project DefaultTargets="Build"

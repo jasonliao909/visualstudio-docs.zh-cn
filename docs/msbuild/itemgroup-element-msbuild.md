@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 69fc6afd5a6dc7c5c9d51ae5c57afdbfd2c6847f
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: e6badfc3382a073de1b621387b6292980160110b
+ms.sourcegitcommit: 8e829a5358a0ce32a81a0f97060237be3c9ab074
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736982"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "145045153"
 ---
 # <a name="itemgroup-element-msbuild"></a>ItemGroup 元素 (MSBuild)
 
@@ -62,6 +62,8 @@ ms.locfileid: "126736982"
 |-------------|-----------------|
 |[Item](../msbuild/item-element-msbuild.md)|定义生成过程的输入。 `ItemGroup` 中可能没有或有一些 `Item` 元素。|
 
+除了泛型`Item`元素之外，ItemGroup 还允许表示项目类型（如`Reference`、`ProjectReference`、`Compile`）和其他项的子元素，如 [Common MSBuild 项目项](common-msbuild-project-items.md)中列出的其他项。
+           
 ### <a name="parent-elements"></a>父元素
 
 | 元素 | 描述 |

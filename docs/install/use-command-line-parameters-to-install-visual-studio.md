@@ -2,7 +2,7 @@
 title: 使用命令行参数安装 Visual Studio
 titleSuffix: ''
 description: 了解如何使用命令行参数来控制或自定义 Visual Studio 安装。
-ms.date: 3/3/2022
+ms.date: 5/16/2022
 ms.topic: conceptual
 f1_keywords:
 - command-line parameters
@@ -16,14 +16,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fd941f65dd5571f8c95e0900c9aecee2b8cecf09
-ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
+ms.openlocfilehash: e27088c328f6e2b0068dbd1acebafbc198990089
+ms.sourcegitcommit: 8e829a5358a0ce32a81a0f97060237be3c9ab074
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "139551295"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "145045218"
 ---
-# <a name="use-command-line-parameters-to-install-update-and-manage-visual-studio"></a>使用命令行参数来安装、更新和管理 Visual Studio
+# <a name="use-command-line-parameters-to-install-update-and-manage-visual-studio"></a>使用命令行参数安装、更新和管理Visual Studio
+
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 以编程方式或从命令提示符安装 Visual Studio 时，可以使用各种命令行参数来控制或自定义安装并执行以下操作：
 
@@ -31,9 +33,9 @@ ms.locfileid: "139551295"
 - 自动执行安装或更新过程。
 - 创建或维护产品文件的网络布局，以便安装或更新客户端计算机。
 
-下面所述的命令行选项可以与安装引导程序结合使用，安装引导程序是小型 (~ 1 MB) 文件 (例如，vs_enterprise.exe) 启动下载过程，或与安装程序一起使用。 下面列出的所有命令和参数均用于处理引导程序，除非显式指定为仅安装程序。 请注意，如果通过布局安装 Visual Studio，则客户端计算机可能只有可用于编程执行的安装程序。 
+下面介绍的命令行选项可与安装引导程序一起使用，即小型 (~1 MB) 文件 (，vs_enterprise.exe) 启动下载过程，或者安装程序。 下面列出的所有命令和参数都旨在与引导程序配合使用，除非显式指定为安装程序。 请注意，如果Visual Studio是通过布局安装的，则客户端计算机只能让安装程序以编程方式执行。 
 
-还可以使用可从 [Microsoft 更新目录](https://catalog.update.microsoft.com)下载的管理员更新包，以编程方式更新网络布局。 若要详细了解如何这样做，请参阅[更新或修改布局](create-a-network-installation-of-visual-studio.md#update-the-layout-to-a-specific-version-of-the-product)文档。  
+还可以使用可从 [Microsoft 更新目录](https://catalog.update.microsoft.com)下载的管理员更新包以编程方式更新网络布局。 若要详细了解如何这样做，请参阅[更新或修改布局](create-a-network-installation-of-visual-studio.md#update-the-layout-to-a-specific-version-of-the-product)文档。  
 
 ::: moniker range="vs-2017"
 
@@ -93,11 +95,11 @@ ms.locfileid: "139551295"
 
 ::: moniker-end
 
-可在以下位置找到 Visual Studio 安装程序： `C:\Program Files (x86)\Microsoft Visual Studio\Installer\setup.exe` 。 请注意，不能以编程方式从安装程序所在的同一目录启动安装程序。   
+可在此处找到Visual Studio 安装程序： `C:\Program Files (x86)\Microsoft Visual Studio\Installer\setup.exe` 请注意，无法从安装程序所在的同一目录中以编程方式启动安装程序。   
 
-## <a name="install-update-modify-repair-uninstall-and-export-commands-and-command-line-parameters"></a>安装、更新、修改、修复、卸载和导出命令以及命令行参数
+## <a name="install-update-modify-repair-uninstall-and-export-commands-and-command-line-parameters"></a>安装、更新、修改、修复、卸载和导出命令和命令行参数
 
-以编程方式调用 Visual Studio 引导程序或安装程序以安装产品或维护布局时，第一个参数是命令 (谓词) 描述要执行的操作。 后续的可选命令行参数带两个短划线 (--) 作为前缀，将进一步定义该操作的发生方式。 所有 Visual Studio 命令行参数均不区分大小写，可以在[命令行参数示例](command-line-parameter-examples.md)页上查看更多示例。
+调用Visual Studio引导程序或安装程序以编程方式安装产品或维护布局时，第一个参数是 (描述要执行的操作的谓词) 命令。 后续的可选命令行参数带两个短划线 (--) 作为前缀，将进一步定义该操作的发生方式。 所有 Visual Studio 命令行参数均不区分大小写，可以在[命令行参数示例](command-line-parameter-examples.md)页上查看更多示例。
 
 语法示例：`vs_enterprise.exe [command] <optional parameters>...`
 
@@ -106,9 +108,10 @@ ms.locfileid: "139551295"
 | (空白)     | 默认的命令不仅安装该产品，还用于所有布局维护操作。                    |
 | `modify`    | 修改已安装的产品。                                                                                          |
 | `update`    | 更新已安装的产品。                                                                                           |
+| `updateall` | 按顺序更新所有已安装的产品。 适用于 `--quiet` 和 `--passive` 参数。                 |
 | `repair`    | 修复已安装的产品。                                                                                           |
 | `uninstall` | 卸载已安装的产品。                                                                                        |
-| `export`    | 将安装所选内容导出到安装配置文件。 **注意**：只能与 vs_installer.exe 或 setup.exe 一起使用。 |
+| `export`    | 将安装所选内容导出到安装配置文件。 **注意**：只能与vs_installer.exe或setup.exe一起使用。 |
 
 > [!IMPORTANT]
 > 当指定多种不同的工作负载、组件或语言时，必须对每项重复运行 `--add` 或 `--remove` 命令行开关。
@@ -131,7 +134,7 @@ ms.locfileid: "139551295"
 | `--force`                                          | **可选**：这个参数会强行关闭 Visual Studio，即使有正在使用的 Visual studio 进程也是如此。   |
 | `--installWhileDownloading`                        | **可选**：在 install、update 或 modify 命令期间，这个参数使 Visual Studio 能够同时下载和安装产品。 这是默认体验。  |
 | `--downloadThenInstall`                            | **可选**：在 install、update 或 modify 命令期间，这个参数会强制性地让 Visual Studio 在安装所有文件之前先下载这些文件。 它与 `--installWhileDownloading` 参数互斥。   |
-| `--channelURI`                                     | **可选**：在更新命令期间，可以传递新的 channelURI 来更改更新设置位置。  建议与 --installPath 参数配对，以便非常明确地显示要配置的Visual Studio实例。 请参阅 [--channelURI 的语法示例](/visualstudio/install/command-line-parameter-examples#using---channelURI) |
+| `--channelURI`                                     | **可选**：在更新命令期间，可以传递新的 channelURI 来更改更新设置位置。  建议使用 --installPath 参数配对，以便非常明确要配置的Visual Studio实例。 请参阅 [--channelURI 的语法示例](/visualstudio/install/command-line-parameter-examples#using---channelURI) |
 | `--nickname <name>`                                | **可选**：在 install 命令期间，这个参数会定义要分配给已安装的产品的昵称。 别名长度不能超过 10 个字符。 |
 | `--productKey`                                     | **可选**：在 install 命令期间，这个参数会定义要用于已安装的产品的产品密钥。 由 25 个字母数字字符组成，格式为 `xxxxxxxxxxxxxxxxxxxxxxxxx`。  |
 | `--help, --?, -h, -?`                              | 显示此页的脱机版本。     |
@@ -139,7 +142,7 @@ ms.locfileid: "139551295"
 
 ## <a name="layout-command-and-command-line-parameters"></a>布局命令和命令行参数
 
-所有布局管理操作都是使用引导程序 exe 运行的，它们假定命令是默认的"安装" (空白) ，而不考虑是创建还是更新布局。 因此，所有布局管理操作都始于必需的初始 `--layout` 参数。 下表介绍了使用命令行[创建或更新布局](create-a-network-installation-of-visual-studio.md)时可使用的其他参数。 
+所有布局管理操作都使用引导程序 exe 运行，并且假定该命令是默认的“安装” (空白) ，而不考虑创建或更新布局。 因此，所有布局管理操作都始于必需的初始 `--layout` 参数。 下表介绍了使用命令行[创建或更新布局](create-a-network-installation-of-visual-studio.md)时可使用的其他参数。 
 
 | **布局参数**                           | **说明**                                        |
 |-------------------------------------------------|----------------------------------------------------------------------|
@@ -157,7 +160,7 @@ ms.locfileid: "139551295"
 | **高级布局参数** | **说明**                                  |
 |--------------------------------|--------------------------------------------------|
 | `--channelId <id>`             | **可选**：要安装的实例的通道 ID。 如果指定了 `--installPath`，则此参数对于 install 命令是必需参数，对于其他命令则可忽略。        |
-| `--channelUri <uri>`           | **可选**：通道清单的 URI。 此值可控制[更新的源位置](update-visual-studio.md#configure-source-location-of-updates-1)，初始值[在布局的 response.json 文件中配置](create-a-network-installation-of-visual-studio.md#configure-initial-client-installation-defaults-for-this-layout)。 有关可能 [的值，请参阅 --channelURI](/visualstudio/install/command-line-parameter-examples#using---channelURI) 的语法示例。 如果不需要更新，`--channelUri` 可指向不存在的文件（例如 --channelUri C:\doesntExist.chman）。 此参数可用于 install 命令；其他命令则可忽略。  |
+| `--channelUri <uri>`           | **可选**：通道清单的 URI。 此值可控制[更新的源位置](update-visual-studio.md#configure-source-location-of-updates-1)，初始值[在布局的 response.json 文件中配置](create-a-network-installation-of-visual-studio.md#configure-initial-client-installation-defaults-for-this-layout)。 有关可能的值 [，请参阅 --channelURI 的语法示例](/visualstudio/install/command-line-parameter-examples#using---channelURI) 。 如果不需要更新，`--channelUri` 可指向不存在的文件（例如 --channelUri C:\doesntExist.chman）。 此参数可用于 install 命令；其他命令则可忽略。  |
 | `--installChannelUri <uri>`    | **可选**：要用于安装的通道清单的 URI。  指定的 URI（指定 时必须指定）用于检测更新。 此参数可用于 install 命令；其他命令则可忽略。  |
 | `--installCatalogUri <uri>`    | **可选**：要用于安装的目录清单的 URI。 如果指定此选项，通道管理器会先尝试通过此 URI 下载目录清单，然后再在安装通道清单中使用 URI。 此参数用于支持脱机安装，安装期间会使用已下载的产品目录创建布局缓存。 此参数可用于 install 命令；其他命令则可忽略。    |
 | `--productId <id>`             | **可选**：将要安装的实例的产品 ID。 在正常安装条件下，这是预填充的。 `productID` 类似于“Microsoft.VisualStudio.Product.Enterprise”。 |
@@ -172,15 +175,15 @@ ms.locfileid: "139551295"
 | `--path shared=<path>`         | **可选**：包含用于并行 Visual Studio 安装的共享文件。 某些工具和 SDK 会安装到此驱动器上的某个位置，而其他一些工具可能会替代此设置并安装到另一个驱动器。 示例： `--path shared="C:\VS\shared"` <br/><br/>**重要说明**：只能在首次安装 Visual Studio 时对此设置一次。     |
 | `--path install=<path>`        | **可选**：等效于 `–-installPath`。 具体而言，`--installPath "C:\VS"` 与 `--path install="C:\VS"` 等效。 一次只能使用其中一个命令。     |
 
-## <a name="configure-source-location-of-updates-command-and-command-line-parameters"></a>配置 updates 命令和命令行参数的源位置
-可以通过在客户端计算机上使用安装程序或引导程序，并传递所需的更新通道，以编程方式配置给定 Visual Studio 实例的更新的源位置。  
+## <a name="configure-source-location-of-updates-command-and-command-line-parameters"></a>配置更新命令和命令行参数的源位置
+可以使用客户端计算机上的安装程序或引导程序，并传入所需的更新通道，以编程方式为给定Visual Studio实例配置更新的源位置。  
 
 | **modifySettings 参数**                   | **说明**                                        |
 |-------------------------------------------------|----------------------------------------------------------------------|
-| `--installPath <dir>`                           | **建议使用** 来指定要Visual Studio实例。  |
-| `--newChannelUri`                               | **必需**：通道清单的 URI。 此值指定更新的下 [一个源位置](update-visual-studio.md#configure-source-location-of-updates-1) 。 有关可能 [的值，请参阅 --channelURI](/visualstudio/install/command-line-parameter-examples#using---channelURI) 的语法示例。 如果不需要更新，`--channelUri` 可指向不存在的文件（例如 --channelUri C:\doesntExist.chman）。 |
-| `--channelUri`                               | 旧通道清单的 URI。 如果 --installPath 未知，可以使用 。 必须与 productID 结合使用，以标识要处理正确的 实例。 |
-| `--productId <id>`                           | 如果指定了 --channelUri，则必须使用 ，并且用于标识要处理正确的 实例。 `productID` 类似于“Microsoft.VisualStudio.Product.Enterprise”。 |
+| `--installPath <dir>`                           | **建议** 用于指定要对其执行Visual Studio的实例。  |
+| `--newChannelUri`                               | **必需**：通道清单的 URI。 此值指定更新的下一个 [源位置](update-visual-studio.md#configure-source-location-of-updates-1) 。 有关可能的值 [，请参阅 --channelURI 的语法示例](/visualstudio/install/command-line-parameter-examples#using---channelURI) 。 如果不需要更新，`--channelUri` 可指向不存在的文件（例如 --channelUri C:\doesntExist.chman）。 |
+| `--channelUri`                               | 旧通道清单的 URI。 如果 --installPath 未知，可以使用。 必须与 productID 结合使用才能标识要对其执行操作的正确实例。 |
+| `--productId <id>`                           | 如果指定了 --channelUri，并且用于标识要对其执行操作的正确实例，则必须使用。 `productID` 类似于“Microsoft.VisualStudio.Product.Enterprise”。 |
 | `--quiet, -q`                                   | **可选**：此参数可防止在执行命令时显示任何用户界面。    |
 
 语法示例： 
@@ -191,15 +194,15 @@ ms.locfileid: "139551295"
 
 ## <a name="administrator-update-command-and-command-line-parameters"></a>管理员更新命令和命令行参数
 
-可以从目录下载 **管理员** Microsoft 更新 [，](https://catalog.update.microsoft.com) 并使用它来更新客户端安装或布局。 
+可以从 [Microsoft 更新目录](https://catalog.update.microsoft.com)下载 **管理员更新**，并使用它更新客户端安装或布局。 
 
-如果要将布局更新到特定版本的 Visual Studio，只需将管理员更新下载到承载该布局的计算机，打开该计算机上的命令提示符并运行如下所示的命令：`visualstudioupdate-17.0.0to17.1.5.exe layout --layoutPath c:\VSLayout`
+如果要将布局更新到特定版本的Visual Studio，只需将管理员更新下载到托管布局的计算机，在该计算机上打开命令提示符，并运行以下命令，如下所示：`visualstudioupdate-17.0.0to17.1.5.exe layout --layoutPath c:\VSLayout`
 
-在客户端上，如果将管理员更新下载到客户端计算机上的安装目录中，只需双击文件即可应用更新。 还可以打开命令窗口并传递下面的某些参数来更改默认行为。 
+在客户端上，如果将管理员更新下载到客户端计算机上的安装目录中，只需双击该文件即可应用更新。 还可以打开命令窗口并传递下面的某些参数来更改默认行为。 
 
 如果要通过 Microsoft Endpoint Manager (SCCM) 部署管理员更新，可以使用以下参数来修改包以调整行为。 还可以通过客户端计算机上的配置文件来控制参数。 有关详细信息，请参阅[配置管理员更新的方法](../install/applying-administrator-updates.md#methods-for-configuring-an-administrator-update)
 
-请注意，除非指定了布局谓词，否则所有管理员更新参数默认在"更新"上下文中运行。
+请注意，除非指定了布局谓词，否则所有管理员更新参数都是默认在“update”上下文中运行的。
 
 | **管理员更新参数**           | **说明**  |
 |-----------------------------------------------|------------------|
