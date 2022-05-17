@@ -25,14 +25,16 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 81bf65489fe97dab1a331b8b7d22f8ac05520312
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: c8e1e6817c9aafc6397e57e42db5a66933498261
+ms.sourcegitcommit: 8e829a5358a0ce32a81a0f97060237be3c9ab074
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128427741"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "145045166"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>在 Visual Studio 中生成和清理项目和解决方案
+
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 通过本主题中的过程，学会生成、重新生成或清除解决方案中的所有/部分项目/项目项。 有关分步教程，请参阅[演练：生成应用程序](../ide/walkthrough-building-an-application.md)。
 
@@ -77,13 +79,11 @@ ms.locfileid: "128427741"
 
 3. 选择“在运行时仅生成启动项目和依赖项”复选框。
 
-     选中此复选框后，执行以下步骤之一时，将仅生成当前启动项目及其依赖项：
+     选中此复选框后，选择 **“调试** > ”时，仅生成当前启动项目及其依赖项 **"开始"菜单** (**F5**) 或 **调试** > **"开始"菜单无需调试** (**CtrlF5** +) 。
 
-    - 在菜单栏上，依次选择“调试” > “启动”(F5)  。
+     (**CtrlShiftB**+ +) 选择 **BuildBuild** >  **解决方案** 时，将生成整个解决方案。
 
-    - 在菜单栏上，依次选择“生成” > “生成解决方案”(Ctrl+Shift+B)    。
-
-    清理此复选框后，运行以上任一命令时，会生成所有项目、项目依赖项和解决方案文件。
+    清除此复选框后，运行上述任何命令时，将生成所有项目、其依赖项和解决方案文件。
 
 ## <a name="to-build-only-the-selected-visual-c-project"></a>仅生成选定的 Visual C++ 项目
 

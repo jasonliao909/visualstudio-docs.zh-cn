@@ -2,7 +2,7 @@
 title: “选项”对话框 ->“环境”->“文档”
 description: 了解如何使用“文档”部分中的“环境”页面来控制 IDE 中文档的显示和管理对文档和文件的外部更改。
 ms.custom: SEO-VS-2020
-ms.date: 03/28/2019
+ms.date: 05/16/2022
 ms.topic: reference
 f1_keywords:
 - VS.Environment.Documents
@@ -34,14 +34,16 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f6efebfb3cfe61707b14ed39f2ae4ca2ca79585
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: cde60c2839146246a259786362c162e0e16663d1
+ms.sourcegitcommit: 8e829a5358a0ce32a81a0f97060237be3c9ab074
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126640681"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "145045127"
 ---
 # <a name="options-dialog-box-environment--documents"></a>“选项”对话框：环境 \> 文档
+
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 使用“选项”对话框的此页，可以控制文档在集成开发环境 (IDE) 中的显示，并管理对文档和文件的外部更改。 通过在“工具”菜单上单击“选项”，然后选择“环境” > “文档”，即可访问此对话框。
 
@@ -85,6 +87,16 @@ ms.locfileid: "126640681"
 **不能以代码页的形式保存数据时将文档保存为 Unicode**
 
 如果选择此选项，则默认情况下，将包含与选定代码页不兼容信息的文件另存为 Unicode。
+
+::: moniker range="vs-2022"
+
+**Visual Studio处于后台时自动保存文件**
+
+如果希望Visual Studio失去焦点，请在 IDE 中保存每个文件时选择此选项。 这包括项目文件、解决方案文件，甚至不属于项目或解决方案的杂项文件。 意图是切换到另一个工具时，Visual Studio中的所有更改都提交到磁盘。
+
+若要了解详细信息，请参阅 [Ctrl+S 疲劳？我们提供了博客帖子的功能](https://devblogs.microsoft.com/visualstudio/suffer-from-ctrls-fatigue-we-have-a-feature-for-you/)。
+
+::: moniker-end
 
 ## <a name="see-also"></a>请参阅
 
