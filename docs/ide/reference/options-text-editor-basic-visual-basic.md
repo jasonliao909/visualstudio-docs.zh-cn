@@ -2,7 +2,7 @@
 title: “选项”>“文本编辑器”>“基本(VB)”>“高级”
 description: 了解如何使用“基本”部分中的“高级”页面来更改“分析”、“导入指令”和“突出显示”属性的默认设置。
 ms.custom: SEO-VS-2020
-ms.date: 08/12/2020
+ms.date: 05/13/2022
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Visual_Basic.Editor
@@ -21,21 +21,42 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: abe1a46305ad656dca843fbb217f34eacca86410
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: b65d622c82e0c47a7bf7be95aa918c7e19d9197c
+ms.sourcegitcommit: b86afb55321ec393bd29afffc2574772f36f94bd
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126640863"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "145149082"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>“选项”>“文本编辑器”>“基本(Visual Basic)”>“高级”
+
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 在“选项”  （“工具”  菜单）对话框中“文本编辑器”  文件夹的“基本”  文件夹内，“VB 专用”  属性页包含以下属性：
 
 ## <a name="analysis"></a>分析
 
+::: moniker range=">=vs-2022"
+
+- 为 ... 运行后台代码分析
+
+  选择以下选项之一：
+
+  | 选项 | 说明 |
+  | - | - |
+  | 无 | 禁用所有分析器和相应的代码修复。<br/><br/>所有 *打开* 的文档上都启用了编译器诊断和相应的代码修复。 |
+  | 当前文档 (默认)  | 所有分析器仅在当前活动文档上运行。<br/><br/>所有 *打开* 的文档上都启用了编译器诊断。 |
+  | 打开文档 | 所有打开的文档上都启用了 *所有* 分析器和编译器诊断。 |
+  | 整个解决方案 | 无论打开还是关闭，解决方案 *中的所有* 文档都启用所有分析器和编译器诊断。 |
+
+::: moniker-end
+
+::: moniker range="<=vs-2019"
+
 - 实时代码分析或背景分析范围
 
    配置托管代码的背景分析范围。 有关详细信息，请参阅[如何：配置托管代码的实时代码分析范围](../../code-quality/configure-live-code-analysis-scope-managed-code.md)。
+
+::: moniker-end
 
 ## <a name="using-directives"></a>Using 指令
 

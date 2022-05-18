@@ -10,19 +10,21 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7f037dc69b39f051cebca3d0d00306da07745a99
-ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.openlocfilehash: 9b27fe46e77edd4cc7551fb75bc5a7d7cae4c842
+ms.sourcegitcommit: b86afb55321ec393bd29afffc2574772f36f94bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "133256589"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "145149095"
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>如何：为文档生成项插入 XML 注释
 
-Visual Studio 可自动生成标准的 XML 文档注释结构，进而帮助记录类和方法等代码元素。 在编译时，可生成一个包含文档注释的 XML 文件。 若要启用该选项，请在项目属性的 "**生成** 输出" 选项卡上选择 "**生成包含 API 文档的文件**"  >   。
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
+
+Visual Studio 可自动生成标准的 XML 文档注释结构，进而帮助记录类和方法等代码元素。 在编译时，可生成一个包含文档注释的 XML 文件。 若要启用此选项，请选择“生成包含项目属性的 **BuildOutput** > ”选项卡上的 **API 文档的文件**。
 
 > [!TIP]
-> 如果要为文档文件配置非默认名称和位置，请将 [DocumentationFile](/dotnet/core/project-sdk/msbuild-props#documentationfile) 属性添加到 *.csproj*、 *. .vbproj* 或 *.fsproj* 文件。
+> 如果要为文档文件配置非默认名称和位置，请将 [DocumentationFile](/dotnet/core/project-sdk/msbuild-props#documentationfile) 属性添加到 *.csproj、.vbproj* 或 *.fsproj* 文件。 
 
 可随附 .NET 程序集一并分发编译器生成的 XML 文件，让 Visual Studio 和其他 IDE 能够快速显示类型和成员信息。 此外，可以通过 [DocFX](https://dotnet.github.io/docfx/) 和 [Sandcastle](https://www.microsoft.com/download/details.aspx?id=10526) 等工具运行 XML 文件，由此生成 API 引用网站。
 
@@ -56,7 +58,7 @@ Visual Studio 可自动生成标准的 XML 文档注释结构，进而帮助记�
    ![此屏幕截图显示了完成的注释，包含斜体、粗体、项目符号和可单击链接的样式标记。](media/doc-style-cs.png)
 
 > [!NOTE]
-> 在 C# 中键入`///`（或在 Visual Basic 中键入 `'''`）后，可[选择](../../ide/reference/options-text-editor-csharp-advanced.md)切换 XML 文档注释。 在菜单栏中，选择“工具” > “选项”以打开“选项”对话框。 然后，导航到“文本编辑器” > “C#”或导航到“基本” > “高级”。 在“编辑器帮助”部分，查找“生成 XML 文档注释”选项   。
+> 在 C# 中键入`///`（或在 Visual Basic 中键入 `'''`）后，可[选择](../../ide/reference/options-text-editor-csharp-advanced.md)切换 XML 文档注释。 在菜单栏中，选择“工具” > “选项”以打开“选项”对话框。 然后，导航到 **文本编辑器** > **C#** (或 **Visual Basic) >****高级**。 在“编辑器帮助”部分，查找“生成 XML 文档注释”选项   。
 
 ## <a name="see-also"></a>请参阅
 
