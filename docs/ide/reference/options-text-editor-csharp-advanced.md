@@ -13,14 +13,16 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: f5c56f26b575513d662db9b3636b5fe1c3b9ec5a
-ms.sourcegitcommit: 28168514c0c9472e852de35cceb4f95837669da6
+ms.openlocfilehash: 3b1b8502030fd95605d0b4cce89c704cf9a9aa37
+ms.sourcegitcommit: b86afb55321ec393bd29afffc2574772f36f94bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "133256888"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "145149067"
 ---
 # <a name="options-text-editor-c-advanced"></a>选项，文本编辑器，C#，高级
+
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 可使用“高级”选项页修改 C# 的编辑器格式设置、代码重构设置和 XML 文档注释设置。 要访问此选项页，请选择“工具” > “选项”，然后选择“文本编辑器” > “C#” > “高级”    。
 
@@ -29,9 +31,28 @@ ms.locfileid: "133256888"
 
 ## <a name="analysis"></a>分析
 
+::: moniker range=">=vs-2022"
+
+- 为 ... 运行后台代码分析
+
+  选择以下选项之一：
+
+  | 选项 | 说明 |
+  | - | - |
+  | 无 | 禁用所有分析器和相应的代码修复。<br/><br/>所有 *打开* 的文档上都启用了编译器诊断和相应的代码修复。 |
+  | 当前文档 (默认)  | 所有分析器仅在当前活动文档上运行。<br/><br/>所有 *打开* 的文档上都启用了编译器诊断。 |
+  | 打开文档 | 所有打开的文档上都启用了 *所有* 分析器和编译器诊断。 |
+  | 整个解决方案 | 无论打开还是关闭，解决方案 *中的所有* 文档都启用所有分析器和编译器诊断。 |
+
+::: moniker-end
+
+::: moniker range="<=vs-2019"
+
 - 实时代码分析或背景分析范围
 
    配置托管代码的背景分析范围。 有关详细信息，请参阅[如何：配置托管代码的实时代码分析范围](../../code-quality/configure-live-code-analysis-scope-managed-code.md)。
+
+::: moniker-end
 
 ## <a name="using-directives"></a>Using 指令
 

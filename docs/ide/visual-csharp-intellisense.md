@@ -13,14 +13,16 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6b61d197321605e787eb36efeff2f3d6dc51e050
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 6f4302fb791261b4703227c2e32e77901d042730
+ms.sourcegitcommit: b86afb55321ec393bd29afffc2574772f36f94bd
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126642091"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "145149043"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
+
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 在编辑器中进行编码以及在[即时模式](../ide/reference/immediate-window.md)命令窗口进行调试时，可以使用 C# IntelliSense。
 
@@ -105,7 +107,7 @@ IntelliSense 会记住最近在自动完成对象名称的[列表成员](../ide/
 
 ### <a name="add-missing-using-directives-on-paste"></a>粘贴时添加缺少的 using 指令
 
-将类型粘贴到代码文件时，IntelliSense 可以自动将缺少的 `using` 指令添加到代码中。 将类型粘贴到文件时，此功能通过自动执行添加缺少的 using 指令的任务来节省时间。 在“工具” > “选项” > “文本编辑器” > “C#”或“基本” > “高级”中启用此功能，并选择“粘贴时添加缺少的 using 指令”      。
+将类型粘贴到代码文件时，IntelliSense 可以自动将缺少的 `using` 指令添加到代码中。 将类型粘贴到文件时，此功能通过自动执行添加缺少的 using 指令的任务来节省时间。 在 **ToolsOptionsText** >  >  **EditorC** > **#** (或 **Visual Basic) >** **Advanced** 中启用此功能，然后选择“**在粘贴时添加缺少”指令**。
 
 ### <a name="remove-and-sort-usings"></a>对 Using 进行删除和排序
 

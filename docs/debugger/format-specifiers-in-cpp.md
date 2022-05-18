@@ -2,7 +2,7 @@
 title: 调试器中的格式说明符 (C++) | Microsoft Docs
 description: 使用格式说明符更改值在“监视”、“自动”或“局部变量”窗口中的显示格式。 本文将详细介绍使用方法。
 ms.custom: SEO-VS-2020
-ms.date: 3/11/2019
+ms.date: 05/17/2022
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -25,14 +25,16 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 84f62c6c98e677de242482b055502c54451367af
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: 2266641157330ed1f690b536a206f42bb338781e
+ms.sourcegitcommit: b86afb55321ec393bd29afffc2574772f36f94bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135803903"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "145149147"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Visual Studio 调试器中的 C++ 格式说明符
+
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 你可以使用格式说明符更改在“监视”、“自动”和“局部变量”窗口中显示的值所用的格式。
 
@@ -152,7 +154,29 @@ int main() {
 
 ## <a name="format-specifiers-for-interop-debugging-with-ccli"></a><a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> 使用 C++/CLI 的互操作调试的格式说明符
 
-**粗体** 的说明符仅支持本地调试和 C++/CLI 代码。 这需要使用[托管兼容模式](../debugger/general-debugging-options-dialog-box.md)指定的旧版调试器。
+::: moniker range=">= vs-2022" 
+
+| 说明符 | 格式 | 原始监视值 | 显示的值 |
+|--|--|--|--|
+| o | 无符号的八进制整数 | 0xF065 | 0170145 |
+| x<br /><br />X | 十六进制整数 | 61541 | 0x0000f065 |
+| c | 单个字符 | \<location> | 101 'e' |
+| s | const char*（加引号） | \<location> | "hello world" |
+| su | const wchar_t*<br /><br /> const char16_t\*（加引号） | \<location> | L"hello world" |
+| sub | const wchar_t*<br /><br /> const char16_t\* | \<location> | hello world |
+| s8 | const char*（加引号） | \<location> | "hello world" |
+| hr | HRESULT 或 Win32 错误代码。<br/>HRESULT 不再需要此说明符，因为调试器会自动对其进行解码。 | S_OK | S_OK |
+| wc | 窗口类标志 | 0x00000040, | WC_DEFAULTCHAR |
+| wm | Windows 消息数字 | 0x0010 | WM_CLOSE |
+| ! | 原始格式，忽略任何数据类型视图自定义项 | \<customized representation> | 4 |
+
+d、e、f、g、h、i、l、m、ma、mb、md、mq、mu、mw，以及本机和 C++/CLI 代码说明符需要旧调试器，Visual Studio 2022 或更高版本不支持该调试器。
+
+::: moniker-end
+
+::: moniker range="<vs-2022" 
+
+**粗体** 的说明符仅支持本地调试和 C++/CLI 代码。 这些说明符需要使用 [托管兼容性模式](../debugger/general-debugging-options-dialog-box.md)指定的旧调试器。
 
 |说明符|格式|原始监视值|显示的值|
 |---------------|------------|--------------------------|---------------------|
@@ -189,6 +213,8 @@ int main() {
 |**md**|4 个双字|0x0012ffac|0x0012ffac 00CB34B3 80943084 308A22FF 00002657|
 |**mq**|2 个双字|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|
 |**mu**|双字节字符 (Unicode)|0x0012ffac|0x0012ffac 8478 77f4 ffff ffff 0000 0000 0000 0000|
+
+::: moniker-end
 
 ### <a name="size-specifier-for-pointers-as-arrays-in-interop-debugging-with-ccli"></a><a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> 指针的大小说明符，并且指针在使用 C++/CLI 进行的互操作调试中作为数组存在
 

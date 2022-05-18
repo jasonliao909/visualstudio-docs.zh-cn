@@ -13,14 +13,16 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: f011357c3c72d05c280c2dc19a2e7282a10920c5
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 0963a37705ec5234cc7c866c70b672683f83480e
+ms.sourcegitcommit: b86afb55321ec393bd29afffc2574772f36f94bd
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736705"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "145149173"
 ---
 # <a name="intellisense-completion-for-unimported-types-and-extension-methods"></a>针对未导入类型和扩展方法的 IntelliSense 完成
+
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 此重构适用于：
 
@@ -39,7 +41,7 @@ ms.locfileid: "126736705"
 1. 开始键入在项目中有依赖项的类型或扩展方法的名称后，IntelliSense 将为你提供建议。 来自未导入的命名空间的项会将其包含的命名空间显示为后缀。
 
    > [!TIP]
-   > 你可以根据需要使用显示在完成列表左下角的“扩展器按钮(Alt + A)”来显示/隐藏来自未导入的命名空间的项。 要更改默认行为，请转到“工具” > “选项” > “文本编辑器” > “C#” / “Basic” > “IntelliSense”，并查找“显示来自未导入的命名空间的项”      。
+   > 你可以根据需要使用显示在完成列表左下角的“扩展器按钮(Alt + A)”来显示/隐藏来自未导入的命名空间的项。 若要更改默认行为，请转到 **ToolsOptionsText** >  >  **EditorC** > **#** (或 **Visual Basic) > IntelliSense** 并查找 **未导入命名空间中的“显示项**”。
 
 2. 选择并提交未导入的项。
 
