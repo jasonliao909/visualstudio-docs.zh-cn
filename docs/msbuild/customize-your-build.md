@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e64c59d773b17b1137f32d0da8906d7804ba7c7
-ms.sourcegitcommit: a149b3a034bb555ad217656c0ec8bc1672b1e215
+ms.openlocfilehash: 3213f5aafd312c8a7e71319e9610c9456ca595ed
+ms.sourcegitcommit: 2c4ca71e7711d9c4a468b1bcff026565c765952c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "133514280"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "145172583"
 ---
 # <a name="customize-your-build"></a>自定义生成
 
@@ -182,7 +182,7 @@ $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportAfter\*.t
 
 ## <a name="custom-configuration-based-on-project-language"></a>基于项目语言的自定义配置
 
-如果需要不同的行为，具体取决于 .net 语言 (c #、Visual Basic 或 F # ) ，则可以添加属性组，其中包含依赖于中项目文件扩展名的条件， `$(MSBuildProjectExtension)` 用于定义特定于语言的属性及其值。
+如果需要根据 .NET 语言 (C#、Visual Basic 或 F#) 的不同行为，可以添加属性组，这些属性组的条件取决于项目文件扩展名`$(MSBuildProjectExtension)`来定义特定于语言的属性及其值。
 
 ```xml
 <PropertyGroup Condition="'$(MSBuildProjectExtension)' == '.vbproj'">
@@ -261,7 +261,7 @@ msbuild /p:CustomBeforeMicrosoftCommonTargets="C:\build\config\Custom.Before.Mic
 
 ```xml
 <PropertyGroup>
-  <ForceImportAfterCppProps>$(MsbuildThisFileDirectory)\MyProps.props<ForceImportAfterCppProps>
+  <ForceImportAfterCppProps>$(MsbuildThisFileDirectory)\MyProps.props</ForceImportAfterCppProps>
 </PropertyGroup>
 ```
 

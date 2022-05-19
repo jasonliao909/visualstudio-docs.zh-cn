@@ -13,14 +13,16 @@ ms.technology: vs-ide-debug
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 86a8bf2e9ed02c6ef53898413c88e4de7de02e93
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: a076349193d4030251dca46b2b319b7f044fa459
+ms.sourcegitcommit: 2c4ca71e7711d9c4a468b1bcff026565c765952c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126641270"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "145172659"
 ---
 # <a name="attach-to-a-process-running-on-a-docker-container"></a>附加到在 Docker 容器上运行的进程 
+
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 可以使用 Visual Studio 调试在 Windows Docker 容器或 Linux .NET Core Docker 容器中运行的应用。
 
@@ -105,5 +107,3 @@ sudo apt-get install openssh-server unzip curl
 4. 从“可用进程”列表中选择相应的容器进程并选择“附加”，以开始调试 C# 容器进程。
 
     ![Visual Studio 中“附加到进程”对话框的屏幕截图。连接类型设置为“Docker (Windows 容器)”，并且已选中 dotnet.exe 进程。](../debugger/media/docker-attach-complete-windows.png "已完成的 Windows Docker 附加菜单")
-
-5. 从可用进程列表中选择相应的容器进程并选择“附加”，以开始调试 C# 容器进程。
