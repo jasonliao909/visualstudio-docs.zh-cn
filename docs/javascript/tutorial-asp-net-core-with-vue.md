@@ -13,14 +13,16 @@ dev_langs:
 ms.workload:
 - nodejs
 monikerRange: '>= vs-2022'
-ms.openlocfilehash: 3369bdf89019bc08dd16890fac136c94e1457f21
-ms.sourcegitcommit: 0bb6b0f1023cf20c39f7d0f9888ec71b82b80448
+ms.openlocfilehash: b3ee695f4a1a12b3f2fc9ca4ba433e2949d50000
+ms.sourcegitcommit: 2c4ca71e7711d9c4a468b1bcff026565c765952c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "140652643"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "145172672"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-vue-in-visual-studio"></a>教程：在 Visual Studio 中使用 Vue 创建 ASP.NET Core 应用
+
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 在本文中，你将了解如何生成 ASP.NET Core 项目来充当 API 后端，并生成 Vue 项目来充当 UI。
 
@@ -40,7 +42,7 @@ ms.locfileid: "140652643"
 
 - 安装了 Visual Studio 2022 预览版 2 或更高版本，以及 ASP.NET 和 Web 开发工作负载。 请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/)页，进行免费安装。
   如果需要安装工作负载，但已安装 Visual Studio，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序。 选择“ASP.NET 和 web 开发”工作负载，然后选择“修改” 。
-- npm ([https://www.npmjs.com/](https://www.npmjs.com/package/npm)) ，随附 Node.js
+- [https://www.npmjs.com/](https://www.npmjs.com/package/npm) npm () ，Node.js
 - Vue CLI ([https://cli.vuejs.org/](https://cli.vuejs.org/))  
 
 ## <a name="create-the-frontend-app"></a>创建前端应用
@@ -105,12 +107,8 @@ ms.locfileid: "140652643"
 
    :::image type="content" source="media/vs-2022/asp-net-core-with-vue-deselect-launch-browser.png" alt-text="打开调试启动配置文件 UI"::: 
 
-1. 接下来，右键单击 Vue 项目并选择“属性”菜单，然后转到“调试”部分。  将“调试器”更改为“launch.json”选项。
- 
-   :::image type="content" source="media/vs-2022/asp-net-core-with-vue-choose-debugger.png" alt-text="选择调试器 (launch.json)":::
-
    >[!NOTE]
-   > 此设置设置启动的位置 *。* *启动* 的默认路径是 *vscode/。* 因此，如果您使用的是默认路径，则通常可以跳过此步骤。
+   > 目前， *launch.json* 必须位于 *.vscode* 文件夹下。
 
 ## <a name="set-the-startup-project"></a>设置启动项目
 
@@ -126,7 +124,7 @@ ms.locfileid: "140652643"
 
    如果有多个 `applicationUrl` 属性，请使用 `https` 终结点查找一个。 它看起来应该类似于 `https://localhost:5001`。
 
-1. 然后，转到 Vue 项目的 vue.config.js 文件。 更新目标属性，以匹配 launchSettings.json 中的 `applicationUrl` 属性。 当你更新此值时，该值应类似于：
+1. 然后，转到 Vue 项目的 vue.config.js 文件。 更新目标属性，以匹配 launchSettings.json 中的 `applicationUrl` 属性。 更新时，该值应如下所示：
 
    ```js
    target: 'https://localhost:5001',
@@ -138,7 +136,7 @@ ms.locfileid: "140652643"
    - 运行 vue-cli-service serve 命令的 Vue CLI
 
    >[!NOTE]
-   > 检查控制台输出中的消息，如消息，指导您更新 Node.js 的版本。
+   > 检查消息的控制台输出，例如指示更新Node.js版本的消息。
 
 应会显示一个 Vue 应用，该应用通过 API 填充。
 
@@ -154,13 +152,17 @@ ms.locfileid: "140652643"
 
 如果看到此问题，很可能前端在后端之前启动。 看到后端命令提示符启动并运行后，只需在浏览器中刷新 Vue 应用即可。
 
-否则，如果该端口正在使用中，请在 *launchsettings.json* 中尝试5002，并 *vue.config.js*。
+否则，如果端口正在使用，请尝试 *launchSettings.json* 中的 5002 并 *vue.config.js*。
+
+### <a name="outdated-version-of-vue"></a>过时版本的 Vue
+
+如果在创建项目时看到控制台消息 **找不到文件“C：\Users\Me\source\repos\vueprojectname\package.json”** ，则可能需要更新 Vue CLI 的版本。 更新 Vue CLI 后，可能还需要在 *C：\Users\\[yourprofilename\]*] 中删除 *.vuerc* 文件。
 
 ### <a name="docker"></a>Docker
 
-如果在创建 web API 项目时启用 Docker 支持，则后端可以使用 Docker 配置文件启动，而不是在配置的端口5001上进行侦听。 若要解决问题，请执行以下操作：
+如果在创建 Web API 项目时启用 Docker 支持，则后端可能会开始使用 Docker 配置文件，而不侦听配置的端口 5001。 若要解决问题，请执行以下操作：
 
-通过添加以下属性在 Launchsettings.json 中编辑 Docker 配置文件：
+通过添加以下属性编辑 launchSettings.json 中的 Docker 配置文件：
 
 ```json
 "httpPort": 5003, 
@@ -170,5 +172,5 @@ ms.locfileid: "140652643"
 或者，使用以下方法重置：
 
 1. 在解决方案属性中，将后端应用设置为启动项目。
-1. 在 "调试" 菜单中，使用 " **启动** " 按钮下拉菜单将配置文件切换到后端应用的配置文件。
-1. 接下来，在解决方案属性中重置为多个启动项目。
+1. 在“调试”菜单中，使用 **“"开始"菜单**”按钮下拉菜单将配置文件切换到后端应用的配置文件。
+1. 接下来，在解决方案属性中，重置为多个启动项目。

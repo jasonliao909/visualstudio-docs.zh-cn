@@ -4,23 +4,24 @@ author: evanwindom
 ms.author: amast
 manager: shve
 ms.assetid: 80e3b300-f2fc-40d4-bbb2-c831a2fa5d34
-ms.date: 01/18/2022
+ms.date: 05/18/2022
 ms.topic: how-to
 description: 本文介绍管理员如何将分配的订阅从一个协议迁移到另一个协议。
-ms.openlocfilehash: 347d0115c11fa6b99d74335610ffac29c8954188
-ms.sourcegitcommit: ec474f32358861e1f62e92d8262051162f291edc
+ms.openlocfilehash: 9fc852f19483a657cf083c059ddf76a3a03a75bf
+ms.sourcegitcommit: 2c4ca71e7711d9c4a468b1bcff026565c765952c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "136924081"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "145172646"
 ---
 # <a name="migrate-subscriptions-from-one-agreement-to-another"></a>将订阅从一个协议迁移到另一个协议
+
 如果你已将 Visual Studio 订阅作为协议的一部分分配给订阅者，并且你的公司购买了新协议，则你可能需要将订阅者从当前协议迁移到新协议。 本文介绍如何将分配的订阅移动到新协议。  
 
 将订阅者移动到新协议时，会发生以下情况：
-- 他们获取新的订阅 GUID。
-- 他们所享受的权限会重置。 例如，如果他们之前已享用训练权益，将会收到该权益的新实例。 
-- 如果他们在旧订阅中使用的是 Azure 个人额度，则需要激活新订阅，并将其 Azure 资产传输到该订阅。 
++ 他们获取新的订阅 GUID。
++ 他们所享受的权限会重置。 例如，如果他们之前已享用训练权益，将会收到该权益的新实例。 
++ 如果他们在旧订阅中使用的是 Azure 个人额度，则需要激活新订阅，并将其 Azure 资产传输到该订阅。 
 
 将订阅者移动到新协议的过程包括三个步骤：
 1. 从旧协议导出当前订阅分配。 
@@ -29,25 +30,26 @@ ms.locfileid: "136924081"
 
 > [!IMPORTANT]
 > 在开始此过程之前，请留意以下注意事项：
-> - 如果你的经销商选择了在购买新协议时自动将订阅者传输到新协议的方案，则可能需在提交协议的 48-72 小时后才可能看到更改。 在继续执行手动移动订阅者的过程之前，请先咨询你的经销商。  
-> - 你可以使用 Azure Active Directory (Azure AD) 组来简化将订阅者移动到新协议的过程。 有关详细信息，请参阅[使用 Azure AD 组分配订阅](assign-azure-ad.md)。
+> + 如果你的经销商选择了在购买新协议时自动将订阅者传输到新协议的方案，则可能需在提交协议的 48-72 小时后才可能看到更改。 在继续执行手动移动订阅者的过程之前，请先咨询你的经销商。  
+> + 你可以使用 Azure Active Directory (Azure AD) 组来简化将订阅者移动到新协议的过程。 有关详细信息，请参阅[使用 Azure AD 组分配订阅](assign-azure-ad.md)。
 
 ## <a name="export-your-current-subscription-assignments"></a>导出当前订阅分配
+
 要将分配的订阅从一个协议迁移到另一个协议，第一步是将当前订阅分配导出为 CSV 文件。 在 Visual Studio 订阅管理门户中，你可以导出订阅者列表和有关分配的详细信息。 
 
 此信息包括： 
-- 订阅服务器名称。
-- 电子邮件地址。 
-- 通知电子邮件地址。 
-- 订阅级别。
-- 分配日期。
-- 到期日期。
-- 引用字段。
-- 是否启用下载。
-- 国家或地区。 
-- 语言：
-- 订阅状态。
-- 订阅 GUID。
++ 订阅服务器名称。
++ 电子邮件地址。 
++ 通知电子邮件地址。 
++ 订阅级别。
++ 分配日期。
++ 到期日期。
++ 引用字段。
++ 是否启用下载。
++ 国家或地区。 
++ 语言：
++ 订阅状态。
++ 订阅 GUID。
 
 该列表导出为 CSV 文件，你可以在 Microsoft Excel 中轻松打开，以便准备将其上传到新协议。
 
@@ -60,23 +62,24 @@ ms.locfileid: "136924081"
    > ![导出订阅者](_img/exporting-subscriptions/exporting-subscriptions.png "屏幕截图：显示用于下载已分配订阅列表的“导出”按钮。")
 
 ## <a name="prepare-your-subscription-list-for-upload-to-the-new-agreement"></a>准备订阅列表以上传到新协议
+
 执行以下步骤打开导出的订阅列表，然后将相关的数据移动到模板以上传到新协议：
 1. 找到并打开导出订阅列表时创建的文件。 你应会看到以下列名及其关联数据：
-   - **订阅者名**
-   - **电子邮件**
-   - **通知电子邮件地址**
-   - AAD 组 
-   - **订阅级别**
-   - 已分配
-   - 已激活 
-   - 到期日期 (UTC)
-   - **引用**
-   - **下载**
-   - **国家/地区**
-   - **语言**
-   - 订阅状态
-   - **订阅 GUID**
-   - 使用状态
+   + **订阅者名**
+   + **电子邮件**
+   + **通知电子邮件地址**
+   + AAD 组 
+   + **订阅级别**
+   + 已分配
+   + 已激活 
+   + 到期日期 (UTC)
+   + **引用**
+   + **下载**
+   + **国家/地区**
+   + **语言**
+   + 订阅状态
+   + **订阅 GUID**
+   + 使用状态
  
    用于将订阅上传到新协议的文件并不需要导出的 CSV 文件中的所有字段。 在上一列表中以粗体显示的字段将显示在用于上传列表的模板中。 
 
@@ -113,7 +116,7 @@ ms.locfileid: "136924081"
    | 订阅 GUID          | 订阅 GUID  |
 
    > [!IMPORTANT] 
-   > 不要将 " **订阅 GUID** " 列中的日期复制到大容量添加模板中。  包含 Guid 将导致上传失败。
+   > 不要将 **订阅 GUID** 列的日期复制到批量添加模板中。  包括 GUID 将导致上传失败。
 
    > [!TIP]
    > 如果有许多订阅者，你可能会发现在复制和粘贴数据时使用键盘快捷方式会很有帮助。 要选择列（如订阅者名）中的所有条目，请选择列的第一个条目（而不是列标题），选择并按住 Ctrl+Shift，然后选择向下箭头键。 这将选择该列的所有数据。 
@@ -122,25 +125,27 @@ ms.locfileid: "136924081"
 4. 当所有数据都移动到批量添加模板时，请保存模板并将其关闭。 此列表是要上传到新协议的订阅列表。
 
 ## <a name="upload-your-subscription-list-to-the-new-agreement"></a>将订阅列表上传到新协议
+
 1.  在[管理门户](https://manage.visualstudio.com)中，如果“上传多个订阅者”对话框仍处于打开状态，请选择“浏览”按钮。  转到保存订阅列表的位置并选中，然后选择“打开”。 （如果对话框未打开，请依次选择“添加”、“批量添加”。） 
     > [!div class="mx-imgBorder"]
     > ![浏览模板](_img/migrate-subscriptions/browse-template.png "屏幕截图：显示“上传多个订阅者”对话框中的“浏览”按钮。")
-1. 订阅列表的名称现在将出现在“上传多个订阅者”对话框中。 选择“确定”，以上传文件。 
- 
-   在管理门户中，你可能会短暂地看到一条状态消息，指出系统正在上传文件。 上传完成后，你会看到消息“订阅者已成功更新”。
+0. 订阅列表的名称现在将出现在“上传多个订阅者”对话框中。 选择“确定”，以上传文件。    在管理门户中，你可能会短暂地看到一条状态消息，指出系统正在上传文件。 上传完成后，你会看到消息“订阅者已成功更新”。
 将订阅者从旧协议迁移到新协议已完成。  
   > [!NOTE]
   > 将订阅者添加到新协议后，你应将这些订阅者从旧协议中删除。 删除订阅者会阻止他们收到有关旧订阅的通知。
 
 ## <a name="resources"></a>资源
-- 有关管理 Visual Studio 订阅的帮助，请参阅 [Visual Studio 订阅支持](https://aka.ms/vsadminhelp)。
+
+有关管理 Visual Studio 订阅的帮助，请参阅 [Visual Studio 订阅支持](https://aka.ms/vsadminhelp)。
 
 ## <a name="see-also"></a>另请参阅
-- [Visual Studio 文档](/visualstudio/)
-- [Azure DevOps 文档](/azure/devops/)
-- [Azure 文档](/azure/)
-- [Microsoft 365 文档](/microsoft-365/)
+
++ [Visual Studio 文档](/visualstudio/)
++ [Azure DevOps 文档](/azure/devops/)
++ [Azure 文档](/azure/)
++ [Microsoft 365 文档](/microsoft-365/)
 
 ## <a name="next-steps"></a>后续步骤
-- [使用 Azure Active Directory 组分配更多订阅](assign-azure-ad.md)
-- [编辑现有订阅](edit-license.md)
+
++ [使用 Azure Active Directory 组分配更多订阅](assign-azure-ad.md)
++ [编辑现有订阅](edit-license.md)
