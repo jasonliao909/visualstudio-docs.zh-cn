@@ -13,14 +13,16 @@ dev_langs:
 ms.workload:
 - nodejs
 monikerRange: '>= vs-2022'
-ms.openlocfilehash: 9e1a25cb2dcb3c2cd16924a71ce310eb7106d6a2
-ms.sourcegitcommit: 0bb6b0f1023cf20c39f7d0f9888ec71b82b80448
+ms.openlocfilehash: 12e70fcdbaeafd3f6fdfa52cb80faa3d0d3e3013
+ms.sourcegitcommit: fcf47a9c356df7e9636bcab92186923e5c9b8892
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "140652668"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "145183368"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-react-in-visual-studio"></a>教程：在 Visual Studio 中使用 React 创建 ASP.NET Core 应用
+
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 在本文中，你将了解如何生成 ASP.NET Core 项目来充当 API 后端，并生成 React 项目来充当 UI。
 
@@ -38,9 +40,9 @@ ms.locfileid: "140652668"
 
 确保已安装以下各项：
 
-- Visual Studio 2022 或更高版本，并且安装了 **ASP.NET 和 web 开发** 工作负荷。 请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/)页，进行免费安装。
+- Visual Studio 2022 或更高版本，并安装了 **ASP.NET 和 Web 开发** 工作负荷。 请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/)页，进行免费安装。
   如果需要安装工作负载，但已安装 Visual Studio，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序。 选择“ASP.NET 和 web 开发”工作负载，然后选择“修改” 。
-- npm ([https://www.npmjs.com/](https://www.npmjs.com/package/npm)) ，随附 Node.js
+- [https://www.npmjs.com/](https://www.npmjs.com/package/npm) npm () ，Node.js
 - npx ([https://www.npmjs.com/package/npx](https://www.npmjs.com/package/npx))
 
 ## <a name="create-the-frontend-app"></a>创建前端应用
@@ -65,9 +67,9 @@ ms.locfileid: "140652668"
    - App.js (modified)
    - App.test.js (modified)
 
-1. 从 "调试" 工具栏中选择一个已安装的浏览器，例如 Chrome 或 Microsoft Edge。
+1. 从“调试”工具栏中选择已安装的浏览器，例如 Chrome 或 Microsoft Edge。
 
-   如果尚未安装所需浏览器，请先安装浏览器，然后选择它。
+   如果尚未安装所需的浏览器，请先安装浏览器，然后选择它。
 
 ## <a name="create-the-backend-app"></a>创建后端应用
 
@@ -95,12 +97,8 @@ ms.locfileid: "140652668"
 
    :::image type="content" source="media/vs-2022/asp-net-core-with-react-deselect-launch-browser.png" alt-text="打开调试启动配置文件 UI"::: 
 
-1. 接下来，右键单击 React 项目并选择“属性”菜单，然后转到“调试”部分。  将“调试器”更改为“launch.json”选项。
-
-   :::image type="content" source="media/vs-2022/asp-net-core-with-react-choose-debugger.png" alt-text="选择调试器 (launch.json)":::
-
    >[!NOTE]
-   > 此设置设置启动的位置 *。* *启动* 的默认路径是 *vscode/。* 因此，如果您使用的是默认路径，则通常可以跳过此步骤。
+   > 目前， *launch.json* 必须位于 *.vscode* 文件夹下。
 
 ## <a name="set-the-startup-project"></a>设置启动项目
 
@@ -116,7 +114,7 @@ ms.locfileid: "140652668"
 
    如果有多个 `applicationUrl` 属性，请使用 `https` 终结点查找一个。 它看起来应该类似于 `https://localhost:7049`。
 
-1. 然后，转到 React 项目的 setupProxy.js 文件（查看 src 文件夹） 。 更新目标属性，以匹配 launchSettings.json 中的 `applicationUrl` 属性。 当你更新此值时，该值应类似于：
+1. 然后，转到 React 项目的 setupProxy.js 文件（查看 src 文件夹） 。 更新目标属性，以匹配 launchSettings.json 中的 `applicationUrl` 属性。 更新此值时，该值应如下所示：
 
    ```js
    target: 'https://localhost:7049',
@@ -128,7 +126,7 @@ ms.locfileid: "140652668"
    - 运行 react-scripts start 命令的 npm
 
    >[!NOTE]
-   > 检查控制台输出中的消息，如消息，指导您更新 Node.js 的版本。
+   > 检查主机输出中的消息，例如指示更新Node.js版本的消息。
 
 应会显示一个 React 应用，该应用通过 API 填充。
 
