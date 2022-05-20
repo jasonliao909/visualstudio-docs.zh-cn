@@ -4,24 +4,27 @@ description: 使用 Visual Studio for Mac 中的集成终端。
 author: jmatthiesen
 ms.author: jomatthi
 manager: dominicn
-ms.date: 04/29/2022
+ms.date: 05/16/2022
 ms.topic: how-to
 ms.assetid: EFD53CE9-8174-4FE4-8863-2984D22FD921
-ms.openlocfilehash: c525ea942e13663c3c2ebaafd679bcac5abab6af
-ms.sourcegitcommit: 1d5bf3876e092416b8735b3ba7788966b9502979
+ms.openlocfilehash: 69594a4037a5b773b64301afeef4b227af3eb309
+ms.sourcegitcommit: 4264e57e45dede8bf55ddf0f7e81738a42580081
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "144810181"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "145183458"
 ---
 # <a name="integrated-terminal"></a>集成终端
 
  [!INCLUDE [Visual Studio for Mac](~/includes/applies-to-version/vs-mac-only.md)]
 
+> [!NOTE] 
+> 集成终端目前在简体中文或繁体中文区域设置中不可用。 我们修复了与中文字符输入相关的 bug，此功能即将推出。 
+
 可以在Visual Studio for Mac中打开集成终端窗口，从解决方案的根目录开始。 终端适用于不同类型的情况，包括运行前端任务（例如：npm、ng 或 vue）、管理容器、运行高级 git 命令、执行实体框架命令、查看 dotnet CLI 输出、添加 NuGet 包等。 
 
 打开 **终端**：
-- 使用带有反键字符的 **Ctrl + 键盘** 快捷方式显示或隐藏终端窗口。
+- 使用带有反杆字符的 **Ctrl + 键盘** 快捷方式显示或隐藏终端窗口。
 - 使用 **ViewTerminal**  >  菜单命令。
 - 使用 **搜索** 栏中的 **终端** 命令。
 
@@ -66,7 +69,7 @@ ms.locfileid: "144810181"
 
 ### <a name="configuring-the-terminal-font"></a>配置终端字体
 
-可以从 **“首选项**”中更改用于 **终端窗口内容的** 字体 **系列**、**字面** 和 **大小**... > **环境** > **字体**。 默认情况下，字体将与使用 Menlo Regular 11 的 **输出窗口内容** 相同。 可以将它设置为任何字体，独立于 **文本编辑器** 字体。
+可以从 **“首选项**”中更改用于 **终端窗口内容的** 字体 **系列**、**字号** 和 **大小**... > **环境** > **字体**。 默认情况下，字体将与使用 Menlo Regular 11 的 **输出窗口内容** 相同。 你可以将其设置为任何字体，独立于 **文本编辑器** 字体。
 
 ::: moniker range="vsmac-2019"
 

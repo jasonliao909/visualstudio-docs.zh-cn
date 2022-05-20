@@ -9,24 +9,26 @@ ms.topic: how-to
 ms.workload: multiple
 ms.date: 10/27/2021
 ms.technology: vs-container-tools
-ms.openlocfilehash: facc4cc696cd42672bec49f8df2e2907e9e9aadf
-ms.sourcegitcommit: 1ed233bb3afc5ae1f52aff8e41f7e650342033ad
+ms.openlocfilehash: cac8af7bb2face9a55520eda721f6a49915df654
+ms.sourcegitcommit: 4264e57e45dede8bf55ddf0f7e81738a42580081
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "141274758"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "145183471"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>在本地 Docker 容器中调试应用
+
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Visual Studio 提供了一种一致方法来开发 Docker 容器，并在本地验证应用程序。
 可以在安装了 Docker 的本地 Windows 桌面上运行的 Linux 或 Windows 容器中运行和调试应用，且每次更改代码时都无需重新启动容器。
 
 :::moniker range="vs-2017"
-本文介绍了如何使用 Visual Studio 在本地 Docker 容器中启动应用、进行更改，并刷新浏览器以查看所做的更改。 本文还介绍了如何为容器化的应用设置用于调试的断点。 支持的项目类型包括 .NET Framework 和 .NET Core Web 及控制台应用。 本文使用 ASP.NET Core Web 应用和 .NET Framework 控制台应用。
+本文介绍了如何使用 Visual Studio 在本地 Docker 容器中启动应用、进行更改，并刷新浏览器以查看所做的更改。 本文还介绍了如何为容器化的应用设置用于调试的断点。 支持的项目类型包括面向.NET Framework和 .NET Core 的 Web 应用和控制台应用。 本文中介绍的示例包括 ASP.NET Core Web 应用程序和.NET Framework控制台应用程序。
 :::moniker-end
 
 :::moniker range=">=vs-2019"
-本文介绍了如何使用 Visual Studio 在本地 Docker 容器中启动应用、进行更改，并刷新浏览器以查看所做的更改。 本文还介绍了如何为容器化的应用设置用于调试的断点。 支持的项目类型包括 .NET Framework、.NET Core Web 和控制台应用以及 Azure Functions。 本文使用 ASP.NET Core Web 应用和 .NET Framework 控制台应用。
+本文介绍了如何使用 Visual Studio 在本地 Docker 容器中启动应用、进行更改，并刷新浏览器以查看所做的更改。 本文还介绍了如何为容器化的应用设置用于调试的断点。 支持的项目类型包括 Web 应用、控制台应用和面向.NET Framework和 .NET Core 的 Azure 函数。 本文中提供的示例是类型为 ASP.NET Core Web 应用的项目，也是控制台应用 (.NET Framework) 类型的项目。
 :::moniker-end
 
 如果你具有支持类型的项目，则 Visual Studio 可以创建 Dockerfile 并将项目配置为在容器中运行。 请参阅 [Visual Studio 中的容器工具](overview.md)。
@@ -73,7 +75,7 @@ Docker 容器可用于 .NET Framework 和 .NET Core 项目。 请看以下两个
 
 ### <a name="edit-your-razor-pages-and-refresh"></a>编辑 Razor 页面并刷新
 
-若要在 Razor 页中快速访问更改，可以在容器中启动应用程序。 然后，继续进行更改，就像查看 IIS Express 一样查看这些更改。 
+若要快速循环访问 Razor 页面中的更改，可以在容器中启动应用程序。 然后，继续进行更改，就像查看 IIS Express 一样查看这些更改。 
 
 1. 请确保 Docker 设置为使用你所使用的容器类型（Linux 或 Windows）。 右键单击任务栏上的 Docker 图标，然后选择相应的“切换到 Linux 容器”或“切换到 Windows 容器”。
 
