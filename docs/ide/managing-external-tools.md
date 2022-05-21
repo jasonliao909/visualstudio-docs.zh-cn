@@ -14,14 +14,16 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b7db6b407c92aee112301cedd34f93b6b2a91fc
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 0dba52deef0c81716615df992b01650cdd09d55a
+ms.sourcegitcommit: d3a8548a252c823834e852ff5f6d76acbd3c2fdf
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126736120"
+ms.lasthandoff: 05/21/2022
+ms.locfileid: "145191027"
 ---
 # <a name="manage-external-tools"></a>管理外部工具
+
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 可以使用“工具”菜单从 Visual Studio 内部调用外部工具。 “工具”菜单上提供了几个默认工具，但你也可以通过添加自己的其他可执行文件来自定义该菜单。
 
@@ -68,7 +70,7 @@ ms.locfileid: "126736120"
 |----------|--------------|-----------------|
 |项路径|$(ItemPath)|当前文件的完整文件名（驱动器 + 路径 + 文件名）。|
 |项目录|$(ItemDir)|当前文件的目录（驱动器 + 路径）。|
-|项文件名|$(ItemFilename)|当前文件的文件名（文件名）。|
+|项文件名|$(ItemFilename)|当前文件的文件名。|
 |项扩展名|$(ItemExt)|当前文件的文件扩展名。|
 |当前行|$(CurLine)|代码窗口中光标的当前行位置。|
 |当前列|$(CurCol)|代码窗口中光标的当前列位置。|
@@ -79,9 +81,9 @@ ms.locfileid: "126736120"
 |目标扩展名|$(TargetExt)|要生成的项的文件扩展名。|
 |二进制目录|$(BinDir)|正在生成的二进制文件的最终位置（定义为驱动器 + 路径）。|
 |项目目录|$(ProjectDir)|当前项目的目录（驱动器 + 路径）。|
-|项目文件名|$(ProjectFileName)|当前项目的文件名（驱动器 + 路径 + 文件名）。|
+|项目文件名|$(ProjectFileName)|当前项目的文件名。|
 |解决方案目录|$(SolutionDir)|当前解决方案的目录（驱动器 + 路径）。|
-|解决方案文件名|$(SolutionFileName)|当前解决方案的文件名（驱动器 + 路径 + 文件名）。|
+|解决方案文件名|$(SolutionFileName)|当前解决方案的文件名。|
 
 > [!NOTE]
 > IDE 状态栏会显示“当前行”和“当前列”变量，用于指示插入点在活动代码编辑器中的位置  。 “当前文本”变量返回在该位置选择的文本或代码。
