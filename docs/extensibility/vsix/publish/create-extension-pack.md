@@ -1,6 +1,6 @@
 ---
 title: 创建扩展包
-description: 创建扩展包以与他人轻松共享你最喜爱的扩展，或将一组扩展捆绑在一起。
+description: 按照视频操作或使用说明创建一个扩展包，其中包含你最喜欢的扩展或将一组扩展组合在一起。
 ms.date: 12/01/2021
 ms.topic: conceptual
 author: madskristensen
@@ -8,27 +8,29 @@ ms.author: madsk
 manager: pchapman
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-sdk
-ms.custom: cookbook
-ms.openlocfilehash: 57dd6c11b75725e13d52e120f547ed47774e41a5
-ms.sourcegitcommit: a149b3a034bb555ad217656c0ec8bc1672b1e215
+ms.custom: cookbook, kr2b-contr-experiment
+ms.openlocfilehash: d75baf221506077586a1ad358509f145685b8413
+ms.sourcegitcommit: fec993dbfc5cbe94ca5c5845cb6c1b17b46160fd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "133515828"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "145859261"
 ---
 # <a name="create-an-extension-pack"></a>创建扩展包
 
-本文演示如何创建扩展包。 扩展包是一组可以一起安装的扩展。 借助扩展包，可以轻松地与其他用户共享你喜欢的扩展，或将一组扩展捆绑到一起，以用于特定场景。
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
+
+本文介绍如何创建扩展包。 扩展包是一组可以一起安装的扩展。 借助扩展包，可以轻松地与其他用户共享你喜欢的扩展，或将一组扩展捆绑到一起，以用于特定场景。
 
 以下视频介绍了如何创建扩展包。
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWP8KA]
 
 ## <a name="create-from-project-template"></a>从项目模板创建
-扩展包项目模板创建一个扩展包，该扩展包具有一组可以一起安装的扩展。
+扩展包项目模板创建一个扩展包，其中包含一组可以一起安装的扩展。
 
-在"**新建Project** 对话框中，搜索 *扩展并选择*"扩展 **包"。** 对于 **Project，** 请输入 *"测试扩展包"。* 选择“创建”。
+在“**新建Project**”对话框中，搜索 *扩展* 并选择“**扩展包**”。 对于 **Project** 名称，请输入 *测试扩展包*。 选择“创建”。
 
-Visual Studio中打开项目解决方案资源管理器编辑器中打开 **文件 Extensions.vsext。**
+Visual Studio在解决方案资源管理器中打开项目，并在编辑器中打开文件扩展名 **.vsext**。
 
 ```json
 {
@@ -47,8 +49,8 @@ Visual Studio中打开项目解决方案资源管理器编辑器中打开 **文�
 ```
 
 ## <a name="add-to-existing-extension"></a>添加到现有扩展
-在"解决方案资源管理器"中，右键单击项目节点，然后选择">**项"。** 转到 **"Visual C# 扩展性"节点**，然后选择"**扩展包"。** 保留默认文件名 (ExtensionPack1.cs)。
+在解决方案资源管理器中，右键单击项目节点，然后选择“**添加新项”>**。 转到 **Visual C# 扩展性** 节点并选择 **“扩展包**”。 保留默认文件名 (ExtensionPack1.cs)。
 
-项目根目录中的 .vsext 文件将项目转换为扩展包。 只需确保"生成 *操作* "设置为" *内容* "，并且 *"在 VSIX* 中包括"设置为 *True，* 如下所示。
+项目的根目录中的 .vsext 文件将项目转换为扩展包。 只需确保其 *生成操作* 设置为 *“内容* ”， *VSIX 中的“包含* ”设置为 *True* ，如下所示。
 
-![包括在 VSIX 中](../media/include-in-vsix.png)
+![“属性”对话框的屏幕截图。 突出显示了“生成”操作和“在 V S I X 中包含”。](../media/include-in-vsix.png)

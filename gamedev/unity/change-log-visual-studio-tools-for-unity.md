@@ -1,7 +1,7 @@
 ---
 title: 更改日志（Visual Studio Tools for Unity、Windows）| Microsoft Docs
 description: 查看 Visual Studio Tools for Unity、Windows 的更改日志。 查看版本 1.0.0.0 到 4.7.0.0 及更高版本的版本变化。
-ms.date: 9/28/2021
+ms.date: 5/19/2022
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -11,27 +11,27 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: c2fa91d8492de768d6f8d139fb4d5137fba6a23d
-ms.sourcegitcommit: 965372ad0d75f015403c1af508080bf799914ce3
+ms.openlocfilehash: de85ce260055a1b0e44c45d6bcf63bf96df351c5
+ms.sourcegitcommit: 08f4d7dac6736abc1cf1e17b338df15fbc83cc65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135804085"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "145179718"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>更改日志（Visual Studio Tools for Unity、Windows）
 
 Visual Studio Tools for Unity 更改日志。
 
 ## <a name="17100"></a>17.1.0.0
-发布时间：2021 年 1 月 19 日
+发布日期：2022 年 1 月 19 日
 
 ### <a name="new-features"></a>新增功能
 
 - **集成：**
 
-  - 添加了 `CancelInvoke` 对 [`UNT0016`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0016.md) 诊断 (不安全方法的支持，用于获取方法) 。
+  - 添加了 `CancelInvoke` 对 [`UNT0016`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0016.md) 诊断 (不安全方法的支持，用于获取方法名称) 。
 
-  - 向 `ScriptedImporter` 已知的 `AssetPostprocessor` Unity 消息容器添加了 和 类。
+  - 已向已知 Unity 消息容器添加 `ScriptedImporter` 类和 `AssetPostprocessor` 类。
 
   - 将 Unity 消息更新到 2020.3.20f1。
 
@@ -41,10 +41,10 @@ Visual Studio Tools for Unity 更改日志。
 
   - 修复了对话框窗口和按钮的深色主题问题。
 
-  - 使用选择加入诊断正确处理重写的消息 ([`UNT0021`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0021.md) Unity 消息应) 。
+  - 应) 保护使用选择加入 [`UNT0021`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0021.md) 诊断 (Unity 消息正确处理重写的消息。
 
 ## <a name="17040"></a>17.0.4.0
-发布时间：2022 年 1 月 5 日
+发布日期：2022 年 1 月 5 日
 
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -52,10 +52,10 @@ Visual Studio Tools for Unity 更改日志。
 
   - 自动禁用大型 Unity 项目的资产索引。
 
-  - 引用 UnityEngine 项目时，不要针对兼容性问题发出警告。
+  - 引用 UnityEngine 项目时，不要警告兼容性问题。
 
 ## <a name="17030"></a>17.0.3.0
-发布时间：2021 年 12 月 14 日
+发布日期：2021 年 12 月 14 日
 
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -64,7 +64,7 @@ Visual Studio Tools for Unity 更改日志。
   - 减少了处理资产时的内存消耗。
 
 ## <a name="17020"></a>17.0.2.0
-发布时间：2021 年 10 月 30 日
+发布日期：2021 年 10 月 30 日
 
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -73,7 +73,7 @@ Visual Studio Tools for Unity 更改日志。
   - 缩短了轻型构建的时间，只是运行抑制器即可处理 CS 编译器警告。 所有其他分析器都将通过解决方案分析来运行。
 
 ## <a name="17010"></a>17.0.1.0
-发布时间：2021 年 10 月 16 日
+发布日期：2021 年 10 月 16 日
 
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -82,7 +82,7 @@ Visual Studio Tools for Unity 更改日志。
   - 减少了分析 yaml 资产时的内存消耗。
 
 ## <a name="17000"></a>17.0.0.0
-发布时间：2021 年 10 月 8 日
+发布日期：2021 年 10 月 8 日
 
 ### <a name="new-features"></a>新增功能
 
@@ -90,7 +90,7 @@ Visual Studio Tools for Unity 更改日志。
 
   - 添加了对 Visual Studio 2022 的支持。
 
-  - 我们弃用了 Unity 的旧项目生成器。 今后，请在项目[ (](https://docs.unity3d.com/Packages/com.unity.ide.visualstudio@2.0/changelog/CHANGELOG.html)) 中使用最新的 Visual Studio 编辑器包，并确保 `Unity > Window > Package Manager` 将 Visual Studio 2022 设置为首选代码编辑器 () 。 `Unity > Edit > Preferences > External Tools`
+  - 我们弃用了适用于 Unity 的旧项目生成器。 今后，请在项目中使用最新的[Visual Studio编辑器包](https://docs.unity3d.com/Packages/com.unity.ide.visualstudio@2.0/changelog/CHANGELOG.html) (`Unity > Window > Package Manager`) 并确保将 2022 Visual Studio设置为首选代码编辑器 (`Unity > Edit > Preferences > External Tools`) 。
 
   - 将 Unity 消息更新到 2020.3.9f1。
 
@@ -116,7 +116,7 @@ Visual Studio Tools for Unity 更改日志。
 
 - **集成：**
 
-  - [Backported]减少处理资产时的内存消耗。
+  - [Backported]处理资产时减少了内存消耗。
 
   - 用 [`USP0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0008.md)、[`USP0009`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0009.md)、[`USP0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0010.md) 和 [`USP0011`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0011.md) 抑制器优化了分配。
 
@@ -129,7 +129,7 @@ Visual Studio Tools for Unity 更改日志。
 
 - **集成：**
 
-  - [Backported]通过仅运行能够处理 CS 编译器警告的抑制程序，改进了轻型生成时间。 所有其他分析器都将通过解决方案分析来运行。
+  - [Backported]仅运行能够处理 CS 编译器警告的抑制器，改进了轻生成时间。 所有其他分析器都将通过解决方案分析来运行。
 
 ## <a name="41110"></a>4.11.1.0
 发布日期：2021 年 6 月 15 日

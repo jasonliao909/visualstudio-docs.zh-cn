@@ -7,16 +7,18 @@ manager: jmartens
 ms.technology: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
-ms.date: 11/11/2016
+ms.date: 11/22/2021
 ms.author: ghogen
-ms.openlocfilehash: 2e7b04c0411f5e07933cf4286edfcb112d6377e7
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: 05b1ea728bb2e917305df3d025249716f06b7ed2
+ms.sourcegitcommit: 118263b65d27e7a4c8a0a38d3e701b5d245f240f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126602122"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "145882554"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>使用 Windows PowerShell 脚本发布到开发和测试环境
+
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 在 Visual Studio 中创建 Web 应用程序时，可以生成一个 Windows PowerShell 脚本，以后，可以使用该脚本自动将网站以 Azure 应用服务或虚拟机中 Web 应用的形式发布到 Azure。 可以根据需要在 Visual Studio 编辑器中编辑和扩展该 Windows PowerShell 脚本，或者将该脚本与现有的生成、测试和发布脚本相集成。
 
@@ -226,23 +228,21 @@ JSON 文件是在 **Configurations** 文件夹中创建的，其中包含的配�
     ```powershell
     function Get-MSBuildCmd
     {
-            process
-    {
-
-                $path =  Get-ChildItem "HKLM:\SOFTWARE\Microsoft\MSBuild\ToolsVersions\" |
-                                    Sort-Object {[double]$_.PSChildName} -Descending |
-                                    Select-Object -First 1 |
-                                    Get-ItemProperty -Name MSBuildToolsPath |
-                                    Select -ExpandProperty MSBuildToolsPath
-
-                $path = (Join-Path -Path $path -ChildPath 'msbuild.exe')
-
-            return Get-Item $path
+       process
+       {
+        $StartInfo  = New-Object System.Diagnostics.ProcessStartInfo;
+        $StartInfo.Filename = ${Env:ProgramFiles(x86)} + "\\Microsoft Visual Studio\\Installer\\vswhere.exe"
+        $StartInfo.Arguments = " -latest -requires Microsoft.Component.MSBuild -find MSBuild\\**\\Bin\\MSBuild.exe"
+        $StartInfo.RedirectStandardOutput = $True
+        $StartInfo.UseShellExecute = $False
+        [System.Diagnostics.Process] $VSWhere = [Diagnostics.Process]::Start($StartInfo)
+        $VSWhere.WaitForExit()
+        return $VSWhere.StandardOutput.ReadToEnd();
         }
     }
     ```
 
-1. 将 `New-WebDeployPackage` 替换为以下代码，并替换构造 `$msbuildCmd` 的行中的占位符。 此代码适用于 Visual Studio 2019。 如果使用的是 Visual Studio 2017，请将 VisualStudioVersion 属性更改为 `15.0`（Visual Studio 2015 为“14.0”，Visual Studio 2013 为 `12.0`）。
+1. 将 `New-WebDeployPackage` 替换为以下代码，并替换构造 `$msbuildCmd` 的行中的占位符。
 
     ```powershell
     function New-WebDeployPackage
@@ -250,12 +250,12 @@ JSON 文件是在 **Configurations** 文件夹中创建的，其中包含的配�
         #Write a function to build and package your web application
     ```
 
-    若要生成 Web 应用程序，请使用 MsBuild.exe。 有关帮助，请参阅 [MSBuild 命令行参考](../msbuild/msbuild-command-line-reference.md)
+    若要生成 Web 应用程序，请使用MSBuild.exe。 有关帮助，请参阅 [MSBuild 命令行参考](../msbuild/msbuild-command-line-reference.md)
 
     ```powershell
     Write-VerboseWithTime 'Build-WebDeployPackage: Start'
 
-    $msbuildCmd = '"{0}" "{1}" /T:Rebuild;Package /P:VisualStudioVersion=16.0 /p:OutputPath="{2}\MSBuildOutputPath" /flp:logfile=msbuild.log,v=d' -f (Get-MSBuildCmd), $ProjectFile, $scriptDirectory
+    $msbuildCmd = '"{0}" "{1}" /T:Rebuild;Package /p:OutputPath="{2}\MSBuildOutputPath" /flp:logfile=msbuild.log,v=d' -f (Get-MSBuildCmd), $ProjectFile, $scriptDirectory
 
     Write-VerboseWithTime ('Build-WebDeployPackage: ' + $msbuildCmd)
     ```
@@ -266,7 +266,7 @@ JSON 文件是在 **Configurations** 文件夹中创建的，其中包含的配�
 $job = Start-Process cmd.exe -ArgumentList('/C "' + $msbuildCmd + '"') -WindowStyle Normal -Wait -PassThru
 
 if ($job.ExitCode -ne 0) {
-    throw('MsBuild exited with an error. ExitCode:' + $job.ExitCode)
+    throw('MSBuild exited with an error. ExitCode:' + $job.ExitCode)
 }
 
 #Obtain the project name

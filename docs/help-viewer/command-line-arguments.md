@@ -10,14 +10,16 @@ manager: jmartens
 ms.technology: vs-help-viewer
 ms.workload:
 - multiple
-ms.openlocfilehash: 2124d81b8901cce51a60efbaf8ca36e273f39442
-ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
+ms.openlocfilehash: f91bf9f0dde7e563347e540f626beab03b724f31
+ms.sourcegitcommit: 2e205fdee00c245816f3eb7b606cf3d91214cb19
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "139552018"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "145892653"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Help Content Manager 的命令行参数
+
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 可以使用 Help Content Manager (HlpCtntMgr.exe) 的命令行参数指定如何部署和管理本地帮助内容。 必须以管理员权限运行此命令行工具的脚本，无法以服务形式运行这些脚本。 可以使用此工具执行以下任务：
 
@@ -95,5 +97,5 @@ UpdateAlreadyRunning = 1300 - (Signals that the update didn't run because anothe
 ## <a name="see-also"></a>另请参阅
 
 - [Help Viewer 管理员指南](../help-viewer/administrator-guide.md)
-- [Help Content Manager 重写](../help-viewer/behavior-overrides.md)
+- [替代帮助查看器默认值](../help-viewer/behavior-overrides.md)
 - [Microsoft Help Viewer](../help-viewer/overview.md)

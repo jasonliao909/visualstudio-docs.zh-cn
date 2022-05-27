@@ -10,14 +10,16 @@ manager: jmartens
 ms.technology: vs-help-viewer
 ms.workload:
 - multiple
-ms.openlocfilehash: c021240a88c149ded7431ea558e749e751ba418b
-ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
+ms.openlocfilehash: a0bf08795b9c01980e17cd700a9d51900a1525e0
+ms.sourcegitcommit: 2e205fdee00c245816f3eb7b606cf3d91214cb19
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "139552182"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "145892660"
 ---
 # <a name="help-viewer-administrator-guide"></a>Help Viewer 管理员指南
+
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 通过帮助查看器可以在具有或不具有 Internet 访问的情况下为网络环境管理本地帮助安装。 本地帮助内容按每台计算机进行配置。 默认情况下，用户必须具有管理员权限才能更新其本地帮助安装。
 
@@ -80,7 +82,7 @@ ms.locfileid: "139552182"
 - 用户必须具有管理员权限才能在安装之后更新、添加或移除本地帮助内容。
 
     > [!TIP]
-    > 如果用户没有管理员权限，则建议在 Help Viewer 中禁用“管理内容”选项卡。 有关详细信息，请参阅 [Help Content Manager 重写](../help-viewer/behavior-overrides.md)。
+    > 如果用户没有管理员权限，则建议在 Help Viewer 中禁用“管理内容”选项卡。 有关详细信息，请参阅 [替代帮助查看器默认值](../help-viewer/behavior-overrides.md)。
 
 注意：
 
@@ -147,6 +149,6 @@ ms.locfileid: "139552182"
 ## <a name="see-also"></a>另请参阅
 
 - [Help Content Manager 的命令行参数](../help-viewer/command-line-arguments.md)
-- [Help Content Manager 重写](../help-viewer/behavior-overrides.md)
+- [替代帮助查看器默认值](../help-viewer/behavior-overrides.md)
 - [Microsoft Help Viewer](../help-viewer/overview.md)
 - [Help Viewer SDK](../extensibility/internals/microsoft-help-viewer-sdk.md)
