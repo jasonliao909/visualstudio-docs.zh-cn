@@ -11,14 +11,16 @@ author: mikadumont
 ms.author: midumont
 manager: jmartens
 ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: fdfa36298af77197d287374929d9d90e66e09e2a
-ms.sourcegitcommit: 20f9529648e69707063dccb2b15089bf4e9bf639
+ms.openlocfilehash: 34616214cdda61bbf5d45ed283238a8d293698d6
+ms.sourcegitcommit: b86afb55321ec393bd29afffc2574772f36f94bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "137886459"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "145149030"
 ---
 # <a name="disable-source-code-analysis-for-net"></a>禁用 .NET 的源代码分析
+
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 ::: moniker range=">=vs-2022"
 
@@ -30,11 +32,11 @@ ms.locfileid: "137886459"
 
 - 源分析与旧版分析
 
-  本文适用于源代码分析，而适用于旧版 (二进制) 分析。 有关禁用旧版分析的信息，请参阅[如何：启用和禁用旧版代码分析](how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)。
+  本文适用于源代码分析，不适用于旧版 (二进制) 分析。 有关禁用旧版分析的信息，请参阅[如何：启用和禁用旧版代码分析](how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)。
 
 ## <a name="net-core-and-net-standard-projects"></a>.NET Core 和 .NET Standard 项目
 
-从 Visual Studio 2022 版本 17.0.4 开始，Code Analysis 属性页中提供了两个复选框，可用于控制分析器是否在生成时和设计时运行。 这些选项特定于项目。
+从 2022 2022 17.0.4 版Visual Studio开始，Code Analysis属性页中有两个复选框可用于控制分析器是否在生成时间和设计时运行。 这些选项特定于项目。
 
 ![在 Visual Studio 中启用或禁用实时代码分析或生成时的代码分析](media/run-on-build-run-live-analysis-1.png)
 
@@ -44,7 +46,7 @@ ms.locfileid: "137886459"
 - 若要禁用实时源分析，请取消选中“在实时分析时运行”选项。
 
 > [!NOTE]
-> 从 Visual Studio 2022 版本 17.0.4 开始，如果你更喜欢按需代码分析执行工作流，可以在实时分析期间禁用分析器执行。 或者按需对项目或解决方案生成并手动触发代码分析一次。 有关手动运行代码分析的信息，请参阅[如何：手动运行托管代码的代码分析](how-to-run-code-analysis-manually-for-managed-code.md)。
+> 从 Visual Studio 2022 2022 版本 17.0.4 开始，如果你更喜欢按需代码分析执行工作流，则可以在实时分析期间禁用分析器执行。 或者按需生成并手动触发代码分析一次。 有关手动运行代码分析的信息，请参阅[如何：手动运行托管代码的代码分析](how-to-run-code-analysis-manually-for-managed-code.md)。
 
 ## <a name="net-framework-projects"></a>.NET Framework 项目
 
@@ -54,7 +56,7 @@ ms.locfileid: "137886459"
 | - | - | - |
 | `RunAnalyzersDuringBuild` | 控制分析器是否在生成时运行。 | `true` |
 | `RunAnalyzersDuringLiveAnalysis` | 控制分析器是否在设计时实时分析代码。 | `true` |
-| `RunAnalyzers` | 在生成时和设计时禁用分析器。 此属性优先于 `RunAnalyzersDuringBuild` 和 `RunAnalyzersDuringLiveAnalysis`。 | `true` |
+| `RunAnalyzers` | `false` 在生成和设计时禁用分析器。 此属性优先于 `RunAnalyzersDuringBuild` 和 `RunAnalyzersDuringLiveAnalysis`。 | `true` |
 
 示例：
 
@@ -76,7 +78,7 @@ ms.locfileid: "137886459"
 
 - 源分析与旧版分析
 
-  本文适用于源代码分析，而适用于旧版 (二进制) 分析。 有关禁用旧版分析的信息，请参阅[如何：启用和禁用旧版代码分析](how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)。
+  本文适用于源代码分析，不适用于旧版 (二进制) 分析。 有关禁用旧版分析的信息，请参阅[如何：启用和禁用旧版代码分析](how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)。
 
 ## <a name="net-core-and-net-standard-projects"></a>.NET Core 和 .NET Standard 项目
 
@@ -90,7 +92,7 @@ ms.locfileid: "137886459"
 - 若要禁用实时源分析，请取消选中“在实时分析时运行”选项。
 
 > [!NOTE]
-> 从 Visual Studio 2019 版本 16.5 开始，如果希望使用按需代码分析执行工作流，可以在实时分析或生成期间禁用分析器执行，并按需对项目或解决方案手动触发代码分析一次。 有关手动运行代码分析的信息，请参阅[如何：手动运行托管代码的代码分析](how-to-run-code-analysis-manually-for-managed-code.md)。
+> 从 Visual Studio 2019 2019 版本 16.5 开始，如果你更喜欢按需代码分析执行工作流，可以在实时分析或生成期间禁用分析器执行，并在项目或按需解决方案上手动触发代码分析。 有关手动运行代码分析的信息，请参阅[如何：手动运行托管代码的代码分析](how-to-run-code-analysis-manually-for-managed-code.md)。
 
 ## <a name="net-framework-projects"></a>.NET Framework 项目
 
@@ -116,7 +118,7 @@ ms.locfileid: "137886459"
 
 ## <a name="source-analysis"></a>源分析
 
-2017 年 [1](roslyn-analyzers-overview.md) 月无法关闭Visual Studio分析。 如果要从“错误列表”中清除分析器错误，可以通过选择菜单栏上的“分析” > “运行代码分析和抑制活动问题”来抑制所有当前冲突  。 有关详细信息，请参阅[抑制冲突](use-roslyn-analyzers.md#suppress-violations)。
+无法在 2017 Visual Studio中关闭[源分析](roslyn-analyzers-overview.md)。 如果要从“错误列表”中清除分析器错误，可以通过选择菜单栏上的“分析” > “运行代码分析和抑制活动问题”来抑制所有当前冲突  。 有关详细信息，请参阅[抑制冲突](use-roslyn-analyzers.md#suppress-violations)。
 
 从 Visual Studio 2019 版本 16.3 开始，可以关闭源代码分析或按需执行它。 请考虑升级到 Visual Studio 2019。
 

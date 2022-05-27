@@ -25,14 +25,16 @@ manager: jmartens
 ms.technology: vs-help-viewer
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bf101cf6aa04a7d31931091576c6c9a4ee981d7
-ms.sourcegitcommit: edf8137cd90c67b6078a02c93094f7e1c3bf8930
+ms.openlocfilehash: d41a28758a1d48b2c6cc6ff9e53f2c46f3701adc
+ms.sourcegitcommit: 2e205fdee00c245816f3eb7b606cf3d91214cb19
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "139552429"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "145892700"
 ---
 # <a name="install-and-manage-local-content"></a>安装和管理本地内容
+
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 通过使用 Microsoft Help Viewer，可以添加、删除、更新和移动安装在计算机上的帮助内容，以满足你的软件开发需求。
 
@@ -134,3 +136,4 @@ ms.locfileid: "139552429"
 ## <a name="see-also"></a>另请参阅
 
 - [Microsoft Help Viewer](../help-viewer/overview.md)
+- [替代帮助查看器默认值](../help-viewer/behavior-overrides.md)

@@ -1,13 +1,12 @@
 ---
 title: 自动功能挂起
-ms.date: 11/04/2016
+ms.date: 05/13/2022
 description: 了解 Visual Studio 如何减少分析范围，关闭垃圾回收低延迟模式，以及在系统内存受到限制时刷新缓存。
 ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - live code analysis
 - background analysis
-- analysis scope
 - full solution analysis
 - performance
 - low-memory
@@ -18,14 +17,16 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a1791f02264a4e6a32976ef8975375196054b2a
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
-ms.translationtype: HT
+ms.openlocfilehash: e0caec4c74d948f7a66c29f222ea7f8602ae4a3f
+ms.sourcegitcommit: b86afb55321ec393bd29afffc2574772f36f94bd
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126602102"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "145149005"
 ---
 # <a name="automatic-feature-suspension"></a>自动功能挂起
+
+ [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 如果可用系统内存降至 200 MB 或更低，则 Visual Studio 在代码编辑器中显示以下消息：
 
@@ -45,9 +46,13 @@ ms.locfileid: "126602102"
 
 有关如何在处理大型解决方案或内存不足的情况时提高 Visual Studio 性能的提示和技巧，请参阅[大型解决方案的性能注意事项](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Performance-considerations-for-large-solutions.md)。
 
+::: moniker range="<=vs-2019"
+
 ## <a name="live-code-analysis-is-reduced-to-minimal-scope"></a>实时代码分析减少到最小范围
 
 默认情况下，对打开的文档和项目执行实时代码分析。 可以自定义此分析范围，使其减少到当前文档或增加到整个解决方案。 有关详细信息，请参阅[如何：配置托管代码的实时代码分析范围](./configure-live-code-analysis-scope-managed-code.md)。 在内存不足的情况下，Visual Studio 将实时分析范围强制减少到当前文档。 但是，可以通过在出现信息栏中的“重新启用”按钮时选择它或重新启动 Visual Studio 来重新启用首选分析范围。 “选项”对话框始终显示当前实时代码分析范围设置。
+
+::: moniker-end
 
 ## <a name="gc-low-latency-disabled"></a>GC 低延迟已禁用
 
