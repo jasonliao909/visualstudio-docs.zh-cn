@@ -1105,7 +1105,7 @@ ms.locfileid: "141274619"
 |-|-|-|
 |打开测试|**F12**| 测试资源管理器.打开测试 |
 
-### <a name="text-editor-context-specific-shortcuts"></a><a name="bkmk_text-editor-context-specific-shortcuts"></a> 测试编辑器：特定于上下文的快捷方式
+### <a name="text-editor-context-specific-shortcuts"></a><a name="bkmk_text-editor-context-specific-shortcuts"></a> 文本编辑器：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
